@@ -1,5 +1,24 @@
 # Performance
 
+## Exact GIF palette acquisition (October 18, 2026)
+
+GIF palette import now visits all composited frames through artwork's indexed
+decoder, avoiding potential bitmap/canvas color perturbations. The editor retains compressed
+bytes for Every color/Find solid colors rescans, rather than decoded frames. Scanning
+borrows one compositing canvas and waits for each scanner before advancing; disposal 3
+can retain one restoration canvas. Logical dimensions are checked against 16 MP
+before pixel allocation, and patch bounds are checked before LZW decode.
+Membership uses a 2 MiB RGB bitset; solid scanning adds a temporary 2 MiB candidate
+bitset. Only 4096 RGB strings are retained, even when the exact union is larger.
+The scanner yields between 32768-pixel chunks, and the decoder yields between frame
+groups at an 8 ms target. One large LZW frame remains synchronous; this does not
+promise a universal frame-time bound. Closing/canceling stops future frame work.
+
+Single-frame artwork GIFs now analyze/transfer their indexed pixels once on the
+serial import worker. Removing the native bitmap round trip also removes its
+potential readback noise and extra decode. PNG and other native still paths remain
+unchanged. Stills retain PNG Save and no animation timing metadata.
+
 ## Fresh whole-app audit (October 17, 2026)
 
 The fresh audit retained all production behavior and shipped no optimization.
@@ -142,8 +161,8 @@ Palette export yields reuse matching's posted-task primitive, retaining its time
 fallback. A Tile keeps one completed-input record for its existing pixels:
 unchanged Original/viewer return reuses them without conversion. Changed source,
 frame, sample size, palette subset, matching, alpha or cleanup require current work.
-Single-frame GIFs keep native still decoding followed by unpublished analysis on
-the same healthy serial worker, avoiding worker churn and main-thread reanalysis.
+Single-frame GIFs now keep indexed pixels and unpublished analysis on the same
+healthy serial worker, avoiding canvas readback, worker churn and main-thread reanalysis.
 Unreadable worker messages use existing terminal rejection/recovery semantics.
 
 Leaving desktop hover stops queued preparation immediately. An in-flight request

@@ -2,11 +2,11 @@
   import { untrack } from 'svelte';
   import PixelIcon from './PixelIcon.svelte';
   import { tooltip } from './lib/tooltip.js';
-  import { decodePaletteFile } from './lib/palette-decode.js';
+  import { decodePaletteFile, extractPaletteImage } from './lib/palette-decode.js';
   import { droppedImages } from './lib/image-drop.js';
   import { fetchDroppedPalette } from './lib/palette-drop.js';
   import { checkCanceled } from './lib/quantize.js';
-  import { extractPalette, parsePaletteText } from './lib/palette-import.js';
+  import { parsePaletteText } from './lib/palette-import.js';
   import { normalizeColors, validateName } from './lib/palette-library.js';
   import { canonicalLospecUrl, looksLikeLospecReference } from './lib/palette-lospec-url.js';
   import { paintPaletteSwatch } from './lib/palette-preview.js';
@@ -124,7 +124,7 @@
     if (!image || busy) return;
     resetFailure('input'); controller?.abort(); controller = new AbortController(); busy = 'Finding colors'; progress = 0;
     try {
-      const result = await extractPalette(image, { solid: flat, signal: controller.signal, onProgress: value => progress = value });
+      const result = await extractPaletteImage(image, { solid: flat, signal: controller.signal, onProgress: value => progress = value });
       if (flat && !result.total) error = 'No solid 3×3 patches were found. Your current colors were kept.';
       else { applyImport(result); solid = flat; }
     } catch (problem) { if (problem.name !== 'AbortError') error = problem.message; }
@@ -292,6 +292,7 @@
         <div class="palette-import-progress" role="status"><span>{busy}…</span><progress max="1" value={progress}></progress><button class="btn glass-btn" onclick={cancelJob}>Cancel import</button></div>
       {/if}
       {#if firstFrame}<p class="palette-editor-hint">Only the first {source.kind === 'aseprite' ? 'Aseprite' : 'GIF'} frame supplies these colors.</p>{/if}
+      {#if image?.gifBytes}<p class="palette-editor-hint">Colors from every GIF frame. Transparent pixels and unused palette entries are excluded.</p>{/if}
       {#if partialAlpha}<p class="palette-editor-hint">{source.kind === 'aseprite' ? 'Partially transparent entries' : 'Visible partially transparent pixels'} become opaque palette colors.</p>{/if}
       {#if error && errorLocation === 'input'}<p class="palette-editor-error" role="alert">{error}</p>{/if}
     </div>

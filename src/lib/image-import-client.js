@@ -6,7 +6,7 @@ const queue = [], owned = new WeakMap();
 // Tiny stills avoid worker round trips; posted-task-separated analysis keeps
 // batches cooperative. GIFs and larger sources always use the worker when available.
 const SMALL_STILL_PIXELS = 4096;
-const SINGLE_FRAME = Symbol('browser-decoded single-frame GIF');
+const isGif = file => file.type === 'image/gif' || /\.gif$/i.test(file.name || '');
 let worker, running = false;
 const abortError = () => new DOMException('The image import was canceled.', 'AbortError');
 function makeWorker() {
@@ -25,7 +25,6 @@ function framesPayload(decoded) {
 function runWorker(job, target) {
   return new Promise((resolve, reject) => {
     let meta, frames = [], settled = false;
-    const gif = !job.input;
     const finish = (error, result) => {
       if (settled) return; settled = true;
       target.onmessage = target.onerror = target.onmessageerror = null;
@@ -41,14 +40,6 @@ function runWorker(job, target) {
       if (settled) return;
       try {
         checkCanceled(job.controller.signal);
-        if (data.type === 'single-frame') {
-          if (!gif || meta || frames.length || data.count !== 1
-            || !Number.isSafeInteger(data.width) || data.width < 1 || !Number.isSafeInteger(data.height) || data.height < 1
-            || !Number.isSafeInteger(data.width * data.height * 4))
-            throw new Error('Invalid single-frame GIF response.');
-          finish(null, SINGLE_FRAME);
-          return;
-        }
         if (data.type === 'error') throw new Error(data.message || 'Image import worker failed.');
         if (data.type === 'ready') {
           if (meta || !Number.isSafeInteger(data.count) || data.count < 1
@@ -95,14 +86,15 @@ function runWorker(job, target) {
   });
 }
 async function browserDecode(file, signal) {
-  if (file.type === 'image/gif') {
+  if (isGif(file)) {
     try {
       const { decodeGifAsync } = await import('./gif.js');
       checkCanceled(signal);
       const gif = await decodeGifAsync(new Uint8Array(await file.arrayBuffer()), { signal });
-      if (gif.frames.length > 1) return { frames: gif.frames.map(frame => ({
-        original: new ImageData(frame.data, gif.width, gif.height), delay: frame.delay })), loop: gif.loop };
-    } catch { checkCanceled(signal); } // Keep existing browser fallback for unreadable/single-frame GIFs.
+      const animated = gif.frames.length > 1;
+      return { frames: gif.frames.map(frame => ({ original: new ImageData(frame.data, gif.width, gif.height),
+        ...(animated ? { delay: frame.delay } : {}) })), ...(animated ? { loop: gif.loop } : {}) };
+    } catch { checkCanceled(signal); } // Keep the existing browser fallback for unreadable GIFs.
   }
   return { frames: [{ original: await decodeImageFile(file, { signal }) }] };
 }
@@ -119,21 +111,13 @@ async function drain() {
       const job = queue.shift();
       try {
         checkCanceled(job.controller.signal);
-        const smallStill = job.file.type !== 'image/gif' && job.input?.frames.length === 1
+        const smallStill = !isGif(job.file) && job.input?.frames.length === 1
           && validateImportPixels(job.input.frames[0].original) <= SMALL_STILL_PIXELS;
         const target = smallStill ? null : makeWorker();
         let result;
         if (target) {
           try {
             result = await runWorker(job, target);
-            if (result === SINGLE_FRAME) {
-              // Keep browser color management for single-frame GIFs. Analyze the
-              // unpublished pixels on this same serial job and healthy worker;
-              // enqueueing another job here would wait behind ourselves.
-              job.input = { frames: [{ original: await decodeImageFile(job.file, { signal: job.controller.signal }) }] };
-              checkCanceled(job.controller.signal);
-              result = await runWorker(job, target);
-            }
           }
           catch {
             checkCanceled(job.controller.signal);
@@ -169,7 +153,7 @@ function enqueue(file, input, source, alphaCut, signal) {
 
 export async function decodeImportedFile(file, { source = 'luma', alphaCut = 128, signal } = {}) {
   validateImportSettings(source, alphaCut); checkCanceled(signal);
-  const input = file.type === 'image/gif' ? null
+  const input = isGif(file) ? null
     : { frames: [{ original: await decodeImageFile(file, { signal }) }] };
   return enqueue(file, input, source, alphaCut, signal);
 }

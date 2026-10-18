@@ -8,13 +8,18 @@ import { checkCanceled, yieldTask } from './quantize.js';
 // partial patches drawn over earlier ones, so they are composited here once.
 // Returns { width, height, loop, frames: [{ data, delay }] }: delay is in milliseconds, loop is
 // the repeat count (0 = forever, null = the file plays once).
-function* decodeGifSteps(bytes) {
+function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, limitMessage = 'This image is too large.' } = {}) {
   const reader = new omggif.GifReader(bytes), { width, height } = reader;
+  if (!width || !height || width * height > maxPixels) throw new Error(limitMessage);
+  if (!reader.numFrames()) throw new Error('This GIF has no image frames.');
   const canvas = new Uint8ClampedArray(width * height * 4), frames = [];
   let before = null; // the previous frame, whose "disposal" says how to leave the canvas
   let saved = null;
   for (let i = 0; i < reader.numFrames(); i++) {
     const info = reader.frameInfo(i);
+    if (!info.width || !info.height || info.x + info.width > width || info.y + info.height > height
+      || info.palette_offset == null || !info.palette_size || info.palette_offset + info.palette_size * 3 > bytes.length
+      || info.data_offset + info.data_length > bytes.length) throw new Error('Invalid GIF frame dimensions or data.');
     if (before?.disposal === 2) {
       // the previous frame asked for its area to be cleared
       for (let y = before.y; y < before.y + before.height; y++) {
@@ -26,11 +31,13 @@ function* decodeGifSteps(bytes) {
     if (info.disposal === 3) saved = canvas.slice();
     reader.decodeAndBlitFrameRGBA(i, canvas);
     // browsers play frames marked 0 or 1 hundredths of a second at 100ms
-    frames.push({ data: canvas.slice(), delay: info.delay > 1 ? info.delay * 10 : 100 });
+    const frame = { data: retainFrames ? canvas.slice() : canvas, delay: info.delay > 1 ? info.delay * 10 : 100 };
+    if (retainFrames) frames.push(frame);
     before = info;
-    yield;
+    yield retainFrames ? undefined : { ...frame, width, height, index: i, frameCount: reader.numFrames() };
   }
-  return { width, height, loop: reader.loopCount(), frames };
+  return retainFrames ? { width, height, loop: reader.loopCount(), frames }
+    : { width, height, loop: reader.loopCount(), frameCount: reader.numFrames() };
 }
 
 export function decodeGif(bytes) {
@@ -59,6 +66,30 @@ export async function decodeGifAsync(bytes, { signal } = {}) {
       deadline = performance.now() + 8;
     }
   }
+}
+
+// Palette acquisition visits the same composited pixels as artwork import,
+// without retaining an expanded animation. The visitor must finish before the
+// next frame is decoded; its borrowed pixel buffer is reused after the callback.
+// One large LZW frame is still synchronous.
+export async function visitGifFrames(bytes, visit, { signal, maxPixels, limitMessage } = {}) {
+  checkCanceled(signal);
+  await yieldTask();
+  checkCanceled(signal);
+  const steps = decodeGifSteps(bytes, { retainFrames: false, maxPixels, limitMessage });
+  let deadline = performance.now() + 8;
+  try {
+    while (true) {
+      checkCanceled(signal);
+      const next = steps.next();
+      if (next.done) return next.value;
+      await visit(next.value);
+      checkCanceled(signal);
+      if (performance.now() >= deadline) {
+        await yieldTask(); checkCanceled(signal); deadline = performance.now() + 8;
+      }
+    }
+  } finally { steps.return(); }
 }
 
 // Encodes a two-color animation as a GIF with a transparent background. Each frame's `mask` has

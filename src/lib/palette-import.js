@@ -53,57 +53,71 @@ function validateImage(image) {
 // Every visible RGB is checked. A 24-bit membership bitset uses 2 MiB regardless
 // of entropy; only the first 4096 candidates become strings for review.
 export async function extractPalette(image, { solid = false, signal, onProgress } = {}) {
-  checkCanceled(signal); validateImage(image);
-  const { width, height, data } = image, length = width * height;
+  const extractor = createPaletteExtractor({ solid, signal });
+  await extractor.add(image, onProgress);
+  return extractor.finish();
+}
+
+// One membership set spans every animation frame. Keep only bounded RGB
+// metadata; callers may release each composited frame as soon as add finishes.
+export function createPaletteExtractor({ solid = false, signal } = {}) {
+  checkCanceled(signal);
   const bits = new Uint8Array(1 << 21), colors = [];
+  const candidates = solid ? new Uint8Array(1 << 21) : bits;
   let total = 0, partialAlpha = false;
-  const chunk = 32768;
-  for (let start = 0; start < length; start += chunk) {
-    checkCanceled(signal);
-    for (let pixel = start; pixel < Math.min(start + chunk, length); pixel++) {
-      const p = pixel * 4, alpha = data[p + 3];
-      if (!alpha) continue;
-      if (alpha < 255) partialAlpha = true;
-      const key = data[p] << 16 | data[p + 1] << 8 | data[p + 2], byte = key >>> 3, flag = 1 << (key & 7);
-      if (!solid) {
-        if (!(bits[byte] & flag)) {
-          bits[byte] |= flag; total++;
-          if (colors.length < MAX_DRAFT_COLORS) colors.push('#' + key.toString(16).padStart(6, '0'));
-        }
-      } else {
-        const x = pixel % width, y = Math.floor(pixel / width);
-        if (!x || x === width - 1 || !y || y === height - 1 || bits[byte] & flag) continue;
-        // Palette colors are opaque RGB: varying visible alpha does not split a
-        // color. A fully empty neighbor is excluded from solid candidates.
-        let flat = true;
-        for (let dy = -1; dy <= 1 && flat; dy++) for (let dx = -1; dx <= 1; dx++) {
-          const n = ((y + dy) * width + x + dx) * 4;
-          if (!data[n + 3] || data[n] !== data[p] || data[n + 1] !== data[p + 1] || data[n + 2] !== data[p + 2]) { flat = false; break; }
-        }
-        if (flat) bits[byte] |= flag;
-      }
-    }
-    onProgress?.(Math.min(start + chunk, length) / length * (solid ? .5 : 1));
-    if (start + chunk < length || solid) await yieldTask();
-  }
-  if (solid) {
-    // Revisit the original in reading order, so cleanup does not reorder a color
-    // whose first pixel lay at the edge of its solid patch.
+  return { async add(image, onProgress) {
+    checkCanceled(signal); validateImage(image);
+    const { width, height, data } = image, length = width * height;
+    const chunk = 32768;
     for (let start = 0; start < length; start += chunk) {
       checkCanceled(signal);
       for (let pixel = start; pixel < Math.min(start + chunk, length); pixel++) {
-        const p = pixel * 4;
-        if (!data[p + 3]) continue;
+        const p = pixel * 4, alpha = data[p + 3];
+        if (!alpha) continue;
+        if (alpha < 255) partialAlpha = true;
         const key = data[p] << 16 | data[p + 1] << 8 | data[p + 2], byte = key >>> 3, flag = 1 << (key & 7);
-        if (bits[byte] & flag) {
-          bits[byte] &= ~flag; total++;
-          if (colors.length < MAX_DRAFT_COLORS) colors.push('#' + key.toString(16).padStart(6, '0'));
+        if (!solid) {
+          if (!(bits[byte] & flag)) {
+            bits[byte] |= flag; total++;
+            if (colors.length < MAX_DRAFT_COLORS) colors.push('#' + key.toString(16).padStart(6, '0'));
+          }
+        } else {
+          const x = pixel % width, y = Math.floor(pixel / width);
+          if (!x || x === width - 1 || !y || y === height - 1 || ((bits[byte] | candidates[byte]) & flag)) continue;
+          // Palette colors are opaque RGB: varying visible alpha does not split a
+          // color. A fully empty neighbor is excluded from solid candidates.
+          let flat = true;
+          for (let dy = -1; dy <= 1 && flat; dy++) for (let dx = -1; dx <= 1; dx++) {
+            const n = ((y + dy) * width + x + dx) * 4;
+            if (!data[n + 3] || data[n] !== data[p] || data[n + 1] !== data[p + 1] || data[n + 2] !== data[p + 2]) { flat = false; break; }
+          }
+          if (flat) candidates[byte] |= flag;
         }
       }
-      onProgress?.(.5 + Math.min(start + chunk, length) / length * .5);
-      if (start + chunk < length) await yieldTask();
+      onProgress?.(Math.min(start + chunk, length) / length * (solid ? .5 : 1));
+      if (start + chunk < length || solid) await yieldTask();
     }
-  }
-  checkCanceled(signal);
-  return { colors, total, partialAlpha, overLimit: total > 256, truncated: total > MAX_DRAFT_COLORS };
+    if (solid) {
+      // Revisit the original in reading order, so cleanup does not reorder a color
+      // whose first pixel lay at the edge of its solid patch.
+      for (let start = 0; start < length; start += chunk) {
+        checkCanceled(signal);
+        for (let pixel = start; pixel < Math.min(start + chunk, length); pixel++) {
+          const p = pixel * 4;
+          if (!data[p + 3]) continue;
+          const key = data[p] << 16 | data[p + 1] << 8 | data[p + 2], byte = key >>> 3, flag = 1 << (key & 7);
+          if (candidates[byte] & flag) {
+            candidates[byte] &= ~flag; bits[byte] |= flag; total++;
+            if (colors.length < MAX_DRAFT_COLORS) colors.push('#' + key.toString(16).padStart(6, '0'));
+          }
+        }
+        onProgress?.(.5 + Math.min(start + chunk, length) / length * .5);
+        if (start + chunk < length) await yieldTask();
+      }
+    }
+    checkCanceled(signal);
+  }, finish() {
+    checkCanceled(signal);
+    return { colors, total, partialAlpha, overLimit: total > 256, truncated: total > MAX_DRAFT_COLORS };
+  } };
 }

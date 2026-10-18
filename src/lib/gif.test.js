@@ -1,6 +1,6 @@
 import { afterEach, describe, it, expect, vi } from 'vitest';
 import omggif from 'omggif';
-import { decodeGif, decodeGifAsync, encodeGif, encodeGifAsync } from './gif.js';
+import { decodeGif, decodeGifAsync, visitGifFrames, encodeGif, encodeGifAsync } from './gif.js';
 import * as quantize from './quantize.js';
 
 afterEach(() => vi.restoreAllMocks());
@@ -18,6 +18,50 @@ function gif(frames, loop) {
 }
 
 describe('decodeGif', () => {
+  it('visits exact composited frames sequentially using one borrowed canvas, without retaining a clip', async () => {
+    const bytes = gif([
+      [0, 0, 2, 2, [1, 0, 1, 1], { disposal: 1, delay: 7 }],
+      [1, 1, 1, 1, [2], { disposal: 3, delay: 12 }],
+      [0, 0, 1, 1, [3], { disposal: 2, delay: 25 }],
+      [1, 0, 1, 1, [2], {}],
+    ], 3);
+    const expected = decodeGif(bytes), frames = [], borrowed = [];
+    const metadata = await visitGifFrames(bytes, async frame => {
+      borrowed.push(frame.data);
+      frames.push({ data: frame.data.slice(), delay: frame.delay });
+      expect(frame.index).toBe(frames.length - 1); expect(frame.frameCount).toBe(4);
+      await Promise.resolve();
+    });
+    expect(metadata).toEqual({ width: 2, height: 2, loop: 3, frameCount: 4 });
+    expect(frames).toEqual(expected.frames);
+    expect(new Set(borrowed).size).toBe(1);
+  });
+  it('cancels frame visits before another frame and propagates scanner failures', async () => {
+    const bytes = gif([[0, 0, 2, 2, [1, 1, 1, 1], {}], [0, 0, 2, 2, [2, 2, 2, 2], {}]]);
+    const controller = new AbortController(), visitor = vi.fn(() => controller.abort());
+    await expect(visitGifFrames(bytes, visitor, { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
+    expect(visitor).toHaveBeenCalledOnce();
+    const problem = new Error('Scan failed');
+    await expect(visitGifFrames(bytes, () => { throw problem; })).rejects.toBe(problem);
+  });
+  it('rejects patches outside the logical canvas before allocating their decoded index stream', async () => {
+    const bytes = gif([[0, 0, 2, 2, [1, 1, 1, 1], {}]]).slice();
+    const info = new omggif.GifReader(bytes).frameInfo(0), descriptor = info.data_offset - 10;
+    bytes.set([255, 255, 255, 255], descriptor + 5);
+    await expect(visitGifFrames(bytes, vi.fn())).rejects.toThrow(/Invalid GIF frame/);
+  });
+  it('visits interlaced colors at their actual source rows', async () => {
+    const bytes = new Uint8Array(2048), w = 3, h = 12;
+    const writer = new omggif.GifWriter(bytes, w, h, { palette: [0, 0xff0000, 0x0000ff, 0x00ff00] });
+    const rows = [0, 8, 4, 2, 6, 10, 1, 3, 5, 7, 9, 11];
+    writer.addFrame(0, 0, w, h, Uint8Array.from(rows.flatMap(y => [y < 6 ? 1 : 2, y < 6 ? 1 : 2, y < 6 ? 1 : 2])));
+    const encoded = bytes.subarray(0, writer.end()), info = new omggif.GifReader(encoded).frameInfo(0);
+    encoded[info.data_offset - 1] |= 0x40;
+    const visitor = vi.fn(frame => {
+      expect(pixels(frame.data)).toEqual(Array.from({ length: w * h }, (_, p) => Math.floor(p / w) < 6 ? RED : BLUE));
+    });
+    await visitGifFrames(encoded, visitor); expect(visitor).toHaveBeenCalledOnce();
+  });
   it('keeps fallback disposal, transparency, delays and loop byte-for-byte', async () => {
     const bytes = gif([
       [0, 0, 2, 2, [1, 0, 1, 1], { disposal: 1, delay: 7 }],

@@ -1,5 +1,30 @@
 # Colorfetti design
 
+## GIF palette consistency — October 18, 2026
+
+Image color counts mean unique visible RGB values across every composited GIF frame.
+They exclude transparent pixels, duplicate table entries and unused table padding.
+Aseprite's final zero-based index and its document palette size measure stored slots,
+which can also combine entries from the GIF's local frame tables. These are different
+quantities. Re-encoding may reorder/compact indices and pad the GIF table to a power
+of two; it preserves pixels, transparency, timing and looping rather than source indices.
+
+Palette-image GIF import uses the same indexed RGB decoder/compositor as artwork,
+without browser bitmap/canvas readback. Every color and Find solid colors union all
+frames in temporal, then spatial reading order. Solid patches belong to each frame
+individually. The editor discloses the whole-clip scope. Retain compressed GIF bytes
+for rescans, one borrowed compositing canvas, any disposal-3 restoration buffer and
+bounded color metadata; do not retain a decoded palette animation. Validate the 16 MP
+logical canvas limit before allocation and each patch's bounds before decoding it.
+One RGB membership bitset uses 2 MiB; solid scanning adds another temporary 2 MiB
+bitset. Keep exact total counts beyond the first 4096 review colors, existing byte
+limits, progress, cancellation, and complete-draft saving rules.
+
+Single-frame GIF artwork also keeps indexed-decoder RGB instead of passing through
+canvas. Analyze and transfer it once on the existing serial worker; the fallback uses
+the same exact pixels. Keep its still-image semantics (PNG save, no animation delay
+or loop). Native PNG and other still-image routes retain their existing behavior.
+
 ## Preview navigation — October 16, 2026
 
 Preview opens at Fit. Wheel, trackpad Ctrl-wheel, +/− controls and
@@ -363,8 +388,8 @@ retained pixels, without a new still-image cache or additional pixel buffer.
 
 Palette export packing yields through the existing posted-task primitive, retaining
 the unsupported-MessageChannel timer fallback and exact output/timing contracts.
-Single-frame GIFs preserve native/browser still pixels; analysis stays on the same
-serial import worker following a controlled single-frame response. Unreadable
+Single-frame GIFs preserve exact indexed-decoder still pixels; analysis and transfer
+stay on the same serial import worker without a native decoding round trip. Unreadable
 worker messages terminate/release the affected job through existing failure and
 recovery rules; canceled imports never fall back or publish.
 
@@ -2612,7 +2637,8 @@ attachments route by binary magic to the existing lazy parser. Image signatures
 identify supported image types, including extensionless GIF. Remote text palette
 URLs are unsupported; their existing local file and text routes remain available.
 Local supported images are
-up to 32 MiB and 16 × 1024 × 1024 decoded pixels. GIF uses the first frame with a notice.
+up to 32 MiB and 16 × 1024 × 1024 decoded pixels per frame. GIF unions every composited
+frame through artwork's exact indexed decoder, with a notice explaining the scope.
 Browser decoding yields color-managed sRGB values; exactness concerns those decoded
 values, not arbitrary original color-profile bytes. Artwork and palette-image import
 share `image-decode.js`: PNG uses native ImageDecoder with default color management
@@ -2627,8 +2653,8 @@ with partial or non-sRGB metadata retain explicit managed RGBA/sRGB copyTo, pres
 profile conversion. Default visible-rectangle copying remains intact. No float16 readback
 replacement or colorSpaceConversion none is introduced. Native capability,
 decoding/copy errors or presentation transforms fall back
-to the existing color-managed bitmap/canvas path. Other image formats retain that path;
-the existing multi-frame GIF decoder is unchanged. Both paths honor cancellation,
+to the existing color-managed bitmap/canvas path. Other still-image formats retain that
+path; GIF palette and artwork imports share the indexed decoder described above. All paths honor cancellation,
 palette pixel limits and resource cleanup. No colors are heuristically rounded or merged.
 The browser can allocate decode
 buffers before dimensions are exposed.

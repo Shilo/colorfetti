@@ -11,13 +11,10 @@ self.onmessage = async ({ data }) => {
       if (data.mode === 'gif') {
         const { decodeGif } = await import('./gif.js');
         const gif = decodeGif(new Uint8Array(await data.file.arrayBuffer()));
-        if (gif.frames.length === 1) {
-          preparing = false;
-          self.postMessage({ type: 'single-frame', count: 1, width: gif.width, height: gif.height });
-          return;
-        }
+        const animated = gif.frames.length > 1;
         decoded = { frames: gif.frames.map(frame => ({ original: { width: gif.width,
-          height: gif.height, data: frame.data }, delay: frame.delay })), loop: gif.loop };
+          height: gif.height, data: frame.data }, ...(animated ? { delay: frame.delay } : {}) })),
+          ...(animated ? { loop: gif.loop } : {}) };
       } else if (data.mode === 'frames') decoded = { frames: data.frames, loop: data.loop };
       else throw new Error('Invalid import operation.');
       state = { decoded: await analyzeImportFrames(decoded, data.source, data.alphaCut, { cooperative: false }), index: 0 };

@@ -15,16 +15,11 @@ function gif() {
   return Object.assign(new Blob([bytes.subarray(0, writer.end())], { type: 'image/gif' }), { name: 'animated.gif' });
 }
 function singleGif() {
-  const bytes = new Uint8Array(20000), writer = new omggif.GifWriter(bytes, width, height, { palette: [0, 0xffffff] });
-  writer.addFrame(0, 0, width, height, new Uint8Array(width * height), { delay: 7 });
+  const bytes = new Uint8Array(20000), writer = new omggif.GifWriter(bytes, width, height,
+    { palette: [0, 0x222323, 0xf0f6f0, 0xff8844], loop: 3 });
+  writer.addFrame(0, 0, width, height, Uint8Array.from({ length: width * height }, (_, i) => i % 4),
+    { transparent: 0, delay: 7 });
   return Object.assign(new Blob([bytes.subarray(0, writer.end())], { type: 'image/gif' }), { name: 'single.gif' });
-}
-function browserGifPixels() {
-  const bitmap = { width, height, close: vi.fn() }, canvas = { width: 0, height: 0,
-    getContext: () => ({ drawImage() {}, getImageData: () => new ImageData(rgba.slice(), width, height) }) };
-  vi.stubGlobal('createImageBitmap', vi.fn(async () => bitmap));
-  vi.stubGlobal('document', { createElement: () => canvas });
-  return { bitmap, canvas };
 }
 let api, native, workers, fault;
 beforeEach(async () => {
@@ -55,19 +50,16 @@ beforeEach(async () => {
     }
     async process(data) {
       if (this.fault === 'stall') return;
-      if (this.fault === 'stall-native-analysis' && data.mode === 'frames') return;
       if (data.type === 'start') {
         if (this.fault === 'error') { queueMicrotask(() => this.onerror?.()); return; }
         if (this.fault === 'messageerror') { queueMicrotask(() => this.onmessageerror?.()); return; }
         let input;
         if (data.mode === 'gif') {
           const decoded = decodeGif(new Uint8Array(await data.file.arrayBuffer()));
-          if (decoded.frames.length === 1) {
-            this.emit({ type: 'single-frame', count: this.fault === 'bad-single' ? 2 : 1,
-              width: decoded.width, height: decoded.height });
-            return;
-          }
-          input = { frames: decoded.frames.map(f => ({ original: { width: decoded.width, height: decoded.height, data: f.data }, delay: f.delay })), loop: decoded.loop };
+          if (this.fault === 'stall-gif-analysis') return;
+          const animated = decoded.frames.length > 1;
+          input = { frames: decoded.frames.map(f => ({ original: { width: decoded.width, height: decoded.height, data: f.data },
+            ...(animated ? { delay: f.delay } : {}) })), ...(animated ? { loop: decoded.loop } : {}) };
         } else input = { frames: data.frames, loop: data.loop };
         this.frames = (await analyzeImportFrames(input, data.source, data.alphaCut, { cooperative: false })).frames;
         const first = this.frames[0].original;
@@ -93,59 +85,81 @@ beforeEach(async () => {
 afterEach(() => { workers.forEach(w => w.terminate()); vi.unstubAllGlobals(); });
 
 describe('lazy serial image imports', () => {
-  it('retains one healthy worker across native single-frame GIFs and mixed imports', async () => {
-    const { bitmap, canvas } = browserGifPixels();
+  it('retains exact single-frame GIF colors and one healthy worker across mixed imports', async () => {
     const files = [singleGif(), gif(), png(), singleGif()];
+    const expected = decodeGif(new Uint8Array(await files[0].arrayBuffer())).frames[0].data;
     const results = await Promise.all(files.map(file => api.decodeImportedFile(file, { source: 'blue', alphaCut: 200 })));
     expect(workers).toHaveLength(1); expect(workers[0].terminated).not.toBe(true);
     expect(results.map(result => result.frames.length)).toEqual([1, 3, 1, 1]);
     for (const result of [results[0], results[3]]) {
-      expect(result.frames[0].original.data).toEqual(rgba); // Native pixels deliberately differ from omggif black.
+      expect(result.frames[0].original.data).toEqual(expected);
       expect(result.frames[0].img.data).toBe(result.frames[0].original.data);
       expect(result.frames[0].img.cut).toBe(200);
       expect(result.loop).toBeUndefined(); expect(result.frames[0].delay).toBeUndefined();
     }
-    expect(createImageBitmap).toHaveBeenCalledTimes(2); expect(bitmap.close).toHaveBeenCalledTimes(2);
-    expect(canvas.width).toBe(0); expect(canvas.height).toBe(0);
+    expect(createImageBitmap).not.toHaveBeenCalled(); expect(native).toHaveBeenCalledOnce();
+    expect(workers[0].sent.filter(type => type === 'start')).toHaveLength(4);
     expect(workers[0].onmessage).toBeNull(); expect(workers[0].onmessageerror).toBeNull();
   });
-  it('aborts a pending native single-GIF decode without publishing or falling back and drains the queue', async () => {
-    browserGifPixels(); const controller = new AbortController(); let release;
-    const bitmap = { width, height, close: vi.fn() };
-    createImageBitmap.mockImplementationOnce(() => new Promise(resolve => { release = () => resolve(bitmap); }));
+  it('aborts a pending single-GIF worker decode without native fallback and drains the queue', async () => {
+    fault = 'stall'; const controller = new AbortController();
     const held = api.decodeImportedFile(singleGif(), { signal: controller.signal });
     const rejected = expect(held).rejects.toMatchObject({ name: 'AbortError' });
-    await vi.waitFor(() => expect(release).toBeTypeOf('function'));
-    const next = api.decodeImportedFile(png()); controller.abort(); release(); await rejected;
+    await vi.waitFor(() => expect(workers[0]?.sent).toEqual(['start']));
+    fault = null; const next = api.decodeImportedFile(png()); controller.abort(); await rejected;
     expect((await next).frames[0].original.data).toEqual(rgba);
-    expect(createImageBitmap).toHaveBeenCalledOnce(); expect(bitmap.close).toHaveBeenCalledOnce();
-    expect(workers).toHaveLength(1); expect(workers[0].terminated).not.toBe(true);
+    expect(createImageBitmap).not.toHaveBeenCalled(); expect(native).toHaveBeenCalledOnce();
+    expect(workers).toHaveLength(2); expect(workers[0].terminated).toBe(true); expect(workers[1].terminated).not.toBe(true);
   });
-  it('aborts single-GIF worker analysis after native decode without re-decoding and restarts queued work', async () => {
-    browserGifPixels(); fault = 'stall-native-analysis'; const controller = new AbortController();
+  it('aborts single-GIF worker analysis without re-decoding and restarts queued work', async () => {
+    fault = 'stall-gif-analysis'; const controller = new AbortController();
     const held = api.decodeImportedFile(singleGif(), { signal: controller.signal });
     const rejected = expect(held).rejects.toMatchObject({ name: 'AbortError' });
-    await vi.waitFor(() => expect(workers[0]?.sent).toEqual(['start', 'start']));
+    await vi.waitFor(() => expect(workers[0]?.sent).toEqual(['start']));
     const late = workers[0].onmessageerror; fault = null;
     const next = api.decodeImportedFile(png()); controller.abort(); await rejected;
     expect((await next).frames[0].original.data).toEqual(rgba);
-    expect(createImageBitmap).toHaveBeenCalledOnce(); expect(workers[0].terminated).toBe(true);
+    expect(createImageBitmap).not.toHaveBeenCalled(); expect(workers[0].terminated).toBe(true);
     expect(workers).toHaveLength(2); late(); expect(workers[1].terminated).not.toBe(true);
   });
-  it('keeps native single-GIF pixels and animated compositing in the no-worker fallback', async () => {
-    browserGifPixels(); vi.stubGlobal('Worker', undefined);
+  it('keeps exact single-GIF pixels and animated compositing in the no-worker fallback', async () => {
+    vi.stubGlobal('Worker', undefined);
     const file = gif(), expected = decodeGif(new Uint8Array(await file.arrayBuffer()));
-    const [single, animated] = await Promise.all([api.decodeImportedFile(singleGif()), api.decodeImportedFile(file)]);
-    expect(single.frames[0].original.data).toEqual(rgba); expect(single.frames[0].img.data).toBe(single.frames[0].original.data);
+    const still = singleGif(), expectedStill = decodeGif(new Uint8Array(await still.arrayBuffer())).frames[0].data;
+    const [single, animated] = await Promise.all([api.decodeImportedFile(still), api.decodeImportedFile(file)]);
+    expect(single.frames[0].original.data).toEqual(expectedStill); expect(single.frames[0].img.data).toBe(single.frames[0].original.data);
+    expect(single.loop).toBeUndefined(); expect(single.frames[0].delay).toBeUndefined();
     expect(animated.frames.map(frame => frame.original.data)).toEqual(expected.frames.map(frame => frame.data));
     expect(animated.frames.map(frame => frame.delay)).toEqual([70, 120, 250]); expect(animated.loop).toBe(3);
-    expect(workers).toHaveLength(0); expect(createImageBitmap).toHaveBeenCalledOnce();
+    expect(workers).toHaveLength(0); expect(createImageBitmap).not.toHaveBeenCalled(); expect(native).not.toHaveBeenCalled();
   });
-  it('rejects malformed single-GIF metadata through immutable-file native recovery', async () => {
-    browserGifPixels(); fault = 'bad-single';
-    const decoded = await api.decodeImportedFile(singleGif());
-    expect(decoded.frames[0].original.data).toEqual(rgba);
-    expect(workers[0].terminated).toBe(true); expect(createImageBitmap).toHaveBeenCalledOnce();
+  it.each(['messageerror', 'metadata', 'rgba', 'after-frame'])('recovers single-GIF %s failures with exact immutable-file pixels', async mode => {
+    fault = mode; const file = singleGif(), expected = decodeGif(new Uint8Array(await file.arrayBuffer())).frames[0].data;
+    const decoded = await api.decodeImportedFile(file);
+    expect(decoded.frames[0].original.data).toEqual(expected);
+    expect(decoded.loop).toBeUndefined(); expect(decoded.frames[0].delay).toBeUndefined();
+    expect(workers[0].terminated).toBe(true); expect(createImageBitmap).not.toHaveBeenCalled(); expect(native).not.toHaveBeenCalled();
+  });
+  it.each([false, true])('routes uppercase GIF filenames with missing MIME through exact decoding (fallback %s)', async fallback => {
+    if (fallback) vi.stubGlobal('Worker', undefined);
+    const source = singleGif(), expected = decodeGif(new Uint8Array(await source.arrayBuffer())).frames[0].data;
+    const file = Object.assign(new Blob([source]), { name: 'single.GIF' });
+    const decoded = await api.decodeImportedFile(file);
+    expect(decoded.frames[0].original.data).toEqual(expected);
+    expect(decoded.loop).toBeUndefined(); expect(decoded.frames[0].delay).toBeUndefined();
+    expect(createImageBitmap).not.toHaveBeenCalled(); expect(native).not.toHaveBeenCalled();
+  });
+  it.each([false, true])('keeps cancellation authoritative after a pending fallback GIF read (read rejects %s)', async rejectRead => {
+    vi.stubGlobal('Worker', undefined);
+    const source = singleGif(), bytes = await source.arrayBuffer(), controller = new AbortController(); let settle;
+    source.arrayBuffer = vi.fn(() => new Promise((resolve, reject) => {
+      settle = () => rejectRead ? reject(new Error('Late read failure')) : resolve(bytes);
+    }));
+    const pending = api.decodeImportedFile(source, { signal: controller.signal });
+    const rejected = expect(pending).rejects.toMatchObject({ name: 'AbortError' });
+    await vi.waitFor(() => expect(settle).toBeTypeOf('function'));
+    controller.abort(); settle(); await rejected;
+    expect(createImageBitmap).not.toHaveBeenCalled(); expect(native).not.toHaveBeenCalled();
   });
   it('recovers unreadable worker responses from the immutable file and starts queued work on a fresh worker', async () => {
     fault = 'stall';

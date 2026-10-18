@@ -55,6 +55,13 @@ colors. Adding/removing art can recolor earlier tiles. Edit saves a fixed copy t
 stops following the wall. Generated improves source fidelity in the tested corpus,
 but may preserve unwanted AI noise; it does not infer intentional outlines/details.
 
+With at most 64 eligible source RGB colors, Auto keeps those colors exactly. Image
+captions count unique visible output RGBs across the whole GIF, excluding transparency.
+An indexed file's stored palette may also contain duplicates, unused slots and a
+transparent entry; its slot count or final zero-based index is not the image color
+count. Export compacts/reorders indices and pads GIF tables as required by the format,
+while preserving the converted visible pixels.
+
 Auto's tooltip starts with its completed color count and source: for example,
 **Auto · 32 colors · Your images**, or **Auto · 11 colors · Example image**.
 The next line explains generation. This metadata updates with the published palette;
@@ -278,9 +285,12 @@ notice identifies that export palette and asks you to finish or cancel the draft
 try Save again. The draft, editing limit and saved record remain unchanged.
 
 - **Images:** PNG, JPEG, WebP, BMP and GIF, up to 32 MiB and 16 × 1024 × 1024 decoded
-  pixels. GIF contributes its first frame, with a notice. Decoding is browser-managed,
-  color-managed sRGB. These are decoded values, not a guarantee about original profile or
-  file bytes, and the browser may allocate decode buffers before dimensions are known.
+  pixels per frame. GIF contributes the unique visible RGBs from every composited
+  frame, using the same exact indexed decoder as artwork import. Transparent pixels,
+  duplicate entries and unused table slots do not add colors. Other image decoding is
+  browser-managed, color-managed sRGB. Those are decoded values, not a guarantee about
+  original profile or file bytes, and the browser may allocate decode buffers before
+  dimensions are known.
 - **Text:** pasted or HEX/TXT colors, legacy RGB GPL, and text JASC-PAL version 0100,
   up to 256 KiB. Hex tokens accept `#RGB`, `#RRGGBB`, or bare six-digit hex, separated
   by whitespace, commas or semicolons. Alpha hex, binary PAL, Adobe ASE/ACO and malformed or

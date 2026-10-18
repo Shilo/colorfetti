@@ -1,10 +1,25 @@
-import { extractPalette, parsePaletteText, MAX_IMPORT_PIXELS, MAX_TEXT_BYTES } from './palette-import.js';
+import { extractPalette, createPaletteExtractor, parsePaletteText, MAX_IMPORT_PIXELS, MAX_TEXT_BYTES } from './palette-import.js';
 import { checkCanceled } from './quantize.js';
 import { decodeImageFile } from './image-decode.js';
 
 export const MAX_IMAGE_BYTES = 32 * 1024 * 1024;
 
+export async function extractPaletteImage(image, options = {}) {
+  if (!image?.gifBytes) return extractPalette(image, options);
+  const { signal, onProgress } = options;
+  checkCanceled(signal);
+  const { visitGifFrames } = await import('./gif.js');
+  checkCanceled(signal);
+  const extractor = createPaletteExtractor(options);
+  const metadata = await visitGifFrames(image.gifBytes, frame => extractor.add(frame,
+    value => onProgress?.((frame.index + value) / frame.frameCount)), {
+    signal, maxPixels: MAX_IMPORT_PIXELS, limitMessage: 'Palette images must be no larger than 16 megapixels.',
+  });
+  return { ...extractor.finish(), frameCount: metadata.frameCount };
+}
+
 // Images use artwork's color-managed browser decoding; exact means decoded sRGB.
+// GIF uses artwork's exact indexed decoder across all composited frames.
 // Aseprite imports its stored palette RGB entries, without rendering or profiles.
 export async function decodePaletteFile(file, { signal, onProgress } = {}) {
   checkCanceled(signal);
@@ -32,8 +47,17 @@ export async function decodePaletteFile(file, { signal, onProgress } = {}) {
   }
   if (!['png', 'jpg', 'jpeg', 'webp', 'bmp', 'gif'].includes(extension) && !/^image\/(png|jpeg|webp|bmp|gif)$/.test(file.type || '')) throw new Error('Use a PNG, JPEG, WebP, BMP, GIF, HEX/TXT, GPL, JASC-PAL or Aseprite palette file.');
   if (file.size > MAX_IMAGE_BYTES) throw new Error('Palette images must be no larger than 32 MiB.');
+  if (extension === 'gif' || file.type === 'image/gif') {
+    let bytes;
+    try { bytes = await file.arrayBuffer(); }
+    catch (problem) { checkCanceled(signal); throw problem; }
+    checkCanceled(signal);
+    const image = { gifBytes: new Uint8Array(bytes) };
+    const result = await extractPaletteImage(image, { signal, onProgress });
+    return { image, ...result, firstFrame: false, source: { kind: 'image' } };
+  }
   const image = await decodeImageFile(file, { signal, maxPixels: MAX_IMPORT_PIXELS,
     limitMessage: 'Palette images must be no larger than 16 megapixels.' });
   const result = await extractPalette(image, { signal, onProgress });
-  return { image, ...result, firstFrame: extension === 'gif' || file.type === 'image/gif', source: { kind: 'image' } };
+  return { image, ...result, firstFrame: false, source: { kind: 'image' } };
 }
