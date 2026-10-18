@@ -393,7 +393,7 @@
       <button class="cap btn glass-btn glass-btn--primary example-add" onclick={e => activate(e.currentTarget)} aria-label="Add images" use:tooltip={'Choose images from your device.'}>
         <span class="caption-details">
           <span class="name">{item.name}</span>
-          <span class="dim">{item.img.w}<span class="by">×</span>{item.img.h}</span>
+          <CaptionMetadata width={item.img.w} height={item.img.h} label={displayedUsageLabel} pending={displayedUsagePending} description={usageDescription} failure={failureDescription} leftAligned />
         </span>
         <span class="example-add-label">
           <span class="example-label-desktop">Add, drop or paste images</span>

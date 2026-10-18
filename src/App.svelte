@@ -711,7 +711,7 @@
   // Per-item subscriptions avoid invalidating every caption on each publication.
   const colorUsage = new SvelteMap();
   function previewUsage({ item, key, colors, used, frame, frames, exact = true }) {
-    if (key !== usageKey || family !== 'full-palette' || generatedPending || generatedUnavailable || !items.includes(item)) return;
+    if (key !== usageKey || family !== 'full-palette' || generatedPending || generatedUnavailable || !canvasItems.includes(item)) return;
     const previous = usageFor(item);
     // Pending inspections own their record identity and explicit-join flag.
     // Their full-source result will replace the retained presentation atomically.
@@ -742,7 +742,7 @@
   };
   const usagePending = item => !!lastUsageResult(item) && !usageFor(item)?.result;
   $effect(() => {
-    const key = usageKey, live = items, retain = family === 'full-palette';
+    const key = usageKey, live = canvasItems, retain = family === 'full-palette';
     // Observe source/settings changes, never metadata publications themselves.
     untrack(() => {
       const current = new Map(live.map(item => [item.id, item]));
@@ -763,14 +763,14 @@
   // when several wall tiles, Preview and Reuse request metadata together.
   let usageQueue = Promise.resolve();
   function countColors(item, explicit = false) {
-    if (family !== 'full-palette' || generatedPending || generatedUnavailable || itemPaletteFailed(item) || !items.includes(item)) return Promise.resolve(null);
+    if (family !== 'full-palette' || generatedPending || generatedUnavailable || itemPaletteFailed(item) || !canvasItems.includes(item)) return Promise.resolve(null);
     const previous = usageFor(item);
     if (previous?.status === 'pending') { previous.explicit ||= explicit; return previous.promise; }
     if (previous?.result) return Promise.resolve(previous.result);
     const snapshot = asking(), key = usageKey, controller = new AbortController();
     const record = { item, key, controller, status: 'pending', explicit, previousResult: lastUsageResult(item) };
     const publish = value => {
-      if (!controller.signal.aborted && key === usageKey && items.includes(item) && colorUsage.get(item.id) === record)
+      if (!controller.signal.aborted && key === usageKey && canvasItems.includes(item) && colorUsage.get(item.id) === record)
         colorUsage.set(item.id, { item, key, ...value });
     };
     record.promise = usageQueue.then(async () => {
@@ -797,7 +797,7 @@
   // Preview. Closing Preview leaves the wall's shared request alive. Reuse joins
   // that same exact result; obsolete source/settings requests are canceled above.
   $effect(() => {
-    const live = items, key = usageKey, failures = currentPaletteFailures;
+    const live = canvasItems, key = usageKey, failures = currentPaletteFailures;
     paletteRetry;
     if (family !== 'full-palette' || generatedPending || generatedUnavailable) return;
     // Metadata publications never reschedule inspection or subscribe every

@@ -1,0 +1,113 @@
+{
+  "url": "http://127.0.0.1:5352/",
+  "errors": [],
+  "checks": [
+    {
+      "name": "desktop: theme, Original, left alignment and bounds",
+      "geometry": {
+        "resolution": {
+          "x": 276,
+          "y": 785,
+          "right": 321.28125,
+          "bottom": 803
+        },
+        "count": {
+          "x": 330.546875,
+          "y": 785,
+          "right": 376.28125,
+          "bottom": 803
+        },
+        "caption": {
+          "x": 269,
+          "y": 763,
+          "right": 1011,
+          "bottom": 807
+        }
+      }
+    },
+    {
+      "name": "touch-portrait: theme, Original, left alignment and bounds",
+      "geometry": {
+        "resolution": {
+          "x": 19,
+          "y": 542,
+          "right": 59.09375,
+          "bottom": 558
+        },
+        "count": {
+          "x": 68.359375,
+          "y": 542,
+          "right": 114.09375,
+          "bottom": 558
+        },
+        "caption": {
+          "x": 12,
+          "y": 515,
+          "right": 378,
+          "bottom": 567
+        }
+      }
+    },
+    {
+      "name": "touch-landscape: theme, Original, left alignment and bounds",
+      "geometry": {
+        "resolution": {
+          "x": 307,
+          "y": 288,
+          "right": 347.09375,
+          "bottom": 304
+        },
+        "count": {
+          "x": 356.359375,
+          "y": 288,
+          "right": 402.09375,
+          "bottom": 304
+        },
+        "caption": {
+          "x": 300,
+          "y": 261,
+          "right": 544,
+          "bottom": 313
+        }
+      }
+    },
+    {
+      "name": "generated-32: automatic count, matching and demo/import transitions",
+      "count": 6
+    },
+    {
+      "name": "preset-res64: automatic count, matching and demo/import transitions",
+      "count": 6
+    },
+    {
+      "name": "preset-edg32: automatic count, matching and demo/import transitions",
+      "count": 6
+    },
+    {
+      "name": "1-bit cutout, None 0: actual used count and Original",
+      "count": 2
+    },
+    {
+      "name": "1-bit cutout, None 1: actual used count and Original",
+      "count": 1
+    },
+    {
+      "name": "1-bit silhouette, None 0: actual used count and Original",
+      "count": 1
+    },
+    {
+      "name": "1-bit silhouette, None 2: actual used count and Original",
+      "count": 1
+    }
+  ],
+  "oracle": {
+    "light": {
+      "original": 6,
+      "blackAndWhite": 2
+    },
+    "dark": {
+      "original": 6,
+      "blackAndWhite": 1
+    }
+  }
+}
