@@ -1,0 +1,1 @@
+{"identical":true,"traffic":{"histogramChunks":950,"pixelChunks":8564},"limiter":{"cases":1291,"histogram":820,"fallback":471,"mismatches":0},"generated":{"cases":237,"histogramAssets":236,"fallbackAssets":129,"mismatches":0}}

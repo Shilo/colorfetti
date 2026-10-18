@@ -1,0 +1,1 @@
+identical: 24000 unchanged image/style/threshold combinations including Stencil; 2400 changed Icon cases with structural previews checked at 5 sizes

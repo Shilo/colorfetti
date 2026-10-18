@@ -70,7 +70,8 @@ export async function selectPaletteSubset(colors, maxColors, readChunks, { alpha
           if (bins) addBin(rgb, scratch, weight);
         }
         // Repeated exact RGBs have the same error. Retain the original per-pixel
-        // accumulation order; after binning, original pixels are still measured.
+        // accumulation order (a summary histogram sums per color, so only the diagnostic
+        // fullCost can differ in its last bits); after binning, original pixels are still measured.
         frequency[winner] += weight; fullCost += cost * weight;
       }
       if ((at & 1023) === 0) await pause();

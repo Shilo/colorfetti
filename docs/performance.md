@@ -511,7 +511,7 @@ are picked from all of them.
   through it is the same sums in the same order. `analyze` does not share it. The band
   loop must read its arrays from an object, and `analyze`'s loop changed only that way was
   14% slower on a 2048 see-through photo with Red in Node; imports and previews keep
-  `analyze` as it was. `bench/second-performance-audit-2026-10-17/c-b5/` has the
+  `analyze` as it was. `bench/second-performance-audit-2026-10-17/c-b5/` (and `wave2/`, `android/ab-b5/`) has the
   exactness, band and timing evidence.
 - **Why the differences are kept.** Lines and Cutout asked for them at every pixel on
   every threshold change, and working them out from RGBA is most of their cost. Without the
@@ -698,7 +698,7 @@ can do nothing else meanwhile.
   Pixel 8 Pro, a Threshold drag over four 512 px Checker images went from 975 to 750 ms of
   renderer CPU; the final caption arrives 11 ms later (October 18).
 - Full palette PNGs compress in fflate's worker, which it starts for each call. Rows that
-  fit one 64 KiB packing batch compress synchronously instead, to the same bytes: on the
+  total at most 64 KiB compress synchronously instead, to the same bytes: on the
   Pixel 8 Pro a tiny palette Save went from 66 to 25 ms click to download (October 18).
 - Download all converts and encodes one image at a time, so only one full mask is in
   memory at once.
@@ -1452,7 +1452,7 @@ browser (Chrome 152, 927×827, DPR 1) and the USB Pixel 8 Pro (Brave/Chrome 155,
 cold Stencil (≈130 ms) and the phone-only 256-color editor Review layout (≈187 ms,
 mostly style/layout; app script is small and the desktop reproduction found none).
 
-One exact change shipped: non-luma `analyze` uses its own single loop, and the seam
+The first exact change from this audit: non-luma `analyze` uses its own single loop, and the seam
 pass skips zero-difference pixels. Rapid Brightness R→G→Value on a 2048 sheet, in
 alternating pairs: phone renderer CPU 569→444 ms and 611→430 ms in two rounds, max
 Long Task 151→114 and 162→111 ms, every pair faster; desktop 210→160 ms with its

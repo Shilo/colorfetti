@@ -1,0 +1,10 @@
+1:23:17 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti/.claude/worktrees/agent-a2312d58878913461 - using default configuration.
+
+ RUN  v4.1.11 C:/Programming_Files/Shilocity/colorfetti/.claude/worktrees/agent-a2312d58878913461
+
+
+ Test Files  66 passed (66)
+      Tests  1052 passed | 2 skipped (1054)
+   Start at  01:23:17
+   Duration  6.50s (transform 3.62s, setup 0ms, import 5.67s, tests 28.97s, environment 6ms)
+

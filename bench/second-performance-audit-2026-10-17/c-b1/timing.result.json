@@ -1,0 +1,53 @@
+{
+ "runs": 11,
+ "note": "Shared desktop host (Node v25.0.0); alternating HEAD/new; differences under ~10% are noise.",
+ "sheet2048": {
+  "histogramEntries": 37,
+  "rawBytes": 16777216,
+  "ms": {
+   "headLimitRaw": 100.838,
+   "newLimitHistogram": 3.535,
+   "newLimitRawFallback": 101.131,
+   "headAutoRaw": 22.871,
+   "newAutoHistogram": 0.043,
+   "newAutoRawFallback": 24.005,
+   "headSliceCopies": 13.286,
+   "newSummaryHistogram": 0.052,
+   "headColdSummaryScan": 11.32,
+   "newColdSummaryScan": 11.442
+  }
+ },
+ "tinyKnight16": {
+  "histogramEntries": 8,
+  "rawBytes": 1024,
+  "ms": {
+   "headLimitRaw": 1.285,
+   "newLimitHistogram": 0.982,
+   "newLimitRawFallback": 1.006,
+   "headAutoRaw": 0.064,
+   "newAutoHistogram": 0.021,
+   "newAutoRawFallback": 0.043,
+   "headSliceCopies": 0.005,
+   "newSummaryHistogram": 0.015,
+   "headColdSummaryScan": 0.012,
+   "newColdSummaryScan": 0.015
+  }
+ },
+ "motion256": {
+  "histogramEntries": 16,
+  "rawBytes": 12582912,
+  "ms": {
+   "headLimitRaw": 56.508,
+   "newLimitHistogram": 0.813,
+   "newLimitRawFallback": 55.983,
+   "headAutoRaw": 17.689,
+   "newAutoHistogram": 0.034,
+   "newAutoRawFallback": 17.595,
+   "headSliceCopies": 8.184,
+   "newSummaryHistogram": 0.067,
+   "headColdSummaryScan": 7.517,
+   "newColdSummaryScan": 10.154
+  }
+ },
+ "units": "Limiter: three sequential jobs (Max colors 2, 4, 8). Auto: one asset. Slice/histogram: three passes of main-thread input preparation. Summary: one cold scan per frame."
+}

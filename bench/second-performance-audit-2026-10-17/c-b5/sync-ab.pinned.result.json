@@ -1,0 +1,50 @@
+{
+ "photo 2048 luma": {
+  "aaHeadOverHead": 1.002,
+  "candidateOverHead": 1.05
+ },
+ "photo 2048 value": {
+  "aaHeadOverHead": 1.135,
+  "candidateOverHead": 1.009
+ },
+ "photo 2048 red": {
+  "aaHeadOverHead": 0.895,
+  "candidateOverHead": 0.915
+ },
+ "photo 2048 sprite luma": {
+  "aaHeadOverHead": 0.945,
+  "candidateOverHead": 0.956
+ },
+ "photo 2048 sprite value": {
+  "aaHeadOverHead": 0.916,
+  "candidateOverHead": 0.921
+ },
+ "photo 2048 sprite red": {
+  "aaHeadOverHead": 0.913,
+  "candidateOverHead": 0.923
+ },
+ "sheet 2048 luma": {
+  "aaHeadOverHead": 0.906,
+  "candidateOverHead": 0.903
+ },
+ "sheet 2048 value": {
+  "aaHeadOverHead": 0.915,
+  "candidateOverHead": 0.908
+ },
+ "sheet 2048 red": {
+  "aaHeadOverHead": 0.908,
+  "candidateOverHead": 0.903
+ },
+ "photo 512 sprite luma": {
+  "aaHeadOverHead": 0.972,
+  "candidateOverHead": 1.012
+ },
+ "photo 512 sprite value": {
+  "aaHeadOverHead": 0.989,
+  "candidateOverHead": 1.031
+ },
+ "photo 512 sprite red": {
+  "aaHeadOverHead": 1.002,
+  "candidateOverHead": 1.008
+ }
+}

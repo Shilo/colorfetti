@@ -1,0 +1,21 @@
+C-B5: why `analyze` keeps its own loops (desktop Node 25, one core pinned, High priority)
+
+First design (rejected-shared-function.patch): `analyze` and the banded path share one row-range
+function over arrays held on the analysis object. Exact (same differential), but the sync path:
+- bench/bench.mjs analyze, before -> after: 6.5->6.6, 4.4->4.7, 94.4->95.5, 63.9->64.9,
+  268.9->272.1, 182.6->185.3 ms (every row slower, +1 to +7%).
+- rejected-shared-variants.mjs, paired-ratio medians of 41 pairs, one fresh process per cell:
+
+  case          A/A (HEAD copy)   shared function   HEAD + arrays read from an escaping object
+  sprite red    1.000             1.152             1.144
+  photo luma    1.000             1.017             1.007
+  sprite luma   0.999             1.016             1.002
+  s512 red      0.999             0.990             0.999
+
+  An earlier pass (same script, four variants) also had sprite red 1.155-1.161 for every
+  shared-function variant, including ones with `p = 0, i = 0` and `| 0` / `<< 2` index hints.
+
+HEAD with nothing changed except where lum/right/down come from reproduces the 2048 sprite red
++14%: the loop is faster over arrays it allocated itself. A band function has to read them from
+an object, so `analyze` keeps HEAD's code and the banded path has one loop of its own
+(the weighted non-luma loop, which gives luma the same sums in the same order).

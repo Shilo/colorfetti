@@ -1,0 +1,95 @@
+diff --git a/.tmp/c-b5/frozen/src/lib/recolor.js b/.tmp/c-b5/recolor.shared.js
+index e251a51..1fa373d 100644
+--- a/.tmp/c-b5/frozen/src/lib/recolor.js
++++ b/.tmp/c-b5/recolor.shared.js
+@@ -101,8 +101,8 @@ function seamStrength(frames, t) {
+ }
+ // A difference of 0 (identical or empty neighbours) only counts in hist[0], which
+ // seamThreshold always clears, so those pairs are skipped.
+-function addSeams(hist, { w, h, lum, right, down }, t) {
+-  for (let y = 0, p = 0; y < h; y++) for (let x = 0; x < w; x++, p++) {
++function addSeams(hist, { w, h, lum, right, down }, t, y0 = 0, y1 = h) {
++  for (let y = y0, p = y0 * w; y < y1; y++) for (let x = 0; x < w; x++, p++) {
+     const r = right[p], d = down[p];
+     if (!r && !d) continue;
+     const light = lum[p] > t;
+@@ -129,11 +129,45 @@ function seamThreshold(hist) {
+ // again when the style in use has other values for them.
+ // The loops here and in `mask` are written flat, with nothing made per pixel: a photo has
+ // millions of pixels, and a phone goes through them several times slower than a desktop.
+-export function analyze({ width: w, height: h, data }, source = 'luma', cut = ALPHA_CUT) {
+-  const lum = new Uint8Array(w * h), right = new Uint8Array(w * h), down = new Uint8Array(w * h);
+-  const hist = new Uint32Array(256), edges = new Uint32Array(256), below = w * 4; // counts, in arrays of numbers only: a plain array made the loop a little slower
++export function analyze(pixels, source = 'luma', cut = ALPHA_CUT) {
++  const img = analysis(pixels, cut);
++  analyzeRows(img, source, 0, img.h);
++  finish(img);
++  img.autoSeam = seamStrength([img], img.auto);
++  return img;
++}
++// The same analysis for live reanalysis only; imports and previews keep `analyze`. Rows go in
++// steps of quantizeAsync's 8192 pixels, and once its 8 ms target has passed, a posted task and
++// a cancellation check come before the next step, so a big frame no longer holds the main
++// thread for its whole pass. A small one takes no extra task. Every field is a count, a min/max
++// or an or, so the bands add up to `analyze`'s result exactly.
++export async function analyzeAsync(pixels, source = 'luma', cut = ALPHA_CUT, { signal } = {}) {
++  const img = analysis(pixels, cut), seams = new Array(256).fill(0), clock = { deadline: performance.now() + 8 };
++  await inBands(img, signal, clock, (y0, y1) => analyzeRows(img, source, y0, y1));
++  finish(img);
++  await inBands(img, signal, clock, (y0, y1) => addSeams(seams, img, img.auto, y0, y1));
++  img.autoSeam = seamThreshold(seams);
++  return img;
++}
++async function inBands({ w, h }, signal, clock, rows) {
++  for (let y = 0, step = Math.max(1, Math.ceil(8192 / w)); y < h; y += step) {
++    rows(y, Math.min(h, y + step));
++    if (y + step < h && performance.now() >= clock.deadline) {
++      await yieldTask();
++      checkCanceled(signal);
++      clock.deadline = performance.now() + 8;
++    }
++  }
++}
++const analysis = ({ width: w, height: h, data }, cut) => ({
++  w, h, data, lum: new Uint8Array(w * h), right: new Uint8Array(w * h), down: new Uint8Array(w * h), cut, hasAlpha: false, soft: false, lo: 255, hi: 0,
++  hist: new Uint32Array(256), edges: new Uint32Array(256), auto: 0, autoLine: 0, // counts, in arrays of numbers only: a plain array made the loop a little slower
++});
++// Rows y0 to y1 of `analyze`, adding their `hasAlpha`, `soft`, `lo` and `hi` to `img`'s.
++function analyzeRows(img, source, y0, y1) {
++  const { w, h, data, lum, right, down, cut, hist, edges } = img, below = w * 4;
+   let hasAlpha = false, lo = 255, hi = 0, part = 0;
+-  if (source === 'luma') for (let y = 0, p = 0, i = 0; y < h; y++) for (let x = 0; x < w; x++, p++, i += 4) {
++  if (source === 'luma') for (let y = y0, p = y0 * w, i = p * 4; y < y1; y++) for (let x = 0; x < w; x++, p++, i += 4) {
+     // `part` gathers the bits of every alpha plus one. An alpha of 0 gives 1 and one of 255 gives
+     // 256; any alpha between gives a number with one of the bits of 254 in it. So those bits say
+     // whether a pixel is partly see-through, for one sum and one `or` and no choice to make.
+@@ -151,7 +185,7 @@ export function analyze({ width: w, height: h, data }, source = 'luma', cut = AL
+     // between them inside the loop above made every image take an eighth longer; a second pass
+     // over the luma loop's results cost a fifth more than this for Value at 2048x2048.
+     const [wr, wg, wb] = SOURCES[source] ?? SOURCES.luma, value = source === 'value';
+-    for (let y = 0, p = 0, i = 0; y < h; y++) for (let x = 0; x < w; x++, p++, i += 4) {
++    for (let y = y0, p = y0 * w, i = p * 4; y < y1; y++) for (let x = 0; x < w; x++, p++, i += 4) {
+       part |= data[i + 3] + 1;
+       if (data[i + 3] < cut) { hasAlpha = true; continue; }
+       const l = (lum[p] = value ? Math.max(data[i], data[i + 1], data[i + 2]) : Math.round(wr * data[i] + wg * data[i + 1] + wb * data[i + 2]));
+@@ -162,11 +196,17 @@ export function analyze({ width: w, height: h, data }, source = 'luma', cut = AL
+       if (y + 1 < h && data[i + below + 3] >= cut) edges[(down[p] = diff(data, i, i + below))]++;
+     }
+   }
++  if (hasAlpha) img.hasAlpha = true;
++  if (part & 254) img.soft = true;
++  if (lo < img.lo) img.lo = lo;
++  if (hi > img.hi) img.hi = hi;
++}
++function finish(img) {
++  const { hist, edges } = img;
+   edges[0] = 0; // identical neighbours are not edges
+-  const img = { w, h, data, lum, right, down, cut, hasAlpha, soft: (part & 254) !== 0, lo, hi, hist, edges, auto: otsu(hist, 127), autoLine: Math.max(MIN_EDGE, otsu(edges, 0)) };
++  img.auto = otsu(hist, 127);
++  img.autoLine = Math.max(MIN_EDGE, otsu(edges, 0));
+   img.autoTone = toneCenter(hist, img.auto);
+-  img.autoSeam = seamStrength([img], img.auto);
+-  return img;
+ }
+ 
+ // Makes every frame of an animation convert the same way: the Auto thresholds and the brightness

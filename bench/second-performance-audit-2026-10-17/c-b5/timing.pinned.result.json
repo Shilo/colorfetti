@@ -1,0 +1,114 @@
+{
+ "sync": {
+  "photo 512 luma": {
+   "headMs": 6.36,
+   "candidateMs": 6.4,
+   "pairedRatio": 1.01
+  },
+  "photo 512 value": {
+   "headMs": 5.69,
+   "candidateMs": 5.78,
+   "pairedRatio": 1.01
+  },
+  "photo 512 red": {
+   "headMs": 5.73,
+   "candidateMs": 5.75,
+   "pairedRatio": 1
+  },
+  "photo 2048 luma": {
+   "headMs": 94.38,
+   "candidateMs": 95.89,
+   "pairedRatio": 1.01
+  },
+  "photo 2048 value": {
+   "headMs": 84.71,
+   "candidateMs": 76.2,
+   "pairedRatio": 0.9
+  },
+  "photo 2048 red": {
+   "headMs": 87.21,
+   "candidateMs": 79.02,
+   "pairedRatio": 0.9
+  },
+  "photo 2048 sprite luma": {
+   "headMs": 64.41,
+   "candidateMs": 61.58,
+   "pairedRatio": 0.96
+  },
+  "photo 2048 sprite value": {
+   "headMs": 58.72,
+   "candidateMs": 53.37,
+   "pairedRatio": 0.91
+  },
+  "photo 2048 sprite red": {
+   "headMs": 60.4,
+   "candidateMs": 54.86,
+   "pairedRatio": 0.91
+  },
+  "sheet 2048 luma": {
+   "headMs": 25.99,
+   "candidateMs": 26.22,
+   "pairedRatio": 1
+  },
+  "sheet 2048 value": {
+   "headMs": 24.77,
+   "candidateMs": 24.68,
+   "pairedRatio": 1
+  },
+  "sheet 2048 red": {
+   "headMs": 25.9,
+   "candidateMs": 25.91,
+   "pairedRatio": 1
+  }
+ },
+ "reanalysis": {
+  "sheet 2048 red": {
+   "head": {
+    "maxStretchMs": 29.55,
+    "postedTasks": 1,
+    "totalMs": 29.74
+   },
+   "candidate": {
+    "maxStretchMs": 8.11,
+    "postedTasks": 4,
+    "totalMs": 26.82
+   }
+  },
+  "sheet 2048 green": {
+   "head": {
+    "maxStretchMs": 28.98,
+    "postedTasks": 1,
+    "totalMs": 29.13
+   },
+   "candidate": {
+    "maxStretchMs": 8.13,
+    "postedTasks": 4,
+    "totalMs": 26.74
+   }
+  },
+  "sheet 2048 value": {
+   "head": {
+    "maxStretchMs": 27.19,
+    "postedTasks": 1,
+    "totalMs": 27.24
+   },
+   "candidate": {
+    "maxStretchMs": 8.12,
+    "postedTasks": 4,
+    "totalMs": 25.09
+   }
+  },
+  "sheet 2048 luma": {
+   "head": {
+    "maxStretchMs": 28.77,
+    "postedTasks": 1,
+    "totalMs": 28.82
+   },
+   "candidate": {
+    "maxStretchMs": 8.1,
+    "postedTasks": 4,
+    "totalMs": 28.75
+   }
+  }
+ }
+}
