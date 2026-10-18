@@ -1,0 +1,171 @@
+{
+  "base": "http://127.0.0.1:5352/",
+  "errors": [],
+  "checks": [
+    {
+      "name": "actual 1-bit native output",
+      "style": "cutout",
+      "count": 2,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "actual 1-bit native output",
+      "style": "solid",
+      "count": 2,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "actual 1-bit native output",
+      "style": "lines",
+      "count": 2,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "actual 1-bit native output",
+      "style": "stencil",
+      "count": 2,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "actual 1-bit native output",
+      "style": "icon",
+      "count": 2,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "actual 1-bit native output",
+      "style": "silhouette",
+      "count": 1,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "actual 1-bit native output",
+      "style": "bayer",
+      "count": 2,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "actual 1-bit native output",
+      "style": "atkinson",
+      "count": 2,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "actual 1-bit native output",
+      "style": "noise",
+      "count": 2,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "actual 1-bit native output",
+      "style": "hatch",
+      "count": 2,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "actual 1-bit native output",
+      "style": "checker",
+      "count": 2,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "GIF complete union with transparent ink",
+      "none": 1,
+      "count": 1,
+      "width": 32,
+      "height": 32,
+      "frames": 6
+    },
+    {
+      "name": "GIF complete union with transparent ink",
+      "none": 2,
+      "count": 1,
+      "width": 32,
+      "height": 32,
+      "frames": 6
+    },
+    {
+      "name": "Shape preserves existing None fallback to remaining ink",
+      "count": 1,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "transparent source is valid zero colors",
+      "count": 0,
+      "width": 16,
+      "height": 16,
+      "frames": 1
+    },
+    {
+      "name": "Compare, Space and local hold choose original RGB count",
+      "original": 9,
+      "converted": 2
+    },
+    {
+      "name": "touch resolution first and bounded",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "resolution": {
+          "x": 19,
+          "right": 59.09375
+        },
+        "count": {
+          "x": 68.359375,
+          "right": 114.09375
+        },
+        "cap": {
+          "x": 12,
+          "right": 378
+        }
+      }
+    },
+    {
+      "name": "touch resolution first and bounded",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "geometry": {
+        "resolution": {
+          "x": 307,
+          "right": 347.09375
+        },
+        "count": {
+          "x": 356.359375,
+          "right": 402.09375
+        },
+        "cap": {
+          "x": 300,
+          "right": 544
+        }
+      }
+    }
+  ]
+}

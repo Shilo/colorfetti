@@ -1,0 +1,75 @@
+{
+  "base": "http://127.0.0.1:5352/",
+  "checks": [
+    {
+      "name": "seven-source practical wall including2048sheet andrealGIF",
+      "elapsed": 548.8427,
+      "labels": [
+        "8 colors",
+        "8 colors",
+        "8 colors",
+        "7 colors",
+        "7 colors",
+        "12 colors",
+        "26 colors"
+      ],
+      "longTasks": []
+    },
+    {
+      "name": "large wall current counts afterMatching withoutPreview",
+      "labels": [
+        "8 colors",
+        "8 colors",
+        "8 colors",
+        "7 colors",
+        "6 colors",
+        "13 colors",
+        "25 colors"
+      ]
+    },
+    {
+      "name": "nativeCompareandportraitmetadata",
+      "elapsedSingle": 143.47839999999997,
+      "geo": {
+        "resolution": {
+          "x": 18.88888931274414,
+          "right": 58.97916793823242
+        },
+        "count": {
+          "x": 68.23611450195312,
+          "right": 113.97222518920898
+        },
+        "cap": {
+          "x": 12,
+          "right": 436
+        }
+      }
+    },
+    {
+      "name": "nativePNGSavecountmatches",
+      "colors": 2,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "nativecapMatchingCleanupDither stable2colorcaption",
+      "transitions": 0,
+      "blanks": [],
+      "longTasks": []
+    },
+    {
+      "name": "native1bitGIFtransparentinkwholeclip",
+      "count": 1
+    }
+  ],
+  "errors": [],
+  "downloads": [
+    "caption-qa-1792297184391-dungeon-wizard-palette.png"
+  ],
+  "device": {
+    "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "width": 448,
+    "height": 819,
+    "orientation": "portrait-primary"
+  }
+}

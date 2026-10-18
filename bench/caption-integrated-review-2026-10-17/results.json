@@ -1,0 +1,42 @@
+{
+  "url": "http://127.0.0.1:5352/",
+  "chromiumSandbox": true,
+  "checks": [
+    {
+      "name": "rapid cap/settings cancellation",
+      "updates": 0,
+      "blanks": 0
+    },
+    {
+      "name": "desktop",
+      "caption": "32×24  ·  2 colors ",
+      "resolutionX": 972.21875
+    },
+    {
+      "name": "desktop: actual Original 2→6→2 and multiple sources"
+    },
+    {
+      "name": "touch-portrait",
+      "caption": "32×24  ·  2 colors ",
+      "resolutionX": 19
+    },
+    {
+      "name": "touch-portrait: actual Original 2→6→2 and multiple sources"
+    },
+    {
+      "name": "touch-landscape",
+      "caption": "32×24  ·  2 colors ",
+      "resolutionX": 307
+    },
+    {
+      "name": "touch-landscape: actual Original 2→6→2 and multiple sources"
+    },
+    {
+      "name": "large structural sample certifies exact saturation"
+    },
+    {
+      "name": "large pattern unknown → exact zoom metadata → wall after Preview close"
+    }
+  ],
+  "errors": []
+}
