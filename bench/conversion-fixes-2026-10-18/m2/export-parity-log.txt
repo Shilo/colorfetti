@@ -1,0 +1,118 @@
+[
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/oklab/cut/dither0",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/oklab/cut/dither50",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/oklab/cut/dither100",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/oklab/keep/dither0",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/oklab/keep/dither50",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/oklab/keep/dither100",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/rgb/cut/dither0",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/rgb/cut/dither50",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/rgb/cut/dither100",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/rgb/keep/dither0",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/rgb/keep/dither50",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "partial-alpha-noninteger",
+    "case": "cap3/Cleanup/rgb/keep/dither100",
+    "exactVisibleRgbAndAllAlpha": true
+  },
+  {
+    "name": "gray-2048",
+    "case": "Palette4x4/source-coordinates",
+    "width": 2048,
+    "height": 2048,
+    "pixels": 4194304,
+    "exactVisibleRgbAndAllAlpha": true,
+    "ms": 222.82349999999997
+  },
+  {
+    "name": "gray-2048",
+    "case": "coldstencil/None",
+    "exactVisibleRgbAndAllAlpha": true,
+    "sourceLazyCachesUnchanged": true,
+    "ms": 150.27050000000003
+  },
+  {
+    "name": "gray-2048",
+    "case": "coldicon/None",
+    "exactVisibleRgbAndAllAlpha": true,
+    "sourceLazyCachesUnchanged": true,
+    "ms": 685.6435
+  },
+  {
+    "name": "gray-long-sheet",
+    "case": "Palette4x4/source-coordinates",
+    "width": 16384,
+    "height": 8,
+    "pixels": 131072,
+    "exactVisibleRgbAndAllAlpha": true,
+    "ms": 9.69340000000011
+  },
+  {
+    "name": "gray-20frames",
+    "case": "whole-clipCap2/Cleanup/oklab/dither50",
+    "selectedFrames": [
+      0,
+      7,
+      19
+    ],
+    "frameCount": 20,
+    "exactVisibleRgbAndAllAlpha": true,
+    "ms": 3086.1883000000003
+  },
+  {
+    "name": "gray-20frames",
+    "case": "whole-clipCap2/Cleanup/rgb/dither50",
+    "selectedFrames": [
+      0,
+      7,
+      19
+    ],
+    "frameCount": 20,
+    "exactVisibleRgbAndAllAlpha": true,
+    "ms": 10352.628
+  }
+]

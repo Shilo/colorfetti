@@ -1,0 +1,67 @@
+{
+  "canvases": [
+    {
+      "h": 358,
+      "w": 358
+    },
+    {
+      "h": 1024,
+      "w": 1024
+    },
+    {
+      "h": 100,
+      "w": 100
+    }
+  ],
+  "controls": [
+    {
+      "label": "Back to overview ‹ Frame  / 20 › Full source pixels · 1024×1024 · paused ",
+      "rect": {
+        "h": 132.1875,
+        "w": 366,
+        "x": 12,
+        "y": 68
+      }
+    },
+    {
+      "label": "Back to overview",
+      "rect": {
+        "h": 44,
+        "w": 129.40625,
+        "x": 23,
+        "y": 75
+      }
+    },
+    {
+      "label": "Previous frame",
+      "rect": {
+        "h": 44,
+        "w": 44,
+        "x": 23,
+        "y": 123
+      }
+    },
+    {
+      "label": "Frame number",
+      "rect": {
+        "h": 44,
+        "w": 68.46875,
+        "x": 111.796875,
+        "y": 123
+      }
+    },
+    {
+      "label": "Next frame",
+      "rect": {
+        "h": 44,
+        "w": 44,
+        "x": 212.265625,
+        "y": 123
+      }
+    }
+  ],
+  "viewport": {
+    "h": 844,
+    "w": 390
+  }
+}

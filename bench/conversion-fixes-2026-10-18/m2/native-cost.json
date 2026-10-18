@@ -1,0 +1,83 @@
+{
+  "scope": "Node CPU and process array-buffer deltas; does not measure browser/GPU peak. Source and analysis already owned. Four MP native raster proposal; one selected frame only.",
+  "maximumNativePixels": 4194304,
+  "proposalRasterReservationBytes": 88080384,
+  "measurements": [
+    {
+      "name": "2048x2048 palette Keep/dither4x4",
+      "ms": 150.9467,
+      "before": {
+        "rss": 77070336,
+        "heapTotal": 7999488,
+        "heapUsed": 4573208,
+        "external": 18653272,
+        "arrayBuffers": 16790451
+      },
+      "after": {
+        "rss": 111460352,
+        "heapTotal": 11931648,
+        "heapUsed": 8490448,
+        "external": 49729187,
+        "arrayBuffers": 46176151
+      },
+      "value": {
+        "indices": 8388608,
+        "alpha": 4194304,
+        "rgba": 16777216
+      }
+    },
+    {
+      "name": "2048x2048 cold Stencil",
+      "ms": 170.54909999999995,
+      "before": {
+        "rss": 94683136,
+        "heapTotal": 11669504,
+        "heapUsed": 7004312,
+        "external": 32937283,
+        "arrayBuffers": 29384247
+      },
+      "after": {
+        "rss": 133193728,
+        "heapTotal": 12193792,
+        "heapUsed": 7403464,
+        "external": 87481679,
+        "arrayBuffers": 83928643
+      },
+      "value": {
+        "mask": 4194304,
+        "rgba": 16777216,
+        "retainedStructural": {
+          "level": 4194304,
+          "auto": 4194304,
+          "body": 4194304
+        }
+      }
+    },
+    {
+      "name": "2048x2048 cold Icon",
+      "ms": 322.92420000000004,
+      "before": {
+        "rss": 131973120,
+        "heapTotal": 12193792,
+        "heapUsed": 7049304,
+        "external": 87481679,
+        "arrayBuffers": 67151415
+      },
+      "after": {
+        "rss": 138412032,
+        "heapTotal": 12718080,
+        "heapUsed": 7148024,
+        "external": 129425527,
+        "arrayBuffers": 71327299
+      },
+      "value": {
+        "mask": 4194304,
+        "rgba": 16777216,
+        "retainedStructural": {
+          "ink": 4194304,
+          "detail": 4194304
+        }
+      }
+    }
+  ]
+}

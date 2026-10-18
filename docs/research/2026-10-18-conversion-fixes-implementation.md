@@ -19,7 +19,7 @@ screenshots in its `screenshots/` folder.
 | Task | Scope | State |
 | --- | --- | --- |
 | M1 | Decoded artwork admission budget | Accepted after ownership/parser revisions and final worker/fallback/browser checks |
-| M2 | Sampling disclosure and native-pixel inspection | Queued |
+| M2 | Sampling disclosure and native-pixel inspection | Accepted after shared-queue/lifetime revisions and final desktop/native parity checks |
 | M3 | Bounded per-file import diagnostics | Accepted after revisions and desktop retesting |
 | M4 | ANIMEXTS GIF repeat metadata | Accepted after independent Save/ZIP verification |
 | M5 | Enabled palette-editor text contrast | Accepted after revision and desktop retesting |
@@ -30,6 +30,46 @@ screenshots in its `screenshots/` folder.
 ## Accepted changes and review discussions
 
 Task-specific acceptance and evidence are recorded here as each task completes.
+
+### M2 Sampling disclosure and native inspection
+
+The final integration pass also fixed shared-cache joins that bypassed a viewer's
+producer callback: every subscriber now receives actual producer settlement,
+including warm hits. Native requests retain selected originals only in Palette,
+charge selected legacy analysis to the capture ledger, and publish only pixels
+plus opaque identity. Ordinary Palette records carry original-only/scalar identity
+snapshots. Final 5238 browser checks repeated Palette playback/frame selection,
+exact two-color GIF Reuse, 4 MP Icon native/Fit and 390×844 frame controls/resume;
+all passed with no console warnings/errors. Both reviewers reaccepted this revision.
+Paired focused validation passed 92 tests and all eighteen output comparisons.
+
+Preview now discloses its raster/source dimensions and offers full-source conversion
+of one selected paused frame. GIF frame controls and Back to overview provide exact
+inspection without caching a native clip. Whole-source palette, analysis and Cleanup
+contexts remain authoritative; Save/Copy scopes remain whole-clip/first-frame.
+
+Challenge rejected ROI approximations, corrected the cold Icon allocation estimate
+to 84 MiB static logical headroom, separated subscriber/producer leases, added an
+ordinary-producer settlement barrier, then made the native queue shared across
+closed/reopened viewer instances. A final field-width adjustment protects four-digit
+frame values. Each revision was rebuilt/retested. This headroom is separate from
+source admission and is not an 84 MiB charged token or whole-process cap.
+
+Focused validation passed 83 tests; eighteen independently Sharp-decoded production
+Save comparisons matched every alpha and visible RGB channel. The coordinator
+checked 4 MP B&W 4×4/100% native output at one source pixel/CSS pixel, Fit preserving
+the 2048² raster, reopening, and actual GIF frames 1/8/20 with correctly moving
+markers. Final 390×844 geometry has a 366px panel within the viewport, 68.47×44 field
+and 44px arrows; Back to overview resumes sampling/playback. Unsupported 2049×2048
+and 16,384×8 long-sheet cases passed. Final tabs had no console warnings/errors.
+Both reviewers explicitly agreed after the agent challenged the coordinator's
+browser receipts. The child browser was unavailable; no physical phone was used.
+The before screenshot is labelled Original baseline, demonstrating old controls
+and disclosure rather than claiming an identical converted-image comparison.
+
+Evidence: `bench/conversion-fixes-2026-10-18/m2/REVIEW.md`.
+[Native inspection](../../bench/conversion-fixes-2026-10-18/screenshots/m2-inspection-after.jpg),
+[selected GIF frame at narrow desktop size](../../bench/conversion-fixes-2026-10-18/screenshots/m2-animation-inspection-narrow.jpg).
 
 ### M1 Artwork admission and ownership
 

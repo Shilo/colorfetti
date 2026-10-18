@@ -1,0 +1,31 @@
+
+> colorfetti@0.0.0 test
+> vitest run
+
+6:58:00 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti - using default configuration.
+
+ RUN  v4.1.11 C:/Programming_Files/Shilocity/colorfetti
+
+ ❯ src/lib/onebit-usage.test.js (14 tests | 1 failed) 379ms
+     × stops before later frames when every possible visible color is found 6ms
+ ❯ src/lib/source-color-summary.test.js (9 tests | 2 failed) 232ms
+     × shares one cold scan across simultaneous independent callers 46ms
+     × rejects an aborted queued caller without scanning or canceling another subscriber 32ms
+ ❯ src/lib/converted-animation.test.js (15 tests | 4 failed) 162ms
+     × preserves lines animation bytes for either None color and loop variants 24ms
+     × preserves stencil animation bytes for either None color and loop variants 6ms
+     × preserves icon animation bytes for either None color and loop variants 10ms
+     × preserves silhouette animation bytes for either None color and loop variants 5ms
+ ❯ src/lib/palette-usage.test.js (10 tests | 1 failed) 106ms
+     × stops at proven palette saturation while preserving the complete clip frame total 4ms
+ ❯ src/lib/original-color-usage.test.js (10 tests | 1 failed) 47ms
+     × cancels queued work before reading pixels, and retries safely 6ms
+ ❯ src/lib/image-import-client.test.js (36 tests | 3 failed) 2723ms
+     × propagates worker integrity errors without re-decoding or canvas recovery 105ms
+     × keeps cancellation authoritative after a pending fallback GIF read (read rejects true) 4ms
+     × cancels both running and queued imports without fallback or resurrection 1060ms
+
+ Test Files  6 failed | 69 passed (75)
+      Tests  12 failed | 1276 passed | 2 skipped (1290)
+   Start at  06:58:00
+   Duration  5.77s (transform 8.42s, setup 0ms, import 14.45s, tests 33.32s, environment 6ms)

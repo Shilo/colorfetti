@@ -1,0 +1,21 @@
+Browser tab: 6, Title: "Colorfetti", URL: "http://127.0.0.1:5225/".
+1 AXWebArea Colorfetti, URL: 127.0.0.1:5225/
+	2 container Image preview
+		3 container Preview zoom
+			4 button Zoom out
+			5 button (disabled) Fit image
+			6 button Zoom in
+		7 container
+			8 container Pixel inspection
+				9 button Back to overview
+			10 text Full source pixels · 2048×2048 · paused
+		11 container Preview controls
+			12 container Image actions
+				13 button Save image
+				14 button Copy image
+				15 checkbox Description: Show original image, Value: 1
+			16 button Close preview
+		17 button Close preview of gray-2048.png
+			18 image
+
+The focused UI element is 1 AXWebArea Colorfetti, URL: 127.0.0.1:5225/

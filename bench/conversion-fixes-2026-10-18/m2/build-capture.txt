@@ -1,0 +1,35 @@
+7:39:19 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti - using default configuration.
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 209 modules transformed.
+rendering chunks...
+computing gzip size...
+.tmp/conversion-fixes-m2-capture/index.html                                     4.63 kB │ gzip:   1.65 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-generated-worker-xpoMRM2c.js    9.82 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-limit-worker-rkrL9P3s.js        9.86 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-gif-worker-CY8CibIc.js         12.25 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-cleanup-worker-ChpCTucA.js     15.05 kB
+.tmp/conversion-fixes-m2-capture/assets/image-import-worker-B8KHTeb0.js        31.63 kB
+.tmp/conversion-fixes-m2-capture/assets/index-ZQEuF6XA.css                    169.62 kB │ gzip:  26.66 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-usage-CTvHECzQ.js               1.11 kB │ gzip:   0.68 kB
+.tmp/conversion-fixes-m2-capture/assets/artwork-gif-preflight-DLIzUrPb.js       1.31 kB │ gzip:   0.77 kB
+.tmp/conversion-fixes-m2-capture/assets/artwork-admission-CSKnYslZ.js           1.57 kB │ gzip:   0.79 kB
+.tmp/conversion-fixes-m2-capture/assets/image-bitmap-decode-BBWTQ-0Y.js         1.67 kB │ gzip:   1.01 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-lospec-BUdZU2lN.js              2.32 kB │ gzip:   1.25 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-ase-gXqzrNdw.js                 2.49 kB │ gzip:   1.32 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-generated-client-DUCe3Xc5.js    4.13 kB │ gzip:   1.81 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-cleanup-ImCPDOUr.js             4.23 kB │ gzip:   2.21 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-limit-OiwOF5bZ.js               4.57 kB │ gzip:   2.26 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-generated-BAdPkrXL.js           5.98 kB │ gzip:   2.73 kB
+.tmp/conversion-fixes-m2-capture/assets/image-import-client-CYLVykYP.js         6.97 kB │ gzip:   2.62 kB
+.tmp/conversion-fixes-m2-capture/assets/palette-cleanup-client-CofCQQMV.js      7.48 kB │ gzip:   2.92 kB
+.tmp/conversion-fixes-m2-capture/assets/quantize-DsvDuXDJ.js                   13.24 kB │ gzip:   6.39 kB
+.tmp/conversion-fixes-m2-capture/assets/gif-DmZwH47n.js                        17.74 kB │ gzip:   7.01 kB
+.tmp/conversion-fixes-m2-capture/assets/index-Cn-Kzgjx.js                     291.75 kB │ gzip: 104.04 kB
+
+✓ built in 547ms
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.21.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.1
+npm notice To update run: npm install -g npm@11.21.1
+npm notice

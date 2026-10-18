@@ -13,6 +13,20 @@ intentional compatibility references.
 
 ## What it does
 
+Preview discloses sampled versus full-source raster dimensions. Inspect pixels
+pauses one frame and converts every source pixel, up to 4,194,304 pixels and 16,384
+per side; larger images explain the limit and offer Save. GIF frame controls select
+one paused frame, and Back to overview resumes playback. Full analysis, whole-item
+palette/subset and frozen whole-clip Cleanup remain authoritative. Native mode
+bypasses clip raster caches and uses one shared active/latest-pending queue across
+viewer instances. Its static 84 MiB logical headroom is separate from source
+admission, not an 84 MiB charged token or process-heap cap. Save still exports the
+whole animation; Copy uses its first frame, as their GIF tooltips explain.
+Shared cache subscribers receive the actual producer's settlement promise,
+including joins and warm hits. Native queued requests retain selected originals
+only in Palette; selected legacy analysis is charged to the separate capture
+ledger. Display records retain only pixels and an opaque request key.
+
 Artwork import tracks a shared 256 MiB logical source-storage budget: 10 bytes
 per source pixel for RGBA/current/replacement analysis plus 4 KiB per frame, with
 16,777,216 pixels/frame and 4,096 frames/asset caps. GIF framing/counts are checked

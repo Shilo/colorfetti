@@ -8,6 +8,17 @@ function fixture(options) {
   const navigation = viewerNavigation({ onclose, onhold, onchange, ...options }); navigation.resize(geometry);
   return { navigation, onclose, onhold, onchange };
 }
+
+describe('bounded native-sheet navigation', () => {
+  it('allows native-pixel magnification beyond overview16× only when supplied and restores overview bounds', () => {
+    const navigation = viewerNavigation();
+    navigation.resize({ ...geometry, maxScale: 128 });
+    navigation.zoomTo(64); expect(navigation.view.scale).toBe(64);
+    navigation.stepZoom(1); expect(navigation.view.scale).toBeGreaterThan(64);
+    navigation.stepZoom(-1); expect(navigation.view.scale).toBeLessThan(80);
+    navigation.resize(geometry); expect(navigation.view.scale).toBe(MAX_VIEWER_ZOOM);
+  });
+});
 afterEach(() => { vi.useRealTimers(); vi.unstubAllGlobals(); });
 
 // Dispatch through the production listeners, not just the navigation methods:

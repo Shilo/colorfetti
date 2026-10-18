@@ -17,6 +17,9 @@
   import { animationVisibility } from './lib/animation-visibility.js';
   import { exportDragArt } from './lib/export-drag.js';
   import { paletteFailureInputs, samePaletteFailureInputs } from './lib/palette-failure.js';
+  import { nativeInspectionAllowed } from './lib/viewer-inspection-policy.js';
+  import { sharedNativeInspectionQueue, renderNativeFrame } from './lib/viewer-inspection.js';
+  import { holdArtworkAnalyses } from './lib/artwork-analysis-capture.js';
   import { artworkIdentity } from './lib/artwork-source-projection.js';
 
   // `flipped` true means originals are visible. App-managed comparison updates
@@ -24,7 +27,7 @@
   // Without `onremove` the tile is a preview only and has no buttons.
   // `set` is the style's settings. `budget` is set while one of their sliders is being dragged:
   // the milliseconds this tile may take to convert its image after each move.
-  let { item, first, second, style, set, family = 'two-color', palette, palettePending = false, analysisPending = false, alphaCut = 128, alphaMode = 'cut', metric = 'oklab', maxColors = 0, cleanup = false, dither = 'none', ditherStrength = 50, colorUsageLabel = '', colorUsagePending = false, usageIdentity, onusageframe, active = true, exportDisabled = false, onpalettestatus, paletteRetry = 0, flipped, budget = 0, inset = 8, aspect = 1, inspectionScale = 1, onshare, oncopy, onreusecolors, reuseDisabled = false, onsave, onremove, onopen, onactivate, activationLabel, oncompare, comparing = false, exportDrag } = $props();
+  let { item, first, second, style, set, family = 'two-color', palette, palettePending = false, analysisPending = false, alphaCut = 128, alphaMode = 'cut', metric = 'oklab', maxColors = 0, cleanup = false, dither = 'none', ditherStrength = 50, colorUsageLabel = '', colorUsagePending = false, usageIdentity, onusageframe, active = true, exportDisabled = false, onpalettestatus, paletteRetry = 0, flipped, budget = 0, inset = 8, aspect = 1, inspectionScale = 1, inspectionFrame = null, pixelRatio = devicePixelRatio, oninspectionchange, onshare, oncopy, onreusecolors, reuseDisabled = false, onsave, onremove, onopen, onactivate, activationLabel, oncompare, comparing = false, exportDrag } = $props();
   const paletteCut = $derived(effectiveAlphaCut(alphaMode, alphaCut));
   const failureOwner = Symbol('palette preview surface');
   const reportStage = (type, stage, inputs, attempt, error) => untrack(() => onpalettestatus?.({ type, owner: failureOwner, stage, inputs, attempt, error }));
@@ -120,7 +123,10 @@
 
   // An animation has `frames`; a still image is treated as a single frame.
   const frames = $derived(item.frames ?? [item]);
-  let at = $state(0); // which frame is on screen
+  let playingAt = $state(0);
+  const nativeRaster = $derived(inspectionFrame !== null && nativeInspectionAllowed(item.img.w, item.img.h));
+  const at = $derived(nativeRaster ? Math.max(0, Math.min(frames.length - 1, Math.floor(inspectionFrame))) : playingAt);
+  $effect(() => { if (nativeRaster) playingAt = at; });
   let inView = $state(true);
   function trackVisibility(visible) { inView = visible; }
 
@@ -137,7 +143,7 @@
   // rests or is let go. `shown` in layout.js has the rules. The image sits 8px in from each side
   // of the square, and a square with no room for it has not been laid out yet.
   const across = $derived(Math.min((box - inset * 2) / item.img.w, (boxHeight - inset * 2) / item.img.h) * Math.max(item.img.w, item.img.h));
-  const size = $derived(across > 0 ? shown(item.img.w, item.img.h, across * devicePixelRatio * inspectionScale, budget, pace) : null);
+  const size = $derived(nativeRaster ? [item.img.w, item.img.h] : across > 0 ? shown(item.img.w, item.img.h, across * pixelRatio * inspectionScale, budget, pace) : null);
   // the picture's width and height, each on its own so that nothing is redrawn when `size` is worked out again to the same numbers
   const mw = $derived(size ? size[0] : 0);
   const mh = $derived(size ? size[1] : 0);
@@ -146,7 +152,7 @@
   // its settings or the picture's size changes, its colored pixels until a color changes too. So a
   // color change reuses the masks, and an animation converts one frame at a time as it plays.
   const masks = $derived.by(() => {
-    style, set, mw, mh; // read, so the masks are dropped when any of these changes
+    style, set, mw, mh, nativeRaster;
     return frames.map(() => null);
   });
   const colored = $derived.by(() => {
@@ -154,7 +160,7 @@
     return masks.map(() => null);
   });
   const originals = $derived.by(() => {
-    mw, mh;
+    mw, mh, nativeRaster;
     return frames.map(() => null);
   });
   // A subset belongs to the full item, not the current animation frame or tile
@@ -240,12 +246,17 @@
   const clipCache = $derived(cachedClip?.request === cacheRequest ? cachedClip.handle : null);
   $effect(() => {
     const request = cacheRequest;
-    if (family !== 'full-palette' || !request.colors || !request.width || cleanup && !request.cleanup) { cachedClip = null; return; }
+    if (nativeRaster || family !== 'full-palette' || !request.colors || !request.width || cleanup && !request.cleanup) { cachedClip = null; return; }
     const handle = animationPreviewCache.acquire({ ...request, palette: request.colors });
     cachedClip = { request, handle };
     return () => { handle?.release(); };
   });
   let fullItem, fullCompleted;
+  let previewSettlement = Promise.resolve();
+  function trackPreviewSettlement(work) {
+    const settled = work.then(() => {}, () => {});
+    previewSettlement = Promise.all([previewSettlement, settled]).then(() => {});
+  }
   $effect(() => {
     const frame = artworkIdentity(frames[at].identity ?? frames[at]), frameAt = at, frameCount = frames.length;
     const source = frames[at].original, data = source.data, sourceWidth = source.width, sourceHeight = source.height;
@@ -265,12 +276,12 @@
     // Keep the last completed frame while the next frame or settings convert.
     // Clearing it on every async frame removes the canvas and exposes the grid.
     // Readiness still belongs to the requested frame, not these retained pixels.
-    if (family !== 'full-palette' || fullItem !== currentItem.identity || !palette && !palettePending) {
+    if (nativeRaster || family !== 'full-palette' || fullItem !== currentItem.identity || !palette && !palettePending) {
       fullPixels = null;
       fullCompleted = null;
     }
     fullItem = currentItem.identity;
-    if (family !== 'full-palette' || !width || !colors || cleaning && !clean || originalVisible || !active
+    if (nativeRaster || family !== 'full-palette' || !width || !colors || cleaning && !clean || originalVisible || !active
       || frameCount > 1 && !inView) return;
     // This record belongs only to the retained, successfully published pixels.
     // Original/viewer/visibility changes do not alter their conversion inputs.
@@ -288,13 +299,16 @@
     }
     const controller = new AbortController();
     const release = currentItem.admission?.hold();
-    const produce = async signal => {
-      const result = await quantizePreviewAsync(source, colors, cut, width, height, { signal, metric: matching, dither: dithering, ditherStrength: amount, alphaMode: opacity });
-      // The same post-dither source-coordinate overlay is used by exports.
-      if (clean) clean.apply(result, clean.result);
-      return result;
+    const produce = signal => {
+      const work = quantizePreviewAsync(source, colors, cut, width, height, { signal, metric: matching, dither: dithering, ditherStrength: amount, alphaMode: opacity }).then(result => {
+        // The same post-dither source-coordinate overlay is used by exports.
+        if (clean) clean.apply(result, clean.result);
+        return result;
+      });
+      trackPreviewSettlement(work);
+      return work;
     };
-    const pending = clipCache ? clipCache.getFrame(at, produce, { signal: controller.signal, hold: () => currentItem.admission?.hold() }) : produce(controller.signal);
+    const pending = clipCache ? clipCache.getFrame(at, produce, { signal: controller.signal, hold: () => currentItem.admission?.hold(), onSettlement: trackPreviewSettlement }) : produce(controller.signal);
     pending.then(result => {
       if (!controller.signal.aborted) {
         fullPixels = new ImageData(palettePixels(result, colors).data, width, height);
@@ -306,7 +320,42 @@
     }).catch(error => { if (error.name !== 'AbortError') console.error('Palette preview failed', error); }).finally(() => release?.());
     return () => controller.abort();
   });
+  const nativeRequest = $derived({ admission: item.admission, frame: { original: frames[at].original, img: family === 'two-color' ? frames[at].img : undefined }, family, palette: conversionPalette, alphaCut, alphaMode, metric, dither, ditherStrength,
+    cleanup: conversionCleanup ? { result: conversionCleanup.result, apply: conversionCleanup.apply } : null,
+    cleaning: cleanup, first, second, style, set, palettePending, analysisPending, originalVisible, nativeRaster });
+  let nativeResult = $state.raw(null), nativeError = $state('');
+  const nativeReady = $derived(nativeResult?.key === artworkIdentity(nativeRequest));
+  $effect(() => {
+    const request = nativeRequest;
+    nativeResult = null; nativeError = '';
+    if (!request.nativeRaster || request.originalVisible || request.analysisPending || request.palettePending
+      || request.family === 'full-palette' && (!request.palette || request.cleaning && !request.cleanup)) return;
+    const controller = new AbortController();
+    let release, releaseAnalysis;
+    try {
+      release = request.admission?.hold();
+      // Only the selected legacy frame needs captured analysis; Palette keeps
+      // no obsolete item/analysis container while queued behind earlier work.
+      if (request.family === 'two-color') releaseAnalysis = holdArtworkAnalyses([request.frame]);
+    } catch (error) {
+      release?.();
+      nativeError = error.code === 'ARTWORK_MEMORY_LIMIT'
+        ? 'Not enough inspection memory. Wait for exports to finish, then return to overview and try again.'
+        : 'Could not inspect this frame. Return to overview and try again.';
+      return;
+    }
+    sharedNativeInspectionQueue.run(async () => {
+      // Wait for the actual superseded producer, which may outlive its canceled
+      // cache subscriber. Its scratch must not stack with native preparation.
+      await previewSettlement;
+      return renderNativeFrame(request.frame, request, { signal: controller.signal });
+    }, { signal: controller.signal }).then(result => {
+      if (!controller.signal.aborted) nativeResult = { key: artworkIdentity(request), pixels: new ImageData(result.data, result.width, result.height) };
+    }).catch(error => { if (!controller.signal.aborted && error.name !== 'AbortError') nativeError = 'Could not inspect this frame. Return to overview or save the image.'; }).finally(() => { releaseAnalysis?.(); release?.(); });
+    return () => controller.abort();
+  });
   const completedPixels = $derived.by(() => {
+    if (nativeRaster) return originalVisible ? frames[at].original : nativeReady ? nativeResult.pixels : null;
     if (!mw) return null;
     const frame = frames[at];
     if (originalVisible) return (originals[at] ??= mw < item.img.w ? new ImageData(shrink(frame.original, mw, mh), mw) : frame.original);
@@ -342,25 +391,33 @@
   // Originals remain explicit; a resolved empty result must expose transparency.
   let lastConverted = $state.raw(null);
   $effect(() => {
+    if (nativeRaster) { lastConverted = null; return; }
     const completed = completedPixels, currentItem = item;
     if (completed && !originalVisible) lastConverted = { item: currentItem, pixels: completed };
     else if (family === 'full-palette' && !palettePending && !palette
       || untrack(() => lastConverted?.item) !== currentItem) lastConverted = null;
   });
-  const pixels = $derived(completedPixels ?? (!originalVisible && (family === 'two-color' ? analysisPending : palettePending || palette && !fullReady)
+  const pixels = $derived(completedPixels ?? (!nativeRaster && !originalVisible && (family === 'two-color' ? analysisPending : palettePending || palette && !fullReady)
     && lastConverted?.item === item ? lastConverted.pixels : null));
 
   // Plays an animation: after the current frame's delay, step to the next and start again.
   $effect(() => {
     // Offscreen animations retain their current canvas and caches. Resume the
     // held frame's delay when visible; hidden time does not advance their clock.
-    if (!active || frames.length < 2 || !inView) return;
+    if (nativeRaster || !active || frames.length < 2 || !inView) return;
     if (family === 'two-color' && !originalVisible && analysisPending) return;
     // Original playback follows source delays independently of conversion. Read
     // originalVisible first so a finished preview cannot restart that timer.
     if (family === 'full-palette' && !originalVisible && !fullReady) return;
-    const timer = setTimeout(() => (at = (at + 1) % frames.length), frames[at].delay);
+    const timer = setTimeout(() => (playingAt = (at + 1) % frames.length), frames[at].delay);
     return () => clearTimeout(timer);
+  });
+  $effect(() => {
+    const report = oninspectionchange;
+    if (!report) return;
+    const ready = nativeRaster ? originalVisible || nativeReady : !!pixels && (originalVisible || family !== 'full-palette' || fullReady);
+    const frame = !nativeRaster && !originalVisible && family === 'full-palette' ? fullCompleted?.frameAt ?? at : at;
+    report({ frame, width: pixels?.width ?? 0, height: pixels?.height ?? 0, ready, error: nativeError });
   });
   const convertedUsageLabel = $derived(family === 'two-color'
     ? oneBitUsage?.result ? `${oneBitUsage.result.count} ${oneBitUsage.result.count === 1 ? 'color' : 'colors'}` : ''
@@ -400,7 +457,7 @@
     use:animationVisibility={frames.length > 1 ? trackVisibility : undefined}
     use:exportDragArt={exportDrag ? { controller: exportDrag, item, cancel: cancelPointer } : undefined}
   >
-    {#if pixels}<Pixels {pixels} />{/if}
+    {#if pixels}<Pixels {pixels} clearOnDestroy={nativeRaster} />{/if}
   </button>
   {#if onremove}
     <div class="acts">

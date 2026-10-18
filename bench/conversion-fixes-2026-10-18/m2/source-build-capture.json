@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-18",
+  "url": "http://127.0.0.1:5238/",
+  "build": ".tmp/conversion-fixes-m2-capture",
+  "scope": "Final M2 ownership follow-up. Source also includes coherent M1 captured-analysis/projection APIs and frozen concurrent M8 PNG code. Historical source-build.json remains unchanged.",
+  "changes": [
+    "Actual shared producer settlement for owner/joiner/cache hit",
+    "Selected-frame legacy analysis charged until queue settlement",
+    "Original-only Palette requests and opaque ordinary/display identities",
+    "Display record retains pixels plus opaque native request key"
+  ],
+  "sources": [
+    {
+      "path": "src/ImageViewer.svelte",
+      "sha256": "99ef028d01866151cda0498aa76973c57b1c891c40570a9897078efb1a33cdcf"
+    },
+    {
+      "path": "src/Tile.svelte",
+      "sha256": "1ad425a656cbead9e24cf089a71682df4082290b212318004874616865d270a0"
+    },
+    {
+      "path": "src/Pixels.svelte",
+      "sha256": "3a66f1aa36863af2f7761719dfe7e6a00022fba98cdd5593829a80b3b85e9ed1"
+    },
+    {
+      "path": "src/viewer-navigation.css",
+      "sha256": "908ae7282c5940c94927365744cea5b9b6af59fa53b5f0c82a43ec134aba9d77"
+    },
+    {
+      "path": "src/lib/viewer-navigation.js",
+      "sha256": "007a7068221b876260ea724893892bc1c962651b35a6d0971f6ce9eaadf32151"
+    },
+    {
+      "path": "src/lib/viewer-navigation.test.js",
+      "sha256": "958be994ab8b45f9b5a6d9e45625d42772c06177979c5283ce11924a671578ae"
+    },
+    {
+      "path": "src/lib/viewer-inspection.js",
+      "sha256": "bcca5d205c82d43c3fe581af7bf9a15de2b20819e42475902efbab271af4b172"
+    },
+    {
+      "path": "src/lib/viewer-inspection-policy.js",
+      "sha256": "a544b9eaabdab49eef4e0119a392575e4868261db253d065e2d1757eecb590eb"
+    },
+    {
+      "path": "src/lib/viewer-inspection.test.js",
+      "sha256": "30624ff6081bccb3e1b0e845cfe83ee46b158866b6778d65988d6e69bbdbf946"
+    },
+    {
+      "path": "src/lib/palette-animation-cache.js",
+      "sha256": "35c843391bad59bb3d1be9ee8cdaf74eba0298cd0f9a9e962323de6ed1ed44dc"
+    },
+    {
+      "path": "src/lib/palette-animation-cache.test.js",
+      "sha256": "bc2f52574197cacc6b4f4d1eec199c7ddd633e96737c708add04cac87364901d"
+    },
+    {
+      "path": "src/lib/artwork-analysis-capture.js",
+      "sha256": "38c8da46e04ffa1769eefc800c55df592123afa98237ce7c53e5d1534d244dfd"
+    },
+    {
+      "path": "src/lib/artwork-source-projection.js",
+      "sha256": "49ab9d5d04bdcc903401af6c6ff06d31dccb050ffeaf34a90f8a320668b9280c"
+    },
+    {
+      "path": "src/App.svelte",
+      "sha256": "e4e157d248b9bdceaf40e8feca8ba0efc10bbe8ae3d56e010c50b763cffce2ac"
+    },
+    {
+      "path": "src/lib/save.js",
+      "sha256": "e89328616e42547273a3984aa2403cf729d0ea24ee640e4700defff68cfa92aa"
+    },
+    {
+      "path": "src/lib/png-alpha-states.js",
+      "sha256": "379a2c8321cb3a32c8a8da94a79de3e60147a98616b93d78332faaf99cc373e2"
+    }
+  ],
+  "assets": [
+    {
+      "name": "artwork-admission-CSKnYslZ.js",
+      "sha256": "a60069b9593a37276231c28be3867a46acd467ef6aac319053a7a32d9537f026"
+    },
+    {
+      "name": "artwork-gif-preflight-DLIzUrPb.js",
+      "sha256": "c56ad95c51a8e697cb4101ee9baf5c41b258eb1b4d1e1a48343a91a79e230fbe"
+    },
+    {
+      "name": "gif-DmZwH47n.js",
+      "sha256": "8e3cb07640f73d8b2c29e757bbf43ee0e58c502580ce4b1c134fc9d8f6307334"
+    },
+    {
+      "name": "image-bitmap-decode-BBWTQ-0Y.js",
+      "sha256": "61eea6a9c9406067d2a9302322c70296719fce35c6c89d8dbd69e820bb975147"
+    },
+    {
+      "name": "image-import-client-CYLVykYP.js",
+      "sha256": "b96fa1ae05602a16eadd2ba398a7ea4d22ea1afa718b59cd01a349dfef2658d4"
+    },
+    {
+      "name": "image-import-worker-B8KHTeb0.js",
+      "sha256": "5e287ede8997047da2d86cad8804ed7fac627f624535be2a33afe2a1f8b850e7"
+    },
+    {
+      "name": "index-Cn-Kzgjx.js",
+      "sha256": "e04d5c022f7f7d8759b2570973737f857ad2976d9e8b0370fde1641aeb1847c1"
+    },
+    {
+      "name": "index-ZQEuF6XA.css",
+      "sha256": "37166aee5d5e975a7054f4d513530e92f49954004d419a3f8d57f7c8ecb731a9"
+    },
+    {
+      "name": "palette-ase-gXqzrNdw.js",
+      "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+    },
+    {
+      "name": "palette-cleanup-client-CofCQQMV.js",
+      "sha256": "f2777a1fdf6d53a2214717fd3766aeacd6eff161e8735601b8ae4e11c64c8876"
+    },
+    {
+      "name": "palette-cleanup-ImCPDOUr.js",
+      "sha256": "9c31297b91cda9296a7a3e6bbd33ea1c39ee5e4982cd6324d6120a7daeb982dc"
+    },
+    {
+      "name": "palette-cleanup-worker-ChpCTucA.js",
+      "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+    },
+    {
+      "name": "palette-generated-BAdPkrXL.js",
+      "sha256": "c0c50aff2e7b2ea65f80494d417da1cd06ef6683ecf0f303dc18c6482346b8e1"
+    },
+    {
+      "name": "palette-generated-client-DUCe3Xc5.js",
+      "sha256": "73421b987edc3e1a295555fddc474547090f4cb59d6193d59df1ccd3ffe65b68"
+    },
+    {
+      "name": "palette-generated-worker-xpoMRM2c.js",
+      "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+    },
+    {
+      "name": "palette-gif-worker-CY8CibIc.js",
+      "sha256": "3aebd330a24ac1a96a2126de729d041bb2ee0f92bde2e21f35655371c9642ca9"
+    },
+    {
+      "name": "palette-limit-OiwOF5bZ.js",
+      "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+    },
+    {
+      "name": "palette-limit-worker-rkrL9P3s.js",
+      "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+    },
+    {
+      "name": "palette-lospec-BUdZU2lN.js",
+      "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+    },
+    {
+      "name": "palette-usage-CTvHECzQ.js",
+      "sha256": "015ad0c1568a828572805cc94fbd80eba767feba6789369c7e9749848b6abfa4"
+    },
+    {
+      "name": "quantize-DsvDuXDJ.js",
+      "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+    }
+  ]
+}

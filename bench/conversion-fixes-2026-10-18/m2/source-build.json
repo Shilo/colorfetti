@@ -1,0 +1,172 @@
+{
+  "date": "2026-10-18",
+  "scope": "M2-owned source hashes and immutable build assets. Builds contain concurrent M1/M7 work; only framefield is the final M2 source. Root-coordinated desktop CUA performed live checks because this agent no longer had browser surfaces.",
+  "sources": [
+    {
+      "path": "src/ImageViewer.svelte",
+      "sha256": "99ef028d01866151cda0498aa76973c57b1c891c40570a9897078efb1a33cdcf"
+    },
+    {
+      "path": "src/Tile.svelte",
+      "sha256": "b5d159f579cdee14cc7fc3416349650909fce3287d708df4c7d3867e30da09ae"
+    },
+    {
+      "path": "src/Pixels.svelte",
+      "sha256": "3a66f1aa36863af2f7761719dfe7e6a00022fba98cdd5593829a80b3b85e9ed1"
+    },
+    {
+      "path": "src/viewer-navigation.css",
+      "sha256": "908ae7282c5940c94927365744cea5b9b6af59fa53b5f0c82a43ec134aba9d77"
+    },
+    {
+      "path": "src/lib/viewer-navigation.js",
+      "sha256": "007a7068221b876260ea724893892bc1c962651b35a6d0971f6ce9eaadf32151"
+    },
+    {
+      "path": "src/lib/viewer-navigation.test.js",
+      "sha256": "958be994ab8b45f9b5a6d9e45625d42772c06177979c5283ce11924a671578ae"
+    },
+    {
+      "path": "src/lib/viewer-inspection.js",
+      "sha256": "bcca5d205c82d43c3fe581af7bf9a15de2b20819e42475902efbab271af4b172"
+    },
+    {
+      "path": "src/lib/viewer-inspection-policy.js",
+      "sha256": "a544b9eaabdab49eef4e0119a392575e4868261db253d065e2d1757eecb590eb"
+    },
+    {
+      "path": "src/lib/viewer-inspection.test.js",
+      "sha256": "30624ff6081bccb3e1b0e845cfe83ee46b158866b6778d65988d6e69bbdbf946"
+    },
+    {
+      "path": "src/lib/palette-animation-cache.js",
+      "sha256": "f98575790d65754fe70316f7a269ce2638804503671182dbdbfdb4bd29313286"
+    },
+    {
+      "path": "src/lib/palette-animation-cache.test.js",
+      "sha256": "9c19411603746d52b089c99beb778bba1cf9a58bed6eff023a402f027df53886"
+    }
+  ],
+  "builds": [
+    {
+      "name": "before",
+      "path": ".tmp/conversion-fixes-m2-before",
+      "assets": [
+        {
+          "name": "index-DLZEHkZy.js",
+          "sha256": "f8552d513c286ce8183983901f338f3ef25dcc14fd62e721e3d934f49cd9c276"
+        },
+        {
+          "name": "index-DX7ysEEG.css",
+          "sha256": "b8920aaad83ce6a162d73a9739af55ca5540c8f09d8aa1e7b60bdba85e03236d"
+        }
+      ]
+    },
+    {
+      "name": "after",
+      "path": ".tmp/conversion-fixes-m2-after",
+      "assets": [
+        {
+          "name": "index-BjAie987.js",
+          "sha256": "cc20b63e00e7ae54903be69d3e42a351f8aeeb8529af9541b546ae3ba9f0c58d"
+        },
+        {
+          "name": "index-DRj6dHBx.css",
+          "sha256": "1f5ddeefd67c2c3be0327e02ba4fd4729c90d50626394c5264d0a2ec08aba4c7"
+        }
+      ]
+    },
+    {
+      "name": "review",
+      "path": ".tmp/conversion-fixes-m2-review",
+      "assets": [
+        {
+          "name": "index-Bouyy4f1.css",
+          "sha256": "6831aa9742bb02f743b8835533fc014fc6e8a2dcfd3aebfe5da8b9271d065ad5"
+        },
+        {
+          "name": "index-DrzRMUbv.js",
+          "sha256": "8cad1450aa8fa28664950c468c688add72099e125601dc05a1855dbd3ee1fb61"
+        }
+      ]
+    },
+    {
+      "name": "leases",
+      "path": ".tmp/conversion-fixes-m2-leases",
+      "assets": [
+        {
+          "name": "index--JUB3rnA.js",
+          "sha256": "afd4bbc0843d5fe839db3e8277e3edeaf07b460057178711c5367d3aa8339eef"
+        },
+        {
+          "name": "index-Bouyy4f1.css",
+          "sha256": "6831aa9742bb02f743b8835533fc014fc6e8a2dcfd3aebfe5da8b9271d065ad5"
+        }
+      ]
+    },
+    {
+      "name": "settlement",
+      "path": ".tmp/conversion-fixes-m2-settlement",
+      "assets": [
+        {
+          "name": "index-Bouyy4f1.css",
+          "sha256": "6831aa9742bb02f743b8835533fc014fc6e8a2dcfd3aebfe5da8b9271d065ad5"
+        },
+        {
+          "name": "index-CoxrR9gt.js",
+          "sha256": "b7accc223fed936017f7ee3cae71489fd4eceb7c14371405501a93aa4da0fc2c"
+        }
+      ]
+    },
+    {
+      "name": "shared",
+      "path": ".tmp/conversion-fixes-m2-shared",
+      "assets": [
+        {
+          "name": "index-Bouyy4f1.css",
+          "sha256": "6831aa9742bb02f743b8835533fc014fc6e8a2dcfd3aebfe5da8b9271d065ad5"
+        },
+        {
+          "name": "index-CCNfPJQj.js",
+          "sha256": "d91ccc1772d9624204df901ecb7e94458146de457525b2a25b79f13539391a2e"
+        }
+      ]
+    },
+    {
+      "name": "framefield",
+      "path": ".tmp/conversion-fixes-m2-framefield",
+      "assets": [
+        {
+          "name": "index-DvOb7SbE.js",
+          "sha256": "45fa6e44f2ddebdd90c374848a1b0c8833ff6db9f8c9e50627a6ee0ae4c33109"
+        },
+        {
+          "name": "index-ZQEuF6XA.css",
+          "sha256": "37166aee5d5e975a7054f4d513530e92f49954004d419a3f8d57f7c8ecb731a9"
+        }
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "gray-2048.png",
+      "sha256": "366693af577bb9806e2fc5333e13d15df05e8bdd63d269de7257e062f02c74dc"
+    },
+    {
+      "name": "gray-20frames.gif",
+      "sha256": "dd1145ce139e26b291c3e0e4dd8902036f38b58ecb9851c0ebdd49905f35a73b"
+    },
+    {
+      "name": "gray-alias.png",
+      "sha256": "a3048378d617cdcf53b496e349194a547ab08e3a06a5930827bbae01bf5d36b0"
+    },
+    {
+      "name": "gray-long-sheet.png",
+      "sha256": "43ad343da1f219245f9dab6444143d52b21ec7b1261a2867761afc67818d1f2c"
+    },
+    {
+      "name": "gray-oversize.png",
+      "sha256": "340d12f60b622f0b25173b57ac31928ad66d94d16809731acc2ee642d3adea8c"
+    }
+  ]
+}

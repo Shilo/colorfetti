@@ -2857,6 +2857,31 @@ settings/library intact and reports the failure. No `localStorage.clear()` is us
 
 ### Original-resolution exports and playback
 
+Preview reports actual sampled/full-source raster dimensions and source size.
+Inspect pixels (Pause & inspect for GIFs) pauses one selected frame and renders
+every source pixel. Previous/Next and a frame number field change that paused frame;
+Back to overview resumes playback. Native inspection supports at most 4,194,304
+pixels and 16,384 per side; unsupported sources retain overview with an explanation
+and Save guidance. Controls wrap within narrow viewports with 44px targets.
+Native mode initially maps one source pixel to one CSS pixel where zoom bounds
+permit; Fit/zoom affect CSS presentation while retaining the full-source raster.
+Long sheets can exceed overview's 16× zoom bound in native mode.
+
+Keep source-coordinate conversion, complete immutable analysis, whole-item palette
+selection/subset and frozen whole-clip Cleanup. No ROI approximation or native clip
+cache is introduced. New structural preparations are local to one job. A shared
+queue across viewer instances permits one active and one latest pending native
+conversion; wait for actual canceled native/ordinary producer settlement before
+new allocations, reject stale results, and retain source leases. Shared cache
+joins and warm hits expose the actual producer promise to every subscriber.
+Native requests retain selected original-only sources in Palette; legacy input
+analysis uses the separate capture ledger until settlement. Display records retain
+only pixels and an opaque request identity. Static logical
+headroom is 84 MiB separate from the source ledger, enforced by geometry and job
+serialization rather than a charged admission token; it is not a whole-process
+heap/GPU/GC guarantee. GIF Save remains whole-animation, Copy first-frame PNG, with
+tooltips explaining that scope while inspecting another frame.
+
 Snapshot selected colors/matching/maximum/alpha/family at the Save or Copy gesture; asynchronous completion
 cannot adopt later edits. Both families use `-colorfetti` filenames, with shared
 case-insensitive collision handling. Encoded image bytes retain their existing rules.
