@@ -29,8 +29,8 @@ describe('atomic batch export scheduling', () => {
     expect(order).toEqual(['one.png', 'yield', 'two.png', 'yield', 'three.png']);
     expect(captured.names).toEqual(['colorfetti.zip']);
     const files = unzipSync(new Uint8Array(await captured.blobs[0].arrayBuffer()));
-    expect(Object.keys(files)).toEqual(['one-1bit.png', 'two-1bit.png', 'three-1bit.png']);
-    for (const image of images) expect(files[image.name.replace('.png', '-1bit.png')]).toEqual(pngBytes(image));
+    expect(Object.keys(files)).toEqual(['one-colorfetti.png', 'two-colorfetti.png', 'three-colorfetti.png']);
+    for (const image of images) expect(files[image.name.replace('.png', '-colorfetti.png')]).toEqual(pngBytes(image));
   });
 
   it('downloads nothing if a later file fails after yielding', async () => {
@@ -47,7 +47,7 @@ describe('atomic batch export scheduling', () => {
   it('keeps a single-file download without an extra batch yield', async () => {
     const captured = downloads();
     await saveAll(images.slice(0, 1), image => image);
-    expect(captured.names).toEqual(['one-1bit.png']);
+    expect(captured.names).toEqual(['one-colorfetti.png']);
     expect(pause).not.toHaveBeenCalled();
   });
 });

@@ -2,7 +2,7 @@ import { afterEach, describe, it, expect, vi } from 'vitest';
 import { execFileSync } from 'node:child_process';
 import { inflateSync, crc32 } from 'node:zlib';
 import { unzipSync } from 'fflate';
-import { outNames, zipBytes, pngBytes, fileBytes, copyOne } from './save.js';
+import { outNames, zipBytes, pngBytes, fileBytes, copyOne, downloadName } from './save.js';
 import { decodeGif, encodeGif } from './gif.js';
 
 describe('clipboard promise ownership', () => {
@@ -66,31 +66,49 @@ describe('clipboard promise ownership', () => {
 });
 
 describe('outNames', () => {
-  it('replaces the extension with -1bit.png', () => {
-    expect(outNames(['hero.png', 'my.sprite.v2.gif'])).toEqual(['hero-1bit.png', 'my.sprite.v2-1bit.png']);
+  it.each(['png', 'jpg', 'jpeg', 'JPEG', 'webp', 'bmp', 'gif', 'avif', 'svg', 'tiff'])('names a still %s input for its PNG output in either family', extension => {
+    for (const family of [undefined, '1bit', 'full-palette']) {
+      expect(downloadName({ name: `my.sprite.v2.${extension}`, family })).toBe('my.sprite.v2-colorfetti.png');
+    }
+  });
+
+  it('uses animation metadata rather than the input extension in either family', () => {
+    for (const family of [undefined, '1bit', 'full-palette']) {
+      expect(downloadName({ name: 'walk.GIF', family, frames: [{}, {}] })).toBe('walk-colorfetti.gif');
+      expect(downloadName({ name: 'walk.png', family, getFrame() {} })).toBe('walk-colorfetti.gif');
+    }
+  });
+
+  it('replaces the extension with -colorfetti.png', () => {
+    expect(outNames(['hero.png', 'my.sprite.v2.gif'])).toEqual(['hero-colorfetti.png', 'my.sprite.v2-colorfetti.png']);
   });
 
   it('copes with names that have no extension, no base, or a path', () => {
-    expect(outNames(['sprite', '.png', 'dir/a.png'])).toEqual(['sprite-1bit.png', 'image-1bit.png', 'dir-a-1bit.png']);
+    expect(outNames(['sprite', '.png', 'dir/a.png'])).toEqual(['sprite-colorfetti.png', 'image-colorfetti.png', 'dir-a-colorfetti.png']);
   });
 
   it('numbers duplicates, ignoring case', () => {
-    expect(outNames(['a.png', 'a.png', 'A.gif'])).toEqual(['a-1bit.png', 'a-2-1bit.png', 'A-3-1bit.png']);
+    expect(outNames(['a.png', 'a.png', 'A.gif'])).toEqual(['a-colorfetti.png', 'a-2-colorfetti.png', 'A-3-colorfetti.png']);
   });
 
   it('never returns the same name twice', () => {
     const out = outNames(['a.png', 'a.png', 'a-2.png']);
     expect(new Set(out).size).toBe(3);
   });
+
+  it('keeps Unicode and numbered basenames while avoiding collisions across input formats', () => {
+    expect(outNames(['café.JPEG', 'CAFÉ.webp', 'café-2.bmp', 'café.gif'], ['png', 'png', 'png', 'gif']))
+      .toEqual(['café-colorfetti.png', 'CAFÉ-2-colorfetti.png', 'café-2-2-colorfetti.png', 'café-colorfetti.gif']);
+  });
 });
 
 describe('zipBytes', () => {
   it('makes a zip that unpacks to the same files', () => {
-    const zipped = zipBytes(['x-1bit.png', 'y-1bit.png'], [Uint8Array.of(1, 2, 3), Uint8Array.of(4)]);
+    const zipped = zipBytes(['x-colorfetti.png', 'y-colorfetti.png'], [Uint8Array.of(1, 2, 3), Uint8Array.of(4)]);
     const files = unzipSync(zipped);
-    expect(Object.keys(files)).toEqual(['x-1bit.png', 'y-1bit.png']);
-    expect([...files['x-1bit.png']]).toEqual([1, 2, 3]);
-    expect([...files['y-1bit.png']]).toEqual([4]);
+    expect(Object.keys(files)).toEqual(['x-colorfetti.png', 'y-colorfetti.png']);
+    expect([...files['x-colorfetti.png']]).toEqual([1, 2, 3]);
+    expect([...files['y-colorfetti.png']]).toEqual([4]);
   });
 });
 
@@ -148,11 +166,11 @@ describe('animations', () => {
     expect(decodeGif(bytes)).toMatchObject({ width: 2, height: 1, loop: 3 });
   });
   it('names an animated image .gif and a still one .png', () => {
-    expect(outNames(['walk.gif', 'hero.png', 'walk.png'], ['gif', 'png', 'png'])).toEqual(['walk-1bit.gif', 'hero-1bit.png', 'walk-1bit.png']);
+    expect(outNames(['walk.gif', 'hero.png', 'walk.png'], ['gif', 'png', 'png'])).toEqual(['walk-colorfetti.gif', 'hero-colorfetti.png', 'walk-colorfetti.png']);
   });
 
   it('keeps two animations with the same name apart', () => {
-    expect(outNames(['walk.gif', 'walk.gif'], ['gif', 'gif'])).toEqual(['walk-1bit.gif', 'walk-2-1bit.gif']);
+    expect(outNames(['walk.gif', 'walk.gif'], ['gif', 'gif'])).toEqual(['walk-colorfetti.gif', 'walk-2-colorfetti.gif']);
   });
 
   it('encodes an image with frames as a GIF and one without as a PNG', async () => {

@@ -264,21 +264,22 @@ describe('palette save names and batch atomicity', () => {
     return { captured, clicked };
   }
 
-  it('preserves legacy suffixes and numbers palette names case-insensitively', () => {
-    expect(outNames(['a.png', 'A.gif', 'a-2.png'], ['png', 'png', 'png'], ['full-palette', 'full-palette', 'full-palette'])).toEqual(['a-palette.png', 'A-2-palette.png', 'a-2-2-palette.png']);
-    expect(outNames(['a.png', 'a.png'], [], ['full-palette', undefined])).toEqual(['a-palette.png', 'a-1bit.png']);
-    expect(downloadName({ name: 'walk.gif', family: 'full-palette', getFrame() {} })).toBe('walk-palette.gif');
+  it('uses the same suffix for both families and numbers collisions case-insensitively', () => {
+    expect(outNames(['a.png', 'A.gif', 'a-2.png'], ['png', 'png', 'png'])).toEqual(['a-colorfetti.png', 'A-2-colorfetti.png', 'a-2-2-colorfetti.png']);
+    expect(downloadName({ name: 'a.png', family: 'full-palette' })).toBe('a-colorfetti.png');
+    expect(downloadName({ name: 'a.png', family: '1bit' })).toBe('a-colorfetti.png');
+    expect(downloadName({ name: 'walk.gif', family: 'full-palette', getFrame() {} })).toBe('walk-colorfetti.gif');
   });
 
   it('awaits the one-image callback and snapshots descriptor names for a fully encoded ZIP', async () => {
     const result = downloads(), palette = colors(2), image = still(palette, [0, 1, 256]);
     await saveAll([{ name: 'wrong.png' }], async () => image);
-    expect(result.clicked).toEqual(['sprite-palette.png']);
+    expect(result.clicked).toEqual(['sprite-colorfetti.png']);
     const items = [{ name: 'first.png' }, { name: 'second.png' }];
     await saveAll(items, async item => ({ ...image, name: item.name === 'first.png' ? 'same.png' : 'SAME.png' }));
-    expect(result.clicked).toEqual(['sprite-palette.png', 'colorfetti.zip']);
+    expect(result.clicked).toEqual(['sprite-colorfetti.png', 'colorfetti.zip']);
     const files = unzipSync(new Uint8Array(await result.captured[1].arrayBuffer()));
-    expect(Object.keys(files)).toEqual(['same-palette.png', 'SAME-2-palette.png']);
+    expect(Object.keys(files)).toEqual(['same-colorfetti.png', 'SAME-2-colorfetti.png']);
     for (const file of Object.values(files)) expect(readPng(file).pixels).toEqual(rgba(palette, [0, 1, 256]));
   });
 

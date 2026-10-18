@@ -346,8 +346,9 @@ Product descriptions lead with generating, choosing, importing and editing palet
 Palette says “Use Auto, pick a palette or import your own.” followed by
 Nearest: “Tune color matching and limits.” In 1-bit, Palette says “Pick a color pair
 or choose your own colors.” followed by Style: “Pick an effect and tune its settings.”
-Download all saves `colorfetti.zip`; individual suffixes,
-repository URLs and conversion behavior retain their existing rules. Settings use
+Download all saves `colorfetti.zip`; individual images use the shared `-colorfetti`
+suffix in both recoloring families. Repository URLs and conversion behavior retain
+their existing rules. Settings use
 `colorfetti` and saved palettes use `colorfetti-palettes-v1`; read-only legacy aliases
 restore existing records when the new keys are absent, including the initial theme.
 These identity rules supersede earlier branding and example-animation references.
@@ -1483,12 +1484,17 @@ in browsers.
 
 ## Saving
 
-- A single image saves as `<original name without extension>-1bit.png` at its original
-  pixel size.
+- A single image saves as `<original name without extension>-colorfetti.png` at its original
+  pixel size, in both Palette and 1-bit modes. PNG, JPEG, WebP, BMP and all other
+  supported still inputs use this same PNG naming rule; the input extension never
+  determines the output format. Missing basenames use `image`; path separators
+  become hyphens. Save, Preview, touch actions, drag exports and ZIP entries share
+  this rule, as do their filename notices.
 - Download all saves `colorfetti.zip` containing one such PNG per image. Duplicate names get
-  `-2`, `-3` and so on. With exactly one image on the wall there is no zip: the button reads
-  "Download" and saves that one file, the same as the image's own Download.
-- An animation saves as `<original name without extension>-1bit.gif`: every frame in the two
+  `-2`, `-3` and so on before `-colorfetti`, ignoring case and avoiding collisions
+  with already-numbered source names. With exactly one image on the wall there is no zip:
+  the button reads "Download" and saves that one file, the same as the image's own Download.
+- An animation saves as `<original name without extension>-colorfetti.gif`: every frame in the two
   chosen colors, empty pixels transparent and a None color's pixels with them, with the original frame delays and loop count.
   Download all puts GIFs and PNGs in the same zip.
 - Saving always uses the converted version, whatever the wall is showing.
@@ -1598,7 +1604,7 @@ it is doing:
 
 - A job of 2 million pixels or more first shows a message under the top bar, where the
   other messages show, with a small square that turns: "Reading name…" ("Reading 2 of 5…"
-  within a batch), "Downloading name-1bit.png…", "Downloading colorfetti.zip (5 images)…" for
+  within a batch), "Downloading name-colorfetti.png…", "Downloading colorfetti.zip (5 images)…" for
   Download all, or "Copying name…". An animation counts all its frames, and Download all
   counts all the images together.
 - Every download, including a smaller job, shows a toast naming its output file. A smaller
@@ -2748,9 +2754,9 @@ settings/library intact and reports the failure. No `localStorage.clear()` is us
 ### Original-resolution exports and playback
 
 Snapshot selected colors/matching/maximum/alpha/family at the Save or Copy gesture; asynchronous completion
-cannot adopt later edits. Full palette exports use `-palette` filenames, with existing
-collision handling. Legacy `-1bit` names and bytes remain compatible. Copy exports PNG of
-the first animation frame. Save all downloads no file/ZIP until every encoding succeeds.
+cannot adopt later edits. Both families use `-colorfetti` filenames, with shared
+case-insensitive collision handling. Encoded image bytes retain their existing rules.
+Copy exports PNG of the first animation frame. Save all downloads no file/ZIP until every encoding succeeds.
 
 Internal full palette indices are Uint16, opaque 0–255 and empty sentinel 256. PNG compacts
 used entries to 1/2/4/8-bit indexed output, including transparency when needed. All 256

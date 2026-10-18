@@ -4,17 +4,16 @@ import { exportPalette, markUsed, markUsedAsync, compactTable, EMPTY_INDEX, yiel
 import { checkCanceled } from './quantize.js';
 import { paletteAlpha, inspectAlphaPixel } from './palette-alpha.js';
 
-// Output file names for a list of original names: extension replaced by "-1bit.png", or
-// "-1bit.gif" where `kinds` says 'gif', with -2, -3... added so no two outputs collide
-// (case-insensitively, for Windows). Full-palette families use "-palette" instead.
-export function outNames(names, kinds = [], families = []) {
+// Output file names use "-colorfetti" in both recoloring families. The extension
+// follows the encoded output: PNG for stills, GIF for animations. Add -2, -3...
+// before the suffix so no two outputs collide (case-insensitively, for Windows).
+export function outNames(names, kinds = []) {
   const taken = new Set();
   return names.map((name, n) => {
     const ext = kinds[n] === 'gif' ? 'gif' : 'png';
     const base = name.replace(/\.[^.]+$/, '').replace(/[\\/]/g, '-') || 'image';
-    const suffix = families[n] === 'full-palette' ? 'palette' : '1bit';
-    let out = `${base}-${suffix}.${ext}`;
-    for (let i = 2; taken.has(out.toLowerCase()); i++) out = `${base}-${i}-${suffix}.${ext}`;
+    let out = `${base}-colorfetti.${ext}`;
+    for (let i = 2; taken.has(out.toLowerCase()); i++) out = `${base}-${i}-colorfetti.${ext}`;
     taken.add(out.toLowerCase());
     return out;
   });
@@ -219,7 +218,7 @@ function download(blob, filename) {
 // an animation may expose replayable { frameCount, getFrame(index), loop }.
 const kind = image => (image.frames || image.getFrame ? 'gif' : 'png');
 // The filename offered to the browser for one image; shared with the toast so its text matches the download.
-export const downloadName = image => outNames([image.name], [kind(image)], [image.family])[0];
+export const downloadName = image => outNames([image.name], [kind(image)])[0];
 // The GIF code is loaded only when an animation is saved, which keeps it out of the first download.
 export const fileBytes = async (image, { signal } = {}) => {
   checkCanceled(signal);
@@ -260,16 +259,15 @@ export function copyOne(png) {
 // It may be asynchronous. No download occurs unless every file encoded successfully.
 export async function saveAll(items, image) {
   if (items.length === 1) return saveOne(await image(items[0]));
-  const kinds = [], families = [], names = [], files = [];
+  const kinds = [], names = [], files = [];
   for (const [index, item] of items.entries()) {
     const one = await image(item);
     kinds.push(kind(one));
-    families.push(one.family);
     names.push(one.name);
     files.push(await fileBytes(one));
     // A batch of synchronous 1-bit stills must give input and rendering a turn
     // between files. Keep final ZIP assembly and download atomic.
     if (index + 1 < items.length) await yieldExport();
   }
-  download(new Blob([zipBytes(outNames(names, kinds, families), files)], { type: 'application/zip' }), 'colorfetti.zip');
+  download(new Blob([zipBytes(outNames(names, kinds), files)], { type: 'application/zip' }), 'colorfetti.zip');
 }

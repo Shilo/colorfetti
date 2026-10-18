@@ -338,7 +338,8 @@ A deletion/storage failure is reported rather than silently clearing data.
 
 ### Export boundaries
 
-Full palette still images save as `-palette.png`; animated images save as `-palette.gif`.
+Both Palette and 1-bit still images save as `-colorfetti.png`; animated images save as
+`-colorfetti.gif`. Download all uses `colorfetti.zip` with the same filenames inside.
 Save and Copy use every original-resolution pixel and a snapshot of the current matching rule, colors
 and alpha cut, including the optional maximum. Preview, Save and Copy select from the
 same full-resolution source; animation Copy uses its shared all-frame subset. PNG packs only used colors at the smallest 1/2/4/8-bit depth; all 256 used

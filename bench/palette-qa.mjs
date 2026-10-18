@@ -213,7 +213,7 @@ try {
       await tileMatches(pixels);
       const toggle = page.getByRole('button',{name:`${name} conversion`,exact:true});
       if (results.legacy.length % 2 === 0) { await toggle.click(); assert.equal(await toggle.getAttribute('aria-pressed'),'false'); await tileMatches(source); }
-      const bytes = await download(page.getByRole('button',{name:'Save fixture.png',exact:true}),'fixture-1bit.png');
+      const bytes = await download(page.getByRole('button',{name:'Save fixture.png',exact:true}),'fixture-colorfetti.png');
       const decoded = readPng(bytes); assert.equal(decoded.w,w); assert.equal(decoded.h,h); samePixels(decoded.pixels,pixels,`${palette.name}/${name}`);
       assert.deepEqual(bytes,Buffer.from(baselinePngBytes({mask:mask(analysis,key,defaults(key)),w,h,first:palette.dark,second:palette.light})), 'Legacy PNG bytes changed');
       results.legacy.push({palette:palette.name,style:name,hash:hash(decoded.pixels)});
@@ -237,7 +237,7 @@ try {
   let [first,second] = inks(state.first,state.second,state.none,state.style), expected = colorize(mask(analysis,'solid',state.settings.solid),first,second);
   await tileMatches(expected); await page.getByRole('button',{name:'Solid conversion',exact:true}).click();
   samePixels(readPng(await copy(page.getByRole('button',{name:'Copy fixture.png',exact:true}))).pixels,expected,'Legacy custom clipboard');
-  samePixels(readPng(await download(page.getByRole('button',{name:'Save image',exact:true}),'fixture-1bit.png')).pixels,expected,'Legacy custom Save image');
+  samePixels(readPng(await download(page.getByRole('button',{name:'Save image',exact:true}),'fixture-colorfetti.png')).pixels,expected,'Legacy custom Save image');
   await chooseStyle('cutout','Cutout'); await chooseStyle('solid','Solid'); assert.equal((await stored()).settings.solid.threshold,100);
   results.extra.push('Legacy custom colors/None/Swap/settings memory/Original/copy/single-save');
 
@@ -251,7 +251,7 @@ try {
     await openPalette(); await page.getByRole('group',{name:'Full palettes',exact:true}).getByRole('button',{name:palette.name,exact:true}).click(); await closePanel();
     assert.equal((await stored()).paletteId,palette.id); expected = nearestReference(fixture,palette.colors);
     await tileMatches(expected); await page.getByRole('button',{name:`${palette.name} conversion`,exact:true}).click(); await tileMatches(source);
-    const decoded = readPng(await download(page.getByRole('button',{name:'Save fixture.png',exact:true}),'fixture-palette.png'));
+    const decoded = readPng(await download(page.getByRole('button',{name:'Save fixture.png',exact:true}),'fixture-colorfetti.png'));
     assert.equal(decoded.w,w); assert.equal(decoded.h,h); samePixels(decoded.pixels,expected,palette.name);
     samePixels(readPng(await copy(page.getByRole('button',{name:'Copy fixture.png',exact:true}))).pixels,expected,`${palette.name} clipboard`);
     results.full.push({palette:palette.name,colors:palette.colors.length,hash:hash(decoded.pixels)});
@@ -276,7 +276,7 @@ try {
     assert.equal((await stored()).metric,'rgb');assert.equal(await page.getByRole('button',{name:'RGB matching',exact:true}).getAttribute('aria-pressed'),'true');
     await page.getByRole('button',{name:'Palette settings',exact:true}).click();
     const rgbExpected = nearestReference(fixture,palette.colors,128,'rgb'); await tileMatches(rgbExpected);
-    samePixels(readPng(await download(page.getByRole('button',{name:'Save fixture.png',exact:true}),'fixture-palette.png')).pixels,rgbExpected,`${palette.name} RGB PNG`);
+    samePixels(readPng(await download(page.getByRole('button',{name:'Save fixture.png',exact:true}),'fixture-colorfetti.png')).pixels,rgbExpected,`${palette.name} RGB PNG`);
     samePixels(readPng(await copy(page.getByRole('button',{name:'Copy fixture.png',exact:true}))).pixels,rgbExpected,`${palette.name} RGB clipboard`);
     results.rgb.push({palette:palette.name,hash:hash(rgbExpected)});
   }
@@ -296,7 +296,7 @@ try {
   await maximum.fill('2'); await maximum.press('Enter'); assert.equal((await stored()).maxColors, 2);
   for(const invalid of ['1','257']) { await maximum.fill(invalid); await maximum.press('Enter'); assert.equal(await maximum.inputValue(), '2'); }
   await closePanel(); await tileMatches(twoPixels);
-  samePixels(readPng(await download(page.getByRole('button', { name: 'Save fixture.png', exact: true }), 'fixture-palette.png')).pixels, twoPixels, 'Max colors minimum-two PNG');
+  samePixels(readPng(await download(page.getByRole('button', { name: 'Save fixture.png', exact: true }), 'fixture-colorfetti.png')).pixels, twoPixels, 'Max colors minimum-two PNG');
   samePixels(readPng(await copy(page.getByRole('button', { name: 'Copy fixture.png', exact: true }))).pixels, twoPixels, 'Max colors minimum-two clipboard');
   await page.getByRole('button', { name: 'Palette settings', exact: true }).click();
   await maximum.fill(''); await maximum.press('Enter'); assert.equal((await stored()).maxColors, 0);
@@ -350,7 +350,7 @@ try {
   await page.locator('input[type=file][accept="image/*"]').setInputFiles(gifPath);
   await page.getByRole('button',{name:'Save walk.gif',exact:true}).waitFor();
   const active = FULL_PRESETS.at(-1), gifExpected = originalGif.map(frame => nearestReference(frame,active.colors));
-  const gif = readGif(await download(page.getByRole('button',{name:'Save walk.gif',exact:true}),'walk-palette.gif'));
+  const gif = readGif(await download(page.getByRole('button',{name:'Save walk.gif',exact:true}),'walk-colorfetti.gif'));
   assert.deepEqual([gif.w,gif.h,gif.loop,gif.frames.length],[3,2,3,2]);
   for (let i=0;i<2;i++) { assert.equal(gif.frames[i].delay,gifDelays[i]); samePixels(gif.frames[i].pixels,gifExpected[i],`Full GIF frame${i}`); }
   samePixels(readPng(await copy(page.getByRole('button',{name:'Copy walk.gif',exact:true}))).pixels,gifExpected[0],'GIF first-frame clipboard');
@@ -360,14 +360,14 @@ try {
   assert.deepEqual(fullZipWall,['fixture.png','walk.gif'],'Sequential imports must append in wall order');
   const zip = unzipSync(await download(page.getByRole('button',{name:'Save all images',exact:true}),'colorfetti.zip'));
   assert.deepEqual(Object.keys(zip),exportOrder(fullZipWall,'full-palette'),'ZIP must preserve the captured wall order');
-  samePixels(readPng(zip['fixture-palette.png']).pixels,nearestReference(fixture,active.colors),'ZIP full still');
-  samePixels(readGif(zip['walk-palette.gif']).frames[1].pixels,gifExpected[1],'ZIP full GIF');
+  samePixels(readPng(zip['fixture-colorfetti.png']).pixels,nearestReference(fixture,active.colors),'ZIP full still');
+  samePixels(readGif(zip['walk-colorfetti.gif']).frames[1].pixels,gifExpected[1],'ZIP full GIF');
   results.extra.push('Full GIF exact frames/delays/loop/first-frame copy and mixed ZIP');
 
   await openPalette(); await page.getByRole('group',{name:'Color system',exact:true}).getByRole('button',{name:'1-bit',exact:true}).click(); await closePanel();
   state = await stored(); assert.equal(state.style,'solid'); assert.equal(state.none,2); assert.equal(state.settings.solid.threshold,100);
   const frames = originalGif.map(frame => analyze(frame)); unify(frames); [first,second] = inks(state.first,state.second,state.none,state.style);
-  const legacyGifBytes = await download(page.getByRole('button',{name:'Save walk.gif',exact:true}),'walk-1bit.gif');
+  const legacyGifBytes = await download(page.getByRole('button',{name:'Save walk.gif',exact:true}),'walk-colorfetti.gif');
   const legacyGif = readGif(legacyGifBytes);
   assert.deepEqual(legacyGifBytes,Buffer.from(baselineEncodeGif({w:3,h:2,first,second,loop:3,frames:frames.map((frame,i)=>({mask:mask(frame,'solid',state.settings.solid),delay:gifDelays[i]}))})),'Legacy GIF bytes changed');
   for (let i=0;i<2;i++) samePixels(legacyGif.frames[i].pixels,colorize(mask(frames[i],'solid',state.settings.solid),first,second),`Legacy GIF frame${i}`);
@@ -375,7 +375,7 @@ try {
   assert.deepEqual(legacyZipWall,fullZipWall,'Family changes must preserve wall order');
   const legacyZip = unzipSync(await download(page.getByRole('button',{name:'Save all images',exact:true}),'colorfetti.zip'));
   assert.deepEqual(Object.keys(legacyZip),exportOrder(legacyZipWall,'two-color'),'Legacy ZIP must preserve the captured wall order');
-  samePixels(readPng(legacyZip['fixture-1bit.png']).pixels,colorize(mask(analysis,'solid',state.settings.solid),first,second),'ZIP legacy still');
+  samePixels(readPng(legacyZip['fixture-colorfetti.png']).pixels,colorize(mask(analysis,'solid',state.settings.solid),first,second),'ZIP legacy still');
   results.extra.push('Family round-trip preserves legacy custom colors/None/style settings, legacy GIF and mixed ZIP');
 
   // A2MP save takes the busy50ms path. Changing palette and removing an image
@@ -395,7 +395,7 @@ try {
     document.querySelector('.palette-rail button[aria-label="DawnBringer 16"]').click();
   });
   let downloaded = await pendingDownload;
-  assert.equal(downloaded.suggestedFilename(),'big-palette.png');
+  assert.equal(downloaded.suggestedFilename(),'big-colorfetti.png');
   let large = readPng(readFileSync(await downloaded.path())); assert.deepEqual([large.w,large.h],[bigW,bigH]);
   samePixels(large.pixels,bigPixels,'2MP save click palette snapshot');
   await openPalette(); await page.getByRole('group',{name:'Full palettes',exact:true}).getByRole('button',{name:'PICO-8',exact:true}).click();
@@ -410,9 +410,9 @@ try {
   downloaded = await pendingDownload; assert.equal(downloaded.suggestedFilename(),'colorfetti.zip');
   const snapshotZip = unzipSync(readFileSync(await downloaded.path()));
   assert.deepEqual(Object.keys(snapshotZip),exportOrder(snapshotZipWall,'full-palette'),'ZIP must preserve the gesture wall including later removals');
-  samePixels(readPng(snapshotZip['fixture-palette.png']).pixels,nearestReference(fixture,FULL_PRESETS.find(p=>p.id==='preset-pico8').colors),'ZIP palette snapshot');
-  samePixels(readPng(snapshotZip['big-palette.png']).pixels,bigPixels,'ZIP removed-image snapshot');
-  samePixels(readGif(snapshotZip['walk-palette.gif']).frames[1].pixels,nearestReference(originalGif[1],FULL_PRESETS.find(p=>p.id==='preset-pico8').colors),'ZIP GIF palette snapshot');
+  samePixels(readPng(snapshotZip['fixture-colorfetti.png']).pixels,nearestReference(fixture,FULL_PRESETS.find(p=>p.id==='preset-pico8').colors),'ZIP palette snapshot');
+  samePixels(readPng(snapshotZip['big-colorfetti.png']).pixels,bigPixels,'ZIP removed-image snapshot');
+  samePixels(readGif(snapshotZip['walk-colorfetti.gif']).frames[1].pixels,nearestReference(originalGif[1],FULL_PRESETS.find(p=>p.id==='preset-pico8').colors),'ZIP GIF palette snapshot');
   assert.equal(await page.getByRole('button',{name:'Save big.png',exact:true}).count(),0);
   results.extra.push('2MP save preserves click palette; ZIP preserves palette and removed-image snapshots');
 
