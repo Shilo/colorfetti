@@ -155,6 +155,10 @@ bitmap/canvas fallback, which can still be privacy-perturbed. GIF never falls ba
 canvas: its shared indexed decoder validates LZW output length, palette indices and
 termination and reports malformed/unsupported data explicitly. Release all
 decoder/frame/bitmap/canvas resources, preserve cancellation and palette pixel limits.
+GIF graphic-control transparency/disposal/delay apply to one following image only.
+Repair GifReader's inherited fields when no real control occurs between images;
+skip structured comment/application subblocks so embedded control-like bytes cannot
+extend that scope. This does not add plain-text graphics support.
 User artwork import lazily loads `image-import-client.js` and one serial worker.
 Single-frame non-GIF stills up to 4096 pixels use the same cooperative analysis
 through the serial queue, avoiding worker round trips; larger sources/GIFs use it.

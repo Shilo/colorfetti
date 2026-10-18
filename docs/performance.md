@@ -22,6 +22,10 @@ The shared GIF blitter validates LZW output length, emitted palette indices,
 dictionary references and termination during its single decode. Its dictionary and
 stack add 20 KiB per active frame decode; it does not allocate a second index image.
 Malformed or unsupported GIFs fail explicitly instead of retrying through canvas.
+Inter-image extension framing is scanned to repair GifReader's inherited graphic
+controls when the next image has no control of its own. The scan skips length-prefixed
+payloads and never reads/decompresses image data again; only a missing-control frame
+needs a metadata clone. Comment/application payloads cannot masquerade as controls.
 The existing framing parser still retains metadata for every frame; the scan bitsets
 and pixel caps are not a whole-heap bound. One large LZW frame remains synchronous.
 

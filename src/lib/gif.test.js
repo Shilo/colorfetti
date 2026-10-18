@@ -17,7 +17,42 @@ function gif(frames, loop) {
   return buf.subarray(0, writer.end());
 }
 
+// Explicit framing keeps missing controls independent of the writer, which adds
+// one for every frame in gif(). Each patch contains clear, literal, EOI codes.
+const control = (disposal, transparent = null) => [0x21, 0xf9, 4, disposal << 2 | (transparent === null ? 0 : 1), 20, 0, transparent ?? 0, 0];
+const patch = (index, local = []) => [0x2c, 0, 0, 0, 0, 1, 0, 1, 0, local.length ? 0x80 : 0, ...local,
+  2, 2, 4 | index << 3 | 1 << 6, 1, 0];
+const comment = [0x21, 0xfe, 8, 0x21, 0xf9, 4, 9, 20, 0, 0, 0, 0];
+const application = [0x21, 0xff, 11, ...new TextEncoder().encode('TESTAPP0001'), 8, 0x21, 0xf9, 4, 9, 20, 0, 0, 0, 0];
+const framedGif = blocks => Uint8Array.from([71, 73, 70, 56, 57, 97, 1, 0, 1, 0, 128, 0, 0,
+  255, 0, 0, 0, 0, 255, ...blocks.flat(), 0x3b]);
+
 describe('decodeGif', () => {
+  it.each([
+    ['missing next control', [control(2, 0), patch(1), patch(0)], [BLUE, RED], [200, 100]],
+    ['comment/application decoys and local table', [control(2, 0), patch(1), comment, application, patch(0, [0, 255, 0, 255, 255, 0])], [BLUE, GREEN], [200, 100]],
+    ['missing next disposal', [control(3), patch(1), patch(0), control(0, 0), patch(0)], [BLUE, RED, RED], [200, 100, 200]],
+    ['explicit control through comments/applications', [control(2, 0), patch(1), control(0), comment, application, patch(0)], [BLUE, RED], [200, 200]],
+  ])('scopes graphics controls to one following image: %s', async (_, blocks, expected, delays) => {
+    const bytes = framedGif(blocks), decoded = decodeGif(bytes);
+    expect(decoded.frames.map(frame => [...frame.data])).toEqual(expected);
+    expect(decoded.frames.map(frame => frame.delay)).toEqual(delays);
+    expect(await decodeGifAsync(bytes)).toEqual(decoded);
+    const visited = [];
+    await visitGifFrames(bytes, frame => visited.push({ data: frame.data.slice(), delay: frame.delay }));
+    expect(visited).toEqual(decoded.frames);
+  });
+  it('rejects an inter-image extension whose sub-block exceeds the next descriptor', async () => {
+    // GifReader tolerates a non-11 application header by skipping a fixed span.
+    // The intervening framing scan must not read its 255-byte claim into pixels.
+    const malformed = [0x21, 0xff, 255, ...new Array(16).fill(0)];
+    const bytes = framedGif([control(2, 0), patch(1), malformed, patch(0)]);
+    expect(() => decodeGif(bytes)).toThrow('Invalid GIF extension bounds.');
+    await expect(decodeGifAsync(bytes)).rejects.toMatchObject({ code: 'GIF_INVALID' });
+    const visitor = vi.fn();
+    await expect(visitGifFrames(bytes, visitor)).rejects.toMatchObject({ code: 'GIF_INVALID' });
+    expect(visitor).toHaveBeenCalledOnce();
+  });
   it('visits exact composited frames sequentially using one borrowed canvas, without retaining a clip', async () => {
     const bytes = gif([
       [0, 0, 2, 2, [1, 0, 1, 1], { disposal: 1, delay: 7 }],

@@ -2662,6 +2662,11 @@ path; GIF palette and artwork imports share the indexed decoder described above.
 palette pixel limits and resource cleanup. No colors are heuristically rounded or merged.
 GIF LZW decode validates dictionary references, exact output length, every emitted
 palette index and termination while copying the palette's exact RGB bytes once.
+Graphic-control transparency, disposal and delay have scope over one following image.
+Frames without their own control use null transparency, disposal 0 and raw delay 0
+(the existing minimum browser playback rule then applies). Do not inherit these
+fields from the previous image. Structured comment/application subblocks between
+images can preserve a real control but their payload bytes cannot create one.
 Malformed or parser-unsupported GIF data fails explicitly for artwork and palettes;
 recognized GIFs never retry through native bitmap/canvas. Worker transport/runtime
 failures can still recover through the same exact decoder from immutable file bytes.

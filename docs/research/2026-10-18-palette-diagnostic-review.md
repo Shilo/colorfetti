@@ -177,3 +177,71 @@ unsupported copy formats retain potentially perturbed canvas fallback for non-GI
 Parser-unsupported GIF features now fail explicitly. One huge GIF frame remains
 synchronous; per-frame parser metadata is not bounded by the scanner's 2 MiB
 membership bitmap. Safari/iOS and physical touch hardware were not tested here.
+
+## Cross-browser follow-up and fresh independent review
+
+The user requested another independent challenge and testing in other installed
+browsers, then authorized isolated command-line profiles. Edge 155.0.4283.62 and
+Firefox 157.0.1 were available. Google Chrome was not found in the standard
+system/user installation paths or registered App Paths, so no branded Chrome
+result is claimed. Codex Browser supplies additional Chromium coverage.
+
+The fresh reviewer found a valid-GIF defect in GifReader's existing metadata:
+graphic-control transparency, disposal and delay incorrectly persisted into
+later image descriptors without a control of their own. A two-frame 1×1 GIF
+should display opaque blue then opaque red, but the app lost red. Root required
+a native browser countercheck before accepting the finding: Edge and Firefox
+both returned the expected opaque pixels, independently agreeing with FFmpeg.
+Native raw delays differed (Edge 0, Firefox 100 ms on the uncontrolled frame);
+the app retains its existing 0/1-centisecond → 100 ms playback rule.
+
+The agreed narrow repair scans only structured extension framing between known
+image offsets, skipping length-prefixed comment/application payloads. Without a
+real graphic control it resets the three inherited fields. No second LZW decode,
+new GIF feature or whole parser fork is introduced. Tests cover missing controls,
+local tables, misleading control-like payload bytes, disposal 3, explicit controls
+across extensions and malformed extension bounds. Palette acquisition, artwork
+and Save now independently preserve both colors in production. This is separate
+from the original 26 false colors: the supplied sprite already has frame controls.
+
+Root rejected a separate proposal to paint an uncovered logical GIF background:
+that would contradict already measured native browser transparency. The reviewer
+agreed to leave it unchanged. Strict validation claims refer to frame LZW/index
+integrity, not rejection of every malformed container accepted by GifReader.
+
+Firefox's partial-alpha control exposed a **pre-existing acquisition limitation**:
+native BGRA reports all-null color metadata and exposes premultiplied RGB. The
+existing bitmap/canvas path unpremultiplies it but cannot recover the original
+low-alpha RGB bytes. Both partial PNG and WebP controls have 14 raw visible RGBs
+and 34 acquired RGBs. A direct earlier/current module comparison using
+`6f8238a:src/lib/image-decode.js` found **zero changed bytes**, and alpha remained
+exact. Opaque PNG remained 15 colors and byte exact. This is not presented as
+raw-source preservation in Firefox or as a regression introduced by this work.
+
+For native-absent/all-null partial-alpha paths only, the harness independently
+acquires stable browser-managed pixels twice and compares Save to those pixels.
+It still compares every acquired alpha byte with FFmpeg and records raw/acquired
+counts, changed visible pixels and maximum RGB deltas. The two Firefox fixtures
+each report 9472 changed visible pixels, maximum channel delta 219, alpha changes
+0; the largest RGB differences occur at extremely low alpha. Healthy native
+Chromium paths retain strict independent FFmpeg pixel oracles. GIF and opaque
+controls are never relaxed. Firefox Original gradient counts also compare with
+an independent browser-managed acquisition, rather than skipping those counts.
+
+After the source repair, **1161 unit tests passed, two existing skips, 67 files**;
+production build and QA syntax checks passed. The reviewer independently checked
+66 GIF clips / 310 frames / 378107 logical pixels against FFmpeg, including 30
+clips with omitted controls. All agreed after the fix. Root and reviewer agreed
+on the source fix, the rejected background change and the conditional Firefox
+oracle with its disclosed limits.
+
+The expanded **21 acceptance groups** passed with no unexpected runtime errors
+in Edge and Firefox at 1280×900 and 390×844, Codex Browser at desktop and 390×844,
+and isolated Brave with default Shields at 1280×900. Phone runs use the touch-UI
+capability shim, not physical hardware. Receipts remain local under
+`.tmp/gif-palette-diagnostic/cross-browser-qa/` (`edge-final.json`,
+`firefox-final.json`, both `*-phone-final.json`, `firefox-source-baseline.json`,
+`firefox-native-controls.json`, native GCE probes), `cross-browser-final/`
+(`codex-desktop.json`, `codex-phone.json`, `brave-desktop.json`, `palette-29-phone.png`) and
+`isolated-brave-final-qa.json`. Fresh review details are in
+`.tmp/gif-palette-diagnostic/cross-browser-review.md`.

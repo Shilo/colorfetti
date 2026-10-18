@@ -11,6 +11,28 @@ function invalidGif(message, cause) {
   return problem;
 }
 
+// GifReader carries the previous GCE into later images without their own one.
+// Its scope ends at the next graphic. Read only intervening extension framing,
+// not payload bytes: comments/application data can contain a false 21 F9 pair.
+// Plain-text graphics remain unsupported by GifReader, before reaching here.
+function hasGraphicsControl(bytes, start, info) {
+  const end = info.data_offset - 10 - (info.has_local_palette ? info.palette_size * 3 : 0);
+  if (start > end || end < 0 || bytes[end] !== 0x2c) throw invalidGif('Invalid GIF frame extensions.');
+  let found = false;
+  for (let cursor = start; cursor < end;) {
+    if (bytes[cursor++] !== 0x21 || cursor >= end) throw invalidGif('Invalid GIF frame extensions.');
+    if (bytes[cursor++] === 0xf9) found = true;
+    while (true) {
+      if (cursor >= end) throw invalidGif('Invalid GIF extension bounds.');
+      const size = bytes[cursor++];
+      if (!size) break;
+      cursor += size;
+      if (cursor > end) throw invalidGif('Invalid GIF extension bounds.');
+    }
+  }
+  return found;
+}
+
 // Decodes a GIF into full-size RGBA frames, each as it appears on screen. GIF frames can be
 // partial patches drawn over earlier ones, so they are composited here once.
 // Returns { width, height, loop, frames: [{ data, delay }] }: delay is in milliseconds, loop is
@@ -26,10 +48,12 @@ function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, lim
   let before = null; // the previous frame, whose "disposal" says how to leave the canvas
   let saved = null;
   for (let i = 0; i < reader.numFrames(); i++) {
-    const info = reader.frameInfo(i);
+    let info = reader.frameInfo(i);
     if (!info.width || !info.height || info.x + info.width > width || info.y + info.height > height
       || info.palette_offset == null || !info.palette_size || info.palette_offset + info.palette_size * 3 > bytes.length
       || info.data_offset + info.data_length > bytes.length) throw invalidGif('Invalid GIF frame dimensions or data.');
+    if (before && !hasGraphicsControl(bytes, before.data_offset + before.data_length, info))
+      info = { ...info, delay: 0, transparent_index: null, disposal: 0 };
     if (before?.disposal === 2) {
       // the previous frame asked for its area to be cleared
       for (let y = before.y; y < before.y + before.height; y++) {
