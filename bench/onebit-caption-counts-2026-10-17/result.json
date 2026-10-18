@@ -1,0 +1,133 @@
+{
+  "note": "Node host timings, not phone or browser FPS. Cold structural preparation can block within one mask; no loop was changed.",
+  "sheetSize": 2048,
+  "sheet": [
+    {
+      "style": "cutout",
+      "maskMs": 17.47800000000001,
+      "roleScanMs": 0.06260000000000332,
+      "cachedTotalMs": 0.2634000000000043,
+      "roles": 3,
+      "count": 2
+    },
+    {
+      "style": "solid",
+      "maskMs": 6.883399999999995,
+      "roleScanMs": 0.0023999999999944066,
+      "cachedTotalMs": 0.030099999999990246,
+      "roles": 3,
+      "count": 2
+    },
+    {
+      "style": "lines",
+      "maskMs": 12.382499999999993,
+      "roleScanMs": 0.05089999999999861,
+      "cachedTotalMs": 0.02970000000000539,
+      "roles": 3,
+      "count": 2
+    },
+    {
+      "style": "stencil",
+      "maskMs": 39.61010000000002,
+      "roleScanMs": 0.003500000000002501,
+      "cachedTotalMs": 0.0443000000000211,
+      "roles": 3,
+      "count": 2
+    },
+    {
+      "style": "icon",
+      "maskMs": 90.3817,
+      "roleScanMs": 0.0030999999999892225,
+      "cachedTotalMs": 0.05299999999999727,
+      "roles": 3,
+      "count": 2
+    },
+    {
+      "style": "checker",
+      "maskMs": 7.849199999999996,
+      "roleScanMs": 0.0009000000000014552,
+      "cachedTotalMs": 0.030699999999995953,
+      "roles": 3,
+      "count": 2
+    },
+    {
+      "style": "bayer",
+      "maskMs": 15.193600000000004,
+      "roleScanMs": 0.0009000000000014552,
+      "cachedTotalMs": 0.02780000000001337,
+      "roles": 3,
+      "count": 2
+    },
+    {
+      "style": "hatch",
+      "maskMs": 13.866100000000017,
+      "roleScanMs": 0.0011999999999829924,
+      "cachedTotalMs": 0.039400000000000546,
+      "roles": 3,
+      "count": 2
+    },
+    {
+      "style": "atkinson",
+      "maskMs": 16.866900000000044,
+      "roleScanMs": 0.0009000000000014552,
+      "cachedTotalMs": 0.052600000000040836,
+      "roles": 3,
+      "count": 2
+    },
+    {
+      "style": "noise",
+      "maskMs": 14.61529999999999,
+      "roleScanMs": 0.0006999999999948159,
+      "cachedTotalMs": 0.028300000000001546,
+      "roles": 3,
+      "count": 2
+    },
+    {
+      "style": "silhouette",
+      "maskMs": 6.494399999999985,
+      "roleScanMs": 3.994799999999998,
+      "cachedTotalMs": 0.025000000000034106,
+      "roles": 1,
+      "count": 1
+    }
+  ],
+  "animationSize": 256,
+  "animationFrames": 32,
+  "animation": [
+    {
+      "style": "solid",
+      "countMs": 13.49980000000005,
+      "allFrameMasksMs": 9.92040000000003,
+      "count": 2,
+      "reportedFrames": 32
+    },
+    {
+      "style": "cutout",
+      "countMs": 3.532199999999989,
+      "allFrameMasksMs": 50.74359999999996,
+      "count": 2,
+      "reportedFrames": 32
+    },
+    {
+      "style": "bayer",
+      "countMs": 2.528099999999995,
+      "allFrameMasksMs": 12.958800000000053,
+      "count": 2,
+      "reportedFrames": 32
+    },
+    {
+      "style": "atkinson",
+      "countMs": 1.6030000000000086,
+      "allFrameMasksMs": 33.92090000000002,
+      "count": 2,
+      "reportedFrames": 32
+    },
+    {
+      "style": "stencil",
+      "countMs": 2.281500000000051,
+      "allFrameMasksMs": 44.850400000000036,
+      "count": 2,
+      "reportedFrames": 32
+    }
+  ]
+}

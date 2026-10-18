@@ -5,6 +5,7 @@
   import Pixels from './Pixels.svelte';
   import CaptionMetadata from './CaptionMetadata.svelte';
   import { peekOriginalUsage, collectOriginalUsage } from './lib/original-color-usage.js';
+  import { rememberOneBitMask, collectOneBitUsage } from './lib/onebit-usage.js';
   import PixelIcon from './PixelIcon.svelte';
   import { tooltip } from './lib/tooltip.js';
   import { imageGesture, IMAGE_HOLD_MS } from './lib/image-gesture.js';
@@ -36,6 +37,22 @@
     collectOriginalUsage(current, { signal: controller.signal }).then(result => {
       if (!controller.signal.aborted) originalUsage = result;
     }).catch(() => { /* No estimated count is shown if source inspection fails. */ });
+    return () => controller.abort();
+  });
+  let oneBitUsage = $state.raw(null);
+  $effect(() => {
+    const current = item, asked = { first, second, style, set: { ...set } };
+    if (family !== 'two-color') { oneBitUsage = null; return; }
+    const previous = untrack(() => oneBitUsage);
+    const result = previous?.original === current.original ? previous.result : null;
+    oneBitUsage = { original: current.original, result, pending: true };
+    if (analysisPending) return;
+    const controller = new AbortController();
+    collectOneBitUsage(current, asked, { signal: controller.signal }).then(result => {
+      if (!controller.signal.aborted) oneBitUsage = { original: current.original, result, pending: false };
+    }).catch(error => {
+      if (!controller.signal.aborted && error.name !== 'AbortError') oneBitUsage = null;
+    });
     return () => controller.abort();
   });
   let holdTimer;
@@ -292,6 +309,7 @@
       const start = performance.now();
       masks[at] = mask(frame.img, style, set, mw, mh);
       pace = (performance.now() - start) / masks[at].length;
+      if (mw === frame.img.w && mh === frame.img.h) rememberOneBitMask(frame.img, style, set, masks[at]);
     }
     return (colored[at] ??= new ImageData(colorize(masks[at], first, second), mw));
   });
@@ -320,15 +338,19 @@
     const timer = setTimeout(() => (at = (at + 1) % frames.length), frames[at].delay);
     return () => clearTimeout(timer);
   });
+  const convertedUsageLabel = $derived(family === 'two-color'
+    ? oneBitUsage?.result ? `${oneBitUsage.result.count} ${oneBitUsage.result.count === 1 ? 'color' : 'colors'}` : ''
+    : colorUsageLabel);
+  const convertedUsagePending = $derived(family === 'two-color' ? !!oneBitUsage?.pending : colorUsagePending);
   const displayedUsageLabel = $derived(originalVisible
     ? originalUsage ? `${originalUsage.count} ${originalUsage.count === 1 ? 'color' : 'colors'}` : ''
-    : colorUsageLabel);
-  const displayedUsagePending = $derived(!originalVisible && colorUsagePending);
+    : convertedUsageLabel);
+  const displayedUsagePending = $derived(!originalVisible && convertedUsagePending);
   const usageDescription = $derived(originalVisible
     ? displayedUsageLabel + (item.frames ? '. Original colors across all animation frames.' : '. Original full-resolution colors.')
-    : colorUsagePending
-    ? `${colorUsageLabel}. Previous output; updating color count.`
-    : colorUsageLabel + (item.frames ? '. Converted output across all animation frames.' : '. Converted full-resolution output.'));
+    : convertedUsagePending
+    ? `${convertedUsageLabel}. Previous output; updating color count.`
+    : convertedUsageLabel + (item.frames ? '. Converted output across all animation frames.' : '. Converted full-resolution output.'));
 </script>
 
 <figure class="tile">

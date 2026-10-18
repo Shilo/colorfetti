@@ -163,6 +163,12 @@ metadata. Creator attribution remains stored, as does the validated source URL.
 Count is noninteractive caption metadata. Right-aligned mouse captions show
 8 colors · 24 × 24; left-aligned touch captions show 24 × 24 · 8 colors.
 Resolution stays anchored as count text changes. The example uses left-aligned metadata.
+1-bit captions count actual visible RGBs, not enabled ink slots: zero, one or two.
+None contributes no color; identical ink RGBs count once. Exact rendered masks
+contribute tiny cached role-presence bits. Missing full-source masks are inspected
+serially with cancellation and a posted task before each cold mask; whole-clip
+inspection stops once every possible distinct visible ink has appeared. No mask
+or RGBA clip is retained by counting. A cold structural mask remains synchronous.
 Separators retain explicit text spaces on both sides of the middle dot, including
 before Retry needed; template whitespace trimming must not join metadata fields.
 It describes full-resolution converted output, switching to the cached source RGB
