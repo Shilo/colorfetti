@@ -491,10 +491,13 @@ are picked from all of them.
 
 - One pass works out the brightness of each pixel, the histogram of brightness, and each
   pixel's color difference from the pixel to its right and from the one below. The
-  differences are kept, one byte each, in `right` and `down`.
+  differences are kept, one byte each, in `right` and `down`. Luma and the other
+  Brightness sources each have their own copy of that loop: choosing inside one loop made
+  every image an eighth slower, and a second pass for non-luma sources cost more again.
 - A second, cheap pass (`seamStrength`) picks Cutout's seam strength. It needs the Auto
   threshold from the first pass, so it cannot be part of it. It reads only brightness and
-  the stored differences.
+  the stored differences, and skips pixels whose differences are both 0: those only count
+  toward `hist[0]`, which the seam threshold clears anyway.
 - **Why the differences are kept.** Lines and Cutout asked for them at every pixel on
   every threshold change, and working them out from RGBA is most of their cost. Without the
   two arrays Cutout is about 2 times slower and Lines about 3 times (measured by a
@@ -1416,3 +1419,25 @@ walls still have import/recolor long tasks and layout costs. Earlier pruning-onl
 and missing-slot candidates did not establish a phone benefit and were rejected.
 See docs/research/2026-10-16-landscape-and-count-review.md for final integration,
 independent cancellation/output checks and retained failed test-only transforms.
+
+## Second whole-app audit (October 17, 2026)
+
+An independent rerun of the whole-app audit, on the Claude desktop app's built-in
+browser (Chrome 152, 927×827, DPR 1) and the USB Pixel 8 Pro (Brave/Chrome 155,
+448×819, DPR 2.25), confirmed the same remaining costs: cold Icon preparation
+(phone 409–561 ms Long Task at 2048), rapid Brightness reanalysis (111–162 ms),
+cold Stencil (≈130 ms) and the phone-only 256-color editor Review layout (≈187 ms,
+mostly style/layout; app script is small and the desktop reproduction found none).
+
+One exact change shipped: non-luma `analyze` uses its own single loop, and the seam
+pass skips zero-difference pixels. Rapid Brightness R→G→Value on a 2048 sheet, in
+alternating pairs: phone renderer CPU 569→444 ms and 611→430 ms in two rounds, max
+Long Task 151→114 and 162→111 ms, every pair faster; desktop 210→160 ms with its
+three ≈60–77 ms Long Tasks gone. Animated seam unification (256 px/48 frames) is
+11.9→2.7 ms in Node. Masks, analyses and native exports are byte-identical.
+
+Rejected after two rounds: bounds-free 8-neighbor floods in `iconOf`/`glyphComponent`
+(exact; desktop −10% at 2048, but the phone gain passed at 1024 in one round and at
+2048 in the other) and in Stencil's `sprites` (exact; no phone gain). Patches, raw
+trials and gates: `bench/second-performance-audit-2026-10-17/` and
+docs/research/2026-10-17-second-performance-audit.md.
