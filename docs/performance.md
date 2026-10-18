@@ -678,6 +678,9 @@ can do nothing else meanwhile.
   that makes the first one transparent, and a color that is None with it. That is a sixteenth of the data to compress, and
   the image is never held as RGBA.
 - zlib level 3. Level 6 is twice as slow for a file 4% smaller.
+- Full palette PNGs compress in fflate's worker, which it starts for each call. Rows that
+  fit one 64 KiB packing batch compress synchronously instead, to the same bytes: on the
+  Pixel 8 Pro a tiny palette Save went from 66 to 25 ms click to download (October 18).
 - Download all converts and encodes one image at a time, so only one full mask is in
   memory at once.
 - GIFs were always palette images. Nothing changed there.

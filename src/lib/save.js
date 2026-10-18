@@ -180,7 +180,8 @@ export async function palettePngBytesAsync(image, { signal } = {}) {
     if (y + batch < image.h) await yieldExport();
   }
   checkCanceled(signal);
-  const compressed = await new Promise((resolve, reject) => {
+  // Rows that fit one packing batch compress here: a worker for them costs more than the deflate.
+  const compressed = layout.rows.length <= 65536 ? zlibSync(layout.rows, { level: 3 }) : await new Promise((resolve, reject) => {
     let terminate, settled = false;
     const finish = (error, data) => {
       if (settled) return; settled = true;
