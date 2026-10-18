@@ -29,8 +29,7 @@ of the full-palette pipeline (16 images × 7 palettes × 15 methods), a 1-bit an
 codec audit checked against Pillow and Chrome 152, and a UX pass driven by
 Playwright at 1440×900 and 390×844 with touch emulation. Each claim kept below was
 spot-checked against the code. Evidence is in
-[bench/conversion-review-2026-10-18](../../bench/conversion-review-2026-10-18/). Contact-sheet PNGs there are
-local only, because bench/.gitignore excludes PNGs.
+[bench/conversion-review-2026-10-18](../../bench/conversion-review-2026-10-18/).
 
 Earlier decisions that this review **confirms** and that should not be reopened:
 - Oklab/RGB matching (the CAM16, CIEDE2000 and ΔE OK2 closure).
@@ -72,16 +71,16 @@ index = ranks[(Math.floor(o / result.w) % side) * side + (o % result.w) % side] 
 Exports are byte-identical, because `xs`/`ys` are the identity at full size and plans are
 position-independent. This corrects the claim in 2026-10-14-full-palette-dithering-implementation.md
 that source sampling keeps "pattern phase" in agreement: that holds only at 1:1. See
-`sheet-preview-vs-export.png` (local contact sheet).
+[sheet-preview-vs-export.png](../../bench/conversion-review-2026-10-18/sheet-preview-vs-export.png).
 
 ### 2. Palette dithering bands on smooth gradients (quality)
 
 Each color mixes only one pair taken from the **4 nearest** candidates. Across a
 gradient the candidate set switches abruptly, leaving hard band edges and halo
-rings. The sun in `sheet-syn-sky.png` (local contact sheet)
+rings. The sun in [sheet-syn-sky.png](../../bench/conversion-review-2026-10-18/sheet-syn-sky.png)
 shows this with ENDESGA 8 and PICO-8, even at 100%. Two independent measurements agree:
 - On random colors, mixture error with 4 candidates is 28% worse than an exhaustive pair search on PICO-8 and 24% worse on ENDESGA 8. With 8 candidates it is about equal to exhaustive. The bound of 4 was never tested against 8.
-- Knoll pattern dithering keeps the animation-safe property (a per-RGB plan, no error crossing pixels or frames). With mid-size palettes it cut false contours from 34 to 11 and σ2 error from 3.07 to 2.88. On an anti-aliased shaded sprite with ENDESGA 8 it cut error from 5.30 to 1.73. It **loses** on grayscale and very small palettes, and adds multi-hue sparkle with ENDESGA 8. See `sheet-syn-aa-sprite.png` (local contact sheet).
+- Knoll pattern dithering keeps the animation-safe property (a per-RGB plan, no error crossing pixels or frames). With mid-size palettes it cut false contours from 34 to 11 and σ2 error from 3.07 to 2.88. On an anti-aliased shaded sprite with ENDESGA 8 it cut error from 5.30 to 1.73. It **loses** on grayscale and very small palettes, and adds multi-hue sparkle with ENDESGA 8. See [sheet-syn-aa-sprite.png](../../bench/conversion-review-2026-10-18/sheet-syn-aa-sprite.png).
 
 Recommendation, cheapest first:
 1. Use 8 candidates when the palette has 16 colors or fewer. This costs about 4.7× per *uncached* color only.
@@ -170,7 +169,7 @@ Product suggestions that pay off (the rest were judged out of scope):
 - **Blue-noise thresholds instead of Bayer:** fidelity is identical and contours are higher with small palettes. 8×8 Bayer gives no fidelity gain over 4×4.
 - **Dither strength default.** At 100%, σ2 error beat 50% in 49/64 small-palette cases and 30/32 mid-palette cases, at about twice the grain. The research suggests 25%, citing Knoll comparisons and PixelLab. The proxies point opposite ways and neither is a preference test, so leave 50%.
 - **Floyd–Steinberg** remains the best still-image fidelity (Auto 64: .12 vs .18 for Bayer at 100%). The animation deferral stands; at most it is a stills-only option.
-- **Dark low-contrast art collapses to one color with nearest matching** on ENDESGA 8 and PICO-8. Dithering restores 3–5 colors. This is expected behavior, not a bug. See `sheet-syn-dark-lowcontrast.png` (local contact sheet).
+- **Dark low-contrast art collapses to one color with nearest matching** on ENDESGA 8 and PICO-8. Dithering restores 3–5 colors. This is expected behavior, not a bug. See [sheet-syn-dark-lowcontrast.png](../../bench/conversion-review-2026-10-18/sheet-syn-dark-lowcontrast.png).
 
 ## Suggested order
 
