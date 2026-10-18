@@ -1,0 +1,635 @@
+{
+  "reviewedRevision": "133b3f1",
+  "checkedAt": "2026-10-18T05:34:24.040Z",
+  "auditProductionDiff": "",
+  "ownedQuantizerDiff": "",
+  "lockMatchesHistorical": true,
+  "lockMatchesFrozen": true,
+  "replayBuilds": {
+    "baseline": {
+      "files": 41,
+      "mismatches": [
+        "colorfetti-trailer.mp4",
+        "manifest.webmanifest"
+      ]
+    },
+    "candidate": {
+      "files": 40,
+      "mismatches": []
+    }
+  },
+  "candidateHash": "8a5d1f0f8c0a32382adb3b235243d6ea404bc1a50453e82902b3946be4edbcbb",
+  "candidateHashMatchesFrozen": true,
+  "frozenSourceAttribution": [
+    {
+      "path": "src/mobile-image-actions.css",
+      "frozenMatchesCurrent": true,
+      "frozenMatchesHistoricalBytes": false
+    }
+  ],
+  "baselineStaticExceptions": {
+    "omittedTrailer": "colorfetti-trailer.mp4",
+    "webmanifestNormalizedEqual": true
+  },
+  "pairReceipts": {
+    "desktop": {
+      "trials": 120,
+      "errors": [],
+      "groups": [
+        {
+          "id": "sheet1024",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 29.861,
+          "candidateMedian": 29.957,
+          "deltaMs": 0.09600000000000009,
+          "deltaPercent": 0.32148956833328857,
+          "candidateSlowerPairs": 2,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "sheet1024",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 21.058,
+          "candidateMedian": 17.711000000000002,
+          "deltaMs": -3.3469999999999978,
+          "deltaPercent": -15.894196979770147,
+          "candidateSlowerPairs": 1,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "sheet2048",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 76.835,
+          "candidateMedian": 80.92699999999999,
+          "deltaMs": 4.091999999999999,
+          "deltaPercent": 5.325697924123118,
+          "candidateSlowerPairs": 1,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "sheet2048",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 69.40899999999998,
+          "candidateMedian": 56.711,
+          "deltaMs": -12.697999999999979,
+          "deltaPercent": -18.294457491103433,
+          "candidateSlowerPairs": 0,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "tiny",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 20.104,
+          "candidateMedian": 27.141000000000002,
+          "deltaMs": 7.037000000000003,
+          "deltaPercent": 35.002984480700384,
+          "candidateSlowerPairs": 3,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "tiny",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 8.138,
+          "candidateMedian": 9.271999999999995,
+          "deltaMs": 1.133999999999995,
+          "deltaPercent": 13.934627672646771,
+          "candidateSlowerPairs": 4,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "animation256",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 104.936,
+          "candidateMedian": 52.862,
+          "deltaMs": -52.074000000000005,
+          "deltaPercent": -49.62453304871541,
+          "candidateSlowerPairs": 0,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "animation256",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 67.94600000000001,
+          "candidateMedian": 52.26199999999999,
+          "deltaMs": -15.684000000000019,
+          "deltaPercent": -23.08303652900835,
+          "candidateSlowerPairs": 0,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "glow-keep",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 20.145,
+          "candidateMedian": 14.033,
+          "deltaMs": -6.112,
+          "deltaPercent": -30.340034748076448,
+          "candidateSlowerPairs": 1,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "glow-keep",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 7.0900000000000025,
+          "candidateMedian": 6.605000000000003,
+          "deltaMs": -0.48499999999999943,
+          "deltaPercent": -6.840620592383628,
+          "candidateSlowerPairs": 2,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "entropy256-256-rgb",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 58.146,
+          "candidateMedian": 52.116,
+          "deltaMs": -6.030000000000001,
+          "deltaPercent": -10.370446806315137,
+          "candidateSlowerPairs": 1,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "entropy256-256-rgb",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 43.73600000000001,
+          "candidateMedian": 43.263999999999996,
+          "deltaMs": -0.4720000000000155,
+          "deltaPercent": -1.0792024876532302,
+          "candidateSlowerPairs": 3,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        }
+      ]
+    },
+    "native": {
+      "trials": 160,
+      "errors": [],
+      "groups": [
+        {
+          "id": "sheet1024",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 108.07700000000001,
+          "candidateMedian": 90.804,
+          "deltaMs": -17.27300000000001,
+          "deltaPercent": -15.982123856139607,
+          "candidateSlowerPairs": 0,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "sheet1024",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 120.05100000000002,
+          "candidateMedian": 115.15800000000002,
+          "deltaMs": -4.893000000000001,
+          "deltaPercent": -4.075767798685559,
+          "candidateSlowerPairs": 1,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "sheet2048",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 213.613,
+          "candidateMedian": 179.35999999999999,
+          "deltaMs": -34.253000000000014,
+          "deltaPercent": -16.03507277178824,
+          "candidateSlowerPairs": 1,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "sheet2048",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 165.918,
+          "candidateMedian": 154.61300000000003,
+          "deltaMs": -11.304999999999978,
+          "deltaPercent": -6.8136067213924845,
+          "candidateSlowerPairs": 1,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "tiny",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 64.483,
+          "candidateMedian": 62.239999999999995,
+          "deltaMs": -2.243000000000009,
+          "deltaPercent": -3.4784361769768957,
+          "candidateSlowerPairs": 3,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "tiny",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 70.039,
+          "candidateMedian": 74.118,
+          "deltaMs": 4.0789999999999935,
+          "deltaPercent": 5.823898113907955,
+          "candidateSlowerPairs": 4,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "animation256",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 243.54999999999998,
+          "candidateMedian": 207.93599999999998,
+          "deltaMs": -35.614000000000004,
+          "deltaPercent": -14.622870047218228,
+          "candidateSlowerPairs": 1,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "animation256",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 179.998,
+          "candidateMedian": 178.037,
+          "deltaMs": -1.9609999999999843,
+          "deltaPercent": -1.0894565495172093,
+          "candidateSlowerPairs": 2,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "glow-keep",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 65.883,
+          "candidateMedian": 66.99000000000001,
+          "deltaMs": 1.1070000000000135,
+          "deltaPercent": 1.6802513546742226,
+          "candidateSlowerPairs": 3,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "glow-keep",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 71.594,
+          "candidateMedian": 74.29500000000002,
+          "deltaMs": 2.701000000000022,
+          "deltaPercent": 3.7726625136184966,
+          "candidateSlowerPairs": 3,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "entropy256-256-rgb",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 167.873,
+          "candidateMedian": 161.286,
+          "deltaMs": -6.586999999999989,
+          "deltaPercent": -3.923799538937167,
+          "candidateSlowerPairs": 2,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "entropy256-256-rgb",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 146.659,
+          "candidateMedian": 149.57500000000002,
+          "deltaMs": 2.9160000000000252,
+          "deltaPercent": 1.9882857513006558,
+          "candidateSlowerPairs": 4,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "sheet1024-rgb",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 115.543,
+          "candidateMedian": 124.632,
+          "deltaMs": 9.088999999999999,
+          "deltaPercent": 7.866335476835462,
+          "candidateSlowerPairs": 3,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "sheet1024-rgb",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 123.776,
+          "candidateMedian": 110.48500000000001,
+          "deltaMs": -13.290999999999983,
+          "deltaPercent": -10.737945966907947,
+          "candidateSlowerPairs": 0,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "cap-cleanup",
+          "first": true,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 141.25600000000003,
+          "candidateMedian": 164.216,
+          "deltaMs": 22.95999999999998,
+          "deltaPercent": 16.25417681372825,
+          "candidateSlowerPairs": 2,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        },
+        {
+          "id": "cap-cleanup",
+          "first": false,
+          "baselineTrials": 5,
+          "candidateTrials": 5,
+          "baselineMedian": 122.60499999999999,
+          "candidateMedian": 113.2,
+          "deltaMs": -9.404999999999987,
+          "deltaPercent": -7.6709758982096865,
+          "candidateSlowerPairs": 0,
+          "allOutputHashesEqual": true,
+          "maxTask": 0
+        }
+      ]
+    }
+  },
+  "retainedOutputWitnesses": [
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792300827121-transparent32-0-transparent32-palette.png",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792300827121-silhouette32-0-silhouette32-palette.png",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792300827121-partial-glow64-0-partial-glow64-palette.png",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792300827121-entropy512-0-entropy512-palette.png",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792300827121-worker-unavailable-0-real-magic-palette.gif",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792299924168-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792299924168-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792299924168-real-magic-0-real-magic-palette.gif",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792299924168-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792299924168-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-0-baseline-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-0-candidate-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet2048-0-baseline-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet2048-0-candidate-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-tiny-0-baseline-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-tiny-0-candidate-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-animation256-0-baseline-palette.gif",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-animation256-0-candidate-palette.gif",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-glow-keep-0-baseline-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-glow-keep-0-candidate-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-entropy256-256-rgb-0-baseline-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-entropy256-256-rgb-0-candidate-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-rgb-0-baseline-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-rgb-0-candidate-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-cap-cleanup-0-baseline-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-cap-cleanup-0-candidate-palette.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet1024-baseline.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet1024-candidate.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet2048-baseline.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet2048-candidate.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/tiny-baseline.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/tiny-candidate.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/animation256-baseline.gif",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/animation256-candidate.gif",
+      "hashMatches": true,
+      "tracked": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/glow-keep-baseline.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/glow-keep-candidate.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/entropy256-256-rgb-baseline.png",
+      "hashMatches": true,
+      "tracked": false
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/export-pairs/entropy256-256-rgb-candidate.png",
+      "hashMatches": true,
+      "tracked": false
+    }
+  ],
+  "totalTrialOutputs": 280,
+  "summary": {
+    "outputWitnesses": 38,
+    "hashMismatches": [],
+    "untracked": [
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-0-baseline-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-0-candidate-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet2048-0-baseline-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet2048-0-candidate-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-tiny-0-baseline-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-tiny-0-candidate-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-glow-keep-0-baseline-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-glow-keep-0-candidate-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-entropy256-256-rgb-0-baseline-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-entropy256-256-rgb-0-candidate-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-rgb-0-baseline-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-rgb-0-candidate-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-cap-cleanup-0-baseline-palette.png",
+      "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-cap-cleanup-0-candidate-palette.png",
+      "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet1024-baseline.png",
+      "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet1024-candidate.png",
+      "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet2048-baseline.png",
+      "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet2048-candidate.png",
+      "bench/whole-app-performance-2026-10-17/desktop/export-pairs/tiny-baseline.png",
+      "bench/whole-app-performance-2026-10-17/desktop/export-pairs/tiny-candidate.png",
+      "bench/whole-app-performance-2026-10-17/desktop/export-pairs/glow-keep-baseline.png",
+      "bench/whole-app-performance-2026-10-17/desktop/export-pairs/glow-keep-candidate.png",
+      "bench/whole-app-performance-2026-10-17/desktop/export-pairs/entropy256-256-rgb-baseline.png",
+      "bench/whole-app-performance-2026-10-17/desktop/export-pairs/entropy256-256-rgb-candidate.png"
+    ]
+  }
+}

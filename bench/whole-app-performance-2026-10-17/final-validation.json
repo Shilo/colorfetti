@@ -1,10 +1,15 @@
 {
-  "date": "2026-10-18T05:29:35.410Z",
-  "productionRevision": "35fbb73859a6526dbd6e1ccfd3671e5181d8f954",
+  "date": "2026-10-18T05:36:09.916Z",
+  "productionRevision": "133b3f15014b47e4a66b07df5bee26d99e3da1ca",
   "auditBaseline": "217cb64360784c066e944f8121858d7726f0e4f2",
   "decision": "REJECT D1; no audit production changes",
   "productionWorktreeDiff": [],
-  "outsideAuditChanges": [],
+  "outsideAuditChanges": [
+    {
+      "path": "src/mobile-image-actions.css",
+      "sha256": "ec79639700d39843463e637cebb0a913b90da13d432a12599c8dc56285624020"
+    }
+  ],
   "packageLockUnchanged": true,
   "tests": {
     "passed": 1050,

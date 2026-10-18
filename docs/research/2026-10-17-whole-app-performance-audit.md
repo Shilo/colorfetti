@@ -10,7 +10,7 @@ This audit starts at clean `217cb64360784c066e944f8121858d7726f0e4f2`, whose
 runtime matches `34a95d97f65ec681d07b52ace85dc84e6c8ce56c`. An independent chat
 later committed `35fbb73859a6526dbd6e1ccfd3671e5181d8f954` (mobile caption CSS
 and its specification). That change is outside this audit. Comparative builds
-both exclude it; final current-checkout integration includes it. No sources,
+both exclude it; final current-checkout integration includes it. No production sources,
 algorithms, settings, palette entries, output encoders or dependencies were
 changed by this audit. Nothing was pushed or deployed by this audit.
 
@@ -21,6 +21,16 @@ correctness/measurement. The coordinator operated actual Codex Browser and revie
 the concrete shortcut, baseline proof and adverse results. Resource reservations
 separated timed comparative windows from compilation, full tests and other
 profiling. The unrelated active chat explicitly left Android untouched.
+
+The fresh cumulative review corrected a provenance race: the original worktree
+hash collector ran after independent caption CSS edits had begun. Its raw
+observation is preserved separately; the historical source ledger now comes from
+exact217cb64 Git objects, with text normalized to LF and binary assets unchanged.
+Independent new-directory builds reproduce every measured JS/CSS/worker asset
+exactly. No runtime receipt was relabeled or replaced. Final source attribution
+now correctly identifies the independent caption CSS change. The review also
+required explicit tracking of canonical native PNG witnesses that the older
+bench ignore policy had omitted.
 
 The workload/dependency/source/build manifests freeze CC0 Kenney/rubberduck
 sprites, the genuine transformed six-frame effect, 1024/2048 transparent-gutter

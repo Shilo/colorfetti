@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const dir='bench/whole-app-performance-2026-10-17';
+const json=p=>JSON.parse(fs.readFileSync(p));
+const git=(...a)=>execFileSync('git',a,{encoding:'utf8'}).trim();
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const canonical=(file,b)=>file.endsWith('.png')?b:Buffer.from(b.toString('utf8').replaceAll('\r\n','\n'));
+const m=json(dir+'/manifest.json'),mismatches=[];
+for(const f of m.source){const b=canonical(f.path,execFileSync('git',['show',m.revision+':'+f.path]));if(sha(b)!==f.sha256||b.length!==f.bytes)mismatches.push(f.path);}
+const names=git('ls-tree','-r','--name-only',m.revision,'--','src').split('\n');
+const tracked=new Set(git('ls-files').split('\n'));
+const witnesses=json(dir+'/final-review/witness-paths.json');
+const allWitnesses=[...witnesses.canonical,...witnesses.onebitAndKeep];
+const missingWitnesses=allWitnesses.filter(p=>!tracked.has(p)||!fs.existsSync(p));
+const v=json(dir+'/final-validation.json');
+const currentChanges=m.source.filter(f=>sha(canonical(f.path,fs.readFileSync(f.path)))!==f.sha256).map(f=>f.path);
+const result={checkedAt:new Date().toISOString(),historicalSourceFiles:m.source.length,historicalGitSourceFiles:names.length,historicalSourceMismatches:mismatches,preservedOriginalObservation:m.observedSourceAtFreeze.length,canonicalSourceChanges:currentChanges,finalValidationChanges:v.outsideAuditChanges.map(x=>x.path),retainedOutputWitnesses:allWitnesses.length,missingTrackedWitnesses:missingWitnesses,productionDiff:git('diff','--name-only','35fbb73859a6526dbd6e1ccfd3671e5181d8f954','--','src','build','package.json','package-lock.json','vite.config.js','index.html','public'),stagedProductionDiff:git('diff','--cached','--name-only','--','src','build','package.json','package-lock.json','vite.config.js','index.html','public')};
+result.pass=mismatches.length===0&&m.source.length===names.length&&missingWitnesses.length===0&&JSON.stringify(currentChanges)===JSON.stringify(['src/mobile-image-actions.css'])&&JSON.stringify(result.finalValidationChanges)===JSON.stringify(currentChanges)&&!result.productionDiff&&!result.stagedProductionDiff;
+fs.writeFileSync(dir+'/final-review/round-two-results.json',JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify(result,null,2));

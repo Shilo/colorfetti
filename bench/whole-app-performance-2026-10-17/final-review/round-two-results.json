@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-18T05:37:36.794Z",
+  "historicalSourceFiles": 163,
+  "historicalGitSourceFiles": 163,
+  "historicalSourceMismatches": [],
+  "preservedOriginalObservation": 163,
+  "canonicalSourceChanges": [
+    "src/mobile-image-actions.css"
+  ],
+  "finalValidationChanges": [
+    "src/mobile-image-actions.css"
+  ],
+  "retainedOutputWitnesses": 50,
+  "missingTrackedWitnesses": [],
+  "productionDiff": "",
+  "stagedProductionDiff": "",
+  "pass": true
+}

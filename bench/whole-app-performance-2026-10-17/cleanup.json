@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-18T05:37:52.949Z",
+  "ownedHelperEndpoints": [
+    {
+      "port": 5371,
+      "reachable": false,
+      "reason": "ECONNREFUSED"
+    },
+    {
+      "port": 5372,
+      "reachable": false,
+      "reason": "ECONNREFUSED"
+    },
+    {
+      "port": 5375,
+      "reachable": false,
+      "reason": "ECONNREFUSED"
+    },
+    {
+      "port": 5376,
+      "reachable": false,
+      "reason": "ECONNREFUSED"
+    },
+    {
+      "port": 5377,
+      "reachable": false,
+      "reason": "ECONNREFUSED"
+    },
+    {
+      "port": 5378,
+      "reachable": false,
+      "reason": "ECONNREFUSED"
+    }
+  ],
+  "ownedCodexTabsClosed": true,
+  "phone": {
+    "ownedCdpForward9351Removed": true,
+    "ownedReversePortsRemoved": [
+      5371,
+      5372,
+      5375
+    ],
+    "preexistingForwardsPreserved": [
+      "37211FDJG00267 tcp:9333 localabstract:chrome_devtools_remote",
+      "37211FDJG00267 tcp:9334 localabstract:chrome_devtools_remote_16561"
+    ],
+    "rotationBefore": "free",
+    "rotationAfter": "free",
+    "rotationPolicyChanged": false,
+    "downloadBehaviorRestored": "native default",
+    "nativeBrowserClosed": false,
+    "ownedPagesClosed": true,
+    "testOriginStorageRestoredAfterEachPage": true,
+    "nativeOwnedDownloadsRemoved": "Only exact names recorded in native-output-manifest.json; each successful pull followed by exact-file adb rm, no personal directory listing or wildcard deletion.",
+    "deviceReservationReleased": true
+  },
+  "note": "Root stopped its known helper sessions. Sibling-agent session handles were unavailable after their turns; exact localhost endpoints are now unreachable. No unrelated process/browser was terminated."
+}

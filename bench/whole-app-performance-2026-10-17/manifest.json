@@ -2,11 +2,1678 @@
   "date": "2026-10-17 America/Los_Angeles",
   "revision": "217cb64360784c066e944f8121858d7726f0e4f2",
   "runtimeBaseline": "34a95d97f65ec681d07b52ace85dc84e6c8ce56c",
-  "initialTree": "clean",
+  "initialTree": "Clean git status at startup217cb64; original source-hash collector ran later, after independent caption CSS edits began.",
   "node": "v25.0.0",
   "lockfileSha256": "4729589b4dab0eb85986ea90273c86d08cc8abde32a9c4c5c0bc18818e1fec23",
   "installedLockfileSha256": "690fb756167bc1684249a9d7c392fc8b7312f89522466abd8ccb0893e63b903c",
   "source": [
+    {
+      "path": "src/App.svelte",
+      "bytes": 75820,
+      "sha256": "591b0c5555f599fb7399b0c17a5d30054fd1174948688f411c9977bee91e2cde"
+    },
+    {
+      "path": "src/CanvasGrid.svelte",
+      "bytes": 3246,
+      "sha256": "c6250e67cd6258b50ea4a8eff14db6358a64524093e6110e14dfd85a9e416985"
+    },
+    {
+      "path": "src/CaptionMetadata.svelte",
+      "bytes": 867,
+      "sha256": "0786f7b8878e860b395989b6c2d19caced021a861f38035fdfebf3b87a7f4859"
+    },
+    {
+      "path": "src/Dock.svelte",
+      "bytes": 44663,
+      "sha256": "8a61c11bef501e3ba64e794bdb59c12c035edac8efb948fc8da8852e1925d4ff"
+    },
+    {
+      "path": "src/ImageViewer.svelte",
+      "bytes": 7607,
+      "sha256": "81a33442296d5a59d7b819ae7571a870428e77d64ddc7c12039b61bd6b8c76e3"
+    },
+    {
+      "path": "src/PaletteImport.svelte",
+      "bytes": 21804,
+      "sha256": "136ce0b59644d572efb2950003dc82fc185450f33a72bf72c61227399d67929e"
+    },
+    {
+      "path": "src/PalettePreview.svelte",
+      "bytes": 763,
+      "sha256": "665cdc0d3e7021cc80505e630f94efdb5cccf953808fce81b10abf260671fd42"
+    },
+    {
+      "path": "src/PixelIcon.svelte",
+      "bytes": 5796,
+      "sha256": "4fdb0d0bbcbdddebf0b6131f0a04e9250e72541f8f5da66610561417a45ff64a"
+    },
+    {
+      "path": "src/Pixels.svelte",
+      "bytes": 532,
+      "sha256": "90d2e155d975a9fc9bd511a6abf2a895ff1c805470de456e18ddfa903b433492"
+    },
+    {
+      "path": "src/Tile.svelte",
+      "bytes": 26648,
+      "sha256": "5f401d7c09366530345691c9e3e5a73c7433c6416c566ccbfdc214fa4ebca1f2"
+    },
+    {
+      "path": "src/app.css",
+      "bytes": 35576,
+      "sha256": "f2d8ad05825e732e076c2949026ab5efebb988c04627ec6f971d383de10d9492"
+    },
+    {
+      "path": "src/assets/logo-dark.png",
+      "bytes": 222,
+      "sha256": "95cbbd114012476077a9b0fd97bb377ac29be390b4bc4c001792506e7de0fdf4"
+    },
+    {
+      "path": "src/assets/logo-dark.svg",
+      "bytes": 601,
+      "sha256": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8"
+    },
+    {
+      "path": "src/assets/logo.png",
+      "bytes": 222,
+      "sha256": "08c152a5871600a6c057846f1c4aaff1cb5db54f9950b52627794aadfd2b2007"
+    },
+    {
+      "path": "src/assets/logo.svg",
+      "bytes": 601,
+      "sha256": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c"
+    },
+    {
+      "path": "src/assets/lucide-LICENSE.txt",
+      "bytes": 3208,
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "path": "src/bottom-workspace.css",
+      "bytes": 5628,
+      "sha256": "f76528f97a2b3dc6573f6aad1d96ea2a6d868ff073f0d5eb74d24f680d1739a5"
+    },
+    {
+      "path": "src/canvas.css",
+      "bytes": 8379,
+      "sha256": "e4b126a5c599594b182bbcc17183e577556529c2f8f844077a89aa04af0da15c"
+    },
+    {
+      "path": "src/caption-metadata.css",
+      "bytes": 877,
+      "sha256": "7d576bd846a55e6ec672aa27a096c9c6ced761da9f0bff79fc6e3e0f01e786bb"
+    },
+    {
+      "path": "src/dock-refinement.css",
+      "bytes": 7325,
+      "sha256": "6883f5c4c9557ed5be68a62187cdfad75f9d3c487887cdc0eb7c0028f4519841"
+    },
+    {
+      "path": "src/foundation.css",
+      "bytes": 458,
+      "sha256": "99d23288ae7b3000ea80ff51b8ca68bd16d881bf24f331362aea2771fe9e6e75"
+    },
+    {
+      "path": "src/full-palette.css",
+      "bytes": 9488,
+      "sha256": "a015c9b1f0723a9ea0d0b1f91abd36ced31d07c683485294ae32a03230c21f00"
+    },
+    {
+      "path": "src/glass.css",
+      "bytes": 30582,
+      "sha256": "46409ea29043d9926e6da1d3733e874500ea8c7c3ef5b02473765008b8e5eac0"
+    },
+    {
+      "path": "src/header.css",
+      "bytes": 1819,
+      "sha256": "e1520f2914f922ee4505ff85433efa1ee6d37432701c69991aed533951a0dc10"
+    },
+    {
+      "path": "src/lib/animation-visibility.js",
+      "bytes": 1398,
+      "sha256": "af42230f13ad75f3f0a466893ff1e3aae7640ba5d95bb92c1867f18e8881c898"
+    },
+    {
+      "path": "src/lib/animation-visibility.test.js",
+      "bytes": 4384,
+      "sha256": "ab7be2e0680eef508eb7d8a1c097c3243b18837b2998bfca365add1cb649838b"
+    },
+    {
+      "path": "src/lib/canvas-grid.js",
+      "bytes": 1982,
+      "sha256": "5379088db141ebdc901ac0c74567a01c95dceb2bc70437b8dac36e3168ce30f9"
+    },
+    {
+      "path": "src/lib/canvas-grid.test.js",
+      "bytes": 3560,
+      "sha256": "2c9cccfb5b7388c8dc1f7be424a48029ef8d2468a5fc75cfe0a130fd14dd30e4"
+    },
+    {
+      "path": "src/lib/comparison-hold.js",
+      "bytes": 544,
+      "sha256": "77f606f613a62db620515826e8b79bfd73b389645ef50dfa416e1f15f80c1ca6"
+    },
+    {
+      "path": "src/lib/comparison-hold.test.js",
+      "bytes": 1534,
+      "sha256": "bd3c18b360d94da84e7ea13387a26192874715afb435c871b2c7297ead5be3ff"
+    },
+    {
+      "path": "src/lib/converted-animation.js",
+      "bytes": 1054,
+      "sha256": "f739c78cfae62b652f6bfe182b8bff72054f4c82c647dbdd82357b8ac72001dc"
+    },
+    {
+      "path": "src/lib/converted-animation.test.js",
+      "bytes": 4766,
+      "sha256": "cf0ec50243946b3c9251e1b28abad6492c686f841d39af922d9313b3f684394e"
+    },
+    {
+      "path": "src/lib/dialog-dismiss.js",
+      "bytes": 2007,
+      "sha256": "8085d3a87f145f3b2471057e01027f7f0f8033dc3c6de26cb88298e9498860ce"
+    },
+    {
+      "path": "src/lib/dialog-dismiss.test.js",
+      "bytes": 4114,
+      "sha256": "88124a4b582a13b2c28e4d1abe2b42c72b7f79dbe8f80d2a4bff0877dd109d45"
+    },
+    {
+      "path": "src/lib/export-compression-cancel.test.js",
+      "bytes": 971,
+      "sha256": "31c8e10407277cc13282bd15bf5a8c01a38d36347c4b1118740f7036a12ed73b"
+    },
+    {
+      "path": "src/lib/export-drag.js",
+      "bytes": 12086,
+      "sha256": "915f8e632fcff96eb8b41daf318c00ea276877882cb38216876b258d8da48d92"
+    },
+    {
+      "path": "src/lib/export-drag.test.js",
+      "bytes": 8840,
+      "sha256": "88822cc081c70db4f9284e1407e8c45518e33f05672e82c10ffadae774321d16"
+    },
+    {
+      "path": "src/lib/favicon-startup.test.js",
+      "bytes": 2461,
+      "sha256": "088f83a9421911f5464888105f9e055670ebe1b58a72e983bc73a2e6b7a279aa"
+    },
+    {
+      "path": "src/lib/fixtures/ai-inventory.json",
+      "bytes": 63994,
+      "sha256": "ce3a39756293ee08dd26facecec25e098c8459f812b0fb639fcd0463b9c56a30"
+    },
+    {
+      "path": "src/lib/fixtures/icon-opening-stress.json",
+      "bytes": 4234,
+      "sha256": "58e207742b90859024fe2e643256f320d7a2d637e9402bdb0ac5819de117ac51"
+    },
+    {
+      "path": "src/lib/fixtures/palette-import/grid.png",
+      "bytes": 4798,
+      "sha256": "c5c19e930ccaea0b94e6eb679f3a0de87c9bb5b7cdc6cbe37c98fdfb71f3b65d"
+    },
+    {
+      "path": "src/lib/fixtures/palette-import/palette.ase",
+      "bytes": 3290,
+      "sha256": "daf6464d18028e71b88bcdfb9806a88fe88b29ff30f3c953dd034e1df465bca1"
+    },
+    {
+      "path": "src/lib/fixtures/palette-import/strip.png",
+      "bytes": 3493,
+      "sha256": "5c16dcd1fbf27a467d89d75dd7ef15bd1522be1f81049d23ac4e469bcc09d20e"
+    },
+    {
+      "path": "src/lib/fixtures/palette-import/tiny.png",
+      "bytes": 1017,
+      "sha256": "90d6be2b84d3dffcdbc75cb78eb97ca9da5149c360d366daab444e2f2fe2fd78"
+    },
+    {
+      "path": "src/lib/gesture.js",
+      "bytes": 3837,
+      "sha256": "8f16bd5e27b3bd19ae9086f4130de7f21add3107654787af5ef989d755d8fcd5"
+    },
+    {
+      "path": "src/lib/gesture.test.js",
+      "bytes": 7967,
+      "sha256": "6253c6c08e383eff83c26b9c75cd01512059a20eacada3d0f8d2976b7992b180"
+    },
+    {
+      "path": "src/lib/gif.js",
+      "bytes": 12737,
+      "sha256": "51a8e5efa4a55147485947d317c54fa450530c94f7b6535c0b828fe4478ce142"
+    },
+    {
+      "path": "src/lib/gif.test.js",
+      "bytes": 11718,
+      "sha256": "02c67a1b8b1d54c805e66564f375b784df28b8e8bc21c49418285eeb657f37b6"
+    },
+    {
+      "path": "src/lib/icon-glyph.js",
+      "bytes": 13107,
+      "sha256": "a8dd8b97f693abfdc129f39715884eb6cac5af755286be32e0d623c029c87260"
+    },
+    {
+      "path": "src/lib/icon.js",
+      "bytes": 12657,
+      "sha256": "3e034261e46fd7b53093852f911b56cf1497ff2d21fc4ddbe837dd69fe8bc2ae"
+    },
+    {
+      "path": "src/lib/icon.test.js",
+      "bytes": 13052,
+      "sha256": "e72b2d3f1eafc45b17bd0f55509620d2dd43901d9ca443610deceebf3a5fdafd"
+    },
+    {
+      "path": "src/lib/image-decode.js",
+      "bytes": 4970,
+      "sha256": "a660104305461e4f307d1597e424205725cbc44b9011e5349b0605fdfa3aba2b"
+    },
+    {
+      "path": "src/lib/image-decode.test.js",
+      "bytes": 14733,
+      "sha256": "e6f6e78dd912a176bbf6bb42ef2d8fa0634aec24aacfe71f2f0ebab70862d78c"
+    },
+    {
+      "path": "src/lib/image-drop.js",
+      "bytes": 3280,
+      "sha256": "c71fdc92779f9aec692b0958776b28ff8b585f502382c808e805e416c3db8a5b"
+    },
+    {
+      "path": "src/lib/image-drop.test.js",
+      "bytes": 6219,
+      "sha256": "7a3d7769696ef7b8003e2ced65e61dd9ed9b75befc0f94c7bb56575f9ead5080"
+    },
+    {
+      "path": "src/lib/image-gesture.js",
+      "bytes": 844,
+      "sha256": "d8e930f58afa9d438bc88e4a835e6f7bd949c3bd7f5b4196102ec2d3d9e14c56"
+    },
+    {
+      "path": "src/lib/image-gesture.test.js",
+      "bytes": 1914,
+      "sha256": "030e6ad5782d1b222958cbcf027bb6c752750e36f6630ad4291f32631eb0cc41"
+    },
+    {
+      "path": "src/lib/image-import-client.js",
+      "bytes": 9979,
+      "sha256": "d0974577afeb040dff0d00c0f4ec20353891225eab6e2e0f31171d0b2ccb40f7"
+    },
+    {
+      "path": "src/lib/image-import-client.test.js",
+      "bytes": 17577,
+      "sha256": "1603d2389f98748ad06d7b223e42bf5d135f156250d69819d2e64ee9a8c0d632"
+    },
+    {
+      "path": "src/lib/image-import-core.js",
+      "bytes": 3349,
+      "sha256": "1f9934175c6ca2116b6cd232df6929c83606c52343237785e47d72f8d428ebbe"
+    },
+    {
+      "path": "src/lib/image-import-core.test.js",
+      "bytes": 3940,
+      "sha256": "a1360ff2f0aad83ed5e46f0f97bb691b27c1f1bc79609862db6b91511bf019c1"
+    },
+    {
+      "path": "src/lib/image-import-worker.js",
+      "bytes": 2188,
+      "sha256": "b6f9cd3531a60d13912439157d214b5c2ac77c9703b12954dffe8f60d83975a0"
+    },
+    {
+      "path": "src/lib/image-import-worker.test.js",
+      "bytes": 3400,
+      "sha256": "38b6ceac3103338aa54662928922518fb57314d9e969d0887bcfbf028b15c387"
+    },
+    {
+      "path": "src/lib/image-reanalysis.js",
+      "bytes": 3129,
+      "sha256": "4e8440acda99232b5bdc572a966d616285fda4189b3cb985f76a35a49d07cbe6"
+    },
+    {
+      "path": "src/lib/image-reanalysis.test.js",
+      "bytes": 9080,
+      "sha256": "d08cb97cf7d0ffd2d8274cf8806e84ef668421878507fb0b017a1f0c6d66b063"
+    },
+    {
+      "path": "src/lib/internal-drag.js",
+      "bytes": 1345,
+      "sha256": "11b2f5e8efdd69b6c174cf93f77f4103e8a341da3566ba558861c16728d7fbef"
+    },
+    {
+      "path": "src/lib/internal-drag.test.js",
+      "bytes": 1942,
+      "sha256": "93ea5febfc565bdd59bda1cb3f82b4a4315e83fe5c2c1a08536ab9cb2afc9240"
+    },
+    {
+      "path": "src/lib/layout.js",
+      "bytes": 3115,
+      "sha256": "b1909bba70e6e410913ee823d71acd7f551291d232861def9937df876aa57775"
+    },
+    {
+      "path": "src/lib/layout.test.js",
+      "bytes": 5888,
+      "sha256": "292ecf3a8536b70f7dfe6eeb4f9f24ce2fb32f28cc302bf5604d0826f130a0f7"
+    },
+    {
+      "path": "src/lib/onebit-usage.js",
+      "bytes": 6088,
+      "sha256": "320679fde83c4260445b40bfbe8d3900ff244bc5b7f8e1306a74436248b28e7b"
+    },
+    {
+      "path": "src/lib/onebit-usage.test.js",
+      "bytes": 9877,
+      "sha256": "6d9ac6e3ec8ff9cde6a18e8a771fafd5171baeef9d675b389d1b913473eccb05"
+    },
+    {
+      "path": "src/lib/original-color-usage.js",
+      "bytes": 4067,
+      "sha256": "b790c86eb177e558059bd5cb8d5034a35532be8124bf564489a0ac1b5598e149"
+    },
+    {
+      "path": "src/lib/original-color-usage.test.js",
+      "bytes": 4875,
+      "sha256": "7942c446e2f3837175c8fec14e0c1d5b24a95f5e6d9ccff8b9ec951d93ef9ea3"
+    },
+    {
+      "path": "src/lib/palette-alpha.js",
+      "bytes": 734,
+      "sha256": "92fc032f80728ef7027569b91be8cb91aa9486f203bbff9646ed89d674ab6b92"
+    },
+    {
+      "path": "src/lib/palette-alpha.test.js",
+      "bytes": 6964,
+      "sha256": "0df3f335dcfc9039c4963b57d709500c3aaee86b5058b336960c8a14af1cf394"
+    },
+    {
+      "path": "src/lib/palette-animation-cache.js",
+      "bytes": 4899,
+      "sha256": "710372b3a29169ac006d8c2286120f3ebab4908b0727940a96af340514b3670a"
+    },
+    {
+      "path": "src/lib/palette-animation-cache.test.js",
+      "bytes": 7320,
+      "sha256": "1ece32fc350cac3e879f0fea9507f770655f188d44eaeccd9283f8ed348f9520"
+    },
+    {
+      "path": "src/lib/palette-ase.js",
+      "bytes": 6096,
+      "sha256": "87017ef440cdfa0c499240411b96713ecdc835481ff1e305e3a1b8e7e933f944"
+    },
+    {
+      "path": "src/lib/palette-ase.test.js",
+      "bytes": 12366,
+      "sha256": "d93e24db88eb1b58d3543e5cd0f59b80c41ff6b5e7755cd14cae5ca8bb149468"
+    },
+    {
+      "path": "src/lib/palette-cleanup-apply.js",
+      "bytes": 5379,
+      "sha256": "d7ff720a52488ec0b3d9c0a402ad49823cc5cad54020ff7d0241e3d728513fb9"
+    },
+    {
+      "path": "src/lib/palette-cleanup-client.js",
+      "bytes": 8405,
+      "sha256": "c0b701228b598c3d602b261e7b9daf886bc34cf8629be11a1aad435a20d28018"
+    },
+    {
+      "path": "src/lib/palette-cleanup-client.test.js",
+      "bytes": 15965,
+      "sha256": "7a738c810ee26915a58a171d419384ab7ee27b4ab7a774e0d51a62c271b70998"
+    },
+    {
+      "path": "src/lib/palette-cleanup-worker.js",
+      "bytes": 2053,
+      "sha256": "420ed5d2af7b92776088c3cc467f11402632e6a09bbfc15fd2d653fbe9383d2b"
+    },
+    {
+      "path": "src/lib/palette-cleanup-worker.test.js",
+      "bytes": 3878,
+      "sha256": "f999c49945bef09a72c750de7870bcac2b544abb40eedf0aec3a95bb6ffd7595"
+    },
+    {
+      "path": "src/lib/palette-cleanup.js",
+      "bytes": 11721,
+      "sha256": "e55619b86971bb373c96e9fc15030ea9363d25178d418f3c17f04b96f3d879c6"
+    },
+    {
+      "path": "src/lib/palette-cleanup.test.js",
+      "bytes": 20480,
+      "sha256": "d48d3866b812efe5f165058be3abee7ebbcbc57cb4f666e954297beffde9e370"
+    },
+    {
+      "path": "src/lib/palette-decode.js",
+      "bytes": 2362,
+      "sha256": "4553970803eb1fa3d9c26d3e4feb5a2f54a26f18ec35085536cd2643536f4988"
+    },
+    {
+      "path": "src/lib/palette-decode.test.js",
+      "bytes": 5154,
+      "sha256": "79e9551b5d35a9be4b77578b22a8c855226d23d3c121c928f3bc92c25c9296bb"
+    },
+    {
+      "path": "src/lib/palette-dither-settings.js",
+      "bytes": 336,
+      "sha256": "8c053347afe29dc4d058aeabf3bfd3417d151ec4afaf7ccc77acf2ad7b0f32c2"
+    },
+    {
+      "path": "src/lib/palette-dither-state.test.js",
+      "bytes": 5920,
+      "sha256": "1ad167003f16c0e23fa7fe45664b4f5f09b7ad39bce2dd4dfee1dc3c143a7fec"
+    },
+    {
+      "path": "src/lib/palette-dither.js",
+      "bytes": 5422,
+      "sha256": "5452f7b1af4d5f656d8733635856eab5ba565e8d7ee81cced4d77041a9638152"
+    },
+    {
+      "path": "src/lib/palette-dither.test.js",
+      "bytes": 9234,
+      "sha256": "14d3a21937d1841b7471bb554f49ce1e241684bcb4dea59c09a6f7cce073f195"
+    },
+    {
+      "path": "src/lib/palette-drop.js",
+      "bytes": 6031,
+      "sha256": "3a124b9353db153cc85b75f4b990fb63282386b27079337892526a0b89baf6c8"
+    },
+    {
+      "path": "src/lib/palette-drop.test.js",
+      "bytes": 13643,
+      "sha256": "0913219674c11d37f1295359b53630248ca876673a115419bc16d8de85a6bc46"
+    },
+    {
+      "path": "src/lib/palette-export.js",
+      "bytes": 2465,
+      "sha256": "3f7995c69ba8c351c1dfd7c7bce9bc1bdd34ec618f6ba73852c8c79972ab0bdd"
+    },
+    {
+      "path": "src/lib/palette-export.test.js",
+      "bytes": 19148,
+      "sha256": "0c172ce2fba1aa5d9271e9d79447b80cc88f22b3465668b33c52248da4a9c9b6"
+    },
+    {
+      "path": "src/lib/palette-failure.js",
+      "bytes": 2293,
+      "sha256": "85248532def1ce1fe8e7bbdf0dc3e701818dd812a34c2daf5e1d692936015b5d"
+    },
+    {
+      "path": "src/lib/palette-failure.test.js",
+      "bytes": 3815,
+      "sha256": "329e28e8c1e05500d86213f1d3a4ef98c4d79fcd6c678dd3c555ebe298bf6afe"
+    },
+    {
+      "path": "src/lib/palette-generated-client.js",
+      "bytes": 6159,
+      "sha256": "4f6bb50771a3bba70a9f7554391a33a83c5a8b327c7e3b5196db786d0f9abff2"
+    },
+    {
+      "path": "src/lib/palette-generated-client.test.js",
+      "bytes": 10073,
+      "sha256": "06ad5a666364b88176e93d771acbb0fe8d55803dc9437192bf1c36b2ce088c6d"
+    },
+    {
+      "path": "src/lib/palette-generated-sources.js",
+      "bytes": 2829,
+      "sha256": "cdab664272c650d51f1347275ed7d985f36fc1fa23e5f0d31d8c872caf820652"
+    },
+    {
+      "path": "src/lib/palette-generated-worker.js",
+      "bytes": 1046,
+      "sha256": "3e4c86df4183921c4097113825d4260f1102aa22b768a5d682fdceb9c27138f0"
+    },
+    {
+      "path": "src/lib/palette-generated-worker.test.js",
+      "bytes": 5185,
+      "sha256": "ebddae167258eb8ac838fca58e702003f49dae37af4808da67255863bf9307ef"
+    },
+    {
+      "path": "src/lib/palette-generated.js",
+      "bytes": 12164,
+      "sha256": "ff11e62b92853b12c99946f60e9635de734b903702bcbd2b39834b84087e8c58"
+    },
+    {
+      "path": "src/lib/palette-generated.test.js",
+      "bytes": 11765,
+      "sha256": "3a2c66bfe6d999a6a6b094abc42c1b6719b71b4b81c4ee5ad49e4594614dea0b"
+    },
+    {
+      "path": "src/lib/palette-gif-worker.js",
+      "bytes": 660,
+      "sha256": "1c2985878cdf81bcb1c458d74c4237c9d9d0601518828a362f340059f23af419"
+    },
+    {
+      "path": "src/lib/palette-import.js",
+      "bytes": 5937,
+      "sha256": "201f081e99a8551a080a6b6a806536558d7c4460cc1d5f049ba26ed47372346f"
+    },
+    {
+      "path": "src/lib/palette-import.test.js",
+      "bytes": 7234,
+      "sha256": "e91ac57052f9377000ee973ec1a560307e5eb7ae2ef6c033a56259f24b05fc22"
+    },
+    {
+      "path": "src/lib/palette-label.js",
+      "bytes": 285,
+      "sha256": "b17d8cc28586b1511f4d2eba7dbfa7a3108e5a785b302cc8c86adf705862537c"
+    },
+    {
+      "path": "src/lib/palette-library.js",
+      "bytes": 9175,
+      "sha256": "69455708c3481a3a0bb7f51812868b6c5f207fea105b9654b1b672ca6f9e4dde"
+    },
+    {
+      "path": "src/lib/palette-library.test.js",
+      "bytes": 8293,
+      "sha256": "1c83e63231452031171e3665fc361043d94c5de0f22722f5750d867564866fba"
+    },
+    {
+      "path": "src/lib/palette-limit-client.js",
+      "bytes": 8074,
+      "sha256": "9e1638254c1b9229d195a1e7a3db8e3424b0767d77a88e22cc9c45c08a829cbc"
+    },
+    {
+      "path": "src/lib/palette-limit-client.test.js",
+      "bytes": 15090,
+      "sha256": "4a444efa9983b7c5353bfaca0281ce4b38927c12294a05b4d11f003cc7593e4a"
+    },
+    {
+      "path": "src/lib/palette-limit-worker.js",
+      "bytes": 1309,
+      "sha256": "947b96fed5da64af54b60a053fc0022e0361c0a739b2380170de6fe9df032c45"
+    },
+    {
+      "path": "src/lib/palette-limit-worker.test.js",
+      "bytes": 2009,
+      "sha256": "426e8f1be848b8ad84082afbee483b5c959b68e673c3d643750d46b049368eae"
+    },
+    {
+      "path": "src/lib/palette-limit.js",
+      "bytes": 9345,
+      "sha256": "739a3fb97a80d1ecbfa23c5e33f72893b894adc4425ea89217a88d7264abae20"
+    },
+    {
+      "path": "src/lib/palette-limit.test.js",
+      "bytes": 11145,
+      "sha256": "8e2519acd6eb3f7c59af1f2ff1e3cb7e34d4cd77b1eb164085b587b54ca99eeb"
+    },
+    {
+      "path": "src/lib/palette-lospec-url.js",
+      "bytes": 1510,
+      "sha256": "2babb93ce0222b0d96aae1bcb5fea8130bb4d2e6b968b8b28770506d318e5701"
+    },
+    {
+      "path": "src/lib/palette-lospec.js",
+      "bytes": 4280,
+      "sha256": "125ce34549efba37b4aed2c03e2b5923ef0f88c6b04e2363a61004c021b87e9b"
+    },
+    {
+      "path": "src/lib/palette-lospec.test.js",
+      "bytes": 11562,
+      "sha256": "29f7ef28e160e0b9b15837fc1458cd9e2c4cfe6e66fb6bcfcb3f911295db102c"
+    },
+    {
+      "path": "src/lib/palette-preview.js",
+      "bytes": 4474,
+      "sha256": "e3fb78fbedb3b6e9e193435c3a44011d321db6c201a968ef9f10b347909e2aa0"
+    },
+    {
+      "path": "src/lib/palette-preview.test.js",
+      "bytes": 10606,
+      "sha256": "2311709b2097f07206361b8208e2aa57e7c8246deb4a47979fc9c8b035a03c57"
+    },
+    {
+      "path": "src/lib/palette-state.js",
+      "bytes": 6007,
+      "sha256": "c194d428fcff45e0043a59f197487e67593c1685c435ee3e4418b75a05d4d9ae"
+    },
+    {
+      "path": "src/lib/palette-state.test.js",
+      "bytes": 21378,
+      "sha256": "9176fa6fcd9e72387695a0ba472ce168379d74412d8316d41b185839812e56c8"
+    },
+    {
+      "path": "src/lib/palette-usage-progress.js",
+      "bytes": 1183,
+      "sha256": "c8ad66c5367a4afaccb2e0ade0031e18ff62bfdebb92405aad02e0a55f6ff3aa"
+    },
+    {
+      "path": "src/lib/palette-usage-progress.test.js",
+      "bytes": 1552,
+      "sha256": "bc48136c50ea69cae927c5b72d1cb61da4034cb062f2f77c2f15cbaf094a09ec"
+    },
+    {
+      "path": "src/lib/palette-usage.js",
+      "bytes": 2266,
+      "sha256": "5c062ea2ae747130e6f4d5e4829682077500c81a31f3d1e9dde25d0c48831d0d"
+    },
+    {
+      "path": "src/lib/palette-usage.test.js",
+      "bytes": 6348,
+      "sha256": "f7a9dc3e5247a432c5281b11f1c797c48b826011d8528ec9e99d12027b7bdfec"
+    },
+    {
+      "path": "src/lib/presets.js",
+      "bytes": 5495,
+      "sha256": "351e65be54c9f992becc4a61ea61dc6b900177f20d82b5b83dae89c2044df784"
+    },
+    {
+      "path": "src/lib/presets.test.js",
+      "bytes": 3459,
+      "sha256": "5a8bac8cd99f11bfbbefbc4c689d759fabe830b8b2246d27077fae6e286bc748"
+    },
+    {
+      "path": "src/lib/quantize.js",
+      "bytes": 8694,
+      "sha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573"
+    },
+    {
+      "path": "src/lib/quantize.test.js",
+      "bytes": 10862,
+      "sha256": "5c47c80121edc7c6ac4f1a929bda19e014c9515eda232daeecc37058eac635c6"
+    },
+    {
+      "path": "src/lib/recolor.js",
+      "bytes": 31469,
+      "sha256": "c458986116a379f69d34f38efc4b16d2d0cff85b1f6526f53e50efffd1d0e562"
+    },
+    {
+      "path": "src/lib/recolor.test.js",
+      "bytes": 56592,
+      "sha256": "a999d75b182a67d9d5c1470912cb2bc0588ebf8fb857fa850beeb283867022fc"
+    },
+    {
+      "path": "src/lib/save-batch.test.js",
+      "bytes": 2444,
+      "sha256": "fddd48253edb03167ef26a56e120ad251d5b902843af24bfb14cc064e0591430"
+    },
+    {
+      "path": "src/lib/save.js",
+      "bytes": 13342,
+      "sha256": "c44966acd7925ab6895199736c55d0cc6e8311e6af1b116d3c72a2e3451075c4"
+    },
+    {
+      "path": "src/lib/save.test.js",
+      "bytes": 9241,
+      "sha256": "30c3efe7fc575d4f6758a36cf807f069c36df341fad32f0af2b5224818c4d447"
+    },
+    {
+      "path": "src/lib/settings.js",
+      "bytes": 5645,
+      "sha256": "3b944d5cc55de990be2d9eb69743cce3fb8110c5a5980e204c17e27c1bc253bd"
+    },
+    {
+      "path": "src/lib/settings.test.js",
+      "bytes": 6794,
+      "sha256": "1fb15db3726c3c32873e2b0c9975043b95e755d6ebc39e03159266ea69b46ff6"
+    },
+    {
+      "path": "src/lib/source-color-summary.js",
+      "bytes": 4133,
+      "sha256": "45c0657486543a6ef5e1f6abf3dc167e4665fc7787dd86e08a434c80ff84f597"
+    },
+    {
+      "path": "src/lib/source-color-summary.test.js",
+      "bytes": 4724,
+      "sha256": "5a81ff450ddbc12b11c3a49bbd2e5e236c1f88982414910c4b07eb6d761183ab"
+    },
+    {
+      "path": "src/lib/storage-migration.js",
+      "bytes": 555,
+      "sha256": "f8eeeb75e6a20cd9a32b0a9de677363f5bb830477a6d855e557b7d7b85ef25bc"
+    },
+    {
+      "path": "src/lib/storage-migration.test.js",
+      "bytes": 1586,
+      "sha256": "25cf787c520f82bcff658ca5497ec5413ed067dfc62fdb4b73703c537203dc4f"
+    },
+    {
+      "path": "src/lib/style-preview.js",
+      "bytes": 1184,
+      "sha256": "a046abf0a996188c0cd9b256c2f76bb78170df45adb17cf41b8ac290d5ec09fe"
+    },
+    {
+      "path": "src/lib/style-preview.test.js",
+      "bytes": 1708,
+      "sha256": "42d68f26548d0f86f92a033ad810b7f478a7e67e75a4ec9e567fd60c15d7293c"
+    },
+    {
+      "path": "src/lib/theme-startup.test.js",
+      "bytes": 2118,
+      "sha256": "f2747cd6b7b64fe76380db33e4edbdec8b591c2adbb59efe0505c7c8b41114a1"
+    },
+    {
+      "path": "src/lib/tooltip.js",
+      "bytes": 6884,
+      "sha256": "03127079148ca13525aa4f17c0e3e1d10bcece415695c87a6a2d79edd91ba6d3"
+    },
+    {
+      "path": "src/lib/tooltip.test.js",
+      "bytes": 9963,
+      "sha256": "da9a19aade4d644f750b37895d67714a9b8bb80525dc8fac916c7b36bb6cc423"
+    },
+    {
+      "path": "src/lib/tooltipCoverage.test.js",
+      "bytes": 548,
+      "sha256": "12a924bbefdb721db3d4ff668214d981ff3711df8c3c9858ee3d34328f166d8a"
+    },
+    {
+      "path": "src/lib/viewer-layout.js",
+      "bytes": 885,
+      "sha256": "4658c615f2eaeb71346dc0c063a4c849c832c4c213279684de5fc7b920b9840f"
+    },
+    {
+      "path": "src/lib/viewer-layout.test.js",
+      "bytes": 2562,
+      "sha256": "1066073ee14abddf8da9dcece121002d422d74469059588925a7b1729bb7f089"
+    },
+    {
+      "path": "src/lib/viewer-navigation.js",
+      "bytes": 10141,
+      "sha256": "d2c894dc44e61e7d26c42327f5b5fe6f94c153342c977ed6b65c1921cb30bc8c"
+    },
+    {
+      "path": "src/lib/viewer-navigation.test.js",
+      "bytes": 13907,
+      "sha256": "81cc1f8ed4a10a85000ea321256e86369bb58aca7c85bb4720ce9d110cbce58d"
+    },
+    {
+      "path": "src/lib/workspace-controls.js",
+      "bytes": 3158,
+      "sha256": "2606e67f1468849b428302f56f56aca562b6a519f55d12f106f8ecaecd1dd664"
+    },
+    {
+      "path": "src/lib/workspace-controls.test.js",
+      "bytes": 8926,
+      "sha256": "69f8165690ccb51ef29ce8c5bf5965423ce92366b2f879d4e3dec438c0baf90c"
+    },
+    {
+      "path": "src/lib/workspace.js",
+      "bytes": 548,
+      "sha256": "59d8430e35b47c5d100fb79f618a7ac65bba84c76f410eacd8dd271c8b64e325"
+    },
+    {
+      "path": "src/lib/workspace.test.js",
+      "bytes": 1490,
+      "sha256": "273d3836b18f1f4f8034aebf09f7183e778d0fc07ca9724457c89e2a7ac75b13"
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 147,
+      "sha256": "f199418f7329e2fe739a3f09e94e5b2aa2a258ea289b40b9e412edfc6abb2758"
+    },
+    {
+      "path": "src/mobile-image-actions.css",
+      "bytes": 3074,
+      "sha256": "90bb373472d7bb2c7bc59dfce05ca835dff59cbbde261fcebfa054b85b6767c8"
+    },
+    {
+      "path": "src/palette-import.css",
+      "bytes": 6637,
+      "sha256": "037501a9c233184bd1498163e360f9417587e47eecb2d84ccfd7e0e0be3c133e"
+    },
+    {
+      "path": "src/palette-settings-compact.css",
+      "bytes": 1875,
+      "sha256": "15112849e2841d3343e21e81a8e457f9be42f5bfc0b41f09826df797857435a2"
+    },
+    {
+      "path": "src/ui-consistency.css",
+      "bytes": 2085,
+      "sha256": "483e09dfa9fc99c050bc3cb55044736cbdc4b67c247fd42f81faa73dd471ef37"
+    },
+    {
+      "path": "src/viewer-navigation.css",
+      "bytes": 1110,
+      "sha256": "8b048ab16b847a45ae34f97a17179ab87ed04abb6d8646f57a3ea8ccf575a747"
+    }
+  ],
+  "build": [
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/apple-touch-icon-152x152.png",
+      "bytes": 546,
+      "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/apple-touch-icon-167x167.png",
+      "bytes": 617,
+      "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/apple-touch-icon-180x180.png",
+      "bytes": 677,
+      "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/gif-CtkGj7kJ.js",
+      "bytes": 12798,
+      "sha256": "3e091b5c5a34cb2180ec4db2930fbbac50843334406181c79bbd65a66490f2f9",
+      "gzipBytes": 5063
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/image-import-client-DMvOPcbg.js",
+      "bytes": 5532,
+      "sha256": "ab88bb1a1c027eeaa60bf4a2c83706b00af942603881e2cd897de80fb8dbe350",
+      "gzipBytes": 2108
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/image-import-worker-C2vfsgD_.js",
+      "bytes": 24820,
+      "sha256": "4434bdca6622afd6b987f6436e80cbb81409e1e570af38de7c62f3a93e231a97",
+      "gzipBytes": 10366
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/index-8I8UNd-r.js",
+      "bytes": 284427,
+      "sha256": "bb3698a1ca0d14f04542ea87e6c5057932d4668580c3489e0459bedf62d107b6",
+      "gzipBytes": 101720
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/index-CAPGUq4Y.css",
+      "bytes": 168002,
+      "sha256": "c0c1efc1f5a21081b48c2df6ca31657d29d4b332d058c2ddc7630522bdbc4873",
+      "gzipBytes": 26485
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-ase-D6BoxRK8.js",
+      "bytes": 2497,
+      "sha256": "6bfa5bb1943a190b4a299109398b52f920085640a6635c186a4b6d10548ecfbd",
+      "gzipBytes": 1328
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-cleanup-CDe6XS5k.js",
+      "bytes": 4235,
+      "sha256": "30caa8cd62ad51b2069e33f2da47ade16ef4bef5ec63031aa9393620953cbd49",
+      "gzipBytes": 2217
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-cleanup-client-Brh0uqND.js",
+      "bytes": 7348,
+      "sha256": "2f8633f0963600933f968ef6c980e75310c79e213008ab9af8564a6cf8f1b32a",
+      "gzipBytes": 2892
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-cleanup-worker-ChpCTucA.js",
+      "bytes": 15055,
+      "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3",
+      "gzipBytes": 6774
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-generated-client-CTVi6LdX.js",
+      "bytes": 3752,
+      "sha256": "02e4b53d1b598131476808f25a739c78a08e30ec3eeeafecddd535bf4ce9e675",
+      "gzipBytes": 1629
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-generated-CniLZd5X.js",
+      "bytes": 5832,
+      "sha256": "f3b4a355123a173f19362bfd1a13841dc7e1f6d2acdaf232449e1988ddbcc80d",
+      "gzipBytes": 2658
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-generated-worker-C3uwOiRZ.js",
+      "bytes": 9777,
+      "sha256": "323499c4ba7cef3b1adc39525028efd054a6d69c98428c8af60b7b0434520533",
+      "gzipBytes": 4612
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-gif-worker-D4qe4WP7.js",
+      "bytes": 11213,
+      "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840",
+      "gzipBytes": 5070
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-limit-CYd9Rzxc.js",
+      "bytes": 4464,
+      "sha256": "88149e7f48365ea0806b0b4116b981fdf85780ce8f51a646b62a571a1f5aa335",
+      "gzipBytes": 2217
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-limit-worker-DWheP2PL.js",
+      "bytes": 9738,
+      "sha256": "b5bce0b896438c968947d98cc811458aad299a192a57db5258fbeef62303cf30",
+      "gzipBytes": 4609
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-lospec-D3KAlEOU.js",
+      "bytes": 2331,
+      "sha256": "85eda05292099482f91f047f1d65972998a6256655d3e7940f9670c83a1ed0b3",
+      "gzipBytes": 1249
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-usage-COUbQHDg.js",
+      "bytes": 934,
+      "sha256": "c3bb30d49ebd860cee613427d76c61267f9831d4d621b3b2d53d8718494527a9",
+      "gzipBytes": 591
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/colorfetti-trailer-poster.png",
+      "bytes": 719992,
+      "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-16x16.png",
+      "bytes": 148,
+      "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-32x32.png",
+      "bytes": 174,
+      "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-48x48.png",
+      "bytes": 200,
+      "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark-16x16.png",
+      "bytes": 148,
+      "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark-32x32.png",
+      "bytes": 174,
+      "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark-48x48.png",
+      "bytes": 200,
+      "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark.ico",
+      "bytes": 15086,
+      "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark.svg",
+      "bytes": 601,
+      "sha256": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-light.svg",
+      "bytes": 601,
+      "sha256": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon.ico",
+      "bytes": 15086,
+      "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon.svg",
+      "bytes": 736,
+      "sha256": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/index.html",
+      "bytes": 4463,
+      "sha256": "e8d168b21fa11413ae8b39d7b3a25089f759c58960ef240683849ef51d39ca4d"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/manifest.webmanifest",
+      "bytes": 794,
+      "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/maskable-icon-192x192.png",
+      "bytes": 716,
+      "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/maskable-icon-512x512.png",
+      "bytes": 3197,
+      "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/monochrome-192x192.png",
+      "bytes": 724,
+      "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/pwa-192x192.png",
+      "bytes": 746,
+      "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/pwa-512x512.png",
+      "bytes": 3862,
+      "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/safari-pinned-tab.svg",
+      "bytes": 601,
+      "sha256": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+    }
+  ],
+  "practicalFixtureManifest": {
+    "frozen": "2026-10-16 before results",
+    "scope": "realistic small batch; sparse low-color large sprite sheets; bounded motion GIFs; no random-photo noise",
+    "licenses": "All artwork CC0-1.0 Kenney/rubberduck; original URLs, hashes and credits retained. Assemblies inherit CC0 source reuse permission.",
+    "records": [
+      {
+        "id": "dungeon-wizard",
+        "file": "fixtures/dungeon-wizard.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "b3909f80a29a0f18729f96a90ebe446ecaf26a195da633f2a6c3dd31f660821e",
+        "width": 16,
+        "height": 16,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/tiny-dungeon",
+          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+          "bytes": 98530,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0084.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "dungeon-archer",
+        "file": "fixtures/dungeon-archer.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "1e82481db9d95d0cec64ba0ea95b8fadf1e3675936e93731d0ff0e3bc72470b0",
+        "width": 16,
+        "height": 16,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/tiny-dungeon",
+          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+          "bytes": 98530,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0112.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "dungeon-knight",
+        "file": "fixtures/dungeon-knight.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "e139ab1d56c599af1cea5a955b705ead18a92d41e8e635b550729383cad9de3c",
+        "width": 16,
+        "height": 16,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/tiny-dungeon",
+          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+          "bytes": 98530,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0100.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "dungeon-potion",
+        "file": "fixtures/dungeon-potion.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "ad27340925ae7e936788c22cbd0f7d1922ef5bdd21377f916f1be9af6be4312d",
+        "width": 16,
+        "height": 16,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/tiny-dungeon",
+          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+          "bytes": 98530,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0115.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "town-water-bucket",
+        "file": "fixtures/town-water-bucket.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "3befce5d6373d4315f35eeed22752bb1cf7a2ab5d008ce26dd6b4aebbb278978",
+        "width": 16,
+        "height": 16,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/tiny-town",
+          "url": "https://kenney.nl/media/pages/assets/tiny-town/a415fbeb49-1735736916/kenney_tiny-town.zip",
+          "sha256": "9768692dccff1d706408a5aedd6ca4f6cd1409506cbc84cb2f862919764be977",
+          "bytes": 182243,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0104.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "platformer-pilot",
+        "file": "fixtures/platformer-pilot.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "15df14143949310c001b09b2a00ed2278a5a9b4a10edd276af306b77b8c9d658",
+        "width": 24,
+        "height": 24,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/pixel-platformer",
+          "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+          "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+          "bytes": 260312,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/Characters/tile_0000.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "platformer-rocket",
+        "file": "fixtures/platformer-rocket.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "aca58ddc36d4e8d506111b1e580fc79b17383337b3cec27c28b0e6090435224a",
+        "width": 24,
+        "height": 24,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/pixel-platformer",
+          "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+          "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+          "bytes": 260312,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/Characters/tile_0015.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "platformer-heart",
+        "file": "fixtures/platformer-heart.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "6b547ef267ee13918a4e45ac8a2a3d0de4fbaef8267459045cf9f8c5e283770e",
+        "width": 18,
+        "height": 18,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/pixel-platformer",
+          "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+          "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+          "bytes": 260312,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0044.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "kenney-sheet-1024",
+        "file": "fixtures/kenney-sheet-1024.png",
+        "kind": "assembled CC0 sprite sheet",
+        "width": 1024,
+        "height": 1024,
+        "frames": 1,
+        "sha256": "7c227c452abdc0daedd089b88c3d95120e52c81d57edd2bbfa5f1f6bc5d1f853",
+        "construction": "64px cells, 48px nearest-neighbor sprites, 8px transparent gutters; source colors unchanged",
+        "sourceIds": [
+          "dungeon-wizard",
+          "dungeon-archer",
+          "dungeon-knight",
+          "dungeon-potion",
+          "town-water-bucket",
+          "platformer-pilot",
+          "platformer-rocket",
+          "platformer-heart"
+        ]
+      },
+      {
+        "id": "kenney-sheet-2048",
+        "file": "fixtures/kenney-sheet-2048.png",
+        "kind": "assembled CC0 sprite sheet",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "sha256": "2d2f25c21f9496816d4f21b303d6f86a288ef324263f7f998eae84f4db7d223f",
+        "construction": "64px cells, 48px nearest-neighbor sprites, 8px transparent gutters; source colors unchanged",
+        "sourceIds": [
+          "dungeon-wizard",
+          "dungeon-archer",
+          "dungeon-knight",
+          "dungeon-potion",
+          "town-water-bucket",
+          "platformer-pilot",
+          "platformer-rocket",
+          "platformer-heart"
+        ]
+      },
+      {
+        "id": "kenney-motion-128",
+        "file": "fixtures/kenney-motion-128.gif",
+        "kind": "owned motion assembly of CC0 sprites; not a hand-authored walk cycle",
+        "width": 128,
+        "height": 128,
+        "frames": 32,
+        "delay": [
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120
+        ],
+        "loop": 0,
+        "sha256": "d666cb4969de8641a05236427390b4521f7eb04693cd1a32c6b685af77fce3cc",
+        "sourceIds": [
+          "dungeon-wizard",
+          "dungeon-archer",
+          "dungeon-knight",
+          "dungeon-potion"
+        ]
+      },
+      {
+        "id": "kenney-motion-256",
+        "file": "fixtures/kenney-motion-256.gif",
+        "kind": "owned motion assembly of CC0 sprites; not a hand-authored walk cycle",
+        "width": 256,
+        "height": 256,
+        "frames": 48,
+        "delay": [
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120
+        ],
+        "loop": 0,
+        "sha256": "c3d75b88563016e674567003bbecb4128a4a8e20710e349f7b0278837069390f",
+        "sourceIds": [
+          "dungeon-wizard",
+          "dungeon-archer",
+          "dungeon-knight",
+          "dungeon-potion"
+        ]
+      },
+      {
+        "id": "real-magic",
+        "file": "fixtures/real-magic.gif",
+        "kind": "genuine artist-authored six-frame sequence assembled as GIF",
+        "width": 32,
+        "height": 32,
+        "frames": 6,
+        "delay": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "loop": 0,
+        "sha256": "4611a7fe466b618b42f8082c2ed7573504aba308b6ba0a21e4dd235baa0d9094",
+        "source": [
+          {
+            "id": "anim-rubberduck-magic-f0",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f0.png",
+            "sha256": "1b5447f4534df9eaefce5ccecd5983edc047bc57c0d0fecddc757b882973e69f",
+            "bytes": 843,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 889,
+              "a1_15": 29,
+              "a16_127": 42,
+              "a128_254": 51,
+              "a255": 13,
+              "nonzero": 135,
+              "partialFraction": 0.9037,
+              "visibleRgbColors": 126
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_03.png",
+            "sourcePngSha256": "1b5447f4534df9eaefce5ccecd5983edc047bc57c0d0fecddc757b882973e69f",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 0,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_03.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          },
+          {
+            "id": "anim-rubberduck-magic-f1",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f1.png",
+            "sha256": "5ea5ee9adf676a60a1e4e4068afa0c34574edb51470425be3d8951670f7db05f",
+            "bytes": 1124,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 825,
+              "a1_15": 44,
+              "a16_127": 81,
+              "a128_254": 69,
+              "a255": 5,
+              "nonzero": 199,
+              "partialFraction": 0.9749,
+              "visibleRgbColors": 193
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_04.png",
+            "sourcePngSha256": "5ea5ee9adf676a60a1e4e4068afa0c34574edb51470425be3d8951670f7db05f",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 1,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_04.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          },
+          {
+            "id": "anim-rubberduck-magic-f2",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f2.png",
+            "sha256": "f0fd39923d7c7daa7886df55d9176f02a18a3cce30d7e67f37676d6e982492d1",
+            "bytes": 1222,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 786,
+              "a1_15": 83,
+              "a16_127": 76,
+              "a128_254": 67,
+              "a255": 12,
+              "nonzero": 238,
+              "partialFraction": 0.9496,
+              "visibleRgbColors": 215
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_05.png",
+            "sourcePngSha256": "f0fd39923d7c7daa7886df55d9176f02a18a3cce30d7e67f37676d6e982492d1",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 2,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_05.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          },
+          {
+            "id": "anim-rubberduck-magic-f3",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f3.png",
+            "sha256": "564b6dd4233278e06a8cb53b9f0bb5b3aedaf2489322f3f4d2304deb3814bd9f",
+            "bytes": 1461,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 724,
+              "a1_15": 108,
+              "a16_127": 74,
+              "a128_254": 72,
+              "a255": 46,
+              "nonzero": 300,
+              "partialFraction": 0.8467,
+              "visibleRgbColors": 277
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_06.png",
+            "sourcePngSha256": "564b6dd4233278e06a8cb53b9f0bb5b3aedaf2489322f3f4d2304deb3814bd9f",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 3,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_06.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          },
+          {
+            "id": "anim-rubberduck-magic-f4",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f4.png",
+            "sha256": "419246f5f6726b61310764d3c770a00e5e67f5b567a4c832ae51b6af6e020980",
+            "bytes": 2279,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 460,
+              "a1_15": 119,
+              "a16_127": 154,
+              "a128_254": 263,
+              "a255": 28,
+              "nonzero": 564,
+              "partialFraction": 0.9504,
+              "visibleRgbColors": 506
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_07.png",
+            "sourcePngSha256": "419246f5f6726b61310764d3c770a00e5e67f5b567a4c832ae51b6af6e020980",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 4,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_07.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          },
+          {
+            "id": "anim-rubberduck-magic-f5",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f5.png",
+            "sha256": "9f075b1e55e337492c778a4927a8474095d904a624cd39e2c223d9c6910c2bff",
+            "bytes": 2302,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 452,
+              "a1_15": 140,
+              "a16_127": 209,
+              "a128_254": 223,
+              "a255": 0,
+              "nonzero": 572,
+              "partialFraction": 1,
+              "visibleRgbColors": 487
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_08.png",
+            "sourcePngSha256": "9f075b1e55e337492c778a4927a8474095d904a624cd39e2c223d9c6910c2bff",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 5,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_08.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          }
+        ],
+        "construction": "Retained frames 03–08; alpha cut128 for GIF, author gave no timing so100ms test timing. GIF palette generation is a fixture transform; correctness compares decoded GIF."
+      }
+    ]
+  },
+  "tests": {
+    "host": "66 files passed; 1050 passed, 2 GC-dependent skipped",
+    "sandbox": "setup EPERM before tests; not product failure"
+  },
+  "warning": "No A/B or optimization claim follows from this manifest; source changes by another active task must be identified separately.",
+  "observedSourceAtFreeze": [
     {
       "path": "src/app.css",
       "bytes": 35576,
@@ -965,854 +2632,6 @@
       "gzipBytes": 505
     }
   ],
-  "build": [
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/apple-touch-icon-152x152.png",
-      "bytes": 546,
-      "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/apple-touch-icon-167x167.png",
-      "bytes": 617,
-      "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/apple-touch-icon-180x180.png",
-      "bytes": 677,
-      "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/gif-CtkGj7kJ.js",
-      "bytes": 12798,
-      "sha256": "3e091b5c5a34cb2180ec4db2930fbbac50843334406181c79bbd65a66490f2f9",
-      "gzipBytes": 5063
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/image-import-client-DMvOPcbg.js",
-      "bytes": 5532,
-      "sha256": "ab88bb1a1c027eeaa60bf4a2c83706b00af942603881e2cd897de80fb8dbe350",
-      "gzipBytes": 2108
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/image-import-worker-C2vfsgD_.js",
-      "bytes": 24820,
-      "sha256": "4434bdca6622afd6b987f6436e80cbb81409e1e570af38de7c62f3a93e231a97",
-      "gzipBytes": 10366
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/index-8I8UNd-r.js",
-      "bytes": 284427,
-      "sha256": "bb3698a1ca0d14f04542ea87e6c5057932d4668580c3489e0459bedf62d107b6",
-      "gzipBytes": 101720
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/index-CAPGUq4Y.css",
-      "bytes": 168002,
-      "sha256": "c0c1efc1f5a21081b48c2df6ca31657d29d4b332d058c2ddc7630522bdbc4873",
-      "gzipBytes": 26485
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-ase-D6BoxRK8.js",
-      "bytes": 2497,
-      "sha256": "6bfa5bb1943a190b4a299109398b52f920085640a6635c186a4b6d10548ecfbd",
-      "gzipBytes": 1328
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-cleanup-CDe6XS5k.js",
-      "bytes": 4235,
-      "sha256": "30caa8cd62ad51b2069e33f2da47ade16ef4bef5ec63031aa9393620953cbd49",
-      "gzipBytes": 2217
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-cleanup-client-Brh0uqND.js",
-      "bytes": 7348,
-      "sha256": "2f8633f0963600933f968ef6c980e75310c79e213008ab9af8564a6cf8f1b32a",
-      "gzipBytes": 2892
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-cleanup-worker-ChpCTucA.js",
-      "bytes": 15055,
-      "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3",
-      "gzipBytes": 6774
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-generated-client-CTVi6LdX.js",
-      "bytes": 3752,
-      "sha256": "02e4b53d1b598131476808f25a739c78a08e30ec3eeeafecddd535bf4ce9e675",
-      "gzipBytes": 1629
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-generated-CniLZd5X.js",
-      "bytes": 5832,
-      "sha256": "f3b4a355123a173f19362bfd1a13841dc7e1f6d2acdaf232449e1988ddbcc80d",
-      "gzipBytes": 2658
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-generated-worker-C3uwOiRZ.js",
-      "bytes": 9777,
-      "sha256": "323499c4ba7cef3b1adc39525028efd054a6d69c98428c8af60b7b0434520533",
-      "gzipBytes": 4612
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-gif-worker-D4qe4WP7.js",
-      "bytes": 11213,
-      "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840",
-      "gzipBytes": 5070
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-limit-CYd9Rzxc.js",
-      "bytes": 4464,
-      "sha256": "88149e7f48365ea0806b0b4116b981fdf85780ce8f51a646b62a571a1f5aa335",
-      "gzipBytes": 2217
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-limit-worker-DWheP2PL.js",
-      "bytes": 9738,
-      "sha256": "b5bce0b896438c968947d98cc811458aad299a192a57db5258fbeef62303cf30",
-      "gzipBytes": 4609
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-lospec-D3KAlEOU.js",
-      "bytes": 2331,
-      "sha256": "85eda05292099482f91f047f1d65972998a6256655d3e7940f9670c83a1ed0b3",
-      "gzipBytes": 1249
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-usage-COUbQHDg.js",
-      "bytes": 934,
-      "sha256": "c3bb30d49ebd860cee613427d76c61267f9831d4d621b3b2d53d8718494527a9",
-      "gzipBytes": 591
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/colorfetti-trailer-poster.png",
-      "bytes": 719992,
-      "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-16x16.png",
-      "bytes": 148,
-      "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-32x32.png",
-      "bytes": 174,
-      "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-48x48.png",
-      "bytes": 200,
-      "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark-16x16.png",
-      "bytes": 148,
-      "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark-32x32.png",
-      "bytes": 174,
-      "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark-48x48.png",
-      "bytes": 200,
-      "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark.ico",
-      "bytes": 15086,
-      "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark.svg",
-      "bytes": 601,
-      "sha256": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-light.svg",
-      "bytes": 601,
-      "sha256": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon.ico",
-      "bytes": 15086,
-      "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon.svg",
-      "bytes": 736,
-      "sha256": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/index.html",
-      "bytes": 4463,
-      "sha256": "e8d168b21fa11413ae8b39d7b3a25089f759c58960ef240683849ef51d39ca4d"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/manifest.webmanifest",
-      "bytes": 794,
-      "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/maskable-icon-192x192.png",
-      "bytes": 716,
-      "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/maskable-icon-512x512.png",
-      "bytes": 3197,
-      "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/monochrome-192x192.png",
-      "bytes": 724,
-      "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/pwa-192x192.png",
-      "bytes": 746,
-      "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/pwa-512x512.png",
-      "bytes": 3862,
-      "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
-    },
-    {
-      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/safari-pinned-tab.svg",
-      "bytes": 601,
-      "sha256": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
-    }
-  ],
-  "practicalFixtureManifest": {
-    "frozen": "2026-10-16 before results",
-    "scope": "realistic small batch; sparse low-color large sprite sheets; bounded motion GIFs; no random-photo noise",
-    "licenses": "All artwork CC0-1.0 Kenney/rubberduck; original URLs, hashes and credits retained. Assemblies inherit CC0 source reuse permission.",
-    "records": [
-      {
-        "id": "dungeon-wizard",
-        "file": "fixtures/dungeon-wizard.png",
-        "kind": "retained CC0 sprite",
-        "sha256": "b3909f80a29a0f18729f96a90ebe446ecaf26a195da633f2a6c3dd31f660821e",
-        "width": 16,
-        "height": 16,
-        "frames": 1,
-        "source": {
-          "page": "https://kenney.nl/assets/tiny-dungeon",
-          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
-          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
-          "bytes": 98530,
-          "retrieved": "2026-10-15",
-          "archivePath": "Tiles/tile_0084.png",
-          "author": "Kenney",
-          "license": "CC0-1.0",
-          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-        }
-      },
-      {
-        "id": "dungeon-archer",
-        "file": "fixtures/dungeon-archer.png",
-        "kind": "retained CC0 sprite",
-        "sha256": "1e82481db9d95d0cec64ba0ea95b8fadf1e3675936e93731d0ff0e3bc72470b0",
-        "width": 16,
-        "height": 16,
-        "frames": 1,
-        "source": {
-          "page": "https://kenney.nl/assets/tiny-dungeon",
-          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
-          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
-          "bytes": 98530,
-          "retrieved": "2026-10-15",
-          "archivePath": "Tiles/tile_0112.png",
-          "author": "Kenney",
-          "license": "CC0-1.0",
-          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-        }
-      },
-      {
-        "id": "dungeon-knight",
-        "file": "fixtures/dungeon-knight.png",
-        "kind": "retained CC0 sprite",
-        "sha256": "e139ab1d56c599af1cea5a955b705ead18a92d41e8e635b550729383cad9de3c",
-        "width": 16,
-        "height": 16,
-        "frames": 1,
-        "source": {
-          "page": "https://kenney.nl/assets/tiny-dungeon",
-          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
-          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
-          "bytes": 98530,
-          "retrieved": "2026-10-15",
-          "archivePath": "Tiles/tile_0100.png",
-          "author": "Kenney",
-          "license": "CC0-1.0",
-          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-        }
-      },
-      {
-        "id": "dungeon-potion",
-        "file": "fixtures/dungeon-potion.png",
-        "kind": "retained CC0 sprite",
-        "sha256": "ad27340925ae7e936788c22cbd0f7d1922ef5bdd21377f916f1be9af6be4312d",
-        "width": 16,
-        "height": 16,
-        "frames": 1,
-        "source": {
-          "page": "https://kenney.nl/assets/tiny-dungeon",
-          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
-          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
-          "bytes": 98530,
-          "retrieved": "2026-10-15",
-          "archivePath": "Tiles/tile_0115.png",
-          "author": "Kenney",
-          "license": "CC0-1.0",
-          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-        }
-      },
-      {
-        "id": "town-water-bucket",
-        "file": "fixtures/town-water-bucket.png",
-        "kind": "retained CC0 sprite",
-        "sha256": "3befce5d6373d4315f35eeed22752bb1cf7a2ab5d008ce26dd6b4aebbb278978",
-        "width": 16,
-        "height": 16,
-        "frames": 1,
-        "source": {
-          "page": "https://kenney.nl/assets/tiny-town",
-          "url": "https://kenney.nl/media/pages/assets/tiny-town/a415fbeb49-1735736916/kenney_tiny-town.zip",
-          "sha256": "9768692dccff1d706408a5aedd6ca4f6cd1409506cbc84cb2f862919764be977",
-          "bytes": 182243,
-          "retrieved": "2026-10-15",
-          "archivePath": "Tiles/tile_0104.png",
-          "author": "Kenney",
-          "license": "CC0-1.0",
-          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-        }
-      },
-      {
-        "id": "platformer-pilot",
-        "file": "fixtures/platformer-pilot.png",
-        "kind": "retained CC0 sprite",
-        "sha256": "15df14143949310c001b09b2a00ed2278a5a9b4a10edd276af306b77b8c9d658",
-        "width": 24,
-        "height": 24,
-        "frames": 1,
-        "source": {
-          "page": "https://kenney.nl/assets/pixel-platformer",
-          "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
-          "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
-          "bytes": 260312,
-          "retrieved": "2026-10-15",
-          "archivePath": "Tiles/Characters/tile_0000.png",
-          "author": "Kenney",
-          "license": "CC0-1.0",
-          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-        }
-      },
-      {
-        "id": "platformer-rocket",
-        "file": "fixtures/platformer-rocket.png",
-        "kind": "retained CC0 sprite",
-        "sha256": "aca58ddc36d4e8d506111b1e580fc79b17383337b3cec27c28b0e6090435224a",
-        "width": 24,
-        "height": 24,
-        "frames": 1,
-        "source": {
-          "page": "https://kenney.nl/assets/pixel-platformer",
-          "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
-          "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
-          "bytes": 260312,
-          "retrieved": "2026-10-15",
-          "archivePath": "Tiles/Characters/tile_0015.png",
-          "author": "Kenney",
-          "license": "CC0-1.0",
-          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-        }
-      },
-      {
-        "id": "platformer-heart",
-        "file": "fixtures/platformer-heart.png",
-        "kind": "retained CC0 sprite",
-        "sha256": "6b547ef267ee13918a4e45ac8a2a3d0de4fbaef8267459045cf9f8c5e283770e",
-        "width": 18,
-        "height": 18,
-        "frames": 1,
-        "source": {
-          "page": "https://kenney.nl/assets/pixel-platformer",
-          "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
-          "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
-          "bytes": 260312,
-          "retrieved": "2026-10-15",
-          "archivePath": "Tiles/tile_0044.png",
-          "author": "Kenney",
-          "license": "CC0-1.0",
-          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-        }
-      },
-      {
-        "id": "kenney-sheet-1024",
-        "file": "fixtures/kenney-sheet-1024.png",
-        "kind": "assembled CC0 sprite sheet",
-        "width": 1024,
-        "height": 1024,
-        "frames": 1,
-        "sha256": "7c227c452abdc0daedd089b88c3d95120e52c81d57edd2bbfa5f1f6bc5d1f853",
-        "construction": "64px cells, 48px nearest-neighbor sprites, 8px transparent gutters; source colors unchanged",
-        "sourceIds": [
-          "dungeon-wizard",
-          "dungeon-archer",
-          "dungeon-knight",
-          "dungeon-potion",
-          "town-water-bucket",
-          "platformer-pilot",
-          "platformer-rocket",
-          "platformer-heart"
-        ]
-      },
-      {
-        "id": "kenney-sheet-2048",
-        "file": "fixtures/kenney-sheet-2048.png",
-        "kind": "assembled CC0 sprite sheet",
-        "width": 2048,
-        "height": 2048,
-        "frames": 1,
-        "sha256": "2d2f25c21f9496816d4f21b303d6f86a288ef324263f7f998eae84f4db7d223f",
-        "construction": "64px cells, 48px nearest-neighbor sprites, 8px transparent gutters; source colors unchanged",
-        "sourceIds": [
-          "dungeon-wizard",
-          "dungeon-archer",
-          "dungeon-knight",
-          "dungeon-potion",
-          "town-water-bucket",
-          "platformer-pilot",
-          "platformer-rocket",
-          "platformer-heart"
-        ]
-      },
-      {
-        "id": "kenney-motion-128",
-        "file": "fixtures/kenney-motion-128.gif",
-        "kind": "owned motion assembly of CC0 sprites; not a hand-authored walk cycle",
-        "width": 128,
-        "height": 128,
-        "frames": 32,
-        "delay": [
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120
-        ],
-        "loop": 0,
-        "sha256": "d666cb4969de8641a05236427390b4521f7eb04693cd1a32c6b685af77fce3cc",
-        "sourceIds": [
-          "dungeon-wizard",
-          "dungeon-archer",
-          "dungeon-knight",
-          "dungeon-potion"
-        ]
-      },
-      {
-        "id": "kenney-motion-256",
-        "file": "fixtures/kenney-motion-256.gif",
-        "kind": "owned motion assembly of CC0 sprites; not a hand-authored walk cycle",
-        "width": 256,
-        "height": 256,
-        "frames": 48,
-        "delay": [
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120,
-          60,
-          80,
-          100,
-          120
-        ],
-        "loop": 0,
-        "sha256": "c3d75b88563016e674567003bbecb4128a4a8e20710e349f7b0278837069390f",
-        "sourceIds": [
-          "dungeon-wizard",
-          "dungeon-archer",
-          "dungeon-knight",
-          "dungeon-potion"
-        ]
-      },
-      {
-        "id": "real-magic",
-        "file": "fixtures/real-magic.gif",
-        "kind": "genuine artist-authored six-frame sequence assembled as GIF",
-        "width": 32,
-        "height": 32,
-        "frames": 6,
-        "delay": [
-          100,
-          100,
-          100,
-          100,
-          100,
-          100
-        ],
-        "loop": 0,
-        "sha256": "4611a7fe466b618b42f8082c2ed7573504aba308b6ba0a21e4dd235baa0d9094",
-        "source": [
-          {
-            "id": "anim-rubberduck-magic-f0",
-            "category": "animation",
-            "file": "animation/anim-rubberduck-magic-f0.png",
-            "sha256": "1b5447f4534df9eaefce5ccecd5983edc047bc57c0d0fecddc757b882973e69f",
-            "bytes": 843,
-            "w": 32,
-            "h": 32,
-            "alphaStats": {
-              "a0": 889,
-              "a1_15": 29,
-              "a16_127": 42,
-              "a128_254": 51,
-              "a255": 13,
-              "nonzero": 135,
-              "partialFraction": 0.9037,
-              "visibleRgbColors": 126
-            },
-            "title": "5x special effects - 2D",
-            "author": "rubberduck",
-            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
-            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
-            "license": "CC0 1.0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-            "retrieved": "2026-10-15",
-            "archive": "2d-special-effects.zip",
-            "archivePath": "magic_effect/magic_effect_03.png",
-            "sourcePngSha256": "1b5447f4534df9eaefce5ccecd5983edc047bc57c0d0fecddc757b882973e69f",
-            "sourceW": 32,
-            "sourceH": 32,
-            "sourceEncoding": {
-              "palette": false,
-              "iccProfile": null
-            },
-            "crop": null,
-            "cropMethod": "exact source bytes",
-            "animation": {
-              "group": "anim-rubberduck-magic",
-              "frameIndex": 0,
-              "frameCount": 6,
-              "durationMs": null,
-              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
-              "sourceFrame": "magic_effect/magic_effect_03.png"
-            },
-            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
-            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
-          },
-          {
-            "id": "anim-rubberduck-magic-f1",
-            "category": "animation",
-            "file": "animation/anim-rubberduck-magic-f1.png",
-            "sha256": "5ea5ee9adf676a60a1e4e4068afa0c34574edb51470425be3d8951670f7db05f",
-            "bytes": 1124,
-            "w": 32,
-            "h": 32,
-            "alphaStats": {
-              "a0": 825,
-              "a1_15": 44,
-              "a16_127": 81,
-              "a128_254": 69,
-              "a255": 5,
-              "nonzero": 199,
-              "partialFraction": 0.9749,
-              "visibleRgbColors": 193
-            },
-            "title": "5x special effects - 2D",
-            "author": "rubberduck",
-            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
-            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
-            "license": "CC0 1.0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-            "retrieved": "2026-10-15",
-            "archive": "2d-special-effects.zip",
-            "archivePath": "magic_effect/magic_effect_04.png",
-            "sourcePngSha256": "5ea5ee9adf676a60a1e4e4068afa0c34574edb51470425be3d8951670f7db05f",
-            "sourceW": 32,
-            "sourceH": 32,
-            "sourceEncoding": {
-              "palette": false,
-              "iccProfile": null
-            },
-            "crop": null,
-            "cropMethod": "exact source bytes",
-            "animation": {
-              "group": "anim-rubberduck-magic",
-              "frameIndex": 1,
-              "frameCount": 6,
-              "durationMs": null,
-              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
-              "sourceFrame": "magic_effect/magic_effect_04.png"
-            },
-            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
-            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
-          },
-          {
-            "id": "anim-rubberduck-magic-f2",
-            "category": "animation",
-            "file": "animation/anim-rubberduck-magic-f2.png",
-            "sha256": "f0fd39923d7c7daa7886df55d9176f02a18a3cce30d7e67f37676d6e982492d1",
-            "bytes": 1222,
-            "w": 32,
-            "h": 32,
-            "alphaStats": {
-              "a0": 786,
-              "a1_15": 83,
-              "a16_127": 76,
-              "a128_254": 67,
-              "a255": 12,
-              "nonzero": 238,
-              "partialFraction": 0.9496,
-              "visibleRgbColors": 215
-            },
-            "title": "5x special effects - 2D",
-            "author": "rubberduck",
-            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
-            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
-            "license": "CC0 1.0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-            "retrieved": "2026-10-15",
-            "archive": "2d-special-effects.zip",
-            "archivePath": "magic_effect/magic_effect_05.png",
-            "sourcePngSha256": "f0fd39923d7c7daa7886df55d9176f02a18a3cce30d7e67f37676d6e982492d1",
-            "sourceW": 32,
-            "sourceH": 32,
-            "sourceEncoding": {
-              "palette": false,
-              "iccProfile": null
-            },
-            "crop": null,
-            "cropMethod": "exact source bytes",
-            "animation": {
-              "group": "anim-rubberduck-magic",
-              "frameIndex": 2,
-              "frameCount": 6,
-              "durationMs": null,
-              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
-              "sourceFrame": "magic_effect/magic_effect_05.png"
-            },
-            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
-            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
-          },
-          {
-            "id": "anim-rubberduck-magic-f3",
-            "category": "animation",
-            "file": "animation/anim-rubberduck-magic-f3.png",
-            "sha256": "564b6dd4233278e06a8cb53b9f0bb5b3aedaf2489322f3f4d2304deb3814bd9f",
-            "bytes": 1461,
-            "w": 32,
-            "h": 32,
-            "alphaStats": {
-              "a0": 724,
-              "a1_15": 108,
-              "a16_127": 74,
-              "a128_254": 72,
-              "a255": 46,
-              "nonzero": 300,
-              "partialFraction": 0.8467,
-              "visibleRgbColors": 277
-            },
-            "title": "5x special effects - 2D",
-            "author": "rubberduck",
-            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
-            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
-            "license": "CC0 1.0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-            "retrieved": "2026-10-15",
-            "archive": "2d-special-effects.zip",
-            "archivePath": "magic_effect/magic_effect_06.png",
-            "sourcePngSha256": "564b6dd4233278e06a8cb53b9f0bb5b3aedaf2489322f3f4d2304deb3814bd9f",
-            "sourceW": 32,
-            "sourceH": 32,
-            "sourceEncoding": {
-              "palette": false,
-              "iccProfile": null
-            },
-            "crop": null,
-            "cropMethod": "exact source bytes",
-            "animation": {
-              "group": "anim-rubberduck-magic",
-              "frameIndex": 3,
-              "frameCount": 6,
-              "durationMs": null,
-              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
-              "sourceFrame": "magic_effect/magic_effect_06.png"
-            },
-            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
-            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
-          },
-          {
-            "id": "anim-rubberduck-magic-f4",
-            "category": "animation",
-            "file": "animation/anim-rubberduck-magic-f4.png",
-            "sha256": "419246f5f6726b61310764d3c770a00e5e67f5b567a4c832ae51b6af6e020980",
-            "bytes": 2279,
-            "w": 32,
-            "h": 32,
-            "alphaStats": {
-              "a0": 460,
-              "a1_15": 119,
-              "a16_127": 154,
-              "a128_254": 263,
-              "a255": 28,
-              "nonzero": 564,
-              "partialFraction": 0.9504,
-              "visibleRgbColors": 506
-            },
-            "title": "5x special effects - 2D",
-            "author": "rubberduck",
-            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
-            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
-            "license": "CC0 1.0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-            "retrieved": "2026-10-15",
-            "archive": "2d-special-effects.zip",
-            "archivePath": "magic_effect/magic_effect_07.png",
-            "sourcePngSha256": "419246f5f6726b61310764d3c770a00e5e67f5b567a4c832ae51b6af6e020980",
-            "sourceW": 32,
-            "sourceH": 32,
-            "sourceEncoding": {
-              "palette": false,
-              "iccProfile": null
-            },
-            "crop": null,
-            "cropMethod": "exact source bytes",
-            "animation": {
-              "group": "anim-rubberduck-magic",
-              "frameIndex": 4,
-              "frameCount": 6,
-              "durationMs": null,
-              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
-              "sourceFrame": "magic_effect/magic_effect_07.png"
-            },
-            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
-            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
-          },
-          {
-            "id": "anim-rubberduck-magic-f5",
-            "category": "animation",
-            "file": "animation/anim-rubberduck-magic-f5.png",
-            "sha256": "9f075b1e55e337492c778a4927a8474095d904a624cd39e2c223d9c6910c2bff",
-            "bytes": 2302,
-            "w": 32,
-            "h": 32,
-            "alphaStats": {
-              "a0": 452,
-              "a1_15": 140,
-              "a16_127": 209,
-              "a128_254": 223,
-              "a255": 0,
-              "nonzero": 572,
-              "partialFraction": 1,
-              "visibleRgbColors": 487
-            },
-            "title": "5x special effects - 2D",
-            "author": "rubberduck",
-            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
-            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
-            "license": "CC0 1.0",
-            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-            "retrieved": "2026-10-15",
-            "archive": "2d-special-effects.zip",
-            "archivePath": "magic_effect/magic_effect_08.png",
-            "sourcePngSha256": "9f075b1e55e337492c778a4927a8474095d904a624cd39e2c223d9c6910c2bff",
-            "sourceW": 32,
-            "sourceH": 32,
-            "sourceEncoding": {
-              "palette": false,
-              "iccProfile": null
-            },
-            "crop": null,
-            "cropMethod": "exact source bytes",
-            "animation": {
-              "group": "anim-rubberduck-magic",
-              "frameIndex": 5,
-              "frameCount": 6,
-              "durationMs": null,
-              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
-              "sourceFrame": "magic_effect/magic_effect_08.png"
-            },
-            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
-            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
-          }
-        ],
-        "construction": "Retained frames 03–08; alpha cut128 for GIF, author gave no timing so100ms test timing. GIF palette generation is a fixture transform; correctness compares decoded GIF."
-      }
-    ]
-  },
-  "tests": {
-    "host": "66 files passed; 1050 passed, 2 GC-dependent skipped",
-    "sandbox": "setup EPERM before tests; not product failure"
-  },
-  "warning": "No A/B or optimization claim follows from this manifest; source changes by another active task must be identified separately."
+  "sourceHashEncoding": "Text normalized to LF UTF-8; binary PNG assets retain exact bytes.",
+  "sourceObservationNote": "observedSourceAtFreeze preserves the original raw worktree hashes; it is not the historical source ledger. Source now comes from exact217cb64 Git objects. The independent caption CSS is the only substantive normalized difference; Windows text line endings also differ. All measured runtime JS/CSS/worker assets were independently reproduced exactly from historical baseline and archived candidate."
 }

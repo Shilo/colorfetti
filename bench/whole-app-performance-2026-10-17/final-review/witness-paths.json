@@ -1,0 +1,157 @@
+{
+  "note": "Native encoded output witnesses, not screenshots or generated input fixtures. Exact canonical pairs represent all 280 first/warm trial outputs; duplicate trial copies are not required.",
+  "canonical": [
+    "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792300827121-transparent32-0-transparent32-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792300827121-silhouette32-0-silhouette32-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792300827121-partial-glow64-0-partial-glow64-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792300827121-entropy512-0-entropy512-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792300827121-worker-unavailable-0-real-magic-palette.gif",
+    "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792299924168-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792299924168-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792299924168-real-magic-0-real-magic-palette.gif",
+    "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792299924168-kenney-motion-128-0-kenney-motion-128-palette.gif",
+    "bench/whole-app-performance-2026-10-17/android/baseline/wholeapp-baseline-1792299924168-kenney-motion-256-0-kenney-motion-256-palette.gif",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet2048-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet2048-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-tiny-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-tiny-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-animation256-0-baseline-palette.gif",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-animation256-0-candidate-palette.gif",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-glow-keep-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-glow-keep-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-entropy256-256-rgb-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-entropy256-256-rgb-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-rgb-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-rgb-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-cap-cleanup-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-cap-cleanup-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet1024-baseline.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet1024-candidate.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet2048-baseline.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet2048-candidate.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/tiny-baseline.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/tiny-candidate.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/animation256-baseline.gif",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/animation256-candidate.gif",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/glow-keep-baseline.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/glow-keep-candidate.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/entropy256-256-rgb-baseline.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/entropy256-256-rgb-candidate.png"
+  ],
+  "onebitAndKeep": [
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/cutout.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/solid.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/lines.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/stencil.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/icon.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/checker.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/bayer.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/hatch.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/atkinson.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/noise.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/silhouette.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/glow-keep.png"
+  ],
+  "nativeOutputFilesToForceStage": [
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet2048-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet2048-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-tiny-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-tiny-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-glow-keep-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-glow-keep-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-entropy256-256-rgb-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-entropy256-256-rgb-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-rgb-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-sheet1024-rgb-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-cap-cleanup-0-baseline-palette.png",
+    "bench/whole-app-performance-2026-10-17/android/d1-pairs/wholeapp-d1-1792300555382-cap-cleanup-0-candidate-palette.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet1024-baseline.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet1024-candidate.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet2048-baseline.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/sheet2048-candidate.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/tiny-baseline.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/tiny-candidate.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/glow-keep-baseline.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/glow-keep-candidate.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/entropy256-256-rgb-baseline.png",
+    "bench/whole-app-performance-2026-10-17/desktop/export-pairs/entropy256-256-rgb-candidate.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/cutout.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/solid.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/lines.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/stencil.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/icon.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/checker.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/bayer.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/hatch.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/atkinson.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/noise.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/silhouette.png",
+    "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/glow-keep.png"
+  ],
+  "onebitHashChecks": [
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/cutout.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/solid.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/lines.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/stencil.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/icon.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/checker.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/bayer.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/hatch.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/atkinson.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/noise.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/silhouette.png",
+      "exists": true,
+      "hashMatches": true
+    },
+    {
+      "file": "bench/whole-app-performance-2026-10-17/desktop/interactions-baseline/glow-keep.png",
+      "exists": true,
+      "hashMatches": null
+    }
+  ]
+}

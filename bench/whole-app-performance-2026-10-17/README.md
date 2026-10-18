@@ -4,6 +4,14 @@ Starting revision: `217cb64360784c066e944f8121858d7726f0e4f2`, clean tree.
 Production source matches runtime baseline `34a95d97f65ec681d07b52ace85dc84e6c8ce56c`.
 This is a fresh audit. Historical receipts are references, not current acceptance.
 
+Provenance correction after fresh review: clean status refers to startup. The
+original raw source-hash observation was collected later, after another chat's
+caption CSS edit, and is preserved as `observedSourceAtFreeze`. `manifest.source`
+is now the exact217cb64 Git-object ledger (text LF normalized, PNG bytes exact).
+Fresh materializations reproduce all measured runtime assets. The final source
+validator separately identifies35fbb73's external caption CSS. Canonical native
+output witnesses are explicitly staged despite the older PNG ignore policy.
+
 ## Ownership and measurement rules
 
 - Coordinator owns Codex Browser test tab, integration, checklist and commits.
@@ -116,6 +124,13 @@ Final restored full suite: **1050 passed, two existing GC skips**. Final product
 build passed. Built-app regression against explicit217cb64 passed132 independently
 decoded legacy exports,12 full-palette exports/clipboard PNGs,12 RGB preset cases
 and13 extra integration categories, with no console errors. See final logs/JSON.
+
+Fresh cumulative review: **PASS with documented limits** after two focused
+correction rounds (`final-review/README.md`, `round-two-results.json`). All163
+historical source records and all50 retained output witnesses are verified;
+all280 trial output hashes agree by case. Root/phone cleanup receipts confirm
+owned tabs closed, original device state restored and all six helper endpoints
+unreachable. No production/dependency/config change belongs to the audit.
 
 Baseline phone acquisition used staged synthetic import-event handoff; actual
 Codex picker/paste are separate evidence. Physical landscape and Safari/iOS/macOS
