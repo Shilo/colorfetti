@@ -1,0 +1,322 @@
+{
+  "node": "v25.0.0",
+  "oracle": {
+    "aom": "3.15.1",
+    "archive": "3.8.9",
+    "cairo": "1.18.6",
+    "cgif": "0.5.4",
+    "exif": "0.6.26",
+    "expat": "2.8.5",
+    "ffi": "3.8.0",
+    "fontconfig": "2.18.3",
+    "freetype": "2.14.3",
+    "fribidi": "1.0.17",
+    "glib": "2.90.0",
+    "harfbuzz": "14.5.0",
+    "heif": "1.23.5",
+    "highway": "1.4.0",
+    "imagequant": "2.4.1",
+    "lcms": "2.19.1",
+    "mozjpeg": "0826579",
+    "pango": "1.58.2",
+    "pixman": "0.46.4",
+    "png": "1.6.58",
+    "proxy-libintl": "0.5",
+    "rsvg": "2.63.2",
+    "tiff": "4.7.2",
+    "uhdr": "2.0.2",
+    "vips": "8.18.7",
+    "webp": "1.6.0",
+    "xml2": "2.15.4",
+    "zlib-ng": "2.3.3",
+    "sharp": "0.35.5"
+  },
+  "cases": [
+    {
+      "phase": "before",
+      "name": "a:b-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "before",
+      "name": "a?b-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "before",
+      "name": "a-b-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "before",
+      "name": "A-B-2-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "before",
+      "name": "CON-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "before",
+      "name": "CON.note-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "before",
+      "name": "café-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "before",
+      "name": "café-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "before",
+      "name": "a\u0000b-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "before",
+      "name": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "after",
+      "name": "a-b-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "after",
+      "name": "a-b-2-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "after",
+      "name": "a-b-3-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "after",
+      "name": "A-B-4-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "after",
+      "name": "CON-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "after",
+      "name": "image-CON.note-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "after",
+      "name": "café-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "after",
+      "name": "café-2-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "after",
+      "name": "a-b-5-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    },
+    {
+      "phase": "after",
+      "name": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff-colorfetti.png",
+      "bytes": 98,
+      "sha256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+      "allRGBAExact": true
+    }
+  ],
+  "before": {
+    "singleName": "a:b-colorfetti.png",
+    "singleBytes": 98,
+    "zipBytes": 2940,
+    "entries": 10,
+    "drag": {
+      "phase": "before",
+      "fileName": "a-b-colorfetti.png",
+      "downloadURL": "image/png:a-b-colorfetti.png:blob:http://127.0.0.1:5226/7f05b114-e8aa-4cd3-b955-3dc03d7c0216",
+      "prevented": false,
+      "matchesSaveName": false
+    }
+  },
+  "after": {
+    "singleName": "a-b-colorfetti.png",
+    "singleBytes": 98,
+    "zipBytes": 2646,
+    "entries": 10,
+    "drag": {
+      "phase": "after",
+      "fileName": "a-b-colorfetti.png",
+      "downloadURL": "image/png:a-b-colorfetti.png:blob:http://127.0.0.1:5227/800fef15-aab4-4cc4-afc4-54e8b2236b28",
+      "prevented": false,
+      "matchesSaveName": true
+    }
+  },
+  "sourceSHA256": {
+    "src/lib/save.js": "6e7a7df8871f9f329162bf8202d4956b02e8efa7de23e3482f9d72ffa58df0cc",
+    "src/lib/save-names.test.js": "e5630da5c501518bb8aab8a51491f422de64f4fc7d684757ec3c1d1d0f4065c6",
+    "src/App.svelte": "d31ab99d83df4aabffd9bee22b79d0a5ed9a6581d95bdd66aeb71337231d048b"
+  },
+  "artifactsSHA256": {
+    "after-capture-1.bin": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+    "after-capture-2.bin": "1b1d3d69e7e77540e5ea27e68a33ee4085699e83309be355fc8957057ad325ac",
+    "after-captures.json": "cb796e84b198ed681b6c2041d178b71987329aa05170b5b6ab0c3904b6cbfecb",
+    "after-drag.json": "416d88708f62d9764f7fc0f9203515170ecf9cd9786b928ede71cccc9e4508db",
+    "after-receipt.json": "b3dfc21538a3c1ff4a13ecfd7d9061ad8d885e09eb707eb876228977c0a20998",
+    "after-windows-expected.json": "387932a64ac3fe7d5717655b2da9d49782792baea9ca9422fcbc2d92f16f7fc3",
+    "before-capture-1.bin": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d",
+    "before-capture-2.bin": "ee05f7a0a50563cd97b747a4c7d56a72f739128ad29bddd7dc36408eb8dd315a",
+    "before-captures.json": "3afde3e0bc95ad3110faf51e88035c838aa2d7bd65b0e8311e2c7b8f3c9c16a6",
+    "before-drag.json": "f677bc14b873ecf036f4392577d1389b4f14641204768150dfd50b9d56a5dec0",
+    "before-receipt.json": "58d8e57595d88d2f0388f1b306f52238c7ee643ac08a1ddf4d5f936b8feeb592"
+  },
+  "buildSHA256": {
+    "before": {
+      "apple-touch-icon-152x152.png": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0",
+      "apple-touch-icon-167x167.png": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d",
+      "apple-touch-icon-180x180.png": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4",
+      "assets/artwork-admission-CurXQSHm.js": "c6584b895a6756969a10c0856fbc7c4532b2d21e10b36eb320204e79314424f9",
+      "assets/artwork-gif-preflight-DWfe0QVt.js": "5c69cf85e9bb7aa8368bc44d241c973f2335be15d1d00b74109ccce84e6f7d6b",
+      "assets/browser-mcIDw0T6.js": "65841869264e6b5a31aca03e061425669685c7ed700da8cb2f890e82bb24cfb6",
+      "assets/gif-D44ZRD96.js": "f5df6147a468418bbc73d75ef57b35315734768308ecf9d7a1a42e6ec79f3309",
+      "assets/image-bitmap-decode-BBWTQ-0Y.js": "61eea6a9c9406067d2a9302322c70296719fce35c6c89d8dbd69e820bb975147",
+      "assets/image-import-client-G9OzpCY8.js": "72a31e131708549ec8eb1cdfbedc7fb12dca147e2676b4a018d3b4bfdf549e28",
+      "assets/image-import-worker-CbYTH1y9.js": "dcd236fc2ab0128a35ca6e8273aaf0f90f24f909df72743c08d89a81fcb845bc",
+      "assets/index-Bouyy4f1.css": "6831aa9742bb02f743b8835533fc014fc6e8a2dcfd3aebfe5da8b9271d065ad5",
+      "assets/index-CqwwlPqG.js": "065b6a6e10f76a6181b04447994c6a9ec8ae9e581e7aa6c5bfaf0f6e9ed724ee",
+      "assets/palette-ase-gXqzrNdw.js": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01",
+      "assets/palette-cleanup-client-Dez-X-5m.js": "1d1fbd52f766a1fb584bdde9f5d9bb709d135987e53f7effe4d6971c145d6245",
+      "assets/palette-cleanup-CrmuGsfb.js": "20594d7b5c33d7bea0f4043b5591490ae945c2eedb8f27f44754b2318ab15dd7",
+      "assets/palette-cleanup-worker-ChpCTucA.js": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3",
+      "assets/palette-generated-client-DTJYR0wT.js": "a7918929ab9934ecbe9e574b498477080781fc163f078ae77eb8c41ac8a94c0e",
+      "assets/palette-generated-CNOjBpha.js": "d73cbca93a62b99e0151f558a0fce8924b59d1baa13d03f7b0f9b36e02d521c9",
+      "assets/palette-generated-worker-xpoMRM2c.js": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3",
+      "assets/palette-gif-worker-CY8CibIc.js": "3aebd330a24ac1a96a2126de729d041bb2ee0f92bde2e21f35655371c9642ca9",
+      "assets/palette-limit-OiwOF5bZ.js": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f",
+      "assets/palette-limit-worker-rkrL9P3s.js": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46",
+      "assets/palette-lospec-BUdZU2lN.js": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23",
+      "assets/palette-usage-Ihqtknwh.js": "ee3deea86a0be0b061f6d7dfdd2f9a839e77f9dcf855f574ef3c62cfae8a2c72",
+      "assets/quantize-DsvDuXDJ.js": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941",
+      "assets/save-DwKNjqM6.js": "2c8452ac201242fcf1d58e509022321f6e813658f24bc09a3dbe6a99a4cc8ede",
+      "bench/conversion-fixes-2026-10-18/m6/browser.html": "fde5011a574087a9b4c553a6c26c185feacdb801b3f451d9034266ca812830df",
+      "colorfetti-trailer-poster.png": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86",
+      "colorfetti-trailer.mp4": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19",
+      "favicon-16x16.png": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13",
+      "favicon-32x32.png": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4",
+      "favicon-48x48.png": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06",
+      "favicon-dark-16x16.png": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8",
+      "favicon-dark-32x32.png": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729",
+      "favicon-dark-48x48.png": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04",
+      "favicon-dark.ico": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296",
+      "favicon-dark.svg": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8",
+      "favicon-light.svg": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c",
+      "favicon.ico": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270",
+      "favicon.svg": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a",
+      "index.html": "827b9352e74b82fca1fa39c02aa8fcf6114fe948af3a3b55f47a07931b374295",
+      "manifest.webmanifest": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44",
+      "maskable-icon-192x192.png": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55",
+      "maskable-icon-512x512.png": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11",
+      "monochrome-192x192.png": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca",
+      "pwa-192x192.png": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c",
+      "pwa-512x512.png": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838",
+      "safari-pinned-tab.svg": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+    },
+    "after": {
+      "apple-touch-icon-152x152.png": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0",
+      "apple-touch-icon-167x167.png": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d",
+      "apple-touch-icon-180x180.png": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4",
+      "assets/artwork-admission-CurXQSHm.js": "c6584b895a6756969a10c0856fbc7c4532b2d21e10b36eb320204e79314424f9",
+      "assets/artwork-gif-preflight-DWfe0QVt.js": "5c69cf85e9bb7aa8368bc44d241c973f2335be15d1d00b74109ccce84e6f7d6b",
+      "assets/browser-BxEo-Qm3.js": "edee6502be709944c80d83a85f8705a4e6b677eb058b206312f95a30a75dfe9d",
+      "assets/gif-BUx7Z2LV.js": "6796d10bb365c0c165fe128780cf32d3824c3ec04a515edeb056fb8a1c2fbe31",
+      "assets/image-bitmap-decode-BBWTQ-0Y.js": "61eea6a9c9406067d2a9302322c70296719fce35c6c89d8dbd69e820bb975147",
+      "assets/image-import-client-CGBSsUaC.js": "6da211ccc2c4b8f6b4e51db84ec13bfea2334925606a15517f6f019aec05a9e9",
+      "assets/image-import-worker-CbYTH1y9.js": "dcd236fc2ab0128a35ca6e8273aaf0f90f24f909df72743c08d89a81fcb845bc",
+      "assets/index-Bouyy4f1.css": "6831aa9742bb02f743b8835533fc014fc6e8a2dcfd3aebfe5da8b9271d065ad5",
+      "assets/index-qdK8O0N_.js": "c9a1c268033e74dee62dee92a09e6d37f3f86014ff054ec597491952fdcbb4de",
+      "assets/palette-ase-gXqzrNdw.js": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01",
+      "assets/palette-cleanup-BIUDobGe.js": "bddce4b587ae9941dde44545b04af1666fca65a754a3631c9101e4a05c9b4261",
+      "assets/palette-cleanup-client-LGjSxV_4.js": "f1e385e6a0d503c26e0ebad57a454182b4f88810fc787ce548d2081329e43548",
+      "assets/palette-cleanup-worker-ChpCTucA.js": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3",
+      "assets/palette-generated-C7KeQByd.js": "3d897a25ddd3affb2ff95bcc43242f5abc6133aa52cac3c786364c742bf0b07a",
+      "assets/palette-generated-client-BEdux4Hr.js": "dddcc77704aa50bcacea8b788e1ccac96bf28db76c8f9bd87c9ac74bb66d4c0d",
+      "assets/palette-generated-worker-xpoMRM2c.js": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3",
+      "assets/palette-gif-worker-CY8CibIc.js": "3aebd330a24ac1a96a2126de729d041bb2ee0f92bde2e21f35655371c9642ca9",
+      "assets/palette-limit-OiwOF5bZ.js": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f",
+      "assets/palette-limit-worker-rkrL9P3s.js": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46",
+      "assets/palette-lospec-BUdZU2lN.js": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23",
+      "assets/palette-usage-C4a2RTeH.js": "f44f8a4387c10b3de6b91c520ce53c8c508e6cd54a9abd52ea6d60846f9eaf9e",
+      "assets/quantize-DsvDuXDJ.js": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941",
+      "assets/save-4BIPPxck.js": "ef8682bac3abd907a136f5d224e99560cdb5df32a8faedc6d1d08ca8a80e8f06",
+      "bench/conversion-fixes-2026-10-18/m6/browser.html": "05db7d9b7255aeb771c29f482a6d8a35f4a50d93fddbd5fa03c7b700de616c1a",
+      "colorfetti-trailer-poster.png": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86",
+      "colorfetti-trailer.mp4": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19",
+      "favicon-16x16.png": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13",
+      "favicon-32x32.png": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4",
+      "favicon-48x48.png": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06",
+      "favicon-dark-16x16.png": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8",
+      "favicon-dark-32x32.png": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729",
+      "favicon-dark-48x48.png": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04",
+      "favicon-dark.ico": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296",
+      "favicon-dark.svg": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8",
+      "favicon-light.svg": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c",
+      "favicon.ico": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270",
+      "favicon.svg": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a",
+      "index.html": "ed1b33d58d4e7909839a22b3aff508100e4c7df9ec40a9765ebd1ea67063ad1b",
+      "manifest.webmanifest": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44",
+      "maskable-icon-192x192.png": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55",
+      "maskable-icon-512x512.png": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11",
+      "monochrome-192x192.png": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca",
+      "pwa-192x192.png": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c",
+      "pwa-512x512.png": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838",
+      "safari-pinned-tab.svg": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+    }
+  }
+}

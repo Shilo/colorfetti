@@ -13,6 +13,13 @@ intentional compatibility references.
 
 ## What it does
 
+Save, ZIP and drag share portable output filenames before collision resolution.
+Unsafe filename/control/bidi characters become hyphens; NFC Unicode and complete
+code points are retained within a 255-byte UTF-8 complete-name budget, reserving
+collision numbers and the existing suffix/PNG or GIF extension. Empty bases use
+image; actual reserved first-dot device stems gain image-. Case-insensitive
+collisions are resolved after sanitization/truncation. Source labels stay intact.
+
 Animated Palette and asynchronous 1-bit GIF exports consider transparent frame
 bounds only at up to 75% logical-frame area. Full and cropped complete frame
 blocks are compared in one output buffer; only strictly smaller cropped blocks

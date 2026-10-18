@@ -1,0 +1,177 @@
+{
+  "Platform": "Windows_NT",
+  "PowerShell": "7.6.6",
+  "Results": [
+    {
+      "Label": "programmatic",
+      "Command": "Expand-Archive",
+      "Error": null,
+      "Count": 27,
+      "Files": [
+        {
+          "Name": "..-a-b-colorfetti.png",
+          "SHA256": "b72068904e027db9a0555023475729e243acf6eb7265f3c6ff52f8cff3c70129"
+        },
+        {
+          "Name": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀-2-colorfetti.png",
+          "SHA256": "abfc754f6f4378cac7dcff1b20f9618e20c107ad1e69fed32d3c4a2856394a68"
+        },
+        {
+          "Name": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀-colorfetti.png",
+          "SHA256": "5b3de1ad5930fd6d3792d37c62ed15ee213dbe869cdc6f55ab9b3d90559ccf23"
+        },
+        {
+          "Name": "a-b-2-colorfetti.png",
+          "SHA256": "147e3bb924e5da632f75c348bf2bc1a463973275b15ec511d705296777397063"
+        },
+        {
+          "Name": "a-b-3-colorfetti.png",
+          "SHA256": "57a5a9099042053613dcece76af358a5a1e73a8204a8241500d59f4ae71e7271"
+        },
+        {
+          "Name": "A-B-4-colorfetti.png",
+          "SHA256": "3516ede5fcc84d4f02113017ecd9dfa584c48d10361fefa1af71c3c89120b03e"
+        },
+        {
+          "Name": "a-b-5-colorfetti.png",
+          "SHA256": "4d5e07f08c54d23b348554e33a1c304a9f36c39af5483759e2152b3917607df9"
+        },
+        {
+          "Name": "a-b-6-colorfetti.png",
+          "SHA256": "cb9df35c6d1edb58f489f5db94f27e91aaa875978f6666d5681ecff6d152343e"
+        },
+        {
+          "Name": "a-b-7-colorfetti.png",
+          "SHA256": "33bb451fa3ce510cd579c52f9ac629ba7719acb949cfabea4055be51c6cd348c"
+        },
+        {
+          "Name": "a-b-colorfetti.png",
+          "SHA256": "856bc60b995bd0e2be60496039e7ce9dffbeb8c145a2c7e3d257977b6ff9e083"
+        },
+        {
+          "Name": "café-2-colorfetti.png",
+          "SHA256": "d99fcc79b7f5e49e3f03f470a57df82d4cf7b4a66b52267f760efc52a93f3028"
+        },
+        {
+          "Name": "café-colorfetti.png",
+          "SHA256": "9a8be0e7c1e1d15ba500b0eeb7b179962b9adc40d4738b53de057dea699c733b"
+        },
+        {
+          "Name": "COM¹-colorfetti.png",
+          "SHA256": "db45185fa6127e0307c141819accd0f8e227d29670ddeb95a137b6c14ce0c35e"
+        },
+        {
+          "Name": "CON-colorfetti.png",
+          "SHA256": "07e7fae9e542c01e2539da2b1ae9efbf3d35e942cc247c18a06ed3debb419279"
+        },
+        {
+          "Name": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff-colorfetti.png",
+          "SHA256": "bd07f0c27af94ec57f5c1229a9d8be421066444edf9f6afe9082c5c346c6d4e9"
+        },
+        {
+          "Name": "image-colorfetti.png",
+          "SHA256": "b3c120ea45bc4572e17a236157bd594c9886f930ddd9e67035a2e36643586f24"
+        },
+        {
+          "Name": "image-COM¹.note-colorfetti.png",
+          "SHA256": "199b3671391c6ab5cd9baefc3b0a5458645e04bccec6909a11feacd503270367"
+        },
+        {
+          "Name": "image-CON .note-colorfetti.png",
+          "SHA256": "15a75482c7e72840f55a4131e615f0ec2df4a44e3e215b03272c82b163c810e9"
+        },
+        {
+          "Name": "image-CON.note-colorfetti.png",
+          "SHA256": "d9c8df5af535c3043d8898e5f436b4dee26e98fe621fa864ba788dbd333891f3"
+        },
+        {
+          "Name": "image-LPT².note-colorfetti.png",
+          "SHA256": "60c58e590fce011d9d938417eee26882a374275eacfcdb2398c8124f92a2fe65"
+        },
+        {
+          "Name": "image-NUL.tar-colorfetti.png",
+          "SHA256": "0165eafb99ad0908fa934467550e8ad95559ee45acee6447f174a0dcb9768c02"
+        },
+        {
+          "Name": "LPT³-colorfetti.png",
+          "SHA256": "efc30bfcc754b2f3e113f80288c2329dea8e00146ffbc2cacf26f829cf6d8081"
+        },
+        {
+          "Name": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-colorfetti.png",
+          "SHA256": "3079f03d56131cf45f5241c0c1d680eb8bf5da9a8aaa731f98cbb30c89b7a6b7"
+        },
+        {
+          "Name": "ς-2-colorfetti.png",
+          "SHA256": "12b1034e12b0f588ef175643274ed919e700d56e54ac71baa4d8ed2b011ebb88"
+        },
+        {
+          "Name": "Σ-3-colorfetti.png",
+          "SHA256": "c10fea192ce8738a82cbfeb4665f2c3a69bbcc0e5c85eb3a02423bcacae0f209"
+        },
+        {
+          "Name": "σ-colorfetti.png",
+          "SHA256": "13650748a0c268d39a84dab41e49a6196f2f7e551bf87a5e3ca4203286761cf6"
+        },
+        {
+          "Name": "日本語👨‍👩‍👧‍👦-colorfetti.png",
+          "SHA256": "c1f94c3b5f8b2cdf7c2261254e9f800a85c1126c42d338cfbfe7e9430b17ec04"
+        }
+      ]
+    },
+    {
+      "Label": "before",
+      "Command": "Expand-Archive",
+      "Error": "Exception calling \"ExtractToFile\" with \"3\" argument(s): \"The filename, directory name, or volume label syntax is incorrect. : 'C:\\Programming_Files\\Shilocity\\colorfetti\\.tmp\\m6-windows-extraction\\before-c9536ed2865a46138df512d727f5148d\\a?b-colorfetti.png'.\"",
+      "Count": 0,
+      "Files": []
+    },
+    {
+      "Label": "after",
+      "Command": "Expand-Archive",
+      "Error": null,
+      "Count": 10,
+      "Files": [
+        {
+          "Name": "a-b-2-colorfetti.png",
+          "SHA256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d"
+        },
+        {
+          "Name": "a-b-3-colorfetti.png",
+          "SHA256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d"
+        },
+        {
+          "Name": "A-B-4-colorfetti.png",
+          "SHA256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d"
+        },
+        {
+          "Name": "a-b-5-colorfetti.png",
+          "SHA256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d"
+        },
+        {
+          "Name": "a-b-colorfetti.png",
+          "SHA256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d"
+        },
+        {
+          "Name": "café-2-colorfetti.png",
+          "SHA256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d"
+        },
+        {
+          "Name": "café-colorfetti.png",
+          "SHA256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d"
+        },
+        {
+          "Name": "CON-colorfetti.png",
+          "SHA256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d"
+        },
+        {
+          "Name": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff-colorfetti.png",
+          "SHA256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d"
+        },
+        {
+          "Name": "image-CON.note-colorfetti.png",
+          "SHA256": "f2930be08b218d0f93d68deb5b4cd28ed5527b9e1efb24e730079fba92ba403d"
+        }
+      ]
+    }
+  ]
+}

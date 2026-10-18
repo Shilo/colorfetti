@@ -4,6 +4,7 @@
 *.jpeg
 *.gif
 *.zip
+*.bin
 *.log
 
 # Curated screenshots retained with the implementation record.

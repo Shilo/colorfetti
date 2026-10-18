@@ -4,17 +4,43 @@ import { exportPalette, markUsed, markUsedAsync, compactTable, EMPTY_INDEX, yiel
 import { checkCanceled } from './quantize.js';
 import { paletteAlpha, inspectAlphaPixel } from './palette-alpha.js';
 
-// Output file names use "-colorfetti" in both recoloring families. The extension
-// follows the encoded output: PNG for stills, GIF for animations. Add -2, -3...
-// before the suffix so no two outputs collide (case-insensitively, for Windows).
+// Portable single-component names, shared by Save, ZIP and drag. Keep source
+// display names separate. Reserve the actual suffix/ordinal before truncating
+// at whole code points: 255 UTF-8 bytes also fits Windows' UTF-16 component cap.
+const MAX_NAME_BYTES = 255;
+const forbiddenName = /[<>:"/\\|?*\u0000-\u001f\u007f-\u009f\uD800-\uDFFF\p{Bidi_Control}]/gu;
+const deviceName = /^(CON|PRN|AUX|NUL|COM[1-9¹²³]|LPT[1-9¹²³]) *(\.|$)/iu;
+const nameKey = name => name.normalize('NFC').toUpperCase();
+function namePrefix(name, budget) {
+  let prefix = '', bytes = 0;
+  for (const point of name) {
+    const code = point.codePointAt(0), size = code < 128 ? 1 : code < 2048 ? 2 : code < 65536 ? 3 : 4;
+    if (bytes + size > budget) break;
+    bytes += size; prefix += point;
+  }
+  return prefix.replace(/[ .]+$/g, '');
+}
+function portableName(base, ext, ordinal) {
+  const tail = `${ordinal === 1 ? '' : '-' + ordinal}-colorfetti.${ext}`;
+  let prefix = namePrefix(base, MAX_NAME_BYTES - tail.length) || 'image';
+  // CON-colorfetti.png is valid; CON.note-colorfetti.png still targets a DOS
+  // device. Check the final first-dot stem, not merely the original basename.
+  if (deviceName.test(prefix + tail)) prefix = namePrefix('image-' + base, MAX_NAME_BYTES - tail.length);
+  return prefix + tail;
+}
+
+// The extension follows encoded output, independent of the source extension.
+// Sanitize before resolving case-insensitive and truncation-created collisions.
 export function outNames(names, kinds = []) {
-  const taken = new Set();
+  const taken = new Set(), next = new Map();
   return names.map((name, n) => {
     const ext = kinds[n] === 'gif' ? 'gif' : 'png';
-    const base = name.replace(/\.[^.]+$/, '').replace(/[\\/]/g, '-') || 'image';
-    let out = `${base}-colorfetti.${ext}`;
-    for (let i = 2; taken.has(out.toLowerCase()); i++) out = `${base}-${i}-colorfetti.${ext}`;
-    taken.add(out.toLowerCase());
+    const base = String(name ?? '').normalize('NFC').replace(/\.[^./\\]+$/, '')
+      .replace(forbiddenName, '-').trim().replace(/[ .]+$/g, '') || 'image';
+    const group = nameKey(portableName(base, ext, 1));
+    let ordinal = next.get(group) ?? 1, out = portableName(base, ext, ordinal);
+    while (taken.has(nameKey(out))) out = portableName(base, ext, ++ordinal);
+    next.set(group, ordinal + 1); taken.add(nameKey(out));
     return out;
   });
 }

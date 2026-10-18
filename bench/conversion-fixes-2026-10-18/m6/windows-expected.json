@@ -1,0 +1,137 @@
+[
+  {
+    "source": "a:b.png",
+    "name": "a-b-colorfetti.png",
+    "sha256": "856bc60b995bd0e2be60496039e7ce9dffbeb8c145a2c7e3d257977b6ff9e083"
+  },
+  {
+    "source": "a?b.png",
+    "name": "a-b-2-colorfetti.png",
+    "sha256": "147e3bb924e5da632f75c348bf2bc1a463973275b15ec511d705296777397063"
+  },
+  {
+    "source": "a-b.png",
+    "name": "a-b-3-colorfetti.png",
+    "sha256": "57a5a9099042053613dcece76af358a5a1e73a8204a8241500d59f4ae71e7271"
+  },
+  {
+    "source": "A-B.jpg",
+    "name": "A-B-4-colorfetti.png",
+    "sha256": "3516ede5fcc84d4f02113017ecd9dfa584c48d10361fefa1af71c3c89120b03e"
+  },
+  {
+    "source": "CON.png",
+    "name": "CON-colorfetti.png",
+    "sha256": "07e7fae9e542c01e2539da2b1ae9efbf3d35e942cc247c18a06ed3debb419279"
+  },
+  {
+    "source": "CON.note.png",
+    "name": "image-CON.note-colorfetti.png",
+    "sha256": "d9c8df5af535c3043d8898e5f436b4dee26e98fe621fa864ba788dbd333891f3"
+  },
+  {
+    "source": "NUL.tar.gz",
+    "name": "image-NUL.tar-colorfetti.png",
+    "sha256": "0165eafb99ad0908fa934467550e8ad95559ee45acee6447f174a0dcb9768c02"
+  },
+  {
+    "source": "COM¹.png",
+    "name": "COM¹-colorfetti.png",
+    "sha256": "db45185fa6127e0307c141819accd0f8e227d29670ddeb95a137b6c14ce0c35e"
+  },
+  {
+    "source": "COM¹.note.png",
+    "name": "image-COM¹.note-colorfetti.png",
+    "sha256": "199b3671391c6ab5cd9baefc3b0a5458645e04bccec6909a11feacd503270367"
+  },
+  {
+    "source": "LPT².note.png",
+    "name": "image-LPT².note-colorfetti.png",
+    "sha256": "60c58e590fce011d9d938417eee26882a374275eacfcdb2398c8124f92a2fe65"
+  },
+  {
+    "source": "LPT³.png",
+    "name": "LPT³-colorfetti.png",
+    "sha256": "efc30bfcc754b2f3e113f80288c2329dea8e00146ffbc2cacf26f829cf6d8081"
+  },
+  {
+    "source": "CON .note.png",
+    "name": "image-CON .note-colorfetti.png",
+    "sha256": "15a75482c7e72840f55a4131e615f0ec2df4a44e3e215b03272c82b163c810e9"
+  },
+  {
+    "source": "café.png",
+    "name": "café-colorfetti.png",
+    "sha256": "9a8be0e7c1e1d15ba500b0eeb7b179962b9adc40d4738b53de057dea699c733b"
+  },
+  {
+    "source": "café.png",
+    "name": "café-2-colorfetti.png",
+    "sha256": "d99fcc79b7f5e49e3f03f470a57df82d4cf7b4a66b52267f760efc52a93f3028"
+  },
+  {
+    "source": "σ.png",
+    "name": "σ-colorfetti.png",
+    "sha256": "13650748a0c268d39a84dab41e49a6196f2f7e551bf87a5e3ca4203286761cf6"
+  },
+  {
+    "source": "ς.png",
+    "name": "ς-2-colorfetti.png",
+    "sha256": "12b1034e12b0f588ef175643274ed919e700d56e54ac71baa4d8ed2b011ebb88"
+  },
+  {
+    "source": "Σ.png",
+    "name": "Σ-3-colorfetti.png",
+    "sha256": "c10fea192ce8738a82cbfeb4665f2c3a69bbcc0e5c85eb3a02423bcacae0f209"
+  },
+  {
+    "source": "日本語👨‍👩‍👧‍👦.png",
+    "name": "日本語👨‍👩‍👧‍👦-colorfetti.png",
+    "sha256": "c1f94c3b5f8b2cdf7c2261254e9f800a85c1126c42d338cfbfe7e9430b17ec04"
+  },
+  {
+    "source": "a\u0000b.png",
+    "name": "a-b-5-colorfetti.png",
+    "sha256": "4d5e07f08c54d23b348554e33a1c304a9f36c39af5483759e2152b3917607df9"
+  },
+  {
+    "source": "a‮b.png",
+    "name": "a-b-6-colorfetti.png",
+    "sha256": "cb9df35c6d1edb58f489f5db94f27e91aaa875978f6666d5681ecff6d152343e"
+  },
+  {
+    "source": "ab.png",
+    "name": "a-b-7-colorfetti.png",
+    "sha256": "33bb451fa3ce510cd579c52f9ac629ba7719acb949cfabea4055be51c6cd348c"
+  },
+  {
+    "source": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.png",
+    "name": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff-colorfetti.png",
+    "sha256": "bd07f0c27af94ec57f5c1229a9d8be421066444edf9f6afe9082c5c346c6d4e9"
+  },
+  {
+    "source": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀.png",
+    "name": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀-colorfetti.png",
+    "sha256": "5b3de1ad5930fd6d3792d37c62ed15ee213dbe869cdc6f55ab9b3d90559ccf23"
+  },
+  {
+    "source": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀b.png",
+    "name": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀-2-colorfetti.png",
+    "sha256": "abfc754f6f4378cac7dcff1b20f9618e20c107ad1e69fed32d3c4a2856394a68"
+  },
+  {
+    "source": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx .tail.png",
+    "name": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-colorfetti.png",
+    "sha256": "3079f03d56131cf45f5241c0c1d680eb8bf5da9a8aaa731f98cbb30c89b7a6b7"
+  },
+  {
+    "source": " .png",
+    "name": "image-colorfetti.png",
+    "sha256": "b3c120ea45bc4572e17a236157bd594c9886f930ddd9e67035a2e36643586f24"
+  },
+  {
+    "source": "../a:b.png",
+    "name": "..-a-b-colorfetti.png",
+    "sha256": "b72068904e027db9a0555023475729e243acf6eb7265f3c6ff52f8cff3c70129"
+  }
+]

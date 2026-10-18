@@ -23,13 +23,35 @@ screenshots in its `screenshots/` folder.
 | M3 | Bounded per-file import diagnostics | Accepted after revisions and desktop retesting |
 | M4 | ANIMEXTS GIF repeat metadata | Accepted after independent Save/ZIP verification |
 | M5 | Enabled palette-editor text contrast | Accepted after revision and desktop retesting |
-| M6 | Portable Save/ZIP/drag names | Queued |
+| M6 | Portable Save/ZIP/drag names | Accepted after actual Windows extraction and Save/ZIP/drag verification |
 | M7 | Transparent GIF frame-bound cropping | Accepted after size-gate revisions and independent Save/ZIP verification |
 | M8 | Exact PNG state compaction | Queued |
 
 ## Accepted changes and review discussions
 
 Task-specific acceptance and evidence are recorded here as each task completes.
+
+### M6 Portable output filenames
+
+One filename pipeline replaces the differing Save/ZIP/drag rules. Sanitization,
+NFC normalization, complete-codepoint truncation and actual reserved device-name
+protection precede case-insensitive collision numbering. Full output names retain
+the existing suffix and correct PNG/GIF extension within 255 UTF-8 bytes. Source
+labels remain intact. Challenge covered valid CON-colorfetti versus invalid
+CON.note-colorfetti, superscript device numbers, Unicode collisions, ordinal growth,
+trailing truncated dots and 1,200 long-emoji siblings. Both reviewers agreed.
+
+The coordinator ran desktop before/after matrices and real App Save, Save all and
+App drag callbacks. Before Save/drag names differed; after both offer a-b-colorfetti.png.
+Independent Sharp checks verified both Saves and twenty ZIP entries with exact RGBA
+and unchanged PNG bytes. Real Windows Expand-Archive failed on the actual before
+ZIP, then extracted all ten after entries with exact filename/SHA-256 readback.
+A separate 27-entry adversarial archive also extracted fully. Focused tests: 75
+passed across five files. The synthetic drag callback test does not establish an
+external OS drop; the child browser surface was unavailable, so the coordinator
+operated the desktop browser and the agent independently challenged its receipts.
+Evidence: `bench/conversion-fixes-2026-10-18/m6/README.md`.
+[Final filename screenshot](../../bench/conversion-fixes-2026-10-18/screenshots/m6-filenames-after.jpg).
 
 ### M7 Transparent GIF bounds
 

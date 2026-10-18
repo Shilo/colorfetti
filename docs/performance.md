@@ -1,5 +1,15 @@
 # Performance
 
+## Portable output names (October 18, 2026)
+
+Save/ZIP/drag share filename normalization; it does not touch image conversion or
+compression. Output prefixes stop at a 255-byte complete-name budget with room for
+the ordinal/suffix/extension. A normalized group counter avoids restarting a
+collision search for every duplicate; a final taken-name check handles numbered
+inputs and truncation collisions. The 1,200-long-emoji sibling test includes
+three/four-digit ordinals. Actual Windows extraction and exact image bytes passed;
+see `bench/conversion-fixes-2026-10-18/m6/README.md`.
+
 ## Transparent GIF bounds (October 18, 2026)
 
 Transparent exports scan row edges for independent frame bounds. Opaque tables

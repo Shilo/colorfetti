@@ -1519,8 +1519,14 @@ in browsers.
 - A single image saves as `<original name without extension>-colorfetti.png` at its original
   pixel size, in both Palette and 1-bit modes. PNG, JPEG, WebP, BMP and all other
   supported still inputs use this same PNG naming rule; the input extension never
-  determines the output format. Missing basenames use `image`; path separators
-  become hyphens. Save, Preview, touch actions, drag exports and ZIP entries share
+  determines the output format. Missing basenames use `image`. Unsafe filename,
+  control and bidi characters become hyphens; normalize Unicode to NFC, retain
+  complete code points and trim trailing base dots/spaces. Budget the complete
+  filename to 255 UTF-8 bytes including ordinal, suffix and extension. Prefix
+  actual reserved first-dot device stems with `image-`; valid suffixed names such
+  as `CON-colorfetti.png` stay intact. Resolve case-insensitive collisions after
+  sanitization and truncation. Source display names stay unchanged.
+  Save, Preview, touch actions, drag exports and ZIP entries share
   this rule, as do their filename notices.
 - Download all saves `colorfetti.zip` containing one such PNG per image. Duplicate names get
   `-2`, `-3` and so on before `-colorfetti`, ignoring case and avoiding collisions

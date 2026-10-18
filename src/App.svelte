@@ -844,7 +844,7 @@
       const read = snapshot.family === 'full-palette' ? item : await reanalyzeItem(item, { source: snapshot.set.source, alphaCut: snapshot.set.alpha }, { signal });
       const image = await converted(read, snapshot, { signal });
       const bytes = await fileBytes(image, { signal });
-      const name = downloadName(image).replace(/[<>:"/\\|?*\x00-\x1f]/g, '-');
+      const name = downloadName(image);
       const type = image.frames || image.getFrame ? 'image/gif' : 'image/png';
       const file = new File([bytes], name, { type });
       return { file, width: image.w, height: image.h, url: URL.createObjectURL(file) };
