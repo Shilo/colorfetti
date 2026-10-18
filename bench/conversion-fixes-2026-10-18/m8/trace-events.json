@@ -1,0 +1,65 @@
+[
+  {
+    "time": "2026-10-18T14:59:22.723Z",
+    "url": "http://127.0.0.1:5239/index.html",
+    "readyState": "complete",
+    "appPresent": true,
+    "topFrame": true,
+    "event": "loaded",
+    "observeCalls": 2
+  },
+  {
+    "time": "2026-10-18T14:59:30.016Z",
+    "url": "http://127.0.0.1:5239/index.html",
+    "readyState": "complete",
+    "appPresent": true,
+    "topFrame": true,
+    "event": "loaded",
+    "observeCalls": 2
+  },
+  {
+    "time": "2026-10-18T14:59:32.659Z",
+    "url": "http://127.0.0.1:5239/index.html",
+    "readyState": "complete",
+    "appPresent": true,
+    "topFrame": true,
+    "event": "loaded",
+    "observeCalls": 2
+  },
+  {
+    "time": "2026-10-18T14:59:36.973Z",
+    "url": "http://127.0.0.1:5239/index.html",
+    "readyState": "complete",
+    "appPresent": true,
+    "topFrame": false,
+    "event": "loaded",
+    "observeCalls": 2
+  },
+  {
+    "time": "2026-10-18T14:59:36.975Z",
+    "url": "http://127.0.0.1:5239/bench/conversion-fixes-2026-10-18/m8/browser.html",
+    "readyState": "complete",
+    "appPresent": true,
+    "topFrame": true,
+    "event": "loaded",
+    "observeCalls": 0
+  },
+  {
+    "time": "2026-10-18T14:59:48.881Z",
+    "url": "http://127.0.0.1:5239/index.html",
+    "readyState": "complete",
+    "appPresent": true,
+    "topFrame": false,
+    "event": "loaded",
+    "observeCalls": 2
+  },
+  {
+    "time": "2026-10-18T14:59:48.882Z",
+    "url": "http://127.0.0.1:5239/bench/conversion-fixes-2026-10-18/m8/browser.html",
+    "readyState": "complete",
+    "appPresent": true,
+    "topFrame": true,
+    "event": "loaded",
+    "observeCalls": 0
+  }
+]

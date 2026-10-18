@@ -3,6 +3,7 @@ import { hexToRgb } from './recolor.js';
 import { exportPalette, markUsed, markUsedAsync, compactTable, EMPTY_INDEX, yieldExport } from './palette-export.js';
 import { checkCanceled } from './quantize.js';
 import { paletteAlpha, inspectAlphaPixel } from './palette-alpha.js';
+import { createAlphaStates, addAlphaStates, alphaTableLength, minimumAlphaPngBytes, MINIMUM_ALPHA_PNG_BYTES } from './png-alpha-states.js';
 
 // Portable single-component names, shared by Save, ZIP and drag. Keep source
 // display names separate. Reserve the actual suffix/ordinal before truncating
@@ -85,38 +86,69 @@ async function chunkAsync(type, data, signal) {
   return out;
 }
 
-// Encodes a mask (one byte per pixel: 0 empty, 1 first color, 2 second color, the output of
-// colorfetti's `mask`) as a PNG, by hand instead of through a canvas. Some browsers add noise to
-// canvas readback as fingerprinting protection, which would put stray colors in a 1-bit image.
-// The PNG lists the colors once, as a palette, and holds two bits for each pixel instead of
-// four bytes. That is a sixteenth of the data to compress, so a photo saves several times
-// faster, into a smaller file, and without ever being held in memory as full RGBA.
-// A color that is None (null) is made see-through like the empty pixel. The picture then has one
-// color, and both see-through entries of the palette hold it too, so that a program which blends
-// the edges of the picture has no other color to pull in. With two colors the empty pixel's
-// entry is black, as it always was.
+// Legacy masks keep their exact role RGBA, including RGB underneath None/empty
+// pixels. Both encodings declare sRGB; only a strictly smaller compact 1-bit
+// encoding replaces the tagged 2-bit reference. Double encoding is limited to
+// small sprites; larger synchronous exports pack/compress their baseline once.
+const LEGACY_COMPACTION_PIXELS = 262144;
 export function pngBytes(image) {
   if (image.colors) return palettePngBytes(image);
   const { mask, w, h, first, second } = image;
+  if (!Number.isInteger(w) || w < 1 || !Number.isInteger(h) || h < 1
+    || !Number.isSafeInteger(w * h) || !(mask instanceof Uint8Array) || mask.length !== w * h)
+    throw new Error('Invalid 1-bit image pixels.');
+  if (!first && !second) throw new Error('A 1-bit image needs at least one ink.');
+  const firstRgb = hexToRgb(first ?? second), secondRgb = hexToRgb(second ?? first);
+  const colors = [first && second ? [0, 0, 0] : firstRgb, firstRgb, secondRgb];
+  const alpha = first ? (second ? [0, 255, 255] : [0, 255, 0]) : [0, 0, 255];
+  const trns = first ? (second ? [0] : [0, 255, 0]) : [0, 0];
+  const roles = mask.length <= LEGACY_COMPACTION_PIXELS ? { used: 0 } : null;
+  const baseline = encodeLegacyPng(image, colors, trns, 2, null, roles);
+  if (!roles) return baseline;
+  const used = roles.used;
+  const compact = [], opacity = [], map = new Uint8Array(3), states = new Map();
+  for (let role = 0; role < 3; role++) if (used & 1 << role) {
+    const rgb = colors[role], key = ((rgb[0] * 65536 + rgb[1] * 256 + rgb[2]) * 256) + alpha[role];
+    if (!states.has(key)) { states.set(key, compact.length); compact.push(rgb); opacity.push(alpha[role]); }
+    map[role] = states.get(key);
+  }
+  if (compact.length > 2) return baseline;
+  while (opacity.at(-1) === 255) opacity.pop();
+  const candidate = encodeLegacyPng(image, compact, opacity, 1, map);
+  return candidate.length < baseline.length ? candidate : baseline;
+}
+
+function encodeLegacyPng(image, colors, alpha, depth, map, roles = null) {
+  const { mask, w, h } = image;
   const head = new Uint8Array(13);
   new DataView(head.buffer).setUint32(0, w);
   new DataView(head.buffer).setUint32(4, h);
-  head.set([2, 3, 0, 0, 0], 8); // 2 bits per pixel, colors from a palette, no interlace
-  // each row: filter byte 0, then its pixels four to a byte, the first in the top two bits
-  const stride = Math.ceil(w / 4) + 1, rows = new Uint8Array(stride * h);
-  for (let y = 0, p = 0; y < h; y++) for (let x = 0, at = y * stride + 1; x < w; x++, p++) rows[at + (x >> 2)] |= mask[p] << (6 - 2 * (x & 3));
+  head.set([depth, 3, 0, 0, 0], 8);
+  const stride = Math.ceil(w * depth / 8) + 1, rows = new Uint8Array(stride * h);
+  if (map) {
+    for (let y = 0, p = 0; y < h; y++) for (let x = 0, at = y * stride + 1; x < w; x++, p++)
+      rows[at + (x >> 3)] |= map[mask[p]] << (7 - (x & 7));
+  } else if (roles) {
+    let used = 0;
+    for (let y = 0, p = 0; y < h; y++) for (let x = 0, at = y * stride + 1; x < w; x++, p++) {
+      const role = mask[p]; if (role > 2) throw new Error('Invalid 1-bit mask role.');
+      used |= 1 << role; rows[at + (x >> 2)] |= role << (6 - 2 * (x & 3));
+    }
+    roles.used = used;
+  } else {
+    for (let y = 0, p = 0; y < h; y++) for (let x = 0, at = y * stride + 1; x < w; x++, p++) {
+      const role = mask[p]; if (role > 2) throw new Error('Invalid 1-bit mask role.');
+      rows[at + (x >> 2)] |= role << (6 - 2 * (x & 3));
+    }
+  }
   const parts = [
     Uint8Array.of(137, 80, 78, 71, 13, 10, 26, 10),
     chunk('IHDR', head),
-    chunk('PLTE', Uint8Array.of(...(first && second ? [0, 0, 0] : hexToRgb(first ?? second)), ...hexToRgb(first ?? second), ...hexToRgb(second ?? first))), // what 0, 1 and 2 stand for
-    chunk('tRNS', Uint8Array.from(first ? (second ? [0] : [0, 255, 0]) : [0, 0])), // how solid each is: the empty pixel is see-through, and so is a color that is None
-    chunk('IDAT', zlibSync(rows, { level: 3 })), // twice as quick as the usual level 6, for a file about 4% larger
-    chunk('IEND', new Uint8Array(0)),
+    chunk('sRGB', Uint8Array.of(0)),
+    chunk('PLTE', Uint8Array.from(colors.flat())),
   ];
-  const png = new Uint8Array(parts.reduce((n, p) => n + p.length, 0));
-  let at = 0;
-  for (const p of parts) { png.set(p, at); at += p.length; }
-  return png;
+  if (alpha.length) parts.push(chunk('tRNS', Uint8Array.from(alpha)));
+  return assemblePng([...parts, chunk('IDAT', zlibSync(rows, { level: 3 })), chunk('IEND', new Uint8Array(0))]);
 }
 
 const PNG_SIGNATURE = Uint8Array.of(137, 80, 78, 71, 13, 10, 26, 10);
@@ -128,17 +160,11 @@ function assemblePng(parts) {
   return result;
 }
 
-function palettePngLayout(image, state, partialAlpha) {
-  if (!state) {
-    state = exportPalette(image);
-    markUsed(image.indices, state);
-  }
-  if (partialAlpha === undefined) {
-    const alpha = paletteAlpha(image); partialAlpha = false;
-    if (alpha) for (let p = 0; p < alpha.length; p++) if (inspectAlphaPixel(alpha, image.indices, p)) partialAlpha = true;
-  }
-  const { table, map, transparent } = compactTable(state);
-  const rgba = table.length > 256 || partialAlpha;
+function palettePngLayout(image, state, partialAlpha, alphaStates = null) {
+  const compact = alphaStates ? null : compactTable(state);
+  const table = alphaStates ? Array.from(alphaStates.table.subarray(0, alphaStates.count)) : compact.table;
+  const map = alphaStates ? alphaStates.map : compact.map;
+  const rgba = table.length > 256 || partialAlpha && !alphaStates;
   const depth = rgba ? 8 : table.length <= 2 ? 1 : table.length <= 4 ? 2 : table.length <= 16 ? 4 : 8;
   const stride = (rgba ? image.w * 4 : Math.ceil(image.w * depth / 8)) + 1;
   const head = new Uint8Array(13), view = new DataView(head.buffer);
@@ -151,42 +177,59 @@ function palettePngLayout(image, state, partialAlpha) {
       plte[i * 3] = table[i] >> 16; plte[i * 3 + 1] = table[i] >> 8; plte[i * 3 + 2] = table[i];
     }
     parts.push(chunk('PLTE', plte));
-    if (transparent !== null) parts.push(chunk('tRNS', Uint8Array.of(0)));
+    if (alphaStates) {
+      const length = alphaTableLength(alphaStates);
+      if (length) parts.push(chunk('tRNS', alphaStates.alpha.slice(0, length)));
+    } else if (compact.transparent !== null) parts.push(chunk('tRNS', Uint8Array.of(0)));
   }
-  return { ...state, map, rgba, depth, stride, parts, rows: new Uint8Array(stride * image.h) };
+  return { ...state, map, rgba, paired: !!alphaStates, depth, stride, parts, rows: new Uint8Array(stride * image.h) };
 }
 
-function packPaletteRows(image, layout, start, end) {
+function packPalettePixels(image, layout, start, end) {
   const { w, indices, alpha } = image;
-  const { rgba, rgb, map, depth, stride, rows } = layout;
-  for (let y = start, p = start * w; y < end; y++) {
-    const offset = y * stride + 1;
+  const { rgba, paired, rgb, map, depth, stride, rows } = layout;
+  let x = start % w, offset = Math.floor(start / w) * stride + 1;
+  for (let p = start; p < end; p++) {
+    const index = indices[p];
     if (rgba) {
-      for (let x = 0; x < w; x++, p++) {
-        const index = indices[p], at = offset + x * 4;
-        if (index === EMPTY_INDEX) continue;
+      if (index !== EMPTY_INDEX) {
+        const at = offset + x * 4;
         const color = rgb[index];
         rows[at] = color >> 16; rows[at + 1] = color >> 8; rows[at + 2] = color; rows[at + 3] = alpha ? alpha[p] : 255;
       }
     } else {
-      for (let x = 0; x < w; x++, p++) {
-        const bit = x * depth;
-        rows[offset + (bit >> 3)] |= map[indices[p]] << (8 - depth - (bit & 7));
-      }
+      const bit = x * depth, slot = paired ? map[index === EMPTY_INDEX ? 65536 : index * 256 + alpha[p]] : map[index] + 1;
+      if (!slot) throw new Error('The image changed while it was being exported.');
+      rows[offset + (bit >> 3)] |= (slot - 1) << (8 - depth - (bit & 7));
     }
+    if (++x === w) { x = 0; offset += stride; }
   }
 }
 
 // Only used colors take a table slot. 256 opaque colors plus empty need RGBA;
 // those bytes are written directly, with the same exact palette membership.
 export function palettePngBytes(image) {
-  const layout = palettePngLayout(image);
-  packPaletteRows(image, layout, 0, image.h);
-  return assemblePng([...layout.parts, chunk('IDAT', zlibSync(layout.rows, { level: 3 })), chunk('IEND', new Uint8Array(0))]);
+  const state = exportPalette(image); markUsed(image.indices, state);
+  const alpha = paletteAlpha(image); let partial = false;
+  if (alpha) for (let p = 0; p < alpha.length; p++) if (inspectAlphaPixel(alpha, image.indices, p)) partial = true;
+  const baseline = encodePalettePng(image, palettePngLayout(image, state, partial));
+  if (!partial || baseline.length <= MINIMUM_ALPHA_PNG_BYTES) return baseline;
+  const states = createAlphaStates(state.rgb); addAlphaStates(image.indices, alpha, states, 0, alpha.length);
+  if (states.overflow || baseline.length <= minimumAlphaPngBytes(states)) return baseline;
+  const candidate = encodePalettePng(image, palettePngLayout(image, state, true, states));
+  return candidate.length < baseline.length ? candidate : baseline;
+}
+
+function encodePalettePng(image, layout) {
+  packPalettePixels(image, layout, 0, image.w * image.h);
+  const compressed = zlibSync(layout.rows, { level: 3 });
+  layout.rows = null; // no raw baseline rows remain reachable before the next candidate
+  return assemblePng([...layout.parts, chunk('IDAT', compressed), chunk('IEND', new Uint8Array(0))]);
 }
 
 // New-family jobs pack bounded row batches and compress in fflate's worker.
-// Legacy pngBytes remains the existing synchronous, byte-identical path.
+// Legacy pngBytes remains synchronous. Partial Keep candidates serialize their
+// row buffers/compressors; only the encoded baseline survives between passes.
 export async function palettePngBytesAsync(image, { signal } = {}) {
   checkCanceled(signal);
   const state = exportPalette(image);
@@ -197,12 +240,26 @@ export async function palettePngBytesAsync(image, { signal } = {}) {
     for (let p = start, end = Math.min(start + 65536, alpha.length); p < end; p++) if (inspectAlphaPixel(alpha, image.indices, p)) partialAlpha = true;
     if (start + 65536 < alpha.length) await yieldExport();
   }
-  const layout = palettePngLayout(image, state, partialAlpha);
-  const batch = Math.max(1, Math.floor(65536 / image.w));
-  for (let y = 0; y < image.h; y += batch) {
+  const baseline = await encodePalettePngAsync(image, palettePngLayout(image, state, partialAlpha), signal);
+  checkCanceled(signal);
+  if (!partialAlpha || baseline.length <= MINIMUM_ALPHA_PNG_BYTES) return baseline;
+  const states = createAlphaStates(state.rgb);
+  for (let start = 0; start < alpha.length && !states.overflow; start += 65536) {
     checkCanceled(signal);
-    packPaletteRows(image, layout, y, Math.min(image.h, y + batch));
-    if (y + batch < image.h) await yieldExport();
+    addAlphaStates(image.indices, alpha, states, start, Math.min(alpha.length, start + 65536));
+    if (start + 65536 < alpha.length && !states.overflow) await yieldExport();
+  }
+  checkCanceled(signal);
+  if (states.overflow || baseline.length <= minimumAlphaPngBytes(states)) return baseline;
+  const candidate = await encodePalettePngAsync(image, palettePngLayout(image, state, true, states), signal);
+  return candidate.length < baseline.length ? candidate : baseline;
+}
+
+async function encodePalettePngAsync(image, layout, signal) {
+  for (let start = 0, count = image.w * image.h; start < count; start += 65536) {
+    checkCanceled(signal);
+    packPalettePixels(image, layout, start, Math.min(count, start + 65536));
+    if (start + 65536 < count) await yieldExport();
   }
   checkCanceled(signal);
   const compressed = await new Promise((resolve, reject) => {
@@ -224,6 +281,7 @@ export async function palettePngBytesAsync(image, { signal } = {}) {
       });
     } catch (error) { finish(error); }
   });
+  layout.rows = null;
   const idat = await chunkAsync('IDAT', compressed, signal);
   checkCanceled(signal);
   return assemblePng([...layout.parts, idat, chunk('IEND', new Uint8Array(0))]);

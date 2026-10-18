@@ -25,11 +25,71 @@ screenshots in its `screenshots/` folder.
 | M5 | Enabled palette-editor text contrast | Accepted after revision and desktop retesting |
 | M6 | Portable Save/ZIP/drag names | Accepted after actual Windows extraction and Save/ZIP/drag verification |
 | M7 | Transparent GIF frame-bound cropping | Accepted after size-gate revisions and independent Save/ZIP verification |
-| M8 | Exact PNG state compaction | Queued |
+| M8 | Exact PNG state compaction | Accepted after size/performance revisions and independent final desktop export checks |
+
+## Final combined verification
+
+The final product source passes **1,378 tests in 83 files**, with the same two
+baseline skips; `npm run build` passes (209 modules). An additional read-only
+integration audit checked leases through both PNG encoding passes, clipboard early
+failure, canceled drag preparation and native close/reopen. It found no outstanding
+confirmed lifetime regression. Source budgets, capture accounting and inspection
+headroom remain defined logical limits, not a browser-process memory ceiling.
+
+All eight tasks were challenged and revised where evidence required, then mutually
+accepted. Focused counts below overlap and are not additive. Browser checks use
+desktop Codex Chromium, including narrow viewports; no physical phone was used.
+Independent Node/Sharp decoding verifies output pixels and applicable timing/repeats.
+Known performance/coverage limits are documented per task; this is not a proof
+against every possible browser or input. Machine-readable final receipt:
+`bench/conversion-fixes-2026-10-18/final-validation.json`.
 
 ## Accepted changes and review discussions
 
 Task-specific acceptance and evidence are recorded here as each task completes.
+
+### M8 Exact PNG compaction
+
+Partial Keep considers at most 256 exact used target-index/alpha states, with a
+dedicated EMPTY slot and per-entry tRNS. The complete indexed candidate replaces
+RGBA only when strictly smaller. A challenged 109→118-byte counterexample keeps
+the original 109 bytes, and tiny outputs skip candidate lookup allocation. Binary
+Palette output remains byte-identical. Raw row buffers are serialized; bounded
+packing and actual compressor cancellation remain intact.
+
+Root and independent peer rejected unconditional legacy double encoding after a
+16 MP fixture grew from about 163 to 424 ms. The agreed implementation limits that
+optional pass to 262,144 pixels and fuses validation with baseline packing. Above
+the cap, it compresses its two-bit baseline once. Exact cap-neighbor and 513×512
+cases pass. Small legacy images with at most two actual RGBA states use one bit
+only if the complete tagged file is smaller; losing and tied files retain two bits.
+Legacy PNG now declares sRGB, preserving stored transparent RGB conventions.
+The tag adds 13 bytes to unchanged baselines; metadata consistency does not imply
+that every prior PNG displayed incorrect colors.
+
+The coordinator repeated native desktop PNG decoding, actual App Keep Save and
+two-image ZIP, plus a native-picker 4 MP legacy Save before/after. Keep Save shrank
+386,902→231,802 bytes (40.1%) and ZIP 774,070→463,870. Large legacy Save stayed
+two-bit, 612,977→612,990 bytes. The independent Node/Sharp oracle checks all stored
+RGBA, including hidden transparent RGB, and the inserted sRGB chunk. The first
+large SVG test input was rejected by native import; the final paired input is an
+independently authored PNG with known RGBA. No product change was made for SVG.
+
+Affected implementation tests passed 120 cases across nine files; a separate peer
+passed 114 independent RGBA/Sharp cases and 85 direct unit tests. These overlap and
+must not be summed. Desktop browser interaction was operated by the coordinator
+because the child's surface was unavailable; the child independently challenges
+raw receipts and exported bytes. Additional compression costs CPU; large legacy
+still encoding remains synchronous with measurable validation overhead. Cooperative
+legacy encoding remains follow-up research, with no universal speedup claimed.
+Evidence: `bench/conversion-fixes-2026-10-18/m8/README.md` and `m8/PEER-REVIEW.md`.
+[Final PNG validation screenshot](../../bench/conversion-fixes-2026-10-18/screenshots/m8-png-after.jpg).
+
+A harness navigation/reload console message about MutationObserver was investigated
+with early main-world instrumentation and unchanged production assets. All App
+observer calls were valid, no main-world failure was recorded, and standalone App
+load/reload was clean. The console-only harness message remains unassigned; no
+product fix was justified or claim made that every console surface was clean.
 
 ### M2 Sampling disclosure and native inspection
 

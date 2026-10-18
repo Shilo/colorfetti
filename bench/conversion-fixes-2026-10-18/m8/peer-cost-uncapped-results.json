@@ -1,0 +1,161 @@
+{
+  "node": "v25.0.0",
+  "referenceCommit": "8a84b6c",
+  "compressor": "same installed fflate zlibSync level3",
+  "scope": "Independent synchronous PNG-only timings. No conversion, browser latency or whole-process memory claim. Three timed passes after one warm-up; alternating order.",
+  "results": [
+    {
+      "w": 2048,
+      "h": 2048,
+      "pixels": 4194304,
+      "pattern": "flat-one-state",
+      "bytes": {
+        "before": 4722,
+        "after": 617
+      },
+      "beforeMs": 11.956900000000019,
+      "afterMs": 28.590300000000013,
+      "ratio": 2.391113081149794,
+      "samplesMs": {
+        "before": [
+          13.466199999999986,
+          11.74890000000002,
+          11.956900000000019
+        ],
+        "after": [
+          28.938299999999998,
+          28.590300000000013,
+          28.17719999999997
+        ]
+      }
+    },
+    {
+      "w": 2048,
+      "h": 2048,
+      "pixels": 4194304,
+      "pattern": "random-two-states",
+      "bytes": {
+        "before": 613058,
+        "after": 526540
+      },
+      "beforeMs": 41.90179999999998,
+      "afterMs": 71.28470000000004,
+      "ratio": 1.7012324052904666,
+      "samplesMs": {
+        "before": [
+          42.88970000000006,
+          41.28659999999991,
+          41.90179999999998
+        ],
+        "after": [
+          73.74430000000001,
+          69.07820000000004,
+          71.28470000000004
+        ]
+      }
+    },
+    {
+      "w": 2048,
+      "h": 2048,
+      "pixels": 4194304,
+      "pattern": "three-states",
+      "bytes": {
+        "before": 5242,
+        "after": 5255
+      },
+      "beforeMs": 12.832899999999995,
+      "afterMs": 18.558199999999943,
+      "ratio": 1.446142337273722,
+      "samplesMs": {
+        "before": [
+          12.5625,
+          12.832899999999995,
+          13.467100000000073
+        ],
+        "after": [
+          18.333399999999983,
+          19.99350000000004,
+          18.558199999999943
+        ]
+      }
+    },
+    {
+      "w": 4096,
+      "h": 4096,
+      "pixels": 16777216,
+      "pattern": "flat-one-state",
+      "bytes": {
+        "before": 11919,
+        "after": 2156
+      },
+      "beforeMs": 56.650300000000016,
+      "afterMs": 119.61090000000013,
+      "ratio": 2.111390407464746,
+      "samplesMs": {
+        "before": [
+          56.650300000000016,
+          61.41000000000008,
+          43.57639999999992
+        ],
+        "after": [
+          133.84429999999998,
+          116.3927000000001,
+          119.61090000000013
+        ]
+      }
+    },
+    {
+      "w": 4096,
+      "h": 4096,
+      "pixels": 16777216,
+      "pattern": "random-two-states",
+      "bytes": {
+        "before": 2446228,
+        "after": 2101772
+      },
+      "beforeMs": 163.4689000000003,
+      "afterMs": 424.46799999999985,
+      "ratio": 2.596628471837757,
+      "samplesMs": {
+        "before": [
+          163.4689000000003,
+          163.03150000000005,
+          313.97209999999995
+        ],
+        "after": [
+          270.6441,
+          424.46799999999985,
+          508.17880000000014
+        ]
+      }
+    },
+    {
+      "w": 4096,
+      "h": 4096,
+      "pixels": 16777216,
+      "pattern": "three-states",
+      "bytes": {
+        "before": 12660,
+        "after": 12673
+      },
+      "beforeMs": 101.16780000000017,
+      "afterMs": 143.71469999999954,
+      "ratio": 1.4205577268656557,
+      "samplesMs": {
+        "before": [
+          101.16780000000017,
+          86.23350000000028,
+          130.16809999999987
+        ],
+        "after": [
+          143.23430000000008,
+          185.6896999999999,
+          143.71469999999954
+        ]
+      }
+    }
+  ],
+  "sourceSha256": "e89328616e42547273a3984aa2403cf729d0ea24ee640e4700defff68cfa92aa",
+  "stateHelperSha256": "379a2c8321cb3a32c8a8da94a79de3e60147a98616b93d78332faaf99cc373e2",
+  "status": "Historical uncapped implementation: concrete main-thread regression prompted capped follow-up."
+}

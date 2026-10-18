@@ -1,0 +1,48 @@
+Browser tab: 13, Title: "Exact PNG state compaction challenge", URL: "http://127.0.0.1:5236/bench/conversion-fixes-2026-10-18/m8/browser.html".
+0 AXWebArea Exact PNG state compaction challenge, URL: 127.0.0.1:5236/bench/conversion-fixes-2026-10-18/m8/browser.html
+	1 heading Exact PNG state compaction challenge, Value: 1
+		2 text Exact PNG state compaction challenge
+	3 text Lossless alpha and RGB, emitted-state packing, and explicit sRGB metadata.
+	4 button Run PNG state/native pixel matrix, ID: run
+	5 button Import partial Keep fixture, ID: keep
+	6 container
+		7 text Capture label
+		8 text field (settable) Capture label, Value: legacy4m, ID: label
+	9 text Ready
+	97 text Actual App captured: legacy4m/m8-legacy4m-colorfetti.png, 612977 bytes
+	11 button (collapsed) Machine receipt, Secondary Actions: Expand
+		12 text Machine receipt
+	13 container Description: Production application, ID: app
+		14 AXWebArea Colorfetti, URL: 127.0.0.1:5236/index.html
+			15 container app
+				36 container
+					37 pop up button Preview m8-legacy4m.png
+						38 image
+					39 button Save m8-legacy4m.png
+					40 button Copy m8-legacy4m.png
+					42 pop up button Preview m8-legacy4m.png
+					43 button Remove m8-legacy4m.png
+					44 pop up button Preview m8-legacy4m.png
+						45 text m8-legacy4m.png
+						46 text 2048
+						47 text ×
+						48 text 2048
+						77 text 2 colors
+				26 container
+					27 container Colors and palette
+						94 color well (settable) Description: Color for lines and dark pixels, Value: #222323
+						95 button Swap colors
+						96 color well (settable) Description: Color for fill and light pixels, Value: #f0f6f0
+						29 button (collapsed) Description: Palette, Secondary Actions: Expand
+					30 container Conversion and style
+						31 checkbox Description: Solid conversion, Value: 1
+						32 button (collapsed) Description: Style, Secondary Actions: Expand
+						33 text Showing images converted with Solid.
+					34 container File and app actions
+						50 container Add and save images
+							51 button Save image
+							52 button Add images
+							53 button Remove all images
+						35 pop up button More
+
+The focused UI element is 14 AXWebArea Colorfetti, URL: 127.0.0.1:5236/index.html

@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "productionAssetsIdentical": 23,
+  "onlyModifiedFiles": [
+    "index.html",
+    "bench/conversion-fixes-2026-10-18/m8/browser.html"
+  ],
+  "files": [
+    {
+      "name": "artwork-admission-CSKnYslZ.js",
+      "bytes": 1570,
+      "sha256": "a60069b9593a37276231c28be3867a46acd467ef6aac319053a7a32d9537f026"
+    },
+    {
+      "name": "artwork-gif-preflight-DLIzUrPb.js",
+      "bytes": 1311,
+      "sha256": "c56ad95c51a8e697cb4101ee9baf5c41b258eb1b4d1e1a48343a91a79e230fbe"
+    },
+    {
+      "name": "browser-Cv7kx0Rc.js",
+      "bytes": 5339,
+      "sha256": "171ab3585ae1a1767cb85d687e3c976cc6854c5b040d26ef10a37a86769e6818"
+    },
+    {
+      "name": "gif-B8xTBRks.js",
+      "bytes": 17739,
+      "sha256": "c8b2e8e6785e880c1daa9477ad63c6eaf6a66a558a0e2ca727e13de44b849901"
+    },
+    {
+      "name": "image-bitmap-decode-BBWTQ-0Y.js",
+      "bytes": 1675,
+      "sha256": "61eea6a9c9406067d2a9302322c70296719fce35c6c89d8dbd69e820bb975147"
+    },
+    {
+      "name": "image-import-client-BRLUwZwc.js",
+      "bytes": 6974,
+      "sha256": "58a459e94eaca7cb33ed53533226d58da71e6b1a4f1d56068710edd15b43b198"
+    },
+    {
+      "name": "image-import-worker-B8KHTeb0.js",
+      "bytes": 31638,
+      "sha256": "5e287ede8997047da2d86cad8804ed7fac627f624535be2a33afe2a1f8b850e7"
+    },
+    {
+      "name": "index-DwuuFBLR.js",
+      "bytes": 248746,
+      "sha256": "812d32bd6dd37ae58edef01428e15b2b6470f32e6aeb135f260aaf734d2a1b8c"
+    },
+    {
+      "name": "index-ZQEuF6XA.css",
+      "bytes": 169627,
+      "sha256": "37166aee5d5e975a7054f4d513530e92f49954004d419a3f8d57f7c8ecb731a9"
+    },
+    {
+      "name": "palette-ase-gXqzrNdw.js",
+      "bytes": 2495,
+      "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+    },
+    {
+      "name": "palette-cleanup-client-CMVEDNTT.js",
+      "bytes": 7519,
+      "sha256": "f977aba4a47294dc8dcc5dc589bdbdea3ef37dc65e126dc8cb3c2b5a2e66f34a"
+    },
+    {
+      "name": "palette-cleanup-DErBeRHq.js",
+      "bytes": 4238,
+      "sha256": "cf01e7dec6103e84f24eb028804cc908b1f6115dd9a14dbf16125eabb5b675a9"
+    },
+    {
+      "name": "palette-cleanup-worker-ChpCTucA.js",
+      "bytes": 15055,
+      "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+    },
+    {
+      "name": "palette-generated-4kVO4N8_.js",
+      "bytes": 5985,
+      "sha256": "c78e8a12b7223f6ba34b84a9b9b7a8bad73b6381c2ed71a0a56da5babfa81353"
+    },
+    {
+      "name": "palette-generated-client-f67bl69z.js",
+      "bytes": 4186,
+      "sha256": "7beb7d9e66a5cdfddd751ff6cd3ef930b2ceb4e52f330e3148b899ff8b7b2f80"
+    },
+    {
+      "name": "palette-generated-worker-xpoMRM2c.js",
+      "bytes": 9829,
+      "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+    },
+    {
+      "name": "palette-gif-worker-CY8CibIc.js",
+      "bytes": 12253,
+      "sha256": "3aebd330a24ac1a96a2126de729d041bb2ee0f92bde2e21f35655371c9642ca9"
+    },
+    {
+      "name": "palette-limit-OiwOF5bZ.js",
+      "bytes": 4571,
+      "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+    },
+    {
+      "name": "palette-limit-worker-rkrL9P3s.js",
+      "bytes": 9860,
+      "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+    },
+    {
+      "name": "palette-lospec-BUdZU2lN.js",
+      "bytes": 2329,
+      "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+    },
+    {
+      "name": "palette-usage-6q0jFSVC.js",
+      "bytes": 1112,
+      "sha256": "7b927255bf03578410e0eb34a292bbb852abd82980560f4d367c195bfde2181a"
+    },
+    {
+      "name": "quantize-DsvDuXDJ.js",
+      "bytes": 13241,
+      "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+    },
+    {
+      "name": "save-393DjnP9.js",
+      "bytes": 43584,
+      "sha256": "7a1d27161c116206dd945e647b2aae5a69e263aee006090e43706fac8eabff84"
+    }
+  ]
+}

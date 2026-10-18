@@ -1,0 +1,629 @@
+{
+  "verifiedAt": "2026-10-18T14:57:37.700Z",
+  "exactAuthoredRgbaSha256": "9cd051044025ef09e2a8bc62493837940565413c4c3361c47ebe18e872e1fdf6",
+  "captures": [
+    {
+      "phase": "before",
+      "transportName": "keep-keep128-colorfetti.png",
+      "bytes": 386902,
+      "sha256": "a0ae196689d53baadef339eb9ad0568fec9cbe135ad3dc8c1ea036311f277b37"
+    },
+    {
+      "phase": "before",
+      "transportName": "keep-colorfetti.zip",
+      "bytes": 774070,
+      "sha256": "426a30a88cac27be23c5ec40c79731ec144ee2eb9bf31d3f48e123686f8abe12"
+    },
+    {
+      "phase": "before",
+      "transport": "actual App Save",
+      "name": "keep-keep128-colorfetti.png",
+      "bytes": 386902,
+      "sha256": "a0ae196689d53baadef339eb9ad0568fec9cbe135ad3dc8c1ea036311f277b37",
+      "width": 512,
+      "height": 512,
+      "depth": 8,
+      "type": 6,
+      "exactStoredRgba": true,
+      "sharpRgba": true
+    },
+    {
+      "phase": "before",
+      "transport": "actual App Save all ZIP",
+      "name": "keep128-colorfetti.png",
+      "bytes": 386902,
+      "sha256": "a0ae196689d53baadef339eb9ad0568fec9cbe135ad3dc8c1ea036311f277b37",
+      "width": 512,
+      "height": 512,
+      "depth": 8,
+      "type": 6,
+      "exactStoredRgba": true,
+      "sharpRgba": true
+    },
+    {
+      "phase": "before",
+      "transport": "actual App Save all ZIP",
+      "name": "keep128-2-colorfetti.png",
+      "bytes": 386902,
+      "sha256": "a0ae196689d53baadef339eb9ad0568fec9cbe135ad3dc8c1ea036311f277b37",
+      "width": 512,
+      "height": 512,
+      "depth": 8,
+      "type": 6,
+      "exactStoredRgba": true,
+      "sharpRgba": true
+    },
+    {
+      "phase": "after",
+      "transportName": "keep-keep128-colorfetti.png",
+      "bytes": 231802,
+      "sha256": "d70aa0e984faee516344b131d12a36d227eda0f61a08674669d490c30f725809"
+    },
+    {
+      "phase": "after",
+      "transportName": "keep-colorfetti.zip",
+      "bytes": 463870,
+      "sha256": "1f6abbb153d81caf1827b7517cb30173ee8227ad59dea4f417773586bd92564d"
+    },
+    {
+      "phase": "after",
+      "transport": "actual App Save",
+      "name": "keep-keep128-colorfetti.png",
+      "bytes": 231802,
+      "sha256": "d70aa0e984faee516344b131d12a36d227eda0f61a08674669d490c30f725809",
+      "width": 512,
+      "height": 512,
+      "depth": 8,
+      "type": 3,
+      "exactStoredRgba": true,
+      "sharpRgba": true
+    },
+    {
+      "phase": "after",
+      "transport": "actual App Save all ZIP",
+      "name": "keep128-colorfetti.png",
+      "bytes": 231802,
+      "sha256": "d70aa0e984faee516344b131d12a36d227eda0f61a08674669d490c30f725809",
+      "width": 512,
+      "height": 512,
+      "depth": 8,
+      "type": 3,
+      "exactStoredRgba": true,
+      "sharpRgba": true
+    },
+    {
+      "phase": "after",
+      "transport": "actual App Save all ZIP",
+      "name": "keep128-2-colorfetti.png",
+      "bytes": 231802,
+      "sha256": "d70aa0e984faee516344b131d12a36d227eda0f61a08674669d490c30f725809",
+      "width": 512,
+      "height": 512,
+      "depth": 8,
+      "type": 3,
+      "exactStoredRgba": true,
+      "sharpRgba": true
+    },
+    {
+      "phase": "before",
+      "transport": "actual App large legacy Save",
+      "name": "legacy4m-m8-legacy4m-colorfetti.png",
+      "bytes": 612977,
+      "sha256": "9d628a8c8780cadf753d84caa74fda6c8de9f3b0c17ab411f17325d07f15dbd1",
+      "width": 2048,
+      "height": 2048,
+      "depth": 2,
+      "exactStoredRgba": true,
+      "sharpRgba": true,
+      "onlyAddedSrgbChunk": true
+    },
+    {
+      "phase": "after",
+      "transport": "actual App large legacy Save",
+      "name": "legacy4m-m8-legacy4m-colorfetti.png",
+      "bytes": 612990,
+      "sha256": "773ed105fb6c99f4c91a4a98d10002997d485f0dba46d64fb162b28e5c01a878",
+      "width": 2048,
+      "height": 2048,
+      "depth": 2,
+      "exactStoredRgba": true,
+      "sharpRgba": true,
+      "onlyAddedSrgbChunk": true
+    }
+  ],
+  "builds": {
+    "before": {
+      "treeSha256": "ae604fbec963719e6ae3bb9c46cb6ca6e36513bed15a4cfb296f13db6e7ec1c7",
+      "files": [
+        {
+          "path": "apple-touch-icon-152x152.png",
+          "bytes": 546,
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "path": "apple-touch-icon-167x167.png",
+          "bytes": 617,
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "path": "apple-touch-icon-180x180.png",
+          "bytes": 677,
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "path": "assets/artwork-admission-D6iRh7vT.js",
+          "bytes": 1557,
+          "sha256": "4d61816d5650b2f460d8bd15f200d5af79b0e32001824b12eaf9a2764e553826"
+        },
+        {
+          "path": "assets/artwork-gif-preflight-CESGQGzZ.js",
+          "bytes": 1311,
+          "sha256": "3ed0c2d6ad6f0fdc3e22d15a1d3e9fc7c321c10096dc05318c1ab6b755f35b93"
+        },
+        {
+          "path": "assets/browser-8w6SLRW0.js",
+          "bytes": 4783,
+          "sha256": "5bd180fab4a1e7340ce176ae203d0b142f3234586a84b1bd82dee05e857d1e64"
+        },
+        {
+          "path": "assets/gif-DnMe86LR.js",
+          "bytes": 17739,
+          "sha256": "aadc47aaa4154e8622ad1a55ea1d13d934a1c9e1a50dbf026a0ad9c6a44736ea"
+        },
+        {
+          "path": "assets/image-bitmap-decode-BBWTQ-0Y.js",
+          "bytes": 1675,
+          "sha256": "61eea6a9c9406067d2a9302322c70296719fce35c6c89d8dbd69e820bb975147"
+        },
+        {
+          "path": "assets/image-import-client-DOpjy4OQ.js",
+          "bytes": 6974,
+          "sha256": "74b5149f18a7ae5f63640bcc16c684fc3656ffd05b1d450122cc3adb3d1f0d25"
+        },
+        {
+          "path": "assets/image-import-worker-B8KHTeb0.js",
+          "bytes": 31638,
+          "sha256": "5e287ede8997047da2d86cad8804ed7fac627f624535be2a33afe2a1f8b850e7"
+        },
+        {
+          "path": "assets/index-JlpsFw7_.js",
+          "bytes": 246098,
+          "sha256": "4e02d0e4261203d24a69b6406f812b7b6d50838624d9313b183dac26666232aa"
+        },
+        {
+          "path": "assets/index-ZQEuF6XA.css",
+          "bytes": 169627,
+          "sha256": "37166aee5d5e975a7054f4d513530e92f49954004d419a3f8d57f7c8ecb731a9"
+        },
+        {
+          "path": "assets/palette-ase-gXqzrNdw.js",
+          "bytes": 2495,
+          "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+        },
+        {
+          "path": "assets/palette-cleanup-client-Bk7lFBtg.js",
+          "bytes": 7466,
+          "sha256": "80b5f83ad2421cd6b7ea640416f3a2f51cbb649f38286bd0654ca6acdc088fe6"
+        },
+        {
+          "path": "assets/palette-cleanup-Dy8pNhAD.js",
+          "bytes": 4238,
+          "sha256": "f6a32a8893571b00eb87eb376070041c7fc8611f52e13e3887115f3a828cc517"
+        },
+        {
+          "path": "assets/palette-cleanup-worker-ChpCTucA.js",
+          "bytes": 15055,
+          "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+        },
+        {
+          "path": "assets/palette-generated-BOd6v7NW.js",
+          "bytes": 5985,
+          "sha256": "3e79a0fdcbf64fbe2ea2664ce49471dbe09437dbf66346d92fc4ffca343820e2"
+        },
+        {
+          "path": "assets/palette-generated-client-dT-IY7JJ.js",
+          "bytes": 4186,
+          "sha256": "042fc458c0064b198ace48753d1b5cd94df76a1a0cf647d96ae2faa704a267d5"
+        },
+        {
+          "path": "assets/palette-generated-worker-xpoMRM2c.js",
+          "bytes": 9829,
+          "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+        },
+        {
+          "path": "assets/palette-gif-worker-CY8CibIc.js",
+          "bytes": 12253,
+          "sha256": "3aebd330a24ac1a96a2126de729d041bb2ee0f92bde2e21f35655371c9642ca9"
+        },
+        {
+          "path": "assets/palette-limit-OiwOF5bZ.js",
+          "bytes": 4571,
+          "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+        },
+        {
+          "path": "assets/palette-limit-worker-rkrL9P3s.js",
+          "bytes": 9860,
+          "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+        },
+        {
+          "path": "assets/palette-lospec-BUdZU2lN.js",
+          "bytes": 2329,
+          "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+        },
+        {
+          "path": "assets/palette-usage-4MKZwvBU.js",
+          "bytes": 1093,
+          "sha256": "18607c92ce6bd94f148fa2c0d2d1ae4d488787310f633f6184252af38ea5097d"
+        },
+        {
+          "path": "assets/quantize-DsvDuXDJ.js",
+          "bytes": 13241,
+          "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+        },
+        {
+          "path": "assets/save-YCUFvtiG.js",
+          "bytes": 41328,
+          "sha256": "cd28219a43dc9a14222253622caaa8a5afeb45f88e15c62ef4249eefcc6e6a3d"
+        },
+        {
+          "path": "bench/conversion-fixes-2026-10-18/m8/browser.html",
+          "bytes": 1282,
+          "sha256": "47040fcf039c7860b725f00a3f01439b5590bae721bb7cedb4896256618a5db9"
+        },
+        {
+          "path": "colorfetti-trailer-poster.png",
+          "bytes": 719992,
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "path": "colorfetti-trailer.mp4",
+          "bytes": 8912471,
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "path": "favicon-16x16.png",
+          "bytes": 148,
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "path": "favicon-32x32.png",
+          "bytes": 174,
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "path": "favicon-48x48.png",
+          "bytes": 200,
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "path": "favicon-dark-16x16.png",
+          "bytes": 148,
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "path": "favicon-dark-32x32.png",
+          "bytes": 174,
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "path": "favicon-dark-48x48.png",
+          "bytes": 200,
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "path": "favicon-dark.ico",
+          "bytes": 15086,
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "path": "favicon-dark.svg",
+          "bytes": 601,
+          "sha256": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8"
+        },
+        {
+          "path": "favicon-light.svg",
+          "bytes": 601,
+          "sha256": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c"
+        },
+        {
+          "path": "favicon.ico",
+          "bytes": 15086,
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "path": "favicon.svg",
+          "bytes": 736,
+          "sha256": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a"
+        },
+        {
+          "path": "index.html",
+          "bytes": 4708,
+          "sha256": "07e80300f1c06bae345acc96d7f139d42ecaf630bf0dfef0de6b29f5efe270af"
+        },
+        {
+          "path": "manifest.webmanifest",
+          "bytes": 794,
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "path": "maskable-icon-192x192.png",
+          "bytes": 716,
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "path": "maskable-icon-512x512.png",
+          "bytes": 3197,
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "path": "monochrome-192x192.png",
+          "bytes": 724,
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "path": "pwa-192x192.png",
+          "bytes": 746,
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "path": "pwa-512x512.png",
+          "bytes": 3862,
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "path": "safari-pinned-tab.svg",
+          "bytes": 601,
+          "sha256": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+        }
+      ]
+    },
+    "after": {
+      "treeSha256": "e056ffd818f52d0342bbb2f9ea6eb5f55f5d798b1910f1a885f2a0c68e26b3d8",
+      "files": [
+        {
+          "path": "apple-touch-icon-152x152.png",
+          "bytes": 546,
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "path": "apple-touch-icon-167x167.png",
+          "bytes": 617,
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "path": "apple-touch-icon-180x180.png",
+          "bytes": 677,
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "path": "assets/artwork-admission-CSKnYslZ.js",
+          "bytes": 1570,
+          "sha256": "a60069b9593a37276231c28be3867a46acd467ef6aac319053a7a32d9537f026"
+        },
+        {
+          "path": "assets/artwork-gif-preflight-DLIzUrPb.js",
+          "bytes": 1311,
+          "sha256": "c56ad95c51a8e697cb4101ee9baf5c41b258eb1b4d1e1a48343a91a79e230fbe"
+        },
+        {
+          "path": "assets/browser-Cv7kx0Rc.js",
+          "bytes": 5339,
+          "sha256": "171ab3585ae1a1767cb85d687e3c976cc6854c5b040d26ef10a37a86769e6818"
+        },
+        {
+          "path": "assets/gif-B8xTBRks.js",
+          "bytes": 17739,
+          "sha256": "c8b2e8e6785e880c1daa9477ad63c6eaf6a66a558a0e2ca727e13de44b849901"
+        },
+        {
+          "path": "assets/image-bitmap-decode-BBWTQ-0Y.js",
+          "bytes": 1675,
+          "sha256": "61eea6a9c9406067d2a9302322c70296719fce35c6c89d8dbd69e820bb975147"
+        },
+        {
+          "path": "assets/image-import-client-BRLUwZwc.js",
+          "bytes": 6974,
+          "sha256": "58a459e94eaca7cb33ed53533226d58da71e6b1a4f1d56068710edd15b43b198"
+        },
+        {
+          "path": "assets/image-import-worker-B8KHTeb0.js",
+          "bytes": 31638,
+          "sha256": "5e287ede8997047da2d86cad8804ed7fac627f624535be2a33afe2a1f8b850e7"
+        },
+        {
+          "path": "assets/index-DwuuFBLR.js",
+          "bytes": 248746,
+          "sha256": "812d32bd6dd37ae58edef01428e15b2b6470f32e6aeb135f260aaf734d2a1b8c"
+        },
+        {
+          "path": "assets/index-ZQEuF6XA.css",
+          "bytes": 169627,
+          "sha256": "37166aee5d5e975a7054f4d513530e92f49954004d419a3f8d57f7c8ecb731a9"
+        },
+        {
+          "path": "assets/palette-ase-gXqzrNdw.js",
+          "bytes": 2495,
+          "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+        },
+        {
+          "path": "assets/palette-cleanup-client-CMVEDNTT.js",
+          "bytes": 7519,
+          "sha256": "f977aba4a47294dc8dcc5dc589bdbdea3ef37dc65e126dc8cb3c2b5a2e66f34a"
+        },
+        {
+          "path": "assets/palette-cleanup-DErBeRHq.js",
+          "bytes": 4238,
+          "sha256": "cf01e7dec6103e84f24eb028804cc908b1f6115dd9a14dbf16125eabb5b675a9"
+        },
+        {
+          "path": "assets/palette-cleanup-worker-ChpCTucA.js",
+          "bytes": 15055,
+          "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+        },
+        {
+          "path": "assets/palette-generated-4kVO4N8_.js",
+          "bytes": 5985,
+          "sha256": "c78e8a12b7223f6ba34b84a9b9b7a8bad73b6381c2ed71a0a56da5babfa81353"
+        },
+        {
+          "path": "assets/palette-generated-client-f67bl69z.js",
+          "bytes": 4186,
+          "sha256": "7beb7d9e66a5cdfddd751ff6cd3ef930b2ceb4e52f330e3148b899ff8b7b2f80"
+        },
+        {
+          "path": "assets/palette-generated-worker-xpoMRM2c.js",
+          "bytes": 9829,
+          "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+        },
+        {
+          "path": "assets/palette-gif-worker-CY8CibIc.js",
+          "bytes": 12253,
+          "sha256": "3aebd330a24ac1a96a2126de729d041bb2ee0f92bde2e21f35655371c9642ca9"
+        },
+        {
+          "path": "assets/palette-limit-OiwOF5bZ.js",
+          "bytes": 4571,
+          "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+        },
+        {
+          "path": "assets/palette-limit-worker-rkrL9P3s.js",
+          "bytes": 9860,
+          "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+        },
+        {
+          "path": "assets/palette-lospec-BUdZU2lN.js",
+          "bytes": 2329,
+          "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+        },
+        {
+          "path": "assets/palette-usage-6q0jFSVC.js",
+          "bytes": 1112,
+          "sha256": "7b927255bf03578410e0eb34a292bbb852abd82980560f4d367c195bfde2181a"
+        },
+        {
+          "path": "assets/quantize-DsvDuXDJ.js",
+          "bytes": 13241,
+          "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+        },
+        {
+          "path": "assets/save-393DjnP9.js",
+          "bytes": 43584,
+          "sha256": "7a1d27161c116206dd945e647b2aae5a69e263aee006090e43706fac8eabff84"
+        },
+        {
+          "path": "bench/conversion-fixes-2026-10-18/m8/browser.html",
+          "bytes": 1344,
+          "sha256": "abb789417528b0943139fdd9c0f12fd4f69aeb80545192d28bd91ddbe9063579"
+        },
+        {
+          "path": "colorfetti-trailer-poster.png",
+          "bytes": 719992,
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "path": "colorfetti-trailer.mp4",
+          "bytes": 8912471,
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "path": "favicon-16x16.png",
+          "bytes": 148,
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "path": "favicon-32x32.png",
+          "bytes": 174,
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "path": "favicon-48x48.png",
+          "bytes": 200,
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "path": "favicon-dark-16x16.png",
+          "bytes": 148,
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "path": "favicon-dark-32x32.png",
+          "bytes": 174,
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "path": "favicon-dark-48x48.png",
+          "bytes": 200,
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "path": "favicon-dark.ico",
+          "bytes": 15086,
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "path": "favicon-dark.svg",
+          "bytes": 601,
+          "sha256": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8"
+        },
+        {
+          "path": "favicon-light.svg",
+          "bytes": 601,
+          "sha256": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c"
+        },
+        {
+          "path": "favicon.ico",
+          "bytes": 15086,
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "path": "favicon.svg",
+          "bytes": 736,
+          "sha256": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a"
+        },
+        {
+          "path": "index.html",
+          "bytes": 4708,
+          "sha256": "14d6e42610993cac64d92ab3de5dd7f57729bea98d9da0ce6a3c0896dbed280c"
+        },
+        {
+          "path": "manifest.webmanifest",
+          "bytes": 794,
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "path": "maskable-icon-192x192.png",
+          "bytes": 716,
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "path": "maskable-icon-512x512.png",
+          "bytes": 3197,
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "path": "monochrome-192x192.png",
+          "bytes": 724,
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "path": "pwa-192x192.png",
+          "bytes": 746,
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "path": "pwa-512x512.png",
+          "bytes": 3862,
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "path": "safari-pinned-tab.svg",
+          "bytes": 601,
+          "sha256": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+        }
+      ]
+    }
+  },
+  "saveSourceSha256": "b47dd70534fe5ef20912cfb1aaf6a45c53a30a527c452912dfcb54b45f4f73b3",
+  "helperSha256": "379a2c8321cb3a32c8a8da94a79de3e60147a98616b93d78332faaf99cc373e2",
+  "note": "Native browser receipt verifies visible RGB and every alpha byte; these separate independent chunk/Sharp checks include hidden RGB. Build directories remained immutable during their in-memory frozen servers."
+}

@@ -1,0 +1,19 @@
+
+> colorfetti@0.0.0 test
+> vitest run src/lib/save.test.js src/lib/palette-export.test.js src/lib/png-compaction.test.js src/lib/png-compaction-cancel.test.js
+
+7:48:25 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti - using default configuration.
+
+ RUN  v4.1.11 C:/Programming_Files/Shilocity/colorfetti
+
+
+ Test Files  4 passed (4)
+      Tests  85 passed (85)
+   Start at  07:48:25
+   Duration  4.16s (transform 411ms, setup 0ms, import 679ms, tests 5.16s, environment 0ms)
+
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.21.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.1
+npm notice To update run: npm install -g npm@11.21.1
+npm notice

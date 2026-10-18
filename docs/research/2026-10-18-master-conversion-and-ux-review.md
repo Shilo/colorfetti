@@ -4,6 +4,12 @@ October 18, 2026. Use this document for implementation planning. It combines and
 
 The coordinator and one independent sub-agent challenged both reviews against source, product contracts, fresh conversion probes, independent image decoding, and a frozen production build. Several findings survived, but several proposed fixes did not. **Do not implement the original reviews as checklists.**
 
+Implementation follow-up: M1–M8 are implemented and challenged in the
+[implementation and validation record](2026-10-18-conversion-fixes-implementation.md).
+The findings and planning table below describe the pre-fix baseline. R1/R2 remain
+separate experiments; the follow-up records final policies, measured tradeoffs,
+desktop browser evidence, independent pixel checks and task acceptance.
+
 ## Recommended work
 
 | ID | Priority | Recommendation | Readiness |

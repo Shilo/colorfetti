@@ -151,8 +151,13 @@ source coordinates for RGB and alpha. Cleanup changes only RGB labels. The share
 8 MiB animation index cache charges three bytes per Keep sample, two per Cut sample,
 plus existing per-frame metadata. No extra converted clip is retained.
 
-PNG payloads for Save, Copy, ZIP and drag use exact RGBA8 when any output alpha is partial;
-binary PNGs retain indexed packing. Keep on binary GIF input preserves the prior
+PNG payloads for Save, Copy, ZIP and drag preserve exact stored RGBA. Partial-alpha
+output considers indexed packing for at most 256 used target-index/alpha pairs,
+with exact per-entry tRNS. It replaces the RGBA8 baseline only when the complete
+file is strictly smaller; ties, more states and tiny PNGs retain RGBA. Candidate
+raw rows are allocated after baseline raw rows are released; bounded packing and
+worker compression remain cancellable. Binary Palette PNG bytes stay unchanged.
+Keep on binary GIF input preserves the prior
 GIF output. Unexpected partial-alpha GIF frames fail explicitly before compression
 and are checked again on replay: users may choose Cut or copy a frame as PNG.
 No partial ZIP or silently thresholded Keep output is downloaded. Existing 1-bit
@@ -1571,13 +1576,12 @@ in browsers.
 - PNG files are encoded directly from the conversion, not through a canvas. Some browsers
   (Brave, Safari private browsing, Firefox strict mode) add noise when a page reads a
   canvas back, which would put stray colors in a saved file.
-- A PNG lists its colors once, as a palette of three (empty, first color, second color, with
-  the empty one transparent), and holds two bits for each pixel. A color that is None is
-  transparent too. The picture then has one color, and all three palette entries hold it,
-  so a program that blends the picture's edges has no other color to pull in. The picture is exactly the
-  same as a file with four bytes per pixel would give, but there is a sixteenth of the data
-  to compress, so a photo saves several times faster and into a smaller file. An image
-  editor opens such a file as an indexed-color image.
+- Legacy PNG declares sRGB and writes an indexed two-bit baseline. At up to 262,144
+  pixels, at most two actual RGBA states may use one-bit packing if the complete
+  tagged file is strictly smaller. Larger synchronous legacy exports pack/compress
+  that baseline once. None/empty pixels retain their existing hidden RGB values.
+  An image editor opens the file as an indexed-color image. sRGB adds 13 bytes
+  to an otherwise unchanged legacy baseline; no universal speedup is claimed.
 - Download all converts and encodes one image at a time, so that only one image's full
   conversion is in memory at once.
 - Files are offered through a temporary link with the `download` attribute, which works in
@@ -1755,7 +1759,7 @@ it is doing:
     transparency) comes out as light as it is at the sizes a tile could have;
   - Auto returns a value between two clearly separated groups.
 - `src/lib/save.js`: output naming, including duplicates; a PNG holds the palette and
-  exactly the given pixels, packed two bits each.
+  exactly the given pixels, packed at the smallest accepted exact representation.
 - `src/lib/image-drop.js`: protected hover payloads, file precedence, URL format
   fallbacks, signed queries, URI-list comments and duplicates, unsafe URLs, MIME types,
   filenames, failed responses and cancellation. Browser checks at desktop and phone

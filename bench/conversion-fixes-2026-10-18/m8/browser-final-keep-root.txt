@@ -1,0 +1,63 @@
+Browser tab: 10, Title: "Exact PNG state compaction challenge", URL: "http://127.0.0.1:5237/bench/conversion-fixes-2026-10-18/m8/browser.html".
+1 AXWebArea Exact PNG state compaction challenge, URL: 127.0.0.1:5237/bench/conversion-fixes-2026-10-18/m8/browser.html
+	2 heading Exact PNG state compaction challenge, Value: 1
+		3 text Exact PNG state compaction challenge
+	4 text Lossless alpha and RGB, emitted-state packing, and explicit sRGB metadata.
+	5 button Run PNG state/native pixel matrix, ID: run
+	6 button Import partial Keep fixture, ID: keep
+	7 button Import large legacy fixture (4MP), ID: legacy
+	8 container
+		9 text Capture label
+		10 text field (settable) Capture label, Value: keep, ID: label
+	11 text Ready
+	201 text Actual App captured: keep/colorfetti.zip, 463870 bytes
+	13 button (collapsed) Machine receipt, Secondary Actions: Expand
+		14 text Machine receipt
+	15 container Description: Production application, ID: app
+		16 AXWebArea Colorfetti, URL: 127.0.0.1:5237/index.html
+			100 container app
+				172 container
+					173 pop up button Preview keep128.png
+						174 image
+					175 container
+						176 button Save keep128.png
+						177 button Copy keep128.png
+						178 button Reuse colors from keep128.png
+						179 pop up button Preview keep128.png
+						180 button Remove keep128.png
+					181 pop up button Preview keep128.png
+						182 text keep128.png
+						183 text 512
+						184 text ×
+						185 text 512
+						186 text 8 colors
+					187 pop up button Preview keep128.png
+						188 image
+					189 container
+						190 button Save keep128.png
+						191 button Copy keep128.png
+						192 button Reuse colors from keep128.png
+						193 pop up button Preview keep128.png
+						194 button Remove keep128.png
+					195 pop up button Preview keep128.png
+						196 text keep128.png
+						197 text 512
+						198 text ×
+						199 text 512
+						200 text 8 colors
+				111 container
+					112 container Colors and palette
+						151 button Selected palette: Auto, 8 colors
+						116 button (collapsed) Description: Palette, Secondary Actions: Expand
+					117 container Conversion and style
+						118 checkbox Description: Auto conversion, Value: 1
+						119 button (collapsed) Description: Palette settings, Secondary Actions: Expand
+						120 text Showing images converted with Auto.
+					121 container File and app actions
+						166 container Add and save images
+							167 button Save all images
+							168 button Add images
+							169 button Remove all images
+						122 pop up button More
+
+The focused UI element is 16 AXWebArea Colorfetti, URL: 127.0.0.1:5237/index.html

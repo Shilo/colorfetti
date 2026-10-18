@@ -1,0 +1,591 @@
+{
+  "referenceCommit": "cdca311",
+  "referenceSourceSha256": "b584beb9ee98c4d6ca74f66f253906598796d65797a73807502abc5f92c1c452",
+  "sourceSha256": "b47dd70534fe5ef20912cfb1aaf6a45c53a30a527c452912dfcb54b45f4f73b3",
+  "stateHelperSha256": "379a2c8321cb3a32c8a8da94a79de3e60147a98616b93d78332faaf99cc373e2",
+  "node": "v25.0.0",
+  "compressor": "same installed fflate zlibSync level3",
+  "memoryNote": "Logical arrays, not whole heap: compressed payload/chunk/result copies coexist during PNG assembly. Raw row buffers serialize; no per-pixel state-index allocation.",
+  "results": [
+    {
+      "id": "keep128-262K",
+      "width": 512,
+      "height": 512,
+      "beforeBytes": 386902,
+      "taggedBaselineBytes": 386902,
+      "afterBytes": 231802,
+      "depth": 8,
+      "type": 3,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "a0ae196689d53baadef339eb9ad0568fec9cbe135ad3dc8c1ea036311f277b37",
+      "afterSha256": "d70aa0e984faee516344b131d12a36d227eda0f61a08674669d490c30f725809",
+      "timingMs": {
+        "before": [
+          30.64260000000013,
+          28.198000000000093,
+          27.572900000000118,
+          27.264799999999923,
+          27.85030000000006,
+          27.307000000000016,
+          27.321300000000065,
+          27.921999999999798,
+          27.586900000000014
+        ],
+        "after": [
+          35.337400000000116,
+          35.49559999999997,
+          34.871200000000044,
+          35.155500000000075,
+          34.64889999999991,
+          34.30320000000006,
+          34.397899999999936,
+          34.68949999999995,
+          34.52379999999994
+        ]
+      },
+      "mediansMs": {
+        "before": 27.586900000000014,
+        "after": 34.68949999999995,
+        "ratio": 1.257462781247619
+      },
+      "logicalArrays": {
+        "baselineRows": 1049088,
+        "candidateRowsUpperBound": 262656,
+        "stateLookupAndTables": 132354,
+        "retainedBetweenPasses": "only encoded baseline plus state tables; raw rows explicitly cleared"
+      }
+    },
+    {
+      "id": "keep128-400K",
+      "width": 800,
+      "height": 500,
+      "beforeBytes": 589675,
+      "taggedBaselineBytes": 589675,
+      "afterBytes": 353120,
+      "depth": 8,
+      "type": 3,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "a8b6a28b96d36503ff64e6da22e750f684f8b3405b0abff2e3ef03613cd759ff",
+      "afterSha256": "9cbd1db8efc1288ef79fee89c857d31a6f6480a8edf0e62dd0a77416d2240f92",
+      "timingMs": {
+        "before": [
+          41.40660000000025,
+          41.53009999999995,
+          42.90869999999995,
+          41.486199999999826,
+          40.7841999999996,
+          40.766200000000026,
+          41.430399999999736,
+          40.92689999999993,
+          41.36979999999994
+        ],
+        "after": [
+          54.31920000000014,
+          57.17459999999983,
+          54.04210000000012,
+          54.60669999999982,
+          55.92439999999988,
+          53.03189999999995,
+          53.88889999999992,
+          52.94389999999976,
+          54.41930000000002
+        ]
+      },
+      "mediansMs": {
+        "before": 41.40660000000025,
+        "after": 54.31920000000014,
+        "ratio": 1.311848835692856
+      },
+      "logicalArrays": {
+        "baselineRows": 1600500,
+        "candidateRowsUpperBound": 400500,
+        "stateLookupAndTables": 132354,
+        "retainedBetweenPasses": "only encoded baseline plus state tables; raw rows explicitly cleared"
+      }
+    },
+    {
+      "id": "keep256-odd",
+      "width": 65,
+      "height": 65,
+      "beforeBytes": 6924,
+      "taggedBaselineBytes": 6924,
+      "afterBytes": 5418,
+      "depth": 8,
+      "type": 3,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "75237076e7570b55ac10e1ce1dde3dd6ef7c61ea92f958a74b49e7c2bacf4503",
+      "afterSha256": "163fd1bc013f310f9ab290cee2bd79d2444d12f2031b2a0214314df5cc4a46d9",
+      "timingMs": {
+        "before": [
+          0.8087999999997919,
+          0.831000000000131,
+          0.5079000000000633,
+          0.474800000000414,
+          0.5963000000001557,
+          0.43830000000025393,
+          0.4353000000000975,
+          0.4308000000000902,
+          0.8262999999997191
+        ],
+        "after": [
+          1.1835000000000946,
+          1.3179000000000087,
+          0.8494000000000597,
+          2.6773999999995794,
+          0.6777999999999338,
+          0.6590000000001055,
+          0.6584000000002561,
+          0.6439999999997781,
+          0.6936000000000604
+        ]
+      },
+      "mediansMs": {
+        "before": 0.5079000000000633,
+        "after": 0.6936000000000604,
+        "ratio": 1.3656231541641544
+      },
+      "logicalArrays": {
+        "baselineRows": 16965,
+        "candidateRowsUpperBound": 4290,
+        "stateLookupAndTables": 132354,
+        "retainedBetweenPasses": "only encoded baseline plus state tables; raw rows explicitly cleared"
+      }
+    },
+    {
+      "id": "keep257-fallback",
+      "width": 65,
+      "height": 65,
+      "beforeBytes": 6927,
+      "taggedBaselineBytes": 6927,
+      "afterBytes": 6927,
+      "depth": 8,
+      "type": 6,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "551d9c4d14337c8eedb9c7aa9e5ccc44366b2112984275eb15a590356a561f23",
+      "afterSha256": "551d9c4d14337c8eedb9c7aa9e5ccc44366b2112984275eb15a590356a561f23",
+      "timingMs": {
+        "before": [
+          0.43360000000029686,
+          0.42510000000038417,
+          0.44030000000020664,
+          0.43400000000019645,
+          0.4234000000001288,
+          0.4277999999999338,
+          0.4517000000000735,
+          0.45879999999988286,
+          0.5158999999998741
+        ],
+        "after": [
+          0.47220000000015716,
+          0.45309999999972206,
+          0.4663999999997941,
+          0.473700000000008,
+          0.4773000000000138,
+          0.7439999999996871,
+          0.9216000000001259,
+          0.5194000000001324,
+          0.5634000000000015
+        ]
+      },
+      "mediansMs": {
+        "before": 0.43400000000019645,
+        "after": 0.4773000000000138,
+        "ratio": 1.0997695852529903
+      },
+      "logicalArrays": {
+        "baselineRows": 16965,
+        "candidateRowsUpperBound": 4290,
+        "stateLookupAndTables": 132354,
+        "retainedBetweenPasses": "only encoded baseline plus state tables; raw rows explicitly cleared"
+      }
+    },
+    {
+      "id": "flatKeep",
+      "width": 512,
+      "height": 512,
+      "beforeBytes": 2147,
+      "taggedBaselineBytes": 2147,
+      "afterBytes": 152,
+      "depth": 1,
+      "type": 3,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "f30e65c2269da0d75a11a3b92f7b039921b8038c30d8bb97e1569f42751ca89c",
+      "afterSha256": "e5848c55fbd1ba61007faf93b7e6f56acfa6772b375865cb5f1735171363a4fc",
+      "timingMs": {
+        "before": [
+          14.852100000000064,
+          14.549799999999777,
+          14.480199999999968,
+          14.69380000000001,
+          14.344899999999598,
+          14.333900000000085,
+          15.412499999999909,
+          14.579400000000078,
+          14.43769999999995
+        ],
+        "after": [
+          22.69569999999976,
+          18.85510000000022,
+          18.631399999999758,
+          20.97109999999975,
+          18.668299999999817,
+          18.447400000000016,
+          18.638300000000072,
+          18.792999999999665,
+          18.327800000000025
+        ]
+      },
+      "mediansMs": {
+        "before": 14.549799999999777,
+        "after": 18.668299999999817,
+        "ratio": 1.2830623101348544
+      },
+      "logicalArrays": {
+        "baselineRows": 1049088,
+        "candidateRowsUpperBound": 262656,
+        "stateLookupAndTables": 132354,
+        "retainedBetweenPasses": "only encoded baseline plus state tables; raw rows explicitly cleared"
+      }
+    },
+    {
+      "id": "tinyKeep",
+      "width": 1,
+      "height": 1,
+      "beforeBytes": 83,
+      "taggedBaselineBytes": 83,
+      "afterBytes": 83,
+      "depth": 8,
+      "type": 6,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "e07f053390785d034b976f8fda45f129b638d5ada13be6600ed9fd797e282848",
+      "afterSha256": "e07f053390785d034b976f8fda45f129b638d5ada13be6600ed9fd797e282848",
+      "timingMs": {
+        "before": [
+          0.08639999999968495,
+          0.08280000000013388,
+          0.0805000000000291,
+          0.0945000000001528,
+          0.08710000000019136,
+          0.08449999999993452,
+          0.07199999999966167,
+          0.0886000000000422,
+          0.07110000000011496
+        ],
+        "after": [
+          0.08869999999978972,
+          0.07330000000001746,
+          0.08519999999998618,
+          0.06959999999980937,
+          0.09829999999965366,
+          0.08559999999988577,
+          0.08629999999993743,
+          0.07500000000027285,
+          0.08579999999983556
+        ]
+      },
+      "mediansMs": {
+        "before": 0.08449999999993452,
+        "after": 0.08559999999988577,
+        "ratio": 1.013017751478723
+      },
+      "logicalArrays": {
+        "baselineRows": 5,
+        "candidateRowsUpperBound": 0,
+        "stateLookupAndTables": 0,
+        "retainedBetweenPasses": "only encoded baseline plus state tables; raw rows explicitly cleared"
+      }
+    },
+    {
+      "id": "compressedCandidateLoses",
+      "width": 49,
+      "height": 1,
+      "beforeBytes": 109,
+      "taggedBaselineBytes": 109,
+      "afterBytes": 109,
+      "depth": 8,
+      "type": 6,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "531489d853504f98c2658d506dd8aaa3c48f5b3788f455f92db99edf724f1b8f",
+      "afterSha256": "531489d853504f98c2658d506dd8aaa3c48f5b3788f455f92db99edf724f1b8f",
+      "timingMs": {
+        "before": [
+          0.10150000000021464,
+          0.08559999999988577,
+          0.09149999999999636,
+          0.07859999999982392,
+          0.17130000000042855,
+          0.20799999999962893,
+          0.13020000000005894,
+          0.12570000000005166,
+          0.10539999999991778
+        ],
+        "after": [
+          0.22249999999985448,
+          0.28150000000005093,
+          0.23039999999991778,
+          0.3773999999998523,
+          0.51299999999992,
+          0.2622999999998683,
+          0.2662000000000262,
+          0.2460999999998421,
+          0.2624000000000706
+        ]
+      },
+      "mediansMs": {
+        "before": 0.10539999999991778,
+        "after": 0.2624000000000706,
+        "ratio": 2.4895635673650403
+      },
+      "logicalArrays": {
+        "baselineRows": 197,
+        "candidateRowsUpperBound": 50,
+        "stateLookupAndTables": 132354,
+        "retainedBetweenPasses": "only encoded baseline plus state tables; raw rows explicitly cleared"
+      }
+    },
+    {
+      "id": "binaryPalette",
+      "width": 512,
+      "height": 512,
+      "beforeBytes": 101758,
+      "taggedBaselineBytes": 101758,
+      "afterBytes": 101758,
+      "depth": 4,
+      "type": 3,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "eaa918df539ed2a4750b43f3d07c9997c8d9cde0454c4c911bbe1b1376dd7dae",
+      "afterSha256": "eaa918df539ed2a4750b43f3d07c9997c8d9cde0454c4c911bbe1b1376dd7dae",
+      "timingMs": {
+        "before": [
+          8.302400000000034,
+          7.897900000000391,
+          8.384599999999864,
+          7.810500000000047,
+          8.167899999999918,
+          8.082700000000386,
+          10.990499999999884,
+          8.476000000000113,
+          7.998700000000099
+        ],
+        "after": [
+          8.597299999999905,
+          8.933500000000095,
+          8.644900000000234,
+          8.731600000000071,
+          8.371799999999894,
+          8.940399999999954,
+          8.751000000000204,
+          9.494799999999941,
+          9.269400000000132
+        ]
+      },
+      "mediansMs": {
+        "before": 8.167899999999918,
+        "after": 8.751000000000204,
+        "ratio": 1.0713892187710785
+      },
+      "logicalArrays": {
+        "baselineRows": 131584,
+        "candidateRowsUpperBound": 0,
+        "stateLookupAndTables": 0,
+        "retainedBetweenPasses": "only encoded baseline plus state tables; raw rows explicitly cleared"
+      }
+    },
+    {
+      "id": "legacyOpaque",
+      "width": 256,
+      "height": 256,
+      "beforeBytes": 10000,
+      "taggedBaselineBytes": 10013,
+      "afterBytes": 8525,
+      "depth": 1,
+      "type": 3,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "6b0f3036912e1237e547b20348d23613d5a2e9e8c7332ea1599285f0bff53c55",
+      "afterSha256": "dad97a7f2b7fe64128c3e204a5c08b41067837bb8f2a74fb5ab8ce61f56045cf",
+      "timingMs": {
+        "before": [
+          1.1817999999998392,
+          0.9182000000000698,
+          1.2514000000001033,
+          1.2692999999999302,
+          0.9974999999999454,
+          1.054399999999987,
+          1.0284999999998945,
+          1.0075999999999112,
+          1.1847999999999956
+        ],
+        "after": [
+          2.416099999999915,
+          1.968499999999949,
+          2.0394999999998618,
+          1.5923999999999978,
+          1.5882999999998901,
+          1.6185999999997875,
+          1.6073999999998705,
+          1.6784999999999854,
+          1.6131999999997788
+        ]
+      },
+      "mediansMs": {
+        "before": 1.054399999999987,
+        "after": 1.6185999999997875,
+        "ratio": 1.5350910470407888
+      },
+      "logicalArrays": {
+        "baselineRows": 16640,
+        "candidateRows": 8448
+      }
+    },
+    {
+      "id": "legacyNone",
+      "width": 256,
+      "height": 256,
+      "beforeBytes": 214,
+      "taggedBaselineBytes": 227,
+      "afterBytes": 187,
+      "depth": 1,
+      "type": 3,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "a0e00c830248afdf3bd74c25ad54f8c14d187842220661c16e39d7279a2f6485",
+      "afterSha256": "8c62da9575b54b0a6726135a2e56c920eb8b7e11ef5d93b69321a593bcd7dea0",
+      "timingMs": {
+        "before": [
+          0.5983000000001084,
+          0.5710000000003674,
+          0.5693999999998596,
+          0.44290000000000873,
+          0.695299999999861,
+          0.56670000000031,
+          0.4997000000003027,
+          0.4547000000002299,
+          0.4619999999999891
+        ],
+        "after": [
+          0.7761999999997897,
+          0.9719999999997526,
+          0.8887999999997191,
+          1.0253999999999905,
+          0.8679999999999382,
+          0.9632000000001426,
+          0.9065000000000509,
+          0.8916000000003805,
+          0.8764000000001033
+        ]
+      },
+      "mediansMs": {
+        "before": 0.56670000000031,
+        "after": 0.8916000000003805,
+        "ratio": 1.5733192165164864
+      },
+      "logicalArrays": {
+        "baselineRows": 16640,
+        "candidateRows": 8448
+      }
+    },
+    {
+      "id": "legacyThree",
+      "width": 256,
+      "height": 256,
+      "beforeBytes": 213,
+      "taggedBaselineBytes": 226,
+      "afterBytes": 226,
+      "depth": 2,
+      "type": 3,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "9dddfff0fb84ef5c4a31b44ad75aa6b49ccdaa070b90f7e268c848a044264115",
+      "afterSha256": "f803ec64ac21a773281224808f5bd3f7297c68001f1cd77dd4b3b52d38688a37",
+      "timingMs": {
+        "before": [
+          0.4670000000000982,
+          0.4580000000000837,
+          0.4671000000003005,
+          0.6601000000000568,
+          0.45879999999988286,
+          0.4544999999998254,
+          0.4406000000003587,
+          0.4489000000003216,
+          0.4418000000000575
+        ],
+        "after": [
+          0.5517999999997301,
+          0.5137999999997191,
+          0.5293000000001484,
+          0.5804000000002816,
+          0.5255999999999403,
+          0.49459999999999127,
+          0.5160000000000764,
+          0.5016999999998006,
+          0.5115000000000691
+        ]
+      },
+      "mediansMs": {
+        "before": 0.4580000000000837,
+        "after": 0.5160000000000764,
+        "ratio": 1.1266375545851137
+      },
+      "logicalArrays": {
+        "baselineRows": 16640,
+        "candidateRows": 8448
+      }
+    },
+    {
+      "id": "legacyTinyThree",
+      "width": 3,
+      "height": 1,
+      "beforeBytes": 101,
+      "taggedBaselineBytes": 114,
+      "afterBytes": 114,
+      "depth": 2,
+      "type": 3,
+      "exactStoredRGBA": true,
+      "sharpRGBA": true,
+      "beforeSha256": "caa146c380652ef6c47b1e1cbbddaa75cb9e7675a2c24cc68bec407f6354dcc1",
+      "afterSha256": "86ec8436eec6b607cb61f99803b2cb5124bd71c397c6a1a8acaea71d78889cd3",
+      "timingMs": {
+        "before": [
+          0.05670000000009168,
+          0.12530000000015207,
+          0.10130000000026484,
+          0.08889999999973952,
+          0.10230000000001382,
+          0.06629999999995562,
+          0.09569999999985157,
+          0.08270000000038635,
+          0.08320000000003347
+        ],
+        "after": [
+          0.12190000000009604,
+          0.09659999999985303,
+          0.08939999999984138,
+          0.12310000000024957,
+          0.1323000000002139,
+          0.10400000000026921,
+          0.08849999999983993,
+          0.09229999999979555,
+          0.09709999999995489
+        ]
+      },
+      "mediansMs": {
+        "before": 0.08889999999973952,
+        "after": 0.09709999999995489,
+        "ratio": 1.092238470193919
+      },
+      "logicalArrays": {
+        "baselineRows": 2,
+        "candidateRows": 2
+      }
+    }
+  ]
+}

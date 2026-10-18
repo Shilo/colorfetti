@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-18",
+  "scope": "Combined final M1-M8 product source",
+  "testCommand": "npm test -- --reporter=dot",
+  "testFilesPassed": 83,
+  "testsPassed": 1378,
+  "testsSkipped": 2,
+  "buildCommand": "npm run build",
+  "buildPassed": true,
+  "modulesTransformed": 209,
+  "browser": "Codex in-app desktop Chromium; no physical phone",
+  "note": "Before/after browser receipts and independent pixel/metadata oracles are retained per task. Focused test counts overlap and must not be summed. Existing ImageBitmap mock warning and two baseline skips remain."
+}

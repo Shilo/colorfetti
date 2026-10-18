@@ -1,0 +1,183 @@
+Browser tab: 10, Title: "Exact PNG state compaction challenge", URL: "http://127.0.0.1:5237/bench/conversion-fixes-2026-10-18/m8/browser.html".
+0 AXWebArea Exact PNG state compaction challenge, URL: 127.0.0.1:5237/bench/conversion-fixes-2026-10-18/m8/browser.html
+	1 heading Exact PNG state compaction challenge, Value: 1
+		2 text Exact PNG state compaction challenge
+	3 text Lossless alpha and RGB, emitted-state packing, and explicit sRGB metadata.
+	4 button Run PNG state/native pixel matrix, ID: run
+	5 button Import partial Keep fixture, ID: keep
+	6 button Import large legacy fixture (4MP), ID: legacy
+	7 container
+		8 text Capture label
+		9 text field (settable) Capture label, Value: keep, ID: label
+	10 container results
+		11 heading PASS: native PNG decoding, Value: 2
+			12 text PASS: native PNG decoding
+		13 table
+			14 row
+				15 cell
+					16 text Case
+				17 cell
+					18 text PNG type
+				19 cell
+					20 text Bits
+				21 cell
+					22 text sRGB
+				23 cell
+					24 text Bytes
+				25 cell
+					26 text Native pixels / sync-async
+			27 row
+				28 cell
+					29 text keep128
+				30 cell
+					31 text 3
+				32 cell
+					33 text 8
+				34 cell
+					35 text true
+				36 cell
+					37 text 231802
+				38 cell
+					39 text true / true
+			40 row
+				41 cell
+					42 text keep256
+				43 cell
+					44 text 3
+				45 cell
+					46 text 8
+				47 cell
+					48 text true
+				49 cell
+					50 text 5418
+				51 cell
+					52 text true / true
+			53 row
+				54 cell
+					55 text keep257
+				56 cell
+					57 text 6
+				58 cell
+					59 text 8
+				60 cell
+					61 text true
+				62 cell
+					63 text 6927
+				64 cell
+					65 text true / true
+			66 row
+				67 cell
+					68 text tinyKeep
+				69 cell
+					70 text 6
+				71 cell
+					72 text 8
+				73 cell
+					74 text true
+				75 cell
+					76 text 83
+				77 cell
+					78 text true / true
+			79 row
+				80 cell
+					81 text legacy-opaque
+				82 cell
+					83 text 3
+				84 cell
+					85 text 1
+				86 cell
+					87 text true
+				88 cell
+					89 text 8525
+				90 cell
+					91 text true / sync
+			92 row
+				93 cell
+					94 text legacy-none
+				95 cell
+					96 text 3
+				97 cell
+					98 text 1
+				99 cell
+					100 text true
+				101 cell
+					102 text 187
+				103 cell
+					104 text true / sync
+			105 row
+				106 cell
+					107 text legacy-three
+				108 cell
+					109 text 3
+				110 cell
+					111 text 2
+				112 cell
+					113 text true
+				114 cell
+					115 text 226
+				116 cell
+					117 text true / sync
+			118 row
+				119 cell
+					120 text legacy-large-4MP
+				121 cell
+					122 text 3
+				123 cell
+					124 text 2
+				125 cell
+					126 text true
+				127 cell
+					128 text 612990
+				129 cell
+					130 text true / sync
+	131 text Actual App captured: keep/colorfetti.zip, 463870 bytes
+	132 button (collapsed) Machine receipt, Secondary Actions: Expand
+		133 text Machine receipt
+	134 container Description: Production application, ID: app
+		135 AXWebArea Colorfetti, URL: 127.0.0.1:5237/index.html
+			136 container app
+				137 container
+					138 pop up button Preview keep128.png
+						139 image
+					140 container
+						141 button Save keep128.png
+						142 button Copy keep128.png
+						143 button Reuse colors from keep128.png
+						144 pop up button Preview keep128.png
+						145 button Remove keep128.png
+					146 pop up button Preview keep128.png
+						147 text keep128.png
+						148 text 512
+						149 text ×
+						150 text 512
+						151 text 8 colors
+					152 pop up button Preview keep128.png
+						153 image
+					154 container
+						155 button Save keep128.png
+						156 button Copy keep128.png
+						157 button Reuse colors from keep128.png
+						158 pop up button Preview keep128.png
+						159 button Remove keep128.png
+					160 pop up button Preview keep128.png
+						161 text keep128.png
+						162 text 512
+						163 text ×
+						164 text 512
+						165 text 8 colors
+				166 container
+					167 container Colors and palette
+						168 button Selected palette: Auto, 8 colors
+						169 button (collapsed) Description: Palette, Secondary Actions: Expand
+					170 container Conversion and style
+						171 checkbox Description: Auto conversion, Value: 1
+						172 button (collapsed) Description: Palette settings, Secondary Actions: Expand
+						173 text Showing images converted with Auto.
+					174 container File and app actions
+						175 container Add and save images
+							176 button Save all images
+							177 button Add images
+							178 button Remove all images
+						179 pop up button More
+
+The focused UI element is 4 button Run PNG state/native pixel matrix, ID: run

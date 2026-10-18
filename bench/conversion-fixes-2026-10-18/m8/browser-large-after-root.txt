@@ -1,0 +1,50 @@
+Browser tab: 10, Title: "Exact PNG state compaction challenge", URL: "http://127.0.0.1:5237/bench/conversion-fixes-2026-10-18/m8/browser.html".
+1 AXWebArea Exact PNG state compaction challenge, URL: 127.0.0.1:5237/bench/conversion-fixes-2026-10-18/m8/browser.html
+	2 heading Exact PNG state compaction challenge, Value: 1
+		3 text Exact PNG state compaction challenge
+	4 text Lossless alpha and RGB, emitted-state packing, and explicit sRGB metadata.
+	5 button Run PNG state/native pixel matrix, ID: run
+	6 button Import partial Keep fixture, ID: keep
+	7 button Import large legacy fixture (4MP), ID: legacy
+	8 container
+		9 text Capture label
+		10 text field (settable) Capture label, Value: legacy4m, ID: label
+	11 text Ready
+	99 text Actual App captured: legacy4m/m8-legacy4m-colorfetti.png, 612990 bytes
+	13 button (collapsed) Machine receipt, Secondary Actions: Expand
+		14 text Machine receipt
+	15 container Description: Production application, ID: app
+		16 AXWebArea Colorfetti, URL: 127.0.0.1:5237/index.html
+			17 container app
+				38 container
+					39 pop up button Preview m8-legacy4m.png
+						40 image
+					41 button Save m8-legacy4m.png
+					42 button Copy m8-legacy4m.png
+					44 pop up button Preview m8-legacy4m.png
+					45 button Remove m8-legacy4m.png
+					46 pop up button Preview m8-legacy4m.png
+						47 text m8-legacy4m.png
+						48 text 2048
+						49 text ×
+						50 text 2048
+						79 text 2 colors
+				28 container
+					29 container Colors and palette
+						96 color well (settable) Description: Color for lines and dark pixels, Value: #222323
+						97 button Swap colors
+						98 color well (settable) Description: Color for fill and light pixels, Value: #f0f6f0
+						31 button (collapsed) Description: Palette, Secondary Actions: Expand
+					32 container Conversion and style
+						33 checkbox Description: Solid conversion, Value: 1
+						34 button (collapsed) Description: Style, Secondary Actions: Expand
+						35 text Showing images converted with Solid.
+					36 container File and app actions
+						52 container Add and save images
+							53 button Save image
+							54 button Add images
+							55 button Remove all images
+						37 pop up button More
+				100 text Downloading m8-legacy4m-colorfetti.png…
+
+The focused UI element is 16 AXWebArea Colorfetti, URL: 127.0.0.1:5237/index.html

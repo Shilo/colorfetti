@@ -1,0 +1,360 @@
+{
+  "node": "v25.0.0",
+  "referenceCommit": "8a84b6c",
+  "sourceSha256": "b47dd70534fe5ef20912cfb1aaf6a45c53a30a527c452912dfcb54b45f4f73b3",
+  "compressor": "same installed fflate zlibSync level3",
+  "scope": "Independent synchronous PNG-only timings. No conversion, browser latency or whole-process memory claim. Three timed passes after one warm-up; alternating order. Wall and process-CPU samples retained to expose OS/GC contention; not a latency ceiling.",
+  "results": [
+    {
+      "w": 512,
+      "h": 512,
+      "pixels": 262144,
+      "pattern": "flat-one-state",
+      "bytes": {
+        "before": 373,
+        "after": 139
+      },
+      "beforeMs": 1.864900000000489,
+      "afterMs": 4.372499999999491,
+      "ratio": 2.344629738859105,
+      "samplesMs": {
+        "before": [
+          1.9688999999998487,
+          1.864900000000489,
+          1.754399999999805
+        ],
+        "after": [
+          5.080799999999726,
+          4.372499999999491,
+          3.6177999999999884
+        ]
+      },
+      "cpuBeforeMs": 0,
+      "cpuAfterMs": 0,
+      "cpuSamplesMs": {
+        "before": [
+          15,
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "w": 512,
+      "h": 512,
+      "pixels": 262144,
+      "pattern": "random-two-states",
+      "bytes": {
+        "before": 38763,
+        "after": 33368
+      },
+      "beforeMs": 5.8158000000003085,
+      "afterMs": 7.767799999999625,
+      "ratio": 1.3356374015611288,
+      "samplesMs": {
+        "before": [
+          5.026700000000346,
+          5.8158000000003085,
+          8.157799999999952
+        ],
+        "after": [
+          10.910800000000563,
+          7.767799999999625,
+          7.4354000000003
+        ]
+      },
+      "cpuBeforeMs": 15,
+      "cpuAfterMs": 0,
+      "cpuSamplesMs": {
+        "before": [
+          15,
+          0,
+          15
+        ],
+        "after": [
+          0,
+          32,
+          0
+        ]
+      }
+    },
+    {
+      "w": 512,
+      "h": 512,
+      "pixels": 262144,
+      "pattern": "three-states",
+      "bytes": {
+        "before": 418,
+        "after": 431
+      },
+      "beforeMs": 1.5957999999991443,
+      "afterMs": 1.7019000000000233,
+      "ratio": 1.0664870284502668,
+      "samplesMs": {
+        "before": [
+          1.5957999999991443,
+          2.007499999999709,
+          1.5814000000000306
+        ],
+        "after": [
+          1.910899999999856,
+          1.5342000000000553,
+          1.7019000000000233
+        ]
+      },
+      "cpuBeforeMs": 0,
+      "cpuAfterMs": 0,
+      "cpuSamplesMs": {
+        "before": [
+          48,
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "w": 2048,
+      "h": 2048,
+      "pixels": 4194304,
+      "pattern": "flat-one-state",
+      "bytes": {
+        "before": 4722,
+        "after": 4735
+      },
+      "beforeMs": 18.282100000000355,
+      "afterMs": 27.584899999999834,
+      "ratio": 1.5088474518791222,
+      "samplesMs": {
+        "before": [
+          19.31500000000051,
+          17.891499999999724,
+          18.282100000000355
+        ],
+        "after": [
+          26.73700000000008,
+          28.05079999999998,
+          27.584899999999834
+        ]
+      },
+      "cpuBeforeMs": 15,
+      "cpuAfterMs": 31,
+      "cpuSamplesMs": {
+        "before": [
+          16,
+          15,
+          15
+        ],
+        "after": [
+          31,
+          31,
+          32
+        ]
+      }
+    },
+    {
+      "w": 2048,
+      "h": 2048,
+      "pixels": 4194304,
+      "pattern": "random-two-states",
+      "bytes": {
+        "before": 613058,
+        "after": 613071
+      },
+      "beforeMs": 65.63780000000042,
+      "afterMs": 75.42360000000008,
+      "ratio": 1.1490878731462602,
+      "samplesMs": {
+        "before": [
+          64.82380000000012,
+          67.25999999999931,
+          65.63780000000042
+        ],
+        "after": [
+          75.26310000000012,
+          75.42360000000008,
+          77.70970000000034
+        ]
+      },
+      "cpuBeforeMs": 78,
+      "cpuAfterMs": 78,
+      "cpuSamplesMs": {
+        "before": [
+          63,
+          78,
+          78
+        ],
+        "after": [
+          78,
+          78,
+          62
+        ]
+      }
+    },
+    {
+      "w": 2048,
+      "h": 2048,
+      "pixels": 4194304,
+      "pattern": "three-states",
+      "bytes": {
+        "before": 5242,
+        "after": 5255
+      },
+      "beforeMs": 17.618200000000797,
+      "afterMs": 26.355099999999766,
+      "ratio": 1.495901965013371,
+      "samplesMs": {
+        "before": [
+          18.00749999999971,
+          17.51260000000002,
+          17.618200000000797
+        ],
+        "after": [
+          28.500599999999395,
+          26.355099999999766,
+          26.306499999999687
+        ]
+      },
+      "cpuBeforeMs": 16,
+      "cpuAfterMs": 16,
+      "cpuSamplesMs": {
+        "before": [
+          31,
+          16,
+          15
+        ],
+        "after": [
+          16,
+          15,
+          32
+        ]
+      }
+    },
+    {
+      "w": 4096,
+      "h": 4096,
+      "pixels": 16777216,
+      "pattern": "flat-one-state",
+      "bytes": {
+        "before": 11919,
+        "after": 11932
+      },
+      "beforeMs": 73.40020000000004,
+      "afterMs": 106.04140000000007,
+      "ratio": 1.4447017855537179,
+      "samplesMs": {
+        "before": [
+          73.40020000000004,
+          70.67420000000038,
+          75.6943999999994
+        ],
+        "after": [
+          105.68099999999959,
+          106.04140000000007,
+          107.26040000000012
+        ]
+      },
+      "cpuBeforeMs": 78,
+      "cpuAfterMs": 109,
+      "cpuSamplesMs": {
+        "before": [
+          78,
+          63,
+          78
+        ],
+        "after": [
+          93,
+          109,
+          110
+        ]
+      }
+    },
+    {
+      "w": 4096,
+      "h": 4096,
+      "pixels": 16777216,
+      "pattern": "random-two-states",
+      "bytes": {
+        "before": 2446228,
+        "after": 2446241
+      },
+      "beforeMs": 261.65160000000014,
+      "afterMs": 313.08930000000055,
+      "ratio": 1.196588516943907,
+      "samplesMs": {
+        "before": [
+          261.65160000000014,
+          260.5684000000001,
+          288.7490999999991
+        ],
+        "after": [
+          290.53679999999986,
+          313.08930000000055,
+          322.8271999999997
+        ]
+      },
+      "cpuBeforeMs": 266,
+      "cpuAfterMs": 297,
+      "cpuSamplesMs": {
+        "before": [
+          266,
+          250,
+          281
+        ],
+        "after": [
+          297,
+          312,
+          297
+        ]
+      }
+    },
+    {
+      "w": 4096,
+      "h": 4096,
+      "pixels": 16777216,
+      "pattern": "three-states",
+      "bytes": {
+        "before": 12660,
+        "after": 12673
+      },
+      "beforeMs": 103.29639999999927,
+      "afterMs": 142.03600000000006,
+      "ratio": 1.3750333990342458,
+      "samplesMs": {
+        "before": [
+          103.29639999999927,
+          108.3161999999993,
+          102.22160000000076
+        ],
+        "after": [
+          139.66319999999905,
+          150.8666000000012,
+          142.03600000000006
+        ]
+      },
+      "cpuBeforeMs": 78,
+      "cpuAfterMs": 110,
+      "cpuSamplesMs": {
+        "before": [
+          78,
+          62,
+          79
+        ],
+        "after": [
+          110,
+          125,
+          78
+        ]
+      }
+    }
+  ]
+}

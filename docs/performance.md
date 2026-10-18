@@ -1,5 +1,33 @@
 # Performance
 
+## Exact PNG compaction (October 18, 2026)
+
+Partial Keep may encode at most 256 used RGB/alpha states with indexed tRNS.
+The completed candidate must beat the exact RGBA baseline; ties, overflow and
+tiny files keep the baseline. Binary Palette bytes stay unchanged. The additional
+fixed state arrays total 132,354 bytes; raw baseline/candidate rows are serialized,
+with only encoded baseline bytes retained between passes. Packing checks/yields
+at 65,536-pixel batches, including wide rows, and worker compression is cancellable.
+This bounds defined arrays, not browser heap, native memory or delayed collection.
+
+The desktop actual Save fixture shrank 386,902→231,802 bytes (40.1%); its two-image
+ZIP shrank 774,070→463,870. Independent Node PNG unpacking and Sharp compare every
+stored RGBA byte. With the same installed fflate level 3, the synthetic 262K-pixel
+128-state median increased 27.59→34.69 ms; compression savings spend extra CPU.
+The retained 109-byte RGBA/118-byte indexed counterexample correctly keeps RGBA.
+
+Legacy PNG now declares sRGB, adding 13 bytes to unchanged baselines. Exact one-bit
+compaction considers actual RGBA roles only up to 262,144 pixels, and only wins on
+strictly smaller complete tagged output. A rejected uncapped implementation made
+a 16 MP random fixture rise about 163→424 ms. Final larger exports pack/compress
+their two-bit reference once, retaining fused validation overhead and the existing
+synchronous path. The actual 4 MP Save remains 612,977→612,990 bytes with only the
+sRGB chunk inserted. No universal latency improvement is claimed; asynchronous
+legacy still encoding remains follow-up research.
+
+Evidence, source hashes, cost receipts, independent peer challenge and reproduction:
+`bench/conversion-fixes-2026-10-18/m8/README.md` and `m8/PEER-REVIEW.md`.
+
 ## Native selected-frame inspection (October 18, 2026)
 
 The overview retains sampling and now reports actual raster/source dimensions.

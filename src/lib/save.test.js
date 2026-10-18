@@ -130,8 +130,9 @@ describe('pngBytes', () => {
     const png = pngBytes({ mask: Uint8Array.from([...row, ...row]), w: 5, h: 2, first: '#f6dfa4', second: '#0b0a0c' });
 
     expect([...png.subarray(0, 8)]).toEqual([137, 80, 78, 71, 13, 10, 26, 10]);
-    const all = chunks(png), [head, colors, clear, data] = all;
-    expect(all.map(c => c.type)).toEqual(['IHDR', 'PLTE', 'tRNS', 'IDAT', 'IEND']);
+    const all = chunks(png), [head, srgb, colors, clear, data] = all;
+    expect(all.map(c => c.type)).toEqual(['IHDR', 'sRGB', 'PLTE', 'tRNS', 'IDAT', 'IEND']);
+    expect([...srgb.data]).toEqual([0]);
     expect(all.every(c => c.crcOk)).toBe(true);
     // width 5, height 2, 2 bits per pixel, colors from a palette, no interlace
     expect([...head.data]).toEqual([0, 0, 0, 5, 0, 0, 0, 2, 2, 3, 0, 0, 0]);
@@ -144,14 +145,18 @@ describe('pngBytes', () => {
 
   it('makes a color that is None see-through, and gives every see-through entry the color that is left', () => {
     const row = [1, 0, 2, 2, 1], image = { mask: Uint8Array.from([...row, ...row]), w: 5, h: 2 };
-    const [, colors1, clear1, data1] = chunks(pngBytes({ ...image, first: null, second: '#0b0a0c' }));
-    expect([...colors1.data]).toEqual([11, 10, 12, 11, 10, 12, 11, 10, 12]);
-    expect([...clear1.data]).toEqual([0, 0]);
-    const [, colors2, clear2] = chunks(pngBytes({ ...image, first: '#f6dfa4', second: null }));
-    expect([...colors2.data]).toEqual([246, 223, 164, 246, 223, 164, 246, 223, 164]);
-    expect([...clear2.data]).toEqual([0, 255, 0]);
-    // the pixels themselves are written as ever
-    expect([...inflateSync(data1.data)]).toEqual([0, 0b01001010, 0b01000000, 0, 0b01001010, 0b01000000]);
+    const [head1, , colors1, clear1, data1] = chunks(pngBytes({ ...image, first: null, second: '#0b0a0c' }));
+    expect(head1.data[8]).toBe(1);
+    expect([...colors1.data]).toEqual([11, 10, 12, 11, 10, 12]);
+    expect([...clear1.data]).toEqual([0]);
+    const [head2, , colors2, clear2, data2] = chunks(pngBytes({ ...image, first: '#f6dfa4', second: null }));
+    expect(head2.data[8]).toBe(1);
+    expect([...colors2.data]).toEqual([246, 223, 164, 246, 223, 164]);
+    expect([...clear2.data]).toEqual([0]);
+    // Both roles map to the same hidden RGB as before; only the remaining ink
+    // is opaque. One-bit rows still start at the high bit, with zero padding.
+    expect([...inflateSync(data1.data)]).toEqual([0, 0b00110000, 0, 0b00110000]);
+    expect([...inflateSync(data2.data)]).toEqual([0, 0b10001000, 0, 0b10001000]);
   });
 });
 
