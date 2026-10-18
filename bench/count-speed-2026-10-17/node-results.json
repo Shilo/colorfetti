@@ -1,0 +1,106 @@
+{
+  "runtime": "v25.0.0",
+  "kind": "Node kernel only; no browser/rendering claim",
+  "receipt": [
+    {
+      "name": "kenney-sheet-2048.png",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "results": [
+        {
+          "palette": 64,
+          "coldSourceMedianMs": 11.714099999999974,
+          "baselineMedianMs": 37.09190000000001,
+          "warmSourceMedianMs": 0.10810000000003583
+        },
+        {
+          "palette": 32,
+          "coldSourceMedianMs": 11.554699999999912,
+          "baselineMedianMs": 37.34529999999995,
+          "warmSourceMedianMs": 0.07800000000008822
+        }
+      ]
+    },
+    {
+      "name": "real-magic.gif",
+      "width": 32,
+      "height": 32,
+      "frames": 6,
+      "results": [
+        {
+          "palette": 64,
+          "coldSourceMedianMs": 0.32789999999999964,
+          "baselineMedianMs": 0.2823000000000775,
+          "warmSourceMedianMs": 0.3934000000000424
+        },
+        {
+          "palette": 32,
+          "coldSourceMedianMs": 0.22349999999994452,
+          "baselineMedianMs": 0.15240000000005693,
+          "warmSourceMedianMs": 0.19719999999995252
+        }
+      ]
+    },
+    {
+      "name": "kenney-motion-128.gif",
+      "width": 128,
+      "height": 128,
+      "frames": 32,
+      "results": [
+        {
+          "palette": 64,
+          "coldSourceMedianMs": 1.258199999999988,
+          "baselineMedianMs": 3.383699999999976,
+          "warmSourceMedianMs": 0.5099999999999909
+        },
+        {
+          "palette": 32,
+          "coldSourceMedianMs": 1.281400000000076,
+          "baselineMedianMs": 3.380800000000022,
+          "warmSourceMedianMs": 0.4119999999999209
+        }
+      ]
+    },
+    {
+      "name": "kenney-motion-256.gif",
+      "width": 256,
+      "height": 256,
+      "frames": 48,
+      "results": [
+        {
+          "palette": 64,
+          "coldSourceMedianMs": 4.9097000000000435,
+          "baselineMedianMs": 17.19029999999998,
+          "warmSourceMedianMs": 0.6888999999999896
+        },
+        {
+          "palette": 32,
+          "coldSourceMedianMs": 4.709699999999884,
+          "baselineMedianMs": 16.968799999999874,
+          "warmSourceMedianMs": 0.6714999999999236
+        }
+      ]
+    },
+    {
+      "name": "high-entropy-16384rgb",
+      "width": 128,
+      "height": 128,
+      "frames": 1,
+      "results": [
+        {
+          "palette": 64,
+          "coldSourceMedianMs": 2.931600000000117,
+          "baselineMedianMs": 2.7614000000000942,
+          "warmSourceMedianMs": 2.776800000000094
+        },
+        {
+          "palette": 32,
+          "coldSourceMedianMs": 2.1476000000000113,
+          "baselineMedianMs": 1.9416999999998552,
+          "warmSourceMedianMs": 1.955600000000004
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "Node timer probe only; first trial is a cold JS engine, not a browser latency guarantee",
+  "trials": [
+    {
+      "trial": 0,
+      "totalMs": 36.6973,
+      "maxTimerGapMs": 18.957,
+      "ticks": 3,
+      "colors": 8
+    },
+    {
+      "trial": 1,
+      "totalMs": 22.7149,
+      "maxTimerGapMs": 8.1781,
+      "ticks": 2,
+      "colors": 8
+    },
+    {
+      "trial": 2,
+      "totalMs": 22.93419999999999,
+      "maxTimerGapMs": 8.195499999999996,
+      "ticks": 2,
+      "colors": 8
+    },
+    {
+      "trial": 3,
+      "totalMs": 20.371399999999994,
+      "maxTimerGapMs": 8.171800000000005,
+      "ticks": 2,
+      "colors": 8
+    },
+    {
+      "trial": 4,
+      "totalMs": 20.04050000000001,
+      "maxTimerGapMs": 8.133099999999985,
+      "ticks": 2,
+      "colors": 8
+    }
+  ]
+}

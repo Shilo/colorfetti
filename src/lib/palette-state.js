@@ -39,7 +39,9 @@ export function conversionSnapshot({ family, palette, alphaCut, alphaMode, metri
     : Object.freeze({ family: 'two-color', first, second, style, set: Object.freeze({ ...set }) });
 }
 
-export async function fullPaletteImage(item, asked, { still = false, signal } = {}) {
+// Shared preparation for exports and exact usage inspection. Keep conversion
+// lazy so nearest-only inspection can reuse compact immutable RGB summaries.
+export async function prepareFullPaletteImage(item, asked, { signal } = {}) {
   checkCanceled(signal);
   // Own scalar preferences and source/frame references before subset preparation
   // yields. Still copies of GIFs select from the same full animation as Save.
@@ -73,6 +75,12 @@ export async function fullPaletteImage(item, asked, { still = false, signal } = 
     return clean ? await applyCleanupAsync(result, clean, { signal }) : result;
   };
   const about = { family: 'full-palette', colors: palette.colors, metric, maxColors, cleanup, dither, ditherStrength, alphaMode, name, w: original.width, h: original.height };
+  checkCanceled(signal);
+  return { about, palette, original, frames, loop, alphaCut, convert };
+}
+
+export async function fullPaletteImage(item, asked, { still = false, signal } = {}) {
+  const { about, original, frames, loop, convert } = await prepareFullPaletteImage(item, asked, { signal });
   if (frames && !still) {
     return { ...about, loop, frameCount: frames.length,
       getFrame: async i => ({ ...(await convert(frames[i].original)), delay: frames[i].delay }) };
