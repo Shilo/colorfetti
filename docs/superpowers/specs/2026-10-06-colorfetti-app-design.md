@@ -184,8 +184,11 @@ is ready, so an unchanged count never flashes empty. The retained span has
 `aria-busy="true"` and its tooltip identifies the previous output while updating;
 fresh metadata replaces it atomically, including zero colors and full-clip unions.
 Strict current-key metadata remains separate: Reuse must never use a previous
-result. When a new sampled preview completes without an active full-source
-inspection, retire its previous-settings count rather than present it indefinitely.
+result. One serial cancellable full-source inspection queue supplies missing wall
+metadata independently of sampling or Preview. Preview and Reuse share the same
+current result; closing Preview does not cancel a wall request. Obsolete queued
+jobs do no source work. Sampled completion cannot retire the previous count while
+its exact replacement is pending. Failed inspection clears the stale count.
 An active inspection retains its record identity and explicit Reuse subscription
 until completion or cancellation. Source replacement/removal, 1-bit mode and
 failures hide or discard the old label. Retain only one small RGB/count result per

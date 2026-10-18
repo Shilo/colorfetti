@@ -1,0 +1,62 @@
+{
+  "url": "http://127.0.0.1:5358/",
+  "revision": "5794b26 plus uncommitted candidate",
+  "cases": [
+    {
+      "name": "exact sprite cap/settings/resize/Original/Preview",
+      "transitions": 0,
+      "blanks": [],
+      "final": "32×24  ·  2 colors "
+    },
+    {
+      "name": "palette/Auto roundtrips and second source",
+      "paletteCounts": [
+        {
+          "palette": "PICO-8",
+          "caption": "32×24  ·  2 colors "
+        },
+        {
+          "palette": "Black & White",
+          "caption": "32×24  ·  2 colors "
+        },
+        {
+          "palette": "Auto",
+          "caption": "32×24  ·  2 colors "
+        },
+        {
+          "palette": "Resurrect 64",
+          "caption": "32×24  ·  2 colors "
+        },
+        {
+          "palette": "ENDESGA 32",
+          "caption": "32×24  ·  2 colors "
+        },
+        {
+          "palette": "Auto",
+          "caption": "32×24  ·  2 colors "
+        },
+        {
+          "palette": "Resurrect 64",
+          "caption": "32×24  ·  2 colors "
+        }
+      ],
+      "captions": [
+        "32×24  ·  2 colors ",
+        "16×16  ·  8 colors "
+      ]
+    },
+    {
+      "name": "sampled wall disappearance and inspection join",
+      "initial": "2048×2048  ·  26 colors ",
+      "inspected": "2048×2048  ·  26 colors ",
+      "changed": "2048×2048  ·  25 colors ",
+      "restored": "2048×2048  ·  25 colors ",
+      "joined": "2048×2048  ·  26 colors "
+    },
+    {
+      "name": "six-frame animation settings union",
+      "final": "32×32  ·  8 colors "
+    }
+  ],
+  "errors": []
+}

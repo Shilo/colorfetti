@@ -1,0 +1,106 @@
+{
+  "url": "http://127.0.0.1:5358/",
+  "errors": [],
+  "cases": [
+    {
+      "name": "nine-asset batch including sampled 2048 sheet, nearest All",
+      "outputs": [
+        {
+          "name": "dungeon-wizard.png",
+          "captionCount": 8,
+          "nativeCount": 8
+        },
+        {
+          "name": "dungeon-archer.png",
+          "captionCount": 8,
+          "nativeCount": 8
+        },
+        {
+          "name": "dungeon-knight.png",
+          "captionCount": 8,
+          "nativeCount": 8
+        },
+        {
+          "name": "dungeon-potion.png",
+          "captionCount": 7,
+          "nativeCount": 7
+        },
+        {
+          "name": "town-water-bucket.png",
+          "captionCount": 10,
+          "nativeCount": 10
+        },
+        {
+          "name": "platformer-pilot.png",
+          "captionCount": 7,
+          "nativeCount": 7
+        },
+        {
+          "name": "platformer-heart.png",
+          "captionCount": 3,
+          "nativeCount": 3
+        },
+        {
+          "name": "platformer-rocket.png",
+          "captionCount": 7,
+          "nativeCount": 7
+        },
+        {
+          "name": "kenney-sheet-2048.png",
+          "captionCount": 26,
+          "nativeCount": 26
+        }
+      ]
+    },
+    {
+      "name": "rapid cap/Matching/Cleanup/dither replacement, exact native exports",
+      "outputs": [
+        {
+          "name": "dungeon-wizard.png",
+          "captionCount": 8,
+          "nativeCount": 8
+        },
+        {
+          "name": "dungeon-archer.png",
+          "captionCount": 8,
+          "nativeCount": 8
+        },
+        {
+          "name": "dungeon-knight.png",
+          "captionCount": 8,
+          "nativeCount": 8
+        },
+        {
+          "name": "dungeon-potion.png",
+          "captionCount": 7,
+          "nativeCount": 7
+        },
+        {
+          "name": "town-water-bucket.png",
+          "captionCount": 8,
+          "nativeCount": 8
+        },
+        {
+          "name": "platformer-pilot.png",
+          "captionCount": 6,
+          "nativeCount": 6
+        },
+        {
+          "name": "platformer-heart.png",
+          "captionCount": 3,
+          "nativeCount": 3
+        },
+        {
+          "name": "platformer-rocket.png",
+          "captionCount": 7,
+          "nativeCount": 7
+        },
+        {
+          "name": "kenney-sheet-2048.png",
+          "captionCount": 8,
+          "nativeCount": 8
+        }
+      ]
+    }
+  ]
+}

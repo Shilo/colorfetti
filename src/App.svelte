@@ -26,7 +26,7 @@
   import PaletteImport from './PaletteImport.svelte';
   import { FULL_PRESETS, DEFAULT_FULL_PALETTE, GENERATED_PALETTE, GENERATED_PALETTE_ID, LIBRARY_KEY, restoreLibrary, savePalette, deletePalette, newPaletteName } from './lib/palette-library.js';
   import { captureGeneratedWallSources } from './lib/palette-generated-sources.js';
-  import { preparePalette } from './lib/quantize.js';
+  import { preparePalette, checkCanceled, yieldTask } from './lib/quantize.js';
   import { effectiveAlphaCut } from './lib/palette-alpha.js';
   import { restorePaletteState, conversionSnapshot, fullPaletteImage } from './lib/palette-state.js';
   import { tooltip } from './lib/tooltip.js';
@@ -716,12 +716,9 @@
     // Pending inspections own their record identity and explicit-join flag.
     // Their full-source result will replace the retained presentation atomically.
     if (previous?.result || previous?.status === 'pending') return;
-    if (!exact) {
-      // Without a full-source inspection, a new sampled rendering cannot supply
-      // an exact replacement. Stop displaying its previous-settings count.
-      if (previous?.previousResult) colorUsage.set(item.id, { ...previous, previousResult: undefined });
-      return;
-    }
+    // Sampled wall pixels cannot establish the full-source count. The shared
+    // automatic inspection will replace the retained caption when it is ready.
+    if (!exact) return;
     const progress = addUsageFrame(previous?.progress, colors, used, frame, frames);
     if (!progress) return;
     const result = completedUsage(progress, fullPalette.colors);
@@ -762,8 +759,11 @@
     });
   });
   $effect(() => () => { for (const record of colorUsage.values()) record?.controller?.abort(); });
+  // One serial queue bounds full-source inspection to one frame at a time even
+  // when several wall tiles, Preview and Reuse request metadata together.
+  let usageQueue = Promise.resolve();
   function countColors(item, explicit = false) {
-    if (family !== 'full-palette' || generatedUnavailable || itemPaletteFailed(item) || !items.includes(item)) return Promise.resolve(null);
+    if (family !== 'full-palette' || generatedPending || generatedUnavailable || itemPaletteFailed(item) || !items.includes(item)) return Promise.resolve(null);
     const previous = usageFor(item);
     if (previous?.status === 'pending') { previous.explicit ||= explicit; return previous.promise; }
     if (previous?.result) return Promise.resolve(previous.result);
@@ -773,9 +773,14 @@
       if (!controller.signal.aborted && key === usageKey && items.includes(item) && colorUsage.get(item.id) === record)
         colorUsage.set(item.id, { item, key, ...value });
     };
-    record.promise = (async () => {
+    record.promise = usageQueue.then(async () => {
       try {
+        checkCanceled(controller.signal);
+        // Give paint/input a turn between items, including warm summary hits.
+        await yieldTask();
+        checkCanceled(controller.signal);
         const { collectPaletteUsage } = await import('./lib/palette-usage.js');
+        checkCanceled(controller.signal);
         const result = await collectPaletteUsage(item, snapshot, { signal: controller.signal });
         publish({ result, status: 'ready' });
         return result;
@@ -783,25 +788,21 @@
         if (error.name !== 'AbortError') publish({ status: 'error' });
         return null;
       }
-    })();
+    });
+    usageQueue = record.promise;
     colorUsage.set(item.id, record);
     return record.promise;
   }
-  // Preview metadata is automatic and noninteractive. Reuse is always one action;
-  // it joins an in-flight inspection rather than requiring a separate Count click.
+  // Metadata belongs to wall sources/settings, not viewport sampling or an open
+  // Preview. Closing Preview leaves the wall's shared request alive. Reuse joins
+  // that same exact result; obsolete source/settings requests are canceled above.
   $effect(() => {
-    const item = viewed, key = usageKey;
-    if (!item || family !== 'full-palette' || generatedUnavailable || itemPaletteFailed(item)) return;
-    const record = untrack(() => { void countColors(item); return usageFor(item); });
-    return () => {
-      if (record?.status !== 'pending' || record.explicit) return;
-      record.controller.abort();
-      untrack(() => {
-        if (colorUsage.get(item.id) === record) {
-          colorUsage.set(item.id, { item, key, previousResult: record.previousResult });
-        }
-      });
-    };
+    const live = items, key = usageKey, failures = currentPaletteFailures;
+    paletteRetry;
+    if (family !== 'full-palette' || generatedPending || generatedUnavailable) return;
+    // Metadata publications never reschedule inspection or subscribe every
+    // caption to the complete map. Only captured conversion inputs do that.
+    untrack(() => { for (const item of live) if (!failures.some(f => f.inputs.item === item)) void countColors(item); });
   });
   async function outputColors(item, trigger) {
     const key = usageKey, session = shareSession, fromSheet = trigger?.closest('dialog.sheet');
