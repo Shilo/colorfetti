@@ -1,0 +1,72 @@
+{
+  "zoomed": {
+    "scripts": [
+      "http://127.0.0.1:5173/assets/index-DzbaQAs6.js"
+    ],
+    "transform": "translate(0px, 0px) scale(1.25)",
+    "width": 836.25
+  },
+  "panned": {
+    "transform": "translate(44px, 0px) scale(1.25)"
+  },
+  "fitted": {
+    "transform": "translate(0px, 0px) scale(1)",
+    "width": 669
+  },
+  "narrow": {
+    "controls": [
+      {
+        "bottom": 58,
+        "label": "Zoom out",
+        "right": 58,
+        "x": 14,
+        "y": 14
+      },
+      {
+        "bottom": 58,
+        "label": "Fit image",
+        "right": 104,
+        "x": 60,
+        "y": 14
+      },
+      {
+        "bottom": 58,
+        "label": "Zoom in",
+        "right": 150,
+        "x": 106,
+        "y": 14
+      },
+      {
+        "bottom": 826,
+        "label": "Save image",
+        "right": 62,
+        "x": 18,
+        "y": 782
+      },
+      {
+        "bottom": 826,
+        "label": "Copy image",
+        "right": 108,
+        "x": 64,
+        "y": 782
+      },
+      {
+        "bottom": 826,
+        "label": "Show original image",
+        "right": 154,
+        "x": 110,
+        "y": 782
+      },
+      {
+        "bottom": 832,
+        "label": "Close preview",
+        "right": 378,
+        "x": 322,
+        "y": 776
+      }
+    ],
+    "height": 844,
+    "inspectionPanel": false,
+    "width": 390
+  }
+}

@@ -1,5 +1,11 @@
 # M2 native inspection verification
 
+**Historical: feature removed at the user’s request.** Pause/native inspection,
+frame controls and the sampling-status panel are no longer in the application.
+These receipts describe commit c30e01a. Its probes import helpers intentionally
+removed from current source; replay them from that historical checkout, not HEAD.
+Current removal review: [m2-reversion](../m2-reversion/README.md).
+
 Status: accepted by the implementing agent and coordinator after source review, repeated tests and final root-coordinated desktop browser checks. This agent's browser surfaces became unavailable after the earlier M5 task, including both known shared-tab attachment attempts. The coordinator operated the desktop browser; the agent independently challenged its raw accessibility/geometry receipts and screenshots. No remaining product-code concern was found within the reviewed scope; the limits below remain explicit.
 
 The chosen design preserves overview sampling and adds explicit sampled/full-source raster status. Inspect pixels pauses one selected animation frame and renders every source pixel. Previous/Next and a frame number field select a paused frame; returning to overview resumes playback. Source-coordinate dithering, alpha, full analysis, whole-item palette selection and whole-clip Cleanup remain unchanged. Copy still encodes the first frame; Save still exports the whole animation. Their GIF tooltips explain this scope.

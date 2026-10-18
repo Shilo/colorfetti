@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-18",
+  "scope": "Remove M2 preview inspection; keep M1 and M3-M8",
+  "restoredReference": "2847e55",
+  "restored": [
+    {
+      "path": "src/ImageViewer.svelte",
+      "normalizedSha256": "81a33442296d5a59d7b819ae7571a870428e77d64ddc7c12039b61bd6b8c76e3",
+      "matchesPreM2": true
+    },
+    {
+      "path": "src/Pixels.svelte",
+      "normalizedSha256": "90d2e155d975a9fc9bd511a6abf2a895ff1c805470de456e18ddfa903b433492",
+      "matchesPreM2": true
+    },
+    {
+      "path": "src/Tile.svelte",
+      "normalizedSha256": "8ae38c75ce3d9240eba7b69d03af230902cf30656738c72d9f6e15b98796112e",
+      "matchesPreM2": true
+    },
+    {
+      "path": "src/lib/palette-animation-cache.js",
+      "normalizedSha256": "f98575790d65754fe70316f7a269ce2638804503671182dbdbfdb4bd29313286",
+      "matchesPreM2": true
+    },
+    {
+      "path": "src/lib/palette-animation-cache.test.js",
+      "normalizedSha256": "9c19411603746d52b089c99beb778bba1cf9a58bed6eff023a402f027df53886",
+      "matchesPreM2": true
+    },
+    {
+      "path": "src/lib/viewer-navigation.js",
+      "normalizedSha256": "d2c894dc44e61e7d26c42327f5b5fe6f94c153342c977ed6b65c1921cb30bc8c",
+      "matchesPreM2": true
+    },
+    {
+      "path": "src/lib/viewer-navigation.test.js",
+      "normalizedSha256": "81cc1f8ed4a10a85000ea321256e86369bb58aca7c85bb4720ce9d110cbce58d",
+      "matchesPreM2": true
+    },
+    {
+      "path": "src/viewer-navigation.css",
+      "normalizedSha256": "8b048ab16b847a45ae34f97a17179ab87ed04abb6d8646f57a3ea8ccf575a747",
+      "matchesPreM2": true
+    }
+  ],
+  "deleted": [
+    "src/lib/viewer-inspection-policy.js",
+    "src/lib/viewer-inspection.js",
+    "src/lib/viewer-inspection.test.js"
+  ],
+  "otherSourceChanges": false,
+  "testCommand": "npm test -- --reporter=dot",
+  "testFilesPassed": 82,
+  "testsPassed": 1357,
+  "testsSkipped": 2,
+  "buildCommand": "npm run build",
+  "buildPassed": true,
+  "modulesTransformed": 207,
+  "browserAsset": "index-DzbaQAs6.js",
+  "browser": "User existing desktop Codex IAB tab on http://127.0.0.1:5173/",
+  "manualChecks": {
+    "stillAndGifInspectionPanelAbsent": true,
+    "continuousGifConvertedAndOriginalObserved": true,
+    "zoomPanFit": true,
+    "compareToggle": true,
+    "spacePressRelease": true,
+    "escapeAndClose": true,
+    "closeReopen": true,
+    "narrowViewport": "390x844",
+    "narrowControlsWithinViewport": true,
+    "consoleWarningsAndErrors": 0,
+    "saveRootLiveStatus": "Downloading gray-20frames-colorfetti.gif…",
+    "copyRootLiveStatus": "gray-20frames.gif copied as a still image."
+  },
+  "limits": "Save/Copy status strings are root live CUA observations. Later AX files omit transient toasts; no downloaded-byte or clipboard-pixel parity is inferred from them. Encoding source remains unchanged. Native pixel inspection tests were removed with the feature; historical M2 probes require c30e01a checkout."
+}

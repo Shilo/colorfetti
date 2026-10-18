@@ -28,35 +28,18 @@ legacy still encoding remains follow-up research.
 Evidence, source hashes, cost receipts, independent peer challenge and reproduction:
 `bench/conversion-fixes-2026-10-18/m8/README.md` and `m8/PEER-REVIEW.md`.
 
-## Native selected-frame inspection (October 18, 2026)
+## Preview inspection reversion (October 18, 2026)
 
-The overview retains sampling and now reports actual raster/source dimensions.
-Explicit native inspection converts one paused frame, limited to 4,194,304 pixels
-and 16,384 per axis. It uses full source coordinates, original analysis, whole-item
-palette/subset and frozen whole-clip Cleanup. It avoids native clip caching and
-keeps new structural preparations local rather than populating every source frame.
+At the user's request, the new pause/native-inspection mode, frame controls and
+raster-status overlay were removed. Preview rendering, zoom navigation and the
+shared animation cache match the pre-M2 revision 2847e55. Existing bounded zoom
+refinement and continuous GIF playback remain. There is no native-frame queue or
+separate 84 MiB inspection policy. M1 source/capture accounting and actual-producer
+leases remain intact; PNG/GIF encoding is unchanged by this reversion.
 
-A module-shared queue admits one active and one latest pending native job, including
-across close/reopen. The previous native display clears before the next conversion;
-native work also waits for superseded ordinary producers to actually settle. Source
-leases survive canceled subscribers. Cold Icon preparation costs 15P typed bytes
-plus P mask; 4P prior canvas and bounded axis/glyph/job metadata fit the static
-84 MiB logical headroom at 4 MP. This is separate from the 256 MiB source ledger,
-which does not charge an 84 MiB token. Native/GPU/GC behavior and existing wall/style
-caches are excluded; legacy masking remains synchronous within one frame.
-Every subscriber receives the actual shared producer promise, including a viewer
-joining wall work; native preparation waits all superseded producers. Palette
-requests retain selected originals only. Legacy requests charge their selected
-analysis to the separate 128 MiB capture ledger until actual settlement. Completed
-native display records retain only pixels and opaque identity, avoiding unused
-analysis references after their charge ends.
-
-Eighteen native-versus-Sharp-decoded Save comparisons passed all alpha/visible RGB,
-including cold 4 MP Stencil/Icon, Keep/dither, whole-clip caps/Cleanup and long sheets.
-Desktop checks verified actual selected GIF pixels, raster stability through Fit,
-reopening, unsupported-size guidance and 44px controls within 390×844. Live DPR
-emulation, full browser canvas readback and physical-device behavior were not tested.
-See `bench/conversion-fixes-2026-10-18/m2/REVIEW.md` for the challenge record.
+Historical M2 measurements remain in `bench/conversion-fixes-2026-10-18/m2/`;
+they describe the removed feature and require its historical checkout to replay.
+Current review and validation: `m2-reversion/README.md` in that evidence folder.
 
 ## Artwork source admission (October 18, 2026)
 
@@ -85,8 +68,8 @@ queues/exports/cache identities carry original-only projections and opaque weak
 tokens, avoiding unused legacy generations. Viewer selection retains only its ID.
 
 The ledger excludes conversion/index/RGBA/style caches, encoded output, object
-overheads, codecs, GPU storage and GC delays. M2's one-frame 84 MiB logical headroom
-is separate. These are conservative product policies, not measured crash limits.
+overheads, codecs, GPU storage and GC delays. These are conservative product
+policies, not measured crash limits.
 Real desktop worker/fallback checks returned the final ledger to zero and preserved
 source bytes; oversized logical GIFs fail before expansion while valid siblings
 import. See `bench/conversion-fixes-2026-10-18/m1/REVIEW.md` for ownership challenges,

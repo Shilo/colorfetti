@@ -9,17 +9,6 @@
 /* Trim the capsule while preserving 44px mobile targets for every pointer type. */
 :root .viewer-zoom { --control-size: 44px; --control-shell: var(--viewer-zoom-height); padding: 1px; }
 :root .viewer-zoom .icon-only { font-size: 24px; line-height: 1; }
-:root .viewer-inspection { position: absolute; z-index: 2; top: calc(env(safe-area-inset-top,0px) + var(--viewer-edge) + var(--viewer-zoom-height) + 8px); left: calc(env(safe-area-inset-left,0px) + var(--viewer-edge)); box-sizing: border-box; max-width: calc(100% - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px) - var(--viewer-edge) * 2); padding: 6px 10px; border-radius: 16px; background: var(--surface); color: var(--fg); }
-:root .viewer-inspection-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
-:root .viewer-frame-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
-:root .viewer-inspection-controls .btn { box-sizing: border-box; min-height: 44px; padding: 6px 10px; font-size: 13px; }
-:root .viewer-inspection-controls .icon-only { width: 44px; min-width: 44px; font-size: 24px; }
-:root .viewer-frame-label { display: flex; align-items: center; gap: 4px; font-size: 13px; white-space: nowrap; }
-:root .viewer-frame-label input { width: 7ch; min-height: 44px; box-sizing: border-box; font: inherit; color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
-:root .viewer-raster-status { margin: 4px 0; font-size: 13px; line-height: 1.4; overflow-wrap: anywhere; }
-:root .viewer-toast { --gl-toast-top: calc(env(safe-area-inset-top,0px) + var(--viewer-edge) + var(--viewer-zoom-height) + var(--viewer-inspection-height,0px) + 24px); }
-@media (forced-colors:active) { :root .viewer-inspection { background: Canvas; color: CanvasText; } }
-@media (max-width:520px) { :root .viewer-frame-label input { font-size: 16px; } }
 @media (max-width: 800px) {
-  :root .viewer-toast { --gl-toast-top: calc(env(safe-area-inset-top,0px) + var(--viewer-edge) + var(--viewer-zoom-height) + var(--viewer-inspection-height,0px) + 24px); }
+  :root .viewer-toast { --gl-toast-top: calc(env(safe-area-inset-top,0px) + var(--viewer-edge) + var(--viewer-zoom-height) + 12px); }
 }

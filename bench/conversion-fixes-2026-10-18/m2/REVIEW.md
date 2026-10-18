@@ -1,5 +1,11 @@
 # M2 final adversarial review
 
+**Historical: feature removed at the user’s request.** Pause/native inspection,
+frame controls and the sampling-status panel are no longer in the application.
+These receipts describe commit c30e01a. Its probes import helpers intentionally
+removed from current source; replay them from that historical checkout, not HEAD.
+Current removal review: [m2-reversion](../m2-reversion/README.md).
+
 Accepted by the implementing agent and coordinator on October 18, 2026. Product source is frozen. The accepted change discloses sampled preview rasters and adds bounded native conversion of one selected paused frame; it preserves whole-source export semantics.
 
 | Challenge | Resolution and verification |

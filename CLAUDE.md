@@ -13,19 +13,11 @@ intentional compatibility references.
 
 ## What it does
 
-Preview discloses sampled versus full-source raster dimensions. Inspect pixels
-pauses one frame and converts every source pixel, up to 4,194,304 pixels and 16,384
-per side; larger images explain the limit and offer Save. GIF frame controls select
-one paused frame, and Back to overview resumes playback. Full analysis, whole-item
-palette/subset and frozen whole-clip Cleanup remain authoritative. Native mode
-bypasses clip raster caches and uses one shared active/latest-pending queue across
-viewer instances. Its static 84 MiB logical headroom is separate from source
-admission, not an 84 MiB charged token or process-heap cap. Save still exports the
-whole animation; Copy uses its first frame, as their GIF tooltips explain.
-Shared cache subscribers receive the actual producer's settlement promise,
-including joins and warm hits. Native queued requests retain selected originals
-only in Palette; selected legacy analysis is charged to the separate capture
-ledger. Display records retain only pixels and an opaque request key.
+Preview keeps its existing zoom/Fit, pan and original/converted comparison.
+GIFs play continuously. The added pause/inspect mode, selected-frame controls,
+raster-status panel and native-inspection limits were removed at the user's request.
+Existing bounded zoom sampling remains; Save converts the full source/whole GIF,
+and Copy uses the first animation frame. Source and export ownership safeguards remain.
 
 Artwork import tracks a shared 256 MiB logical source-storage budget: 10 bytes
 per source pixel for RGBA/current/replacement analysis plus 4 KiB per frame, with
@@ -39,7 +31,7 @@ retain leases until actual settlement. Live reanalysis is serialized. A separate
 inputs at 3 bytes/pixel + 2 KiB/frame, plus another generation when nonmatching
 preparation allocates one. Matching exports also charge their retained input. Failures preserve valid wall items and
 explain recovery. This bounds defined source buffers, excluding native/GPU/GC,
-conversion/style caches and encoded output; native inspection has separate headroom.
+conversion/style caches and encoded output.
 Palette queues/exports/previews retain only originals, scalar geometry and opaque
 identity tokens; ID-only viewer selection avoids retaining obsolete analyses.
 

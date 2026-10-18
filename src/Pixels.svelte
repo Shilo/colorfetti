@@ -1,11 +1,7 @@
 <script>
   // Draws an ImageData at its own pixel size. CSS scales the canvas up with hard edges.
-  let { pixels, class: cls = '', clearOnDestroy = false } = $props();
+  let { pixels, class: cls = '' } = $props();
   let canvas;
-  $effect(() => {
-    const clear = clearOnDestroy;
-    return () => { if (clear && canvas) { canvas.width = 0; canvas.height = 0; } };
-  });
 
   $effect(() => {
     // Setting a canvas's size clears it and makes its memory anew, even to the size it has.

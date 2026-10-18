@@ -1,7 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { createAnimationCache } from './palette-animation-cache.js';
 import { preparePalette, quantize, colorize } from './quantize.js';
-import { nativeInspectionQueue } from './viewer-inspection.js';
 const source = () => ({ width: 2, height: 1, data: new Uint8Array(8) });
 const result = () => ({ w: 2, h: 1, indices: new Uint16Array([0, 256]), used: new Uint8Array(256), hasTransparency: true });
 const options = () => ({ sources: [source(), source()], palette: { colors: ['#000000'] }, width: 2, height: 1, alphaCut: 128, metric: 'oklab' });
@@ -50,39 +49,6 @@ describe('bounded animation preview cache', () => {
     handle.release(); expect(leases).toBe(1); expect(release).not.toHaveBeenCalled();
     complete(result()); await new Promise(resolve => setTimeout(resolve, 0));
     expect(leases).toBe(0); expect(release).toHaveBeenCalledTimes(1); expect(hold).toHaveBeenCalledTimes(1);
-  });
-  it('reports the same actual producer settlement to a joined viewer and blocks native scratch after subscriber abort', async () => {
-    const cache = createAnimationCache(), args = options(), wall = cache.acquire(args), viewer = cache.acquire(args);
-    const wallAbort = new AbortController(), viewerAbort = new AbortController();
-    const wallSettlement = vi.fn(), viewerSettlement = vi.fn(), viewerProduce = vi.fn();
-    let complete, barrier = Promise.resolve();
-    const first = wall.getFrame(0, () => new Promise(resolve => { complete = resolve; }), { signal: wallAbort.signal, onSettlement: wallSettlement });
-    const joined = viewer.getFrame(0, viewerProduce, { signal: viewerAbort.signal, onSettlement: work => {
-      viewerSettlement(work); barrier = work.then(() => {}, () => {});
-    } });
-    expect(wallSettlement).toHaveBeenCalledTimes(1); expect(viewerSettlement).toHaveBeenCalledTimes(1);
-    expect(viewerSettlement.mock.calls[0][0]).toBe(wallSettlement.mock.calls[0][0]);
-    await Promise.resolve();
-    const firstRejected = expect(first).rejects.toHaveProperty('name', 'AbortError');
-    const joinedRejected = expect(joined).rejects.toHaveProperty('name', 'AbortError');
-    wallAbort.abort(); viewerAbort.abort(); await Promise.all([firstRejected, joinedRejected]);
-    wall.release(); viewer.release();
-    const queue = nativeInspectionQueue(), render = vi.fn();
-    let started;
-    const entered = new Promise(resolve => { started = resolve; });
-    const native = queue.run(async () => { started(); await barrier; render(); });
-    // The queue has started, but the aborted subscribers do not settle their
-    // producer or permit the next full-frame allocation.
-    await entered;
-    expect(render).not.toHaveBeenCalled(); expect(viewerProduce).not.toHaveBeenCalled();
-    complete(result()); await native; expect(render).toHaveBeenCalledTimes(1);
-  });
-  it('reports an already completed frame to cache-hit subscribers without starting new work', async () => {
-    const cache = createAnimationCache(), handle = cache.acquire(options()), produce = vi.fn(async () => result());
-    const ready = await handle.getFrame(0, produce), onSettlement = vi.fn();
-    expect(await handle.getFrame(0, produce, { onSettlement })).toBe(ready);
-    expect(onSettlement).toHaveBeenCalledTimes(1); await expect(onSettlement.mock.calls[0][0]).resolves.toBe(ready);
-    expect(produce).toHaveBeenCalledTimes(1); handle.release();
   });
   it('releases reservations and rejects late completion after invalidation', async () => {
     const cache = createAnimationCache(), handle = cache.acquire(options()); let resolve;

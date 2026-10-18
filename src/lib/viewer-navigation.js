@@ -9,23 +9,23 @@ const zoomLevels = [MIN_VIEWER_ZOOM];
 // endpoint loses part of a step, so reversing the same clicks cannot undo it.
 for (let step = Math.ceil(Math.log(MIN_VIEWER_ZOOM) / Math.log(1.25)); 1.25 ** step < MAX_VIEWER_ZOOM; step++) zoomLevels.push(1.25 ** step);
 zoomLevels.push(MAX_VIEWER_ZOOM);
-function normalizeScale(scale, maximum = MAX_VIEWER_ZOOM) {
-  scale = clamp(scale, MIN_VIEWER_ZOOM, maximum);
-  for (const anchor of [MIN_VIEWER_ZOOM, 1, maximum]) if (sameScale(scale, anchor)) return anchor;
+function normalizeScale(scale) {
+  scale = clamp(scale, MIN_VIEWER_ZOOM, MAX_VIEWER_ZOOM);
+  for (const anchor of [MIN_VIEWER_ZOOM, 1, MAX_VIEWER_ZOOM]) if (sameScale(scale, anchor)) return anchor;
   return scale;
 }
 const cleanOffset = n => Math.abs(n) < 1e-9 ? 0 : n;
 
 // Coordinates are CSS pixels relative to the viewport center; scale 1 is Fit.
 export function constrainView(view, geometry) {
-  const scale = normalizeScale(view.scale, geometry.maxScale ?? MAX_VIEWER_ZOOM);
+  const scale = normalizeScale(view.scale);
   const limitX = Math.max(0, (geometry.imageWidth * scale - geometry.width) / 2);
   const limitY = Math.max(0, (geometry.imageHeight * scale - geometry.height) / 2);
   return { scale, x: cleanOffset(clamp(view.x, -limitX, limitX)), y: cleanOffset(clamp(view.y, -limitY, limitY)) };
 }
 
 export function zoomView(view, scale, from, to, geometry) {
-  scale = normalizeScale(scale, geometry.maxScale ?? MAX_VIEWER_ZOOM);
+  scale = normalizeScale(scale);
   const ratio = scale / view.scale;
   return constrainView({ scale, x: to.x - (from.x - view.x) * ratio, y: to.y - (from.y - view.y) * ratio }, geometry);
 }
@@ -56,7 +56,7 @@ export function viewerNavigation({ onchange = () => {}, onhold = () => {}, onclo
     get active() { return pointers.size > 0; },
     get canHold() { return !!tap; },
     resize(next) {
-      if (Object.keys({ ...geometry, ...next }).every(key => next[key] === geometry[key])) return;
+      if (Object.keys(next).every(key => next[key] === geometry[key])) return;
       api.cancel(); geometry = next; view = constrainView(view, geometry); publish();
     },
     down(e) {
@@ -99,11 +99,7 @@ export function viewerNavigation({ onchange = () => {}, onhold = () => {}, onclo
       api.zoomTo(view.scale * factor, point);
     },
     stepZoom(direction, point) {
-      const maximum = geometry.maxScale ?? MAX_VIEWER_ZOOM;
-      const extended = [...zoomLevels];
-      for (let step = Math.ceil(Math.log(MAX_VIEWER_ZOOM) / Math.log(1.25)); 1.25 ** step < maximum; step++) extended.push(1.25 ** step);
-      if (maximum > MAX_VIEWER_ZOOM) extended.push(maximum);
-      const levels = direction > 0 ? extended : extended.reverse();
+      const levels = direction > 0 ? zoomLevels : [...zoomLevels].reverse();
       const scale = levels.find(level => !sameScale(level, view.scale) && (direction > 0 ? level > view.scale : level < view.scale));
       api.zoomTo(scale ?? view.scale, point);
     },
@@ -137,7 +133,7 @@ export function viewerNavigation({ onchange = () => {}, onhold = () => {}, onclo
       const cancel = e => { if (!e || pointers.has(e.pointerId)) api.cancel(); };
       const click = e => {
         // Captured pointer clicks target the dialog. Controls remain ordinary buttons.
-        if (e.target.closest('.viewer-workspace,.viewer-zoom,.viewer-inspection,.viewer-toast')) return;
+        if (e.target.closest('.viewer-workspace,.viewer-zoom,.viewer-toast')) return;
         e.stopPropagation(); api.click(e.detail === 0);
       };
       const wheel = e => {

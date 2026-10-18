@@ -1,6 +1,7 @@
 # Conversion and UX fixes: implementation and challenge record
 
-October 18, 2026. Implements the eight confirmed recommendations M1–M8 from the
+October 18, 2026. M1 and M3–M8 remain implemented; M2 was subsequently removed at
+the user’s request to preserve the minimal Preview. Original recommendations:
 [master review](2026-10-18-master-conversion-and-ux-review.md). Experimental
 dither changes, local GIF tables and source mapping remain separate research.
 
@@ -19,7 +20,7 @@ screenshots in its `screenshots/` folder.
 | Task | Scope | State |
 | --- | --- | --- |
 | M1 | Decoded artwork admission budget | Accepted after ownership/parser revisions and final worker/fallback/browser checks |
-| M2 | Sampling disclosure and native-pixel inspection | Accepted after shared-queue/lifetime revisions and final desktop/native parity checks |
+| M2 | Sampling disclosure and native-pixel inspection | Reverted at the user’s request; original minimal Preview restored |
 | M3 | Bounded per-file import diagnostics | Accepted after revisions and desktop retesting |
 | M4 | ANIMEXTS GIF repeat metadata | Accepted after independent Save/ZIP verification |
 | M5 | Enabled palette-editor text contrast | Accepted after revision and desktop retesting |
@@ -27,7 +28,25 @@ screenshots in its `screenshots/` folder.
 | M7 | Transparent GIF frame-bound cropping | Accepted after size-gate revisions and independent Save/ZIP verification |
 | M8 | Exact PNG state compaction | Accepted after size/performance revisions and independent final desktop export checks |
 
-## Final combined verification
+## Current state after M2 removal
+
+At the user's request, all newly added Preview inspection functionality and its
+panel were removed, including pausing, frame selection, resolution labels, native
+rendering queue and associated limits/APIs. Eight existing source/test files match
+pre-M2 revision `2847e55` exactly; three inspection-only files are deleted. Existing
+zoom/pan/Fit, comparison, continuous GIF playback and Save/Copy remain. M1 and
+M3–M8 source fixes are unchanged.
+
+An implementation sub-agent and a separate read-only reviewer challenged the
+dependency/ownership boundary, then reviewed the coordinator's refreshed desktop
+browser checks. The final reversion passes **1,357 tests in 82 files**, with two
+existing skips; build passes (207 modules). Live checks covered still/GIF Preview,
+playback, comparison, zoom/pan/Fit, Save/Copy, dismissal/reopening and 390×844 layout.
+Both agents and the coordinator accepted the result with no outstanding finding
+within this scope. Detailed review, evidence qualifications and current receipt:
+`bench/conversion-fixes-2026-10-18/m2-reversion/README.md` and `validation.json`.
+
+## Verification before M2 removal (historical)
 
 The final product source passes **1,378 tests in 83 files**, with the same two
 baseline skips; `npm run build` passes (209 modules). An additional read-only
@@ -91,7 +110,14 @@ observer calls were valid, no main-world failure was recorded, and standalone Ap
 load/reload was clean. The console-only harness message remains unassigned; no
 product fix was justified or claim made that every console surface was clean.
 
-### M2 Sampling disclosure and native inspection
+### M2 Sampling disclosure and native inspection (removed)
+
+The user subsequently rejected this UI/feature. Its runtime code, native queue,
+frame controls, labels and size policy have been removed. The original Preview
+source is restored exactly to revision 2847e55, preserving M1 ownership fixes and
+all other export/editor/import improvements. The following acceptance record and
+screenshots describe the historical feature. Current removal review and validation:
+`bench/conversion-fixes-2026-10-18/m2-reversion/README.md`.
 
 The final integration pass also fixed shared-cache joins that bypassed a viewer's
 producer callback: every subscriber now receives actual producer settlement,

@@ -4,7 +4,8 @@ October 18, 2026. Use this document for implementation planning. It combines and
 
 The coordinator and one independent sub-agent challenged both reviews against source, product contracts, fresh conversion probes, independent image decoding, and a frozen production build. Several findings survived, but several proposed fixes did not. **Do not implement the original reviews as checklists.**
 
-Implementation follow-up: M1–M8 are implemented and challenged in the
+Implementation follow-up: M1 and M3–M8 remain implemented; M2 was removed at the
+user’s request to preserve the minimal Preview. See the
 [implementation and validation record](2026-10-18-conversion-fixes-implementation.md).
 The findings and planning table below describe the pre-fix baseline. R1/R2 remain
 separate experiments; the follow-up records final policies, measured tradeoffs,
@@ -15,7 +16,7 @@ desktop browser evidence, independent pixel checks and task acceptance.
 | ID | Priority | Recommendation | Readiness |
 | --- | --- | --- | --- |
 | M1 | High reliability | Bound decoded artwork memory before expansion and publication | Confirmed need; define budget and ownership policy before implementation |
-| M2 | High output confidence | Disclose sampling and provide bounded native-pixel inspection | Confirmed need; native inspection needs a scoped design |
+| M2 | Withdrawn | Preserve minimal Preview; no added pause/inspection controls | Removed at the user’s request; do not reimplement this proposal |
 | M3 | Medium, small fix | Preserve useful import errors and distinguish invalid dimensions from size limits | Ready for scoped implementation |
 | M4 | Medium output integrity | Preserve ANIMEXTS1.0 GIF repeat metadata | Ready for scoped implementation |
 | M5 | Medium, small fix | Correct enabled palette-editor text contrast in light theme | Ready for scoped implementation |
@@ -25,7 +26,7 @@ desktop browser evidence, independent pixel checks and task acceptance.
 | R1 | Next quality experiment | Account for effective dithering during color-limit selection | Reproduced tradeoff; replacement policy needs evaluation |
 | R2 | Next performance experiment | Test a bounded exact-key dither memo | Promising prototype; no browser/phone speed promise |
 
-First make the small corrections M3–M6. In parallel, specify M1 and M2. Then implement M7 and evaluate M8. Keep R1/R2 separate from those corrections so conversion-quality changes and performance changes can be assessed independently.
+M1 and M3–M8 are implemented. M2 is withdrawn. Keep R1/R2 separate as experiments so conversion-quality changes and performance changes can be assessed independently.
 
 ## Confirmed findings and implementation requirements
 
@@ -41,7 +42,13 @@ Artwork decoding defaults to unlimited pixels and prepares the full animation be
 
 Source: `src/lib/gif.js`, `image-import-worker.js`, `image-import-client.js`, `image-decode.js`. Evidence: `root/results.json`, case `compressed-animation-expansion`.
 
-### M2 Separate overview appearance from native inspection
+### M2 Withdrawn: native inspection proposal
+
+The user rejected the added pause/inspection mode and its panel because it
+complicates the minimal interface and covers the image. The implementation is
+removed; the following findings and former proposal remain historical research,
+not authorization to add these controls again. Existing bounded zoom sampling
+and original-resolution exports remain.
 
 The sampling problem is real. With production `shown()` sizing, a uniform #808080, 1024×128 source using Black & White and 4×4 dithering at 100% exports **25% white** but previews **0% white** at 256×32. Existing near-integer-ratio mitigation is included. Long clips can also remain sampled at maximum zoom because refinement is bounded across the clip.
 

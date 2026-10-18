@@ -41,14 +41,10 @@ export function createAnimationCache(budget = ANIMATION_CACHE_BYTES) {
       entry.refs++;
       let released = false;
       return {
-        getFrame(index, produce, { signal, hold, onSettlement } = {}) {
+        getFrame(index, produce, { signal, hold } = {}) {
           if (released || signal?.aborted) return Promise.reject(aborted());
           if (!Number.isInteger(index) || index < 0 || index >= key.sources.length) return Promise.reject(new Error('Invalid animation frame.'));
-          if (entry.frames[index]) {
-            const ready = Promise.resolve(entry.frames[index]);
-            onSettlement?.(ready);
-            return ready;
-          }
+          if (entry.frames[index]) return Promise.resolve(entry.frames[index]);
           let job = entry.pending.get(index);
           if (!job) {
             let release;
@@ -67,10 +63,6 @@ export function createAnimationCache(budget = ANIMATION_CACHE_BYTES) {
               return result;
             }).finally(() => { if (entry.pending.get(index) === job) entry.pending.delete(index); release?.(); });
           }
-          // A joined subscriber does not invoke its own producer. Expose the
-          // real shared job so a canceled consumer cannot mistake its early
-          // rejection for release of the producer's scratch/source ownership.
-          onSettlement?.(job.promise);
           return new Promise((resolve, reject) => {
             const consumer = {};
             job.consumers.add(consumer);
