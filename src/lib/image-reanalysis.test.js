@@ -40,7 +40,7 @@ describe('cooperative unpublished live analysis', () => {
     });
   }
   it('matching analyses keep exact identity without analyzing or posting tasks; opaque cuts are irrelevant', async () => {
-    const item = fixture({ partial: false }), post = vi.spyOn(quantize, 'yieldTask'), analyze = vi.spyOn(colorfetti, 'analyze');
+    const item = fixture({ partial: false }), post = vi.spyOn(quantize, 'yieldTask'), analyze = vi.spyOn(colorfetti, 'analyzeAsync');
     expect(analysisKey(false, { source: 'green', alphaCut: 255 })).toBe('green ');
     expect(analysisMatches(item, { source: 'luma', alphaCut: 255 })).toBe(true);
     expect(await reanalyzeItem(item, { source: 'luma', alphaCut: 255 })).toBe(item);
@@ -77,25 +77,45 @@ describe('cooperative unpublished live analysis', () => {
     const controller = new AbortController(); controller.abort();
     const poison = { get img() { throw new Error('source read'); } };
     await expect(reanalyzeItem(poison, {}, { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
-    const live = new AbortController(), item = fixture(), analyze = vi.spyOn(colorfetti, 'analyze');
+    const live = new AbortController(), item = fixture(), analyze = vi.spyOn(colorfetti, 'analyzeAsync');
     vi.spyOn(quantize, 'yieldTask').mockImplementation(async () => live.abort());
     await expect(reanalyzeItem(item, { source: 'red' }, { signal: live.signal })).rejects.toMatchObject({ name: 'AbortError' });
     expect(analyze).not.toHaveBeenCalled(); expect(item.by).toBe('luma 128');
   });
   it.each([1, 2, 4, 5])('cancels at posted boundary %i without mutating published or partially unifying new analyses', async boundary => {
     const item = fixture(), before = structuredClone(item), controller = new AbortController(), made = [];
-    const originalAnalyze = colorfetti.analyze;
-    vi.spyOn(colorfetti, 'analyze').mockImplementation((...args) => { const img = originalAnalyze(...args); made.push({ img, auto: img.auto, autoSeam: img.autoSeam }); return img; });
+    const originalAnalyze = colorfetti.analyzeAsync;
+    vi.spyOn(colorfetti, 'analyzeAsync').mockImplementation(async (...args) => { const img = await originalAnalyze(...args); made.push({ img, auto: img.auto, autoSeam: img.autoSeam }); return img; });
     let turn = 0; vi.spyOn(quantize, 'yieldTask').mockImplementation(async () => { if (++turn === boundary) controller.abort(); });
     await expect(reanalyzeItem(item, { source: 'green', alphaCut: 200 }, { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
     expect(item).toEqual(before);
     for (const frame of made) { expect(frame.img.auto).toBe(frame.auto); expect(frame.img.autoSeam).toBe(frame.autoSeam); }
     expect(turn).toBe(boundary);
   });
+  it('analyzes in bands that match synchronous analysis in every field, band seams included', async () => {
+    let now = 0; vi.spyOn(performance, 'now').mockImplementation(() => (now += 9)); // every step outlasts the 8 ms target
+    const post = vi.spyOn(quantize, 'yieldTask');
+    for (const [width, height] of [[0, 0], [1, 1], [1, 40], [40, 1], [7, 6], [1025, 9], [8193, 2]]) {
+      const data = Uint8ClampedArray.from({ length: width * height * 4 }, (_, at) => at % 4 === 3 ? [0, 1, 127, 128, 200, 255][at % 6] : (at * 2654435761) >>> 24);
+      for (const [source, cut] of [['luma', 1], ['luma', 255], ['value', 128], ['red', 128], ['green', 200], ['blue', 128]]) {
+        const expected = colorfetti.analyze({ width, height, data }, source, cut), banded = await colorfetti.analyzeAsync({ width, height, data }, source, cut);
+        expect(Object.keys(banded)).toEqual(Object.keys(expected)); expect(banded).toEqual(expected);
+      }
+    }
+    expect(post).toHaveBeenCalledTimes(24); // 2 banded sizes x 6 settings x 2 passes, one band seam each
+  });
+  it('stops a frame at the next band once aborted and never publishes', async () => {
+    const original = { width: 32, height: 1024, data: Uint8ClampedArray.from({ length: 32 * 1024 * 4 }, (_, at) => (at * 61) % 256) };
+    const item = { id: 7, original, img: colorfetti.analyze(original), by: 'luma 128' }, before = structuredClone(item), controller = new AbortController();
+    let now = 0; vi.spyOn(performance, 'now').mockImplementation(() => (now += 9));
+    let turn = 0; vi.spyOn(quantize, 'yieldTask').mockImplementation(async () => { if (++turn === 2) controller.abort(); }); // 1 before the frame, 2 after its first band
+    await expect(reanalyzeItem(item, { source: 'red' }, { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
+    expect(turn).toBe(2); expect(item).toEqual(before);
+  });
   it('rejects an analysis failure without exposing or publishing a partial wall', async () => {
-    const first = fixture(), second = fixture(), before = structuredClone([first, second]), original = colorfetti.analyze;
+    const first = fixture(), second = fixture(), before = structuredClone([first, second]), original = colorfetti.analyzeAsync;
     let calls = 0;
-    vi.spyOn(colorfetti, 'analyze').mockImplementation((...args) => { if (++calls === 4) throw new Error('Analysis failed'); return original(...args); });
+    vi.spyOn(colorfetti, 'analyzeAsync').mockImplementation(async (...args) => { if (++calls === 4) throw new Error('Analysis failed'); return original(...args); });
     await expect(reanalyzeItems([first, second], { source: 'red' })).rejects.toThrow('Analysis failed');
     expect([first, second]).toEqual(before); expect(calls).toBe(4);
   });

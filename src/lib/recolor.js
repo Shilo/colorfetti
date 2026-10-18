@@ -101,8 +101,8 @@ function seamStrength(frames, t) {
 }
 // A difference of 0 (identical or empty neighbours) only counts in hist[0], which
 // seamThreshold always clears, so those pairs are skipped.
-function addSeams(hist, { w, h, lum, right, down }, t) {
-  for (let y = 0, p = 0; y < h; y++) for (let x = 0; x < w; x++, p++) {
+function addSeams(hist, { w, h, lum, right, down }, t, y0 = 0, y1 = h) {
+  for (let y = y0, p = y0 * w; y < y1; y++) for (let x = 0; x < w; x++, p++) {
     const r = right[p], d = down[p];
     if (!r && !d) continue;
     const light = lum[p] > t;
@@ -167,6 +167,56 @@ export function analyze({ width: w, height: h, data }, source = 'luma', cut = AL
   img.autoTone = toneCenter(hist, img.auto);
   img.autoSeam = seamStrength([img], img.auto);
   return img;
+}
+
+// `analyze` for live reanalysis only, the same result in bands; imports and previews keep the
+// synchronous one. Rows go in steps of quantizeAsync's 8192 pixels, and once its 8 ms target has
+// passed, a posted task and a cancellation check come before the next step, so a big frame no
+// longer holds the main thread for its whole pass; a small one takes no extra task. Every field
+// is a count, a min/max or an or, so bands add up exactly. Luma takes the weighted loop: the same
+// sums in the same order. `analyze` is not built on this loop: its arrays, read from an object
+// as bands need, made it up to 15% slower on some images in Node.
+export async function analyzeAsync({ width: w, height: h, data }, source = 'luma', cut = ALPHA_CUT, { signal } = {}) {
+  const img = { w, h, data, lum: new Uint8Array(w * h), right: new Uint8Array(w * h), down: new Uint8Array(w * h), cut, hasAlpha: false, soft: false, lo: 255, hi: 0,
+    hist: new Uint32Array(256), edges: new Uint32Array(256), auto: 0, autoLine: 0 };
+  const [wr, wg, wb] = SOURCES[source] ?? SOURCES.luma, value = source === 'value', seams = new Array(256).fill(0), clock = { deadline: performance.now() + 8 };
+  await inBands(img, signal, clock, (y0, y1) => analyzeRows(img, wr, wg, wb, value, y0, y1));
+  img.edges[0] = 0; // identical neighbours are not edges
+  img.auto = otsu(img.hist, 127);
+  img.autoLine = Math.max(MIN_EDGE, otsu(img.edges, 0));
+  img.autoTone = toneCenter(img.hist, img.auto);
+  await inBands(img, signal, clock, (y0, y1) => addSeams(seams, img, img.auto, y0, y1));
+  img.autoSeam = seamThreshold(seams);
+  return img;
+}
+async function inBands({ w, h }, signal, clock, rows) {
+  for (let y = 0, step = Math.max(1, Math.ceil(8192 / w)); y < h; y += step) {
+    rows(y, Math.min(h, y + step));
+    if (y + step < h && performance.now() >= clock.deadline) {
+      await yieldTask();
+      checkCanceled(signal);
+      clock.deadline = performance.now() + 8;
+    }
+  }
+}
+// Rows y0 to y1 of `analyze`'s second loop, adding their `hasAlpha`, `soft`, `lo` and `hi` to `img`'s.
+function analyzeRows(img, wr, wg, wb, value, y0, y1) {
+  const { w, h, data, lum, right, down, cut, hist, edges } = img, below = w * 4;
+  let hasAlpha = false, lo = 255, hi = 0, part = 0;
+  for (let y = y0, p = y0 * w, i = p * 4; y < y1; y++) for (let x = 0; x < w; x++, p++, i += 4) {
+    part |= data[i + 3] + 1;
+    if (data[i + 3] < cut) { hasAlpha = true; continue; }
+    const l = (lum[p] = value ? Math.max(data[i], data[i + 1], data[i + 2]) : Math.round(wr * data[i] + wg * data[i + 1] + wb * data[i + 2]));
+    hist[l]++;
+    if (l < lo) lo = l;
+    if (l > hi) hi = l;
+    if (x + 1 < w && data[i + 7] >= cut) edges[(right[p] = diff(data, i, i + 4))]++;
+    if (y + 1 < h && data[i + below + 3] >= cut) edges[(down[p] = diff(data, i, i + below))]++;
+  }
+  if (hasAlpha) img.hasAlpha = true;
+  if (part & 254) img.soft = true;
+  if (lo < img.lo) img.lo = lo;
+  if (hi > img.hi) img.hi = hi;
 }
 
 // Makes every frame of an animation convert the same way: the Auto thresholds and the brightness

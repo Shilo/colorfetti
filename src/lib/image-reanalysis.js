@@ -1,4 +1,4 @@
-import { analyze, unifyAsync } from './recolor.js';
+import { analyzeAsync, unifyAsync } from './recolor.js';
 import { validateImportPixels, validateImportSettings } from './image-import-core.js';
 import { checkCanceled, yieldTask } from './quantize.js';
 
@@ -36,7 +36,7 @@ async function prepare(captured, signal) {
   for (const source of captured.frames) {
     await yieldTask();
     checkCanceled(signal);
-    frames.push({ ...source.frame, img: analyze(source.pixels, settings.source, settings.alphaCut) });
+    frames.push({ ...source.frame, img: await analyzeAsync(source.pixels, settings.source, settings.alphaCut, { signal }) });
     checkCanceled(signal);
   }
   await unifyAsync(frames.map(frame => frame.img), { signal });

@@ -3004,7 +3004,8 @@ whose native export file is not yet ready retains the preparation notice.
 
 Live 1-bit Brightness and relevant Opacity cut changes capture immutable source/frame
 metadata, prepare replacement analyses cooperatively between frames and shared seam
-passes, and publish the captured wall together only for the current source/cut,
+passes, and within a large frame in row bands of about 8 ms with a cancellation check
+between them (the result is exactly the synchronous analysis), and publish the captured wall together only for the current source/cut,
 family and membership. Existing converted pictures remain visible while preparation
 is pending or deferred by dragging, with converted animation held; Original remains
 available. Empty-wall preparation uses only the example. Matching analyses perform

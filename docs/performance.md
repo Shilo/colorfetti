@@ -202,8 +202,8 @@ User imports now load a serial worker for GIF compositing and analyze/unify, wit
 acknowledged original/analysis buffer transfers. Native PNG decoding stays intact;
 the tiny demo starts no import worker. Failed workers recover from the original
 File, while canceled imports cannot publish late. Unsupported-worker fallback
-yields between frames/analyses, but one huge frame, shared unify and live-wall
-1-bit reanalysis can still block. Source and analysis storage remain unchanged.
+yields between frames/analyses, but one huge frame and shared unify can still
+block; live-wall 1-bit reanalysis analyses in row bands (see Analysis). Source and analysis storage remain unchanged.
 Single-frame non-GIF stills up to 4096 pixels use the same cooperative analysis
 through that serial queue to avoid unnecessary worker round trips.
 See [the import review](research/2026-10-12-import-worker.md).
@@ -503,6 +503,16 @@ are picked from all of them.
   threshold from the first pass, so it cannot be part of it. It reads only brightness and
   the stored differences, and skips pixels whose differences are both 0: those only count
   toward `hist[0]`, which the seam threshold clears anyway.
+- A live change of Brightness or Opacity cut analyses through `analyzeAsync` instead: the
+  same two passes, in row bands. Rows go in steps of 8192 pixels, quantizeAsync's slice;
+  once quantizeAsync's 8 ms target has passed, a posted task and a cancellation check come
+  before the next step, so a band overruns it by at most one step, and an image that fits
+  in one band posts no extra task. It has one loop, the non-luma one, for every source: luma
+  through it is the same sums in the same order. `analyze` does not share it. The band
+  loop must read its arrays from an object, and `analyze`'s loop changed only that way was
+  14% slower on a 2048 see-through photo with Red in Node; imports and previews keep
+  `analyze` as it was. `bench/second-performance-audit-2026-10-17/c-b5/` has the
+  exactness, band and timing evidence.
 - **Why the differences are kept.** Lines and Cutout asked for them at every pixel on
   every threshold change, and working them out from RGBA is most of their cost. Without the
   two arrays Cutout is about 2 times slower and Lines about 3 times (measured by a
@@ -1385,9 +1395,10 @@ settings. Copy supplies its clipboard promise in the initiating gesture.
 
 Analysis failures report once and leave the prior picture until a source/cut change
 requests another attempt. Temporary old and new analyses add roughly three bytes per
-changed source pixel, plus histograms and existing render caches. Individual large
-frame analysis/seam calls, cold Stencil/Icon preparation and publication rendering
-remain synchronous; yielding is not a universal task-time bound.
+changed source pixel, plus histograms and existing render caches. Since October 18 a
+large frame's analysis and seam pass run in row bands of about 8 ms (see Analysis);
+the shared animation seam call per frame, cold Stencil/Icon preparation and
+publication rendering remain synchronous; yielding is not a universal task-time bound.
 Independent overlapping exports may also own replacement analyses; this figure is
 not a bound on total transient memory. Actual-build acceptance and native Pixel task
 measurements are in `docs/research/2026-10-13-live-onebit-reanalysis.md`.
