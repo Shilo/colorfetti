@@ -1,0 +1,126 @@
+{
+  "method": "Codex retention method (io-android/retention-probe.mjs): Remove all + 11 s + two explicit GCs, CDP Runtime.getHeapUsage backingStorageSize; touch via CDP Input.dispatchTouchEvent",
+  "stamp": 1792323049958,
+  "urls": {
+    "P": "http://localhost:5431/",
+    "H": "http://localhost:5432/",
+    "F": "http://localhost:5433/"
+  },
+  "started": "2026-10-18T11:30:49.958Z",
+  "trials": [
+    {
+      "variant": "H",
+      "scenario": "reuse",
+      "trial": 0,
+      "focus": {
+        "afterEditorClose": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-H-1792323049958-reuse-0-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592913,
+        "usedSize": 3071944,
+        "embedderHeapUsedSize": 1403320,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599949,
+        "usedSize": 4074116,
+        "embedderHeapUsedSize": 2091352,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "sheetOpenWithEditor": 0,
+      "openDialogsAfterEditor": 0,
+      "scenarioRemoved": {
+        "backingStorageSize": 22981491,
+        "usedSize": 4344756,
+        "embedderHeapUsedSize": 1989472,
+        "dom": {
+          "documents": 4,
+          "nodes": 1172,
+          "jsEventListeners": 263
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "F",
+      "scenario": "reuse",
+      "trial": 0,
+      "focus": {
+        "afterEditorClose": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-F-1792323049958-reuse-0-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592952,
+        "usedSize": 3069880,
+        "embedderHeapUsedSize": 1404120,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599988,
+        "usedSize": 4062144,
+        "embedderHeapUsedSize": 2078096,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "sheetOpenWithEditor": 0,
+      "openDialogsAfterEditor": 0,
+      "scenarioRemoved": {
+        "backingStorageSize": 600670,
+        "usedSize": 4253788,
+        "embedderHeapUsedSize": 1986728,
+        "dom": {
+          "documents": 4,
+          "nodes": 1097,
+          "jsEventListeners": 260
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    }
+  ],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, temperature: 327"
+    },
+    {
+      "at": "end",
+      "battery": "status: 2, temperature: 327"
+    }
+  ],
+  "finished": "2026-10-18T11:31:45.766Z"
+}

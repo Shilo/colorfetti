@@ -1,0 +1,1260 @@
+{
+  "method": "Codex retention method (io-android/retention-probe.mjs): Remove all + 11 s + two explicit GCs, CDP Runtime.getHeapUsage backingStorageSize; touch via CDP Input.dispatchTouchEvent",
+  "stamp": 1792323112053,
+  "urls": {
+    "P": "http://localhost:5431/",
+    "H": "http://localhost:5432/",
+    "F": "http://localhost:5433/"
+  },
+  "started": "2026-10-18T11:31:52.053Z",
+  "trials": [
+    {
+      "variant": "P",
+      "scenario": "preview",
+      "trial": 0,
+      "focus": {
+        "afterPreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-P-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 591832,
+        "usedSize": 3067160,
+        "embedderHeapUsedSize": 1403344,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599282,
+        "usedSize": 4074472,
+        "embedderHeapUsedSize": 2090824,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 22980977,
+        "usedSize": 4286560,
+        "embedderHeapUsedSize": 1937200,
+        "dom": {
+          "documents": 4,
+          "nodes": 1074,
+          "jsEventListeners": 262
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "preview",
+      "trial": 0,
+      "focus": {
+        "afterPreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-H-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592907,
+        "usedSize": 3065160,
+        "embedderHeapUsedSize": 1387344,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599947,
+        "usedSize": 4072252,
+        "embedderHeapUsedSize": 2077064,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 600780,
+        "usedSize": 4203260,
+        "embedderHeapUsedSize": 1885112,
+        "dom": {
+          "documents": 4,
+          "nodes": 998,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "share",
+      "trial": 0,
+      "focus": {
+        "afterSheetEscape": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-H-1792323112053-share-0-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        },
+        "afterSheetBackdrop": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-H-1792323112053-share-0-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592909,
+        "usedSize": 3062352,
+        "embedderHeapUsedSize": 1387400,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599945,
+        "usedSize": 4070868,
+        "embedderHeapUsedSize": 2077296,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 22980937,
+        "usedSize": 4201600,
+        "embedderHeapUsedSize": 1922880,
+        "dom": {
+          "documents": 4,
+          "nodes": 1054,
+          "jsEventListeners": 262
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "F",
+      "scenario": "share",
+      "trial": 0,
+      "focus": {
+        "afterSheetEscape": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-F-1792323112053-share-0-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        },
+        "afterSheetBackdrop": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-F-1792323112053-share-0-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592948,
+        "usedSize": 3064560,
+        "embedderHeapUsedSize": 1388808,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599984,
+        "usedSize": 4059716,
+        "embedderHeapUsedSize": 2091760,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 600116,
+        "usedSize": 4111512,
+        "embedderHeapUsedSize": 1893288,
+        "dom": {
+          "documents": 4,
+          "nodes": 979,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "reuse",
+      "trial": 0,
+      "focus": {
+        "afterEditorClose": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-H-1792323112053-reuse-0-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592909,
+        "usedSize": 3063484,
+        "embedderHeapUsedSize": 1388096,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599945,
+        "usedSize": 4071964,
+        "embedderHeapUsedSize": 2080528,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "sheetOpenWithEditor": 0,
+      "openDialogsAfterEditor": 0,
+      "scenarioRemoved": {
+        "backingStorageSize": 22981487,
+        "usedSize": 4355012,
+        "embedderHeapUsedSize": 2024760,
+        "dom": {
+          "documents": 4,
+          "nodes": 1172,
+          "jsEventListeners": 263
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "F",
+      "scenario": "reuse",
+      "trial": 0,
+      "focus": {
+        "afterEditorClose": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-F-1792323112053-reuse-0-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592948,
+        "usedSize": 3063360,
+        "embedderHeapUsedSize": 1389704,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599984,
+        "usedSize": 4072436,
+        "embedderHeapUsedSize": 2099632,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "sheetOpenWithEditor": 0,
+      "openDialogsAfterEditor": 0,
+      "scenarioRemoved": {
+        "backingStorageSize": 600666,
+        "usedSize": 4256088,
+        "embedderHeapUsedSize": 1960816,
+        "dom": {
+          "documents": 4,
+          "nodes": 1097,
+          "jsEventListeners": 260
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "sharepreview",
+      "trial": 0,
+      "focus": {
+        "afterSharePreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-H-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592909,
+        "usedSize": 3065796,
+        "embedderHeapUsedSize": 1388568,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599959,
+        "usedSize": 4072716,
+        "embedderHeapUsedSize": 2080144,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 22981664,
+        "usedSize": 4318972,
+        "embedderHeapUsedSize": 1976584,
+        "dom": {
+          "documents": 4,
+          "nodes": 1105,
+          "jsEventListeners": 262
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "F",
+      "scenario": "sharepreview",
+      "trial": 0,
+      "focus": {
+        "afterSharePreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-F-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592946,
+        "usedSize": 3063768,
+        "embedderHeapUsedSize": 1388040,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599996,
+        "usedSize": 4059844,
+        "embedderHeapUsedSize": 2076712,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 600834,
+        "usedSize": 4225568,
+        "embedderHeapUsedSize": 1934136,
+        "dom": {
+          "documents": 4,
+          "nodes": 1030,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "preview",
+      "trial": 1,
+      "focus": {
+        "afterPreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-H-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592907,
+        "usedSize": 3059560,
+        "embedderHeapUsedSize": 1386616,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599947,
+        "usedSize": 4073372,
+        "embedderHeapUsedSize": 2059688,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 600780,
+        "usedSize": 4199888,
+        "embedderHeapUsedSize": 1912576,
+        "dom": {
+          "documents": 4,
+          "nodes": 998,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "P",
+      "scenario": "preview",
+      "trial": 1,
+      "focus": {
+        "afterPreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-P-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 591826,
+        "usedSize": 3064540,
+        "embedderHeapUsedSize": 1388248,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599276,
+        "usedSize": 4072884,
+        "embedderHeapUsedSize": 2082208,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 22980971,
+        "usedSize": 4287020,
+        "embedderHeapUsedSize": 1929096,
+        "dom": {
+          "documents": 4,
+          "nodes": 1074,
+          "jsEventListeners": 262
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "F",
+      "scenario": "share",
+      "trial": 1,
+      "focus": {
+        "afterSheetEscape": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-F-1792323112053-share-1-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        },
+        "afterSheetBackdrop": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-F-1792323112053-share-1-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592946,
+        "usedSize": 3063496,
+        "embedderHeapUsedSize": 1389896,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599982,
+        "usedSize": 4072792,
+        "embedderHeapUsedSize": 2098248,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 600114,
+        "usedSize": 4110816,
+        "embedderHeapUsedSize": 1910272,
+        "dom": {
+          "documents": 4,
+          "nodes": 979,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "share",
+      "trial": 1,
+      "focus": {
+        "afterSheetEscape": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-H-1792323112053-share-1-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        },
+        "afterSheetBackdrop": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-H-1792323112053-share-1-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592907,
+        "usedSize": 3063412,
+        "embedderHeapUsedSize": 1388056,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599943,
+        "usedSize": 4072168,
+        "embedderHeapUsedSize": 2077544,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 22980935,
+        "usedSize": 4201328,
+        "embedderHeapUsedSize": 1936976,
+        "dom": {
+          "documents": 4,
+          "nodes": 1054,
+          "jsEventListeners": 262
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "F",
+      "scenario": "reuse",
+      "trial": 1,
+      "focus": {
+        "afterEditorClose": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-F-1792323112053-reuse-1-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592946,
+        "usedSize": 3063496,
+        "embedderHeapUsedSize": 1387304,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599982,
+        "usedSize": 4072876,
+        "embedderHeapUsedSize": 2063640,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "sheetOpenWithEditor": 0,
+      "openDialogsAfterEditor": 0,
+      "scenarioRemoved": {
+        "backingStorageSize": 600664,
+        "usedSize": 4268560,
+        "embedderHeapUsedSize": 1936640,
+        "dom": {
+          "documents": 4,
+          "nodes": 1097,
+          "jsEventListeners": 260
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "reuse",
+      "trial": 1,
+      "focus": {
+        "afterEditorClose": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-H-1792323112053-reuse-1-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592909,
+        "usedSize": 3063448,
+        "embedderHeapUsedSize": 1387944,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599945,
+        "usedSize": 4058352,
+        "embedderHeapUsedSize": 2077696,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "sheetOpenWithEditor": 0,
+      "openDialogsAfterEditor": 0,
+      "scenarioRemoved": {
+        "backingStorageSize": 22981487,
+        "usedSize": 4351520,
+        "embedderHeapUsedSize": 1984912,
+        "dom": {
+          "documents": 4,
+          "nodes": 1172,
+          "jsEventListeners": 263
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "F",
+      "scenario": "sharepreview",
+      "trial": 1,
+      "focus": {
+        "afterSharePreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-F-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592946,
+        "usedSize": 3061944,
+        "embedderHeapUsedSize": 1387784,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599996,
+        "usedSize": 4071952,
+        "embedderHeapUsedSize": 2061560,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 600834,
+        "usedSize": 4231008,
+        "embedderHeapUsedSize": 1917512,
+        "dom": {
+          "documents": 4,
+          "nodes": 1030,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "sharepreview",
+      "trial": 1,
+      "focus": {
+        "afterSharePreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-H-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592909,
+        "usedSize": 3068544,
+        "embedderHeapUsedSize": 1387120,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599959,
+        "usedSize": 4059996,
+        "embedderHeapUsedSize": 2062936,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 22981664,
+        "usedSize": 4322296,
+        "embedderHeapUsedSize": 1923424,
+        "dom": {
+          "documents": 4,
+          "nodes": 1105,
+          "jsEventListeners": 262
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "P",
+      "scenario": "preview",
+      "trial": 2,
+      "focus": {
+        "afterPreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-P-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 591826,
+        "usedSize": 3062440,
+        "embedderHeapUsedSize": 1385672,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599276,
+        "usedSize": 4072652,
+        "embedderHeapUsedSize": 2056840,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 22980971,
+        "usedSize": 4287792,
+        "embedderHeapUsedSize": 1924256,
+        "dom": {
+          "documents": 4,
+          "nodes": 1074,
+          "jsEventListeners": 262
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "preview",
+      "trial": 2,
+      "focus": {
+        "afterPreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-H-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592909,
+        "usedSize": 3064340,
+        "embedderHeapUsedSize": 1389568,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599949,
+        "usedSize": 4071332,
+        "embedderHeapUsedSize": 2065992,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 600782,
+        "usedSize": 4200312,
+        "embedderHeapUsedSize": 1932896,
+        "dom": {
+          "documents": 4,
+          "nodes": 998,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "share",
+      "trial": 2,
+      "focus": {
+        "afterSheetEscape": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-H-1792323112053-share-2-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        },
+        "afterSheetBackdrop": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-H-1792323112053-share-2-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592907,
+        "usedSize": 3065672,
+        "embedderHeapUsedSize": 1387320,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599943,
+        "usedSize": 4072960,
+        "embedderHeapUsedSize": 2061376,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 22980935,
+        "usedSize": 4201224,
+        "embedderHeapUsedSize": 1920072,
+        "dom": {
+          "documents": 4,
+          "nodes": 1054,
+          "jsEventListeners": 262
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "F",
+      "scenario": "share",
+      "trial": 2,
+      "focus": {
+        "afterSheetEscape": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-F-1792323112053-share-2-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        },
+        "afterSheetBackdrop": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-F-1792323112053-share-2-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592948,
+        "usedSize": 3062492,
+        "embedderHeapUsedSize": 1389136,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599984,
+        "usedSize": 4071904,
+        "embedderHeapUsedSize": 2072512,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 600116,
+        "usedSize": 4112584,
+        "embedderHeapUsedSize": 1913744,
+        "dom": {
+          "documents": 4,
+          "nodes": 979,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "reuse",
+      "trial": 2,
+      "focus": {
+        "afterEditorClose": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-H-1792323112053-reuse-2-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592909,
+        "usedSize": 3062728,
+        "embedderHeapUsedSize": 1387128,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599945,
+        "usedSize": 4071356,
+        "embedderHeapUsedSize": 2075680,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "sheetOpenWithEditor": 0,
+      "openDialogsAfterEditor": 0,
+      "scenarioRemoved": {
+        "backingStorageSize": 22981487,
+        "usedSize": 4358108,
+        "embedderHeapUsedSize": 1996680,
+        "dom": {
+          "documents": 4,
+          "nodes": 1172,
+          "jsEventListeners": 263
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "F",
+      "scenario": "reuse",
+      "trial": 2,
+      "focus": {
+        "afterEditorClose": {
+          "tag": "BUTTON",
+          "label": "Image actions for codexchallenge-F-1792323112053-reuse-2-kenney-motion-256.gif",
+          "cls": "ib glass-btn tile-share",
+          "text": "",
+          "figure": 0,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592946,
+        "usedSize": 3061984,
+        "embedderHeapUsedSize": 1389272,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599982,
+        "usedSize": 4071212,
+        "embedderHeapUsedSize": 2067144,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "sheetOpenWithEditor": 0,
+      "openDialogsAfterEditor": 0,
+      "scenarioRemoved": {
+        "backingStorageSize": 600664,
+        "usedSize": 4268224,
+        "embedderHeapUsedSize": 1955024,
+        "dom": {
+          "documents": 4,
+          "nodes": 1097,
+          "jsEventListeners": 260
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "H",
+      "scenario": "sharepreview",
+      "trial": 2,
+      "focus": {
+        "afterSharePreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-H-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592909,
+        "usedSize": 3065840,
+        "embedderHeapUsedSize": 1387024,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599959,
+        "usedSize": 4058536,
+        "embedderHeapUsedSize": 2077424,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 22981664,
+        "usedSize": 4313628,
+        "embedderHeapUsedSize": 1973072,
+        "dom": {
+          "documents": 4,
+          "nodes": 1105,
+          "jsEventListeners": 262
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    },
+    {
+      "variant": "F",
+      "scenario": "sharepreview",
+      "trial": 2,
+      "focus": {
+        "afterSharePreviewClose": {
+          "tag": "BODY",
+          "label": null,
+          "cls": "",
+          "text": "codexchallenge-F-1792323",
+          "figure": null,
+          "connected": true
+        }
+      },
+      "baseline": {
+        "backingStorageSize": 592946,
+        "usedSize": 3063516,
+        "embedderHeapUsedSize": 1387888,
+        "dom": {
+          "documents": 4,
+          "nodes": 893,
+          "jsEventListeners": 246
+        },
+        "openDialogs": 0
+      },
+      "control": {
+        "backingStorageSize": 599996,
+        "usedSize": 4072236,
+        "embedderHeapUsedSize": 2076248,
+        "dom": {
+          "documents": 4,
+          "nodes": 947,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "scenarioRemoved": {
+        "backingStorageSize": 600845,
+        "usedSize": 4233660,
+        "embedderHeapUsedSize": 1959696,
+        "dom": {
+          "documents": 4,
+          "nodes": 1030,
+          "jsEventListeners": 259
+        },
+        "openDialogs": 0
+      },
+      "pageErrors": []
+    }
+  ],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, temperature: 327"
+    },
+    {
+      "at": "end",
+      "battery": "status: 2, temperature: 335"
+    }
+  ],
+  "finished": "2026-10-18T11:42:52.363Z"
+}

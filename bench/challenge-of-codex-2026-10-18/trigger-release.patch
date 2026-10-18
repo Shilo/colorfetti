@@ -1,0 +1,30 @@
+diff --git a/src/App.svelte b/src/App.svelte
+index e9a8bc2..cb7074e 100644
+--- a/src/App.svelte
++++ b/src/App.svelte
+@@ -309,7 +309,7 @@
+   let shared = $state.raw(null), sharedTrigger, shareSession = 0; // the image the sheet is for; it stays set after the sheet closes, until the next one
+   // But not once that image is removed, or the sheet would go on holding all of a photo's pixels.
+   $effect(() => {
+-    if (shared && !items.includes(shared)) shared = null;
++    if (shared && !items.includes(shared)) { shared = null; sharedTrigger = undefined; }
+   });
+   // The browser's offer to install Colorfetti as an app. It comes only where that can be done and is
+   // not done yet, and can be taken up once; the More menu shows Install while one is held.
+@@ -333,6 +333,7 @@
+ 
+   async function previewShared() {
+     const item = shared, trigger = sharedTrigger;
++    sharedTrigger = undefined; // Preview now owns the focus return
+     sheet.close();
+     // Let the sheet restore its invoking control before opening the next dialog.
+     await tick();
+@@ -1105,7 +1106,7 @@
+ 
+ {#if paletteRequest}
+   <PaletteImport request={paletteRequest} onsave={commitPalette} ondelete={removePalette} onreload={reloadPalette} onuse={useSessionPalette}
+-    onclose={async () => { paletteRequest = null; await tick(); (paletteTrigger?.isConnected ? paletteTrigger : document.querySelector('button[aria-label="Palette"]'))?.focus(); }} />
++    onclose={async () => { const trigger = paletteTrigger; paletteTrigger = undefined; paletteRequest = null; await tick(); (trigger?.isConnected ? trigger : document.querySelector('button[aria-label="Palette"]'))?.focus(); }} />
+ {/if}
+ 
+ {#if dragDepth > 0}

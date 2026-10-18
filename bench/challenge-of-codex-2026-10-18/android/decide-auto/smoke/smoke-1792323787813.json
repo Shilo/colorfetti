@@ -1,0 +1,74 @@
+{
+  "stamp": 1792323787813,
+  "order": [
+    "A"
+  ],
+  "urls": {
+    "A": "http://localhost:5401/",
+    "B": "http://localhost:5404/"
+  },
+  "started": "2026-10-18T11:43:07.813Z",
+  "trials": [
+    {
+      "variant": "A",
+      "pair": 0,
+      "slot": 0,
+      "tempC": 33.5,
+      "rows": [
+        {
+          "name": "Auto 8 sprites+effect source-cold import",
+          "cpuMs": 135.793,
+          "startedAt": 231,
+          "elapsedMs": 234.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.900000000000034,
+          "exactCaptionMs": 194.70000004768372,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, level: 95, temperature: 335, Capacity level: 2",
+      "rotation": "free"
+    },
+    {
+      "at": "end",
+      "battery": "status: 2, level: 95, temperature: 335, Capacity level: 2",
+      "rotation": "free"
+    }
+  ],
+  "fixtures": {
+    "target": "kenney-sheet-2048",
+    "tiny": [
+      "dungeon-wizard",
+      "dungeon-archer",
+      "dungeon-knight",
+      "dungeon-potion"
+    ],
+    "auto": "first 8 practical sprites + real-magic GIF"
+  },
+  "settings": "Resurrect 64, Oklab nearest, dither none, Cleanup off, alpha cut 128",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "finished": "2026-10-18T11:43:09.796Z"
+}
