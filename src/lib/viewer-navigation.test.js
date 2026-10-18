@@ -8,7 +8,82 @@ function fixture(options) {
   const navigation = viewerNavigation({ onclose, onhold, onchange, ...options }); navigation.resize(geometry);
   return { navigation, onclose, onhold, onchange };
 }
-afterEach(() => vi.useRealTimers());
+afterEach(() => { vi.useRealTimers(); vi.unstubAllGlobals(); });
+
+// Dispatch through the production listeners, not just the navigation methods:
+// button-only tests cannot catch wheel/keyboard routing to different zoom math.
+function inputFixture() {
+  const doc = Object.assign(new EventTarget(), { querySelector: () => null, hidden: false });
+  const win = Object.assign(new EventTarget(), { closest: () => null });
+  vi.stubGlobal('document', doc); vi.stubGlobal('window', win);
+  const node = Object.assign(new EventTarget(), {
+    ownerDocument: doc, open: true,
+    closest: selector => selector === '.viewer-art' ? node : null,
+    getBoundingClientRect: () => ({ left: 0, top: 0 }),
+  });
+  const navigation = viewerNavigation();
+  const action = navigation.attach(node, geometry);
+  const wheel = (deltaY, deltaMode = 0, extra = {}) => {
+    const e = Object.assign(new Event('wheel', { cancelable: true }), { deltaY, deltaMode, clientX: 400, clientY: 300, ...extra });
+    node.dispatchEvent(e); return e;
+  };
+  const key = value => win.dispatchEvent(Object.assign(new Event('keydown', { cancelable: true }), { key: value }));
+  const step = (source, direction) => {
+    if (source === 'button') navigation.stepZoom(direction);
+    else if (source === 'keyboard') key(direction > 0 ? '+' : '-');
+    else wheel((direction > 0 ? -1 : 1) * (source === 'trackpad' ? .25 : 120));
+  };
+  return { navigation, wheel, key, step, destroy: action.destroy };
+}
+
+describe('production zoom input routing', () => {
+  const sources = ['button', 'keyboard', 'wheel', 'trackpad'];
+  for (const away of sources) for (const back of sources) {
+    it(`${away} to either limit and ${back} back retrace the same levels`, () => {
+      const { navigation: n, step, destroy } = inputFixture();
+      try {
+        for (const [direction, count, endpoint] of [[-1, 7, MIN_VIEWER_ZOOM], [1, 13, MAX_VIEWER_ZOOM]]) {
+          const scales = [1];
+          for (let i = 0; i < count; i++) { step(away, direction); scales.push(n.view.scale); }
+          expect(n.view.scale).toBe(endpoint);
+          // Extra input at a limit must not build hidden zoom debt.
+          for (let i = 0; i < 20; i++) step(away, direction);
+          for (let i = count - 1; i >= 0; i--) { step(back, -direction); expect(n.view.scale).toBe(scales[i]); }
+          expect(n.view).toEqual({ scale: 1, x: 0, y: 0 });
+        }
+      } finally { destroy(); }
+    });
+  }
+  it.each([0, 1, 2])('wheel deltaMode %s and varying magnitudes always advance one shared level', deltaMode => {
+    const { navigation: n, wheel, destroy } = inputFixture();
+    try {
+      for (const delta of [.1, 1, 16, 100, 120, 240, 1000]) {
+        n.reset(); wheel(delta, deltaMode); expect(n.view.scale).toBe(.8);
+        wheel(-delta, deltaMode); expect(n.view).toEqual({ scale: 1, x: 0, y: 0 });
+      }
+      const before = n.view; wheel(0, deltaMode, { deltaX: 100 }); expect(n.view).toEqual(before);
+    } finally { destroy(); }
+  });
+  it('keeps Ctrl-wheel pinch continuous and lands on shared levels when incremental input resumes', () => {
+    const { navigation: n, wheel, step, destroy } = inputFixture();
+    try {
+      wheel(-40, 0, { ctrlKey: true }); expect(n.view.scale).toBeCloseTo(Math.exp(.1));
+      step('wheel', -1); expect(n.view.scale).toBe(1);
+      wheel(40, 0, { ctrlKey: true }); expect(n.view.scale).toBeCloseTo(Math.exp(-.1));
+      step('keyboard', 1); expect(n.view.scale).toBe(1);
+    } finally { destroy(); }
+  });
+  it('wheel stepping retains the source coordinate under an off-center cursor', () => {
+    const { navigation: n, wheel, destroy } = inputFixture();
+    try {
+      n.stepZoom(1); n.stepZoom(1); const before = n.view;
+      const e = wheel(-120, 0, { clientX: 460, clientY: 330 });
+      expect(e.defaultPrevented).toBe(true);
+      expect((60 - before.x) / before.scale).toBeCloseTo((60 - n.view.x) / n.view.scale);
+      expect((30 - before.y) / before.scale).toBeCloseTo((30 - n.view.y) / n.view.scale);
+    } finally { destroy(); }
+  });
+});
 
 describe('viewer geometry', () => {
   it('retains the image coordinate under the wheel/pinch anchor before a bound is reached', () => {

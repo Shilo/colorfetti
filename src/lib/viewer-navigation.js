@@ -98,10 +98,10 @@ export function viewerNavigation({ onchange = () => {}, onhold = () => {}, onclo
     zoomBy(factor, point = { x: geometry.width / 2, y: geometry.height / 2 }) {
       api.zoomTo(view.scale * factor, point);
     },
-    stepZoom(direction) {
+    stepZoom(direction, point) {
       const levels = direction > 0 ? zoomLevels : [...zoomLevels].reverse();
       const scale = levels.find(level => !sameScale(level, view.scale) && (direction > 0 ? level > view.scale : level < view.scale));
-      api.zoomTo(scale ?? view.scale);
+      api.zoomTo(scale ?? view.scale, point);
     },
     zoomTo(scale, point = { x: geometry.width / 2, y: geometry.height / 2 }) {
       tap = null; ready = false; stopHold();
@@ -140,7 +140,11 @@ export function viewerNavigation({ onchange = () => {}, onhold = () => {}, onclo
         if (!art(e)) return;
         e.preventDefault(); e.stopPropagation();
         const delta = e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? geometry.height : 1);
-        api.zoomBy(Math.exp(-clamp(delta, -240, 240) * 0.0025), point(e));
+        if (!delta) return;
+        // Ordinary wheel events use the same reversible levels as +/−.
+        // Trackpad pinch is reported as Ctrl-wheel and remains continuous.
+        if (e.ctrlKey) api.zoomBy(Math.exp(-clamp(delta, -240, 240) * 0.0025), point(e));
+        else api.stepZoom(delta < 0 ? 1 : -1, point(e));
       };
       const keydown = e => {
         if (!node.open || node.ownerDocument.querySelector('dialog.palette-import-modal[open]') || e.target.closest('input,textarea,select,[contenteditable="true"]')) return;

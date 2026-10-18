@@ -152,3 +152,35 @@ independently passed the full 969-test suite, the 94-assertion probe, and a
 production build. Uncommitted App changes were excluded from this candidate.
 The bench PNG screenshots remain local evidence under the repository's existing
 `bench/.gitignore`; the landmark PNG is reproducible with the fixture generator.
+
+## Wheel round-trip correction — October 17, 2026
+
+The first round-trip fix covered buttons/keyboard but left wheel input on the
+continuous multiplier path. Native Codex Browser input on the running development
+server reproduced three wheel steps to 0.25× and three back reaching 1.51241×;
+five steps to 16× and five back reached 0.796593×. Existing wheel integration
+checks reached both limits and reset with Fit, so they missed this reverse path.
+
+Ordinary wheel and trackpad scrolling now call the same fixed-level operation as
+buttons and keyboard. One nonzero vertical wheel event advances one level,
+independent of delta magnitude/units. Cursor anchoring is passed through that
+shared operation. Horizontal-only input leaves zoom unchanged. Ctrl-wheel pinch
+and touch pinch retain their continuous behavior. Extra input at a limit does
+not accumulate hidden steps that must be unwound before reversing.
+
+Unit coverage dispatches through the production wheel/keyboard listeners, with
+all sixteen pairs of button/keyboard/wheel/small-delta trackpad sources at both
+limits, extra saturated input, delta units/magnitudes, continuous pinch handoff,
+and off-center anchoring. Browser coverage repeats those input pairs at four
+viewport sizes and checks every intermediate reverse level, exact Fit geometry,
+and the disabled state. Native wheel/keyboard interchange and cursor anchoring
+are checked separately; synthetic small-delta input is not a physical trackpad
+hardware test.
+
+Final verification passed 1,013 unit tests (2 existing skips), the production
+build and all 156 Codex Browser integration checks. Native wheel input returned
+exactly to Fit after seven minimum-bound steps and thirteen maximum-bound steps;
+native keyboard/wheel interchange passed both directions. Off-center native
+wheel zoom preserved its anchor and reversing restored the prior offsets. A
+390×844 native wheel round trip also restored scale 1, zero offsets and disabled
+Fit. The development server was left running on port 5173 for user testing.

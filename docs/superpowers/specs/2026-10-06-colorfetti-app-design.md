@@ -2,7 +2,7 @@
 
 ## Preview navigation — October 16, 2026
 
-Preview opens at Fit. Wheel (including trackpad Ctrl-wheel), +/− controls and
+Preview opens at Fit. Wheel, trackpad Ctrl-wheel, +/− controls and
 two-finger pinch zoom the image from 0.25× to 16× relative to Fit. Wheel/pinch
 anchors the image under the cursor/finger midpoint until an image edge constrains
 it. One finger or a primary mouse drag pans; each undersized axis stays centered,
@@ -29,10 +29,14 @@ capsule on smaller screens. Feedback is centered and width-bounded within the
 left/right safe areas and the same edge inset.
 Fit uses Lucide's four-corner Maximize icon with the accessible name "Fit image".
 Fit is disabled when the view is already at scale 1 with zero pan offsets.
-Buttons and +/− keys share fixed 1.25× zoom levels anchored at Fit, with 0.25×
-and 16× as additional endpoints. Reversing the same number of successful steps
-from Fit returns exactly to Fit, including after either limit. After continuous
-wheel/pinch zoom, a button moves to the next level in its direction. Continuous
+Ordinary wheel events, buttons and +/− keys share fixed 1.25× zoom levels
+anchored at Fit, with 0.25× and 16× as additional endpoints. Reversing the same
+number of successful steps
+from Fit returns exactly to Fit, including after either limit and when mixing
+these inputs. Each nonzero vertical wheel event advances one level in its direction,
+regardless of delta units or magnitude; horizontal-only wheel events do not zoom.
+Trackpad Ctrl-wheel and touch pinch remain continuous. After continuous
+pinch zoom, a stepped control moves to the next level in its direction. Continuous
 zoom normalizes numerical roundoff near Fit/limits before transforming the image;
 Fit detection and sampling use that same normalized view.
 Zoom tooltips put the shortcut after the sentence: "Zoom in. (+)",
