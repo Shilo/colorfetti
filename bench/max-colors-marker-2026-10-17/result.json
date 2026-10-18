@@ -1,0 +1,36 @@
+{
+  "purpose": "Test whether All used count is a safe no-effect slider threshold",
+  "source": "Owned opaque 8×8 flat sRGB midgray; three-color black/white/red target",
+  "observations": [
+    {
+      "dither": "none",
+      "paletteCapacity": 3,
+      "allCount": 1,
+      "cap": 2,
+      "cappedCount": 1,
+      "samePixels": true,
+      "allColors": [
+        "#ff0000"
+      ],
+      "cappedColors": [
+        "#ff0000"
+      ]
+    },
+    {
+      "dither": "4x4",
+      "paletteCapacity": 3,
+      "allCount": 2,
+      "cap": 2,
+      "cappedCount": 1,
+      "samePixels": false,
+      "allColors": [
+        "#000000",
+        "#ffffff"
+      ],
+      "cappedColors": [
+        "#ff0000"
+      ]
+    }
+  ],
+  "conclusion": "No. With 4×4 dithering, All uses two colors, but cap=2 changes pixels and uses one color. The limiter prepares a nearest-based subset before dithering."
+}
