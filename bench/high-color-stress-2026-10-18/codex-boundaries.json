@@ -1,0 +1,58 @@
+[
+  {
+    "fixture": "cube-255",
+    "count": "255 colors",
+    "notice": [],
+    "saveEnabled": true,
+    "backupEnabled": true,
+    "swatches": 64
+  },
+  {
+    "fixture": "cube-256",
+    "count": "256 colors",
+    "notice": [],
+    "saveEnabled": true,
+    "backupEnabled": true,
+    "swatches": 64
+  },
+  {
+    "fixture": "cube-257",
+    "count": "257 colors",
+    "notice": [
+      "Remove 1 or more colors before saving."
+    ],
+    "saveEnabled": false,
+    "backupEnabled": true,
+    "swatches": 64
+  },
+  {
+    "fixture": "cube-512-patches",
+    "count": "512 colors",
+    "notice": [
+      "Remove 256 or more colors before saving."
+    ],
+    "saveEnabled": false,
+    "backupEnabled": true,
+    "swatches": 64
+  },
+  {
+    "fixture": "unique-4096",
+    "count": "4,096 colors",
+    "notice": [
+      "Remove 3840 or more colors before saving."
+    ],
+    "saveEnabled": false,
+    "backupEnabled": true,
+    "swatches": 64
+  },
+  {
+    "fixture": "unique-4097",
+    "count": "4,097 colors found",
+    "notice": [
+      "This image has more than 4096 colors. Only the first 4096 are shown, and this draft cannot be saved."
+    ],
+    "saveEnabled": false,
+    "backupEnabled": false,
+    "swatches": 64
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "colors": 32,
+    "review": 32,
+    "truncated": false,
+    "activeAllowed": true
+  },
+  {
+    "colors": 64,
+    "review": 64,
+    "truncated": false,
+    "activeAllowed": true
+  },
+  {
+    "colors": 255,
+    "review": 255,
+    "truncated": false,
+    "activeAllowed": true
+  },
+  {
+    "colors": 256,
+    "review": 256,
+    "truncated": false,
+    "activeAllowed": true
+  },
+  {
+    "colors": 257,
+    "review": 257,
+    "truncated": false,
+    "activeAllowed": false
+  },
+  {
+    "colors": 512,
+    "review": 512,
+    "truncated": false,
+    "activeAllowed": false
+  },
+  {
+    "colors": 4096,
+    "review": 4096,
+    "truncated": false,
+    "activeAllowed": false
+  },
+  {
+    "colors": 4097,
+    "review": 4096,
+    "truncated": true,
+    "activeAllowed": false
+  },
+  {
+    "browserDownload": "codex-all-256.png",
+    "uniqueRGB": 256
+  },
+  {
+    "browserDownload": "codex-cap-32.png",
+    "uniqueRGB": 32
+  },
+  {
+    "browserRecoveredGIF": {
+      "frames": 2,
+      "visibleColors": 255,
+      "delayMs": 100,
+      "loop": 0,
+      "transparentPixelPerFrame": 1
+    }
+  },
+  {
+    "backupColors": 512,
+    "opaqueGIF256": "exact",
+    "transparentGIF255": "exact",
+    "transparentGIF256": "explicit rejection",
+    "transparentPNG256": "exact RGBA fallback"
+  }
+]

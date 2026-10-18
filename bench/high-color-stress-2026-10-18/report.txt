@@ -1,0 +1,80 @@
+High-color palette boundary audit — 2026-10-18
+
+Result: expected behavior; keep the existing 256-color active-palette limit.
+No application source or behavior changed. This directory contains audit evidence.
+
+Codex in-app browser, built app on loopback http://127.0.0.1:5192/:
+- 255 and 256 unique PNG colors: exact count; Save and HEX backup enabled.
+- 257 colors: exact count; Save disabled with remove-one guidance. Paging to
+  the fifth page and removing color 257 enabled Save. Saved as Stress 256.
+- 512 colors: exact count, eight pages of 64 swatches, Save disabled with
+  remove-256 guidance. HEX backup independently verified to contain all 512.
+  Both one-pixel samples and opaque 4x4 patches were tested. Find solid colors
+  retained all 512 patch colors; it is a patch filter, not a quantizer.
+- Pasted 512-color HEX: all 512 retained; saving blocked.
+- 4,096 colors: complete review, backup enabled, saving blocked.
+- 4,097 colors: exact total disclosed, first 4,096 shown, saving AND backup
+  disabled so an incomplete candidate list cannot masquerade as a full palette.
+- Live Lospec https://lospec.com/palette-list/8-bit-rgbm imported 256 colors,
+  with its published name and source link. The 512-color fixture is synthetic
+  (an exact 8x8x8 RGB cube), not claimed to be a downloaded Lospec palette.
+- Phone-sized viewport 390x844: count, warning, paging, methods, close, backup
+  and disabled save remained available. Next reached page 2/8. Viewport reset.
+  This is responsive desktop-browser evidence, not a physical-phone/touch test.
+- Imported the 512-color PNG as artwork using the recovered 256-color palette.
+  All produced a caption and independently decoded download with 256 colors.
+  An explicit Max colors 32 request produced exactly 32 colors in both caption
+  and independently decoded PNG. All restored 256. No implicit 32-color cap.
+- A two-frame source GIF uses 128 different opaque colors per frame plus an
+  empty pixel: 256 visible RGB values over the whole clip. Saving with all 256
+  opened the expected 255-color copy/recovery dialog, with explicit no-download
+  guidance. Removing one color and saving the copy allowed GIF export. An
+  independent omggif decoder confirmed 255 visible colors, both 129x1 frames,
+  one transparent pixel per frame, 100 ms delays and loop=0.
+- No warning/error console entries during the completed browser flows.
+
+Engine boundary audit (verify.mjs):
+- Counts/review bounds at 32, 64, 255, 256, 257, 512, 4096 and 4097.
+- Palette preparation rejects >256 instead of truncating; saved-library
+  validation also rejects a forged 257-color record.
+- Lospec parser accepts 256, rejects 257/512/4096 with its existing 1–256
+  validation message. Oversized live network payloads were not injected into
+  the Codex browser; this rejection was tested at the parser boundary.
+- Duplicate 512-entry lists with 256 unique RGB values normalize to 256.
+- Oklab and RGB exact matches preserve all 256 source colors.
+- Independently decoded opaque PNG and GIF retain all 256 colors exactly.
+- PNG with 256 opaque colors plus an empty state retains exact pixels through
+  RGBA fallback; GIF export rejects that combination with PALETTE_GIF_LIMIT.
+  GIF with only 255 used opaque colors plus transparency succeeds, including
+  when its selected palette contains an unused 256th color.
+
+Assessment:
+256 is a sensible existing ceiling for this app, whose color indexes 0–255
+share an explicit empty sentinel of 256 and whose GIF exporter builds one shared
+table. It is not a universal maximum for RGB images or artists' palette files.
+Auto has a separate 64-color generation capacity. Output color count can also
+be lower because of explicit Max colors settings or unused target colors.
+
+No silent reduction, out-of-range wrapping, incomplete backup, lost transparency
+or export color loss was reproduced in this audit. Two intentional UX limits:
+oversized image/text drafts require manual color removal; oversized Lospec links
+are rejected rather than opening the larger review draft. Neither increases the
+active cap. The Lospec error describes the 1–256 requirement but does not offer
+the image/text editor's remove-N workflow.
+
+Validation:
+- npm run build passed (built index-DzbaQAs6.js, index-DX7ysEEG.css).
+- 160 tests passed across palette-import, palette-decode, palette-lospec,
+  palette-library, quantize, palette-export, gif and save test files.
+- node bench/high-color-stress-2026-10-18/verify.mjs passed.
+- Browser downloads and screenshots are retained in this directory.
+
+Reproduce fixtures: node bench/high-color-stress-2026-10-18/make-fixtures.mjs
+Writes .tmp/high-color-stress/fixtures; upload the PNG/HEX/GIF files through the
+real palette/artwork file pickers. verify.mjs checks the retained browser
+downloads and engine boundaries, writing engine-results.json.
+
+Environment note: sandbox loopback/temp-file restrictions impeded initial dev
+server/test attempts. A loopback-only static server and permitted unsandboxed
+Vitest run completed validation. An all-interface Vite launch was rejected by
+automatic approval review; no broader network binding was used.
