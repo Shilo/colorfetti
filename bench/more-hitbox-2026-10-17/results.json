@@ -1,0 +1,1715 @@
+{
+  "browser": "Codex in-app browser",
+  "physicalMobileTested": false,
+  "touchEmulated": false,
+  "touchCSSActivatedByFixture": true,
+  "layoutCases": [
+    {
+      "viewport": {
+        "width": 320,
+        "height": 720
+      },
+      "tileWidth": 140,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 720
+      },
+      "tileWidth": 140,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 720
+      },
+      "tileWidth": 140,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 720
+      },
+      "tileWidth": 180,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 720
+      },
+      "tileWidth": 180,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 720
+      },
+      "tileWidth": 180,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 720
+      },
+      "tileWidth": 300,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 720
+      },
+      "tileWidth": 300,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 720
+      },
+      "tileWidth": 300,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 448,
+        "height": 819
+      },
+      "tileWidth": 140,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 448,
+        "height": 819
+      },
+      "tileWidth": 140,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 448,
+        "height": 819
+      },
+      "tileWidth": 140,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 448,
+        "height": 819
+      },
+      "tileWidth": 180,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 448,
+        "height": 819
+      },
+      "tileWidth": 180,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 448,
+        "height": 819
+      },
+      "tileWidth": 180,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 448,
+        "height": 819
+      },
+      "tileWidth": 300,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 448,
+        "height": 819
+      },
+      "tileWidth": 300,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 448,
+        "height": 819
+      },
+      "tileWidth": 300,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 819,
+        "height": 448
+      },
+      "tileWidth": 140,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 819,
+        "height": 448
+      },
+      "tileWidth": 140,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 819,
+        "height": 448
+      },
+      "tileWidth": 140,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 819,
+        "height": 448
+      },
+      "tileWidth": 180,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 819,
+        "height": 448
+      },
+      "tileWidth": 180,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 819,
+        "height": 448
+      },
+      "tileWidth": 180,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 819,
+        "height": 448
+      },
+      "tileWidth": 300,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 819,
+        "height": 448
+      },
+      "tileWidth": 300,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 819,
+        "height": 448
+      },
+      "tileWidth": 300,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "tileWidth": 140,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "tileWidth": 140,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "tileWidth": 140,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 56,
+          "textWidth": 56,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 133,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 76,
+          "textWidth": 76,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "tileWidth": 180,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "tileWidth": 180,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "tileWidth": 180,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 26,
+          "previewWidth": 96,
+          "textWidth": 96,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 173,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 6,
+          "previewWidth": 116,
+          "textWidth": 116,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "tileWidth": 300,
+      "state": "No count",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "tileWidth": 300,
+      "state": "Two colors",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "tileWidth": 300,
+      "state": "Many colors",
+      "measurements": [
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 216,
+          "textWidth": 178.1875,
+          "variant": "Before"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "ordinary",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        },
+        {
+          "buttonRight": 293,
+          "buttonWidth": 44,
+          "context": "stacked",
+          "gap": 63.8125,
+          "previewWidth": 236,
+          "textWidth": 178.1875,
+          "variant": "After"
+        }
+      ]
+    }
+  ],
+  "hitRoutes": [
+    {
+      "context": "ordinary",
+      "point": "overlapping text",
+      "action": "1: After — Image actions ordinary"
+    },
+    {
+      "context": "ordinary",
+      "point": "outside overlap",
+      "action": "2: After — Preview ordinary"
+    },
+    {
+      "context": "ordinary",
+      "point": "visible button",
+      "action": "3: After — Image actions ordinary"
+    },
+    {
+      "context": "stacked",
+      "point": "overlapping text",
+      "action": "6: After — Image actions stacked"
+    },
+    {
+      "context": "stacked",
+      "point": "outside overlap",
+      "action": "7: After — Preview stacked"
+    },
+    {
+      "context": "stacked",
+      "point": "visible button",
+      "action": "8: After — Image actions stacked"
+    }
+  ],
+  "actualApp": {
+    "portrait": [
+      390,
+      819
+    ],
+    "landscape": [
+      819,
+      448
+    ],
+    "overlapOpensMore": true,
+    "outsideOverlapOpensPreview": true,
+    "keyboardPreviewAndMore": true,
+    "landscapeChecks": [
+      "metadata overlap",
+      "upper extension",
+      "visible dots"
+    ]
+  },
+  "review": "Two sub-agents independently approved minimal production change; parent challenged fixture specificity and corrected before comparison."
+}

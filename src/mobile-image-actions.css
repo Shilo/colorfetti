@@ -9,7 +9,7 @@
 :root .tile .cap .caption-preview:focus-visible { border-radius: 4px; outline-offset: 1px; }
 @media (hover: none) {
   :root .tile .cap.has-image-actions {
-    display: grid; grid-template-columns: minmax(0,1fr) 64px;
+    display: grid; grid-template-columns: minmax(0,1fr) 44px;
     grid-column: 1 / -1; grid-row: 2; align-items: center;
     width: 100%; min-height: 52px; gap: 6px;
   }
@@ -27,7 +27,7 @@
     background: transparent; border-color: transparent; box-shadow: none;
     -webkit-backdrop-filter: none; backdrop-filter: none; transform: none;
   }
-  /* The reserved 20px gutter belongs to More, not caption Preview. */
+  /* Extend More over the text's right edge without reserving that invisible space. */
   :root .tile .cap .tile-share::before {
     content: ''; position: absolute; left: -20px; right: 0; top: -4px; bottom: -4px;
   }
