@@ -42,7 +42,8 @@ function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, lim
   try { reader = new omggif.GifReader(bytes); }
   catch (problem) { throw invalidGif('Invalid GIF data: ' + problem.message, problem); }
   const { width, height } = reader;
-  if (!width || !height || width * height > maxPixels) throw new Error(limitMessage);
+  if (!width || !height) throw invalidGif('Invalid GIF logical dimensions.');
+  if (width * height > maxPixels) throw new Error(limitMessage);
   if (!reader.numFrames()) throw invalidGif('This GIF has no image frames.');
   const canvas = new Uint8ClampedArray(width * height * 4), frames = [];
   let before = null; // the previous frame, whose "disposal" says how to leave the canvas

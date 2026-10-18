@@ -978,7 +978,14 @@ viewport height so mobile browser bars do not cut the dock off.
   images read within a quarter of a second of each other go on the wall together.
 - Remove all also stops any batch that is still being read. Its remaining images are not
   read and do not appear on the wall that was just emptied.
-- Files the browser cannot decode are skipped, and a short message says how many.
+- Failed artwork files are skipped while successful additions remain. After the
+  batch, report the count and at most three filename excerpts with recovery guidance,
+  plus the remaining failure count. Each excerpt is at most 48 Unicode codepoints;
+  remove paths, control and bidi-control characters. Never display raw exceptions
+  or URL credentials, host, query or fragment. Reports last 9–30 seconds according
+  to their bounded length. Distinguish explicit invalid GIF data, admission limits,
+  unsupported diagnostics and URL download/timeout failures; unknown decode causes
+  remain generic. Cancellation and Remove all suppress late additions and messages.
 
 ### Empty state
 
@@ -1650,7 +1657,9 @@ it is doing:
 
 ## Errors and limits
 
-- Undecodable files are skipped with a message; the rest of the batch still loads.
+- Undecodable files use the bounded per-file reporting policy in Adding images;
+  the rest of the batch still loads. Zero GIF logical dimensions are invalid GIF
+  data, independently of any size limit. Strict decoding remains unchanged.
 - Image URL drops require the source host to allow browser cross-origin requests and
   the URL to still be valid. A failed request or non-image response shows a short
   message suggesting copying/pasting the image or saving and adding its file. The

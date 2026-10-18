@@ -1,0 +1,32 @@
+
+> colorfetti@0.0.0 build
+> vite build --outDir .tmp/conversion-fixes-m3/after-v4
+
+6:43:50 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti - using default configuration.
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 199 modules transformed.
+rendering chunks...
+computing gzip size...
+.tmp/conversion-fixes-m3/after-v4/index.html                                     4.54 kB │ gzip:  1.63 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-generated-worker-xpoMRM2c.js    9.82 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-limit-worker-rkrL9P3s.js        9.86 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-gif-worker-D4qe4WP7.js         11.21 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-cleanup-worker-ChpCTucA.js     15.05 kB
+.tmp/conversion-fixes-m3/after-v4/assets/image-import-worker-DQ8SerMa.js        28.74 kB
+.tmp/conversion-fixes-m3/after-v4/assets/index-DX7ysEEG.css                    168.15 kB │ gzip: 26.48 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-usage-DXCdW8f-.js               0.97 kB │ gzip:  0.61 kB
+.tmp/conversion-fixes-m3/after-v4/assets/image-bitmap-decode-BBWTQ-0Y.js         1.67 kB │ gzip:  1.01 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-lospec-BUdZU2lN.js              2.32 kB │ gzip:  1.25 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-ase-gXqzrNdw.js                 2.49 kB │ gzip:  1.32 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-generated-client-CU1RhP4j.js    4.00 kB │ gzip:  1.75 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-cleanup-pZWnxuZT.js             4.23 kB │ gzip:  2.21 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-limit-OiwOF5bZ.js               4.57 kB │ gzip:  2.26 kB
+.tmp/conversion-fixes-m3/after-v4/assets/image-import-client-CH8bv8k7.js         5.28 kB │ gzip:  2.11 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-generated-CxI9PR_i.js           5.98 kB │ gzip:  2.73 kB
+.tmp/conversion-fixes-m3/after-v4/assets/palette-cleanup-client-Ce46NHQn.js      7.36 kB │ gzip:  2.88 kB
+.tmp/conversion-fixes-m3/after-v4/assets/quantize-DsvDuXDJ.js                   13.24 kB │ gzip:  6.39 kB
+.tmp/conversion-fixes-m3/after-v4/assets/gif-8qNleDi-.js                        16.58 kB │ gzip:  6.53 kB
+.tmp/conversion-fixes-m3/after-v4/assets/index-DLZEHkZy.js                     277.70 kB │ gzip: 99.16 kB
+
+✓ built in 429ms

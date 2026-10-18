@@ -1,0 +1,29 @@
+<!doctype html><meta charset="utf-8"><title>M3 controlled import scenarios</title>
+<style>body{margin:0;font:14px system-ui}nav{display:flex;gap:8px;padding:8px}iframe{display:block;border:0;width:100%;height:calc(100vh - 48px)}</style>
+<nav><button id="mixed">Mixed URL batch</button><button id="slow">Slow URL import</button><button id="labels">Bounded failure labels</button><button id="misleading">Misleading valid GIF metadata</button></nav>
+<iframe src="/after-v4/" title="Colorfetti under test"></iframe>
+<script type="module">
+const frame = document.querySelector('iframe');
+function drop(transfer) {
+  const target = frame.contentWindow;
+  target.dispatchEvent(new target.DragEvent('drop', { dataTransfer: transfer, bubbles: true, cancelable: true }));
+}
+document.querySelector('#mixed').onclick = () => {
+  const data = new DataTransfer();
+  data.setData('text/uri-list', ['/fixtures/valid.gif', '/fixtures/damaged.png', '/fixtures/missing.png?private-token=secret'].map(path => location.origin + path).join('\n'));
+  drop(data);
+};
+document.querySelector('#slow').onclick = () => {
+  const data = new DataTransfer(); data.setData('text/uri-list', location.origin + '/fixtures/slow.gif'); drop(data);
+};
+document.querySelector('#labels').onclick = () => {
+  const data = new DataTransfer();
+  for (let i = 0; i < 20; i++) data.items.add(new File(['damaged synthetic image'], '\u061c' + '😀'.repeat(60) + '.png', { type: 'image/png' }));
+  drop(data);
+};
+document.querySelector('#misleading').onclick = async () => {
+  const data = new DataTransfer(), source = await (await fetch('/fixtures/valid.gif')).blob();
+  // Generic MIME + misleading extension still reaches the native browser decoder.
+  data.items.add(new File([source], 'valid-but-named.txt', { type: 'application/octet-stream' })); drop(data);
+};
+</script>

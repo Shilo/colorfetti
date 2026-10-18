@@ -189,6 +189,14 @@ and Original remains available. Exports independently prepare captured settings.
 Matching analyses skip all preparation; there is no remembered-source cache. Old and
 new analyses coexist temporarily, adding roughly three bytes per changed source pixel.
 The shared animation seam pass and cold structural rendering can still block.
+
+Artwork import reports a failure count and at most three safe filename/recovery
+examples after each batch, preserving successful additions and quiet cancellation.
+Known invalid GIF, admission, unsupported and URL download/timeout categories have
+specific guidance; unknown decode causes remain generic. Labels exclude paths,
+URL credentials/query/fragment, controls and Unicode bidi controls. Bounded reports
+remain visible for 9–30 seconds. Zero GIF logical dimensions are GIF_INVALID,
+independently of size limits; strict GIF decoding is unchanged.
 Generated's empty wall uses the ready static logo example; an invisible nonempty real wall
 must remain authoritative. Pending generation and conversion handoff retain the same
 item's completed preview, including a prior 1-bit conversion, with current-frame

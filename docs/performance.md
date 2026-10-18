@@ -1,5 +1,14 @@
 # Performance
 
+## Bounded artwork import reporting (October 18, 2026)
+
+Failure reporting retains one count and at most three short diagnostic strings,
+without retaining failed files, decoded pixels or exception objects. Filename
+truncation stops after at most 49 Unicode codepoints. Local and URL batches share
+this policy; serial import, quarter-second publication batching, cancellation and
+worker fallback remain unchanged. Reports last 9–30 seconds according to bounded
+message length, without adding polling or a rendering loop.
+
 ## Exact GIF palette acquisition (October 18, 2026)
 
 GIF palette import now visits all composited frames through artwork's indexed

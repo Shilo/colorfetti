@@ -20,7 +20,7 @@ screenshots in its `screenshots/` folder.
 | --- | --- | --- |
 | M1 | Decoded artwork admission budget | Queued |
 | M2 | Sampling disclosure and native-pixel inspection | Queued |
-| M3 | Bounded per-file import diagnostics | Implementation under challenge |
+| M3 | Bounded per-file import diagnostics | Accepted after revisions and desktop retesting |
 | M4 | ANIMEXTS GIF repeat metadata | Implementation under challenge |
 | M5 | Enabled palette-editor text contrast | Accepted after revision and desktop retesting |
 | M6 | Portable Save/ZIP/drag names | Queued |
@@ -30,6 +30,36 @@ screenshots in its `screenshots/` folder.
 ## Accepted changes and review discussions
 
 Task-specific acceptance and evidence are recorded here as each task completes.
+
+### M3 Import errors
+
+Failed local/URL batches retain valid additions and show a count, at most three
+safe filename/recovery examples and the remaining count. Unknown browser failures
+are described honestly; raw exceptions and signed URLs never appear. Zero GIF
+dimensions are invalid data. Strict decoding is preserved.
+
+Coordinator challenges corrected an ineffective geometry test, removed whole-name
+array allocation, ruled out MIME guesses and extended dense-report visibility
+from a fixed nine seconds to a bounded 9–30 seconds. The agent's final challenge
+added the complete Unicode bidi-control property, including Arabic Letter Mark.
+Every revision was rebuilt and retested in the desktop browser. Both reviewers
+agreed on the final fix. A transient mutable-build test failure was investigated;
+stable retesting passed and final served bundles are frozen in memory. The exact
+cause of the transient failure is not asserted.
+
+The coordinator independently repeated baseline and candidate native file-picker
+imports of a valid and malformed GIF, confirming valid wall preservation and named
+guidance. Agent checks include mixed URLs, misleading valid MIME/name, a 20-file
+bounded report at 375×720, notice persistence beyond nine seconds, actual canceled
+network response and no late wall/message after Remove all. Focused validation:
+135 tests across seven suites and production build passed. These overlapping
+focused suites are not added to a full-suite total.
+
+Evidence: `bench/conversion-fixes-2026-10-18/m3/REVIEW.md`, `validation.json`,
+browser-state/cancellation receipts and focused tests. Final frozen candidate is
+`http://127.0.0.1:5203/after-v4/`.
+Screenshots: [before](../../bench/conversion-fixes-2026-10-18/screenshots/m3-import-before.png),
+[after](../../bench/conversion-fixes-2026-10-18/screenshots/m3-import-after.png).
 
 ### M5 Palette editor contrast
 

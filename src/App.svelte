@@ -18,6 +18,7 @@
   import { isInternalDrag, trackInternalDrag } from './lib/internal-drag.js';
   import { hasImageDrop, droppedImages, fetchDroppedImage } from './lib/image-drop.js';
   import { decodeImageFile } from './lib/image-decode.js';
+  import { importFailures, importFailureDuration } from './lib/image-import-errors.js';
   import CanvasGrid from './CanvasGrid.svelte';
   import Dock from './Dock.svelte';
   import Tile from './Tile.svelte';
@@ -621,11 +622,12 @@
     for (const controller of imageImports) controller.abort();
     clearComparison(); items = [];
   }
-  async function addFiles(files, began = emptied, reportSkipped = true) {
+  async function addFiles(files, began = emptied, sharedFailures) {
     if (began !== emptied) return;
     const controller = new AbortController();
     imageImports.add(controller);
-    let skipped = 0, fresh = [], shownAt = 0, done;
+    const failures = sharedFailures ?? importFailures();
+    let fresh = [], shownAt = 0, done;
     // A photo goes on the wall as soon as it is read. Sprites are read far quicker than the wall
     // can be fitted again around each one, so those read within a quarter of a second go on together.
     const show = () => {
@@ -657,8 +659,8 @@
           if (began !== emptied || controller.signal.aborted) return;
           if (performance.now() - shownAt > 250) show();
         } catch (error) {
-          if (controller.signal.aborted || error.name === 'AbortError' || began !== emptied) return;
-          skipped++;
+          if (controller.signal.aborted || error?.name === 'AbortError' || began !== emptied) return;
+          failures.add(file, error);
         }
       }
       if (began !== emptied) return;
@@ -667,14 +669,14 @@
       imageImports.delete(controller);
       done?.();
     }
-    if (reportSkipped && skipped) say(`${skipped} file${skipped === 1 ? '' : 's'} skipped. Colorfetti reads PNG, GIF, WebP, JPEG and BMP images.`);
-    return skipped;
+    const problem = !sharedFailures && failures.message();
+    if (problem) say(problem, importFailureDuration(problem));
   }
 
   async function addImageUrls(urls) {
     const began = emptied, controller = new AbortController();
     imageDownloads.add(controller);
-    let skipped = 0;
+    const failures = importFailures();
     const done = working('Fetching image…');
     try {
       for (const url of urls) {
@@ -682,19 +684,19 @@
         try {
           const file = await fetchDroppedImage(url, AbortSignal.any([controller.signal, AbortSignal.timeout(30000)]));
           if (began !== emptied) return;
-          const failed = await addFiles([file], began, false);
+          await addFiles([file], began, failures);
           if (began !== emptied) return;
-          skipped += failed;
-        } catch {
-          if (began !== emptied) return;
-          skipped++;
+        } catch (error) {
+          if (began !== emptied || controller.signal.aborted) return;
+          failures.add(url, error, { download: true });
         }
       }
     } finally {
       imageDownloads.delete(controller);
       done();
     }
-    if (skipped) say(`Could not import ${skipped} dropped image${skipped === 1 ? '' : 's'}. Try copying and pasting the image, or saving it and adding the file.`, 6000);
+    const problem = failures.message();
+    if (problem) say(problem, importFailureDuration(problem));
   }
 
   // What gets saved: the two colors as they are drawn, with a still image's mask,

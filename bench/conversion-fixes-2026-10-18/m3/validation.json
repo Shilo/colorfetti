@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-18",
+  "head": "57ee43ca876fbc46c1a22de22b3c89e8e9b11d5e",
+  "sources": {
+    "src/App.svelte": "0270bc6e202ee2dfb478177e86aa4fe9ca42eb3764c13fb901a396add659270e",
+    "src/lib/gif.js": "5949f34efc44547b3bfe2c1be0cba831dea0c178e98626fbc6349c97130a6246",
+    "src/lib/image-import-errors.js": "5cba1922105ad65ee31cd90a0faad106c49a1810951d2691dc8fe6391786297f",
+    "src/lib/image-import-errors.test.js": "96072bdfcbfaf50861e645ba4cb5e1dbb44366cabcfa4d71eb73cbde8a60d2c3",
+    "src/lib/gif-geometry.test.js": "d0a677991979cfc369faa3e25b18a0bf3a8fe8470f588d498ff937964ddde9f1"
+  },
+  "builds": {
+    "before": {
+      "indexSha256": "8fd4cc5389e3a0b609aed03891b3c235861d4c9aa9fd0f412765f45ba55e4ecb",
+      "assets": {
+        "gif-rDRTi30w.js": "d2a584f8af5dbd3cc2358d3907db001b746ea93c5ee247f8a528767764d4266a",
+        "image-import-worker-DcArPydw.js": "c437564ae09b15998778ea3874371539e2ef5f229357a9afb9259c327ed66856",
+        "index-BKqp_BEa.js": "eaae6e716ea0d2f6dc79b005caec60fa150d5023a4313f8283a6a0f58f8016b0",
+        "index-VE9_tUgX.css": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+      }
+    },
+    "after-v2": {
+      "indexSha256": "2b438ba26d4ebba6fdbf08db6f55bccd4d33af2b58ec601c31c7c5994e36c377",
+      "assets": {
+        "gif-D60a1gwb.js": "caa946a0bd1d985ccd0a5369ea6c2acfc91a5af655c1972dfcfc0081db8b17db",
+        "image-import-worker-DQ8SerMa.js": "916bdb0eb9d8b82b2767ec3120c213885fb14c411f07bfaac9cf2374fedb900d",
+        "index-B51F7Y34.css": "bf26d401e8ba03a8e5f605b83b6e8d4333dafd6d3df9db16b5bf0a0a4c402f81",
+        "index-DA4lTa3H.js": "16c78b665e8417903fe7c05bc90dc0bd15616520b33f7b64b955f956ae0f7178"
+      }
+    },
+    "after-v3": {
+      "indexSha256": "96dce8b0ae4dc7f120e8e4af6027694a1a161755815b720c69fc7598aac4132d",
+      "assets": {
+        "gif-ZrPzeOjU.js": "0b306f6ef27cea597d91d0461a36212f742352d2577249d5b7d2cfd2be01a9de",
+        "image-import-worker-DQ8SerMa.js": "916bdb0eb9d8b82b2767ec3120c213885fb14c411f07bfaac9cf2374fedb900d",
+        "index-BcS_GE3x.js": "338d6a0dae24fd89e14a0515328d5160e006558faa139b556b83228c02176a11",
+        "index-DX7ysEEG.css": "b8920aaad83ce6a162d73a9739af55ca5540c8f09d8aa1e7b60bdba85e03236d"
+      }
+    },
+    "after-v4": {
+      "indexSha256": "83596561e725265329c9c69de53e62e4275c76cab159f2b1a8254d5a93dbb9ec",
+      "assets": {
+        "gif-8qNleDi-.js": "51e50293328eeedf26147120d2a26d1d0d5bee8d3d0020d458cf515052af6246",
+        "image-import-worker-DQ8SerMa.js": "916bdb0eb9d8b82b2767ec3120c213885fb14c411f07bfaac9cf2374fedb900d",
+        "index-DLZEHkZy.js": "f8552d513c286ce8183983901f338f3ef25dcc14fd62e721e3d934f49cd9c276",
+        "index-DX7ysEEG.css": "b8920aaad83ce6a162d73a9739af55ca5540c8f09d8aa1e7b60bdba85e03236d"
+      }
+    }
+  },
+  "urls": {
+    "before": "http://127.0.0.1:5202/before/",
+    "after": "http://127.0.0.1:5203/after-v4/",
+    "harness": "http://127.0.0.1:5203/harness.html"
+  },
+  "tests": {
+    "files": 7,
+    "passed": 135,
+    "command": "vitest run image-import-errors, gif-geometry, gif, gif-loop, image-drop, image-import-client, image-import-worker",
+    "temp": ".tmp/conversion-fixes-m3"
+  },
+  "browser": "Codex in-app desktop browser, native chooser plus controlled drop harness; normal1280x720 and narrow375x720 viewport; no physical phone",
+  "caveat": "Candidate includes concurrent M4 GIF and M5 contrast source edits. Earlier mutable /after directory caused an independently observed transient generic failure; cause inferred as asset mismatch, not proven. Retest passed; final after-v4 bytes frozen in server memory."
+}
