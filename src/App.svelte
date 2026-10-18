@@ -1076,7 +1076,14 @@
     paletteFailureNotice={failureNotice(currentPaletteFailures.filter(f => f.inputs.item === viewed))} onpaletteretry={retryPaletteFailures} exportDisabled={generatedUnavailable || itemPaletteFailed(viewed)} exportDrag={viewed.id === 0 ? undefined : dragExports}
     onsave={viewed.id === 0 ? undefined : () => save(viewed)}
     oncopy={viewed.id === 0 ? undefined : () => copy(viewed)}
-    onclose={async () => { const trigger = viewTrigger, keyboard = viewKeyboardFocus; viewing = null; await tick(); if (keyboard) trigger?.focus({ preventScroll: true }); else trigger?.blur(); }} />
+    onclose={async () => {
+      const trigger = viewTrigger, keyboard = viewKeyboardFocus;
+      // A detached tile button retains its event closures and the source pixels.
+      // Keep it only for this focus return, never for the rest of the app visit.
+      viewTrigger = undefined; viewKeyboardFocus = false; viewing = null;
+      await tick();
+      if (keyboard) trigger?.focus({ preventScroll: true }); else trigger?.blur();
+    }} />
 {/if}
 
 <CanvasGrid {items} {example} />
