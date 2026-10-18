@@ -10,7 +10,8 @@ self.onmessage = async ({ data }) => {
       let decoded;
       if (data.mode === 'gif') {
         const { decodeGif } = await import('./gif.js');
-        const gif = decodeGif(new Uint8Array(await data.file.arrayBuffer()));
+        const bytes = data.bytes ?? new Uint8Array(await data.file.arrayBuffer());
+        const gif = decodeGif(bytes, { artwork: true });
         const animated = gif.frames.length > 1;
         decoded = { frames: gif.frames.map(frame => ({ original: { width: gif.width,
           height: gif.height, data: frame.data }, ...(animated ? { delay: frame.delay } : {}) })),

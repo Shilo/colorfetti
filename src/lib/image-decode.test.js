@@ -29,6 +29,22 @@ function setupCanvas() {
 }
 
 describe('shared native still source decoding', () => {
+  it('propagates admission rejection before copying RGBA, with no bitmap/canvas fallback', async () => {
+    const state = setupNative(), canvas = setupCanvas();
+    const error = Object.assign(new Error('Rejected artwork'), { code: 'ARTWORK_MEMORY_LIMIT' });
+    await expect(decodeImageFile(file(), { admit() { throw error; } })).rejects.toBe(error);
+    expect(state.frame.copyTo).not.toHaveBeenCalled(); expect(state.frame.close).toHaveBeenCalledOnce();
+    expect(state.decoder.close).toHaveBeenCalledOnce(); expect(createImageBitmap).not.toHaveBeenCalled();
+    expect(canvas.context.getImageData).not.toHaveBeenCalled();
+  });
+  it('rechecks differing fallback dimensions before canvas allocation', async () => {
+    const state = setupNative({ copy: async () => { throw new Error('Use bitmap fallback'); } }), canvas = setupCanvas();
+    canvas.bitmap.width = 5;
+    const dimensions = [], error = Object.assign(new Error('Budget changed'), { code: 'ARTWORK_MEMORY_LIMIT' });
+    await expect(decodeImageFile(file(), { admit(w, h) { dimensions.push([w, h]); if (w === 5) throw error; } })).rejects.toBe(error);
+    expect(dimensions).toEqual([[4, 1], [5, 1]]); expect(canvas.context.drawImage).not.toHaveBeenCalled();
+    expect(state.frame.close).toHaveBeenCalledOnce(); expect(canvas.bitmap.close).toHaveBeenCalledOnce();
+  });
   it.each([
     [0, false, [1, 2, 3, 4, 5, 6]], [0, true, [3, 2, 1, 6, 5, 4]],
     [90, false, [4, 1, 5, 2, 6, 3]], [90, true, [1, 4, 2, 5, 3, 6]],

@@ -3,6 +3,33 @@ import { validateImportFrame } from './image-import-core.js';
 import omggif from 'omggif';
 afterEach(() => vi.unstubAllGlobals());
 
+it('the actual worker rejects oversized logical geometry before GifReader metadata or RGBA expansion', async () => {
+  vi.resetModules(); const received = [];
+  const scope = { postMessage(message) { received.push(message); } };
+  vi.stubGlobal('self', scope); await import('./image-import-worker.js');
+  const buffer = new Uint8Array(256), writer = new omggif.GifWriter(buffer, 4097, 4096, { palette: [0, 0xffffff] });
+  writer.addFrame(0, 0, 1, 1, [1]);
+  const bytes = buffer.slice(0, writer.end()), reader = vi.spyOn(omggif, 'GifReader');
+  try {
+    await scope.onmessage({ data: { type: 'start', mode: 'gif', source: 'luma', alphaCut: 128, bytes } });
+    expect(received).toHaveLength(1); expect(received[0]).toMatchObject({ type: 'error', code: 'ARTWORK_MEMORY_LIMIT' });
+    expect(reader).not.toHaveBeenCalled();
+  } finally { reader.mockRestore(); }
+});
+it('rejects a malformed application header before GifReader can reinterpret embedded image markers', async () => {
+  vi.resetModules(); const received = [], scope = { postMessage(message) { received.push(message); } };
+  vi.stubGlobal('self', scope); await import('./image-import-worker.js');
+  const buffer = new Uint8Array(256), writer = new omggif.GifWriter(buffer, 1, 1, { palette: [0, 0xffffff] });
+  writer.addFrame(0, 0, 1, 1, [1]);
+  const source = buffer.slice(0, writer.end());
+  const bytes = Uint8Array.from([...source.subarray(0, 19), 0x21, 0xff, 255, ...new Array(255).fill(0x2c), 0, ...source.subarray(19)]);
+  const reader = vi.spyOn(omggif, 'GifReader');
+  try {
+    await scope.onmessage({ data: { type: 'start', mode: 'gif', source: 'luma', alphaCut: 128, bytes } });
+    expect(received[0]).toMatchObject({ type: 'error', code: 'GIF_INVALID' }); expect(reader).not.toHaveBeenCalled();
+  } finally { reader.mockRestore(); }
+});
+
 it.each([
   'R0lGODlhAwADAIAAABEiM6vN7ywAAAAAAwADAAACASwAOw==',
   'R0lGODlhAwADAIAAABEiM6vN7ywAAAAAAwADAAACA5x/BQA7',

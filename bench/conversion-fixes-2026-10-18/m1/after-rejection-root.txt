@@ -1,0 +1,3 @@
+Browser tab: 7, Title: "Colorfetti", URL: "http://127.0.0.1:5210/app-v4/".
+There has been no change in the accessibility tree.
+The focused UI element is 1 AXWebArea Colorfetti, URL: 127.0.0.1:5210/app-v4/

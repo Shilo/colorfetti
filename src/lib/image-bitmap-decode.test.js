@@ -38,6 +38,12 @@ const closed = state => {
 };
 
 describe('verified straight-alpha ImageBitmap acquisition', () => {
+  it('keeps artwork admission failures authoritative after the verified probe', async () => {
+    const state = setup(), error = Object.assign(new Error('Artwork budget'), { code: 'ARTWORK_MEMORY_LIMIT' });
+    await expect(decodeImageFile(state.file, { admit() { throw error; } })).rejects.toBe(error);
+    expect(state.bitmap).toHaveBeenCalledTimes(2); expect(state.canvas).not.toHaveBeenCalled();
+    expect(state.frames).toHaveLength(1); closed(state);
+  });
   it('decodes a real tagged PNG probe with independently checked CRC, geometry and RGBA', async () => {
     const state = setup(); await decodeStraightBitmap(state.file, options(state));
     const blob = state.bitmaps[0].input, png = Buffer.from(await blob.arrayBuffer());

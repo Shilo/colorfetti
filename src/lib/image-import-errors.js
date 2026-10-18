@@ -1,6 +1,6 @@
 // Keep only a few safe labels, never decoder exception text or signed URLs.
 const EXAMPLES = 3, NAME_LENGTH = 48;
-const limits = new Set(['ARTWORK_MEMORY_LIMIT', 'IMAGE_PIXEL_LIMIT', 'IMAGE_SIZE_LIMIT', 'GIF_PIXEL_LIMIT']);
+const limits = new Set(['IMAGE_PIXEL_LIMIT', 'IMAGE_SIZE_LIMIT', 'GIF_PIXEL_LIMIT']);
 
 export const importFailureDuration = text => Math.max(9000, Math.min(30000, text.length * 75));
 
@@ -27,6 +27,7 @@ function reason(error, download) {
   if (download) return error?.name === 'TimeoutError'
     ? 'download timed out; save the image and add the file'
     : 'download failed; save the image and add the file';
+  if (error?.code === 'ARTWORK_MEMORY_LIMIT') return 'not enough artwork memory; remove images or try a smaller image or shorter animation';
   if (limits.has(error?.code)) return 'image exceeds the import limit; try a smaller image or shorter animation';
   if (error?.code === 'GIF_INVALID') return 'invalid GIF data; open and re-export the file';
   if (error?.code === 'IMAGE_UNSUPPORTED' || error?.name === 'NotSupportedError')

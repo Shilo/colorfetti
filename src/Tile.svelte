@@ -282,13 +282,14 @@
       return;
     }
     const controller = new AbortController();
+    const release = currentItem.admission?.hold();
     const produce = async signal => {
       const result = await quantizePreviewAsync(source, colors, cut, width, height, { signal, metric: matching, dither: dithering, ditherStrength: amount, alphaMode: opacity });
       // The same post-dither source-coordinate overlay is used by exports.
       if (clean) clean.apply(result, clean.result);
       return result;
     };
-    const pending = clipCache ? clipCache.getFrame(at, produce, { signal: controller.signal }) : produce(controller.signal);
+    const pending = clipCache ? clipCache.getFrame(at, produce, { signal: controller.signal, hold: () => currentItem.admission?.hold() }) : produce(controller.signal);
     pending.then(result => {
       if (!controller.signal.aborted) {
         fullPixels = new ImageData(palettePixels(result, colors).data, width, height);
@@ -297,7 +298,7 @@
         fullReady = true;
         reportUsage(result.used);
       }
-    }).catch(error => { if (error.name !== 'AbortError') console.error('Palette preview failed', error); });
+    }).catch(error => { if (error.name !== 'AbortError') console.error('Palette preview failed', error); }).finally(() => release?.());
     return () => controller.abort();
   });
   const completedPixels = $derived.by(() => {

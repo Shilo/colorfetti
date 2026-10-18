@@ -2,11 +2,18 @@ import { prepareFullPaletteImage } from './palette-state.js';
 import { checkCanceled, quantizeAsync, yieldTask } from './quantize.js';
 import { sourceColorSummary, summaryImage } from './source-color-summary.js';
 import { effectiveAlphaCut } from './palette-alpha.js';
+import { holdArtworkItems } from './artwork-admission.js';
 
 // Exact full-source inspection. Keep at most 256 output colors, never a second
 // converted clip. Share export preparation so subset/Cleanup/dither decisions match.
 export async function collectPaletteUsage(item, snapshot, { signal } = {}) {
   checkCanceled(signal);
+  const release = holdArtworkItems([item]);
+  try { return await inspectPaletteUsage(item, snapshot, signal); }
+  finally { release(); }
+}
+
+async function inspectPaletteUsage(item, snapshot, signal) {
   if (snapshot.family !== 'full-palette') throw new Error('Choose Palette mode to inspect output colors.');
   const { about: image, palette, original, frames, alphaCut, convert } = await prepareFullPaletteImage(item, snapshot, { signal });
   const used = new Uint8Array(256);

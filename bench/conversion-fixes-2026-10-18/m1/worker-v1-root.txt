@@ -1,0 +1,23 @@
+Browser tab: 7, Title: "M1 artwork admission browser checks", URL: "http://127.0.0.1:5210/harness-v1/harness.html".
+0 AXWebArea M1 artwork admission browser checks, URL: 127.0.0.1:5210/harness-v1/harness.html
+	1 heading Artwork admission browser checks, Value: 1
+		2 text Artwork admission browser checks
+	3 text Mode: actual browser module worker.
+	4 button Run bounded admission checks, ID: run
+	5 text {
+  "pass": true,
+  "mode": "worker",
+  "workersCreated": 1,
+  "concurrent": [
+    "fulfilled",
+    "rejected"
+  ],
+  "rejection": "ARTWORK_MEMORY_LIMIT",
+  "sourceBytesExact": true,
+  "removalBorrowerRemainedCharged": true,
+  "finalBytes": 0,
+  "peak": 103822,
+  "limit": 145286
+}
+
+The focused UI element is 4 button Run bounded admission checks, ID: run

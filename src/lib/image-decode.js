@@ -69,11 +69,12 @@ async function orientPixels(pixels, width, height, rotation, flip, signal) {
 // readback noise or a premultiply/unpremultiply round trip. GIF uses its exact
 // indexed decoder separately in the caller, including single-frame GIFs.
 export async function decodeImageFile(file, { signal, maxPixels = Infinity,
-  limitMessage = 'This image is too large.' } = {}) {
+  limitMessage = 'This image is too large.', admit } = {}) {
   const dimensions = (width, height) => {
     if (!Number.isSafeInteger(width) || !Number.isSafeInteger(height) || width < 1 || height < 1)
       throw new Error('Your browser could not read this image.');
     if (width * height > maxPixels) throw new PixelLimitError(limitMessage);
+    admit?.(width, height);
   };
   checkCanceled(signal);
   for (const type of typeof ImageDecoder === 'undefined' ? [] : nativeCandidates(file)) {
@@ -119,7 +120,7 @@ export async function decodeImageFile(file, { signal, maxPixels = Infinity,
       }
     } catch (problem) {
       checkCanceled(signal);
-      if (problem instanceof PixelLimitError) throw problem;
+      if (problem instanceof PixelLimitError || problem.code === 'ARTWORK_MEMORY_LIMIT') throw problem;
       // Unsupported native decoding/copy formats keep the existing browser path.
     } finally {
       signal?.removeEventListener('abort', close);
@@ -136,7 +137,7 @@ export async function decodeImageFile(file, { signal, maxPixels = Infinity,
       if (image) return image;
     } catch (problem) {
       checkCanceled(signal);
-      if (problem instanceof PixelLimitError) throw problem;
+      if (problem instanceof PixelLimitError || problem.code === 'ARTWORK_MEMORY_LIMIT') throw problem;
       // Unsupported straight-bitmap capabilities retain the existing fallback.
     }
   }

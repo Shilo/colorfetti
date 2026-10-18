@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-18",
+  "scope": "Independent staged M1 tree, excluding concurrent M2 native-inspection code and M8 work",
+  "snapshot": ".tmp/m1-staged-v4",
+  "snapshotCommand": "git checkout-index --all --prefix=C:/Programming_Files/Shilocity/colorfetti/.tmp/m1-staged-v4/",
+  "buildCommand": "npx vite build .tmp/m1-staged-v4 --outDir dist",
+  "buildPassed": true,
+  "testCommand": "npx vitest run --root .tmp/m1-staged-v4 --reporter=dot",
+  "testFilesPassed": 77,
+  "testsPassed": 1306,
+  "testsSkipped": 2,
+  "note": "The existing ImageBitmap-constructor mock warning also appeared in the baseline. Complete final browser worker/fallback receipts are saved with disableDiffing:true. The rejection screenshot is the primary UI evidence for the accompanying mixed-batch receipt."
+}

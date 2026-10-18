@@ -1,5 +1,6 @@
 import { analyze, unify } from './recolor.js';
 import { checkCanceled, yieldTask } from './quantize.js';
+import { artworkCost, ARTWORK_BYTES, ARTWORK_FRAMES, artworkLimit } from './artwork-admission.js';
 
 export function validateImportSettings(source = 'luma', alphaCut = 128) {
   if (!['luma', 'value', 'red', 'green', 'blue'].includes(source)
@@ -22,12 +23,16 @@ export async function analyzeImportFrames(decoded, source = 'luma', alphaCut = 1
   checkCanceled(signal);
   if (!Array.isArray(decoded?.frames) || !decoded.frames.length)
     throw new Error('An imported image needs frames.');
+  if (decoded.frames.length > ARTWORK_FRAMES) throw artworkLimit();
   const first = decoded.frames[0].original;
   for (const frame of decoded.frames) {
     checkCanceled(signal);
     validateImportPixels(frame.original);
     if (frame.original.width !== first.width || frame.original.height !== first.height)
       throw new Error('Imported animation frames must have matching dimensions.');
+  }
+  if (artworkCost(first.width, first.height, decoded.frames.length) > ARTWORK_BYTES) throw artworkLimit();
+  for (const frame of decoded.frames) {
     if (cooperative) { await yieldTask(); checkCanceled(signal); }
     frame.img = analyze(frame.original, source, alphaCut);
   }

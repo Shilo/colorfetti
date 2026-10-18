@@ -1,0 +1,33 @@
+Browser tab: 7, Title: "Colorfetti", URL: "http://127.0.0.1:5210/baseline/".
+1 AXWebArea Colorfetti, URL: 127.0.0.1:5210/baseline/
+	2 container app
+		23 container
+			24 pop up button Preview oversized-logical.gif
+				25 image
+			26 button Save oversized-logical.gif
+			27 button Copy oversized-logical.gif
+			28 button Reuse colors from oversized-logical.gif
+			29 pop up button Preview oversized-logical.gif
+			30 button Remove oversized-logical.gif
+			31 pop up button Preview oversized-logical.gif
+				32 text oversized-logical.gif
+				33 text 4097
+				34 text ×
+				35 text 4096
+				40 text 1 color
+		13 container
+			14 container Colors and palette
+				15 button Selected palette: Auto, 1 color
+				16 button (collapsed) Description: Palette, Secondary Actions: Expand
+			17 container Conversion and style
+				18 checkbox Description: Auto conversion, Value: 1
+				19 button (collapsed) Description: Palette settings, Secondary Actions: Expand
+				20 text Showing images converted with Auto.
+			21 container File and app actions
+				36 container Add and save images
+					37 button Save image
+					38 button Add images
+					39 button Remove all images
+				22 pop up button More
+
+The focused UI element is 1 AXWebArea Colorfetti, URL: 127.0.0.1:5210/baseline/

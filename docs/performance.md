@@ -1,5 +1,34 @@
 # Performance
 
+## Artwork source admission (October 18, 2026)
+
+A shared 256 MiB logical ledger reserves RGBA4 + current analysis3 + one serialized
+replacement analysis3 bytes/source pixel, plus 4 KiB/frame for two histogram/edge
+generations. Per-frame geometry is capped at 16,777,216 pixels and per-asset metadata
+at 4,096 frames. GIF import adds exact File.size before reading bytes, 8 bytes per
+logical-frame pixel for compositing/restoration, and 20 KiB LZW scratch. A constant
+storage framing scan counts descriptors before GifReader can allocate metadata;
+its fallback yields between bounded byte groups. Malformed non-11-byte application
+headers are rejected before reader/parser framing can diverge.
+
+Entire decode/analysis jobs are serial, including native still decode before its
+queue slot. Native admission occurs before controlled copying/canvas allocation;
+native codecs may allocate before dimensions are available. Publication drops GIF
+scratch. Pending work, unpublished retries and live owners keep reservations;
+removal releases only ownership, while worker/cache producers, counts, exports and
+drag preparation keep source leases until actual settlement. Shared preview abort
+can reject a subscriber before its producer ends, so those lifetimes are distinct.
+Nonmatching captured export/count analysis adds 3 bytes/pixel + 2 KiB/frame scratch;
+live replacement generations wait for aborted predecessors to settle.
+
+The ledger excludes conversion/index/RGBA/style caches, encoded output, object
+overheads, codecs, GPU storage and GC delays. M2's one-frame 84 MiB logical headroom
+is separate. These are conservative product policies, not measured crash limits.
+Real desktop worker/fallback checks returned the final ledger to zero and preserved
+source bytes; oversized logical GIFs fail before expansion while valid siblings
+import. See `bench/conversion-fixes-2026-10-18/m1/REVIEW.md` for ownership challenges,
+exact costs and test/browser evidence.
+
 ## Portable output names (October 18, 2026)
 
 Save/ZIP/drag share filename normalization; it does not touch image conversion or

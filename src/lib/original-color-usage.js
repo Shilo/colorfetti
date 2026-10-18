@@ -1,5 +1,6 @@
 import { checkCanceled, yieldTask } from './quantize.js';
 import { sourceColorSummary } from './source-color-summary.js';
+import { holdArtworkItems } from './artwork-admission.js';
 
 const sources = new WeakMap();
 const SMALL_UNION = 4096;
@@ -73,7 +74,8 @@ export function collectOriginalUsage(item, { signal } = {}) {
   if (node.result) return Promise.resolve(node.result);
   let job = node.pending;
   if (!job || job.controller.signal.aborted) {
-    job = { controller: new AbortController(), subscribers: 0 };
+    try { job = { controller: new AbortController(), subscribers: 0, releaseSources: holdArtworkItems([item]) }; }
+    catch (error) { return Promise.reject(error); }
     node.pending = job;
     const run = queue.then(async () => {
       await yieldTask();
@@ -82,7 +84,7 @@ export function collectOriginalUsage(item, { signal } = {}) {
       if (node.pending === job) node.result = result;
       return result;
     });
-    job.promise = run.finally(() => { if (node.pending === job) node.pending = null; });
+    job.promise = run.finally(() => { if (node.pending === job) node.pending = null; job.releaseSources(); });
     queue = job.promise.catch(() => {});
   }
   job.subscribers++;

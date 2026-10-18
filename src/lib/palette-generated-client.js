@@ -2,6 +2,7 @@ import { checkCanceled } from './quantize.js';
 import { validateGeneratedSources } from './palette-generated-sources.js';
 import { GENERATED_MAX_COLORS } from './palette-library.js';
 import { summaryHistogram } from './source-color-summary.js';
+import { holdArtworkSources } from './artwork-source-leases.js';
 
 const CHUNK_BYTES = 128 * 1024, pending = new Map(), completed = new Map(), queue = [];
 const EMPTY = Object.freeze({ colors: Object.freeze([]), binned: false, assets: 0 });
@@ -63,7 +64,7 @@ async function drain() {
         while (completed.size > 2) completed.delete(completed.keys().next().value);
         job.resolve(result);
       } catch (error) { job.reject(error); }
-      finally { if (pending.get(job.snapshot.key) === job) pending.delete(job.snapshot.key); }
+      finally { if (pending.get(job.snapshot.key) === job) pending.delete(job.snapshot.key); job.releaseSources(); }
     }
   } finally { running = false; }
 }
@@ -76,7 +77,7 @@ function subscribe(job, signal) {
       if (!job.consumers.size) {
         job.controller.abort();
         const index = queue.indexOf(job);
-        if (index >= 0) { queue.splice(index, 1); if (pending.get(job.snapshot.key) === job) pending.delete(job.snapshot.key); job.reject(abortError()); }
+        if (index >= 0) { queue.splice(index, 1); if (pending.get(job.snapshot.key) === job) pending.delete(job.snapshot.key); job.releaseSources(); job.reject(abortError()); }
       }
     };
     signal?.addEventListener('abort', cancel, { once: true });
@@ -90,7 +91,7 @@ export async function getGeneratedPalette(snapshot, { signal } = {}) {
   const cached = completed.get(snapshot.key); if (cached) { completed.delete(snapshot.key); completed.set(snapshot.key, cached); return cached; }
   let job = pending.get(snapshot.key);
   if (!job || job.controller.signal.aborted) {
-    job = { snapshot, controller: new AbortController(), consumers: new Set() };
+    job = { snapshot, controller: new AbortController(), consumers: new Set(), releaseSources: holdArtworkSources(snapshot.assets.flatMap(asset => asset.frames)) };
     job.promise = new Promise((resolve, reject) => { job.resolve = resolve; job.reject = reject; });
     job.promise.catch(() => {}); pending.set(snapshot.key, job); queue.push(job);
   }

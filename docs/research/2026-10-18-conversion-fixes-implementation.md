@@ -18,7 +18,7 @@ screenshots in its `screenshots/` folder.
 
 | Task | Scope | State |
 | --- | --- | --- |
-| M1 | Decoded artwork admission budget | Queued |
+| M1 | Decoded artwork admission budget | Accepted after ownership/parser revisions and final worker/fallback/browser checks |
 | M2 | Sampling disclosure and native-pixel inspection | Queued |
 | M3 | Bounded per-file import diagnostics | Accepted after revisions and desktop retesting |
 | M4 | ANIMEXTS GIF repeat metadata | Accepted after independent Save/ZIP verification |
@@ -30,6 +30,35 @@ screenshots in its `screenshots/` folder.
 ## Accepted changes and review discussions
 
 Task-specific acceptance and evidence are recorded here as each task completes.
+
+### M1 Artwork admission and ownership
+
+A 256 MiB logical source ledger admits complete serial decode/analysis jobs before
+controlled expansion. Geometry/frame caps and a constant-storage GIF framing scan
+prevent large logical screens or tiny-frame metadata from bypassing admission.
+The ledger includes current/replacement analyses, import compositing/encoded scratch
+and extra captured nonmatching export/count analyses. It never alters source pixels
+or clip length. Native codecs, conversion/style caches, encoded output and delayed
+GC remain outside this defined bound; this is not a whole-browser heap ceiling.
+
+Challenge added independent active borrower leases, serialized actual reanalysis
+settlement, worker/cache producer lifetimes, lazy original identity helpers and
+count scratch. Existing tests caught five eager-getter regressions, which were fixed
+without relaxing their expectations. Final adversarial work corrected malformed GIF
+application-header alignment before GifReader, then stable-ID owner removal for
+stale immutable tile/sheet references. Both reviewers agreed on the final revision.
+
+The coordinator's baseline imported a 4097×4096 logical GIF containing one 1×1 patch.
+Final v4 native-picker checks reject it with named recovery guidance, retain a valid
+2×2 sibling, then remove/reimport that sibling successfully. Actual module worker
+and cooperative fallback checks both pass exact source bytes, concurrent rejection,
+queued cancellation, removed-source borrowing and recovery, returning the ledger to
+zero (peak 103,822 bytes below the explicit 145,286-byte test budget). No console
+warnings/errors appeared in those final checks. The child browser was unavailable;
+the coordinator operated the browser and the agent challenged saved receipts.
+Full current validation: 1,325 passed, two skipped across 78 files; build passed.
+Evidence: `bench/conversion-fixes-2026-10-18/m1/REVIEW.md`.
+[Final import screenshot](../../bench/conversion-fixes-2026-10-18/screenshots/m1-admission-after.jpg).
 
 ### M6 Portable output filenames
 

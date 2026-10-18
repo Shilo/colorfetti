@@ -978,6 +978,28 @@ viewport height so mobile browser bars do not cut the dock off.
   images read within a quarter of a second of each other go on the wall together.
 - Remove all also stops any batch that is still being read. Its remaining images are not
   read and do not appear on the wall that was just emptied.
+- Artwork uses a shared 256 MiB logical source-storage admission ledger. Reserve
+  10 bytes/source pixel (RGBA/current/one replacement analysis) and 4 KiB/frame;
+  cap each frame at 16,777,216 pixels and each asset at 4,096 frames. GIF import
+  additionally reserves exact encoded bytes before reading, two logical-frame RGBA
+  compositing/restoration canvases and 20 KiB LZW scratch until publication.
+  Count framed image descriptors and validate bounds before GifReader metadata or
+  RGBA expansion. Reject malformed application headers before parser framing can
+  diverge, while preserving valid loop metadata and strict LZW rules.
+- Serialize complete decode/analysis jobs. Stills reserve at validated native
+  dimensions before controlled RGBA/canvas allocation; native codecs may allocate
+  earlier. Admission failures are terminal, never fallback retries, resizing or
+  shortened animations. Unpublished ownership survives worker transfer, immutable
+  File recovery and setting retries; failure/cancel discards it. Removal resolves
+  the current owner by stable item ID, and teardown releases wall ownership.
+  Actual source borrowers retain leases through settlement, including shared
+  producers that outlive canceled subscribers. Serialize live replacement analyses;
+  nonmatching captured export/count analyses reserve another 3 bytes/pixel plus
+  2 KiB/frame through completion. Matching/no-analysis early paths add no scratch.
+  Memory rejection retains valid siblings and gives named recovery guidance; no
+  partial export/ZIP is downloaded. This bounds defined source/analysis buffers,
+  excluding object overheads, native/GPU/GC, conversion/style caches and encoded
+  output. Native inspection has separate bounded logical headroom.
 - Failed artwork files are skipped while successful additions remain. After the
   batch, report the count and at most three filename excerpts with recovery guidance,
   plus the remaining failure count. Each excerpt is at most 48 Unicode codepoints;

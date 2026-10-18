@@ -12,8 +12,13 @@ export function createExportDrag({ request, prepare, notify,
   let desired = null, ready = null, running = null, timer, leaveTimer, active = null, disposed = false;
   const retired = new Map();
   const observers = new Set();
-  const release = record => { if (record?.url) revoke(record.url); };
+  const releaseSource = record => {
+    if (!record) return;
+    record.releaseSource?.(); record.releaseSource = null; record.request = null;
+  };
+  const release = record => { releaseSource(record); if (record?.url) revoke(record.url); };
   function retire(record) {
+    releaseSource(record); // Native grace retains encoded bytes, never source pixels.
     const remaining = (record.until ?? 0) - Date.now();
     if (remaining <= 0) { release(record); return; }
     record.request = null; // Only the file/URL need the native-consumer grace.

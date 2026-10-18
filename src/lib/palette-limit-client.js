@@ -1,5 +1,6 @@
 import { preparePalette, validateMatchingMetric, checkCanceled } from './quantize.js';
 import { summaryHistogram } from './source-color-summary.js';
+import { holdArtworkSources } from './artwork-source-leases.js';
 
 const CHUNK_BYTES = 128 * 1024;
 const items = new WeakMap(), queue = [];
@@ -86,7 +87,7 @@ async function drain() {
         const palette = preparePalette(result.indices.map(i => job.signature.colors[i]));
         job.state.cached = { signature: job.signature, palette }; job.resolve(palette);
       } catch (error) { job.reject(error); }
-      finally { job.state.active.delete(job); }
+      finally { job.state.active.delete(job); job.releaseSources(); }
     }
   } finally { running = false; }
 }
@@ -103,7 +104,7 @@ function subscribe(job, signal) {
         // An unstarted request must not retain its source frames behind a
         // still-running shared export. Running jobs finish through drain().
         const index = queue.indexOf(job);
-        if (index >= 0) { queue.splice(index, 1); job.state.active.delete(job); job.reject(abortError()); }
+        if (index >= 0) { queue.splice(index, 1); job.state.active.delete(job); job.releaseSources(); job.reject(abortError()); }
       }
     };
     signal?.addEventListener('abort', canceled, { once: true });
@@ -124,7 +125,7 @@ export async function getLimitedPalette(item, preparedPalette, alphaCut, metric,
   if (state.cached && same(state.cached.signature, signature)) { checkCanceled(signal); return state.cached.palette; }
   let job = [...state.active].find(candidate => !candidate.controller.signal.aborted && same(candidate.signature, signature));
   if (!job) {
-    job = { signature, state, controller: new AbortController(), consumers: new Set() };
+    job = { signature, state, controller: new AbortController(), consumers: new Set(), releaseSources: holdArtworkSources(signature.frames) };
     job.promise = new Promise((resolve, reject) => { job.resolve = resolve; job.reject = reject; });
     job.promise.catch(() => {}); state.active.add(job); queue.push(job);
   }

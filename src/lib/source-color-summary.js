@@ -1,4 +1,5 @@
 import { checkCanceled, yieldTask } from './quantize.js';
+import { holdArtworkOriginal } from './artwork-admission.js';
 
 const summaries = new WeakMap();
 const MAX_COLORS = 4096;
@@ -21,6 +22,7 @@ async function runQueue() {
         checkCanceled(entry.signal);
         entry.resolve(summary);
       } catch (error) { entry.reject(error); }
+      finally { entry.releaseSources(); }
     }
   } finally { running = false; }
 }
@@ -33,12 +35,13 @@ export async function sourceColorSummary(original, { signal } = {}) {
   checkCanceled(signal);
   if (summaries.has(original)) return summaries.get(original);
   return new Promise((resolve, reject) => {
-    const entry = { original, signal, resolve, reject };
+    const entry = { original, signal, resolve, reject, releaseSources: holdArtworkOriginal(original) };
     entry.abort = () => {
       const index = queue.indexOf(entry);
       if (index < 0) return;
       queue.splice(index, 1);
       signal.removeEventListener('abort', entry.abort);
+      entry.releaseSources();
       try { checkCanceled(signal); } catch (error) { reject(error); }
     };
     queue.push(entry);

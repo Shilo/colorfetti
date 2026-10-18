@@ -5,6 +5,7 @@ import { gifFrameBounds } from './gif-frame-bounds.js';
 import { exportPalette, markUsedAsync, compactTable, EMPTY_INDEX, yieldExport } from './palette-export.js';
 import { paletteAlpha, inspectAlphaPixel } from './palette-alpha.js';
 import { checkCanceled, yieldTask } from './quantize.js';
+import { preflightArtworkGif, preflightArtworkGifAsync } from './artwork-gif-preflight.js';
 
 function invalidGif(message, cause) {
   const problem = new Error(message, { cause });
@@ -48,7 +49,8 @@ function scanExtensions(bytes, start, end, metadata, trailer = false) {
 // partial patches drawn over earlier ones, so they are composited here once.
 // Returns { width, height, loop, frames: [{ data, delay }] }: delay is in milliseconds, loop is
 // the repeat count (0 = forever, null = the file plays once).
-function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, limitMessage = 'This image is too large.' } = {}) {
+function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, limitMessage = 'This image is too large.', artwork = false } = {}) {
+  if (artwork) preflightArtworkGif(bytes);
   let reader;
   try { reader = new omggif.GifReader(bytes); }
   catch (problem) { throw invalidGif('Invalid GIF data: ' + problem.message, problem); }
@@ -92,8 +94,8 @@ function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, lim
     : { width, height, loop: metadata.loop, frameCount: reader.numFrames() };
 }
 
-export function decodeGif(bytes) {
-  const steps = decodeGifSteps(bytes);
+export function decodeGif(bytes, options) {
+  const steps = decodeGifSteps(bytes, options);
   let next;
   do { next = steps.next(); } while (!next.done);
   return next.value;
@@ -102,10 +104,11 @@ export function decodeGif(bytes) {
 // Workers use the exact synchronous decoder above. Its browser fallback gives
 // input/rendering a turn before decoding and between bounded groups of frames.
 // A single large LZW frame is still synchronous when workers are unavailable.
-export async function decodeGifAsync(bytes, { signal } = {}) {
+export async function decodeGifAsync(bytes, { signal, artwork = false } = {}) {
   checkCanceled(signal);
   await yieldTask();
   checkCanceled(signal);
+  if (artwork) await preflightArtworkGifAsync(bytes, signal);
   const steps = decodeGifSteps(bytes);
   let deadline = performance.now() + 8;
   while (true) {

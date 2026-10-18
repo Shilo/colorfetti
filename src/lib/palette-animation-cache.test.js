@@ -38,6 +38,18 @@ describe('bounded animation preview cache', () => {
     await expect(last).rejects.toHaveProperty('name', 'AbortError'); expect(producerSignal.aborted).toBe(true);
     resolve(result()); handle.release();
   });
+  it('holds source ownership synchronously until an aborted last producer actually settles', async () => {
+    const cache = createAnimationCache(), handle = cache.acquire(options()), controller = new AbortController();
+    let complete, leases = 0;
+    const release = vi.fn(() => leases--), hold = vi.fn(() => { leases++; return release; });
+    const pending = handle.getFrame(0, () => new Promise(resolve => { complete = resolve; }), { signal: controller.signal, hold });
+    expect(leases).toBe(1); // ownership precedes the deferred producer start
+    await Promise.resolve(); controller.abort();
+    await expect(pending).rejects.toHaveProperty('name', 'AbortError');
+    handle.release(); expect(leases).toBe(1); expect(release).not.toHaveBeenCalled();
+    complete(result()); await new Promise(resolve => setTimeout(resolve, 0));
+    expect(leases).toBe(0); expect(release).toHaveBeenCalledTimes(1); expect(hold).toHaveBeenCalledTimes(1);
+  });
   it('releases reservations and rejects late completion after invalidation', async () => {
     const cache = createAnimationCache(), handle = cache.acquire(options()); let resolve;
     const pending = handle.getFrame(0, () => new Promise(r => { resolve = r; })); await Promise.resolve();

@@ -19,6 +19,8 @@
   import { hasImageDrop, droppedImages, fetchDroppedImage } from './lib/image-drop.js';
   import { decodeImageFile } from './lib/image-decode.js';
   import { importFailures, importFailureDuration } from './lib/image-import-errors.js';
+  import { holdArtworkItems, removeArtworkItem } from './lib/artwork-admission.js';
+  import { holdArtworkExport } from './lib/artwork-export-lease.js';
   import CanvasGrid from './CanvasGrid.svelte';
   import Dock from './Dock.svelte';
   import Tile from './Tile.svelte';
@@ -518,7 +520,10 @@
       const settings = importSettings();
       if (decoded.analysisSource === settings.source
         && (!decoded.frames[0].img.soft || decoded.analysisCut === settings.alphaCut)) {
-        if (!signal.aborted) publish(importClient.takeImportedFrames(decoded));
+        if (!signal.aborted) {
+          const ready = importClient.takeImportedFrames(decoded);
+          try { publish(ready); } catch (error) { ready.admission?.release(); throw error; }
+        }
         return;
       }
       decoded = await importClient.reanalyzeImported(decoded, { ...settings, signal });
@@ -547,17 +552,18 @@
 
   // Turns decoded frames into an item for the wall. `original` and `img` are the first frame;
   // an animation also has `frames` (each with its own original, img and delay) and `loop`.
-  function toItem(id, name, { frames, loop, analysisSource, analysisCut }, prepared = false) {
+  function toItem(id, name, { frames, loop, analysisSource, analysisCut, admission }, prepared = false) {
     if (!prepared) {
       for (const frame of frames) frame.img = analyze(frame.original, set.source, set.alpha);
       unify(frames.map(frame => frame.img)); // one conversion for the whole animation, so it does not flicker
     }
     const by = prepared ? `${analysisSource} ${frames[0].img.soft ? analysisCut : ''}` : readBy(frames[0].img.soft);
-    return frames.length > 1 ? { id, name, by, ...frames[0], frames, loop } : { id, name, by, ...frames[0] };
+    return frames.length > 1 ? { id, name, by, ...frames[0], frames, loop, admission } : { id, name, by, ...frames[0], admission };
   }
   // Live analyses stay unpublished until the captured wall is ready. Never transfer
   // or mutate live buffers; canceled passes cannot replace a newer source/settings epoch.
   let analysisRequest;
+  let analysisTail = Promise.resolve();
   function stopAnalysis() {
     analysisRequest?.controller.abort();
     analysisRequest = undefined;
@@ -578,14 +584,22 @@
     const request = { controller, realWall, demo, settings };
     analysisRequest = request;
     const done = selected.reduce((n, item) => n + pixelsOf(item), 0) >= BUSY_PIXELS ? working('Updating images…') : () => {};
-    reanalyzeItems(selected, settings, { signal: controller.signal }).then(next => {
+    const release = holdArtworkItems(selected);
+    // A canceled generation must actually settle before the next generation
+    // allocates into the three-byte-per-pixel reanalysis headroom.
+    const work = analysisTail.then(() => {
+      checkCanceled(controller.signal);
+      return reanalyzeItems(selected, settings, { signal: controller.signal });
+    });
+    analysisTail = work.catch(() => {});
+    work.then(next => {
       if (controller.signal.aborted || analysisRequest !== request || family !== 'two-color'
         || analysisSource !== settings.source || (selected.some(item => item.img.soft) && analysisCut !== settings.alphaCut)
         || items !== realWall || (!realWall.length && example !== demo)) return;
       if (realWall.length) items = next; else example = next[0];
     }).catch(error => {
       if (!controller.signal.aborted && error.name !== 'AbortError') say('Could not update images. Try changing Brightness or Opacity cut again.', 6000);
-    }).finally(done);
+    }).finally(() => { release(); done(); });
   });
   $effect(() => () => stopAnalysis());
 
@@ -595,6 +609,7 @@
     exampleImportController.abort();
     for (const controller of imageImports) controller.abort();
     imageImports.clear();
+    for (const item of items) item.admission?.release();
   });
   // Decode two immutable sources once. Switching reuses their identities and
   // the generated-palette cache instead of allocating new sources on every toggle.
@@ -620,7 +635,12 @@
     emptied++;
     for (const controller of imageDownloads) controller.abort();
     for (const controller of imageImports) controller.abort();
-    clearComparison(); items = [];
+    clearComparison();
+    for (const item of items) item.admission?.release();
+    items = [];
+  }
+  function removeItem(item) {
+    items = removeArtworkItem(items, item?.id);
   }
   async function addFiles(files, began = emptied, sharedFailures) {
     if (began !== emptied) return;
@@ -628,6 +648,8 @@
     imageImports.add(controller);
     const failures = sharedFailures ?? importFailures();
     let fresh = [], shownAt = 0, done;
+    const discardFresh = () => { for (const item of fresh) item.admission?.release(); fresh = []; };
+    controller.signal.addEventListener('abort', discardFresh, { once: true });
     // A photo goes on the wall as soon as it is read. Sprites are read far quicker than the wall
     // can be fitted again around each one, so those read within a quarter of a second go on together.
     const show = () => {
@@ -667,6 +689,8 @@
       show();
     } finally {
       imageImports.delete(controller);
+      controller.signal.removeEventListener('abort', discardFresh);
+      discardFresh();
       done?.();
     }
     const problem = !sharedFailures && failures.message();
@@ -772,6 +796,7 @@
     if (previous?.result) return Promise.resolve(previous.result);
     const snapshot = asking(), key = usageKey, controller = new AbortController();
     const record = { item, key, controller, status: 'pending', explicit, previousResult: lastUsageResult(item) };
+    const release = holdArtworkItems([item]);
     const publish = value => {
       if (!controller.signal.aborted && key === usageKey && canvasItems.includes(item) && colorUsage.get(item.id) === record)
         colorUsage.set(item.id, { item, key, ...value });
@@ -791,7 +816,7 @@
         if (error.name !== 'AbortError') publish({ status: 'error' });
         return null;
       }
-    });
+    }).finally(release);
     usageQueue = record.promise;
     colorUsage.set(item.id, record);
     return record.promise;
@@ -841,13 +866,16 @@
       return { item: live, snapshot, key: JSON.stringify({ ...snapshot, generated: snapshot.generated?.key }) };
     },
     async prepare({ item, snapshot }, { signal }) {
-      const read = snapshot.family === 'full-palette' ? item : await reanalyzeItem(item, { source: snapshot.set.source, alphaCut: snapshot.set.alpha }, { signal });
-      const image = await converted(read, snapshot, { signal });
-      const bytes = await fileBytes(image, { signal });
-      const name = downloadName(image);
-      const type = image.frames || image.getFrame ? 'image/gif' : 'image/png';
-      const file = new File([bytes], name, { type });
-      return { file, width: image.w, height: image.h, url: URL.createObjectURL(file) };
+      const releaseSource = holdArtworkExport([item], snapshot.family === 'full-palette' ? null : { source: snapshot.set.source, alphaCut: snapshot.set.alpha });
+      try {
+        const read = snapshot.family === 'full-palette' ? item : await reanalyzeItem(item, { source: snapshot.set.source, alphaCut: snapshot.set.alpha }, { signal });
+        const image = await converted(read, snapshot, { signal });
+        const bytes = await fileBytes(image, { signal });
+        const name = downloadName(image);
+        const type = image.frames || image.getFrame ? 'image/gif' : 'image/png';
+        const file = new File([bytes], name, { type });
+        return { file, width: image.w, height: image.h, url: URL.createObjectURL(file), releaseSource };
+      } catch (error) { releaseSource(); throw error; }
     },
     notify: say,
   }) : null;
@@ -875,7 +903,9 @@
   async function save(item) {
     if (generatedUnavailable || itemPaletteFailed(item)) return;
     const asked = asking();
+    let release = () => {};
     try {
+      release = holdArtworkExport([item], asked.family === 'full-palette' ? null : { source: asked.set.source, alphaCut: asked.set.alpha });
       const downloading = `Downloading ${downloadName({ ...item, family: asked.family })}…`;
       say(downloading);
       await during(downloading, pixelsOf(item), async () => {
@@ -885,7 +915,7 @@
       say(downloading);
     } catch (error) {
       exportFailure(error, asked, `${item.name} could not be saved.`);
-    }
+    } finally { release(); }
   }
 
   // The clipboard takes a PNG but not a GIF, so an animation is copied as its first frame.
@@ -893,23 +923,26 @@
     if (generatedUnavailable || itemPaletteFailed(item)) return;
     try {
       const asked = asking();
+      const release = holdArtworkExport([item], asked.family === 'full-palette' ? null : { source: asked.set.source, alphaCut: asked.set.alpha });
       // the clipboard is asked at once, as Safari demands, and handed the PNG when it has been made
       await copyOne(during(`Copying ${item.name}…`, item.img.w * item.img.h, async () => {
         const read = asked.family === 'full-palette' ? item : await reanalyzeItem(item, { source: asked.set.source, alphaCut: asked.set.alpha });
         return pngBlob(await still(read, asked));
-      }));
+      }).finally(release));
       say(`${item.name} copied${item.frames ? ' as a still image' : ''}.`);
-    } catch {
-      say(`${item.name} could not be copied.`);
+    } catch (error) {
+      say(error.code === 'ARTWORK_MEMORY_LIMIT' ? 'Not enough artwork memory to copy this image. Wait for other exports, or remove some images and try again.' : `${item.name} could not be copied.`);
     }
   }
 
   async function saveEverything() {
     if (generatedUnavailable || items.some(itemPaletteFailed)) return;
     const asked = asking();
+    let release = () => {};
     try {
       const selected = [...items]; // the images on the wall now, even if some are removed before the job starts
       if (!selected.length) return;
+      release = holdArtworkExport(selected, asked.family === 'full-palette' ? null : { source: asked.set.source, alphaCut: asked.set.alpha });
       const downloading = selected.length > 1
         ? `Downloading colorfetti.zip (${selected.length} images)…`
         : `Downloading ${downloadName({ ...selected[0], family: asked.family })}…`;
@@ -921,9 +954,10 @@
       say(downloading);
     } catch (error) {
       exportFailure(error, asked, 'The images could not be saved.');
-    }
+    } finally { release(); }
   }
   function exportFailure(error, asked, fallback) {
+    if (error.code === 'ARTWORK_MEMORY_LIMIT') { say('Not enough artwork memory to export. Wait for other exports, or remove some images and try again. No file was downloaded.', 9000); return; }
     if (error.code === 'PALETTE_GIF_ALPHA') { say('GIF cannot keep partial opacity. Choose Opacity Cut, or copy a frame as PNG. No file was downloaded.'); return; }
     if (error.code !== 'PALETTE_GIF_LIMIT') { say(fallback); return; }
     say('GIF needs room for transparency. No file was downloaded.');
@@ -1068,7 +1102,7 @@
         oncopy={items.length ? () => copy(item) : undefined}
         onreusecolors={items.length && family === 'full-palette' ? e => outputColors(item, e.currentTarget) : undefined} reuseDisabled={usageFor(item)?.result?.count === 0}
         onsave={items.length ? () => save(item) : undefined}
-        onremove={items.length ? () => (items = items.filter(i => i !== item)) : undefined} />
+        onremove={items.length ? () => removeItem(item) : undefined} />
     {/each}
   </div>
 </div>
@@ -1127,7 +1161,7 @@
     <button class="btn glass-btn danger" onclick={async () => {
       const item = shared;
       sheet.close();
-      items = items.filter(i => i !== item);
+      removeItem(item);
       await tick();
       (document.querySelector('.tile-share') ?? document.querySelector('.file-actions:not(.awaiting-import) .import-action') ?? document.querySelector('.example-add') ?? document.querySelector('.art'))?.focus();
     }}><PixelIcon name="trash" />Remove</button>

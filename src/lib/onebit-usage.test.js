@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { analyze, mask, colorize } from './recolor.js';
 import { defaults, STYLE_SETTINGS } from './settings.js';
 import { analysisKey } from './image-reanalysis.js';
+import { artworkCost, createArtworkAdmission } from './artwork-admission.js';
 import { maskRoles, oneBitColors, rememberOneBitMask, rememberOneBitSample, collectOneBitUsage, ONEBIT_INSPECTION_PIXELS } from './onebit-usage.js';
 
 function source(values, width = values.length) {
@@ -15,6 +16,16 @@ function oracle(value, first, second) {
   return colors.size;
 }
 describe('actual 1-bit used-color metadata', () => {
+  it('charges nonmatching metadata analysis without charging matching or no-ink early exits', async () => {
+    const item = source([0, 255]), bytes = artworkCost(2, 1), budget = createArtworkAdmission(bytes);
+    item.admission = budget.reserve(bytes);
+    const asked = { style: 'solid', set: { source: 'red', threshold: 127 }, first: '#000000', second: '#ffffff' };
+    await expect(collectOneBitUsage(item, asked)).rejects.toMatchObject({ code: 'ARTWORK_MEMORY_LIMIT' });
+    expect(budget.used).toBe(bytes);
+    expect((await collectOneBitUsage(item, { ...asked, first: null, second: null })).count).toBe(0);
+    expect((await collectOneBitUsage(item, { ...asked, set: { source: 'luma', threshold: 127 } })).count).toBe(2);
+    item.admission.release(); expect(budget.used).toBe(0);
+  });
   it('distinguishes empty, solid, both roles, None and duplicate RGB inks', () => {
     for (const values of [[], [0, 0], [1, 1], [2, 2], [0, 1, 2]]) {
       const value = Uint8Array.from(values), roles = maskRoles(value);

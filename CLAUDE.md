@@ -13,6 +13,19 @@ intentional compatibility references.
 
 ## What it does
 
+Artwork import tracks a shared 256 MiB logical source-storage budget: 10 bytes
+per source pixel for RGBA/current/replacement analysis plus 4 KiB per frame, with
+16,777,216 pixels/frame and 4,096 frames/asset caps. GIF framing/counts are checked
+before GifReader metadata or RGBA expansion; encoded bytes, two compositing RGBA
+canvases and 20 KiB decoder scratch are reserved until publication. Stills reserve
+before controlled pixel allocation once native dimensions are known. Rejection
+never retries through fallback or silently resizes/shortens content. Decode and
+analysis are serial. Owner removal releases by stable item ID; active borrowers
+retain leases until actual settlement. Live reanalysis is serialized; nonmatching
+export/count analyses charge extra scratch. Failures preserve valid wall items and
+explain recovery. This bounds defined source buffers, excluding native/GPU/GC,
+conversion/style caches and encoded output; native inspection has separate headroom.
+
 Save, ZIP and drag share portable output filenames before collision resolution.
 Unsafe filename/control/bidi characters become hyphens; NFC Unicode and complete
 code points are retained within a 255-byte UTF-8 complete-name budget, reserving

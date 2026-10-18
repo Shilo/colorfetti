@@ -1,0 +1,33 @@
+Browser tab: 7, Title: "Colorfetti", URL: "http://127.0.0.1:5210/app-v4/".
+1 AXWebArea Colorfetti, URL: 127.0.0.1:5210/app-v4/
+	2 container app
+		23 container
+			24 pop up button Preview valid.gif
+				25 image
+			26 button Save valid.gif
+			27 button Copy valid.gif
+			28 button Reuse colors from valid.gif
+			29 pop up button Preview valid.gif
+			30 button Remove valid.gif
+			31 pop up button Preview valid.gif
+				32 text valid.gif
+				33 text 2
+				34 text ×
+				35 text 2
+				36 text 2 colors
+		13 container
+			14 container Colors and palette
+				15 button Selected palette: Auto, 2 colors
+				16 button (collapsed) Description: Palette, Secondary Actions: Expand
+			17 container Conversion and style
+				18 checkbox Description: Auto conversion, Value: 1
+				19 button (collapsed) Description: Palette settings, Secondary Actions: Expand
+				20 text Showing images converted with Auto.
+			21 container File and app actions
+				37 container Add and save images
+					38 button Save image
+					39 button Add images
+					40 button Remove all images
+				22 pop up button More
+
+The focused UI element is 1 AXWebArea Colorfetti, URL: 127.0.0.1:5210/app-v4/

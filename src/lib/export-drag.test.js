@@ -1,8 +1,29 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { createExportDrag } from './export-drag.js';
+import { createArtworkAdmission } from './artwork-admission.js';
 
 afterEach(() => { vi.useRealTimers(); });
 describe('preparatory export drag ownership', () => {
+  it('retains the removed source until canceled preparation actually settles, then drops its lease', async () => {
+    vi.useFakeTimers(); const budget = createArtworkAdmission(100), token = budget.reserve(70), item = { admission: token };
+    let live = true, finish;
+    const controller = createExportDrag({ delay: 1, request: () => live ? { item, key: 'a' } : null,
+      prepare: () => { const releaseSource = token.hold(); return new Promise(resolve => { finish = () => resolve({ ...record('blob:late'), releaseSource }); }); },
+      revoke: vi.fn(), notify: vi.fn() });
+    controller.hover(item); await vi.advanceTimersByTimeAsync(1);
+    live = false; token.release(); controller.refresh(); await vi.advanceTimersByTimeAsync(0);
+    expect(budget.used).toBe(70); expect(() => budget.reserve(31)).toThrow(expect.objectContaining({ code: 'ARTWORK_MEMORY_LIMIT' }));
+    finish(); await vi.advanceTimersByTimeAsync(0); expect(budget.used).toBe(0); controller.destroy();
+  });
+  it('drops a ready cached source lease when wall removal invalidates the request', async () => {
+    vi.useFakeTimers(); const budget = createArtworkAdmission(100), token = budget.reserve(70), item = { admission: token };
+    let live = true;
+    const controller = createExportDrag({ delay: 1, request: () => live ? { item, key: 'a' } : null,
+      prepare: async () => ({ ...record('blob:ready'), releaseSource: token.hold() }), revoke: vi.fn(), notify: vi.fn() });
+    controller.hover(item); await vi.advanceTimersByTimeAsync(1);
+    expect(controller.readyFor(item)).toBeTruthy(); token.release(); expect(budget.used).toBe(70);
+    live = false; controller.refresh(); expect(budget.used).toBe(0); controller.destroy();
+  });
   function fixture(prepare, delay = 1) {
     let key = 'initial';
     const request = vi.fn(item => ({ item, key }));

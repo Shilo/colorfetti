@@ -41,12 +41,14 @@ export function createAnimationCache(budget = ANIMATION_CACHE_BYTES) {
       entry.refs++;
       let released = false;
       return {
-        getFrame(index, produce, { signal } = {}) {
+        getFrame(index, produce, { signal, hold } = {}) {
           if (released || signal?.aborted) return Promise.reject(aborted());
           if (!Number.isInteger(index) || index < 0 || index >= key.sources.length) return Promise.reject(new Error('Invalid animation frame.'));
           if (entry.frames[index]) return Promise.resolve(entry.frames[index]);
           let job = entry.pending.get(index);
           if (!job) {
+            let release;
+            try { release = hold?.(); } catch (error) { return Promise.reject(error); }
             job = { controller: new AbortController(), consumers: new Set() };
             entry.pending.set(index, job);
             job.promise = Promise.resolve().then(() => produce(job.controller.signal)).then(result => {
@@ -59,7 +61,7 @@ export function createAnimationCache(budget = ANIMATION_CACHE_BYTES) {
               if (key.alphaMode === 'keep' ? !alpha : alpha) throw new Error('Invalid cached animation alpha policy.');
               entry.frames[index] = result;
               return result;
-            }).finally(() => { if (entry.pending.get(index) === job) entry.pending.delete(index); });
+            }).finally(() => { if (entry.pending.get(index) === job) entry.pending.delete(index); release?.(); });
           }
           return new Promise((resolve, reject) => {
             const consumer = {};

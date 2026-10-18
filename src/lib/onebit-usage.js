@@ -1,6 +1,8 @@
 import { mask } from './recolor.js';
 import { analysisMatches, reanalyzeItem } from './image-reanalysis.js';
 import { checkCanceled, yieldTask } from './quantize.js';
+import { holdArtworkItems } from './artwork-admission.js';
+import { holdArtworkExport } from './artwork-export-lease.js';
 
 // Retain only the two role-presence bits for the latest conversion of an
 // immutable analyzed frame. Masks and converted RGBA are never retained here.
@@ -85,8 +87,11 @@ export function rememberOneBitSample(img, style, set, value, width, height) {
 }
 
 export async function collectOneBitUsage(item, asked, { signal } = {}) {
+  checkCanceled(signal);
   const captured = { first: asked.first, second: asked.second, style: asked.style, set: { ...asked.set } };
-  return queued(() => inspect(item, captured, signal), signal);
+  const release = holdArtworkItems([item]);
+  try { return await queued(() => inspect(item, captured, signal), signal); }
+  finally { release(); }
 }
 async function inspect(item, asked, signal) {
   // Capture mutable caller fields before yielding or preparing analyses.
@@ -101,40 +106,43 @@ async function inspect(item, asked, signal) {
   // Count metadata must not launch a large source analysis either. The App's
   // existing analysis job can publish matching immutable frames first.
   if (item.img.w * item.img.h > ONEBIT_INSPECTION_PIXELS && !analysisMatches(item, analysisSettings)) return null;
-  const read = await reanalyzeItem(item, analysisSettings, { signal });
-  const frames = read.frames ?? [read];
-  const used = new Set();
-  let unknown = false;
-  for (const frame of frames) {
-    checkCanceled(signal);
-    let stored = frameUsage.get(frame.img);
-    if (stored?.key === key) {
-      for (const color of oneBitColors(stored.roles, first, second)) used.add(color);
-      if (used.size === possible.size) break;
-    }
-    if (stored?.key !== key || !stored.exact) {
-      // Give the visible Tile a turn to publish existing rendering metadata.
-      await yieldTask();
+  const releaseAnalysis = holdArtworkExport([item], analysisSettings);
+  try {
+    const read = await reanalyzeItem(item, analysisSettings, { signal });
+    const frames = read.frames ?? [read];
+    const used = new Set();
+    let unknown = false;
+    for (const frame of frames) {
       checkCanceled(signal);
-      stored = frameUsage.get(frame.img);
+      let stored = frameUsage.get(frame.img);
       if (stored?.key === key) {
         for (const color of oneBitColors(stored.roles, first, second)) used.add(color);
         if (used.size === possible.size) break;
       }
       if (stored?.key !== key || !stored.exact) {
-        if (frame.img.w * frame.img.h > ONEBIT_INSPECTION_PIXELS) {
-          unknown = true;
-          continue;
+        // Give the visible Tile a turn to publish existing rendering metadata.
+        await yieldTask();
+        checkCanceled(signal);
+        stored = frameUsage.get(frame.img);
+        if (stored?.key === key) {
+          for (const color of oneBitColors(stored.roles, first, second)) used.add(color);
+          if (used.size === possible.size) break;
         }
-        const value = mask(frame.img, style, set);
-        stored = { key, roles: rememberOneBitMask(frame.img, style, set, value) };
+        if (stored?.key !== key || !stored.exact) {
+          if (frame.img.w * frame.img.h > ONEBIT_INSPECTION_PIXELS) {
+            unknown = true;
+            continue;
+          }
+          const value = mask(frame.img, style, set);
+          stored = { key, roles: rememberOneBitMask(frame.img, style, set, value) };
+        }
       }
+      for (const color of oneBitColors(stored.roles, first, second)) used.add(color);
+      if (used.size === possible.size) break;
     }
-    for (const color of oneBitColors(stored.roles, first, second)) used.add(color);
-    if (used.size === possible.size) break;
-  }
-  checkCanceled(signal);
-  if (unknown && used.size !== possible.size) return null;
-  const colors = Object.freeze([...possible].filter(color => used.has(color)));
-  return Object.freeze({ colors, count: colors.length, frames: frameCount });
+    checkCanceled(signal);
+    if (unknown && used.size !== possible.size) return null;
+    const colors = Object.freeze([...possible].filter(color => used.has(color)));
+    return Object.freeze({ colors, count: colors.length, frames: frameCount });
+  } finally { releaseAnalysis(); }
 }

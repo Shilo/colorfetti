@@ -1,0 +1,34 @@
+
+> colorfetti@0.0.0 build
+> vite build --outDir .tmp/conversion-fixes-m1/app-v2
+
+7:13:07 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti - using default configuration.
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 206 modules transformed.
+rendering chunks...
+computing gzip size...
+.tmp/conversion-fixes-m1/app-v2/index.html                                     4.63 kB │ gzip:   1.65 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-generated-worker-xpoMRM2c.js    9.82 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-limit-worker-rkrL9P3s.js        9.86 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-gif-worker-CY8CibIc.js         12.25 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-cleanup-worker-ChpCTucA.js     15.05 kB
+.tmp/conversion-fixes-m1/app-v2/assets/image-import-worker-DdxhMa3C.js        31.61 kB
+.tmp/conversion-fixes-m1/app-v2/assets/index-Bouyy4f1.css                    169.62 kB │ gzip:  26.66 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-usage-CkkMK67g.js               1.09 kB │ gzip:   0.67 kB
+.tmp/conversion-fixes-m1/app-v2/assets/artwork-gif-preflight-DWfe0QVt.js       1.28 kB │ gzip:   0.76 kB
+.tmp/conversion-fixes-m1/app-v2/assets/artwork-admission-CurXQSHm.js           1.45 kB │ gzip:   0.75 kB
+.tmp/conversion-fixes-m1/app-v2/assets/image-bitmap-decode-BBWTQ-0Y.js         1.67 kB │ gzip:   1.01 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-lospec-BUdZU2lN.js              2.32 kB │ gzip:   1.25 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-ase-gXqzrNdw.js                 2.49 kB │ gzip:   1.32 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-generated-client-BPyBYXxe.js    4.13 kB │ gzip:   1.81 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-cleanup-BIbDQyWL.js             4.23 kB │ gzip:   2.21 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-limit-OiwOF5bZ.js               4.57 kB │ gzip:   2.26 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-generated-BkyrT-Io.js           5.98 kB │ gzip:   2.73 kB
+.tmp/conversion-fixes-m1/app-v2/assets/image-import-client-OO9Mgz9S.js         6.97 kB │ gzip:   2.63 kB
+.tmp/conversion-fixes-m1/app-v2/assets/palette-cleanup-client-BBz2HopV.js      7.43 kB │ gzip:   2.90 kB
+.tmp/conversion-fixes-m1/app-v2/assets/quantize-DsvDuXDJ.js                   13.24 kB │ gzip:   6.39 kB
+.tmp/conversion-fixes-m1/app-v2/assets/gif-Q21Bn0rd.js                        17.74 kB │ gzip:   7.02 kB
+.tmp/conversion-fixes-m1/app-v2/assets/index-D749bXpI.js                     287.11 kB │ gzip: 102.34 kB
+
+✓ built in 464ms

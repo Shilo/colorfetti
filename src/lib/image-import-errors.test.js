@@ -15,7 +15,10 @@ describe('bounded artwork import diagnostics', () => {
     expect(message({ name: 'sprite.gif' }, { code: 'GIF_INVALID', message: 'secret private file path' }))
       .toBe('1 file skipped. “sprite.gif”: invalid GIF data; open and re-export the file.');
   });
-  it.each(['ARTWORK_MEMORY_LIMIT', 'IMAGE_PIXEL_LIMIT', 'IMAGE_SIZE_LIMIT', 'GIF_PIXEL_LIMIT'])('classifies explicit admission rejection %s', code => {
+  it('offers a recovery action for the current wall memory budget', () => {
+    expect(message({ name: 'large.gif' }, { code: 'ARTWORK_MEMORY_LIMIT' })).toContain('not enough artwork memory; remove images or try a smaller image or shorter animation');
+  });
+  it.each(['IMAGE_PIXEL_LIMIT', 'IMAGE_SIZE_LIMIT', 'GIF_PIXEL_LIMIT'])('classifies explicit pixel rejection %s', code => {
     expect(message({ name: 'large.gif' }, { code })).toContain('image exceeds the import limit; try a smaller image or shorter animation');
   });
   it.each([{ code: 'IMAGE_UNSUPPORTED' }, { name: 'NotSupportedError' }])('classifies explicit unsupported content %j', error => {

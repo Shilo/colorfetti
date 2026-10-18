@@ -1,5 +1,6 @@
 import { validateMatchingMetric, checkCanceled } from './quantize.js';
 import { validatePreparedCleanupAsync } from './palette-cleanup-apply.js';
+import { holdArtworkSources } from './artwork-source-leases.js';
 export { applyPreparedCleanup as applyCleanup, applyPreparedCleanupAsync as applyCleanupAsync } from './palette-cleanup-apply.js';
 
 const CHUNK_BYTES = 128 * 1024;
@@ -91,7 +92,7 @@ async function drain() {
         checkCanceled(job.controller.signal);
         job.state.cached = { signature: job.signature, result }; job.resolve(result);
       } catch (error) { job.reject(error); }
-      finally { job.state.active.delete(job); }
+      finally { job.state.active.delete(job); job.releaseSources(); }
     }
   } finally { running = false; }
 }
@@ -108,7 +109,7 @@ function subscribe(job, signal) {
         // Queued requests own source references too; release them immediately
         // rather than keeping old walls behind another subscriber's export.
         const index = queue.indexOf(job);
-        if (index >= 0) { queue.splice(index, 1); job.state.active.delete(job); job.reject(abortError()); }
+        if (index >= 0) { queue.splice(index, 1); job.state.active.delete(job); job.releaseSources(); job.reject(abortError()); }
       }
     };
     signal?.addEventListener('abort', canceled, { once: true });
@@ -129,7 +130,7 @@ export async function getPaletteCleanup(item, palette, alphaCut, metric, { signa
   if (state.cached && same(state.cached.signature, signature)) { checkCanceled(signal); return state.cached.result; }
   let job = [...state.active].find(candidate => !candidate.controller.signal.aborted && same(candidate.signature, signature));
   if (!job) {
-    job = { signature, state, controller: new AbortController(), consumers: new Set() };
+    job = { signature, state, controller: new AbortController(), consumers: new Set(), releaseSources: holdArtworkSources(signature.frames) };
     job.promise = new Promise((resolve, reject) => { job.resolve = resolve; job.reject = reject; });
     job.promise.catch(() => {}); state.active.add(job); queue.push(job);
   }

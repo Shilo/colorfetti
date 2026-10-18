@@ -2,6 +2,7 @@ import { beforeEach, afterEach, describe, it, expect, vi } from 'vitest';
 import omggif from 'omggif';
 import { analyzeImportFrames, importFrameMessage, importFrameTransfers } from './image-import-core.js';
 import { decodeGif } from './gif.js';
+import { createArtworkAdmission, artworkCost } from './artwork-admission.js';
 
 const pixelPattern = [34, 35, 35, 255, 35, 35, 35, 128, 240, 246, 240, 255, 0, 0, 0, 0];
 const width = 65, height = 64; // Genuine >4096px source exercises production worker routing.
@@ -56,7 +57,7 @@ beforeEach(async () => {
         if (this.fault === 'integrity') { this.emit({ type: 'error', code: 'GIF_INVALID', message: 'Invalid GIF pixel count.' }); return; }
         let input;
         if (data.mode === 'gif') {
-          const decoded = decodeGif(new Uint8Array(await data.file.arrayBuffer()));
+          const decoded = decodeGif(data.bytes ?? new Uint8Array(await data.file.arrayBuffer()));
           if (this.fault === 'stall-gif-analysis') return;
           const animated = decoded.frames.length > 1;
           input = { frames: decoded.frames.map(f => ({ original: { width: decoded.width, height: decoded.height, data: f.data },
@@ -86,11 +87,63 @@ beforeEach(async () => {
 afterEach(() => { workers.forEach(w => w.terminate()); vi.unstubAllGlobals(); });
 
 describe('lazy serial image imports', () => {
+  it('admits concurrent native jobs atomically and permits a valid import after release', async () => {
+    const one = artworkCost(width, height), budget = createArtworkAdmission(one + 8192);
+    const results = await Promise.allSettled([0, 1, 2].map(() => api.decodeImportedFile(png(), { budget })));
+    expect(results.map(result => result.status)).toEqual(['fulfilled', 'rejected', 'rejected']);
+    expect(results[1].reason).toMatchObject({ code: 'ARTWORK_MEMORY_LIMIT' });
+    expect(results[2].reason).toMatchObject({ code: 'ARTWORK_MEMORY_LIMIT' });
+    expect(workers).toHaveLength(1); expect(budget.used).toBe(one); expect(budget.peak).toBeLessThanOrEqual(budget.limit);
+    const published = api.takeImportedFrames(results[0].value); published.admission.release();
+    expect(budget.used).toBe(0);
+    const next = await api.decodeImportedFile(png(), { budget }); api.releaseImported(next); expect(budget.used).toBe(0);
+  });
+  it.each(['absent', 'normal'])('rejects oversized GIF geometry before worker/native expansion and recovers (%s)', async mode => {
+    if (mode === 'absent') vi.stubGlobal('Worker', undefined);
+    const source = singleGif(), bytes = new Uint8Array(await source.arrayBuffer()); bytes.set([1, 16, 0, 16], 6);
+    const file = Object.assign(new Blob([bytes], { type: 'image/gif' }), { name: 'oversized.gif' });
+    const budget = createArtworkAdmission();
+    await expect(api.decodeImportedFile(file, { budget })).rejects.toMatchObject({ code: 'ARTWORK_MEMORY_LIMIT' });
+    expect(workers).toHaveLength(0); expect(native).not.toHaveBeenCalled(); expect(budget.used).toBe(0);
+    const result = await api.decodeImportedFile(singleGif(), { budget }); api.releaseImported(result); expect(budget.used).toBe(0);
+  });
+  it('keeps one reservation across worker fallback and repeated unpublished setting changes', async () => {
+    fault = 'after-frame'; const budget = createArtworkAdmission();
+    let result = await api.decodeImportedFile(gif(), { budget });
+    const amount = budget.used; expect(budget.count).toBe(1);
+    for (const source of ['red', 'blue', 'green']) {
+      result = await api.reanalyzeImported(result, { source });
+      expect(budget.count).toBe(1); expect(budget.used).toBe(amount);
+    }
+    const item = api.takeImportedFrames(result), finish = item.admission.hold();
+    expect(budget.used).toBe(artworkCost(2, 2, 3));
+    item.admission.release(); expect(budget.used).toBeGreaterThan(0); finish(); expect(budget.used).toBe(0);
+  });
+  it('releases a canceled completed unpublished import without leaving its pixels retained', async () => {
+    const budget = createArtworkAdmission(), controller = new AbortController();
+    const result = await api.decodeImportedFile(png(), { budget, signal: controller.signal });
+    expect(budget.used).toBeGreaterThan(0); controller.abort();
+    expect(budget.used).toBe(0); expect(result.frames).toHaveLength(0);
+    expect(() => api.takeImportedFrames(result)).toThrow('unpublished');
+  });
+  it('bounds many tiny pending imports and releases queued cancellation before decoding them', async () => {
+    fault = 'stall'; const budget = createArtworkAdmission(artworkCost(width, height) + 8192), active = new AbortController();
+    const first = api.decodeImportedFile(png(), { budget, signal: active.signal });
+    const failed = expect(first).rejects.toMatchObject({ name: 'AbortError' });
+    await vi.waitFor(() => expect(workers[0]?.sent).toEqual(['start']));
+    const controllers = Array.from({ length: 10 }, () => new AbortController());
+    const queued = controllers.map(controller => api.decodeImportedFile(png(), { budget, signal: controller.signal }));
+    const settled = Promise.allSettled(queued); controllers.forEach(controller => controller.abort()); active.abort();
+    await failed; const results = await settled;
+    expect(results.every(result => result.status === 'rejected')).toBe(true);
+    expect(native).toHaveBeenCalledOnce(); expect(budget.used).toBe(0); expect(budget.peak).toBeLessThanOrEqual(budget.limit);
+  });
   it('propagates worker integrity errors without re-decoding or canvas recovery', async () => {
     fault = 'integrity'; const file = singleGif();
-    file.arrayBuffer = vi.fn(() => { throw Error('An integrity failure must not be retried'); });
+    const bytes = await file.arrayBuffer();
+    file.arrayBuffer = vi.fn().mockResolvedValueOnce(bytes).mockImplementation(() => { throw Error('An integrity failure must not be retried'); });
     await expect(api.decodeImportedFile(file)).rejects.toMatchObject({ code: 'GIF_INVALID' });
-    expect(file.arrayBuffer).not.toHaveBeenCalled();
+    expect(file.arrayBuffer).toHaveBeenCalledOnce(); // Admission preflight, never a recovery read.
     expect(createImageBitmap).not.toHaveBeenCalled(); expect(native).not.toHaveBeenCalled();
     expect(workers[0].terminated).toBe(true);
   });
@@ -282,13 +335,13 @@ describe('lazy serial image imports', () => {
     await vi.waitFor(() => expect(workers[0]?.sent).toEqual(['start']));
     const two = api.decodeImportedFile(png(), { signal: b.signal });
     const rejectedTwo = expect(two).rejects.toMatchObject({ name: 'AbortError' });
-    await vi.waitFor(() => expect(native).toHaveBeenCalledTimes(2));
+    await Promise.resolve(); expect(native).toHaveBeenCalledOnce(); // The canceled queued still has not decoded.
     b.abort(); a.abort(); await rejectedOne; await rejectedTwo;
     expect(workers).toHaveLength(1); expect(workers[0].terminated).toBe(true);
     fault = null;
     const next = await api.decodeImportedFile(png());
     expect(next.frames[0].original.data).toEqual(rgba);
-    expect(native).toHaveBeenCalledTimes(3); expect(workers).toHaveLength(2);
+    expect(native).toHaveBeenCalledTimes(2); expect(workers).toHaveLength(2);
   });
   it('does not claim ownership or decode anything for pre-canceled work', async () => {
     const controller = new AbortController(); controller.abort();
