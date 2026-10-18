@@ -1,0 +1,92 @@
+{
+  "stamp": 1792309569424,
+  "style": "checker",
+  "order": [
+    "A"
+  ],
+  "urls": {
+    "A": "http://localhost:5401/",
+    "A1": "http://localhost:5402/"
+  },
+  "started": "2026-10-18T07:46:09.424Z",
+  "trials": [
+    {
+      "variant": "A",
+      "pair": 0,
+      "slot": 0,
+      "tempC": 34.8,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window (checker)",
+          "cpuMs": 983.0159999999998,
+          "startedAt": 4263.099999964237,
+          "elapsedMs": 2147.100000023842,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "dragWallMs": 2079,
+          "releaseToCaptionMs": 148.5999999642372,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "512×512  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "512×512  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "512×512  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "512×512  ·  2 colors",
+              "busy": "false"
+            }
+          ],
+          "finalValue": "229",
+          "press": {
+            "busySeen": false,
+            "value": "117",
+            "captionsChanged": false,
+            "calibratedValue": "117",
+            "calibrationTaps": 1,
+            "valueChanged": false
+          },
+          "startValue": "117"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, level: 66, temperature: 349, Capacity level: 2",
+      "rotation": "free"
+    },
+    {
+      "at": "end",
+      "battery": "status: 4, level: 66, temperature: 348, Capacity level: 2",
+      "rotation": "free"
+    }
+  ],
+  "fixtures": {
+    "dragWall": [
+      "kenney-crop-a",
+      "kenney-crop-b",
+      "kenney-crop-c",
+      "kenney-crop-d"
+    ],
+    "hashesVerified": true
+  },
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "finished": "2026-10-18T07:46:17.541Z"
+}

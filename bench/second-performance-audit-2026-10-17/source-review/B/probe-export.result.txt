@@ -1,0 +1,87 @@
+{
+ "gif": {
+  "kenney-motion-128.gif none": {
+   "frames": 32,
+   "size": "128x128",
+   "identicalBytes": true,
+   "headConversions": 64,
+   "retainedConversions": 32,
+   "retainedIndexBytes": 1048576,
+   "headMs": 18.25,
+   "retainedMs": 14.22,
+   "headQuantizeMs": 7.13
+  },
+  "kenney-motion-128.gif 4x4": {
+   "frames": 32,
+   "size": "128x128",
+   "identicalBytes": true,
+   "headConversions": 64,
+   "retainedConversions": 32,
+   "retainedIndexBytes": 1048576,
+   "headMs": 18.03,
+   "retainedMs": 14.23,
+   "headQuantizeMs": 7.3
+  },
+  "kenney-motion-256.gif none": {
+   "frames": 48,
+   "size": "256x256",
+   "identicalBytes": true,
+   "headConversions": 96,
+   "retainedConversions": 48,
+   "retainedIndexBytes": 6291456,
+   "headMs": 91.06,
+   "retainedMs": 72.32,
+   "headQuantizeMs": 34.97
+  },
+  "kenney-motion-256.gif 4x4": {
+   "frames": 48,
+   "size": "256x256",
+   "identicalBytes": true,
+   "headConversions": 96,
+   "retainedConversions": 48,
+   "retainedIndexBytes": 6291456,
+   "headMs": 90.5,
+   "retainedMs": 73.58,
+   "headQuantizeMs": 34.44
+  },
+  "real-magic.gif none": {
+   "frames": 6,
+   "size": "32x32",
+   "identicalBytes": true,
+   "headConversions": 12,
+   "retainedConversions": 6,
+   "retainedIndexBytes": 12288,
+   "headMs": 0.56,
+   "retainedMs": 0.39,
+   "headQuantizeMs": 0.27
+  },
+  "real-magic.gif 4x4": {
+   "frames": 6,
+   "size": "32x32",
+   "identicalBytes": true,
+   "headConversions": 12,
+   "retainedConversions": 6,
+   "retainedIndexBytes": 12288,
+   "headMs": 1.17,
+   "retainedMs": 0.72,
+   "headQuantizeMs": 0.86
+  }
+ },
+ "zlib": {
+  "tiny 32x32 4-bit": {
+   "identical": true,
+   "syncMs": 0.31,
+   "asyncWorkerRoundTripMs": 19.52
+  },
+  "sprite 256x256 8-bit": {
+   "identical": true,
+   "syncMs": 0.77,
+   "asyncWorkerRoundTripMs": 16.8
+  },
+  "sheet 2048 4-bit": {
+   "identical": true,
+   "syncMs": 17.48,
+   "asyncWorkerRoundTripMs": 31.6
+  }
+ }
+}

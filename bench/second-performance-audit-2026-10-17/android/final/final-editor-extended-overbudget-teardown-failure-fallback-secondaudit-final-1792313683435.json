@@ -1,0 +1,677 @@
+{
+  "label": "final",
+  "prefix": "secondaudit-final-1792313683435",
+  "baseURL": "http://localhost:5410/",
+  "started": "2026-10-18T08:54:43.436Z",
+  "baseline": "3c47699b8f0ee6e58f7d3082d699c81376747dea",
+  "rows": [
+    {
+      "name": "palette editor open paste 256 colors keyboard Review page close",
+      "elapsedMs": 1269.300000011921,
+      "longtasks": [
+        {
+          "start": 558.4000000357628,
+          "duration": 188
+        }
+      ],
+      "rafMaxMs": 183.4000000000001,
+      "rafP95Ms": 25.100000000000023,
+      "cpuMs": {
+        "TaskDuration": 589.6700000000001,
+        "ScriptDuration": 108.85199999999999,
+        "LayoutDuration": 84.325,
+        "RecalcStyleDuration": 71.095
+      },
+      "heapUsed": 7473568
+    },
+    {
+      "name": "closed editor empty wall idle",
+      "elapsedMs": 1064.199999988079,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 75.66700000000004,
+        "ScriptDuration": 10.836000000000013,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0.5440000000000028
+      },
+      "heapUsed": 7507008
+    },
+    {
+      "name": "transparent32: input import to current named wall paint",
+      "elapsedMs": 104.5,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 45.698000000000015,
+        "ScriptDuration": 11.697,
+        "LayoutDuration": 2.057,
+        "RecalcStyleDuration": 11.479
+      },
+      "heapUsed": 10467708
+    },
+    {
+      "name": "transparent32: native Save including download manager",
+      "elapsedMs": 806,
+      "longtasks": [],
+      "rafMaxMs": 33.30000000000007,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 187.96400000000003,
+        "ScriptDuration": 37.144,
+        "LayoutDuration": 3.3369999999999997,
+        "RecalcStyleDuration": 22.549
+      },
+      "heapUsed": 11539904
+    },
+    {
+      "name": "silhouette32: input import to current named wall paint",
+      "elapsedMs": 116.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 48.125,
+        "ScriptDuration": 10.526999999999994,
+        "LayoutDuration": 2.1919999999999997,
+        "RecalcStyleDuration": 11.288
+      },
+      "heapUsed": 13265436
+    },
+    {
+      "name": "silhouette32: native Save including download manager",
+      "elapsedMs": 864.3999999761581,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 189.762,
+        "ScriptDuration": 30.19299999999999,
+        "LayoutDuration": 2.711,
+        "RecalcStyleDuration": 22.639
+      },
+      "heapUsed": 14161132
+    },
+    {
+      "name": "partial-glow64: input import to current named wall paint",
+      "elapsedMs": 95.80000001192093,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 44.18899999999998,
+        "ScriptDuration": 10.495999999999999,
+        "LayoutDuration": 1.941,
+        "RecalcStyleDuration": 9.924999999999999
+      },
+      "heapUsed": 16625340
+    },
+    {
+      "name": "partial-glow64: native Save including download manager",
+      "elapsedMs": 877.8000000119209,
+      "longtasks": [],
+      "rafMaxMs": 33.200000000000045,
+      "rafP95Ms": 17,
+      "cpuMs": {
+        "TaskDuration": 206.18499999999997,
+        "ScriptDuration": 33.155,
+        "LayoutDuration": 3.096999999999999,
+        "RecalcStyleDuration": 27.029
+      },
+      "heapUsed": 17730864
+    },
+    {
+      "name": "boundary4096: input import to current named wall paint",
+      "elapsedMs": 102,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 57.902999999999984,
+        "ScriptDuration": 8.240999999999998,
+        "LayoutDuration": 1.7670000000000003,
+        "RecalcStyleDuration": 11.357999999999999
+      },
+      "heapUsed": 18132872
+    },
+    {
+      "name": "boundary4096: cap replacements2to4to8 Cleanup on-off",
+      "elapsedMs": 811.1999999880791,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.800000000000068,
+      "cpuMs": {
+        "TaskDuration": 250.77800000000005,
+        "ScriptDuration": 47.83800000000001,
+        "LayoutDuration": 7.900999999999998,
+        "RecalcStyleDuration": 22.523999999999997
+      },
+      "heapUsed": 23177536
+    },
+    {
+      "name": "boundary4097: input import to current named wall paint",
+      "elapsedMs": 148.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 64.13499999999999,
+        "ScriptDuration": 10.585,
+        "LayoutDuration": 2.4890000000000003,
+        "RecalcStyleDuration": 10.149
+      },
+      "heapUsed": 21178116
+    },
+    {
+      "name": "boundary4097: cap replacements2to4to8 Cleanup on-off",
+      "elapsedMs": 740.1000000238419,
+      "longtasks": [],
+      "rafMaxMs": 17,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 203.41500000000002,
+        "ScriptDuration": 35.49099999999999,
+        "LayoutDuration": 5.838,
+        "RecalcStyleDuration": 19.811
+      },
+      "heapUsed": 23730416
+    },
+    {
+      "name": "entropy512: input import to current named wall paint",
+      "elapsedMs": 298.80000001192093,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 231.376,
+        "ScriptDuration": 11.772999999999998,
+        "LayoutDuration": 2.5700000000000003,
+        "RecalcStyleDuration": 9.904
+      },
+      "heapUsed": 13027180
+    },
+    {
+      "name": "entropy512: native Save including download manager",
+      "elapsedMs": 1206.4000000357628,
+      "longtasks": [],
+      "rafMaxMs": 25.100000000000023,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 368.45500000000004,
+        "ScriptDuration": 37.61999999999999,
+        "LayoutDuration": 3.556,
+        "RecalcStyleDuration": 22.246000000000002
+      },
+      "heapUsed": 15105632
+    },
+    {
+      "name": "entropy512: RGB dither8 replaced4 final current count",
+      "elapsedMs": 1784.5,
+      "longtasks": [],
+      "rafMaxMs": 183.30000000000018,
+      "rafP95Ms": 16.700000000000273,
+      "cpuMs": {
+        "TaskDuration": 1455.6620000000003,
+        "ScriptDuration": 32.74400000000001,
+        "LayoutDuration": 4.847,
+        "RecalcStyleDuration": 21.988999999999994
+      },
+      "heapUsed": 14720232,
+      "profileFile": "final/profiles/secondaudit-final-1792313683435-14.cpuprofile",
+      "top": [
+        {
+          "frame": "D quantize-DsvDuXDJ.js:0",
+          "ms": 467.936
+        },
+        {
+          "frame": "F quantize-DsvDuXDJ.js:0",
+          "ms": 439.403
+        },
+        {
+          "frame": "(idle) :-1",
+          "ms": 323.168
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 284.968
+        },
+        {
+          "frame": "B quantize-DsvDuXDJ.js:0",
+          "ms": 117.554
+        },
+        {
+          "frame": "O quantize-DsvDuXDJ.js:0",
+          "ms": 37.424
+        },
+        {
+          "frame": "elementsFromPoint :-1",
+          "ms": 11.424
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 7.654
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 7.155
+        },
+        {
+          "frame": "U quantize-DsvDuXDJ.js:0",
+          "ms": 6.94
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 5.056
+        },
+        {
+          "frame": "requestAnimationFrame :-1",
+          "ms": 4.763
+        },
+        {
+          "frame": "evaluate :304",
+          "ms": 4.566
+        },
+        {
+          "frame": " :-1",
+          "ms": 4.477
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 4.005
+        },
+        {
+          "frame": "previewNode :7702",
+          "ms": 3.669
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 3.571
+        },
+        {
+          "frame": "querySelectorAll :-1",
+          "ms": 3.176
+        },
+        {
+          "frame": "close :-1",
+          "ms": 2.551
+        },
+        {
+          "frame": " quantize-DsvDuXDJ.js:0",
+          "ms": 2.409
+        }
+      ]
+    },
+    {
+      "name": "overbudget: input import to current named wall paint",
+      "elapsedMs": 326.0999999642372,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.800000000000068,
+      "cpuMs": {
+        "TaskDuration": 124.90299999999999,
+        "ScriptDuration": 18.659999999999997,
+        "LayoutDuration": 3.6740000000000004,
+        "RecalcStyleDuration": 11.189000000000002
+      },
+      "heapUsed": 15673424
+    },
+    {
+      "name": "384x384x48 over8MiB index budget converted playback",
+      "elapsedMs": 8933.5,
+      "longtasks": [],
+      "rafMaxMs": 17.200000000000728,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 847.714,
+        "ScriptDuration": 221.57900000000004,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 14452768,
+      "observedFrames": 93,
+      "nominalIndexBytes": 14155776
+    },
+    {
+      "name": "teardown0: input import to current named wall paint",
+      "elapsedMs": 101.80000001192093,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 48.66999999999999,
+        "ScriptDuration": 11.389,
+        "LayoutDuration": 2.9029999999999996,
+        "RecalcStyleDuration": 9.578
+      },
+      "heapUsed": 16376152
+    },
+    {
+      "name": "teardown1: input import to current named wall paint",
+      "elapsedMs": 69.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 33.759000000000036,
+        "ScriptDuration": 9.056000000000001,
+        "LayoutDuration": 2.296000000000001,
+        "RecalcStyleDuration": 8.091000000000001
+      },
+      "heapUsed": 5218536
+    },
+    {
+      "name": "teardown2: input import to current named wall paint",
+      "elapsedMs": 80.89999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 48.798000000000066,
+        "ScriptDuration": 13.034000000000004,
+        "LayoutDuration": 3.374,
+        "RecalcStyleDuration": 10.635000000000005
+      },
+      "heapUsed": 5337376
+    },
+    {
+      "name": "teardown3: input import to current named wall paint",
+      "elapsedMs": 93,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 53.194000000000074,
+        "ScriptDuration": 15.310999999999991,
+        "LayoutDuration": 3.122,
+        "RecalcStyleDuration": 12.01200000000001
+      },
+      "heapUsed": 5412824
+    },
+    {
+      "name": "teardown4: input import to current named wall paint",
+      "elapsedMs": 79.90000003576279,
+      "longtasks": [],
+      "rafMaxMs": 16.699999999999818,
+      "rafP95Ms": 16.699999999999818,
+      "cpuMs": {
+        "TaskDuration": 40.766999999999996,
+        "ScriptDuration": 10.38900000000001,
+        "LayoutDuration": 2.5179999999999993,
+        "RecalcStyleDuration": 9.149000000000004
+      },
+      "heapUsed": 5579256
+    },
+    {
+      "name": "teardown5: input import to current named wall paint",
+      "elapsedMs": 81.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999727,
+      "rafP95Ms": 16.799999999999727,
+      "cpuMs": {
+        "TaskDuration": 44.64299999999999,
+        "ScriptDuration": 11.626999999999999,
+        "LayoutDuration": 2.765,
+        "RecalcStyleDuration": 10.963000000000001
+      },
+      "heapUsed": 5653440
+    },
+    {
+      "name": "post six import/remove cycles demo idle",
+      "elapsedMs": 1065.5,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999727,
+      "cpuMs": {
+        "TaskDuration": 72.75799999999988,
+        "ScriptDuration": 12.389999999999985,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 5221952
+    },
+    {
+      "name": "failure-limit: input import to current named wall paint",
+      "elapsedMs": 148.30000001192093,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 100.751,
+        "ScriptDuration": 22.09,
+        "LayoutDuration": 2.343,
+        "RecalcStyleDuration": 12.004
+      },
+      "heapUsed": 8251160
+    },
+    {
+      "name": "limit: injected worker fetch failure gates Save and Retry recovers",
+      "elapsedMs": 549.6999999880791,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.800000000000068,
+      "cpuMs": {
+        "TaskDuration": 154.233,
+        "ScriptDuration": 30.284000000000006,
+        "LayoutDuration": 5.859999999999999,
+        "RecalcStyleDuration": 24.215999999999998
+      },
+      "heapUsed": 10153624
+    },
+    {
+      "name": "failure-cleanup: input import to current named wall paint",
+      "elapsedMs": 129,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 69.248,
+        "ScriptDuration": 10.349999999999998,
+        "LayoutDuration": 2.398999999999999,
+        "RecalcStyleDuration": 8.948999999999998
+      },
+      "heapUsed": 11592300
+    },
+    {
+      "name": "cleanup: injected worker fetch failure gates Save and Retry recovers",
+      "elapsedMs": 570.1000000238419,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 159.61,
+        "ScriptDuration": 28.961999999999996,
+        "LayoutDuration": 7.5329999999999995,
+        "RecalcStyleDuration": 28.160000000000004
+      },
+      "heapUsed": 13116552
+    },
+    {
+      "name": "worker-unavailable: input import to current named wall paint",
+      "elapsedMs": 99.69999998807907,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 53.339,
+        "ScriptDuration": 8.623,
+        "LayoutDuration": 2.0660000000000003,
+        "RecalcStyleDuration": 9.683
+      },
+      "heapUsed": 16990364
+    },
+    {
+      "name": "worker unavailable genuine GIF: native Save including download manager",
+      "elapsedMs": 774.1999999880791,
+      "longtasks": [],
+      "rafMaxMs": 25.100000000000023,
+      "rafP95Ms": 16.800000000000068,
+      "cpuMs": {
+        "TaskDuration": 170.47299999999998,
+        "ScriptDuration": 38.468999999999994,
+        "LayoutDuration": 2.2129999999999987,
+        "RecalcStyleDuration": 16.638
+      },
+      "heapUsed": 16641256
+    }
+  ],
+  "outputs": [
+    {
+      "name": "secondaudit-final-1792313683435-transparent32-0-transparent32-palette.png",
+      "sha256": "e3603df8fd507c1b93d351aa8d615dd67c7ad2678b417d181d2093ebf94ee340",
+      "width": 32,
+      "height": 32,
+      "frames": 1,
+      "colors": 0,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "secondaudit-final-1792313683435-silhouette32-0-silhouette32-palette.png",
+      "sha256": "1c30399a7a2c430165ca5a350a69db694a8eb83af4bf3364c8288fa696c143bb",
+      "width": 32,
+      "height": 32,
+      "frames": 1,
+      "colors": 1,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "secondaudit-final-1792313683435-partial-glow64-0-partial-glow64-palette.png",
+      "sha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9",
+      "width": 64,
+      "height": 64,
+      "frames": 1,
+      "colors": 1,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "secondaudit-final-1792313683435-entropy512-0-entropy512-palette.png",
+      "sha256": "b8af76438dcad5090f6569e89b22f23abe248794918fcc64e739cc94809396cd",
+      "width": 512,
+      "height": 512,
+      "frames": 1,
+      "colors": 64,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "secondaudit-final-1792313683435-worker-unavailable-0-real-magic-palette.gif",
+      "sha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19",
+      "width": 32,
+      "height": 32,
+      "frames": 6,
+      "delay": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": 0,
+      "colors": 12,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    }
+  ],
+  "errors": [],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 317\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "targetId": "8CC4EDE5AD5E2F7708BFD08EAEE9483C",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "lastWall": [
+    {
+      "name": "secondaudit-final-1792313683435-worker-unavailable-0-real-magic.gif 32×32  ·  12 colors ",
+      "caption": "32×32  ·  12 colors ",
+      "width": 32,
+      "height": 32
+    }
+  ],
+  "teardown": [
+    {
+      "cycle": 0,
+      "heap": 4698108,
+      "figures": 1
+    },
+    {
+      "cycle": 1,
+      "heap": 4789392,
+      "figures": 1
+    },
+    {
+      "cycle": 2,
+      "heap": 4878868,
+      "figures": 1
+    },
+    {
+      "cycle": 3,
+      "heap": 5047300,
+      "figures": 1
+    },
+    {
+      "cycle": 4,
+      "heap": 5148104,
+      "figures": 1
+    },
+    {
+      "cycle": 5,
+      "heap": 5177076,
+      "figures": 1
+    }
+  ],
+  "failureChecks": [
+    {
+      "kind": "limit",
+      "gate": true,
+      "retry": true
+    },
+    {
+      "kind": "cleanup",
+      "gate": true,
+      "retry": true
+    }
+  ],
+  "workerFallback": true,
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T08:55:15.314Z"
+}

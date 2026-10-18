@@ -1,0 +1,38 @@
+[
+ {
+  "file": "kenney-crop-a.png",
+  "sha256": "4684053a1e0fe5e574e90325c943982fd0dff8f27ed0a608260a9601c486feff",
+  "from": "kenney-sheet-1024.png",
+  "x": 0,
+  "y": 0,
+  "w": 512,
+  "h": 512
+ },
+ {
+  "file": "kenney-crop-b.png",
+  "sha256": "187f3d03dc6bc7aa0a56c2daf7a3a9457ac59d6b3003c7c63afe7836a92a2829",
+  "from": "kenney-sheet-1024.png",
+  "x": 5,
+  "y": 3,
+  "w": 512,
+  "h": 512
+ },
+ {
+  "file": "kenney-crop-c.png",
+  "sha256": "4f30506d79d7f7edc420f6bb6ce38a69cc826f5d329a0da3201642e115d0f962",
+  "from": "kenney-sheet-1024.png",
+  "x": 11,
+  "y": 7,
+  "w": 512,
+  "h": 512
+ },
+ {
+  "file": "kenney-crop-d.png",
+  "sha256": "51c3bcb2b64aa0b530bcd89ece46a27632584e3161e22b90beb95c33e2c27330",
+  "from": "kenney-sheet-1024.png",
+  "x": 23,
+  "y": 17,
+  "w": 512,
+  "h": 512
+ }
+]

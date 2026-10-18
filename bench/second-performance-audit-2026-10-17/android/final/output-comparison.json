@@ -1,0 +1,137 @@
+{
+  "generated": "2026-10-18T08:55:39.890Z",
+  "allIdentical": true,
+  "rows": [
+    {
+      "case": "kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "final": "secondaudit-final-1792313634412-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "baseline": "secondaudit-second-baseline-1792302830220-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "sha256": "270f4db2f8da8e0f2c7da29fb6a526046a20c602a7df5268bb6e33b211ddcb0f",
+      "identical": true
+    },
+    {
+      "case": "kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "final": "secondaudit-final-1792313634412-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "baseline": "secondaudit-second-baseline-1792302830220-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "sha256": "1689433d660b81dbd1c1ae90ebb37c23a0649131cabfc4023c95cbfb8dfc65e0",
+      "identical": true
+    },
+    {
+      "case": "kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "final": "secondaudit-final-1792313634412-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "baseline": "secondaudit-second-baseline-1792302830220-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "sha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a",
+      "identical": true
+    },
+    {
+      "case": "kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "final": "secondaudit-final-1792313634412-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "baseline": "secondaudit-second-baseline-1792302830220-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "sha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720",
+      "identical": true
+    },
+    {
+      "case": "real-magic-0-real-magic-palette.gif",
+      "final": "secondaudit-final-1792313634412-real-magic-0-real-magic-palette.gif",
+      "baseline": "secondaudit-second-baseline-1792302830220-real-magic-0-real-magic-palette.gif",
+      "sha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19",
+      "identical": true
+    },
+    {
+      "case": "entropy512-0-entropy512-palette.png",
+      "final": "secondaudit-final-1792313683435-entropy512-0-entropy512-palette.png",
+      "baseline": "secondaudit-second-baseline-1792302879726-entropy512-0-entropy512-palette.png",
+      "sha256": "b8af76438dcad5090f6569e89b22f23abe248794918fcc64e739cc94809396cd",
+      "identical": true
+    },
+    {
+      "case": "partial-glow64-0-partial-glow64-palette.png",
+      "final": "secondaudit-final-1792313683435-partial-glow64-0-partial-glow64-palette.png",
+      "baseline": "secondaudit-second-baseline-1792302879726-partial-glow64-0-partial-glow64-palette.png",
+      "sha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9",
+      "identical": true
+    },
+    {
+      "case": "silhouette32-0-silhouette32-palette.png",
+      "final": "secondaudit-final-1792313683435-silhouette32-0-silhouette32-palette.png",
+      "baseline": "secondaudit-second-baseline-1792302879726-silhouette32-0-silhouette32-palette.png",
+      "sha256": "1c30399a7a2c430165ca5a350a69db694a8eb83af4bf3364c8288fa696c143bb",
+      "identical": true
+    },
+    {
+      "case": "transparent32-0-transparent32-palette.png",
+      "final": "secondaudit-final-1792313683435-transparent32-0-transparent32-palette.png",
+      "baseline": "secondaudit-second-baseline-1792302879726-transparent32-0-transparent32-palette.png",
+      "sha256": "e3603df8fd507c1b93d351aa8d615dd67c7ad2678b417d181d2093ebf94ee340",
+      "identical": true
+    },
+    {
+      "case": "worker-unavailable-0-real-magic-palette.gif",
+      "final": "secondaudit-final-1792313683435-worker-unavailable-0-real-magic-palette.gif",
+      "baseline": "secondaudit-second-baseline-1792302879726-worker-unavailable-0-real-magic-palette.gif",
+      "sha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19",
+      "identical": true
+    }
+  ],
+  "missing": [],
+  "runs": [
+    {
+      "file": "final-editor-extended-overbudget-teardown-failure-fallback-secondaudit-final-1792313683435.json",
+      "rows": 30,
+      "outputs": 5,
+      "errors": [],
+      "failureChecks": [
+        {
+          "kind": "limit",
+          "gate": true,
+          "retry": true
+        },
+        {
+          "kind": "cleanup",
+          "gate": true,
+          "retry": true
+        }
+      ],
+      "workerFallback": true,
+      "teardown": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "restored": {
+        "rotation": "free",
+        "downloadBehavior": "native default",
+        "ownedPageClosed": true
+      }
+    },
+    {
+      "file": "final-largeonebit-secondaudit-final-1792313715804.json",
+      "rows": 24,
+      "outputs": 0,
+      "errors": [],
+      "largeOnebit": [
+        "1024×1024  ",
+        "2048×2048  "
+      ],
+      "restored": {
+        "rotation": "free",
+        "downloadBehavior": "native default",
+        "ownedPageClosed": true
+      }
+    },
+    {
+      "file": "final-startup-batches-sheets-animation-preview-onebit-editor-secondaudit-final-1792313634412.json",
+      "rows": 41,
+      "outputs": 5,
+      "errors": [],
+      "restored": {
+        "rotation": "free",
+        "downloadBehavior": "native default",
+        "ownedPageClosed": true
+      }
+    }
+  ]
+}

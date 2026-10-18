@@ -1,0 +1,4 @@
+4 checker 512 live {"masks":222,"maskMs":628.2,"wallMs":1434.5,"counts":[2,2,2,2]} rest {"masks":4,"maskMs":10.4,"wallMs":1550.5,"counts":[2,2,2,2]}
+4 atkinson 512 live {"masks":198,"maskMs":889.3,"wallMs":1282.4,"counts":[2,2,2,2]} rest {"masks":4,"maskMs":37,"wallMs":1561.6,"counts":[2,2,2,2]}
+2 cutout 400 live {"masks":119,"maskMs":880.9,"wallMs":1401.7,"counts":[2,2]} rest {"masks":2,"maskMs":11.1,"wallMs":1487,"counts":[2,2]}
+1 hatch 300 live {"masks":60,"maskMs":169.3,"wallMs":1583.6,"counts":[2]} rest {"masks":1,"maskMs":0.8,"wallMs":1592.7,"counts":[2]}

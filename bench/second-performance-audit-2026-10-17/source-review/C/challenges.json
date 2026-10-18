@@ -1,0 +1,197 @@
+{
+  "revision": "0c61dd018b5661fdef4e4e049d05d994fc40edd4",
+  "challenger": "C",
+  "inputs": ["A/hypotheses.json (00:22)", "B/hypotheses.json", "A/*.result.txt", "B/*.result.txt"],
+  "method": "Each cited call path was re-read at HEAD. Verdicts: agree = source supports the mechanism and the proposed probe is adequate; needs-probe = mechanism plausible but benefit or safety is not yet established by the evidence; disagree = source or evidence contradicts the claim or the cost/benefit. All A/B timings are host Node (B notes a contended host); none is browser or phone evidence.",
+  "challenges": [
+    {
+      "id": "H-A1", "verdict": "agree",
+      "reasons": [
+        "Tile.svelte:45-60 reruns on every `set` change (it spreads set into `asked`), aborts the previous controller, and starts collectOneBitUsage; onebit-usage.js:87-140 runs a synchronous full-resolution mask (<=262144 px/frame) after one yieldTask. A posted MessageChannel task normally runs before the next rAF-aligned pointermove, so most moves can start a mask that the next move discards.",
+        "Abort removes only queued, not running, entries (onebit-usage.js:17-31); a started mask is uninterruptible, so the waste also adds input delay.",
+        "The host probe counts are consistent with ~1 mask per tile per move, but host scheduling has no real input; the browser counter falsifier proposed is the right gate."
+      ],
+      "missedRisks": [
+        "Reading `budget` makes every tile's effect rerun at drag START, which sets oneBitUsage pending (Tile.svelte:51) before any value changes: a press-without-move now flips captions to aria-busy until rest. Guard so pending is only set when inputs actually changed, or accept and document.",
+        "budget is DRAG_MS/canvasItems.length only while `dragging` (App.svelte:1059); keyboard arrow/PageUp slider changes do not set dragging and keep today's per-change collection (fine, but say so).",
+        "The tile's own sampled masks publish roles via rememberOneBitSample/oneBitMetadataRevision++ (Tile.svelte:320-332) during the drag; with the skip these reruns return early, so the 'saturation proven by sample' shortcut is lost until rest. Counts still converge after rest."
+      ]
+    },
+    {
+      "id": "H-A3", "verdict": "needs-probe",
+      "reasons": [
+        "Confirmed: animation-visibility.js registers animated surfaces only; Tile.svelte:268,350 gate only animation on inView, so offscreen stills convert on every change.",
+        "Benefit depends on how often walls scroll; layout.js shrinks tiles to fit first, so scrolling walls are mainly large batches on phones."
+      ],
+      "missedRisks": [
+        "1-bit counts: large patterned/structural sources rely on tile-rendered mask evidence (CLAUDE.md: 'large unproven pattern/ink counts remain unknown until exact rendering supplies evidence'); offscreen tiles would stay 'unknown' longer. Captions are offscreen, but Reuse/Help flows that read counts may see more unknowns.",
+        "Exact-size Palette tiles feed previewUsage (Tile.svelte:254-256); skipping them shifts that work to the serial count queue instead of removing it (and see H-B3: today the queue ignores those anyway).",
+        "Changing the drag budget to visible count changes draft sizes for visible tiles and the documented budget contract in docs/performance.md; treat as a separate step from the conversion skip.",
+        "Scroll-in shows retained art from old settings until conversion finishes; that is allowed only as a pending state, so the pending/aria-busy presentation must be set for offscreen-stale tiles."
+      ]
+    },
+    {
+      "id": "H-A2", "verdict": "agree",
+      "reasons": [
+        "Built dist/index.html places the fonts.googleapis.com stylesheet before the module script; per HTML, deferred/module scripts wait until the document has no script-blocking style sheets, and the stylesheet also blocks first render. I recorded the same observation independently in C/bundle.json (C-B6).",
+        "The app's own CSS link (after the script) remains render/script-blocking; only the third-party RTT is removed, which is exactly the cold-mobile cost."
+      ],
+      "missedRisks": [
+        "First-visit Help opens by itself; its layout and the palette-name fit (Dock.svelte:81-93) would first measure fallback metrics. A's loadingdone hook covers Dock; Help/dialog layout and measureWorkspaceTools (ResizeObserver) self-correct but may visibly jump.",
+        "The media=print onload pattern needs an inline handler; there is no CSP today, so fine, but note it if a CSP is ever added."
+      ]
+    },
+    {
+      "id": "H-A4", "verdict": "needs-probe",
+      "reasons": [
+        "tooltip.js:40-56: each instance creates one hidden div (hidden attribute => display:none, no layout box, no descendant style), sets popover, appends it and edits aria-describedby. That is cheap per instance; 64 swatches => 64 small appends. I expect the tooltip share of the 185 ms Review task to be small, so the attribution probe should come first, as A says."
+      ],
+      "missedRisks": [
+        "aria-describedby must reference an existing element at mount for screen readers; aria-description is not uniformly supported, so lazy creation likely breaks the accessibility contract.",
+        "Swatch tooltips are appended into the dialog, which is inside #app, so each batch also triggers CanvasGrid's #app childList MutationObserver (see H-A11) and dock MutationObserver work if inside the dock; measure those together."
+      ]
+    },
+    {
+      "id": "H-A5", "verdict": "needs-probe",
+      "reasons": [
+        "Confirmed App.svelte:500-504 window touchmove passive:false and Dock.svelte:71 window touchstart capture passive:false. In Chromium a non-passive touchstart alone already makes scroll START wait for the main thread everywhere; moving only App's touchmove would mostly change behavior after scroll start, where Chrome already sends touchmoves uncancelable. So the likely benefit is near zero unless Dock's touchstart is also scoped, which A correctly flags as unsafe."
+      ],
+      "missedRisks": [
+        "Moving touchmove to .grid loses pull-to-refresh suppression for swipes that start on .empty (onWall accepts '.grid, .empty', App.svelte:451) unless both are covered.",
+        "The swipe dialog check (document.querySelector('dialog[open]')) assumes window delivery; per-node listeners still receive the events because touch targets are fixed for the sequence, OK."
+      ]
+    },
+    {
+      "id": "H-A7", "verdict": "needs-probe",
+      "reasons": [
+        "Confirmed Tile.svelte:150-153 resets `colored` on first/second change and :316 allocates a new ImageData(colorize(...)) per tile per color event. Large typed-array allocation is zero-filled and counts as external memory, which can trigger GC; colorize CPU itself is unchanged by the proposal."
+      ],
+      "missedRisks": [
+        "lastConverted (Tile.svelte:336) and the viewer can hold the same ImageData object as the displayed retained result; mutating a shared buffer in place would change a 'retained previous' picture while a newer conversion is pending, violating the retained-result rule. Ownership must be per Tile and never shared.",
+        "Android Chrome's color picker typically commits on dismiss, so the phone benefit is small; desktop continuous input is the realistic target."
+      ]
+    },
+    {
+      "id": "H-A8", "verdict": "disagree",
+      "reasons": [
+        "CLAUDE.md and docs/performance.md specify keeping only the last completed rendering per Tile; adding a previous-size cache is a contract/memory change for an unmeasured open-look-close pattern. Most panel opens precede an edit, which invalidates both sizes anyway."
+      ],
+      "missedRisks": ["+1 tile-sized frame per sampled tile multiplies on photo walls (e.g. 12 x 1.9 MB at DPR 2.25)."]
+    },
+    {
+      "id": "H-A10", "verdict": "needs-probe",
+      "reasons": ["ImageViewer.svelte:59 sets background-position per pan frame on a full-viewport conic-gradient checker (canvas.css:11-17); background-position is a paint property, so each pan frame repaints/rasterizes the viewport background. A phone paint/raster trace is the right falsifier."],
+      "missedRisks": ["A translated layer with fractional offsets can resample the checker (soft edges) where background-position snaps; the checker must stay phase-aligned with --canvas-grid-step. A layer needs overscan (viewport + 2 cells) and wraps by modulo of 2*step."]
+    },
+    {
+      "id": "H-A11", "verdict": "agree",
+      "reasons": ["CanvasGrid.svelte:49-50 observes childList over the whole #app subtree; connect() schedules two rAFs and a measure."],
+      "missedRisks": [
+        "Missed the larger half: paint() (CanvasGrid.svelte:13-19) writes three inherited custom properties on <html> with NO equality guard every time measure runs, even when the anchor is unchanged (canvas-grid.js:32-37 returns the old anchor). If Blink does not short-circuit same-value inline setProperty, every unrelated DOM insertion causes a whole-document style recalc two frames later. App.svelte:145 already guards its root writes with write(); applying the same guard is a zero-output-change fix and should be probed together (count setProperty calls with unchanged values; DevTools 'Recalculate style' element counts)."
+      ]
+    },
+    {
+      "id": "H-A6", "verdict": "agree",
+      "reasons": ["No in-place mutation of colors/baseline/selected exists in PaletteImport.svelte (grep for push/splice/sort/index assignment/bind found none). Host probe shows 0.2 ms at 256 colors: cleanup-grade only, not a performance candidate on its own."],
+      "missedRisks": ["Template {#each} keyed by index on a raw array still re-renders correctly only because every update reassigns; add a test that edits a swatch to guard against a future in-place edit silently not rendering."]
+    },
+    {
+      "id": "H-A9", "verdict": "disagree",
+      "reasons": ["App.svelte:129-135 stringifies ~1 KB per move; Chrome's localStorage writes go to an in-memory map with deferred commit. Expected far below measurement noise; deferring writes risks losing the last setting on tab close/kill on Android."],
+      "missedRisks": []
+    },
+    {
+      "id": "H-A12", "verdict": "agree",
+      "reasons": ["glass.css:73-78 gives every caption a backdrop blur; correctly classified by A as a visual change outside exact-performance scope."],
+      "missedRisks": []
+    },
+    {
+      "id": "H-B1", "verdict": "agree",
+      "reasons": [
+        "palette-limit.js:51-77: for the non-binned path, all decisions use frequency[] (sums of integer weights: 1 or integer GIF delays, palette-limit-client.js:12) and the rgb-sorted histogram (line 81), so feeding (rgb,count*weight) pairs is order-independent and exact. fullCost/cost are float metadata; grep shows no consumer outside palette-limit*/tests.",
+        "Auto (palette-generated.js) uses integer masses with safe-integer checks; histogram aggregation preserves them.",
+        "Main-thread slice copies (palette-limit-client.js:60) and per-slice onmessage tasks disappear for summary-backed sources; this is the clearest main-thread CPU win in either list."
+      ],
+      "missedRisks": [
+        "The decision to use histograms must be made before streaming from the UNION of per-frame summaries: each summary caps at 4096 per frame (source-color-summary.js:62), but a GIF union can exceed the limiter's LIMIT and must then stream raw for the binned path.",
+        "Summary today stores max alpha, not counts (source-color-summary.js:63-65). Adding counts changes the frozen summary shape shared with Original/nearest counts; keep the existing fields and tests intact.",
+        "Soft gating must use the same `soft` definition per frame ((part & 254) !== 0, recolor.js:166); unify() ORs soft across frames, so a GIF with one soft frame must stream raw for all frames or per frame consistently.",
+        "Summary production is a main-thread serial cooperative queue (sourceColorSummary); never await it from the limiter path if not ready (A-side 'fallback to raw' must be immediate), or Max colors commits will queue behind import-time summaries."
+      ]
+    },
+    {
+      "id": "H-B3", "verdict": "agree",
+      "reasons": [
+        "Confirmed: the App effect at App.svelte:799-806 registers a pending record for every live item synchronously on any usageKey change, and previewUsage returns at App.svelte:718 whenever a record is pending, so exact Tile results are always discarded while the serial queue later reconverts each source fully in dither/Cleanup modes (palette-usage.js:21-28 non-nearest branch)."
+      ],
+      "missedRisks": [
+        "B dismisses the simpler 'accept the Tile result while pending' variant because both interleave. That is only true for the first item: the queue is serial (one item at a time, App.svelte:766-790) while all tiles convert concurrently, so for items 2..N the exact Tile result usually completes BEFORE that item's queued count job starts. A check at job start ('record already satisfied by an exact preview with the same key') avoids the whole conversion for those items with no in-flight registry. The record's promise must still resolve with that result because Reuse joins record.promise (explicit flag) and must not get null.",
+        "Tile exactness must cover all frames: for GIFs addUsageFrame accumulates progressively as frames play; an incomplete progress must not satisfy the count, and hidden/paused offscreen animations never complete.",
+        "The Tile palette/subset/cleanup identities differ from the count's prepareFullPaletteImage preparation; key by colors list + metric + cut + alpha mode + dither + strength + cleanup cache identity as B says, and include usageKey."
+      ]
+    },
+    {
+      "id": "H-B4", "verdict": "agree",
+      "reasons": [
+        "Independently found and recorded as a candidate in C/api-log.json: fflate browser.js:11-14,900-907 constructs and terminates a Worker per async call; zlib async runs zlibSync with the same opts (browser.js:1446-1455). My Node probe (C/zlib-probe.txt) also shows identical bytes and ~15-20 ms fixed overhead vs 0.2-1.3 ms sync up to 64 KiB.",
+        "The in-thread GIF writer (gif.js:175 no-Worker branch) is an existing, phone-verified byte-identical path."
+      ],
+      "missedRisks": [
+        "Both probes are Node worker_threads; Chrome blob-URL classic worker startup cost differs (often lower on desktop, higher on Android). The threshold must be chosen from browser/phone data, not Node.",
+        "The sync path cannot be canceled mid-call; cap it so the worst case stays ~1-2 ms on the phone.",
+        "The 'inverse' idea (async zlib for large 1-bit stills) changes the documented 'individual 1-bit still remains synchronous' contract and Copy timing; keep it out of the same change.",
+        "fflate's first async call also stringifies its worker code on the main thread (browser.js:872-879 wcln); include first-call cost in the measurement."
+      ]
+    },
+    {
+      "id": "H-B5", "verdict": "needs-probe",
+      "reasons": ["Exactness probe (180 cases) is solid; it splits recolor.js:132-170 analyze into bands for reanalysis only. No CPU disappears, total completion grows with yields, and it touches the hot kernel that just changed in 4c1a975, so docs/performance.md's bench.mjs/equiv.mjs before/after timing of the synchronous worker path is mandatory."],
+      "missedRisks": [
+        "The live reanalysis contract (CLAUDE.md) says old and new analyses coexist temporarily; bands keep partially filled new analysis buffers alive longer across yields, and cancellation between bands must drop them.",
+        "Max band 7-9 ms on desktop Node implies ~25-40 ms bands on the phone for non-luma sources; size bands by time (8 ms deadline like quantizeAsync), not fixed rows."
+      ]
+    },
+    {
+      "id": "H-B7", "verdict": "agree",
+      "reasons": ["gif.js:150-161 and :177-200 call getFrame(i) twice; the global table must be complete before the first frame's LZW (code size depends on padded table length), so retaining pass-1 indices is the only byte-identical way to drop the second conversion. Probe bytes identical in 6 cases."],
+      "missedRisks": [
+        "The 8 MiB export retention is separate from palette-animation-cache's global 8 MiB preview budget, so peak index memory can double while a wall animation also plays; state the combined bound.",
+        "Retained indices must be released on cancel/error before the ZIP continues to the next file (Save all keeps encoding sequentially).",
+        "Combine with one-frame-ahead pipelining only after this lands (C/api-log.json notes the strict ack serialization at gif.js:186-197); both change the 'one frame at a time' text."
+      ]
+    },
+    {
+      "id": "H-B8", "verdict": "disagree",
+      "reasons": ["The main-thread summary scan is already cooperative (8 ms slices, source-color-summary.js:55-72), so it causes no long task; moving it delays first wall paint by the same worker time for every import, and in 1-bit mode the summary is not needed at all unless Palette counts/Original nearest need it. Net user-visible benefit is unclear and probably negative for time-to-first-paint. Small stills (<=4096 px) do not use the worker, so they would need both paths."],
+      "missedRisks": ["The WeakMap is keyed by the published ImageData identity created on the main thread (image-import-client.js:71); seeding must happen exactly at publication or the cache misses."]
+    },
+    {
+      "id": "H-B6", "verdict": "needs-probe",
+      "reasons": [
+        "icon-glyph.js:128-142 allocations are sized to the component bounding box (<=66x66 = 4356 elements each), i.e. small young-generation allocations that V8 bump-allocates cheaply. Pooling still requires resets (onset.fill(255), rowMin/colMax fills), which cost about the same as zero-filled allocation for these sizes. B's own timings overlap (1024: 386 vs 290 median with wide spread; 2048 flat/worse), echoing the rejected Icon patch's inconsistency.",
+        "Treat as low prior; only a quiet-host alternating run plus phone cold Icon could justify it."
+      ],
+      "missedRisks": ["Module-level shared buffers are unsafe if glyphComponent ever runs re-entrantly across an await (check icon.js call sites are synchronous) and keep ~60 KiB alive in both main thread and import worker realms."]
+    },
+    {
+      "id": "H-B9", "verdict": "needs-probe",
+      "reasons": ["export-drag.js:84 readyFor checks same(ready.request, request(item)), so reuse is identity-safe. Benefit only on desktop mouse when hover prep completed; frequency unknown."],
+      "missedRisks": ["Copy must call navigator.clipboard.write synchronously in the gesture (save.js copyOne); reuse via Promise is compatible. The drag record's Blob/object URL grace lifetime must not be revoked while Save still reads it; file name must come from downloadName, as B notes."]
+    },
+    {
+      "id": "H-B10", "verdict": "needs-probe",
+      "reasons": ["Chunk round trips are main-thread tasks that queue behind wall conversion slices; fewer, larger chunks reduce head-of-line waits without changing bytes. Copy cost per byte unchanged."],
+      "missedRisks": ["CHUNK_BYTES 128 KiB is stated in CLAUDE.md for limiter/cleanup/generated clients; docs must change with it. A 1 MiB slice() on the phone is ~1 ms on the main thread, still fine. The limiter's per-chunk pause cadence in the worker ((at & 1023) === 0) is unaffected."]
+    },
+    {
+      "id": "R-B1..R-B4", "verdict": "agree",
+      "reasons": ["Rejections are supported by the recorded counts/timings (pruning share small or zero, word-level rewrites within noise or <1 ms at preview sizes)."],
+      "missedRisks": []
+    }
+  ],
+  "crossCutting": [
+    "H-B4 and C/api-log 'CompressionStream' entry agree: CompressionStream is not a byte-preserving replacement (no level control, engine-specific bytes); the inline-zlibSync threshold is the byte-identical variant.",
+    "H-A11 + C/api-log layout entry: add the unguarded root custom-property writes in CanvasGrid paint() to the A11 probe.",
+    "H-A3 and H-B3 interact: if offscreen tiles stop converting, B3's 'accept exact Tile result' saves less for offscreen items; evaluate B3 first (no behavior change) then A3."
+  ]
+}

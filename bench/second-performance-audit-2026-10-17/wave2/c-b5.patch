@@ -1,0 +1,215 @@
+diff --git a/docs/performance.md b/docs/performance.md
+index 0fb6236..bf2b817 100644
+--- a/docs/performance.md
++++ b/docs/performance.md
+@@ -202,8 +202,8 @@ User imports now load a serial worker for GIF compositing and analyze/unify, wit
+ acknowledged original/analysis buffer transfers. Native PNG decoding stays intact;
+ the tiny demo starts no import worker. Failed workers recover from the original
+ File, while canceled imports cannot publish late. Unsupported-worker fallback
+-yields between frames/analyses, but one huge frame, shared unify and live-wall
+-1-bit reanalysis can still block. Source and analysis storage remain unchanged.
++yields between frames/analyses, but one huge frame and shared unify can still
++block; live-wall 1-bit reanalysis analyses in row bands (see Analysis). Source and analysis storage remain unchanged.
+ Single-frame non-GIF stills up to 4096 pixels use the same cooperative analysis
+ through that serial queue to avoid unnecessary worker round trips.
+ See [the import review](research/2026-10-12-import-worker.md).
+@@ -498,6 +498,16 @@ are picked from all of them.
+   threshold from the first pass, so it cannot be part of it. It reads only brightness and
+   the stored differences, and skips pixels whose differences are both 0: those only count
+   toward `hist[0]`, which the seam threshold clears anyway.
++- A live change of Brightness or Opacity cut analyses through `analyzeAsync` instead: the
++  same two passes, in row bands. Rows go in steps of 8192 pixels, quantizeAsync's slice;
++  once quantizeAsync's 8 ms target has passed, a posted task and a cancellation check come
++  before the next step, so a band overruns it by at most one step, and an image that fits
++  in one band posts no extra task. It has one loop, the non-luma one, for every source: luma
++  through it is the same sums in the same order. `analyze` does not share it. The band
++  loop must read its arrays from an object, and `analyze`'s loop changed only that way was
++  14% slower on a 2048 see-through photo with Red in Node; imports and previews keep
++  `analyze` as it was. `bench/second-performance-audit-2026-10-17/c-b5/` has the
++  exactness, band and timing evidence.
+ - **Why the differences are kept.** Lines and Cutout asked for them at every pixel on
+   every threshold change, and working them out from RGBA is most of their cost. Without the
+   two arrays Cutout is about 2 times slower and Lines about 3 times (measured by a
+@@ -1373,9 +1383,10 @@ settings. Copy supplies its clipboard promise in the initiating gesture.
+ 
+ Analysis failures report once and leave the prior picture until a source/cut change
+ requests another attempt. Temporary old and new analyses add roughly three bytes per
+-changed source pixel, plus histograms and existing render caches. Individual large
+-frame analysis/seam calls, cold Stencil/Icon preparation and publication rendering
+-remain synchronous; yielding is not a universal task-time bound.
++changed source pixel, plus histograms and existing render caches. Since October 18 a
++large frame's analysis and seam pass run in row bands of about 8 ms (see Analysis);
++the shared animation seam call per frame, cold Stencil/Icon preparation and
++publication rendering remain synchronous; yielding is not a universal task-time bound.
+ Independent overlapping exports may also own replacement analyses; this figure is
+ not a bound on total transient memory. Actual-build acceptance and native Pixel task
+ measurements are in `docs/research/2026-10-13-live-onebit-reanalysis.md`.
+diff --git a/docs/superpowers/specs/2026-10-06-colorfetti-app-design.md b/docs/superpowers/specs/2026-10-06-colorfetti-app-design.md
+index b92a82a..181d92f 100644
+--- a/docs/superpowers/specs/2026-10-06-colorfetti-app-design.md
++++ b/docs/superpowers/specs/2026-10-06-colorfetti-app-design.md
+@@ -2998,7 +2998,8 @@ whose native export file is not yet ready retains the preparation notice.
+ 
+ Live 1-bit Brightness and relevant Opacity cut changes capture immutable source/frame
+ metadata, prepare replacement analyses cooperatively between frames and shared seam
+-passes, and publish the captured wall together only for the current source/cut,
++passes, and within a large frame in row bands of about 8 ms with a cancellation check
++between them (the result is exactly the synchronous analysis), and publish the captured wall together only for the current source/cut,
+ family and membership. Existing converted pictures remain visible while preparation
+ is pending or deferred by dragging, with converted animation held; Original remains
+ available. Empty-wall preparation uses only the example. Matching analyses perform
+diff --git a/src/lib/image-reanalysis.js b/src/lib/image-reanalysis.js
+index ef1502b..e2b66cb 100644
+--- a/src/lib/image-reanalysis.js
++++ b/src/lib/image-reanalysis.js
+@@ -1,4 +1,4 @@
+-import { analyze, unifyAsync } from './recolor.js';
++import { analyzeAsync, unifyAsync } from './recolor.js';
+ import { validateImportPixels, validateImportSettings } from './image-import-core.js';
+ import { checkCanceled, yieldTask } from './quantize.js';
+ 
+@@ -36,7 +36,7 @@ async function prepare(captured, signal) {
+   for (const source of captured.frames) {
+     await yieldTask();
+     checkCanceled(signal);
+-    frames.push({ ...source.frame, img: analyze(source.pixels, settings.source, settings.alphaCut) });
++    frames.push({ ...source.frame, img: await analyzeAsync(source.pixels, settings.source, settings.alphaCut, { signal }) });
+     checkCanceled(signal);
+   }
+   await unifyAsync(frames.map(frame => frame.img), { signal });
+diff --git a/src/lib/image-reanalysis.test.js b/src/lib/image-reanalysis.test.js
+index dca0e7a..f85dc55 100644
+--- a/src/lib/image-reanalysis.test.js
++++ b/src/lib/image-reanalysis.test.js
+@@ -40,7 +40,7 @@ describe('cooperative unpublished live analysis', () => {
+     });
+   }
+   it('matching analyses keep exact identity without analyzing or posting tasks; opaque cuts are irrelevant', async () => {
+-    const item = fixture({ partial: false }), post = vi.spyOn(quantize, 'yieldTask'), analyze = vi.spyOn(colorfetti, 'analyze');
++    const item = fixture({ partial: false }), post = vi.spyOn(quantize, 'yieldTask'), analyze = vi.spyOn(colorfetti, 'analyzeAsync');
+     expect(analysisKey(false, { source: 'green', alphaCut: 255 })).toBe('green ');
+     expect(analysisMatches(item, { source: 'luma', alphaCut: 255 })).toBe(true);
+     expect(await reanalyzeItem(item, { source: 'luma', alphaCut: 255 })).toBe(item);
+@@ -77,25 +77,45 @@ describe('cooperative unpublished live analysis', () => {
+     const controller = new AbortController(); controller.abort();
+     const poison = { get img() { throw new Error('source read'); } };
+     await expect(reanalyzeItem(poison, {}, { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
+-    const live = new AbortController(), item = fixture(), analyze = vi.spyOn(colorfetti, 'analyze');
++    const live = new AbortController(), item = fixture(), analyze = vi.spyOn(colorfetti, 'analyzeAsync');
+     vi.spyOn(quantize, 'yieldTask').mockImplementation(async () => live.abort());
+     await expect(reanalyzeItem(item, { source: 'red' }, { signal: live.signal })).rejects.toMatchObject({ name: 'AbortError' });
+     expect(analyze).not.toHaveBeenCalled(); expect(item.by).toBe('luma 128');
+   });
+   it.each([1, 2, 4, 5])('cancels at posted boundary %i without mutating published or partially unifying new analyses', async boundary => {
+     const item = fixture(), before = structuredClone(item), controller = new AbortController(), made = [];
+-    const originalAnalyze = colorfetti.analyze;
+-    vi.spyOn(colorfetti, 'analyze').mockImplementation((...args) => { const img = originalAnalyze(...args); made.push({ img, auto: img.auto, autoSeam: img.autoSeam }); return img; });
++    const originalAnalyze = colorfetti.analyzeAsync;
++    vi.spyOn(colorfetti, 'analyzeAsync').mockImplementation(async (...args) => { const img = await originalAnalyze(...args); made.push({ img, auto: img.auto, autoSeam: img.autoSeam }); return img; });
+     let turn = 0; vi.spyOn(quantize, 'yieldTask').mockImplementation(async () => { if (++turn === boundary) controller.abort(); });
+     await expect(reanalyzeItem(item, { source: 'green', alphaCut: 200 }, { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
+     expect(item).toEqual(before);
+     for (const frame of made) { expect(frame.img.auto).toBe(frame.auto); expect(frame.img.autoSeam).toBe(frame.autoSeam); }
+     expect(turn).toBe(boundary);
+   });
++  it('analyzes in bands that match synchronous analysis in every field, band seams included', async () => {
++    let now = 0; vi.spyOn(performance, 'now').mockImplementation(() => (now += 9)); // every step outlasts the 8 ms target
++    const post = vi.spyOn(quantize, 'yieldTask');
++    for (const [width, height] of [[0, 0], [1, 1], [1, 40], [40, 1], [7, 6], [1025, 9], [8193, 2]]) {
++      const data = Uint8ClampedArray.from({ length: width * height * 4 }, (_, at) => at % 4 === 3 ? [0, 1, 127, 128, 200, 255][at % 6] : (at * 2654435761) >>> 24);
++      for (const [source, cut] of [['luma', 1], ['luma', 255], ['value', 128], ['red', 128], ['green', 200], ['blue', 128]]) {
++        const expected = colorfetti.analyze({ width, height, data }, source, cut), banded = await colorfetti.analyzeAsync({ width, height, data }, source, cut);
++        expect(Object.keys(banded)).toEqual(Object.keys(expected)); expect(banded).toEqual(expected);
++      }
++    }
++    expect(post).toHaveBeenCalledTimes(24); // 2 banded sizes x 6 settings x 2 passes, one band seam each
++  });
++  it('stops a frame at the next band once aborted and never publishes', async () => {
++    const original = { width: 32, height: 1024, data: Uint8ClampedArray.from({ length: 32 * 1024 * 4 }, (_, at) => (at * 61) % 256) };
++    const item = { id: 7, original, img: colorfetti.analyze(original), by: 'luma 128' }, before = structuredClone(item), controller = new AbortController();
++    let now = 0; vi.spyOn(performance, 'now').mockImplementation(() => (now += 9));
++    let turn = 0; vi.spyOn(quantize, 'yieldTask').mockImplementation(async () => { if (++turn === 2) controller.abort(); }); // 1 before the frame, 2 after its first band
++    await expect(reanalyzeItem(item, { source: 'red' }, { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
++    expect(turn).toBe(2); expect(item).toEqual(before);
++  });
+   it('rejects an analysis failure without exposing or publishing a partial wall', async () => {
+-    const first = fixture(), second = fixture(), before = structuredClone([first, second]), original = colorfetti.analyze;
++    const first = fixture(), second = fixture(), before = structuredClone([first, second]), original = colorfetti.analyzeAsync;
+     let calls = 0;
+-    vi.spyOn(colorfetti, 'analyze').mockImplementation((...args) => { if (++calls === 4) throw new Error('Analysis failed'); return original(...args); });
++    vi.spyOn(colorfetti, 'analyzeAsync').mockImplementation(async (...args) => { if (++calls === 4) throw new Error('Analysis failed'); return original(...args); });
+     await expect(reanalyzeItems([first, second], { source: 'red' })).rejects.toThrow('Analysis failed');
+     expect([first, second]).toEqual(before); expect(calls).toBe(4);
+   });
+diff --git a/src/lib/recolor.js b/src/lib/recolor.js
+index e251a51..8dd8e4b 100644
+--- a/src/lib/recolor.js
++++ b/src/lib/recolor.js
+@@ -101,8 +101,8 @@ function seamStrength(frames, t) {
+ }
+ // A difference of 0 (identical or empty neighbours) only counts in hist[0], which
+ // seamThreshold always clears, so those pairs are skipped.
+-function addSeams(hist, { w, h, lum, right, down }, t) {
+-  for (let y = 0, p = 0; y < h; y++) for (let x = 0; x < w; x++, p++) {
++function addSeams(hist, { w, h, lum, right, down }, t, y0 = 0, y1 = h) {
++  for (let y = y0, p = y0 * w; y < y1; y++) for (let x = 0; x < w; x++, p++) {
+     const r = right[p], d = down[p];
+     if (!r && !d) continue;
+     const light = lum[p] > t;
+@@ -169,6 +169,56 @@ export function analyze({ width: w, height: h, data }, source = 'luma', cut = AL
+   return img;
+ }
+ 
++// `analyze` for live reanalysis only, the same result in bands; imports and previews keep the
++// synchronous one. Rows go in steps of quantizeAsync's 8192 pixels, and once its 8 ms target has
++// passed, a posted task and a cancellation check come before the next step, so a big frame no
++// longer holds the main thread for its whole pass; a small one takes no extra task. Every field
++// is a count, a min/max or an or, so bands add up exactly. Luma takes the weighted loop: the same
++// sums in the same order. `analyze` is not built on this loop: its arrays, read from an object
++// as bands need, made it up to 15% slower on some images in Node.
++export async function analyzeAsync({ width: w, height: h, data }, source = 'luma', cut = ALPHA_CUT, { signal } = {}) {
++  const img = { w, h, data, lum: new Uint8Array(w * h), right: new Uint8Array(w * h), down: new Uint8Array(w * h), cut, hasAlpha: false, soft: false, lo: 255, hi: 0,
++    hist: new Uint32Array(256), edges: new Uint32Array(256), auto: 0, autoLine: 0 };
++  const [wr, wg, wb] = SOURCES[source] ?? SOURCES.luma, value = source === 'value', seams = new Array(256).fill(0), clock = { deadline: performance.now() + 8 };
++  await inBands(img, signal, clock, (y0, y1) => analyzeRows(img, wr, wg, wb, value, y0, y1));
++  img.edges[0] = 0; // identical neighbours are not edges
++  img.auto = otsu(img.hist, 127);
++  img.autoLine = Math.max(MIN_EDGE, otsu(img.edges, 0));
++  img.autoTone = toneCenter(img.hist, img.auto);
++  await inBands(img, signal, clock, (y0, y1) => addSeams(seams, img, img.auto, y0, y1));
++  img.autoSeam = seamThreshold(seams);
++  return img;
++}
++async function inBands({ w, h }, signal, clock, rows) {
++  for (let y = 0, step = Math.max(1, Math.ceil(8192 / w)); y < h; y += step) {
++    rows(y, Math.min(h, y + step));
++    if (y + step < h && performance.now() >= clock.deadline) {
++      await yieldTask();
++      checkCanceled(signal);
++      clock.deadline = performance.now() + 8;
++    }
++  }
++}
++// Rows y0 to y1 of `analyze`'s second loop, adding their `hasAlpha`, `soft`, `lo` and `hi` to `img`'s.
++function analyzeRows(img, wr, wg, wb, value, y0, y1) {
++  const { w, h, data, lum, right, down, cut, hist, edges } = img, below = w * 4;
++  let hasAlpha = false, lo = 255, hi = 0, part = 0;
++  for (let y = y0, p = y0 * w, i = p * 4; y < y1; y++) for (let x = 0; x < w; x++, p++, i += 4) {
++    part |= data[i + 3] + 1;
++    if (data[i + 3] < cut) { hasAlpha = true; continue; }
++    const l = (lum[p] = value ? Math.max(data[i], data[i + 1], data[i + 2]) : Math.round(wr * data[i] + wg * data[i + 1] + wb * data[i + 2]));
++    hist[l]++;
++    if (l < lo) lo = l;
++    if (l > hi) hi = l;
++    if (x + 1 < w && data[i + 7] >= cut) edges[(right[p] = diff(data, i, i + 4))]++;
++    if (y + 1 < h && data[i + below + 3] >= cut) edges[(down[p] = diff(data, i, i + below))]++;
++  }
++  if (hasAlpha) img.hasAlpha = true;
++  if (part & 254) img.soft = true;
++  if (lo < img.lo) img.lo = lo;
++  if (hi > img.hi) img.hi = hi;
++}
++
+ // Makes every frame of an animation convert the same way: the Auto thresholds and the brightness
+ // range are taken from all the frames together instead of frame by frame, so a pixel does not
+ // flicker between the two colors as the animation plays. Takes the results of `analyze` and

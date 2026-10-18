@@ -1,0 +1,175 @@
+{
+ "reviewer": "B",
+ "revision": "0c61dd018b5661fdef4e4e049d05d994fc40edd4",
+ "hostNote": "Node timings taken on a shared, visibly contended host (identical-run ranges up to 4x). Exactness results are authoritative; timing deltas below ~25% are not.",
+ "ranked": [
+  {
+   "id": "H-B1",
+   "title": "Feed limiter and Auto a cached exact per-source RGB histogram instead of re-streaming raw pixels",
+   "files": [
+    "src/lib/palette-limit-client.js:24-26 chunks, :33-70 runWorker (slice at :60)",
+    "src/lib/palette-generated-client.js:15-42 runWorker (slice at :33)",
+    "src/lib/palette-limit.js:51-77 per-pixel histogram loop",
+    "src/lib/palette-generated.js:56-75 addChunk per-pixel loop",
+    "src/lib/source-color-summary.js:49-80 scanSummary (existing per-source pass to extend)",
+    "src/App.svelte:228-262 Auto effect (reruns over every wall source on each items change)"
+   ],
+   "workThatDisappears": "Per job: copying every source byte into 128 KiB slices on the main thread, one worker round trip per slice (128 per 2048 sheet per pass), and the worker's per-pixel Map histogram. For Auto: rescanning every unchanged wall source each time an image is added or removed.",
+   "frequency": "Every Max colors commit (2->4->8 each re-streams), palette/metric/Opacity-cut change with a cap; Auto on every wall change and Opacity-cut change.",
+   "affectedWorkflow": "Max colors edits, palette stepping with a cap, Auto with large sheets/animations, batch imports while Auto is selected.",
+   "expectedBenefit": "Probe (desktop Node): limiter input sheet2048 26.4 -> 0.26 ms, sheet1024 6.9 -> 0.24 ms, motion256 (48 frames) 9.1 -> 0.34 ms; Auto sheet2048 25.2 -> 0.08 ms; main-thread slice copies alone 4.6 ms per pass for sheet2048 (desktop profile attributes 19-24 ms self to palette-limit-client onmessage per rapid-settings run). Phone expected 3-5x these absolute values.",
+   "newWorkState": "<= 4096 x (4 B RGB + 4 B count) per source, held with the existing WeakMap summary; one counter increment per visible pixel in the existing scanSummary pass; a 'histogram' worker message. Raw streaming stays as fallback.",
+   "exactness": "Limiter: histogram weights and frequency[] are integer sums (still weight 1; GIF integer delays), so aggregation order cannot change them; distances/assign iterate the rgb-sorted histogram; the binned (>4096 union) path accumulates floats in pixel order and must keep raw streaming. fullCost differs only in rounding and is metadata (client uses indices only). Auto masses are integers by design. Valid only for sources with no partial alpha (soft=false), where alpha>=cut equals alpha==255 for every cut; soft sources stream raw. Probe: 66 limiter cases (3 palettes x 2 metrics x caps 2/4/8/16 x 3 sources) and 3 Auto cases identical.",
+   "falsifyingProbe": "Built app, phone and desktop: sheet2048 Max colors 2->4->8 commits; measure main-thread CPU in limiter client handlers, worker CPU, and time to final paint. Auto: add one sprite to a wall containing sheet2048. Reject if the window improves <10% or a summary-ordering stall appears.",
+   "risk": "Ordering: summary is produced by its own serial queue; the limiter/Auto must not wait behind it (fall back to raw if not ready). More code paths in two workers. Summary bailout (>4096 colors) and soft sources keep today's cost.",
+   "evidence": "probe-limit-histogram.mjs / probe-limit-histogram.result.txt"
+  },
+  {
+   "id": "H-B3",
+   "title": "Count job duplicates the exact-size Tile conversion in dither/Cleanup modes",
+   "files": [
+    "src/App.svelte:713-718 previewUsage returns while a count record is pending",
+    "src/App.svelte:765-806 countColors registers pending records synchronously for every live item",
+    "src/lib/palette-usage.js:19 nearest test, :28 non-nearest branch converts every frame at full resolution",
+    "src/lib/palette-state.js:71-76 convert",
+    "src/Tile.svelte:247-301 exact-size preview conversion"
+   ],
+   "workThatDisappears": "A second full-resolution quantize (mixturePlan/lab per non-exact pixel for dither; quantize + cleanup apply for Cleanup) of each source that the Tile already converts at exactly source size with identical settings.",
+   "frequency": "Every dither on/size/strength, Cleanup, palette, metric, cap or cut change while dither or Cleanup is active, for every item that fits its tile (sprites; 512 px art on a phone tile of ~860 device px).",
+   "affectedWorkflow": "Dither/Cleanup editing on sprites and moderate art; the phone entropy512 'RGB dither8 replaced4 final current count' window (1509.6 ms renderer CPU; mixturePlan 484 + lab 446 + convert 116 ms samples).",
+   "expectedBenefit": "Up to half of conversion CPU in those windows when tile and count overlap fully (source argument; not yet measured).",
+   "newWorkState": "Short-lived in-flight registry WeakMap(original) -> {settings key, promise} set by the Tile only for exact-size runs; the count awaits a matching in-flight conversion and falls back to its own conversion on abort/mismatch. Nothing retained after completion (keeps the 'metadata only' rule).",
+   "exactness": "Same function and parameters: quantizePreviewAsync with width/height equal to the source gives xs[i]=i, ys[j]=j exactly as quantizeAsync with undefined dims; applyPreparedCleanup and applyPreparedCleanupAsync share applyRange; used[] is identical. Palette identities differ (count prepares its own), so the key must use the colors list, metric, cut, alpha mode, dither, strength and the cleanup result identity (shared from the cleanup cache).",
+   "falsifyingProbe": "Instrumented built app: count convertDither/quantize pixel totals and CPU for entropy512 dither 8x8->4x4 and an 8-sprite wall; confirm the Tile run is exact-size. Reject if the count rarely overlaps an exact Tile run.",
+   "risk": "Subscriber/cancellation semantics: Preview opening, Original toggle or scrolling can abort the Tile run, so the count must survive by falling back. A simpler 'accept the Tile result while pending' change saves little because both runs interleave on the same thread.",
+   "evidence": "source read; android/baseline-summary.md entropy512 row"
+  },
+  {
+   "id": "H-B4",
+   "title": "Avoid a new worker per small export (fflate async zlib and palette GIF worker)",
+   "files": [
+    "src/lib/save.js:183-201 palettePngBytesAsync -> fflate zlib (node_modules/fflate/esm/browser.js:11 wk, :900 cbify: new Worker per call, terminated after)",
+    "src/lib/gif.js:175 and :233-269 paletteGifWorker: new module Worker per palette GIF export",
+    "src/lib/save.js:73-95 pngBytes (1-bit) keeps zlibSync on main for every size"
+   ],
+   "workThatDisappears": "Worker construction, script evaluation and message setup per encoded file for small images (a ZIP of N sprites spawns N fflate workers in sequence).",
+   "frequency": "Every palette Save, Copy, Save all entry and desktop hover/drag export; every palette GIF export.",
+   "affectedWorkflow": "Saving/copying sprites and small GIFs; Save all of many small images.",
+   "expectedBenefit": "Probe (Node worker_threads, indicative only): tiny 32x32 rows sync 0.31 ms vs async round trip 19.5 ms; 256x256 0.77 vs 16.8 ms. Browser blob-worker cost unmeasured; first audit's native tiny warmed Save was 70 ms renderer CPU with unknown worker share.",
+   "newWorkState": "Size threshold: zlibSync / in-thread createPaletteGifWriter below it (both existing code paths). Optionally the inverse for large 1-bit stills (async zlib) to shorten their main-thread task.",
+   "exactness": "fflate's async zlib runs zlibSync(data, opts) inside the worker (browser.js:1446-1455): identical bytes (probe: 3 sizes identical). The in-thread GIF writer is the existing no-Worker path already verified byte-identical on the phone (worker-unavailable GIF Save).",
+   "falsifyingProbe": "Built app desktop+phone: tiny palette PNG Save/Copy and an 8-sprite ZIP, renderer CPU and time to download event, 5 alternating pairs. Reject if the gain is under ~5% and 3 ms.",
+   "risk": "Threshold too high creates a main-thread task; keep large inputs on the worker.",
+   "evidence": "probe-export.mjs / probe-export.result.txt"
+  },
+  {
+   "id": "H-B5",
+   "title": "Row-banded cooperative analyze for live 1-bit reanalysis",
+   "files": [
+    "src/lib/recolor.js:132-170 analyze, :104-112 addSeams",
+    "src/lib/image-reanalysis.js:32-45 prepare (one synchronous analyze per frame)",
+    "src/App.svelte:563-591 live reanalysis effect"
+   ],
+   "workThatDisappears": "No CPU disappears; the single per-frame long task is split into posted-task bands.",
+   "frequency": "Each committed Brightness or Opacity-cut change in 1-bit mode, per large frame.",
+   "affectedWorkflow": "Rapid Brightness R->G->Value on sheets (phone 2048: ~111 ms Long Task per change even after 4c1a975).",
+   "expectedBenefit": "Max Long Task from ~111 ms to roughly the band budget on phone; total CPU similar or slightly higher.",
+   "newWorkState": "A row-range core shared by analyze and an async wrapper used only by reanalysis (imports keep the synchronous worker call).",
+   "exactness": "All accumulators are integer counts, min/max and bit OR; bands run in order; seams use the final shared cut. Probe: 180 cases (4 sources x 5 brightness sources x cuts 1/128/255 x band heights 1/7/64) identical in every analysis field. Desktop Node bands at 64 rows of 2048: max 7-9 ms for non-luma sources.",
+   "falsifyingProbe": "bench.mjs/equiv.mjs for the refactored core, then phone Brightness rapid R-G-Value 2048: max LT, renderer CPU, time to final paint.",
+   "risk": "Hot kernel refactor can slow the synchronous worker path (must be timed per docs/performance.md); completion latency grows with yields.",
+   "evidence": "probe-analyze-bands.mjs / probe-analyze-bands.result.txt"
+  },
+  {
+   "id": "H-B7",
+   "title": "Palette GIF export converts every frame twice",
+   "files": ["src/lib/gif.js:142-206 encodePaletteGif (pass 1 :152-161, pass 2 :177-200)"],
+   "workThatDisappears": "The second full-resolution conversion of every frame when the whole clip's Uint16 indices fit the existing 8 MiB animation budget.",
+   "frequency": "Every palette GIF Save, ZIP entry and desktop drag export.",
+   "affectedWorkflow": "Saving animations.",
+   "expectedBenefit": "Probe (in-thread writer, so LZW included): motion256 48 frames 91.1 -> 72.3 ms, motion128 18.3 -> 14.2 ms, 32x32x6 0.56 -> 0.39 ms; quantization is ~35 ms of the 91. In the browser LZW runs in the GIF worker, so the main-thread share saved is larger.",
+   "newWorkState": "Peak +frames*w*h*2 bytes (<= 8 MiB) for one export; over budget keeps today's two passes.",
+   "exactness": "Same deterministic conversion results reused; bytes identical in 6 probe cases (3 clips x nearest/4x4).",
+   "falsifyingProbe": "Built app: motion-256 GIF Save renderer CPU and elapsed, desktop and phone; peak memory note.",
+   "risk": "Memory on phones; the 'one frame at a time' contract text must change.",
+   "evidence": "probe-export.mjs / probe-export.result.txt"
+  },
+  {
+   "id": "H-B8",
+   "title": "Compute the source color summary in the import worker",
+   "files": ["src/lib/source-color-summary.js:31-80", "src/lib/image-import-worker.js:23-40", "src/lib/image-import-client.js:67-77"],
+   "workThatDisappears": "Main-thread scanSummary at import (phone 13.6-33 ms per sheet import, cooperative; desktop node 3.3 ms 1024 / 10.9 ms 2048).",
+   "frequency": "Once per imported source frame (>4096 px / GIFs).",
+   "affectedWorkflow": "Import responsiveness.",
+   "expectedBenefit": "Removes main-thread CPU only; adds the same worker time before first paint.",
+   "newWorkState": "Summary (<=5 B/color) in the frame message, seeded into the WeakMap at publication.",
+   "exactness": "Same algorithm on the same bytes.",
+   "falsifyingProbe": "Phone sheet2048 import: main-thread CPU vs time to first wall paint.",
+   "risk": "Latency trade; reanalysis/unpublished handling.",
+   "evidence": "android/second-profile resolved import stages; probe-kernels.result.txt"
+  },
+  {
+   "id": "H-B6",
+   "title": "Reuse scratch buffers in icon-glyph glyphComponent",
+   "files": ["src/lib/icon-glyph.js:128-142, :238"],
+   "workThatDisappears": "~22 typed-array allocations per eligible small component, including Int32Array(8192).",
+   "frequency": "Cold Icon preparation on sprite sheets.",
+   "affectedWorkflow": "First Icon on sheets (phone 2048 LT 449 ms; glyphComponent 58 ms samples).",
+   "expectedBenefit": "Inconclusive: 1024 sheet median 386 -> 290 ms, 2048 1411 -> 1448 ms on a contended host (ranges overlap).",
+   "newWorkState": "Module-level buffers (~60 KiB) reset per component.",
+   "exactness": "144 cases identical (all PNG fixtures + 2 GIF frames x 2 sources x 2 cuts x 3 outlines).",
+   "falsifyingProbe": "Quiet-host alternating cold iconOf timing, then phone cold Icon 2048.",
+   "risk": "Materially different from the rejected Icon patch (allocation only), but the same workload measured inconsistent before.",
+   "evidence": "probe-glyph-pool.mjs / probe-glyph-pool.result.txt"
+  },
+  {
+   "id": "H-B9",
+   "title": "Reuse a completed hover export for Save/Copy",
+   "files": ["src/lib/export-drag.js:84 readyFor", "src/App.svelte:840-848, 872-901"],
+   "workThatDisappears": "A second full conversion+encode when a valid ready record exists at click time.",
+   "frequency": "Desktop mouse only, when hover preparation finished before the click.",
+   "affectedWorkflow": "Desktop Save/Copy.",
+   "expectedBenefit": "Unmeasured; occasional.",
+   "newWorkState": "None (ready record already retained).",
+   "exactness": "Same converted() + fileBytes() bytes; file name must use downloadName, not the sanitized drag name.",
+   "falsifyingProbe": "Count how often readyFor(item) is valid at Save click in normal desktop use.",
+   "risk": "Object URL/grace lifecycle coupling.",
+   "evidence": "source read"
+  },
+  {
+   "id": "H-B10",
+   "title": "Larger acknowledged chunks for Cleanup (and raw limiter/Auto fallback) streaming",
+   "files": ["src/lib/palette-cleanup-client.js:5, :53-58", "src/lib/palette-limit-client.js:3", "src/lib/palette-generated-client.js:5"],
+   "workThatDisappears": "~7/8 of round trips (128 -> 16 per 16 MiB frame); copy bytes unchanged.",
+   "frequency": "Every Cleanup job; raw-path limiter/Auto jobs.",
+   "affectedWorkflow": "Cleanup on sheets while the wall is converting (head-of-line on a busy main thread).",
+   "expectedBenefit": "Unmeasured; queueing latency rather than CPU.",
+   "newWorkState": "+~900 KiB transient per in-flight chunk.",
+   "exactness": "Same bytes delivered in the same order.",
+   "falsifyingProbe": "Cleanup on sheet2048 during wall conversion: job wall time and main-thread max task.",
+   "risk": "Longer single main-thread slice() copy (~1 MiB).",
+   "evidence": "source read"
+  }
+ ],
+ "rejectedByProbe": [
+  { "id": "R-B1", "idea": "Exact penalty lower-bound skip in palette-dither mixturePlan", "result": "1500 cases identical; prunes only 4-25% of weight trials on entropy512 (strength 100: 4-9%), 0% on glow64; no timing win (noisy). Not pursued.", "evidence": "probe-dither.result.txt" },
+  { "id": "R-B2", "idea": "Uint32 word swap for BGRA in image-decode swapRedBlue", "result": "3.15 -> 3.17 ms on 2048 (V8 already efficient).", "evidence": "probe-kernels.result.txt" },
+  { "id": "R-B3", "idea": "Uint32 word read + identical-word skip in scanSummary", "result": "exact; sheet2048 10.9 -> 8.8 ms, sheet1024 3.3 -> 3.4 ms, small sources flat. Too small; superseded by H-B1/H-B8.", "evidence": "probe-kernels.result.txt" },
+  { "id": "R-B4", "idea": "Uint32 table write in quantize colorize", "result": "exact; 11.4 -> 9.4 ms at 4M px, i.e. ~0.4 ms at preview sizes.", "evidence": "probe-kernels.result.txt" }
+ ],
+ "retain": [
+  "Bounded WeakMap source summaries shared by Original and nearest counts (source-color-summary.js)",
+  "Serial lazy workers with acknowledged 128 KiB slices that never detach live sources",
+  "Transfer of import frame + analysis buffers (image-import-core.js importFrameTransfers)",
+  "Animation preview cache whole-clip reservation and last-consumer abort",
+  "Exact Map then bounded memo with bypass in quantize convert",
+  "Integer-mass Auto accumulator (makes H-B1 exact)",
+  "Uint32 1-bit colorize/shrink, 2-bit PNG packing, level-3 zlib"
+ ],
+ "unreviewed": [
+  "src/lib/icon-glyph.js:60-126 holds/openGaps bodies skimmed only (covered by rejected Icon evidence)",
+  "node_modules fflate/omggif reviewed only at the used API boundary (fflate async worker per call confirmed)",
+  "Tile.svelte gesture/caption/markup and App.svelte gesture/layout/dialog blocks belong to reviewer A",
+  "src/ImageViewer.svelte (renders a Tile; reviewer A)"
+ ]
+}

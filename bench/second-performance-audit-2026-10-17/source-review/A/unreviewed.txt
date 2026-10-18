@@ -1,0 +1,11 @@
+Reviewer A coverage gaps (HEAD 0c61dd0). Everything in A's assignment has a ledger row; these are
+explicitly NOT reviewed by A beyond their trigger/invalidation sources:
+- src/App.svelte import pipeline (decode/currentImport/toItem/addFiles/addImageUrls), count jobs
+  (colorUsage/countColors/outputColors), export drag prepare/refresh internals, save/copy/ZIP: reviewer B.
+- src/Tile.svelte limiter/cleanup/animation-cache internals and quantize/recolor cost: reviewer B.
+- node_modules/@jungherz-de/glasskit/glasskit.css: only its blur tokens and the app's overrides were
+  read; not reviewed line by line.
+- vite.config.js, build/hover-capability.js (PostCSS plugin), bundle splitting: not in A's list.
+- No browser/phone measurement was run by A (coordinator owns devices). H-A1 and H-A6 have Node host
+  probes only; all other hypotheses are source-level with proposed probes.
+Scratch: .tmp/source-review-A/hashes.txt (sha256 of all 48 A files at review).

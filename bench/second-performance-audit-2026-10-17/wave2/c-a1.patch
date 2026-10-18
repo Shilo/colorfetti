@@ -1,0 +1,14 @@
+diff --git a/src/Tile.svelte b/src/Tile.svelte
+index b73ee8b..81c89f2 100644
+--- a/src/Tile.svelte
++++ b/src/Tile.svelte
+@@ -49,7 +49,8 @@
+     const previous = untrack(() => oneBitUsage);
+     const result = previous?.original === current.original ? previous.result : null;
+     oneBitUsage = { original: current.original, result, pending: true };
+-    if (analysisPending || !active) return;
++    // While a slider is dragged each move would start, then discard, a full mask; count at rest.
++    if (analysisPending || !active || budget > 0) return;
+     const controller = new AbortController();
+     collectOneBitUsage(current, asked, { signal: controller.signal }).then(result => {
+       if (!controller.signal.aborted) oneBitUsage = { original: current.original, result, pending: false };

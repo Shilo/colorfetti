@@ -1,0 +1,56 @@
+{
+ "scanSummary": {
+  "sheet1024": {
+   "exact": true,
+   "colors": 37,
+   "headMs": 3.309,
+   "runSkipMs": 3.424
+  },
+  "sheet2048": {
+   "exact": true,
+   "colors": 37,
+   "headMs": 10.942,
+   "runSkipMs": 8.791
+  },
+  "motion256f0": {
+   "exact": true,
+   "colors": 9,
+   "headMs": 0.08,
+   "runSkipMs": 0.108
+  },
+  "entropy512": {
+   "exact": true,
+   "colors": ">4096",
+   "headMs": 0.096,
+   "runSkipMs": 0.103
+  },
+  "glow64": {
+   "exact": true,
+   "colors": 15,
+   "headMs": 0.027,
+   "runSkipMs": 0.027
+  }
+ },
+ "swapRedBlue2048": {
+  "exact": true,
+  "headMs": 3.148,
+  "wordMs": 3.169
+ },
+ "colorize": {
+  "sheet2048-cut": {
+   "exact": true,
+   "headMs": 11.382,
+   "wordMs": 9.405
+  },
+  "sheet2048-keep": {
+   "exact": true,
+   "headMs": 14.661,
+   "wordMs": 10.376
+  },
+  "entropy512-cut": {
+   "exact": true,
+   "headMs": 1.165,
+   "wordMs": 0.862
+  }
+ }
+}

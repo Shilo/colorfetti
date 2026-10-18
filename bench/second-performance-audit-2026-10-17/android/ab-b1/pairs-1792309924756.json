@@ -1,0 +1,2442 @@
+{
+  "stamp": 1792309924756,
+  "order": [
+    "A",
+    "B1",
+    "B1",
+    "A",
+    "A",
+    "B1",
+    "B1",
+    "A",
+    "A",
+    "B1",
+    "B1",
+    "A",
+    "A",
+    "B1"
+  ],
+  "urls": {
+    "A": "http://localhost:5401/",
+    "B1": "http://localhost:5404/"
+  },
+  "started": "2026-10-18T07:52:04.756Z",
+  "trials": [
+    {
+      "variant": "A",
+      "pair": 0,
+      "slot": 0,
+      "tempC": 35.1,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 69.96,
+          "startedAt": 192.89999997615814,
+          "elapsedMs": 128,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "exactCaptionMs": 87,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 67.40899999999999,
+          "startedAt": 856.8000000119209,
+          "elapsedMs": 164.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 93.39999997615814,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 26.914999999999967,
+          "startedAt": 1045.5,
+          "elapsedMs": 90.59999996423721,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 36.10000002384186,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 22.177000000000003,
+          "startedAt": 1151.8999999761581,
+          "elapsedMs": 94.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 31.900000035762787,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 116.50099999999996,
+          "stepMs": 161.4000000357628,
+          "elapsedMs": 161.4000000357628,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.799999999999955,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 112.88499999999999,
+          "startedAt": 254.39999997615814,
+          "elapsedMs": 220.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 172.19999998807907,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 144.08100000000002,
+          "startedAt": 278.0999999642372,
+          "elapsedMs": 342.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000068,
+          "exactCaptionMs": 292.10000002384186,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 107.68499999999997,
+          "startedAt": 1252.5999999642372,
+          "elapsedMs": 374.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 297.89999997615814,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 71.85200000000003,
+          "startedAt": 1657.5999999642372,
+          "elapsedMs": 314.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "stepMs": 255.60000002384186,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 78.62199999999997,
+          "startedAt": 1998.5999999642372,
+          "elapsedMs": 317.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999727,
+          "stepMs": 255.0999999642372,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 258.159,
+          "stepMs": 808.5999999642372,
+          "elapsedMs": 808.5999999642372,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.800000000000182,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ],
+      "output": "native/secondaudit-b1-A-1792309924756-s0-0-kenney-sheet-2048-palette.png"
+    },
+    {
+      "variant": "B1",
+      "pair": 0,
+      "slot": 1,
+      "tempC": 35.1,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 53.80899999999998,
+          "startedAt": 203.80000001192093,
+          "elapsedMs": 102.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.69999999999999,
+          "exactCaptionMs": 68.79999995231628,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 58.62299999999998,
+          "startedAt": 847.3999999761581,
+          "elapsedMs": 156.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "stepMs": 86.30000001192093,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 29.23199999999998,
+          "startedAt": 1040.699999988079,
+          "elapsedMs": 94.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 37.10000002384186,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 35.46700000000003,
+          "startedAt": 1166.300000011921,
+          "elapsedMs": 104,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 41.80000001192093,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 123.32199999999999,
+          "stepMs": 165.20000004768372,
+          "elapsedMs": 165.20000004768372,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 25,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 113.95700000000001,
+          "startedAt": 271.60000002384186,
+          "elapsedMs": 204.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 162.10000002384186,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 127.44500000000001,
+          "startedAt": 259,
+          "elapsedMs": 291.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25.200000000000045,
+          "exactCaptionMs": 250,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 75.92600000000004,
+          "startedAt": 1142,
+          "elapsedMs": 172.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.899999999999864,
+          "stepMs": 111.5,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 45.98800000000003,
+          "startedAt": 1349.1000000238419,
+          "elapsedMs": 113.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 51.60000002384186,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 37.44400000000003,
+          "startedAt": 1491,
+          "elapsedMs": 103.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 41.19999998807907,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 159.35800000000012,
+          "stepMs": 204.30000001192093,
+          "elapsedMs": 204.30000001192093,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.899999999999864,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ],
+      "output": "native/secondaudit-b1-B1-1792309924756-s1-0-kenney-sheet-2048-palette.png"
+    },
+    {
+      "variant": "B1",
+      "pair": 1,
+      "slot": 2,
+      "tempC": 35.1,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 64.41999999999999,
+          "startedAt": 201.30000001192093,
+          "elapsedMs": 132.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000017,
+          "exactCaptionMs": 84.90000003576279,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 64.31500000000001,
+          "startedAt": 893.4000000357628,
+          "elapsedMs": 143.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25.100000000000023,
+          "stepMs": 83.80000001192093,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 38.580999999999975,
+          "startedAt": 1048.9000000357628,
+          "elapsedMs": 109.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 51.5,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 24.500999999999994,
+          "startedAt": 1188.9000000357628,
+          "elapsedMs": 103.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 22.900000035762787,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 127.39699999999998,
+          "stepMs": 158.20000004768372,
+          "elapsedMs": 158.20000004768372,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 25.100000000000023,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 118.42399999999998,
+          "startedAt": 339.89999997615814,
+          "elapsedMs": 214.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 175.10000002384186,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 145.67300000000003,
+          "startedAt": 304,
+          "elapsedMs": 352.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.899999999999977,
+          "exactCaptionMs": 308.80000001192093,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 72.33300000000004,
+          "startedAt": 1245.1000000238419,
+          "elapsedMs": 161.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.90000000000009,
+          "stepMs": 106,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 40.596000000000075,
+          "startedAt": 1423.199999988079,
+          "elapsedMs": 99.40000003576279,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 46.69999998807907,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 36.013000000000076,
+          "startedAt": 1538.699999988079,
+          "elapsedMs": 105.70000004768372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 44.59999996423721,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 148.94200000000018,
+          "stepMs": 197.29999995231628,
+          "elapsedMs": 197.29999995231628,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 24.90000000000009,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ],
+      "output": "native/secondaudit-b1-B1-1792309924756-s2-0-kenney-sheet-2048-palette.png"
+    },
+    {
+      "variant": "A",
+      "pair": 1,
+      "slot": 3,
+      "tempC": 35.1,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 59.17699999999999,
+          "startedAt": 213.89999997615814,
+          "elapsedMs": 110.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 67.40000003576279,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 55.952999999999975,
+          "startedAt": 858,
+          "elapsedMs": 136.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 83.59999996423721,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 34.31799999999996,
+          "startedAt": 1012.6999999880791,
+          "elapsedMs": 102.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "stepMs": 51.39999997615814,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 28.959999999999987,
+          "startedAt": 1134.3999999761581,
+          "elapsedMs": 88,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 31.5,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 119.23099999999991,
+          "stepMs": 166.49999994039536,
+          "elapsedMs": 166.49999994039536,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.800000000000182,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 110.983,
+          "startedAt": 290.39999997615814,
+          "elapsedMs": 215.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 169.70000004768372,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 177.595,
+          "startedAt": 308.80000001192093,
+          "elapsedMs": 354.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.899999999999977,
+          "exactCaptionMs": 317.39999997615814,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 89.52300000000002,
+          "startedAt": 1221.6000000238419,
+          "elapsedMs": 323.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "stepMs": 245.5999999642372,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 92.88499999999999,
+          "startedAt": 1568,
+          "elapsedMs": 317.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "stepMs": 268.5999999642372,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 83.57700000000001,
+          "startedAt": 1898.5,
+          "elapsedMs": 336.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 278.69999998807907,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 265.985,
+          "stepMs": 792.8999999165535,
+          "elapsedMs": 792.8999999165535,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 25,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ],
+      "output": "native/secondaudit-b1-A-1792309924756-s3-0-kenney-sheet-2048-palette.png"
+    },
+    {
+      "variant": "A",
+      "pair": 2,
+      "slot": 4,
+      "tempC": 35.1,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 72.542,
+          "startedAt": 241.60000002384186,
+          "elapsedMs": 120.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 77.79999995231628,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 63.07700000000005,
+          "startedAt": 919.8000000119209,
+          "elapsedMs": 156.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 90.70000004768372,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 29.173000000000005,
+          "startedAt": 1101.300000011921,
+          "elapsedMs": 103.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 44,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 29.317000000000036,
+          "startedAt": 1225.6000000238419,
+          "elapsedMs": 72.59999996423721,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 26.69999998807907,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 121.56700000000009,
+          "stepMs": 161.4000000357628,
+          "elapsedMs": 161.4000000357628,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.799999999999955,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 110.16199999999998,
+          "startedAt": 272.39999997615814,
+          "elapsedMs": 215.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 172.30000001192093,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 155.77699999999996,
+          "startedAt": 341.80000001192093,
+          "elapsedMs": 343.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000068,
+          "exactCaptionMs": 308.39999997615814,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 101.89599999999999,
+          "startedAt": 1249.4000000357628,
+          "elapsedMs": 337.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "stepMs": 288.19999998807907,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 66.11199999999995,
+          "startedAt": 1602.1000000238419,
+          "elapsedMs": 281.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17.09999999999991,
+          "stepMs": 220.10000002384186,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 80.17200000000003,
+          "startedAt": 1905.199999988079,
+          "elapsedMs": 300.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000273,
+          "stepMs": 255.39999997615814,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 248.17999999999995,
+          "stepMs": 763.6999999880791,
+          "elapsedMs": 763.6999999880791,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 25,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "pair": 2,
+      "slot": 5,
+      "tempC": 35.1,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 63.11599999999999,
+          "startedAt": 209.30000001192093,
+          "elapsedMs": 143.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000017,
+          "exactCaptionMs": 84.10000002384186,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 58.48700000000001,
+          "startedAt": 955.9000000357628,
+          "elapsedMs": 143.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "stepMs": 86.30000001192093,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 28.088,
+          "startedAt": 1127.9000000357628,
+          "elapsedMs": 97.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 38.19999998807907,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 25.602000000000015,
+          "startedAt": 1252.5,
+          "elapsedMs": 95,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 30.299999952316284,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 112.17700000000004,
+          "stepMs": 154.79999995231628,
+          "elapsedMs": 154.79999995231628,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 25,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 106.50699999999999,
+          "startedAt": 246.89999997615814,
+          "elapsedMs": 209,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 154.5,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 157.73,
+          "startedAt": 311.39999997615814,
+          "elapsedMs": 385,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000068,
+          "exactCaptionMs": 335.10000002384186,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 74.175,
+          "startedAt": 1228.800000011921,
+          "elapsedMs": 173.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "stepMs": 115.89999997615814,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 43.98799999999997,
+          "startedAt": 1416.5,
+          "elapsedMs": 104.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 51.39999997615814,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 37.55500000000001,
+          "startedAt": 1544.800000011921,
+          "elapsedMs": 95.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 40.69999998807907,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 155.71799999999996,
+          "stepMs": 207.99999994039536,
+          "elapsedMs": 207.99999994039536,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 25,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "pair": 3,
+      "slot": 6,
+      "tempC": 35.1,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 66.12100000000001,
+          "startedAt": 195.0999999642372,
+          "elapsedMs": 118.40000003576279,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 67.80000001192093,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 48.126000000000005,
+          "startedAt": 849.5,
+          "elapsedMs": 151.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.90000000000009,
+          "stepMs": 87.30000001192093,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 31.72799999999998,
+          "startedAt": 1030.5999999642372,
+          "elapsedMs": 95.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 38.39999997615814,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 28.585000000000026,
+          "startedAt": 1150.800000011921,
+          "elapsedMs": 91.09999996423721,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.90000000000009,
+          "stepMs": 35.39999997615814,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 108.43900000000001,
+          "stepMs": 161.0999999642372,
+          "elapsedMs": 161.0999999642372,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.90000000000009,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 119.75,
+          "startedAt": 291.69999998807907,
+          "elapsedMs": 218.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 175.4000000357628,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 146.85000000000002,
+          "startedAt": 272.19999998807907,
+          "elapsedMs": 334.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 299,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 77.44200000000001,
+          "startedAt": 1180.8999999761581,
+          "elapsedMs": 178.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.899999999999864,
+          "stepMs": 121.19999998807907,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 38.11600000000004,
+          "startedAt": 1376.5999999642372,
+          "elapsedMs": 103.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 51.19999998807907,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 44.942000000000036,
+          "startedAt": 1498.2999999523163,
+          "elapsedMs": 93.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 50.59999996423721,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 160.50000000000009,
+          "stepMs": 222.99999994039536,
+          "elapsedMs": 222.99999994039536,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.899999999999864,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "pair": 3,
+      "slot": 7,
+      "tempC": 35.1,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 61.977000000000004,
+          "startedAt": 212.39999997615814,
+          "elapsedMs": 110,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 63.40000003576279,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 64.48500000000001,
+          "startedAt": 905.5999999642372,
+          "elapsedMs": 152.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.899999999999977,
+          "stepMs": 91.5,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 26.497999999999966,
+          "startedAt": 1075.5,
+          "elapsedMs": 79.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 37.40000003576279,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 29.032999999999976,
+          "startedAt": 1172.800000011921,
+          "elapsedMs": 84.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 35.59999996423721,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 120.01599999999995,
+          "stepMs": 164.5,
+          "elapsedMs": 164.5,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 24.899999999999977,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 125.23400000000001,
+          "startedAt": 300.5999999642372,
+          "elapsedMs": 241.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 194.4000000357628,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 162.105,
+          "startedAt": 270.39999997615814,
+          "elapsedMs": 357.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "exactCaptionMs": 311.2000000476837,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 92.123,
+          "startedAt": 1252,
+          "elapsedMs": 330.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 268.0999999642372,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 70.36500000000001,
+          "startedAt": 1604.5,
+          "elapsedMs": 289.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 243.4000000357628,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 69.10300000000002,
+          "startedAt": 1917.3999999761581,
+          "elapsedMs": 290.7000000476837,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "stepMs": 245.19999998807907,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 231.591,
+          "stepMs": 756.6999999880791,
+          "elapsedMs": 756.6999999880791,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.800000000000182,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "pair": 4,
+      "slot": 8,
+      "tempC": 35.1,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 65.497,
+          "startedAt": 216.89999997615814,
+          "elapsedMs": 134,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 80.90000003576279,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 58.230000000000004,
+          "startedAt": 867.5,
+          "elapsedMs": 158.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000068,
+          "stepMs": 99.39999997615814,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 24.54899999999999,
+          "startedAt": 1047.300000011921,
+          "elapsedMs": 72.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 28.900000035762787,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 23.239999999999984,
+          "startedAt": 1132.800000011921,
+          "elapsedMs": 73.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 26,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 106.01899999999998,
+          "stepMs": 154.30000001192093,
+          "elapsedMs": 154.30000001192093,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.800000000000068,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 128.811,
+          "startedAt": 247.80000001192093,
+          "elapsedMs": 243.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.900000000000034,
+          "exactCaptionMs": 197.19999998807907,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 162.49300000000002,
+          "startedAt": 313.80000001192093,
+          "elapsedMs": 359.7999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.999999999999943,
+          "exactCaptionMs": 309.7999999523163,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 86.95800000000004,
+          "startedAt": 1263.8999999761581,
+          "elapsedMs": 378.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 320.2999999523163,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 68.69699999999995,
+          "startedAt": 1665,
+          "elapsedMs": 285,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 242.5,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 70.91599999999998,
+          "startedAt": 1963,
+          "elapsedMs": 309.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "stepMs": 250,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 226.57099999999997,
+          "stepMs": 812.7999999523163,
+          "elapsedMs": 812.7999999523163,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.800000000000182,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "pair": 4,
+      "slot": 9,
+      "tempC": 35.2,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 72.273,
+          "startedAt": 247.5,
+          "elapsedMs": 153.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.69999999999999,
+          "exactCaptionMs": 101.40000003576279,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 70.06499999999998,
+          "startedAt": 957.6000000238419,
+          "elapsedMs": 149.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 89.80000001192093,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 24.483000000000033,
+          "startedAt": 1125.9000000357628,
+          "elapsedMs": 82.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 26.099999964237213,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 22.581000000000017,
+          "startedAt": 1219.699999988079,
+          "elapsedMs": 66.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 20.400000035762787,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 117.12900000000003,
+          "stepMs": 136.30000001192093,
+          "elapsedMs": 136.30000001192093,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.799999999999955,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 123.675,
+          "startedAt": 233.39999997615814,
+          "elapsedMs": 230.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 193.30000001192093,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 182.22,
+          "startedAt": 302.60000002384186,
+          "elapsedMs": 379.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.900000000000034,
+          "exactCaptionMs": 331.69999998807907,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 74.29800000000003,
+          "startedAt": 1235.199999988079,
+          "elapsedMs": 161.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 108.59999996423721,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 42.89900000000002,
+          "startedAt": 1411.699999988079,
+          "elapsedMs": 105.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 52.39999997615814,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 44.8869999999999,
+          "startedAt": 1537.5,
+          "elapsedMs": 99.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 48.60000002384186,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 162.08399999999995,
+          "stepMs": 209.5999999642372,
+          "elapsedMs": 209.5999999642372,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.799999999999955,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "pair": 5,
+      "slot": 10,
+      "tempC": 35.2,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 57.476,
+          "startedAt": 225,
+          "elapsedMs": 104.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.69999999999999,
+          "exactCaptionMs": 65.09999996423721,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 56.44199999999999,
+          "startedAt": 855.3999999761581,
+          "elapsedMs": 142,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "stepMs": 84.30000001192093,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 27.554000000000023,
+          "startedAt": 1014.3999999761581,
+          "elapsedMs": 84.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 35.89999997615814,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 21.258,
+          "startedAt": 1112.699999988079,
+          "elapsedMs": 76,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.90000000000009,
+          "stepMs": 21.30000001192093,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 105.254,
+          "stepMs": 141.5,
+          "elapsedMs": 141.5,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 25,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 121.524,
+          "startedAt": 249.5,
+          "elapsedMs": 224,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.69999999999999,
+          "exactCaptionMs": 179.89999997615814,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 165.486,
+          "startedAt": 284.10000002384186,
+          "elapsedMs": 374.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 41.60000000000002,
+          "exactCaptionMs": 321.0999999642372,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 71.34400000000002,
+          "startedAt": 1223.300000011921,
+          "elapsedMs": 168.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 108.10000002384186,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 40.79999999999995,
+          "startedAt": 1416.199999988079,
+          "elapsedMs": 108.90000003576279,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 51.09999996423721,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 47.189999999999955,
+          "startedAt": 1548.3999999761581,
+          "elapsedMs": 107.40000003576279,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 55,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 159.33399999999995,
+          "stepMs": 214.19999998807907,
+          "elapsedMs": 214.19999998807907,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.799999999999955,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "pair": 5,
+      "slot": 11,
+      "tempC": 35.2,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 66.569,
+          "startedAt": 239.19999998807907,
+          "elapsedMs": 130.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000017,
+          "exactCaptionMs": 81.19999998807907,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 66.30900000000001,
+          "startedAt": 936.5,
+          "elapsedMs": 150.29999995231628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25.100000000000023,
+          "stepMs": 101.30000001192093,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 25.55999999999997,
+          "startedAt": 1103.2999999523163,
+          "elapsedMs": 87.70000004768372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 38.5,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 25.175000000000004,
+          "startedAt": 1216.7999999523163,
+          "elapsedMs": 78.20000004768372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 23.299999952316284,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 117.04399999999998,
+          "stepMs": 163.0999999642372,
+          "elapsedMs": 163.0999999642372,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 25.100000000000023,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 124.736,
+          "startedAt": 258.5999999642372,
+          "elapsedMs": 231.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 190,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 142.687,
+          "startedAt": 246,
+          "elapsedMs": 351.7999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.899999999999977,
+          "exactCaptionMs": 309.5999999642372,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 88.82099999999998,
+          "startedAt": 1167.5,
+          "elapsedMs": 340,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.899999999999864,
+          "stepMs": 278,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 72.00499999999998,
+          "startedAt": 1527.5999999642372,
+          "elapsedMs": 333.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 262.4000000357628,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 70.34799999999997,
+          "startedAt": 1885.7999999523163,
+          "elapsedMs": 304.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000273,
+          "stepMs": 251.5,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 231.17399999999992,
+          "stepMs": 791.9000000357628,
+          "elapsedMs": 791.9000000357628,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 24.899999999999864,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "pair": 6,
+      "slot": 12,
+      "tempC": 35.2,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 75.189,
+          "startedAt": 262.7000000476837,
+          "elapsedMs": 158.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 102.59999996423721,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 83.87899999999998,
+          "startedAt": 997.6000000238419,
+          "elapsedMs": 166.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.40000000000009,
+          "stepMs": 107.69999998807907,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 34.31299999999998,
+          "startedAt": 1191.7000000476837,
+          "elapsedMs": 114.59999996423721,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 48.200000047683716,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 38.92800000000002,
+          "startedAt": 1335.800000011921,
+          "elapsedMs": 99.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 36.19999998807907,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 157.11999999999998,
+          "stepMs": 192.10000002384186,
+          "elapsedMs": 192.10000002384186,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 33.40000000000009,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 120.48500000000001,
+          "startedAt": 255.60000002384186,
+          "elapsedMs": 228.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 187.39999997615814,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 152.92700000000002,
+          "startedAt": 260.60000002384186,
+          "elapsedMs": 352.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "exactCaptionMs": 313.69999998807907,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 97.36200000000007,
+          "startedAt": 1219.300000011921,
+          "elapsedMs": 317,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "stepMs": 259.5,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 69.29000000000008,
+          "startedAt": 1553.300000011921,
+          "elapsedMs": 288.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 230,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 74.38600000000007,
+          "startedAt": 1873.800000011921,
+          "elapsedMs": 282.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "stepMs": 228.5,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 241.03800000000024,
+          "stepMs": 718,
+          "elapsedMs": 718,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.800000000000182,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "pair": 6,
+      "slot": 13,
+      "tempC": 35.2,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall import",
+          "cpuMs": 72.171,
+          "startedAt": 248.69999998807907,
+          "elapsedMs": 131.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 75.5,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2",
+          "cpuMs": 87.20499999999998,
+          "startedAt": 1003.9000000357628,
+          "elapsedMs": 150.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 96.79999995231628,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 4",
+          "cpuMs": 27.281,
+          "startedAt": 1180.6000000238419,
+          "elapsedMs": 93.59999996423721,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 40.5,
+          "captions": [
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors",
+            "16×16  ·  4 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 8",
+          "cpuMs": 25.92799999999995,
+          "startedAt": 1297.4000000357628,
+          "elapsedMs": 95.59999996423721,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "stepMs": 39.09999996423721,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE tiny wall Max colors 2-4-8 total",
+          "cpuMs": 140.41399999999993,
+          "stepMs": 176.3999999165535,
+          "elapsedMs": 176.3999999165535,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 16.799999999999955,
+          "captions": [
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE Auto 8 sprites+effect import",
+          "cpuMs": 121.56100000000002,
+          "startedAt": 249.9000000357628,
+          "elapsedMs": 232.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 188.39999997615814,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        },
+        {
+          "name": "ADVERSE sheet2048 import",
+          "cpuMs": 140.42499999999998,
+          "startedAt": 243.5,
+          "elapsedMs": 354.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 292,
+          "captions": [
+            "2048×2048  ·  26 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2",
+          "cpuMs": 75.39200000000001,
+          "startedAt": 1188.800000011921,
+          "elapsedMs": 162.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 104.70000004768372,
+          "captions": [
+            "2048×2048  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 4",
+          "cpuMs": 39.478999999999985,
+          "startedAt": 1364.300000011921,
+          "elapsedMs": 110,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17,
+          "stepMs": 49.80000001192093,
+          "captions": [
+            "2048×2048  ·  4 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 8",
+          "cpuMs": 44.89700000000008,
+          "startedAt": 1495.5999999642372,
+          "elapsedMs": 107.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "stepMs": 50.69999998807907,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Max colors 2-4-8 total",
+          "cpuMs": 159.7680000000001,
+          "stepMs": 205.20000004768372,
+          "elapsedMs": 205.20000004768372,
+          "maxLongTaskMs": 0,
+          "rafMaxMs": 17,
+          "captions": [
+            "2048×2048  ·  8 colors"
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, level: 66, temperature: 351, Capacity level: 2",
+      "rotation": "free"
+    },
+    {
+      "at": "end",
+      "battery": "status: 4, level: 66, temperature: 352, Capacity level: 2",
+      "rotation": "free"
+    }
+  ],
+  "fixtures": {
+    "target": "kenney-sheet-2048",
+    "tiny": [
+      "dungeon-wizard",
+      "dungeon-archer",
+      "dungeon-knight",
+      "dungeon-potion"
+    ],
+    "auto": "first 8 practical sprites + real-magic GIF"
+  },
+  "settings": "Resurrect 64, Oklab nearest, dither none, Cleanup off, alpha cut 128",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "finished": "2026-10-18T07:53:16.775Z"
+}

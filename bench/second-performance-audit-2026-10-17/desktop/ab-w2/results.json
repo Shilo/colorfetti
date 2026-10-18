@@ -1,0 +1,574 @@
+{
+ "date": "2026-10-18",
+ "builds": {
+  "A": "w2-base index da76c5d4",
+  "A1": "w2-a1 index 5bee0fe4",
+  "B4": "w2-b4 index d591c9e2"
+ },
+ "browser": "Claude/2.42304.0 Chrome/152.0.7977.149 built-in browser, plain builds served with probe on 5411/5412/5413",
+ "results": {
+  "C-A1": {
+   "workflow": "1-bit Checker wall (4 sprites + sheet1024), Threshold drag 40 inputs every 3 rAF",
+   "medians": {
+    "dragBusyEstMs": {
+     "A": 120.3,
+     "A1": 100.7
+    },
+    "dragLongTaskTotalMs": {
+     "A": 0,
+     "A1": 0
+    },
+    "dragMaxLongTaskMs": {
+     "A": 0,
+     "A1": 0
+    },
+    "dragRafMaxGapMs": {
+     "A": 16.9,
+     "A1": 16.8
+    },
+    "dragRafP95GapMs": {
+     "A": 16.8,
+     "A1": 16.8
+    },
+    "dragMs": {
+     "A": 2016.3,
+     "A1": 2016.4
+    },
+    "releaseToFinalMs": {
+     "A": 0,
+     "A1": 0.4
+    }
+   },
+   "adverse": {
+    "releaseToFinal": "PASS",
+    "finalCaptionIdentical": true,
+    "pressWithoutMoveChangesNoCaption": true
+   },
+   "allGatesOk": true,
+   "trials": [
+    {
+     "pair": 1,
+     "variant": "A",
+     "dragMs": 2015.1,
+     "dragBusyEstMs": 217.9,
+     "dragIdleMs": 1797.2,
+     "dragLongTaskTotalMs": 0,
+     "dragMaxLongTaskMs": 0,
+     "dragRafMaxGapMs": 17,
+     "dragRafP95GapMs": 16.8,
+     "releaseToFinalMs": 0,
+     "windowMs": 2550.3,
+     "maxLongTaskMs": 0,
+     "busyDuringDrag": false,
+     "pressOnlyChangedCaption": false,
+     "finalCaptions": [
+      "dungeon-wizard.png 16×16 · 2 colors",
+      "dungeon-archer.png 16×16 · 2 colors",
+      "dungeon-knight.png 16×16 · 2 colors",
+      "dungeon-potion.png 16×16 · 2 colors",
+      "kenney-sheet-1024.png 1024×1024"
+     ],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 1,
+     "variant": "A1",
+     "dragMs": 2016.4,
+     "dragBusyEstMs": 100,
+     "dragIdleMs": 1916.4,
+     "dragLongTaskTotalMs": 0,
+     "dragMaxLongTaskMs": 0,
+     "dragRafMaxGapMs": 16.8,
+     "dragRafP95GapMs": 16.8,
+     "releaseToFinalMs": 0.4,
+     "windowMs": 2550.1,
+     "maxLongTaskMs": 0,
+     "busyDuringDrag": true,
+     "pressOnlyChangedCaption": false,
+     "finalCaptions": [
+      "dungeon-wizard.png 16×16 · 2 colors",
+      "dungeon-archer.png 16×16 · 2 colors",
+      "dungeon-knight.png 16×16 · 2 colors",
+      "dungeon-potion.png 16×16 · 2 colors",
+      "kenney-sheet-1024.png 1024×1024"
+     ],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 2,
+     "variant": "A",
+     "dragMs": 2016.3,
+     "dragBusyEstMs": 109.8,
+     "dragIdleMs": 1906.5,
+     "dragLongTaskTotalMs": 0,
+     "dragMaxLongTaskMs": 0,
+     "dragRafMaxGapMs": 16.9,
+     "dragRafP95GapMs": 16.8,
+     "releaseToFinalMs": 0,
+     "windowMs": 2549.9,
+     "maxLongTaskMs": 0,
+     "busyDuringDrag": false,
+     "pressOnlyChangedCaption": false,
+     "finalCaptions": [
+      "dungeon-wizard.png 16×16 · 2 colors",
+      "dungeon-archer.png 16×16 · 2 colors",
+      "dungeon-knight.png 16×16 · 2 colors",
+      "dungeon-potion.png 16×16 · 2 colors",
+      "kenney-sheet-1024.png 1024×1024"
+     ],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 2,
+     "variant": "A1",
+     "dragMs": 2016.1,
+     "dragBusyEstMs": 108.5,
+     "dragIdleMs": 1907.6,
+     "dragLongTaskTotalMs": 0,
+     "dragMaxLongTaskMs": 0,
+     "dragRafMaxGapMs": 16.9,
+     "dragRafP95GapMs": 16.8,
+     "releaseToFinalMs": 0.4,
+     "windowMs": 2549.6,
+     "maxLongTaskMs": 0,
+     "busyDuringDrag": true,
+     "pressOnlyChangedCaption": false,
+     "finalCaptions": [
+      "dungeon-wizard.png 16×16 · 2 colors",
+      "dungeon-archer.png 16×16 · 2 colors",
+      "dungeon-knight.png 16×16 · 2 colors",
+      "dungeon-potion.png 16×16 · 2 colors",
+      "kenney-sheet-1024.png 1024×1024"
+     ],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 3,
+     "variant": "A",
+     "dragMs": 2016.3,
+     "dragBusyEstMs": 112.4,
+     "dragIdleMs": 1903.9,
+     "dragLongTaskTotalMs": 0,
+     "dragMaxLongTaskMs": 0,
+     "dragRafMaxGapMs": 16.9,
+     "dragRafP95GapMs": 16.8,
+     "releaseToFinalMs": 0,
+     "windowMs": 2550,
+     "maxLongTaskMs": 0,
+     "busyDuringDrag": false,
+     "pressOnlyChangedCaption": false,
+     "finalCaptions": [
+      "dungeon-wizard.png 16×16 · 2 colors",
+      "dungeon-archer.png 16×16 · 2 colors",
+      "dungeon-knight.png 16×16 · 2 colors",
+      "dungeon-potion.png 16×16 · 2 colors",
+      "kenney-sheet-1024.png 1024×1024"
+     ],
+     "cpuGateMs": 8.5,
+     "gateOk": true
+    },
+    {
+     "pair": 3,
+     "variant": "A1",
+     "dragMs": 2016.7,
+     "dragBusyEstMs": 100.5,
+     "dragIdleMs": 1916.2,
+     "dragLongTaskTotalMs": 0,
+     "dragMaxLongTaskMs": 0,
+     "dragRafMaxGapMs": 16.8,
+     "dragRafP95GapMs": 16.8,
+     "releaseToFinalMs": 0.4,
+     "windowMs": 2549.9,
+     "maxLongTaskMs": 0,
+     "busyDuringDrag": true,
+     "pressOnlyChangedCaption": false,
+     "finalCaptions": [
+      "dungeon-wizard.png 16×16 · 2 colors",
+      "dungeon-archer.png 16×16 · 2 colors",
+      "dungeon-knight.png 16×16 · 2 colors",
+      "dungeon-potion.png 16×16 · 2 colors",
+      "kenney-sheet-1024.png 1024×1024"
+     ],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 4,
+     "variant": "A",
+     "dragMs": 2016.5,
+     "dragBusyEstMs": 120.5,
+     "dragIdleMs": 1896,
+     "dragLongTaskTotalMs": 0,
+     "dragMaxLongTaskMs": 0,
+     "dragRafMaxGapMs": 16.9,
+     "dragRafP95GapMs": 16.8,
+     "releaseToFinalMs": 0,
+     "windowMs": 2549.9,
+     "maxLongTaskMs": 0,
+     "busyDuringDrag": false,
+     "pressOnlyChangedCaption": false,
+     "finalCaptions": [
+      "dungeon-wizard.png 16×16 · 2 colors",
+      "dungeon-archer.png 16×16 · 2 colors",
+      "dungeon-knight.png 16×16 · 2 colors",
+      "dungeon-potion.png 16×16 · 2 colors",
+      "kenney-sheet-1024.png 1024×1024"
+     ],
+     "cpuGateMs": 8.5,
+     "gateOk": true
+    },
+    {
+     "pair": 4,
+     "variant": "A1",
+     "dragMs": 2016.4,
+     "dragBusyEstMs": 106.8,
+     "dragIdleMs": 1909.6,
+     "dragLongTaskTotalMs": 0,
+     "dragMaxLongTaskMs": 0,
+     "dragRafMaxGapMs": 16.9,
+     "dragRafP95GapMs": 16.8,
+     "releaseToFinalMs": 0.4,
+     "windowMs": 2549.9,
+     "maxLongTaskMs": 0,
+     "busyDuringDrag": true,
+     "pressOnlyChangedCaption": false,
+     "finalCaptions": [
+      "dungeon-wizard.png 16×16 · 2 colors",
+      "dungeon-archer.png 16×16 · 2 colors",
+      "dungeon-knight.png 16×16 · 2 colors",
+      "dungeon-potion.png 16×16 · 2 colors",
+      "kenney-sheet-1024.png 1024×1024"
+     ],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 5,
+     "variant": "A",
+     "dragMs": 2016.5,
+     "dragBusyEstMs": 120.3,
+     "dragIdleMs": 1896.2,
+     "dragLongTaskTotalMs": 0,
+     "dragMaxLongTaskMs": 0,
+     "dragRafMaxGapMs": 16.8,
+     "dragRafP95GapMs": 16.8,
+     "releaseToFinalMs": 0,
+     "windowMs": 2550,
+     "maxLongTaskMs": 0,
+     "busyDuringDrag": false,
+     "pressOnlyChangedCaption": false,
+     "finalCaptions": [
+      "dungeon-wizard.png 16×16 · 2 colors",
+      "dungeon-archer.png 16×16 · 2 colors",
+      "dungeon-knight.png 16×16 · 2 colors",
+      "dungeon-potion.png 16×16 · 2 colors",
+      "kenney-sheet-1024.png 1024×1024"
+     ],
+     "cpuGateMs": 8.7,
+     "gateOk": true
+    },
+    {
+     "pair": 5,
+     "variant": "A1",
+     "dragMs": 2016.4,
+     "dragBusyEstMs": 100.7,
+     "dragIdleMs": 1915.7,
+     "dragLongTaskTotalMs": 0,
+     "dragMaxLongTaskMs": 0,
+     "dragRafMaxGapMs": 16.8,
+     "dragRafP95GapMs": 16.8,
+     "releaseToFinalMs": 0.3,
+     "windowMs": 2550,
+     "maxLongTaskMs": 0,
+     "busyDuringDrag": true,
+     "pressOnlyChangedCaption": false,
+     "finalCaptions": [
+      "dungeon-wizard.png 16×16 · 2 colors",
+      "dungeon-archer.png 16×16 · 2 colors",
+      "dungeon-knight.png 16×16 · 2 colors",
+      "dungeon-potion.png 16×16 · 2 colors",
+      "kenney-sheet-1024.png 1024×1024"
+     ],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    }
+   ]
+  },
+  "C-B4 tiny": {
+   "workflow": "dungeon-wizard 16x16 palette PNG, hover export preparation (pointerenter mouse -> prepared File URL), 180 ms hover delay subtracted",
+   "medianPrepMs": {
+    "A": 6,
+    "B4": 4
+   },
+   "deltaPct": -33.3,
+   "medianMaxLongTaskMs": {
+    "A": 0,
+    "B4": 0
+   },
+   "sameBytes": true,
+   "allGatesOk": true,
+   "trials": [
+    {
+     "pair": 1,
+     "variant": "A",
+     "prepMs": 8,
+     "enterToFileMs": 188,
+     "imageMs": 188,
+     "bytes": 227,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 1,
+     "variant": "B4",
+     "prepMs": 5,
+     "enterToFileMs": 185,
+     "imageMs": 188,
+     "bytes": 227,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.5,
+     "gateOk": true
+    },
+    {
+     "pair": 2,
+     "variant": "A",
+     "prepMs": 6,
+     "enterToFileMs": 186,
+     "imageMs": 186,
+     "bytes": 227,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.4,
+     "gateOk": true
+    },
+    {
+     "pair": 2,
+     "variant": "B4",
+     "prepMs": 1,
+     "enterToFileMs": 181,
+     "imageMs": 184,
+     "bytes": 227,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.5,
+     "gateOk": true
+    },
+    {
+     "pair": 3,
+     "variant": "A",
+     "prepMs": 10,
+     "enterToFileMs": 190,
+     "imageMs": 190,
+     "bytes": 227,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 3,
+     "variant": "B4",
+     "prepMs": 2,
+     "enterToFileMs": 182,
+     "imageMs": 187,
+     "bytes": 227,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 4,
+     "variant": "A",
+     "prepMs": 6,
+     "enterToFileMs": 186,
+     "imageMs": 186,
+     "bytes": 227,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 4,
+     "variant": "B4",
+     "prepMs": 5,
+     "enterToFileMs": 185,
+     "imageMs": 189,
+     "bytes": 227,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.9,
+     "gateOk": true
+    },
+    {
+     "pair": 5,
+     "variant": "A",
+     "prepMs": 5,
+     "enterToFileMs": 185,
+     "imageMs": 186,
+     "bytes": 227,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 5,
+     "variant": "B4",
+     "prepMs": 4,
+     "enterToFileMs": 184,
+     "imageMs": 187,
+     "bytes": 227,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    }
+   ]
+  },
+  "C-B4 sheet1024": {
+   "workflow": "kenney-sheet-1024 palette PNG (above-threshold control), hover export preparation (pointerenter mouse -> prepared File URL), 180 ms hover delay subtracted",
+   "medianPrepMs": {
+    "A": 35,
+    "B4": 33
+   },
+   "deltaPct": -5.7,
+   "medianMaxLongTaskMs": {
+    "A": 0,
+    "B4": 0
+   },
+   "sameBytes": true,
+   "allGatesOk": true,
+   "trials": [
+    {
+     "pair": 1,
+     "variant": "A",
+     "prepMs": 33,
+     "enterToFileMs": 213,
+     "imageMs": 215,
+     "bytes": 28973,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 1,
+     "variant": "B4",
+     "prepMs": 34,
+     "enterToFileMs": 214,
+     "imageMs": 214,
+     "bytes": 28973,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 2,
+     "variant": "A",
+     "prepMs": 35,
+     "enterToFileMs": 215,
+     "imageMs": 217,
+     "bytes": 28973,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 2,
+     "variant": "B4",
+     "prepMs": 33,
+     "enterToFileMs": 213,
+     "imageMs": 217,
+     "bytes": 28973,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.5,
+     "gateOk": true
+    },
+    {
+     "pair": 3,
+     "variant": "A",
+     "prepMs": 35,
+     "enterToFileMs": 215,
+     "imageMs": 216,
+     "bytes": 28973,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 3,
+     "variant": "B4",
+     "prepMs": 33,
+     "enterToFileMs": 213,
+     "imageMs": 214,
+     "bytes": 28973,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 4,
+     "variant": "A",
+     "prepMs": 63,
+     "enterToFileMs": 243,
+     "imageMs": 243,
+     "bytes": 28973,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.5,
+     "gateOk": true
+    },
+    {
+     "pair": 4,
+     "variant": "B4",
+     "prepMs": 33,
+     "enterToFileMs": 213,
+     "imageMs": 217,
+     "bytes": 28973,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.6,
+     "gateOk": true
+    },
+    {
+     "pair": 5,
+     "variant": "A",
+     "prepMs": 48,
+     "enterToFileMs": 228,
+     "imageMs": 231,
+     "bytes": 28973,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 8.7,
+     "gateOk": true
+    },
+    {
+     "pair": 5,
+     "variant": "B4",
+     "prepMs": 36,
+     "enterToFileMs": 216,
+     "imageMs": 219,
+     "bytes": 28973,
+     "maxLongTaskMs": 0,
+     "longTasks": [],
+     "cpuGateMs": 9.5,
+     "gateOk": true
+    }
+   ]
+  }
+ }
+}

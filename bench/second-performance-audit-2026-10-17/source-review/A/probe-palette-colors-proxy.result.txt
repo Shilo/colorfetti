@@ -1,0 +1,1 @@
+{"deep-256":{"medianMs":0.2,"p90Ms":0.313},"raw-256":{"medianMs":0.008,"p90Ms":0.02},"deep-4096":{"medianMs":2.325,"p90Ms":3.442},"raw-4096":{"medianMs":0.052,"p90Ms":0.068}}

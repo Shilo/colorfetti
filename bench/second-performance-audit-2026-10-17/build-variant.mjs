@@ -6,10 +6,10 @@ import {existsSync, symlinkSync, readdirSync, readFileSync, writeFileSync} from 
 import {createHash} from 'node:crypto';
 import path from 'node:path';
 
-const BASE = '3c47699b8f0ee6e58f7d3082d699c81376747dea';
+const BASE = process.env.BASE ?? '3c47699b8f0ee6e58f7d3082d699c81376747dea';
 const [name, ...patches] = process.argv.slice(2);
 if (!name) throw new Error('name required');
-const root = path.resolve('.tmp/second-audit-2026-10-17'), tree = path.join(root, `wt-${name}`), out = path.join(root, name, 'dist');
+const root = path.resolve('.tmp/second-audit-2026-10-17'), tree = path.resolve('.tmp/w', name), out = path.join(root, name, 'dist');
 if (existsSync(out)) throw new Error(`${out} exists; variants are immutable`);
 const git = (...a) => execFileSync('git', a, {stdio: 'inherit'});
 // Never auto-remove: the worktree holds a node_modules junction, and a recursive delete would follow it.

@@ -1,0 +1,183 @@
+{
+  "stamp": 1792308891099,
+  "triples": [
+    [
+      "A",
+      "A1",
+      "B4"
+    ],
+    [
+      "B4",
+      "A1",
+      "A"
+    ],
+    [
+      "A1",
+      "A",
+      "B4"
+    ],
+    [
+      "B4",
+      "A",
+      "A1"
+    ],
+    [
+      "A",
+      "B4",
+      "A1"
+    ],
+    [
+      "A1",
+      "B4",
+      "A"
+    ],
+    [
+      "A",
+      "A1",
+      "B4"
+    ]
+  ],
+  "urls": {
+    "A": "http://localhost:5401/",
+    "A1": "http://localhost:5402/",
+    "B4": "http://localhost:5403/"
+  },
+  "started": "2026-10-18T07:34:51.100Z",
+  "trials": [
+    {
+      "variant": "A",
+      "triple": 0,
+      "slot": 0,
+      "position": 0,
+      "tempC": 32.7,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 592.711,
+          "startedAt": 3330.199999988079,
+          "elapsedMs": 2128,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "dragWallMs": 2074,
+          "releaseToCaptionMs": 145.80000001192093,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "200",
+          "press": {
+            "busySeen": false,
+            "value": "107",
+            "captionsChanged": false,
+            "valueChanged": true
+          },
+          "startValue": "106"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 81.17099999999999,
+          "startedAt": 1016.6999999880791,
+          "elapsedMs": 144.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.399999999999864,
+          "clickToDownloadMs": 80.89999997615814,
+          "anchorName": "secondaudit-w2-A-1792308891099-s0-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A-1792308891099-s0-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 85.45400000000004,
+          "startedAt": 1170,
+          "elapsedMs": 158.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "clickToDownloadMs": 100.69999998807907,
+          "anchorName": "secondaudit-w2-A-1792308891099-s0-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A-1792308891099-s0-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 89.47800000000001,
+          "startedAt": 922.8000000119209,
+          "elapsedMs": 160.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 121.39999997615814,
+          "anchorName": "secondaudit-w2-A-1792308891099-s0-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A-1792308891099-s0-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 169.88000000000002,
+          "startedAt": 1089.7000000476837,
+          "elapsedMs": 307.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 246.29999995231628,
+          "anchorName": "secondaudit-w2-A-1792308891099-s0-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A-1792308891099-s0-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, level: 66, temperature: 327, Capacity level: 2",
+      "rotation": "free"
+    },
+    {
+      "at": "end",
+      "battery": "status: 2, level: 66, temperature: 327, Capacity level: 2",
+      "rotation": "free"
+    }
+  ],
+  "fixtures": {
+    "dragWall": [
+      "dungeon-wizard",
+      "dungeon-archer",
+      "dungeon-knight",
+      "dungeon-potion",
+      "kenney-sheet-1024"
+    ],
+    "tinySave": "dungeon-knight",
+    "belowThreshold": "threshold255 synthetic (8bpp, 65280 row bytes)",
+    "adverseSaves": [
+      "kenney-sheet-1024",
+      "kenney-sheet-2048"
+    ]
+  },
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "finished": "2026-10-18T07:35:06.143Z"
+}

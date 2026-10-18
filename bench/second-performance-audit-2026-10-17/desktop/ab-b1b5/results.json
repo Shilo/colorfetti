@@ -1,0 +1,1242 @@
+{
+ "date": "2026-10-18",
+ "builds": {
+  "A": "w2-base index da76c5d4",
+  "B1": "w2-b1 index 9218fe76",
+  "B5": "w2-b5 index 542adf00"
+ },
+ "browser": "Claude/2.42304.0 Chrome/152.0.7977.149 built-in browser; same dists via probe server 5421/5424/5425",
+ "order": "trials 1-5: A B1 B5 / B5 B1 A / B1 B5 A / A B5 B1 / B1 A B5",
+ "results": {
+  "mc2048": {
+   "label": "Max colors 2→4→8, sheet2048 (sum of steps to settled paint+caption)",
+   "medianMs": {
+    "A": 205,
+    "B1": 56.3,
+    "B5": 213.1
+   },
+   "deltaVsA": {
+    "B1": -148.7,
+    "B5": 8.1
+   },
+   "medianMaxLongTaskMs": {
+    "A": 0,
+    "B1": 0,
+    "B5": 0
+   },
+   "medianRafMaxGapMs": {
+    "A": 16.9,
+    "B1": 16.9,
+    "B5": 16.9
+   },
+   "verdict": {
+    "B1": "TARGET PASS (not worse)",
+    "B5": "ADVERSE PASS"
+   },
+   "displayIdenticalAcrossBuilds": true,
+   "allGatesOk": true,
+   "trials": [
+    {
+     "trial": 1,
+     "variant": "A",
+     "ms": 212.1,
+     "steps": [
+      65.4,
+      75.1,
+      71.6
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 17,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B1",
+     "ms": 56.3,
+     "steps": [
+      30.1,
+      19.3,
+      6.9
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B5",
+     "ms": 269.2,
+     "steps": [
+      135.9,
+      60.9,
+      72.4
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 17,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "A",
+     "ms": 205,
+     "steps": [
+      72.5,
+      76.2,
+      56.3
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B1",
+     "ms": 26,
+     "steps": [
+      15.6,
+      4.3,
+      6.1
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 17,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B5",
+     "ms": 226.1,
+     "steps": [
+      68.9,
+      75.1,
+      82.1
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "A",
+     "ms": 229.4,
+     "steps": [
+      74.1,
+      80,
+      75.3
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 17,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B1",
+     "ms": 63,
+     "steps": [
+      22,
+      20.5,
+      20.5
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B5",
+     "ms": 195,
+     "steps": [
+      58.6,
+      64,
+      72.4
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "A",
+     "ms": 184.6,
+     "steps": [
+      57,
+      64.8,
+      62.8
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B1",
+     "ms": 40.3,
+     "steps": [
+      10.3,
+      19.5,
+      10.5
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B5",
+     "ms": 188,
+     "steps": [
+      67.2,
+      63.6,
+      57.2
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "A",
+     "ms": 193.5,
+     "steps": [
+      66.7,
+      61.3,
+      65.5
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B1",
+     "ms": 64,
+     "steps": [
+      25.5,
+      18.2,
+      20.3
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 17,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B5",
+     "ms": 213.1,
+     "steps": [
+      61.1,
+      80.6,
+      71.4
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 8 colors\"],\"hashes\":[\"d0f4b1be98b5816c\"]}"
+    }
+   ]
+  },
+  "mc4": {
+   "label": "Max colors 2→4→8, 4-sprite wall",
+   "medianMs": {
+    "A": 47.3,
+    "B1": 49.4,
+    "B5": 44.5
+   },
+   "deltaVsA": {
+    "B1": 2.1,
+    "B5": -2.8
+   },
+   "medianMaxLongTaskMs": {
+    "A": 0,
+    "B1": 0,
+    "B5": 0
+   },
+   "medianRafMaxGapMs": {
+    "A": 16.9,
+    "B1": 16.9,
+    "B5": 16.9
+   },
+   "verdict": {
+    "B1": "ADVERSE PASS",
+    "B5": "ADVERSE PASS"
+   },
+   "displayIdenticalAcrossBuilds": true,
+   "allGatesOk": true,
+   "trials": [
+    {
+     "trial": 1,
+     "variant": "A",
+     "ms": 54.4,
+     "steps": [
+      26.8,
+      15.2,
+      12.4
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B1",
+     "ms": 57.6,
+     "steps": [
+      24.8,
+      17.1,
+      15.7
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B5",
+     "ms": 44.5,
+     "steps": [
+      25.1,
+      16.7,
+      2.7
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.8,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "A",
+     "ms": 47.3,
+     "steps": [
+      20.2,
+      15.7,
+      11.4
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B1",
+     "ms": 56.3,
+     "steps": [
+      24,
+      18.7,
+      13.6
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B5",
+     "ms": 54.2,
+     "steps": [
+      21.7,
+      20.4,
+      12.1
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "A",
+     "ms": 44.7,
+     "steps": [
+      25.5,
+      16.5,
+      2.7
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B1",
+     "ms": 49.4,
+     "steps": [
+      28,
+      19.3,
+      2.1
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B5",
+     "ms": 35,
+     "steps": [
+      29.2,
+      3.9,
+      1.9
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "A",
+     "ms": 35.7,
+     "steps": [
+      19,
+      5,
+      11.7
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B1",
+     "ms": 34,
+     "steps": [
+      22.7,
+      6.5,
+      4.8
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 33.2,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B5",
+     "ms": 53.7,
+     "steps": [
+      26.3,
+      15.7,
+      11.7
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "A",
+     "ms": 60.5,
+     "steps": [
+      26.5,
+      21,
+      13
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.9,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B1",
+     "ms": 36,
+     "steps": [
+      22.3,
+      3.3,
+      10.4
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 17,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B5",
+     "ms": 42.4,
+     "steps": [
+      21.6,
+      9.3,
+      11.5
+     ],
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 17.1,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 8 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\"],\"hashes\":[\"88e505fa750c7350\",\"b7a8ca370ab404a3\",\"da29fcbdf32cbeb5\",\"c909cf7a3c51dab3\"]}"
+    }
+   ]
+  },
+  "auto": {
+   "label": "Auto + 8 sprites + effect GIF paste → exact captions",
+   "medianMs": {
+    "A": 54.7,
+    "B1": 57.1,
+    "B5": 56.2
+   },
+   "deltaVsA": {
+    "B1": 2.4,
+    "B5": 1.5
+   },
+   "medianMaxLongTaskMs": {
+    "A": 0,
+    "B1": 0,
+    "B5": 0
+   },
+   "medianRafMaxGapMs": {
+    "A": 16.7,
+    "B1": 16.7,
+    "B5": 16.7
+   },
+   "verdict": {
+    "B1": "ADVERSE PASS",
+    "B5": "ADVERSE PASS"
+   },
+   "displayIdenticalAcrossBuilds": true,
+   "allGatesOk": true,
+   "trials": [
+    {
+     "trial": 1,
+     "variant": "A",
+     "ms": 62.8,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B1",
+     "ms": 68.2,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B5",
+     "ms": 54.1,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "A",
+     "ms": 52.4,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B1",
+     "ms": 105.5,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B5",
+     "ms": 59.4,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "A",
+     "ms": 52,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B1",
+     "ms": 54.5,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B5",
+     "ms": 57.7,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "A",
+     "ms": 54.7,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B1",
+     "ms": 52.7,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B5",
+     "ms": 56.2,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "A",
+     "ms": 86.3,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B1",
+     "ms": 57.1,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B5",
+     "ms": 54.4,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 9 colors\",\"dungeon-archer.png 16×16 · 8 colors\",\"dungeon-knight.png 16×16 · 8 colors\",\"dungeon-potion.png 16×16 · 7 colors\",\"town-water-bucket.png 16×16 · 9 colors\",\"platformer-pilot.png 24×24 · 7 colors\",\"platformer-rocket.png 24×24 · 7 colors\",\"platformer-heart.png 18×18 · 3 colors\",\"real-magic.gif 32×32 · 33 colors\"]}"
+    }
+   ]
+  },
+  "imp2048": {
+   "label": "sheet2048 paste → exact caption (Resurrect 64)",
+   "medianMs": {
+    "A": 172.4,
+    "B1": 177.1,
+    "B5": 169.2
+   },
+   "deltaVsA": {
+    "B1": 4.7,
+    "B5": -3.2
+   },
+   "medianMaxLongTaskMs": {
+    "A": 0,
+    "B1": 0,
+    "B5": 0
+   },
+   "medianRafMaxGapMs": {
+    "A": 16.8,
+    "B1": 16.8,
+    "B5": 16.8
+   },
+   "verdict": {
+    "B1": "ADVERSE PASS",
+    "B5": "ADVERSE PASS"
+   },
+   "displayIdenticalAcrossBuilds": true,
+   "allGatesOk": true,
+   "trials": [
+    {
+     "trial": 1,
+     "variant": "A",
+     "ms": 165.5,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B1",
+     "ms": 169.2,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B5",
+     "ms": 169.2,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "A",
+     "ms": 180.6,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B1",
+     "ms": 140.2,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B5",
+     "ms": 158.1,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "A",
+     "ms": 177.8,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B1",
+     "ms": 193.9,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B5",
+     "ms": 143,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "A",
+     "ms": 172.4,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B1",
+     "ms": 185.2,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B5",
+     "ms": 178.8,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "A",
+     "ms": 154.7,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B1",
+     "ms": 177.1,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B5",
+     "ms": 173.3,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 17.1,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048  ·  26 colors \"]}"
+    }
+   ]
+  },
+  "br2048": {
+   "label": "rapid Brightness R→G→Value, 1-bit sheet2048 (first click→final paint)",
+   "medianMs": {
+    "A": 154.9,
+    "B1": 158.9,
+    "B5": 152.7
+   },
+   "deltaVsA": {
+    "B1": 4,
+    "B5": -2.2
+   },
+   "medianMaxLongTaskMs": {
+    "A": 0,
+    "B1": 0,
+    "B5": 0
+   },
+   "medianRafMaxGapMs": {
+    "A": 33.4,
+    "B1": 33.4,
+    "B5": 16.7
+   },
+   "verdict": {
+    "B1": "ADVERSE PASS",
+    "B5": "TARGET PASS (not worse)"
+   },
+   "displayIdenticalAcrossBuilds": true,
+   "allGatesOk": true,
+   "trials": [
+    {
+     "trial": 1,
+     "variant": "A",
+     "ms": 150.1,
+     "maxLongTaskMs": 50,
+     "rafMaxGapMs": 33.4,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B1",
+     "ms": 158.6,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 33.4,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B5",
+     "ms": 151.7,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "A",
+     "ms": 154.9,
+     "maxLongTaskMs": 50,
+     "rafMaxGapMs": 33.4,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B1",
+     "ms": 165.6,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 49.8,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B5",
+     "ms": 162.4,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "A",
+     "ms": 148.8,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 33.5,
+     "cpuGateMs": 8.7,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B1",
+     "ms": 158.9,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 33.2,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B5",
+     "ms": 149.4,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "A",
+     "ms": 156.1,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 33.2,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B1",
+     "ms": 160.4,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 33.3,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B5",
+     "ms": 152.7,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "A",
+     "ms": 158.1,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 33.2,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B1",
+     "ms": 152.4,
+     "maxLongTaskMs": 51,
+     "rafMaxGapMs": 33.4,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B5",
+     "ms": 158.8,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"kenney-sheet-2048.png 2048×2048 · 2 colors\"],\"hashes\":[\"32821df1ec2a6abb\"]}"
+    }
+   ]
+  },
+  "br4": {
+   "label": "rapid Brightness R→G→Value, 1-bit 4-sprite wall",
+   "medianMs": {
+    "A": 124.3,
+    "B1": 125.5,
+    "B5": 126.1
+   },
+   "deltaVsA": {
+    "B1": 1.2,
+    "B5": 1.8
+   },
+   "medianMaxLongTaskMs": {
+    "A": 0,
+    "B1": 0,
+    "B5": 0
+   },
+   "medianRafMaxGapMs": {
+    "A": 16.8,
+    "B1": 16.8,
+    "B5": 16.8
+   },
+   "verdict": {
+    "B1": "ADVERSE PASS",
+    "B5": "ADVERSE PASS"
+   },
+   "displayIdenticalAcrossBuilds": true,
+   "allGatesOk": true,
+   "trials": [
+    {
+     "trial": 1,
+     "variant": "A",
+     "ms": 122,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B1",
+     "ms": 143,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 1,
+     "variant": "B5",
+     "ms": 125.3,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "A",
+     "ms": 114.3,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B1",
+     "ms": 134.9,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 2,
+     "variant": "B5",
+     "ms": 116,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "A",
+     "ms": 127.1,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B1",
+     "ms": 125.5,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 3,
+     "variant": "B5",
+     "ms": 136,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "A",
+     "ms": 124.3,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B1",
+     "ms": 124.1,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 4,
+     "variant": "B5",
+     "ms": 126.4,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "A",
+     "ms": 126.9,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 17,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B1",
+     "ms": 120.9,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    },
+    {
+     "trial": 5,
+     "variant": "B5",
+     "ms": 126.1,
+     "maxLongTaskMs": 0,
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.4,
+     "gateOk": true,
+     "display": "{\"captions\":[\"dungeon-wizard.png 16×16 · 2 colors\",\"dungeon-archer.png 16×16 · 2 colors\",\"dungeon-knight.png 16×16 · 2 colors\",\"dungeon-potion.png 16×16 · 2 colors\"],\"hashes\":[\"9a78979c98020f1a\",\"3a4be777ec113029\",\"dc35296172c518c1\",\"324be17a34ab193c\"]}"
+    }
+   ]
+  }
+ }
+}

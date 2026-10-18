@@ -1,0 +1,17 @@
+Node v25.0.0 worker_threads (fflate node build), NOT a browser. Script: .tmp/source-review-C/zlib-eq.mjs (copied below). Single run each; first-call includes worker script eval.
+64 equal true asyncMs 20.28 syncMs 0.211
+1024 equal true asyncMs 15.47 syncMs 0.297
+65536 equal true asyncMs 18.06 syncMs 1.301
+1048576 equal true asyncMs 31.39 syncMs 14.735
+
+--- script
+import { zlib, zlibSync } from 'fflate';
+const sizes = [64, 1024, 65536, 1 << 20];
+for (const n of sizes) {
+  const a = new Uint8Array(n); for (let i = 0; i < n; i++) a[i] = (i * 2654435761 >>> 24) & (i % 7 ? 3 : 255);
+  const sync = zlibSync(a, { level: 3 });
+  const t0 = performance.now();
+  const asyncOut = await new Promise((res, rej) => zlib(a.slice(), { level: 3, consume: true }, (e, d) => e ? rej(e) : res(d)));
+  const t1 = performance.now(); const t2 = performance.now(); zlibSync(a, { level: 3 }); const t3 = performance.now();
+  console.log(n, 'equal', Buffer.compare(Buffer.from(sync), Buffer.from(asyncOut)) === 0, 'asyncMs', (t1 - t0).toFixed(2), 'syncMs', (t3 - t2).toFixed(3));
+}

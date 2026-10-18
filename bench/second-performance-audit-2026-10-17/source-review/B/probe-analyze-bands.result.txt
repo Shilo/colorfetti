@@ -1,0 +1,32 @@
+{
+ "cases": 180,
+ "identical": true,
+ "bandMs": {
+  "luma": {
+   "bands": 32,
+   "maxBandMs": 0.79,
+   "totalMs": 21.8
+  },
+  "value": {
+   "bands": 32,
+   "maxBandMs": 7.16,
+   "totalMs": 129.4
+  },
+  "red": {
+   "bands": 32,
+   "maxBandMs": 9.16,
+   "totalMs": 151.8
+  },
+  "green": {
+   "bands": 32,
+   "maxBandMs": 9.11,
+   "totalMs": 205.7
+  },
+  "blue": {
+   "bands": 32,
+   "maxBandMs": 1.62,
+   "totalMs": 42.7
+  }
+ },
+ "headAnalyzeRed2048Ms": 115
+}

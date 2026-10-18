@@ -1,0 +1,318 @@
+{
+ "exactness": {
+  "cases": 1500,
+  "identical": true
+ },
+ "counts": {
+  "entropy512 preset-res64 s50": {
+   "weightTrials": 4079184,
+   "pruned": 564296,
+   "share": 0.138
+  },
+  "entropy512 preset-res64 s100": {
+   "weightTrials": 4131874,
+   "pruned": 173574,
+   "share": 0.042
+  },
+  "entropy512 preset-edg32 s50": {
+   "weightTrials": 4047204,
+   "pruned": 687451,
+   "share": 0.17
+  },
+  "entropy512 preset-edg32 s100": {
+   "weightTrials": 4119717,
+   "pruned": 207265,
+   "share": 0.05
+  },
+  "entropy512 preset-pico8 s50": {
+   "weightTrials": 4119194,
+   "pruned": 867974,
+   "share": 0.211
+  },
+  "entropy512 preset-pico8 s100": {
+   "weightTrials": 4222964,
+   "pruned": 323052,
+   "share": 0.076
+  },
+  "entropy512 preset-edg8 s50": {
+   "weightTrials": 4073454,
+   "pruned": 1020656,
+   "share": 0.251
+  },
+  "entropy512 preset-edg8 s100": {
+   "weightTrials": 4147215,
+   "pruned": 379603,
+   "share": 0.092
+  },
+  "sheet1024 preset-res64 s50": {
+   "weightTrials": 561,
+   "pruned": 133,
+   "share": 0.237
+  },
+  "sheet1024 preset-res64 s100": {
+   "weightTrials": 576,
+   "pruned": 56,
+   "share": 0.097
+  },
+  "sheet1024 preset-edg32 s50": {
+   "weightTrials": 499,
+   "pruned": 264,
+   "share": 0.529
+  },
+  "sheet1024 preset-edg32 s100": {
+   "weightTrials": 522,
+   "pruned": 169,
+   "share": 0.324
+  },
+  "sheet1024 preset-pico8 s50": {
+   "weightTrials": 573,
+   "pruned": 164,
+   "share": 0.286
+  },
+  "sheet1024 preset-pico8 s100": {
+   "weightTrials": 595,
+   "pruned": 51,
+   "share": 0.086
+  },
+  "sheet1024 preset-edg8 s50": {
+   "weightTrials": 574,
+   "pruned": 175,
+   "share": 0.305
+  },
+  "sheet1024 preset-edg8 s100": {
+   "weightTrials": 593,
+   "pruned": 81,
+   "share": 0.137
+  },
+  "motion256f0 preset-res64 s50": {
+   "weightTrials": 147,
+   "pruned": 30,
+   "share": 0.204
+  },
+  "motion256f0 preset-res64 s100": {
+   "weightTrials": 149,
+   "pruned": 11,
+   "share": 0.074
+  },
+  "motion256f0 preset-edg32 s50": {
+   "weightTrials": 139,
+   "pruned": 77,
+   "share": 0.554
+  },
+  "motion256f0 preset-edg32 s100": {
+   "weightTrials": 143,
+   "pruned": 76,
+   "share": 0.531
+  },
+  "motion256f0 preset-pico8 s50": {
+   "weightTrials": 135,
+   "pruned": 38,
+   "share": 0.281
+  },
+  "motion256f0 preset-pico8 s100": {
+   "weightTrials": 142,
+   "pruned": 17,
+   "share": 0.12
+  },
+  "motion256f0 preset-edg8 s50": {
+   "weightTrials": 142,
+   "pruned": 44,
+   "share": 0.31
+  },
+  "motion256f0 preset-edg8 s100": {
+   "weightTrials": 148,
+   "pruned": 27,
+   "share": 0.182
+  },
+  "glow64 preset-res64 s50": {
+   "weightTrials": 230,
+   "pruned": 0,
+   "share": 0
+  },
+  "glow64 preset-res64 s100": {
+   "weightTrials": 255,
+   "pruned": 0,
+   "share": 0
+  },
+  "glow64 preset-edg32 s50": {
+   "weightTrials": 240,
+   "pruned": 0,
+   "share": 0
+  },
+  "glow64 preset-edg32 s100": {
+   "weightTrials": 240,
+   "pruned": 0,
+   "share": 0
+  },
+  "glow64 preset-pico8 s50": {
+   "weightTrials": 255,
+   "pruned": 0,
+   "share": 0
+  },
+  "glow64 preset-pico8 s100": {
+   "weightTrials": 240,
+   "pruned": 0,
+   "share": 0
+  },
+  "glow64 preset-edg8 s50": {
+   "weightTrials": 210,
+   "pruned": 0,
+   "share": 0
+  },
+  "glow64 preset-edg8 s100": {
+   "weightTrials": 255,
+   "pruned": 0,
+   "share": 0
+  },
+  "boundary4097 preset-res64 s50": {
+   "weightTrials": 59979,
+   "pruned": 0,
+   "share": 0
+  },
+  "boundary4097 preset-res64 s100": {
+   "weightTrials": 60827,
+   "pruned": 0,
+   "share": 0
+  },
+  "boundary4097 preset-edg32 s50": {
+   "weightTrials": 63084,
+   "pruned": 2718,
+   "share": 0.043
+  },
+  "boundary4097 preset-edg32 s100": {
+   "weightTrials": 63020,
+   "pruned": 0,
+   "share": 0
+  },
+  "boundary4097 preset-pico8 s50": {
+   "weightTrials": 62305,
+   "pruned": 6018,
+   "share": 0.097
+  },
+  "boundary4097 preset-pico8 s100": {
+   "weightTrials": 62933,
+   "pruned": 573,
+   "share": 0.009
+  },
+  "boundary4097 preset-edg8 s50": {
+   "weightTrials": 61868,
+   "pruned": 31606,
+   "share": 0.511
+  },
+  "boundary4097 preset-edg8 s100": {
+   "weightTrials": 63110,
+   "pruned": 2550,
+   "share": 0.04
+  }
+ },
+ "timing": {
+  "entropy512 preset-res64": {
+   "headMs": 1846.35,
+   "pruneMs": 2006.34,
+   "headRange": [
+    943.4,
+    2242.7
+   ],
+   "pruneRange": [
+    523.6,
+    2188.9
+   ]
+  },
+  "entropy512 preset-edg32": {
+   "headMs": 1657.44,
+   "pruneMs": 1676.58,
+   "headRange": [
+    495.7,
+    2017.7
+   ],
+   "pruneRange": [
+    974.5,
+    1905.7
+   ]
+  },
+  "entropy512 preset-edg8": {
+   "headMs": 735.77,
+   "pruneMs": 1155.95,
+   "headRange": [
+    421.1,
+    1637.1
+   ],
+   "pruneRange": [
+    392.9,
+    1469.9
+   ]
+  },
+  "boundary4097 preset-res64": {
+   "headMs": 6.64,
+   "pruneMs": 8.04,
+   "headRange": [
+    5.9,
+    14.7
+   ],
+   "pruneRange": [
+    6,
+    12.3
+   ]
+  },
+  "boundary4097 preset-edg32": {
+   "headMs": 6.25,
+   "pruneMs": 7.92,
+   "headRange": [
+    5.3,
+    27.8
+   ],
+   "pruneRange": [
+    5.2,
+    32.2
+   ]
+  },
+  "boundary4097 preset-edg8": {
+   "headMs": 4.76,
+   "pruneMs": 3.32,
+   "headRange": [
+    4.6,
+    12.6
+   ],
+   "pruneRange": [
+    3.3,
+    8.2
+   ]
+  },
+  "sheet1024 preset-res64": {
+   "headMs": 89.06,
+   "pruneMs": 91.48,
+   "headRange": [
+    16.5,
+    94.1
+   ],
+   "pruneRange": [
+    18.5,
+    96.7
+   ]
+  },
+  "sheet1024 preset-edg32": {
+   "headMs": 80.32,
+   "pruneMs": 88.15,
+   "headRange": [
+    14.7,
+    85.7
+   ],
+   "pruneRange": [
+    15.4,
+    93.2
+   ]
+  },
+  "sheet1024 preset-edg8": {
+   "headMs": 91.55,
+   "pruneMs": 94.6,
+   "headRange": [
+    16,
+    93.5
+   ],
+   "pruneRange": [
+    16.7,
+    98
+   ]
+  }
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "limiter": {
+  "sheet2048": {
+   "distinctEntries": 37,
+   "rawBytes": 16777216,
+   "cases": [
+    "preset-res64/oklab/2",
+    "preset-res64/oklab/4",
+    "preset-res64/oklab/8",
+    "preset-res64/oklab/16",
+    "preset-res64/rgb/2",
+    "preset-res64/rgb/4",
+    "preset-res64/rgb/8",
+    "preset-res64/rgb/16",
+    "preset-edg32/oklab/2",
+    "preset-edg32/oklab/4",
+    "preset-edg32/oklab/8",
+    "preset-edg32/oklab/16",
+    "preset-edg32/rgb/2",
+    "preset-edg32/rgb/4",
+    "preset-edg32/rgb/8",
+    "preset-edg32/rgb/16",
+    "preset-pico8/oklab/2",
+    "preset-pico8/oklab/4",
+    "preset-pico8/oklab/8",
+    "preset-pico8/rgb/2",
+    "preset-pico8/rgb/4",
+    "preset-pico8/rgb/8"
+   ],
+   "identical": true,
+   "rawInputMs": 26.38,
+   "histogramInputMs": 0.26
+  },
+  "sheet1024": {
+   "distinctEntries": 37,
+   "rawBytes": 4194304,
+   "cases": [
+    "preset-res64/oklab/2",
+    "preset-res64/oklab/4",
+    "preset-res64/oklab/8",
+    "preset-res64/oklab/16",
+    "preset-res64/rgb/2",
+    "preset-res64/rgb/4",
+    "preset-res64/rgb/8",
+    "preset-res64/rgb/16",
+    "preset-edg32/oklab/2",
+    "preset-edg32/oklab/4",
+    "preset-edg32/oklab/8",
+    "preset-edg32/oklab/16",
+    "preset-edg32/rgb/2",
+    "preset-edg32/rgb/4",
+    "preset-edg32/rgb/8",
+    "preset-edg32/rgb/16",
+    "preset-pico8/oklab/2",
+    "preset-pico8/oklab/4",
+    "preset-pico8/oklab/8",
+    "preset-pico8/rgb/2",
+    "preset-pico8/rgb/4",
+    "preset-pico8/rgb/8"
+   ],
+   "identical": true,
+   "rawInputMs": 6.88,
+   "histogramInputMs": 0.24
+  },
+  "motion256": {
+   "distinctEntries": 384,
+   "rawBytes": 12582912,
+   "cases": [
+    "preset-res64/oklab/2",
+    "preset-res64/oklab/4",
+    "preset-res64/oklab/8",
+    "preset-res64/oklab/16",
+    "preset-res64/rgb/2",
+    "preset-res64/rgb/4",
+    "preset-res64/rgb/8",
+    "preset-res64/rgb/16",
+    "preset-edg32/oklab/2",
+    "preset-edg32/oklab/4",
+    "preset-edg32/oklab/8",
+    "preset-edg32/oklab/16",
+    "preset-edg32/rgb/2",
+    "preset-edg32/rgb/4",
+    "preset-edg32/rgb/8",
+    "preset-edg32/rgb/16",
+    "preset-pico8/oklab/2",
+    "preset-pico8/oklab/4",
+    "preset-pico8/oklab/8",
+    "preset-pico8/rgb/2",
+    "preset-pico8/rgb/4",
+    "preset-pico8/rgb/8"
+   ],
+   "identical": true,
+   "rawInputMs": 9.11,
+   "histogramInputMs": 0.34
+  }
+ },
+ "generated": {
+  "sheet2048": {
+   "identical": true,
+   "colors": 37,
+   "rawInputMs": 25.23,
+   "histogramInputMs": 0.08
+  },
+  "sheet1024": {
+   "identical": true,
+   "colors": 37,
+   "rawInputMs": 6.29,
+   "histogramInputMs": 0.04
+  },
+  "motion256": {
+   "identical": true,
+   "colors": 16,
+   "rawInputMs": 8.98,
+   "histogramInputMs": 0.18
+  }
+ },
+ "mainThreadSliceMs": {
+  "sheet2048": 4.61,
+  "sheet1024": 1,
+  "motion256": 2.94
+ }
+}

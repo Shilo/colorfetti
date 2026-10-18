@@ -1,0 +1,41 @@
+{
+  "revision": "0c61dd018b5661fdef4e4e049d05d994fc40edd4",
+  "command": "npx vite build --outDir .tmp/source-review-C/dist --emptyOutDir (and --sourcemap into .tmp/source-review-C/dist-map for attribution)",
+  "tool": "vite 8.3.3, 196 modules, built in ~0.45 s. Per-module bytes attributed from source maps with a VLQ walker (scratch script); attribution of unmapped runs is approximate (e.g. 5.8 KB credited to logo-dark.svg is an artifact: the SVG/PNG assets are 222-601 B and inlined as data URLs).",
+  "chunks": {
+    "index.js (entry)": { "raw": 284570, "gzip": 102600 },
+    "index.css": { "raw": 168002, "gzip": 26460, "glasskitMinShare": "glasskit.min.css alone is 77,067 B (11.7 KB gzip) = ~46% of CSS; GlassKit defines 88 .glass-* classes, app source references 11" },
+    "lazy main-thread chunks": { "gif.js": 12790, "palette-generated.js": 5830, "palette-cleanup-client.js": 7340, "image-import-client.js": 5530, "palette-limit.js": 4460, "palette-cleanup.js": 4230, "palette-generated-client.js": 3750, "palette-ase.js": 2490, "palette-lospec.js": 2330, "palette-usage.js": 930 },
+    "workers": { "image-import-worker": 24960, "palette-cleanup-worker": 15050, "palette-gif-worker": 11210, "palette-generated-worker": 9770, "palette-limit-worker": 9730 }
+  },
+  "entryComposition": {
+    "svelteRuntime": 44709,
+    "fflate": 11363,
+    "componentsTotal": 103092,
+    "top": [["App.svelte", 37591], ["Dock.svelte", 26437], ["Tile.svelte", 13015], ["PaletteImport.svelte", 12743], ["fflate", 11363], ["recolor.js", 9598], ["palette-drop.js", 6983], ["palette-label.js", 6885], ["viewer-navigation.js", 6238], ["palette-library.js", 5762], ["icon-glyph.js", 5477], ["export-drag.js", 5422], ["ImageViewer.svelte", 5198], ["PixelIcon.svelte", 5176], ["save.js", 5034], ["icon.js", 4789], ["palette-limit-client.js", 4505], ["quantize.js", 3746], ["tooltip.js", 3506], ["presets.js", 3312]]
+  },
+  "alreadyLazy": "Lospec fetch (palette-lospec.js), Aseprite (palette-ase.js), GIF codec/omggif (gif.js), Auto (palette-generated*), limiter core, Cleanup client+core, image import client/worker, palette usage, all workers. This matches CLAUDE.md's lazy-ownership contracts.",
+  "eagerOptional": [
+    { "what": "Palette editor: PaletteImport.svelte + palette-drop.js + palette-import.js (+ palette-lospec-url.js)", "approxRaw": 23300, "note": "Only used when the editor opens or a palette file is dropped while it is open." },
+    { "what": "ImageViewer.svelte + viewer-navigation.js + viewer-layout.js", "approxRaw": 11700, "note": "Only used when Preview opens." },
+    { "what": "fflate (zipSync/zlibSync/zlib) via save.js:1", "approxRaw": 11363, "note": "Needed at first 1-bit Save/Copy/drag; individual 1-bit stills are documented as synchronous, and drag export prepares on hover." },
+    { "what": "export-drag.js", "approxRaw": 5422, "note": "Desktop drag-out only." }
+  ],
+  "duplication": [
+    { "what": "palette-library.js (~3.3 KB incl. FULL_PRESETS data) in all of image-import, cleanup, generated, gif, limit workers", "cause": "workers only need normalizeColors / GENERATED_MAX_COLORS (quantize.js:1, palette-generated.js:3), but the module's top-level Object.freeze(...) / FULL_PRESETS.find(...) calls are not provably pure, so the preset table is retained in every worker bundle", "cost": "~16 KB total worker script, fetched/evaluated once per worker start; negligible" },
+    { "what": "omggif (~6.3 KB) + gif.js (~5.7 KB) in gif chunk, image-import-worker and palette-gif-worker", "cause": "separate realms; unavoidable without importScripts sharing", "cost": "acceptable" },
+    { "what": "recolor.js (~3.8 KB) in image-import-worker", "cause": "analysis runs in the worker", "cost": "required" }
+  ],
+  "startupNotes": [
+    "index.html loads Google Fonts CSS (fonts.googleapis.com, display=swap) as a render-blocking <link rel=stylesheet> with preconnects; on a cold mobile connection that third-party CSS request can gate first paint independently of the app bundle. display=swap affects the font file, not the stylesheet.",
+    "Single entry module + single CSS; no modulepreload needed. Prior audit: first usable control 30-38 ms warm, 117 ms first load (desktop)."
+  ],
+  "hypotheses": [
+    { "id": "C-B1", "claim": "Lazy-load the palette editor (PaletteImport + palette-drop + palette-import), ~23 KB raw / ~8 KB gzip off the entry.", "expected": "Small: V8 lazily compiles function bodies, so the saving is mostly download + pre-parse (~1-3 ms on a Pixel-class phone) on first load only; repeat visits hit cache.", "whyMayWorsen": "Opening the editor and the editor-open palette-drop path would wait on an extra chunk request (an RTT on GitHub Pages, worse on cold mobile), and drop handling while the editor is open must not race the import. Help/first-visit flow does not need it, but Paste colors/Lospec drops do.", "recommendation": "defer: only pursue if a cold-phone trace shows entry parse/compile as a top-3 startup cost." },
+    { "id": "C-B2", "claim": "Lazy-load ImageViewer (~11.7 KB).", "expected": "Same order as C-B1.", "whyMayWorsen": "Tap-to-preview would gain a network wait on first use; ImageViewer owns comparison/dismiss gestures that must be ready on first tap.", "recommendation": "defer" },
+    { "id": "C-B3", "claim": "Do not lazy-load fflate.", "expected": "n/a", "whyMayWorsen": "Would break the synchronous 1-bit Save/Copy/drag preparation contract and add first-Save latency.", "recommendation": "retain-existing" },
+    { "id": "C-B4", "claim": "Split normalizeColors out of palette-library.js (or mark preset construction /*#__PURE__*/) to drop ~3.3 KB from each worker.", "expected": "Negligible runtime gain (<0.1 ms eval per worker start).", "whyMayWorsen": "Adds a module for no measurable benefit.", "recommendation": "not-worth-it (record only)" },
+    { "id": "C-B5", "claim": "GlassKit CSS is ~46% of shipped CSS and mostly unused classes.", "expected": "Unused rules cost one-time CSS parse (~ms on phone) and little per-recalc because Blink buckets rules by rightmost class; removing them is a design-system change outside performance scope.", "whyMayWorsen": "Purging can drop states/variants GlassKit applies via attributes or :is() chains; risks visual regressions.", "recommendation": "defer: measure with DevTools Coverage + style-recalc 'selector stats' on the phone before considering." },
+    { "id": "C-B6", "claim": "Render-blocking third-party font stylesheet.", "expected": "Possibly the largest cold-start factor on mobile networks; zero effect on warm/cached loads.", "whyMayWorsen": "Self-hosting changes caching/licensing; async loading changes first-paint typography (FOUT). Product decision.", "recommendation": "needs-probe: WebPageTest/Lighthouse cold mobile run with and without the font link." }
+  ]
+}

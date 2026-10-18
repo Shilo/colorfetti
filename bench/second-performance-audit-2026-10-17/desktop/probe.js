@@ -6,7 +6,7 @@
   const q = new URLSearchParams(location.search), longtasks = [], startup = {};
   // ?seed=palette|onebit|light writes the first audit's seed settings before the app reads storage.
   const palette = { family: 'full-palette', paletteId: 'preset-res64', alphaCut: 128, alphaMode: 'cut', metric: 'oklab', maxColors: 0, lastMaxColors: 16, cleanup: false, dither: 'none', ditherStrength: 50, theme: 'dark' };
-  const seeds = { palette, light: { ...palette, theme: 'light' }, auto: { ...palette, paletteId: 'generated-32' }, dither8: { ...palette, dither: '8x8' }, onebit: { ...palette, family: 'two-color', first: '#222323', second: '#f0f6f0', none: 0, style: 'cutout' } };
+  const seeds = { palette, light: { ...palette, theme: 'light' }, auto: { ...palette, paletteId: 'generated-32' }, dither8: { ...palette, dither: '8x8' }, checker: { ...palette, family: 'two-color', first: '#222323', second: '#f0f6f0', none: 0, style: 'checker' }, onebit: { ...palette, family: 'two-color', first: '#222323', second: '#f0f6f0', none: 0, style: 'cutout' } };
   if (seeds[q.get('seed')]) { localStorage.setItem('colorfetti', JSON.stringify(seeds[q.get('seed')])); localStorage.setItem('colorfetti-help-seen', '1'); localStorage.setItem('colorfetti-welcomed', '1'); }
   const hasProfiler = typeof Profiler === 'function';
   const newProfiler = () => { try { return hasProfiler ? new Profiler({ sampleInterval: 1, maxBufferSize: 200000 }) : null; } catch { return null; } };
@@ -240,7 +240,121 @@
   // A/B exactness spot check: post the first tile canvas for the current style.
   const postPixels = name => post(name + '.pixels.json', pixels());
 
-  window.__p = { styles11, postPixels, rapid, dither, editor, brightness, row, styleButton, coldStyle, gate, btn, click, until, sleep, timed, pixels, loafs, cadence, importCohort, begin, end, arm, results, paintedAfter, countsDone, stage, paste, readyNow, waitReady, wall, longtasks, startup, post, hasProfiler };
+  const captions = () => figures().map(f => nameOf(f) + ' ' + (f.querySelector('.dim')?.textContent || '').replace(/\s+/g, ' ').trim());
+  // C-A1: 1-bit Checker wall; Threshold drag through the real range input (pointerdown ->
+  // Dock drag.press, input -> own[key] + drag.move, pointerup/change -> drag.end).
+  async function thresholdDrag(urls, N, steps = 40, every = 3) {
+    await stage(urls); const names = __p.staged.map(f => f.name); paste(); await waitReady(names, { count: false }, 60000); await until(countsDone, 60000);
+    click('Style'); await sleep(600);
+    const range = document.querySelector('input[type=range][aria-label="Threshold"]'); if (!range) throw Error('no Threshold range');
+    const setValue = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
+    const g = await gate(); if (!g.ok) throw Error('gate ' + JSON.stringify(g));
+    const before = captions();
+    begin(N, { profile: false, allowSynthetic: true });
+    const t0 = performance.now(); win.actionAt = t0; win.actionEvent = 'synthetic pointer/input drag';
+    const frame = () => new Promise(r => requestAnimationFrame(r));
+    const dragFrames = [];
+    // Main-thread busy proxy: idle time granted to requestIdleCallback during the drag.
+    let idleMs = 0, idleOn = true;
+    const idle = d => { if (!idleOn) return; idleMs += d.timeRemaining(); requestIdleCallback(idle); };
+    requestIdleCallback(idle);
+    range.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, pointerType: 'mouse', isPrimary: true, button: 0 }));
+    let busySeen = false;
+    for (let i = 0; i < steps; i++) {
+      for (let k = 0; k < every; k++) dragFrames.push(await frame());
+      setValue.call(range, String(80 + 2 * i)); range.dispatchEvent(new Event('input', { bubbles: true }));
+      if (!countsDone()) busySeen = true;
+    }
+    dragFrames.push(await frame());
+    const releaseAt = performance.now(); idleOn = false;
+    // Release -> settled: last caption mutation or tile paint after release, once 500 ms quiet
+    // with all captions non-busy (a release at the last dragged value need not repaint).
+    let lastChange = releaseAt;
+    const mo = new MutationObserver(() => { lastChange = performance.now(); });
+    mo.observe(document.querySelector('.grid'), { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ['aria-busy'] });
+    range.dispatchEvent(new PointerEvent('pointerup', { bubbles: true, pointerType: 'mouse', isPrimary: true, button: 0 }));
+    range.dispatchEvent(new Event('change', { bubbles: true }));
+    const lastPaint = () => Math.max(releaseAt, ...figures().map(f => f.querySelector('.art canvas')?.__paintAt || 0));
+    await until(() => countsDone() && performance.now() - Math.max(lastChange, lastPaint()) > 500, 60000);
+    mo.disconnect();
+    const readyAt = Math.max(lastChange, lastPaint());
+    const lts = () => longtasks.filter(x => x.start >= t0 - 1);
+    const g2 = dragFrames.slice(1).map((v, i) => v - dragFrames[i]).sort((a, b) => a - b);
+    const dragLt = () => lts().filter(x => x.start < releaseAt);
+    await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const s = await end({ readyAt, releaseAt, dragMs: releaseAt - t0, dragIdleMs: idleMs, dragBusyEstMs: releaseAt - t0 - idleMs, releaseToFinalMs: readyAt - releaseAt, dragRafMaxGapMs: g2.at(-1), dragRafP95GapMs: g2[Math.floor(g2.length * 0.95)], dragLongtasks: dragLt(), busyDuringDrag: busySeen, captionsBefore: before, captionsFinal: captions(), value: range.value });
+    // Press + release without a move: no caption may change (watch for any aria-busy/text change).
+    const pre = captions(); let changed = false;
+    const mo2 = new MutationObserver(() => { if (captions().join('|') !== pre.join('|') || !countsDone()) changed = true; });
+    mo2.observe(document.querySelector('.grid'), { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ['aria-busy'] });
+    range.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, pointerType: 'mouse', isPrimary: true, button: 0 }));
+    await sleep(100);
+    range.dispatchEvent(new PointerEvent('pointerup', { bubbles: true, pointerType: 'mouse', isPrimary: true, button: 0 }));
+    await sleep(700); mo2.disconnect();
+    const pressOnly = { changed: changed || captions().join('|') !== pre.join('|') };
+    await post(N + '.pressonly.json', pressOnly);
+    return { n: N, dragMs: Math.round(s.dragMs), dragBusyEstMs: Math.round(s.dragBusyEstMs), releaseToFinalMs: Math.round(s.releaseToFinalMs), dragRafMax: Math.round(s.dragRafMaxGapMs), lt: s.longtasks.map(x => Math.round(x.duration)), dragLt: s.dragLongtasks.map(x => Math.round(x.duration)), busyDuringDrag: busySeen, cpuGate: +g.cpuMinMs.toFixed(1), pressOnlyChanged: pressOnly.changed, final: s.captionsFinal.join(' | ') };
+  }
+  // C-B4: hover export preparation (exportDragArt pointerenter, mouse) on the first tile;
+  // completion = prepared File's object URL (end of prepare) and the drag image attached.
+  async function hoverPrep(urls, N) {
+    await stage(urls); const names = __p.staged.map(f => f.name); paste(); await waitReady(names, { count: true }, 60000); await sleep(500);
+    const art = document.querySelector('.grid figure button.art');
+    const g = await gate(); if (!g.ok) throw Error('gate ' + JSON.stringify(g));
+    let urlAt = null, size = null; const orig = URL.createObjectURL;
+    URL.createObjectURL = function (o) { if (urlAt == null && o instanceof File) { urlAt = performance.now(); size = o.size; } return orig.call(this, o); };
+    try {
+      const s = await timed(N, [() => art.dispatchEvent(new PointerEvent('pointerenter', { pointerType: 'mouse', isPrimary: true }))], () => urlAt != null && document.querySelector('.grid figure .export-drag-image'), { profile: false, timeout: 30000 });
+      const r = { ...row(s, g), enterToFileMs: Math.round(urlAt - s.firstAt), prepMs: Math.round(urlAt - s.firstAt - 180), imageMs: Math.round(s.readyAt - s.firstAt), bytes: size, maxLongtaskMs: s.maxLongtaskMs, gate: g };
+      await post(N + '.prep.json', r); return r;
+    } finally { URL.createObjectURL = orig; art.dispatchEvent(new PointerEvent('pointerleave', { pointerType: 'mouse', isPrimary: true })); }
+  }
+
+  // SHA-256 of every tile canvas (display check across builds, not an export oracle).
+  const canvasHashes = async () => Promise.all(figures().map(async f => { const c = f.querySelector('.art canvas'); const d = c.getContext('2d').getImageData(0, 0, c.width, c.height).data; const h = new Uint8Array(await crypto.subtle.digest('SHA-256', d)); return [...h.slice(0, 8)].map(b => b.toString(16).padStart(2, '0')).join(''); }));
+  const countOf = f => +((f.querySelector('.caption-color-count')?.textContent || '').match(/(\d+) colou?rs?/)?.[1] ?? NaN);
+  // C-B1: palette family; Max colors 2 -> 4 -> 8 through the real number field (input + change),
+  // each step to a fresh paint of every tile and non-busy exact captions with count <= cap.
+  async function maxColorsSteps(urls, N) {
+    await stage(urls); const names = __p.staged.map(f => f.name); paste(); await waitReady(names, { count: true }, 60000); await sleep(400);
+    click('Palette settings'); await sleep(600);
+    const num = document.querySelector('input[aria-label="Max colors value"]');
+    const g = await gate(); if (!g.ok) throw Error('gate ' + JSON.stringify(g));
+    begin(N, { profile: false, allowSynthetic: true }); const t0 = performance.now(); win.actionAt = t0; win.actionEvent = 'synthetic input+change';
+    const steps = [];
+    for (const v of [2, 4, 8]) {
+      // Settled = every tile repainted after the edit, captions non-busy with count <= cap, and
+      // 300 ms without caption mutation or paint; the step ends at the last such change.
+      const s0 = performance.now(); let lastChange = s0;
+      const mo = new MutationObserver(() => { lastChange = performance.now(); });
+      mo.observe(document.querySelector('.grid'), { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ['aria-busy'] });
+      num.value = String(v); num.dispatchEvent(new Event('input', { bubbles: true })); num.dispatchEvent(new Event('change', { bubbles: true }));
+      const lastPaint = () => Math.max(s0, ...figures().map(f => f.querySelector('.art canvas')?.__paintAt || 0));
+      await until(() => paintedAfter(s0) && countsDone() && figures().every(f => countOf(f) <= v) && performance.now() - Math.max(lastChange, lastPaint()) > 300, 60000);
+      mo.disconnect();
+      const at = Math.max(lastChange, lastPaint());
+      steps.push({ cap: v, ms: at - s0, longtasks: longtasks.filter(x => x.start >= s0 - 1 && x.start < at).map(x => Math.round(x.duration)) });
+    }
+    const readyAt = performance.now();
+    await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const s = await end({ readyAt, totalMs: steps.reduce((a, x) => a + x.ms, 0), steps, captionsFinal: captions(), canvasHashes: await canvasHashes() });
+    return { n: N, totalMs: Math.round(s.totalMs), steps: steps.map(x => Math.round(x.ms) + (x.longtasks.length ? '/LT' + x.longtasks.join('+') : '')), maxLt: Math.round(s.maxLongtaskMs), rafMax: Math.round(s.rafMaxGapMs), cpuGate: +g.cpuMinMs.toFixed(1), final: s.captionsFinal.join(' | '), hashes: s.canvasHashes.join(',') };
+  }
+  // C-B5: 1-bit Cutout wall, rapid Brightness R -> G -> Value (50 ms apart) to the final paint.
+  async function brightnessWall(urls, N, gap = 50) {
+    await stage(urls); const names = __p.staged.map(f => f.name); paste(); await waitReady(names, { count: false }, 60000); await until(countsDone, 60000);
+    click('Style'); await sleep(200); click('More settings'); await sleep(600);
+    const opt = v => [...document.querySelectorAll('[role=group][aria-label=Brightness] button')].find(b => b.textContent.trim() === v);
+    const g = await gate(); if (!g.ok) throw Error('gate ' + JSON.stringify(g));
+    const hit = v => () => { opt(v).click(); lastAt = performance.now(); };
+    const s = await timed(N, [hit('R'), () => sleep(gap), hit('G'), () => sleep(gap), hit('Value')], t => paintedAfter(t) && JSON.parse(localStorage.getItem('colorfetti')).settings.cutout.source === 'value', { profile: false });
+    await until(countsDone, 60000);
+    const hashes = await canvasHashes(), caps = captions();
+    await post(N + '.display.json', { captions: caps, hashes });
+    return { ...row(s, g), totalMs: Math.round(s.readyAt - s.firstAt), maxLt: Math.round(s.maxLongtaskMs), rafMax: Math.round(s.rafMaxGapMs), final: caps.join(' | '), hashes: hashes.join(',') };
+  }
+
+  window.__p = { maxColorsSteps, brightnessWall, canvasHashes, thresholdDrag, hoverPrep, captions, styles11, postPixels, rapid, dither, editor, brightness, row, styleButton, coldStyle, gate, btn, click, until, sleep, timed, pixels, loafs, cadence, importCohort, begin, end, arm, results, paintedAfter, countsDone, stage, paste, readyNow, waitReady, wall, longtasks, startup, post, hasProfiler };
 
   if (q.has('profile')) {
     begin('startup-' + (q.get('profile') || 'run'), { profile: true });

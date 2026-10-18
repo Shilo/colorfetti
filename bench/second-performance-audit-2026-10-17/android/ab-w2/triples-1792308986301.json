@@ -1,0 +1,2205 @@
+{
+  "stamp": 1792308986301,
+  "triples": [
+    [
+      "A",
+      "A1",
+      "B4"
+    ],
+    [
+      "B4",
+      "A1",
+      "A"
+    ],
+    [
+      "A1",
+      "A",
+      "B4"
+    ],
+    [
+      "B4",
+      "A",
+      "A1"
+    ],
+    [
+      "A",
+      "B4",
+      "A1"
+    ],
+    [
+      "A1",
+      "B4",
+      "A"
+    ],
+    [
+      "A",
+      "A1",
+      "B4"
+    ]
+  ],
+  "urls": {
+    "A": "http://localhost:5401/",
+    "A1": "http://localhost:5402/",
+    "B4": "http://localhost:5403/"
+  },
+  "started": "2026-10-18T07:36:26.301Z",
+  "trials": [
+    {
+      "variant": "A",
+      "triple": 0,
+      "slot": 0,
+      "position": 0,
+      "tempC": 32.9,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 578.73,
+          "startedAt": 5077.699999988079,
+          "elapsedMs": 2115.800000011921,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.300000000000182,
+          "dragWallMs": 2055,
+          "releaseToCaptionMs": 146.10000002384186,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 70.69699999999999,
+          "startedAt": 926.0999999642372,
+          "elapsedMs": 133.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "clickToDownloadMs": 64.89999997615814,
+          "anchorName": "secondaudit-w2-A-1792308986301-s0-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s0-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 95.02900000000002,
+          "startedAt": 986.6999999880791,
+          "elapsedMs": 169.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25.000000000000114,
+          "clickToDownloadMs": 110.30000001192093,
+          "anchorName": "secondaudit-w2-A-1792308986301-s0-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s0-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 95.034,
+          "startedAt": 1063.1000000238419,
+          "elapsedMs": 217.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 135.39999997615814,
+          "anchorName": "secondaudit-w2-A-1792308986301-s0-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s0-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 166.91199999999995,
+          "startedAt": 1211.800000011921,
+          "elapsedMs": 319,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "clickToDownloadMs": 262.5,
+          "anchorName": "secondaudit-w2-A-1792308986301-s0-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s0-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A1",
+      "triple": 0,
+      "slot": 1,
+      "position": 1,
+      "tempC": 32.9,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 502.3789999999999,
+          "startedAt": 5059.199999988079,
+          "elapsedMs": 2114.7000000476837,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17,
+          "dragWallMs": 2061,
+          "releaseToCaptionMs": 142.60000002384186,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 81.31099999999996,
+          "startedAt": 961.8999999761581,
+          "elapsedMs": 130.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.39999999999998,
+          "clickToDownloadMs": 66.80000001192093,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s1-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s1-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 83.148,
+          "startedAt": 1102,
+          "elapsedMs": 179.70000004768372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "clickToDownloadMs": 102.09999996423721,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s1-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s1-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 96.831,
+          "startedAt": 1140.5,
+          "elapsedMs": 199.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "clickToDownloadMs": 135.89999997615814,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s1-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s1-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 157.80399999999995,
+          "startedAt": 1188.800000011921,
+          "elapsedMs": 341.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 270.69999998807907,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s1-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s1-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "B4",
+      "triple": 0,
+      "slot": 2,
+      "position": 2,
+      "tempC": 33.3,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 592.979,
+          "startedAt": 5113,
+          "elapsedMs": 2105.600000023842,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 18.099999999999454,
+          "dragWallMs": 2049,
+          "releaseToCaptionMs": 132.60000002384186,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 50.485,
+          "startedAt": 897.1000000238419,
+          "elapsedMs": 87.79999995231628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 22.5,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s2-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s2-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 81.89000000000001,
+          "startedAt": 1122.300000011921,
+          "elapsedMs": 137.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25.09999999999991,
+          "clickToDownloadMs": 70.69999998807907,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s2-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s2-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 108.77799999999999,
+          "startedAt": 978.1999999880791,
+          "elapsedMs": 223.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.90000000000009,
+          "clickToDownloadMs": 153.5999999642372,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s2-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s2-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 143.947,
+          "startedAt": 1159.199999988079,
+          "elapsedMs": 323.2000000476837,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "clickToDownloadMs": 271.7000000476837,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s2-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s2-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "B4",
+      "triple": 1,
+      "slot": 3,
+      "position": 0,
+      "tempC": 33.1,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 605.3070000000001,
+          "startedAt": 5069.599999964237,
+          "elapsedMs": 2104,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.599999999999454,
+          "dragWallMs": 2048,
+          "releaseToCaptionMs": 147.60000002384186,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 50.64599999999997,
+          "startedAt": 898.5999999642372,
+          "elapsedMs": 117.90000003576279,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.30000000000007,
+          "clickToDownloadMs": 24.100000023841858,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s3-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s3-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 123.80599999999997,
+          "startedAt": 1008.1000000238419,
+          "elapsedMs": 176.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 41.799999999999955,
+          "clickToDownloadMs": 112.89999997615814,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s3-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s3-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 95.61499999999995,
+          "startedAt": 1211.199999988079,
+          "elapsedMs": 199,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 133.10000002384186,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s3-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s3-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 149.13999999999993,
+          "startedAt": 1383,
+          "elapsedMs": 337.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 277.60000002384186,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s3-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s3-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A1",
+      "triple": 1,
+      "slot": 4,
+      "position": 1,
+      "tempC": 33.1,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 562.5729999999999,
+          "startedAt": 5113.199999988079,
+          "elapsedMs": 2083.199999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 23.899999999999636,
+          "dragWallMs": 2050,
+          "releaseToCaptionMs": 130.0999999642372,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 103.051,
+          "startedAt": 1011,
+          "elapsedMs": 182.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 41.700000000000045,
+          "clickToDownloadMs": 102.80000001192093,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s4-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s4-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 84.80700000000002,
+          "startedAt": 1157,
+          "elapsedMs": 170.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "clickToDownloadMs": 104.90000003576279,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s4-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s4-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 111.77999999999999,
+          "startedAt": 954,
+          "elapsedMs": 204.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "clickToDownloadMs": 144.19999998807907,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s4-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s4-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 154.40300000000008,
+          "startedAt": 1335.8999999761581,
+          "elapsedMs": 346.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 277.19999998807907,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s4-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s4-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 1,
+      "slot": 5,
+      "position": 2,
+      "tempC": 33.1,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 610.7979999999999,
+          "startedAt": 5089.400000035763,
+          "elapsedMs": 2120.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17.5,
+          "dragWallMs": 2056,
+          "releaseToCaptionMs": 149.20000004768372,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 80.89700000000002,
+          "startedAt": 971.2999999523163,
+          "elapsedMs": 103.20000004768372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 59.89999997615814,
+          "anchorName": "secondaudit-w2-A-1792308986301-s5-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s5-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 86.569,
+          "startedAt": 1127.8999999761581,
+          "elapsedMs": 173.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "clickToDownloadMs": 99.30000001192093,
+          "anchorName": "secondaudit-w2-A-1792308986301-s5-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s5-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 97.939,
+          "startedAt": 1120.8999999761581,
+          "elapsedMs": 189.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 127.5,
+          "anchorName": "secondaudit-w2-A-1792308986301-s5-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s5-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 154.39600000000004,
+          "startedAt": 1149.300000011921,
+          "elapsedMs": 344.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 270.89999997615814,
+          "anchorName": "secondaudit-w2-A-1792308986301-s5-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s5-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A1",
+      "triple": 2,
+      "slot": 6,
+      "position": 0,
+      "tempC": 33.4,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 499.3599999999999,
+          "startedAt": 5026.600000023842,
+          "elapsedMs": 2110,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17.800000000000182,
+          "dragWallMs": 2050,
+          "releaseToCaptionMs": 138.89999997615814,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 87.83,
+          "startedAt": 970.8000000119209,
+          "elapsedMs": 132.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 41.700000000000045,
+          "clickToDownloadMs": 87.10000002384186,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s6-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s6-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 85.13299999999995,
+          "startedAt": 1174.199999988079,
+          "elapsedMs": 162,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 102,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s6-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s6-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 100.14800000000001,
+          "startedAt": 1200.0999999642372,
+          "elapsedMs": 192.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 142.4000000357628,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s6-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s6-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 152.53300000000002,
+          "startedAt": 1212.6000000238419,
+          "elapsedMs": 314.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 256.5,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s6-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s6-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 2,
+      "slot": 7,
+      "position": 1,
+      "tempC": 33.6,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 600.7289999999999,
+          "startedAt": 5016,
+          "elapsedMs": 2094.600000023842,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 23.200000000000728,
+          "dragWallMs": 2049,
+          "releaseToCaptionMs": 131.0999999642372,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 68.13900000000004,
+          "startedAt": 861.5,
+          "elapsedMs": 120.09999996423721,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 67.19999998807907,
+          "anchorName": "secondaudit-w2-A-1792308986301-s7-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s7-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 82.97500000000002,
+          "startedAt": 1052.699999988079,
+          "elapsedMs": 145.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 94.5,
+          "anchorName": "secondaudit-w2-A-1792308986301-s7-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s7-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 105.78800000000005,
+          "startedAt": 1072.800000011921,
+          "elapsedMs": 199.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "clickToDownloadMs": 149.30000001192093,
+          "anchorName": "secondaudit-w2-A-1792308986301-s7-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s7-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 139.93900000000002,
+          "startedAt": 1184.4000000357628,
+          "elapsedMs": 303.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 243.19999998807907,
+          "anchorName": "secondaudit-w2-A-1792308986301-s7-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s7-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "B4",
+      "triple": 2,
+      "slot": 8,
+      "position": 2,
+      "tempC": 33.6,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 555.115,
+          "startedAt": 5051.399999976158,
+          "elapsedMs": 2098.699999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17.300000000000182,
+          "dragWallMs": 2047,
+          "releaseToCaptionMs": 130.60000002384186,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 60.307,
+          "startedAt": 901.3999999761581,
+          "elapsedMs": 108.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 30,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s8-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s8-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 83.19899999999997,
+          "startedAt": 1063.199999988079,
+          "elapsedMs": 125.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17,
+          "clickToDownloadMs": 73.59999996423721,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s8-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s8-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 108.99900000000001,
+          "startedAt": 1012.8000000119209,
+          "elapsedMs": 196.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 145.70000004768372,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s8-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s8-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 148.339,
+          "startedAt": 1188.300000011921,
+          "elapsedMs": 309.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.90000000000009,
+          "clickToDownloadMs": 259.30000001192093,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s8-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s8-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "B4",
+      "triple": 3,
+      "slot": 9,
+      "position": 0,
+      "tempC": 33.8,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 603.273,
+          "startedAt": 5073,
+          "elapsedMs": 2097,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 22.300000000000182,
+          "dragWallMs": 2060,
+          "releaseToCaptionMs": 110,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 33.276,
+          "startedAt": 877.1000000238419,
+          "elapsedMs": 69.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "clickToDownloadMs": 15.800000011920929,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s9-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s9-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 105.86499999999998,
+          "startedAt": 989.1000000238419,
+          "elapsedMs": 151.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 96.40000003576279,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s9-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s9-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 111.04799999999997,
+          "startedAt": 1030.0999999642372,
+          "elapsedMs": 203.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 127.19999998807907,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s9-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s9-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 143.45999999999998,
+          "startedAt": 1093.800000011921,
+          "elapsedMs": 313.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.90000000000009,
+          "clickToDownloadMs": 249.80000001192093,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s9-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s9-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 3,
+      "slot": 10,
+      "position": 1,
+      "tempC": 33.8,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 576.102,
+          "startedAt": 5101.199999988079,
+          "elapsedMs": 2082.199999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 18.100000000000364,
+          "dragWallMs": 2044,
+          "releaseToCaptionMs": 126.89999997615814,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 68.28,
+          "startedAt": 868.6999999880791,
+          "elapsedMs": 134,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 41.59999999999991,
+          "clickToDownloadMs": 66.39999997615814,
+          "anchorName": "secondaudit-w2-A-1792308986301-s10-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s10-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 83.511,
+          "startedAt": 1057.1000000238419,
+          "elapsedMs": 144.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 94.09999996423721,
+          "anchorName": "secondaudit-w2-A-1792308986301-s10-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s10-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 98.47099999999998,
+          "startedAt": 1052.199999988079,
+          "elapsedMs": 182.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25.09999999999991,
+          "clickToDownloadMs": 126.10000002384186,
+          "anchorName": "secondaudit-w2-A-1792308986301-s10-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s10-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 169.664,
+          "startedAt": 1213.8999999761581,
+          "elapsedMs": 331.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "clickToDownloadMs": 279.60000002384186,
+          "anchorName": "secondaudit-w2-A-1792308986301-s10-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s10-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A1",
+      "triple": 3,
+      "slot": 11,
+      "position": 2,
+      "tempC": 33.9,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 524.6990000000001,
+          "startedAt": 5064.399999976158,
+          "elapsedMs": 2079.899999976158,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 18,
+          "dragWallMs": 2044,
+          "releaseToCaptionMs": 120.80000001192093,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 72.97400000000002,
+          "startedAt": 929.8999999761581,
+          "elapsedMs": 136.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.899999999999977,
+          "clickToDownloadMs": 70.5,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s11-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s11-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 84.24700000000001,
+          "startedAt": 1098.699999988079,
+          "elapsedMs": 158.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 105.29999995231628,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s11-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s11-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 100.167,
+          "startedAt": 1079.1000000238419,
+          "elapsedMs": 194,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 130.80000001192093,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s11-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s11-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 154.464,
+          "startedAt": 1156.1000000238419,
+          "elapsedMs": 313.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 269,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s11-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s11-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 4,
+      "slot": 12,
+      "position": 0,
+      "tempC": 34.1,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 589.163,
+          "startedAt": 5090.199999988079,
+          "elapsedMs": 2079.800000011921,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 18.199999999999818,
+          "dragWallMs": 2051,
+          "releaseToCaptionMs": 103.19999998807907,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 67.83199999999998,
+          "startedAt": 902.8000000119209,
+          "elapsedMs": 121.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 62.90000003576279,
+          "anchorName": "secondaudit-w2-A-1792308986301-s12-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s12-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 98.20600000000002,
+          "startedAt": 991.0999999642372,
+          "elapsedMs": 152.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "clickToDownloadMs": 110.70000004768372,
+          "anchorName": "secondaudit-w2-A-1792308986301-s12-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s12-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 108.21199999999997,
+          "startedAt": 940.3000000119209,
+          "elapsedMs": 207.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "clickToDownloadMs": 144.39999997615814,
+          "anchorName": "secondaudit-w2-A-1792308986301-s12-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s12-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 151.08199999999994,
+          "startedAt": 1206.800000011921,
+          "elapsedMs": 330,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 266,
+          "anchorName": "secondaudit-w2-A-1792308986301-s12-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s12-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "B4",
+      "triple": 4,
+      "slot": 13,
+      "position": 1,
+      "tempC": 34.1,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 570.4169999999999,
+          "startedAt": 5038.100000023842,
+          "elapsedMs": 2079.599999964237,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 18.700000000000728,
+          "dragWallMs": 2043,
+          "releaseToCaptionMs": 122,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 56.82500000000002,
+          "startedAt": 913.3999999761581,
+          "elapsedMs": 95.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 41.60000000000002,
+          "clickToDownloadMs": 27.200000047683716,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s13-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s13-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 86.12399999999998,
+          "startedAt": 973.1999999880791,
+          "elapsedMs": 125.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25.100000000000023,
+          "clickToDownloadMs": 71.60000002384186,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s13-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s13-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 127.48299999999996,
+          "startedAt": 977.6999999880791,
+          "elapsedMs": 209.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 159.70000004768372,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s13-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s13-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 159.58500000000004,
+          "startedAt": 1269.3999999761581,
+          "elapsedMs": 334.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "clickToDownloadMs": 273.19999998807907,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s13-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s13-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A1",
+      "triple": 4,
+      "slot": 14,
+      "position": 2,
+      "tempC": 34.1,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 535.996,
+          "startedAt": 5119.600000023842,
+          "elapsedMs": 2107.199999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 22.699999999999818,
+          "dragWallMs": 2053,
+          "releaseToCaptionMs": 144.89999997615814,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 70.65400000000002,
+          "startedAt": 855.6999999880791,
+          "elapsedMs": 123.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 67.40000003576279,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s14-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s14-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 100.22800000000004,
+          "startedAt": 1005.6999999880791,
+          "elapsedMs": 164.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25.09999999999991,
+          "clickToDownloadMs": 107.10000002384186,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s14-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s14-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 101.42399999999996,
+          "startedAt": 1073.7999999523163,
+          "elapsedMs": 215.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.90000000000009,
+          "clickToDownloadMs": 130.5,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s14-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s14-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 145.97,
+          "startedAt": 1288.5999999642372,
+          "elapsedMs": 292.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 241.0999999642372,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s14-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s14-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A1",
+      "triple": 5,
+      "slot": 15,
+      "position": 0,
+      "tempC": 34.3,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 503.251,
+          "startedAt": 4949.300000011921,
+          "elapsedMs": 2081,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17.599999999999454,
+          "dragWallMs": 2044,
+          "releaseToCaptionMs": 113.19999998807907,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 64.51300000000002,
+          "startedAt": 903,
+          "elapsedMs": 126.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.30000000000007,
+          "clickToDownloadMs": 63.89999997615814,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s15-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s15-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 95.44800000000004,
+          "startedAt": 1058.300000011921,
+          "elapsedMs": 146,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "clickToDownloadMs": 92.30000001192093,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s15-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s15-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 108.995,
+          "startedAt": 991.3000000119209,
+          "elapsedMs": 197.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 149.69999998807907,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s15-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s15-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 154.565,
+          "startedAt": 1124.1000000238419,
+          "elapsedMs": 295.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 255.5999999642372,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s15-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s15-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "B4",
+      "triple": 5,
+      "slot": 16,
+      "position": 1,
+      "tempC": 34.3,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 599.9219999999999,
+          "startedAt": 5130.199999988079,
+          "elapsedMs": 2098.699999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 20.199999999999818,
+          "dragWallMs": 2055,
+          "releaseToCaptionMs": 141.5,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 56.350999999999985,
+          "startedAt": 855.0999999642372,
+          "elapsedMs": 99,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.39999999999998,
+          "clickToDownloadMs": 25.69999998807907,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s16-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s16-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 88.92099999999998,
+          "startedAt": 1023.8000000119209,
+          "elapsedMs": 129.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.30000000000018,
+          "clickToDownloadMs": 67.30000001192093,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s16-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s16-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 102.48400000000002,
+          "startedAt": 1107.8999999761581,
+          "elapsedMs": 208,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "clickToDownloadMs": 129.19999998807907,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s16-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s16-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 148.31699999999998,
+          "startedAt": 1159.7000000476837,
+          "elapsedMs": 321.2999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.899999999999864,
+          "clickToDownloadMs": 270.10000002384186,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s16-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s16-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 5,
+      "slot": 17,
+      "position": 2,
+      "tempC": 34.3,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 606.4150000000001,
+          "startedAt": 5095.199999988079,
+          "elapsedMs": 2109.199999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17.599999999999454,
+          "dragWallMs": 2057,
+          "releaseToCaptionMs": 145.19999998807907,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 68.07099999999997,
+          "startedAt": 862.8999999761581,
+          "elapsedMs": 131.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 41.700000000000045,
+          "clickToDownloadMs": 67,
+          "anchorName": "secondaudit-w2-A-1792308986301-s17-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s17-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 78.021,
+          "startedAt": 1051.0999999642372,
+          "elapsedMs": 145.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.90000000000009,
+          "clickToDownloadMs": 97.5,
+          "anchorName": "secondaudit-w2-A-1792308986301-s17-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s17-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 102.08600000000001,
+          "startedAt": 1057.7999999523163,
+          "elapsedMs": 194.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 131.89999997615814,
+          "anchorName": "secondaudit-w2-A-1792308986301-s17-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s17-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 167.34900000000002,
+          "startedAt": 1137.300000011921,
+          "elapsedMs": 355.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.90000000000009,
+          "clickToDownloadMs": 271.80000001192093,
+          "anchorName": "secondaudit-w2-A-1792308986301-s17-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s17-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 6,
+      "slot": 18,
+      "position": 0,
+      "tempC": 34.3,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 576.2349999999999,
+          "startedAt": 5119.200000047684,
+          "elapsedMs": 2131.699999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17.699999999999818,
+          "dragWallMs": 2070,
+          "releaseToCaptionMs": 146.39999997615814,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 65.88000000000002,
+          "startedAt": 892.1000000238419,
+          "elapsedMs": 134,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.39999999999998,
+          "clickToDownloadMs": 69.60000002384186,
+          "anchorName": "secondaudit-w2-A-1792308986301-s18-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s18-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 87.45499999999996,
+          "startedAt": 1057.699999988079,
+          "elapsedMs": 147.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 96.19999998807907,
+          "anchorName": "secondaudit-w2-A-1792308986301-s18-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s18-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 87.51199999999997,
+          "startedAt": 1244.2000000476837,
+          "elapsedMs": 202.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 133.4000000357628,
+          "anchorName": "secondaudit-w2-A-1792308986301-s18-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s18-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 145.955,
+          "startedAt": 1228.4000000357628,
+          "elapsedMs": 303.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17,
+          "clickToDownloadMs": 257.5,
+          "anchorName": "secondaudit-w2-A-1792308986301-s18-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A-1792308986301-s18-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "A1",
+      "triple": 6,
+      "slot": 19,
+      "position": 1,
+      "tempC": 34.7,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 549.024,
+          "startedAt": 5153.199999988079,
+          "elapsedMs": 2111.7000000476837,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 19.599999999999454,
+          "dragWallMs": 2050,
+          "releaseToCaptionMs": 148.69999998807907,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 64.633,
+          "startedAt": 1132.800000011921,
+          "elapsedMs": 156.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "clickToDownloadMs": 68.19999998807907,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s19-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s19-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 84.16699999999999,
+          "startedAt": 1228.5999999642372,
+          "elapsedMs": 139.20000004768372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 90.69999998807907,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s19-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s19-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 93.96900000000002,
+          "startedAt": 1098.1000000238419,
+          "elapsedMs": 215.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 140.80000001192093,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s19-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s19-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 154.21200000000002,
+          "startedAt": 1351.5,
+          "elapsedMs": 367.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 305.69999998807907,
+          "anchorName": "secondaudit-w2-A1-1792308986301-s19-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-A1-1792308986301-s19-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    },
+    {
+      "variant": "B4",
+      "triple": 6,
+      "slot": 20,
+      "position": 2,
+      "tempC": 34.7,
+      "rows": [
+        {
+          "name": "A1 TARGET Threshold drag window",
+          "cpuMs": 583.327,
+          "startedAt": 5104.699999988079,
+          "elapsedMs": 2107.699999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 18.300000000000182,
+          "dragWallMs": 2053,
+          "releaseToCaptionMs": 137.70000004768372,
+          "moves": 40,
+          "finalCaptions": [
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "16×16  ·  2 colors",
+              "busy": "false"
+            },
+            {
+              "text": "1024×1024",
+              "busy": null
+            }
+          ],
+          "finalValue": "220",
+          "press": {
+            "busySeen": false,
+            "value": "108",
+            "captionsChanged": false,
+            "calibratedValue": "108",
+            "calibrationTaps": 2,
+            "valueChanged": false
+          },
+          "startValue": "108"
+        },
+        {
+          "name": "B4 TARGET tiny palette Save",
+          "cpuMs": 54.43200000000001,
+          "startedAt": 916.3999999761581,
+          "elapsedMs": 102.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.39999999999998,
+          "clickToDownloadMs": 25.19999998807907,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s20-save-dungeon-knight-0-dungeon-knight-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s20-save-dungeon-knight-0-dungeon-knight-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE below-threshold 255px palette Save",
+          "cpuMs": 100.23600000000005,
+          "startedAt": 1046.6000000238419,
+          "elapsedMs": 125.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.90000000000009,
+          "clickToDownloadMs": 70.5,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s20-save-threshold255-0-threshold255-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s20-save-threshold255-0-threshold255-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet1024 palette Save",
+          "cpuMs": 87.18999999999998,
+          "startedAt": 1110.199999988079,
+          "elapsedMs": 171.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "clickToDownloadMs": 117.80000001192093,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s20-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s20-save-kenney-sheet-1024-0-kenney-sheet-1024-palette.png"
+        },
+        {
+          "name": "B4 ADVERSE sheet2048 palette Save",
+          "cpuMs": 152.41699999999997,
+          "startedAt": 1119.800000011921,
+          "elapsedMs": 325.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.800000000000182,
+          "clickToDownloadMs": 257.5,
+          "anchorName": "secondaudit-w2-B4-1792308986301-s20-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+          "output": "native/secondaudit-w2-B4-1792308986301-s20-save-kenney-sheet-2048-0-kenney-sheet-2048-palette.png"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, level: 66, temperature: 328, Capacity level: 2",
+      "rotation": "free"
+    },
+    {
+      "at": "end",
+      "battery": "status: 4, level: 66, temperature: 347, Capacity level: 2",
+      "rotation": "free"
+    }
+  ],
+  "fixtures": {
+    "dragWall": [
+      "dungeon-wizard",
+      "dungeon-archer",
+      "dungeon-knight",
+      "dungeon-potion",
+      "kenney-sheet-1024"
+    ],
+    "tinySave": "dungeon-knight",
+    "belowThreshold": "threshold255 synthetic (8bpp, 65280 row bytes)",
+    "adverseSaves": [
+      "kenney-sheet-1024",
+      "kenney-sheet-2048"
+    ]
+  },
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "finished": "2026-10-18T07:41:59.859Z"
+}

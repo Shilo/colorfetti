@@ -1,0 +1,503 @@
+diff --git a/docs/performance.md b/docs/performance.md
+index 0fb6236..290fa9b 100644
+--- a/docs/performance.md
++++ b/docs/performance.md
+@@ -58,8 +58,8 @@ request alive. Existing exact previews can still contribute post-Cleanup used fl
+ Sampled pixels never masquerade as exact full-source counts. Whole-clip unions can
+ finish early only after every prepared output color has appeared.
+ 
+-Nearest-only inspection reuses a weak source RGB/max-alpha summary capped at 4096
+-RGBs per frame (at most 20 KiB typed metadata). A serial summary queue prevents
++Nearest-only inspection reuses a weak source RGB/max-alpha/pixel-count summary capped
++at 4096 RGBs per frame (at most 36 KiB typed metadata). A serial summary queue prevents
+ simultaneous Original/output requests duplicating cold scans; cancellation removes
+ queued work. High entropy records a bypass marker. Matching, alpha and caps reuse
+ the source summary with the existing quantizer and shared export preparation.
+@@ -265,6 +265,11 @@ not a total app memory guarantee. Exports remain full-source; 1-bit caching is u
+ 
+ Generated 32 is lazy and shared at wall level: 128 KiB acknowledged chunks, exact RGB
+ summaries up to 4096 entries, 32768 bins thereafter, and six deterministic refinements.
++Limiter and Auto jobs send one weighted histogram chunk (at most 16 KiB RGBA plus 32 KiB
++weights) instead of pixels when every frame already has a completed summary without
++partial alpha and the clip's union fits 4096 colors with exact integer totals. They
++never wait for the summary queue; otherwise, and above 65536 summary entries per clip,
++they stream pixels as before. Selected subsets and Auto palettes are identical.
+ Its cache retains two small palettes/signatures rather than old sources/histograms.
+ Matching, caps, cleanup, playback and resize do not regenerate it. Worker construction
+ failure uses the cooperative core. Export subscribers survive preview cancellation.
+diff --git a/docs/superpowers/specs/2026-10-06-colorfetti-app-design.md b/docs/superpowers/specs/2026-10-06-colorfetti-app-design.md
+index b92a82a..401f05c 100644
+--- a/docs/superpowers/specs/2026-10-06-colorfetti-app-design.md
++++ b/docs/superpowers/specs/2026-10-06-colorfetti-app-design.md
+@@ -205,7 +205,7 @@ An active inspection retains its record identity and explicit Reuse subscription
+ until completion or cancellation. Source replacement/removal, 1-bit mode and
+ failures hide or discard the old label. Retain only one small RGB/count result per
+ item, never a chain or extra converted images. Nearest-only inspection uses a
+-bounded immutable RGB/max-alpha summary; spatial modes use actual export conversion.
++bounded immutable RGB/max-alpha/pixel-count summary; spatial modes use actual export conversion.
+ 
+ Automatic Palette wall inspection shares export preparation, with no Count button.
+ Source/settings/removal retire stale work/results; Auto
+@@ -2383,7 +2383,8 @@ recolor existing artwork; saving a copy freezes it.
+ Save, Copy, drag and ZIP capture the whole-wall signature and source/settings references
+ before awaiting generation. All files in a ZIP use that captured palette. Preview
+ cancellation cannot cancel an export subscriber. Workers use acknowledged 128 KiB
+-slices without detaching sources. At most two small completed palettes are cached;
++slices without detaching sources, or one exact weighted histogram per asset when its
++frames already have completed opaque summaries (see the limiter below). At most two small completed palettes are cached;
+ old source histograms are not retained. App's completed generated publication stores
+ the request key and palette, without retaining the captured source request. Tile clears
+ inactive limiter/cleanup request references on All, Off or family changes. Canceling
+@@ -2435,6 +2436,9 @@ Otherwise more colors use 4096 bounded bins and a second original-pixel pass cho
+ between the fitted subset and the true full-nearest frequency seed. This safeguards total
+ error against that baseline, not semantic detail or a global optimum. A lazy serial worker
+ receives new slices of at most 128 KiB with acknowledgment; originals are never detached.
++When every frame already has a completed source summary without partial alpha and the
++union fits 4096 colors, one weighted histogram chunk replaces the pixels with identical
++results; jobs never wait for summaries.
+ Shared subscribers cancel independently. The last cancellation terminates the worker and
+ releases the queue, including during worker download. Missing workers use a cooperative
+ lazy fallback. Failure shows retry/All guidance without silently exceeding the cap.
+diff --git a/src/lib/palette-generated-client.js b/src/lib/palette-generated-client.js
+index 0aada99..7a1ccb9 100644
+--- a/src/lib/palette-generated-client.js
++++ b/src/lib/palette-generated-client.js
+@@ -1,6 +1,7 @@
+ import { checkCanceled } from './quantize.js';
+ import { validateGeneratedSources } from './palette-generated-sources.js';
+ import { GENERATED_MAX_COLORS } from './palette-library.js';
++import { summaryHistogram } from './source-color-summary.js';
+ 
+ const CHUNK_BYTES = 128 * 1024, pending = new Map(), completed = new Map(), queue = [];
+ const EMPTY = Object.freeze({ colors: Object.freeze([]), binned: false, assets: 0 });
+@@ -29,11 +30,12 @@ function runWorker(job, target) {
+         if (data.type === 'result') { finish(null, freezeResult(data.result)); return; }
+         if (data.type !== 'next') throw new Error('Invalid generated palette worker response.');
+         if (asset >= job.snapshot.assets.length) { target.postMessage({ type: 'end' }); return; }
+-        const source = job.snapshot.assets[asset].frames[frame], end = Math.min(at + CHUNK_BYTES, source.data.length);
+-        const pixels = source.data.slice(at, end), lastFrame = end === source.data.length, lastAsset = lastFrame && frame === job.snapshot.assets[asset].frames.length - 1;
++        // A summary histogram (at most 16 KiB) is the asset's one whole chunk.
++        const histogram = job.histograms[asset], frames = job.snapshot.assets[asset].frames, source = histogram ?? frames[frame], end = Math.min(at + CHUNK_BYTES, source.data.length);
++        const pixels = source.data.slice(at, end), weights = histogram?.weights.slice(), lastFrame = end === source.data.length, lastAsset = lastFrame && (!!histogram || frame === frames.length - 1);
+         at = lastFrame ? 0 : end;
+         if (lastAsset) { asset++; frame = 0; } else if (lastFrame) frame++;
+-        target.postMessage({ type: 'chunk', pixels, weight: source.delay, lastAsset }, [pixels.buffer]);
++        target.postMessage({ type: 'chunk', pixels, weight: histogram ? 1 : source.delay, weights, lastAsset }, weights ? [pixels.buffer, weights.buffer] : [pixels.buffer]);
+       } catch (error) { fail(error); }
+     };
+     job.controller.signal.addEventListener('abort', cancel, { once: true });
+@@ -51,8 +53,10 @@ async function drain() {
+       const job = queue.shift();
+       try {
+         checkCanceled(job.controller.signal);
++        // Completed exact source summaries replace re-streaming pixels; never waits for them.
++        job.histograms = job.snapshot.assets.map(asset => summaryHistogram(asset.frames.map(frame => ({ original: frame.original, weight: frame.delay }))));
+         const target = makeWorker();
+-        const result = freezeResult(target ? await runWorker(job, target) : await (await import('./palette-generated.js')).generatePaletteAsync(job.snapshot, { signal: job.controller.signal }));
++        const result = freezeResult(target ? await runWorker(job, target) : await (await import('./palette-generated.js')).generatePaletteAsync(job.snapshot, { signal: job.controller.signal, histograms: job.histograms }));
+         checkCanceled(job.controller.signal);
+         // Completed cache contains IDs/colors, never old wall/source references.
+         completed.delete(job.snapshot.key); completed.set(job.snapshot.key, result);
+diff --git a/src/lib/palette-generated-client.test.js b/src/lib/palette-generated-client.test.js
+index 80ea695..42c903e 100644
+--- a/src/lib/palette-generated-client.test.js
++++ b/src/lib/palette-generated-client.test.js
+@@ -1,7 +1,7 @@
+ import { beforeEach, afterEach, describe, it, expect, vi } from 'vitest';
+ import { createGeneratedAccumulator } from './palette-generated.js';
+ 
+-let instances, failure, capture, getPalette;
++let instances, failure, capture, getPalette, sourceColorSummary;
+ class FakeWorker {
+   constructor() { this.mode = failure; this.starts = 0; this.chunks = []; instances.push(this); }
+   postMessage(message, transfers = []) {
+@@ -19,7 +19,7 @@ class FakeWorker {
+       }
+       if (data.type === 'chunk') {
+         if (!this.inAsset) { this.accumulator.beginAsset(); this.inAsset = true; }
+-        await this.accumulator.addChunk(data.pixels, data.weight);
++        await this.accumulator.addChunk(data.pixels, data.weight, data.weights);
+         if (data.lastAsset) { await this.accumulator.endAsset(); this.inAsset = false; }
+       }
+       if (data.type === 'end') {
+@@ -42,6 +42,7 @@ beforeEach(async () => {
+   vi.resetModules(); instances = []; failure = 'normal'; vi.stubGlobal('Worker', FakeWorker);
+   ({ captureGeneratedSources: capture } = await import('./palette-generated-sources.js'));
+   ({ getGeneratedPalette: getPalette } = await import('./palette-generated-client.js'));
++  ({ sourceColorSummary } = await import('./source-color-summary.js'));
+ });
+ afterEach(() => vi.unstubAllGlobals());
+ 
+@@ -77,6 +78,19 @@ describe('generated palette job ownership', () => {
+     expect(await getPalette(snapshot)).toBe(result);
+     expect(instances[0].starts).toBe(1);
+   });
++  it.each([true, false])('reuses completed opaque summaries per asset with identical palettes (Worker %s)', async hasWorker => {
++    if (!hasWorker) vi.stubGlobal('Worker', undefined);
++    const noisy = (n, seed) => { const o = image(n); for (let p = 0; p < n; p++) o.data.set([(p * seed) % 16 * 16, (p * 13 + seed) % 8 * 30, (p >> 4) % 5 * 60, 255], p * 4); return o; };
++    const a = noisy(70000, 5), b = noisy(3000, 11), c = noisy(3000, 3), soft = noisy(40000, 17); soft.data[7] = 9;
++    const snapshot = capture([{ original: a }, { frames: [{ original: b, delay: 40 }, { original: c, delay: 90 }] }, { original: soft }], 64);
++    const raw = await (await import('./palette-generated.js')).generatePaletteAsync(snapshot);
++    await Promise.all([a, b, c, soft].map(o => sourceColorSummary(o)));
++    const reused = await getPalette(snapshot);
++    expect(reused.colors).toEqual(raw.colors); expect(reused.colors.length).toBe(64);
++    // Two opaque assets send one tiny histogram chunk each; the soft asset streams.
++    if (hasWorker) expect(instances[0].chunks).toHaveLength(4);
++    if (hasWorker) expect(instances[0].chunks.filter(chunk => chunk.size === 128 * 1024)).toHaveLength(1);
++  });
+   it('empty/pre-aborted/invalid requests start no worker', async () => {
+     expect((await getPalette(capture([]))).colors).toEqual([]);
+     const controller = new AbortController(); controller.abort();
+diff --git a/src/lib/palette-generated-worker.js b/src/lib/palette-generated-worker.js
+index a4a437d..82aac73 100644
+--- a/src/lib/palette-generated-worker.js
++++ b/src/lib/palette-generated-worker.js
+@@ -11,7 +11,7 @@ self.onmessage = async ({ data }) => {
+     }
+     if (data.type !== 'chunk') throw new Error('Invalid generated palette worker request.');
+     if (!inAsset) { accumulator.beginAsset(); inAsset = true; }
+-    await accumulator.addChunk(data.pixels, data.weight);
++    await accumulator.addChunk(data.pixels, data.weight, data.weights);
+     if (data.lastAsset) { await accumulator.endAsset(); inAsset = false; }
+     self.postMessage({ type: 'next' });
+   } catch (error) {
+diff --git a/src/lib/palette-generated.js b/src/lib/palette-generated.js
+index 508d681..0791779 100644
+--- a/src/lib/palette-generated.js
++++ b/src/lib/palette-generated.js
+@@ -53,12 +53,13 @@ export function createGeneratedAccumulator(alphaCut = 128, { signal } = {}) {
+       if (assetOpen || finished) throw new Error('Generated palette assets must be added sequentially.');
+       histogram = new Map(); bins = null; assetOpen = true;
+     },
+-    async addChunk(data, weight = 1) {
++    // Optional per-pixel weights carry an exact summary histogram (integer masses).
++    async addChunk(data, chunkWeight = 1, weights) {
+       checkCanceled(signal);
+-      if (!assetOpen || finished || !(data instanceof Uint8Array || data instanceof Uint8ClampedArray) || data.length % 4 || !Number.isFinite(weight) || weight <= 0) throw new Error('Invalid generated palette source chunk.');
++      if (!assetOpen || finished || !(data instanceof Uint8Array || data instanceof Uint8ClampedArray) || data.length % 4 || !Number.isFinite(chunkWeight) || chunkWeight <= 0 || (weights && weights.length * 4 !== data.length)) throw new Error('Invalid generated palette source chunk.');
+       for (let at = 0; at < data.length; at += 4) {
+         if (data[at + 3] >= alphaCut) {
+-          const rgb = data[at] * 65536 + data[at + 1] * 256 + data[at + 2];
++          const rgb = data[at] * 65536 + data[at + 1] * 256 + data[at + 2], weight = weights ? weights[at >> 2] : chunkWeight;
+           if (histogram) {
+             const old = histogram.get(rgb);
+             if (old !== undefined) histogram.set(rgb, old + weight);
+@@ -162,12 +163,14 @@ export function createGeneratedAccumulator(alphaCut = 128, { signal } = {}) {
+   };
+ }
+ 
+-export async function generatePaletteAsync(snapshot, { signal } = {}) {
++export async function generatePaletteAsync(snapshot, { signal, histograms } = {}) {
+   validateGeneratedSources(snapshot); checkCanceled(signal);
+   const accumulator = createGeneratedAccumulator(snapshot.alphaCut, { signal });
+-  for (const asset of snapshot.assets) {
++  for (const [i, asset] of snapshot.assets.entries()) {
+     accumulator.beginAsset();
+-    for (const frame of asset.frames) for (let at = 0; at < frame.data.length; at += 128 * 1024) await accumulator.addChunk(frame.data.subarray(at, Math.min(at + 128 * 1024, frame.data.length)), frame.delay);
++    const histogram = histograms?.[i];
++    if (histogram) await accumulator.addChunk(histogram.data, 1, histogram.weights);
++    else for (const frame of asset.frames) for (let at = 0; at < frame.data.length; at += 128 * 1024) await accumulator.addChunk(frame.data.subarray(at, Math.min(at + 128 * 1024, frame.data.length)), frame.delay);
+     await accumulator.endAsset();
+   }
+   return accumulator.finish();
+diff --git a/src/lib/palette-limit-client.js b/src/lib/palette-limit-client.js
+index 79c6ac8..288756b 100644
+--- a/src/lib/palette-limit-client.js
++++ b/src/lib/palette-limit-client.js
+@@ -1,4 +1,5 @@
+ import { preparePalette, validateMatchingMetric, checkCanceled } from './quantize.js';
++import { summaryHistogram } from './source-color-summary.js';
+ 
+ const CHUNK_BYTES = 128 * 1024;
+ const items = new WeakMap(), queue = [];
+@@ -22,7 +23,7 @@ function same(a, b) {
+     });
+ }
+ async function* chunks(frames) {
+-  for (const frame of frames) for (let at = 0; at < frame.data.length; at += CHUNK_BYTES) yield { data: frame.data.subarray(at, Math.min(at + CHUNK_BYTES, frame.data.length)), weight: frame.weight };
++  for (const frame of frames) for (let at = 0; at < frame.data.length; at += CHUNK_BYTES) yield { data: frame.data.subarray(at, Math.min(at + CHUNK_BYTES, frame.data.length)), weight: frame.weight, weights: frame.weights };
+ }
+ function makeWorker() {
+   if (worker) return worker;
+@@ -31,7 +32,7 @@ function makeWorker() {
+   catch { return null; } // Cooperative fallback where workers are unavailable.
+ }
+ function runWorker(job, target) {
+-  const { signature: asked, controller } = job;
++  const { signature: asked, controller } = job, sources = job.histogram ? [job.histogram] : asked.frames;
+   return new Promise((resolve, reject) => {
+     let pass = 0, frame = 0, at = 0, settled = false;
+     const clean = () => { target.onmessage = target.onerror = target.onmessageerror = null; controller.signal.removeEventListener('abort', cancel); };
+@@ -53,12 +54,13 @@ function runWorker(job, target) {
+         if (data.type !== 'next') throw new Error('Invalid palette-limit worker response.');
+         checkCanceled(controller.signal);
+         if (pass !== data.pass) { pass = data.pass; frame = 0; at = 0; }
+-        while (frame < asked.frames.length && at >= asked.frames[frame].data.length) { frame++; at = 0; }
+-        if (frame >= asked.frames.length) { target.postMessage({ type: 'endPass' }); return; }
+-        const source = asked.frames[frame], end = Math.min(at + CHUNK_BYTES, source.data.length);
++        while (frame < sources.length && at >= sources[frame].data.length) { frame++; at = 0; }
++        if (frame >= sources.length) { target.postMessage({ type: 'endPass' }); return; }
++        const source = sources[frame], end = Math.min(at + CHUNK_BYTES, source.data.length);
+         // Transfer a NEW slice, never detach or clone an entire source frame.
+-        const pixels = source.data.slice(at, end); at = end;
+-        target.postMessage({ type: 'chunk', data: pixels, weight: source.weight }, [pixels.buffer]);
++        // A summary histogram (at most 16 KiB) is always one whole chunk.
++        const pixels = source.data.slice(at, end), weights = source.weights?.slice(); at = end;
++        target.postMessage({ type: 'chunk', data: pixels, weight: source.weight, weights }, weights ? [pixels.buffer, weights.buffer] : [pixels.buffer]);
+       } catch (error) {
+         fail(error);
+       }
+@@ -76,8 +78,10 @@ async function drain() {
+       const job = queue.shift();
+       try {
+         checkCanceled(job.controller.signal);
++        // Completed exact source summaries replace re-streaming pixels; never waits for them.
++        job.histogram = summaryHistogram(job.signature.frames);
+         const target = makeWorker();
+-        const result = target ? await runWorker(job, target) : await (await import('./palette-limit.js')).selectPaletteSubset(job.signature.colors, job.signature.maxColors, () => chunks(job.signature.frames), { alphaCut: job.signature.alphaCut, metric: job.signature.metric, signal: job.controller.signal });
++        const result = target ? await runWorker(job, target) : await (await import('./palette-limit.js')).selectPaletteSubset(job.signature.colors, job.signature.maxColors, () => chunks(job.histogram ? [job.histogram] : job.signature.frames), { alphaCut: job.signature.alphaCut, metric: job.signature.metric, signal: job.controller.signal });
+         checkCanceled(job.controller.signal);
+         const palette = preparePalette(result.indices.map(i => job.signature.colors[i]));
+         job.state.cached = { signature: job.signature, palette }; job.resolve(palette);
+diff --git a/src/lib/palette-limit-client.test.js b/src/lib/palette-limit-client.test.js
+index 4133c99..470c844 100644
+--- a/src/lib/palette-limit-client.test.js
++++ b/src/lib/palette-limit-client.test.js
+@@ -2,7 +2,7 @@ import { afterEach, beforeEach, describe, it, expect, vi } from 'vitest';
+ import { preparePalette } from './quantize.js';
+ import { selectPaletteSubset } from './palette-limit.js';
+ 
+-let instances, failure, getLimitedPalette;
++let instances, failure, getLimitedPalette, sourceColorSummary;
+ class FakeWorker {
+   constructor() { this.mode = failure; this.starts = 0; this.cancels = 0; this.chunks = []; this.controller = null; instances.push(this); }
+   postMessage(message, transfers = []) {
+@@ -10,7 +10,7 @@ class FakeWorker {
+     if (message.type === 'chunk') this.chunks.push({ size: message.data.byteLength, buffer: message.data.buffer });
+     const data = structuredClone(message, { transfer: transfers });
+     if (data.type === 'cancel') { this.cancels++; this.controller?.abort(); this.waiter?.reject(new DOMException('Canceled', 'AbortError')); return; }
+-    if (data.type === 'chunk' || data.type === 'endPass') { this.waiter.resolve(data.type === 'chunk' ? { data: data.data, weight: data.weight } : null); return; }
++    if (data.type === 'chunk' || data.type === 'endPass') { this.waiter.resolve(data.type === 'chunk' ? { data: data.data, weight: data.weight, weights: data.weights } : null); return; }
+     this.starts++; this.controller = new AbortController();
+     if (this.mode === 'hang') return;
+     if (this.mode === 'invalid') { queueMicrotask(() => this.onmessage?.({ data: { type: 'invalid' } })); return; }
+@@ -35,6 +35,7 @@ const palette = () => preparePalette(['#ff0000', '#0000ff', '#ffffff']);
+ beforeEach(async () => {
+   vi.resetModules(); instances = []; failure = 'normal'; vi.stubGlobal('Worker', FakeWorker);
+   ({ getLimitedPalette } = await import('./palette-limit-client.js'));
++  ({ sourceColorSummary } = await import('./source-color-summary.js'));
+ });
+ afterEach(() => { vi.unstubAllGlobals(); });
+ 
+@@ -167,6 +168,20 @@ describe('limited palette job ownership and cache', () => {
+     failure = 'normal'; expect((await getLimitedPalette({ original: image() }, palette(), 128, 'rgb', 1)).colors).toEqual(['#ff0000']);
+     expect(instances).toHaveLength(2);
+   });
++  it.each([true, false])('reuses completed opaque summaries as one histogram chunk with identical subsets (Worker %s)', async hasWorker => {
++    if (!hasWorker) vi.stubGlobal('Worker', undefined);
++    const colors = preparePalette(['#ff0000', '#00ff00', '#0000ff', '#ffffff']);
++    const fill = (n, at) => { const o = image([0, 0, 0, 255], n); for (let p = 0; p < n; p++) o.data.set([[250, 10, 0], [0, 240, 20], [5, 0, 255], [200, 200, 200]][(p * 7 + at) % 4 > 1 ? (p % 3) : p % 4], p * 4); return o; };
++    const a = fill(70000, 0), b = fill(9000, 1), clip = () => ({ frames: [{ original: a, delay: 30 }, { original: b, delay: 70 }] });
++    const soft = image([250, 10, 0, 255], 40000); soft.data[3] = 200;
++    const raw = [await getLimitedPalette({ original: a }, colors, 128, 'oklab', 2), await getLimitedPalette(clip(), colors, 128, 'rgb', 3), await getLimitedPalette({ original: soft }, colors, 1, 'rgb', 2)];
++    const streamed = instances[0]?.chunks.length;
++    await Promise.all([a, b, soft].map(o => sourceColorSummary(o)));
++    const reused = [await getLimitedPalette({ original: a }, colors, 128, 'oklab', 2), await getLimitedPalette(clip(), colors, 128, 'rgb', 3), await getLimitedPalette({ original: soft }, colors, 1, 'rgb', 2)];
++    expect(reused.map(p => p.colors)).toEqual(raw.map(p => p.colors));
++    // Two opaque jobs send one tiny chunk each; partial alpha streams pixels again.
++    if (hasWorker) expect(instances[0].chunks.slice(streamed).map(chunk => chunk.size)).toEqual([16, 16, 128 * 1024, 160000 - 128 * 1024]);
++  });
+   it('uses the same cooperative selector when Worker is unavailable', async () => {
+     vi.stubGlobal('Worker', undefined);
+     expect((await getLimitedPalette({ original: image() }, palette(), 128, 'rgb', 1)).colors).toEqual(['#ff0000']);
+diff --git a/src/lib/palette-limit-worker.js b/src/lib/palette-limit-worker.js
+index 606005f..e4774c5 100644
+--- a/src/lib/palette-limit-worker.js
++++ b/src/lib/palette-limit-worker.js
+@@ -16,7 +16,7 @@ async function* readChunks() {
+ }
+ self.onmessage = ({ data }) => {
+   if (data.type === 'chunk' || data.type === 'endPass') {
+-    waiting?.resolve(data.type === 'chunk' ? { data: data.data, weight: data.weight } : null);
++    waiting?.resolve(data.type === 'chunk' ? { data: data.data, weight: data.weight, weights: data.weights } : null);
+     return;
+   }
+   if (data.type === 'cancel') {
+diff --git a/src/lib/palette-limit.js b/src/lib/palette-limit.js
+index 682f57a..2be6d73 100644
+--- a/src/lib/palette-limit.js
++++ b/src/lib/palette-limit.js
+@@ -16,8 +16,9 @@ const distance = (v, p, at) => (v[0] - p[at]) ** 2 + (v[1] - p[at + 1]) ** 2 + (
+ const tolerance = cost => 1e-12 * Math.max(1, cost);
+ 
+ // readChunks() supplies a fresh repeatable async iterator for each source pass.
+-// Each chunk contains original RGBA and its frame-duration weight. No source
+-// pixels are retained here; the histogram/distance matrix have fixed bounds.
++// Each chunk contains original RGBA and its frame-duration weight, or optional
++// per-pixel weights for an exact summary histogram. No source pixels are
++// retained here; the histogram/distance matrix have fixed bounds.
+ export async function selectPaletteSubset(colors, maxColors, readChunks, { alphaCut = 128, metric = 'oklab', signal } = {}) {
+   const palette = preparePalette(colors), P = palette.size;
+   validateMatchingMetric(metric);
+@@ -48,10 +49,11 @@ export async function selectPaletteSubset(colors, maxColors, readChunks, { alpha
+     const bin = (rgb >>> 20) << 8 | (rgb >>> 12 & 15) << 4 | (rgb >>> 4 & 15), at = bin * 4;
+     bins[at] += weight; bins[at + 1] += v[0] * weight; bins[at + 2] += v[1] * weight; bins[at + 3] += v[2] * weight;
+   };
+-  for await (const { data, weight } of readChunks()) {
+-    if (!data || data.length % 4 || !Number.isFinite(weight) || weight <= 0) throw new Error('Invalid palette-limit source chunk.');
++  for await (const { data, weight: chunkWeight, weights } of readChunks()) {
++    if (!data || data.length % 4 || !Number.isFinite(chunkWeight) || chunkWeight <= 0 || (weights && weights.length * 4 !== data.length)) throw new Error('Invalid palette-limit source chunk.');
+     for (let at = 0; at < data.length; at += 4) {
+       if (data[at + 3] >= alphaCut) {
++        const weight = weights ? weights[at >> 2] : chunkWeight;
+         const rgb = data[at] << 16 | data[at + 1] << 8 | data[at + 2], old = histogram?.get(rgb);
+         let winner, cost;
+         if (old) { old.weight += weight; winner = old.winner; cost = old.cost; }
+@@ -145,10 +147,11 @@ export async function selectPaletteSubset(colors, maxColors, readChunks, { alpha
+   let cost = fit.cost, popularCost = popularFit.cost, verifiedFallback = false;
+   if (binned) {
+     cost = 0; popularCost = 0;
+-    for await (const { data, weight } of readChunks()) {
+-      if (!data || data.length % 4 || !Number.isFinite(weight) || weight <= 0) throw new Error('Invalid palette-limit source chunk.');
++    for await (const { data, weight: chunkWeight, weights } of readChunks()) {
++      if (!data || data.length % 4 || !Number.isFinite(chunkWeight) || chunkWeight <= 0 || (weights && weights.length * 4 !== data.length)) throw new Error('Invalid palette-limit source chunk.');
+       for (let at = 0; at < data.length; at += 4) {
+         if (data[at + 3] >= alphaCut) {
++          const weight = weights ? weights[at >> 2] : chunkWeight;
+           coordinates(data[at], data[at + 1], data[at + 2], metric, scratch);
+           let fitted = Infinity, baseline = Infinity;
+           for (const p of indices) fitted = Math.min(fitted, distance(scratch, vectors, p * 3));
+diff --git a/src/lib/source-color-summary.js b/src/lib/source-color-summary.js
+index 8791c92..aaf84e5 100644
+--- a/src/lib/source-color-summary.js
++++ b/src/lib/source-color-summary.js
+@@ -25,9 +25,10 @@ async function runQueue() {
+   } finally { running = false; }
+ }
+ 
+-// Original pixel buffers are immutable. Retain at most five bytes per distinct
+-// visible RGB, never a copy of the source. High-entropy sources bypass this cache
+-// after 4097 colors; their output still takes the exact ordinary conversion path.
++// Original pixel buffers are immutable. Retain at most nine bytes per distinct
++// visible RGB (max alpha and pixel count), never a copy of the source. High-entropy
++// sources bypass this cache after 4097 colors; their output still takes the exact
++// ordinary conversion path.
+ export async function sourceColorSummary(original, { signal } = {}) {
+   checkCanceled(signal);
+   if (summaries.has(original)) return summaries.get(original);
+@@ -50,35 +51,66 @@ async function scanSummary(original, { signal } = {}) {
+   const width = original?.width ?? original?.w, height = original?.height ?? original?.h;
+   const data = original?.data;
+   if (!Number.isSafeInteger(width) || width < 1 || !Number.isSafeInteger(height) || height < 1 || !data || data.length !== width * height * 4) throw new Error('Invalid image dimensions or pixel data.');
+-  const colors = new Map();
++  const colors = new Map(), alpha = new Uint8Array(MAX_COLORS), counts = new Uint32Array(MAX_COLORS);
++  let partial = false, last = -1, i = 0;
+   for (let start = 0; start < data.length;) {
+     const deadline = performance.now() + 8;
+     do {
+       checkCanceled(signal);
+       const end = Math.min(start + 2048 * 4, data.length);
+       for (let p = start; p < end; p += 4) {
+-        const alpha = data[p + 3];
+-        if (!alpha) continue;
++        const a = data[p + 3];
++        if (!a) continue;
++        if (a !== 255) partial = true;
+         const rgb = data[p] << 16 | data[p + 1] << 8 | data[p + 2];
+-        const previous = colors.get(rgb);
+-        if (previous === undefined) {
+-          if (colors.size === MAX_COLORS) { checkCanceled(signal); summaries.set(original, null); return null; }
+-          colors.set(rgb, alpha);
+-        } else if (alpha > previous) colors.set(rgb, alpha);
++        if (rgb !== last) {
++          i = colors.get(rgb);
++          if (i === undefined) {
++            if (colors.size === MAX_COLORS) { checkCanceled(signal); summaries.set(original, null); return null; }
++            i = colors.size; colors.set(rgb, i);
++          }
++          last = rgb;
++        }
++        counts[i]++;
++        if (a > alpha[i]) alpha[i] = a;
+       }
+       start = end;
+     } while (start < data.length && performance.now() < deadline);
+     if (start < data.length) await yieldTask();
+   }
+   checkCanceled(signal);
+-  const rgb = new Uint32Array(colors.size), alpha = new Uint8Array(colors.size);
+-  let i = 0;
+-  for (const [key, value] of colors) { rgb[i] = key; alpha[i++] = value; }
+-  const summary = Object.freeze({ rgb, alpha });
++  const summary = Object.freeze({ rgb: Uint32Array.from(colors.keys()), alpha: alpha.slice(0, colors.size), counts: counts.slice(0, colors.size), partial });
+   summaries.set(original, summary);
+   return summary;
+ }
+ 
++// Exact weighted RGB histogram of one clip ({ original, weight } frames) for the
++// limiter and Auto, built only from already completed summaries; never waits for
++// the summary queue. Without partial alpha every visible pixel passes any Opacity
++// cut, and integer counts make the totals order-independent. Returns null, and the
++// caller streams pixels, unless the union fits 4096 colors with exact totals.
++// ponytail: synchronous and capped at 65536 summary entries (about a millisecond);
++// longer high-color clips stream. Merge cooperatively if they matter.
++export function summaryHistogram(frames) {
++  const index = new Map(), weights = new Float64Array(MAX_COLORS);
++  let total = 0, entries = 0;
++  for (const { original, weight } of frames) {
++    const summary = summaries.get(original);
++    if (!summary || summary.partial || !Number.isSafeInteger(weight) || weight < 1 || (entries += summary.rgb.length) > 65536) return null;
++    for (let i = 0; i < summary.rgb.length; i++) {
++      const rgb = summary.rgb[i], value = summary.counts[i] * weight;
++      let at = index.get(rgb);
++      if (at === undefined) { if (index.size === MAX_COLORS) return null; at = index.size; index.set(rgb, at); }
++      weights[at] += value; total += value;
++    }
++  }
++  if (!Number.isSafeInteger(total)) return null;
++  // Same element kind as decoded sources keeps the workers' pixel loops monomorphic.
++  const data = new Uint8ClampedArray(index.size * 4);
++  for (const [rgb, at] of index) { data[at * 4] = rgb >>> 16; data[at * 4 + 1] = rgb >>> 8 & 255; data[at * 4 + 2] = rgb & 255; data[at * 4 + 3] = 255; }
++  return { data, weights: weights.slice(0, index.size), weight: 1 };
++}
++
+ // One representative with the highest source alpha is sufficient for exact
+ // nearest membership: every occurrence of one RGB chooses the same palette entry.
+ // Do not use this for position-dependent dithering or structural Cleanup.
+diff --git a/src/lib/source-color-summary.test.js b/src/lib/source-color-summary.test.js
+index ddbd212..0ac84d5 100644
+--- a/src/lib/source-color-summary.test.js
++++ b/src/lib/source-color-summary.test.js
+@@ -1,5 +1,5 @@
+ import { describe, expect, it } from 'vitest';
+-import { sourceColorSummary, summaryImage } from './source-color-summary.js';
++import { sourceColorSummary, summaryImage, summaryHistogram } from './source-color-summary.js';
+ import { quantize } from './quantize.js';
+ 
+ const source = values => ({ width: values.length, height: 1, data: Uint8ClampedArray.from(values.flat()) });
+@@ -13,6 +13,25 @@ describe('bounded immutable-source RGB summaries', () => {
+     expect([...summaryImage(summary,128).data]).toEqual([1,2,3,128,4,5,6,255]);
+     expect([...summaryImage(summary,129).data]).toEqual([4,5,6,255]);
+     expect(summaryImage(summary,256)).toBe(null);
++    expect([...summary.counts]).toEqual([3,1]); expect(summary.partial).toBe(true);
++  });
++  it('builds exact weighted clip histograms only from completed opaque summaries within 4096 colors', async () => {
++    const a = source([[1,2,3,255],[1,2,3,255],[4,5,6,255],[0,0,0,0]]), b = source([[4,5,6,255],[7,8,9,255]]);
++    expect(summaryHistogram([{original:a,weight:1}])).toBe(null); // never scans or waits
++    await sourceColorSummary(a); await sourceColorSummary(b);
++    expect((await sourceColorSummary(a)).partial).toBe(false);
++    const h = summaryHistogram([{original:a,weight:30},{original:b,weight:70}]);
++    expect([...h.data]).toEqual([1,2,3,255,4,5,6,255,7,8,9,255]); expect([...h.weights]).toEqual([60,100,70]); expect(h.weight).toBe(1);
++    expect(summaryHistogram([{original:a,weight:1.5}])).toBe(null);
++    expect(summaryHistogram([{original:a,weight:2**52}])).toBe(null);
++    const soft = source([[1,2,3,254]]); await sourceColorSummary(soft);
++    expect(summaryHistogram([{original:a,weight:1},{original:soft,weight:1}])).toBe(null);
++    const empty = source([[9,9,9,0]]); await sourceColorSummary(empty);
++    expect(summaryHistogram([{original:empty,weight:1}]).data.length).toBe(0);
++    const half = i => source(Array.from({length:2048},(_,n)=>[0,(n+i)>>8,(n+i)&255,255]));
++    const [x,y,z] = [half(0),half(2048),source([[255,255,255,255]])]; await Promise.all([x,y,z].map(o => sourceColorSummary(o)));
++    expect(summaryHistogram([{original:x,weight:1},{original:y,weight:1}]).weights.length).toBe(4096);
++    expect(summaryHistogram([{original:x,weight:1},{original:y,weight:1},{original:z,weight:1}])).toBe(null);
+   });
+   it('allows 4096 colors and bypasses high entropy without returning approximate counts', async () => {
+     const values = Array.from({length:4097},(_,i)=>[i>>16,i>>8&255,i&255,255]);

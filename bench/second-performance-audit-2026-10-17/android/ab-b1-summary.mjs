@@ -1,0 +1,20 @@
+// C-B1 phone summary against README "C-B1" plus coordinator floors (unchanged after results).
+import {readFile,readdir,writeFile} from 'node:fs/promises';
+import path from 'node:path';
+import {sha} from '../../claude-audit-2026-10-15/device/audit-lib.mjs';
+const dir=path.join(import.meta.dirname,'ab-b1'),f=(await readdir(dir)).filter(x=>/^pairs-\d+\.json$/.test(x)).sort().at(-1),r=JSON.parse(await readFile(path.join(dir,f),'utf8'));
+const med=a=>{const s=a.filter(x=>x!=null).sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2},pc=(b,a)=>(b-a)/a*100,fx=(x,d=1)=>x==null?'-':x.toFixed(d);
+const row=(t,n)=>t.rows.find(x=>x.name===n),names=[...new Set(r.trials.flatMap(t=>t.rows.map(x=>x.name)))],time=x=>x.stepMs??x.exactCaptionMs;
+const vals=(v,n,k)=>r.trials.filter(t=>t.variant===v).map(t=>{const x=row(t,n);return k==='time'?time(x):x[k]});
+const pairs=[...new Set(r.trials.map(t=>t.pair))],paired=(n,k)=>pairs.map(i=>{const a=row(r.trials.find(t=>t.pair===i&&t.variant==='A'),n),b=row(r.trials.find(t=>t.pair===i&&t.variant==='B1'),n);const A=k==='time'?time(a):a[k],B=k==='time'?time(b):b[k];return A?pc(B,A):null}).filter(x=>x!=null);
+let md=`# C-B1 native A/B (Pixel 8 Pro, Brave)\n\nA = w2-base 5401, B1 = w2-b1 5404. Gate: README "C-B1" + coordinator floors, unchanged. Order ${r.order.join(' ')}; fresh owned tab per trial. Settings: ${r.settings}. Max colors set through the real number field (input then change events dispatched on it, invoking the app's handlers); step time = commit to every caption non-busy with count <= cap and every tile painted after the commit. Import time = paste dispatch to every exact caption. One smoke trial on A excluded (ab-b1/smoke/).\nConditions: ${r.conditions.map(c=>c.at+': '+(c.battery||'temp '+c.tempC)).join('; ')}. Per-trial C: ${r.trials.map(t=>t.variant+'@'+t.tempC).join(' ')}. Errors: ${r.errors.length}.\n\n| Workload | Metric | A median | B1 median | Δ | paired Δ per pair (median) |\n|---|---|---:|---:|---:|---|\n`;
+for(const n of names)for(const[k,l]of[['time','elapsed to exact'],['cpuMs','renderer CPU'],['maxLongTaskMs','max Long Task']]){const a=med(vals('A',n,k)),b=med(vals('B1',n,k)),p=paired(n,k);md+=`| ${n} | ${l} | ${fx(a)} | ${fx(b)} | ${a?fx(pc(b,a))+'%':'-'} | ${p.length?p.map(x=>x.toFixed(0)).join(', ')+' ('+med(p).toFixed(1)+'%)':'-'} |\n`}
+const capsSame=names.every(n=>new Set(r.trials.map(t=>JSON.stringify(row(t,n).captions))).size===1);
+const outs=r.trials.filter(t=>t.output),hashes=new Set();for(const t of outs)hashes.add(sha(await readFile(path.join(dir,t.output))));
+const tgt='TARGET sheet2048 Max colors 2-4-8 total',d=pc(med(vals('B1',tgt,'time')),med(vals('A',tgt,'time')));
+const floor=(n,k)=>{const a=med(vals('A',n,k)),b=med(vals('B1',n,k));return!(pc(b,a)>5&&b-a>3)};
+const adv=['ADVERSE tiny wall Max colors 2-4-8 total','ADVERSE Auto 8 sprites+effect import','ADVERSE sheet2048 import'].map(n=>({n,ok:floor(n,'time')&&floor(n,'cpuMs')}));
+md+=`\nFinal captions identical across all trials for every step: ${capsSame?'yes':'NO'}. Native Save sheet2048 @ Max colors 8 (pairs 0-1, ${outs.length} files): ${hashes.size===1?'identical bytes':'BYTES DIFFER'}.\n\n## Gate verdict (phone)\n\n- Target Max colors 2→4→8 on sheet2048 elapsed to final paint/caption ${d.toFixed(1)}% (need <= -15%): ${d<=-15?'PASS':'FAIL'}\n`+adv.map(x=>`- ${x.n} (elapsed and CPU floor 5%/3 ms): ${x.ok?'PASS':'FAIL'}`).join('\n')+`\n- Exact (captions, bytes): ${capsSame&&hashes.size===1?'PASS':'FAIL'}\n\nC-B1 on the phone: **${d<=-15&&adv.every(x=>x.ok)&&capsSame&&hashes.size===1?'ACCEPT':'REJECT'}**. Retained-memory bound is a source/desktop check, not measured here.\n\n## All trials (elapsed / CPU ms)\n\n| Workload | `+r.trials.map(t=>`${t.slot}:${t.variant}`).join(' | ')+' |\n|---|'+r.trials.map(()=>'---:').join('|')+'|\n';
+for(const n of names)md+=`| ${n} | `+r.trials.map(t=>{const x=row(t,n);return`${fx(time(x),0)}/${fx(x.cpuMs,0)}`}).join(' | ')+' |\n';
+md+=`\nReceipt: ${f}; native files in ab-b1/native/.\n`;
+await writeFile(path.join(dir,'summary.md'),md);console.log(md);

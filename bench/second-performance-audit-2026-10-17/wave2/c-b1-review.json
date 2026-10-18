@@ -1,0 +1,26 @@
+{
+  "change": "C-B1 summary histograms for limiter and Auto",
+  "branch": "claude/c-b1-histogram",
+  "commit": "c1724ba",
+  "base": "0c61dd0",
+  "reviewer": "fresh adversarial reviewer",
+  "verdict": "PASS",
+  "findings": [
+    { "severity": "none", "area": "order/ties", "detail": "Order cannot matter. The limiter sorts histogram entries by RGB key (palette-limit.js:85), and its frequency/popular tie-break is by palette index. Auto sorts asset keys (palette-generated.js:79) and global keys before seeding and largest-remainder rounding. Summary insertion order never reaches a decision." },
+    { "severity": "none", "area": "binning boundary", "detail": "summaryHistogram returns null when the union exceeds 4096 colors. Both accumulators bin only on the 4097th distinct eligible RGB, so the histogram path never reaches the binned or second-pass code. The eligible distinct set is identical because partial=false means every visible pixel has alpha 255, which passes any cut from 1 to 255, and alpha 0 is excluded on both paths." },
+    { "severity": "none", "area": "weights", "detail": "Frame weights must be safe integers of at least 1, otherwise the job streams. That covers 1.5, 0.25, 1e300 and 2^40 with large counts. GIF delays are integers (gif.js:29 uses info.delay*10, otherwise 100). The total safe-integer guard bounds every partial sum, so the integer sums are exact and do not depend on order." },
+    { "severity": "none", "area": "staleness/lifecycle", "detail": "Summaries are written to the WeakMap only after a complete scan, or set to null for high entropy. In-progress scans read as undefined, so the job streams. Both paths read the same immutable original.data. The histogram is recomputed for each job, including Retry. Weights are freshly sliced before transfer, so the job copy is never detached. Cancellation and failure handling is unchanged." },
+    { "severity": "none", "area": "scanSummary loop", "detail": "The last-RGB skip keeps i bound to last, and transparent pixels do not disturb it. The 4097th-color bail-out is unchanged. rgb and alpha keep first-occurrence order and max-alpha semantics for summaryImage." },
+    { "severity": "info", "area": "fullCost", "detail": "fullCost, and the fast-path cost/popularCost derived from it, differ by float summation order (max relative 9.9e-15). Nothing outside palette-limit.js reads them; the client uses result.indices only." },
+    { "severity": "info", "area": "tests", "detail": "Branch lib tests run on the extracted copy: 1010 passed. The 2 failures (plus 2 failed files) are extraction artifacts from the missing index.html and docs, and the base copy shows the same ones." }
+  ],
+  "differential": {
+    "script": ".tmp/review-b1/diff.mjs",
+    "limiterCore": 741, "limiterCoreHistogram": 338, "histogramNear4096Colors": 10, "streamedOver4096": 30,
+    "limiterClientCooperative": 569, "limiterClientWorkerShim": 159,
+    "autoCore": 260, "autoCoreHistogramAssets": 338, "autoClientCooperative": 260, "autoClientWorkerShim": 80,
+    "mismatches": 0,
+    "fullCostFloatDiffs": 99, "maxFullCostRelativeDiff": 9.86e-15,
+    "inputs": "near-4096 color unions split across frames in shuffled orders, 4097-color unions, frequency ties among near-identical colors, shared frame objects, duplicated wall assets, stills mixed with GIFs, partial-alpha pixels, holes, delays 0/-5/NaN/undefined/1.5/0.25/655350/1e300/2^40, alphaCut 1/128/200/255, Oklab/RGB, presets plus random palettes"
+  }
+}

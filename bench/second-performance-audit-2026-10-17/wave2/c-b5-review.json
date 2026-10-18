@@ -1,0 +1,34 @@
+{
+  "change": "claude/c-b5-banded-analyze 1a4fbc0 (base 0c61dd0): analyzeAsync row-band analysis for live reanalysis",
+  "reviewer": "fresh adversarial reviewer",
+  "date": "2026-10-18",
+  "verdict": "PASS",
+  "differential": {
+    "script": ".tmp/review-b5/diff.mjs",
+    "oracle": "frozen 0c61dd0 analyze/unifyAsync (git archive)",
+    "variants": ["branch analyzeAsync real clock", "branch analyzeAsync fake clock (+9 ms per now(), yield after every band)", "step-patched copy forcing 1/2/3/random-row bands"],
+    "analysesCompared": 32694,
+    "mismatches": 0,
+    "fixtureAnalyses": 1414,
+    "inputs": "3000 adversarial images (w,h incl. 0,1, 8191-9000 wide, constant/random/quantized/checker colors, alphas around every cut, sources luma/value/red/green/blue/bogus/undefined/null, cuts 0,1,2,127-129,200,254,255,256,undefined) + 69 edge cases x15 settings + 96 real fixtures",
+    "fieldsChecked": "every key, key order, every typed-array element, data reference",
+    "unifyAsyncGroups": 306, "unifyMismatches": 0,
+    "concurrentInterleavedAnalyses": 800, "concurrentMismatches": 0,
+    "abortTrials": 200, "abortErrors": 197, "finishedBeforeAbortHarnessRace": 3, "partialResultsPublished": 0,
+    "lumaExpressionExhaustive2pow24": "0 differences"
+  },
+  "tests": "branch image-reanalysis.test.js + recolor.test.js: 127/127 pass on extracted copy; full branch suite 1009 pass, 2 files fail only because extract lacks index.html",
+  "timing": {
+    "syncAnalyzeAndUnifySourceText": "identical to base; addSeams gained default row-range params only",
+    "benchAnalyzeOldVsNewMs": "2048: 88.6-90.7 vs 89.9-95.8; 4000x3000: 253-259 vs 256-273 (run-to-run noise, no reproducible regression)",
+    "asyncVsSync4000x3000Ms": "luma 267-290 vs 258-262; red 233-238 vs 243-248",
+    "maxWorkStretchBetweenPostsMs": {"luma": 8.78, "red": 8.23}
+  },
+  "findings": [
+    {"severity": "none", "item": "Luma via generic loop uses SOURCES.luma (same constants, same operand order, Math.round); exhaustively identical."},
+    {"severity": "none", "item": "Band edges: down/right read data (not lum) with global h; seam pass runs only after all bands so lum[p+w] is complete; edges[0]=0 and otsu/toneCenter/autoSeam after accumulation; part/hasAlpha/lo/hi merge by or/min/max."},
+    {"severity": "none", "item": "w=0 gives step Infinity, one no-op band; h=0 no band; w>8192 one row per step."},
+    {"severity": "none", "item": "No module state; result object is local until returned; aborts throw AbortError; all prepare callers (App wall/export/drag, onebit-usage) already await."},
+    {"severity": "info", "item": "analyzeAsync does not check the signal before its first band or after its last; prepare checks around it, so harmless. A single row wider than 8192 px is one indivisible step."}
+  ]
+}
