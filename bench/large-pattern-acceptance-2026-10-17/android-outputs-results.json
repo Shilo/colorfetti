@@ -1,0 +1,62 @@
+{
+  "mode": "android",
+  "errors": [],
+  "trials": [],
+  "checks": [
+    {
+      "name": "ambiguous phase is not guessed; exact existing rendering may establish one",
+      "paintMs": 139.69999998807907,
+      "taskMs": 74.19999999999999,
+      "scriptMs": 29.311,
+      "count": "1 color",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "name": "native Android PNG equals frozen baseline pixels",
+      "output": "pattern-qa-1792298259248-bayer-ambiguous-alpha-grid-1bit.png",
+      "width": 769,
+      "height": 513,
+      "count": 1
+    },
+    {
+      "name": "native Android PNG equals frozen baseline pixels",
+      "output": "pattern-qa-1792298259248-bayer-kenney-sheet-2048-1bit.png",
+      "width": 2048,
+      "height": 2048,
+      "count": 2
+    }
+  ],
+  "summary": [
+    {
+      "style": "checker",
+      "baseline": {},
+      "candidate": {}
+    },
+    {
+      "style": "bayer",
+      "baseline": {},
+      "candidate": {}
+    },
+    {
+      "style": "hatch",
+      "baseline": {},
+      "candidate": {}
+    },
+    {
+      "style": "noise",
+      "baseline": {},
+      "candidate": {}
+    },
+    {
+      "style": "atkinson",
+      "baseline": {},
+      "candidate": {}
+    }
+  ]
+}

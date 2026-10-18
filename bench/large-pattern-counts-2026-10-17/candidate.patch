@@ -1,0 +1,212 @@
+diff --git a/src/lib/onebit-usage.js b/src/lib/onebit-usage.js
+index 7dfab0f..172b9ff 100644
+--- a/src/lib/onebit-usage.js
++++ b/src/lib/onebit-usage.js
+@@ -1,4 +1,4 @@
+-import { mask } from './recolor.js';
++import { mask, patternRoleBounds } from './recolor.js';
+ import { analysisMatches, reanalyzeItem } from './image-reanalysis.js';
+ import { checkCanceled, yieldTask } from './quantize.js';
+ 
+@@ -123,7 +123,14 @@ async function inspect(item, asked, signal) {
+       }
+       if (stored?.key !== key || !stored.exact) {
+         if (frame.img.w * frame.img.h > ONEBIT_INSPECTION_PIXELS) {
+-          unknown = true;
++          const proof = patternRoleBounds(frame.img, style, set);
++          if (!proof) { unknown = true; continue; }
++          frameUsage.set(frame.img, { key, roles: proof.lower, exact: proof.lower === proof.upper });
++          for (const color of oneBitColors(proof.lower, first, second)) used.add(color);
++          if (used.size === possible.size) break;
++          // Absence matters only for visible RGB inks, not disabled roles or
++          // duplicate inks. Unproven roles may still hide a distinct color.
++          if (oneBitColors(proof.upper, first, second).some(color => !used.has(color))) unknown = true;
+           continue;
+         }
+         const value = mask(frame.img, style, set);
+diff --git a/src/lib/onebit-usage.test.js b/src/lib/onebit-usage.test.js
+index b9ee3f9..4716f0f 100644
+--- a/src/lib/onebit-usage.test.js
++++ b/src/lib/onebit-usage.test.js
+@@ -120,13 +120,13 @@ describe('actual 1-bit used-color metadata', () => {
+     expect((await collectOneBitUsage(item, asked)).count).toBe(2);
+     expect((await collectOneBitUsage(item, { ...asked, first: null })).count).toBe(1);
+   });
+-  it('pattern and diffusion samples cannot certify large output colors', async () => {
++  it('rejects sampled pattern evidence but accepts independent histogram proof', async () => {
+     const item = source([0, 255]), size = Math.ceil(Math.sqrt(ONEBIT_INSPECTION_PIXELS + 1));
+     item.img.w = item.img.h = size;
+     Object.defineProperty(item.img, 'lum', { get() { throw new Error('Large mask computed'); } });
+     for (const style of ['hatch', 'checker', 'bayer', 'noise', 'atkinson']) {
+       expect(rememberOneBitSample(item.img, style, {}, Uint8Array.of(1, 2), 2, 1)).toBeNull();
+-      expect(await collectOneBitUsage(item, { style, set: {}, first: '#000000', second: '#ffffff' })).toBeNull();
++      expect((await collectOneBitUsage(item, { style, set: {}, first: '#000000', second: '#ffffff' })).count).toBe(2);
+     }
+   });
+   it('large exact cached roles remain countable and mismatched large analyses are not regenerated', async () => {
+diff --git a/src/lib/recolor.js b/src/lib/recolor.js
+index 8407a07..81d8c76 100644
+--- a/src/lib/recolor.js
++++ b/src/lib/recolor.js
+@@ -283,6 +283,48 @@ const PATTERNS = [...Object.keys(TILES), 'atkinson'];
+ // The threshold Auto uses for this image in this style.
+ export const autoThreshold = (img, style) => (style === 'lines' ? img.autoLine : PATTERNS.includes(style) ? img.autoTone : img.auto);
+ 
++// The mask and count proof share this exact lookup: count metadata must not
++// introduce a second brightness/pattern conversion rule.
++function patternTones({ lo, hi }, opt, t) {
++  const shading = (opt.shading ?? 100) / 100;
++  return Float64Array.from({ length: 256 }, (_, l) => {
++    const tone = l <= t ? (t > lo ? (0.5 * (l - lo)) / (t - lo) : 0) : 0.5 + (0.5 * (l - t)) / (hi - t);
++    return shading ? Math.min(1, Math.max(0, 0.5 + (tone - 0.5) / shading)) : tone > 0.5 ? 1 : 0;
++  });
++}
++
++// Exact lower/upper role bounds from already prepared visible brightness bins.
++// No mask, source-pixel walk or analysis is created. Intermediate ordered tones
++// remain ambiguous because their role depends on the full-source coordinate.
++export function patternRoleBounds(img, style, set = null) {
++  if (!PATTERNS.includes(style)) return null;
++  const opt = typeof set === 'number' ? { threshold: set } : set ?? {};
++  const tones = patternTones(img, opt, opt.threshold ?? autoThreshold(img, style));
++  let lowCut = 1, highCut = 0;
++  if (style !== 'atkinson') {
++    const { cuts } = TILES[style](opt);
++    for (const cut of cuts) { lowCut = Math.min(lowCut, cut); highCut = Math.max(highCut, cut); }
++  }
++  let lower = 0, upper = 0;
++  for (let l = 0; l < 256; l++) {
++    if (!img.hist[l]) continue;
++    const tone = tones[l];
++    if (!Number.isFinite(tone)) return null;
++    if (style === 'atkinson') {
++      // With only exact endpoint tones every emitted error is zero, for all
++      // diffusion kernels. Any intermediate tone invalidates that proof.
++      if (tone !== 0 && tone !== 1) return null;
++      lower |= tone === 1 ? 2 : 1;
++      upper = lower;
++    } else {
++      const roles = tone <= lowCut ? 1 : tone > highCut ? 2 : 3;
++      upper |= roles;
++      if (roles !== 3) lower |= roles;
++    }
++  }
++  return { lower, upper };
++}
++
+ // Where a smaller picture's pixels fall along `n` image pixels when it is `m` pixels long: the
+ // image pixel under the middle of each. With m equal to n, that is every pixel in turn.
+ const spread = (n, m) => Int32Array.from({ length: m }, (_, i) => Math.floor(((i + 0.5) * n) / m));
+@@ -441,11 +483,7 @@ export function mask(img, style, set = null, mw = img.w, mh = img.h) {
+   // the darkest and lightest, at 50 half as far, with every tone beyond that fully dark or
+   // light, and at 0 not at all, which is Solid.
+   // Worked out once for each of the 256 brightnesses, not once for each pixel.
+-  const shading = (opt.shading ?? 100) / 100;
+-  const tones = Float64Array.from({ length: 256 }, (_, l) => {
+-    const tone = l <= t ? (t > lo ? (0.5 * (l - lo)) / (t - lo) : 0) : 0.5 + (0.5 * (l - t)) / (hi - t);
+-    return shading ? Math.min(1, Math.max(0, 0.5 + (tone - 0.5) / shading)) : tone > 0.5 ? 1 : 0;
+-  });
++  const tones = patternTones(img, opt, t);
+ 
+   if (style === 'atkinson') {
+     // Each of the picture's pixels passes its error on to the ones after it, by the kernel chosen.
+diff --git a/src/lib/pattern-role-bounds.test.js b/src/lib/pattern-role-bounds.test.js
+new file mode 100644
+--- /dev/null
++++ b/src/lib/pattern-role-bounds.test.js
+@@ -0,0 +1,95 @@
++import { describe, it, expect } from 'vitest';
++import { analyze, mask, patternRoleBounds, unify } from './recolor.js';
++import { collectOneBitUsage, maskRoles } from './onebit-usage.js';
++import { analysisKey } from './image-reanalysis.js';
++
++const styles = ['checker', 'bayer', 'hatch', 'noise', 'atkinson'];
++function source(values, width = values.length, cut = 128) {
++  const original = { width, height: values.length / width,
++    data: Uint8ClampedArray.from(values.flatMap(v => Array.isArray(v) ? v : [v, v, v, 255])) };
++  const img = analyze(original, 'luma', cut);
++  return { original, img, by: analysisKey(img.soft, { alphaCut: cut }) };
++}
++describe('histogram proofs for actual full-source pattern roles', () => {
++  it('bounds every actual full mask over thresholds, patterns, alpha and narrow geometry', () => {
++    for (const width of [1, 3, 8, 17]) {
++      const item = source(Array.from({ length: width * 9 }, (_, p) => [p * 37 % 256, p * 19 % 256, p * 83 % 256, p % 7 ? 255 : 0]), width);
++      for (const style of styles) for (const threshold of [null, 0, 1, 127, 254, 255]) for (const shading of [0, 1, 50, 100]) {
++        const set = { threshold, shading, matrix: [2, 4, 8][width % 3], scale: width % 4 + 1, direction: ['/', '\\', '-', '|'][width % 4], spacing: width % 4 + 3 };
++        const proof = patternRoleBounds(item.img, style, set);
++        if (!proof) continue;
++        const expected = maskRoles(mask(item.img, style, set));
++        expect(proof.lower & expected).toBe(proof.lower);
++        expect(proof.upper | expected).toBe(proof.upper);
++        if (proof.lower === proof.upper) expect(proof.lower).toBe(expected);
++      }
++    }
++  });
++  it('keeps midpoint phase ambiguous and proves empty and endpoint-only roles', () => {
++    const middle = source([127, 127]);
++    middle.img.lo = 0; middle.img.hi = 254; middle.img.autoTone = 127;
++    for (const style of styles) {
++      const proof = patternRoleBounds(middle.img, style);
++      if (style === 'atkinson') expect(proof).toBeNull();
++      else expect(proof).toEqual({ lower: 0, upper: 3 });
++      expect(patternRoleBounds(source([[0, 0, 0, 0]]).img, style)).toEqual({ lower: 0, upper: 0 });
++      expect(patternRoleBounds(source([0, 255]).img, style)).toEqual({ lower: 3, upper: 3 });
++    }
++  });
++  it('uses each frame histogram under unified animation brightness ranges', () => {
++    const frames = [source([0, 0]), source([127, 127]), source([255, 255])];
++    unify(frames.map(f => f.img));
++    for (const style of styles) for (const frame of frames) {
++      const proof = patternRoleBounds(frame.img, style);
++      if (!proof) continue;
++      const expected = maskRoles(mask(frame.img, style));
++      expect(proof.lower & expected).toBe(proof.lower);
++      expect(proof.upper | expected).toBe(proof.upper);
++    }
++  });
++  it('refuses nonfinite occupied tone evidence instead of certifying absence', () => {
++    const { img } = source([255]);
++    img.hi = NaN;
++    for (const style of styles) expect(patternRoleBounds(img, style, { threshold: 127 })).toBeNull();
++  });
++  it('counts large images without reading or allocating source-size masks', async () => {
++    const item = source([0, 255]);
++    item.img.w = item.img.h = 2048;
++    Object.defineProperty(item.img, 'lum', { get() { throw new Error('Unexpected source-size mask'); } });
++    Object.defineProperty(item.img, 'data', { get() { throw new Error('Unexpected source pixels'); } });
++    for (const style of styles) for (const [first, second, count] of [
++      ['#000000', '#ffffff', 2], [null, '#ffffff', 1], ['#000000', null, 1], ['#aabbcc', '#AABBCC', 1], [null, null, 0],
++    ]) expect((await collectOneBitUsage(item, { style, set: {}, first, second })).count).toBe(count);
++  });
++  it('preserves unknown for large ambiguous phases and general error diffusion', async () => {
++    const item = source([127, 127]);
++    item.img.w = item.img.h = 2048; item.img.lo = 0; item.img.hi = 254; item.img.autoTone = 127;
++    Object.defineProperty(item.img, 'lum', { get() { throw new Error('Unexpected mask'); } });
++    for (const style of styles)
++      expect(await collectOneBitUsage(item, { style, set: {}, first: '#000000', second: '#ffffff' })).toBeNull();
++  });
++  it('can prove an actual RGB count without falsely caching uncertain role absence', async () => {
++    const item = source([0, 127]);
++    item.img.w = item.img.h = 2048; item.img.lo = 0; item.img.hi = 254; item.img.autoTone = 127;
++    Object.defineProperty(item.img, 'lum', { get() { throw new Error('Unexpected mask'); } });
++    for (const style of ['checker', 'bayer', 'hatch', 'noise']) {
++      expect(patternRoleBounds(item.img, style)).toEqual({ lower: 1, upper: 3 });
++      expect((await collectOneBitUsage(item, { style, set: {}, first: '#123456', second: null })).count).toBe(1);
++      expect((await collectOneBitUsage(item, { style, set: {}, first: '#123456', second: '#123456' })).count).toBe(1);
++      expect(await collectOneBitUsage(item, { style, set: {}, first: '#123456', second: '#ffffff' })).toBeNull();
++      expect(await collectOneBitUsage(item, { style, set: {}, first: null, second: '#ffffff' })).toBeNull();
++    }
++  });
++  it('withholds a genuinely phase-dependent large image count instead of guessing absence', async () => {
++    for (const brightX of [0, 1]) {
++      const width = 513, data = new Uint8ClampedArray(width * width * 4);
++      for (let p = 3; p < data.length; p += 4) data[p] = 255;
++      data.set([127, 127, 127, 255], brightX * 4);
++      const original = { width, height: width, data }, img = analyze(original);
++      const item = { original, img, by: analysisKey(img.soft) }, set = { threshold: 200 };
++      expect(patternRoleBounds(img, 'checker', set)).toEqual({ lower: 1, upper: 3 });
++      expect(maskRoles(mask(img, 'checker', set))).toBe(brightX === 0 ? 3 : 1);
++      expect(await collectOneBitUsage(item, { style: 'checker', set, first: '#000000', second: '#ffffff' })).toBeNull();
++    }
++  });
++});

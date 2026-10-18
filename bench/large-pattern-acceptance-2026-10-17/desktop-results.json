@@ -1,0 +1,599 @@
+{
+  "mode": "desktop",
+  "errors": [],
+  "trials": [
+    {
+      "pair": 0,
+      "style": "checker",
+      "variant": "baseline",
+      "paintMs": 173,
+      "taskMs": 55.699,
+      "scriptMs": 12.38,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 0,
+      "style": "checker",
+      "variant": "candidate",
+      "paintMs": 166.29999999701977,
+      "taskMs": 63.93699999999999,
+      "scriptMs": 16.643,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 0,
+      "style": "bayer",
+      "variant": "baseline",
+      "paintMs": 154.29999999701977,
+      "taskMs": 57.175000000000004,
+      "scriptMs": 10.337,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 0,
+      "style": "bayer",
+      "variant": "candidate",
+      "paintMs": 161.90000000596046,
+      "taskMs": 60.284000000000006,
+      "scriptMs": 18.118,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 0,
+      "style": "hatch",
+      "variant": "baseline",
+      "paintMs": 160.29999999701977,
+      "taskMs": 65.55000000000001,
+      "scriptMs": 19.962999999999997,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 0,
+      "style": "hatch",
+      "variant": "candidate",
+      "paintMs": 161.30000000447035,
+      "taskMs": 51.959,
+      "scriptMs": 10.764000000000001,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 0,
+      "style": "noise",
+      "variant": "baseline",
+      "paintMs": 165.5,
+      "taskMs": 58.699000000000005,
+      "scriptMs": 16.000999999999998,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 0,
+      "style": "noise",
+      "variant": "candidate",
+      "paintMs": 163.20000000298023,
+      "taskMs": 64.939,
+      "scriptMs": 21.043,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 0,
+      "style": "atkinson",
+      "variant": "baseline",
+      "paintMs": 173.60000000149012,
+      "taskMs": 72.64399999999999,
+      "scriptMs": 26.333000000000002,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 0,
+      "style": "atkinson",
+      "variant": "candidate",
+      "paintMs": 169.60000000149012,
+      "taskMs": 67.806,
+      "scriptMs": 24.239,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 1,
+      "style": "checker",
+      "variant": "candidate",
+      "paintMs": 171.29999999701977,
+      "taskMs": 66.956,
+      "scriptMs": 21.225,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 1,
+      "style": "checker",
+      "variant": "baseline",
+      "paintMs": 180.60000000149012,
+      "taskMs": 76.124,
+      "scriptMs": 20.048,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 1,
+      "style": "bayer",
+      "variant": "candidate",
+      "paintMs": 186.90000000596046,
+      "taskMs": 63.985,
+      "scriptMs": 13.166,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 1,
+      "style": "bayer",
+      "variant": "baseline",
+      "paintMs": 169,
+      "taskMs": 67.451,
+      "scriptMs": 22.130999999999997,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 1,
+      "style": "hatch",
+      "variant": "candidate",
+      "paintMs": 162.69999999552965,
+      "taskMs": 58.096000000000004,
+      "scriptMs": 10.781,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 1,
+      "style": "hatch",
+      "variant": "baseline",
+      "paintMs": 170.30000000447035,
+      "taskMs": 57.146,
+      "scriptMs": 13.8,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 1,
+      "style": "noise",
+      "variant": "candidate",
+      "paintMs": 167.20000000298023,
+      "taskMs": 71.06700000000001,
+      "scriptMs": 20.166,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 1,
+      "style": "noise",
+      "variant": "baseline",
+      "paintMs": 155.89999999850988,
+      "taskMs": 55.779,
+      "scriptMs": 13.076,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 1,
+      "style": "atkinson",
+      "variant": "candidate",
+      "paintMs": 168.89999999850988,
+      "taskMs": 70.137,
+      "scriptMs": 22.46,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 1,
+      "style": "atkinson",
+      "variant": "baseline",
+      "paintMs": 167,
+      "taskMs": 65.73599999999999,
+      "scriptMs": 21.186999999999998,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 2,
+      "style": "checker",
+      "variant": "baseline",
+      "paintMs": 162.39999999850988,
+      "taskMs": 51.981,
+      "scriptMs": 10.484,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 2,
+      "style": "checker",
+      "variant": "candidate",
+      "paintMs": 157.10000000149012,
+      "taskMs": 59.193999999999996,
+      "scriptMs": 15.036,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 2,
+      "style": "bayer",
+      "variant": "baseline",
+      "paintMs": 168.19999999552965,
+      "taskMs": 58.196000000000005,
+      "scriptMs": 10.122000000000002,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 2,
+      "style": "bayer",
+      "variant": "candidate",
+      "paintMs": 164.80000000447035,
+      "taskMs": 57.026999999999994,
+      "scriptMs": 10.543000000000001,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 2,
+      "style": "hatch",
+      "variant": "baseline",
+      "paintMs": 164.39999999850988,
+      "taskMs": 56.507,
+      "scriptMs": 10.554999999999998,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 2,
+      "style": "hatch",
+      "variant": "candidate",
+      "paintMs": 165.89999999850988,
+      "taskMs": 58.601000000000006,
+      "scriptMs": 10.887,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 2,
+      "style": "noise",
+      "variant": "baseline",
+      "paintMs": 163.5,
+      "taskMs": 56.303,
+      "scriptMs": 10.456999999999999,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 2,
+      "style": "noise",
+      "variant": "candidate",
+      "paintMs": 165.20000000298023,
+      "taskMs": 54.634,
+      "scriptMs": 10.741999999999999,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 2,
+      "style": "atkinson",
+      "variant": "baseline",
+      "paintMs": 159.5,
+      "taskMs": 58.509,
+      "scriptMs": 14.024,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "pair": 2,
+      "style": "atkinson",
+      "variant": "candidate",
+      "paintMs": 154.5,
+      "taskMs": 56,
+      "scriptMs": 14.129000000000001,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    }
+  ],
+  "checks": [
+    {
+      "name": "ambiguous full-source phase stays unknown",
+      "paintMs": 37.19999999552965,
+      "taskMs": 27.955000000000002,
+      "scriptMs": 8.022000000000002,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        1280,
+        900
+      ],
+      "orientation": "landscape-primary"
+    },
+    {
+      "name": "ambiguous output independently decoded",
+      "count": 1,
+      "width": 769,
+      "height": 513
+    },
+    {
+      "name": "native desktop PNG checker",
+      "count": 2,
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "native desktop PNG bayer",
+      "count": 2,
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "native desktop PNG hatch",
+      "count": 2,
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "native desktop PNG noise",
+      "count": 2,
+      "width": 2048,
+      "height": 2048
+    }
+  ],
+  "summary": [
+    {
+      "style": "checker",
+      "baseline": {
+        "paintMs": 173,
+        "taskMs": 55.699,
+        "scriptMs": 12.38
+      },
+      "candidate": {
+        "paintMs": 166.29999999701977,
+        "taskMs": 63.93699999999999,
+        "scriptMs": 16.643
+      }
+    },
+    {
+      "style": "bayer",
+      "baseline": {
+        "paintMs": 168.19999999552965,
+        "taskMs": 58.196000000000005,
+        "scriptMs": 10.337
+      },
+      "candidate": {
+        "paintMs": 164.80000000447035,
+        "taskMs": 60.284000000000006,
+        "scriptMs": 13.166
+      }
+    },
+    {
+      "style": "hatch",
+      "baseline": {
+        "paintMs": 164.39999999850988,
+        "taskMs": 57.146,
+        "scriptMs": 13.8
+      },
+      "candidate": {
+        "paintMs": 162.69999999552965,
+        "taskMs": 58.096000000000004,
+        "scriptMs": 10.781
+      }
+    },
+    {
+      "style": "noise",
+      "baseline": {
+        "paintMs": 163.5,
+        "taskMs": 56.303,
+        "scriptMs": 13.076
+      },
+      "candidate": {
+        "paintMs": 165.20000000298023,
+        "taskMs": 64.939,
+        "scriptMs": 20.166
+      }
+    },
+    {
+      "style": "atkinson",
+      "baseline": {
+        "paintMs": 167,
+        "taskMs": 65.73599999999999,
+        "scriptMs": 21.186999999999998
+      },
+      "candidate": {
+        "paintMs": 168.89999999850988,
+        "taskMs": 67.806,
+        "scriptMs": 22.46
+      }
+    }
+  ]
+}

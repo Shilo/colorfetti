@@ -1,0 +1,624 @@
+{
+  "mode": "android",
+  "errors": [],
+  "trials": [
+    {
+      "pair": 0,
+      "style": "checker",
+      "variant": "baseline",
+      "paintMs": 327.60000002384186,
+      "taskMs": 125.28900000000002,
+      "scriptMs": 34.79,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 0,
+      "style": "checker",
+      "variant": "candidate",
+      "paintMs": 317.69999998807907,
+      "taskMs": 149.708,
+      "scriptMs": 44.643,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 0,
+      "style": "bayer",
+      "variant": "baseline",
+      "paintMs": 309.30000001192093,
+      "taskMs": 142.329,
+      "scriptMs": 38.75099999999999,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 0,
+      "style": "bayer",
+      "variant": "candidate",
+      "paintMs": 302.10000002384186,
+      "taskMs": 147.85600000000002,
+      "scriptMs": 52.428999999999995,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [
+        {
+          "duration": 56,
+          "start": 467.19999998807907
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 0,
+      "style": "hatch",
+      "variant": "baseline",
+      "paintMs": 276,
+      "taskMs": 122.27000000000001,
+      "scriptMs": 33.977,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 0,
+      "style": "hatch",
+      "variant": "candidate",
+      "paintMs": 282.5,
+      "taskMs": 129.52599999999998,
+      "scriptMs": 41.214,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 0,
+      "style": "noise",
+      "variant": "baseline",
+      "paintMs": 329.10000002384186,
+      "taskMs": 149.26199999999997,
+      "scriptMs": 42.283,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 0,
+      "style": "noise",
+      "variant": "candidate",
+      "paintMs": 302.4000000357628,
+      "taskMs": 129.808,
+      "scriptMs": 40.848,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 0,
+      "style": "atkinson",
+      "variant": "baseline",
+      "paintMs": 316.39999997615814,
+      "taskMs": 159.74500000000003,
+      "scriptMs": 49.992000000000004,
+      "count": null,
+      "busy": null,
+      "tasks": [
+        {
+          "duration": 51,
+          "start": 499.19999998807907
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 0,
+      "style": "atkinson",
+      "variant": "candidate",
+      "paintMs": 313.80000001192093,
+      "taskMs": 145.33800000000002,
+      "scriptMs": 53.314,
+      "count": null,
+      "busy": null,
+      "tasks": [
+        {
+          "duration": 55,
+          "start": 543.9000000357628
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 1,
+      "style": "checker",
+      "variant": "candidate",
+      "paintMs": 347.30000001192093,
+      "taskMs": 165.8,
+      "scriptMs": 54.958,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [
+        {
+          "duration": 54,
+          "start": 627.8999999761581
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 1,
+      "style": "checker",
+      "variant": "baseline",
+      "paintMs": 319.5,
+      "taskMs": 123.03900000000002,
+      "scriptMs": 33.425999999999995,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 1,
+      "style": "bayer",
+      "variant": "candidate",
+      "paintMs": 301.5999999642372,
+      "taskMs": 145.01500000000001,
+      "scriptMs": 48.216,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 1,
+      "style": "bayer",
+      "variant": "baseline",
+      "paintMs": 329.5,
+      "taskMs": 149.588,
+      "scriptMs": 46.599000000000004,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 1,
+      "style": "hatch",
+      "variant": "candidate",
+      "paintMs": 305.0999999642372,
+      "taskMs": 136.043,
+      "scriptMs": 36.861,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 1,
+      "style": "hatch",
+      "variant": "baseline",
+      "paintMs": 294.19999998807907,
+      "taskMs": 140.244,
+      "scriptMs": 52.416,
+      "count": null,
+      "busy": null,
+      "tasks": [
+        {
+          "duration": 56,
+          "start": 475
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 1,
+      "style": "noise",
+      "variant": "candidate",
+      "paintMs": 270.2000000476837,
+      "taskMs": 121.94400000000002,
+      "scriptMs": 36.464999999999996,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 1,
+      "style": "noise",
+      "variant": "baseline",
+      "paintMs": 309.60000002384186,
+      "taskMs": 140.761,
+      "scriptMs": 45.503,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 1,
+      "style": "atkinson",
+      "variant": "candidate",
+      "paintMs": 317.0999999642372,
+      "taskMs": 143.407,
+      "scriptMs": 53.754,
+      "count": null,
+      "busy": null,
+      "tasks": [
+        {
+          "duration": 57,
+          "start": 526.3999999761581
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 1,
+      "style": "atkinson",
+      "variant": "baseline",
+      "paintMs": 327.39999997615814,
+      "taskMs": 152.971,
+      "scriptMs": 48.525,
+      "count": null,
+      "busy": null,
+      "tasks": [
+        {
+          "duration": 53,
+          "start": 533.8000000119209
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 2,
+      "style": "checker",
+      "variant": "baseline",
+      "paintMs": 329.80000001192093,
+      "taskMs": 157.37500000000003,
+      "scriptMs": 46.040000000000006,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 2,
+      "style": "checker",
+      "variant": "candidate",
+      "paintMs": 317.5,
+      "taskMs": 158.694,
+      "scriptMs": 40.571999999999996,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 2,
+      "style": "bayer",
+      "variant": "baseline",
+      "paintMs": 343.69999998807907,
+      "taskMs": 166.912,
+      "scriptMs": 53.605,
+      "count": null,
+      "busy": null,
+      "tasks": [
+        {
+          "duration": 56,
+          "start": 544.8000000119209
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 2,
+      "style": "bayer",
+      "variant": "candidate",
+      "paintMs": 287.39999997615814,
+      "taskMs": 130.935,
+      "scriptMs": 33.536,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 2,
+      "style": "hatch",
+      "variant": "baseline",
+      "paintMs": 306.2000000476837,
+      "taskMs": 140.84199999999998,
+      "scriptMs": 44.403999999999996,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 2,
+      "style": "hatch",
+      "variant": "candidate",
+      "paintMs": 336.5,
+      "taskMs": 166.263,
+      "scriptMs": 57.152,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [
+        {
+          "duration": 57,
+          "start": 538.8000000119209
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 2,
+      "style": "noise",
+      "variant": "baseline",
+      "paintMs": 318.0999999642372,
+      "taskMs": 129.882,
+      "scriptMs": 40.849999999999994,
+      "count": null,
+      "busy": null,
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 2,
+      "style": "noise",
+      "variant": "candidate",
+      "paintMs": 313.69999998807907,
+      "taskMs": 137.35899999999998,
+      "scriptMs": 45.032999999999994,
+      "count": "2 colors",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 2,
+      "style": "atkinson",
+      "variant": "baseline",
+      "paintMs": 344.80000001192093,
+      "taskMs": 155.28900000000002,
+      "scriptMs": 65.01499999999999,
+      "count": null,
+      "busy": null,
+      "tasks": [
+        {
+          "duration": 68,
+          "start": 521.8000000119209
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    },
+    {
+      "pair": 2,
+      "style": "atkinson",
+      "variant": "candidate",
+      "paintMs": 338.19999998807907,
+      "taskMs": 150.377,
+      "scriptMs": 55.398,
+      "count": null,
+      "busy": null,
+      "tasks": [
+        {
+          "duration": 58,
+          "start": 501.19999998807907
+        }
+      ],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    }
+  ],
+  "checks": [
+    {
+      "name": "ambiguous phase is not guessed; exact existing rendering may establish one",
+      "paintMs": 136.10000002384186,
+      "taskMs": 65.455,
+      "scriptMs": 28.277000000000005,
+      "count": "1 color",
+      "busy": "false",
+      "tasks": [],
+      "viewport": [
+        448,
+        819
+      ],
+      "orientation": "portrait-primary"
+    }
+  ],
+  "summary": [
+    {
+      "style": "checker",
+      "baseline": {
+        "paintMs": 327.60000002384186,
+        "taskMs": 125.28900000000002,
+        "scriptMs": 34.79
+      },
+      "candidate": {
+        "paintMs": 317.69999998807907,
+        "taskMs": 158.694,
+        "scriptMs": 44.643
+      }
+    },
+    {
+      "style": "bayer",
+      "baseline": {
+        "paintMs": 329.5,
+        "taskMs": 149.588,
+        "scriptMs": 46.599000000000004
+      },
+      "candidate": {
+        "paintMs": 301.5999999642372,
+        "taskMs": 145.01500000000001,
+        "scriptMs": 48.216
+      }
+    },
+    {
+      "style": "hatch",
+      "baseline": {
+        "paintMs": 294.19999998807907,
+        "taskMs": 140.244,
+        "scriptMs": 44.403999999999996
+      },
+      "candidate": {
+        "paintMs": 305.0999999642372,
+        "taskMs": 136.043,
+        "scriptMs": 41.214
+      }
+    },
+    {
+      "style": "noise",
+      "baseline": {
+        "paintMs": 318.0999999642372,
+        "taskMs": 140.761,
+        "scriptMs": 42.283
+      },
+      "candidate": {
+        "paintMs": 302.4000000357628,
+        "taskMs": 129.808,
+        "scriptMs": 40.848
+      }
+    },
+    {
+      "style": "atkinson",
+      "baseline": {
+        "paintMs": 327.39999997615814,
+        "taskMs": 155.28900000000002,
+        "scriptMs": 49.992000000000004
+      },
+      "candidate": {
+        "paintMs": 317.0999999642372,
+        "taskMs": 145.33800000000002,
+        "scriptMs": 53.754
+      }
+    }
+  ]
+}

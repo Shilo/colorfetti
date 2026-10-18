@@ -1,0 +1,23 @@
+{
+  "baseline": "34a95d9",
+  "candidate": {
+    "label": "Rejected histogram proof candidate, explicit research modules; not production source",
+    "modules": [
+      {
+        "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\large-pattern-counts-2026-10-17\\candidate-recolor.js",
+        "sha256": "7398835a866eae39ba3c21cb1db024f3c3a58c9cb48e01459da2380e73e6f01d"
+      },
+      {
+        "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\large-pattern-counts-2026-10-17\\candidate-onebit-usage.js",
+        "sha256": "73a0326f8e5ddcc96c10ae6d333806f2a00c79afad5f6367b82d78f3eb4bcd78"
+      }
+    ]
+  },
+  "masks": 576000,
+  "fullSourcePixelsCompared": 194342400,
+  "proofs": 281136,
+  "exactProofs": 264144,
+  "animationInkUnions": 1800,
+  "largeInkCases": 100,
+  "largeUnknown": 12
+}

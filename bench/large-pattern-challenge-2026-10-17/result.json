@@ -1,0 +1,46 @@
+{
+  "oracle": "Full source and rescaled masks from frozen baseline 34a95d9; not the rejected histogram proof",
+  "cases": 9408,
+  "inkCases": 47040,
+  "certified": 25038,
+  "boundedUnsaturated": 22002,
+  "falseRescaledRoleCases": 3,
+  "firstMismatch": [
+    {
+      "kind": "correlated-alpha",
+      "style": "bayer",
+      "set": {
+        "matrix": 2,
+        "scale": 1,
+        "shading": 100,
+        "threshold": 254
+      },
+      "roles": 1,
+      "sampledRoles": 3
+    },
+    {
+      "kind": "correlated-alpha",
+      "style": "bayer",
+      "set": {
+        "matrix": 4,
+        "scale": 1,
+        "shading": 100,
+        "threshold": 254
+      },
+      "roles": 1,
+      "sampledRoles": 3
+    },
+    {
+      "kind": "correlated-alpha",
+      "style": "bayer",
+      "set": {
+        "matrix": 8,
+        "scale": 1,
+        "shading": 100,
+        "threshold": 254
+      },
+      "roles": 1,
+      "sampledRoles": 3
+    }
+  ]
+}

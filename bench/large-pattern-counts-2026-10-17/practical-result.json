@@ -1,0 +1,222 @@
+[
+  {
+    "file": "kenney-sheet-1024.png",
+    "width": 1024,
+    "height": 1024,
+    "frames": 1,
+    "style": "checker",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.7781999999999982
+  },
+  {
+    "file": "kenney-sheet-1024.png",
+    "width": 1024,
+    "height": 1024,
+    "frames": 1,
+    "style": "bayer",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.48740000000000805
+  },
+  {
+    "file": "kenney-sheet-1024.png",
+    "width": 1024,
+    "height": 1024,
+    "frames": 1,
+    "style": "hatch",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.19149999999999068
+  },
+  {
+    "file": "kenney-sheet-1024.png",
+    "width": 1024,
+    "height": 1024,
+    "frames": 1,
+    "style": "noise",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.9034999999999798
+  },
+  {
+    "file": "kenney-sheet-1024.png",
+    "width": 1024,
+    "height": 1024,
+    "frames": 1,
+    "style": "atkinson",
+    "expectedRoles": 3,
+    "proofRoleUnion": null,
+    "count": null,
+    "inspectionMs": 0.19669999999999277
+  },
+  {
+    "file": "kenney-sheet-2048.png",
+    "width": 2048,
+    "height": 2048,
+    "frames": 1,
+    "style": "checker",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.9115999999999929
+  },
+  {
+    "file": "kenney-sheet-2048.png",
+    "width": 2048,
+    "height": 2048,
+    "frames": 1,
+    "style": "bayer",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.3573999999999842
+  },
+  {
+    "file": "kenney-sheet-2048.png",
+    "width": 2048,
+    "height": 2048,
+    "frames": 1,
+    "style": "hatch",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.1712999999999738
+  },
+  {
+    "file": "kenney-sheet-2048.png",
+    "width": 2048,
+    "height": 2048,
+    "frames": 1,
+    "style": "noise",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.4116000000000213
+  },
+  {
+    "file": "kenney-sheet-2048.png",
+    "width": 2048,
+    "height": 2048,
+    "frames": 1,
+    "style": "atkinson",
+    "expectedRoles": 3,
+    "proofRoleUnion": null,
+    "count": null,
+    "inspectionMs": 0.8861999999999739
+  },
+  {
+    "file": "real-magic.gif",
+    "width": 32,
+    "height": 32,
+    "frames": 6,
+    "style": "checker",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.15579999999999927
+  },
+  {
+    "file": "real-magic.gif",
+    "width": 32,
+    "height": 32,
+    "frames": 6,
+    "style": "bayer",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.10070000000001755
+  },
+  {
+    "file": "real-magic.gif",
+    "width": 32,
+    "height": 32,
+    "frames": 6,
+    "style": "hatch",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.08540000000004966
+  },
+  {
+    "file": "real-magic.gif",
+    "width": 32,
+    "height": 32,
+    "frames": 6,
+    "style": "noise",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.11970000000002301
+  },
+  {
+    "file": "real-magic.gif",
+    "width": 32,
+    "height": 32,
+    "frames": 6,
+    "style": "atkinson",
+    "expectedRoles": 3,
+    "proofRoleUnion": null,
+    "count": 2,
+    "inspectionMs": 0.09390000000001919
+  },
+  {
+    "file": "kenney-motion-256.gif",
+    "width": 256,
+    "height": 256,
+    "frames": 48,
+    "style": "checker",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 1.386699999999962
+  },
+  {
+    "file": "kenney-motion-256.gif",
+    "width": 256,
+    "height": 256,
+    "frames": 48,
+    "style": "bayer",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.8788999999999874
+  },
+  {
+    "file": "kenney-motion-256.gif",
+    "width": 256,
+    "height": 256,
+    "frames": 48,
+    "style": "hatch",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.3725000000000023
+  },
+  {
+    "file": "kenney-motion-256.gif",
+    "width": 256,
+    "height": 256,
+    "frames": 48,
+    "style": "noise",
+    "expectedRoles": 3,
+    "proofRoleUnion": 3,
+    "count": 2,
+    "inspectionMs": 0.6619999999999777
+  },
+  {
+    "file": "kenney-motion-256.gif",
+    "width": 256,
+    "height": 256,
+    "frames": 48,
+    "style": "atkinson",
+    "expectedRoles": 3,
+    "proofRoleUnion": null,
+    "count": 2,
+    "inspectionMs": 1.6722999999999502
+  }
+]

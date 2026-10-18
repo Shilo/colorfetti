@@ -1,0 +1,57 @@
+{
+  "cases": 8415,
+  "exact": 7211,
+  "ambiguous": 1189,
+  "timings": [
+    {
+      "style": "checker",
+      "answer": {
+        "lower": 3,
+        "upper": 3,
+        "exact": true
+      },
+      "histogramMs": 0.02289999999993597,
+      "oracleMs": 51.10799999999995
+    },
+    {
+      "style": "bayer",
+      "answer": {
+        "lower": 3,
+        "upper": 3,
+        "exact": true
+      },
+      "histogramMs": 0.024400000000014188,
+      "oracleMs": 49.98350000000005
+    },
+    {
+      "style": "hatch",
+      "answer": {
+        "lower": 3,
+        "upper": 3,
+        "exact": true
+      },
+      "histogramMs": 0.018100000000004002,
+      "oracleMs": 54.53530000000001
+    },
+    {
+      "style": "noise",
+      "answer": {
+        "lower": 3,
+        "upper": 3,
+        "exact": true
+      },
+      "histogramMs": 0.026900000000068758,
+      "oracleMs": 53.68430000000001
+    },
+    {
+      "style": "atkinson",
+      "answer": {
+        "lower": 0,
+        "upper": 3,
+        "exact": false
+      },
+      "histogramMs": 0.024200000000064392,
+      "oracleMs": 92.77750000000003
+    }
+  ]
+}

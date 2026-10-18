@@ -1,0 +1,60 @@
+{
+  "byteIdenticalCases": 660,
+  "tinyMaskMedianMs": [
+    {
+      "style": "cutout",
+      "beforeMs": 0.005914600000000007,
+      "afterMs": 0.005948399999999993
+    },
+    {
+      "style": "solid",
+      "beforeMs": 0.002337199999999996,
+      "afterMs": 0.0023285999999999945
+    },
+    {
+      "style": "lines",
+      "beforeMs": 0.005952300000000036,
+      "afterMs": 0.00593489999999997
+    },
+    {
+      "style": "stencil",
+      "beforeMs": 0.0059527000000000494,
+      "afterMs": 0.005968399999999974
+    },
+    {
+      "style": "icon",
+      "beforeMs": 0.0027542000000000825,
+      "afterMs": 0.002536000000000058
+    },
+    {
+      "style": "checker",
+      "beforeMs": 0.01149169999999981,
+      "afterMs": 0.011811599999999998
+    },
+    {
+      "style": "bayer",
+      "beforeMs": 0.013026100000000042,
+      "afterMs": 0.013210600000000114
+    },
+    {
+      "style": "hatch",
+      "beforeMs": 0.011942600000000084,
+      "afterMs": 0.012330999999999903
+    },
+    {
+      "style": "atkinson",
+      "beforeMs": 0.012407400000000053,
+      "afterMs": 0.012638500000000021
+    },
+    {
+      "style": "noise",
+      "beforeMs": 0.038677999999999886,
+      "afterMs": 0.04762919999999986
+    },
+    {
+      "style": "silhouette",
+      "beforeMs": 0.004547300000000178,
+      "afterMs": 0.004589399999999842
+    }
+  ]
+}
