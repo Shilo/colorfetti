@@ -355,11 +355,11 @@ try {
   for (let i=0;i<2;i++) { assert.equal(gif.frames[i].delay,gifDelays[i]); samePixels(gif.frames[i].pixels,gifExpected[i],`Full GIF frame${i}`); }
   samePixels(readPng(await copy(page.getByRole('button',{name:'Copy walk.gif',exact:true}))).pixels,gifExpected[0],'GIF first-frame clipboard');
   const wallNames = () => page.locator('.tiles > .tile .cap .name').allTextContents();
-  const exportOrder = (names, family) => names.map(name => name.replace(/\.[^.]+$/, '') + (family === 'full-palette' ? '-palette' : '-1bit') + (/\.gif$/i.test(name) ? '.gif' : '.png'));
+  const exportOrder = names => names.map(name => name.replace(/\.[^.]+$/, '') + '-colorfetti' + (/\.gif$/i.test(name) ? '.gif' : '.png'));
   const fullZipWall = await wallNames();
   assert.deepEqual(fullZipWall,['fixture.png','walk.gif'],'Sequential imports must append in wall order');
   const zip = unzipSync(await download(page.getByRole('button',{name:'Save all images',exact:true}),'colorfetti.zip'));
-  assert.deepEqual(Object.keys(zip),exportOrder(fullZipWall,'full-palette'),'ZIP must preserve the captured wall order');
+  assert.deepEqual(Object.keys(zip),exportOrder(fullZipWall),'ZIP must preserve the captured wall order');
   samePixels(readPng(zip['fixture-colorfetti.png']).pixels,nearestReference(fixture,active.colors),'ZIP full still');
   samePixels(readGif(zip['walk-colorfetti.gif']).frames[1].pixels,gifExpected[1],'ZIP full GIF');
   results.extra.push('Full GIF exact frames/delays/loop/first-frame copy and mixed ZIP');
@@ -374,7 +374,7 @@ try {
   const legacyZipWall = await wallNames();
   assert.deepEqual(legacyZipWall,fullZipWall,'Family changes must preserve wall order');
   const legacyZip = unzipSync(await download(page.getByRole('button',{name:'Save all images',exact:true}),'colorfetti.zip'));
-  assert.deepEqual(Object.keys(legacyZip),exportOrder(legacyZipWall,'two-color'),'Legacy ZIP must preserve the captured wall order');
+  assert.deepEqual(Object.keys(legacyZip),exportOrder(legacyZipWall),'Legacy ZIP must preserve the captured wall order');
   samePixels(readPng(legacyZip['fixture-colorfetti.png']).pixels,colorize(mask(analysis,'solid',state.settings.solid),first,second),'ZIP legacy still');
   results.extra.push('Family round-trip preserves legacy custom colors/None/style settings, legacy GIF and mixed ZIP');
 
@@ -409,7 +409,7 @@ try {
   });
   downloaded = await pendingDownload; assert.equal(downloaded.suggestedFilename(),'colorfetti.zip');
   const snapshotZip = unzipSync(readFileSync(await downloaded.path()));
-  assert.deepEqual(Object.keys(snapshotZip),exportOrder(snapshotZipWall,'full-palette'),'ZIP must preserve the gesture wall including later removals');
+  assert.deepEqual(Object.keys(snapshotZip),exportOrder(snapshotZipWall),'ZIP must preserve the gesture wall including later removals');
   samePixels(readPng(snapshotZip['fixture-colorfetti.png']).pixels,nearestReference(fixture,FULL_PRESETS.find(p=>p.id==='preset-pico8').colors),'ZIP palette snapshot');
   samePixels(readPng(snapshotZip['big-colorfetti.png']).pixels,bigPixels,'ZIP removed-image snapshot');
   samePixels(readGif(snapshotZip['walk-colorfetti.gif']).frames[1].pixels,nearestReference(originalGif[1],FULL_PRESETS.find(p=>p.id==='preset-pico8').colors),'ZIP GIF palette snapshot');
