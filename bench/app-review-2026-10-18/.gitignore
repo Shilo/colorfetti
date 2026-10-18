@@ -1,0 +1,5 @@
+# Regenerated probe/browser outputs; retain source and text receipts.
+*.png
+*.gif
+*.zip
+filename-expansion/

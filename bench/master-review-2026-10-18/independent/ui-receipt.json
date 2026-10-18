@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-18",
+  "head": "6b9e290",
+  "url": "http://127.0.0.1:5196/",
+  "environment": "CUA in-app browser, frozen current production build supplied by root reviewer",
+  "limitations": "Desktop check only. No automated browser pass count, physical phone, Safari, assistive-technology user test, or screenshot-pixel contrast analysis claimed. Read-only computed colors with alpha composition were used; the palette modal has an opaque background and no gradient/backdrop filter.",
+  "contrast": {
+    "enabledButtonsOnly": true,
+    "light": {
+      "save": { "text": "Save palette", "fontPx": 16, "weight": 650, "foreground": [232, 133, 45], "background": [232, 236, 239], "ratio": 2.2591506353551676 },
+      "inactiveMethod": { "text": "Image or file", "fontPx": 14, "weight": 400, "foreground": [26, 42, 54, 0.55], "composedBackground": [243.5, 245.5, 247], "ratio": 3.429649552933161 }
+    },
+    "dark": {
+      "save": { "foreground": [245, 166, 35], "background": [39, 44, 50], "ratio": 6.9417584595003445 },
+      "inactiveMethod": { "foreground": [255, 255, 255, 0.6], "composedBackground": [56.28, 60.88, 66.4], "ratio": 5.122877945321724 }
+    },
+    "primarySources": ["https://www.w3.org/WAI/WCAG21/Techniques/general/G18", "https://www.w3.org/WAI/WCAG20/Understanding/contrast-minimum.html"]
+  },
+  "draft": {
+    "steps": ["Open PICO-8 palette panel", "Edit palette", "Rename PICO-8 copy to Master review unsaved probe", "Close palette editor", "Reopen Edit palette"],
+    "result": "No discard prompt; name reopened as PICO-8 copy. This confirms current explicit Close-without-saving behavior; it is a product enhancement opportunity rather than corruption of saved palettes."
+  },
+  "keyboard": {
+    "fixture": "bench/important-colors-review/fixtures/dungeon-wizard.png",
+    "tileTabStops": ["Preview artwork", "Save", "Copy", "Reuse colors", "Preview action", "Remove", "Preview caption"],
+    "dockAfterTile": true,
+    "spaceOnWallArtwork": "Compares rather than opens",
+    "enterOnWallArtwork": "Opens Image preview",
+    "spaceOnPreviewClose": "Leaves Image preview open",
+    "enterOnPreviewClose": "Closes Image preview",
+    "arrowDownInFullPalette": "PICO-8 selection unchanged",
+    "arrowRightInFullPalette": "PICO-8 changes to DawnBringer 16",
+    "restoration": "Returned selection to PICO-8 and theme to dark. Imported fixture is tab-local. No saved palette created or deleted."
+  },
+  "resetCopy": "Colors, styles and theme return to their defaults. Your images and saved palettes stay.",
+  "scopeCorrection": "Space shortcuts and vertical no-op follow explicit product contracts; do not label as unintentional regressions or blanket keyboard inaccessibility."
+}

@@ -1,0 +1,21 @@
+{
+  "fixture": "512x512, 128 distinct RGBA states; identical row filter 0",
+  "current": {
+    "bytes": 386902,
+    "compressor": "fflate zlibSync level 3",
+    "encoding": "RGBA8"
+  },
+  "originalReference": {
+    "bytes": 231039,
+    "compressor": "node:zlib deflateSync level 3",
+    "encoding": "indexed8 plus tRNS"
+  },
+  "controlledReference": {
+    "bytes": 231798,
+    "compressor": "fflate zlibSync level 3",
+    "encoding": "indexed8 plus tRNS"
+  },
+  "controlledReduction": 0.4008870463321461,
+  "exactDecodedRgba": true,
+  "caveat": "Encoding changes PLTE/tRNS and row representation. One bounded authored fixture, not a universal percentage."
+}

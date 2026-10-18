@@ -1,0 +1,7 @@
+{
+  "platform": "Windows_NT",
+  "entry": "a:b-colorfetti.png",
+  "command": "Expand-Archive",
+  "error": "Can not process invalid archive entry 'a:b-colorfetti.png'.",
+  "extractedFiles": []
+}

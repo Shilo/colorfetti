@@ -1,0 +1,174 @@
+{
+  "capApplicationPath": [
+    {
+      "strength": 50,
+      "maxColors": 0,
+      "selected": [
+        "#000000",
+        "#242424",
+        "#494949",
+        "#6d6d6d",
+        "#929292",
+        "#b6b6b6",
+        "#dbdbdb",
+        "#ffffff"
+      ],
+      "counts": {
+        "#6d6d6d": 17,
+        "#929292": 47
+      }
+    },
+    {
+      "strength": 50,
+      "maxColors": 2,
+      "selected": [
+        "#929292"
+      ],
+      "counts": {
+        "#929292": 64
+      }
+    },
+    {
+      "strength": 100,
+      "maxColors": 0,
+      "selected": [
+        "#000000",
+        "#242424",
+        "#494949",
+        "#6d6d6d",
+        "#929292",
+        "#b6b6b6",
+        "#dbdbdb",
+        "#ffffff"
+      ],
+      "counts": {
+        "#6d6d6d": 34,
+        "#929292": 30
+      }
+    },
+    {
+      "strength": 100,
+      "maxColors": 2,
+      "selected": [
+        "#929292"
+      ],
+      "counts": {
+        "#929292": 64
+      }
+    }
+  ],
+  "layout": [
+    {
+      "gray": 224,
+      "dither": "8x8",
+      "width": 256,
+      "height": 256,
+      "across": 96,
+      "mw": 96,
+      "mh": 96,
+      "fullWhite": 0.765625,
+      "sampleWhite": 0.5555555555555556,
+      "difference": -0.21006944444444442,
+      "absDifference": 0.21006944444444442,
+      "scalarVerified": true
+    },
+    {
+      "gray": 32,
+      "dither": "8x8",
+      "width": 2048,
+      "height": 512,
+      "across": 96,
+      "mw": 128,
+      "mh": 32,
+      "fullWhite": 0.015625,
+      "sampleWhite": 1,
+      "difference": 0.984375,
+      "absDifference": 0.984375,
+      "scalarVerified": true
+    },
+    {
+      "gray": 128,
+      "dither": "4x4",
+      "width": 1024,
+      "height": 128,
+      "across": 256,
+      "mw": 256,
+      "mh": 32,
+      "fullWhite": 0.25,
+      "sampleWhite": 0,
+      "difference": -0.25,
+      "absDifference": 0.25,
+      "scalarVerified": true
+    },
+    {
+      "source": [
+        2048,
+        512
+      ],
+      "cssArtBox": [
+        140,
+        140
+      ],
+      "inset": 8,
+      "dpr": 1,
+      "inspectionScale": 1,
+      "across": 124,
+      "sampled": [
+        128,
+        32
+      ],
+      "sampleWhite": 1,
+      "fullWhite": 0.015625
+    }
+  ],
+  "mixture": {
+    "rgb": [
+      96,
+      96,
+      32
+    ],
+    "topFour": [
+      {
+        "i": 6,
+        "color": "#7b53ad",
+        "error": 0.05290482093240976
+      },
+      {
+        "i": 1,
+        "color": "#d32734",
+        "error": 0.05424365243375542
+      },
+      {
+        "i": 2,
+        "color": "#da7d22",
+        "error": 0.05463941648798101
+      },
+      {
+        "i": 5,
+        "color": "#2d93dd",
+        "error": 0.07270842066352406
+      }
+    ],
+    "current": {
+      "counts": {
+        "#da7d22": 20,
+        "#7b53ad": 44
+      },
+      "score": 0.04326031668859587
+    },
+    "exhaustiveSameFour": {
+      "a": "#7b53ad",
+      "b": "#da7d22",
+      "weight": 31,
+      "blockMSE": 0.04009402964666851,
+      "pointMSE": 0.053745015654639586,
+      "score": 0.041706380116307694
+    },
+    "objective": "Oklab squared distance of linear-light mean + .03 * mean per-pixel squared Oklab distance; 8x8, 100% strength"
+  },
+  "remap": {
+    "actualGreenPixels": 0,
+    "frozenAssignmentGreenPixels": 1024,
+    "validSeparateWorkflow": true
+  }
+}

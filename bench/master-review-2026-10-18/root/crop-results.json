@@ -1,0 +1,102 @@
+{
+  "node": "v25.0.0",
+  "oracle": {
+    "aom": "3.15.1",
+    "archive": "3.8.9",
+    "cairo": "1.18.6",
+    "cgif": "0.5.4",
+    "exif": "0.6.26",
+    "expat": "2.8.5",
+    "ffi": "3.8.0",
+    "fontconfig": "2.18.3",
+    "freetype": "2.14.3",
+    "fribidi": "1.0.17",
+    "glib": "2.90.0",
+    "harfbuzz": "14.5.0",
+    "heif": "1.23.5",
+    "highway": "1.4.0",
+    "imagequant": "2.4.1",
+    "lcms": "2.19.1",
+    "mozjpeg": "0826579",
+    "pango": "1.58.2",
+    "pixman": "0.46.4",
+    "png": "1.6.58",
+    "proxy-libintl": "0.5",
+    "rsvg": "2.63.2",
+    "tiff": "4.7.2",
+    "uhdr": "2.0.2",
+    "vips": "8.18.7",
+    "webp": "1.6.0",
+    "xml2": "2.15.4",
+    "zlib-ng": "2.3.3",
+    "sharp": "0.35.5"
+  },
+  "cases": [
+    {
+      "id": "animation128-nearest",
+      "originalWorkloadBytes": 12752,
+      "currentWriterEqualsWorkloadBytes": false,
+      "currentWriterBytes": 12752,
+      "croppedBytes": 6753,
+      "reduction": 0.47043601003764113,
+      "visibleRgbExact": true,
+      "allAlphaExact": true,
+      "metadataExact": true
+    },
+    {
+      "id": "animation128-enhanced",
+      "originalWorkloadBytes": 13559,
+      "currentWriterEqualsWorkloadBytes": false,
+      "currentWriterBytes": 13559,
+      "croppedBytes": 7659,
+      "reduction": 0.4351353344641935,
+      "visibleRgbExact": true,
+      "allAlphaExact": true,
+      "metadataExact": true
+    },
+    {
+      "id": "animation256-nearest",
+      "originalWorkloadBytes": 29510,
+      "currentWriterEqualsWorkloadBytes": false,
+      "currentWriterBytes": 29510,
+      "croppedBytes": 10089,
+      "reduction": 0.658115892917655,
+      "visibleRgbExact": true,
+      "allAlphaExact": true,
+      "metadataExact": true
+    },
+    {
+      "id": "animation256-enhanced",
+      "originalWorkloadBytes": 30860,
+      "currentWriterEqualsWorkloadBytes": false,
+      "currentWriterBytes": 30860,
+      "croppedBytes": 11419,
+      "reduction": 0.6299740764744005,
+      "visibleRgbExact": true,
+      "allAlphaExact": true,
+      "metadataExact": true
+    },
+    {
+      "id": "boundary-empty-first-false",
+      "originalWorkloadBytes": null,
+      "currentWriterEqualsWorkloadBytes": null,
+      "currentWriterBytes": 186,
+      "croppedBytes": 139,
+      "reduction": 0.25268817204301075,
+      "visibleRgbExact": true,
+      "allAlphaExact": true,
+      "metadataExact": true
+    },
+    {
+      "id": "boundary-empty-first-true",
+      "originalWorkloadBytes": null,
+      "currentWriterEqualsWorkloadBytes": null,
+      "currentWriterBytes": 180,
+      "croppedBytes": 137,
+      "reduction": 0.23888888888888893,
+      "visibleRgbExact": true,
+      "allAlphaExact": true,
+      "metadataExact": true
+    }
+  ]
+}

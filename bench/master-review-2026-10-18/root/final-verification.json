@@ -1,0 +1,32 @@
+{
+  "checkedAtUTC": "2026-10-18T13:23:26.093Z",
+  "testedRuntimeCommit": "6b9e290927066f5f361e6dfee174e7f557bf5665",
+  "head": "437e5258fa734e0829981afe8e6de5c386f31659",
+  "sourceHashesVerified": 160,
+  "buildHashesVerified": 43,
+  "reviewInputs": [
+    {
+      "file": "docs/research/2026-10-18-conversion-and-ux-review.md",
+      "frozenSHA256": "b7726b64d476f41b8d31f5163f488ecc593eebb621edf37d4fe31503ee951b06",
+      "currentSHA256": "4a82a94183d2e9e9a5efe69c8832063fa55584ff3e3c60b13dde96b2ffca4f09",
+      "claimsUnchanged": true,
+      "note": "Only examined contact-sheet publication/link changes since frozen input."
+    },
+    {
+      "file": "docs/research/2026-10-18-codex-conversion-and-ux-review.md",
+      "frozenSHA256": "d2ccdfd8453830fb8d8c80c2c447678698d09c6e807583894f596a289d5d4082",
+      "currentSHA256": "d2ccdfd8453830fb8d8c80c2c447678698d09c6e807583894f596a289d5d4082",
+      "claimsUnchanged": true,
+      "note": "Text unchanged."
+    }
+  ],
+  "runtimeDiff": "",
+  "master": "docs/research/2026-10-18-master-conversion-and-ux-review.md",
+  "masterSHA256": "c22da81b45c5cd9631fd30c8fb5379e87cdd988dc0131ec64eb93100178b1936",
+  "evidencePathsVerified": 19,
+  "markdownLinksAndWhitespace": "passed",
+  "validationReceipts": {
+    "tests": "1186 passed, 2 skipped",
+    "build": "passed"
+  }
+}

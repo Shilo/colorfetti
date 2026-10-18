@@ -1,0 +1,8 @@
+# Regenerated probe outputs; retain source and text receipts.
+*.png
+*.gif
+*.zip
+filename-expansion/
+
+# Frozen input required by the provenance verifier (parent ignores codex-*).
+!root/inputs/codex-review.md

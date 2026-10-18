@@ -1,0 +1,2104 @@
+{
+  "conditions": {
+    "metric": "oklab",
+    "dither": "8x8",
+    "ditherStrength": 100
+  },
+  "capDither": [
+    {
+      "gray": 64,
+      "subset": [
+        "#494949"
+      ],
+      "selected": {
+        "indices": [
+          2
+        ],
+        "binned": false,
+        "swaps": 0,
+        "cost": 0.07356071343853642,
+        "popularCost": 0.07356071343853642,
+        "fullCost": 0.07356071343853642,
+        "fastPath": "full-nearest"
+      },
+      "full": {
+        "colors": [
+          {
+            "color": "#242424",
+            "count": 19
+          },
+          {
+            "color": "#494949",
+            "count": 45
+          }
+        ],
+        "blockMSE": 0.000003828317701006479,
+        "pointMSE": 0.004477180357569039,
+        "score": 0.00013814372842807764
+      },
+      "capped": {
+        "colors": [
+          {
+            "color": "#494949",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.0011493861474771328,
+        "pointMSE": 0.0011493861474771328,
+        "score": 0.0011838677319014467
+      },
+      "nearest": {
+        "colors": [
+          {
+            "color": "#494949",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.0011493861474771328,
+        "pointMSE": 0.0011493861474771328,
+        "score": 0.0011838677319014467
+      },
+      "bestTwo": {
+        "a": 2,
+        "b": 1,
+        "weight": 19,
+        "blockMSE": 0.000003828317701006479,
+        "pointMSE": 0.004477180357569039,
+        "score": 0.00013814372842807764,
+        "pair": [
+          "#494949",
+          "#242424"
+        ]
+      }
+    },
+    {
+      "gray": 96,
+      "subset": [
+        "#6d6d6d"
+      ],
+      "selected": {
+        "indices": [
+          3
+        ],
+        "binned": false,
+        "swaps": 0,
+        "cost": 0.13369618018054197,
+        "popularCost": 0.13369618018054197,
+        "fullCost": 0.13369618018054197,
+        "fastPath": "full-nearest"
+      },
+      "full": {
+        "colors": [
+          {
+            "color": "#494949",
+            "count": 26
+          },
+          {
+            "color": "#6d6d6d",
+            "count": 38
+          }
+        ],
+        "blockMSE": 0.0000015514869664747137,
+        "pointMSE": 0.004083612870604115,
+        "score": 0.00012405987308459818
+      },
+      "capped": {
+        "colors": [
+          {
+            "color": "#6d6d6d",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.002089002815320967,
+        "pointMSE": 0.002089002815320967,
+        "score": 0.002151672899780596
+      },
+      "nearest": {
+        "colors": [
+          {
+            "color": "#6d6d6d",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.002089002815320967,
+        "pointMSE": 0.002089002815320967,
+        "score": 0.002151672899780596
+      },
+      "bestTwo": {
+        "a": 3,
+        "b": 2,
+        "weight": 26,
+        "blockMSE": 0.0000015514869664747137,
+        "pointMSE": 0.004083612870604115,
+        "score": 0.00012405987308459818,
+        "pair": [
+          "#6d6d6d",
+          "#494949"
+        ]
+      }
+    },
+    {
+      "gray": 128,
+      "subset": [
+        "#929292"
+      ],
+      "selected": {
+        "indices": [
+          4
+        ],
+        "binned": false,
+        "swaps": 0,
+        "cost": 0.23106848726819254,
+        "popularCost": 0.23106848726819254,
+        "fullCost": 0.23106848726819254,
+        "fastPath": "full-nearest"
+      },
+      "full": {
+        "colors": [
+          {
+            "color": "#6d6d6d",
+            "count": 34
+          },
+          {
+            "color": "#929292",
+            "count": 30
+          }
+        ],
+        "blockMSE": 1.2230770058476673e-8,
+        "pointMSE": 0.00394444395322934,
+        "score": 0.00011834554936693867
+      },
+      "capped": {
+        "colors": [
+          {
+            "color": "#929292",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.0036104451135655115,
+        "pointMSE": 0.0036104451135655115,
+        "score": 0.0037187584669724767
+      },
+      "nearest": {
+        "colors": [
+          {
+            "color": "#929292",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.0036104451135655115,
+        "pointMSE": 0.0036104451135655115,
+        "score": 0.0037187584669724767
+      },
+      "bestTwo": {
+        "a": 4,
+        "b": 3,
+        "weight": 34,
+        "blockMSE": 1.2230770058476673e-8,
+        "pointMSE": 0.00394444395322934,
+        "score": 0.00011834554936693867,
+        "pair": [
+          "#929292",
+          "#6d6d6d"
+        ]
+      }
+    },
+    {
+      "gray": 160,
+      "subset": [
+        "#929292"
+      ],
+      "selected": {
+        "indices": [
+          4
+        ],
+        "binned": false,
+        "swaps": 0,
+        "cost": 0.1342444246579238,
+        "popularCost": 0.1342444246579238,
+        "fullCost": 0.1342444246579238,
+        "fastPath": "full-nearest"
+      },
+      "full": {
+        "colors": [
+          {
+            "color": "#b6b6b6",
+            "count": 23
+          },
+          {
+            "color": "#929292",
+            "count": 41
+          }
+        ],
+        "blockMSE": 2.312008040239207e-7,
+        "pointMSE": 0.0031308012910202386,
+        "score": 0.00009415523953463109
+      },
+      "capped": {
+        "colors": [
+          {
+            "color": "#929292",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.0020975691352800607,
+        "pointMSE": 0.0020975691352800607,
+        "score": 0.0021604962093384624
+      },
+      "nearest": {
+        "colors": [
+          {
+            "color": "#929292",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.0020975691352800607,
+        "pointMSE": 0.0020975691352800607,
+        "score": 0.0021604962093384624
+      },
+      "bestTwo": {
+        "a": 4,
+        "b": 5,
+        "weight": 23,
+        "blockMSE": 2.312008040239207e-7,
+        "pointMSE": 0.0031308012910202386,
+        "score": 0.00009415523953463109,
+        "pair": [
+          "#929292",
+          "#b6b6b6"
+        ]
+      }
+    },
+    {
+      "gray": 192,
+      "subset": [
+        "#b6b6b6"
+      ],
+      "selected": {
+        "indices": [
+          5
+        ],
+        "binned": false,
+        "swaps": 0,
+        "cost": 0.0635935673870511,
+        "popularCost": 0.0635935673870511,
+        "fullCost": 0.0635935673870511,
+        "fastPath": "full-nearest"
+      },
+      "full": {
+        "colors": [
+          {
+            "color": "#dbdbdb",
+            "count": 15
+          },
+          {
+            "color": "#b6b6b6",
+            "count": 49
+          }
+        ],
+        "blockMSE": 0.000002267918998907355,
+        "pointMSE": 0.0024001764478166357,
+        "score": 0.00007427321243340642
+      },
+      "capped": {
+        "colors": [
+          {
+            "color": "#b6b6b6",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.0009936494904226722,
+        "pointMSE": 0.0009936494904226722,
+        "score": 0.0010234589751353523
+      },
+      "nearest": {
+        "colors": [
+          {
+            "color": "#b6b6b6",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.0009936494904226722,
+        "pointMSE": 0.0009936494904226722,
+        "score": 0.0010234589751353523
+      },
+      "bestTwo": {
+        "a": 5,
+        "b": 6,
+        "weight": 15,
+        "blockMSE": 0.000002267918998907355,
+        "pointMSE": 0.0024001764478166357,
+        "score": 0.00007427321243340642,
+        "pair": [
+          "#b6b6b6",
+          "#dbdbdb"
+        ]
+      }
+    }
+  ],
+  "candidateSearch": [
+    {
+      "palette": "ENDESGA 8",
+      "rgb": [
+        96,
+        96,
+        32
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#da7d22",
+            "count": 20
+          },
+          {
+            "color": "#7b53ad",
+            "count": 44
+          }
+        ],
+        "blockMSE": 0.04165691022729011,
+        "pointMSE": 0.053446882043525774,
+        "score": 0.04326031668859588
+      },
+      "projection": {
+        "a": 6,
+        "b": 2,
+        "weight": 20,
+        "blockMSE": 0.04165691022729011,
+        "pointMSE": 0.053446882043525774,
+        "score": 0.04326031668859588,
+        "pair": [
+          "#7b53ad",
+          "#da7d22"
+        ]
+      },
+      "fourAll": {
+        "a": 6,
+        "b": 2,
+        "weight": 31,
+        "blockMSE": 0.04009402964666851,
+        "pointMSE": 0.053745015654639586,
+        "score": 0.041706380116307694,
+        "pair": [
+          "#7b53ad",
+          "#da7d22"
+        ]
+      },
+      "allPairs": {
+        "a": 7,
+        "b": 3,
+        "weight": 10,
+        "blockMSE": 0.00048515666177320084,
+        "pointMSE": 0.08731707888240917,
+        "score": 0.003104669028245476,
+        "pair": [
+          "#1b1c33",
+          "#e6da29"
+        ]
+      },
+      "scoreGap": 0.04015564766035041,
+      "blockGap": 0.04117175356551691
+    },
+    {
+      "palette": "ENDESGA 8",
+      "rgb": [
+        32,
+        96,
+        32
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#da7d22",
+            "count": 4
+          },
+          {
+            "color": "#1b1c33",
+            "count": 60
+          }
+        ],
+        "blockMSE": 0.035063193370759,
+        "pointMSE": 0.06306776490528769,
+        "score": 0.03695522631791763
+      },
+      "projection": {
+        "a": 7,
+        "b": 2,
+        "weight": 4,
+        "blockMSE": 0.035063193370759,
+        "pointMSE": 0.06306776490528769,
+        "score": 0.03695522631791763,
+        "pair": [
+          "#1b1c33",
+          "#da7d22"
+        ]
+      },
+      "fourAll": {
+        "a": 7,
+        "b": 2,
+        "weight": 14,
+        "blockMSE": 0.02187976718199242,
+        "pointMSE": 0.06803618915158383,
+        "score": 0.023920852856539936,
+        "pair": [
+          "#1b1c33",
+          "#da7d22"
+        ]
+      },
+      "allPairs": {
+        "a": 7,
+        "b": 4,
+        "weight": 13,
+        "blockMSE": 0.0006482290985372364,
+        "pointMSE": 0.06769213386972507,
+        "score": 0.0026789931146289883,
+        "pair": [
+          "#1b1c33",
+          "#28c641"
+        ]
+      },
+      "scoreGap": 0.03427623320328864,
+      "blockGap": 0.034414964272221765
+    },
+    {
+      "palette": "PICO-8",
+      "rgb": [
+        32,
+        32,
+        224
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#5f574f",
+            "count": 2
+          },
+          {
+            "color": "#1d2b53",
+            "count": 62
+          }
+        ],
+        "blockMSE": 0.05495922663123086,
+        "pointMSE": 0.05593461063213405,
+        "score": 0.05663726495019488
+      },
+      "projection": {
+        "a": 1,
+        "b": 5,
+        "weight": 2,
+        "blockMSE": 0.05495922663123086,
+        "pointMSE": 0.05593461063213405,
+        "score": 0.05663726495019488,
+        "pair": [
+          "#1d2b53",
+          "#5f574f"
+        ]
+      },
+      "fourAll": {
+        "a": 1,
+        "b": 13,
+        "weight": 15,
+        "blockMSE": 0.04473125162302625,
+        "pointMSE": 0.05925513334983476,
+        "score": 0.04650890562352129,
+        "pair": [
+          "#1d2b53",
+          "#83769c"
+        ]
+      },
+      "allPairs": {
+        "a": 1,
+        "b": 12,
+        "weight": 13,
+        "blockMSE": 0.03032006208374045,
+        "pointMSE": 0.06415683219652535,
+        "score": 0.03224476704963621,
+        "pair": [
+          "#1d2b53",
+          "#29adff"
+        ]
+      },
+      "scoreGap": 0.02439249790055867,
+      "blockGap": 0.02463916454749041
+    },
+    {
+      "palette": "Mulfok 32",
+      "rgb": [
+        96,
+        96,
+        32
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#4a3052",
+            "count": 51
+          },
+          {
+            "color": "#a6555f",
+            "count": 13
+          }
+        ],
+        "blockMSE": 0.024012109737896636,
+        "pointMSE": 0.03398701676773761,
+        "score": 0.025031720240928763
+      },
+      "projection": {
+        "a": 12,
+        "b": 20,
+        "weight": 51,
+        "blockMSE": 0.024012109737896636,
+        "pointMSE": 0.03398701676773761,
+        "score": 0.025031720240928763,
+        "pair": [
+          "#a6555f",
+          "#4a3052"
+        ]
+      },
+      "fourAll": {
+        "a": 12,
+        "b": 20,
+        "weight": 31,
+        "blockMSE": 0.019398772932872017,
+        "pointMSE": 0.03083941864340105,
+        "score": 0.02032395549217405,
+        "pair": [
+          "#a6555f",
+          "#4a3052"
+        ]
+      },
+      "allPairs": {
+        "a": 19,
+        "b": 2,
+        "weight": 11,
+        "blockMSE": 0.000928755857704215,
+        "pointMSE": 0.09815813621317433,
+        "score": 0.003873499944099445,
+        "pair": [
+          "#1f102a",
+          "#abdd64"
+        ]
+      },
+      "scoreGap": 0.021158220296829316,
+      "blockGap": 0.02308335388019242
+    },
+    {
+      "palette": "PICO-8",
+      "rgb": [
+        96,
+        32,
+        224
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#1d2b53",
+            "count": 2
+          },
+          {
+            "color": "#83769c",
+            "count": 62
+          }
+        ],
+        "blockMSE": 0.05050678644712754,
+        "pointMSE": 0.05213229494459571,
+        "score": 0.05207075529546541
+      },
+      "projection": {
+        "a": 13,
+        "b": 1,
+        "weight": 2,
+        "blockMSE": 0.05050678644712754,
+        "pointMSE": 0.05213229494459571,
+        "score": 0.05207075529546541,
+        "pair": [
+          "#83769c",
+          "#1d2b53"
+        ]
+      },
+      "fourAll": {
+        "a": 13,
+        "b": 1,
+        "weight": 36,
+        "blockMSE": 0.038613899143895854,
+        "pointMSE": 0.05981155363328193,
+        "score": 0.04040824575289431,
+        "pair": [
+          "#83769c",
+          "#1d2b53"
+        ]
+      },
+      "allPairs": {
+        "a": 2,
+        "b": 12,
+        "weight": 15,
+        "blockMSE": 0.030882106076065934,
+        "pointMSE": 0.06517805109176789,
+        "score": 0.03283744760881897,
+        "pair": [
+          "#7e2553",
+          "#29adff"
+        ]
+      },
+      "scoreGap": 0.01923330768664644,
+      "blockGap": 0.019624680371061607
+    },
+    {
+      "palette": "Mulfok 32",
+      "rgb": [
+        32,
+        96,
+        96
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#4a3052",
+            "count": 59
+          },
+          {
+            "color": "#7b5480",
+            "count": 5
+          }
+        ],
+        "blockMSE": 0.0194617470386154,
+        "pointMSE": 0.02180012622251019,
+        "score": 0.020115750825290706
+      },
+      "projection": {
+        "a": 21,
+        "b": 20,
+        "weight": 59,
+        "blockMSE": 0.0194617470386154,
+        "pointMSE": 0.02180012622251019,
+        "score": 0.020115750825290706,
+        "pair": [
+          "#7b5480",
+          "#4a3052"
+        ]
+      },
+      "fourAll": {
+        "a": 21,
+        "b": 20,
+        "weight": 35,
+        "blockMSE": 0.015292267763124258,
+        "pointMSE": 0.021195119705872376,
+        "score": 0.01592812135430043,
+        "pair": [
+          "#7b5480",
+          "#4a3052"
+        ]
+      },
+      "allPairs": {
+        "a": 0,
+        "b": 9,
+        "weight": 46,
+        "blockMSE": 0.001302488598519603,
+        "pointMSE": 0.056638136989505504,
+        "score": 0.003001632708204768,
+        "pair": [
+          "#5ba675",
+          "#390947"
+        ]
+      },
+      "scoreGap": 0.017114118117085936,
+      "blockGap": 0.018159258440095798
+    },
+    {
+      "palette": "ENDESGA 8",
+      "rgb": [
+        96,
+        96,
+        96
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#da7d22",
+            "count": 12
+          },
+          {
+            "color": "#7b53ad",
+            "count": 52
+          }
+        ],
+        "blockMSE": 0.018599998832223998,
+        "pointMSE": 0.028106094503739354,
+        "score": 0.01944318166733618
+      },
+      "projection": {
+        "a": 6,
+        "b": 2,
+        "weight": 12,
+        "blockMSE": 0.018599998832223998,
+        "pointMSE": 0.028106094503739354,
+        "score": 0.01944318166733618,
+        "pair": [
+          "#7b53ad",
+          "#da7d22"
+        ]
+      },
+      "fourAll": {
+        "a": 6,
+        "b": 2,
+        "weight": 12,
+        "blockMSE": 0.018599998832223998,
+        "pointMSE": 0.028106094503739354,
+        "score": 0.01944318166733618,
+        "pair": [
+          "#7b53ad",
+          "#da7d22"
+        ]
+      },
+      "allPairs": {
+        "a": 7,
+        "b": 0,
+        "weight": 7,
+        "blockMSE": 0.00008099656064443175,
+        "pointMSE": 0.0856541624810696,
+        "score": 0.00265062143507652,
+        "pair": [
+          "#1b1c33",
+          "#fdfdf8"
+        ]
+      },
+      "scoreGap": 0.01679256023225966,
+      "blockGap": 0.018519002271579568
+    },
+    {
+      "palette": "Mulfok 32",
+      "rgb": [
+        32,
+        32,
+        224
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#8465ec",
+            "count": 48
+          },
+          {
+            "color": "#4e187c",
+            "count": 16
+          }
+        ],
+        "blockMSE": 0.030964792890967027,
+        "pointMSE": 0.040119687123995246,
+        "score": 0.032168383504686884
+      },
+      "projection": {
+        "a": 31,
+        "b": 28,
+        "weight": 48,
+        "blockMSE": 0.030964792890967027,
+        "pointMSE": 0.040119687123995246,
+        "score": 0.032168383504686884,
+        "pair": [
+          "#4e187c",
+          "#8465ec"
+        ]
+      },
+      "fourAll": {
+        "a": 31,
+        "b": 28,
+        "weight": 20,
+        "blockMSE": 0.020928259430513692,
+        "pointMSE": 0.03681890926683827,
+        "score": 0.02203282670851884,
+        "pair": [
+          "#4e187c",
+          "#8465ec"
+        ]
+      },
+      "allPairs": {
+        "a": 31,
+        "b": 27,
+        "weight": 17,
+        "blockMSE": 0.01881710571550559,
+        "pointMSE": 0.03916299039159585,
+        "score": 0.019991995427253464,
+        "pair": [
+          "#4e187c",
+          "#6d80fa"
+        ]
+      },
+      "scoreGap": 0.01217638807743342,
+      "blockGap": 0.012147687175461438
+    },
+    {
+      "palette": "ENDESGA 8",
+      "rgb": [
+        160,
+        96,
+        32
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#7b53ad",
+            "count": 27
+          },
+          {
+            "color": "#da7d22",
+            "count": 37
+          }
+        ],
+        "blockMSE": 0.013046498017600357,
+        "pointMSE": 0.03060651569963592,
+        "score": 0.013964693488589435
+      },
+      "projection": {
+        "a": 2,
+        "b": 6,
+        "weight": 27,
+        "blockMSE": 0.013046498017600357,
+        "pointMSE": 0.03060651569963592,
+        "score": 0.013964693488589435,
+        "pair": [
+          "#da7d22",
+          "#7b53ad"
+        ]
+      },
+      "fourAll": {
+        "a": 2,
+        "b": 1,
+        "weight": 36,
+        "blockMSE": 0.010478110173614134,
+        "pointMSE": 0.018013318019242774,
+        "score": 0.011018509714191417,
+        "pair": [
+          "#da7d22",
+          "#d32734"
+        ]
+      },
+      "allPairs": {
+        "a": 2,
+        "b": 7,
+        "weight": 30,
+        "blockMSE": 0.0002115556233120366,
+        "pointMSE": 0.06553957034754317,
+        "score": 0.0021777427337383313,
+        "pair": [
+          "#da7d22",
+          "#1b1c33"
+        ]
+      },
+      "scoreGap": 0.011786950754851103,
+      "blockGap": 0.012834942394288321
+    },
+    {
+      "palette": "Mulfok 32",
+      "rgb": [
+        32,
+        96,
+        160
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#834dc4",
+            "count": 21
+          },
+          {
+            "color": "#7b5480",
+            "count": 43
+          }
+        ],
+        "blockMSE": 0.01519126796088398,
+        "pointMSE": 0.017605839674825968,
+        "score": 0.01571944315112876
+      },
+      "projection": {
+        "a": 21,
+        "b": 29,
+        "weight": 21,
+        "blockMSE": 0.01519126796088398,
+        "pointMSE": 0.017605839674825968,
+        "score": 0.01571944315112876,
+        "pair": [
+          "#7b5480",
+          "#834dc4"
+        ]
+      },
+      "fourAll": {
+        "a": 21,
+        "b": 29,
+        "weight": 11,
+        "blockMSE": 0.014811992481878627,
+        "pointMSE": 0.016555556569769408,
+        "score": 0.01530865917897171,
+        "pair": [
+          "#7b5480",
+          "#834dc4"
+        ]
+      },
+      "allPairs": {
+        "a": 27,
+        "b": 19,
+        "weight": 39,
+        "blockMSE": 0.0027925070554461868,
+        "pointMSE": 0.06523768110070174,
+        "score": 0.004749637488467239,
+        "pair": [
+          "#6d80fa",
+          "#1f102a"
+        ]
+      },
+      "scoreGap": 0.010969805662661519,
+      "blockGap": 0.012398760905437792
+    },
+    {
+      "palette": "DawnBringer 16",
+      "rgb": [
+        96,
+        32,
+        224
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#30346d",
+            "count": 2
+          },
+          {
+            "color": "#597dce",
+            "count": 62
+          }
+        ],
+        "blockMSE": 0.03409975864250414,
+        "pointMSE": 0.0353400040071503,
+        "score": 0.03515995876271865
+      },
+      "projection": {
+        "a": 8,
+        "b": 2,
+        "weight": 2,
+        "blockMSE": 0.03409975864250414,
+        "pointMSE": 0.0353400040071503,
+        "score": 0.03515995876271865,
+        "pair": [
+          "#597dce",
+          "#30346d"
+        ]
+      },
+      "fourAll": {
+        "a": 8,
+        "b": 2,
+        "weight": 36,
+        "blockMSE": 0.023314164463917347,
+        "pointMSE": 0.03832711470273445,
+        "score": 0.024463977904999382,
+        "pair": [
+          "#597dce",
+          "#30346d"
+        ]
+      },
+      "allPairs": {
+        "a": 8,
+        "b": 2,
+        "weight": 36,
+        "blockMSE": 0.023314164463917347,
+        "pointMSE": 0.03832711470273445,
+        "score": 0.024463977904999382,
+        "pair": [
+          "#597dce",
+          "#30346d"
+        ]
+      },
+      "scoreGap": 0.010695980857719268,
+      "blockGap": 0.010785594178586794
+    },
+    {
+      "palette": "DawnBringer 16",
+      "rgb": [
+        32,
+        32,
+        224
+      ],
+      "actual": {
+        "colors": [
+          {
+            "color": "#30346d",
+            "count": 64
+          }
+        ],
+        "blockMSE": 0.03606288074297284,
+        "pointMSE": 0.03606288074297284,
+        "score": 0.03714476716526203
+      },
+      "projection": {
+        "a": 2,
+        "b": 2,
+        "weight": 0,
+        "blockMSE": 0.03606288074297284,
+        "pointMSE": 0.03606288074297284,
+        "score": 0.03714476716526203,
+        "pair": [
+          "#30346d",
+          "#30346d"
+        ]
+      },
+      "fourAll": {
+        "a": 2,
+        "b": 8,
+        "weight": 19,
+        "blockMSE": 0.025884493398962607,
+        "pointMSE": 0.03905136314197748,
+        "score": 0.027056034293221932,
+        "pair": [
+          "#30346d",
+          "#597dce"
+        ]
+      },
+      "allPairs": {
+        "a": 2,
+        "b": 8,
+        "weight": 19,
+        "blockMSE": 0.025884493398962607,
+        "pointMSE": 0.03905136314197748,
+        "score": 0.027056034293221932,
+        "pair": [
+          "#30346d",
+          "#597dce"
+        ]
+      },
+      "scoreGap": 0.010088732872040096,
+      "blockGap": 0.010178387344010234
+    }
+  ],
+  "aliasing": [
+    {
+      "dither": "2x2",
+      "divisor": 1,
+      "whiteFraction": 0.25,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "dither": "2x2",
+      "divisor": 2,
+      "whiteFraction": 0,
+      "width": 64,
+      "height": 64
+    },
+    {
+      "dither": "2x2",
+      "divisor": 4,
+      "whiteFraction": 0,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "dither": "2x2",
+      "divisor": 8,
+      "whiteFraction": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "dither": "4x4",
+      "divisor": 1,
+      "whiteFraction": 0.25,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "dither": "4x4",
+      "divisor": 2,
+      "whiteFraction": 0,
+      "width": 64,
+      "height": 64
+    },
+    {
+      "dither": "4x4",
+      "divisor": 4,
+      "whiteFraction": 0,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "dither": "4x4",
+      "divisor": 8,
+      "whiteFraction": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "dither": "8x8",
+      "divisor": 1,
+      "whiteFraction": 0.21875,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "dither": "8x8",
+      "divisor": 2,
+      "whiteFraction": 0,
+      "width": 64,
+      "height": 64
+    },
+    {
+      "dither": "8x8",
+      "divisor": 4,
+      "whiteFraction": 0,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "dither": "8x8",
+      "divisor": 8,
+      "whiteFraction": 0,
+      "width": 16,
+      "height": 16
+    }
+  ],
+  "realCorpus": [
+    {
+      "source": "dungeon-wizard",
+      "sha256": "b3909f80a29a0f18729f96a90ebe446ecaf26a195da633f2a6c3dd31f660821e",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0084.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 215,
+      "changed": 20,
+      "pointMSE": {
+        "current": 0.011241974457546806,
+        "oracle4": 0.011196432837640817
+      },
+      "block4MSE": {
+        "current": 0.001980226883796216,
+        "oracle4": 0.0014301711392518913
+      }
+    },
+    {
+      "source": "dungeon-wizard",
+      "sha256": "b3909f80a29a0f18729f96a90ebe446ecaf26a195da633f2a6c3dd31f660821e",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0084.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 215,
+      "changed": 7,
+      "pointMSE": {
+        "current": 0.009664485270532106,
+        "oracle4": 0.009924671174634837
+      },
+      "block4MSE": {
+        "current": 0.0014883094312521017,
+        "oracle4": 0.001474110810759408
+      }
+    },
+    {
+      "source": "dungeon-wizard",
+      "sha256": "b3909f80a29a0f18729f96a90ebe446ecaf26a195da633f2a6c3dd31f660821e",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0084.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 215,
+      "changed": 2,
+      "pointMSE": {
+        "current": 0.0190825557709662,
+        "oracle4": 0.01888994907410791
+      },
+      "block4MSE": {
+        "current": 0.001984728263581386,
+        "oracle4": 0.0020753948785383553
+      }
+    },
+    {
+      "source": "dungeon-archer",
+      "sha256": "1e82481db9d95d0cec64ba0ea95b8fadf1e3675936e93731d0ff0e3bc72470b0",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0112.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 199,
+      "changed": 2,
+      "pointMSE": {
+        "current": 0.010779755608937869,
+        "oracle4": 0.010401030623578247
+      },
+      "block4MSE": {
+        "current": 0.0028120390063491605,
+        "oracle4": 0.002833057517396736
+      }
+    },
+    {
+      "source": "dungeon-archer",
+      "sha256": "1e82481db9d95d0cec64ba0ea95b8fadf1e3675936e93731d0ff0e3bc72470b0",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0112.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 199,
+      "changed": 6,
+      "pointMSE": {
+        "current": 0.00543158093138569,
+        "oracle4": 0.005269175623727159
+      },
+      "block4MSE": {
+        "current": 0.00045253851567050423,
+        "oracle4": 0.00044296554203000196
+      }
+    },
+    {
+      "source": "dungeon-archer",
+      "sha256": "1e82481db9d95d0cec64ba0ea95b8fadf1e3675936e93731d0ff0e3bc72470b0",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0112.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 199,
+      "changed": 3,
+      "pointMSE": {
+        "current": 0.01986362234609263,
+        "oracle4": 0.019841694759588125
+      },
+      "block4MSE": {
+        "current": 0.002322682026987869,
+        "oracle4": 0.002371470984259508
+      }
+    },
+    {
+      "source": "dungeon-knight",
+      "sha256": "e139ab1d56c599af1cea5a955b705ead18a92d41e8e635b550729383cad9de3c",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0100.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 203,
+      "changed": 2,
+      "pointMSE": {
+        "current": 0.011138435390773055,
+        "oracle4": 0.0105397721628046
+      },
+      "block4MSE": {
+        "current": 0.0018447764628206204,
+        "oracle4": 0.0017683445977131006
+      }
+    },
+    {
+      "source": "dungeon-knight",
+      "sha256": "e139ab1d56c599af1cea5a955b705ead18a92d41e8e635b550729383cad9de3c",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0100.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 203,
+      "changed": 8,
+      "pointMSE": {
+        "current": 0.004267854144701916,
+        "oracle4": 0.004202275189065179
+      },
+      "block4MSE": {
+        "current": 0.00078831158944513,
+        "oracle4": 0.0007886450492499554
+      }
+    },
+    {
+      "source": "dungeon-knight",
+      "sha256": "e139ab1d56c599af1cea5a955b705ead18a92d41e8e635b550729383cad9de3c",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0100.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 203,
+      "changed": 2,
+      "pointMSE": {
+        "current": 0.02056341470524794,
+        "oracle4": 0.02016961888614112
+      },
+      "block4MSE": {
+        "current": 0.004045544443454999,
+        "oracle4": 0.0038875364123902288
+      }
+    },
+    {
+      "source": "dungeon-potion",
+      "sha256": "ad27340925ae7e936788c22cbd0f7d1922ef5bdd21377f916f1be9af6be4312d",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0115.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 110,
+      "changed": 3,
+      "pointMSE": {
+        "current": 0.012301164755635564,
+        "oracle4": 0.011272309515977866
+      },
+      "block4MSE": {
+        "current": 0.008986113559343608,
+        "oracle4": 0.008943483818739993
+      }
+    },
+    {
+      "source": "dungeon-potion",
+      "sha256": "ad27340925ae7e936788c22cbd0f7d1922ef5bdd21377f916f1be9af6be4312d",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0115.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 110,
+      "changed": 3,
+      "pointMSE": {
+        "current": 0.003013242247206939,
+        "oracle4": 0.0034943837621502763
+      },
+      "block4MSE": {
+        "current": 0.0006724638962354444,
+        "oracle4": 0.002153568292372963
+      }
+    },
+    {
+      "source": "dungeon-potion",
+      "sha256": "ad27340925ae7e936788c22cbd0f7d1922ef5bdd21377f916f1be9af6be4312d",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0115.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 110,
+      "changed": 2,
+      "pointMSE": {
+        "current": 0.013877376307034525,
+        "oracle4": 0.013708187910939904
+      },
+      "block4MSE": {
+        "current": 0.012506445467453555,
+        "oracle4": 0.012443134370958217
+      }
+    },
+    {
+      "source": "dungeon-neutral-shield",
+      "sha256": "35af44a6fc76a09e7fe625c0becfeac809360774c6a845ec8024dd8db6f5fc3f",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0102.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 94,
+      "changed": 1,
+      "pointMSE": {
+        "current": 0.010987287231268107,
+        "oracle4": 0.010801614686182912
+      },
+      "block4MSE": {
+        "current": 0.005972745925889036,
+        "oracle4": 0.005966527660873733
+      }
+    },
+    {
+      "source": "dungeon-neutral-shield",
+      "sha256": "35af44a6fc76a09e7fe625c0becfeac809360774c6a845ec8024dd8db6f5fc3f",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0102.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 94,
+      "changed": 6,
+      "pointMSE": {
+        "current": 0.0031893778891964445,
+        "oracle4": 0.003436935873228293
+      },
+      "block4MSE": {
+        "current": 0.0005354559231971359,
+        "oracle4": 0.0004336576511029081
+      }
+    },
+    {
+      "source": "dungeon-neutral-shield",
+      "sha256": "35af44a6fc76a09e7fe625c0becfeac809360774c6a845ec8024dd8db6f5fc3f",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-dungeon",
+        "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+        "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+        "bytes": 98530,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0102.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 94,
+      "changed": 0,
+      "pointMSE": {
+        "current": 0.022391003234248662,
+        "oracle4": 0.022391003234248662
+      },
+      "block4MSE": {
+        "current": 0.007378169939994981,
+        "oracle4": 0.007378169939994981
+      }
+    },
+    {
+      "source": "town-water-bucket",
+      "sha256": "3befce5d6373d4315f35eeed22752bb1cf7a2ab5d008ce26dd6b4aebbb278978",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-town",
+        "url": "https://kenney.nl/media/pages/assets/tiny-town/a415fbeb49-1735736916/kenney_tiny-town.zip",
+        "sha256": "9768692dccff1d706408a5aedd6ca4f6cd1409506cbc84cb2f862919764be977",
+        "bytes": 182243,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0104.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 254,
+      "changed": 4,
+      "pointMSE": {
+        "current": 0.013407624625138061,
+        "oracle4": 0.013518112705893382
+      },
+      "block4MSE": {
+        "current": 0.0009937076794880447,
+        "oracle4": 0.0008711081729129495
+      }
+    },
+    {
+      "source": "town-water-bucket",
+      "sha256": "3befce5d6373d4315f35eeed22752bb1cf7a2ab5d008ce26dd6b4aebbb278978",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-town",
+        "url": "https://kenney.nl/media/pages/assets/tiny-town/a415fbeb49-1735736916/kenney_tiny-town.zip",
+        "sha256": "9768692dccff1d706408a5aedd6ca4f6cd1409506cbc84cb2f862919764be977",
+        "bytes": 182243,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0104.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 254,
+      "changed": 14,
+      "pointMSE": {
+        "current": 0.006705552449845644,
+        "oracle4": 0.006409520485868274
+      },
+      "block4MSE": {
+        "current": 0.0009563834181978026,
+        "oracle4": 0.0009735927618335187
+      }
+    },
+    {
+      "source": "town-water-bucket",
+      "sha256": "3befce5d6373d4315f35eeed22752bb1cf7a2ab5d008ce26dd6b4aebbb278978",
+      "provenance": {
+        "page": "https://kenney.nl/assets/tiny-town",
+        "url": "https://kenney.nl/media/pages/assets/tiny-town/a415fbeb49-1735736916/kenney_tiny-town.zip",
+        "sha256": "9768692dccff1d706408a5aedd6ca4f6cd1409506cbc84cb2f862919764be977",
+        "bytes": 182243,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0104.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 254,
+      "changed": 2,
+      "pointMSE": {
+        "current": 0.024439080692720154,
+        "oracle4": 0.024179280598630445
+      },
+      "block4MSE": {
+        "current": 0.0023741509632622644,
+        "oracle4": 0.0023879033736171045
+      }
+    },
+    {
+      "source": "platformer-pilot",
+      "sha256": "15df14143949310c001b09b2a00ed2278a5a9b4a10edd276af306b77b8c9d658",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0000.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 399,
+      "changed": 14,
+      "pointMSE": {
+        "current": 0.016192281982232243,
+        "oracle4": 0.01545526128936377
+      },
+      "block4MSE": {
+        "current": 0.0024116586386376164,
+        "oracle4": 0.002413510796053577
+      }
+    },
+    {
+      "source": "platformer-pilot",
+      "sha256": "15df14143949310c001b09b2a00ed2278a5a9b4a10edd276af306b77b8c9d658",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0000.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 399,
+      "changed": 26,
+      "pointMSE": {
+        "current": 0.00892365003998026,
+        "oracle4": 0.009394207780023091
+      },
+      "block4MSE": {
+        "current": 0.0032639073374056984,
+        "oracle4": 0.0033473094921906876
+      }
+    },
+    {
+      "source": "platformer-pilot",
+      "sha256": "15df14143949310c001b09b2a00ed2278a5a9b4a10edd276af306b77b8c9d658",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0000.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 399,
+      "changed": 21,
+      "pointMSE": {
+        "current": 0.03389502026500734,
+        "oracle4": 0.03329879929589683
+      },
+      "block4MSE": {
+        "current": 0.005607949647302958,
+        "oracle4": 0.004599518531779186
+      }
+    },
+    {
+      "source": "platformer-pilot-blink",
+      "sha256": "b929b7d7d1c3175a018ff61c1240ceb6250a29ad9388ee4b03d84eedcfdb0a27",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0001.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 400,
+      "changed": 8,
+      "pointMSE": {
+        "current": 0.01611725368703561,
+        "oracle4": 0.015820356818184004
+      },
+      "block4MSE": {
+        "current": 0.0024683728506967114,
+        "oracle4": 0.002350895522676058
+      }
+    },
+    {
+      "source": "platformer-pilot-blink",
+      "sha256": "b929b7d7d1c3175a018ff61c1240ceb6250a29ad9388ee4b03d84eedcfdb0a27",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0001.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 400,
+      "changed": 17,
+      "pointMSE": {
+        "current": 0.009133926899734862,
+        "oracle4": 0.009406777722976703
+      },
+      "block4MSE": {
+        "current": 0.0031864001554060477,
+        "oracle4": 0.0033802468448482534
+      }
+    },
+    {
+      "source": "platformer-pilot-blink",
+      "sha256": "b929b7d7d1c3175a018ff61c1240ceb6250a29ad9388ee4b03d84eedcfdb0a27",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0001.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 400,
+      "changed": 19,
+      "pointMSE": {
+        "current": 0.03421719406912299,
+        "oracle4": 0.0342457454908663
+      },
+      "block4MSE": {
+        "current": 0.005993853539639224,
+        "oracle4": 0.004849238680101505
+      }
+    },
+    {
+      "source": "platformer-neutral-pilot",
+      "sha256": "e719c763aa0a34a5d7a2a2633ddd1c6222ce329ab57cf20c7d379d0b8f2ccc6f",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0008.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 356,
+      "changed": 4,
+      "pointMSE": {
+        "current": 0.009617515616504315,
+        "oracle4": 0.0095198210820285
+      },
+      "block4MSE": {
+        "current": 0.0027990564075509802,
+        "oracle4": 0.0028061076403353242
+      }
+    },
+    {
+      "source": "platformer-neutral-pilot",
+      "sha256": "e719c763aa0a34a5d7a2a2633ddd1c6222ce329ab57cf20c7d379d0b8f2ccc6f",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0008.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 356,
+      "changed": 37,
+      "pointMSE": {
+        "current": 0.003589490685464232,
+        "oracle4": 0.00342435694794895
+      },
+      "block4MSE": {
+        "current": 0.0015776165100213437,
+        "oracle4": 0.0012194738701160163
+      }
+    },
+    {
+      "source": "platformer-neutral-pilot",
+      "sha256": "e719c763aa0a34a5d7a2a2633ddd1c6222ce329ab57cf20c7d379d0b8f2ccc6f",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0008.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 356,
+      "changed": 18,
+      "pointMSE": {
+        "current": 0.028799983360461145,
+        "oracle4": 0.030177926008475377
+      },
+      "block4MSE": {
+        "current": 0.011214786948039167,
+        "oracle4": 0.010949736885920608
+      }
+    },
+    {
+      "source": "platformer-rocket",
+      "sha256": "aca58ddc36d4e8d506111b1e580fc79b17383337b3cec27c28b0e6090435224a",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0015.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 201,
+      "changed": 5,
+      "pointMSE": {
+        "current": 0.01351139688825343,
+        "oracle4": 0.013295107993518414
+      },
+      "block4MSE": {
+        "current": 0.0007360638194687376,
+        "oracle4": 0.0007429167603080257
+      }
+    },
+    {
+      "source": "platformer-rocket",
+      "sha256": "aca58ddc36d4e8d506111b1e580fc79b17383337b3cec27c28b0e6090435224a",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0015.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 201,
+      "changed": 21,
+      "pointMSE": {
+        "current": 0.004887223473644847,
+        "oracle4": 0.005238599856867473
+      },
+      "block4MSE": {
+        "current": 0.0011022064446416615,
+        "oracle4": 0.0011364375554843245
+      }
+    },
+    {
+      "source": "platformer-rocket",
+      "sha256": "aca58ddc36d4e8d506111b1e580fc79b17383337b3cec27c28b0e6090435224a",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/Characters/tile_0015.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 201,
+      "changed": 11,
+      "pointMSE": {
+        "current": 0.028389802946732687,
+        "oracle4": 0.029861729567617668
+      },
+      "block4MSE": {
+        "current": 0.003217592230942123,
+        "oracle4": 0.0031870719757673754
+      }
+    },
+    {
+      "source": "platformer-heart",
+      "sha256": "6b547ef267ee13918a4e45ac8a2a3d0de4fbaef8267459045cf9f8c5e283770e",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0044.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 130,
+      "changed": 3,
+      "pointMSE": {
+        "current": 0.022317687624283433,
+        "oracle4": 0.022905503961414043
+      },
+      "block4MSE": {
+        "current": 0.004743177084838669,
+        "oracle4": 0.004623857958442842
+      }
+    },
+    {
+      "source": "platformer-heart",
+      "sha256": "6b547ef267ee13918a4e45ac8a2a3d0de4fbaef8267459045cf9f8c5e283770e",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0044.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 130,
+      "changed": 15,
+      "pointMSE": {
+        "current": 0.007219464352716936,
+        "oracle4": 0.008782051148901307
+      },
+      "block4MSE": {
+        "current": 0.0040846224314989256,
+        "oracle4": 0.0036692812497392292
+      }
+    },
+    {
+      "source": "platformer-heart",
+      "sha256": "6b547ef267ee13918a4e45ac8a2a3d0de4fbaef8267459045cf9f8c5e283770e",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0044.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 130,
+      "changed": 10,
+      "pointMSE": {
+        "current": 0.02846778982429884,
+        "oracle4": 0.02910377228143671
+      },
+      "block4MSE": {
+        "current": 0.006477891242634744,
+        "oracle4": 0.006461492040660337
+      }
+    },
+    {
+      "source": "platformer-axe",
+      "sha256": "590a1609364b960b979f780d207ea8f1f951620fa229c3c8a9d63fd85d099336",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0066.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "PICO-8",
+      "visible": 153,
+      "changed": 6,
+      "pointMSE": {
+        "current": 0.010089736000541095,
+        "oracle4": 0.00990306266826994
+      },
+      "block4MSE": {
+        "current": 0.0009438833663146455,
+        "oracle4": 0.0010810406154684634
+      }
+    },
+    {
+      "source": "platformer-axe",
+      "sha256": "590a1609364b960b979f780d207ea8f1f951620fa229c3c8a9d63fd85d099336",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0066.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "DawnBringer 16",
+      "visible": 153,
+      "changed": 26,
+      "pointMSE": {
+        "current": 0.007282397796948809,
+        "oracle4": 0.005901374140403101
+      },
+      "block4MSE": {
+        "current": 0.0008254949756372203,
+        "oracle4": 0.0008023195739533559
+      }
+    },
+    {
+      "source": "platformer-axe",
+      "sha256": "590a1609364b960b979f780d207ea8f1f951620fa229c3c8a9d63fd85d099336",
+      "provenance": {
+        "page": "https://kenney.nl/assets/pixel-platformer",
+        "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+        "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+        "bytes": 260312,
+        "retrieved": "2026-10-15",
+        "archivePath": "Tiles/tile_0066.png",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "palette": "ENDESGA 8",
+      "visible": 153,
+      "changed": 7,
+      "pointMSE": {
+        "current": 0.03147581894118394,
+        "oracle4": 0.030927220806718267
+      },
+      "block4MSE": {
+        "current": 0.010191400277284183,
+        "oracle4": 0.010342138169379329
+      }
+    }
+  ],
+  "guards": {
+    "productionProjectionParity": 476,
+    "maxProjectionScoreError": 0,
+    "oracleNeverWorseWithinSameFour": 476
+  },
+  "candidateSummary": {
+    "cases": 476,
+    "sameFourExhaustiveImproves": 359,
+    "allPairsExhaustiveImproves": 395,
+    "notes": "Selected synthetic repro records retained; full sweep deterministically regenerates."
+  }
+}

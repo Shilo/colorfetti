@@ -1,0 +1,37 @@
+
+> colorfetti@0.0.0 build
+> vite build --outDir .tmp/master-review/dist
+
+6:00:43 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti - using default configuration.
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 198 modules transformed.
+rendering chunks...
+computing gzip size...
+.tmp/master-review/dist/index.html                                     4.54 kB │ gzip:  1.63 kB
+.tmp/master-review/dist/assets/palette-generated-worker-xpoMRM2c.js    9.82 kB
+.tmp/master-review/dist/assets/palette-limit-worker-rkrL9P3s.js        9.86 kB
+.tmp/master-review/dist/assets/palette-gif-worker-D4qe4WP7.js         11.21 kB
+.tmp/master-review/dist/assets/palette-cleanup-worker-ChpCTucA.js     15.05 kB
+.tmp/master-review/dist/assets/image-import-worker-DcArPydw.js        28.33 kB
+.tmp/master-review/dist/assets/index-VE9_tUgX.css                    168.00 kB │ gzip: 26.46 kB
+.tmp/master-review/dist/assets/palette-usage-BE2W2hmW.js               0.97 kB │ gzip:  0.61 kB
+.tmp/master-review/dist/assets/image-bitmap-decode-BBWTQ-0Y.js         1.67 kB │ gzip:  1.01 kB
+.tmp/master-review/dist/assets/palette-lospec-BUdZU2lN.js              2.32 kB │ gzip:  1.25 kB
+.tmp/master-review/dist/assets/palette-ase-gXqzrNdw.js                 2.49 kB │ gzip:  1.32 kB
+.tmp/master-review/dist/assets/palette-generated-client-APDdOwsr.js    4.00 kB │ gzip:  1.75 kB
+.tmp/master-review/dist/assets/palette-cleanup-C9s3vwYB.js             4.23 kB │ gzip:  2.21 kB
+.tmp/master-review/dist/assets/palette-limit-OiwOF5bZ.js               4.57 kB │ gzip:  2.26 kB
+.tmp/master-review/dist/assets/image-import-client-B7xzmLOT.js         5.28 kB │ gzip:  2.11 kB
+.tmp/master-review/dist/assets/palette-generated-D3-mAfDQ.js           5.98 kB │ gzip:  2.73 kB
+.tmp/master-review/dist/assets/palette-cleanup-client-CVAp9ymv.js      7.36 kB │ gzip:  2.88 kB
+.tmp/master-review/dist/assets/quantize-DsvDuXDJ.js                   13.24 kB │ gzip:  6.39 kB
+.tmp/master-review/dist/assets/gif-rDRTi30w.js                        16.17 kB │ gzip:  6.35 kB
+.tmp/master-review/dist/assets/index-BKqp_BEa.js                     276.48 kB │ gzip: 98.61 kB
+
+✓ built in 823ms
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.21.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.1
+npm notice To update run: npm install -g npm@11.21.1
+npm notice

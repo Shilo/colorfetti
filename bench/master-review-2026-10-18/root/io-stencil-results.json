@@ -1,0 +1,159 @@
+{
+  "node": "v25.0.0",
+  "oracle": {
+    "aom": "3.15.1",
+    "archive": "3.8.9",
+    "cairo": "1.18.6",
+    "cgif": "0.5.4",
+    "exif": "0.6.26",
+    "expat": "2.8.5",
+    "ffi": "3.8.0",
+    "fontconfig": "2.18.3",
+    "freetype": "2.14.3",
+    "fribidi": "1.0.17",
+    "glib": "2.90.0",
+    "harfbuzz": "14.5.0",
+    "heif": "1.23.5",
+    "highway": "1.4.0",
+    "imagequant": "2.4.1",
+    "lcms": "2.19.1",
+    "mozjpeg": "0826579",
+    "pango": "1.58.2",
+    "pixman": "0.46.4",
+    "png": "1.6.58",
+    "proxy-libintl": "0.5",
+    "rsvg": "2.63.2",
+    "tiff": "4.7.2",
+    "uhdr": "2.0.2",
+    "vips": "8.18.7",
+    "webp": "1.6.0",
+    "xml2": "2.15.4",
+    "zlib-ng": "2.3.3",
+    "sharp": "0.35.5"
+  },
+  "cases": [
+    {
+      "id": "animexts-repeat-loss",
+      "appNetscapeRepeat": 2,
+      "appAnimextsRepeat": null,
+      "independentNetscapeTotalPlays": 3,
+      "independentAnimextsTotalPlays": 3,
+      "independentExportTotalPlays": 1,
+      "visibleSourcePixelsEqual": true
+    },
+    {
+      "id": "zero-logical-width-message",
+      "accepted": false,
+      "code": null,
+      "message": "This image is too large."
+    },
+    {
+      "id": "strict-missing-eoi",
+      "app": {
+        "accepted": false,
+        "code": "GIF_INVALID",
+        "message": "Invalid GIF LZW stream without an end code."
+      },
+      "independent": {
+        "accepted": true,
+        "rgba": [
+          255,
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "id": "strict-outside-screen",
+      "app": {
+        "accepted": false,
+        "code": "GIF_INVALID",
+        "message": "Invalid GIF frame dimensions or data."
+      },
+      "independent": {
+        "accepted": true,
+        "width": 2,
+        "height": 1,
+        "rgba": [
+          0,
+          0,
+          0,
+          255,
+          255,
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "id": "stencil-unchanged-subject-flips",
+      "options": {
+        "cuts": null,
+        "outline": "keep",
+        "edges": 0,
+        "source": "luma",
+        "alpha": 128
+      },
+      "subjectPixels": 64,
+      "changedSubject": 64,
+      "solidChanges": 0,
+      "sharedAuto": [
+        80,
+        80
+      ],
+      "spriteAuto": [
+        80,
+        80
+      ],
+      "spriteMedian": [
+        180,
+        20
+      ],
+      "sourceContract": "Stencil is excluded from general threshold section; frame-local sprites are an explicit design exception."
+    },
+    {
+      "id": "onebit-index-compaction",
+      "pattern": "flat",
+      "currentBytes": 188,
+      "compactBytes": 116,
+      "reduction": 0.3829787234042553,
+      "currentDepth": 2,
+      "compactDepth": 1,
+      "currentSrgb": false,
+      "compactSrgb": true,
+      "rgbaExact": true
+    },
+    {
+      "id": "onebit-index-compaction",
+      "pattern": "checker",
+      "currentBytes": 199,
+      "compactBytes": 160,
+      "reduction": 0.1959798994974874,
+      "currentDepth": 2,
+      "compactDepth": 1,
+      "currentSrgb": false,
+      "compactSrgb": true,
+      "rgbaExact": true
+    },
+    {
+      "id": "onebit-index-compaction",
+      "pattern": "random",
+      "currentBytes": 10000,
+      "compactBytes": 8525,
+      "reduction": 0.14749999999999996,
+      "currentDepth": 2,
+      "compactDepth": 1,
+      "currentSrgb": false,
+      "compactSrgb": true,
+      "rgbaExact": true
+    }
+  ],
+  "sourceSHA256": {
+    "src/lib/gif.js": "107ae34792a8a6de47f39b3bccb0b732dd7a7315b22e1e4ac2105865d60d98fd",
+    "src/lib/gif-decode.js": "bfa3928e30102f36737f98df275a6e29c76429b34a17cebf1d27272d83014acd",
+    "src/lib/recolor.js": "ca183050d35a5672538e38e41d394aec03c5c1a9946b250bc24ecbf33a60f370",
+    "src/lib/save.js": "3c196934fb2ec78203bab7ec04f29fd736d2e8398e23fd5ac176941c140b881f"
+  }
+}

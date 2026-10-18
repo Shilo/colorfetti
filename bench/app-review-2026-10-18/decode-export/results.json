@@ -1,0 +1,85 @@
+{
+  "node": "v25.0.0",
+  "oracle": {
+    "module": "C:\\Users\\shilo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\node_modules\\sharp\\dist\\index.cjs",
+    "versions": {
+      "aom": "3.15.1",
+      "archive": "3.8.9",
+      "cairo": "1.18.6",
+      "cgif": "0.5.4",
+      "exif": "0.6.26",
+      "expat": "2.8.5",
+      "ffi": "3.8.0",
+      "fontconfig": "2.18.3",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.17",
+      "glib": "2.90.0",
+      "harfbuzz": "14.5.0",
+      "heif": "1.23.5",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.2",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.63.2",
+      "tiff": "4.7.2",
+      "uhdr": "2.0.2",
+      "vips": "8.18.7",
+      "webp": "1.6.0",
+      "xml2": "2.15.4",
+      "zlib-ng": "2.3.3",
+      "sharp": "0.35.5"
+    }
+  },
+  "productionModules": [
+    "src/lib/save.js",
+    "src/lib/gif.js",
+    "src/lib/image-import-core.js"
+  ],
+  "cases": [
+    {
+      "id": "keep-128-rgba-states",
+      "w": 512,
+      "h": 512,
+      "rgbaStates": 128,
+      "currentBytes": 386902,
+      "exactIndexedBytes": 231039,
+      "reduction": 0.4028487834128539,
+      "exact": true
+    },
+    {
+      "id": "sparse-opaque-motion",
+      "w": 512,
+      "h": 512,
+      "frames": 32,
+      "currentBytes": 27981,
+      "exactDeltaBytes": 3119,
+      "reduction": 0.8885315035202459,
+      "exact": true
+    },
+    {
+      "id": "compressed-animation-expansion",
+      "w": 512,
+      "h": 512,
+      "frames": 64,
+      "inputBytes": 51751,
+      "sourceAndAnalysisBytes": 117571584,
+      "amplification": 2271.870765782304,
+      "admitted": true
+    },
+    {
+      "id": "256-global-plus-transparent",
+      "w": 129,
+      "h": 1,
+      "error": {
+        "code": "PALETTE_GIF_LIMIT",
+        "message": "This animation needs 256 colors plus transparency. This GIF exporter supports 255 colors with transparency."
+      },
+      "localTableBytes": 1907,
+      "exact": true
+    }
+  ]
+}

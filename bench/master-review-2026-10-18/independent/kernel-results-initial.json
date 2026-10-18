@@ -1,0 +1,1344 @@
+{
+  "provenance": {
+    "head": "437e5258fa734e0829981afe8e6de5c386f31659",
+    "node": "v25.0.0",
+    "note": "Test-only source transformations, no source/config edits. Direct cache uses exact 24-bit keys. Timings are Node synchronous CPU, not browser or phone."
+  },
+  "phase": {
+    "uniform": [
+      {
+        "source": [
+          1024,
+          128
+        ],
+        "across": 256,
+        "sample": [
+          256,
+          32
+        ],
+        "v": 128,
+        "fullWhite": 0.25,
+        "sourcePhaseWhite": 0,
+        "outputPhaseWhite": 0.25
+      },
+      {
+        "source": [
+          1024,
+          1024
+        ],
+        "across": 384,
+        "sample": [
+          384,
+          384
+        ],
+        "v": 224,
+        "fullWhite": 0.8125,
+        "sourcePhaseWhite": 0.6666666666666666,
+        "outputPhaseWhite": 0.8125
+      },
+      {
+        "source": [
+          2048,
+          512
+        ],
+        "across": 96,
+        "sample": [
+          128,
+          32
+        ],
+        "v": 32,
+        "fullWhite": 0.0625,
+        "sourcePhaseWhite": 1,
+        "outputPhaseWhite": 0.0625
+      },
+      {
+        "source": [
+          53,
+          29
+        ],
+        "across": 17,
+        "sample": [
+          53,
+          29
+        ],
+        "v": 128,
+        "fullWhite": 0.24593363695510737,
+        "sourcePhaseWhite": 0.24593363695510737,
+        "outputPhaseWhite": 0.24593363695510737
+      },
+      {
+        "source": [
+          53,
+          29
+        ],
+        "across": 4,
+        "sample": [
+          53,
+          29
+        ],
+        "v": 128,
+        "fullWhite": 0.24593363695510737,
+        "sourcePhaseWhite": 0.24593363695510737,
+        "outputPhaseWhite": 0.24593363695510737
+      }
+    ],
+    "pointCorrespondence": {
+      "samplePixels": 391,
+      "sourcePhaseMismatch": 0,
+      "outputPhaseMismatch": 194
+    },
+    "fullOutputParity": true
+  },
+  "candidates": [
+    {
+      "image": "dungeon-wizard",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.007926101036580636,
+        "block4MSE": 0.001970914654485412
+      },
+      "eight": {
+        "pointMSE": 0.007926101036580636,
+        "block4MSE": 0.001970914654485412
+      }
+    },
+    {
+      "image": "dungeon-wizard",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 55,
+      "four": {
+        "pointMSE": 0.009640618126525129,
+        "block4MSE": 0.0019635376236746007
+      },
+      "eight": {
+        "pointMSE": 0.022431104746665802,
+        "block4MSE": 0.002451653816673339
+      }
+    },
+    {
+      "image": "dungeon-wizard",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.008797184694360463,
+        "block4MSE": 0.0021967246946419197
+      },
+      "eight": {
+        "pointMSE": 0.008797184694360463,
+        "block4MSE": 0.0021967246946419197
+      }
+    },
+    {
+      "image": "dungeon-wizard",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 22,
+      "four": {
+        "pointMSE": 0.010174098493189851,
+        "block4MSE": 0.0014434502622757324
+      },
+      "eight": {
+        "pointMSE": 0.012347226789373908,
+        "block4MSE": 0.0012243032525128964
+      }
+    },
+    {
+      "image": "dungeon-wizard",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 2,
+      "four": {
+        "pointMSE": 0.015091288097865727,
+        "block4MSE": 0.0033651111885409364
+      },
+      "eight": {
+        "pointMSE": 0.015760669013108842,
+        "block4MSE": 0.003342081984843567
+      }
+    },
+    {
+      "image": "dungeon-wizard",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 21,
+      "four": {
+        "pointMSE": 0.01888994907410791,
+        "block4MSE": 0.0020753948785383553
+      },
+      "eight": {
+        "pointMSE": 0.02099057679304252,
+        "block4MSE": 0.002902513102476657
+      }
+    },
+    {
+      "image": "dungeon-archer",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 5,
+      "four": {
+        "pointMSE": 0.0067090944593520465,
+        "block4MSE": 0.003138266739905431
+      },
+      "eight": {
+        "pointMSE": 0.0071965883392388665,
+        "block4MSE": 0.0031348510452754376
+      }
+    },
+    {
+      "image": "dungeon-archer",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 11,
+      "four": {
+        "pointMSE": 0.010115712044925182,
+        "block4MSE": 0.0032168380447309317
+      },
+      "eight": {
+        "pointMSE": 0.010889425622602084,
+        "block4MSE": 0.003005482922083086
+      }
+    },
+    {
+      "image": "dungeon-archer",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.004285025618999997,
+        "block4MSE": 0.0007038780177788116
+      },
+      "eight": {
+        "pointMSE": 0.004285025618999997,
+        "block4MSE": 0.0007038780177788116
+      }
+    },
+    {
+      "image": "dungeon-archer",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 60,
+      "four": {
+        "pointMSE": 0.00573666454279421,
+        "block4MSE": 0.0004103814227704775
+      },
+      "eight": {
+        "pointMSE": 0.008269286466369435,
+        "block4MSE": 0.0008209063030112848
+      }
+    },
+    {
+      "image": "dungeon-archer",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 5,
+      "four": {
+        "pointMSE": 0.014888135269737169,
+        "block4MSE": 0.0035924501735959073
+      },
+      "eight": {
+        "pointMSE": 0.016366097021291087,
+        "block4MSE": 0.003358832881621946
+      }
+    },
+    {
+      "image": "dungeon-archer",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 40,
+      "four": {
+        "pointMSE": 0.019848931765543858,
+        "block4MSE": 0.0025219100748599143
+      },
+      "eight": {
+        "pointMSE": 0.02293508539539332,
+        "block4MSE": 0.00338048298773488
+      }
+    },
+    {
+      "image": "dungeon-knight",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 2,
+      "four": {
+        "pointMSE": 0.007054532791213768,
+        "block4MSE": 0.0017165014145882973
+      },
+      "eight": {
+        "pointMSE": 0.007207137748938118,
+        "block4MSE": 0.00162270891976907
+      }
+    },
+    {
+      "image": "dungeon-knight",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 3,
+      "four": {
+        "pointMSE": 0.009912327547118367,
+        "block4MSE": 0.001819351814464987
+      },
+      "eight": {
+        "pointMSE": 0.010180903869029477,
+        "block4MSE": 0.0016882949255773141
+      }
+    },
+    {
+      "image": "dungeon-knight",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.0032359530535419232,
+        "block4MSE": 0.0008824050540240749
+      },
+      "eight": {
+        "pointMSE": 0.0032359530535419232,
+        "block4MSE": 0.0008824050540240749
+      }
+    },
+    {
+      "image": "dungeon-knight",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 27,
+      "four": {
+        "pointMSE": 0.004386809847529518,
+        "block4MSE": 0.0008014143901684831
+      },
+      "eight": {
+        "pointMSE": 0.00613119503203698,
+        "block4MSE": 0.0011696718351158894
+      }
+    },
+    {
+      "image": "dungeon-knight",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 5,
+      "four": {
+        "pointMSE": 0.014940904784064903,
+        "block4MSE": 0.002673125192225929
+      },
+      "eight": {
+        "pointMSE": 0.016713280360139644,
+        "block4MSE": 0.002355626288783764
+      }
+    },
+    {
+      "image": "dungeon-knight",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 24,
+      "four": {
+        "pointMSE": 0.02016961888614112,
+        "block4MSE": 0.0038875364123902288
+      },
+      "eight": {
+        "pointMSE": 0.02268960412916864,
+        "block4MSE": 0.004613731018039889
+      }
+    },
+    {
+      "image": "dungeon-potion",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.007546826714963368,
+        "block4MSE": 0.00522399449168634
+      },
+      "eight": {
+        "pointMSE": 0.007546826714963368,
+        "block4MSE": 0.00522399449168634
+      }
+    },
+    {
+      "image": "dungeon-potion",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 4,
+      "four": {
+        "pointMSE": 0.010719906628352432,
+        "block4MSE": 0.00917323027658707
+      },
+      "eight": {
+        "pointMSE": 0.011019017938992862,
+        "block4MSE": 0.009213265989527004
+      }
+    },
+    {
+      "image": "dungeon-potion",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 8,
+      "four": {
+        "pointMSE": 0.002401457684448939,
+        "block4MSE": 0.0006719464698930481
+      },
+      "eight": {
+        "pointMSE": 0.0033966319138309096,
+        "block4MSE": 0.0006529134473248266
+      }
+    },
+    {
+      "image": "dungeon-potion",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 10,
+      "four": {
+        "pointMSE": 0.003815144772112501,
+        "block4MSE": 0.002184503633036332
+      },
+      "eight": {
+        "pointMSE": 0.004878212207231755,
+        "block4MSE": 0.0024103329852842126
+      }
+    },
+    {
+      "image": "dungeon-potion",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 1,
+      "four": {
+        "pointMSE": 0.012709708899421954,
+        "block4MSE": 0.012191915359260237
+      },
+      "eight": {
+        "pointMSE": 0.01284589333800898,
+        "block4MSE": 0.012193541422132878
+      }
+    },
+    {
+      "image": "dungeon-potion",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 18,
+      "four": {
+        "pointMSE": 0.013792782108987215,
+        "block4MSE": 0.01246378976656015
+      },
+      "eight": {
+        "pointMSE": 0.01937861166982783,
+        "block4MSE": 0.018431999216588647
+      }
+    },
+    {
+      "image": "dungeon-neutral-shield",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.006808474598981176,
+        "block4MSE": 0.004500754071211458
+      },
+      "eight": {
+        "pointMSE": 0.006808474598981176,
+        "block4MSE": 0.004500754071211458
+      }
+    },
+    {
+      "image": "dungeon-neutral-shield",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.009969513230046675,
+        "block4MSE": 0.005931806976353842
+      },
+      "eight": {
+        "pointMSE": 0.009969513230046675,
+        "block4MSE": 0.005931806976353842
+      }
+    },
+    {
+      "image": "dungeon-neutral-shield",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.0029897540099382398,
+        "block4MSE": 0.0007466214771789716
+      },
+      "eight": {
+        "pointMSE": 0.0029897540099382398,
+        "block4MSE": 0.0007466214771789716
+      }
+    },
+    {
+      "image": "dungeon-neutral-shield",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 22,
+      "four": {
+        "pointMSE": 0.004300532352988074,
+        "block4MSE": 0.0005431292482830134
+      },
+      "eight": {
+        "pointMSE": 0.010362702204489725,
+        "block4MSE": 0.0004524579704271974
+      }
+    },
+    {
+      "image": "dungeon-neutral-shield",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.019796245738344022,
+        "block4MSE": 0.008091663697005815
+      },
+      "eight": {
+        "pointMSE": 0.019796245738344022,
+        "block4MSE": 0.008091663697005815
+      }
+    },
+    {
+      "image": "dungeon-neutral-shield",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 9,
+      "four": {
+        "pointMSE": 0.022090144041694224,
+        "block4MSE": 0.007280914150093127
+      },
+      "eight": {
+        "pointMSE": 0.026807601103410062,
+        "block4MSE": 0.010657287745696195
+      }
+    },
+    {
+      "image": "town-water-bucket",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 3,
+      "four": {
+        "pointMSE": 0.00889559727547624,
+        "block4MSE": 0.0007748337794007092
+      },
+      "eight": {
+        "pointMSE": 0.008927142080215621,
+        "block4MSE": 0.0007744447032542262
+      }
+    },
+    {
+      "image": "town-water-bucket",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 86,
+      "four": {
+        "pointMSE": 0.01340272011750009,
+        "block4MSE": 0.0009077083975655076
+      },
+      "eight": {
+        "pointMSE": 0.029451109143978683,
+        "block4MSE": 0.0011585768857093402
+      }
+    },
+    {
+      "image": "town-water-bucket",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 4,
+      "four": {
+        "pointMSE": 0.004943909142953363,
+        "block4MSE": 0.0006534628307706911
+      },
+      "eight": {
+        "pointMSE": 0.0053968211228127205,
+        "block4MSE": 0.0007814315067274245
+      }
+    },
+    {
+      "image": "town-water-bucket",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 56,
+      "four": {
+        "pointMSE": 0.006375672977219952,
+        "block4MSE": 0.0008631286357213578
+      },
+      "eight": {
+        "pointMSE": 0.009698874616596834,
+        "block4MSE": 0.0009625684182258782
+      }
+    },
+    {
+      "image": "town-water-bucket",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 9,
+      "four": {
+        "pointMSE": 0.01835405392125236,
+        "block4MSE": 0.002494920811808812
+      },
+      "eight": {
+        "pointMSE": 0.018635111674267364,
+        "block4MSE": 0.0023156318392202574
+      }
+    },
+    {
+      "image": "town-water-bucket",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 40,
+      "four": {
+        "pointMSE": 0.024080288295948167,
+        "block4MSE": 0.0023802716142681778
+      },
+      "eight": {
+        "pointMSE": 0.02687550899076888,
+        "block4MSE": 0.0021829739419918807
+      }
+    },
+    {
+      "image": "platformer-pilot",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 19,
+      "four": {
+        "pointMSE": 0.008612892266397408,
+        "block4MSE": 0.00252704468471641
+      },
+      "eight": {
+        "pointMSE": 0.009345931557401694,
+        "block4MSE": 0.0025422737485771914
+      }
+    },
+    {
+      "image": "platformer-pilot",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 106,
+      "four": {
+        "pointMSE": 0.0160450249684426,
+        "block4MSE": 0.002343740123741931
+      },
+      "eight": {
+        "pointMSE": 0.020951611776963582,
+        "block4MSE": 0.002358932427241661
+      }
+    },
+    {
+      "image": "platformer-pilot",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 4,
+      "four": {
+        "pointMSE": 0.007732315125312222,
+        "block4MSE": 0.002890078288269552
+      },
+      "eight": {
+        "pointMSE": 0.007898895126422965,
+        "block4MSE": 0.0028974602900849167
+      }
+    },
+    {
+      "image": "platformer-pilot",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 140,
+      "four": {
+        "pointMSE": 0.009175419563920376,
+        "block4MSE": 0.0033888445691475718
+      },
+      "eight": {
+        "pointMSE": 0.01595108555593684,
+        "block4MSE": 0.003101713959471113
+      }
+    },
+    {
+      "image": "platformer-pilot",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 62,
+      "four": {
+        "pointMSE": 0.024017624855196932,
+        "block4MSE": 0.00507972670275856
+      },
+      "eight": {
+        "pointMSE": 0.029867194031144982,
+        "block4MSE": 0.003951115136632404
+      }
+    },
+    {
+      "image": "platformer-pilot",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 54,
+      "four": {
+        "pointMSE": 0.03187098930240106,
+        "block4MSE": 0.005335034859704409
+      },
+      "eight": {
+        "pointMSE": 0.03391508707465949,
+        "block4MSE": 0.0038883186137138935
+      }
+    },
+    {
+      "image": "platformer-pilot-blink",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 10,
+      "four": {
+        "pointMSE": 0.008401596788847297,
+        "block4MSE": 0.0029298722512654577
+      },
+      "eight": {
+        "pointMSE": 0.008813707402436376,
+        "block4MSE": 0.003029698111288866
+      }
+    },
+    {
+      "image": "platformer-pilot-blink",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 109,
+      "four": {
+        "pointMSE": 0.016046808233458568,
+        "block4MSE": 0.002422962586631358
+      },
+      "eight": {
+        "pointMSE": 0.020721113946574676,
+        "block4MSE": 0.0023528688601148575
+      }
+    },
+    {
+      "image": "platformer-pilot-blink",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 5,
+      "four": {
+        "pointMSE": 0.007922742072346335,
+        "block4MSE": 0.003321161870967061
+      },
+      "eight": {
+        "pointMSE": 0.008182956941029107,
+        "block4MSE": 0.0033429681084905308
+      }
+    },
+    {
+      "image": "platformer-pilot-blink",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 152,
+      "four": {
+        "pointMSE": 0.009342533061571998,
+        "block4MSE": 0.003310726301030938
+      },
+      "eight": {
+        "pointMSE": 0.01840939714957414,
+        "block4MSE": 0.005757277573361384
+      }
+    },
+    {
+      "image": "platformer-pilot-blink",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 65,
+      "four": {
+        "pointMSE": 0.025333538384743393,
+        "block4MSE": 0.007155393179869087
+      },
+      "eight": {
+        "pointMSE": 0.032987709285874696,
+        "block4MSE": 0.0070761128513830455
+      }
+    },
+    {
+      "image": "platformer-pilot-blink",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 45,
+      "four": {
+        "pointMSE": 0.03298906773629237,
+        "block4MSE": 0.00513467336109818
+      },
+      "eight": {
+        "pointMSE": 0.03621711746172918,
+        "block4MSE": 0.003861309753478041
+      }
+    },
+    {
+      "image": "platformer-neutral-pilot",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.008122519082358377,
+        "block4MSE": 0.002503074126593748
+      },
+      "eight": {
+        "pointMSE": 0.008122519082358377,
+        "block4MSE": 0.002503074126593748
+      }
+    },
+    {
+      "image": "platformer-neutral-pilot",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.00963575932107284,
+        "block4MSE": 0.0027939887547580463
+      },
+      "eight": {
+        "pointMSE": 0.00963575932107284,
+        "block4MSE": 0.0027939887547580463
+      }
+    },
+    {
+      "image": "platformer-neutral-pilot",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.002374247444214736,
+        "block4MSE": 0.0013096168642262396
+      },
+      "eight": {
+        "pointMSE": 0.002374247444214736,
+        "block4MSE": 0.0013096168642262396
+      }
+    },
+    {
+      "image": "platformer-neutral-pilot",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 6,
+      "four": {
+        "pointMSE": 0.003648343872988954,
+        "block4MSE": 0.00156979840293013
+      },
+      "eight": {
+        "pointMSE": 0.005099012772845315,
+        "block4MSE": 0.0015591460428081834
+      }
+    },
+    {
+      "image": "platformer-neutral-pilot",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 8,
+      "four": {
+        "pointMSE": 0.02160903107581858,
+        "block4MSE": 0.009739979480713335
+      },
+      "eight": {
+        "pointMSE": 0.022128811432271803,
+        "block4MSE": 0.009822960221101325
+      }
+    },
+    {
+      "image": "platformer-neutral-pilot",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 71,
+      "four": {
+        "pointMSE": 0.030469169733064575,
+        "block4MSE": 0.010859159199682776
+      },
+      "eight": {
+        "pointMSE": 0.03658265759508848,
+        "block4MSE": 0.029358138421378105
+      }
+    },
+    {
+      "image": "platformer-rocket",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.008887046197353463,
+        "block4MSE": 0.0017526692996817736
+      },
+      "eight": {
+        "pointMSE": 0.008887046197353463,
+        "block4MSE": 0.0017526692996817736
+      }
+    },
+    {
+      "image": "platformer-rocket",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.013341412535795679,
+        "block4MSE": 0.0006821308922583836
+      },
+      "eight": {
+        "pointMSE": 0.013341412535795679,
+        "block4MSE": 0.0006821308922583836
+      }
+    },
+    {
+      "image": "platformer-rocket",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.0038085362105684728,
+        "block4MSE": 0.0012686398738327646
+      },
+      "eight": {
+        "pointMSE": 0.0038085362105684728,
+        "block4MSE": 0.0012686398738327646
+      }
+    },
+    {
+      "image": "platformer-rocket",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 56,
+      "four": {
+        "pointMSE": 0.005126471881882911,
+        "block4MSE": 0.00105712265250617
+      },
+      "eight": {
+        "pointMSE": 0.010390019243085469,
+        "block4MSE": 0.0012208846658409275
+      }
+    },
+    {
+      "image": "platformer-rocket",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 5,
+      "four": {
+        "pointMSE": 0.02233596269011695,
+        "block4MSE": 0.004320620616466112
+      },
+      "eight": {
+        "pointMSE": 0.02285071975582674,
+        "block4MSE": 0.004542540926200365
+      }
+    },
+    {
+      "image": "platformer-rocket",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 25,
+      "four": {
+        "pointMSE": 0.029025341907791602,
+        "block4MSE": 0.0031351145073738396
+      },
+      "eight": {
+        "pointMSE": 0.032147754593230986,
+        "block4MSE": 0.006901205804031088
+      }
+    },
+    {
+      "image": "platformer-heart",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.009515805254678395,
+        "block4MSE": 0.005576444376668474
+      },
+      "eight": {
+        "pointMSE": 0.009515805254678395,
+        "block4MSE": 0.005576444376668474
+      }
+    },
+    {
+      "image": "platformer-heart",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.022327333552647047,
+        "block4MSE": 0.004807206285725461
+      },
+      "eight": {
+        "pointMSE": 0.022327333552647047,
+        "block4MSE": 0.004807206285725461
+      }
+    },
+    {
+      "image": "platformer-heart",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.006884956442692801,
+        "block4MSE": 0.004172510427455151
+      },
+      "eight": {
+        "pointMSE": 0.006884956442692801,
+        "block4MSE": 0.004172510427455151
+      }
+    },
+    {
+      "image": "platformer-heart",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 108,
+      "four": {
+        "pointMSE": 0.007701683282211205,
+        "block4MSE": 0.004084240093902854
+      },
+      "eight": {
+        "pointMSE": 0.019850776589945957,
+        "block4MSE": 0.008200794441421062
+      }
+    },
+    {
+      "image": "platformer-heart",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.024305411715084047,
+        "block4MSE": 0.014643249372501372
+      },
+      "eight": {
+        "pointMSE": 0.024305411715084047,
+        "block4MSE": 0.014643249372501372
+      }
+    },
+    {
+      "image": "platformer-heart",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 0,
+      "four": {
+        "pointMSE": 0.028189163342841966,
+        "block4MSE": 0.0056381482749890835
+      },
+      "eight": {
+        "pointMSE": 0.028189163342841966,
+        "block4MSE": 0.0056381482749890835
+      }
+    },
+    {
+      "image": "platformer-axe",
+      "palette": "PICO-8",
+      "ditherStrength": 50,
+      "changed": 6,
+      "four": {
+        "pointMSE": 0.008353530237548399,
+        "block4MSE": 0.0017004161489564764
+      },
+      "eight": {
+        "pointMSE": 0.008742309133050633,
+        "block4MSE": 0.0017765506118106844
+      }
+    },
+    {
+      "image": "platformer-axe",
+      "palette": "PICO-8",
+      "ditherStrength": 100,
+      "changed": 24,
+      "four": {
+        "pointMSE": 0.010013080749141421,
+        "block4MSE": 0.0009759017012016307
+      },
+      "eight": {
+        "pointMSE": 0.01018666180594881,
+        "block4MSE": 0.0008680703741509343
+      }
+    },
+    {
+      "image": "platformer-axe",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 50,
+      "changed": 8,
+      "four": {
+        "pointMSE": 0.0035893562397378595,
+        "block4MSE": 0.0012189609163476217
+      },
+      "eight": {
+        "pointMSE": 0.004210581683528242,
+        "block4MSE": 0.0018268854055942803
+      }
+    },
+    {
+      "image": "platformer-axe",
+      "palette": "DawnBringer 16",
+      "ditherStrength": 100,
+      "changed": 38,
+      "four": {
+        "pointMSE": 0.007462363914742987,
+        "block4MSE": 0.0008780114422813954
+      },
+      "eight": {
+        "pointMSE": 0.010908375239192582,
+        "block4MSE": 0.0007189293675700926
+      }
+    },
+    {
+      "image": "platformer-axe",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 50,
+      "changed": 4,
+      "four": {
+        "pointMSE": 0.0236643279743483,
+        "block4MSE": 0.008500658056900501
+      },
+      "eight": {
+        "pointMSE": 0.023950478739289353,
+        "block4MSE": 0.008589647224326431
+      }
+    },
+    {
+      "image": "platformer-axe",
+      "palette": "ENDESGA 8",
+      "ditherStrength": 100,
+      "changed": 9,
+      "four": {
+        "pointMSE": 0.03170388852717646,
+        "block4MSE": 0.010084526908156434
+      },
+      "eight": {
+        "pointMSE": 0.0331722385853627,
+        "block4MSE": 0.014756289614672527
+      }
+    }
+  ],
+  "cache": [
+    {
+      "name": "smooth-blocks",
+      "palette": "PICO-8",
+      "pixels": 65536,
+      "samples": {
+        "baseline": [
+          14.538900000000012,
+          14.649299999999926,
+          15.192800000000034,
+          14.779700000000048,
+          14.950000000000045,
+          15.037899999999922
+        ],
+        "direct": [
+          4.729499999999916,
+          4.879400000000032,
+          4.791399999999953,
+          4.793300000000045,
+          4.915700000000015,
+          4.8595000000000255
+        ]
+      },
+      "medianMs": {
+        "baseline": 14.950000000000045,
+        "direct": 4.8595000000000255
+      },
+      "speedup": 3.0764481942586617,
+      "indicesIdentical": true
+    },
+    {
+      "name": "smooth-blocks",
+      "palette": "ENDESGA 8",
+      "pixels": 65536,
+      "samples": {
+        "baseline": [
+          14.22219999999993,
+          14.38620000000003,
+          14.237899999999968,
+          14.105899999999906,
+          14.040500000000065,
+          14.08680000000004
+        ],
+        "direct": [
+          4.493399999999951,
+          4.604600000000005,
+          4.6404999999999745,
+          4.659999999999968,
+          4.5417999999999665,
+          4.514799999999923
+        ]
+      },
+      "medianMs": {
+        "baseline": 14.22219999999993,
+        "direct": 4.604600000000005
+      },
+      "speedup": 3.088693914780853,
+      "indicesIdentical": true
+    },
+    {
+      "name": "repeated-512-runs",
+      "palette": "PICO-8",
+      "pixels": 65536,
+      "samples": {
+        "baseline": [
+          40.92579999999998,
+          40.87709999999993,
+          40.414999999999964,
+          40.24440000000004,
+          44.67399999999998,
+          40.2956999999999
+        ],
+        "direct": [
+          41.6087,
+          40.9670000000001,
+          40.86869999999999,
+          40.893299999999954,
+          40.75369999999998,
+          40.432000000000016
+        ]
+      },
+      "medianMs": {
+        "baseline": 40.87709999999993,
+        "direct": 40.893299999999954
+      },
+      "speedup": 0.9996038470849742,
+      "indicesIdentical": true
+    },
+    {
+      "name": "repeated-512-runs",
+      "palette": "ENDESGA 8",
+      "pixels": 65536,
+      "samples": {
+        "baseline": [
+          38.855999999999995,
+          37.0320999999999,
+          36.97329999999988,
+          36.62760000000003,
+          36.63850000000002,
+          36.618600000000015
+        ],
+        "direct": [
+          37.29080000000022,
+          37.43910000000005,
+          37.40740000000005,
+          37.07100000000014,
+          37.399599999999964,
+          45.07300000000009
+        ]
+      },
+      "medianMs": {
+        "baseline": 36.97329999999988,
+        "direct": 37.40740000000005
+      },
+      "speedup": 0.9883953442366973,
+      "indicesIdentical": true
+    },
+    {
+      "name": "white-noise",
+      "palette": "PICO-8",
+      "pixels": 65536,
+      "samples": {
+        "baseline": [
+          44.5586000000003,
+          44.58629999999994,
+          47.9409999999998,
+          45.8119999999999,
+          45.36990000000014,
+          44.952800000000025
+        ],
+        "direct": [
+          45.246399999999994,
+          44.88809999999967,
+          46.16030000000001,
+          45.55360000000019,
+          45.679099999999835,
+          44.70510000000013
+        ]
+      },
+      "medianMs": {
+        "baseline": 45.36990000000014,
+        "direct": 45.55360000000019
+      },
+      "speedup": 0.9959673878683564,
+      "indicesIdentical": true
+    },
+    {
+      "name": "white-noise",
+      "palette": "ENDESGA 8",
+      "pixels": 65536,
+      "samples": {
+        "baseline": [
+          378.04179999999997,
+          476.28160000000025,
+          310.7951000000003,
+          93.26850000000013,
+          466.1152000000002,
+          355.52689999999984
+        ],
+        "direct": [
+          198.10609999999997,
+          424.9500000000003,
+          434.77750000000015,
+          104.51159999999982,
+          420.70300000000043,
+          252.8178999999991
+        ]
+      },
+      "medianMs": {
+        "baseline": 378.04179999999997,
+        "direct": 420.70300000000043
+      },
+      "speedup": 0.8985954461936321,
+      "indicesIdentical": true
+    },
+    {
+      "name": "gradient-noise",
+      "palette": "PICO-8",
+      "pixels": 65536,
+      "samples": {
+        "baseline": [
+          375.4913999999999,
+          397.0708999999997,
+          178.1862000000001,
+          98.71980000000076,
+          91.91510000000017,
+          81.50849999999991
+        ],
+        "direct": [
+          98.47469999999976,
+          126.79489999999896,
+          112.59090000000106,
+          39.78019999999924,
+          40.063200000000506,
+          25.5609000000004
+        ]
+      },
+      "medianMs": {
+        "baseline": 178.1862000000001,
+        "direct": 98.47469999999976
+      },
+      "speedup": 1.8094617196092047,
+      "indicesIdentical": true
+    },
+    {
+      "name": "gradient-noise",
+      "palette": "ENDESGA 8",
+      "pixels": 65536,
+      "samples": {
+        "baseline": [
+          79.02980000000025,
+          110.47940000000017,
+          69.34879999999976,
+          322.6311999999998,
+          327.65569999999934,
+          162.40030000000115
+        ],
+        "direct": [
+          26.51639999999861,
+          25.278200000000652,
+          22.460300000000643,
+          123.51980000000003,
+          130.17859999999928,
+          110.064699999999
+        ]
+      },
+      "medianMs": {
+        "baseline": 162.40030000000115,
+        "direct": 110.064699999999
+      },
+      "speedup": 1.4754985022446128,
+      "indicesIdentical": true
+    }
+  ],
+  "candidateSummary": {
+    "cases": 72,
+    "blockImproves": 22,
+    "blockWorsens": 30,
+    "unchanged": 20,
+    "pointImproves": 0,
+    "pointWorsens": 52
+  }
+}

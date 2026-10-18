@@ -1,0 +1,2 @@
+# Preserve exact frozen-input hashes across Windows checkouts.
+root/inputs/*.md text eol=lf

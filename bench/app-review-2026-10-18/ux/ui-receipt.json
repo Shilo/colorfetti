@@ -1,0 +1,291 @@
+{
+  "date": "2026-10-18",
+  "scope": "Read-only UX/application audit; no product source changes",
+  "browser": "Codex in-app browser (CUA), exact engine version not queried",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "testedBuild": {
+    "url": "http://127.0.0.1:5192/",
+    "gitHead": "0c3194e9b5b96ced8d19cef5420e4b0985d4f752",
+    "indexSha256": "a46d80fa8e4efb767047ec3ede1e65d7cfcfd5a3b8a658435ed1df491e55697a",
+    "assets": [
+      "gif-BAfaGdqV.js",
+      "image-import-client-BaMBvYLe.js",
+      "image-import-worker-DcArPydw.js",
+      "index-DXurspmg.js",
+      "index-VE9_tUgX.css",
+      "palette-ase-gXqzrNdw.js",
+      "palette-cleanup-client-Dqj0o17q.js",
+      "palette-cleanup-D8GO2MGo.js",
+      "palette-cleanup-worker-ChpCTucA.js",
+      "palette-generated-client-C1tQ62BT.js",
+      "palette-generated-DrB-NeKE.js",
+      "palette-generated-worker-xpoMRM2c.js",
+      "palette-gif-worker-D4qe4WP7.js",
+      "palette-limit-OiwOF5bZ.js",
+      "palette-limit-worker-rkrL9P3s.js",
+      "palette-lospec-BUdZU2lN.js",
+      "palette-usage-CYGmQk2t.js",
+      "quantize-DsvDuXDJ.js"
+    ],
+    "notes": "Frozen from the tested static build before a later root rebuild. Git HEAD is a reference, not a clean-tree assertion."
+  },
+  "workspaceAtReceipt": {
+    "gitHead": "0c3194e9b5b96ced8d19cef5420e4b0985d4f752",
+    "status": "M bench/PaletteProfileFixture.java\n M bench/gif-palette-qa-server.mjs\n M bench/gif-palette-qa.html\n M bench/make-palette-diagnostic-fixtures.mjs\n M src/lib/image-decode.js\n?? bench/app-review-2026-10-18/\n?? src/lib/image-bitmap-decode.js\n?? src/lib/image-bitmap-decode.test.js",
+    "currentDistIndexSha256": "8fd4cc5389e3a0b609aed03891b3c235861d4c9aa9fd0f412765f45ba55e4ecb",
+    "notes": "Current dist may differ after other agents rebuild; this is not the tested-build identity."
+  },
+  "priorExploration": {
+    "url": "https://shilo.github.io/colorfetti/",
+    "usedForFinalConfirmation": false,
+    "notes": "Production exploration reproduced Space and sampling behavior; all report claims were then checked against the source-exact local build."
+  },
+  "observations": [
+    {
+      "id": "UX-SPACE",
+      "status": "browser-confirmed",
+      "steps": [
+        "Import twenty-frames.gif",
+        "Open Preview",
+        "Focus Close preview and press Space",
+        "Press Enter"
+      ],
+      "observed": [
+        "Space leaves Image preview open with Close preview focused",
+        "Enter closes the preview"
+      ],
+      "source": [
+        "src/ImageViewer.svelte:44",
+        "src/ImageViewer.svelte:47"
+      ],
+      "standard": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
+      "screenshot": "space-close-exact.png"
+    },
+    {
+      "id": "UX-ZOOM",
+      "status": "browser-confirmed intentional limitation",
+      "steps": [
+        "Open twenty-frames.gif (20 frames,1024x1024) in Preview",
+        "Inspect Fit canvas DOM width/height",
+        "Click Zoom in until disabled (13 successful steps)",
+        "Inspect maximum canvas DOM width/height and transform"
+      ],
+      "observed": {
+        "fitRaster": {
+          "width": 720,
+          "height": 720
+        },
+        "maximumRaster": {
+          "width": 720,
+          "height": 720
+        },
+        "maximumCssRaster": {
+          "width": 11520,
+          "height": 11520
+        },
+        "transform": "translate(0px, 0px) scale(16)",
+        "visibleQualityOrZoomRatio": false,
+        "actualSizeControl": false
+      },
+      "source": [
+        "src/lib/viewer-layout.js:13",
+        "src/ImageViewer.svelte:21",
+        "src/ImageViewer.svelte:62"
+      ],
+      "notes": "This does not imply an export defect: source-resolution Save is independent. The issue is that high zoom cannot inspect every exported source pixel and the UI does not disclose this.",
+      "screenshot": "max-zoom-exact.png"
+    },
+    {
+      "id": "UX-IMPORT-ERROR",
+      "status": "browser-confirmed",
+      "steps": [
+        "Add broken.png (nine-byte malformed supported PNG)"
+      ],
+      "observed": "1 file skipped. Colorfetti reads PNG, GIF, WebP, JPEG and BMP images.",
+      "source": [
+        "src/App.svelte:659",
+        "src/App.svelte:670"
+      ],
+      "notes": "Actual cause and filename are discarded; no persistent per-file diagnostic remains.",
+      "screenshot": "import-error-exact.png"
+    },
+    {
+      "id": "UX-GIF-LOOP",
+      "status": "browser-confirmed + encoded-metadata checked",
+      "steps": [
+        "Import play-once-slow.gif (loop:null,two frames,1000ms dark then3000ms white)",
+        "Capture8 foreground screenshots500ms apart without other interaction",
+        "Observe third tile final white in loop-sequence-0.png, returned first dark in loop-sequence-2.png, white again in loop-sequence-4.png",
+        "Separately Save play-once.gif (same no-loop flag with2000/100ms delays)",
+        "Read source/export metadata"
+      ],
+      "observed": "No-loop GIF returns from its final white frame to its first dark frame while the wall remains visible and active. Source Tile timer unconditionally wraps modulo frame count. The separate native Save preserves loop:null and source delays.",
+      "source": [
+        "src/Tile.svelte:356",
+        "src/lib/gif.js:39",
+        "src/lib/converted-animation.js:13",
+        "src/lib/palette-state.js:85"
+      ],
+      "notes": "Third tile was fully in view at x853,y101.5,width402,height402 in1280x720 viewport; one rendered canvas present. No settings/source changes or navigation between8 screenshots. Native file reference not opened; no-loop metadata establishes expected stop-on-final-frame behavior.",
+      "screenshots": [
+        "loop-sequence-0.png",
+        "loop-sequence-2.png",
+        "loop-sequence-4.png"
+      ]
+    }
+  ],
+  "gifMetadata": [
+    {
+      "file": "play-once.gif",
+      "sha256": "edf10f13d2bba5fa042ce5a46a08bb3a61f7a8e0d4622e85714ddea1a1e834ca",
+      "width": 32,
+      "height": 32,
+      "loop": null,
+      "frames": 2,
+      "delays": [
+        2000,
+        100
+      ],
+      "firstRGB": [
+        0,
+        0,
+        0
+      ],
+      "lastRGB": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "file": "play-once-slow.gif",
+      "sha256": "87885a95246ce4df0dd2060b5ee92fdc9d3eca610653ad34396c994e6cc19e1a",
+      "width": 32,
+      "height": 32,
+      "loop": null,
+      "frames": 2,
+      "delays": [
+        1000,
+        3000
+      ],
+      "firstRGB": [
+        0,
+        0,
+        0
+      ],
+      "lastRGB": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "file": "play-once-export.gif",
+      "sha256": "8c3fef8583d40571f78b984a21c47f396aac76d411d6d7a411afe9000e091f7e",
+      "width": 32,
+      "height": 32,
+      "loop": null,
+      "frames": 2,
+      "delays": [
+        2000,
+        100
+      ],
+      "firstRGB": [
+        27,
+        28,
+        51
+      ],
+      "lastRGB": [
+        253,
+        253,
+        248
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "UX-BASE-FAILURE",
+      "status": "source resilience hypothesis, no browser fault injection",
+      "source": "src/Tile.svelte:300",
+      "claim": "Base matching rejection only logs a console error; retained preview can remain visible without limiter/Cleanup recovery notice or export gate. Natural trigger not reproduced."
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "bench/app-review-2026-10-18/ux/space-close-exact.png",
+      "sha256": "815eedc84cba8fd5ab4b90ff71e00c1c0cd75203bb2493d27f1367090b884500",
+      "capturedUtc": "2026-10-18T12:29:58.872Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/max-zoom-exact.png",
+      "sha256": "a4ccb675a8494f5541ac12add255e1ce70807e27e325ac824565463b8c680c0e",
+      "capturedUtc": "2026-10-18T12:30:24.771Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/import-error-exact.png",
+      "sha256": "cf0a43c625c07f82c4ad1940b77d872863d8957e0213b6b3ff676e64fc497579",
+      "capturedUtc": "2026-10-18T12:32:57.453Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/play-once-still-looping.png",
+      "sha256": "bb0d0abd3e771c34b36eb84fd744c34a4dc75772f694c0a5149c9c6c534c17fc",
+      "capturedUtc": "2026-10-18T12:31:37.204Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/loop-sequence-0.png",
+      "sha256": "8e1d24ade1e881bc9d0fd3858efc776108a621bdace0ebed82274cbba9bf68b8",
+      "capturedUtc": "2026-10-18T12:35:11.098Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/loop-sequence-1.png",
+      "sha256": "944cccc1b2ae49ead31a7bc2847b391976bc0165273fb8fcf2f0747174f8b9e6",
+      "capturedUtc": "2026-10-18T12:35:11.670Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/loop-sequence-2.png",
+      "sha256": "92e514de4ac418d6fb9bd58b2c0fc843b70a16a96f0b0b6db8e7b28b5bb7c976",
+      "capturedUtc": "2026-10-18T12:35:12.224Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/loop-sequence-3.png",
+      "sha256": "10cac9ba49d86a9fc7d17f05d88025fddc22d46aed3aabfc848a634adccee6c5",
+      "capturedUtc": "2026-10-18T12:35:12.756Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/loop-sequence-4.png",
+      "sha256": "8e1d24ade1e881bc9d0fd3858efc776108a621bdace0ebed82274cbba9bf68b8",
+      "capturedUtc": "2026-10-18T12:35:13.293Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/loop-sequence-5.png",
+      "sha256": "10cac9ba49d86a9fc7d17f05d88025fddc22d46aed3aabfc848a634adccee6c5",
+      "capturedUtc": "2026-10-18T12:35:13.829Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/loop-sequence-6.png",
+      "sha256": "21bcda526702f38bb4c7f363f19ca4f0a6bbd90d878b006b0d797334be0d02f2",
+      "capturedUtc": "2026-10-18T12:35:14.364Z"
+    },
+    {
+      "path": "bench/app-review-2026-10-18/ux/loop-sequence-7.png",
+      "sha256": "10cac9ba49d86a9fc7d17f05d88025fddc22d46aed3aabfc848a634adccee6c5",
+      "capturedUtc": "2026-10-18T12:35:14.894Z"
+    }
+  ],
+  "cleanup": {
+    "vite5194": "stopped session51628",
+    "tabs": "Closed all three subagent-created IAB tabs, including failed5194 tab",
+    "uncompletedPlaywrightProbe": "canceled session32951; probe removed and replaced with DOM-free fixture generator",
+    "temporaryProfiles": "None found under this execution environment TEMP. Process commandline CIM inspection denied; no unknown browser process terminated.",
+    "download": "Synthetic C:/Users/shilo/Downloads/play-once-colorfetti.gif removed after retaining benchmark copy"
+  },
+  "limits": [
+    "No physical touch/iOS/Safari verification",
+    "Production observations not used to claim local build fidelity",
+    "No fault-injection confirmation for base quantize rejection",
+    "Zoom sample limitation is documented deliberate behavior; recommendation challenges disclosure and inspection workflow, not the chosen memory bound"
+  ]
+}

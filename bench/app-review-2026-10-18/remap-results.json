@@ -1,0 +1,18 @@
+{
+  "sourcePalette": [
+    "#b00000",
+    "#d00000"
+  ],
+  "editedPalette": [
+    "#00ff00",
+    "#d00000"
+  ],
+  "sourceColors": 2,
+  "currentOutputColors": 1,
+  "currentOutput": [
+    "#d00000"
+  ],
+  "currentEditedGreenPixels": 0,
+  "frozenReferenceGreenPixels": 1024,
+  "interpretation": "Current behavior correctly requantizes against an allowed set. Frozen assignments model a separate explicit remapping workflow, not a superior nearest metric."
+}
