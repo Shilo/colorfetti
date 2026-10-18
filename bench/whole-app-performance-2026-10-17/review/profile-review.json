@@ -1,0 +1,770 @@
+{
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "bundle": "index-8I8UNd-r.js",
+  "notes": [
+    "Independent aggregation of desktop profiler-owned traces; not a fresh performance run.",
+    "Self sample weights use CDP timeDeltas and merge duplicate stack nodes by complete call frame. They approximate CPU attribution, not deterministic function timers or comparative wins.",
+    "Minified names were checked against the frozen built bundle and source bodies. Renderer TaskDuration excludes worker CPU; ScriptDuration undercounts MessageChannel work."
+  ],
+  "rows": [
+    {
+      "stage": "import to sampled wall first complete paint",
+      "rendererCpuMs": {
+        "TaskDuration": 83.395,
+        "ScriptDuration": 5.183,
+        "LayoutDuration": 1.9469999999999998,
+        "RecalcStyleDuration": 3.913
+      },
+      "top": [
+        {
+          "functionName": "(idle)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 125.24
+        },
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 27.475
+        },
+        {
+          "functionName": "Wu",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 130289,
+          "approximateSelfMs": 19.115,
+          "attribution": "src/lib/source-color-summary.js scanSummary"
+        },
+        {
+          "functionName": "Fa",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 28714,
+          "approximateSelfMs": 7.69,
+          "attribution": "src/lib/quantize.js convert (nearest)"
+        },
+        {
+          "functionName": "ul",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 79766,
+          "approximateSelfMs": 6.174,
+          "attribution": "src/lib/palette-decode.js native BGRA reorder"
+        },
+        {
+          "functionName": "copyTo",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 3.126
+        },
+        {
+          "functionName": "za",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 30424,
+          "approximateSelfMs": 2.088,
+          "attribution": "src/lib/quantize.js colorize"
+        },
+        {
+          "functionName": "y",
+          "scriptId": "27",
+          "url": "http://127.0.0.1:5371/assets/image-import-client-DMvOPcbg.js",
+          "lineNumber": 1,
+          "columnNumber": 3874,
+          "approximateSelfMs": 2.03
+        },
+        {
+          "functionName": "get clientWidth",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 1.629
+        },
+        {
+          "functionName": "",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 152189,
+          "approximateSelfMs": 1.609
+        },
+        {
+          "functionName": "",
+          "scriptId": "26",
+          "url": "",
+          "lineNumber": 0,
+          "columnNumber": 0,
+          "approximateSelfMs": 1.56
+        },
+        {
+          "functionName": "Hu",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 129684,
+          "approximateSelfMs": 1.56
+        }
+      ],
+      "attributed": [
+        {
+          "functionName": "Wu",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 130289,
+          "approximateSelfMs": 19.115,
+          "attribution": "src/lib/source-color-summary.js scanSummary"
+        },
+        {
+          "functionName": "Fa",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 28714,
+          "approximateSelfMs": 7.69,
+          "attribution": "src/lib/quantize.js convert (nearest)"
+        },
+        {
+          "functionName": "ul",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 79766,
+          "approximateSelfMs": 6.174,
+          "attribution": "src/lib/palette-decode.js native BGRA reorder"
+        },
+        {
+          "functionName": "za",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 30424,
+          "approximateSelfMs": 2.088,
+          "attribution": "src/lib/quantize.js colorize"
+        }
+      ]
+    },
+    {
+      "stage": "current exact output count publication",
+      "rendererCpuMs": {
+        "TaskDuration": 12.813999999999993,
+        "ScriptDuration": 0.03899999999999997,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "top": [
+        {
+          "functionName": "(idle)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 32.687
+        },
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 10.338
+        }
+      ],
+      "attributed": []
+    },
+    {
+      "stage": "full source nearest export",
+      "rendererCpuMs": {
+        "TaskDuration": 111.64699999999999,
+        "ScriptDuration": 2.6470000000000002,
+        "LayoutDuration": 0.35300000000000004,
+        "RecalcStyleDuration": 0.8910000000000003
+      },
+      "top": [
+        {
+          "functionName": "(idle)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 267.435
+        },
+        {
+          "functionName": "Fa",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 28714,
+          "approximateSelfMs": 59.223,
+          "attribution": "src/lib/quantize.js convert (nearest)"
+        },
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 15.039
+        },
+        {
+          "functionName": "Ys",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 56845,
+          "approximateSelfMs": 8.779,
+          "attribution": "src/lib/save.js PNG row packing"
+        },
+        {
+          "functionName": "",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 4.641
+        },
+        {
+          "functionName": "As",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 52270,
+          "approximateSelfMs": 3.662
+        },
+        {
+          "functionName": "MessageChannel",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 1.854
+        },
+        {
+          "functionName": "computeBox",
+          "scriptId": "56",
+          "url": "",
+          "lineNumber": 2986,
+          "columnNumber": 19,
+          "approximateSelfMs": 1.574
+        },
+        {
+          "functionName": "isElementHiddenForAria",
+          "scriptId": "56",
+          "url": "",
+          "lineNumber": 3367,
+          "columnNumber": 31,
+          "approximateSelfMs": 1.561
+        },
+        {
+          "functionName": "La",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 29813,
+          "approximateSelfMs": 1.559
+        },
+        {
+          "functionName": "ac",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 58928,
+          "approximateSelfMs": 1.557
+        },
+        {
+          "functionName": "close",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 1.543
+        }
+      ],
+      "attributed": [
+        {
+          "functionName": "Fa",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 28714,
+          "approximateSelfMs": 59.223,
+          "attribution": "src/lib/quantize.js convert (nearest)"
+        },
+        {
+          "functionName": "Ys",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 56845,
+          "approximateSelfMs": 8.779,
+          "attribution": "src/lib/save.js PNG row packing"
+        }
+      ]
+    },
+    {
+      "stage": "rapid settings cancellation through final RGB cap8 Cleanup dither4 paint",
+      "rendererCpuMs": {
+        "TaskDuration": 190.04699999999997,
+        "ScriptDuration": 25.390000000000004,
+        "LayoutDuration": 3.5269999999999997,
+        "RecalcStyleDuration": 9.336
+      },
+      "top": [
+        {
+          "functionName": "(idle)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 283.117
+        },
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 58.505
+        },
+        {
+          "functionName": "Ca",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 26110,
+          "approximateSelfMs": 50.257,
+          "attribution": "src/lib/palette-dither.js convertDither"
+        },
+        {
+          "functionName": "Fa",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 28714,
+          "approximateSelfMs": 15.603,
+          "attribution": "src/lib/quantize.js convert (nearest)"
+        },
+        {
+          "functionName": "za",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 30424,
+          "approximateSelfMs": 8.26,
+          "attribution": "src/lib/quantize.js colorize"
+        },
+        {
+          "functionName": "t.onmessage",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 137640,
+          "approximateSelfMs": 6.134
+        },
+        {
+          "functionName": "(garbage collector)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 4.661
+        },
+        {
+          "functionName": "s",
+          "scriptId": "101",
+          "url": "http://127.0.0.1:5371/assets/palette-cleanup-client-Brh0uqND.js",
+          "lineNumber": 1,
+          "columnNumber": 249,
+          "approximateSelfMs": 4.121
+        },
+        {
+          "functionName": "La",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 29813,
+          "approximateSelfMs": 3.149
+        },
+        {
+          "functionName": "",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 3.145
+        },
+        {
+          "functionName": "Pa",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 27978,
+          "approximateSelfMs": 3.106
+        },
+        {
+          "functionName": "blur",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 3.087
+        }
+      ],
+      "attributed": [
+        {
+          "functionName": "Ca",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 26110,
+          "approximateSelfMs": 50.257,
+          "attribution": "src/lib/palette-dither.js convertDither"
+        },
+        {
+          "functionName": "Fa",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 28714,
+          "approximateSelfMs": 15.603,
+          "attribution": "src/lib/quantize.js convert (nearest)"
+        },
+        {
+          "functionName": "za",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 30424,
+          "approximateSelfMs": 8.26,
+          "attribution": "src/lib/quantize.js colorize"
+        }
+      ]
+    },
+    {
+      "stage": "final enhanced exact count publication",
+      "rendererCpuMs": {
+        "TaskDuration": 12.290000000000024,
+        "ScriptDuration": 0.03999999999999837,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "top": [
+        {
+          "functionName": "(idle)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 30.866
+        },
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 9.924
+        },
+        {
+          "functionName": "",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 2.128
+        }
+      ],
+      "attributed": []
+    },
+    {
+      "stage": "full source enhanced export",
+      "rendererCpuMs": {
+        "TaskDuration": 82.729,
+        "ScriptDuration": 1.6189999999999953,
+        "LayoutDuration": 0.1090000000000006,
+        "RecalcStyleDuration": 0.9440000000000004
+      },
+      "top": [
+        {
+          "functionName": "(idle)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 178.098
+        },
+        {
+          "functionName": "Ca",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 26110,
+          "approximateSelfMs": 35.292,
+          "attribution": "src/lib/palette-dither.js convertDither"
+        },
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 20.491
+        },
+        {
+          "functionName": "Ys",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 56845,
+          "approximateSelfMs": 9.192,
+          "attribution": "src/lib/save.js PNG row packing"
+        },
+        {
+          "functionName": "now",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 4.598
+        },
+        {
+          "functionName": "La",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 29813,
+          "approximateSelfMs": 4.597
+        },
+        {
+          "functionName": "As",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 52270,
+          "approximateSelfMs": 4.366
+        },
+        {
+          "functionName": "getExplicitAriaRole",
+          "scriptId": "56",
+          "url": "",
+          "lineNumber": 3335,
+          "columnNumber": 28,
+          "approximateSelfMs": 1.976
+        },
+        {
+          "functionName": "get clientWidth",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 1.587
+        },
+        {
+          "functionName": "Js",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 56146,
+          "approximateSelfMs": 1.539
+        },
+        {
+          "functionName": "Zs",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 57314,
+          "approximateSelfMs": 0.449
+        }
+      ],
+      "attributed": [
+        {
+          "functionName": "Ca",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 26110,
+          "approximateSelfMs": 35.292,
+          "attribution": "src/lib/palette-dither.js convertDither"
+        },
+        {
+          "functionName": "Ys",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 56845,
+          "approximateSelfMs": 9.192,
+          "attribution": "src/lib/save.js PNG row packing"
+        }
+      ]
+    },
+    {
+      "stage": "Preview zoom Original fit close and wall return",
+      "rendererCpuMs": {
+        "TaskDuration": 156.918,
+        "ScriptDuration": 21.815,
+        "LayoutDuration": 1.3929999999999993,
+        "RecalcStyleDuration": 12.995
+      },
+      "top": [
+        {
+          "functionName": "(idle)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 899.371
+        },
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 50.684
+        },
+        {
+          "functionName": "Ca",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 26110,
+          "approximateSelfMs": 32.711,
+          "attribution": "src/lib/palette-dither.js convertDither"
+        },
+        {
+          "functionName": "za",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 30424,
+          "approximateSelfMs": 7.905,
+          "attribution": "src/lib/quantize.js colorize"
+        },
+        {
+          "functionName": "go",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 39750,
+          "approximateSelfMs": 6.361
+        },
+        {
+          "functionName": "putImageData",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 3.435
+        },
+        {
+          "functionName": "showModal",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 3.29
+        },
+        {
+          "functionName": "(garbage collector)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 3.22
+        },
+        {
+          "functionName": "isElementStyleVisibilityVisible",
+          "scriptId": "56",
+          "url": "",
+          "lineNumber": 2962,
+          "columnNumber": 40,
+          "approximateSelfMs": 1.72
+        },
+        {
+          "functionName": "checkVisibility",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 1.692
+        },
+        {
+          "functionName": "now",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 1.649
+        },
+        {
+          "functionName": "isElementHiddenForAria",
+          "scriptId": "56",
+          "url": "",
+          "lineNumber": 3367,
+          "columnNumber": 31,
+          "approximateSelfMs": 1.617
+        }
+      ],
+      "attributed": [
+        {
+          "functionName": "Ca",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 26110,
+          "approximateSelfMs": 32.711,
+          "attribution": "src/lib/palette-dither.js convertDither"
+        },
+        {
+          "functionName": "za",
+          "scriptId": "7",
+          "url": "http://127.0.0.1:5371/assets/index-8I8UNd-r.js",
+          "lineNumber": 2,
+          "columnNumber": 30424,
+          "approximateSelfMs": 7.905,
+          "attribution": "src/lib/quantize.js colorize"
+        }
+      ]
+    },
+    {
+      "stage": "settled wall idle",
+      "rendererCpuMs": {
+        "TaskDuration": 31.00599999999998,
+        "ScriptDuration": 1.0290000000000021,
+        "LayoutDuration": 0.0899999999999998,
+        "RecalcStyleDuration": 0.8490000000000025
+      },
+      "top": [
+        {
+          "functionName": "(idle)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 617.867
+        },
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "approximateSelfMs": 29.319
+        }
+      ],
+      "attributed": []
+    }
+  ]
+}

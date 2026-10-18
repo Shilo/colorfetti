@@ -1,0 +1,17 @@
+import {readFileSync,readdirSync,writeFileSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+import path from 'node:path';
+const root=import.meta.dirname,sha=b=>createHash('sha256').update(b).digest('hex');
+const git=(...args)=>execFileSync('git',args,{encoding:'utf8'}).trim();
+if(git('diff','--name-only','HEAD','--','src'))throw Error('Unexpected production worktree changes remain.');
+const original=JSON.parse(readFileSync(path.join(root,'manifest.json'),'utf8'));
+const source=[];function walk(dir){for(const e of readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else source.push({path:p.replaceAll('\\','/'),sha256:sha(readFileSync(p))});}}walk('src');
+const changed=source.filter(x=>original.source.find(y=>y.path===x.path)?.sha256!==x.sha256);
+if(changed.some(x=>x.path!=='src/mobile-image-actions.css'))throw Error('Production differs from audit baseline beyond the independent caption CSS commit.');
+const before=readFileSync(path.join(root,'codex/baseline-sheet2048.png')),after=readFileSync(path.join(root,'codex/final-sheet2048.png'));
+if(!before.equals(after))throw Error('Final native Save differs from baseline.');
+const qa=JSON.parse(readFileSync(path.join(root,'final-palette-qa.json'),'utf8'));
+if(qa.failure||qa.consoleErrors?.length)throw Error('Built-app QA is not clean.');
+const report={date:new Date().toISOString(),productionRevision:git('rev-parse','HEAD'),auditBaseline:original.revision,decision:'REJECT D1; no audit production changes',productionWorktreeDiff:[],outsideAuditChanges:changed,packageLockUnchanged:sha(readFileSync('package-lock.json'))===original.lockfileSha256,tests:{passed:1050,skipped:2,files:66,receipt:'final-tests.log'},build:{passed:true,receipt:'final-build.log',indexSha256:sha(readFileSync('.tmp/whole-app-performance-2026-10-17/final/dist/index.html'))},builtApp:{baseline:original.revision,legacy:qa.legacy.length,full:qa.full.length,extra:qa.extra,consoleErrors:qa.consoleErrors,receipt:'final-palette-qa.json'},codexUninstrumented:{finalNativeSaveByteEqual:true,sha256:sha(after),screenshot:'codex/final-restored.jpg'},androidCleanup:JSON.parse(readFileSync(path.join(root,'android/cleanup.json'),'utf8')),pushed:false};
+writeFileSync(path.join(root,'final-validation.json'),JSON.stringify(report,null,2)+'\n');console.log('PASS final production identity, dependency lock, built QA and actual Codex native byte equality');

@@ -1,0 +1,53 @@
+- figure "Preview glow64.png":
+  - button "Preview glow64.png"
+  - button "Save glow64.png":
+  - button "Copy glow64.png":
+  - button "Reuse colors from glow64.png":
+  - button "Preview glow64.png":
+  - button "Remove glow64.png":
+  - button "Preview glow64.png":
+    - generic: glow64.png
+    - generic: 64×64
+    - generic: ·
+    - generic: 2 colors
+- heading "Recolor" [level=2]
+- button "Reset palette settings":
+- generic: Max colors
+- slider "Max colors": "64"
+- spinbutton "Max colors value"
+- button "Use all palette colors" [pressed]: All
+- generic: Matching
+- group "Matching":
+  - button "Oklab matching" [pressed]: Oklab
+  - button "RGB matching": RGB
+- generic: Cleanup
+- group "Cleanup":
+  - button "Cleanup off" [pressed]: "Off"
+  - button "Cleanup on": "On"
+- generic: Dithering
+- group "Dithering":
+  - button "Dithering off": "Off"
+  - button "Dithering 2x2": 2×2
+  - button "Dithering 4x4": 4×4
+  - button "Dithering 8x8" [pressed]: 8×8
+- generic: Dither strength
+- slider "Dither strength" [active]: "100"
+- status: 100%
+- generic: Opacity
+- group "Opacity":
+  - button "Cut"
+  - button "Keep" [pressed]
+- group "Colors and palette":
+  - 'button "Selected palette: Resurrect 64, 64 colors"'
+  - button "Palette":
+- group "Conversion and style":
+  - button "Resurrect 64 conversion" [pressed]:
+    - generic: Resurrect 64
+  - button "Palette settings" [expanded]:
+  - generic: Showing images converted with Resurrect 64.
+- navigation "File and app actions":
+  - group "Add and save images":
+    - button "Save image":
+    - button "Add images":
+    - button "Remove all images":
+  - button "More":

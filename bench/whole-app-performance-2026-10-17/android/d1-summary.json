@@ -1,0 +1,412 @@
+{
+  "created": "2026-10-18T05:20:14.433Z",
+  "runs": [
+    {
+      "file": "results-all-wholeapp-d1-1792300555382.json",
+      "groups": [
+        {
+          "id": "sheet1024",
+          "warmup": true,
+          "baselineCPU": [
+            108.07700000000001,
+            106.272,
+            98.398,
+            110.07000000000001,
+            124.78500000000001
+          ],
+          "candidateCPU": [
+            82.95700000000001,
+            97.479,
+            79.582,
+            90.804,
+            123.192
+          ],
+          "baselineMedian": 108.07700000000001,
+          "candidateMedian": 90.804,
+          "cpuPercentChange": -15.982123856139607,
+          "baselineElapsed": 290.30000001192093,
+          "candidateElapsed": 230,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "sheet1024",
+          "warmup": false,
+          "baselineCPU": [
+            111.641,
+            123.22100000000003,
+            120.05100000000002,
+            128.853,
+            113.763
+          ],
+          "candidateCPU": [
+            75.51200000000001,
+            114.426,
+            117.29999999999998,
+            115.15800000000002,
+            118.26400000000001
+          ],
+          "baselineMedian": 120.05100000000002,
+          "candidateMedian": 115.15800000000002,
+          "cpuPercentChange": -4.075767798685559,
+          "baselineElapsed": 277.60000002384186,
+          "candidateElapsed": 275.5999999642372,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "sheet2048",
+          "warmup": true,
+          "baselineCPU": [
+            221.186,
+            213.613,
+            225.89299999999997,
+            202.127,
+            188.577
+          ],
+          "candidateCPU": [
+            179.35999999999999,
+            162.66899999999998,
+            217.057,
+            174.134,
+            204.7
+          ],
+          "baselineMedian": 213.613,
+          "candidateMedian": 179.35999999999999,
+          "cpuPercentChange": -16.03507277178824,
+          "baselineElapsed": 460,
+          "candidateElapsed": 429.19999998807907,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "sheet2048",
+          "warmup": false,
+          "baselineCPU": [
+            163.07800000000003,
+            171.04399999999998,
+            164.21999999999997,
+            178.72999999999996,
+            165.918
+          ],
+          "candidateCPU": [
+            168.24300000000002,
+            158.42600000000004,
+            144.00699999999998,
+            154.61300000000003,
+            146.48500000000004
+          ],
+          "baselineMedian": 165.918,
+          "candidateMedian": 154.61300000000003,
+          "cpuPercentChange": -6.8136067213924845,
+          "baselineElapsed": 367.80000001192093,
+          "candidateElapsed": 358.19999998807907,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "tiny",
+          "warmup": true,
+          "baselineCPU": [
+            51.787,
+            55.62200000000001,
+            64.483,
+            69.24900000000001,
+            67.145
+          ],
+          "candidateCPU": [
+            54.961,
+            55.245000000000005,
+            87.228,
+            62.239999999999995,
+            108.091
+          ],
+          "baselineMedian": 64.483,
+          "candidateMedian": 62.239999999999995,
+          "cpuPercentChange": -3.4784361769768957,
+          "baselineElapsed": 180.80000001192093,
+          "candidateElapsed": 165.10000002384186,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "tiny",
+          "warmup": false,
+          "baselineCPU": [
+            70.039,
+            71.01100000000001,
+            72.13600000000002,
+            63.085,
+            64.19000000000001
+          ],
+          "candidateCPU": [
+            69.624,
+            89.50499999999998,
+            76.432,
+            68.882,
+            74.118
+          ],
+          "baselineMedian": 70.039,
+          "candidateMedian": 74.118,
+          "cpuPercentChange": 5.823898113907955,
+          "baselineElapsed": 179.5,
+          "candidateElapsed": 171.30000001192093,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "animation256",
+          "warmup": true,
+          "baselineCPU": [
+            223.46099999999998,
+            250.41599999999997,
+            234.275,
+            250.1,
+            243.54999999999998
+          ],
+          "candidateCPU": [
+            207.93599999999998,
+            229.05800000000002,
+            182.24699999999999,
+            192.00799999999998,
+            247.42499999999998
+          ],
+          "baselineMedian": 243.54999999999998,
+          "candidateMedian": 207.93599999999998,
+          "cpuPercentChange": -14.622870047218228,
+          "baselineElapsed": 514,
+          "candidateElapsed": 484,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "animation256",
+          "warmup": false,
+          "baselineCPU": [
+            177.284,
+            189.963,
+            179.998,
+            171.072,
+            196.17600000000002
+          ],
+          "candidateCPU": [
+            178.037,
+            184.851,
+            169.56,
+            191.41300000000004,
+            167.213
+          ],
+          "baselineMedian": 179.998,
+          "candidateMedian": 178.037,
+          "cpuPercentChange": -1.0894565495172093,
+          "baselineElapsed": 404.10000002384186,
+          "candidateElapsed": 431.30000001192093,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "glow-keep",
+          "warmup": true,
+          "baselineCPU": [
+            80.11,
+            59.913000000000004,
+            54.579,
+            65.883,
+            77.997
+          ],
+          "candidateCPU": [
+            64.157,
+            75.485,
+            66.99000000000001,
+            67.38199999999999,
+            57.978
+          ],
+          "baselineMedian": 65.883,
+          "candidateMedian": 66.99000000000001,
+          "cpuPercentChange": 1.6802513546742226,
+          "baselineElapsed": 196.39999997615814,
+          "candidateElapsed": 200.20000004768372,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "glow-keep",
+          "warmup": false,
+          "baselineCPU": [
+            73.34199999999998,
+            70.95200000000001,
+            71.594,
+            66.244,
+            75.433
+          ],
+          "candidateCPU": [
+            74.29500000000002,
+            69.287,
+            69.86500000000001,
+            89.01599999999999,
+            87.02999999999999
+          ],
+          "baselineMedian": 71.594,
+          "candidateMedian": 74.29500000000002,
+          "cpuPercentChange": 3.7726625136184966,
+          "baselineElapsed": 182,
+          "candidateElapsed": 192.80000001192093,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "entropy256-256-rgb",
+          "warmup": true,
+          "baselineCPU": [
+            171.921,
+            167.873,
+            154.274,
+            143.538,
+            181.115
+          ],
+          "candidateCPU": [
+            155.808,
+            164.14000000000001,
+            161.286,
+            141.865,
+            191.90400000000002
+          ],
+          "baselineMedian": 167.873,
+          "candidateMedian": 161.286,
+          "cpuPercentChange": -3.923799538937167,
+          "baselineElapsed": 334.80000001192093,
+          "candidateElapsed": 306.10000002384186,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "entropy256-256-rgb",
+          "warmup": false,
+          "baselineCPU": [
+            147.02300000000002,
+            148.72999999999996,
+            125.19599999999997,
+            146.659,
+            124.471
+          ],
+          "candidateCPU": [
+            156.566,
+            138.39,
+            158.46099999999996,
+            149.57500000000002,
+            143.991
+          ],
+          "baselineMedian": 146.659,
+          "candidateMedian": 149.57500000000002,
+          "cpuPercentChange": 1.9882857513006558,
+          "baselineElapsed": 289.19999998807907,
+          "candidateElapsed": 291.19999998807907,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "sheet1024-rgb",
+          "warmup": true,
+          "baselineCPU": [
+            166.299,
+            113.239,
+            115.543,
+            119.39000000000001,
+            109.11500000000001
+          ],
+          "candidateCPU": [
+            88.52499999999999,
+            127.687,
+            124.632,
+            80.955,
+            163.61999999999998
+          ],
+          "baselineMedian": 115.543,
+          "candidateMedian": 124.632,
+          "cpuPercentChange": 7.866335476835462,
+          "baselineElapsed": 282.2000000476837,
+          "candidateElapsed": 301.5,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "sheet1024-rgb",
+          "warmup": false,
+          "baselineCPU": [
+            121.34100000000001,
+            120.66000000000001,
+            136.921,
+            123.776,
+            126.29800000000002
+          ],
+          "candidateCPU": [
+            110.48500000000001,
+            113.151,
+            115.329,
+            109.228,
+            92.58399999999997
+          ],
+          "baselineMedian": 123.776,
+          "candidateMedian": 110.48500000000001,
+          "cpuPercentChange": -10.737945966907947,
+          "baselineElapsed": 277.89999997615814,
+          "candidateElapsed": 266.5999999642372,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "cap-cleanup",
+          "warmup": true,
+          "baselineCPU": [
+            124.184,
+            131.63400000000001,
+            170.25700000000003,
+            147.927,
+            141.25600000000003
+          ],
+          "candidateCPU": [
+            181.307,
+            94.467,
+            164.83100000000002,
+            164.216,
+            108.937
+          ],
+          "baselineMedian": 141.25600000000003,
+          "candidateMedian": 164.216,
+          "cpuPercentChange": 16.25417681372825,
+          "baselineElapsed": 310.5,
+          "candidateElapsed": 337.19999998807907,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        },
+        {
+          "id": "cap-cleanup",
+          "warmup": false,
+          "baselineCPU": [
+            122.60499999999999,
+            115.818,
+            129.596,
+            132.037,
+            118.12299999999998
+          ],
+          "candidateCPU": [
+            115.57900000000002,
+            113.2,
+            106.39800000000002,
+            120.673,
+            105.694
+          ],
+          "baselineMedian": 122.60499999999999,
+          "candidateMedian": 113.2,
+          "cpuPercentChange": -7.6709758982096865,
+          "baselineElapsed": 256,
+          "candidateElapsed": 258.89999997615814,
+          "baselineMaxTask": 0,
+          "candidateMaxTask": 0
+        }
+      ],
+      "errors": [],
+      "outputs": 160
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "candidatePath": "bench\\whole-app-performance-2026-10-17\\review\\quantize.candidate.js",
+  "candidateStatus": "rejected research, not production",
+  "baselineHash": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573",
+  "candidateHash": "8a5d1f0f8c0a32382adb3b235243d6ea404bc1a50453e82902b3946be4edbcbb",
+  "cases": 4896,
+  "sourcePixels": 990432,
+  "comparedOutputPixels": 433728,
+  "scalarNearestCases": 2856,
+  "asyncCases": 816,
+  "cancellationChecks": 8,
+  "errors": [],
+  "notes": [
+    "Differential frozen baseline module imports unchanged production dependencies; candidate changes are restricted to quantize.js.",
+    "Independent scalar nearest matcher computes source-center coordinates and matching from arrays, without prepared tables/memos or candidate imports. Dither uses frozen differential parity, not an independent algorithm oracle.",
+    "Typed result equality includes every index, used flag, transparency bit, dimensions and Keep alpha byte. No performance claim follows from this correctness run."
+  ]
+}

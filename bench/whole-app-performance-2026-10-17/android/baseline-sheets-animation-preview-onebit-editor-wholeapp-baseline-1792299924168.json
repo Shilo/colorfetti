@@ -1,0 +1,1070 @@
+{
+  "label": "baseline",
+  "prefix": "wholeapp-baseline-1792299924168",
+  "baseURL": "http://localhost:5371/",
+  "started": "2026-10-18T05:05:24.169Z",
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "rows": [
+    {
+      "name": "kenney-sheet-1024: input import to current named wall paint",
+      "elapsedMs": 266.5,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 142.987,
+        "ScriptDuration": 17.36,
+        "LayoutDuration": 1.8450000000000002,
+        "RecalcStyleDuration": 7.3740000000000006
+      },
+      "heapUsed": 6407332,
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 117.008
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 67.529
+        },
+        {
+          "frame": "Fa index-8I8UNd-r.js:2",
+          "ms": 19.024
+        },
+        {
+          "frame": "Wu index-8I8UNd-r.js:2",
+          "ms": 13.359
+        },
+        {
+          "frame": " index-8I8UNd-r.js:2",
+          "ms": 8.445
+        },
+        {
+          "frame": "za index-8I8UNd-r.js:2",
+          "ms": 6.859
+        },
+        {
+          "frame": " :0",
+          "ms": 3.51
+        },
+        {
+          "frame": " index-8I8UNd-r.js:1",
+          "ms": 2.568
+        },
+        {
+          "frame": "#v index-8I8UNd-r.js:1",
+          "ms": 2.342
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 2.211
+        },
+        {
+          "frame": "Pa index-8I8UNd-r.js:2",
+          "ms": 2.158
+        },
+        {
+          "frame": "La index-8I8UNd-r.js:2",
+          "ms": 1.383
+        },
+        {
+          "frame": "b image-import-client-DMvOPcbg.js:1",
+          "ms": 1.328
+        },
+        {
+          "frame": "decode :-1",
+          "ms": 1.241
+        },
+        {
+          "frame": "t.onmessage image-import-client-DMvOPcbg.js:1",
+          "ms": 1.188
+        },
+        {
+          "frame": "requestAnimationFrame :-1",
+          "ms": 1.169
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 1.161
+        },
+        {
+          "frame": "loop :3",
+          "ms": 1.148
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 1.146
+        },
+        {
+          "frame": "postMessage :-1",
+          "ms": 1.145
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-1024: native Save including download manager",
+      "elapsedMs": 1065,
+      "longtasks": [],
+      "rafMaxMs": 33.299999999999955,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 265.001,
+        "ScriptDuration": 32.131,
+        "LayoutDuration": 3.5840000000000005,
+        "RecalcStyleDuration": 24.025000000000002
+      },
+      "heapUsed": 6843004
+    },
+    {
+      "name": "kenney-sheet-1024: RGB matching final paint",
+      "elapsedMs": 439.2999999523163,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 142.76299999999998,
+        "ScriptDuration": 22.739999999999995,
+        "LayoutDuration": 5.805,
+        "RecalcStyleDuration": 18.227
+      },
+      "heapUsed": 8219568
+    },
+    {
+      "name": "kenney-sheet-1024: dither4 final paint and count idle",
+      "elapsedMs": 1000.8000000119209,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999727,
+      "cpuMs": {
+        "TaskDuration": 187.411,
+        "ScriptDuration": 19.63000000000001,
+        "LayoutDuration": 2.6869999999999985,
+        "RecalcStyleDuration": 13.559000000000001
+      },
+      "heapUsed": 9382032,
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 814.726
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 85.334
+        },
+        {
+          "frame": "Ca index-8I8UNd-r.js:2",
+          "ms": 35.039
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 6.773
+        },
+        {
+          "frame": "La index-8I8UNd-r.js:2",
+          "ms": 6.475
+        },
+        {
+          "frame": "requestAnimationFrame :-1",
+          "ms": 3.761
+        },
+        {
+          "frame": " :0",
+          "ms": 3.52
+        },
+        {
+          "frame": "elementsFromPoint :-1",
+          "ms": 3.47
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 2.355
+        },
+        {
+          "frame": "evaluate :304",
+          "ms": 2.302
+        },
+        {
+          "frame": " index-8I8UNd-r.js:5",
+          "ms": 2.296
+        },
+        {
+          "frame": "Sa index-8I8UNd-r.js:2",
+          "ms": 2.293
+        },
+        {
+          "frame": " index-8I8UNd-r.js:2",
+          "ms": 2.285
+        },
+        {
+          "frame": "query :5606",
+          "ms": 2.253
+        },
+        {
+          "frame": "isElementHiddenForAria :3367",
+          "ms": 2.236
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 2.204
+        },
+        {
+          "frame": " :-1",
+          "ms": 2.198
+        },
+        {
+          "frame": "checkVisibility :-1",
+          "ms": 1.245
+        },
+        {
+          "frame": "l index-8I8UNd-r.js:2",
+          "ms": 1.208
+        },
+        {
+          "frame": "close :-1",
+          "ms": 1.191
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-2048: input import to current named wall paint",
+      "elapsedMs": 428.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 41.700000000000045,
+      "rafP95Ms": 16.899999999999977,
+      "cpuMs": {
+        "TaskDuration": 186.56199999999998,
+        "ScriptDuration": 12.718999999999998,
+        "LayoutDuration": 3.159,
+        "RecalcStyleDuration": 10.113000000000001
+      },
+      "heapUsed": 9169596,
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 220.599
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 86.141
+        },
+        {
+          "frame": "Wu index-8I8UNd-r.js:2",
+          "ms": 29.95
+        },
+        {
+          "frame": "Fa index-8I8UNd-r.js:2",
+          "ms": 14.449
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 10.963
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 8.909
+        },
+        {
+          "frame": "za index-8I8UNd-r.js:2",
+          "ms": 6.739
+        },
+        {
+          "frame": " index-8I8UNd-r.js:2",
+          "ms": 3.667
+        },
+        {
+          "frame": "La index-8I8UNd-r.js:2",
+          "ms": 2.386
+        },
+        {
+          "frame": " :-1",
+          "ms": 2.359
+        },
+        {
+          "frame": "ir index-8I8UNd-r.js:1",
+          "ms": 1.403
+        },
+        {
+          "frame": "qd index-8I8UNd-r.js:2",
+          "ms": 1.34
+        },
+        {
+          "frame": "Hu index-8I8UNd-r.js:2",
+          "ms": 1.339
+        },
+        {
+          "frame": "dt index-8I8UNd-r.js:2",
+          "ms": 1.292
+        },
+        {
+          "frame": "getPropertyValue :-1",
+          "ms": 1.265
+        },
+        {
+          "frame": "removeEventListener :-1",
+          "ms": 1.243
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 1.212
+        },
+        {
+          "frame": "$n index-8I8UNd-r.js:1",
+          "ms": 1.193
+        },
+        {
+          "frame": "rp index-8I8UNd-r.js:5",
+          "ms": 1.185
+        },
+        {
+          "frame": "querySelectorAll :-1",
+          "ms": 1.172
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-2048: native Save including download manager",
+      "elapsedMs": 1118.1000000238419,
+      "longtasks": [],
+      "rafMaxMs": 41.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 345.576,
+        "ScriptDuration": 35.41,
+        "LayoutDuration": 3.496,
+        "RecalcStyleDuration": 32.68300000000001
+      },
+      "heapUsed": 10548700
+    },
+    {
+      "name": "kenney-sheet-2048: RGB matching final paint",
+      "elapsedMs": 603.6999999880791,
+      "longtasks": [],
+      "rafMaxMs": 75,
+      "rafP95Ms": 33.40000000000009,
+      "cpuMs": {
+        "TaskDuration": 184.76199999999997,
+        "ScriptDuration": 24.14899999999999,
+        "LayoutDuration": 6.351000000000001,
+        "RecalcStyleDuration": 27.404999999999998
+      },
+      "heapUsed": 11961436
+    },
+    {
+      "name": "kenney-sheet-2048: dither4 final paint and count idle",
+      "elapsedMs": 1004.5,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.700000000000273,
+      "cpuMs": {
+        "TaskDuration": 243.8539999999999,
+        "ScriptDuration": 17.587000000000007,
+        "LayoutDuration": 2.4880000000000004,
+        "RecalcStyleDuration": 13.877
+      },
+      "heapUsed": 11111416,
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 773.572
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 98.925
+        },
+        {
+          "frame": "Ca index-8I8UNd-r.js:2",
+          "ms": 72.564
+        },
+        {
+          "frame": "La index-8I8UNd-r.js:2",
+          "ms": 8.275
+        },
+        {
+          "frame": " :-1",
+          "ms": 6.208
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 5.742
+        },
+        {
+          "frame": "now :-1",
+          "ms": 5.237
+        },
+        {
+          "frame": " index-8I8UNd-r.js:2",
+          "ms": 4.429
+        },
+        {
+          "frame": "requestAnimationFrame :-1",
+          "ms": 3.749
+        },
+        {
+          "frame": " index-8I8UNd-r.js:1",
+          "ms": 3.568
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 2.434
+        },
+        {
+          "frame": "isError :56",
+          "ms": 2.38
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 2.231
+        },
+        {
+          "frame": " :0",
+          "ms": 1.471
+        },
+        {
+          "frame": "removeAttribute :-1",
+          "ms": 1.352
+        },
+        {
+          "frame": "isRegExp :35",
+          "ms": 1.263
+        },
+        {
+          "frame": "_promiseAwareJsonValueNoThrow :326",
+          "ms": 1.253
+        },
+        {
+          "frame": "isNativelyDisabled :3981",
+          "ms": 1.245
+        },
+        {
+          "frame": "Cr index-8I8UNd-r.js:1",
+          "ms": 1.243
+        },
+        {
+          "frame": "close :-1",
+          "ms": 1.226
+        }
+      ]
+    },
+    {
+      "name": "real-magic: input import to current named wall paint",
+      "elapsedMs": 128.5,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 47.672000000000004,
+        "ScriptDuration": 7.6290000000000004,
+        "LayoutDuration": 1.4509999999999996,
+        "RecalcStyleDuration": 12.796
+      },
+      "heapUsed": 13740392
+    },
+    {
+      "name": "real-magic: native Save including download manager",
+      "elapsedMs": 1085.6000000238419,
+      "longtasks": [],
+      "rafMaxMs": 17,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 187.353,
+        "ScriptDuration": 34.168000000000006,
+        "LayoutDuration": 2.4810000000000008,
+        "RecalcStyleDuration": 19.96
+      },
+      "heapUsed": 18460300
+    },
+    {
+      "name": "real-magic: fresh converted playback",
+      "elapsedMs": 1506.9000000357628,
+      "longtasks": [],
+      "rafMaxMs": 16.899999999999864,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 81.10299999999998,
+        "ScriptDuration": 26.593000000000007,
+        "LayoutDuration": 0.874999999999999,
+        "RecalcStyleDuration": 1.6110000000000013
+      },
+      "heapUsed": 12763028,
+      "observedFrames": 15
+    },
+    {
+      "name": "kenney-motion-128: input import to current named wall paint",
+      "elapsedMs": 165.4000000357628,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 63.067000000000014,
+        "ScriptDuration": 15.720999999999998,
+        "LayoutDuration": 2.165,
+        "RecalcStyleDuration": 12.568
+      },
+      "heapUsed": 18323120
+    },
+    {
+      "name": "kenney-motion-128: native Save including download manager",
+      "elapsedMs": 1045.8999999761581,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 178.163,
+        "ScriptDuration": 33.345,
+        "LayoutDuration": 2.524,
+        "RecalcStyleDuration": 16.296
+      },
+      "heapUsed": 20538732
+    },
+    {
+      "name": "kenney-motion-128: fresh converted playback",
+      "elapsedMs": 6073.800000011921,
+      "longtasks": [],
+      "rafMaxMs": 17,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 356.192,
+        "ScriptDuration": 110.054,
+        "LayoutDuration": 0.25900000000000056,
+        "RecalcStyleDuration": 1.125999999999995
+      },
+      "heapUsed": 11835612,
+      "observedFrames": 66
+    },
+    {
+      "name": "kenney-motion-256: input import to current named wall paint",
+      "elapsedMs": 316.69999998807907,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 80.49900000000001,
+        "ScriptDuration": 17.064,
+        "LayoutDuration": 3.382,
+        "RecalcStyleDuration": 10.186
+      },
+      "heapUsed": 18329904
+    },
+    {
+      "name": "kenney-motion-256: native Save including download manager",
+      "elapsedMs": 1207,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 328.05699999999996,
+        "ScriptDuration": 39.209,
+        "LayoutDuration": 2.4419999999999997,
+        "RecalcStyleDuration": 19.088
+      },
+      "heapUsed": 11906640
+    },
+    {
+      "name": "kenney-motion-256: fresh converted playback",
+      "elapsedMs": 8948.199999988079,
+      "longtasks": [],
+      "rafMaxMs": 24.899999999999636,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 622.3310000000001,
+        "ScriptDuration": 189.876,
+        "LayoutDuration": 0.33900000000000075,
+        "RecalcStyleDuration": 1.6499999999999986
+      },
+      "heapUsed": 9677796,
+      "observedFrames": 96
+    },
+    {
+      "name": "preview: input import to current named wall paint",
+      "elapsedMs": 352.0999999642372,
+      "longtasks": [],
+      "rafMaxMs": 100,
+      "rafP95Ms": 100,
+      "cpuMs": {
+        "TaskDuration": 229.435,
+        "ScriptDuration": 14.365999999999996,
+        "LayoutDuration": 4.303000000000001,
+        "RecalcStyleDuration": 14.110000000000001
+      },
+      "heapUsed": 12018108,
+      "top": [
+        {
+          "frame": "(program) :-1",
+          "ms": 139.001
+        },
+        {
+          "frame": "(idle) :-1",
+          "ms": 123.706
+        },
+        {
+          "frame": "Fa index-8I8UNd-r.js:2",
+          "ms": 19.176
+        },
+        {
+          "frame": "Wu index-8I8UNd-r.js:2",
+          "ms": 17.435
+        },
+        {
+          "frame": " index-8I8UNd-r.js:2",
+          "ms": 11.839
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 8.196
+        },
+        {
+          "frame": "za index-8I8UNd-r.js:2",
+          "ms": 6.372
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 3.414
+        },
+        {
+          "frame": " index-8I8UNd-r.js:1",
+          "ms": 2.38
+        },
+        {
+          "frame": " index-8I8UNd-r.js:5",
+          "ms": 2.302
+        },
+        {
+          "frame": "Worker :-1",
+          "ms": 1.323
+        },
+        {
+          "frame": "i index-8I8UNd-r.js:5",
+          "ms": 1.301
+        },
+        {
+          "frame": "destroy index-8I8UNd-r.js:2",
+          "ms": 1.216
+        },
+        {
+          "frame": "Er index-8I8UNd-r.js:1",
+          "ms": 1.2
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 1.2
+        },
+        {
+          "frame": "resolve :-1",
+          "ms": 1.195
+        },
+        {
+          "frame": "close :-1",
+          "ms": 1.195
+        },
+        {
+          "frame": "wn index-8I8UNd-r.js:1",
+          "ms": 1.162
+        },
+        {
+          "frame": "Hu index-8I8UNd-r.js:2",
+          "ms": 1.146
+        },
+        {
+          "frame": " :-1",
+          "ms": 1.112
+        }
+      ]
+    },
+    {
+      "name": "Preview zoom pan Original Fit return",
+      "elapsedMs": 1412.0999999642372,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 347.058,
+        "ScriptDuration": 53.18600000000001,
+        "LayoutDuration": 1.5970000000000004,
+        "RecalcStyleDuration": 35.316
+      },
+      "heapUsed": 13720552
+    },
+    {
+      "name": "settled still wall idle",
+      "elapsedMs": 1251.7000000476837,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 78.92200000000005,
+        "ScriptDuration": 11.735999999999997,
+        "LayoutDuration": 2.954999999999999,
+        "RecalcStyleDuration": 6.762999999999991
+      },
+      "heapUsed": 13748316
+    },
+    {
+      "name": "onebit: input import to current named wall paint",
+      "elapsedMs": 89.80000001192093,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 39.17999999999999,
+        "ScriptDuration": 9.474000000000004,
+        "LayoutDuration": 1.9190000000000005,
+        "RecalcStyleDuration": 6.446000000000001
+      },
+      "heapUsed": 13527272
+    },
+    {
+      "name": "1-bit style Solid: committed paint",
+      "elapsedMs": 460.5999999642372,
+      "longtasks": [],
+      "rafMaxMs": 33.5,
+      "rafP95Ms": 17,
+      "cpuMs": {
+        "TaskDuration": 149.678,
+        "ScriptDuration": 44.339,
+        "LayoutDuration": 4.007999999999999,
+        "RecalcStyleDuration": 24.314000000000004
+      },
+      "heapUsed": 16181752
+    },
+    {
+      "name": "1-bit style Lines: committed paint",
+      "elapsedMs": 433.5,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 126.647,
+        "ScriptDuration": 23.941000000000003,
+        "LayoutDuration": 2.9109999999999987,
+        "RecalcStyleDuration": 17.675000000000004
+      },
+      "heapUsed": 14586684
+    },
+    {
+      "name": "1-bit style Stencil: committed paint",
+      "elapsedMs": 462.0999999642372,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 133.734,
+        "ScriptDuration": 29.74200000000002,
+        "LayoutDuration": 4.4010000000000025,
+        "RecalcStyleDuration": 22.549
+      },
+      "heapUsed": 16116528
+    },
+    {
+      "name": "1-bit style Icon: committed paint",
+      "elapsedMs": 421.80000001192093,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 111.19000000000001,
+        "ScriptDuration": 26.675000000000004,
+        "LayoutDuration": 3.3019999999999996,
+        "RecalcStyleDuration": 18.95200000000001
+      },
+      "heapUsed": 17385840
+    },
+    {
+      "name": "1-bit style Checker: committed paint",
+      "elapsedMs": 378.0999999642372,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999727,
+      "rafP95Ms": 16.700000000000273,
+      "cpuMs": {
+        "TaskDuration": 104.01000000000005,
+        "ScriptDuration": 23.300999999999988,
+        "LayoutDuration": 3.224000000000001,
+        "RecalcStyleDuration": 18.25099999999999
+      },
+      "heapUsed": 16082960
+    },
+    {
+      "name": "1-bit style Bayer: committed paint",
+      "elapsedMs": 420.2000000476837,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 120.73999999999995,
+        "ScriptDuration": 24.110999999999994,
+        "LayoutDuration": 3.6500000000000004,
+        "RecalcStyleDuration": 23.881000000000014
+      },
+      "heapUsed": 17414404
+    },
+    {
+      "name": "1-bit style Hatch: committed paint",
+      "elapsedMs": 369.5,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999727,
+      "cpuMs": {
+        "TaskDuration": 103.37600000000002,
+        "ScriptDuration": 21.003999999999994,
+        "LayoutDuration": 3.7459999999999996,
+        "RecalcStyleDuration": 18.748999999999988
+      },
+      "heapUsed": 15689348
+    },
+    {
+      "name": "1-bit style Atkinson: committed paint",
+      "elapsedMs": 396,
+      "longtasks": [],
+      "rafMaxMs": 16.90000000000009,
+      "rafP95Ms": 16.799999999999727,
+      "cpuMs": {
+        "TaskDuration": 98.89800000000015,
+        "ScriptDuration": 19.877000000000034,
+        "LayoutDuration": 3.730999999999998,
+        "RecalcStyleDuration": 19.53200000000002
+      },
+      "heapUsed": 16735656
+    },
+    {
+      "name": "1-bit style Noise: committed paint",
+      "elapsedMs": 382.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 108.08000000000018,
+        "ScriptDuration": 22.654000000000007,
+        "LayoutDuration": 3.4990000000000023,
+        "RecalcStyleDuration": 21.198999999999995
+      },
+      "heapUsed": 17773344
+    },
+    {
+      "name": "1-bit style Shape: committed paint",
+      "elapsedMs": 369.89999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000728,
+      "rafP95Ms": 16.700000000000728,
+      "cpuMs": {
+        "TaskDuration": 96.92199999999995,
+        "ScriptDuration": 18.991999999999955,
+        "LayoutDuration": 3.660999999999998,
+        "RecalcStyleDuration": 19.69499999999999
+      },
+      "heapUsed": 18757228
+    },
+    {
+      "name": "1-bit Original cached repeat",
+      "elapsedMs": 445.5,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999272,
+      "cpuMs": {
+        "TaskDuration": 75.66699999999993,
+        "ScriptDuration": 14.015,
+        "LayoutDuration": 7.8380000000000045,
+        "RecalcStyleDuration": 7.202000000000014
+      },
+      "heapUsed": 16179760
+    }
+  ],
+  "outputs": [
+    {
+      "name": "wholeapp-baseline-1792299924168-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "sha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "colors": 26,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "wholeapp-baseline-1792299924168-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "sha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "colors": 26,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "wholeapp-baseline-1792299924168-real-magic-0-real-magic-palette.gif",
+      "sha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19",
+      "width": 32,
+      "height": 32,
+      "frames": 6,
+      "delay": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": 0,
+      "colors": 12,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "wholeapp-baseline-1792299924168-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "sha256": "270f4db2f8da8e0f2c7da29fb6a526046a20c602a7df5268bb6e33b211ddcb0f",
+      "width": 128,
+      "height": 128,
+      "frames": 32,
+      "delay": [
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120
+      ],
+      "loop": 0,
+      "colors": 14,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "wholeapp-baseline-1792299924168-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "sha256": "1689433d660b81dbd1c1ae90ebb37c23a0649131cabfc4023c95cbfb8dfc65e0",
+      "width": 256,
+      "height": 256,
+      "frames": 48,
+      "delay": [
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120
+      ],
+      "loop": 0,
+      "colors": 14,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    }
+  ],
+  "errors": [
+    "locator.click: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Review colors', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"btn glass-btn\">Review colors</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <input maxlength=\"128\" id=\"palette-name\" aria-label=\"Name\" autocomplete=\"off\" placeholder=\"Palette name\" class=\"glass-input palette-editor-title-input\"/> from <div class=\"glass-modal__header palette-editor-header\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <textarea aria-label=\"Colors or Lospec link\" class=\"glass-input palette-text-input\" placeholder=\"#000000, #ffffff, #ff004d↵or https://lospec.com/palette-list/slso8\"></textarea> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <input maxlength=\"128\" id=\"palette-name\" aria-label=\"Name\" autocomplete=\"off\" placeholder=\"Palette name\" class=\"glass-input palette-editor-title-input\"/> from <div class=\"glass-modal__header palette-editor-header\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"glass-modal__header palette-editor-header\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  51 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <textarea aria-label=\"Colors or Lospec link\" class=\"glass-input palette-text-input\" placeholder=\"#000000, #ffffff, #ff004d↵or https://lospec.com/palette-list/slso8\"></textarea> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <input maxlength=\"128\" id=\"palette-name\" aria-label=\"Name\" autocomplete=\"off\" placeholder=\"Palette name\" class=\"glass-input palette-editor-title-input\"/> from <div class=\"glass-modal__header palette-editor-header\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"glass-modal__header palette-editor-header\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"glass-modal__header palette-editor-header\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <textarea aria-label=\"Colors or Lospec link\" class=\"glass-input palette-text-input\" placeholder=\"#000000, #ffffff, #ff004d↵or https://lospec.com/palette-list/slso8\"></textarea> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\n    at C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\whole-app-performance-2026-10-17\\android\\native.mjs:81:552\n    at async stage (C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\whole-app-performance-2026-10-17\\android\\native.mjs:37:2)\n    at async file:///C:/Programming_Files/Shilocity/colorfetti/bench/whole-app-performance-2026-10-17/android/native.mjs:81:37"
+  ],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 339\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "lastWall": [
+    {
+      "name": "wholeapp-baseline-1792299924168-onebit-0-dungeon-wizard.png 16×16  ·  2 colors ",
+      "caption": "16×16  ·  2 colors ",
+      "width": 16,
+      "height": 16
+    }
+  ],
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T05:08:06.188Z"
+}

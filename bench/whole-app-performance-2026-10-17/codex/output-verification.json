@@ -1,0 +1,51 @@
+{
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "zipSha256": "ca3a682423f6fe9afbd42d25e4b062e5884d7694dcd6dea796ba0a3462c8f10f",
+  "results": [
+    {
+      "name": "dungeon-wizard-palette.png",
+      "width": 16,
+      "height": 16,
+      "frames": 1,
+      "usedColors": 8,
+      "sha256": "ce8519d4b03c801273a3e169336188dfe12598c43b9a93524f23ce4b520d2d2d",
+      "rgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "real-magic-palette.gif",
+      "width": 32,
+      "height": 32,
+      "frames": 6,
+      "delay": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": 0,
+      "usedColors": 8,
+      "sha256": "5e13fad248369d5e4585d7c9be2ea545c900187517bdfd99fedd430f8e9fc0bf",
+      "rgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "clipboard.png",
+      "width": 16,
+      "height": 16,
+      "independentAlphaAndMembership": true
+    },
+    {
+      "name": "baseline-glow-keep.png",
+      "width": 64,
+      "height": 64,
+      "rgbMismatch": 0,
+      "alphaMismatch": 0,
+      "oracle": "independent scalar Oklab nearest, exact every original alpha byte",
+      "sha256": "30f5bb6c7d7b9ebbda9b983c275464c87941c6f515968a88c25e062d07e1f575"
+    }
+  ],
+  "oracle": "Native Codex Browser Save ZIP independently decoded with Sharp; enhanced pipeline integration parity uses production modules, not independent algorithm oracle. Independent alpha, membership, dimensions, GIF timing/loop. Hidden RGB ignored only at alpha0. Clipboard transport separately checked alpha/membership."
+}

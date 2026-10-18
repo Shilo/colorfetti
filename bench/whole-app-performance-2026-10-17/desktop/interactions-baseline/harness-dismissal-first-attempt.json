@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-18T05:13:07.997Z",
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "rows": [
+    {
+      "name": "restored empty demo light",
+      "elapsedMs": 35.69999999552965,
+      "cpuMs": 9.072,
+      "scriptMs": 0.256,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "restored empty demo dark",
+      "elapsedMs": 47.899999998509884,
+      "cpuMs": 10.341,
+      "scriptMs": 0.063,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "distinct sprite import 1",
+      "elapsedMs": 34.100000001490116,
+      "cpuMs": 12.794,
+      "scriptMs": 2.872,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "distinct sprite import 2",
+      "elapsedMs": 57.19999999552965,
+      "cpuMs": 23.381,
+      "scriptMs": 5.18,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "distinct sprite import 4",
+      "elapsedMs": 91.5,
+      "cpuMs": 46.663000000000004,
+      "scriptMs": 15.104999999999999,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "distinct sprite import 8",
+      "elapsedMs": 91,
+      "cpuMs": 47.445,
+      "scriptMs": 14.601,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit sprite import",
+      "elapsedMs": 55.5,
+      "cpuMs": 27.654000000000003,
+      "scriptMs": 11.971,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit cutout control/current paint",
+      "elapsedMs": 111.5,
+      "cpuMs": 28.51400000000001,
+      "scriptMs": 11.736,
+      "longtasks": [],
+      "maxTaskMs": 0
+    }
+  ],
+  "errors": [
+    "page.waitForEvent: Timeout 30000ms exceeded while waiting for event \"download\"\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================\n    at C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\whole-app-performance-2026-10-17\\desktop\\interactions.mjs:23:518"
+  ],
+  "notes": [
+    "auxiliary sandboxed Edge, not Codex Browser; instrumentation rAF included in stage CPU, so these are not evidence of production idle work",
+    "native PNG decoded Sharp and compared with exact production-core mask oracle for all11 styles; independent algorithm suites remain separate",
+    "test origin seeded before startup; real app controls used for workflow after startup"
+  ]
+}

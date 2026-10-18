@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-18T05:04:34.700Z",
+  "commit": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "variant": "baseline-profile",
+  "profile": true,
+  "sandbox": true,
+  "fixtureManifest": "fixture-manifest.json",
+  "runs": [
+    {
+      "kind": "sheet2048",
+      "records": [
+        "kenney-sheet-2048"
+      ],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "viewport": {
+        "width": 1280,
+        "height": 900,
+        "dpr": 1
+      },
+      "wall": [
+        {
+          "caption": "2048×2048  ·  26 colors ",
+          "width": 761,
+          "height": 761,
+          "paints": 1
+        }
+      ],
+      "rows": [
+        {
+          "name": "import to sampled wall first complete paint",
+          "profile": "profile-0.json",
+          "cpuMs": {
+            "TaskDuration": 83.395,
+            "ScriptDuration": 5.183,
+            "LayoutDuration": 1.9469999999999998,
+            "RecalcStyleDuration": 3.913
+          },
+          "heapDelta": 1811828,
+          "elapsedMs": 211.20000000298023,
+          "longtasks": [],
+          "maxTaskMs": 0,
+          "rafP95Ms": 16.700000000000017,
+          "rafMaxMs": 16.700000000000017,
+          "writes": 2
+        },
+        {
+          "name": "current exact output count publication",
+          "profile": "profile-1.json",
+          "cpuMs": {
+            "TaskDuration": 12.813999999999993,
+            "ScriptDuration": 0.03899999999999997,
+            "LayoutDuration": 0,
+            "RecalcStyleDuration": 0
+          },
+          "heapDelta": 11184,
+          "elapsedMs": 47.30000000447035,
+          "longtasks": [],
+          "maxTaskMs": 0,
+          "rafP95Ms": 16.700000000000045,
+          "rafMaxMs": 16.700000000000045,
+          "writes": 2
+        },
+        {
+          "name": "full source nearest export",
+          "profile": "profile-2.json",
+          "cpuMs": {
+            "TaskDuration": 111.64699999999999,
+            "ScriptDuration": 2.6470000000000002,
+            "LayoutDuration": 0.35300000000000004,
+            "RecalcStyleDuration": 0.8910000000000003
+          },
+          "heapDelta": 224204,
+          "elapsedMs": 379.1000000014901,
+          "longtasks": [],
+          "maxTaskMs": 0,
+          "rafP95Ms": 16.700000000000045,
+          "rafMaxMs": 16.799999999999955,
+          "writes": 2
+        },
+        {
+          "name": "rapid settings cancellation through final RGB cap8 Cleanup dither4 paint",
+          "profile": "profile-3.json",
+          "cpuMs": {
+            "TaskDuration": 190.04699999999997,
+            "ScriptDuration": 25.390000000000004,
+            "LayoutDuration": 3.5269999999999997,
+            "RecalcStyleDuration": 9.336
+          },
+          "heapDelta": -849336,
+          "elapsedMs": 484.8999999985099,
+          "longtasks": [],
+          "maxTaskMs": 0,
+          "rafP95Ms": 16.799999999999955,
+          "rafMaxMs": 16.799999999999955,
+          "writes": 7
+        },
+        {
+          "name": "final enhanced exact count publication",
+          "profile": "profile-4.json",
+          "cpuMs": {
+            "TaskDuration": 12.290000000000024,
+            "ScriptDuration": 0.03999999999999837,
+            "LayoutDuration": 0,
+            "RecalcStyleDuration": 0
+          },
+          "heapDelta": 6472,
+          "elapsedMs": 47.100000001490116,
+          "longtasks": [],
+          "maxTaskMs": 0,
+          "rafP95Ms": 16.700000000000045,
+          "rafMaxMs": 16.700000000000045,
+          "writes": 7
+        },
+        {
+          "name": "full source enhanced export",
+          "profile": "profile-5.json",
+          "cpuMs": {
+            "TaskDuration": 82.729,
+            "ScriptDuration": 1.6189999999999953,
+            "LayoutDuration": 0.1090000000000006,
+            "RecalcStyleDuration": 0.9440000000000004
+          },
+          "heapDelta": 740324,
+          "elapsedMs": 267.09999999403954,
+          "longtasks": [],
+          "maxTaskMs": 0,
+          "rafP95Ms": 16.799999999999955,
+          "rafMaxMs": 16.799999999999955,
+          "writes": 7
+        },
+        {
+          "name": "Preview zoom Original fit close and wall return",
+          "profile": "profile-6.json",
+          "cpuMs": {
+            "TaskDuration": 156.918,
+            "ScriptDuration": 21.815,
+            "LayoutDuration": 1.3929999999999993,
+            "RecalcStyleDuration": 12.995
+          },
+          "heapDelta": -504304,
+          "elapsedMs": 1053,
+          "longtasks": [],
+          "maxTaskMs": 0,
+          "rafP95Ms": 16.800000000000182,
+          "rafMaxMs": 16.800000000000182,
+          "writes": 11
+        },
+        {
+          "name": "settled wall idle",
+          "profile": "profile-7.json",
+          "cpuMs": {
+            "TaskDuration": 31.00599999999998,
+            "ScriptDuration": 1.0290000000000021,
+            "LayoutDuration": 0.0899999999999998,
+            "RecalcStyleDuration": 0.8490000000000025
+          },
+          "heapDelta": 7076,
+          "elapsedMs": 654.7999999970198,
+          "longtasks": [],
+          "maxTaskMs": 0,
+          "rafP95Ms": 16.800000000000182,
+          "rafMaxMs": 17.100000000000364,
+          "writes": 11
+        }
+      ],
+      "exports": [
+        {
+          "label": "nearest",
+          "id": "kenney-sheet-2048",
+          "width": 2048,
+          "height": 2048,
+          "frames": 1,
+          "used": 26,
+          "rgbMismatch": 0,
+          "alphaMismatch": 0,
+          "oracle": "independent scalar Oklab nearest plus Sharp decode",
+          "sha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+        },
+        {
+          "label": "enhanced",
+          "id": "kenney-sheet-2048",
+          "width": 2048,
+          "height": 2048,
+          "frames": 1,
+          "used": 8,
+          "rgbMismatch": 0,
+          "alphaMismatch": 0,
+          "oracle": "committed production-core quantize/subset/Cleanup outside browser plus independent membership/alpha decode",
+          "sha256": "e9d6e2f1ddc0e591ef5cb38310fef1a2b125c460ad511e3024a9aa04ec3bcbec"
+        }
+      ],
+      "playbackVisibility": [
+        {
+          "intersecting": true,
+          "ratio": 1
+        }
+      ],
+      "errors": [],
+      "notes": [
+        "Wall readiness observes putImageData on every displayed canvas, not full-source color-count publication. Sampled sheets correctly need not show a count.",
+        "CDP CPU is renderer main thread; workers excluded. Elapsed includes awaited UI and observation windows, not pure conversion latency. Source transport is prestaged.",
+        "Native/download PNG/GIF/ZIP bytes are decoded independently; alpha-zero hidden RGB ignored. Animation source decoded GIF, including fixture palette encoding, defines the expected input.",
+        "Enhanced pipeline uses committed production modules, so independent algorithm proof is limited to nearest; enhanced equality catches integration, stale settings, sampling and export discrepancies."
+      ]
+    }
+  ]
+}

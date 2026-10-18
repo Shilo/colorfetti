@@ -1,0 +1,90 @@
+- figure "Preview kenney-sheet-2048.png":
+  - button "Preview kenney-sheet-2048.png"
+  - button "Save kenney-sheet-2048.png":
+  - button "Copy kenney-sheet-2048.png":
+  - button "Reuse colors from kenney-sheet-2048.png":
+  - button "Preview kenney-sheet-2048.png":
+  - button "Remove kenney-sheet-2048.png":
+  - button "Preview kenney-sheet-2048.png":
+    - generic: kenney-sheet-2048.png
+    - generic: 2048×2048
+    - generic: ·
+    - generic: 26 colors
+- group "Color system":
+  - button "Palette" [pressed]
+  - button "1-bit"
+- generic: Resurrect 64
+- button "Import palette":
+- button "Edit palette":
+- group "Full palettes":
+  - button "Auto":
+    - generic: Auto
+  - button "Resurrect 64" [pressed]:
+    - generic: Resurrect 64
+  - button "ENDESGA 32":
+    - generic: ENDESGA 32
+  - button "Mulfok 32":
+    - generic: Mulfok 32
+  - button "PICO-8":
+    - generic: PICO-8
+  - button "DawnBringer 16":
+    - generic: DawnBringer 16
+  - button "ENDESGA 8":
+    - generic: ENDESGA 8
+  - button "Grayscale 8":
+    - generic: Grayscale 8
+  - button "Ice Cream GB":
+    - generic: Ice Cream GB
+  - button "Game Boy Green":
+    - generic: Game Boy Green
+  - button "Black & White":
+    - generic: Black & White
+  - button "Glow":
+    - generic: Glow
+  - button "Paper":
+    - generic: Paper
+- text: ›
+- group "Colors and palette":
+  - 'button "Selected palette: Resurrect 64, 64 colors"'
+  - button "Palette" [expanded]:
+- group "Conversion and style":
+  - button "Resurrect 64 conversion" [pressed]:
+    - generic: Resurrect 64
+  - button "Palette settings":
+  - generic: Showing images converted with Resurrect 64.
+- navigation "File and app actions":
+  - group "Add and save images":
+    - button "Save image":
+      - generic: Save
+    - button "Add images":
+    - button "Remove all images":
+  - button "More":
+- dialog "Import palette":
+  - textbox "Name":
+    - /placeholder: Palette name
+    - text: SLSO8
+  - button "HEX backup":
+  - button "Close palette editor":
+  - strong: 8 colors
+  - link "SLSO8":
+    - /url: https://lospec.com/palette-list/slso8
+  - generic "Palette colors":
+    - 'button "Select color 1 #0d2b45"'
+    - 'button "Select color 2 #203c56"'
+    - 'button "Select color 3 #544e68"'
+    - 'button "Select color 4 #8d697a"'
+    - 'button "Select color 5 #d08159"'
+    - 'button "Select color 6 #ffaa5e"'
+    - 'button "Select color 7 #ffd4a3"'
+    - 'button "Select color 8 #ffecd6"'
+  - group "Import method":
+    - button "Image or file"
+    - button "Paste colors" [pressed]
+    - button "Add colors"
+  - textbox "Colors or Lospec link":
+    - /placeholder: "#000000, #ffffff, #ff004d\nor https://lospec.com/palette-list/slso8"
+    - text: https://lospec.com/palette-list/slso8
+  - paragraph: Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.
+  - button "Import from Lospec"
+  - button "Cancel"
+  - button "Save palette"

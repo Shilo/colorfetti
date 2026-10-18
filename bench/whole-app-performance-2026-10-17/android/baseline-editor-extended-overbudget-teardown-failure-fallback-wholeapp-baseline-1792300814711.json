@@ -1,0 +1,59 @@
+{
+  "label": "baseline",
+  "prefix": "wholeapp-baseline-1792300814711",
+  "baseURL": "http://localhost:5371/",
+  "started": "2026-10-18T05:20:14.712Z",
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "rows": [],
+  "outputs": [],
+  "errors": [
+    "locator.click: Error: strict mode violation: getByRole('button', { name: 'Palette', exact: true }) resolved to 2 elements:\n    1) <button aria-pressed=\"true\" class=\"glass-segmented__item\">Palette</button> aka getByLabel('Color system').getByRole('button', { name: 'Palette' })\n    2) <button data-tooltip=\"\" aria-label=\"Palette\" aria-expanded=\"true\" aria-describedby=\"tooltip-2\" class=\"btn glass-btn icon-only\">…</button> aka getByRole('button', { name: 'Palette', description: 'Choose a palette or switch to 1-bit colors.' })\n\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Palette', exact: true })\u001b[22m\n\n    at C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\whole-app-performance-2026-10-17\\android\\native.mjs:83:994\n    at async stage (C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\whole-app-performance-2026-10-17\\android\\native.mjs:38:2)\n    at async file:///C:/Programming_Files/Shilocity/colorfetti/bench/whole-app-performance-2026-10-17/android/native.mjs:83:67"
+  ],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 357\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "targetId": "5FEC459AFA93EDF994806E9BFEE23348",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "failureState": {
+    "viewport": {
+      "width": 448,
+      "height": 819,
+      "visualWidth": 448,
+      "visualHeight": 819.111083984375
+    },
+    "focus": "Import palette"
+  },
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T05:20:17.247Z"
+}

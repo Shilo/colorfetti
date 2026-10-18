@@ -1,0 +1,202 @@
+{
+  "label": "baseline",
+  "prefix": "wholeapp-baseline-1792299907201",
+  "baseURL": "http://localhost:5371/",
+  "started": "2026-10-18T05:05:07.202Z",
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "rows": [
+    {
+      "name": "dark: empty demo settled",
+      "elapsedMs": 664.1999999880791,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 49.59100000000001,
+        "ScriptDuration": 5.451000000000001,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 6221720
+    },
+    {
+      "name": "light: empty demo settled",
+      "elapsedMs": 655.2999999523163,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 37.571999999999996,
+        "ScriptDuration": 4.8799999999999955,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 2.9790000000000005
+      },
+      "heapUsed": 7333116
+    },
+    {
+      "name": "sprites1: input import to current named wall paint",
+      "elapsedMs": 95.59999996423721,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 47.95399999999999,
+        "ScriptDuration": 12.677999999999999,
+        "LayoutDuration": 1.81,
+        "RecalcStyleDuration": 10.238000000000001
+      },
+      "heapUsed": 10842340
+    },
+    {
+      "name": "sprites2: drop import to current named wall paint",
+      "elapsedMs": 109.40000003576279,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 53.63699999999999,
+        "ScriptDuration": 13.599999999999998,
+        "LayoutDuration": 3.1780000000000004,
+        "RecalcStyleDuration": 11.276
+      },
+      "heapUsed": 13277764
+    },
+    {
+      "name": "sprites4: paste import to current named wall paint",
+      "elapsedMs": 91.20000004768372,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 53.93299999999998,
+        "ScriptDuration": 10.230000000000002,
+        "LayoutDuration": 2.733,
+        "RecalcStyleDuration": 11.895999999999999
+      },
+      "heapUsed": 16381640
+    },
+    {
+      "name": "sprites8: input import to current named wall paint",
+      "elapsedMs": 102.59999996423721,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 61.63399999999999,
+        "ScriptDuration": 14.047999999999998,
+        "LayoutDuration": 4.045,
+        "RecalcStyleDuration": 11.906
+      },
+      "heapUsed": 21026676
+    },
+    {
+      "name": "sprites8-plus-effect-auto: input import to current named wall paint",
+      "elapsedMs": 166.80000001192093,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 100.922,
+        "ScriptDuration": 24.077,
+        "LayoutDuration": 5.182000000000001,
+        "RecalcStyleDuration": 15.554
+      },
+      "heapUsed": 23242212
+    }
+  ],
+  "outputs": [],
+  "errors": [],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 339\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "lastWall": [
+    {
+      "name": "wholeapp-baseline-1792299907201-sprites8-plus-effect-auto-0-dungeon-wizard.png 16×16  ·  9 colors ",
+      "caption": "16×16  ·  9 colors ",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "wholeapp-baseline-1792299907201-sprites8-plus-effect-auto-1-dungeon-archer.png 16×16  ·  8 colors ",
+      "caption": "16×16  ·  8 colors ",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "wholeapp-baseline-1792299907201-sprites8-plus-effect-auto-2-dungeon-knight.png 16×16  ·  8 colors ",
+      "caption": "16×16  ·  8 colors ",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "wholeapp-baseline-1792299907201-sprites8-plus-effect-auto-3-dungeon-potion.png 16×16  ·  7 colors ",
+      "caption": "16×16  ·  7 colors ",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "wholeapp-baseline-1792299907201-sprites8-plus-effect-auto-4-town-water-bucket.png 16×16  ·  9 colors ",
+      "caption": "16×16  ·  9 colors ",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "wholeapp-baseline-1792299907201-sprites8-plus-effect-auto-5-platformer-pilot.png 24×24  ·  7 colors ",
+      "caption": "24×24  ·  7 colors ",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "name": "wholeapp-baseline-1792299907201-sprites8-plus-effect-auto-6-platformer-rocket.png 24×24  ·  7 colors ",
+      "caption": "24×24  ·  7 colors ",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "name": "wholeapp-baseline-1792299907201-sprites8-plus-effect-auto-7-platformer-heart.png 18×18  ·  3 colors ",
+      "caption": "18×18  ·  3 colors ",
+      "width": 18,
+      "height": 18
+    },
+    {
+      "name": "wholeapp-baseline-1792299907201-sprites8-plus-effect-auto-8-real-magic.gif 32×32  ·  33 colors ",
+      "caption": "32×32  ·  33 colors ",
+      "width": 32,
+      "height": 32
+    }
+  ],
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T05:05:12.439Z"
+}

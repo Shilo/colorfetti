@@ -1,0 +1,13 @@
+import{readFile,readdir,writeFile,stat,unlink}from'node:fs/promises';
+import path from'node:path';
+import{sha}from'../../claude-audit-2026-10-15/device/audit-lib.mjs';
+const root=import.meta.dirname,files=(await readdir(root)).filter(f=>f.startsWith('baseline-')&&f.endsWith('.json'));
+const manifests=[],completed=[],failed=[];for(const file of files){const r=JSON.parse(await readFile(path.join(root,file),'utf8'));const rec={file,rows:r.rows.length,outputs:r.outputs.length,errors:r.errors.map(e=>e.split('\n')[0]),restored:r.restored};(r.errors.length?failed:completed).push(rec);for(const o of r.outputs)manifests.push({...o,file:'baseline/'+o.name,remote:'/sdcard/Download/'+o.name,remoteRemoved:true});}
+const duplicateLocal=[];
+const d1files=(await readdir(path.join(root,'d1-pairs'))).filter(f=>f.startsWith('results-')&&f.endsWith('.json'));for(const file of d1files){const r=JSON.parse(await readFile(path.join(root,'d1-pairs',file),'utf8'));const rows=new Map(r.rows.map(x=>[x.outputName,x]));for(const[name,o]of rows){const canonical=r.rows.find(x=>x.id===o.id&&x.variant===o.variant&&x.pair===0);if(canonical.outputHash!==o.outputHash)throw Error('Cannot deduplicate differing output');manifests.push({file:'d1-pairs/'+canonical.outputName,nativeTestName:name,remote:'/sdcard/Download/'+name,remoteRemoved:true,sha256:o.outputHash,width:o.width,height:o.height,frames:o.frames,delay:o.delay,loop:o.loop,variant:o.variant,pair:o.pair,case:o.id,byteAndDecodedEquality:true});if(name!==canonical.outputName)duplicateLocal.push(path.resolve(root,'d1-pairs',name));}}
+for(const m of manifests){const p=path.join(root,m.file),bytes=await readFile(p);if(sha(bytes)!==m.sha256)throw Error('Retained byte hash mismatch '+m.file);m.bytes=(await stat(p)).size;}
+await writeFile(path.join(root,'native-output-manifest.json'),JSON.stringify({generated:new Date().toISOString(),scope:'Exact owned native outputs; no personal Downloads enumeration. D1 cold/warm identical files share one retained named copy.',completed,failed,outputs:manifests},null,2)+'\n');
+for(const p of duplicateLocal){const rel=path.relative(path.resolve(root,'d1-pairs'),p);if(rel.startsWith('..')||path.isAbsolute(rel))throw Error('Refuse path outside owned output directory');try{await unlink(p)}catch(e){if(e.code!=='ENOENT')throw e}}
+// Keep app-scoped before/after screenshots for2048 andKeep; other per-case images
+// repeat the same UI and add no evidence beyond raw receipts/native output bytes.
+for(const id of['sheet1024','tiny','animation256','entropy256-256-rgb','sheet1024-rgb','cap-cleanup'])for(const variant of['baseline','candidate'])try{await unlink(path.join(root,'d1-pairs',id+'-'+variant+'.png'))}catch(e){if(e.code!=='ENOENT')throw e}

@@ -1,0 +1,17 @@
+{
+  "ownedCdpForward9351Removed": true,
+  "ownedReversePortsRemoved": [5371, 5372, 5375],
+  "preexistingForwardsPreserved": [
+    "37211FDJG00267 tcp:9333 localabstract:chrome_devtools_remote",
+    "37211FDJG00267 tcp:9334 localabstract:chrome_devtools_remote_16561"
+  ],
+  "rotationBefore": "free",
+  "rotationAfter": "free",
+  "rotationPolicyChanged": false,
+  "downloadBehaviorRestored": "native default",
+  "nativeBrowserClosed": false,
+  "ownedPagesClosed": true,
+  "testOriginStorageRestoredAfterEachPage": true,
+  "nativeOwnedDownloadsRemoved": "Only exact names recorded in native-output-manifest.json; each successful pull followed by exact-file adb rm, no personal directory listing or wildcard deletion.",
+  "deviceReservationReleased": true
+}

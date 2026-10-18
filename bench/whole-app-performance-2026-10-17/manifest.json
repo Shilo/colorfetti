@@ -1,0 +1,1818 @@
+{
+  "date": "2026-10-17 America/Los_Angeles",
+  "revision": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "runtimeBaseline": "34a95d97f65ec681d07b52ace85dc84e6c8ce56c",
+  "initialTree": "clean",
+  "node": "v25.0.0",
+  "lockfileSha256": "4729589b4dab0eb85986ea90273c86d08cc8abde32a9c4c5c0bc18818e1fec23",
+  "installedLockfileSha256": "690fb756167bc1684249a9d7c392fc8b7312f89522466abd8ccb0893e63b903c",
+  "source": [
+    {
+      "path": "src/app.css",
+      "bytes": 35576,
+      "sha256": "f2d8ad05825e732e076c2949026ab5efebb988c04627ec6f971d383de10d9492",
+      "gzipBytes": 10031
+    },
+    {
+      "path": "src/App.svelte",
+      "bytes": 75820,
+      "sha256": "591b0c5555f599fb7399b0c17a5d30054fd1174948688f411c9977bee91e2cde"
+    },
+    {
+      "path": "src/assets/logo-dark.png",
+      "bytes": 222,
+      "sha256": "95cbbd114012476077a9b0fd97bb377ac29be390b4bc4c001792506e7de0fdf4"
+    },
+    {
+      "path": "src/assets/logo-dark.svg",
+      "bytes": 601,
+      "sha256": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8"
+    },
+    {
+      "path": "src/assets/logo.png",
+      "bytes": 222,
+      "sha256": "08c152a5871600a6c057846f1c4aaff1cb5db54f9950b52627794aadfd2b2007"
+    },
+    {
+      "path": "src/assets/logo.svg",
+      "bytes": 601,
+      "sha256": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c"
+    },
+    {
+      "path": "src/assets/lucide-LICENSE.txt",
+      "bytes": 3251,
+      "sha256": "6fc5b7332939dd5c61af3a5f97450f7bc05d4a396dd0bc21ac341716b3b05096"
+    },
+    {
+      "path": "src/bottom-workspace.css",
+      "bytes": 5685,
+      "sha256": "103c91d4ded7421b8aac9975a8e32ffc2c93e276ed0cd77dc1d08bd713109075",
+      "gzipBytes": 1643
+    },
+    {
+      "path": "src/canvas.css",
+      "bytes": 8504,
+      "sha256": "32e9811105282f8abe1b97550d94731406b6ba8369f065e33ee0044d96750794",
+      "gzipBytes": 2269
+    },
+    {
+      "path": "src/CanvasGrid.svelte",
+      "bytes": 3312,
+      "sha256": "eed579c37e89b50444debc69aaaae1f5806bbb5b007fe35d5229fbb96d66329e"
+    },
+    {
+      "path": "src/caption-metadata.css",
+      "bytes": 877,
+      "sha256": "7d576bd846a55e6ec672aa27a096c9c6ced761da9f0bff79fc6e3e0f01e786bb",
+      "gzipBytes": 336
+    },
+    {
+      "path": "src/CaptionMetadata.svelte",
+      "bytes": 867,
+      "sha256": "0786f7b8878e860b395989b6c2d19caced021a861f38035fdfebf3b87a7f4859"
+    },
+    {
+      "path": "src/dock-refinement.css",
+      "bytes": 7432,
+      "sha256": "296f53da77246f7f4037206961895101850e54d76a304dd3aa60972b39c3983e",
+      "gzipBytes": 2130
+    },
+    {
+      "path": "src/Dock.svelte",
+      "bytes": 44663,
+      "sha256": "8a61c11bef501e3ba64e794bdb59c12c035edac8efb948fc8da8852e1925d4ff"
+    },
+    {
+      "path": "src/foundation.css",
+      "bytes": 471,
+      "sha256": "86b952db03966ef4b5b848d30262fb11feb0efd5c258598c8f928eae2b88349e",
+      "gzipBytes": 224
+    },
+    {
+      "path": "src/full-palette.css",
+      "bytes": 9578,
+      "sha256": "074aed7172462d7ef4cb7c6e7edad4cc8cde82045dcb9b769f0f0acba27f0b7b",
+      "gzipBytes": 2357
+    },
+    {
+      "path": "src/glass.css",
+      "bytes": 30582,
+      "sha256": "46409ea29043d9926e6da1d3733e874500ea8c7c3ef5b02473765008b8e5eac0",
+      "gzipBytes": 6373
+    },
+    {
+      "path": "src/header.css",
+      "bytes": 1853,
+      "sha256": "e800de659aa48a0ec2c5767e9d8125056dcb26dfe975050adb623e207a1d5f62",
+      "gzipBytes": 759
+    },
+    {
+      "path": "src/ImageViewer.svelte",
+      "bytes": 7698,
+      "sha256": "82d215f45038548fcc78e771c4bd2c9e3e48f0b692286631cc7b11cb95307fde"
+    },
+    {
+      "path": "src/lib/animation-visibility.js",
+      "bytes": 1398,
+      "sha256": "af42230f13ad75f3f0a466893ff1e3aae7640ba5d95bb92c1867f18e8881c898",
+      "gzipBytes": 639
+    },
+    {
+      "path": "src/lib/animation-visibility.test.js",
+      "bytes": 4384,
+      "sha256": "ab7be2e0680eef508eb7d8a1c097c3243b18837b2998bfca365add1cb649838b",
+      "gzipBytes": 1172
+    },
+    {
+      "path": "src/lib/canvas-grid.js",
+      "bytes": 2021,
+      "sha256": "d8c6dbbc396f446e0186e7bc34118a62ab3ae7645d1e95889e77bdc5f0c6124c",
+      "gzipBytes": 963
+    },
+    {
+      "path": "src/lib/canvas-grid.test.js",
+      "bytes": 3623,
+      "sha256": "e3153ea41dea3e5dc3e9cb3d8df483953dd5285ae6f051f8af03209b76f2faa3",
+      "gzipBytes": 1188
+    },
+    {
+      "path": "src/lib/comparison-hold.js",
+      "bytes": 558,
+      "sha256": "002b3dec59c04ad8664aeec49eda4edc8722187c60641c0200bde62c68ace433",
+      "gzipBytes": 272
+    },
+    {
+      "path": "src/lib/comparison-hold.test.js",
+      "bytes": 1568,
+      "sha256": "1dca1d67ded6f1ec6c9fffef99770f7a8ec274fa7f4a1ae0ecc6d92ab48ed3cf",
+      "gzipBytes": 418
+    },
+    {
+      "path": "src/lib/converted-animation.js",
+      "bytes": 1054,
+      "sha256": "f739c78cfae62b652f6bfe182b8bff72054f4c82c647dbdd82357b8ac72001dc",
+      "gzipBytes": 549
+    },
+    {
+      "path": "src/lib/converted-animation.test.js",
+      "bytes": 4766,
+      "sha256": "cf0ec50243946b3c9251e1b28abad6492c686f841d39af922d9313b3f684394e",
+      "gzipBytes": 1625
+    },
+    {
+      "path": "src/lib/dialog-dismiss.js",
+      "bytes": 2007,
+      "sha256": "8085d3a87f145f3b2471057e01027f7f0f8033dc3c6de26cb88298e9498860ce",
+      "gzipBytes": 791
+    },
+    {
+      "path": "src/lib/dialog-dismiss.test.js",
+      "bytes": 4114,
+      "sha256": "88124a4b582a13b2c28e4d1abe2b42c72b7f79dbe8f80d2a4bff0877dd109d45",
+      "gzipBytes": 1093
+    },
+    {
+      "path": "src/lib/export-compression-cancel.test.js",
+      "bytes": 971,
+      "sha256": "31c8e10407277cc13282bd15bf5a8c01a38d36347c4b1118740f7036a12ed73b",
+      "gzipBytes": 535
+    },
+    {
+      "path": "src/lib/export-drag.js",
+      "bytes": 12086,
+      "sha256": "915f8e632fcff96eb8b41daf318c00ea276877882cb38216876b258d8da48d92",
+      "gzipBytes": 3806
+    },
+    {
+      "path": "src/lib/export-drag.test.js",
+      "bytes": 8840,
+      "sha256": "88822cc081c70db4f9284e1407e8c45518e33f05672e82c10ffadae774321d16",
+      "gzipBytes": 1851
+    },
+    {
+      "path": "src/lib/favicon-startup.test.js",
+      "bytes": 2461,
+      "sha256": "088f83a9421911f5464888105f9e055670ebe1b58a72e983bc73a2e6b7a279aa",
+      "gzipBytes": 1059
+    },
+    {
+      "path": "src/lib/fixtures/ai-inventory.json",
+      "bytes": 63994,
+      "sha256": "ce3a39756293ee08dd26facecec25e098c8459f812b0fb639fcd0463b9c56a30"
+    },
+    {
+      "path": "src/lib/fixtures/icon-opening-stress.json",
+      "bytes": 4234,
+      "sha256": "58e207742b90859024fe2e643256f320d7a2d637e9402bdb0ac5819de117ac51"
+    },
+    {
+      "path": "src/lib/fixtures/palette-import/grid.png",
+      "bytes": 4798,
+      "sha256": "c5c19e930ccaea0b94e6eb679f3a0de87c9bb5b7cdc6cbe37c98fdfb71f3b65d"
+    },
+    {
+      "path": "src/lib/fixtures/palette-import/palette.ase",
+      "bytes": 2055,
+      "sha256": "f7a97806651302378fb9f4866ba11562d3f7a2f97a6fa825d1f389eed98d8532"
+    },
+    {
+      "path": "src/lib/fixtures/palette-import/strip.png",
+      "bytes": 3493,
+      "sha256": "5c16dcd1fbf27a467d89d75dd7ef15bd1522be1f81049d23ac4e469bcc09d20e"
+    },
+    {
+      "path": "src/lib/fixtures/palette-import/tiny.png",
+      "bytes": 1017,
+      "sha256": "90d6be2b84d3dffcdbc75cb78eb97ca9da5149c360d366daab444e2f2fe2fd78"
+    },
+    {
+      "path": "src/lib/gesture.js",
+      "bytes": 3933,
+      "sha256": "405fa5a7b09d01af4eafc851af784d41e0901b535a79651e64ee1fc297e35ac5",
+      "gzipBytes": 1645
+    },
+    {
+      "path": "src/lib/gesture.test.js",
+      "bytes": 7967,
+      "sha256": "6253c6c08e383eff83c26b9c75cd01512059a20eacada3d0f8d2976b7992b180",
+      "gzipBytes": 2177
+    },
+    {
+      "path": "src/lib/gif.js",
+      "bytes": 12737,
+      "sha256": "51a8e5efa4a55147485947d317c54fa450530c94f7b6535c0b828fe4478ce142",
+      "gzipBytes": 4133
+    },
+    {
+      "path": "src/lib/gif.test.js",
+      "bytes": 11916,
+      "sha256": "61890f501c195c4007a42115253dcfe7ed964e0b067c8e59e796c37f7def07f6",
+      "gzipBytes": 3136
+    },
+    {
+      "path": "src/lib/icon-glyph.js",
+      "bytes": 13107,
+      "sha256": "a8dd8b97f693abfdc129f39715884eb6cac5af755286be32e0d623c029c87260",
+      "gzipBytes": 4016
+    },
+    {
+      "path": "src/lib/icon.js",
+      "bytes": 12657,
+      "sha256": "3e034261e46fd7b53093852f911b56cf1497ff2d21fc4ddbe837dd69fe8bc2ae",
+      "gzipBytes": 4095
+    },
+    {
+      "path": "src/lib/icon.test.js",
+      "bytes": 13052,
+      "sha256": "e72b2d3f1eafc45b17bd0f55509620d2dd43901d9ca443610deceebf3a5fdafd",
+      "gzipBytes": 4284
+    },
+    {
+      "path": "src/lib/image-decode.js",
+      "bytes": 5075,
+      "sha256": "760f4511bfcef7f99e5fed19e6fc467134508b36e42dd5511bdb78eadc3ddc76",
+      "gzipBytes": 1966
+    },
+    {
+      "path": "src/lib/image-decode.test.js",
+      "bytes": 14733,
+      "sha256": "e6f6e78dd912a176bbf6bb42ef2d8fa0634aec24aacfe71f2f0ebab70862d78c",
+      "gzipBytes": 3302
+    },
+    {
+      "path": "src/lib/image-drop.js",
+      "bytes": 3280,
+      "sha256": "c71fdc92779f9aec692b0958776b28ff8b585f502382c808e805e416c3db8a5b",
+      "gzipBytes": 1556
+    },
+    {
+      "path": "src/lib/image-drop.test.js",
+      "bytes": 6219,
+      "sha256": "7a3d7769696ef7b8003e2ced65e61dd9ed9b75befc0f94c7bb56575f9ead5080",
+      "gzipBytes": 2110
+    },
+    {
+      "path": "src/lib/image-gesture.js",
+      "bytes": 861,
+      "sha256": "24df19780f32dca2e12bca8d9300c43f59f3baec0763964f20eda9c0ac87b9f0",
+      "gzipBytes": 456
+    },
+    {
+      "path": "src/lib/image-gesture.test.js",
+      "bytes": 1950,
+      "sha256": "b96a8c909b8963a71dc16bcfdbf48772f8404a182ca9265a7c5bc0667b56eac7",
+      "gzipBytes": 633
+    },
+    {
+      "path": "src/lib/image-import-client.js",
+      "bytes": 9979,
+      "sha256": "d0974577afeb040dff0d00c0f4ec20353891225eab6e2e0f31171d0b2ccb40f7",
+      "gzipBytes": 2862
+    },
+    {
+      "path": "src/lib/image-import-client.test.js",
+      "bytes": 17577,
+      "sha256": "1603d2389f98748ad06d7b223e42bf5d135f156250d69819d2e64ee9a8c0d632",
+      "gzipBytes": 4208
+    },
+    {
+      "path": "src/lib/image-import-core.js",
+      "bytes": 3349,
+      "sha256": "1f9934175c6ca2116b6cd232df6929c83606c52343237785e47d72f8d428ebbe",
+      "gzipBytes": 1111
+    },
+    {
+      "path": "src/lib/image-import-core.test.js",
+      "bytes": 3940,
+      "sha256": "a1360ff2f0aad83ed5e46f0f97bb691b27c1f1bc79609862db6b91511bf019c1",
+      "gzipBytes": 1391
+    },
+    {
+      "path": "src/lib/image-import-worker.js",
+      "bytes": 2188,
+      "sha256": "b6f9cd3531a60d13912439157d214b5c2ac77c9703b12954dffe8f60d83975a0",
+      "gzipBytes": 815
+    },
+    {
+      "path": "src/lib/image-import-worker.test.js",
+      "bytes": 3400,
+      "sha256": "38b6ceac3103338aa54662928922518fb57314d9e969d0887bcfbf028b15c387",
+      "gzipBytes": 1056
+    },
+    {
+      "path": "src/lib/image-reanalysis.js",
+      "bytes": 3129,
+      "sha256": "4e8440acda99232b5bdc572a966d616285fda4189b3cb985f76a35a49d07cbe6",
+      "gzipBytes": 1107
+    },
+    {
+      "path": "src/lib/image-reanalysis.test.js",
+      "bytes": 9080,
+      "sha256": "d08cb97cf7d0ffd2d8274cf8806e84ef668421878507fb0b017a1f0c6d66b063",
+      "gzipBytes": 2632
+    },
+    {
+      "path": "src/lib/internal-drag.js",
+      "bytes": 1345,
+      "sha256": "11b2f5e8efdd69b6c174cf93f77f4103e8a341da3566ba558861c16728d7fbef",
+      "gzipBytes": 568
+    },
+    {
+      "path": "src/lib/internal-drag.test.js",
+      "bytes": 1942,
+      "sha256": "93ea5febfc565bdd59bda1cb3f82b4a4315e83fe5c2c1a08536ab9cb2afc9240",
+      "gzipBytes": 699
+    },
+    {
+      "path": "src/lib/layout.js",
+      "bytes": 3166,
+      "sha256": "5917449096728eeda6fa086eae1af7e08570ce7a55d31305b247edcbdc2d3e9f",
+      "gzipBytes": 1382
+    },
+    {
+      "path": "src/lib/layout.test.js",
+      "bytes": 5888,
+      "sha256": "292ecf3a8536b70f7dfe6eeb4f9f24ce2fb32f28cc302bf5604d0826f130a0f7",
+      "gzipBytes": 1758
+    },
+    {
+      "path": "src/lib/onebit-usage.js",
+      "bytes": 6088,
+      "sha256": "320679fde83c4260445b40bfbe8d3900ff244bc5b7f8e1306a74436248b28e7b",
+      "gzipBytes": 2162
+    },
+    {
+      "path": "src/lib/onebit-usage.test.js",
+      "bytes": 9877,
+      "sha256": "6d9ac6e3ec8ff9cde6a18e8a771fafd5171baeef9d675b389d1b913473eccb05",
+      "gzipBytes": 2729
+    },
+    {
+      "path": "src/lib/original-color-usage.js",
+      "bytes": 4067,
+      "sha256": "b790c86eb177e558059bd5cb8d5034a35532be8124bf564489a0ac1b5598e149",
+      "gzipBytes": 1578
+    },
+    {
+      "path": "src/lib/original-color-usage.test.js",
+      "bytes": 4875,
+      "sha256": "7942c446e2f3837175c8fec14e0c1d5b24a95f5e6d9ccff8b9ec951d93ef9ea3",
+      "gzipBytes": 1478
+    },
+    {
+      "path": "src/lib/palette-alpha.js",
+      "bytes": 734,
+      "sha256": "92fc032f80728ef7027569b91be8cb91aa9486f203bbff9646ed89d674ab6b92",
+      "gzipBytes": 405
+    },
+    {
+      "path": "src/lib/palette-alpha.test.js",
+      "bytes": 6964,
+      "sha256": "0df3f335dcfc9039c4963b57d709500c3aaee86b5058b336960c8a14af1cf394",
+      "gzipBytes": 2409
+    },
+    {
+      "path": "src/lib/palette-animation-cache.js",
+      "bytes": 4899,
+      "sha256": "710372b3a29169ac006d8c2286120f3ebab4908b0727940a96af340514b3670a",
+      "gzipBytes": 1724
+    },
+    {
+      "path": "src/lib/palette-animation-cache.test.js",
+      "bytes": 7320,
+      "sha256": "1ece32fc350cac3e879f0fea9507f770655f188d44eaeccd9283f8ed348f9520",
+      "gzipBytes": 2028
+    },
+    {
+      "path": "src/lib/palette-ase.js",
+      "bytes": 6096,
+      "sha256": "87017ef440cdfa0c499240411b96713ecdc835481ff1e305e3a1b8e7e933f944",
+      "gzipBytes": 2168
+    },
+    {
+      "path": "src/lib/palette-ase.test.js",
+      "bytes": 12366,
+      "sha256": "d93e24db88eb1b58d3543e5cd0f59b80c41ff6b5e7755cd14cae5ca8bb149468",
+      "gzipBytes": 3718
+    },
+    {
+      "path": "src/lib/palette-cleanup-apply.js",
+      "bytes": 5473,
+      "sha256": "178b4e225afaecca657df5ab843cb48e1aaca6112517fa372a40f2e06d4ca6a3",
+      "gzipBytes": 1650
+    },
+    {
+      "path": "src/lib/palette-cleanup-client.js",
+      "bytes": 8405,
+      "sha256": "c0b701228b598c3d602b261e7b9daf886bc34cf8629be11a1aad435a20d28018",
+      "gzipBytes": 2705
+    },
+    {
+      "path": "src/lib/palette-cleanup-client.test.js",
+      "bytes": 15965,
+      "sha256": "7a738c810ee26915a58a171d419384ab7ee27b4ab7a774e0d51a62c271b70998",
+      "gzipBytes": 3782
+    },
+    {
+      "path": "src/lib/palette-cleanup-worker.js",
+      "bytes": 2053,
+      "sha256": "420ed5d2af7b92776088c3cc467f11402632e6a09bbfc15fd2d653fbe9383d2b",
+      "gzipBytes": 731
+    },
+    {
+      "path": "src/lib/palette-cleanup-worker.test.js",
+      "bytes": 3878,
+      "sha256": "f999c49945bef09a72c750de7870bcac2b544abb40eedf0aec3a95bb6ffd7595",
+      "gzipBytes": 1235
+    },
+    {
+      "path": "src/lib/palette-cleanup.js",
+      "bytes": 11920,
+      "sha256": "8dba109b8da1a85e1361ce5307167c8814cdbd75dd96569f0145662897dce46d",
+      "gzipBytes": 3773
+    },
+    {
+      "path": "src/lib/palette-cleanup.test.js",
+      "bytes": 20480,
+      "sha256": "d48d3866b812efe5f165058be3abee7ebbcbc57cb4f666e954297beffde9e370",
+      "gzipBytes": 5800
+    },
+    {
+      "path": "src/lib/palette-decode.js",
+      "bytes": 2401,
+      "sha256": "ba87767ce95fe92aa2445331cfc84f145fea5fcb909c0b55ff245ddca81740a9",
+      "gzipBytes": 997
+    },
+    {
+      "path": "src/lib/palette-decode.test.js",
+      "bytes": 5154,
+      "sha256": "79e9551b5d35a9be4b77578b22a8c855226d23d3c121c928f3bc92c25c9296bb",
+      "gzipBytes": 1676
+    },
+    {
+      "path": "src/lib/palette-dither-settings.js",
+      "bytes": 336,
+      "sha256": "8c053347afe29dc4d058aeabf3bfd3417d151ec4afaf7ccc77acf2ad7b0f32c2",
+      "gzipBytes": 213
+    },
+    {
+      "path": "src/lib/palette-dither-state.test.js",
+      "bytes": 5920,
+      "sha256": "1ad167003f16c0e23fa7fe45664b4f5f09b7ad39bce2dd4dfee1dc3c143a7fec",
+      "gzipBytes": 1969
+    },
+    {
+      "path": "src/lib/palette-dither.js",
+      "bytes": 5422,
+      "sha256": "5452f7b1af4d5f656d8733635856eab5ba565e8d7ee81cced4d77041a9638152",
+      "gzipBytes": 2076
+    },
+    {
+      "path": "src/lib/palette-dither.test.js",
+      "bytes": 9234,
+      "sha256": "14d3a21937d1841b7471bb554f49ce1e241684bcb4dea59c09a6f7cce073f195",
+      "gzipBytes": 3020
+    },
+    {
+      "path": "src/lib/palette-drop.js",
+      "bytes": 6031,
+      "sha256": "3a124b9353db153cc85b75f4b990fb63282386b27079337892526a0b89baf6c8",
+      "gzipBytes": 2310
+    },
+    {
+      "path": "src/lib/palette-drop.test.js",
+      "bytes": 13643,
+      "sha256": "0913219674c11d37f1295359b53630248ca876673a115419bc16d8de85a6bc46",
+      "gzipBytes": 3705
+    },
+    {
+      "path": "src/lib/palette-export.js",
+      "bytes": 2534,
+      "sha256": "fe8f942e584abeca5353b844f133ae053ced48b682ef0b6dd4ff78ec496a6ae0",
+      "gzipBytes": 1056
+    },
+    {
+      "path": "src/lib/palette-export.test.js",
+      "bytes": 19451,
+      "sha256": "c7937cdf8d1b13d1aebe765c5ab6d471725b109cc1bcd790e64fbab0f1e49b0f",
+      "gzipBytes": 5619
+    },
+    {
+      "path": "src/lib/palette-failure.js",
+      "bytes": 2293,
+      "sha256": "85248532def1ce1fe8e7bbdf0dc3e701818dd812a34c2daf5e1d692936015b5d",
+      "gzipBytes": 831
+    },
+    {
+      "path": "src/lib/palette-failure.test.js",
+      "bytes": 3815,
+      "sha256": "329e28e8c1e05500d86213f1d3a4ef98c4d79fcd6c678dd3c555ebe298bf6afe",
+      "gzipBytes": 941
+    },
+    {
+      "path": "src/lib/palette-generated-client.js",
+      "bytes": 6159,
+      "sha256": "4f6bb50771a3bba70a9f7554391a33a83c5a8b327c7e3b5196db786d0f9abff2",
+      "gzipBytes": 1983
+    },
+    {
+      "path": "src/lib/palette-generated-client.test.js",
+      "bytes": 10073,
+      "sha256": "06ad5a666364b88176e93d771acbb0fe8d55803dc9437192bf1c36b2ce088c6d",
+      "gzipBytes": 2832
+    },
+    {
+      "path": "src/lib/palette-generated-sources.js",
+      "bytes": 2829,
+      "sha256": "cdab664272c650d51f1347275ed7d985f36fc1fa23e5f0d31d8c872caf820652",
+      "gzipBytes": 1088
+    },
+    {
+      "path": "src/lib/palette-generated-worker.js",
+      "bytes": 1046,
+      "sha256": "3e4c86df4183921c4097113825d4260f1102aa22b768a5d682fdceb9c27138f0",
+      "gzipBytes": 424
+    },
+    {
+      "path": "src/lib/palette-generated-worker.test.js",
+      "bytes": 5185,
+      "sha256": "ebddae167258eb8ac838fca58e702003f49dae37af4808da67255863bf9307ef",
+      "gzipBytes": 1774
+    },
+    {
+      "path": "src/lib/palette-generated.js",
+      "bytes": 12164,
+      "sha256": "ff11e62b92853b12c99946f60e9635de734b903702bcbd2b39834b84087e8c58",
+      "gzipBytes": 3927
+    },
+    {
+      "path": "src/lib/palette-generated.test.js",
+      "bytes": 11765,
+      "sha256": "3a2c66bfe6d999a6a6b094abc42c1b6719b71b4b81c4ee5ad49e4594614dea0b",
+      "gzipBytes": 3051
+    },
+    {
+      "path": "src/lib/palette-gif-worker.js",
+      "bytes": 680,
+      "sha256": "0824c4777293b863bbb55f6fa1f2c0026a2d009a772e92cd3cabd785c0d8c45a",
+      "gzipBytes": 330
+    },
+    {
+      "path": "src/lib/palette-import.js",
+      "bytes": 6046,
+      "sha256": "2df49a60cdce825facacd8e8e95f80d219d1355902d4abe2c112fe359b279d4c",
+      "gzipBytes": 2281
+    },
+    {
+      "path": "src/lib/palette-import.test.js",
+      "bytes": 7332,
+      "sha256": "abcc6f63adea35348b29bd472b1164e45086212c6e3f56ff4520e3588ad08504",
+      "gzipBytes": 2722
+    },
+    {
+      "path": "src/lib/palette-label.js",
+      "bytes": 291,
+      "sha256": "7bfd89ed7549c81edca6da6368bb3431c72979cafff6a52f43d399da0a7a592c",
+      "gzipBytes": 207
+    },
+    {
+      "path": "src/lib/palette-library.js",
+      "bytes": 9175,
+      "sha256": "69455708c3481a3a0bb7f51812868b6c5f207fea105b9654b1b672ca6f9e4dde",
+      "gzipBytes": 3881
+    },
+    {
+      "path": "src/lib/palette-library.test.js",
+      "bytes": 8410,
+      "sha256": "c9c87877e2de73fad591e003a9bab2f24899cbbb28e3c66befd4f628edf87bda",
+      "gzipBytes": 2837
+    },
+    {
+      "path": "src/lib/palette-limit-client.js",
+      "bytes": 8074,
+      "sha256": "9e1638254c1b9229d195a1e7a3db8e3424b0767d77a88e22cc9c45c08a829cbc",
+      "gzipBytes": 2697
+    },
+    {
+      "path": "src/lib/palette-limit-client.test.js",
+      "bytes": 15090,
+      "sha256": "4a444efa9983b7c5353bfaca0281ce4b38927c12294a05b4d11f003cc7593e4a",
+      "gzipBytes": 3503
+    },
+    {
+      "path": "src/lib/palette-limit-worker.js",
+      "bytes": 1309,
+      "sha256": "947b96fed5da64af54b60a053fc0022e0361c0a739b2380170de6fe9df032c45",
+      "gzipBytes": 582
+    },
+    {
+      "path": "src/lib/palette-limit-worker.test.js",
+      "bytes": 2009,
+      "sha256": "426e8f1be848b8ad84082afbee483b5c959b68e673c3d643750d46b049368eae",
+      "gzipBytes": 822
+    },
+    {
+      "path": "src/lib/palette-limit.js",
+      "bytes": 9345,
+      "sha256": "739a3fb97a80d1ecbfa23c5e33f72893b894adc4425ea89217a88d7264abae20",
+      "gzipBytes": 3142
+    },
+    {
+      "path": "src/lib/palette-limit.test.js",
+      "bytes": 11145,
+      "sha256": "8e2519acd6eb3f7c59af1f2ff1e3cb7e34d4cd77b1eb164085b587b54ca99eeb",
+      "gzipBytes": 3380
+    },
+    {
+      "path": "src/lib/palette-lospec-url.js",
+      "bytes": 1510,
+      "sha256": "2babb93ce0222b0d96aae1bcb5fea8130bb4d2e6b968b8b28770506d318e5701",
+      "gzipBytes": 776
+    },
+    {
+      "path": "src/lib/palette-lospec.js",
+      "bytes": 4280,
+      "sha256": "125ce34549efba37b4aed2c03e2b5923ef0f88c6b04e2363a61004c021b87e9b",
+      "gzipBytes": 1734
+    },
+    {
+      "path": "src/lib/palette-lospec.test.js",
+      "bytes": 11562,
+      "sha256": "29f7ef28e160e0b9b15837fc1458cd9e2c4cfe6e66fb6bcfcb3f911295db102c",
+      "gzipBytes": 3193
+    },
+    {
+      "path": "src/lib/palette-preview.js",
+      "bytes": 4527,
+      "sha256": "5506f009a78c6fc32e73248d8bce5993eb36957441ee396f4d4144108337a4d9",
+      "gzipBytes": 1731
+    },
+    {
+      "path": "src/lib/palette-preview.test.js",
+      "bytes": 10679,
+      "sha256": "f409108fee0367d0ac81d202c681a7f0a5fed52fe2cc02d3fda380b56c3ed665",
+      "gzipBytes": 2861
+    },
+    {
+      "path": "src/lib/palette-state.js",
+      "bytes": 6092,
+      "sha256": "1c9afda9881e769a58a7cf11e502e82b5c6ed2ef196244a414edd0c5d473d048",
+      "gzipBytes": 2126
+    },
+    {
+      "path": "src/lib/palette-state.test.js",
+      "bytes": 21634,
+      "sha256": "ec5d7e28f84d36fc8493bcf6bb584fc9e03a371c392187d69872f24f57000ff5",
+      "gzipBytes": 4866
+    },
+    {
+      "path": "src/lib/palette-usage-progress.js",
+      "bytes": 1183,
+      "sha256": "c8ad66c5367a4afaccb2e0ade0031e18ff62bfdebb92405aad02e0a55f6ff3aa",
+      "gzipBytes": 557
+    },
+    {
+      "path": "src/lib/palette-usage-progress.test.js",
+      "bytes": 1552,
+      "sha256": "bc48136c50ea69cae927c5b72d1cb61da4034cb062f2f77c2f15cbaf094a09ec",
+      "gzipBytes": 622
+    },
+    {
+      "path": "src/lib/palette-usage.js",
+      "bytes": 2266,
+      "sha256": "5c062ea2ae747130e6f4d5e4829682077500c81a31f3d1e9dde25d0c48831d0d",
+      "gzipBytes": 1020
+    },
+    {
+      "path": "src/lib/palette-usage.test.js",
+      "bytes": 6348,
+      "sha256": "f7a9dc3e5247a432c5281b11f1c797c48b826011d8528ec9e99d12027b7bdfec",
+      "gzipBytes": 2116
+    },
+    {
+      "path": "src/lib/presets.js",
+      "bytes": 5495,
+      "sha256": "351e65be54c9f992becc4a61ea61dc6b900177f20d82b5b83dae89c2044df784",
+      "gzipBytes": 2194
+    },
+    {
+      "path": "src/lib/presets.test.js",
+      "bytes": 3536,
+      "sha256": "1a1bf0eb660d3aeca2f222f1d1fa649b5380b1226bc8a19d0ece866a9560fa70",
+      "gzipBytes": 1028
+    },
+    {
+      "path": "src/lib/quantize.js",
+      "bytes": 8850,
+      "sha256": "6dacaca42d615b72a4ee511bb7ed32344aa7118ae946769e290d7a9463f8d0a3",
+      "gzipBytes": 3150
+    },
+    {
+      "path": "src/lib/quantize.test.js",
+      "bytes": 11019,
+      "sha256": "cb39378851e14d6fa93594a0b635558e449fc402dbf09ebdff697de3d000fe30",
+      "gzipBytes": 3467
+    },
+    {
+      "path": "src/lib/recolor.js",
+      "bytes": 31469,
+      "sha256": "c458986116a379f69d34f38efc4b16d2d0cff85b1f6526f53e50efffd1d0e562",
+      "gzipBytes": 11325
+    },
+    {
+      "path": "src/lib/recolor.test.js",
+      "bytes": 56592,
+      "sha256": "a999d75b182a67d9d5c1470912cb2bc0588ebf8fb857fa850beeb283867022fc",
+      "gzipBytes": 14256
+    },
+    {
+      "path": "src/lib/save-batch.test.js",
+      "bytes": 2444,
+      "sha256": "fddd48253edb03167ef26a56e120ad251d5b902843af24bfb14cc064e0591430",
+      "gzipBytes": 1031
+    },
+    {
+      "path": "src/lib/save.js",
+      "bytes": 13342,
+      "sha256": "c44966acd7925ab6895199736c55d0cc6e8311e6af1b116d3c72a2e3451075c4",
+      "gzipBytes": 4985
+    },
+    {
+      "path": "src/lib/save.test.js",
+      "bytes": 9408,
+      "sha256": "1c35b7a6898cac935d640129d91f1bc1367b0dc8f3d870afc1eb6cffdd77563b",
+      "gzipBytes": 3176
+    },
+    {
+      "path": "src/lib/settings.js",
+      "bytes": 5738,
+      "sha256": "781c27753b12f50006e146dfb701aa9b6595bdd4216a6e35cbd5ddb660f1bb88",
+      "gzipBytes": 2170
+    },
+    {
+      "path": "src/lib/settings.test.js",
+      "bytes": 6918,
+      "sha256": "d9414efd9ceccc98b59a40e84a071cffc1b5ee0dce5d87377f3e4db66e8bd9fa",
+      "gzipBytes": 1997
+    },
+    {
+      "path": "src/lib/source-color-summary.js",
+      "bytes": 4133,
+      "sha256": "45c0657486543a6ef5e1f6abf3dc167e4665fc7787dd86e08a434c80ff84f597",
+      "gzipBytes": 1642
+    },
+    {
+      "path": "src/lib/source-color-summary.test.js",
+      "bytes": 4724,
+      "sha256": "5a81ff450ddbc12b11c3a49bbd2e5e236c1f88982414910c4b07eb6d761183ab",
+      "gzipBytes": 1463
+    },
+    {
+      "path": "src/lib/storage-migration.js",
+      "bytes": 555,
+      "sha256": "f8eeeb75e6a20cd9a32b0a9de677363f5bb830477a6d855e557b7d7b85ef25bc",
+      "gzipBytes": 321
+    },
+    {
+      "path": "src/lib/storage-migration.test.js",
+      "bytes": 1586,
+      "sha256": "25cf787c520f82bcff658ca5497ec5413ed067dfc62fdb4b73703c537203dc4f",
+      "gzipBytes": 609
+    },
+    {
+      "path": "src/lib/style-preview.js",
+      "bytes": 1184,
+      "sha256": "a046abf0a996188c0cd9b256c2f76bb78170df45adb17cf41b8ac290d5ec09fe",
+      "gzipBytes": 638
+    },
+    {
+      "path": "src/lib/style-preview.test.js",
+      "bytes": 1737,
+      "sha256": "834d2c7b8d212299fc5b34aa4a3b58239195b71c119b8f6a68cf0cceb0d7d293",
+      "gzipBytes": 691
+    },
+    {
+      "path": "src/lib/theme-startup.test.js",
+      "bytes": 2167,
+      "sha256": "b7c00ea2797ddbf12c1cbe75b7220f643de4c62096eeeabfa166a9d447b41d65",
+      "gzipBytes": 800
+    },
+    {
+      "path": "src/lib/tooltip.js",
+      "bytes": 6884,
+      "sha256": "03127079148ca13525aa4f17c0e3e1d10bcece415695c87a6a2d79edd91ba6d3",
+      "gzipBytes": 2266
+    },
+    {
+      "path": "src/lib/tooltip.test.js",
+      "bytes": 9963,
+      "sha256": "da9a19aade4d644f750b37895d67714a9b8bb80525dc8fac916c7b36bb6cc423",
+      "gzipBytes": 2625
+    },
+    {
+      "path": "src/lib/tooltipCoverage.test.js",
+      "bytes": 548,
+      "sha256": "12a924bbefdb721db3d4ff668214d981ff3711df8c3c9858ee3d34328f166d8a",
+      "gzipBytes": 318
+    },
+    {
+      "path": "src/lib/viewer-layout.js",
+      "bytes": 900,
+      "sha256": "297d30bc7af341328f76d0273c681ec144cb9d9f024555781ee32c216b7f397a",
+      "gzipBytes": 459
+    },
+    {
+      "path": "src/lib/viewer-layout.test.js",
+      "bytes": 2613,
+      "sha256": "637df0d6c96d5b91b82320f15d1f4126a894c0bfdd63340d7b9da422575c3bb0",
+      "gzipBytes": 928
+    },
+    {
+      "path": "src/lib/viewer-navigation.js",
+      "bytes": 10141,
+      "sha256": "d2c894dc44e61e7d26c42327f5b5fe6f94c153342c977ed6b65c1921cb30bc8c",
+      "gzipBytes": 3276
+    },
+    {
+      "path": "src/lib/viewer-navigation.test.js",
+      "bytes": 13907,
+      "sha256": "81cc1f8ed4a10a85000ea321256e86369bb58aca7c85bb4720ce9d110cbce58d",
+      "gzipBytes": 3789
+    },
+    {
+      "path": "src/lib/workspace-controls.js",
+      "bytes": 3226,
+      "sha256": "25c10a8e6404fabadb2e3165a8a8e8352b642c6c00220ea22e19f600480ba10c",
+      "gzipBytes": 1247
+    },
+    {
+      "path": "src/lib/workspace-controls.test.js",
+      "bytes": 9092,
+      "sha256": "059d7d41dc907d413abdbca0ba19c430d72b108a208c3d9355e3ecce78beba7a",
+      "gzipBytes": 2390
+    },
+    {
+      "path": "src/lib/workspace.js",
+      "bytes": 563,
+      "sha256": "6eeefd2cb201550dc73f0ebd4a4d69abbc42822e660a44b1db49f85401fac624",
+      "gzipBytes": 356
+    },
+    {
+      "path": "src/lib/workspace.test.js",
+      "bytes": 1516,
+      "sha256": "47367015cb8068d3eb7b319f5aa65666d782a83fe266c92e336ae4cb107833d2",
+      "gzipBytes": 623
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 151,
+      "sha256": "d01400df6eee65bc4f864f706052fc424fc9506e17742035755d5330e86b45d7",
+      "gzipBytes": 136
+    },
+    {
+      "path": "src/mobile-image-actions.css",
+      "bytes": 3143,
+      "sha256": "3933f8a9742b46e9d4b53cebe815e59162351181b068d6fd5db6673a401296b5",
+      "gzipBytes": 1063
+    },
+    {
+      "path": "src/palette-import.css",
+      "bytes": 6696,
+      "sha256": "b08eee1aa7b766bf9784e470161a1f626b084245ba873aef8ff95300aede0dba",
+      "gzipBytes": 1658
+    },
+    {
+      "path": "src/palette-settings-compact.css",
+      "bytes": 1875,
+      "sha256": "15112849e2841d3343e21e81a8e457f9be42f5bfc0b41f09826df797857435a2",
+      "gzipBytes": 642
+    },
+    {
+      "path": "src/PaletteImport.svelte",
+      "bytes": 22107,
+      "sha256": "1bdf7ce358f3eb3aa3c906af9159c69869a77171983e884241b22647978591e7"
+    },
+    {
+      "path": "src/PalettePreview.svelte",
+      "bytes": 777,
+      "sha256": "34e4dc222d2adaeaaabed8eab7f1ec3db224717ad9d00667e64f70b668e94101"
+    },
+    {
+      "path": "src/PixelIcon.svelte",
+      "bytes": 5831,
+      "sha256": "34c7fd5841593b757cf0fcfd48a04c1645e488be83d2144678dc03cce133db1f"
+    },
+    {
+      "path": "src/Pixels.svelte",
+      "bytes": 546,
+      "sha256": "2cb2a29494c931ed042c3189df2cc56e83211606fc21ee2bab043ef8a5cad7dc"
+    },
+    {
+      "path": "src/Tile.svelte",
+      "bytes": 26649,
+      "sha256": "b39beb1019175e8c7f71413d65618bfa2490d546ccf7a8faea9e0f457a08dae4"
+    },
+    {
+      "path": "src/ui-consistency.css",
+      "bytes": 2116,
+      "sha256": "beed6b5d79e74a8e6261d9089190ec23d1368aa9ff0c7bd0a07968a6c094572f",
+      "gzipBytes": 917
+    },
+    {
+      "path": "src/viewer-navigation.css",
+      "bytes": 1110,
+      "sha256": "8b048ab16b847a45ae34f97a17179ab87ed04abb6d8646f57a3ea8ccf575a747",
+      "gzipBytes": 505
+    }
+  ],
+  "build": [
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/apple-touch-icon-152x152.png",
+      "bytes": 546,
+      "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/apple-touch-icon-167x167.png",
+      "bytes": 617,
+      "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/apple-touch-icon-180x180.png",
+      "bytes": 677,
+      "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/gif-CtkGj7kJ.js",
+      "bytes": 12798,
+      "sha256": "3e091b5c5a34cb2180ec4db2930fbbac50843334406181c79bbd65a66490f2f9",
+      "gzipBytes": 5063
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/image-import-client-DMvOPcbg.js",
+      "bytes": 5532,
+      "sha256": "ab88bb1a1c027eeaa60bf4a2c83706b00af942603881e2cd897de80fb8dbe350",
+      "gzipBytes": 2108
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/image-import-worker-C2vfsgD_.js",
+      "bytes": 24820,
+      "sha256": "4434bdca6622afd6b987f6436e80cbb81409e1e570af38de7c62f3a93e231a97",
+      "gzipBytes": 10366
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/index-8I8UNd-r.js",
+      "bytes": 284427,
+      "sha256": "bb3698a1ca0d14f04542ea87e6c5057932d4668580c3489e0459bedf62d107b6",
+      "gzipBytes": 101720
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/index-CAPGUq4Y.css",
+      "bytes": 168002,
+      "sha256": "c0c1efc1f5a21081b48c2df6ca31657d29d4b332d058c2ddc7630522bdbc4873",
+      "gzipBytes": 26485
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-ase-D6BoxRK8.js",
+      "bytes": 2497,
+      "sha256": "6bfa5bb1943a190b4a299109398b52f920085640a6635c186a4b6d10548ecfbd",
+      "gzipBytes": 1328
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-cleanup-CDe6XS5k.js",
+      "bytes": 4235,
+      "sha256": "30caa8cd62ad51b2069e33f2da47ade16ef4bef5ec63031aa9393620953cbd49",
+      "gzipBytes": 2217
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-cleanup-client-Brh0uqND.js",
+      "bytes": 7348,
+      "sha256": "2f8633f0963600933f968ef6c980e75310c79e213008ab9af8564a6cf8f1b32a",
+      "gzipBytes": 2892
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-cleanup-worker-ChpCTucA.js",
+      "bytes": 15055,
+      "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3",
+      "gzipBytes": 6774
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-generated-client-CTVi6LdX.js",
+      "bytes": 3752,
+      "sha256": "02e4b53d1b598131476808f25a739c78a08e30ec3eeeafecddd535bf4ce9e675",
+      "gzipBytes": 1629
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-generated-CniLZd5X.js",
+      "bytes": 5832,
+      "sha256": "f3b4a355123a173f19362bfd1a13841dc7e1f6d2acdaf232449e1988ddbcc80d",
+      "gzipBytes": 2658
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-generated-worker-C3uwOiRZ.js",
+      "bytes": 9777,
+      "sha256": "323499c4ba7cef3b1adc39525028efd054a6d69c98428c8af60b7b0434520533",
+      "gzipBytes": 4612
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-gif-worker-D4qe4WP7.js",
+      "bytes": 11213,
+      "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840",
+      "gzipBytes": 5070
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-limit-CYd9Rzxc.js",
+      "bytes": 4464,
+      "sha256": "88149e7f48365ea0806b0b4116b981fdf85780ce8f51a646b62a571a1f5aa335",
+      "gzipBytes": 2217
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-limit-worker-DWheP2PL.js",
+      "bytes": 9738,
+      "sha256": "b5bce0b896438c968947d98cc811458aad299a192a57db5258fbeef62303cf30",
+      "gzipBytes": 4609
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-lospec-D3KAlEOU.js",
+      "bytes": 2331,
+      "sha256": "85eda05292099482f91f047f1d65972998a6256655d3e7940f9670c83a1ed0b3",
+      "gzipBytes": 1249
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/assets/palette-usage-COUbQHDg.js",
+      "bytes": 934,
+      "sha256": "c3bb30d49ebd860cee613427d76c61267f9831d4d621b3b2d53d8718494527a9",
+      "gzipBytes": 591
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/colorfetti-trailer-poster.png",
+      "bytes": 719992,
+      "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-16x16.png",
+      "bytes": 148,
+      "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-32x32.png",
+      "bytes": 174,
+      "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-48x48.png",
+      "bytes": 200,
+      "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark-16x16.png",
+      "bytes": 148,
+      "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark-32x32.png",
+      "bytes": 174,
+      "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark-48x48.png",
+      "bytes": 200,
+      "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark.ico",
+      "bytes": 15086,
+      "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-dark.svg",
+      "bytes": 601,
+      "sha256": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon-light.svg",
+      "bytes": 601,
+      "sha256": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon.ico",
+      "bytes": 15086,
+      "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/favicon.svg",
+      "bytes": 736,
+      "sha256": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/index.html",
+      "bytes": 4463,
+      "sha256": "e8d168b21fa11413ae8b39d7b3a25089f759c58960ef240683849ef51d39ca4d"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/manifest.webmanifest",
+      "bytes": 794,
+      "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/maskable-icon-192x192.png",
+      "bytes": 716,
+      "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/maskable-icon-512x512.png",
+      "bytes": 3197,
+      "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/monochrome-192x192.png",
+      "bytes": 724,
+      "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/pwa-192x192.png",
+      "bytes": 746,
+      "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/pwa-512x512.png",
+      "bytes": 3862,
+      "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+    },
+    {
+      "path": ".tmp/whole-app-performance-2026-10-17/baseline/dist/safari-pinned-tab.svg",
+      "bytes": 601,
+      "sha256": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+    }
+  ],
+  "practicalFixtureManifest": {
+    "frozen": "2026-10-16 before results",
+    "scope": "realistic small batch; sparse low-color large sprite sheets; bounded motion GIFs; no random-photo noise",
+    "licenses": "All artwork CC0-1.0 Kenney/rubberduck; original URLs, hashes and credits retained. Assemblies inherit CC0 source reuse permission.",
+    "records": [
+      {
+        "id": "dungeon-wizard",
+        "file": "fixtures/dungeon-wizard.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "b3909f80a29a0f18729f96a90ebe446ecaf26a195da633f2a6c3dd31f660821e",
+        "width": 16,
+        "height": 16,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/tiny-dungeon",
+          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+          "bytes": 98530,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0084.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "dungeon-archer",
+        "file": "fixtures/dungeon-archer.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "1e82481db9d95d0cec64ba0ea95b8fadf1e3675936e93731d0ff0e3bc72470b0",
+        "width": 16,
+        "height": 16,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/tiny-dungeon",
+          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+          "bytes": 98530,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0112.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "dungeon-knight",
+        "file": "fixtures/dungeon-knight.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "e139ab1d56c599af1cea5a955b705ead18a92d41e8e635b550729383cad9de3c",
+        "width": 16,
+        "height": 16,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/tiny-dungeon",
+          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+          "bytes": 98530,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0100.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "dungeon-potion",
+        "file": "fixtures/dungeon-potion.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "ad27340925ae7e936788c22cbd0f7d1922ef5bdd21377f916f1be9af6be4312d",
+        "width": 16,
+        "height": 16,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/tiny-dungeon",
+          "url": "https://kenney.nl/media/pages/assets/tiny-dungeon/f8422efb44-1674742415/kenney_tiny-dungeon.zip",
+          "sha256": "c109438ab06f65fd80f9b2686a4cf9c7c11dc64444b47333ec71d602f8bb5fc7",
+          "bytes": 98530,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0115.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "town-water-bucket",
+        "file": "fixtures/town-water-bucket.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "3befce5d6373d4315f35eeed22752bb1cf7a2ab5d008ce26dd6b4aebbb278978",
+        "width": 16,
+        "height": 16,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/tiny-town",
+          "url": "https://kenney.nl/media/pages/assets/tiny-town/a415fbeb49-1735736916/kenney_tiny-town.zip",
+          "sha256": "9768692dccff1d706408a5aedd6ca4f6cd1409506cbc84cb2f862919764be977",
+          "bytes": 182243,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0104.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "platformer-pilot",
+        "file": "fixtures/platformer-pilot.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "15df14143949310c001b09b2a00ed2278a5a9b4a10edd276af306b77b8c9d658",
+        "width": 24,
+        "height": 24,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/pixel-platformer",
+          "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+          "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+          "bytes": 260312,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/Characters/tile_0000.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "platformer-rocket",
+        "file": "fixtures/platformer-rocket.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "aca58ddc36d4e8d506111b1e580fc79b17383337b3cec27c28b0e6090435224a",
+        "width": 24,
+        "height": 24,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/pixel-platformer",
+          "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+          "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+          "bytes": 260312,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/Characters/tile_0015.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "platformer-heart",
+        "file": "fixtures/platformer-heart.png",
+        "kind": "retained CC0 sprite",
+        "sha256": "6b547ef267ee13918a4e45ac8a2a3d0de4fbaef8267459045cf9f8c5e283770e",
+        "width": 18,
+        "height": 18,
+        "frames": 1,
+        "source": {
+          "page": "https://kenney.nl/assets/pixel-platformer",
+          "url": "https://kenney.nl/media/pages/assets/pixel-platformer/33bb4921eb-1696667883/kenney_pixel-platformer.zip",
+          "sha256": "d01a196dbe3cc964e00d83ba3b987df62f332dc9260c9f941b4fbcc9047130f4",
+          "bytes": 260312,
+          "retrieved": "2026-10-15",
+          "archivePath": "Tiles/tile_0044.png",
+          "author": "Kenney",
+          "license": "CC0-1.0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      },
+      {
+        "id": "kenney-sheet-1024",
+        "file": "fixtures/kenney-sheet-1024.png",
+        "kind": "assembled CC0 sprite sheet",
+        "width": 1024,
+        "height": 1024,
+        "frames": 1,
+        "sha256": "7c227c452abdc0daedd089b88c3d95120e52c81d57edd2bbfa5f1f6bc5d1f853",
+        "construction": "64px cells, 48px nearest-neighbor sprites, 8px transparent gutters; source colors unchanged",
+        "sourceIds": [
+          "dungeon-wizard",
+          "dungeon-archer",
+          "dungeon-knight",
+          "dungeon-potion",
+          "town-water-bucket",
+          "platformer-pilot",
+          "platformer-rocket",
+          "platformer-heart"
+        ]
+      },
+      {
+        "id": "kenney-sheet-2048",
+        "file": "fixtures/kenney-sheet-2048.png",
+        "kind": "assembled CC0 sprite sheet",
+        "width": 2048,
+        "height": 2048,
+        "frames": 1,
+        "sha256": "2d2f25c21f9496816d4f21b303d6f86a288ef324263f7f998eae84f4db7d223f",
+        "construction": "64px cells, 48px nearest-neighbor sprites, 8px transparent gutters; source colors unchanged",
+        "sourceIds": [
+          "dungeon-wizard",
+          "dungeon-archer",
+          "dungeon-knight",
+          "dungeon-potion",
+          "town-water-bucket",
+          "platformer-pilot",
+          "platformer-rocket",
+          "platformer-heart"
+        ]
+      },
+      {
+        "id": "kenney-motion-128",
+        "file": "fixtures/kenney-motion-128.gif",
+        "kind": "owned motion assembly of CC0 sprites; not a hand-authored walk cycle",
+        "width": 128,
+        "height": 128,
+        "frames": 32,
+        "delay": [
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120
+        ],
+        "loop": 0,
+        "sha256": "d666cb4969de8641a05236427390b4521f7eb04693cd1a32c6b685af77fce3cc",
+        "sourceIds": [
+          "dungeon-wizard",
+          "dungeon-archer",
+          "dungeon-knight",
+          "dungeon-potion"
+        ]
+      },
+      {
+        "id": "kenney-motion-256",
+        "file": "fixtures/kenney-motion-256.gif",
+        "kind": "owned motion assembly of CC0 sprites; not a hand-authored walk cycle",
+        "width": 256,
+        "height": 256,
+        "frames": 48,
+        "delay": [
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120,
+          60,
+          80,
+          100,
+          120
+        ],
+        "loop": 0,
+        "sha256": "c3d75b88563016e674567003bbecb4128a4a8e20710e349f7b0278837069390f",
+        "sourceIds": [
+          "dungeon-wizard",
+          "dungeon-archer",
+          "dungeon-knight",
+          "dungeon-potion"
+        ]
+      },
+      {
+        "id": "real-magic",
+        "file": "fixtures/real-magic.gif",
+        "kind": "genuine artist-authored six-frame sequence assembled as GIF",
+        "width": 32,
+        "height": 32,
+        "frames": 6,
+        "delay": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "loop": 0,
+        "sha256": "4611a7fe466b618b42f8082c2ed7573504aba308b6ba0a21e4dd235baa0d9094",
+        "source": [
+          {
+            "id": "anim-rubberduck-magic-f0",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f0.png",
+            "sha256": "1b5447f4534df9eaefce5ccecd5983edc047bc57c0d0fecddc757b882973e69f",
+            "bytes": 843,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 889,
+              "a1_15": 29,
+              "a16_127": 42,
+              "a128_254": 51,
+              "a255": 13,
+              "nonzero": 135,
+              "partialFraction": 0.9037,
+              "visibleRgbColors": 126
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_03.png",
+            "sourcePngSha256": "1b5447f4534df9eaefce5ccecd5983edc047bc57c0d0fecddc757b882973e69f",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 0,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_03.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          },
+          {
+            "id": "anim-rubberduck-magic-f1",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f1.png",
+            "sha256": "5ea5ee9adf676a60a1e4e4068afa0c34574edb51470425be3d8951670f7db05f",
+            "bytes": 1124,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 825,
+              "a1_15": 44,
+              "a16_127": 81,
+              "a128_254": 69,
+              "a255": 5,
+              "nonzero": 199,
+              "partialFraction": 0.9749,
+              "visibleRgbColors": 193
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_04.png",
+            "sourcePngSha256": "5ea5ee9adf676a60a1e4e4068afa0c34574edb51470425be3d8951670f7db05f",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 1,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_04.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          },
+          {
+            "id": "anim-rubberduck-magic-f2",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f2.png",
+            "sha256": "f0fd39923d7c7daa7886df55d9176f02a18a3cce30d7e67f37676d6e982492d1",
+            "bytes": 1222,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 786,
+              "a1_15": 83,
+              "a16_127": 76,
+              "a128_254": 67,
+              "a255": 12,
+              "nonzero": 238,
+              "partialFraction": 0.9496,
+              "visibleRgbColors": 215
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_05.png",
+            "sourcePngSha256": "f0fd39923d7c7daa7886df55d9176f02a18a3cce30d7e67f37676d6e982492d1",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 2,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_05.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          },
+          {
+            "id": "anim-rubberduck-magic-f3",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f3.png",
+            "sha256": "564b6dd4233278e06a8cb53b9f0bb5b3aedaf2489322f3f4d2304deb3814bd9f",
+            "bytes": 1461,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 724,
+              "a1_15": 108,
+              "a16_127": 74,
+              "a128_254": 72,
+              "a255": 46,
+              "nonzero": 300,
+              "partialFraction": 0.8467,
+              "visibleRgbColors": 277
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_06.png",
+            "sourcePngSha256": "564b6dd4233278e06a8cb53b9f0bb5b3aedaf2489322f3f4d2304deb3814bd9f",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 3,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_06.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          },
+          {
+            "id": "anim-rubberduck-magic-f4",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f4.png",
+            "sha256": "419246f5f6726b61310764d3c770a00e5e67f5b567a4c832ae51b6af6e020980",
+            "bytes": 2279,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 460,
+              "a1_15": 119,
+              "a16_127": 154,
+              "a128_254": 263,
+              "a255": 28,
+              "nonzero": 564,
+              "partialFraction": 0.9504,
+              "visibleRgbColors": 506
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_07.png",
+            "sourcePngSha256": "419246f5f6726b61310764d3c770a00e5e67f5b567a4c832ae51b6af6e020980",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 4,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_07.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          },
+          {
+            "id": "anim-rubberduck-magic-f5",
+            "category": "animation",
+            "file": "animation/anim-rubberduck-magic-f5.png",
+            "sha256": "9f075b1e55e337492c778a4927a8474095d904a624cd39e2c223d9c6910c2bff",
+            "bytes": 2302,
+            "w": 32,
+            "h": 32,
+            "alphaStats": {
+              "a0": 452,
+              "a1_15": 140,
+              "a16_127": 209,
+              "a128_254": 223,
+              "a255": 0,
+              "nonzero": 572,
+              "partialFraction": 1,
+              "visibleRgbColors": 487
+            },
+            "title": "5x special effects - 2D",
+            "author": "rubberduck",
+            "sourceUrl": "https://opengameart.org/content/5x-special-effects-2d",
+            "fileUrl": "https://opengameart.org/sites/default/files/2d-special-effects.zip",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "retrieved": "2026-10-15",
+            "archive": "2d-special-effects.zip",
+            "archivePath": "magic_effect/magic_effect_08.png",
+            "sourcePngSha256": "9f075b1e55e337492c778a4927a8474095d904a624cd39e2c223d9c6910c2bff",
+            "sourceW": 32,
+            "sourceH": 32,
+            "sourceEncoding": {
+              "palette": false,
+              "iccProfile": null
+            },
+            "crop": null,
+            "cropMethod": "exact source bytes",
+            "animation": {
+              "group": "anim-rubberduck-magic",
+              "frameIndex": 5,
+              "frameCount": 6,
+              "durationMs": null,
+              "durationNote": "No frame duration stated by the author (10-frame sequence; frames 03-08 used).",
+              "sourceFrame": "magic_effect/magic_effect_08.png"
+            },
+            "authorStatement": "Made with GIMP; 32x32 and 64x64 effects; XCF sources included. No frame duration stated.",
+            "notes": "32px GIMP magic burst; colour and alpha change over the sequence."
+          }
+        ],
+        "construction": "Retained frames 03–08; alpha cut128 for GIF, author gave no timing so100ms test timing. GIF palette generation is a fixture transform; correctness compares decoded GIF."
+      }
+    ]
+  },
+  "tests": {
+    "host": "66 files passed; 1050 passed, 2 GC-dependent skipped",
+    "sandbox": "setup EPERM before tests; not product failure"
+  },
+  "warning": "No A/B or optimization claim follows from this manifest; source changes by another active task must be identified separately."
+}

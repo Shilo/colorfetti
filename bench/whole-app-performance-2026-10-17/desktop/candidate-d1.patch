@@ -1,0 +1,53 @@
+diff --git a/src/lib/quantize.js b/src/lib/quantize.js
+index e51969a..d6adfcd 100644
+--- a/src/lib/quantize.js
++++ b/src/lib/quantize.js
+@@ -45,16 +45,16 @@ function job(image, palette, alphaCut, mw, mh, metric, alphaMode) {
+   if (!Number.isInteger(alphaCut) || alphaCut < 1 || alphaCut > 255) throw new Error('Opacity cut must be between 1 and 255.');
+   const prepared = preparedOf(palette);
+   alphaMode = normalizeAlphaMode(alphaMode);
+-  return { data: image.data, sourceW: w, xs: Int32Array.from({ length: mw }, (_, i) => Math.floor((i + .5) * w / mw)), ys: Int32Array.from({ length: mh }, (_, i) => Math.floor((i + .5) * h / mh)),
++  return { data: image.data, sourceW: w, fullSource: mw === w && mh === h && w <= 0x80000000 && h <= 0x80000000, xs: Int32Array.from({ length: mw }, (_, i) => Math.floor((i + .5) * w / mw)), ys: Int32Array.from({ length: mh }, (_, i) => Math.floor((i + .5) * h / mh)),
+     ...preparedData.get(prepared), size: prepared.size, alphaCut: effectiveAlphaCut(alphaMode, alphaCut), metric, scratch: new Float64Array(3), memo: new Map(), hits: 0, misses: 0,
+     result: { indices: new Uint16Array(mw * mh), w: mw, h: mh, used: new Uint8Array(256), hasTransparency: false, ...(alphaMode === 'keep' ? { alpha: new Uint8Array(mw * mh) } : {}) } };
+ }
+ 
+ function convert(state, start, end) {
+-  const { data, sourceW, xs, ys, exact, labs, rgb, metric, scratch, size, alphaCut, result } = state;
++  const { data, sourceW, fullSource, xs, ys, exact, labs, rgb, metric, scratch, size, alphaCut, result } = state;
+   const alpha = result.alpha;
+   for (let o = start; o < end; o++) {
+-    const p = (ys[Math.floor(o / result.w)] * sourceW + xs[o % result.w]) * 4;
++    const p = fullSource ? o * 4 : (ys[Math.floor(o / result.w)] * sourceW + xs[o % result.w]) * 4;
+     if (data[p + 3] < alphaCut) { result.indices[o] = EMPTY_INDEX; result.hasTransparency = true; continue; }
+     if (alpha) alpha[o] = data[p + 3];
+     const key = data[p] << 16 | data[p + 1] << 8 | data[p + 2];
+diff --git a/src/lib/quantize.test.js b/src/lib/quantize.test.js
+index 0a5197d..bea6328 100644
+--- a/src/lib/quantize.test.js
++++ b/src/lib/quantize.test.js
+@@ -93,6 +93,24 @@ describe('full palette quantization', () => {
+     expect(() => quantize(source, colors, 128, 12, 7)).toThrow();
+   });
+ 
++  it.each(['oklab', 'rgb'])('preserves source coordinates and alpha when either or both dimensions are unchanged using %s', async metric => {
++    const colors = ['#000000', '#777777', '#ffffff'];
++    for (const [w, h, mw, mh] of [[11, 7, 11, 7], [11, 7, 11, 3], [11, 7, 4, 7], [1, 7, 1, 7], [11, 1, 11, 1], [1, 7, 1, 3], [11, 1, 4, 1]]) {
++      const pixels = Array.from({ length: w * h }, (_, i) => [i * 19 % 256, i * 37 % 256, i * 53 % 256, [0, 1, 127, 128, 255][i % 5]]);
++      const source = image(pixels, w, h);
++      for (const alphaMode of ['cut', 'keep']) {
++        const sampled = Array.from({ length: mw * mh }, (_, i) => pixels[Math.floor((Math.floor(i / mw) + .5) * h / mh) * w + Math.floor((i % mw + .5) * w / mw)]);
++        const expected = sampled.map(pixel => reference(pixel, colors, alphaMode === 'keep' ? 1 : 128, metric));
++        const actual = quantize(source, colors, 128, mw, mh, { metric, alphaMode });
++        expect([...actual.indices]).toEqual(expected);
++        expect(actual.hasTransparency).toBe(expected.includes(EMPTY_INDEX));
++        expect([...actual.used]).toEqual(Array.from({ length: 256 }, (_, i) => Number(expected.includes(i))));
++        if (alphaMode === 'keep') expect([...actual.alpha]).toEqual(sampled.map((pixel, i) => expected[i] === EMPTY_INDEX ? 0 : pixel[3]));
++        expect(await quantizeAsync(source, colors, 128, mw, mh, { metric, alphaMode })).toEqual(actual);
++      }
++    }
++  });
++
+   it.each(['oklab', 'rgb'])('cancels before allocation and between long tasks using %s, without returning partial output', async metric => {
+     const controller = new AbortController(); controller.abort();
+     await expect(quantizeAsync(image([[0, 0, 0, 255]]), ['#000000'], 128, undefined, undefined, { metric, signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });

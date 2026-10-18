@@ -1,0 +1,16 @@
+# Retain compact receipts under folders ignored by the older bench policy.
+!**/baseline/
+!**/baseline/**
+!baseline-tests.log
+!final-tests.log
+!final-build.log
+!final-palette-qa.log
+
+# Exact native file witnesses; screenshots use the browser's JPEG output.
+!codex/clipboard.png
+!codex/baseline-glow-keep.png
+!codex/onebit-Cutout.png
+!codex/baseline-sheet2048.png
+!codex/candidate-sheet2048.png
+!codex/final-sheet2048.png
+

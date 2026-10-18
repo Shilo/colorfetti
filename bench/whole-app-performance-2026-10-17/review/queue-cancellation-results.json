@@ -1,0 +1,49 @@
+{
+  "url": "http://127.0.0.1:5371/",
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "browserSurface": "auxiliary isolated sandboxed Edge",
+  "checks": [
+    {
+      "action": "settings",
+      "heldModuleRequests": 1,
+      "survivingNames": [
+        "cf-review-queue-a.png",
+        "cf-review-queue-b.png"
+      ],
+      "currentCount": 8,
+      "currentDraftColors": [
+        "Select color 1 #9babb2",
+        "Select color 2 #c7dcd0",
+        "Select color 3 #cd683d",
+        "Select color 4 #313638",
+        "Select color 5 #45293f",
+        "Select color 6 #905ea9",
+        "Select color 7 #a884f3",
+        "Select color 8 #fca790"
+      ]
+    },
+    {
+      "action": "remove",
+      "heldModuleRequests": 1,
+      "survivingNames": [
+        "cf-review-queue-b.png"
+      ],
+      "currentCount": 7,
+      "currentDraftColors": [
+        "Select color 1 #9babb2",
+        "Select color 2 #c7dcd0",
+        "Select color 3 #e83b3b",
+        "Select color 4 #cd683d",
+        "Select color 5 #e6904e",
+        "Select color 6 #45293f",
+        "Select color 7 #f68181"
+      ]
+    }
+  ],
+  "errors": [],
+  "notes": [
+    "Artificially held lazy usage module establishes a deterministic pending automatic queue and explicit Reuse join. All app interactions use real input controls.",
+    "Changing settings or removing the captured source cancels stale draft publication; a subsequent fresh Reuse opens only the current source/count.",
+    "This is fresh built-app functional cancellation coverage, not real-network performance, a CPU duplication count, or native Android/Codex coverage."
+  ]
+}

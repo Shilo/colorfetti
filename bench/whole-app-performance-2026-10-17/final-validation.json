@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-18T05:29:35.410Z",
+  "productionRevision": "35fbb73859a6526dbd6e1ccfd3671e5181d8f954",
+  "auditBaseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "decision": "REJECT D1; no audit production changes",
+  "productionWorktreeDiff": [],
+  "outsideAuditChanges": [],
+  "packageLockUnchanged": true,
+  "tests": {
+    "passed": 1050,
+    "skipped": 2,
+    "files": 66,
+    "receipt": "final-tests.log"
+  },
+  "build": {
+    "passed": true,
+    "receipt": "final-build.log",
+    "indexSha256": "fd61b39ad086645c5b8eb06bb802fe3f5d043f0c09a339b7dd6275856c5cad84"
+  },
+  "builtApp": {
+    "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+    "legacy": 132,
+    "full": 12,
+    "extra": [
+      "Legacy custom colors/None/Swap/settings memory/Original/copy/single-save",
+      "Twelve full presets RGB preview/PNG/Copy match independent reference; ordered copy swatches/HEX backups preserve every entry; family retains metric and Reset restores Oklab/cut128",
+      "Max colors minimum-two/invalid/empty inputs, unchanged two-color preview/PNG/Copy, and All/remembered16 reset",
+      "Palette-sized slider/number, untouched blur, small-palette reload and invalid edit retain64; explicit3 and All remember3 across palette switches",
+      "Full GIF exact frames/delays/loop/first-frame copy and mixed ZIP",
+      "Family round-trip preserves legacy custom colors/None/style settings, legacy GIF and mixed ZIP",
+      "2MP save preserves click palette; ZIP preserves palette and removed-image snapshots",
+      "256 colors+empty GIF blocks ZIP without download or active palette mutation",
+      "6MP async GIF failure preserves named import and 256-color saved drafts/notice/focus/source/revision; retry uses current palette and 255-color copy limit",
+      "Native two-document localStorage clear/update/remove: saved fallback, active session/open draft identity and matching/legacy settings retained; native iframe sessionStorage library-key update/remove/clear ignored",
+      "Built wall/viewer GIF Original advances while conversion yields are held; switching back waits and resumes the exact current frame without stale completion",
+      "ASE parser stays unloaded for startup/editor/PNG/text; first import loads once, repeat reuses cache and exact255 ordered raw entries persist with aseprite metadata",
+      "Palette URL PNG→ASE imports exact entries without replacing the dialog, chosen Paste tool, name or text history; saved ASE source persists"
+    ],
+    "consoleErrors": [],
+    "receipt": "final-palette-qa.json"
+  },
+  "codexUninstrumented": {
+    "finalNativeSaveByteEqual": true,
+    "sha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720",
+    "screenshot": "codex/final-restored.jpg"
+  },
+  "androidCleanup": {
+    "ownedCdpForward9351Removed": true,
+    "ownedReversePortsRemoved": [
+      5371,
+      5372,
+      5375
+    ],
+    "preexistingForwardsPreserved": [
+      "37211FDJG00267 tcp:9333 localabstract:chrome_devtools_remote",
+      "37211FDJG00267 tcp:9334 localabstract:chrome_devtools_remote_16561"
+    ],
+    "rotationBefore": "free",
+    "rotationAfter": "free",
+    "rotationPolicyChanged": false,
+    "downloadBehaviorRestored": "native default",
+    "nativeBrowserClosed": false,
+    "ownedPagesClosed": true,
+    "testOriginStorageRestoredAfterEachPage": true,
+    "nativeOwnedDownloadsRemoved": "Only exact names recorded in native-output-manifest.json; each successful pull followed by exact-file adb rm, no personal directory listing or wildcard deletion.",
+    "deviceReservationReleased": true
+  },
+  "pushed": false
+}

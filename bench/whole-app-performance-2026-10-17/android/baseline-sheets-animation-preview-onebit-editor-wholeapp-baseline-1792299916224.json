@@ -1,0 +1,155 @@
+{
+  "label": "baseline",
+  "prefix": "wholeapp-baseline-1792299916224",
+  "baseURL": "http://localhost:5371/",
+  "started": "2026-10-18T05:05:16.225Z",
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "rows": [
+    {
+      "name": "kenney-sheet-1024: input import to current named wall paint",
+      "elapsedMs": 283,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 150.12800000000004,
+        "ScriptDuration": 15.693999999999996,
+        "LayoutDuration": 2.4029999999999996,
+        "RecalcStyleDuration": 9.677999999999999
+      },
+      "heapUsed": 6446420,
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 128.439
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 68.488
+        },
+        {
+          "frame": "Fa index-8I8UNd-r.js:2",
+          "ms": 19.03
+        },
+        {
+          "frame": "Wu index-8I8UNd-r.js:2",
+          "ms": 15.886
+        },
+        {
+          "frame": "za index-8I8UNd-r.js:2",
+          "ms": 5.503
+        },
+        {
+          "frame": "y image-import-client-DMvOPcbg.js:1",
+          "ms": 4.176
+        },
+        {
+          "frame": " index-8I8UNd-r.js:1",
+          "ms": 3.542
+        },
+        {
+          "frame": " index-8I8UNd-r.js:2",
+          "ms": 3.477
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 2.733
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 2.332
+        },
+        {
+          "frame": "Er index-8I8UNd-r.js:1",
+          "ms": 2.31
+        },
+        {
+          "frame": "evaluate :304",
+          "ms": 2.177
+        },
+        {
+          "frame": "xn index-8I8UNd-r.js:5",
+          "ms": 1.305
+        },
+        {
+          "frame": "requestAnimationFrame :-1",
+          "ms": 1.25
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 1.192
+        },
+        {
+          "frame": "La index-8I8UNd-r.js:2",
+          "ms": 1.184
+        },
+        {
+          "frame": "putImageData :-1",
+          "ms": 1.178
+        },
+        {
+          "frame": " :1",
+          "ms": 1.173
+        },
+        {
+          "frame": " :-1",
+          "ms": 1.173
+        },
+        {
+          "frame": "disconnect :-1",
+          "ms": 1.157
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "errors": [
+    "locator.click: Error: strict mode violation: getByRole('button', { name: 'Save image', exact: true }) resolved to 2 elements:\n    1) <button data-tooltip=\"\" aria-label=\"Save image\" aria-describedby=\"tooltip-23\" class=\"btn glass-btn glass-btn--primary icon-only\">…</button> aka getByRole('group', { name: 'Image actions' }).getByLabel('Save image')\n    2) <button data-tooltip=\"\" aria-label=\"Save image\" aria-describedby=\"tooltip-5\" class=\"btn glass-btn icon-only export-action glass-btn--primary\">…</button> aka getByRole('group', { name: 'Add and save images' }).getByLabel('Save image')\n\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save image', exact: true })\u001b[22m\n\n    at C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\whole-app-performance-2026-10-17\\android\\native.mjs:63:158\n    at async stage (C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\whole-app-performance-2026-10-17\\android\\native.mjs:37:2)\n    at async nativeSave (C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\whole-app-performance-2026-10-17\\android\\native.mjs:61:12)\n    at async file:///C:/Programming_Files/Shilocity/colorfetti/bench/whole-app-performance-2026-10-17/android/native.mjs:77:145",
+    "owned output cleanup Command failed: C:/Users/shilo/AppData/Local/Android/Sdk/platform-tools/adb.exe -s 37211FDJG00267 shell rm /sdcard/Download/wholeapp-baseline-1792299916224-kenney-sheet-1024-0-kenney-sheet-1024-palette.png\nrm: /sdcard/Download/wholeapp-baseline-1792299916224-kenney-sheet-1024-0-kenney-sheet-1024-palette.png: No such file or directory\r\n"
+  ],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 339\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "lastWall": [
+    {
+      "name": "wholeapp-baseline-1792299916224-kenney-sheet-1024-0-kenney-sheet-1024.png 1024×1024  ·  26 colors ",
+      "caption": "1024×1024  ·  26 colors ",
+      "width": 936,
+      "height": 936
+    }
+  ],
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T05:05:18.170Z"
+}

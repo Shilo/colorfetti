@@ -1,0 +1,484 @@
+{
+  "label": "baseline",
+  "prefix": "wholeapp-baseline-1792300895824",
+  "baseURL": "http://localhost:5371/",
+  "started": "2026-10-18T05:21:35.825Z",
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "rows": [
+    {
+      "name": "largeonebit-kenney-sheet-1024: input import to current named wall paint",
+      "elapsedMs": 287.19999998807907,
+      "longtasks": [
+        {
+          "start": 444.30000001192093,
+          "duration": 50
+        }
+      ],
+      "rafMaxMs": 41.60000000000002,
+      "rafP95Ms": 41.60000000000002,
+      "cpuMs": {
+        "TaskDuration": 148.25300000000001,
+        "ScriptDuration": 48.857,
+        "LayoutDuration": 1.6570000000000005,
+        "RecalcStyleDuration": 5.693999999999999
+      },
+      "heapUsed": 8108416,
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 135.064
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 65.349
+        },
+        {
+          "frame": "Wu index-8I8UNd-r.js:2",
+          "ms": 13.716
+        },
+        {
+          "frame": "ho index-8I8UNd-r.js:2",
+          "ms": 11.868
+        },
+        {
+          "frame": "b index-8I8UNd-r.js:2",
+          "ms": 8.295
+        },
+        {
+          "frame": " index-8I8UNd-r.js:2",
+          "ms": 7.567
+        },
+        {
+          "frame": "d index-8I8UNd-r.js:2",
+          "ms": 7.015
+        },
+        {
+          "frame": "_o index-8I8UNd-r.js:2",
+          "ms": 3.611
+        },
+        {
+          "frame": "putImageData :-1",
+          "ms": 2.434
+        },
+        {
+          "frame": "Hu index-8I8UNd-r.js:2",
+          "ms": 2.379
+        },
+        {
+          "frame": " index-8I8UNd-r.js:1",
+          "ms": 2.364
+        },
+        {
+          "frame": " index-8I8UNd-r.js:5",
+          "ms": 2.235
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 2.151
+        },
+        {
+          "frame": "f index-8I8UNd-r.js:2",
+          "ms": 1.222
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 1.204
+        },
+        {
+          "frame": " :0",
+          "ms": 1.188
+        },
+        {
+          "frame": "X index-8I8UNd-r.js:2",
+          "ms": 1.177
+        },
+        {
+          "frame": "Ur index-8I8UNd-r.js:1",
+          "ms": 1.175
+        },
+        {
+          "frame": "uc index-8I8UNd-r.js:2",
+          "ms": 1.166
+        },
+        {
+          "frame": "destroy index-8I8UNd-r.js:2",
+          "ms": 1.162
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-1024: first-style-preparation Stencil current paint",
+      "elapsedMs": 681.9000000357628,
+      "longtasks": [
+        {
+          "start": 1036.199999988079,
+          "duration": 80
+        }
+      ],
+      "rafMaxMs": 100,
+      "rafP95Ms": 50.5,
+      "cpuMs": {
+        "TaskDuration": 375.74699999999996,
+        "ScriptDuration": 176.47299999999998,
+        "LayoutDuration": 7.495,
+        "RecalcStyleDuration": 35.17100000000001
+      },
+      "heapUsed": 7552612,
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 301.971
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 115.056
+        },
+        {
+          "frame": "lo index-8I8UNd-r.js:2",
+          "ms": 36.044
+        },
+        {
+          "frame": "ho index-8I8UNd-r.js:2",
+          "ms": 25.757
+        },
+        {
+          "frame": "b index-8I8UNd-r.js:2",
+          "ms": 23.682
+        },
+        {
+          "frame": " index-8I8UNd-r.js:2",
+          "ms": 17.446
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 11.994
+        },
+        {
+          "frame": "isElementHiddenForAria :3367",
+          "ms": 11.043
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 9.492
+        },
+        {
+          "frame": "_o index-8I8UNd-r.js:2",
+          "ms": 7.014
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 6.253
+        },
+        {
+          "frame": " index-8I8UNd-r.js:1",
+          "ms": 6.17
+        },
+        {
+          "frame": "elementsFromPoint :-1",
+          "ms": 6.073
+        },
+        {
+          "frame": "n index-8I8UNd-r.js:5",
+          "ms": 3.659
+        },
+        {
+          "frame": " :-1",
+          "ms": 3.578
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 3.507
+        },
+        {
+          "frame": "$a index-8I8UNd-r.js:2",
+          "ms": 3.281
+        },
+        {
+          "frame": "Bi index-8I8UNd-r.js:2",
+          "ms": 2.7
+        },
+        {
+          "frame": "expectHitTarget :7486",
+          "ms": 2.628
+        },
+        {
+          "frame": "Ji index-8I8UNd-r.js:2",
+          "ms": 2.507
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-1024: first-style-preparation Icon current paint",
+      "elapsedMs": 583.6000000238419,
+      "longtasks": [
+        {
+          "start": 1549.3999999761581,
+          "duration": 186
+        }
+      ],
+      "rafMaxMs": 200,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 340.92599999999993,
+        "ScriptDuration": 226.79200000000006,
+        "LayoutDuration": 3.306999999999999,
+        "RecalcStyleDuration": 21.326999999999998
+      },
+      "heapUsed": 6187920,
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 242.702
+        },
+        {
+          "frame": "Ji index-8I8UNd-r.js:2",
+          "ms": 105.973
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 74.866
+        },
+        {
+          "frame": " index-8I8UNd-r.js:2",
+          "ms": 33.373
+        },
+        {
+          "frame": "Bi index-8I8UNd-r.js:2",
+          "ms": 31.809
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 9.296
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 9.188
+        },
+        {
+          "frame": "ho index-8I8UNd-r.js:2",
+          "ms": 7.802
+        },
+        {
+          "frame": "_o index-8I8UNd-r.js:2",
+          "ms": 5.925
+        },
+        {
+          "frame": "mo index-8I8UNd-r.js:2",
+          "ms": 5.51
+        },
+        {
+          "frame": "putImageData :-1",
+          "ms": 4.813
+        },
+        {
+          "frame": "isElementHiddenForAria :3367",
+          "ms": 4.502
+        },
+        {
+          "frame": "Pi index-8I8UNd-r.js:2",
+          "ms": 4.454
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 3.269
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 2.799
+        },
+        {
+          "frame": "i index-8I8UNd-r.js:5",
+          "ms": 2.401
+        },
+        {
+          "frame": "scrollIntoView :-1",
+          "ms": 2.386
+        },
+        {
+          "frame": "elementsFromPoint :-1",
+          "ms": 2.285
+        },
+        {
+          "frame": "querySelector :-1",
+          "ms": 2.275
+        },
+        {
+          "frame": "querySelectorAll :-1",
+          "ms": 2.234
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-1024: first-style-preparation Atkinson current paint",
+      "elapsedMs": 439.5999999642372,
+      "longtasks": [],
+      "rafMaxMs": 33.40000000000009,
+      "rafP95Ms": 16.700000000000273,
+      "cpuMs": {
+        "TaskDuration": 156.50799999999987,
+        "ScriptDuration": 65.25500000000001,
+        "LayoutDuration": 3.422999999999999,
+        "RecalcStyleDuration": 22.935999999999996
+      },
+      "heapUsed": 9112208
+    },
+    {
+      "name": "kenney-sheet-1024: first-style-preparation Checker current paint",
+      "elapsedMs": 405.69999998807907,
+      "longtasks": [],
+      "rafMaxMs": 24.90000000000009,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 130.67000000000007,
+        "ScriptDuration": 47.88899999999996,
+        "LayoutDuration": 3.780000000000002,
+        "RecalcStyleDuration": 20.001000000000005
+      },
+      "heapUsed": 7283616
+    },
+    {
+      "name": "kenney-sheet-1024: repeated-style-preparation Cutout current paint",
+      "elapsedMs": 458.80000001192093,
+      "longtasks": [],
+      "rafMaxMs": 50,
+      "rafP95Ms": 16.799999999999727,
+      "cpuMs": {
+        "TaskDuration": 178.27400000000006,
+        "ScriptDuration": 76.10499999999998,
+        "LayoutDuration": 3.816,
+        "RecalcStyleDuration": 19.691
+      },
+      "heapUsed": 5430132
+    },
+    {
+      "name": "kenney-sheet-1024: repeated-style-preparation Stencil current paint",
+      "elapsedMs": 444.80000001192093,
+      "longtasks": [],
+      "rafMaxMs": 58.40000000000009,
+      "rafP95Ms": 33.30000000000018,
+      "cpuMs": {
+        "TaskDuration": 170.81899999999985,
+        "ScriptDuration": 92.387,
+        "LayoutDuration": 3.082999999999999,
+        "RecalcStyleDuration": 18.604999999999983
+      },
+      "heapUsed": 6863844
+    },
+    {
+      "name": "kenney-sheet-1024: repeated-style-preparation Icon current paint",
+      "elapsedMs": 476.9000000357628,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000728,
+      "rafP95Ms": 16.700000000000273,
+      "cpuMs": {
+        "TaskDuration": 130.50300000000004,
+        "ScriptDuration": 38.87600000000002,
+        "LayoutDuration": 2.7219999999999986,
+        "RecalcStyleDuration": 18.664000000000016
+      },
+      "heapUsed": 8003632
+    },
+    {
+      "name": "kenney-sheet-1024: repeated-style-preparation Atkinson current paint",
+      "elapsedMs": 469.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 25.100000000000364,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 141.77099999999987,
+        "ScriptDuration": 50.10599999999998,
+        "LayoutDuration": 4.088000000000001,
+        "RecalcStyleDuration": 23.130999999999986
+      },
+      "heapUsed": 9088364
+    },
+    {
+      "name": "kenney-sheet-1024: repeated-style-preparation Checker current paint",
+      "elapsedMs": 483.89999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.700000000000728,
+      "cpuMs": {
+        "TaskDuration": 155.31099999999998,
+        "ScriptDuration": 39.879,
+        "LayoutDuration": 3.8060000000000036,
+        "RecalcStyleDuration": 20.273000000000014
+      },
+      "heapUsed": 5640684
+    },
+    {
+      "name": "kenney-sheet-1024: Brightness rapid R-G-Value reanalysis",
+      "elapsedMs": 794,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 217.1620000000001,
+        "ScriptDuration": 38.83499999999995,
+        "LayoutDuration": 2.4459999999999966,
+        "RecalcStyleDuration": 9.085999999999983
+      },
+      "heapUsed": 8521516
+    }
+  ],
+  "outputs": [],
+  "errors": [
+    "locator.click: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /^Opacity cut:/ })\u001b[22m\n\n    at C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\whole-app-performance-2026-10-17\\android\\native.mjs:95:56"
+  ],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 362\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "targetId": "F475D50F9072CE4346753461786E22CB",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "largeOnebit": [],
+  "lastWall": [
+    {
+      "name": "wholeapp-baseline-1792300895824-largeonebit-kenney-sheet-1024-0-kenney-sheet-1024.png 1024×1024  ·  2 colors ",
+      "caption": "1024×1024  ·  2 colors ",
+      "width": 936,
+      "height": 936
+    }
+  ],
+  "failureState": {
+    "viewport": {
+      "width": 448,
+      "height": 819,
+      "visualWidth": 448,
+      "visualHeight": 819.111083984375
+    },
+    "focus": null
+  },
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T05:23:43.424Z"
+}

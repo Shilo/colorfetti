@@ -1,0 +1,35 @@
+
+> colorfetti@0.0.0 build
+> vite build --outDir .tmp/whole-app-performance-2026-10-17/final/dist
+
+10:25:13 PM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti - using default configuration.
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 196 modules transformed.
+rendering chunks...
+computing gzip size...
+.tmp/whole-app-performance-2026-10-17/final/dist/index.html                                     4.46 kB │ gzip:   1.60 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-limit-worker-DWheP2PL.js        9.73 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-generated-worker-C3uwOiRZ.js    9.77 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-gif-worker-D4qe4WP7.js         11.21 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-cleanup-worker-ChpCTucA.js     15.05 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/image-import-worker-C2vfsgD_.js        24.82 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/index-VE9_tUgX.css                    168.00 kB │ gzip:  26.46 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-usage-qolaN8Rk.js               0.93 kB │ gzip:   0.59 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-lospec-DOLRbxK1.js              2.33 kB │ gzip:   1.24 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-ase-DCsuRQKt.js                 2.49 kB │ gzip:   1.33 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-generated-client-D-pfLE8Z.js    3.75 kB │ gzip:   1.63 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-cleanup-Bulw_sGV.js             4.23 kB │ gzip:   2.22 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-limit-t9a7pJUv.js               4.46 kB │ gzip:   2.22 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/image-import-client-C3lEKRY9.js         5.53 kB │ gzip:   2.11 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-generated-2SwzdqpD.js           5.83 kB │ gzip:   2.66 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/palette-cleanup-client-XbytXtMc.js      7.34 kB │ gzip:   2.89 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/gif-B3N3wVfX.js                        12.79 kB │ gzip:   5.07 kB
+.tmp/whole-app-performance-2026-10-17/final/dist/assets/index-BGYDinXj.js                     284.42 kB │ gzip: 102.54 kB
+
+✓ built in 491ms
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.21.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.1
+npm notice To update run: npm install -g npm@11.21.1
+npm notice

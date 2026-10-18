@@ -1,0 +1,29 @@
+- figure "Preview kenney-sheet-2048.png":
+  - button "Preview kenney-sheet-2048.png"
+  - button "Save kenney-sheet-2048.png":
+  - button "Copy kenney-sheet-2048.png":
+  - button "Reuse colors from kenney-sheet-2048.png":
+  - button "Preview kenney-sheet-2048.png":
+  - button "Remove kenney-sheet-2048.png":
+  - button "Preview kenney-sheet-2048.png":
+    - generic: kenney-sheet-2048.png
+    - generic: 2048×2048
+    - generic: ·
+    - generic: 26 colors
+- group "Colors and palette":
+  - 'button "Selected palette: Resurrect 64, 64 colors"'
+  - button "Palette":
+- group "Conversion and style":
+  - button "Resurrect 64 conversion" [pressed]:
+    - generic: Resurrect 64
+  - button "Palette settings":
+  - generic: Showing images converted with Resurrect 64.
+- navigation "File and app actions":
+  - group "Add and save images":
+    - button "Save image":
+      - generic: Save
+    - button "Add images":
+    - button "Remove all images":
+  - button "More":
+- status:
+  - generic: Downloading kenney-sheet-2048-palette.png…

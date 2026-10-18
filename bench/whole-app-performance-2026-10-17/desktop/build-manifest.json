@@ -1,0 +1,452 @@
+{
+  "date": "2026-10-18T05:14:39.080Z",
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "candidate": "exact baseline materialized then src/lib/quantize.js and quantize.test.js exploratory patch copied; foreign35fbb73 changes excluded",
+  "packageLockSha256": "4729589b4dab0eb85986ea90273c86d08cc8abde32a9c4c5c0bc18818e1fec23",
+  "versions": {
+    "vite": "8.3.3",
+    "svelte": "5.57.2",
+    "vitest": "4.1.11",
+    "fflate": "0.8.3",
+    "omggif": "1.0.10"
+  },
+  "node": "v25.0.0",
+  "builds": {
+    "baseline": {
+      "port": 5371,
+      "files": [
+        {
+          "file": "apple-touch-icon-152x152.png",
+          "bytes": 546,
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "file": "apple-touch-icon-167x167.png",
+          "bytes": 617,
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "file": "apple-touch-icon-180x180.png",
+          "bytes": 677,
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "file": "assets/gif-CtkGj7kJ.js",
+          "bytes": 12798,
+          "sha256": "3e091b5c5a34cb2180ec4db2930fbbac50843334406181c79bbd65a66490f2f9"
+        },
+        {
+          "file": "assets/image-import-client-DMvOPcbg.js",
+          "bytes": 5532,
+          "sha256": "ab88bb1a1c027eeaa60bf4a2c83706b00af942603881e2cd897de80fb8dbe350"
+        },
+        {
+          "file": "assets/image-import-worker-C2vfsgD_.js",
+          "bytes": 24820,
+          "sha256": "4434bdca6622afd6b987f6436e80cbb81409e1e570af38de7c62f3a93e231a97"
+        },
+        {
+          "file": "assets/index-8I8UNd-r.js",
+          "bytes": 284427,
+          "sha256": "bb3698a1ca0d14f04542ea87e6c5057932d4668580c3489e0459bedf62d107b6"
+        },
+        {
+          "file": "assets/index-CAPGUq4Y.css",
+          "bytes": 168002,
+          "sha256": "c0c1efc1f5a21081b48c2df6ca31657d29d4b332d058c2ddc7630522bdbc4873"
+        },
+        {
+          "file": "assets/palette-ase-D6BoxRK8.js",
+          "bytes": 2497,
+          "sha256": "6bfa5bb1943a190b4a299109398b52f920085640a6635c186a4b6d10548ecfbd"
+        },
+        {
+          "file": "assets/palette-cleanup-CDe6XS5k.js",
+          "bytes": 4235,
+          "sha256": "30caa8cd62ad51b2069e33f2da47ade16ef4bef5ec63031aa9393620953cbd49"
+        },
+        {
+          "file": "assets/palette-cleanup-client-Brh0uqND.js",
+          "bytes": 7348,
+          "sha256": "2f8633f0963600933f968ef6c980e75310c79e213008ab9af8564a6cf8f1b32a"
+        },
+        {
+          "file": "assets/palette-cleanup-worker-ChpCTucA.js",
+          "bytes": 15055,
+          "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+        },
+        {
+          "file": "assets/palette-generated-client-CTVi6LdX.js",
+          "bytes": 3752,
+          "sha256": "02e4b53d1b598131476808f25a739c78a08e30ec3eeeafecddd535bf4ce9e675"
+        },
+        {
+          "file": "assets/palette-generated-CniLZd5X.js",
+          "bytes": 5832,
+          "sha256": "f3b4a355123a173f19362bfd1a13841dc7e1f6d2acdaf232449e1988ddbcc80d"
+        },
+        {
+          "file": "assets/palette-generated-worker-C3uwOiRZ.js",
+          "bytes": 9777,
+          "sha256": "323499c4ba7cef3b1adc39525028efd054a6d69c98428c8af60b7b0434520533"
+        },
+        {
+          "file": "assets/palette-gif-worker-D4qe4WP7.js",
+          "bytes": 11213,
+          "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+        },
+        {
+          "file": "assets/palette-limit-CYd9Rzxc.js",
+          "bytes": 4464,
+          "sha256": "88149e7f48365ea0806b0b4116b981fdf85780ce8f51a646b62a571a1f5aa335"
+        },
+        {
+          "file": "assets/palette-limit-worker-DWheP2PL.js",
+          "bytes": 9738,
+          "sha256": "b5bce0b896438c968947d98cc811458aad299a192a57db5258fbeef62303cf30"
+        },
+        {
+          "file": "assets/palette-lospec-D3KAlEOU.js",
+          "bytes": 2331,
+          "sha256": "85eda05292099482f91f047f1d65972998a6256655d3e7940f9670c83a1ed0b3"
+        },
+        {
+          "file": "assets/palette-usage-COUbQHDg.js",
+          "bytes": 934,
+          "sha256": "c3bb30d49ebd860cee613427d76c61267f9831d4d621b3b2d53d8718494527a9"
+        },
+        {
+          "file": "colorfetti-trailer-poster.png",
+          "bytes": 719992,
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "file": "colorfetti-trailer.mp4",
+          "bytes": 8912471,
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "file": "favicon-16x16.png",
+          "bytes": 148,
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "file": "favicon-32x32.png",
+          "bytes": 174,
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "file": "favicon-48x48.png",
+          "bytes": 200,
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "file": "favicon-dark-16x16.png",
+          "bytes": 148,
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "file": "favicon-dark-32x32.png",
+          "bytes": 174,
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "file": "favicon-dark-48x48.png",
+          "bytes": 200,
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "file": "favicon-dark.ico",
+          "bytes": 15086,
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "file": "favicon-dark.svg",
+          "bytes": 601,
+          "sha256": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8"
+        },
+        {
+          "file": "favicon-light.svg",
+          "bytes": 601,
+          "sha256": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c"
+        },
+        {
+          "file": "favicon.ico",
+          "bytes": 15086,
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "file": "favicon.svg",
+          "bytes": 736,
+          "sha256": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a"
+        },
+        {
+          "file": "index.html",
+          "bytes": 4463,
+          "sha256": "e8d168b21fa11413ae8b39d7b3a25089f759c58960ef240683849ef51d39ca4d"
+        },
+        {
+          "file": "manifest.webmanifest",
+          "bytes": 794,
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "file": "maskable-icon-192x192.png",
+          "bytes": 716,
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "file": "maskable-icon-512x512.png",
+          "bytes": 3197,
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "file": "monochrome-192x192.png",
+          "bytes": 724,
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "file": "pwa-192x192.png",
+          "bytes": 746,
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "file": "pwa-512x512.png",
+          "bytes": 3862,
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "file": "safari-pinned-tab.svg",
+          "bytes": 601,
+          "sha256": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+        }
+      ],
+      "manifestSha256": "098819f959df22a73c13f8d45035c3318ce416575133eade01296e6e173a17a6"
+    },
+    "candidate": {
+      "port": 5372,
+      "files": [
+        {
+          "file": "apple-touch-icon-152x152.png",
+          "bytes": 546,
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "file": "apple-touch-icon-167x167.png",
+          "bytes": 617,
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "file": "apple-touch-icon-180x180.png",
+          "bytes": 677,
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "file": "assets/gif-5JTteeZP.js",
+          "bytes": 12798,
+          "sha256": "84db57731b5631345b86946a50c6ece29be212a20fc91596e5956e6b5b0f5f9d"
+        },
+        {
+          "file": "assets/image-import-client-BTFuae84.js",
+          "bytes": 5532,
+          "sha256": "03f19f0d2129b8284aebe8795e6329e061e74c2269f4b7413adbc056e4955cf6"
+        },
+        {
+          "file": "assets/image-import-worker-C2vfsgD_.js",
+          "bytes": 24820,
+          "sha256": "4434bdca6622afd6b987f6436e80cbb81409e1e570af38de7c62f3a93e231a97"
+        },
+        {
+          "file": "assets/index-CAPGUq4Y.css",
+          "bytes": 168002,
+          "sha256": "c0c1efc1f5a21081b48c2df6ca31657d29d4b332d058c2ddc7630522bdbc4873"
+        },
+        {
+          "file": "assets/index-w9cZElyM.js",
+          "bytes": 284500,
+          "sha256": "43c90701c033eaefb424302c72f980ae8a53ca8a4a513d00fe397f030a7f1d37"
+        },
+        {
+          "file": "assets/palette-ase-DT1xUM0x.js",
+          "bytes": 2497,
+          "sha256": "fc332a947f3759259d067800adcd5bc8365e6d17d7ac1d69323f37f2aa55e570"
+        },
+        {
+          "file": "assets/palette-cleanup-client-B2nRf1p_.js",
+          "bytes": 7348,
+          "sha256": "d2d3b460a2e359ffc3487cdef49b765f44324c11e6afb7cd0321b7112d1d6ec5"
+        },
+        {
+          "file": "assets/palette-cleanup-w6CsJwk9.js",
+          "bytes": 4235,
+          "sha256": "caf8a3698939dc8868fa8271a05ad7e311c2b2066d7df5d32a40ecb3ed042a8f"
+        },
+        {
+          "file": "assets/palette-cleanup-worker-CoDWie0Z.js",
+          "bytes": 15128,
+          "sha256": "5f7c2a5564ae6ab56542c0ea6b157246d003201e1aa66253dded173c5918b235"
+        },
+        {
+          "file": "assets/palette-generated-7FFXC783.js",
+          "bytes": 5832,
+          "sha256": "48b91fd9acb20b4097d69f2d16c81deea356d984b977f2cda960c2815ca6f4f2"
+        },
+        {
+          "file": "assets/palette-generated-client-CiZ2axjp.js",
+          "bytes": 3752,
+          "sha256": "bac4d578cfc98ecccc5b8e49289c97c8d20d674cff9654610411122fb831a38d"
+        },
+        {
+          "file": "assets/palette-generated-worker-C3uwOiRZ.js",
+          "bytes": 9777,
+          "sha256": "323499c4ba7cef3b1adc39525028efd054a6d69c98428c8af60b7b0434520533"
+        },
+        {
+          "file": "assets/palette-gif-worker-D4qe4WP7.js",
+          "bytes": 11213,
+          "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+        },
+        {
+          "file": "assets/palette-limit-ClpcmTCY.js",
+          "bytes": 4464,
+          "sha256": "d37c6af693249943d6ed7443936ef8a733f67551b55c2f9d504c033e09823ba5"
+        },
+        {
+          "file": "assets/palette-limit-worker-DWheP2PL.js",
+          "bytes": 9738,
+          "sha256": "b5bce0b896438c968947d98cc811458aad299a192a57db5258fbeef62303cf30"
+        },
+        {
+          "file": "assets/palette-lospec-BWni_gd_.js",
+          "bytes": 2331,
+          "sha256": "f2b03deb55b73b3e9cf74c765ef878dc9a13cb85c410186b931530d0a12bf815"
+        },
+        {
+          "file": "assets/palette-usage-B50z9ivJ.js",
+          "bytes": 934,
+          "sha256": "28b3284ee3481e3481f418c309ceca8a041202a9e0859cdce35f579e506687a4"
+        },
+        {
+          "file": "colorfetti-trailer-poster.png",
+          "bytes": 719992,
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "file": "favicon-16x16.png",
+          "bytes": 148,
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "file": "favicon-32x32.png",
+          "bytes": 174,
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "file": "favicon-48x48.png",
+          "bytes": 200,
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "file": "favicon-dark-16x16.png",
+          "bytes": 148,
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "file": "favicon-dark-32x32.png",
+          "bytes": 174,
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "file": "favicon-dark-48x48.png",
+          "bytes": 200,
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "file": "favicon-dark.ico",
+          "bytes": 15086,
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "file": "favicon-dark.svg",
+          "bytes": 601,
+          "sha256": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8"
+        },
+        {
+          "file": "favicon-light.svg",
+          "bytes": 601,
+          "sha256": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c"
+        },
+        {
+          "file": "favicon.ico",
+          "bytes": 15086,
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "file": "favicon.svg",
+          "bytes": 736,
+          "sha256": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a"
+        },
+        {
+          "file": "index.html",
+          "bytes": 4463,
+          "sha256": "a52727457cfc7f371cc16e5d22d33536d31e0de968ee4ef98dcc87dbda8e3e1a"
+        },
+        {
+          "file": "manifest.webmanifest",
+          "bytes": 778,
+          "sha256": "f1254f3bb5c141466790e4b1dc69e7c2a69fddabd040a5f86f8a44a8a5c6a636"
+        },
+        {
+          "file": "maskable-icon-192x192.png",
+          "bytes": 716,
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "file": "maskable-icon-512x512.png",
+          "bytes": 3197,
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "file": "monochrome-192x192.png",
+          "bytes": 724,
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "file": "pwa-192x192.png",
+          "bytes": 746,
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "file": "pwa-512x512.png",
+          "bytes": 3862,
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "file": "safari-pinned-tab.svg",
+          "bytes": 601,
+          "sha256": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+        }
+      ],
+      "manifestSha256": "8f725a45a64aa7422c26d7fdcf485b076005d9e4a2f0cc95df36339a2796f2c4"
+    }
+  },
+  "baselineQuantizeSha256": "6dacaca42d615b72a4ee511bb7ed32344aa7118ae946769e290d7a9463f8d0a3",
+  "candidateQuantizeSha256": "8a5d1f0f8c0a32382adb3b235243d6ea404bc1a50453e82902b3946be4edbcbb",
+  "desktopBrowser": "Microsoft Edge executable, headless Playwright, chromiumSandbox:true; own browser only",
+  "servers": [
+    {
+      "port": 5371,
+      "owner": "root"
+    },
+    {
+      "port": 5372,
+      "owner": "desktop",
+      "execSession": 93884
+    },
+    {
+      "port": 5375,
+      "owner": "desktop",
+      "execSession": 76427
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "kind": "animation128",
+  "records": [
+    "kenney-motion-128"
+  ],
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+  "viewport": {
+    "width": 1280,
+    "height": 900,
+    "dpr": 1
+  },
+  "wall": [
+    {
+      "caption": "128×128  ·  14 colors ",
+      "width": 128,
+      "height": 128,
+      "paints": 2
+    }
+  ],
+  "rows": [
+    {
+      "name": "import to sampled wall first complete paint",
+      "profile": null,
+      "cpuMs": {
+        "TaskDuration": 22.084,
+        "ScriptDuration": 4.68,
+        "LayoutDuration": 0.8019999999999999,
+        "RecalcStyleDuration": 3.124
+      },
+      "heapDelta": 525276,
+      "elapsedMs": 79.30000000447035,
+      "longtasks": [],
+      "maxTaskMs": 0,
+      "rafP95Ms": 16.700000000000003,
+      "rafMaxMs": 16.700000000000003,
+      "writes": 2
+    },
+    {
+      "name": "current exact output count publication",
+      "profile": null,
+      "cpuMs": {
+        "TaskDuration": 1.4869999999999988,
+        "ScriptDuration": 0.3420000000000003,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapDelta": 46728,
+      "elapsedMs": 31.30000000447035,
+      "longtasks": [],
+      "maxTaskMs": 0,
+      "rafP95Ms": 16.599999999999994,
+      "rafMaxMs": 16.599999999999994,
+      "writes": 3
+    },
+    {
+      "name": "full source nearest export",
+      "profile": null,
+      "cpuMs": {
+        "TaskDuration": 56.307,
+        "ScriptDuration": 3.299999999999999,
+        "LayoutDuration": 1.1119999999999999,
+        "RecalcStyleDuration": 0.45299999999999985
+      },
+      "heapDelta": 735892,
+      "elapsedMs": 216.70000000298023,
+      "longtasks": [],
+      "maxTaskMs": 0,
+      "rafP95Ms": 16.700000000000045,
+      "rafMaxMs": 16.700000000000045,
+      "writes": 5
+    },
+    {
+      "name": "rapid settings cancellation through final RGB cap8 Cleanup dither4 paint",
+      "profile": null,
+      "cpuMs": {
+        "TaskDuration": 74.319,
+        "ScriptDuration": 14.651,
+        "LayoutDuration": 3.0880000000000005,
+        "RecalcStyleDuration": 9.413
+      },
+      "heapDelta": 662088,
+      "elapsedMs": 302.6000000014901,
+      "longtasks": [],
+      "maxTaskMs": 0,
+      "rafP95Ms": 16.700000000000045,
+      "rafMaxMs": 16.700000000000045,
+      "writes": 13
+    },
+    {
+      "name": "final enhanced exact count publication",
+      "profile": null,
+      "cpuMs": {
+        "TaskDuration": 1.1730000000000074,
+        "ScriptDuration": 0.10900000000000146,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0.057000000000001494
+      },
+      "heapDelta": 10328,
+      "elapsedMs": 32.600000001490116,
+      "longtasks": [],
+      "maxTaskMs": 0,
+      "rafP95Ms": 16.700000000000045,
+      "rafMaxMs": 16.700000000000045,
+      "writes": 13
+    },
+    {
+      "name": "full source enhanced export",
+      "profile": null,
+      "cpuMs": {
+        "TaskDuration": 31.760999999999985,
+        "ScriptDuration": 2.044999999999998,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0.874999999999999
+      },
+      "heapDelta": 1587308,
+      "elapsedMs": 164.59999999403954,
+      "longtasks": [],
+      "maxTaskMs": 0,
+      "rafP95Ms": 16.800000000000068,
+      "rafMaxMs": 16.800000000000068,
+      "writes": 15
+    },
+    {
+      "name": "Preview zoom Original fit close and wall return",
+      "profile": null,
+      "cpuMs": {
+        "TaskDuration": 73.96,
+        "ScriptDuration": 11.556000000000001,
+        "LayoutDuration": 0.8769999999999993,
+        "RecalcStyleDuration": 11.297999999999998
+      },
+      "heapDelta": 1525336,
+      "elapsedMs": 1034.6000000014901,
+      "longtasks": [],
+      "maxTaskMs": 0,
+      "rafP95Ms": 16.800000000000182,
+      "rafMaxMs": 16.90000000000009,
+      "writes": 28
+    },
+    {
+      "name": "converted playback over two source-loop durations",
+      "profile": null,
+      "cpuMs": {
+        "TaskDuration": 188.39399999999995,
+        "ScriptDuration": 42.812000000000005,
+        "LayoutDuration": 0.21899999999999958,
+        "RecalcStyleDuration": 0.844000000000001
+      },
+      "heapDelta": -1817812,
+      "elapsedMs": 6056.89999999851,
+      "longtasks": [],
+      "maxTaskMs": 0,
+      "rafP95Ms": 16.90000000000009,
+      "rafMaxMs": 17.100000000000364,
+      "writes": 92
+    },
+    {
+      "name": "settled wall idle",
+      "profile": null,
+      "cpuMs": {
+        "TaskDuration": 18.508000000000024,
+        "ScriptDuration": 4.6819999999999915,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapDelta": 94284,
+      "elapsedMs": 638.2000000029802,
+      "longtasks": [],
+      "maxTaskMs": 0,
+      "rafP95Ms": 16.899999999999636,
+      "rafMaxMs": 16.899999999999636,
+      "writes": 99
+    }
+  ],
+  "exports": [
+    {
+      "label": "nearest",
+      "id": "kenney-motion-128",
+      "width": 128,
+      "height": 128,
+      "frames": 32,
+      "delay": [
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120
+      ],
+      "loop": 0,
+      "used": 14,
+      "rgbMismatch": 0,
+      "alphaMismatch": 0,
+      "oracle": "independent scalar Oklab nearest plus Sharp decode",
+      "sha256": "270f4db2f8da8e0f2c7da29fb6a526046a20c602a7df5268bb6e33b211ddcb0f"
+    },
+    {
+      "label": "enhanced",
+      "id": "kenney-motion-128",
+      "width": 128,
+      "height": 128,
+      "frames": 32,
+      "delay": [
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120
+      ],
+      "loop": 0,
+      "used": 8,
+      "rgbMismatch": 0,
+      "alphaMismatch": 0,
+      "oracle": "committed production-core quantize/subset/Cleanup outside browser plus independent membership/alpha decode",
+      "sha256": "cc6ecac2090634877c7054161a9287cfa944e587692cbfd624e4df57d6c497a2"
+    }
+  ],
+  "playback": [
+    {
+      "name": "kenney-motion-128.gif 128×128  ·  8 colors ",
+      "paints": 82,
+      "rect": {
+        "x": 255.5,
+        "y": 8,
+        "width": 769,
+        "height": 804
+      },
+      "inViewport": true,
+      "observedPaintDelta": 64
+    }
+  ],
+  "playbackVisibility": [
+    {
+      "intersecting": true,
+      "ratio": 1
+    }
+  ],
+  "errors": [],
+  "notes": [
+    "Wall readiness observes putImageData on every displayed canvas, not full-source color-count publication. Sampled sheets correctly need not show a count.",
+    "CDP CPU is renderer main thread; workers excluded. Elapsed includes awaited UI and observation windows, not pure conversion latency. Source transport is prestaged.",
+    "Native/download PNG/GIF/ZIP bytes are decoded independently; alpha-zero hidden RGB ignored. Animation source decoded GIF, including fixture palette encoding, defines the expected input.",
+    "Enhanced pipeline uses committed production modules, so independent algorithm proof is limited to nearest; enhanced equality catches integration, stale settings, sampling and export discrepancies."
+  ]
+}

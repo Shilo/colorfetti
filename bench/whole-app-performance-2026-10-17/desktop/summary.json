@@ -1,0 +1,686 @@
+{
+  "date": "2026-10-18T05:12:32.347Z",
+  "kernel": [
+    {
+      "case": "{\"id\":\"sheet1024\"}",
+      "baseline": {
+        "median": 10.5,
+        "min": 10.399999998509884,
+        "max": 11.5
+      },
+      "candidate": {
+        "median": 6.799999997019768,
+        "min": 6.399999998509884,
+        "max": 7.399999998509884
+      },
+      "percentChange": -35.238095266478396
+    },
+    {
+      "case": "{\"id\":\"sheet2048\"}",
+      "baseline": {
+        "median": 40.29999999701977,
+        "min": 39.69999999552965,
+        "max": 41.70000000298023
+      },
+      "candidate": {
+        "median": 25.299999997019768,
+        "min": 25.100000001490116,
+        "max": 26.200000002980232
+      },
+      "percentChange": -37.2208436752091
+    },
+    {
+      "case": "{\"id\":\"sheet1024\",\"w\":257,\"h\":199}",
+      "baseline": {
+        "median": 0.6999999955296516,
+        "min": 0.6000000014901161,
+        "max": 0.6999999955296516
+      },
+      "candidate": {
+        "median": 0.7000000029802322,
+        "min": 0.5999999940395355,
+        "max": 0.7999999970197678
+      },
+      "percentChange": 0.0000010643686598754698
+    },
+    {
+      "case": "{\"id\":\"sheet1024\",\"w\":1024,\"h\":199}",
+      "baseline": {
+        "median": 2,
+        "min": 2,
+        "max": 2.2000000029802322
+      },
+      "candidate": {
+        "median": 2.100000001490116,
+        "min": 2.0999999940395355,
+        "max": 2.1999999955296516
+      },
+      "percentChange": 5.000000074505806
+    },
+    {
+      "case": "{\"id\":\"sheet1024\",\"w\":257,\"h\":1024}",
+      "baseline": {
+        "median": 3.1999999955296516,
+        "min": 3.100000001490116,
+        "max": 3.5
+      },
+      "candidate": {
+        "median": 3.100000001490116,
+        "min": 3,
+        "max": 3.100000001490116
+      },
+      "percentChange": -3.1249998181010596
+    },
+    {
+      "case": "{\"id\":\"entropy256\",\"palette\":\"large\"}",
+      "baseline": {
+        "median": 33.20000000298023,
+        "min": 33.100000001490116,
+        "max": 33.600000001490116
+      },
+      "candidate": {
+        "median": 32.600000001490116,
+        "min": 32.19999999552965,
+        "max": 33.099999994039536
+      },
+      "percentChange": -1.8072289199887237
+    },
+    {
+      "case": "{\"id\":\"entropy256\",\"palette\":\"large\",\"metric\":\"rgb\"}",
+      "baseline": {
+        "median": 36.599999994039536,
+        "min": 34,
+        "max": 37.400000005960464
+      },
+      "candidate": {
+        "median": 33.70000000298023,
+        "min": 32.5,
+        "max": 37.5
+      },
+      "percentChange": -7.923497244621802
+    },
+    {
+      "case": "{\"id\":\"glow64\",\"alphaMode\":\"keep\"}",
+      "baseline": {
+        "median": 0.10000000149011612,
+        "min": 0,
+        "max": 0.20000000298023224
+      },
+      "candidate": {
+        "median": 0.10000000149011612,
+        "min": 0.09999999403953552,
+        "max": 0.10000000149011612
+      },
+      "percentChange": 0
+    },
+    {
+      "case": "{\"id\":\"transparent32\"}",
+      "baseline": {
+        "median": 0,
+        "min": 0,
+        "max": 0.10000000149011612
+      },
+      "candidate": {
+        "median": 0.09999999403953552,
+        "min": 0,
+        "max": 0.10000000149011612
+      },
+      "percentChange": null
+    },
+    {
+      "case": "{\"id\":\"two-color32\"}",
+      "baseline": {
+        "median": 0,
+        "min": 0,
+        "max": 0.10000000149011612
+      },
+      "candidate": {
+        "median": 0,
+        "min": 0,
+        "max": 0.10000000149011612
+      },
+      "percentChange": null
+    },
+    {
+      "case": "{\"id\":\"rgb-boundary-4096\"}",
+      "baseline": {
+        "median": 1.4000000059604645,
+        "min": 1.3999999985098839,
+        "max": 1.6999999955296516
+      },
+      "candidate": {
+        "median": 1.3999999985098839,
+        "min": 0.9000000059604645,
+        "max": 1.3999999985098839
+      },
+      "percentChange": -5.321843299377349e-7
+    },
+    {
+      "case": "{\"id\":\"rgb-boundary-4097\"}",
+      "baseline": {
+        "median": 1.3999999985098839,
+        "min": 1.2999999970197678,
+        "max": 1.7000000029802322
+      },
+      "candidate": {
+        "median": 1.3000000044703484,
+        "min": 1.2999999970197678,
+        "max": 1.8999999985098839
+      },
+      "percentChange": -7.14285672471231
+    },
+    {
+      "case": "{\"id\":\"two-color32\",\"dither\":\"4x4\"}",
+      "baseline": {
+        "median": 0.09999999403953552,
+        "min": 0,
+        "max": 0.10000000149011612
+      },
+      "candidate": {
+        "median": 0.10000000149011612,
+        "min": 0,
+        "max": 0.20000000298023224
+      },
+      "percentChange": 0.000007450581041013038
+    },
+    {
+      "case": "{\"id\":\"two-color32\",\"dither\":\"4x4\",\"ditherStrength\":0}",
+      "baseline": {
+        "median": 0.10000000149011612,
+        "min": 0,
+        "max": 0.10000000149011612
+      },
+      "candidate": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "percentChange": -100
+    }
+  ],
+  "exported": {
+    "cpu": [
+      {
+        "case": "sheet1024",
+        "baseline": {
+          "median": 21.058,
+          "min": 19.759000000000004,
+          "max": 43.05
+        },
+        "candidate": {
+          "median": 17.711000000000002,
+          "min": 16.345000000000006,
+          "max": 24.253000000000004
+        },
+        "percentChange": -15.894196979770147
+      },
+      {
+        "case": "sheet2048",
+        "baseline": {
+          "median": 69.40899999999998,
+          "min": 61.10399999999999,
+          "max": 77.86300000000001
+        },
+        "candidate": {
+          "median": 56.711,
+          "min": 47.827999999999996,
+          "max": 66.253
+        },
+        "percentChange": -18.294457491103433
+      },
+      {
+        "case": "tiny",
+        "baseline": {
+          "median": 8.138,
+          "min": 6.374000000000001,
+          "max": 8.694999999999999
+        },
+        "candidate": {
+          "median": 9.271999999999995,
+          "min": 6.953999999999998,
+          "max": 10.937000000000003
+        },
+        "percentChange": 13.934627672646771
+      },
+      {
+        "case": "animation256",
+        "baseline": {
+          "median": 67.94600000000001,
+          "min": 59.195000000000014,
+          "max": 78.754
+        },
+        "candidate": {
+          "median": 52.26199999999999,
+          "min": 44.378,
+          "max": 74.19299999999998
+        },
+        "percentChange": -23.08303652900835
+      },
+      {
+        "case": "glow-keep",
+        "baseline": {
+          "median": 7.0900000000000025,
+          "min": 6.381000000000001,
+          "max": 9.180999999999997
+        },
+        "candidate": {
+          "median": 6.605000000000003,
+          "min": 5.8450000000000015,
+          "max": 8.361
+        },
+        "percentChange": -6.840620592383628
+      },
+      {
+        "case": "entropy256-256-rgb",
+        "baseline": {
+          "median": 43.73600000000001,
+          "min": 41.581,
+          "max": 45.41999999999999
+        },
+        "candidate": {
+          "median": 43.263999999999996,
+          "min": 40.196999999999996,
+          "max": 58.41099999999999
+        },
+        "percentChange": -1.0792024876532302
+      }
+    ],
+    "elapsed": [
+      {
+        "case": "sheet1024",
+        "baseline": {
+          "median": 62.100000001490116,
+          "min": 55.5,
+          "max": 89.80000000447035
+        },
+        "candidate": {
+          "median": 53.79999999701977,
+          "min": 48.899999998509884,
+          "max": 68.10000000149012
+        },
+        "percentChange": -13.365539459373888
+      },
+      {
+        "case": "sheet2048",
+        "baseline": {
+          "median": 176.5,
+          "min": 161.5,
+          "max": 191.79999999701977
+        },
+        "candidate": {
+          "median": 173.79999999701977,
+          "min": 152.89999999850988,
+          "max": 189.40000000596046
+        },
+        "percentChange": -1.5297450441814298
+      },
+      {
+        "case": "tiny",
+        "baseline": {
+          "median": 31.399999998509884,
+          "min": 29.399999998509884,
+          "max": 43.600000001490116
+        },
+        "candidate": {
+          "median": 37.100000001490116,
+          "min": 27.299999997019768,
+          "max": 46.19999999552965
+        },
+        "percentChange": 18.152866252390854
+      },
+      {
+        "case": "animation256",
+        "baseline": {
+          "median": 170.89999999850988,
+          "min": 152.10000000149012,
+          "max": 185.29999999701977
+        },
+        "candidate": {
+          "median": 161.29999999701977,
+          "min": 140.89999999850988,
+          "max": 223.20000000298023
+        },
+        "percentChange": -5.617320071137399
+      },
+      {
+        "case": "glow-keep",
+        "baseline": {
+          "median": 38.20000000298023,
+          "min": 27.600000001490116,
+          "max": 40.399999998509884
+        },
+        "candidate": {
+          "median": 40.400000005960464,
+          "min": 31.600000001490116,
+          "max": 50.19999999552965
+        },
+        "percentChange": 5.759162311017274
+      },
+      {
+        "case": "entropy256-256-rgb",
+        "baseline": {
+          "median": 70.39999999850988,
+          "min": 64.19999999552965,
+          "max": 78.19999999552965
+        },
+        "candidate": {
+          "median": 66.5,
+          "min": 63,
+          "max": 89.59999999403954
+        },
+        "percentChange": -5.539772725273339
+      }
+    ]
+  },
+  "profiles": [
+    {
+      "stage": 0,
+      "selfSamples": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 125.24
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 27.475
+        },
+        {
+          "frame": "Wu http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 19.115
+        },
+        {
+          "frame": "Fa http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 7.69
+        },
+        {
+          "frame": "ul http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 6.174
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 3.126
+        },
+        {
+          "frame": "za http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 2.088
+        },
+        {
+          "frame": "y http://127.0.0.1:5371/assets/image-import-client-DMvOPcbg.js:1",
+          "ms": 2.03
+        },
+        {
+          "frame": "get clientWidth :-1",
+          "ms": 1.629
+        },
+        {
+          "frame": " http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 1.609
+        },
+        {
+          "frame": " :0",
+          "ms": 1.56
+        },
+        {
+          "frame": "Hu http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 1.56
+        },
+        {
+          "frame": "dl http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 1.537
+        },
+        {
+          "frame": " :1",
+          "ms": 1.533
+        },
+        {
+          "frame": "n http://127.0.0.1:5371/assets/index-8I8UNd-r.js:5",
+          "ms": 1.505
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "selfSamples": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 267.435
+        },
+        {
+          "frame": "Fa http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 59.223
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 15.039
+        },
+        {
+          "frame": "Ys http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 8.779
+        },
+        {
+          "frame": " :-1",
+          "ms": 4.641
+        },
+        {
+          "frame": "As http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 3.662
+        },
+        {
+          "frame": "MessageChannel :-1",
+          "ms": 1.854
+        },
+        {
+          "frame": "computeBox :2986",
+          "ms": 1.574
+        },
+        {
+          "frame": "isElementHiddenForAria :3367",
+          "ms": 1.561
+        },
+        {
+          "frame": "La http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 1.559
+        },
+        {
+          "frame": "ac http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 1.557
+        },
+        {
+          "frame": "close :-1",
+          "ms": 1.543
+        },
+        {
+          "frame": "Blob :-1",
+          "ms": 1.542
+        },
+        {
+          "frame": "query :5300",
+          "ms": 1.535
+        },
+        {
+          "frame": "Bn http://127.0.0.1:5371/assets/index-8I8UNd-r.js:5",
+          "ms": 1.533
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "selfSamples": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 283.117
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 58.505
+        },
+        {
+          "frame": "Ca http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 50.257
+        },
+        {
+          "frame": "Fa http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 15.603
+        },
+        {
+          "frame": "za http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 8.26
+        },
+        {
+          "frame": "t.onmessage http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 6.134
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 4.661
+        },
+        {
+          "frame": "s http://127.0.0.1:5371/assets/palette-cleanup-client-Brh0uqND.js:1",
+          "ms": 4.121
+        },
+        {
+          "frame": "La http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 3.149
+        },
+        {
+          "frame": " :-1",
+          "ms": 3.145
+        },
+        {
+          "frame": " http://127.0.0.1:5371/assets/index-8I8UNd-r.js:5",
+          "ms": 3.142
+        },
+        {
+          "frame": "Pa http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 3.106
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 3.087
+        },
+        {
+          "frame": "now :-1",
+          "ms": 3.071
+        },
+        {
+          "frame": " http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 2.605
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "selfSamples": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 178.098
+        },
+        {
+          "frame": "Ca http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 35.292
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 20.491
+        },
+        {
+          "frame": "Ys http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 9.192
+        },
+        {
+          "frame": "now :-1",
+          "ms": 4.598
+        },
+        {
+          "frame": "La http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 4.597
+        },
+        {
+          "frame": "As http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 4.366
+        },
+        {
+          "frame": "getExplicitAriaRole :3335",
+          "ms": 1.976
+        },
+        {
+          "frame": "get clientWidth :-1",
+          "ms": 1.587
+        },
+        {
+          "frame": "Js http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 1.539
+        },
+        {
+          "frame": "Zs http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 0.449
+        }
+      ]
+    },
+    {
+      "stage": 6,
+      "selfSamples": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 899.371
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 50.684
+        },
+        {
+          "frame": "Ca http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 32.711
+        },
+        {
+          "frame": "za http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 7.905
+        },
+        {
+          "frame": "go http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 6.361
+        },
+        {
+          "frame": "putImageData :-1",
+          "ms": 3.435
+        },
+        {
+          "frame": "showModal :-1",
+          "ms": 3.29
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 3.22
+        },
+        {
+          "frame": " http://127.0.0.1:5371/assets/index-8I8UNd-r.js:5",
+          "ms": 3.099
+        },
+        {
+          "frame": "isElementStyleVisibilityVisible :2962",
+          "ms": 1.72
+        },
+        {
+          "frame": "checkVisibility :-1",
+          "ms": 1.692
+        },
+        {
+          "frame": "now :-1",
+          "ms": 1.649
+        },
+        {
+          "frame": "isElementHiddenForAria :3367",
+          "ms": 1.617
+        },
+        {
+          "frame": "reset http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 1.604
+        },
+        {
+          "frame": "La http://127.0.0.1:5371/assets/index-8I8UNd-r.js:2",
+          "ms": 1.594
+        }
+      ]
+    }
+  ]
+}

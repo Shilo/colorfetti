@@ -1,5 +1,28 @@
 # Performance
 
+## Fresh whole-app audit (October 17, 2026)
+
+The fresh audit retained all production behavior and shipped no optimization.
+A source-sized nearest-coordinate shortcut improved desktop warmed conversion
+by35–37% and Save renderer CPU by16–18%, but native warmed sheet gains of4–7%
+missed its predeclared10% gate. Tiny native Save CPU increased about4ms/5.8%,
+worse in four of five pairs. The shortcut was rejected and source/tests restored;
+the patch remains research. All280 paired files preserved exact encoded bytes.
+These favorable desktop figures describe rejected code, not current app gains.
+
+Fresh actual Codex Browser, auxiliary sandboxed Edge and USB Pixel8Pro evidence
+covers practical sprites/sheets/animations, current metadata, Preview, exports,
+worker failure/retry/fallback, editor and teardown. Cold native2048 Stencil/Icon
+preparation still produced131/471ms Long Tasks; repeated warm switches did not.
+Brightness reanalysis and256-color editor aggregate work can also exceed50ms.
+Some rAF gaps exceeded50ms without a Long Task above50ms. Quiet still windows
+showed no observed app rAF/timer/canvas work, not a universal memory/frame bound.
+Physical landscape, Safari/iOS/macOS and some native gesture/transport paths remain
+unverified. See [the audit and explicit coverage limits](research/2026-10-17-whole-app-performance-audit.md)
+and `bench/whole-app-performance-2026-10-17/` for all trials, rejected patch,
+independent review and reproducible commands. Earlier rejected histogram/dither
+studies remain closed; this audit does not reopen them.
+
 ## Preview zoom and pan (October 16, 2026)
 
 Preview keeps the Tile's layout at Fit and transforms its presentation immediately.

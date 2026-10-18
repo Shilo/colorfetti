@@ -1,0 +1,28 @@
+- figure "Preview glow64.png":
+  - button "Preview glow64.png"
+  - button "Save glow64.png":
+  - button "Copy glow64.png":
+  - button "Reuse colors from glow64.png":
+  - button "Preview glow64.png":
+  - button "Remove glow64.png":
+  - button "Preview glow64.png":
+    - generic: glow64.png
+    - generic: 64×64
+    - generic: ·
+    - generic: 1 color
+- group "Colors and palette":
+  - 'button "Selected palette: Resurrect 64, 64 colors"'
+  - button "Palette":
+- group "Conversion and style":
+  - button "Resurrect 64 conversion" [pressed]:
+    - generic: Resurrect 64
+  - button "Palette settings":
+  - generic: Showing images converted with Resurrect 64.
+- navigation "File and app actions":
+  - group "Add and save images":
+    - button "Save image":
+    - button "Add images":
+    - button "Remove all images":
+  - button "More":
+- status:
+  - generic: Downloading glow64-palette.png…

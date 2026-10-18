@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-18T05:13:55.873Z",
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "rows": [
+    {
+      "name": "restored empty demo light",
+      "elapsedMs": 38.19999999552965,
+      "cpuMs": 9.499,
+      "scriptMs": 0.307,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "restored empty demo dark",
+      "elapsedMs": 40.399999998509884,
+      "cpuMs": 10.379,
+      "scriptMs": 0.264,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "distinct sprite import 1",
+      "elapsedMs": 38,
+      "cpuMs": 14.509999999999998,
+      "scriptMs": 3.129,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "distinct sprite import 2",
+      "elapsedMs": 68.80000000447035,
+      "cpuMs": 22.630999999999997,
+      "scriptMs": 5.6690000000000005,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "distinct sprite import 4",
+      "elapsedMs": 63.30000000447035,
+      "cpuMs": 24.986,
+      "scriptMs": 7.465,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "distinct sprite import 8",
+      "elapsedMs": 61.70000000298023,
+      "cpuMs": 25.471,
+      "scriptMs": 7.023,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit sprite import",
+      "elapsedMs": 68.79999999701977,
+      "cpuMs": 15.058,
+      "scriptMs": 3.762,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit cutout control/current paint",
+      "elapsedMs": 118.90000000596046,
+      "cpuMs": 27.785000000000004,
+      "scriptMs": 10.647,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit solid control/current paint",
+      "elapsedMs": 142.5,
+      "cpuMs": 25.962,
+      "scriptMs": 6.433999999999998,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit lines control/current paint",
+      "elapsedMs": 138.89999999850988,
+      "cpuMs": 23.348999999999993,
+      "scriptMs": 5.918000000000003,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit stencil control/current paint",
+      "elapsedMs": 129.69999999552965,
+      "cpuMs": 22.99900000000002,
+      "scriptMs": 5.452999999999999,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit icon control/current paint",
+      "elapsedMs": 150,
+      "cpuMs": 40.111000000000004,
+      "scriptMs": 8.784999999999995,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit checker control/current paint",
+      "elapsedMs": 129,
+      "cpuMs": 22.243000000000013,
+      "scriptMs": 5.858999999999996,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit bayer control/current paint",
+      "elapsedMs": 141.19999999552965,
+      "cpuMs": 28.307000000000027,
+      "scriptMs": 5.954000000000001,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit hatch control/current paint",
+      "elapsedMs": 135.89999999850988,
+      "cpuMs": 25.565999999999978,
+      "scriptMs": 5.536,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit atkinson control/current paint",
+      "elapsedMs": 131,
+      "cpuMs": 35.916000000000004,
+      "scriptMs": 7.762000000000005,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit noise control/current paint",
+      "elapsedMs": 136.19999999552965,
+      "cpuMs": 35.328000000000024,
+      "scriptMs": 7.516999999999996,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "1bit silhouette control/current paint",
+      "elapsedMs": 135.90000000596046,
+      "cpuMs": 35.24499999999997,
+      "scriptMs": 7.794999999999996,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "diagnostic import transparent32",
+      "elapsedMs": 60,
+      "cpuMs": 13.999,
+      "scriptMs": 2.871,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "diagnostic import two-color32",
+      "elapsedMs": 54,
+      "cpuMs": 15.137999999999998,
+      "scriptMs": 3.317,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "diagnostic import glow64",
+      "elapsedMs": 40.399999998509884,
+      "cpuMs": 16.348,
+      "scriptMs": 3.8440000000000003,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "diagnostic import entropy256",
+      "elapsedMs": 97.09999999403954,
+      "cpuMs": 50.568999999999996,
+      "scriptMs": 3.376,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "diagnostic import rgb-boundary-4096",
+      "elapsedMs": 68.20000000298023,
+      "cpuMs": 27.069,
+      "scriptMs": 4.882,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "diagnostic import rgb-boundary-4097",
+      "elapsedMs": 82.79999999701977,
+      "cpuMs": 42.162,
+      "scriptMs": 3.8060000000000005,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "diagnostic import single-frame",
+      "elapsedMs": 70.69999999552965,
+      "cpuMs": 19.375,
+      "scriptMs": 3.274,
+      "longtasks": [],
+      "maxTaskMs": 0
+    },
+    {
+      "name": "editor256 import page next back close",
+      "elapsedMs": 748.7000000029802,
+      "cpuMs": 220.94799999999998,
+      "scriptMs": 36.556,
+      "longtasks": [
+        {
+          "start": 677.6999999955297,
+          "duration": 61
+        }
+      ],
+      "maxTaskMs": 61
+    }
+  ],
+  "errors": [],
+  "notes": [
+    "auxiliary sandboxed Edge, not Codex Browser; instrumentation rAF included in stage CPU, so these are not evidence of production idle work",
+    "native PNG decoded Sharp and compared with exact production-core mask oracle for all11 styles; independent algorithm suites remain separate",
+    "test origin seeded before startup; real app controls used for workflow after startup"
+  ]
+}

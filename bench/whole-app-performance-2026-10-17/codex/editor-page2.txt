@@ -1,0 +1,149 @@
+- figure "Preview glow64.png":
+  - button "Preview glow64.png"
+  - button "Save glow64.png":
+  - button "Copy glow64.png":
+  - button "Reuse colors from glow64.png":
+  - button "Preview glow64.png":
+  - button "Remove glow64.png":
+  - button "Preview glow64.png":
+    - generic: glow64.png
+    - generic: 64×64
+    - generic: ·
+    - generic: 1 color
+- group "Color system":
+  - button "Palette" [pressed]
+  - button "1-bit"
+- generic: Resurrect 64
+- button "Import palette":
+- button "Edit palette":
+- group "Full palettes":
+  - button "Auto":
+    - generic: Auto
+  - button "Resurrect 64" [pressed]:
+    - generic: Resurrect 64
+  - button "ENDESGA 32":
+    - generic: ENDESGA 32
+  - button "Mulfok 32":
+    - generic: Mulfok 32
+  - button "PICO-8":
+    - generic: PICO-8
+  - button "DawnBringer 16":
+    - generic: DawnBringer 16
+  - button "ENDESGA 8":
+    - generic: ENDESGA 8
+  - button "Grayscale 8":
+    - generic: Grayscale 8
+  - button "Ice Cream GB":
+    - generic: Ice Cream GB
+  - button "Game Boy Green":
+    - generic: Game Boy Green
+  - button "Black & White":
+    - generic: Black & White
+  - button "Glow":
+    - generic: Glow
+  - button "Paper":
+    - generic: Paper
+  - button "Audit owned palette":
+    - generic: Audit owned palette
+- text: ›
+- group "Colors and palette":
+  - 'button "Selected palette: Resurrect 64, 64 colors"'
+  - button "Palette" [expanded]:
+- group "Conversion and style":
+  - button "Resurrect 64 conversion" [pressed]:
+    - generic: Resurrect 64
+  - button "Palette settings":
+  - generic: Showing images converted with Resurrect 64.
+- navigation "File and app actions":
+  - group "Add and save images":
+    - button "Save image":
+    - button "Add images":
+    - button "Remove all images":
+  - button "More":
+- dialog "Import palette":
+  - textbox "Name":
+    - /placeholder: Palette name
+    - text: New palette
+  - button "HEX backup":
+  - button "Close palette editor":
+  - strong: 256 colors
+  - generic "Palette colors":
+    - 'button "Select color 65 #4040c0"'
+    - 'button "Select color 66 #418957"'
+    - 'button "Select color 67 #42d2ee"'
+    - 'button "Select color 68 #431b85"'
+    - 'button "Select color 69 #44641c"'
+    - 'button "Select color 70 #45adb3"'
+    - 'button "Select color 71 #46f64a"'
+    - 'button "Select color 72 #473fe1"'
+    - 'button "Select color 73 #488878"'
+    - 'button "Select color 74 #49d10f"'
+    - 'button "Select color 75 #4a1aa6"'
+    - 'button "Select color 76 #4b633d"'
+    - 'button "Select color 77 #4cacd4"'
+    - 'button "Select color 78 #4df56b"'
+    - 'button "Select color 79 #4e3e02"'
+    - 'button "Select color 80 #4f8799"'
+    - 'button "Select color 81 #50d030"'
+    - 'button "Select color 82 #5119c7"'
+    - 'button "Select color 83 #52625e"'
+    - 'button "Select color 84 #53abf5"'
+    - 'button "Select color 85 #54f48c"'
+    - 'button "Select color 86 #553d23"'
+    - 'button "Select color 87 #5686ba"'
+    - 'button "Select color 88 #57cf51"'
+    - 'button "Select color 89 #5818e8"'
+    - 'button "Select color 90 #59617f"'
+    - 'button "Select color 91 #5aaa16"'
+    - 'button "Select color 92 #5bf3ad"'
+    - 'button "Select color 93 #5c3c44"'
+    - 'button "Select color 94 #5d85db"'
+    - 'button "Select color 95 #5ece72"'
+    - 'button "Select color 96 #5f1709"'
+    - 'button "Select color 97 #6060a0"'
+    - 'button "Select color 98 #61a937"'
+    - 'button "Select color 99 #62f2ce"'
+    - 'button "Select color 100 #633b65"'
+    - 'button "Select color 101 #6484fc"'
+    - 'button "Select color 102 #65cd93"'
+    - 'button "Select color 103 #66162a"'
+    - 'button "Select color 104 #675fc1"'
+    - 'button "Select color 105 #68a858"'
+    - 'button "Select color 106 #69f1ef"'
+    - 'button "Select color 107 #6a3a86"'
+    - 'button "Select color 108 #6b831d"'
+    - 'button "Select color 109 #6cccb4"'
+    - 'button "Select color 110 #6d154b"'
+    - 'button "Select color 111 #6e5ee2"'
+    - 'button "Select color 112 #6fa779"'
+    - 'button "Select color 113 #70f010"'
+    - 'button "Select color 114 #7139a7"'
+    - 'button "Select color 115 #72823e"'
+    - 'button "Select color 116 #73cbd5"'
+    - 'button "Select color 117 #74146c"'
+    - 'button "Select color 118 #755d03"'
+    - 'button "Select color 119 #76a69a"'
+    - 'button "Select color 120 #77ef31"'
+    - 'button "Select color 121 #7838c8"'
+    - 'button "Select color 122 #79815f"'
+    - 'button "Select color 123 #7acaf6"'
+    - 'button "Select color 124 #7b138d"'
+    - 'button "Select color 125 #7c5c24"'
+    - 'button "Select color 126 #7da5bb"'
+    - 'button "Select color 127 #7eee52"'
+    - 'button "Select color 128 #7f37e9"'
+  - navigation "Color pages":
+    - button "Previous"
+    - generic: 2 / 4
+    - button "Next"
+  - group "Import method":
+    - button "Image or file"
+    - button "Paste colors" [pressed]
+    - button "Add colors"
+  - textbox "Colors or Lospec link":
+    - /placeholder: "#000000, #ffffff, #ff004d\nor https://lospec.com/palette-list/slso8"
+    - text: "#000000 #014997 #02922e #03dbc5 #04245c #056df3 #06b68a #07ff21 #0848b8 #09914f #0adae6 #0b237d #0c6c14 #0db5ab #0efe42 #0f47d9 #109070 #11d907 #12229e #136b35 #14b4cc #15fd63 #1646fa #178f91 #18d828 #1921bf #1a6a56 #1bb3ed #1cfc84 #1d451b #1e8eb2 #1fd749 #2020e0 #216977 #22b20e #23fba5 #24443c #258dd3 #26d66a #271f01 #286898 #29b12f #2afac6 #2b435d #2c8cf4 #2dd58b #2e1e22 #2f67b9 #30b050 #31f9e7 #32427e #338b15 #34d4ac #351d43 #3666da #37af71 #38f808 #39419f #3a8a36 #3bd3cd #3c1c64 #3d65fb #3eae92 #3ff729 #4040c0 #418957 #42d2ee #431b85 #44641c #45adb3 #46f64a #473fe1 #488878 #49d10f #4a1aa6 #4b633d #4cacd4 #4df56b #4e3e02 #4f8799 #50d030 #5119c7 #52625e #53abf5 #54f48c #553d23 #5686ba #57cf51 #5818e8 #59617f #5aaa16 #5bf3ad #5c3c44 #5d85db #5ece72 #5f1709 #6060a0 #61a937 #62f2ce #633b65 #6484fc #65cd93 #66162a #675fc1 #68a858 #69f1ef #6a3a86 #6b831d #6cccb4 #6d154b #6e5ee2 #6fa779 #70f010 #7139a7 #72823e #73cbd5 #74146c #755d03 #76a69a #77ef31 #7838c8 #79815f #7acaf6 #7b138d #7c5c24 #7da5bb #7eee52 #7f37e9 #808080 #81c917 #8212ae #835b45 #84a4dc #85ed73 #86360a #877fa1 #88c838 #8911cf #8a5a66 #8ba3fd #8cec94 #8d352b #8e7ec2 #8fc759 #9010f0 #915987 #92a21e #93ebb5 #94344c #957de3 #96c67a #970f11 #9858a8 #99a13f #9aead6 #9b336d #9c7c04 #9dc59b #9e0e32 #9f57c9 #a0a060 #a1e9f7 #a2328e #a37b25 #a4c4bc #a50d53 #a656ea #a79f81 #a8e818 #a931af #aa7a46 #abc3dd #ac0c74 #ad550b #ae9ea2 #afe739 #b030d0 #b17967 #b2c2fe #b30b95 #b4542c #b59dc3 #b6e65a #b72ff1 #b87888 #b9c11f #ba0ab6 #bb534d #bc9ce4 #bde57b #be2e12 #bf77a9 #c0c040 #c109d7 #c2526e #c39b05 #c4e49c #c52d33 #c676ca #c7bf61 #c808f8 #c9518f #ca9a26 #cbe3bd #cc2c54 #cd75eb #cebe82 #cf0719 #d050b0 #d19947 #d2e2de #d32b75 #d4740c #d5bda3 #d6063a #d74fd1 #d89868 #d9e1ff #da2a96 #db732d #dcbcc4 #dd055b #de4ef2 #df9789 #e0e020 #e129b7 #e2724e #e3bbe5 #e4047c #e54d13 #e696aa #e7df41 #e828d8 #e9716f #eaba06 #eb039d #ec4c34 #ed95cb #eede62 #ef27f9 #f07090 #f1b927 #f202be #f34b55 #f494ec #f5dd83 #f6261a #f76fb1 #f8b848 #f901df #fa4a76 #fb930d #fcdca4 #fd253b #fe6ed2 #ffb769"
+  - paragraph: Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.
+  - button "Replace colors"
+  - button "Cancel"
+  - button "Save palette"

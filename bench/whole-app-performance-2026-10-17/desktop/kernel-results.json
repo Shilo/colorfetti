@@ -1,0 +1,2397 @@
+{
+  "date": "2026-10-18T05:10:56.033Z",
+  "scope": "same-page independent source modules; prepared palette outside timing; source-warm async conversion incl scheduling; source transport/hash outside timing",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+  "inputs": [
+    {
+      "id": "sheet1024",
+      "w": 1024,
+      "h": 1024,
+      "sha256": "1188f759bf428e9c7ba9be99973821b5e9acce26c3af16d55e176c8992911678"
+    },
+    {
+      "id": "sheet2048",
+      "w": 2048,
+      "h": 2048,
+      "sha256": "07b204cad5a7b3a94e5dd714b2388f320e45c3f4ac67c573d6279f291d49fa5f"
+    },
+    {
+      "id": "transparent32",
+      "w": 32,
+      "h": 32,
+      "sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7"
+    },
+    {
+      "id": "two-color32",
+      "w": 32,
+      "h": 32,
+      "sha256": "fdcc4b461c2625635f82985d3768f5d091ce7f6e28780f858799acd61b1e7204"
+    },
+    {
+      "id": "glow64",
+      "w": 64,
+      "h": 64,
+      "sha256": "c3e9df780d533e35cb8428a6785eebb8dbf706a2eec45f9ae9ba01268782a088"
+    },
+    {
+      "id": "entropy256",
+      "w": 256,
+      "h": 256,
+      "sha256": "da5f4aade13e51822c9c123074cd9423eeb11c2890b6b0ac3f29bec57ef79efe"
+    },
+    {
+      "id": "rgb-boundary-4096",
+      "w": 4096,
+      "h": 1,
+      "sha256": "4ed23f92c339492179fce4711ae2b0d85814a3c0ff634d26746b09891a52d7d0"
+    },
+    {
+      "id": "rgb-boundary-4097",
+      "w": 4097,
+      "h": 1,
+      "sha256": "22b86c5dad50431839ba7d8a31c52edc7a95c16edf41d0c6f59d7245b2d04055"
+    }
+  ],
+  "rows": [
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 8,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 12,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 11.5,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 7.399999998509884,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 6.399999998509884,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 10.5,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 10.399999998509884,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 6.5,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 7,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 11,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 10.5,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 6.799999997019768,
+      "indexHash": "d337d065d7221c6008c8643e4bcd41e6c96c423fc1981d9a4eaa3aa287cd57bc",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 26.200000002980232,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 40.5,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 41.70000000298023,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 26.100000001490116,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 25.299999997019768,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 40.29999999701977,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 41.100000001490116,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 25.200000002980232,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 25.100000001490116,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 39.69999999552965,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 40.19999999552965,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet2048"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 26.200000002980232,
+      "indexHash": "20df2eb7d8bed6273233f3aad936d3e387c3047784a322c574b0be1131f234f6",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 1.3000000044703484,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 0.6999999955296516,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.6999999955296516,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.7999999970197678,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.7999999970197678,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.6999999955296516,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.6000000014901161,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.7000000029802322,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.7000000029802322,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.6999999955296516,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.6000000014901161,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 199
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.5999999940395355,
+      "indexHash": "daac14a411d7bdcd1670f359e20b9266b9b0b3fb3c73d3875b12626bc8116d9c",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 2.100000001490116,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 2.100000001490116,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 2,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 2.100000001490116,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 2.0999999940395355,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 2.1999999955296516,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 2.2000000029802322,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 2.100000001490116,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 2.1999999955296516,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 2,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 2,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 1024,
+        "h": 199
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 2.100000001490116,
+      "indexHash": "069c08cc0add341cf6c7e7f629dd30a60ba46a0d651ee46eee6d0219eb09a5b1",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 3,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 3.100000001490116,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 3.100000001490116,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 3,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 3,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 3.2000000029802322,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 3.1999999955296516,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 3.100000001490116,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 3.100000001490116,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 3.5,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 3.1999999955296516,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "sheet1024",
+        "w": 257,
+        "h": 1024
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 3.100000001490116,
+      "indexHash": "ba78bb0c9d7217220f6516233e15323f11f4f8569b29e600030ce45507bb8275",
+      "alphaHash": null,
+      "usedHash": "0b8da988da67d21f1ca387312303772c740f6d42be42d533f2e584f7afc21fba",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 35.70000000298023,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 36,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 33.600000001490116,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 33.099999994039536,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 33,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 33.19999999552965,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 33.100000001490116,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 32.19999999552965,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 32.600000001490116,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 33.399999998509884,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 33.20000000298023,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 32.20000000298023,
+      "indexHash": "e762c17f2372ce8d9fbc4c4e30e663b66d82269c082c71ecdd1220f93b8bb1cf",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 35.899999998509884,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 39.600000001490116,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 34.19999999552965,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 33.70000000298023,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 32.80000000447035,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 37.400000005960464,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 36.599999994039536,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 37.5,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 37.100000001490116,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 36.69999999552965,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 34,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "entropy256",
+        "palette": "large",
+        "metric": "rgb"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 32.5,
+      "indexHash": "1bb8cbd84b8d38e62618a99c54bc3973b04081fe78642e5bd6fcc1cd970f65be",
+      "alphaHash": null,
+      "usedHash": "2661920f2409dd6c8adeb0c44972959f232b6429afa913845d0fd95e7e768234",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 0.29999999701976776,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 0.3999999985098839,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.20000000298023224,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.10000000149011612,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.09999999403953552,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.10000000149011612,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.10000000149011612,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.09999999403953552,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.20000000298023224,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "glow64",
+        "alphaMode": "keep"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.10000000149011612,
+      "indexHash": "37c205ccad74ee3792e9690fe8495fac89c0d248a5985f1592d59b8d9c23d3fe",
+      "alphaHash": "5d4926eb9787b769ab17d47b4e6c10d35bf8142a7101e150e5e4cfd3b55d81f2",
+      "usedHash": "27738bd36854e775087dc79eb0f46d8f9456e0c903d63f9ddbb1ed9e809911be",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.10000000149011612,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.09999999403953552,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.09999999403953552,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "transparent32"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.10000000149011612,
+      "indexHash": "3761d56cfb71c4252cb0e84483887ce914c3c1b0331baae26a6dd9c13912d16f",
+      "alphaHash": null,
+      "usedHash": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "hasTransparency": true
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 0.10000000149011612,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.10000000149011612,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.09999999403953552,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.10000000149011612,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 1.3000000044703484,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 1.7999999970197678,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 1.6999999955296516,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.9000000059604645,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 1.3999999985098839,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 1.3999999985098839,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 1.5,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 1.2999999970197678,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 1.3999999985098839,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 1.4000000059604645,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 1.3999999985098839,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4096"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 1.3999999985098839,
+      "indexHash": "212d9f70cd07a1a3443c7bdf5b7841776d326eb88e3da6b67e5171aa876ceba4",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 1.3000000044703484,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 1.4000000059604645,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 1.3999999985098839,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 1.2999999970197678,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 1.8999999985098839,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 1.2999999970197678,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 1.7000000029802322,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 1.3999999985098839,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 1.3000000044703484,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 1.5,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 1.2999999970197678,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "rgb-boundary-4097"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 1.2999999970197678,
+      "indexHash": "0d9e89383478e2b6d1a5543daf0167eece0345c0b5519a78fcdbf5cfc66d1537",
+      "alphaHash": null,
+      "usedHash": "aaee300e6ad11d48239453ae4980073c157bbbf433209b2d1cb62af2accb2d3f",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 0.8999999985098839,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 0.8000000044703484,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.09999999403953552,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.20000000298023224,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.20000000298023224,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.10000000149011612,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.10000000149011612,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.09999999403953552,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.10000000149011612,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4"
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0.10000000149011612,
+      "indexHash": "2344e2b8df70f936fddf42f273a27ec1618ea44b8acaf2ed7218ae23699e43a1",
+      "alphaHash": null,
+      "usedHash": "cfd96784900695930fb14e448b0908bd3d08ecebaee31780e313c528924e1984",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "candidate",
+      "ms": 0.19999999552965164,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": -1,
+      "warmup": true,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.10000000149011612,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": 0,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": 1,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.10000000149011612,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0.10000000149011612,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": 2,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": 3,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "baseline",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    },
+    {
+      "case": {
+        "id": "two-color32",
+        "dither": "4x4",
+        "ditherStrength": 0
+      },
+      "pair": 4,
+      "warmup": false,
+      "variant": "candidate",
+      "ms": 0,
+      "indexHash": "d7daf60bbf6990a29722058a6e36b1353bd65254582ff930feb7f72ed27316bc",
+      "alphaHash": null,
+      "usedHash": "6345cb79a991835e001a5abec98550b22e5f2a1468a850fbb62cd1ab070595d1",
+      "hasTransparency": false
+    }
+  ]
+}

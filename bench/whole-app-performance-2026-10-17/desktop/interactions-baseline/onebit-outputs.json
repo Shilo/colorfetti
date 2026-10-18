@@ -1,0 +1,101 @@
+[
+  {
+    "style": "cutout",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "d362e6d42f06ce64a1c1b9b64e7b8acba1d9a681136efddc0f651a634aaeccbf"
+  },
+  {
+    "style": "solid",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "292446898425cf65bb0f89bed2be42d96cbdc1c2647fd05fc96c766b9be48669"
+  },
+  {
+    "style": "lines",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "50b20b3da1aa82d9f7f7b01c5994ff60c381d363fa2c88c91690372fdfb1ada5"
+  },
+  {
+    "style": "stencil",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "0a7162bdb0a0e935c20935805666af672831840687aa2c21f8c2be6e59b76a02"
+  },
+  {
+    "style": "icon",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "cc0857023b6b070528daf2b94167a073b86c5f7f527a2ca11f5a9b6f18eb58d9"
+  },
+  {
+    "style": "checker",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "b3142f46668583e42ae33d0d03cdd69cd40867b1dae436d52668653ccc95a998"
+  },
+  {
+    "style": "bayer",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "1c8752c58b4d6a38111100ceea6539ef37bd7afc3d78e036a2f8f49ee78a20f1"
+  },
+  {
+    "style": "hatch",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "1283a692bc9ded4ea9d6a06bfff0b110405a97a51aa3daa1103d8dafc5ac9947"
+  },
+  {
+    "style": "atkinson",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "b7d7cee505d62338043213becd488b81b47d0d0822892bcb4a227962336dbb46"
+  },
+  {
+    "style": "noise",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "c0329349174520f33c75a31f84612a442609ece87b05aeb79301d77d99bb7ca6"
+  },
+  {
+    "style": "silhouette",
+    "width": 16,
+    "height": 16,
+    "alphaMismatch": 0,
+    "rgbMismatch": 0,
+    "first": null,
+    "sha256": "7ca7f5045f4af5aa77759b35ada65d2f693c11b6a6ec244fb5d6cb8355a9a420"
+  }
+]

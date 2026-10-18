@@ -1,0 +1,95 @@
+{
+  "rows": [
+    {
+      "variant": "baseline",
+      "environment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "input": "actual Codex Browser UI",
+        "cpuLimit": "No CDP CPU API; durations/LongTask/rAF only"
+      },
+      "startup": {
+        "firstEnabledButtonAt": 142.5,
+        "buttonLabel": "Selected palette: Auto, 0 colors",
+        "firstArtPaintAt": 208.80000000447035
+      },
+      "navigation": [
+        {
+          "duration": 167.5,
+          "domContentLoaded": 158.39999999850988,
+          "load": 167.5
+        }
+      ],
+      "import": {
+        "firstPaintMs": 372.70000000298023,
+        "finalCaptionObservedAtMs": 2007.6000000014901,
+        "canvas": [
+          581,
+          581
+        ],
+        "rafP95Ms": 17,
+        "rafMaxMs": 17.600000000002183,
+        "longtasks": []
+      },
+      "save": [
+        {
+          "windowMs": 522.8999999985099,
+          "rafMaxMs": 16.899999999997817,
+          "longtasks": []
+        }
+      ]
+    },
+    {
+      "variant": "candidate",
+      "environment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "input": "actual Codex Browser UI",
+        "cpuLimit": "No CDP CPU API; durations/LongTask/rAF only"
+      },
+      "startup": {
+        "firstEnabledButtonAt": 99.89999999850988,
+        "buttonLabel": "Selected palette: Auto, 0 colors",
+        "firstArtPaintAt": 163.60000000149012
+      },
+      "navigation": [
+        {
+          "duration": 124.20000000298023,
+          "domContentLoaded": 115.70000000298023,
+          "load": 124.20000000298023
+        }
+      ],
+      "import": {
+        "firstPaintMs": 359.70000000298023,
+        "finalCaptionObservedAtMs": 2003.9000000059605,
+        "canvas": [
+          581,
+          581
+        ],
+        "rafP95Ms": 16.899999999999636,
+        "rafMaxMs": 50,
+        "longtasks": []
+      },
+      "save": [
+        {
+          "windowMs": 295.5,
+          "rafMaxMs": 16.799999999999272,
+          "longtasks": []
+        }
+      ]
+    }
+  ],
+  "encodedBytesEqual": true,
+  "sha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720",
+  "notes": [
+    "Actual Codex Browser IAB; production bundles unchanged. Optional finite probe injected only into test HTML query audit=1.",
+    "One observed pair is functional tracing and source attribution context, not a statistically supported performance comparison. Five-pair auxiliary desktop/native measurements decide acceptance.",
+    "Change-event handler to first imported canvas paint excludes chooser/file transport. A final 26-color caption was confirmed only at the end of the finite window; that is not precise count-ready latency.",
+    "Every event starts a finite rAF observation, stopped after2s or superseding interaction. rAF/observer overhead is included; these receipts cannot establish production idle polling. No CDP CPU metrics available here.",
+    "Fresh-context startup records first enabled button and first art paint, not universal startup bounds. Raw receipts preserve all preceding actions."
+  ]
+}

@@ -1,0 +1,741 @@
+{
+  "date": "2026-10-18T05:08:52.447Z",
+  "baseline": "217cb64360784c066e944f8121858d7726f0e4f2",
+  "url": "http://127.0.0.1:5371/",
+  "sandbox": true,
+  "errors": [],
+  "windows": [
+    {
+      "label": "still wall 0",
+      "observedMs": 916.1000000014901,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 1.9419999999999993,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still Preview 0",
+      "observedMs": 917.1000000014901,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 0.7600000000000038,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still wall 1",
+      "observedMs": 910.6000000014901,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 1.354999999999995,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still Preview 1",
+      "observedMs": 913.1000000014901,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 1.4889999999999903,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still wall 2",
+      "observedMs": 911.5999999940395,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 1.0899999999999799,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still Preview 2",
+      "observedMs": 906.2999999970198,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 1.1039999999999939,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still wall 3",
+      "observedMs": 914.2999999970198,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 0.7969999999999922,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still Preview 3",
+      "observedMs": 904,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 0.5410000000000137,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still wall 4",
+      "observedMs": 905.7000000029802,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 0.5260000000000264,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still Preview 4",
+      "observedMs": 914.7000000029802,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 1.2749999999999706,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still wall 5",
+      "observedMs": 926.8999999985099,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 1.583000000000001,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "still Preview 5",
+      "observedMs": 916.7000000029802,
+      "delta": {
+        "puts": 0,
+        "raf": 0,
+        "timerScheduled": 0,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 1.3129999999998976,
+        "ScriptDuration": 0,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "visible converted animation",
+      "observedMs": 1618.2000000029802,
+      "delta": {
+        "puts": 16,
+        "raf": 0,
+        "timerScheduled": 16,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 65.88099999999997,
+        "ScriptDuration": 9.566000000000004,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    },
+    {
+      "label": "animation Preview takeover",
+      "observedMs": 1312.3999999985099,
+      "delta": {
+        "puts": 14,
+        "raf": 0,
+        "timerScheduled": 14,
+        "workerStarted": 0,
+        "workerTerminated": 0,
+        "urlCreated": 0,
+        "urlRevoked": 0
+      },
+      "cpuMs": {
+        "TaskDuration": 56.64899999999995,
+        "ScriptDuration": 11.703000000000005,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "urls": 0,
+      "longtasks": []
+    }
+  ],
+  "cycles": [
+    {
+      "cycle": 0,
+      "final": {
+        "counters": {
+          "puts": 4,
+          "raf": 23,
+          "timerScheduled": 17,
+          "workerStarted": 0,
+          "workerTerminated": 0,
+          "urlCreated": 0,
+          "urlRevoked": 0,
+          "urls": [],
+          "longtasks": [],
+          "now": 3091.4000000059605
+        },
+        "metrics": {
+          "Timestamp": 35762.599021,
+          "AudioHandlers": 0,
+          "AudioWorkletProcessors": 0,
+          "Documents": 4,
+          "Frames": 3,
+          "JSEventListeners": 262,
+          "LayoutObjects": 74,
+          "MediaKeySessions": 0,
+          "MediaKeys": 0,
+          "Nodes": 1094,
+          "Resources": 5,
+          "ContextLifecycleStateObservers": 14,
+          "V8PerContextDatas": 2,
+          "WorkerGlobalScopes": 0,
+          "UACSSResources": 0,
+          "RTCPeerConnections": 0,
+          "ResourceFetchers": 4,
+          "AdSubframes": 0,
+          "DetachedScriptStates": 0,
+          "ArrayBufferContents": 43,
+          "LayoutCount": 12,
+          "RecalcStyleCount": 64,
+          "LayoutDuration": 0.001791,
+          "RecalcStyleDuration": 0.01152,
+          "DevToolsCommandDuration": 0.026226,
+          "ScriptDuration": 0.012246,
+          "V8CompileDuration": 0,
+          "TaskDuration": 0.09623,
+          "TaskOtherDuration": 0.044447,
+          "ThreadTime": 0.229131,
+          "ProcessTime": 0.397586,
+          "JSHeapUsedSize": 4221740,
+          "JSHeapTotalSize": 4833280,
+          "FirstMeaningfulPaint": 35759.611869,
+          "DomContentLoaded": 35759.531156,
+          "NavigationStart": 35759.506741
+        }
+      }
+    },
+    {
+      "cycle": 1,
+      "final": {
+        "counters": {
+          "puts": 7,
+          "raf": 41,
+          "timerScheduled": 36,
+          "workerStarted": 0,
+          "workerTerminated": 0,
+          "urlCreated": 0,
+          "urlRevoked": 0,
+          "urls": [],
+          "longtasks": [],
+          "now": 6177.20000000298
+        },
+        "metrics": {
+          "Timestamp": 35765.685019,
+          "AudioHandlers": 0,
+          "AudioWorkletProcessors": 0,
+          "Documents": 4,
+          "Frames": 3,
+          "JSEventListeners": 262,
+          "LayoutObjects": 74,
+          "MediaKeySessions": 0,
+          "MediaKeys": 0,
+          "Nodes": 1094,
+          "Resources": 5,
+          "ContextLifecycleStateObservers": 14,
+          "V8PerContextDatas": 2,
+          "WorkerGlobalScopes": 0,
+          "UACSSResources": 0,
+          "RTCPeerConnections": 0,
+          "ResourceFetchers": 4,
+          "AdSubframes": 0,
+          "DetachedScriptStates": 0,
+          "ArrayBufferContents": 43,
+          "LayoutCount": 22,
+          "RecalcStyleCount": 128,
+          "LayoutDuration": 0.003171,
+          "RecalcStyleDuration": 0.025748,
+          "DevToolsCommandDuration": 0.057866,
+          "ScriptDuration": 0.025781,
+          "V8CompileDuration": 0,
+          "TaskDuration": 0.193972,
+          "TaskOtherDuration": 0.081406,
+          "ThreadTime": 0.321894,
+          "ProcessTime": 0.567725,
+          "JSHeapUsedSize": 4345456,
+          "JSHeapTotalSize": 5357568,
+          "FirstMeaningfulPaint": 35759.611869,
+          "DomContentLoaded": 35759.531156,
+          "NavigationStart": 35759.506741
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "final": {
+        "counters": {
+          "puts": 10,
+          "raf": 59,
+          "timerScheduled": 55,
+          "workerStarted": 0,
+          "workerTerminated": 0,
+          "urlCreated": 0,
+          "urlRevoked": 0,
+          "urls": [],
+          "longtasks": [],
+          "now": 9259.40000000596
+        },
+        "metrics": {
+          "Timestamp": 35768.767204,
+          "AudioHandlers": 0,
+          "AudioWorkletProcessors": 0,
+          "Documents": 4,
+          "Frames": 3,
+          "JSEventListeners": 262,
+          "LayoutObjects": 74,
+          "MediaKeySessions": 0,
+          "MediaKeys": 0,
+          "Nodes": 1094,
+          "Resources": 5,
+          "ContextLifecycleStateObservers": 14,
+          "V8PerContextDatas": 2,
+          "WorkerGlobalScopes": 0,
+          "UACSSResources": 0,
+          "RTCPeerConnections": 0,
+          "ResourceFetchers": 4,
+          "AdSubframes": 0,
+          "DetachedScriptStates": 0,
+          "ArrayBufferContents": 43,
+          "LayoutCount": 32,
+          "RecalcStyleCount": 197,
+          "LayoutDuration": 0.004451,
+          "RecalcStyleDuration": 0.039954,
+          "DevToolsCommandDuration": 0.088039,
+          "ScriptDuration": 0.038712,
+          "V8CompileDuration": 0,
+          "TaskDuration": 0.28527,
+          "TaskOtherDuration": 0.114114,
+          "ThreadTime": 0.413025,
+          "ProcessTime": 0.726177,
+          "JSHeapUsedSize": 4567616,
+          "JSHeapTotalSize": 5357568,
+          "FirstMeaningfulPaint": 35759.611869,
+          "DomContentLoaded": 35759.531156,
+          "NavigationStart": 35759.506741
+        }
+      }
+    },
+    {
+      "cycle": 3,
+      "final": {
+        "counters": {
+          "puts": 13,
+          "raf": 77,
+          "timerScheduled": 74,
+          "workerStarted": 0,
+          "workerTerminated": 0,
+          "urlCreated": 0,
+          "urlRevoked": 0,
+          "urls": [],
+          "longtasks": [],
+          "now": 12279.80000000447
+        },
+        "metrics": {
+          "Timestamp": 35771.787893,
+          "AudioHandlers": 0,
+          "AudioWorkletProcessors": 0,
+          "Documents": 4,
+          "Frames": 3,
+          "JSEventListeners": 262,
+          "LayoutObjects": 74,
+          "MediaKeySessions": 0,
+          "MediaKeys": 0,
+          "Nodes": 1094,
+          "Resources": 5,
+          "ContextLifecycleStateObservers": 14,
+          "V8PerContextDatas": 2,
+          "WorkerGlobalScopes": 0,
+          "UACSSResources": 0,
+          "RTCPeerConnections": 0,
+          "ResourceFetchers": 4,
+          "AdSubframes": 0,
+          "DetachedScriptStates": 0,
+          "ArrayBufferContents": 43,
+          "LayoutCount": 42,
+          "RecalcStyleCount": 265,
+          "LayoutDuration": 0.005822,
+          "RecalcStyleDuration": 0.050112,
+          "DevToolsCommandDuration": 0.104197,
+          "ScriptDuration": 0.048773,
+          "V8CompileDuration": 0,
+          "TaskDuration": 0.353072,
+          "TaskOtherDuration": 0.144168,
+          "ThreadTime": 0.477587,
+          "ProcessTime": 0.842369,
+          "JSHeapUsedSize": 4674020,
+          "JSHeapTotalSize": 5619712,
+          "FirstMeaningfulPaint": 35759.611869,
+          "DomContentLoaded": 35759.531156,
+          "NavigationStart": 35759.506741
+        }
+      }
+    },
+    {
+      "cycle": 4,
+      "final": {
+        "counters": {
+          "puts": 16,
+          "raf": 96,
+          "timerScheduled": 93,
+          "workerStarted": 0,
+          "workerTerminated": 0,
+          "urlCreated": 0,
+          "urlRevoked": 0,
+          "urls": [],
+          "longtasks": [],
+          "now": 15308.30000000447
+        },
+        "metrics": {
+          "Timestamp": 35774.8162,
+          "AudioHandlers": 0,
+          "AudioWorkletProcessors": 0,
+          "Documents": 4,
+          "Frames": 3,
+          "JSEventListeners": 262,
+          "LayoutObjects": 74,
+          "MediaKeySessions": 0,
+          "MediaKeys": 0,
+          "Nodes": 1094,
+          "Resources": 5,
+          "ContextLifecycleStateObservers": 14,
+          "V8PerContextDatas": 2,
+          "WorkerGlobalScopes": 0,
+          "UACSSResources": 0,
+          "RTCPeerConnections": 0,
+          "ResourceFetchers": 4,
+          "AdSubframes": 0,
+          "DetachedScriptStates": 0,
+          "ArrayBufferContents": 43,
+          "LayoutCount": 52,
+          "RecalcStyleCount": 333,
+          "LayoutDuration": 0.007037,
+          "RecalcStyleDuration": 0.061213,
+          "DevToolsCommandDuration": 0.120226,
+          "ScriptDuration": 0.058893,
+          "V8CompileDuration": 0,
+          "TaskDuration": 0.428032,
+          "TaskOtherDuration": 0.180663,
+          "ThreadTime": 0.547765,
+          "ProcessTime": 0.976274,
+          "JSHeapUsedSize": 4789552,
+          "JSHeapTotalSize": 5619712,
+          "FirstMeaningfulPaint": 35759.611869,
+          "DomContentLoaded": 35759.531156,
+          "NavigationStart": 35759.506741
+        }
+      }
+    },
+    {
+      "cycle": 5,
+      "final": {
+        "counters": {
+          "puts": 19,
+          "raf": 114,
+          "timerScheduled": 112,
+          "workerStarted": 0,
+          "workerTerminated": 0,
+          "urlCreated": 0,
+          "urlRevoked": 0,
+          "urls": [],
+          "longtasks": [],
+          "now": 18459.40000000596
+        },
+        "metrics": {
+          "Timestamp": 35777.966951,
+          "AudioHandlers": 0,
+          "AudioWorkletProcessors": 0,
+          "Documents": 4,
+          "Frames": 3,
+          "JSEventListeners": 262,
+          "LayoutObjects": 74,
+          "MediaKeySessions": 0,
+          "MediaKeys": 0,
+          "Nodes": 1094,
+          "Resources": 5,
+          "ContextLifecycleStateObservers": 14,
+          "V8PerContextDatas": 2,
+          "WorkerGlobalScopes": 0,
+          "UACSSResources": 0,
+          "RTCPeerConnections": 0,
+          "ResourceFetchers": 4,
+          "AdSubframes": 0,
+          "DetachedScriptStates": 0,
+          "ArrayBufferContents": 43,
+          "LayoutCount": 62,
+          "RecalcStyleCount": 399,
+          "LayoutDuration": 0.009022,
+          "RecalcStyleDuration": 0.087066,
+          "DevToolsCommandDuration": 0.164441,
+          "ScriptDuration": 0.079178,
+          "V8CompileDuration": 0,
+          "TaskDuration": 0.569689,
+          "TaskOtherDuration": 0.229982,
+          "ThreadTime": 0.677331,
+          "ProcessTime": 1.19532,
+          "JSHeapUsedSize": 4802152,
+          "JSHeapTotalSize": 5619712,
+          "FirstMeaningfulPaint": 35759.611869,
+          "DomContentLoaded": 35759.531156,
+          "NavigationStart": 35759.506741
+        }
+      }
+    }
+  ],
+  "browser": "155.0.4283.62",
+  "viewport": {
+    "width": 1280,
+    "height": 900,
+    "dpr": 1
+  },
+  "animation": {
+    "label": "visible converted animation",
+    "observedMs": 1618.2000000029802,
+    "delta": {
+      "puts": 16,
+      "raf": 0,
+      "timerScheduled": 16,
+      "workerStarted": 0,
+      "workerTerminated": 0,
+      "urlCreated": 0,
+      "urlRevoked": 0
+    },
+    "cpuMs": {
+      "TaskDuration": 65.88099999999997,
+      "ScriptDuration": 9.566000000000004,
+      "LayoutDuration": 0,
+      "RecalcStyleDuration": 0
+    },
+    "urls": 0,
+    "longtasks": []
+  },
+  "animationPreview": {
+    "label": "animation Preview takeover",
+    "observedMs": 1312.3999999985099,
+    "delta": {
+      "puts": 14,
+      "raf": 0,
+      "timerScheduled": 14,
+      "workerStarted": 0,
+      "workerTerminated": 0,
+      "urlCreated": 0,
+      "urlRevoked": 0
+    },
+    "cpuMs": {
+      "TaskDuration": 56.64899999999995,
+      "ScriptDuration": 11.703000000000005,
+      "LayoutDuration": 0,
+      "RecalcStyleDuration": 0
+    },
+    "urls": 0,
+    "longtasks": []
+  },
+  "final": {
+    "counters": {
+      "puts": 64,
+      "raf": 150,
+      "timerScheduled": 173,
+      "workerStarted": 1,
+      "workerTerminated": 0,
+      "urlCreated": 0,
+      "urlRevoked": 0,
+      "urls": [],
+      "longtasks": [],
+      "now": 23663.90000000596
+    },
+    "metrics": {
+      "Timestamp": 35783.173917,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 4,
+      "Frames": 3,
+      "JSEventListeners": 260,
+      "LayoutObjects": 79,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 1096,
+      "Resources": 5,
+      "ContextLifecycleStateObservers": 15,
+      "V8PerContextDatas": 2,
+      "WorkerGlobalScopes": 1,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 5,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 0,
+      "ArrayBufferContents": 420,
+      "LayoutCount": 75,
+      "RecalcStyleCount": 466,
+      "LayoutDuration": 0.013663,
+      "RecalcStyleDuration": 0.122658,
+      "DevToolsCommandDuration": 0.207554,
+      "ScriptDuration": 0.137205,
+      "V8CompileDuration": 0,
+      "TaskDuration": 0.932835,
+      "TaskOtherDuration": 0.451755,
+      "ThreadTime": 1.004773,
+      "ProcessTime": 1.994849,
+      "JSHeapUsedSize": 4766584,
+      "JSHeapTotalSize": 5881856,
+      "FirstMeaningfulPaint": 35759.611869,
+      "DomContentLoaded": 35759.531156,
+      "NavigationStart": 35759.506741
+    }
+  },
+  "notes": [
+    "Auxiliary sandboxed Edge only. No actual Codex Browser/Android or candidate A/B result.",
+    "Idle instrumentation schedules no rAF or polling timers; only app calls are counted. Primitive diagnostics avoid retaining source/DOM/worker objects.",
+    "Heap after explicit collection is one JS allocation observation; intentional live demo/caches remain and no whole-app memory bound or leak absence follows.",
+    "Worker counts include intentional lazy worker reuse and do not prove outstanding source jobs. Object URL counts include legitimate export/decoded-image resources; investigate identities before claiming a leak."
+  ]
+}
