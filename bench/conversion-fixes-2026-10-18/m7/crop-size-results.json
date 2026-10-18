@@ -1,0 +1,37 @@
+{
+  "checked": 14064,
+  "improved": 10977,
+  "tied": 3082,
+  "worsened": 5,
+  "firstWorse": {
+    "bits": 8746,
+    "indices": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "bounds": [
+      1,
+      0,
+      3,
+      4
+    ],
+    "fullBytes": 64,
+    "cropBytes": 65
+  },
+  "shippingSizeGateChecked": 14064,
+  "shippingGrew": 0
+}

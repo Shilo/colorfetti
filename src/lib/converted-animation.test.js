@@ -1,4 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
+import omggif from 'omggif';
 import * as colorfetti from './recolor.js';
 import { convertedAnimation } from './converted-animation.js';
 import { encodeGif, encodeGifAsync } from './gif.js';
@@ -14,6 +15,30 @@ function item() {
   });
   colorfetti.unify(frames.map(frame => frame.img));
   return { name: 'captured.gif', img: frames[0].img, frames, loop: 3 };
+}
+
+// The encoder may now choose a smaller rectangle; use omggif's independent
+// decoder rather than Colorfetti's custom LZW decoder for pixel equivalence.
+function expectGifParity(output, reference) {
+  const actual = new omggif.GifReader(output), expected = new omggif.GifReader(reference);
+  expect([actual.width, actual.height, actual.numFrames(), actual.loopCount()])
+    .toEqual([expected.width, expected.height, expected.numFrames(), expected.loopCount()]);
+  let allFull = true;
+  for (let i = 0; i < actual.numFrames(); i++) {
+    const info = actual.frameInfo(i), before = expected.frameInfo(i);
+    expect([info.delay, info.disposal, info.transparent_index]).toEqual([before.delay, before.disposal, before.transparent_index]);
+    const a = new Uint8Array(actual.width * actual.height * 4), b = new Uint8Array(a.length);
+    // Both exporters use disposal 2 and independent composited frames. Clear
+    // each full logical canvas, then decode its current bounded rectangle.
+    actual.decodeAndBlitFrameRGBA(i, a); expected.decodeAndBlitFrameRGBA(i, b);
+    for (let p = 0; p < a.length; p += 4) {
+      expect(a[p + 3]).toBe(b[p + 3]);
+      if (b[p + 3]) expect(a.subarray(p, p + 3)).toEqual(b.subarray(p, p + 3));
+    }
+    allFull &&= info.x === 0 && info.y === 0 && info.width === actual.width && info.height === actual.height;
+  }
+  expect(output.length).toBeLessThanOrEqual(reference.length);
+  if (allFull) expect(output).toEqual(reference); // preserve unchanged full-frame bytes
 }
 describe('captured lazy 1-bit animation masks', () => {
   it('creates no masks up front and snapshots scalar settings, frame analysis and metadata', () => {
@@ -38,16 +63,16 @@ describe('captured lazy 1-bit animation masks', () => {
     expect(() => image.getFrame(1)).toThrow(expect.objectContaining({ name: 'AbortError' }));
     expect(spy).toHaveBeenCalledOnce();
   });
-  it.each(STYLES.map(([style]) => style))('preserves %s animation bytes for either None color and loop variants', async style => {
+  it.each(STYLES.map(([style]) => style))('preserves %s animation pixels and metadata for either None color and loop variants', async style => {
     for (const loop of [null, 0, 3]) for (const none of [0, 1, 2]) {
       const source = item(), reference = item(); source.loop = reference.loop = loop;
       const asked = { style, set: defaults(style), first: none === 1 ? null : '#222323', second: none === 2 ? null : '#f0f6f0' };
       const sync = { name: source.name, w: source.img.w, h: source.img.h, loop, first: asked.first, second: asked.second,
         frames: reference.frames.map(frame => ({ mask: colorfetti.mask(frame.img, style, asked.set), delay: frame.delay })) };
-      expect(await encodeGifAsync(convertedAnimation(source, asked))).toEqual(encodeGif(sync));
+      expectGifParity(await encodeGifAsync(convertedAnimation(source, asked)), encodeGif(sync));
     }
   });
-  it.each(['stencil', 'icon'])('first cold %s save preserves bytes and retains reusable preparation on published analyses', async style => {
+  it.each(['stencil', 'icon'])('first cold %s save preserves output and retains reusable preparation on published analyses', async style => {
     const source = item(), reference = item(), asked = { style, set: defaults(style), first: '#222323', second: '#f0f6f0' };
     const prepared = img => style === 'stencil' ? img.sprites : img.icons?.[asked.set.border ?? 'auto'];
     expect(source.frames.every(frame => prepared(frame.img) === undefined)).toBe(true);
@@ -57,9 +82,9 @@ describe('captured lazy 1-bit animation masks', () => {
     const expected = encodeGif({ w: reference.img.w, h: reference.img.h, loop: reference.loop,
       first: asked.first, second: asked.second,
       frames: reference.frames.map(frame => ({ mask: colorfetti.mask(frame.img, style, asked.set), delay: frame.delay })) });
-    expect(first).toEqual(expected);
+    expectGifParity(first, expected);
     const second = await encodeGifAsync(convertedAnimation(source, asked));
-    expect(second).toEqual(expected);
+    expect(second).toEqual(first); // warm preparation must preserve encoded bytes too
     source.frames.forEach((frame, index) => expect(prepared(frame.img)).toBe(cached[index]));
   });
 });

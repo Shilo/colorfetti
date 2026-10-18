@@ -1,0 +1,77 @@
+{
+  "node": "v25.0.0",
+  "cases": [
+    {
+      "id": "animation128-nearest",
+      "fullBytes": 12752,
+      "choiceBytes": 6753,
+      "fullMedianMs": 7.984800000000007,
+      "choiceMedianMs": 9.538900000000012,
+      "cpuRatio": 1.1946323013726086,
+      "candidates": 32,
+      "selected": 32,
+      "maxCroppedPixelBytes": 1024,
+      "maxExtraEncodedCapacity": 3072
+    },
+    {
+      "id": "animation128-enhanced",
+      "fullBytes": 13559,
+      "choiceBytes": 7659,
+      "fullMedianMs": 8.061900000000037,
+      "choiceMedianMs": 9.557300000000055,
+      "cpuRatio": 1.1854897728823244,
+      "candidates": 32,
+      "selected": 32,
+      "maxCroppedPixelBytes": 1024,
+      "maxExtraEncodedCapacity": 3072
+    },
+    {
+      "id": "animation256-nearest",
+      "fullBytes": 29510,
+      "choiceBytes": 10089,
+      "fullMedianMs": 43.043300000000045,
+      "choiceMedianMs": 46.538299999999936,
+      "cpuRatio": 1.0811973059686382,
+      "candidates": 48,
+      "selected": 48,
+      "maxCroppedPixelBytes": 1024,
+      "maxExtraEncodedCapacity": 3072
+    },
+    {
+      "id": "animation256-enhanced",
+      "fullBytes": 30860,
+      "choiceBytes": 11419,
+      "fullMedianMs": 75.90629999999965,
+      "choiceMedianMs": 48.83440000000019,
+      "cpuRatio": 0.6433510788959601,
+      "candidates": 48,
+      "selected": 48,
+      "maxCroppedPixelBytes": 1024,
+      "maxExtraEncodedCapacity": 3072
+    },
+    {
+      "id": "known-size-regression",
+      "fullBytes": 64,
+      "choiceBytes": 64,
+      "fullMedianMs": 0.011100000000624277,
+      "choiceMedianMs": 0.014799999999922875,
+      "cpuRatio": 1.3333333332513968,
+      "candidates": 1,
+      "selected": 0,
+      "maxCroppedPixelBytes": 12,
+      "maxExtraEncodedCapacity": 1048
+    },
+    {
+      "id": "dense-opaque256",
+      "fullBytes": 101505,
+      "choiceBytes": 101505,
+      "fullMedianMs": 32.60110000000077,
+      "choiceMedianMs": 31.74669999999969,
+      "cpuRatio": 0.9737922953519649,
+      "candidates": 0,
+      "selected": 0,
+      "maxCroppedPixelBytes": 0,
+      "maxExtraEncodedCapacity": 0
+    }
+  ]
+}

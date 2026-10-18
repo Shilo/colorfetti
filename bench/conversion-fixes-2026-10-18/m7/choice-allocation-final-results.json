@@ -1,0 +1,198 @@
+{
+  "node": "v25.0.0",
+  "allocationOnly": true,
+  "cases": [
+    {
+      "id": "animation128-nearest",
+      "fullBytes": 12752,
+      "choiceBytes": 6753,
+      "cpuRatio": null,
+      "candidates": 32,
+      "selected": 32,
+      "maxCroppedPixelBytes": 1024,
+      "maxExtraEncodedCapacity": 3072,
+      "fullMaxOutputCapacity": 67744,
+      "choiceMaxOutputCapacity": 67744,
+      "fullGrowths": 2,
+      "choiceGrowths": 2,
+      "atMost75PercentArea": {
+        "bytes": 6753,
+        "candidates": 32,
+        "selected": 32,
+        "maxOutputCapacity": 67744
+      },
+      "rawMs": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "animation128-enhanced",
+      "fullBytes": 13559,
+      "choiceBytes": 7659,
+      "cpuRatio": null,
+      "candidates": 32,
+      "selected": 32,
+      "maxCroppedPixelBytes": 1024,
+      "maxExtraEncodedCapacity": 3072,
+      "fullMaxOutputCapacity": 67744,
+      "choiceMaxOutputCapacity": 67744,
+      "fullGrowths": 2,
+      "choiceGrowths": 2,
+      "atMost75PercentArea": {
+        "bytes": 7659,
+        "candidates": 32,
+        "selected": 32,
+        "maxOutputCapacity": 67744
+      },
+      "rawMs": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "animation256-nearest",
+      "fullBytes": 29510,
+      "choiceBytes": 10089,
+      "cpuRatio": null,
+      "candidates": 48,
+      "selected": 48,
+      "maxCroppedPixelBytes": 1024,
+      "maxExtraEncodedCapacity": 3072,
+      "fullMaxOutputCapacity": 264352,
+      "choiceMaxOutputCapacity": 264352,
+      "fullGrowths": 2,
+      "choiceGrowths": 2,
+      "atMost75PercentArea": {
+        "bytes": 10089,
+        "candidates": 48,
+        "selected": 48,
+        "maxOutputCapacity": 264352
+      },
+      "rawMs": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "animation256-enhanced",
+      "fullBytes": 30860,
+      "choiceBytes": 11419,
+      "cpuRatio": null,
+      "candidates": 48,
+      "selected": 48,
+      "maxCroppedPixelBytes": 1024,
+      "maxExtraEncodedCapacity": 3072,
+      "fullMaxOutputCapacity": 264352,
+      "choiceMaxOutputCapacity": 264352,
+      "fullGrowths": 2,
+      "choiceGrowths": 2,
+      "atMost75PercentArea": {
+        "bytes": 11419,
+        "candidates": 48,
+        "selected": 48,
+        "maxOutputCapacity": 264352
+      },
+      "rawMs": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "known-size-regression",
+      "fullBytes": 64,
+      "choiceBytes": 64,
+      "cpuRatio": null,
+      "candidates": 1,
+      "selected": 0,
+      "maxCroppedPixelBytes": 12,
+      "maxExtraEncodedCapacity": 1048,
+      "fullMaxOutputCapacity": 2048,
+      "choiceMaxOutputCapacity": 2048,
+      "fullGrowths": 1,
+      "choiceGrowths": 1,
+      "atMost75PercentArea": {
+        "bytes": 64,
+        "candidates": 1,
+        "selected": 0,
+        "maxOutputCapacity": 2048
+      },
+      "rawMs": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "dense-opaque256",
+      "fullBytes": 101505,
+      "choiceBytes": 101505,
+      "cpuRatio": null,
+      "candidates": 0,
+      "selected": 0,
+      "maxCroppedPixelBytes": 0,
+      "maxExtraEncodedCapacity": 0,
+      "fullMaxOutputCapacity": 265792,
+      "choiceMaxOutputCapacity": 265792,
+      "fullGrowths": 2,
+      "choiceGrowths": 2,
+      "atMost75PercentArea": {
+        "bytes": 101505,
+        "candidates": 0,
+        "selected": 0,
+        "maxOutputCapacity": 265792
+      },
+      "rawMs": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "dense-with-one-transparent-row",
+      "fullBytes": 15593,
+      "choiceBytes": 15593,
+      "cpuRatio": null,
+      "candidates": 0,
+      "selected": 0,
+      "maxCroppedPixelBytes": 0,
+      "maxExtraEncodedCapacity": 0,
+      "fullMaxOutputCapacity": 265792,
+      "choiceMaxOutputCapacity": 265792,
+      "fullGrowths": 2,
+      "choiceGrowths": 2,
+      "atMost75PercentArea": {
+        "bytes": 15593,
+        "candidates": 0,
+        "selected": 0,
+        "maxOutputCapacity": 265792
+      },
+      "rawMs": [
+        [],
+        []
+      ]
+    },
+    {
+      "id": "1000-moving-sparse-frames",
+      "fullBytes": 177790,
+      "choiceBytes": 23039,
+      "cpuRatio": null,
+      "candidates": 1000,
+      "selected": 1000,
+      "maxCroppedPixelBytes": 1,
+      "maxExtraEncodedCapacity": 1026,
+      "fullMaxOutputCapacity": 270640,
+      "choiceMaxOutputCapacity": 67660,
+      "fullGrowths": 4,
+      "choiceGrowths": 2,
+      "atMost75PercentArea": {
+        "bytes": 23039,
+        "candidates": 1000,
+        "selected": 1000,
+        "maxOutputCapacity": 67660
+      },
+      "rawMs": [
+        [],
+        []
+      ]
+    }
+  ]
+}

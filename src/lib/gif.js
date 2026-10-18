@@ -1,6 +1,7 @@
 // Reading and writing animated GIFs. No DOM, so it runs in tests.
 import omggif from 'omggif';
 import { decodeGifFrame } from './gif-decode.js';
+import { gifFrameBounds } from './gif-frame-bounds.js';
 import { exportPalette, markUsedAsync, compactTable, EMPTY_INDEX, yieldExport } from './palette-export.js';
 import { paletteAlpha, inspectAlphaPixel } from './palette-alpha.js';
 import { checkCanceled, yieldTask } from './quantize.js';
@@ -292,20 +293,39 @@ export async function encodePaletteGif(image, { signal } = {}) {
 export function createPaletteGifWriter({ w, h, table, transparent, loop }) {
   let buffer = new Uint8Array(1024);
   const writer = new omggif.GifWriter(buffer, w, h, { palette: table, loop: loop ?? undefined });
+  const reserve = need => {
+    if (need <= buffer.length) return;
+    const grown = new Uint8Array(Math.max(need, buffer.length * 2));
+    grown.set(buffer.subarray(0, writer.getOutputBufferPosition()));
+    buffer = grown;
+    writer.setOutputBuffer(buffer);
+  };
   return {
     add(indexed, delay) {
-      // Reserve only the next frame's maximum LZW output, growing as needed.
-      const need = writer.getOutputBufferPosition() + w * h * 2 + 1024;
-      if (need > buffer.length) {
-        const grown = new Uint8Array(Math.max(need, buffer.length * 2));
-        grown.set(buffer.subarray(0, writer.getOutputBufferPosition()));
-        buffer = grown;
-        writer.setOutputBuffer(buffer);
-      }
-      writer.addFrame(0, 0, w, h, indexed, {
+      // Near-full rectangles offer little reduction for a second compression.
+      // The helper skips their cropped allocation; opaque tables skip scanning.
+      const crop = gifFrameBounds(indexed, w, h, transparent, Math.max(1, Math.floor(w * h * .75)));
+      const candidate = crop.indices !== indexed, start = writer.getOutputBufferPosition();
+      // Reserve this full frame, then a candidate beside its actual encoding.
+      // Growth may double capacity; both the old and new buffer coexist briefly.
+      reserve(start + w * h * 2 + 1024);
+      const options = {
         delay: Math.round(delay / 10), disposal: 2,
         ...(transparent === null ? {} : { transparent }),
-      });
+      };
+      writer.addFrame(0, 0, w, h, indexed, options);
+      if (candidate) {
+        // Smaller pixel area can compress worse. Encode both independent frame
+        // blocks in one buffer, then retain only the smaller complete block.
+        const fullEnd = writer.getOutputBufferPosition();
+        reserve(fullEnd + crop.w * crop.h * 2 + 1024);
+        writer.addFrame(crop.x, crop.y, crop.w, crop.h, crop.indices, options);
+        const cropEnd = writer.getOutputBufferPosition(), cropBytes = cropEnd - fullEnd;
+        if (cropBytes < fullEnd - start) {
+          buffer.copyWithin(start, fullEnd, cropEnd);
+          writer.setOutputBufferPosition(start + cropBytes);
+        } else writer.setOutputBufferPosition(fullEnd); // ties keep the original
+      }
     },
     end: () => buffer.slice(0, writer.end()),
     close() {},

@@ -1,5 +1,28 @@
 # Performance
 
+## Transparent GIF bounds (October 18, 2026)
+
+Transparent exports scan row edges for independent frame bounds. Opaque tables
+skip the scan; rectangles above 75% logical area skip the cropped allocation and
+second compression. Eligible candidates add at most 0.75N indexed bytes. The
+writer encodes full and cropped blocks together and keeps only a strictly smaller
+block, because smaller areas can compress worse. No converted-clip cache is added.
+
+For committed prefix P, the full output request is P+2N+1024; the next request uses
+the actual full-frame end plus 2A+1024 for candidate area A. Their maximum is
+P+2N+2A+2048. Growth chooses the larger of the request and twice old capacity;
+temporarily coexisting old/new buffers total less than three times the request.
+This excludes source/analysis, cropped indexes, LZW scratch and the final file copy.
+It is not a whole-heap ceiling. Existing async deadlines include the extra work,
+but one synchronous frame still cannot yield internally.
+
+All 14,064 croppable binary 4×4 cases produced non-growing files. Four supplied
+workloads saved 43–66%; actual App Save saved 593→277 bytes and ZIP 1480→848.
+Eligible candidates compress twice: early uncontended medians added about 8–19%
+encoding CPU, with later contention preventing precise final timing claims.
+See `bench/conversion-fixes-2026-10-18/m7/README.md` for allocation receipts and
+independent native/Sharp checks of pixels, alpha, timing and repeats.
+
 ## Bounded artwork import reporting (October 18, 2026)
 
 Failure reporting retains one count and at most three short diagnostic strings,

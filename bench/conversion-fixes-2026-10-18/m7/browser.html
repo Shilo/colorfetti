@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Transparent GIF export challenge</title>
+<style>body{font:17px system-ui;background:#f7f7f4;color:#172a3a;margin:20px}button,input{font:inherit;padding:10px;margin:5px 8px 12px 0}table{border-collapse:collapse;width:100%;background:white}td,th{padding:8px;border:1px solid #ccc;text-align:left}pre{white-space:pre-wrap;font-size:12px}iframe{width:100%;height:700px;border:1px solid #ccc}.pass{color:#15631c}.fail{color:#a32020}h1{font-size:25px}</style>
+<h1>Transparent GIF export challenge</h1><p>Independent Chrome GIF decoder checks all alpha and visible RGB, including the first cropped frame, shrinking frames and empty frames. Logical screen, timing, repeats and disposal remain intact.</p>
+<button id="run">Run Palette and 1-bit/None native decode checks</button><button id="wall">Import test animation on wall</button><label>Capture label <input id="label" value="palette"></label>
+<div id="results">Ready</div><p id="downloads">Actual App download capture: none</p><details><summary>Machine receipt</summary><pre id="receipt"></pre></details>
+<iframe id="app" src="../../../index.html" title="Production application"></iframe><script type="module" src="./browser.mjs"></script></html>

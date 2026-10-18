@@ -13,6 +13,14 @@ intentional compatibility references.
 
 ## What it does
 
+Animated Palette and asynchronous 1-bit GIF exports consider transparent frame
+bounds only at up to 75% logical-frame area. Full and cropped complete frame
+blocks are compared in one output buffer; only strictly smaller cropped blocks
+replace full blocks. Logical dimensions, disposal 2, source timing/repeats and
+visible RGB/all alpha stay exact. Empty frames offer a one-pixel transparent
+candidate. No temporal differencing is used; synchronous legacy encoding remains
+the full-frame semantic reference.
+
 Palette improvements offer twelve curated presets (including Mulfok 32, exact
 Black & White and ENDESGA 8), Lospec links through Paste colors, and one Reuse
 colors action beside Copy in wall actions (also in touch Image actions, before

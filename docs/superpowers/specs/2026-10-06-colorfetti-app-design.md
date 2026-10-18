@@ -2840,6 +2840,14 @@ explicitly, save/select the copy, then request a new download. Cancel preserves 
 Local GIF tables and implicit automatic reduction are not implemented. An explicit
 Max colors limit selects its subset before this compatibility check.
 
+Animated Palette and asynchronous 1-bit exports consider independent transparent
+frame bounds only when their area is at most 75% of the logical frame. Encode the
+full and cropped complete frame blocks in one output buffer, then retain a cropped
+block only when strictly smaller; ties retain the full block. Empty frames offer a
+1×1 transparent candidate. Logical dimensions, global table, disposal 2, source
+delays/repeats, all alpha and visible RGB remain exact. No temporal differencing
+is introduced. Synchronous legacy encoding remains the full-frame semantic reference.
+
 GIF conversion retains only one converted frame per pass, transfers the remapped frame
 to one compression worker, and waits for its acknowledgment before proceeding. Worker
 failure reports an error; a missing Worker uses the same direct writer. Source RGBA GIF

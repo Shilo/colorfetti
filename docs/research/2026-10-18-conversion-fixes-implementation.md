@@ -24,12 +24,38 @@ screenshots in its `screenshots/` folder.
 | M4 | ANIMEXTS GIF repeat metadata | Accepted after independent Save/ZIP verification |
 | M5 | Enabled palette-editor text contrast | Accepted after revision and desktop retesting |
 | M6 | Portable Save/ZIP/drag names | Queued |
-| M7 | Transparent GIF frame-bound cropping | Queued |
+| M7 | Transparent GIF frame-bound cropping | Accepted after size-gate revisions and independent Save/ZIP verification |
 | M8 | Exact PNG state compaction | Queued |
 
 ## Accepted changes and review discussions
 
 Task-specific acceptance and evidence are recorded here as each task completes.
+
+### M7 Transparent GIF bounds
+
+Palette and asynchronous 1-bit exports consider independent transparent frame
+rectangles after None remapping. Coordinator challenge rejected plain cropping:
+five of 14,064 croppable binary 4×4 inputs grew. The final writer compares both
+complete encoded blocks in one buffer and keeps only a strictly smaller result.
+A 75% area gate avoids near-full candidates, and a further revision reserves
+candidate output against the actual full-frame end, limiting unnecessary growth.
+Both reviewers explicitly agreed after these revisions and repeated testing.
+
+Affected validation passed 241 tests across thirteen files. All 14,064 shipping
+size-gate cases were non-growing. Native desktop Chrome ImageDecoder and independent
+Sharp checks preserve all alpha, visible RGB, logical dimensions, timing and repeats,
+including first-cropped, empty-first, shrinking and both None choices. The coordinator
+repeated the final browser matrix and real App Save/Save all after the last allocation
+revision; the agent independently decoded those fresh artifacts. Save shrank 593→277
+bytes; ZIP shrank 1,480→848. Opaque 256-color output retains exact bytes.
+
+The agent's browser surface was unavailable for this task, so the coordinator
+operated the desktop browser and the agent challenged its saved receipts. The
+test-only iframe captures finished download Blobs, leaving production handlers and
+encoders unchanged. Two compressions for eligible candidates add CPU; no universal
+speedup or whole-heap bound is claimed. Evidence and reproduction commands:
+`bench/conversion-fixes-2026-10-18/m7/README.md`.
+[Final browser screenshot](../../bench/conversion-fixes-2026-10-18/screenshots/m7-gif-bounds-after.jpg).
 
 ### M3 Import errors
 

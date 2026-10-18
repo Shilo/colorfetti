@@ -207,7 +207,10 @@ describe('cooperative 1-bit GIF encoding', () => {
     const yieldSpy = vi.spyOn(quantize, 'yieldTask').mockImplementation(async () => { events.push('yield'); });
     const output = await encodeGifAsync({ ...image, frames: undefined, frameCount: 4, getFrame });
     expect(events).toEqual(['yield', 'mask0', 'yield', 'mask1', 'yield', 'mask2', 'yield', 'mask3']);
-    expect(yieldSpy).toHaveBeenCalledTimes(4); expect(output).toEqual(encodeGif(image));
+    const reference = encodeGif(image);
+    expect(yieldSpy).toHaveBeenCalledTimes(4);
+    expect(decodeGif(output)).toEqual(decodeGif(reference));
+    expect(output.length).toBeLessThanOrEqual(reference.length);
   });
   it('includes LZW compression cost in the same frame-group budget', async () => {
     let clock = 0; const OriginalWriter = omggif.GifWriter;
@@ -217,7 +220,10 @@ describe('cooperative 1-bit GIF encoding', () => {
       const writer = new OriginalWriter(...args), add = writer.addFrame;
       writer.addFrame = (...frame) => { const result = add(...frame); clock += 9; return result; }; return writer;
     });
-    expect(await encodeGifAsync(image)).toEqual(encodeGif(image)); expect(yieldSpy).toHaveBeenCalledTimes(4);
+    const output = await encodeGifAsync(image), reference = encodeGif(image);
+    expect(decodeGif(output)).toEqual(decodeGif(reference));
+    expect(output.length).toBeLessThanOrEqual(reference.length);
+    expect(yieldSpy).toHaveBeenCalledTimes(4);
   });
   it('grows output through many frames without changing bytes or mutating None masks', async () => {
     const OriginalWriter = omggif.GifWriter, initial = [], growth = [];
