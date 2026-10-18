@@ -3,6 +3,19 @@ import { validateImportFrame } from './image-import-core.js';
 import omggif from 'omggif';
 afterEach(() => vi.unstubAllGlobals());
 
+it.each([
+  'R0lGODlhAwADAIAAABEiM6vN7ywAAAAAAwADAAACASwAOw==',
+  'R0lGODlhAwADAIAAABEiM6vN7ywAAAAAAwADAAACA5x/BQA7',
+])('rejects malformed GIF pixels before publishing worker metadata', async base64 => {
+  vi.resetModules(); const received = [];
+  const scope = { postMessage(message) { received.push(message); } };
+  vi.stubGlobal('self', scope); await import('./image-import-worker.js');
+  const file = new Blob([Buffer.from(base64, 'base64')], { type: 'image/gif' });
+  await scope.onmessage({ data: { type: 'start', mode: 'gif', source: 'luma', alphaCut: 128, file } });
+  expect(received).toHaveLength(1);
+  expect(received[0]).toMatchObject({ type: 'error', code: 'GIF_INVALID' });
+});
+
 it('streams exact single-frame GIF pixels without browser decoding or animation metadata', async () => {
   vi.resetModules(); const received = [];
   const scope = { postMessage(message, buffers) { received.push(structuredClone(message, { transfer: buffers ?? [] })); } };

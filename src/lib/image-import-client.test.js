@@ -53,6 +53,7 @@ beforeEach(async () => {
       if (data.type === 'start') {
         if (this.fault === 'error') { queueMicrotask(() => this.onerror?.()); return; }
         if (this.fault === 'messageerror') { queueMicrotask(() => this.onmessageerror?.()); return; }
+        if (this.fault === 'integrity') { this.emit({ type: 'error', code: 'GIF_INVALID', message: 'Invalid GIF pixel count.' }); return; }
         let input;
         if (data.mode === 'gif') {
           const decoded = decodeGif(new Uint8Array(await data.file.arrayBuffer()));
@@ -85,6 +86,20 @@ beforeEach(async () => {
 afterEach(() => { workers.forEach(w => w.terminate()); vi.unstubAllGlobals(); });
 
 describe('lazy serial image imports', () => {
+  it('propagates worker integrity errors without re-decoding or canvas recovery', async () => {
+    fault = 'integrity'; const file = singleGif();
+    file.arrayBuffer = vi.fn(() => { throw Error('An integrity failure must not be retried'); });
+    await expect(api.decodeImportedFile(file)).rejects.toMatchObject({ code: 'GIF_INVALID' });
+    expect(file.arrayBuffer).not.toHaveBeenCalled();
+    expect(createImageBitmap).not.toHaveBeenCalled(); expect(native).not.toHaveBeenCalled();
+    expect(workers[0].terminated).toBe(true);
+  });
+  it.each(['absent', 'messageerror'])('never recovers malformed GIF pixels through canvas (%s)', async mode => {
+    if (mode === 'absent') vi.stubGlobal('Worker', undefined); else fault = mode;
+    const file = Object.assign(new Blob([Buffer.from('R0lGODlhAwADAIAAABEiM6vN7ywAAAAAAwADAAACASwAOw==', 'base64')], { type: 'image/gif' }), { name: 'bad.gif' });
+    await expect(api.decodeImportedFile(file)).rejects.toMatchObject({ code: 'GIF_INVALID' });
+    expect(createImageBitmap).not.toHaveBeenCalled(); expect(native).not.toHaveBeenCalled();
+  });
   it('retains exact single-frame GIF colors and one healthy worker across mixed imports', async () => {
     const files = [singleGif(), gif(), png(), singleGif()];
     const expected = decodeGif(new Uint8Array(await files[0].arrayBuffer())).frames[0].data;

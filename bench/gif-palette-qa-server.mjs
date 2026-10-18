@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
-import { resolve, relative, isAbsolute, extname } from 'node:path';
+import { resolve, relative, isAbsolute, extname, dirname } from 'node:path';
 import { inflateSync, crc32 } from 'node:zlib';
 import { createHash } from 'node:crypto';
 import omggif from 'omggif';
@@ -38,7 +38,7 @@ function makeUnionGif(frameCount) {
   for (let frame = 0; frame < frameCount; frame++) writer.addFrame(0, 0, 255, 3, Uint8Array.from({ length: 765 }, (_, i) => i % 255 + 1), { delay: 7, disposal: 2, ...(frame ? { palette: palette(frame) } : {}) });
   return Buffer.from(bytes.subarray(0, writer.end()));
 }
-const names = { source: 'idle_rotations_4dir (2).gif', output: 'idle_rotations_4dir (2)-colorfetti.gif', sourceAse: 'palette.aseprite', outputAse: 'output_palette.aseprite', hex: 'Auto copy (1).hex', still: 'exact-still.gif', partial: 'partial-opaque.gif', overLimit: 'over-limit.gif', overReview: 'over-review-limit.gif' };
+const names = { source: 'idle_rotations_4dir (2).gif', output: 'idle_rotations_4dir (2)-colorfetti.gif', sourceAse: 'palette.aseprite', outputAse: 'output_palette.aseprite', hex: 'Auto copy (1).hex', still: 'exact-still.gif', partial: 'partial-opaque.gif', overLimit: 'over-limit.gif', overReview: 'over-review-limit.gif', malformedShort: 'invalid-short-pixels.gif', malformedIndex: 'invalid-palette-index.gif' };
 const synthetic = {
   source: makeGif(), output: makeGif(), sourceAse: makeAse([0x00ff00, ...colors, 0, 0, 0, 0, 0, 0, 0]),
   outputAse: makeAse([colors[0], ...colors, 0, 0]),
@@ -46,6 +46,9 @@ const synthetic = {
   still: makeGif(true),
   partial: Buffer.from('R0lGODlhAgABAIAAAP8AAAAA/yH5BAgUAAAALAAAAAABAAEAAAICTAEAIfkEABQAAAAsAQAAAAEAAQAAAgJMAQA7', 'base64'),
   overLimit: makeUnionGif(2), overReview: makeUnionGif(17),
+  // Structurally framed GIFs with invalid decoded pixel counts / palette indexes.
+  malformedShort: Buffer.from('R0lGODlhAwADAIAAABEiM6vN7ywAAAAAAwADAAACASwAOw==', 'base64'),
+  malformedIndex: Buffer.from('R0lGODlhAwADAIAAABEiM6vN7ywAAAAAAwADAAACA5x/BQA7', 'base64'),
 };
 const fixtures = Object.fromEntries(Object.entries(synthetic).map(([key, bytes]) => [key, privateRoot && ['source', 'output', 'sourceAse', 'outputAse', 'hex'].includes(key) ? readFileSync(resolve(privateRoot, names[key])) : bytes]));
 
@@ -95,12 +98,37 @@ function readPng(bytes) {
 const source = readGif(fixtures.source), output = readGif(fixtures.output), still = readGif(fixtures.still);
 const manifest = { privateFixtures: !!privateRoot, files: Object.fromEntries(Object.entries(names).map(([key, name]) => [key, { name, type: extname(name) === '.gif' ? 'image/gif' : 'application/octet-stream' }])), colors: summary(source.frames), solidColors: summary(source.frames, true), firstFrameColors: summary([source.frames[0]]), sourceFrames: source.frames.length, stillColors: summary(still.frames), suppliedOutputColors: summary(output.frames), sourceAseColors: 31, outputAseColors: 30, hexColors: 51 };
 assert.equal(manifest.colors.length, 29, 'QA source must expose exactly 29 visible colors');
+// Optional independently produced still-image references remain separate from
+// app decoders and browser canvas. Preserve each profile reference's provenance.
+// No private fixture bytes enter the repository.
+const rasterReferences = new Map();
+manifest.stills = [];
+if (args.includes('--stills')) {
+  const path = resolve(option('--stills')), directory = dirname(path);
+  for (const [index, entry] of JSON.parse(readFileSync(path, 'utf8')).entries()) {
+    const key = 'raster-' + index, expected = { width: entry.width, height: entry.height, data: readFileSync(resolve(directory, entry.rgbaFile)) };
+    assert.equal(expected.data.length, expected.width * expected.height * 4, 'Independent RGBA reference size ' + entry.file);
+    const colors = summary([expected]);
+    let partialAlpha = false;
+    for (let p = 3; p < expected.data.length; p += 4) if (expected.data[p] > 0 && expected.data[p] < 255) partialAlpha = true;
+    fixtures[key] = readFileSync(resolve(directory, entry.file));
+    manifest.files[key] = { name: entry.file, type: entry.type };
+    const reference = entry.referenceNote || 'independent FFmpeg RGBA';
+    manifest.stills.push({ key, name: entry.file, type: entry.type, width: entry.width, height: entry.height,
+      colors, partialAlpha, exactSource: !!entry.exactSource, exifOrientation: entry.exifOrientation ?? null,
+      reference, rgbaSha256: createHash('sha256').update(expected.data).digest('hex') });
+    rasterReferences.set(key, { ...expected, frames: [expected], reference });
+  }
+}
 function same(actual, expected, mode = 'identity') {
   assert.equal(actual.width, expected.width, 'Width'); assert.equal(actual.height, expected.height, 'Height');
   for (let p = 0; p < actual.data.length; p += 4) { assert.equal(actual.data[p + 3], expected.data[p + 3], 'Alpha at ' + p / 4); if (mode === 'identity' && actual.data[p + 3]) for (let c = 0; c < 3; c++) assert.equal(actual.data[p + c], expected.data[p + c], 'Visible RGB at ' + p / 4); }
 }
-function verify(bytes, name, mode = 'identity', maxColors) {
-  const isStill = name.startsWith('exact-still'), expected = isStill ? still : source, actual = name.endsWith('.gif') ? readGif(bytes) : { frames: [readPng(bytes)] };
+function verify(bytes, name, mode = 'identity', maxColors, fixtureKey) {
+  const isStill = name.startsWith('exact-still'), expected = fixtureKey ? rasterReferences.get(fixtureKey) : isStill ? still : source;
+  assert.ok(expected, 'Unknown independent fixture ' + fixtureKey);
+  if (fixtureKey) assert.ok(name.endsWith('.png'), 'Still-image Save must produce PNG');
+  const actual = name.endsWith('.gif') ? readGif(bytes) : { frames: [readPng(bytes)] };
   assert.equal(actual.frames.length, name.endsWith('.gif') ? expected.frames.length : 1, 'Frame count');
   if (name.endsWith('.gif')) { assert.equal(actual.loop, expected.loop, 'GIF loop'); for (let i = 0; i < actual.frames.length; i++) assert.equal(actual.frames[i].delay, expected.frames[i].delay, 'GIF delay'); }
   for (let i = 0; i < actual.frames.length; i++) {
@@ -109,7 +137,8 @@ function verify(bytes, name, mode = 'identity', maxColors) {
   }
   const used = summary(actual.frames); if (maxColors) assert.ok(used.length <= maxColors, `Used ${used.length} colors exceeds ${maxColors}`);
   if (mode === 'cap') for (const color of used) assert.ok(manifest.colors.includes(color), 'Output outside source/Auto palette ' + color);
-  return { name, bytes: bytes.length, sha256: createHash('sha256').update(bytes).digest('hex'), frames: actual.frames.length, colors: used.length, pixels: mode === 'identity' ? 'exact visible RGBA' : mode === 'cap' ? 'alpha and palette membership exact' : '1-bit format and dimensions smoke', delays: true, loop: true };
+  return { name, bytes: bytes.length, sha256: createHash('sha256').update(bytes).digest('hex'), frames: actual.frames.length, colors: used.length, pixels: mode === 'identity' ? 'exact visible RGBA' : mode === 'cap' ? 'alpha and palette membership exact' : '1-bit format and dimensions smoke', delays: true, loop: true,
+    ...(fixtureKey ? { fixtureKey, reference: expected.reference } : {}) };
 }
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.gif': 'image/gif', '.png': 'image/png', '.ico': 'image/x-icon', '.webmanifest': 'application/manifest+json' };
 const probe = `<!doctype html><meta charset="utf-8"><title>Native GIF decoder probe</title><h1>Opaque partial GIF native decoding</h1><img src="/fixture/partial"><pre id="result">Decoding…</pre><script type="module">const bytes=await(await fetch('/fixture/partial')).arrayBuffer(),blob=new Blob([bytes],{type:'image/gif'}),bitmap=await createImageBitmap(blob),canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;const ctx=canvas.getContext('2d');ctx.drawImage(bitmap,0,0);const result={createImageBitmap:[...ctx.getImageData(0,0,canvas.width,canvas.height).data]};bitmap.close();if(typeof ImageDecoder!=='undefined'){const decoder=new ImageDecoder({data:bytes,type:'image/gif'});result.ImageDecoder=[];for(let i=0;i<2;i++){const {image}=await decoder.decode({frameIndex:i}),out=new Uint8Array(image.allocationSize({format:'RGBA'}));await image.copyTo(out,{format:'RGBA'});result.ImageDecoder.push([...out]);image.close();}decoder.close();}const sourceBytes=await(await fetch('/fixture/source')).arrayBuffer(),sourceBitmap=await createImageBitmap(new Blob([sourceBytes],{type:'image/gif'})),sourceCanvas=document.createElement('canvas');sourceCanvas.width=sourceBitmap.width;sourceCanvas.height=sourceBitmap.height;const sourceContext=sourceCanvas.getContext('2d',{willReadFrequently:true,colorSpace:'srgb'});sourceContext.drawImage(sourceBitmap,0,0);const sourceData=sourceContext.getImageData(0,0,sourceCanvas.width,sourceCanvas.height).data,colors=new Set();for(let p=0;p<sourceData.length;p+=4)if(sourceData[p+3])colors.add('#'+[...sourceData.subarray(p,p+3)].map(value=>value.toString(16).padStart(2,'0')).join(''));sourceBitmap.close();const expected=(await(await fetch('/manifest')).json()).firstFrameColors;result.originalFirstFrameCanvas={count:colors.size,colors:[...colors].sort(),expectedCount:expected.length,expectedColors:expected,extra:[...colors].filter(color=>!expected.includes(color)),missing:expected.filter(color=>!colors.has(color))};document.querySelector('#result').textContent=JSON.stringify(result,null,2);await fetch('/report',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({kind:'probe',...result})});</script>`;
@@ -126,7 +155,7 @@ const server = createServer(async (req, res) => {
         const bytes = Buffer.from(data.base64, 'base64');
         const artifact = `${data.mode || 'identity'}-${createHash('sha256').update(bytes).digest('hex').slice(0, 12)}-${data.name.replace(/[^\w. -]/g, '_')}`;
         writeFileSync(resolve(out, artifact), bytes);
-        result = data.type === 'application/zip' ? Object.entries(unzipSync(bytes)).map(([name, entry]) => verify(Buffer.from(entry), name, data.mode, data.maxColors)) : verify(bytes, data.name, data.mode, data.maxColors);
+        result = data.type === 'application/zip' ? Object.entries(unzipSync(bytes)).map(([name, entry]) => verify(Buffer.from(entry), name, data.mode, data.maxColors)) : verify(bytes, data.name, data.mode, data.maxColors, data.fixtureKey);
       } else throw Error('Unknown POST'); res.writeHead(200, { 'content-type': 'application/json' }).end(JSON.stringify(result)); return;
     }
     if (url.pathname === '/manifest') { res.writeHead(200, { 'content-type': 'application/json' }).end(JSON.stringify(manifest)); return; }

@@ -2641,7 +2641,7 @@ up to 32 MiB and 16 × 1024 × 1024 decoded pixels per frame. GIF unions every c
 frame through artwork's exact indexed decoder, with a notice explaining the scope.
 Browser decoding yields color-managed sRGB values; exactness concerns those decoded
 values, not arbitrary original color-profile bytes. Artwork and palette-image import
-share `image-decode.js`: PNG uses native ImageDecoder with default color management
+share `image-decode.js`: PNG/JPEG/WebP/BMP use native ImageDecoder with default color management
 when supported. Only packed RGBA/BGRA frames whose metadata proves fullRange true,
 matrix rgb, primaries bt709 and transfer iec61966-2-1 copy native bytes without another
 format/color-space conversion. Requested packed layout is verified. BGRA swaps only
@@ -2652,10 +2652,22 @@ which neither copy unpremultiplies) uses the bitmap/canvas path. Other formats/s
 with partial or non-sRGB metadata retain explicit managed RGBA/sRGB copyTo, preserving
 profile conversion. Default visible-rectangle copying remains intact. No float16 readback
 replacement or colorSpaceConversion none is introduced. Native capability,
-decoding/copy errors or presentation transforms fall back
-to the existing color-managed bitmap/canvas path. Other still-image formats retain that
+decoding/copy errors, unknown color space or display scaling fall back
+to the existing color-managed bitmap/canvas path. Proven pure 0/90/180/270-degree
+rotations followed by horizontal flip rearrange native bytes without resampling;
+physical visible and presented dimensions must agree. This allocates one additional
+RGBA buffer only for oriented frames, yielding with an 8 ms target checked between
+32768-pixel chunks. Other still-image formats retain that
 path; GIF palette and artwork imports share the indexed decoder described above. All paths honor cancellation,
 palette pixel limits and resource cleanup. No colors are heuristically rounded or merged.
+GIF LZW decode validates dictionary references, exact output length, every emitted
+palette index and termination while copying the palette's exact RGB bytes once.
+Malformed or parser-unsupported GIF data fails explicitly for artwork and palettes;
+recognized GIFs never retry through native bitmap/canvas. Worker transport/runtime
+failures can still recover through the same exact decoder from immutable file bytes.
+The original framing parser retains per-frame metadata; scan bitsets and pixel caps
+do not imply a total heap bound. Canvas fallbacks for other formats can still be
+privacy-perturbed and can round partially transparent RGB.
 The browser can allocate decode
 buffers before dimensions are exposed.
 

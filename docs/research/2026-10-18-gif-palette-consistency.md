@@ -23,12 +23,12 @@ adds a duplicate transparent green plus four RGBs from local frame tables. Its
 37 slots include six black entries and two green entries. All 31 unique stored
 RGBs agree with the GIF's complete table union. Green is the transparent index;
 black padding is unused, leaving 29 visible RGBs. The displayed final index 36
-therefore does not mean36 visible colors.
+therefore does not mean 36 visible colors.
 
 The output Aseprite table matches the exported GIF's global table entry for
 entry. Slot 0 is transparent and duplicates slot 1's RGB; two black padding entries
 are unused. There are 29 visible RGBs, 30 distinct stored RGBs and 32 stored slots.
-The displayed final index 31 likewise does not mean31 visible colors.
+The displayed final index 31 likewise does not mean 31 visible colors.
 
 The Auto palette sorts its exact source RGBs deterministically. Export compacts
 used colors into one global table and pads it to a legal power-of-two size.
@@ -45,11 +45,14 @@ The four colors that first appear later are absent: `#887263`, `#945f35`,
 Palette-image import previously decoded GIFs through `createImageBitmap` and
 canvas readback. Artwork animations used an independent indexed decoder. The
 first-frame-only palette path both omitted later colors and exposed palette
-acquisition to browser readback perturbations. The supplied 26 false near-duplicates
-are consistent with that failure. The current Codex Browser's old canvas path
-returned the correct 25 first-frame colors, so the browser-specific perturbation
-itself was not reproduced here. The fix removes that readback path for GIFs;
-it does not try to merge similar colors heuristically.
+acquisition to browser readback perturbations. The later isolated Brave diagnostic
+directly reproduced 25 first-frame colors becoming 51 and identified default-Shields
+RGB least-significant-bit perturbation in the installed version's source. All 26
+historical extras have that signature. The old Codex Browser canvas path returned 25;
+this difference between browsers was diagnostic evidence, not a reason to dismiss
+the supplied HEX. See [the full diagnostic review](2026-10-18-palette-diagnostic-review.md)
+for controls, exact provenance, follow-up fixes and final validation. The fix removes
+GIF canvas readback; it does not merge similar colors heuristically.
 
 GIF palette import now uses artwork's indexed compositor
 and unions every frame, with an explicit editor notice. Every color and Find
@@ -60,7 +63,8 @@ Transparent/unused entries never become image colors.
 Single-frame artwork GIFs also previously made a worker→native bitmap/canvas→
 worker round trip. They now analyze and transfer the existing exact indexed
 pixels once, with the same exact cooperative fallback and still-image PNG Save
-semantics. PNG native decoding and other still-image decoders are unchanged.
+semantics. The follow-up review also extends native still decoding to PNG/JPEG/WebP/BMP,
+handles pure orientation without canvas and strictly rejects malformed GIF pixels.
 
 The sub-agent challenged disposal/background handling with a partial opaque
 GIF. GDI+ paints an uncovered global background there, but actual Codex Browser
@@ -101,7 +105,7 @@ with an exact 4352-color union, Auto and GIF round trips, worker recovery and
 mixed queued native PNG/GIF imports. Existing conversion and export suites run
 alongside these focused regressions.
 
-Final validation: **1091 unit tests passed, 2 pre-existing tests skipped**, across
+Initial-commit validation (`6f8238a`): **1091 unit tests passed, 2 pre-existing tests skipped**, across
 66 passing test files; production build passed. The actual Codex Browser passed
 all 15 acceptance checks at desktop 1280×720 and phone 390×844 with the touch-UI
 capability shim, with zero runtime errors. Phone document and iframe scroll

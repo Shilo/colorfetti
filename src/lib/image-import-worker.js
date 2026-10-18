@@ -37,6 +37,6 @@ self.onmessage = async ({ data }) => {
     self.postMessage(message, importFrameTransfers(message));
   } catch (error) {
     state = null; preparing = false;
-    self.postMessage({ type: 'error', name: error.name, message: error.message });
+    self.postMessage({ type: 'error', name: error.name, message: error.message, code: error.code });
   }
 };

@@ -3,7 +3,7 @@
 ## Exact GIF palette acquisition (October 18, 2026)
 
 GIF palette import now visits all composited frames through artwork's indexed
-decoder, avoiding potential bitmap/canvas color perturbations. The editor retains compressed
+decoder, avoiding directly reproduced Brave default-Shields canvas perturbations. The editor retains compressed
 bytes for Every color/Find solid colors rescans, rather than decoded frames. Scanning
 borrows one compositing canvas and waits for each scanner before advancing; disposal 3
 can retain one restoration canvas. Logical dimensions are checked against 16 MP
@@ -16,8 +16,22 @@ promise a universal frame-time bound. Closing/canceling stops future frame work.
 
 Single-frame artwork GIFs now analyze/transfer their indexed pixels once on the
 serial import worker. Removing the native bitmap round trip also removes its
-potential readback noise and extra decode. PNG and other native still paths remain
-unchanged. Stills retain PNG Save and no animation timing metadata.
+readback noise and extra decode. Stills retain PNG Save and no animation timing metadata.
+
+The shared GIF blitter validates LZW output length, emitted palette indices,
+dictionary references and termination during its single decode. Its dictionary and
+stack add 20 KiB per active frame decode; it does not allocate a second index image.
+Malformed or unsupported GIFs fail explicitly instead of retrying through canvas.
+The existing framing parser still retains metadata for every frame; the scan bitsets
+and pixel caps are not a whole-heap bound. One large LZW frame remains synchronous.
+
+PNG/JPEG/WebP/BMP prefer the shared native color-managed decoder. Known packed sRGB
+copies avoid a redundant conversion; other known spaces request RGBA/sRGB. Proven
+pure EXIF rotation/flip rearranges bytes into one additional RGBA buffer, yielding
+at an 8 ms target checked between 32768-pixel groups. Unoriented frames need no
+second buffer. Native API absence, unknown color space, display scaling and copy
+failures retain canvas fallback and its possible perturbation/alpha-rounding limits.
+See [the diagnostic review](research/2026-10-18-palette-diagnostic-review.md).
 
 ## Fresh whole-app audit (October 17, 2026)
 
@@ -248,10 +262,11 @@ remains authoritative and yields zero colors. The initial request and conversion
 handoff retain an already completed conversion of the same item; pending work does
 not remove its canvas. This is display continuity, not reduced generation cost.
 
-Artwork and palette-image import share native PNG ImageDecoder/copyTo RGBA/sRGB when
+Artwork and palette-image import share native PNG/JPEG/WebP/BMP ImageDecoder/copyTo RGBA/sRGB when
 supported. It streams the file and avoids a canvas readback/premultiplied-alpha round
 trip, without adding a PNG parser or color-merging heuristic. Native capability/errors
-and transformed frames fall back to the previous bitmap/canvas decoder. Other formats
+and display-scaled/unknown-space frames fall back to the previous bitmap/canvas decoder. Pure
+orientation is handled by exact byte permutation. Other formats
 and the independent animated GIF decoder retain their paths. Native/frame/bitmap/canvas
 resources close on completion, failure and cancellation; palette import limits remain.
 The supplied two-color PNG had eight visible colors after physical-phone canvas

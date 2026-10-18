@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GIF canvas readback diagnostic</title>
+<style>
+  :root { color-scheme: light dark; font: 16px/1.5 system-ui, sans-serif; }
+  body { max-width: 1000px; margin: 32px auto; padding: 0 20px; }
+  button { font: inherit; min-height: 44px; padding: 8px 18px; margin: 4px 8px 4px 0; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; padding: 16px; background: #8882; border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { padding: 10px; border-bottom: 1px solid #8886; text-align: left; }
+  .error { color: #e45555; }
+</style>
+<h1>GIF canvas readback diagnostic</h1>
+<p>This local test compares raw GIF pixels, the old canvas import path, native image decoding, and known opaque pixel data. It leaves browser settings unchanged. Reports stay in this repository.</p>
+<p id="fixture">Loading fixture…</p>
+<button id="run" disabled>Run diagnostics</button><button id="save" disabled>Download JSON</button>
+<p id="status" role="status"></p>
+<div id="results"></div>
+<details><summary>Full diagnostic report</summary><pre id="result"></pre></details>
+<script type="module">
+const runButton = document.getElementById('run');
+const saveButton = document.getElementById('save');
+const status = document.getElementById('status');
+const results = document.getElementById('results');
+let fixture, report;
+const pause = () => new Promise(resolve => setTimeout(resolve, 0));
+const asHex = (data, offset) => '#' + ((data[offset] << 16) | (data[offset + 1] << 8) | data[offset + 2]).toString(16).padStart(6, '0');
+const fromBase64 = value => Uint8ClampedArray.from(atob(value), x => x.charCodeAt(0));
+const listColors = data => {
+  const unique = new Set();
+  for (let i = 0; i < data.length; i += 4) if (data[i + 3]) unique.add(asHex(data, i));
+  return [...unique];
+};
+async function sha256(bytes) {
+  const digest = await crypto.subtle.digest('SHA-256', bytes);
+  return [...new Uint8Array(digest)].map(x => x.toString(16).padStart(2, '0')).join('');
+}
+function comparePixels(actual, expected, width) {
+  if (actual.length !== expected.length) return { equal: false, lengthMismatch: { actual: actual.length, expected: expected.length } };
+  let changedPixels = 0, changedVisiblePixels = 0, changedTransparentPixels = 0, changedAlpha = 0;
+  let rgbChangesAreOnlyLsb = true, maxRgbDelta = 0, twoOrThreeChannelPixels = 0;
+  const examples = [], deltaHistogram = { r: {}, g: {}, b: {}, a: {} }, changedSourceRgb = new Map();
+  for (let i = 0; i < actual.length; i += 4) {
+    let changed = false, rgbChannels = 0;
+    for (let c = 0; c < 4; c++) {
+      const delta = actual[i + c] - expected[i + c];
+      if (!delta) continue;
+      changed = true;
+      const channel = 'rgba'[c];
+      deltaHistogram[channel][delta] = (deltaHistogram[channel][delta] ?? 0) + 1;
+      if (c === 3) changedAlpha++;
+      else { rgbChannels++; maxRgbDelta = Math.max(maxRgbDelta, Math.abs(delta)); if ((actual[i + c] ^ expected[i + c]) !== 1) rgbChangesAreOnlyLsb = false; }
+    }
+    if (!changed) continue;
+    changedPixels++;
+    if (rgbChannels > 1) twoOrThreeChannelPixels++;
+    if (expected[i + 3] || actual[i + 3]) {
+      changedVisiblePixels++;
+      const before = asHex(expected, i), after = asHex(actual, i), key = before + '→' + after;
+      if (changedSourceRgb.has(key)) changedSourceRgb.get(key).count++;
+      else if (changedSourceRgb.size < 4096) changedSourceRgb.set(key, { before, after, count: 1 });
+    } else changedTransparentPixels++;
+    if (examples.length < 64) examples.push({ x: (i / 4) % width, y: Math.floor(i / 4 / width), before: [...expected.subarray(i, i + 4)], after: [...actual.subarray(i, i + 4)] });
+  }
+  const expectedColors = listColors(expected), actualColors = listColors(actual);
+  const expectedSet = new Set(expectedColors), actualSet = new Set(actualColors);
+  return { equal: changedPixels === 0, changedPixels, changedVisiblePixels, changedTransparentPixels, changedAlpha,
+    rgbChangesAreOnlyLsb, maxRgbDelta, twoOrThreeChannelPixels, deltaHistogram,
+    expectedColorCount: expectedColors.length, actualColorCount: actualColors.length,
+    addedRgb: actualColors.filter(x => !expectedSet.has(x)).slice(0, 4096), missingRgb: expectedColors.filter(x => !actualSet.has(x)).slice(0, 4096),
+    changedSourceRgb: [...changedSourceRgb.values()], examples };
+}
+function suppliedHexSignature() {
+  const first = new Set(fixture.frames[0].colors), all = new Set(fixture.union);
+  const extra = fixture.suppliedHex.filter(x => !all.has(x));
+  const mappings = extra.map(color => {
+    const n = parseInt(color.slice(1), 16);
+    const candidates = fixture.frames[0].colors.map(source => {
+      const p = parseInt(source.slice(1), 16), xor = [16, 8, 0].map(shift => ((n >> shift) & 255) ^ ((p >> shift) & 255));
+      return { source, xor, changedChannels: xor.filter(x => x !== 0).length };
+    }).filter(x => x.xor.every(v => v === 0 || v === 1));
+    return { color, candidates };
+  });
+  return { total: fixture.suppliedHex.length, genuineFirstFrame: fixture.suppliedHex.filter(x => first.has(x)).length,
+    extraCount: extra.length, missingAnimationColors: fixture.union.filter(x => !fixture.suppliedHex.includes(x)),
+    everyExtraOnlyLsb: mappings.length > 0 && mappings.every(x => x.candidates.length > 0), mappings };
+}
+function addCheck(name, actual, expected, width, extra = {}) {
+  const comparison = comparePixels(actual, expected, width);
+  report.checks.push({ name, ...extra, comparison });
+  return comparison;
+}
+async function nativeFrame(decoder, frameIndex) {
+  const { image } = await decoder.decode({ frameIndex, completeFramesOnly: true });
+  try {
+    const width = image.visibleRect.width, height = image.visibleRect.height;
+    const nativeMetadata = { codedWidth: image.codedWidth, codedHeight: image.codedHeight,
+      visibleRect: image.visibleRect.toJSON?.() ?? { x: image.visibleRect.x, y: image.visibleRect.y, width, height },
+      displayWidth: image.displayWidth, displayHeight: image.displayHeight, rotation: image.rotation ?? 0, flip: image.flip ?? false };
+    const pixels = new Uint8ClampedArray(width * height * 4);
+    const layout = [{ offset: 0, stride: width * 4 }];
+    const space = image.colorSpace, packedSrgb = ['RGBA', 'BGRA'].includes(image.format) && space?.fullRange === true && space.matrix === 'rgb' && space.primaries === 'bt709' && space.transfer === 'iec61966-2-1';
+    if (packedSrgb) {
+      await image.copyTo(pixels, { layout });
+      if (image.format === 'BGRA') for (let i = 0; i < pixels.length; i += 4) { const red = pixels[i]; pixels[i] = pixels[i + 2]; pixels[i + 2] = red; }
+    } else await image.copyTo(pixels, { format: 'RGBA', colorSpace: 'srgb', layout });
+    const rotation = image.rotation ?? 0, flip = image.flip ?? false;
+    let displayed = pixels, displayWidth = width, displayHeight = height;
+    if (rotation || flip) {
+      displayWidth = rotation % 180 ? height : width; displayHeight = rotation % 180 ? width : height;
+      displayed = new Uint8ClampedArray(pixels.length);
+      // WebCodecs presents rotation clockwise, followed by horizontal flip.
+      for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
+        let dx = x, dy = y;
+        if (rotation === 90) { dx = height - 1 - y; dy = x; }
+        else if (rotation === 180) { dx = width - 1 - x; dy = height - 1 - y; }
+        else if (rotation === 270) { dx = y; dy = width - 1 - x; }
+        if (flip) dx = displayWidth - 1 - dx;
+        displayed.set(pixels.subarray((y * width + x) * 4, (y * width + x) * 4 + 4), (dy * displayWidth + dx) * 4);
+      }
+    }
+    return { pixels: displayed, width: displayWidth, height: displayHeight, format: image.format, nativeMetadata,
+      copyMode: packedSrgb ? 'native packed sRGB' : 'managed RGBA/sRGB', colorSpace: image.colorSpace?.toJSON?.() ?? image.colorSpace };
+  } finally { image.close(); }
+}
+function canvas(width, height) {
+  const element = document.createElement('canvas');
+  element.width = width; element.height = height;
+  const context = element.getContext('2d', { willReadFrequently: true, colorSpace: 'srgb' });
+  if (!context) throw new Error('2D canvas unavailable.');
+  return { element, context, close() { element.width = element.height = 0; } };
+}
+function showReport() {
+  document.getElementById('result').textContent = JSON.stringify(report, null, 2);
+  results.replaceChildren();
+  const table = document.createElement('table'), head = table.createTHead().insertRow();
+  for (const label of ['Check', 'Changed pixels', 'Visible RGB count', 'Result']) { const cell = document.createElement('th'); cell.textContent = label; head.append(cell); }
+  const body = table.createTBody();
+  for (const check of report.checks) {
+    const row = body.insertRow(), c = check.comparison;
+    const values = c ? [check.name, String(c.changedPixels ?? '—'), `${c.expectedColorCount ?? '—'} → ${c.actualColorCount ?? '—'}`, c.equal ? 'Exact' : c.rgbChangesAreOnlyLsb && !c.changedAlpha ? 'RGB least-significant-bit changes' : 'Differences'] : [check.name, '—', '—', check.error ?? check.skipped ?? 'Unavailable'];
+    for (const value of values) row.insertCell().textContent = value;
+  }
+  results.append(table);
+}
+async function runDiagnostic() {
+  runButton.disabled = true; saveButton.disabled = true;
+  status.textContent = 'Running…'; results.replaceChildren();
+  report = { schema: 1, startedAt: new Date().toISOString(),
+    browser: { userAgent: navigator.userAgent, brave: await navigator.brave?.isBrave?.() ?? false, secureContext: isSecureContext, origin: location.origin },
+    input: { file: fixture.file, sha256: fixture.sha256, width: fixture.width, height: fixture.height, frameCount: fixture.frames.length, perFrameColors: fixture.frames.map(x => x.colors.length), unionColors: fixture.union.length },
+    suppliedHex: suppliedHexSignature(), checks: [] };
+  try {
+    if (navigator.userAgentData?.getHighEntropyValues) report.browser.uaData = await navigator.userAgentData.getHighEntropyValues(['fullVersionList', 'platformVersion']);
+    const response = await fetch('/fixture.gif', { cache: 'no-store' }), bytes = await response.arrayBuffer();
+    if (await sha256(bytes) !== fixture.sha256) throw new Error('Fixture SHA-256 mismatch.');
+    const expected = fixture.frames.map(x => fromBase64(x.rgbaBase64));
+    let bitmap, surface;
+    try {
+      // This is the precise acquisition path used by the former GIF importer.
+      bitmap = await createImageBitmap(new File([bytes], fixture.file, { type: 'image/gif' }));
+      surface = canvas(bitmap.width, bitmap.height);
+      surface.context.drawImage(bitmap, 0, 0);
+      const read1 = surface.context.getImageData(0, 0, bitmap.width, bitmap.height).data;
+      addCheck('Old GIF bitmap → canvas readback', read1, expected[0], fixture.width, { dimensions: [bitmap.width, bitmap.height] });
+      const read2 = surface.context.getImageData(0, 0, bitmap.width, bitmap.height).data;
+      addCheck('Same canvas read twice', read2, read1, bitmap.width);
+      addCheck('Second read → exact source', read2, expected[0], fixture.width);
+      const second = canvas(bitmap.width, bitmap.height);
+      try { second.context.drawImage(bitmap, 0, 0); const read3 = second.context.getImageData(0, 0, bitmap.width, bitmap.height).data; addCheck('Separate canvas, same content', read3, read1, bitmap.width); }
+      finally { second.close(); }
+    } catch (error) { report.checks.push({ name: 'Old GIF canvas path', error: String(error.message) }); }
+    finally { bitmap?.close(); surface?.close(); }
+    await pause();
+
+    // No image decoding, profiles, animation, scaling, translucency or CSS color
+    // paint is involved: only known fully opaque bytes enter and leave canvas.
+    const width = 128, height = 128, opaque = new Uint8ClampedArray(width * height * 4);
+    const known = ['#4c382b', '#513524', '#b5834c', '#c28c50', '#e4b8aa', '#c48846', '#ddccb3', '#e2c9a8', '#3f9abe', '#91bfcb', '#e3eaed', '#5a3f2c', '#254c61', '#3b2a1f', '#2b6179', '#ccb498'];
+    for (let i = 0; i < width * height; i++) {
+      const color = parseInt(known[(Math.floor(i / width / 16) + Math.floor((i % width) / 16)) % known.length].slice(1), 16);
+      opaque[i * 4] = color >> 16; opaque[i * 4 + 1] = (color >> 8) & 255; opaque[i * 4 + 2] = color & 255; opaque[i * 4 + 3] = 255;
+    }
+    const control = canvas(width, height);
+    try {
+      control.context.putImageData(new ImageData(opaque.slice(), width, height), 0, 0);
+      const read1 = control.context.getImageData(0, 0, width, height).data;
+      addCheck('Known opaque bytes → canvas readback', read1, opaque, width);
+      const read2 = control.context.getImageData(0, 0, width, height).data;
+      addCheck('Known opaque repeated read', read2, read1, width);
+    } finally { control.close(); }
+    await pause();
+
+    if (typeof ImageDecoder === 'undefined' || !(await ImageDecoder.isTypeSupported('image/gif'))) {
+      report.checks.push({ name: 'Native ImageDecoder GIF copyTo', skipped: 'ImageDecoder GIF is unavailable in this browser.' });
+    } else {
+      const decoder = new ImageDecoder({ data: new Uint8Array(bytes), type: 'image/gif', preferAnimation: true, colorSpaceConversion: 'default' });
+      try {
+        await decoder.tracks.ready;
+        report.nativeTrackFrameCount = decoder.tracks.selectedTrack?.frameCount;
+        for (let i = 0; i < fixture.frames.length; i++) {
+          try {
+            const frame = await nativeFrame(decoder, i);
+            addCheck(`Native GIF frame ${i + 1} copyTo`, frame.pixels, expected[i], fixture.width, { dimensions: [frame.width, frame.height], nativeFormat: frame.format, nativeColorSpace: frame.colorSpace, nativeMetadata: frame.nativeMetadata });
+          } catch (error) { report.checks.push({ name: `Native GIF frame ${i + 1} copyTo`, error: String(error.message) }); }
+          await pause();
+        }
+      } finally { decoder.close(); }
+    }
+    for (const still of fixture.stills ?? []) {
+      status.textContent = `Testing ${still.file}…`;
+      const bytes = await (await fetch('/still/' + encodeURIComponent(still.file), { cache: 'no-store' })).arrayBuffer();
+      if (await sha256(bytes) !== still.sha256) throw new Error(`SHA-256 mismatch for ${still.file}`);
+      const expected = fromBase64(still.rgbaBase64);
+      let native;
+      if (typeof ImageDecoder !== 'undefined' && await ImageDecoder.isTypeSupported(still.type)) {
+        const decoder = new ImageDecoder({ data: new Uint8Array(bytes), type: still.type, preferAnimation: false, colorSpaceConversion: 'default' });
+        try {
+          native = await nativeFrame(decoder, 0);
+          addCheck(`${still.file}: native → independent reference`, native.pixels, expected, still.width,
+            { reference: still.referenceNote ?? 'Independent FFmpeg RGBA', exactSourceFixture: still.exactSource, dimensions: [native.width, native.height], expectedDimensions: [still.width, still.height],
+              nativeFormat: native.format, nativeCopyMode: native.copyMode, nativeColorSpace: native.colorSpace, nativeMetadata: native.nativeMetadata });
+        } catch (error) { report.checks.push({ name: `${still.file}: native decode`, error: String(error.message) }); }
+        finally { decoder.close(); }
+      } else report.checks.push({ name: `${still.file}: native decode`, skipped: `ImageDecoder does not support ${still.type}.` });
+      let bitmap, surface;
+      try {
+        bitmap = await createImageBitmap(new File([bytes], still.file, { type: still.type }));
+        surface = canvas(bitmap.width, bitmap.height); surface.context.drawImage(bitmap, 0, 0);
+        const pixels = surface.context.getImageData(0, 0, bitmap.width, bitmap.height).data;
+        addCheck(`${still.file}: canvas → independent reference`, pixels, expected, still.width,
+          { reference: still.referenceNote ?? 'Independent FFmpeg RGBA', exactSourceFixture: still.exactSource });
+        if (native) addCheck(`${still.file}: canvas → native`, pixels, native.pixels, still.width);
+      } catch (error) { report.checks.push({ name: `${still.file}: canvas decode`, error: String(error.message) }); }
+      finally { bitmap?.close(); surface?.close(); }
+      await pause();
+    }
+    const gif = report.checks.find(x => x.name === 'Old GIF bitmap → canvas readback')?.comparison;
+    const controlResult = report.checks.find(x => x.name === 'Known opaque bytes → canvas readback')?.comparison;
+    const native = report.checks.filter(x => x.name.startsWith('Native GIF frame'));
+    report.summary = gif?.changedVisiblePixels && controlResult?.changedVisiblePixels && native.length === fixture.frames.length && native.every(x => x.comparison?.equal)
+      ? 'Canvas readback changes known opaque RGB bytes; native GIF frames are exact. Review LSB changes and repeatability to identify the browser mechanism.'
+      : 'Diagnostic complete. Review comparisons; a browser mechanism is not assumed from the supplied HEX alone.';
+  } catch (error) { report.error = String(error.message); report.summary = 'Diagnostic could not complete.'; }
+  report.finishedAt = new Date().toISOString();
+  showReport(); saveButton.disabled = false; runButton.disabled = false;
+  try {
+    const saved = await fetch('/report', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(report) });
+    if (!saved.ok) throw new Error(`HTTP ${saved.status}`);
+    const result = await saved.json();
+    status.textContent = `${report.summary} Saved ${result.saved}`;
+  } catch (error) { status.textContent = `${report.summary} Automatic report save failed: ${error.message}. Use Download JSON.`; }
+}
+runButton.addEventListener('click', runDiagnostic);
+saveButton.addEventListener('click', () => {
+  if (!report) return;
+  const url = URL.createObjectURL(new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' }));
+  const anchor = document.createElement('a'); anchor.href = url; anchor.download = `gif-canvas-diagnostic-${report.startedAt.replace(/[:.]/g, '-')}.json`; anchor.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+try {
+  fixture = await (await fetch('/expected.json', { cache: 'no-store' })).json();
+  document.getElementById('fixture').textContent = `${fixture.file}: ${fixture.width} × ${fixture.height}, ${fixture.frames.length} frames, ${fixture.frames.map(x => x.colors.length).join('/')} colors per frame, ${fixture.union.length} colors across the clip.`;
+  runButton.disabled = false;
+} catch (error) { document.getElementById('fixture').textContent = `Fixture could not load: ${error.message}`; }
+</script>
+</html>

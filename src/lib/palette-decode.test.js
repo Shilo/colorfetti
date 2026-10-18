@@ -166,4 +166,12 @@ describe('exact whole-animation GIF palette import', () => {
     }
     expect(createImageBitmap).not.toHaveBeenCalled();
   });
+  it.each([
+    ['short pixel stream', 'R0lGODlhAwADAIAAABEiM6vN7ywAAAAAAwADAAACASwAOw=='],
+    ['index outside the palette', 'R0lGODlhAwADAIAAABEiM6vN7ywAAAAAAwADAAACA5x/BQA7'],
+  ])('rejects %s rather than importing invented RGBs', async (_, base64) => {
+    vi.stubGlobal('createImageBitmap', vi.fn());
+    await expect(decodePaletteFile(file('invalid.gif', Buffer.from(base64, 'base64')))).rejects.toMatchObject({ code: 'GIF_INVALID' });
+    expect(createImageBitmap).not.toHaveBeenCalled();
+  });
 });

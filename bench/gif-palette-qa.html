@@ -45,11 +45,94 @@ function tile(name){return all('.tiles > .tile').find(node=>node.querySelector('
 async function caption(name,count){return until(()=>{const node=tile(name)?.querySelector('.caption-color-count');return node&&node.getAttribute('aria-busy')!=='true'&&node.textContent.trim()===count+' '+(count===1?'color':'colors')?node.textContent:null;},'Caption did not settle at '+count+' colors for '+name);}
 async function clearWall(){for(const node of all('.tiles .acts button[aria-label^="Remove "]'))click(node);await until(()=>!all('.tiles .acts button[aria-label^="Remove "]').length,'Wall did not clear');}
 function b64(bytes){let result='';for(let i=0;i<bytes.length;i+=4096)result+=String.fromCharCode(...bytes.subarray(i,i+4096));return btoa(result);}
-async function verifyArtifact(artifact,mode='identity',maxColors){return post('/verify',{name:artifact.name,type:artifact.blob.type,base64:b64(new Uint8Array(await artifact.blob.arrayBuffer())),mode,maxColors});}
-async function save(name,mode='identity',maxColors){const start=artifacts.length;if(touch){click(label('Image actions for '+name));await until(()=>label('Image actions')?.open,'Touch image actions missing');click(textButton('Save',label('Image actions')));}else click(label('Save '+name));const artifact=await until(()=>artifacts.slice(start).find(value=>value.name&&(value.blob.type==='image/gif'||value.blob.type==='image/png')),'Image download not produced '+name);return verifyArtifact(artifact,mode,maxColors);}
+async function verifyArtifact(artifact,mode='identity',maxColors,fixtureKey){return post('/verify',{name:artifact.name,type:artifact.blob.type,base64:b64(new Uint8Array(await artifact.blob.arrayBuffer())),mode,maxColors,fixtureKey});}
+async function save(name,mode='identity',maxColors,fixtureKey){const start=artifacts.length;if(touch){click(label('Image actions for '+name));await until(()=>label('Image actions')?.open,'Touch image actions missing');click(textButton('Save',label('Image actions')));}else click(label('Save '+name));const artifact=await until(()=>artifacts.slice(start).find(value=>value.name&&(value.blob.type==='image/gif'||value.blob.type==='image/png')),'Image download not produced '+name);return verifyArtifact(artifact,mode,maxColors,fixtureKey);}
 async function reuse(name){const button=label('Reuse colors from '+name);if(!touch&&button?.getClientRects().length)click(button);else{click(label('Image actions for '+name));await until(()=>label('Image actions')?.open,'Image action sheet missing');click(textButton('Reuse colors',label('Image actions')));}await until(()=>d.querySelector('.palette-import-modal[open]'),'Reuse editor missing');}
 async function settings(name='Max colors'){if(!d.querySelector('.palette-settings-panel'))click(label('Palette settings'));await until(()=>d.querySelector('.palette-settings-panel'),'Palette settings missing');const chip=all('.palette-setting-chip').find(node=>node.getAttribute('aria-label')?.startsWith(name+':'));if(chip)click(chip);await sleep(0);}
 async function setCap(value){await settings();if(value){const node=label('Max colors value');input(node,String(value));node.dispatchEvent(new w.Event('change',{bubbles:true}));}else click(label('Use all palette colors'));await until(()=>JSON.parse(w.localStorage.getItem('colorfetti')).maxColors===value,'Max colors did not commit');}
+async function setOpacity(value){await settings('Opacity');click(textButton(value==='keep'?'Keep':'Cut',d.querySelector('.palette-settings-panel')));await until(()=>JSON.parse(w.localStorage.getItem('colorfetti')).alphaMode===value,'Opacity mode did not commit');}
+function dimensions(name,expected){const actual=tile(name)?.querySelector('.caption-resolution')?.textContent.replace(/\s/g,'');assert(actual===expected.width+'×'+expected.height,'Wrong oriented dimensions for '+name+': '+actual);}
+async function browserSourceCount(entry,stream=true){
+  if(typeof w.ImageDecoder==='undefined')return{count:null,reference:'Native decoder unavailable; dimensions only'};
+  let decoder,image;
+  try{
+    const encoded=await file(entry.key);
+    decoder=new w.ImageDecoder({data:stream?encoded.stream():await encoded.arrayBuffer(),type:entry.type,preferAnimation:false,colorSpaceConversion:'default'});
+    image=(await decoder.decode({frameIndex:0,completeFramesOnly:true})).image;
+    const space=image.colorSpace;
+    if(['primaries','transfer','matrix','fullRange'].every(key=>space?.[key]==null))return{count:null,reference:'Unknown native color space; dimensions only'};
+    const width=image.visibleRect.width,height=image.visibleRect.height,pixels=new Uint8Array(width*height*4),layout=[{offset:0,stride:width*4}];
+    const packed=(image.format==='RGBA'||image.format==='BGRA')&&space.fullRange===true&&space.matrix==='rgb'&&space.primaries==='bt709'&&space.transfer==='iec61966-2-1';
+    await image.copyTo(pixels,packed?{layout}:{format:'RGBA',colorSpace:'srgb',layout});
+    const colors=new Set(),bgra=packed&&image.format==='BGRA';
+    for(let p=0;p<pixels.length;p+=4)if(pixels[p+3])colors.add((pixels[p+(bgra?2:0)]<<16)|(pixels[p+1]<<8)|pixels[p+(bgra?0:2)]);
+    return{count:colors.size,format:image.format,colorSpace:space.toJSON(),input:stream?'File stream':'ArrayBuffer',reference:'Harness browser-native managed sRGB; RGB union is orientation invariant'};
+  }finally{image?.close();decoder?.close();}
+}
+async function generatedConvertedReady(name){
+  await rail();
+  return until(()=>{
+    const edit=label('Edit palette'),caption=tile(name)?.querySelector('.caption-color-count'),count=caption?.textContent.trim();
+    return label('Auto')?.getAttribute('aria-pressed')==='true'&&edit&&!edit.disabled&&!d.querySelector('.palette-source-status')&&
+      caption?.getAttribute('aria-busy')!=='true'&&/^\d+ colors?$/.test(count||'')?count:null;
+  },'Auto generation and converted caption did not settle for '+name);
+}
+async function rasterChecks(){
+  const entries=manifest.stills??[],lowColor=entries.filter(entry=>entry.colors.length<=64);
+  if(lowColor.length){
+    await check('PNG, JPEG, BMP and lossless WebP preserve exact opaque RGB through Auto and Save',async()=>{
+      const results=[];for(const entry of lowColor.filter(entry=>!entry.partialAlpha)){
+        await clearWall();await select('Auto');await add(entry.key);await caption(entry.name,entry.colors.length);dimensions(entry.name,entry);
+        results.push({name:entry.name,colors:entry.colors.length,export:await save(entry.name,'identity',undefined,entry.key)});
+      }return{fixtures:results};
+    });
+    await check('Partial-alpha PNG and WebP Keep preserve RGB and every alpha byte in saved PNG',async()=>{
+      const results=[];for(const entry of lowColor.filter(entry=>entry.partialAlpha)){
+        await clearWall();await select('Auto');await add(entry.key);await setOpacity('keep');await caption(entry.name,entry.colors.length);dimensions(entry.name,entry);
+        results.push({name:entry.name,colors:entry.colors.length,export:await save(entry.name,'identity',undefined,entry.key)});
+      }return{fixtures:results};
+    });
+    await check('Still-image palette imports match independent RGB sets without additional colors',async()=>{
+      const results=[];for(const entry of lowColor){
+        const colors=await paletteFile(entry.key,entry.colors.length);assert(JSON.stringify(colors.sort())===JSON.stringify(entry.colors),'Imported RGB differs from independent reference for '+entry.name);
+        results.push({name:entry.name,colors:colors.length,expected:entry.colors});
+      }await closeEditor();return{fixtures:results};
+    });
+  }
+  const gradients=entries.filter(entry=>entry.colors.length>64);
+  if(gradients.length)await check('Gradient, EXIF and profiled JPEG artwork retain oriented dimensions and browser-managed Original counts',async()=>{
+    const results=[];for(const entry of gradients){
+      const source=await browserSourceCount(entry);
+      const buffered=await browserSourceCount(entry,false);
+      await clearWall();await select('Auto');await add(entry.key);dimensions(entry.name,entry);
+      const convertedCount=await generatedConvertedReady(entry.name);
+      click(d.querySelector('.view-toggle'));if(source.count!==null)await caption(entry.name,source.count);
+      assert(d.querySelector('.view-toggle').getAttribute('aria-pressed')==='false','Original view did not activate for '+entry.name);dimensions(entry.name,entry);
+      results.push({name:entry.name,width:entry.width,height:entry.height,convertedCount,originalColors:source.count,nativeSource:source,bufferedNativeSource:buffered,reference:source.reference,independentReference:entry.reference,exifOrientation:entry.exifOrientation});
+      click(d.querySelector('.view-toggle'));
+    }return{fixtures:results,scope:'Original dimensions and browser-native sRGB count where available; independent JPEG/profile decoders may round differently; Auto intentionally limits high-color artwork'};
+  });
+}
+async function malformedChecks(){
+  await check('Framed GIFs with short pixels or out-of-range indices retain palette draft and add no artwork',async()=>{
+    await paletteFile('source',29);const before=editorColors(),paletteErrors=[];
+    for(const key of ['malformedShort','malformedIndex']){
+      await loadFile(d.querySelector('.palette-import-modal input[type=file]'),key);
+      await until(()=>d.querySelector('.palette-editor-error')&&!d.querySelector('.palette-import-progress'),'Malformed framed GIF did not report controlled error: '+key);
+      assert(editorCount()===29&&JSON.stringify(editorColors())===JSON.stringify(before),'Malformed GIF altered reviewed draft: '+key);
+      paletteErrors.push({name:manifest.files[key].name,error:d.querySelector('.palette-editor-error').textContent});
+    }
+    await closeEditor();await clearWall();await until(()=>d.querySelector('.tiles .example-add'),'Empty-wall example missing');
+    const beforeNames=all('.tiles > .tile .name').map(node=>node.textContent),transfer=new w.DataTransfer();
+    for(const key of ['malformedShort','malformedIndex'])transfer.items.add(await file(key));
+    const node=d.querySelector('input[type=file][multiple]');node.files=transfer.files;node.dispatchEvent(new w.Event('change',{bubbles:true}));
+    await until(()=>d.querySelector('.glass-toast')?.textContent.includes('2 files skipped'),'Malformed GIF artwork did not report both rejected files');
+    assert(!tile(manifest.files.malformedShort.name)&&!tile(manifest.files.malformedIndex.name),'Malformed artwork appeared on wall');
+    assert(JSON.stringify(all('.tiles > .tile .name').map(node=>node.textContent))===JSON.stringify(beforeNames),'Malformed artwork changed empty-wall tiles');
+    assert(!all('.tiles .acts button[aria-label^="Remove "]').length&&d.querySelector('.tiles .example-add'),'Malformed artwork displaced the empty-wall example');
+    return{paletteErrors,artworkRejected:2,emptyExampleRetained:true};
+  });
+}
 run.onclick=async()=>{if(run.disabled)return;run.disabled=true;artifacts=[];report={kind:'gif-palette',width:innerWidth,touchCapabilityShim:touch,userAgent:navigator.userAgent,started:new Date().toISOString(),checks:[],errors:[]};try{
   manifest=await(await fetch('/manifest')).json();report.privateFixtures=manifest.privateFixtures;report.sourceColors=manifest.colors;await boot(true);
   await check('Fresh Auto settings and exact original GIF artwork count',async()=>{const stored=JSON.parse(w.localStorage.getItem('colorfetti'));assert(stored.family==='full-palette'&&stored.paletteId==='generated-32','Fresh Auto was not selected');assert((stored.maxColors??0)===0&&!stored.cleanup&&(stored.dither??'none')==='none','Fresh conversion settings changed');await add('source');await caption(manifest.files.source.name,29);return{colors:29,frames:manifest.sourceFrames};});
@@ -67,6 +150,7 @@ run.onclick=async()=>{if(run.disabled)return;run.disabled=true;artifacts=[];repo
   await check('Single-frame GIF stays exact and saves as PNG',async()=>{await clearWall();await select('Auto');await add('still');await caption(manifest.files.still.name,manifest.stillColors.length);const exported=await save(manifest.files.still.name);assert(exported.name.endsWith('.png'),'Single-frame GIF did not save as still PNG');return{export:exported};});
   await check('Mixed ZIP preserves exact GIF and still PNG',async()=>{await add('source');await caption(manifest.files.source.name,29);const start=artifacts.length;click(label('Save all images'));const zip=await until(()=>artifacts.slice(start).find(value=>value.name&&value.blob.type==='application/zip'),'ZIP not produced');const exports=await verifyArtifact(zip);assert(exports.length===2,'ZIP lost entries');return{exports};});
   await check('1-bit smoke and full-palette return preserve GIF support',async()=>{await rail();click(textButton('1-bit',d.querySelector('.palette-family-tabs')));await until(()=>label('Style'),'1-bit family missing');const exported=await save(manifest.files.source.name,'one-bit',2);await rail();click(textButton('Palette',d.querySelector('.palette-family-tabs')));await until(()=>label('Palette settings'),'Palette family missing on return');await caption(manifest.files.source.name,29);return{export:exported,returnedColors:29};});
+  await rasterChecks();await malformedChecks();
   assert(!report.errors.length,'Runtime errors');report.completed=true;status.textContent='PASS — '+report.checks.length+' checks';
 }catch(error){report.completed=false;report.failedPhase=phase;report.error={message:error.message,stack:error.stack};status.textContent='FAIL: '+error.message;}finally{report.finished=new Date().toISOString();await publish();run.disabled=false;}};
 </script></html>

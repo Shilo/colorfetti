@@ -40,7 +40,11 @@ function runWorker(job, target) {
       if (settled) return;
       try {
         checkCanceled(job.controller.signal);
-        if (data.type === 'error') throw new Error(data.message || 'Image import worker failed.');
+        if (data.type === 'error') {
+          const problem = new Error(data.message || 'Image import worker failed.');
+          if (data.code === 'GIF_INVALID') problem.code = data.code;
+          throw problem;
+        }
         if (data.type === 'ready') {
           if (meta || !Number.isSafeInteger(data.count) || data.count < 1
             || data.count > (job.input?.frames.length ?? Math.max(1, job.file.size))
@@ -87,6 +91,8 @@ function runWorker(job, target) {
 }
 async function browserDecode(file, signal) {
   if (isGif(file)) {
+    // Native bitmap/canvas recovery can add RGB shades under Brave Shields.
+    // Recover worker failures through the same exact decoder, or report failure.
     try {
       const { decodeGifAsync } = await import('./gif.js');
       checkCanceled(signal);
@@ -94,7 +100,7 @@ async function browserDecode(file, signal) {
       const animated = gif.frames.length > 1;
       return { frames: gif.frames.map(frame => ({ original: new ImageData(frame.data, gif.width, gif.height),
         ...(animated ? { delay: frame.delay } : {}) })), ...(animated ? { loop: gif.loop } : {}) };
-    } catch { checkCanceled(signal); } // Keep the existing browser fallback for unreadable GIFs.
+    } catch (problem) { checkCanceled(signal); throw problem; }
   }
   return { frames: [{ original: await decodeImageFile(file, { signal }) }] };
 }
@@ -119,8 +125,9 @@ async function drain() {
           try {
             result = await runWorker(job, target);
           }
-          catch {
+          catch (problem) {
             checkCanceled(job.controller.signal);
+            if (problem.code === 'GIF_INVALID') throw problem;
             job.input = null; // Recover from the immutable File, including invalid/aliased or partially transferred inputs.
             result = await fallback(job);
           }

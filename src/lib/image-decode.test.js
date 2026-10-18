@@ -28,7 +28,74 @@ function setupCanvas() {
   return { image, bitmap, context, canvas };
 }
 
-describe('shared PNG source decoding', () => {
+describe('shared native still source decoding', () => {
+  it.each([
+    [0, false, [1, 2, 3, 4, 5, 6]], [0, true, [3, 2, 1, 6, 5, 4]],
+    [90, false, [4, 1, 5, 2, 6, 3]], [90, true, [1, 4, 2, 5, 3, 6]],
+    [180, false, [6, 5, 4, 3, 2, 1]], [180, true, [4, 5, 6, 1, 2, 3]],
+    [270, false, [3, 6, 2, 5, 1, 4]], [270, true, [6, 3, 5, 2, 4, 1]],
+  ])('preserves every RGBA byte with clockwise rotation %i and horizontal flip %s', async (rotation, flip, expected) => {
+    const source = Uint8ClampedArray.from([1, 2, 3, 4, 5, 6].flatMap(n => [n, n + 10, n + 20, n]));
+    const native = setupNative({ copy: async (data, options) => { data.set(source); return options.layout; } }); setupCanvas();
+    const turned = rotation === 90 || rotation === 270;
+    Object.assign(native.frame, { format: 'RGBA', colorSpace: srgb, rotation, flip,
+      displayWidth: turned ? 2 : 3, displayHeight: turned ? 3 : 2, visibleRect: { width: 3, height: 2 } });
+    const image = await decodeImageFile(file('oriented.jpg'));
+    expect(image.data).toEqual(Uint8ClampedArray.from(expected.flatMap(n => [n, n + 10, n + 20, n])));
+    expect([image.width, image.height]).toEqual(turned ? [2, 3] : [3, 2]);
+    expect(native.frame.copyTo).toHaveBeenCalledWith(expect.any(Uint8ClampedArray), { layout: [{ offset: 0, stride: 12 }] });
+    expect(createImageBitmap).not.toHaveBeenCalled();
+    expect(native.frame.close).toHaveBeenCalledOnce(); expect(native.decoder.close).toHaveBeenCalledOnce();
+  });
+  it('cancels a large native orientation at a posted boundary without canvas recovery', async () => {
+    const native = setupNative({ copy: async (_, options) => options.layout }); setupCanvas();
+    Object.assign(native.frame, { format: 'RGBA', colorSpace: srgb, rotation: 90, displayWidth: 64, displayHeight: 1024,
+      visibleRect: { width: 1024, height: 64 } });
+    const controller = new AbortController(); let clock = 0;
+    vi.stubGlobal('performance', { now: () => (clock += 9) });
+    vi.stubGlobal('MessageChannel', class { constructor() {
+      this.port1 = { close: vi.fn() }; this.port2 = { close: vi.fn(), postMessage: () => {
+        controller.abort(); queueMicrotask(() => this.port1.onmessage());
+      } };
+    } });
+    await expect(decodeImageFile(file('oriented.jpg'), { signal: controller.signal })).rejects.toMatchObject({ name: 'AbortError' });
+    expect(createImageBitmap).not.toHaveBeenCalled();
+    expect(native.frame.close).toHaveBeenCalledOnce(); expect(native.decoder.close).toHaveBeenCalledOnce();
+  });
+  it.each([
+    ['sprite.png', 'image/png'], ['sprite.jpg', 'image/jpeg'], ['sprite.jpeg', 'image/jpeg'],
+    ['sprite.webp', 'image/webp'], ['sprite.bmp', 'image/bmp'], ['SPRITE.WEBP', 'image/webp'],
+  ])('decodes %s through native managed pixels without canvas readback', async (name, type) => {
+    const native = setupNative(); setupCanvas();
+    const input = { ...file(name), type: '' };
+    const image = await decodeImageFile(input);
+    expect(image.data).toEqual(pixels);
+    expect(native.Native.isTypeSupported).toHaveBeenCalledWith(type);
+    expect(native.Native).toHaveBeenCalledWith(expect.objectContaining({ type, colorSpaceConversion: 'default', preferAnimation: false }));
+    expect(createImageBitmap).not.toHaveBeenCalled();
+    expect(native.decoder.close).toHaveBeenCalledOnce(); expect(native.frame.close).toHaveBeenCalledOnce();
+  });
+  it.each(['image/png', 'image/jpeg', 'image/webp', 'image/bmp'])('routes extensionless %s stills by MIME', async type => {
+    const native = setupNative(); setupCanvas();
+    expect((await decodeImageFile({ ...file('image'), type })).data).toEqual(pixels);
+    expect(native.Native.isTypeSupported).toHaveBeenCalledWith(type);
+    expect(createImageBitmap).not.toHaveBeenCalled();
+  });
+  it.each(['renamed.jpg', 'renamed.webp', 'renamed.constructor', 'renamed.__proto__'])('uses a recognized MIME before the filename hint (%s)', async name => {
+    const native = setupNative(); setupCanvas();
+    expect((await decodeImageFile({ ...file(name), type: 'image/png' })).data).toEqual(pixels);
+    expect(native.Native.isTypeSupported).toHaveBeenCalledWith('image/png');
+    expect(createImageBitmap).not.toHaveBeenCalled();
+  });
+  it('tries the distinct filename type before canvas if a recognized MIME is incorrect', async () => {
+    const native = setupNative({ construct: options => {
+      if (options.type === 'image/jpeg') throw Error('JPEG hint is wrong');
+      return native.decoder;
+    } }); setupCanvas();
+    expect((await decodeImageFile({ ...file('renamed.png'), type: 'image/jpeg' })).data).toEqual(pixels);
+    expect(native.Native.isTypeSupported.mock.calls.map(args => args[0])).toEqual(['image/jpeg', 'image/png']);
+    expect(createImageBitmap).not.toHaveBeenCalled(); expect(native.decoder.close).toHaveBeenCalledOnce();
+  });
   it.each(['RGBA', 'BGRA'])('preserves native %s sRGB bytes without requesting another color conversion', async format => {
     const exact = Uint8ClampedArray.of(29, 43, 83, 1, 240, 246, 240, 127, 34, 35, 35, 128, 9, 8, 7, 0);
     const native = setupNative({ copy: async (data, options) => {
@@ -139,10 +206,16 @@ describe('shared PNG source decoding', () => {
       expect(native.decoder.close).toHaveBeenCalledOnce(); expect(native.frame.close).toHaveBeenCalledOnce();
     }
   });
-  it('keeps other image formats on their existing browser path', async () => {
+  it('leaves GIF still handling to its caller rather than the native still extension', async () => {
     const native = setupNative(), canvas = setupCanvas();
-    expect(await decodeImageFile(file('sprite.jpg'))).toBe(canvas.image);
+    expect(await decodeImageFile({ ...file('sprite.gif'), type: 'image/gif' })).toBe(canvas.image);
     expect(native.Native.isTypeSupported).not.toHaveBeenCalled();
+  });
+  it.each(['sprite.jpg', 'sprite.webp', 'sprite.bmp'])('keeps capability fallback and pixel limits for %s', async name => {
+    const native = setupNative({ supported: false }), canvas = setupCanvas();
+    await expect(decodeImageFile(file(name), { maxPixels: 3 })).rejects.toThrow('too large');
+    expect(native.Native.isTypeSupported).toHaveBeenCalled();
+    expect(canvas.context.drawImage).not.toHaveBeenCalled(); expect(canvas.bitmap.close).toHaveBeenCalledOnce();
   });
   it('rejects native oversized images before copying without falling back', async () => {
     const native = setupNative(); setupCanvas();
@@ -191,6 +264,16 @@ describe('shared PNG source decoding', () => {
     const job = decodeImageFile(file(), { signal: controller.signal });
     const rejected = expect(job).rejects.toMatchObject({ name: 'AbortError' });
     controller.abort(); release(true); await rejected;
+    expect(native.Native).not.toHaveBeenCalled(); expect(createImageBitmap).not.toHaveBeenCalled();
+  });
+  it('does not start another type probe after cancellation when the first hint is unsupported', async () => {
+    const native = setupNative(); setupCanvas(); let release;
+    native.Native.isTypeSupported.mockImplementationOnce(() => new Promise(resolve => release = resolve));
+    const controller = new AbortController();
+    const job = decodeImageFile({ ...file('sprite.png'), type: 'image/jpeg' }, { signal: controller.signal });
+    const rejected = expect(job).rejects.toMatchObject({ name: 'AbortError' });
+    controller.abort(); release(false); await rejected;
+    expect(native.Native.isTypeSupported).toHaveBeenCalledOnce();
     expect(native.Native).not.toHaveBeenCalled(); expect(createImageBitmap).not.toHaveBeenCalled();
   });
   it('releases a late fallback bitmap after cancellation without reading pixels', async () => {

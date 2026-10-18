@@ -62,6 +62,14 @@ transparent entry; its slot count or final zero-based index is not the image col
 count. Export compacts/reorders indices and pads GIF tables as required by the format,
 while preserving the converted visible pixels.
 
+GIF image-palette import includes every composited frame. It reads exact indexed
+RGB values and rejects malformed data rather than inventing colors. PNG/JPEG/WebP/BMP
+prefer native color-managed sRGB decoding, including exact byte rotation/flip for
+ordinary EXIF orientation. Browsers without a usable native decoder retain the
+bitmap/canvas fallback; privacy protection can alter that readback. The confirmed
+Brave diagnosis and tested limits are recorded in
+[the diagnostic review](research/2026-10-18-palette-diagnostic-review.md).
+
 Auto's tooltip starts with its completed color count and source: for example,
 **Auto · 32 colors · Your images**, or **Auto · 11 colors · Example image**.
 The next line explains generation. This metadata updates with the published palette;

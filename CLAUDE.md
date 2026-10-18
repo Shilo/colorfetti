@@ -141,15 +141,19 @@ comparison/dismissal gesture. Test both mouse retargeting and touch capture.
 and reentry. App and PaletteImport ignore those as inbound imports; native
 dragstart remains uncanceled. External file/URL drops still import normally.
 
-Artwork and palette-image import share `image-decode.js`. PNG prefers native
+Artwork and palette-image import share `image-decode.js`. PNG/JPEG/WebP/BMP prefer native
 ImageDecoder with its existing default color management. Proven full-range sRGB
 RGBA/BGRA frames copy native packed bytes without requesting another conversion;
 BGRA swaps red/blue in place in 128 KiB blocks with an 8 ms posted-task target.
 An all-null color space (Firefox: premultiplied BGRA) takes the canvas path.
 All other formats/metadata retain explicit managed RGBA/sRGB copyTo. This avoids
 observed low-alpha rounding from an unnecessary conversion without merging colors
-or bypassing profiles. Capability/errors/transforms fall back to the existing bitmap/canvas
-decoder; other formats and the independent GIF decoder keep their paths. Release all
+or bypassing profiles. Proven pure rotations/flips rearrange bytes exactly, with one
+additional RGBA buffer only for oriented frames and cooperative cancellation. Display
+scaling, unknown color spaces and unsupported native capabilities retain the existing
+bitmap/canvas fallback, which can still be privacy-perturbed. GIF never falls back to
+canvas: its shared indexed decoder validates LZW output length, palette indices and
+termination and reports malformed/unsupported data explicitly. Release all
 decoder/frame/bitmap/canvas resources, preserve cancellation and palette pixel limits.
 User artwork import lazily loads `image-import-client.js` and one serial worker.
 Single-frame non-GIF stills up to 4096 pixels use the same cooperative analysis

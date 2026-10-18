@@ -1,17 +1,27 @@
 // Reading and writing animated GIFs. No DOM, so it runs in tests.
 import omggif from 'omggif';
+import { decodeGifFrame } from './gif-decode.js';
 import { exportPalette, markUsedAsync, compactTable, EMPTY_INDEX, yieldExport } from './palette-export.js';
 import { paletteAlpha, inspectAlphaPixel } from './palette-alpha.js';
 import { checkCanceled, yieldTask } from './quantize.js';
+
+function invalidGif(message, cause) {
+  const problem = new Error(message, { cause });
+  problem.code = 'GIF_INVALID';
+  return problem;
+}
 
 // Decodes a GIF into full-size RGBA frames, each as it appears on screen. GIF frames can be
 // partial patches drawn over earlier ones, so they are composited here once.
 // Returns { width, height, loop, frames: [{ data, delay }] }: delay is in milliseconds, loop is
 // the repeat count (0 = forever, null = the file plays once).
 function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, limitMessage = 'This image is too large.' } = {}) {
-  const reader = new omggif.GifReader(bytes), { width, height } = reader;
+  let reader;
+  try { reader = new omggif.GifReader(bytes); }
+  catch (problem) { throw invalidGif('Invalid GIF data: ' + problem.message, problem); }
+  const { width, height } = reader;
   if (!width || !height || width * height > maxPixels) throw new Error(limitMessage);
-  if (!reader.numFrames()) throw new Error('This GIF has no image frames.');
+  if (!reader.numFrames()) throw invalidGif('This GIF has no image frames.');
   const canvas = new Uint8ClampedArray(width * height * 4), frames = [];
   let before = null; // the previous frame, whose "disposal" says how to leave the canvas
   let saved = null;
@@ -19,7 +29,7 @@ function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, lim
     const info = reader.frameInfo(i);
     if (!info.width || !info.height || info.x + info.width > width || info.y + info.height > height
       || info.palette_offset == null || !info.palette_size || info.palette_offset + info.palette_size * 3 > bytes.length
-      || info.data_offset + info.data_length > bytes.length) throw new Error('Invalid GIF frame dimensions or data.');
+      || info.data_offset + info.data_length > bytes.length) throw invalidGif('Invalid GIF frame dimensions or data.');
     if (before?.disposal === 2) {
       // the previous frame asked for its area to be cleared
       for (let y = before.y; y < before.y + before.height; y++) {
@@ -29,7 +39,7 @@ function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, lim
       canvas.set(saved); // the previous frame asked to be undone
     }
     if (info.disposal === 3) saved = canvas.slice();
-    reader.decodeAndBlitFrameRGBA(i, canvas);
+    decodeGifFrame(bytes, info, canvas, width);
     // browsers play frames marked 0 or 1 hundredths of a second at 100ms
     const frame = { data: retainFrames ? canvas.slice() : canvas, delay: info.delay > 1 ? info.delay * 10 : 100 };
     if (retainFrames) frames.push(frame);
