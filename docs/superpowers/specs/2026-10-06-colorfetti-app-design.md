@@ -29,6 +29,12 @@ capsule on smaller screens. Feedback is centered and width-bounded within the
 left/right safe areas and the same edge inset.
 Fit uses Lucide's four-corner Maximize icon with the accessible name "Fit image".
 Fit is disabled when the view is already at scale 1 with zero pan offsets.
+Buttons and +/− keys share fixed 1.25× zoom levels anchored at Fit, with 0.25×
+and 16× as additional endpoints. Reversing the same number of successful steps
+from Fit returns exactly to Fit, including after either limit. After continuous
+wheel/pinch zoom, a button moves to the next level in its direction. Continuous
+zoom normalizes numerical roundoff near Fit/limits before transforming the image;
+Fit detection and sampling use that same normalized view.
 Zoom tooltips put the shortcut after the sentence: "Zoom in. (+)",
 "Zoom out. (−)" and "Fit the whole image. (0)".
 Native Escape and modality-aware focus return remain. Enter on focused artwork

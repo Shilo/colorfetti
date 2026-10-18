@@ -87,6 +87,19 @@ document.querySelector('#run').onclick=async()=>{
       const prefix=`${width}×${height} `;
       await check(prefix+'open fits without crop; tap closes; reopening resets',async()=>{await open();assert(view().scale===1,'initial fit');pointer('pointerdown',1,width/2,height/2);pointer('pointerup',1,width/2,height/2);click();await tick();assert(!dialog(),'tap should close');await open();assert(view().scale===1&&view().x===0,'reopen fit');});
       await check(prefix+'Fit disables only at the fitted view',async()=>{await open();assert(button('Fit image').disabled,'Fit enabled on opening');button('Zoom in').click();await tick();assert(!button('Fit image').disabled,'Fit disabled above Fit');button('Fit image').click();await tick();assert(button('Fit image').disabled,'Fit enabled after reset');button('Zoom out').click();await tick();assert(view().scale<1&&!button('Fit image').disabled,'Fit disabled below Fit');doc.activeElement.dispatchEvent(new win.KeyboardEvent('keydown',{bubbles:true,cancelable:true,key:'0'}));await tick();assert(view().scale===1&&button('Fit image').disabled,'keyboard reset did not disable Fit');});
+      await check(prefix+'all button zoom round trips restore exact Fit, including both limits',async()=>{
+        await open();
+        for(const [away,back,steps,limit] of [['Zoom out','Zoom in',7,.25],['Zoom in','Zoom out',13,16]]){
+          for(let count=1;count<=steps;count++){
+            for(let i=0;i<count;i++)button(away).click();await tick();
+            assert(!button('Fit image').disabled,'Fit disabled away from Fit');
+            if(count===steps){assert(view().scale===limit,'wrong limit');assert(button(away).disabled,'limit button enabled');}
+            for(let i=0;i<count;i++)button(back).click();await tick();
+            assert(view().scale===1&&view().x===0&&view().y===0,away+' round trip '+count+' changed geometry');
+            assert(button('Fit image').disabled,away+' round trip '+count+' left Fit enabled');
+          }
+        }
+      });
       await check(prefix+'all controls visible and no viewport overflow',async()=>{await open();for(const name of ['Zoom in','Zoom out','Fit image','Save image','Copy image','Show original image','Close preview']){const r=button(name).getBoundingClientRect();assert(r.left>=0&&r.top>=0&&r.right<=width+1&&r.bottom<=height+1,name+' clipped');}assert(dialog().scrollWidth===dialog().clientWidth,'horizontal overflow');});
       await check(prefix+'visible message, busy and persistent Retry leave zoom hit targets clear',async()=>{await open();await checkToastTargets();});
       await check(prefix+'wheel zoom, trackpad ctrl-wheel, line/page units, limits',async()=>{await open();wheel(-200);await tick();assert(view().scale>1,'wheel in');wheel(-100,{ctrlKey:true});await tick();assert(view().scale>2,'trackpad pinch');wheel(1,{deltaMode:1});wheel(1,{deltaMode:2});for(let i=0;i<12;i++)wheel(240);await tick();assert(Math.abs(view().scale-.25)<.0001,'minimum');for(let i=0;i<20;i++)wheel(-240);await tick();assert(Math.abs(view().scale-16)<.0001,'maximum');assert(button('Zoom in').disabled,'max button');button('Fit image').click();await tick();assert(view().scale===1&&view().x===0&&view().y===0,'fit');});

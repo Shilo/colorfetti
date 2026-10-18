@@ -3,17 +3,29 @@ import { IMAGE_HOLD_MS } from './image-gesture.js';
 export const MIN_VIEWER_ZOOM = 0.25;
 export const MAX_VIEWER_ZOOM = 16;
 const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
+const sameScale = (a, b) => Math.abs(a - b) <= 1e-12 * Math.max(1, Math.abs(a), Math.abs(b));
+const zoomLevels = [MIN_VIEWER_ZOOM];
+// Fixed levels include Fit and both limits. Clipping a multiplied scale at an
+// endpoint loses part of a step, so reversing the same clicks cannot undo it.
+for (let step = Math.ceil(Math.log(MIN_VIEWER_ZOOM) / Math.log(1.25)); 1.25 ** step < MAX_VIEWER_ZOOM; step++) zoomLevels.push(1.25 ** step);
+zoomLevels.push(MAX_VIEWER_ZOOM);
+function normalizeScale(scale) {
+  scale = clamp(scale, MIN_VIEWER_ZOOM, MAX_VIEWER_ZOOM);
+  for (const anchor of [MIN_VIEWER_ZOOM, 1, MAX_VIEWER_ZOOM]) if (sameScale(scale, anchor)) return anchor;
+  return scale;
+}
+const cleanOffset = n => Math.abs(n) < 1e-9 ? 0 : n;
 
 // Coordinates are CSS pixels relative to the viewport center; scale 1 is Fit.
 export function constrainView(view, geometry) {
-  const scale = clamp(view.scale, MIN_VIEWER_ZOOM, MAX_VIEWER_ZOOM);
+  const scale = normalizeScale(view.scale);
   const limitX = Math.max(0, (geometry.imageWidth * scale - geometry.width) / 2);
   const limitY = Math.max(0, (geometry.imageHeight * scale - geometry.height) / 2);
-  return { scale, x: clamp(view.x, -limitX, limitX), y: clamp(view.y, -limitY, limitY) };
+  return { scale, x: cleanOffset(clamp(view.x, -limitX, limitX)), y: cleanOffset(clamp(view.y, -limitY, limitY)) };
 }
 
 export function zoomView(view, scale, from, to, geometry) {
-  scale = clamp(scale, MIN_VIEWER_ZOOM, MAX_VIEWER_ZOOM);
+  scale = normalizeScale(scale);
   const ratio = scale / view.scale;
   return constrainView({ scale, x: to.x - (from.x - view.x) * ratio, y: to.y - (from.y - view.y) * ratio }, geometry);
 }
@@ -84,8 +96,16 @@ export function viewerNavigation({ onchange = () => {}, onhold = () => {}, onclo
       publish();
     },
     zoomBy(factor, point = { x: geometry.width / 2, y: geometry.height / 2 }) {
+      api.zoomTo(view.scale * factor, point);
+    },
+    stepZoom(direction) {
+      const levels = direction > 0 ? zoomLevels : [...zoomLevels].reverse();
+      const scale = levels.find(level => !sameScale(level, view.scale) && (direction > 0 ? level > view.scale : level < view.scale));
+      api.zoomTo(scale ?? view.scale);
+    },
+    zoomTo(scale, point = { x: geometry.width / 2, y: geometry.height / 2 }) {
       tap = null; ready = false; stopHold();
-      view = zoomView(view, view.scale * factor, relative(point), relative(point), geometry); publish();
+      view = zoomView(view, scale, relative(point), relative(point), geometry); publish();
     },
     panBy(x, y) { tap = null; ready = false; stopHold(); view = constrainView({ ...view, x: view.x + x, y: view.y + y }, geometry); publish(); },
     reset() { api.cancel(); view = { scale: 1, x: 0, y: 0 }; publish(); },
@@ -135,7 +155,7 @@ export function viewerNavigation({ onchange = () => {}, onhold = () => {}, onclo
           e.preventDefault(); e.stopPropagation();
           if (e.key === '0') api.reset();
           else if (e.key.startsWith('Arrow')) api.panBy(e.key === 'ArrowLeft' ? 48 : e.key === 'ArrowRight' ? -48 : 0, e.key === 'ArrowUp' ? 48 : e.key === 'ArrowDown' ? -48 : 0);
-          else api.zoomBy(e.key === '-' ? 1 / 1.25 : 1.25);
+          else api.stepZoom(e.key === '-' ? -1 : 1);
         }
       };
       const drag = e => { if (art(e)) { e.preventDefault(); api.cancel(); } };

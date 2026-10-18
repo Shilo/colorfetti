@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, afterEach } from 'vitest';
-import { constrainView, zoomView, viewerNavigation } from './viewer-navigation.js';
+import { constrainView, zoomView, viewerNavigation, MIN_VIEWER_ZOOM, MAX_VIEWER_ZOOM } from './viewer-navigation.js';
 
 const geometry = { width: 800, height: 600, imageWidth: 800, imageHeight: 400 };
 const event = (pointerId, clientX, clientY, timeStamp = 0, extra = {}) => ({ pointerId, clientX, clientY, timeStamp, button: 0, isPrimary: pointerId === 1, ...extra });
@@ -17,7 +17,7 @@ describe('viewer geometry', () => {
     expect((30 + 10) / 2).toBeCloseTo((50 - next.y) / next.scale);
   });
   it('centers undersized axes and clamps oversized axes and zoom', () => {
-    expect(constrainView({ scale: 0.01, x: 500, y: -500 }, geometry)).toEqual({ scale: .25, x: 0, y: -0 });
+    expect(constrainView({ scale: 0.01, x: 500, y: -500 }, geometry)).toEqual({ scale: .25, x: 0, y: 0 });
     expect(constrainView({ scale: 2, x: 9999, y: -9999 }, geometry)).toEqual({ scale: 2, x: 400, y: -100 });
     expect(constrainView({ scale: 100, x: 0, y: 0 }, geometry).scale).toBe(16);
   });
@@ -29,6 +29,77 @@ describe('viewer geometry', () => {
       expect(Math.abs(view.x)).toBeLessThanOrEqual(Math.max(0, (800 * view.scale - 800) / 2));
       expect(Math.abs(view.y)).toBeLessThanOrEqual(Math.max(0, (400 * view.scale - 600) / 2));
     }
+  });
+});
+
+describe('reversible viewer zoom', () => {
+  for (const [direction, steps, endpoint] of [[-1, 7, MIN_VIEWER_ZOOM], [1, 13, MAX_VIEWER_ZOOM]]) {
+    it(`returns exactly to Fit after every outward/return count toward ${endpoint}`, () => {
+      const { navigation: n } = fixture();
+      for (let count = 1; count <= steps; count++) {
+        for (let i = 0; i < count; i++) n.stepZoom(direction);
+        expect(n.view.scale).not.toBe(1);
+        if (count === steps) {
+          expect(n.view.scale).toBe(endpoint);
+          const atLimit = n.view;
+          for (let i = 0; i < 5; i++) n.stepZoom(direction);
+          expect(n.view).toEqual(atLimit);
+        }
+        for (let i = 0; i < count; i++) n.stepZoom(-direction);
+        expect(n.view).toEqual({ scale: 1, x: 0, y: 0 });
+      }
+    });
+    it(`retraces every zoom level from ${endpoint} without drift across repeated cycles`, () => {
+      const { navigation: n } = fixture();
+      for (let cycle = 0; cycle < 50; cycle++) {
+        const scales = [1];
+        for (let i = 0; i < steps; i++) { n.stepZoom(direction); scales.push(n.view.scale); }
+        for (let i = steps - 1; i >= 0; i--) { n.stepZoom(-direction); expect(n.view.scale).toBe(scales[i]); }
+        expect(n.view).toEqual({ scale: 1, x: 0, y: 0 });
+      }
+    });
+  }
+  it('normalizes continuous reciprocal zoom roundoff in the actual view, not just Fit detection', () => {
+    const { navigation: n, onchange } = fixture();
+    for (let cycle = 0; cycle < 100; cycle++) {
+      n.zoomBy(.8); n.zoomBy(.8); n.zoomBy(1.25); n.zoomBy(1.25);
+      expect(n.view).toEqual({ scale: 1, x: 0, y: 0 });
+      expect(onchange).toHaveBeenLastCalledWith({ scale: 1, x: 0, y: 0, dragging: false });
+    }
+  });
+  it('steps in the requested direction after an arbitrary wheel/pinch scale', () => {
+    const { navigation: n } = fixture();
+    n.zoomBy(.93); n.stepZoom(1); expect(n.view.scale).toBe(1);
+    n.zoomBy(.93); n.stepZoom(-1); expect(n.view.scale).toBeCloseTo(.8);
+    n.reset(); n.zoomBy(1.1); n.stepZoom(-1); expect(n.view.scale).toBe(1);
+    n.zoomBy(1.1); n.stepZoom(1); expect(n.view.scale).toBe(1.25);
+    n.reset(); n.zoomBy(1.25 * (1 + Number.EPSILON)); n.stepZoom(1); expect(n.view.scale).toBe(1.5625);
+  });
+  it('returning from a panned zoom centers the image exactly at Fit', () => {
+    const { navigation: n } = fixture();
+    for (let i = 0; i < 8; i++) n.stepZoom(1);
+    n.panBy(117, -83); expect(n.view.x).not.toBe(0);
+    for (let i = 0; i < 8; i++) n.stepZoom(-1);
+    expect(n.view).toEqual({ scale: 1, x: 0, y: 0 });
+  });
+  it.each([-1, 1])('a zoom key at limit %s still retires pending tap/hold ownership', direction => {
+    vi.useFakeTimers();
+    const { navigation: n, onhold } = fixture();
+    n.zoomBy(direction < 0 ? .01 : 100);
+    const atLimit = n.view;
+    n.down(event(1, 300, 200)); n.stepZoom(direction);
+    vi.advanceTimersByTime(500);
+    expect(onhold).not.toHaveBeenCalledWith(true);
+    n.up(event(1, 300, 200, 100)); expect(n.click()).toBe(false);
+    expect(n.view).toEqual(atLimit);
+  });
+  it('cleans numerical edge/scale residue while preserving intentional zoom and pan', () => {
+    expect(constrainView({ scale: 1 + Number.EPSILON, x: 1e-14, y: -1e-14 }, { ...geometry, imageWidth: 800 + 1e-13 }))
+      .toEqual({ scale: 1, x: 0, y: 0 });
+    expect(constrainView({ scale: 1 + 1e-8, x: 1e-6, y: 0 }, geometry))
+      .toEqual({ scale: 1 + 1e-8, x: 1e-6, y: 0 });
+    expect(constrainView({ scale: MIN_VIEWER_ZOOM + Number.EPSILON, x: 0, y: 0 }, geometry).scale).toBe(MIN_VIEWER_ZOOM);
+    expect(constrainView({ scale: MAX_VIEWER_ZOOM - Number.EPSILON * 16, x: 0, y: 0 }, geometry).scale).toBe(MAX_VIEWER_ZOOM);
   });
 });
 
