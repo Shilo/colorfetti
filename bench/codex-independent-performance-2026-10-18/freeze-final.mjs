@@ -1,0 +1,20 @@
+// Run after final validation in a quiet window. Source reading is documented separately.
+import {readFileSync,writeFileSync,readdirSync,statSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+import path from 'node:path';
+const base=import.meta.dirname,inventory=JSON.parse(readFileSync(path.join(base,'inventory.json'))),head=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
+const sourceRoot=path.resolve(process.env.CODEX_AUDIT_FINAL_SOURCE_ROOT||'.');
+if(sourceRoot===process.cwd())throw Error('Use an immutable final source snapshot, excluding unrelated concurrent work');
+const snapshot=JSON.parse(readFileSync(path.join(sourceRoot,'audit-source-manifest.json')));
+const sha=b=>createHash('sha256').update(b).digest('hex'),lf=b=>Buffer.from(b.toString().replaceAll('\r\n','\n'));
+const sourceFiles=inventory.files.map(f=>{const raw=readFileSync(path.join(sourceRoot,f.file));return {...f,rawSha256:sha(raw),snapshotCanonicalLfSha256:sha(lf(raw)),equalsBaselineCanonical:sha(lf(raw))===f.sourceSha256LF,reviewStatus:f.file==='package-lock.json'?'generated-dependency-boundary-reviewed':'baseline-implementation-read; declared deltas reviewed separately',ledger:f.owner==='root'?'root-source-review.md':f.owner+'/source-review.md'};});
+for(const f of sourceFiles)if(!readFileSync(path.join(base,f.ledger),'utf8').includes(path.basename(f.file)))throw Error('Missing file ledger: '+f.file);
+const allowed=['vite.config.js','src/lib/save.js',...snapshot.auditRuntimeFiles];
+const unexpected=sourceFiles.filter(f=>!f.equalsBaselineCanonical&&!allowed.includes(f.file));if(unexpected.length)throw Error('Unreviewed snapshot source drift: '+unexpected.map(f=>f.file));
+const packages={};for(const name of['svelte','vite','vitest','fflate','@sveltejs/vite-plugin-svelte']){const p=JSON.parse(readFileSync(path.resolve('node_modules',name,'package.json')));packages[name]=p.version;}
+function tree(dir,prefix=''){const list=[];for(const f of readdirSync(dir)){const absolute=path.join(dir,f),relative=prefix+f;if(statSync(absolute).isDirectory())list.push(...tree(absolute,relative+'/'));else list.push({file:relative,bytes:statSync(absolute).size,sha256:sha(readFileSync(absolute))});}return list;}
+const artifacts={baseline:tree('.tmp/codex-independent-performance-2026-10-18/current/dist')};if(process.argv[2])artifacts.final=tree(process.argv[2]);
+const workingTreeDrift=inventory.files.flatMap(f=>{const raw=readFileSync(f.file),frozen=readFileSync(path.join(sourceRoot,f.file));return sha(lf(raw))===sha(lf(frozen))?[]:[{file:f.file,workingTreeCanonicalLfSha256:sha(lf(raw)),status:'concurrent external change; excluded from frozen candidate; not claimed independently reviewed by this audit'}];});
+writeFileSync(path.join(base,'final-provenance.json'),JSON.stringify({baseline:inventory.revision,headAtReceipt:head,snapshot,created:new Date().toISOString(),node:process.version,platform:process.platform,architecture:process.arch,installedPackages:packages,lockfile:{rawSha256:sha(readFileSync(path.join(sourceRoot,'package-lock.json'))),canonicalLfSha256:sha(lf(readFileSync(path.join(sourceRoot,'package-lock.json'))))},sourceFiles,workingTreeDrift,sourceClassification:inventory.classifications,artifacts,sourceDriftQualification:'891fca2 fixes discovery. Concurrent1fe03ed/18de3f7 alter export filename/tests/QA and are included in final snapshot correctness smoke, without relabeling5ae baseline timings. Audit runtime changes are declared in snapshot.auditRuntimeFiles and independently challenged. Other concurrent working-tree GIF/import/docs work is excluded, preserved and not claimed audited. Function/block ledgers establish baseline reading; hashes establish provenance. The report commit may follow the measured code revision.'},null,2)+'\n');
+console.log({reviewedBaselineInventory:sourceFiles.length,unexpectedSnapshotRuntime:0,snapshotDrift:sourceFiles.filter(f=>!f.equalsBaselineCanonical).map(f=>f.file),excludedWorkingTreeDrift:workingTreeDrift.map(f=>f.file),artifacts:Object.keys(artifacts)});

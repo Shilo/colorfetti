@@ -1,0 +1,207 @@
+{
+  "version": "155.0.4283.62",
+  "surface": "auxiliary sandboxed headless Edge",
+  "samples": 24,
+  "groups": [
+    {
+      "variant": "tooltip-off",
+      "baseMedianMs": 21.844,
+      "diagnosticMedianMs": 20.847000000000005,
+      "pairedMedianGainMs": 2.3950000000000067,
+      "pairedMedianGainPercent": 10.964109137520632,
+      "everyPairFaster": false,
+      "gatePassed": false,
+      "pairs": [
+        {
+          "pair": 1,
+          "base": 20.366999999999997,
+          "candidate": 21.538999999999973,
+          "gainMs": -1.1719999999999757,
+          "gainPercent": -5.754406638189109,
+          "layoutBase": 0.3830000000000014,
+          "layoutCandidate": 0.3980000000000025,
+          "scriptBase": 4.456000000000001,
+          "scriptCandidate": 3.7890000000000006,
+          "latencyBase": 39.30000000447035,
+          "latencyCandidate": 46.5
+        },
+        {
+          "pair": 2,
+          "base": 21.844,
+          "candidate": 19.448999999999995,
+          "gainMs": 2.3950000000000067,
+          "gainPercent": 10.964109137520632,
+          "layoutBase": 0.4060000000000036,
+          "layoutCandidate": 0.4119999999999957,
+          "scriptBase": 4.498999999999996,
+          "scriptCandidate": 4.062000000000003,
+          "latencyBase": 45.79999999701977,
+          "latencyCandidate": 46.600000001490116
+        },
+        {
+          "pair": 3,
+          "base": 23.871000000000002,
+          "candidate": 20.847000000000005,
+          "gainMs": 3.0239999999999974,
+          "gainPercent": 12.668090989066219,
+          "layoutBase": 0.38100000000000633,
+          "layoutCandidate": 0.6379999999999997,
+          "scriptBase": 4.673999999999998,
+          "scriptCandidate": 3.9589999999999974,
+          "latencyBase": 46.5,
+          "latencyCandidate": 46.600000001490116
+        }
+      ]
+    },
+    {
+      "variant": "swatch-paint-off",
+      "baseMedianMs": 20.842,
+      "diagnosticMedianMs": 20.530999999999995,
+      "pairedMedianGainMs": -0.7350000000000136,
+      "pairedMedianGainPercent": -3.8411288215313,
+      "everyPairFaster": false,
+      "gatePassed": false,
+      "pairs": [
+        {
+          "pair": 1,
+          "base": 20.842,
+          "candidate": 20.530999999999995,
+          "gainMs": 0.3110000000000035,
+          "gainPercent": 1.4921792534305898,
+          "layoutBase": 0.3820000000000004,
+          "layoutCandidate": 0.3990000000000035,
+          "scriptBase": 4.35,
+          "scriptCandidate": 3.1710000000000003,
+          "latencyBase": 46.69999999552965,
+          "latencyCandidate": 47
+        },
+        {
+          "pair": 2,
+          "base": 19.134999999999984,
+          "candidate": 19.869999999999997,
+          "gainMs": -0.7350000000000136,
+          "gainPercent": -3.8411288215313,
+          "layoutBase": 0.37299999999999833,
+          "layoutCandidate": 0.3980000000000025,
+          "scriptBase": 4.174999999999998,
+          "scriptCandidate": 2.706,
+          "latencyBase": 45.79999999701977,
+          "latencyCandidate": 46.19999999552965
+        },
+        {
+          "pair": 3,
+          "base": 24.031999999999996,
+          "candidate": 27.924999999999976,
+          "gainMs": -3.8929999999999794,
+          "gainPercent": -16.199234354194324,
+          "layoutBase": 0.3860000000000044,
+          "layoutCandidate": 0.7150000000000003,
+          "scriptBase": 4.267,
+          "scriptCandidate": 4.645999999999997,
+          "latencyBase": 46.5,
+          "latencyCandidate": 44.600000001490116
+        }
+      ]
+    },
+    {
+      "variant": "tooltip-and-paint-off",
+      "baseMedianMs": 23.634000000000015,
+      "diagnosticMedianMs": 16.69200000000001,
+      "pairedMedianGainMs": 4.11600000000001,
+      "pairedMedianGainPercent": 19.78085351787777,
+      "everyPairFaster": true,
+      "gatePassed": false,
+      "pairs": [
+        {
+          "pair": 1,
+          "base": 20.80800000000002,
+          "candidate": 16.69200000000001,
+          "gainMs": 4.11600000000001,
+          "gainPercent": 19.78085351787777,
+          "layoutBase": 0.41200000000000264,
+          "layoutCandidate": 0.3840000000000024,
+          "scriptBase": 5.299999999999999,
+          "scriptCandidate": 2.1840000000000055,
+          "latencyBase": 47,
+          "latencyCandidate": 30
+        },
+        {
+          "pair": 2,
+          "base": 26.496999999999964,
+          "candidate": 15.551000000000009,
+          "gainMs": 10.945999999999955,
+          "gainPercent": 41.31033701928509,
+          "layoutBase": 0.44800000000000395,
+          "layoutCandidate": 0.39100000000000246,
+          "scriptBase": 5.655,
+          "scriptCandidate": 2.2940000000000045,
+          "latencyBase": 46.5,
+          "latencyCandidate": 30.30000000447035
+        },
+        {
+          "pair": 3,
+          "base": 23.634000000000015,
+          "candidate": 23.364000000000022,
+          "gainMs": 0.26999999999999247,
+          "gainPercent": 1.14242193450111,
+          "layoutBase": 0.4019999999999996,
+          "layoutCandidate": 0.5860000000000032,
+          "scriptBase": 5.728999999999998,
+          "scriptCandidate": 3.9879999999999987,
+          "latencyBase": 44.600000001490116,
+          "latencyCandidate": 43.399999998509884
+        }
+      ]
+    },
+    {
+      "variant": "raw-arrays",
+      "baseMedianMs": 21.800000000000015,
+      "diagnosticMedianMs": 21.259,
+      "pairedMedianGainMs": 0.9360000000000213,
+      "pairedMedianGainPercent": 4.29357798165147,
+      "everyPairFaster": false,
+      "gatePassed": false,
+      "pairs": [
+        {
+          "pair": 1,
+          "base": 25.056999999999995,
+          "candidate": 21.259,
+          "gainMs": 3.7979999999999947,
+          "gainPercent": 15.157441034441456,
+          "layoutBase": 0.5549999999999999,
+          "layoutCandidate": 0.4060000000000036,
+          "scriptBase": 7.809999999999998,
+          "scriptCandidate": 4.501999999999999,
+          "latencyBase": 41,
+          "latencyCandidate": 46.100000001490116
+        },
+        {
+          "pair": 2,
+          "base": 21.800000000000015,
+          "candidate": 20.863999999999994,
+          "gainMs": 0.9360000000000213,
+          "gainPercent": 4.29357798165147,
+          "layoutBase": 0.3799999999999984,
+          "layoutCandidate": 0.39100000000000246,
+          "scriptBase": 4.622000000000001,
+          "scriptCandidate": 4.000999999999998,
+          "latencyBase": 46.79999999701977,
+          "latencyCandidate": 46.399999998509884
+        },
+        {
+          "pair": 3,
+          "base": 19.902000000000005,
+          "candidate": 22.18199999999998,
+          "gainMs": -2.2799999999999763,
+          "gainPercent": -11.456135061802712,
+          "layoutBase": 0.3919999999999965,
+          "layoutCandidate": 0.38599999999999746,
+          "scriptBase": 4.351000000000001,
+          "scriptCandidate": 4.534000000000003,
+          "latencyBase": 45.5,
+          "latencyCandidate": 45.30000000447035
+        }
+      ]
+    }
+  ]
+}

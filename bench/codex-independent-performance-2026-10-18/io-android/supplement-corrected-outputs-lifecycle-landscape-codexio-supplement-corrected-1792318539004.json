@@ -1,0 +1,244 @@
+{
+  "harnessProvenance": "Independent inspection/adaptation of previous native runner; all results newly collected. Historical receipts not imported.",
+  "label": "supplement-corrected",
+  "prefix": "codexio-supplement-corrected-1792318539004",
+  "baseURL": "http://localhost:5391/",
+  "started": "2026-10-18T10:15:39.005Z",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "rows": [
+    {
+      "name": "zip: input import to current named wall paint",
+      "elapsedMs": 123.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 54.333999999999996,
+        "ScriptDuration": 13.651999999999997,
+        "LayoutDuration": 2.92,
+        "RecalcStyleDuration": 11.44
+      },
+      "heapUsed": 5989656
+    },
+    {
+      "name": "zip: exact full-clip captions ready",
+      "elapsedMs": 58.700000047683716,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 6.722000000000006,
+        "ScriptDuration": 2.106000000000004,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 6073876
+    },
+    {
+      "name": "native codexio-supplement-corrected-1792318539004-native-batch.zip",
+      "elapsedMs": 204.40000009536743,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 72.184,
+        "ScriptDuration": 7.509999999999996,
+        "LayoutDuration": 1.64,
+        "RecalcStyleDuration": 1.452000000000002
+      },
+      "heapUsed": 7139180
+    },
+    {
+      "name": "clipboard: input import to current named wall paint",
+      "elapsedMs": 86.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 43.523999999999994,
+        "ScriptDuration": 8.247000000000002,
+        "LayoutDuration": 1.7780000000000005,
+        "RecalcStyleDuration": 14.079999999999998
+      },
+      "heapUsed": 10240188
+    },
+    {
+      "name": "clipboard: exact full-clip captions ready",
+      "elapsedMs": 51.200000047683716,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 3.5070000000000103,
+        "ScriptDuration": 0.1799999999999996,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 10265964
+    },
+    {
+      "name": "native app Copy completed",
+      "elapsedMs": 146.5,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 36.776,
+        "ScriptDuration": 7.077,
+        "LayoutDuration": 0.8570000000000001,
+        "RecalcStyleDuration": 5.272000000000002
+      },
+      "heapUsed": 10820352
+    },
+    {
+      "name": "cancel-seed: input import to current named wall paint",
+      "elapsedMs": 100.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 40.738,
+        "ScriptDuration": 8.888999999999998,
+        "LayoutDuration": 1.915,
+        "RecalcStyleDuration": 9.977000000000002
+      },
+      "heapUsed": 12441808
+    },
+    {
+      "name": "cancel-seed: exact full-clip captions ready",
+      "elapsedMs": 55.200000047683716,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 4.631999999999997,
+        "ScriptDuration": 0.24099999999999816,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 12467808
+    },
+    {
+      "name": "cancel live eight-sheet batch by Remove all and no stale publication",
+      "elapsedMs": 1084.1000000238419,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 196.34999999999997,
+        "ScriptDuration": 21.178,
+        "LayoutDuration": 3.7219999999999995,
+        "RecalcStyleDuration": 14.128999999999996
+      },
+      "heapUsed": 10001376
+    },
+    {
+      "name": "hold: input import to current named wall paint",
+      "elapsedMs": 87.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 35.864999999999995,
+        "ScriptDuration": 8.431000000000001,
+        "LayoutDuration": 1.7619999999999996,
+        "RecalcStyleDuration": 8.569
+      },
+      "heapUsed": 14569852
+    },
+    {
+      "name": "hold: exact full-clip captions ready",
+      "elapsedMs": 56.59999990463257,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 3.252000000000005,
+        "ScriptDuration": 0.1250000000000001,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 14595720
+    }
+  ],
+  "outputs": [],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(await page.locator('.grid figure.held').count())\n\n    at file:///C:/Programming_Files/Shilocity/colorfetti/bench/codex-independent-performance-2026-10-18/io-android/supplement.mjs:94:296"
+  ],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 329\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "transportNotes": [
+    "All native filenames exact unique prefixes. ZIP filename altered by test-only anchor hook before real native download; content and app encoding unmodified.",
+    "1-bit reference uses frozen baseline app algorithm outside browser plus independent Sharp decode/alpha/membership; not an independent style algorithm oracle.",
+    "Real clipboard write is delegated unchanged and UI completion checked; no clipboard read/private contents captured."
+  ],
+  "lastWall": [
+    {
+      "name": "codexio-supplement-corrected-1792318539004-hold-0-dungeon-wizard.png 16×16  ·  8 colors ",
+      "caption": "16×16  ·  8 colors ",
+      "width": 16,
+      "height": 16
+    }
+  ],
+  "zip": {
+    "name": "codexio-supplement-corrected-1792318539004-native-batch.zip",
+    "sha256": "5d99dbb8c8d80d9db4a5cc8846baf1622f6362a5322cf78cd19b28beb08cc967",
+    "entries": [
+      "codexio-supplement-corrected-1792318539004-zip-0-dungeon-wizard-palette.png",
+      "codexio-supplement-corrected-1792318539004-zip-1-real-magic-palette.gif"
+    ],
+    "independentDecode": true
+  },
+  "clipboardCapability": {
+    "write": "function",
+    "item": "function"
+  },
+  "clipboard": {
+    "nativeWriteCompleted": true,
+    "readback": false
+  },
+  "failureState": {
+    "viewport": {
+      "width": 448,
+      "height": 819,
+      "visualWidth": 448,
+      "visualHeight": 819.111083984375
+    },
+    "focus": null
+  },
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T10:15:44.221Z"
+}

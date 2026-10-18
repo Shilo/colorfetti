@@ -1,0 +1,790 @@
+{
+  "revision": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "created": "2026-10-18T09:53:12.736Z",
+  "note": "Inventory is not proof of source reading; each owner must supply independent functional review ledger.",
+  "files": [
+    {
+      "file": ".github/workflows/deploy.yml",
+      "owner": "ui-tooling",
+      "lines": 37,
+      "sourceSha256LF": "2fcbadfd4e5f682b207764eed2feed25e1f83685bdd90d4408ff15a1f1b376a2",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "build/brand-assets.mjs",
+      "owner": "ui-tooling",
+      "lines": 133,
+      "sourceSha256LF": "413dee48c24503eab8a83f439fc1ac4546d4cf2880d1384fb0ac3a46fb35a690",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "build/hover-capability.js",
+      "owner": "ui-tooling",
+      "lines": 41,
+      "sourceSha256LF": "971c9cd4e0f286501234ce3c0a155ac900b9897643f03b3c7192f07af3c50e8f",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "index.html",
+      "owner": "root",
+      "lines": 71,
+      "sourceSha256LF": "0170cbe68b58ae4ce63705ce7bd4b5af505fca3e52c38847f93cf3537a8f95c9",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "package-lock.json",
+      "owner": "ui-tooling",
+      "lines": 1552,
+      "sourceSha256LF": "4729589b4dab0eb85986ea90273c86d08cc8abde32a9c4c5c0bc18818e1fec23",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "package.json",
+      "owner": "ui-tooling",
+      "lines": 27,
+      "sourceSha256LF": "d7d9a60d06107c674968bc456e6c55db7b6e93e0eb244d3146d8ab9bc109398a",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/App.svelte",
+      "owner": "root",
+      "lines": 1228,
+      "sourceSha256LF": "591b0c5555f599fb7399b0c17a5d30054fd1174948688f411c9977bee91e2cde",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/CanvasGrid.svelte",
+      "owner": "ui-tooling",
+      "lines": 67,
+      "sourceSha256LF": "c6250e67cd6258b50ea4a8eff14db6358a64524093e6110e14dfd85a9e416985",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/CaptionMetadata.svelte",
+      "owner": "ui-tooling",
+      "lines": 20,
+      "sourceSha256LF": "0786f7b8878e860b395989b6c2d19caced021a861f38035fdfebf3b87a7f4859",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/Dock.svelte",
+      "owner": "root",
+      "lines": 750,
+      "sourceSha256LF": "8a61c11bef501e3ba64e794bdb59c12c035edac8efb948fc8da8852e1925d4ff",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/ImageViewer.svelte",
+      "owner": "ui-tooling",
+      "lines": 92,
+      "sourceSha256LF": "81a33442296d5a59d7b819ae7571a870428e77d64ddc7c12039b61bd6b8c76e3",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/PaletteImport.svelte",
+      "owner": "ui-tooling",
+      "lines": 304,
+      "sourceSha256LF": "136ce0b59644d572efb2950003dc82fc185450f33a72bf72c61227399d67929e",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/PalettePreview.svelte",
+      "owner": "ui-tooling",
+      "lines": 15,
+      "sourceSha256LF": "665cdc0d3e7021cc80505e630f94efdb5cccf953808fce81b10abf260671fd42",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/PixelIcon.svelte",
+      "owner": "ui-tooling",
+      "lines": 36,
+      "sourceSha256LF": "4fdb0d0bbcbdddebf0b6131f0a04e9250e72541f8f5da66610561417a45ff64a",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/Pixels.svelte",
+      "owner": "ui-tooling",
+      "lines": 15,
+      "sourceSha256LF": "90d2e155d975a9fc9bd511a6abf2a895ff1c805470de456e18ddfa903b433492",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/Tile.svelte",
+      "owner": "root",
+      "lines": 444,
+      "sourceSha256LF": "af5fb1d3c9651d4fae8a30d92a464764eda41e7a728c7dab2cef04f2ba9b71ad",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/app.css",
+      "owner": "ui-tooling",
+      "lines": 550,
+      "sourceSha256LF": "f2d8ad05825e732e076c2949026ab5efebb988c04627ec6f971d383de10d9492",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/bottom-workspace.css",
+      "owner": "ui-tooling",
+      "lines": 58,
+      "sourceSha256LF": "f76528f97a2b3dc6573f6aad1d96ea2a6d868ff073f0d5eb74d24f680d1739a5",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/canvas.css",
+      "owner": "ui-tooling",
+      "lines": 126,
+      "sourceSha256LF": "e4b126a5c599594b182bbcc17183e577556529c2f8f844077a89aa04af0da15c",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/caption-metadata.css",
+      "owner": "ui-tooling",
+      "lines": 16,
+      "sourceSha256LF": "7d576bd846a55e6ec672aa27a096c9c6ced761da9f0bff79fc6e3e0f01e786bb",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/dock-refinement.css",
+      "owner": "ui-tooling",
+      "lines": 108,
+      "sourceSha256LF": "6883f5c4c9557ed5be68a62187cdfad75f9d3c487887cdc0eb7c0028f4519841",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/foundation.css",
+      "owner": "ui-tooling",
+      "lines": 14,
+      "sourceSha256LF": "99d23288ae7b3000ea80ff51b8ca68bd16d881bf24f331362aea2771fe9e6e75",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/full-palette.css",
+      "owner": "ui-tooling",
+      "lines": 91,
+      "sourceSha256LF": "a015c9b1f0723a9ea0d0b1f91abd36ced31d07c683485294ae32a03230c21f00",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/glass.css",
+      "owner": "ui-tooling",
+      "lines": 528,
+      "sourceSha256LF": "46409ea29043d9926e6da1d3733e874500ea8c7c3ef5b02473765008b8e5eac0",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/header.css",
+      "owner": "ui-tooling",
+      "lines": 35,
+      "sourceSha256LF": "e1520f2914f922ee4505ff85433efa1ee6d37432701c69991aed533951a0dc10",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/animation-visibility.js",
+      "owner": "ui-tooling",
+      "lines": 40,
+      "sourceSha256LF": "af42230f13ad75f3f0a466893ff1e3aae7640ba5d95bb92c1867f18e8881c898",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/canvas-grid.js",
+      "owner": "ui-tooling",
+      "lines": 40,
+      "sourceSha256LF": "5379088db141ebdc901ac0c74567a01c95dceb2bc70437b8dac36e3168ce30f9",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/comparison-hold.js",
+      "owner": "ui-tooling",
+      "lines": 15,
+      "sourceSha256LF": "77f606f613a62db620515826e8b79bfd73b389645ef50dfa416e1f15f80c1ca6",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/converted-animation.js",
+      "owner": "ui-tooling",
+      "lines": 23,
+      "sourceSha256LF": "f739c78cfae62b652f6bfe182b8bff72054f4c82c647dbdd82357b8ac72001dc",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/dialog-dismiss.js",
+      "owner": "ui-tooling",
+      "lines": 41,
+      "sourceSha256LF": "8085d3a87f145f3b2471057e01027f7f0f8033dc3c6de26cb88298e9498860ce",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/export-drag.js",
+      "owner": "ui-tooling",
+      "lines": 248,
+      "sourceSha256LF": "915f8e632fcff96eb8b41daf318c00ea276877882cb38216876b258d8da48d92",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/gesture.js",
+      "owner": "ui-tooling",
+      "lines": 97,
+      "sourceSha256LF": "8f16bd5e27b3bd19ae9086f4130de7f21add3107654787af5ef989d755d8fcd5",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/gif.js",
+      "owner": "io-android",
+      "lines": 270,
+      "sourceSha256LF": "51a8e5efa4a55147485947d317c54fa450530c94f7b6535c0b828fe4478ce142",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/icon-glyph.js",
+      "owner": "core",
+      "lines": 272,
+      "sourceSha256LF": "a8dd8b97f693abfdc129f39715884eb6cac5af755286be32e0d623c029c87260",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/icon.js",
+      "owner": "core",
+      "lines": 248,
+      "sourceSha256LF": "3e034261e46fd7b53093852f911b56cf1497ff2d21fc4ddbe837dd69fe8bc2ae",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/image-decode.js",
+      "owner": "io-android",
+      "lines": 106,
+      "sourceSha256LF": "a660104305461e4f307d1597e424205725cbc44b9011e5349b0605fdfa3aba2b",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/image-drop.js",
+      "owner": "io-android",
+      "lines": 65,
+      "sourceSha256LF": "c71fdc92779f9aec692b0958776b28ff8b585f502382c808e805e416c3db8a5b",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/image-gesture.js",
+      "owner": "ui-tooling",
+      "lines": 18,
+      "sourceSha256LF": "d8e930f58afa9d438bc88e4a835e6f7bd949c3bd7f5b4196102ec2d3d9e14c56",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/image-import-client.js",
+      "owner": "io-android",
+      "lines": 190,
+      "sourceSha256LF": "d0974577afeb040dff0d00c0f4ec20353891225eab6e2e0f31171d0b2ccb40f7",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/image-import-core.js",
+      "owner": "io-android",
+      "lines": 65,
+      "sourceSha256LF": "1f9934175c6ca2116b6cd232df6929c83606c52343237785e47d72f8d428ebbe",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/image-import-worker.js",
+      "owner": "io-android",
+      "lines": 46,
+      "sourceSha256LF": "b6f9cd3531a60d13912439157d214b5c2ac77c9703b12954dffe8f60d83975a0",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/image-reanalysis.js",
+      "owner": "core",
+      "lines": 63,
+      "sourceSha256LF": "56cffce61058dfc27cd1cf9aa9bf23c825fca821aaadf562634d8b2f01e5120b",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/internal-drag.js",
+      "owner": "ui-tooling",
+      "lines": 26,
+      "sourceSha256LF": "11b2f5e8efdd69b6c174cf93f77f4103e8a341da3566ba558861c16728d7fbef",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/layout.js",
+      "owner": "ui-tooling",
+      "lines": 52,
+      "sourceSha256LF": "b1909bba70e6e410913ee823d71acd7f551291d232861def9937df876aa57775",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/onebit-usage.js",
+      "owner": "core",
+      "lines": 141,
+      "sourceSha256LF": "320679fde83c4260445b40bfbe8d3900ff244bc5b7f8e1306a74436248b28e7b",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/original-color-usage.js",
+      "owner": "core",
+      "lines": 105,
+      "sourceSha256LF": "b790c86eb177e558059bd5cb8d5034a35532be8124bf564489a0ac1b5598e149",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-alpha.js",
+      "owner": "core",
+      "lines": 16,
+      "sourceSha256LF": "92fc032f80728ef7027569b91be8cb91aa9486f203bbff9646ed89d674ab6b92",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-animation-cache.js",
+      "owner": "core",
+      "lines": 87,
+      "sourceSha256LF": "710372b3a29169ac006d8c2286120f3ebab4908b0727940a96af340514b3670a",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-ase.js",
+      "owner": "io-android",
+      "lines": 128,
+      "sourceSha256LF": "87017ef440cdfa0c499240411b96713ecdc835481ff1e305e3a1b8e7e933f944",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-cleanup-apply.js",
+      "owner": "core",
+      "lines": 95,
+      "sourceSha256LF": "d7ff720a52488ec0b3d9c0a402ad49823cc5cad54020ff7d0241e3d728513fb9",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-cleanup-client.js",
+      "owner": "io-android",
+      "lines": 138,
+      "sourceSha256LF": "c0b701228b598c3d602b261e7b9daf886bc34cf8629be11a1aad435a20d28018",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-cleanup-worker.js",
+      "owner": "io-android",
+      "lines": 38,
+      "sourceSha256LF": "420ed5d2af7b92776088c3cc467f11402632e6a09bbfc15fd2d653fbe9383d2b",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-cleanup.js",
+      "owner": "core",
+      "lines": 200,
+      "sourceSha256LF": "e55619b86971bb373c96e9fc15030ea9363d25178d418f3c17f04b96f3d879c6",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-decode.js",
+      "owner": "io-android",
+      "lines": 40,
+      "sourceSha256LF": "4553970803eb1fa3d9c26d3e4feb5a2f54a26f18ec35085536cd2643536f4988",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-dither-settings.js",
+      "owner": "core",
+      "lines": 9,
+      "sourceSha256LF": "8c053347afe29dc4d058aeabf3bfd3417d151ec4afaf7ccc77acf2ad7b0f32c2",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-dither.js",
+      "owner": "core",
+      "lines": 106,
+      "sourceSha256LF": "5452f7b1af4d5f656d8733635856eab5ba565e8d7ee81cced4d77041a9638152",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-drop.js",
+      "owner": "io-android",
+      "lines": 105,
+      "sourceSha256LF": "3a124b9353db153cc85b75f4b990fb63282386b27079337892526a0b89baf6c8",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-export.js",
+      "owner": "io-android",
+      "lines": 70,
+      "sourceSha256LF": "3f7995c69ba8c351c1dfd7c7bce9bc1bdd34ec618f6ba73852c8c79972ab0bdd",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-failure.js",
+      "owner": "ui-tooling",
+      "lines": 52,
+      "sourceSha256LF": "85248532def1ce1fe8e7bbdf0dc3e701818dd812a34c2daf5e1d692936015b5d",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-generated-client.js",
+      "owner": "io-android",
+      "lines": 99,
+      "sourceSha256LF": "5bd7ccea57ec4da3abd507085a6bc258ba0f31811d75bc04a906bc2c658a017d",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-generated-sources.js",
+      "owner": "core",
+      "lines": 37,
+      "sourceSha256LF": "cdab664272c650d51f1347275ed7d985f36fc1fa23e5f0d31d8c872caf820652",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-generated-worker.js",
+      "owner": "io-android",
+      "lines": 22,
+      "sourceSha256LF": "15b3313d88712da85f2d12b4e59b41b45bdce17b94cbd45a2e2cf76dd658feed",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-generated.js",
+      "owner": "core",
+      "lines": 178,
+      "sourceSha256LF": "c854a8e261f3a7b935aa526f5a5d94f8626ae739e07874c9a9f4661840a9869b",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-gif-worker.js",
+      "owner": "io-android",
+      "lines": 21,
+      "sourceSha256LF": "1c2985878cdf81bcb1c458d74c4237c9d9d0601518828a362f340059f23af419",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-import.js",
+      "owner": "io-android",
+      "lines": 110,
+      "sourceSha256LF": "201f081e99a8551a080a6b6a806536558d7c4460cc1d5f049ba26ed47372346f",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-label.js",
+      "owner": "ui-tooling",
+      "lines": 7,
+      "sourceSha256LF": "b17d8cc28586b1511f4d2eba7dbfa7a3108e5a785b302cc8c86adf705862537c",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-library.js",
+      "owner": "ui-tooling",
+      "lines": 140,
+      "sourceSha256LF": "69455708c3481a3a0bb7f51812868b6c5f207fea105b9654b1b672ca6f9e4dde",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-limit-client.js",
+      "owner": "io-android",
+      "lines": 135,
+      "sourceSha256LF": "ac7c13f3939947a60a2dcfe878f6237679dbef307ed9373b01ecd1fc1a56dc82",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-limit-worker.js",
+      "owner": "io-android",
+      "lines": 32,
+      "sourceSha256LF": "e505ae8db233197d0697a01ecec82bf87f43be0c4c07faed6949c6efa95c36bb",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-limit.js",
+      "owner": "core",
+      "lines": 171,
+      "sourceSha256LF": "086569268b040d4acc2052138ac13e700f7b1a8b029a27189b749dedf96f501a",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-lospec-url.js",
+      "owner": "io-android",
+      "lines": 28,
+      "sourceSha256LF": "2babb93ce0222b0d96aae1bcb5fea8130bb4d2e6b968b8b28770506d318e5701",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-lospec.js",
+      "owner": "io-android",
+      "lines": 79,
+      "sourceSha256LF": "125ce34549efba37b4aed2c03e2b5923ef0f88c6b04e2363a61004c021b87e9b",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-preview.js",
+      "owner": "ui-tooling",
+      "lines": 109,
+      "sourceSha256LF": "e3fb78fbedb3b6e9e193435c3a44011d321db6c201a968ef9f10b347909e2aa0",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-state.js",
+      "owner": "io-android",
+      "lines": 90,
+      "sourceSha256LF": "c194d428fcff45e0043a59f197487e67593c1685c435ee3e4418b75a05d4d9ae",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-usage-progress.js",
+      "owner": "core",
+      "lines": 22,
+      "sourceSha256LF": "c8ad66c5367a4afaccb2e0ade0031e18ff62bfdebb92405aad02e0a55f6ff3aa",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/palette-usage.js",
+      "owner": "core",
+      "lines": 38,
+      "sourceSha256LF": "5c062ea2ae747130e6f4d5e4829682077500c81a31f3d1e9dde25d0c48831d0d",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/presets.js",
+      "owner": "core",
+      "lines": 94,
+      "sourceSha256LF": "351e65be54c9f992becc4a61ea61dc6b900177f20d82b5b83dae89c2044df784",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/quantize.js",
+      "owner": "core",
+      "lines": 157,
+      "sourceSha256LF": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/recolor.js",
+      "owner": "core",
+      "lines": 592,
+      "sourceSha256LF": "2e16f45017474857ca8e3dda742f9b96dd0c6c14c63d9c99a98ef6720fe4f1af",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/save.js",
+      "owner": "io-android",
+      "lines": 276,
+      "sourceSha256LF": "ac1576453d7b3958d95f5286268d6edd29a2f71f9d5d5757dcff1c3b768669b8",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/settings.js",
+      "owner": "core",
+      "lines": 94,
+      "sourceSha256LF": "3b944d5cc55de990be2d9eb69743cce3fb8110c5a5980e204c17e27c1bc253bd",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/source-color-summary.js",
+      "owner": "core",
+      "lines": 130,
+      "sourceSha256LF": "eeced676b96c4c3436ed7f976eaa6fd0ac524c86ba38b697bf9db7025aa4e722",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/storage-migration.js",
+      "owner": "ui-tooling",
+      "lines": 12,
+      "sourceSha256LF": "f8eeeb75e6a20cd9a32b0a9de677363f5bb830477a6d855e557b7d7b85ef25bc",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/style-preview.js",
+      "owner": "ui-tooling",
+      "lines": 24,
+      "sourceSha256LF": "a046abf0a996188c0cd9b256c2f76bb78170df45adb17cf41b8ac290d5ec09fe",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/tooltip.js",
+      "owner": "ui-tooling",
+      "lines": 163,
+      "sourceSha256LF": "03127079148ca13525aa4f17c0e3e1d10bcece415695c87a6a2d79edd91ba6d3",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/viewer-layout.js",
+      "owner": "ui-tooling",
+      "lines": 16,
+      "sourceSha256LF": "4658c615f2eaeb71346dc0c063a4c849c832c4c213279684de5fc7b920b9840f",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/viewer-navigation.js",
+      "owner": "ui-tooling",
+      "lines": 180,
+      "sourceSha256LF": "d2c894dc44e61e7d26c42327f5b5fe6f94c153342c977ed6b65c1921cb30bc8c",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/workspace-controls.js",
+      "owner": "ui-tooling",
+      "lines": 69,
+      "sourceSha256LF": "2606e67f1468849b428302f56f56aca562b6a519f55d12f106f8ecaecd1dd664",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/lib/workspace.js",
+      "owner": "ui-tooling",
+      "lines": 16,
+      "sourceSha256LF": "59d8430e35b47c5d100fb79f618a7ac65bba84c76f410eacd8dd271c8b64e325",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/main.js",
+      "owner": "root",
+      "lines": 5,
+      "sourceSha256LF": "f199418f7329e2fe739a3f09e94e5b2aa2a258ea289b40b9e412edfc6abb2758",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/mobile-image-actions.css",
+      "owner": "ui-tooling",
+      "lines": 54,
+      "sourceSha256LF": "ec79639700d39843463e637cebb0a913b90da13d432a12599c8dc56285624020",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/palette-import.css",
+      "owner": "ui-tooling",
+      "lines": 60,
+      "sourceSha256LF": "037501a9c233184bd1498163e360f9417587e47eecb2d84ccfd7e0e0be3c133e",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/palette-settings-compact.css",
+      "owner": "ui-tooling",
+      "lines": 28,
+      "sourceSha256LF": "15112849e2841d3343e21e81a8e457f9be42f5bfc0b41f09826df797857435a2",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/ui-consistency.css",
+      "owner": "ui-tooling",
+      "lines": 32,
+      "sourceSha256LF": "483e09dfa9fc99c050bc3cb55044736cbdc4b67c247fd42f81faa73dd471ef37",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "src/viewer-navigation.css",
+      "owner": "ui-tooling",
+      "lines": 15,
+      "sourceSha256LF": "8b048ab16b847a45ae34f97a17179ab87ed04abb6d8646f57a3ea8ccf575a747",
+      "reviewStatus": "pending"
+    },
+    {
+      "file": "vite.config.js",
+      "owner": "ui-tooling",
+      "lines": 14,
+      "sourceSha256LF": "480a83396f632b7cdb04bdd70846afdee6debeca9f5c4352dfb2d1596999c832",
+      "reviewStatus": "pending"
+    }
+  ],
+  "classifications": {
+    "testFiles": [
+      "build/brand-assets-generator.test.js",
+      "build/brand-assets.test.js",
+      "build/hover-capability.test.js",
+      "src/lib/animation-visibility.test.js",
+      "src/lib/canvas-grid.test.js",
+      "src/lib/comparison-hold.test.js",
+      "src/lib/converted-animation.test.js",
+      "src/lib/dialog-dismiss.test.js",
+      "src/lib/export-compression-cancel.test.js",
+      "src/lib/export-drag.test.js",
+      "src/lib/favicon-startup.test.js",
+      "src/lib/gesture.test.js",
+      "src/lib/gif.test.js",
+      "src/lib/icon.test.js",
+      "src/lib/image-decode.test.js",
+      "src/lib/image-drop.test.js",
+      "src/lib/image-gesture.test.js",
+      "src/lib/image-import-client.test.js",
+      "src/lib/image-import-core.test.js",
+      "src/lib/image-import-worker.test.js",
+      "src/lib/image-reanalysis.test.js",
+      "src/lib/internal-drag.test.js",
+      "src/lib/layout.test.js",
+      "src/lib/onebit-usage.test.js",
+      "src/lib/original-color-usage.test.js",
+      "src/lib/palette-alpha.test.js",
+      "src/lib/palette-animation-cache.test.js",
+      "src/lib/palette-ase.test.js",
+      "src/lib/palette-cleanup-client.test.js",
+      "src/lib/palette-cleanup-worker.test.js",
+      "src/lib/palette-cleanup.test.js",
+      "src/lib/palette-decode.test.js",
+      "src/lib/palette-dither-state.test.js",
+      "src/lib/palette-dither.test.js",
+      "src/lib/palette-drop.test.js",
+      "src/lib/palette-export.test.js",
+      "src/lib/palette-failure.test.js",
+      "src/lib/palette-generated-client.test.js",
+      "src/lib/palette-generated-worker.test.js",
+      "src/lib/palette-generated.test.js",
+      "src/lib/palette-import.test.js",
+      "src/lib/palette-library.test.js",
+      "src/lib/palette-limit-client.test.js",
+      "src/lib/palette-limit-worker.test.js",
+      "src/lib/palette-limit.test.js",
+      "src/lib/palette-lospec.test.js",
+      "src/lib/palette-preview.test.js",
+      "src/lib/palette-state.test.js",
+      "src/lib/palette-usage-progress.test.js",
+      "src/lib/palette-usage.test.js",
+      "src/lib/presets.test.js",
+      "src/lib/quantize.test.js",
+      "src/lib/recolor.test.js",
+      "src/lib/save-batch.test.js",
+      "src/lib/save.test.js",
+      "src/lib/settings.test.js",
+      "src/lib/source-color-summary.test.js",
+      "src/lib/storage-migration.test.js",
+      "src/lib/style-preview.test.js",
+      "src/lib/theme-startup.test.js",
+      "src/lib/tooltip.test.js",
+      "src/lib/tooltipCoverage.test.js",
+      "src/lib/viewer-layout.test.js",
+      "src/lib/viewer-navigation.test.js",
+      "src/lib/workspace-controls.test.js",
+      "src/lib/workspace.test.js"
+    ],
+    "sourceAssets": [
+      "src/assets/logo-dark.png",
+      "src/assets/logo-dark.svg",
+      "src/assets/logo.png",
+      "src/assets/logo.svg",
+      "src/assets/lucide-LICENSE.txt"
+    ],
+    "testFixtures": [
+      "src/lib/fixtures/ai-inventory.json",
+      "src/lib/fixtures/icon-opening-stress.json",
+      "src/lib/fixtures/palette-import/grid.png",
+      "src/lib/fixtures/palette-import/palette.ase",
+      "src/lib/fixtures/palette-import/strip.png",
+      "src/lib/fixtures/palette-import/tiny.png"
+    ],
+    "generatedPublic": [
+      "public/apple-touch-icon-152x152.png",
+      "public/apple-touch-icon-167x167.png",
+      "public/apple-touch-icon-180x180.png",
+      "public/colorfetti-trailer-poster.png",
+      "public/colorfetti-trailer.mp4",
+      "public/favicon-16x16.png",
+      "public/favicon-32x32.png",
+      "public/favicon-48x48.png",
+      "public/favicon-dark-16x16.png",
+      "public/favicon-dark-32x32.png",
+      "public/favicon-dark-48x48.png",
+      "public/favicon-dark.ico",
+      "public/favicon-dark.svg",
+      "public/favicon-light.svg",
+      "public/favicon.ico",
+      "public/favicon.svg",
+      "public/manifest.webmanifest",
+      "public/maskable-icon-192x192.png",
+      "public/maskable-icon-512x512.png",
+      "public/monochrome-192x192.png",
+      "public/pwa-192x192.png",
+      "public/pwa-512x512.png",
+      "public/safari-pinned-tab.svg"
+    ],
+    "vendor": "No node_modules internals claimed audited; installed dependency/API boundaries reviewed."
+  }
+}

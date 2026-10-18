@@ -1,0 +1,162 @@
+{
+  "count": 22,
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "method": "Every assigned implementation file read in full, with direct callers and source-summary helper; hashes are inventory/provenance, not the evidence of reading.",
+  "files": [
+    {
+      "file": "src/lib/gif.js",
+      "lines": 270,
+      "sourceSha256LF": "51a8e5efa4a55147485947d317c54fa450530c94f7b6535c0b828fe4478ce142",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/image-decode.js",
+      "lines": 106,
+      "sourceSha256LF": "a660104305461e4f307d1597e424205725cbc44b9011e5349b0605fdfa3aba2b",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/image-drop.js",
+      "lines": 65,
+      "sourceSha256LF": "c71fdc92779f9aec692b0958776b28ff8b585f502382c808e805e416c3db8a5b",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/image-import-client.js",
+      "lines": 190,
+      "sourceSha256LF": "d0974577afeb040dff0d00c0f4ec20353891225eab6e2e0f31171d0b2ccb40f7",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/image-import-core.js",
+      "lines": 65,
+      "sourceSha256LF": "1f9934175c6ca2116b6cd232df6929c83606c52343237785e47d72f8d428ebbe",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/image-import-worker.js",
+      "lines": 46,
+      "sourceSha256LF": "b6f9cd3531a60d13912439157d214b5c2ac77c9703b12954dffe8f60d83975a0",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-ase.js",
+      "lines": 128,
+      "sourceSha256LF": "87017ef440cdfa0c499240411b96713ecdc835481ff1e305e3a1b8e7e933f944",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-cleanup-client.js",
+      "lines": 138,
+      "sourceSha256LF": "c0b701228b598c3d602b261e7b9daf886bc34cf8629be11a1aad435a20d28018",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-cleanup-worker.js",
+      "lines": 38,
+      "sourceSha256LF": "420ed5d2af7b92776088c3cc467f11402632e6a09bbfc15fd2d653fbe9383d2b",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-decode.js",
+      "lines": 40,
+      "sourceSha256LF": "4553970803eb1fa3d9c26d3e4feb5a2f54a26f18ec35085536cd2643536f4988",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-drop.js",
+      "lines": 105,
+      "sourceSha256LF": "3a124b9353db153cc85b75f4b990fb63282386b27079337892526a0b89baf6c8",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-export.js",
+      "lines": 70,
+      "sourceSha256LF": "3f7995c69ba8c351c1dfd7c7bce9bc1bdd34ec618f6ba73852c8c79972ab0bdd",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-generated-client.js",
+      "lines": 99,
+      "sourceSha256LF": "5bd7ccea57ec4da3abd507085a6bc258ba0f31811d75bc04a906bc2c658a017d",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-generated-worker.js",
+      "lines": 22,
+      "sourceSha256LF": "15b3313d88712da85f2d12b4e59b41b45bdce17b94cbd45a2e2cf76dd658feed",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-gif-worker.js",
+      "lines": 21,
+      "sourceSha256LF": "1c2985878cdf81bcb1c458d74c4237c9d9d0601518828a362f340059f23af419",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-import.js",
+      "lines": 110,
+      "sourceSha256LF": "201f081e99a8551a080a6b6a806536558d7c4460cc1d5f049ba26ed47372346f",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-limit-client.js",
+      "lines": 135,
+      "sourceSha256LF": "ac7c13f3939947a60a2dcfe878f6237679dbef307ed9373b01ecd1fc1a56dc82",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-limit-worker.js",
+      "lines": 32,
+      "sourceSha256LF": "e505ae8db233197d0697a01ecec82bf87f43be0c4c07faed6949c6efa95c36bb",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-lospec-url.js",
+      "lines": 28,
+      "sourceSha256LF": "2babb93ce0222b0d96aae1bcb5fea8130bb4d2e6b968b8b28770506d318e5701",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-lospec.js",
+      "lines": 79,
+      "sourceSha256LF": "125ce34549efba37b4aed2c03e2b5923ef0f88c6b04e2363a61004c021b87e9b",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-state.js",
+      "lines": 90,
+      "sourceSha256LF": "c194d428fcff45e0043a59f197487e67593c1685c435ee3e4418b75a05d4d9ae",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md"
+    },
+    {
+      "file": "src/lib/save.js",
+      "lines": 276,
+      "sourceSha256LF": "ac1576453d7b3958d95f5286268d6edd29a2f71f9d5d5757dcff1c3b768669b8",
+      "reviewStatus": "implementation-read",
+      "ledger": "io-android/source-review.md",
+      "currentChangeQualification": "Initial full review and frozen profiling predate concurrent filename-only commits1fe03ed/18de3f7; parent owns final cumulative diff/smoke."
+    }
+  ]
+}

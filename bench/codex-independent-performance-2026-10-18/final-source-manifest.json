@@ -1,0 +1,20 @@
+{
+  "created": "2026-10-18T11:01:27.149Z",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "cumulativeBase": "18de3f7b231e59d144aba6fa32ceba43c03a04eb",
+  "auditRuntimeFiles": [
+    "src/App.svelte"
+  ],
+  "runtime": [
+    {
+      "file": "src/App.svelte",
+      "expected": "971ff4ada385ae809cba5df2dfc5c33f7d94090f657b8521a911ca81e0b1f5ef"
+    }
+  ],
+  "headAtPreparation": "18de3f7b231e59d144aba6fa32ceba43c03a04eb",
+  "scope": "Exact tracked18de3f7 plus declared audit runtime files. Other current dirty GIF/import/docs changes excluded and preserved. All tests/fixtures come from cumulativeBase.",
+  "target": "C:\\Programming_Files\\Shilocity\\colorfetti\\.tmp\\codex-independent-performance-2026-10-18\\final",
+  "testDependencyCorrection": "First suite lacked bench/brand-icons-qa.mjs, invoked by brand-assets-generator.test.js. Added exact18de3f7 object; failed log preserved. Runtime source/dist unchanged.",
+  "inventoryDependencyCorrection": "Added exact18de3f7 .github/workflows/deploy.yml to complete96-entry source provenance; CI file not used by tested runtime/build. Failed provenance invocation retained in transcript; no result file was written by failed attempt.",
+  "validatedRuntimeCommit": "ae97d0e"
+}

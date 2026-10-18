@@ -1,0 +1,27 @@
+3:12:11 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti/.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off - using default configuration.
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 196 modules transformed.
+rendering chunks...
+computing gzip size...
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/index.html                                     4.54 kB │ gzip:  1.63 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-generated-worker-xpoMRM2c.js    9.82 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-limit-worker-rkrL9P3s.js        9.86 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-gif-worker-D4qe4WP7.js         11.21 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-cleanup-worker-ChpCTucA.js     15.05 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/image-import-worker-BTnho0_2.js        24.97 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/index-VE9_tUgX.css                    168.00 kB │ gzip: 26.46 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-usage-DKj-UTJm.js               0.97 kB │ gzip:  0.61 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-lospec-BUdZU2lN.js              2.32 kB │ gzip:  1.25 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-ase-gXqzrNdw.js                 2.49 kB │ gzip:  1.32 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-generated-client-DD-u_eVW.js    4.00 kB │ gzip:  1.75 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-cleanup-lID-a4yc.js             4.23 kB │ gzip:  2.21 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-limit-OiwOF5bZ.js               4.57 kB │ gzip:  2.26 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/image-import-client-yepXFLMu.js         5.59 kB │ gzip:  2.13 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-generated-DljeoIz5.js           5.98 kB │ gzip:  2.73 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/palette-cleanup-client-Gt9KjwdT.js      7.36 kB │ gzip:  2.88 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/gif-Duv2o-UC.js                        12.83 kB │ gzip:  5.07 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/quantize-DsvDuXDJ.js                   13.24 kB │ gzip:  6.39 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-off/dist/assets/index-B_e4WEnO.js                     270.77 kB │ gzip: 96.64 kB
+
+✓ built in 437ms

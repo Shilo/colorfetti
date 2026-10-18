@@ -1,0 +1,230 @@
+{
+  "stamp": 1792321019726,
+  "rows": [
+    {
+      "pair": 0,
+      "variant": "baseline",
+      "method": "keyboard",
+      "eventToSettledMs": 1.899999976158142,
+      "rendererCpuMs": 14.409000000000006,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 0,
+      "variant": "baseline",
+      "method": "pointer",
+      "eventToSettledMs": 1.4000000953674316,
+      "rendererCpuMs": 25.693000000000023,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 0,
+      "variant": "candidate",
+      "method": "keyboard",
+      "eventToSettledMs": 13.099999904632568,
+      "rendererCpuMs": 16.006999999999994,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 0,
+      "variant": "candidate",
+      "method": "pointer",
+      "eventToSettledMs": 1.5,
+      "rendererCpuMs": 34.748999999999974,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 1,
+      "variant": "candidate",
+      "method": "keyboard",
+      "eventToSettledMs": 2,
+      "rendererCpuMs": 15.888000000000012,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 1,
+      "variant": "candidate",
+      "method": "pointer",
+      "eventToSettledMs": 1.7000000476837158,
+      "rendererCpuMs": 41.40300000000002,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 1,
+      "variant": "baseline",
+      "method": "keyboard",
+      "eventToSettledMs": 13.199999928474426,
+      "rendererCpuMs": 13.597999999999999,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 1,
+      "variant": "baseline",
+      "method": "pointer",
+      "eventToSettledMs": 1.600000023841858,
+      "rendererCpuMs": 43.35600000000001,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 2,
+      "variant": "baseline",
+      "method": "keyboard",
+      "eventToSettledMs": 13.299999952316284,
+      "rendererCpuMs": 15.07599999999998,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 2,
+      "variant": "baseline",
+      "method": "pointer",
+      "eventToSettledMs": 2.299999952316284,
+      "rendererCpuMs": 36.51500000000002,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 2,
+      "variant": "candidate",
+      "method": "keyboard",
+      "eventToSettledMs": 2,
+      "rendererCpuMs": 15.152,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 2,
+      "variant": "candidate",
+      "method": "pointer",
+      "eventToSettledMs": 1.600000023841858,
+      "rendererCpuMs": 39.60800000000003,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 3,
+      "variant": "candidate",
+      "method": "keyboard",
+      "eventToSettledMs": 2,
+      "rendererCpuMs": 13.782000000000016,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 3,
+      "variant": "candidate",
+      "method": "pointer",
+      "eventToSettledMs": 2.200000047683716,
+      "rendererCpuMs": 32.465999999999994,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 3,
+      "variant": "baseline",
+      "method": "keyboard",
+      "eventToSettledMs": 14.799999952316284,
+      "rendererCpuMs": 13.521000000000004,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 3,
+      "variant": "baseline",
+      "method": "pointer",
+      "eventToSettledMs": 1.100000023841858,
+      "rendererCpuMs": 27.851000000000013,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 4,
+      "variant": "baseline",
+      "method": "keyboard",
+      "eventToSettledMs": 15.400000095367432,
+      "rendererCpuMs": 10.20299999999999,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 4,
+      "variant": "baseline",
+      "method": "pointer",
+      "eventToSettledMs": 1.899999976158142,
+      "rendererCpuMs": 27.042999999999985,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 4,
+      "variant": "candidate",
+      "method": "keyboard",
+      "eventToSettledMs": 1.399999976158142,
+      "rendererCpuMs": 11.381999999999975,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    },
+    {
+      "pair": 4,
+      "variant": "candidate",
+      "method": "pointer",
+      "eventToSettledMs": 1.2999999523162842,
+      "rendererCpuMs": 37.87499999999999,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    }
+  ],
+  "outputs": [
+    {
+      "variant": "baseline",
+      "name": "codexio-preview-focus-1792321019726-0-baseline-palette.png",
+      "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "variant": "candidate",
+      "name": "codexio-preview-focus-1792321019726-0-candidate-palette.png",
+      "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    }
+  ],
+  "errors": [],
+  "gate": "Original root preview-trigger-plan.md: no repeated Preview workflow latency loss exceeding BOTH5ms AND5%; no missing focus/captions or output differences. Five alternating matched pairs with keyboard Escape and native touch Close each. The previous successful raw receipt header incorrectly said8/10; its sidecar evaluates the original5/5 without changing raw observations.",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "urls": {
+    "baseline": "http://localhost:5391/",
+    "candidate": "http://localhost:5409/"
+  },
+  "qualification": "Actual native browser controls, bounded event→next task focus/DOM state and rendererCPU observations. Not process-cold or a display-frame upper bound.",
+  "finished": "2026-10-18T10:57:16.105Z"
+}

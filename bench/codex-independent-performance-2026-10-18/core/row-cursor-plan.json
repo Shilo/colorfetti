@@ -1,0 +1,19 @@
+{
+  "created": "2026-10-18T10:38:44.629Z",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "currentHeadAtPreparation": "18de3f7b231e59d144aba6fa32ceba43c03a04eb",
+  "sourceCanonicalLfSha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573",
+  "candidateCanonicalLfSha256": "6da1ddc642aa0a0a11c49a543394e5a8c3f4c96f7d06f58253fc4d294c3818db",
+  "hypothesis": "A local row cursor in each nearest convert(state,start,end) call removes per-pixel division/modulo/source-row multiplication while retaining exact xs/ys coordinates. Advance precedes the alpha continue; each slice initializes from its own start. No persistent cursor, source-equality shortcut, table changes, memo change, dither change or source mutation.",
+  "acceptance": {
+    "nativeTarget": "1024/2048 PNG/export nearest: >=10% AND >=10ms lower renderer CPU, >=4/5 matched pairs faster; every paired output exact",
+    "adverse": "No practical tiny/preview/entropy/Keep/dither/Cleanup/animation regression exceeding BOTH5ms AND5%; no new blocking or retained memory",
+    "roundLimit": 2,
+    "promotion": "Node and auxiliary whole conversion/export must show material benefit before a native candidate; kernel timing alone cannot authorize production."
+  },
+  "ports": {
+    "baseline": 5407,
+    "candidate": 5408
+  },
+  "scope": "Research only; all runtime from immutable5ae baseline except candidate quantize.js block. Root owns native final decision and production edit authorization."
+}

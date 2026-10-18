@@ -1,0 +1,1605 @@
+{
+  "harnessProvenance": "Independent inspection/adaptation of previous native runner; all results newly collected. Historical receipts not imported.",
+  "label": "editor-causal",
+  "prefix": "codexio-editor-causal-1792319566983",
+  "baseURL": "http://localhost:5391/",
+  "started": "2026-10-18T10:32:46.984Z",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "rows": [
+    {
+      "name": "palette panel",
+      "elapsedMs": 170.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 24.899999999999977,
+      "rafP95Ms": 24.899999999999977,
+      "cpuMs": {
+        "TaskDuration": 54.291,
+        "ScriptDuration": 19.281,
+        "LayoutDuration": 2.3240000000000003,
+        "RecalcStyleDuration": 7.581
+      },
+      "heapUsed": 5349480,
+      "start": 198.29999995231628,
+      "end": 380.1999999284744,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "new editor",
+      "elapsedMs": 146,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 58.604000000000006,
+        "ScriptDuration": 20.020999999999997,
+        "LayoutDuration": 1.9089999999999996,
+        "RecalcStyleDuration": 6.069
+      },
+      "heapUsed": 5789416,
+      "start": 389.59999990463257,
+      "end": 546.7999999523163,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Paste256 plus Tab blur",
+      "elapsedMs": 418.8000000715256,
+      "longtasks": [
+        {
+          "start": 700.1999999284744,
+          "duration": 185
+        }
+      ],
+      "rafMaxMs": 175,
+      "rafP95Ms": 175,
+      "cpuMs": {
+        "TaskDuration": 256.828,
+        "ScriptDuration": 9.610000000000001,
+        "LayoutDuration": 76.527,
+        "RecalcStyleDuration": 29.634
+      },
+      "heapUsed": 6789988,
+      "start": 558.8999999761581,
+      "end": 989.8999999761581,
+      "overlapLongTasks": [
+        {
+          "start": 700.1999999284744,
+          "duration": 185
+        }
+      ],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Review",
+      "elapsedMs": 131.89999997615814,
+      "longtasks": [],
+      "rafMaxMs": 41.700000000000045,
+      "rafP95Ms": 41.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 54.81700000000001,
+        "ScriptDuration": 18.405000000000005,
+        "LayoutDuration": 0.8190000000000003,
+        "RecalcStyleDuration": 5.150000000000002
+      },
+      "heapUsed": 6963696,
+      "start": 1001.7999999523163,
+      "end": 1143.5999999046326,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "page next previous close",
+      "elapsedMs": 399.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 114.533,
+        "ScriptDuration": 33.13099999999999,
+        "LayoutDuration": 1.1680000000000024,
+        "RecalcStyleDuration": 19.747
+      },
+      "heapUsed": 7067968,
+      "start": 1157.0999999046326,
+      "end": 1567.5999999046326,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "palette panel",
+      "elapsedMs": 123.30000007152557,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999983,
+      "rafP95Ms": 16.799999999999983,
+      "cpuMs": {
+        "TaskDuration": 39.44400000000001,
+        "ScriptDuration": 10.577,
+        "LayoutDuration": 2.4769999999999994,
+        "RecalcStyleDuration": 6.377000000000001
+      },
+      "heapUsed": 10392960,
+      "start": 200.19999992847443,
+      "end": 339.1999999284744,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "new editor",
+      "elapsedMs": 140.5,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 43.096,
+        "ScriptDuration": 8.732000000000003,
+        "LayoutDuration": 1.8150000000000006,
+        "RecalcStyleDuration": 7.467999999999999
+      },
+      "heapUsed": 10809876,
+      "start": 353.5,
+      "end": 507.1999999284744,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Paste256 plus Tab blur",
+      "elapsedMs": 432.39999997615814,
+      "longtasks": [
+        {
+          "start": 661.6999999284744,
+          "duration": 185
+        }
+      ],
+      "rafMaxMs": 174.89999999999998,
+      "rafP95Ms": 174.89999999999998,
+      "cpuMs": {
+        "TaskDuration": 255.84999999999997,
+        "ScriptDuration": 9.447999999999999,
+        "LayoutDuration": 72.814,
+        "RecalcStyleDuration": 31.604
+      },
+      "heapUsed": 11789764,
+      "start": 519.1000000238419,
+      "end": 970.2999999523163,
+      "overlapLongTasks": [
+        {
+          "start": 661.6999999284744,
+          "duration": 185
+        }
+      ],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Review",
+      "elapsedMs": 117.29999995231628,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 50.49099999999995,
+        "ScriptDuration": 6.596999999999999,
+        "LayoutDuration": 0.7320000000000104,
+        "RecalcStyleDuration": 6.187000000000005
+      },
+      "heapUsed": 12883936,
+      "start": 981.7999999523163,
+      "end": 1113.1000000238419,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "page next previous close",
+      "elapsedMs": 452,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 120.97999999999998,
+        "ScriptDuration": 22.14100000000001,
+        "LayoutDuration": 1.4289999999999998,
+        "RecalcStyleDuration": 26.421
+      },
+      "heapUsed": 11884904,
+      "start": 1128.8999999761581,
+      "end": 1595.6000000238419,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "palette panel",
+      "elapsedMs": 156.19999992847443,
+      "longtasks": [],
+      "rafMaxMs": 33.30000000000001,
+      "rafP95Ms": 33.30000000000001,
+      "cpuMs": {
+        "TaskDuration": 42.758,
+        "ScriptDuration": 11.238999999999995,
+        "LayoutDuration": 2.9299999999999997,
+        "RecalcStyleDuration": 7.497999999999999
+      },
+      "heapUsed": 15517864,
+      "start": 210.10000002384186,
+      "end": 377.7000000476837,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "new editor",
+      "elapsedMs": 148.5,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 45.72199999999999,
+        "ScriptDuration": 6.270000000000005,
+        "LayoutDuration": 1.7550000000000006,
+        "RecalcStyleDuration": 8.803999999999998
+      },
+      "heapUsed": 15879344,
+      "start": 390,
+      "end": 557.7999999523163,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Paste256 plus Tab blur",
+      "elapsedMs": 421.10000002384186,
+      "longtasks": [
+        {
+          "start": 706.8999999761581,
+          "duration": 190
+        }
+      ],
+      "rafMaxMs": 183.29999999999995,
+      "rafP95Ms": 183.29999999999995,
+      "cpuMs": {
+        "TaskDuration": 285.46000000000004,
+        "ScriptDuration": 7.4549999999999965,
+        "LayoutDuration": 75.27000000000001,
+        "RecalcStyleDuration": 29.696000000000005
+      },
+      "heapUsed": 11249124,
+      "start": 569.1000000238419,
+      "end": 1000.1000000238419,
+      "overlapLongTasks": [
+        {
+          "start": 706.8999999761581,
+          "duration": 190
+        }
+      ],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Review",
+      "elapsedMs": 93.79999995231628,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 39.78699999999996,
+        "ScriptDuration": 4.404000000000005,
+        "LayoutDuration": 0.7390000000000035,
+        "RecalcStyleDuration": 5.262000000000003
+      },
+      "heapUsed": 12317344,
+      "start": 1011.7999999523163,
+      "end": 1116.6000000238419,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "page next previous close",
+      "elapsedMs": 465,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 122.71600000000005,
+        "ScriptDuration": 18.988,
+        "LayoutDuration": 1.3859999999999983,
+        "RecalcStyleDuration": 27.074
+      },
+      "heapUsed": 13594000,
+      "start": 1129,
+      "end": 1611.6000000238419,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "palette panel",
+      "elapsedMs": 134.5,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 41.49900000000001,
+        "ScriptDuration": 13.395999999999999,
+        "LayoutDuration": 2.866,
+        "RecalcStyleDuration": 8.381000000000002
+      },
+      "heapUsed": 16882376,
+      "start": 206.19999992847443,
+      "end": 352.2999999523163,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "new editor",
+      "elapsedMs": 129.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 37.67599999999999,
+        "ScriptDuration": 5.637000000000003,
+        "LayoutDuration": 1.9450000000000005,
+        "RecalcStyleDuration": 7.417
+      },
+      "heapUsed": 17257156,
+      "start": 364.7999999523163,
+      "end": 510,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Paste256 plus Tab blur",
+      "elapsedMs": 408.3000000715256,
+      "longtasks": [
+        {
+          "start": 661.5999999046326,
+          "duration": 180
+        }
+      ],
+      "rafMaxMs": 174.9000000000001,
+      "rafP95Ms": 174.9000000000001,
+      "cpuMs": {
+        "TaskDuration": 253.91699999999994,
+        "ScriptDuration": 8.721,
+        "LayoutDuration": 67.45000000000002,
+        "RecalcStyleDuration": 31.397000000000002
+      },
+      "heapUsed": 18213844,
+      "start": 522,
+      "end": 946.7999999523163,
+      "overlapLongTasks": [
+        {
+          "start": 661.5999999046326,
+          "duration": 180
+        }
+      ],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Review",
+      "elapsedMs": 150.70000004768372,
+      "longtasks": [],
+      "rafMaxMs": 41.59999999999991,
+      "rafP95Ms": 41.59999999999991,
+      "cpuMs": {
+        "TaskDuration": 96.20499999999998,
+        "ScriptDuration": 13.239999999999995,
+        "LayoutDuration": 0.6379999999999997,
+        "RecalcStyleDuration": 6.240000000000009
+      },
+      "heapUsed": 19409884,
+      "start": 956.1999999284744,
+      "end": 1121.0999999046326,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "page next previous close",
+      "elapsedMs": 404.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 113.54599999999992,
+        "ScriptDuration": 23.83800000000001,
+        "LayoutDuration": 1.126000000000002,
+        "RecalcStyleDuration": 23.375000000000007
+      },
+      "heapUsed": 20749584,
+      "start": 1137.3999999761581,
+      "end": 1555.7999999523163,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "palette panel",
+      "elapsedMs": 143.89999997615814,
+      "longtasks": [],
+      "rafMaxMs": 24.99999999999997,
+      "rafP95Ms": 24.99999999999997,
+      "cpuMs": {
+        "TaskDuration": 50.259,
+        "ScriptDuration": 12.131000000000004,
+        "LayoutDuration": 2.322,
+        "RecalcStyleDuration": 15.292
+      },
+      "heapUsed": 12956040,
+      "start": 162.5,
+      "end": 315.39999997615814,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "new editor",
+      "elapsedMs": 157.90000009536743,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 51.867,
+        "ScriptDuration": 6.64,
+        "LayoutDuration": 2.26,
+        "RecalcStyleDuration": 10.437999999999999
+      },
+      "heapUsed": 12178024,
+      "start": 325.89999997615814,
+      "end": 495.60000002384186,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Paste256 plus Tab blur",
+      "elapsedMs": 396.7999999523163,
+      "longtasks": [
+        {
+          "start": 628.6000000238419,
+          "duration": 183
+        }
+      ],
+      "rafMaxMs": 175,
+      "rafP95Ms": 175,
+      "cpuMs": {
+        "TaskDuration": 273.67900000000003,
+        "ScriptDuration": 12.540999999999997,
+        "LayoutDuration": 72.237,
+        "RecalcStyleDuration": 28.362
+      },
+      "heapUsed": 7473648,
+      "start": 507.8000000715256,
+      "end": 916.6000000238419,
+      "overlapLongTasks": [
+        {
+          "start": 628.6000000238419,
+          "duration": 183
+        }
+      ],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Review",
+      "elapsedMs": 124.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 41.60000000000002,
+      "rafP95Ms": 41.60000000000002,
+      "cpuMs": {
+        "TaskDuration": 72.24399999999997,
+        "ScriptDuration": 14.104999999999999,
+        "LayoutDuration": 0.7810000000000039,
+        "RecalcStyleDuration": 4.759000000000007
+      },
+      "heapUsed": 8693396,
+      "start": 922.7000000476837,
+      "end": 1058.2000000476837,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "page next previous close",
+      "elapsedMs": 448.2000000476837,
+      "longtasks": [],
+      "rafMaxMs": 16.90000000000009,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 117.01700000000004,
+        "ScriptDuration": 22.071999999999996,
+        "LayoutDuration": 1.2349999999999999,
+        "RecalcStyleDuration": 18.545999999999992
+      },
+      "heapUsed": 8655416,
+      "start": 1067.6000000238419,
+      "end": 1526,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "palette panel",
+      "elapsedMs": 110.79999995231628,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 31.976999999999993,
+        "ScriptDuration": 8.379999999999999,
+        "LayoutDuration": 2.4659999999999997,
+        "RecalcStyleDuration": 7.671999999999999
+      },
+      "heapUsed": 12325836,
+      "start": 156.39999997615814,
+      "end": 274.6999999284744,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "new editor",
+      "elapsedMs": 109.69999992847443,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 31.943000000000012,
+        "ScriptDuration": 4.402000000000003,
+        "LayoutDuration": 1.8840000000000003,
+        "RecalcStyleDuration": 6.360000000000001
+      },
+      "heapUsed": 12684500,
+      "start": 282.7999999523163,
+      "end": 402.2999999523163,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Paste256 plus Tab blur",
+      "elapsedMs": 415.6999999284744,
+      "longtasks": [
+        {
+          "start": 543.5,
+          "duration": 179
+        }
+      ],
+      "rafMaxMs": 175,
+      "rafP95Ms": 175,
+      "cpuMs": {
+        "TaskDuration": 237.41099999999997,
+        "ScriptDuration": 7.532999999999998,
+        "LayoutDuration": 68.274,
+        "RecalcStyleDuration": 28.124
+      },
+      "heapUsed": 13620872,
+      "start": 417.7999999523163,
+      "end": 847.5999999046326,
+      "overlapLongTasks": [
+        {
+          "start": 543.5,
+          "duration": 179
+        }
+      ],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "Review",
+      "elapsedMs": 95.30000007152557,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 45.53799999999997,
+        "ScriptDuration": 5.430999999999998,
+        "LayoutDuration": 0.784999999999994,
+        "RecalcStyleDuration": 4.965999999999998
+      },
+      "heapUsed": 12216932,
+      "start": 863.5,
+      "end": 974,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    },
+    {
+      "name": "page next previous close",
+      "elapsedMs": 383.09999990463257,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 103.07800000000006,
+        "ScriptDuration": 20.125000000000004,
+        "LayoutDuration": 1.3930000000000053,
+        "RecalcStyleDuration": 16.503999999999998
+      },
+      "heapUsed": 13501156,
+      "start": 991.5999999046326,
+      "end": 1388,
+      "overlapLongTasks": [],
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "visualWidth": 448,
+        "visualHeight": 819.111083984375
+      }
+    }
+  ],
+  "outputs": [],
+  "errors": [],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 360\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "editorTrials": [
+    {
+      "pair": 0,
+      "variant": "base",
+      "rows": [
+        {
+          "name": "palette panel",
+          "elapsedMs": 170.60000002384186,
+          "longtasks": [],
+          "rafMaxMs": 24.899999999999977,
+          "rafP95Ms": 24.899999999999977,
+          "cpuMs": {
+            "TaskDuration": 54.291,
+            "ScriptDuration": 19.281,
+            "LayoutDuration": 2.3240000000000003,
+            "RecalcStyleDuration": 7.581
+          },
+          "heapUsed": 5349480,
+          "start": 198.29999995231628,
+          "end": 380.1999999284744,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "new editor",
+          "elapsedMs": 146,
+          "longtasks": [],
+          "rafMaxMs": 25,
+          "rafP95Ms": 25,
+          "cpuMs": {
+            "TaskDuration": 58.604000000000006,
+            "ScriptDuration": 20.020999999999997,
+            "LayoutDuration": 1.9089999999999996,
+            "RecalcStyleDuration": 6.069
+          },
+          "heapUsed": 5789416,
+          "start": 389.59999990463257,
+          "end": 546.7999999523163,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Paste256 plus Tab blur",
+          "elapsedMs": 418.8000000715256,
+          "longtasks": [
+            {
+              "start": 700.1999999284744,
+              "duration": 185
+            }
+          ],
+          "rafMaxMs": 175,
+          "rafP95Ms": 175,
+          "cpuMs": {
+            "TaskDuration": 256.828,
+            "ScriptDuration": 9.610000000000001,
+            "LayoutDuration": 76.527,
+            "RecalcStyleDuration": 29.634
+          },
+          "heapUsed": 6789988,
+          "start": 558.8999999761581,
+          "end": 989.8999999761581,
+          "overlapLongTasks": [
+            {
+              "start": 700.1999999284744,
+              "duration": 185
+            }
+          ],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Review",
+          "elapsedMs": 131.89999997615814,
+          "longtasks": [],
+          "rafMaxMs": 41.700000000000045,
+          "rafP95Ms": 41.700000000000045,
+          "cpuMs": {
+            "TaskDuration": 54.81700000000001,
+            "ScriptDuration": 18.405000000000005,
+            "LayoutDuration": 0.8190000000000003,
+            "RecalcStyleDuration": 5.150000000000002
+          },
+          "heapUsed": 6963696,
+          "start": 1001.7999999523163,
+          "end": 1143.5999999046326,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "page next previous close",
+          "elapsedMs": 399.60000002384186,
+          "longtasks": [],
+          "rafMaxMs": 16.800000000000182,
+          "rafP95Ms": 16.799999999999955,
+          "cpuMs": {
+            "TaskDuration": 114.533,
+            "ScriptDuration": 33.13099999999999,
+            "LayoutDuration": 1.1680000000000024,
+            "RecalcStyleDuration": 19.747
+          },
+          "heapUsed": 7067968,
+          "start": 1157.0999999046326,
+          "end": 1567.5999999046326,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        }
+      ],
+      "taskCpuMs": 539.073,
+      "layoutMs": 82.74700000000001,
+      "recalcMs": 68.181,
+      "maxLongTaskMs": 185
+    },
+    {
+      "pair": 0,
+      "variant": "both-off",
+      "rows": [
+        {
+          "name": "palette panel",
+          "elapsedMs": 123.30000007152557,
+          "longtasks": [],
+          "rafMaxMs": 16.799999999999983,
+          "rafP95Ms": 16.799999999999983,
+          "cpuMs": {
+            "TaskDuration": 39.44400000000001,
+            "ScriptDuration": 10.577,
+            "LayoutDuration": 2.4769999999999994,
+            "RecalcStyleDuration": 6.377000000000001
+          },
+          "heapUsed": 10392960,
+          "start": 200.19999992847443,
+          "end": 339.1999999284744,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "new editor",
+          "elapsedMs": 140.5,
+          "longtasks": [],
+          "rafMaxMs": 16.799999999999955,
+          "rafP95Ms": 16.799999999999955,
+          "cpuMs": {
+            "TaskDuration": 43.096,
+            "ScriptDuration": 8.732000000000003,
+            "LayoutDuration": 1.8150000000000006,
+            "RecalcStyleDuration": 7.467999999999999
+          },
+          "heapUsed": 10809876,
+          "start": 353.5,
+          "end": 507.1999999284744,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Paste256 plus Tab blur",
+          "elapsedMs": 432.39999997615814,
+          "longtasks": [
+            {
+              "start": 661.6999999284744,
+              "duration": 185
+            }
+          ],
+          "rafMaxMs": 174.89999999999998,
+          "rafP95Ms": 174.89999999999998,
+          "cpuMs": {
+            "TaskDuration": 255.84999999999997,
+            "ScriptDuration": 9.447999999999999,
+            "LayoutDuration": 72.814,
+            "RecalcStyleDuration": 31.604
+          },
+          "heapUsed": 11789764,
+          "start": 519.1000000238419,
+          "end": 970.2999999523163,
+          "overlapLongTasks": [
+            {
+              "start": 661.6999999284744,
+              "duration": 185
+            }
+          ],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Review",
+          "elapsedMs": 117.29999995231628,
+          "longtasks": [],
+          "rafMaxMs": 16.700000000000045,
+          "rafP95Ms": 16.700000000000045,
+          "cpuMs": {
+            "TaskDuration": 50.49099999999995,
+            "ScriptDuration": 6.596999999999999,
+            "LayoutDuration": 0.7320000000000104,
+            "RecalcStyleDuration": 6.187000000000005
+          },
+          "heapUsed": 12883936,
+          "start": 981.7999999523163,
+          "end": 1113.1000000238419,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "page next previous close",
+          "elapsedMs": 452,
+          "longtasks": [],
+          "rafMaxMs": 16.799999999999955,
+          "rafP95Ms": 16.799999999999955,
+          "cpuMs": {
+            "TaskDuration": 120.97999999999998,
+            "ScriptDuration": 22.14100000000001,
+            "LayoutDuration": 1.4289999999999998,
+            "RecalcStyleDuration": 26.421
+          },
+          "heapUsed": 11884904,
+          "start": 1128.8999999761581,
+          "end": 1595.6000000238419,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        }
+      ],
+      "taskCpuMs": 509.8609999999999,
+      "layoutMs": 79.26700000000001,
+      "recalcMs": 78.057,
+      "maxLongTaskMs": 185
+    },
+    {
+      "pair": 1,
+      "variant": "both-off",
+      "rows": [
+        {
+          "name": "palette panel",
+          "elapsedMs": 156.19999992847443,
+          "longtasks": [],
+          "rafMaxMs": 33.30000000000001,
+          "rafP95Ms": 33.30000000000001,
+          "cpuMs": {
+            "TaskDuration": 42.758,
+            "ScriptDuration": 11.238999999999995,
+            "LayoutDuration": 2.9299999999999997,
+            "RecalcStyleDuration": 7.497999999999999
+          },
+          "heapUsed": 15517864,
+          "start": 210.10000002384186,
+          "end": 377.7000000476837,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "new editor",
+          "elapsedMs": 148.5,
+          "longtasks": [],
+          "rafMaxMs": 16.80000000000001,
+          "rafP95Ms": 16.80000000000001,
+          "cpuMs": {
+            "TaskDuration": 45.72199999999999,
+            "ScriptDuration": 6.270000000000005,
+            "LayoutDuration": 1.7550000000000006,
+            "RecalcStyleDuration": 8.803999999999998
+          },
+          "heapUsed": 15879344,
+          "start": 390,
+          "end": 557.7999999523163,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Paste256 plus Tab blur",
+          "elapsedMs": 421.10000002384186,
+          "longtasks": [
+            {
+              "start": 706.8999999761581,
+              "duration": 190
+            }
+          ],
+          "rafMaxMs": 183.29999999999995,
+          "rafP95Ms": 183.29999999999995,
+          "cpuMs": {
+            "TaskDuration": 285.46000000000004,
+            "ScriptDuration": 7.4549999999999965,
+            "LayoutDuration": 75.27000000000001,
+            "RecalcStyleDuration": 29.696000000000005
+          },
+          "heapUsed": 11249124,
+          "start": 569.1000000238419,
+          "end": 1000.1000000238419,
+          "overlapLongTasks": [
+            {
+              "start": 706.8999999761581,
+              "duration": 190
+            }
+          ],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Review",
+          "elapsedMs": 93.79999995231628,
+          "longtasks": [],
+          "rafMaxMs": 16.700000000000045,
+          "rafP95Ms": 16.700000000000045,
+          "cpuMs": {
+            "TaskDuration": 39.78699999999996,
+            "ScriptDuration": 4.404000000000005,
+            "LayoutDuration": 0.7390000000000035,
+            "RecalcStyleDuration": 5.262000000000003
+          },
+          "heapUsed": 12317344,
+          "start": 1011.7999999523163,
+          "end": 1116.6000000238419,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "page next previous close",
+          "elapsedMs": 465,
+          "longtasks": [],
+          "rafMaxMs": 16.799999999999955,
+          "rafP95Ms": 16.799999999999955,
+          "cpuMs": {
+            "TaskDuration": 122.71600000000005,
+            "ScriptDuration": 18.988,
+            "LayoutDuration": 1.3859999999999983,
+            "RecalcStyleDuration": 27.074
+          },
+          "heapUsed": 13594000,
+          "start": 1129,
+          "end": 1611.6000000238419,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        }
+      ],
+      "taskCpuMs": 536.4430000000001,
+      "layoutMs": 82.08000000000001,
+      "recalcMs": 78.334,
+      "maxLongTaskMs": 190
+    },
+    {
+      "pair": 1,
+      "variant": "base",
+      "rows": [
+        {
+          "name": "palette panel",
+          "elapsedMs": 134.5,
+          "longtasks": [],
+          "rafMaxMs": 25,
+          "rafP95Ms": 25,
+          "cpuMs": {
+            "TaskDuration": 41.49900000000001,
+            "ScriptDuration": 13.395999999999999,
+            "LayoutDuration": 2.866,
+            "RecalcStyleDuration": 8.381000000000002
+          },
+          "heapUsed": 16882376,
+          "start": 206.19999992847443,
+          "end": 352.2999999523163,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "new editor",
+          "elapsedMs": 129.39999997615814,
+          "longtasks": [],
+          "rafMaxMs": 16.700000000000045,
+          "rafP95Ms": 16.700000000000045,
+          "cpuMs": {
+            "TaskDuration": 37.67599999999999,
+            "ScriptDuration": 5.637000000000003,
+            "LayoutDuration": 1.9450000000000005,
+            "RecalcStyleDuration": 7.417
+          },
+          "heapUsed": 17257156,
+          "start": 364.7999999523163,
+          "end": 510,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Paste256 plus Tab blur",
+          "elapsedMs": 408.3000000715256,
+          "longtasks": [
+            {
+              "start": 661.5999999046326,
+              "duration": 180
+            }
+          ],
+          "rafMaxMs": 174.9000000000001,
+          "rafP95Ms": 174.9000000000001,
+          "cpuMs": {
+            "TaskDuration": 253.91699999999994,
+            "ScriptDuration": 8.721,
+            "LayoutDuration": 67.45000000000002,
+            "RecalcStyleDuration": 31.397000000000002
+          },
+          "heapUsed": 18213844,
+          "start": 522,
+          "end": 946.7999999523163,
+          "overlapLongTasks": [
+            {
+              "start": 661.5999999046326,
+              "duration": 180
+            }
+          ],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Review",
+          "elapsedMs": 150.70000004768372,
+          "longtasks": [],
+          "rafMaxMs": 41.59999999999991,
+          "rafP95Ms": 41.59999999999991,
+          "cpuMs": {
+            "TaskDuration": 96.20499999999998,
+            "ScriptDuration": 13.239999999999995,
+            "LayoutDuration": 0.6379999999999997,
+            "RecalcStyleDuration": 6.240000000000009
+          },
+          "heapUsed": 19409884,
+          "start": 956.1999999284744,
+          "end": 1121.0999999046326,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "page next previous close",
+          "elapsedMs": 404.39999997615814,
+          "longtasks": [],
+          "rafMaxMs": 16.799999999999955,
+          "rafP95Ms": 16.799999999999955,
+          "cpuMs": {
+            "TaskDuration": 113.54599999999992,
+            "ScriptDuration": 23.83800000000001,
+            "LayoutDuration": 1.126000000000002,
+            "RecalcStyleDuration": 23.375000000000007
+          },
+          "heapUsed": 20749584,
+          "start": 1137.3999999761581,
+          "end": 1555.7999999523163,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        }
+      ],
+      "taskCpuMs": 542.8429999999998,
+      "layoutMs": 74.02500000000003,
+      "recalcMs": 76.81000000000003,
+      "maxLongTaskMs": 180
+    },
+    {
+      "pair": 2,
+      "variant": "base",
+      "rows": [
+        {
+          "name": "palette panel",
+          "elapsedMs": 143.89999997615814,
+          "longtasks": [],
+          "rafMaxMs": 24.99999999999997,
+          "rafP95Ms": 24.99999999999997,
+          "cpuMs": {
+            "TaskDuration": 50.259,
+            "ScriptDuration": 12.131000000000004,
+            "LayoutDuration": 2.322,
+            "RecalcStyleDuration": 15.292
+          },
+          "heapUsed": 12956040,
+          "start": 162.5,
+          "end": 315.39999997615814,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "new editor",
+          "elapsedMs": 157.90000009536743,
+          "longtasks": [],
+          "rafMaxMs": 16.69999999999999,
+          "rafP95Ms": 16.69999999999999,
+          "cpuMs": {
+            "TaskDuration": 51.867,
+            "ScriptDuration": 6.64,
+            "LayoutDuration": 2.26,
+            "RecalcStyleDuration": 10.437999999999999
+          },
+          "heapUsed": 12178024,
+          "start": 325.89999997615814,
+          "end": 495.60000002384186,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Paste256 plus Tab blur",
+          "elapsedMs": 396.7999999523163,
+          "longtasks": [
+            {
+              "start": 628.6000000238419,
+              "duration": 183
+            }
+          ],
+          "rafMaxMs": 175,
+          "rafP95Ms": 175,
+          "cpuMs": {
+            "TaskDuration": 273.67900000000003,
+            "ScriptDuration": 12.540999999999997,
+            "LayoutDuration": 72.237,
+            "RecalcStyleDuration": 28.362
+          },
+          "heapUsed": 7473648,
+          "start": 507.8000000715256,
+          "end": 916.6000000238419,
+          "overlapLongTasks": [
+            {
+              "start": 628.6000000238419,
+              "duration": 183
+            }
+          ],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Review",
+          "elapsedMs": 124.60000002384186,
+          "longtasks": [],
+          "rafMaxMs": 41.60000000000002,
+          "rafP95Ms": 41.60000000000002,
+          "cpuMs": {
+            "TaskDuration": 72.24399999999997,
+            "ScriptDuration": 14.104999999999999,
+            "LayoutDuration": 0.7810000000000039,
+            "RecalcStyleDuration": 4.759000000000007
+          },
+          "heapUsed": 8693396,
+          "start": 922.7000000476837,
+          "end": 1058.2000000476837,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "page next previous close",
+          "elapsedMs": 448.2000000476837,
+          "longtasks": [],
+          "rafMaxMs": 16.90000000000009,
+          "rafP95Ms": 16.800000000000182,
+          "cpuMs": {
+            "TaskDuration": 117.01700000000004,
+            "ScriptDuration": 22.071999999999996,
+            "LayoutDuration": 1.2349999999999999,
+            "RecalcStyleDuration": 18.545999999999992
+          },
+          "heapUsed": 8655416,
+          "start": 1067.6000000238419,
+          "end": 1526,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        }
+      ],
+      "taskCpuMs": 565.066,
+      "layoutMs": 78.835,
+      "recalcMs": 77.39699999999999,
+      "maxLongTaskMs": 183
+    },
+    {
+      "pair": 2,
+      "variant": "both-off",
+      "rows": [
+        {
+          "name": "palette panel",
+          "elapsedMs": 110.79999995231628,
+          "longtasks": [],
+          "rafMaxMs": 16.700000000000017,
+          "rafP95Ms": 16.700000000000017,
+          "cpuMs": {
+            "TaskDuration": 31.976999999999993,
+            "ScriptDuration": 8.379999999999999,
+            "LayoutDuration": 2.4659999999999997,
+            "RecalcStyleDuration": 7.671999999999999
+          },
+          "heapUsed": 12325836,
+          "start": 156.39999997615814,
+          "end": 274.6999999284744,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "new editor",
+          "elapsedMs": 109.69999992847443,
+          "longtasks": [],
+          "rafMaxMs": 16.700000000000045,
+          "rafP95Ms": 16.700000000000045,
+          "cpuMs": {
+            "TaskDuration": 31.943000000000012,
+            "ScriptDuration": 4.402000000000003,
+            "LayoutDuration": 1.8840000000000003,
+            "RecalcStyleDuration": 6.360000000000001
+          },
+          "heapUsed": 12684500,
+          "start": 282.7999999523163,
+          "end": 402.2999999523163,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Paste256 plus Tab blur",
+          "elapsedMs": 415.6999999284744,
+          "longtasks": [
+            {
+              "start": 543.5,
+              "duration": 179
+            }
+          ],
+          "rafMaxMs": 175,
+          "rafP95Ms": 175,
+          "cpuMs": {
+            "TaskDuration": 237.41099999999997,
+            "ScriptDuration": 7.532999999999998,
+            "LayoutDuration": 68.274,
+            "RecalcStyleDuration": 28.124
+          },
+          "heapUsed": 13620872,
+          "start": 417.7999999523163,
+          "end": 847.5999999046326,
+          "overlapLongTasks": [
+            {
+              "start": 543.5,
+              "duration": 179
+            }
+          ],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "Review",
+          "elapsedMs": 95.30000007152557,
+          "longtasks": [],
+          "rafMaxMs": 16.700000000000045,
+          "rafP95Ms": 16.700000000000045,
+          "cpuMs": {
+            "TaskDuration": 45.53799999999997,
+            "ScriptDuration": 5.430999999999998,
+            "LayoutDuration": 0.784999999999994,
+            "RecalcStyleDuration": 4.965999999999998
+          },
+          "heapUsed": 12216932,
+          "start": 863.5,
+          "end": 974,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        },
+        {
+          "name": "page next previous close",
+          "elapsedMs": 383.09999990463257,
+          "longtasks": [],
+          "rafMaxMs": 16.799999999999955,
+          "rafP95Ms": 16.799999999999955,
+          "cpuMs": {
+            "TaskDuration": 103.07800000000006,
+            "ScriptDuration": 20.125000000000004,
+            "LayoutDuration": 1.3930000000000053,
+            "RecalcStyleDuration": 16.503999999999998
+          },
+          "heapUsed": 13501156,
+          "start": 991.5999999046326,
+          "end": 1388,
+          "overlapLongTasks": [],
+          "viewport": {
+            "width": 448,
+            "height": 819,
+            "visualWidth": 448,
+            "visualHeight": 819.111083984375
+          }
+        }
+      ],
+      "taskCpuMs": 449.947,
+      "layoutMs": 74.80199999999999,
+      "recalcMs": 63.626,
+      "maxLongTaskMs": 179
+    }
+  ],
+  "editorGate": {
+    "pairedAbsoluteMs": 15,
+    "pairedRelativePercent": 10,
+    "everyPairFaster": true,
+    "rounds": 1,
+    "diagnosticNeverShippable": true
+  },
+  "editorQualification": "Actual Android browser; native CDP keyboard input and focus/blur. Separate phases include two audit rAF turns between phases. Viewport/IME changes recorded. Diagnostic both-off removes behavior and cannot ship. LongTasks use overlap+takeRecords; main CPU excludes browserGPU/workerCPU.",
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T10:32:58.326Z"
+}

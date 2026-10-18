@@ -1,0 +1,27 @@
+3:12:15 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti/.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off - using default configuration.
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 196 modules transformed.
+rendering chunks...
+computing gzip size...
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/index.html                                     4.54 kB │ gzip:  1.63 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-generated-worker-xpoMRM2c.js    9.82 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-limit-worker-rkrL9P3s.js        9.86 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-gif-worker-D4qe4WP7.js         11.21 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-cleanup-worker-ChpCTucA.js     15.05 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/image-import-worker-BTnho0_2.js        24.97 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/index-VE9_tUgX.css                    168.00 kB │ gzip: 26.46 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-usage-zEx8r9iD.js               0.97 kB │ gzip:  0.61 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-lospec-BUdZU2lN.js              2.32 kB │ gzip:  1.25 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-ase-gXqzrNdw.js                 2.49 kB │ gzip:  1.32 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-generated-client-ha9kKE6q.js    4.00 kB │ gzip:  1.75 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-cleanup-D5CzaCth.js             4.23 kB │ gzip:  2.21 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-limit-OiwOF5bZ.js               4.57 kB │ gzip:  2.26 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/image-import-client-DEAdMG-Q.js         5.59 kB │ gzip:  2.13 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-generated-CvedVyD9.js           5.98 kB │ gzip:  2.74 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/palette-cleanup-client-jpjEpLnu.js      7.36 kB │ gzip:  2.88 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/gif-DIfUkxTn.js                        12.83 kB │ gzip:  5.08 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/quantize-DsvDuXDJ.js                   13.24 kB │ gzip:  6.39 kB
+.tmp/codex-independent-performance-2026-10-18/ui-variants/tooltip-and-paint-off/dist/assets/index-D9TqYESF.js                     270.66 kB │ gzip: 96.62 kB
+
+✓ built in 446ms

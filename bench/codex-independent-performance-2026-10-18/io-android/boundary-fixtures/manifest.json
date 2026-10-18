@@ -1,0 +1,41 @@
+{
+  "created": "2026-10-18T10:15:57.732Z",
+  "records": [
+    {
+      "id": "indexed65535",
+      "w": 254,
+      "h": 257,
+      "sha256": "ea706efd43477c96dae6b133c250a1158e1e503e62531666e2a833bae5fe6f14",
+      "source": "Owned deterministic grayscale256; every RGB retained exactly by custom256-color palette.",
+      "alphaMode": "cut",
+      "expectedFilteredBytes": 65535
+    },
+    {
+      "id": "indexed65536",
+      "w": 255,
+      "h": 256,
+      "sha256": "bbed44aac9c526f582907c880d391cba929840cd0fd6e6e5d9e3d58662ccbe28",
+      "source": "Owned deterministic grayscale256; every RGB retained exactly by custom256-color palette.",
+      "alphaMode": "cut",
+      "expectedFilteredBytes": 65536
+    },
+    {
+      "id": "indexed65792",
+      "w": 256,
+      "h": 256,
+      "sha256": "1e744b3136329e99d873c9c1cfc9da0cb3dc752d5359095ad4442ab9f8f31ecf",
+      "source": "Owned deterministic grayscale256; every RGB retained exactly by custom256-color palette.",
+      "alphaMode": "cut",
+      "expectedFilteredBytes": 65792
+    },
+    {
+      "id": "rgba65537",
+      "w": 16384,
+      "h": 1,
+      "sha256": "f715ba524dfb8903204c823f93be42f34db04a1c89e1850ab2255707b54158ca",
+      "source": "Owned deterministic grayscale256; every RGB retained exactly by custom256-color palette.",
+      "alphaMode": "keep",
+      "expectedFilteredBytes": 65537
+    }
+  ]
+}

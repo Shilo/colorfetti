@@ -1,0 +1,27 @@
+{
+  "stamp": 1792320780085,
+  "rows": [
+    {
+      "pair": 0,
+      "variant": "baseline",
+      "method": "keyboard",
+      "eventToSettledMs": 2.299999952316284,
+      "rendererCpuMs": 12.81500000000002,
+      "caption": "8 colors",
+      "focusCorrect": true,
+      "viewerRemoved": true
+    }
+  ],
+  "outputs": [],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: Expected \"actual\" to be strictly unequal to:\n\n'Preview codexio-preview-focus-1792320780085-0-baseline.png'\n    at file:///C:/Programming_Files/Shilocity/colorfetti/bench/codex-independent-performance-2026-10-18/io-android/preview-focus.mjs:16:1149"
+  ],
+  "gate": "Candidate close actual event→next task median regression must not exceed8ms AND10%; no missing focus/captions or output differences. Five alternating matched pairs with keyboard Escape and pointer Close each.",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "urls": {
+    "baseline": "http://localhost:5391/",
+    "candidate": "http://localhost:5409/"
+  },
+  "qualification": "Actual native browser controls, bounded event→next task focus/DOM state and rendererCPU observations. Not process-cold or a display-frame upper bound.",
+  "finished": "2026-10-18T10:53:01.561Z"
+}

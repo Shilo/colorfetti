@@ -1,0 +1,4 @@
+{
+  "before": "  const alpha = result.alpha;\n  for (let o = start; o < end; o++) {\n    const p = (ys[Math.floor(o / result.w)] * sourceW + xs[o % result.w]) * 4;",
+  "after": "  const alpha = result.alpha, width = result.w;\n  let x = start % width, y = Math.floor(start / width), sourceRow = ys[y] * sourceW;\n  for (let o = start; o < end; o++) {\n    const p = (sourceRow + xs[x]) * 4;\n    if (++x === width) { x = 0; sourceRow = ys[++y] * sourceW; }"
+}

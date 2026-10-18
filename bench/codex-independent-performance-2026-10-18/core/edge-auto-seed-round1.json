@@ -1,0 +1,1093 @@
+{
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+  "cohorts": [
+    {
+      "name": "tiny",
+      "assets": 1,
+      "colors": 8,
+      "binned": false
+    },
+    {
+      "name": "boundary64",
+      "assets": 1,
+      "colors": 64,
+      "binned": false
+    },
+    {
+      "name": "exact128",
+      "assets": 1,
+      "colors": 64,
+      "binned": false
+    },
+    {
+      "name": "exact1024",
+      "assets": 1,
+      "colors": 64,
+      "binned": false
+    },
+    {
+      "name": "exact4096",
+      "assets": 1,
+      "colors": 64,
+      "binned": false
+    },
+    {
+      "name": "binned",
+      "assets": 1,
+      "colors": 64,
+      "binned": true
+    },
+    {
+      "name": "assets4",
+      "assets": 4,
+      "colors": 64,
+      "binned": false
+    },
+    {
+      "name": "clip3",
+      "assets": 1,
+      "colors": 64,
+      "binned": false
+    },
+    {
+      "name": "partial",
+      "assets": 1,
+      "colors": 64,
+      "binned": false
+    },
+    {
+      "name": "practical4",
+      "assets": 4,
+      "colors": 29,
+      "binned": false
+    },
+    {
+      "name": "sheet1024",
+      "assets": 1,
+      "colors": 37,
+      "binned": false
+    },
+    {
+      "name": "sheet2048",
+      "assets": 1,
+      "colors": 37,
+      "binned": false
+    }
+  ],
+  "trials": [
+    {
+      "name": "tiny",
+      "pair": 0,
+      "kind": "original",
+      "ms": 0.09999999403953552,
+      "colors": 8
+    },
+    {
+      "name": "tiny",
+      "pair": 0,
+      "kind": "set",
+      "ms": 0.30000000447034836,
+      "colors": 8
+    },
+    {
+      "name": "tiny",
+      "pair": 1,
+      "kind": "set",
+      "ms": 0,
+      "colors": 8
+    },
+    {
+      "name": "tiny",
+      "pair": 1,
+      "kind": "original",
+      "ms": 0,
+      "colors": 8
+    },
+    {
+      "name": "tiny",
+      "pair": 2,
+      "kind": "original",
+      "ms": 0.19999999552965164,
+      "colors": 8
+    },
+    {
+      "name": "tiny",
+      "pair": 2,
+      "kind": "set",
+      "ms": 0.10000000149011612,
+      "colors": 8
+    },
+    {
+      "name": "tiny",
+      "pair": 3,
+      "kind": "set",
+      "ms": 0.10000000149011612,
+      "colors": 8
+    },
+    {
+      "name": "tiny",
+      "pair": 3,
+      "kind": "original",
+      "ms": 0,
+      "colors": 8
+    },
+    {
+      "name": "tiny",
+      "pair": 4,
+      "kind": "original",
+      "ms": 0.10000000149011612,
+      "colors": 8
+    },
+    {
+      "name": "tiny",
+      "pair": 4,
+      "kind": "set",
+      "ms": 0.10000000149011612,
+      "colors": 8
+    },
+    {
+      "name": "boundary64",
+      "pair": 0,
+      "kind": "original",
+      "ms": 0.10000000149011612,
+      "colors": 64
+    },
+    {
+      "name": "boundary64",
+      "pair": 0,
+      "kind": "set",
+      "ms": 0.10000000149011612,
+      "colors": 64
+    },
+    {
+      "name": "boundary64",
+      "pair": 1,
+      "kind": "set",
+      "ms": 0.10000000149011612,
+      "colors": 64
+    },
+    {
+      "name": "boundary64",
+      "pair": 1,
+      "kind": "original",
+      "ms": 0.10000000149011612,
+      "colors": 64
+    },
+    {
+      "name": "boundary64",
+      "pair": 2,
+      "kind": "original",
+      "ms": 0.19999999552965164,
+      "colors": 64
+    },
+    {
+      "name": "boundary64",
+      "pair": 2,
+      "kind": "set",
+      "ms": 0,
+      "colors": 64
+    },
+    {
+      "name": "boundary64",
+      "pair": 3,
+      "kind": "set",
+      "ms": 0.20000000298023224,
+      "colors": 64
+    },
+    {
+      "name": "boundary64",
+      "pair": 3,
+      "kind": "original",
+      "ms": 0.19999999552965164,
+      "colors": 64
+    },
+    {
+      "name": "boundary64",
+      "pair": 4,
+      "kind": "original",
+      "ms": 0.10000000149011612,
+      "colors": 64
+    },
+    {
+      "name": "boundary64",
+      "pair": 4,
+      "kind": "set",
+      "ms": 0.10000000149011612,
+      "colors": 64
+    },
+    {
+      "name": "exact128",
+      "pair": 0,
+      "kind": "original",
+      "ms": 1.2000000029802322,
+      "colors": 64
+    },
+    {
+      "name": "exact128",
+      "pair": 0,
+      "kind": "set",
+      "ms": 1.3999999985098839,
+      "colors": 64
+    },
+    {
+      "name": "exact128",
+      "pair": 1,
+      "kind": "set",
+      "ms": 1.1000000014901161,
+      "colors": 64
+    },
+    {
+      "name": "exact128",
+      "pair": 1,
+      "kind": "original",
+      "ms": 0.6999999955296516,
+      "colors": 64
+    },
+    {
+      "name": "exact128",
+      "pair": 2,
+      "kind": "original",
+      "ms": 0.6000000014901161,
+      "colors": 64
+    },
+    {
+      "name": "exact128",
+      "pair": 2,
+      "kind": "set",
+      "ms": 0.6000000014901161,
+      "colors": 64
+    },
+    {
+      "name": "exact128",
+      "pair": 3,
+      "kind": "set",
+      "ms": 0.6000000014901161,
+      "colors": 64
+    },
+    {
+      "name": "exact128",
+      "pair": 3,
+      "kind": "original",
+      "ms": 0.5999999940395355,
+      "colors": 64
+    },
+    {
+      "name": "exact128",
+      "pair": 4,
+      "kind": "original",
+      "ms": 0.8000000044703484,
+      "colors": 64
+    },
+    {
+      "name": "exact128",
+      "pair": 4,
+      "kind": "set",
+      "ms": 0.6999999955296516,
+      "colors": 64
+    },
+    {
+      "name": "exact1024",
+      "pair": 0,
+      "kind": "original",
+      "ms": 4.300000004470348,
+      "colors": 64
+    },
+    {
+      "name": "exact1024",
+      "pair": 0,
+      "kind": "set",
+      "ms": 4.199999995529652,
+      "colors": 64
+    },
+    {
+      "name": "exact1024",
+      "pair": 1,
+      "kind": "set",
+      "ms": 4.300000004470348,
+      "colors": 64
+    },
+    {
+      "name": "exact1024",
+      "pair": 1,
+      "kind": "original",
+      "ms": 4.199999995529652,
+      "colors": 64
+    },
+    {
+      "name": "exact1024",
+      "pair": 2,
+      "kind": "original",
+      "ms": 4.5,
+      "colors": 64
+    },
+    {
+      "name": "exact1024",
+      "pair": 2,
+      "kind": "set",
+      "ms": 4.200000002980232,
+      "colors": 64
+    },
+    {
+      "name": "exact1024",
+      "pair": 3,
+      "kind": "set",
+      "ms": 3.600000001490116,
+      "colors": 64
+    },
+    {
+      "name": "exact1024",
+      "pair": 3,
+      "kind": "original",
+      "ms": 4,
+      "colors": 64
+    },
+    {
+      "name": "exact1024",
+      "pair": 4,
+      "kind": "original",
+      "ms": 4,
+      "colors": 64
+    },
+    {
+      "name": "exact1024",
+      "pair": 4,
+      "kind": "set",
+      "ms": 3.899999998509884,
+      "colors": 64
+    },
+    {
+      "name": "exact4096",
+      "pair": 0,
+      "kind": "original",
+      "ms": 9.200000002980232,
+      "colors": 64
+    },
+    {
+      "name": "exact4096",
+      "pair": 0,
+      "kind": "set",
+      "ms": 8.399999998509884,
+      "colors": 64
+    },
+    {
+      "name": "exact4096",
+      "pair": 1,
+      "kind": "set",
+      "ms": 8.300000004470348,
+      "colors": 64
+    },
+    {
+      "name": "exact4096",
+      "pair": 1,
+      "kind": "original",
+      "ms": 10.899999998509884,
+      "colors": 64
+    },
+    {
+      "name": "exact4096",
+      "pair": 2,
+      "kind": "original",
+      "ms": 10.399999998509884,
+      "colors": 64
+    },
+    {
+      "name": "exact4096",
+      "pair": 2,
+      "kind": "set",
+      "ms": 8.299999997019768,
+      "colors": 64
+    },
+    {
+      "name": "exact4096",
+      "pair": 3,
+      "kind": "set",
+      "ms": 8.400000005960464,
+      "colors": 64
+    },
+    {
+      "name": "exact4096",
+      "pair": 3,
+      "kind": "original",
+      "ms": 9.099999994039536,
+      "colors": 64
+    },
+    {
+      "name": "exact4096",
+      "pair": 4,
+      "kind": "original",
+      "ms": 9.400000005960464,
+      "colors": 64
+    },
+    {
+      "name": "exact4096",
+      "pair": 4,
+      "kind": "set",
+      "ms": 8.299999997019768,
+      "colors": 64
+    },
+    {
+      "name": "binned",
+      "pair": 0,
+      "kind": "original",
+      "ms": 29.5,
+      "colors": 64
+    },
+    {
+      "name": "binned",
+      "pair": 0,
+      "kind": "set",
+      "ms": 25.799999997019768,
+      "colors": 64
+    },
+    {
+      "name": "binned",
+      "pair": 1,
+      "kind": "set",
+      "ms": 30.399999998509884,
+      "colors": 64
+    },
+    {
+      "name": "binned",
+      "pair": 1,
+      "kind": "original",
+      "ms": 26.700000002980232,
+      "colors": 64
+    },
+    {
+      "name": "binned",
+      "pair": 2,
+      "kind": "original",
+      "ms": 26.200000002980232,
+      "colors": 64
+    },
+    {
+      "name": "binned",
+      "pair": 2,
+      "kind": "set",
+      "ms": 23.799999997019768,
+      "colors": 64
+    },
+    {
+      "name": "binned",
+      "pair": 3,
+      "kind": "set",
+      "ms": 24.5,
+      "colors": 64
+    },
+    {
+      "name": "binned",
+      "pair": 3,
+      "kind": "original",
+      "ms": 26.5,
+      "colors": 64
+    },
+    {
+      "name": "binned",
+      "pair": 4,
+      "kind": "original",
+      "ms": 26.600000001490116,
+      "colors": 64
+    },
+    {
+      "name": "binned",
+      "pair": 4,
+      "kind": "set",
+      "ms": 23.799999997019768,
+      "colors": 64
+    },
+    {
+      "name": "assets4",
+      "pair": 0,
+      "kind": "original",
+      "ms": 2.3000000044703484,
+      "colors": 64
+    },
+    {
+      "name": "assets4",
+      "pair": 0,
+      "kind": "set",
+      "ms": 2.1999999955296516,
+      "colors": 64
+    },
+    {
+      "name": "assets4",
+      "pair": 1,
+      "kind": "set",
+      "ms": 2.2000000029802322,
+      "colors": 64
+    },
+    {
+      "name": "assets4",
+      "pair": 1,
+      "kind": "original",
+      "ms": 2.399999998509884,
+      "colors": 64
+    },
+    {
+      "name": "assets4",
+      "pair": 2,
+      "kind": "original",
+      "ms": 2.2999999970197678,
+      "colors": 64
+    },
+    {
+      "name": "assets4",
+      "pair": 2,
+      "kind": "set",
+      "ms": 2.100000001490116,
+      "colors": 64
+    },
+    {
+      "name": "assets4",
+      "pair": 3,
+      "kind": "set",
+      "ms": 2.100000001490116,
+      "colors": 64
+    },
+    {
+      "name": "assets4",
+      "pair": 3,
+      "kind": "original",
+      "ms": 2.399999998509884,
+      "colors": 64
+    },
+    {
+      "name": "assets4",
+      "pair": 4,
+      "kind": "original",
+      "ms": 2.3000000044703484,
+      "colors": 64
+    },
+    {
+      "name": "assets4",
+      "pair": 4,
+      "kind": "set",
+      "ms": 2.0999999940395355,
+      "colors": 64
+    },
+    {
+      "name": "clip3",
+      "pair": 0,
+      "kind": "original",
+      "ms": 3.100000001490116,
+      "colors": 64
+    },
+    {
+      "name": "clip3",
+      "pair": 0,
+      "kind": "set",
+      "ms": 3.2000000029802322,
+      "colors": 64
+    },
+    {
+      "name": "clip3",
+      "pair": 1,
+      "kind": "set",
+      "ms": 2.899999998509884,
+      "colors": 64
+    },
+    {
+      "name": "clip3",
+      "pair": 1,
+      "kind": "original",
+      "ms": 3.2000000029802322,
+      "colors": 64
+    },
+    {
+      "name": "clip3",
+      "pair": 2,
+      "kind": "original",
+      "ms": 3.7999999970197678,
+      "colors": 64
+    },
+    {
+      "name": "clip3",
+      "pair": 2,
+      "kind": "set",
+      "ms": 3.2999999970197678,
+      "colors": 64
+    },
+    {
+      "name": "clip3",
+      "pair": 3,
+      "kind": "set",
+      "ms": 3.9000000059604645,
+      "colors": 64
+    },
+    {
+      "name": "clip3",
+      "pair": 3,
+      "kind": "original",
+      "ms": 4.0999999940395355,
+      "colors": 64
+    },
+    {
+      "name": "clip3",
+      "pair": 4,
+      "kind": "original",
+      "ms": 3.2000000029802322,
+      "colors": 64
+    },
+    {
+      "name": "clip3",
+      "pair": 4,
+      "kind": "set",
+      "ms": 2.899999998509884,
+      "colors": 64
+    },
+    {
+      "name": "partial",
+      "pair": 0,
+      "kind": "original",
+      "ms": 2,
+      "colors": 64
+    },
+    {
+      "name": "partial",
+      "pair": 0,
+      "kind": "set",
+      "ms": 1.8000000044703484,
+      "colors": 64
+    },
+    {
+      "name": "partial",
+      "pair": 1,
+      "kind": "set",
+      "ms": 1.2999999970197678,
+      "colors": 64
+    },
+    {
+      "name": "partial",
+      "pair": 1,
+      "kind": "original",
+      "ms": 1.8999999985098839,
+      "colors": 64
+    },
+    {
+      "name": "partial",
+      "pair": 2,
+      "kind": "original",
+      "ms": 1.4000000059604645,
+      "colors": 64
+    },
+    {
+      "name": "partial",
+      "pair": 2,
+      "kind": "set",
+      "ms": 1.1999999955296516,
+      "colors": 64
+    },
+    {
+      "name": "partial",
+      "pair": 3,
+      "kind": "set",
+      "ms": 1.3999999985098839,
+      "colors": 64
+    },
+    {
+      "name": "partial",
+      "pair": 3,
+      "kind": "original",
+      "ms": 1.4000000059604645,
+      "colors": 64
+    },
+    {
+      "name": "partial",
+      "pair": 4,
+      "kind": "original",
+      "ms": 1.3999999985098839,
+      "colors": 64
+    },
+    {
+      "name": "partial",
+      "pair": 4,
+      "kind": "set",
+      "ms": 1.2999999970197678,
+      "colors": 64
+    },
+    {
+      "name": "practical4",
+      "pair": 0,
+      "kind": "original",
+      "ms": 0.10000000149011612,
+      "colors": 29
+    },
+    {
+      "name": "practical4",
+      "pair": 0,
+      "kind": "set",
+      "ms": 0,
+      "colors": 29
+    },
+    {
+      "name": "practical4",
+      "pair": 1,
+      "kind": "set",
+      "ms": 0,
+      "colors": 29
+    },
+    {
+      "name": "practical4",
+      "pair": 1,
+      "kind": "original",
+      "ms": 0,
+      "colors": 29
+    },
+    {
+      "name": "practical4",
+      "pair": 2,
+      "kind": "original",
+      "ms": 0,
+      "colors": 29
+    },
+    {
+      "name": "practical4",
+      "pair": 2,
+      "kind": "set",
+      "ms": 0,
+      "colors": 29
+    },
+    {
+      "name": "practical4",
+      "pair": 3,
+      "kind": "set",
+      "ms": 0,
+      "colors": 29
+    },
+    {
+      "name": "practical4",
+      "pair": 3,
+      "kind": "original",
+      "ms": 0,
+      "colors": 29
+    },
+    {
+      "name": "practical4",
+      "pair": 4,
+      "kind": "original",
+      "ms": 0.19999999552965164,
+      "colors": 29
+    },
+    {
+      "name": "practical4",
+      "pair": 4,
+      "kind": "set",
+      "ms": 0,
+      "colors": 29
+    },
+    {
+      "name": "sheet1024",
+      "pair": 0,
+      "kind": "original",
+      "ms": 5.5,
+      "colors": 37
+    },
+    {
+      "name": "sheet1024",
+      "pair": 0,
+      "kind": "set",
+      "ms": 5.5999999940395355,
+      "colors": 37
+    },
+    {
+      "name": "sheet1024",
+      "pair": 1,
+      "kind": "set",
+      "ms": 5.300000004470348,
+      "colors": 37
+    },
+    {
+      "name": "sheet1024",
+      "pair": 1,
+      "kind": "original",
+      "ms": 5.600000001490116,
+      "colors": 37
+    },
+    {
+      "name": "sheet1024",
+      "pair": 2,
+      "kind": "original",
+      "ms": 5.299999997019768,
+      "colors": 37
+    },
+    {
+      "name": "sheet1024",
+      "pair": 2,
+      "kind": "set",
+      "ms": 5.299999997019768,
+      "colors": 37
+    },
+    {
+      "name": "sheet1024",
+      "pair": 3,
+      "kind": "set",
+      "ms": 5.300000004470348,
+      "colors": 37
+    },
+    {
+      "name": "sheet1024",
+      "pair": 3,
+      "kind": "original",
+      "ms": 5.399999998509884,
+      "colors": 37
+    },
+    {
+      "name": "sheet1024",
+      "pair": 4,
+      "kind": "original",
+      "ms": 5.200000002980232,
+      "colors": 37
+    },
+    {
+      "name": "sheet1024",
+      "pair": 4,
+      "kind": "set",
+      "ms": 6,
+      "colors": 37
+    },
+    {
+      "name": "sheet2048",
+      "pair": 0,
+      "kind": "original",
+      "ms": 21.899999998509884,
+      "colors": 37
+    },
+    {
+      "name": "sheet2048",
+      "pair": 0,
+      "kind": "set",
+      "ms": 21.700000002980232,
+      "colors": 37
+    },
+    {
+      "name": "sheet2048",
+      "pair": 1,
+      "kind": "set",
+      "ms": 21.799999997019768,
+      "colors": 37
+    },
+    {
+      "name": "sheet2048",
+      "pair": 1,
+      "kind": "original",
+      "ms": 21.899999998509884,
+      "colors": 37
+    },
+    {
+      "name": "sheet2048",
+      "pair": 2,
+      "kind": "original",
+      "ms": 21.700000002980232,
+      "colors": 37
+    },
+    {
+      "name": "sheet2048",
+      "pair": 2,
+      "kind": "set",
+      "ms": 21.899999998509884,
+      "colors": 37
+    },
+    {
+      "name": "sheet2048",
+      "pair": 3,
+      "kind": "set",
+      "ms": 21.299999997019768,
+      "colors": 37
+    },
+    {
+      "name": "sheet2048",
+      "pair": 3,
+      "kind": "original",
+      "ms": 21.80000000447035,
+      "colors": 37
+    },
+    {
+      "name": "sheet2048",
+      "pair": 4,
+      "kind": "original",
+      "ms": 21.399999998509884,
+      "colors": 37
+    },
+    {
+      "name": "sheet2048",
+      "pair": 4,
+      "kind": "set",
+      "ms": 21.600000001490116,
+      "colors": 37
+    }
+  ],
+  "attribution": [
+    {
+      "name": "tiny",
+      "kind": "original",
+      "totalMs": 0.7999999970197678,
+      "seedMs": 0,
+      "seedFraction": 0
+    },
+    {
+      "name": "tiny",
+      "kind": "set",
+      "totalMs": 0.5,
+      "seedMs": 0,
+      "seedFraction": 0
+    },
+    {
+      "name": "boundary64",
+      "kind": "original",
+      "totalMs": 0.3999999985098839,
+      "seedMs": 0,
+      "seedFraction": 0
+    },
+    {
+      "name": "boundary64",
+      "kind": "set",
+      "totalMs": 0.20000000298023224,
+      "seedMs": 0,
+      "seedFraction": 0
+    },
+    {
+      "name": "exact128",
+      "kind": "original",
+      "totalMs": 2.1999999955296516,
+      "seedMs": 0.6000000014901161,
+      "seedFraction": 0.27272727395877366
+    },
+    {
+      "name": "exact128",
+      "kind": "set",
+      "totalMs": 2.5,
+      "seedMs": 0.8000000044703484,
+      "seedFraction": 0.32000000178813937
+    },
+    {
+      "name": "exact1024",
+      "kind": "original",
+      "totalMs": 7.300000004470348,
+      "seedMs": 2.5,
+      "seedFraction": 0.34246575321493955
+    },
+    {
+      "name": "exact1024",
+      "kind": "set",
+      "totalMs": 7.899999998509884,
+      "seedMs": 2.7000000029802322,
+      "seedFraction": 0.3417721523404446
+    },
+    {
+      "name": "exact4096",
+      "kind": "original",
+      "totalMs": 14.600000001490116,
+      "seedMs": 4.799999997019768,
+      "seedFraction": 0.32876712304999084
+    },
+    {
+      "name": "exact4096",
+      "kind": "set",
+      "totalMs": 14,
+      "seedMs": 4.299999997019768,
+      "seedFraction": 0.3071428569299834
+    },
+    {
+      "name": "binned",
+      "kind": "original",
+      "totalMs": 32.29999999701977,
+      "seedMs": 11.299999997019768,
+      "seedFraction": 0.3498452011784021
+    },
+    {
+      "name": "binned",
+      "kind": "set",
+      "totalMs": 30.799999997019768,
+      "seedMs": 10.600000001490116,
+      "seedFraction": 0.3441558442375253
+    },
+    {
+      "name": "assets4",
+      "kind": "original",
+      "totalMs": 2.5,
+      "seedMs": 0.7000000029802322,
+      "seedFraction": 0.2800000011920929
+    },
+    {
+      "name": "assets4",
+      "kind": "set",
+      "totalMs": 2.3000000044703484,
+      "seedMs": 0.5,
+      "seedFraction": 0.21739130392529787
+    },
+    {
+      "name": "clip3",
+      "kind": "original",
+      "totalMs": 3.5,
+      "seedMs": 1,
+      "seedFraction": 0.2857142857142857
+    },
+    {
+      "name": "clip3",
+      "kind": "set",
+      "totalMs": 3.1999999955296516,
+      "seedMs": 0.9000000059604645,
+      "seedFraction": 0.28125000225554686
+    },
+    {
+      "name": "partial",
+      "kind": "original",
+      "totalMs": 1.7000000029802322,
+      "seedMs": 0.5,
+      "seedFraction": 0.29411764654321243
+    },
+    {
+      "name": "partial",
+      "kind": "set",
+      "totalMs": 1.2999999970197678,
+      "seedMs": 0.4000000059604645,
+      "seedFraction": 0.3076923129826608
+    },
+    {
+      "name": "practical4",
+      "kind": "original",
+      "totalMs": 0.10000000149011612,
+      "seedMs": 0,
+      "seedFraction": 0
+    },
+    {
+      "name": "practical4",
+      "kind": "set",
+      "totalMs": 0.10000000149011612,
+      "seedMs": 0,
+      "seedFraction": 0
+    },
+    {
+      "name": "sheet1024",
+      "kind": "original",
+      "totalMs": 5.600000001490116,
+      "seedMs": 0,
+      "seedFraction": 0
+    },
+    {
+      "name": "sheet1024",
+      "kind": "set",
+      "totalMs": 5.600000001490116,
+      "seedMs": 0,
+      "seedFraction": 0
+    },
+    {
+      "name": "sheet2048",
+      "kind": "original",
+      "totalMs": 22.5,
+      "seedMs": 0,
+      "seedFraction": 0
+    },
+    {
+      "name": "sheet2048",
+      "kind": "set",
+      "totalMs": 21.799999997019768,
+      "seedMs": 0,
+      "seedFraction": 0
+    }
+  ],
+  "created": "2026-10-18T10:15:11.526Z",
+  "browserVersion": "155.0.4283.62",
+  "errors": [],
+  "scope": "Fresh auxiliary sandbox-enabled Edge direct whole Auto core jobs. Includes histogram, seed and refinement; excludes worker startup/transport, import/UI. Attribution instrumentation excluded from matched timing trials."
+}

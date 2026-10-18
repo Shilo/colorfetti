@@ -1,0 +1,24 @@
+{
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "serial": "37211FDJG00267",
+  "authorized": true,
+  "unlockedForeground": "com.brave.browser/com.google.android.apps.chrome.Main",
+  "bravePid": 32363,
+  "braveVersionName": "1.97.59",
+  "socket": "chrome_devtools_remote_32363",
+  "ownedForward": 9345,
+  "existingForwards": [
+    "9333→chrome_devtools_remote",
+    "9334→chrome_devtools_remote_16561"
+  ],
+  "existingReverse": [
+    5352,
+    5354
+  ],
+  "batteryPercent": 81,
+  "temperatureC": 31.1,
+  "charging": true,
+  "accelerometerRotation": 1,
+  "userRotation": 0,
+  "actions": "Read-only inventory; preserve existing forwards/reverses/private tabs/downloads/preferences."
+}

@@ -1,0 +1,1098 @@
+{
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "reviewed": "2026-10-18T10:53:59.340Z",
+  "inputs": [
+    {
+      "file": "ab-analysis/pairs-1792318872277.json",
+      "sha256": "b468fddb0800c633eaffcaeb376685e237143d89e8e6cf263501a18a978156ab"
+    },
+    {
+      "file": "ab-caption/pairs-checker-1792319091596.json",
+      "sha256": "79f4f028b4a3a9a2f732982bcfc28efa433a1bec5aefd15381eb27f3388d14cf"
+    },
+    {
+      "file": "ab-summary/pairs-1792319041866.json",
+      "sha256": "0cc583c2d4cd80292f7d935622752bb57a4625574aa2b26d8946b4490d822bfd"
+    },
+    {
+      "file": "ab-summary/pairs-1792319041866.json",
+      "sha256": "0cc583c2d4cd80292f7d935622752bb57a4625574aa2b26d8946b4490d822bfd"
+    },
+    {
+      "file": "ab-auto-repeat/pairs-1792319319448.json",
+      "sha256": "3d0d17bb67a8568e2f7bb701eb47c71664ccc16efab0b06027616b228b8ac189"
+    },
+    {
+      "file": "ab-bands/pairs-1792318984854.json",
+      "sha256": "ac33ec69e62be7f73a0d332b2dcf363d38b0598854b1a3583abf36aa9023662f"
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "sha256": "4bdfa36ab0ab4f3e3c4df6686643dfc201a0f8ba524f500ba3eb7d94fba96685"
+    },
+    {
+      "file": "ab-compression-action/results-tiny-codexio-png-1792319332483.json",
+      "sha256": "170363ce6147e6c40d50a05f8cf15aeb16d1f239a30902bf70da2a9bea16fc54"
+    },
+    {
+      "file": "ab-compression-action/results-sheet1024-codexio-png-1792319354309.json",
+      "sha256": "9da9e42bc29ffac8c05e0225cd94e9924b0370dc82a9e0887e60051ede790219"
+    },
+    {
+      "file": "ab-compression-action/results-partialKeep64-codexio-png-1792319379354.json",
+      "sha256": "167b25cd8ef4862cf6e08c32a30e4c6eed9f7e17ff51fefe787b0edc5e90b407"
+    }
+  ],
+  "rows": [
+    {
+      "label": "B1",
+      "file": "ab-analysis/pairs-1792318872277.json",
+      "urls": {
+        "off": "http://localhost:5399/",
+        "on": "http://localhost:5398/"
+      },
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 534.914,
+          "afterMedian": 430.726,
+          "pairedDeltaMedian": -106.03200000000004,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -148.23000000000002,
+            -121.38199999999995,
+            -79.834,
+            -44.39700000000005,
+            -106.03200000000004
+          ]
+        },
+        "toFinalPaintMs": {
+          "beforeMedian": 755.7000000476837,
+          "afterMedian": 669.6000000238419,
+          "pairedDeltaMedian": -139.89999997615814,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -187.40000009536743,
+            -187.5000001192093,
+            -139.89999997615814,
+            -40.700000047683716,
+            -51.60000002384186
+          ]
+        }
+      }
+    },
+    {
+      "label": "B3",
+      "file": "ab-caption/pairs-checker-1792319091596.json",
+      "urls": {
+        "off": "http://localhost:5396/",
+        "on": "http://localhost:5391/"
+      },
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 959.349,
+          "afterMedian": 739.4190000000001,
+          "pairedDeltaMedian": -219.92999999999995,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -192.98900000000003,
+            -220.97299999999996,
+            -212.89099999999985,
+            -224.03499999999997,
+            -219.92999999999995
+          ]
+        },
+        "releaseToCaptionMs": {
+          "beforeMedian": 130.70000004768372,
+          "afterMedian": 133.60000002384186,
+          "pairedDeltaMedian": 4.300000071525574,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            4.300000071525574,
+            -4.799999952316284,
+            6,
+            8.299999952316284,
+            -6.299999952316284
+          ]
+        }
+      }
+    },
+    {
+      "label": "B4-cap",
+      "file": "ab-summary/pairs-1792319041866.json",
+      "urls": {
+        "off": "http://localhost:5397/",
+        "on": "http://localhost:5391/"
+      },
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 226.04399999999998,
+          "afterMedian": 149.61900000000003,
+          "pairedDeltaMedian": -76.75399999999996,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -92.75499999999997,
+            -55.99499999999992,
+            -86.85099999999997,
+            -76.75399999999996,
+            -57.511999999999944
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 736.6999999284744,
+          "afterMedian": 203.79999995231628,
+          "pairedDeltaMedian": -547.1999999284744,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -551.9999998807907,
+            -527.6000002622604,
+            -560.9999998807907,
+            -547.1999999284744,
+            -535.6000000238419
+          ]
+        }
+      }
+    },
+    {
+      "label": "B4-cold-Auto",
+      "file": "ab-summary/pairs-1792319041866.json",
+      "urls": {
+        "off": "http://localhost:5397/",
+        "on": "http://localhost:5391/"
+      },
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 107.33000000000001,
+          "afterMedian": 121.39799999999998,
+          "pairedDeltaMedian": 18.787999999999997,
+          "afterFasterPairs": 0,
+          "pairs": 5,
+          "pairedDeltas": [
+            19.116000000000014,
+            9.169000000000011,
+            22.012000000000015,
+            0.39699999999999136,
+            18.787999999999997
+          ]
+        },
+        "exactCaptionMs": {
+          "beforeMedian": 162.30000007152557,
+          "afterMedian": 190.29999995231628,
+          "pairedDeltaMedian": 27,
+          "afterFasterPairs": 1,
+          "pairs": 5,
+          "pairedDeltas": [
+            33.10000002384186,
+            21.199999928474426,
+            27,
+            -6.300000071525574,
+            28.5
+          ]
+        }
+      }
+    },
+    {
+      "label": "B4-cold-Auto-repeat",
+      "file": "ab-auto-repeat/pairs-1792319319448.json",
+      "urls": {
+        "off": "http://localhost:5397/",
+        "on": "http://localhost:5391/"
+      },
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 122.436,
+          "afterMedian": 137.579,
+          "pairedDeltaMedian": 8.638999999999982,
+          "afterFasterPairs": 1,
+          "pairs": 5,
+          "pairedDeltas": [
+            7.718000000000018,
+            8.638999999999982,
+            -22.181999999999988,
+            52.512,
+            35.590999999999994
+          ]
+        },
+        "exactCaptionMs": {
+          "beforeMedian": 188.39999997615814,
+          "afterMedian": 204.60000002384186,
+          "pairedDeltaMedian": 14.100000023841858,
+          "afterFasterPairs": 1,
+          "pairs": 5,
+          "pairedDeltas": [
+            14.100000023841858,
+            1.5000001192092896,
+            -81.19999992847443,
+            53.200000047683716,
+            33.49999988079071
+          ]
+        }
+      }
+    },
+    {
+      "label": "B5",
+      "file": "ab-bands/pairs-1792318984854.json",
+      "urls": {
+        "off": "http://localhost:5398/",
+        "on": "http://localhost:5391/"
+      },
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 431.072,
+          "afterMedian": 347.165,
+          "pairedDeltaMedian": -87.69599999999997,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -29.274000000000115,
+            -40.698000000000036,
+            -104.1049999999999,
+            -95.74000000000001,
+            -87.69599999999997
+          ]
+        },
+        "toFinalPaintMs": {
+          "beforeMedian": 614.2000000476837,
+          "afterMedian": 483.10000002384186,
+          "pairedDeltaMedian": -122.5,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -122.5,
+            -112.09999990463257,
+            -156.5000001192093,
+            -108.09999990463257,
+            -127.00000011920929
+          ]
+        },
+        "maxLongTaskMs": {
+          "beforeMedian": 94,
+          "afterMedian": 0,
+          "pairedDeltaMedian": -94,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -80,
+            -105,
+            -106,
+            -91,
+            -94
+          ]
+        }
+      }
+    }
+  ],
+  "png": [
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "tiny",
+      "phase": "first",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 54.629,
+          "afterMedian": 54.966,
+          "pairedDeltaMedian": 6.491999999999997,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            6.491999999999997,
+            -0.5140000000000029,
+            7.302999999999997,
+            7.3870000000000005,
+            -19.318999999999996
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 165.10000002384186,
+          "afterMedian": 180,
+          "pairedDeltaMedian": 14,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            33.799999952316284,
+            -11.100000023841858,
+            31.299999952316284,
+            14,
+            -48
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "tiny",
+      "phase": "repeat",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 36.964999999999996,
+          "afterMedian": 47.047999999999995,
+          "pairedDeltaMedian": 6.528999999999989,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            10.367000000000004,
+            6.528999999999989,
+            -12.206000000000003,
+            18.467999999999996,
+            -18.222
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 128.30000007152557,
+          "afterMedian": 131.69999992847443,
+          "pairedDeltaMedian": 3.3999998569488525,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            -1.1999999284744263,
+            3.3999998569488525,
+            17.100000023841858,
+            11.799999952316284,
+            -44.699999928474426
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "indexed65535",
+      "phase": "first",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 68.805,
+          "afterMedian": 60.995000000000005,
+          "pairedDeltaMedian": -0.6409999999999982,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            -0.6409999999999982,
+            0.5949999999999989,
+            0.6170000000000115,
+            -1.7110000000000127,
+            -14.831000000000003
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 199,
+          "afterMedian": 165.20000004768372,
+          "pairedDeltaMedian": -18,
+          "afterFasterPairs": 4,
+          "pairs": 5,
+          "pairedDeltas": [
+            -30.799999952316284,
+            -3.5,
+            6.600000023841858,
+            -18,
+            -46.39999997615814
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "indexed65535",
+      "phase": "repeat",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 54.93099999999999,
+          "afterMedian": 64.36299999999999,
+          "pairedDeltaMedian": 9.431999999999995,
+          "afterFasterPairs": 1,
+          "pairs": 5,
+          "pairedDeltas": [
+            9.431999999999995,
+            15.574000000000005,
+            2.1540000000000106,
+            -32.589000000000006,
+            36.114999999999995
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 151.40000009536743,
+          "afterMedian": 146.70000004768372,
+          "pairedDeltaMedian": -11.300000071525574,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            -11.300000071525574,
+            37.50000011920929,
+            -22,
+            -51.99999988079071,
+            17.399999976158142
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "indexed65536",
+      "phase": "first",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 60.423,
+          "afterMedian": 65.514,
+          "pairedDeltaMedian": 1.0919999999999987,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            -4.159000000000006,
+            1.0919999999999987,
+            6.9069999999999965,
+            18.61999999999999,
+            -3.161999999999992
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 181.69999992847443,
+          "afterMedian": 157.19999992847443,
+          "pairedDeltaMedian": -23.600000023841858,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            -45.799999952316284,
+            -23.600000023841858,
+            23.50000011920929,
+            37.800000071525574,
+            -49.09999990463257
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "indexed65536",
+      "phase": "repeat",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 70.25300000000001,
+          "afterMedian": 54.669,
+          "pairedDeltaMedian": -2.9580000000000126,
+          "afterFasterPairs": 4,
+          "pairs": 5,
+          "pairedDeltas": [
+            -2.85799999999999,
+            -2.9580000000000126,
+            -15.584000000000017,
+            -42.43700000000001,
+            25.005000000000003
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 168.10000002384186,
+          "afterMedian": 143.90000009536743,
+          "pairedDeltaMedian": -23.700000047683716,
+          "afterFasterPairs": 4,
+          "pairs": 5,
+          "pairedDeltas": [
+            -23.700000047683716,
+            -44.299999952316284,
+            -22.699999928474426,
+            -56.89999997615814,
+            13.300000190734863
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "indexed65792",
+      "phase": "first",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 67.777,
+          "afterMedian": 66.756,
+          "pairedDeltaMedian": -1.0210000000000008,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            4.673999999999978,
+            -6.600999999999999,
+            -1.0210000000000008,
+            4.872000000000014,
+            -6.675999999999995
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 194.79999995231628,
+          "afterMedian": 184.39999997615814,
+          "pairedDeltaMedian": -5.200000047683716,
+          "afterFasterPairs": 4,
+          "pairs": 5,
+          "pairedDeltas": [
+            1.100000023841858,
+            -5.200000047683716,
+            -21.800000071525574,
+            -1.0000001192092896,
+            -6.6000001430511475
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "indexed65792",
+      "phase": "repeat",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 67.40800000000002,
+          "afterMedian": 62.387999999999984,
+          "pairedDeltaMedian": -0.4460000000000264,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            8.336999999999996,
+            -14.45900000000001,
+            -17.548999999999978,
+            -0.4460000000000264,
+            23.938999999999993
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 176.10000002384186,
+          "afterMedian": 173.39999997615814,
+          "pairedDeltaMedian": -4.700000047683716,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            -8.400000095367432,
+            -4.700000047683716,
+            -63.89999997615814,
+            3.8000000715255737,
+            45.299999952316284
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "rgba65537",
+      "phase": "first",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 67.694,
+          "afterMedian": 66.046,
+          "pairedDeltaMedian": -1.242999999999995,
+          "afterFasterPairs": 4,
+          "pairs": 5,
+          "pairedDeltas": [
+            -1.242999999999995,
+            -67.39899999999999,
+            -0.3089999999999975,
+            -1.8220000000000027,
+            3.6750000000000114
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 196.09999990463257,
+          "afterMedian": 198.5,
+          "pairedDeltaMedian": 2.4000000953674316,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            -16.50000011920929,
+            -114,
+            2.4000000953674316,
+            4.3999998569488525,
+            16.700000047683716
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "rgba65537",
+      "phase": "repeat",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 68.76800000000001,
+          "afterMedian": 71.45100000000001,
+          "pairedDeltaMedian": 5.434999999999995,
+          "afterFasterPairs": 1,
+          "pairs": 5,
+          "pairedDeltas": [
+            2.6829999999999927,
+            5.434999999999995,
+            -35.791,
+            5.849000000000004,
+            33.974
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 210.10000002384186,
+          "afterMedian": 192.69999992847443,
+          "pairedDeltaMedian": -6.299999952316284,
+          "afterFasterPairs": 4,
+          "pairs": 5,
+          "pairedDeltas": [
+            -2.8000000715255737,
+            3.8000000715255737,
+            -30.600000023841858,
+            -6.299999952316284,
+            -17.40000009536743
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "sheet1024",
+      "phase": "first",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 90.824,
+          "afterMedian": 93.67699999999999,
+          "pairedDeltaMedian": -3.2990000000000066,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            25.397999999999996,
+            -3.2990000000000066,
+            0.6989999999999981,
+            -5.450000000000003,
+            -30.346000000000004
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 266.7000000476837,
+          "afterMedian": 247.39999997615814,
+          "pairedDeltaMedian": -21.700000047683716,
+          "afterFasterPairs": 4,
+          "pairs": 5,
+          "pairedDeltas": [
+            46,
+            -9,
+            -21.700000047683716,
+            -54.89999997615814,
+            -61.89999997615814
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "sheet1024",
+      "phase": "repeat",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 75.74900000000001,
+          "afterMedian": 77.968,
+          "pairedDeltaMedian": 2.8859999999999815,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            -38.06999999999998,
+            3.1210000000000093,
+            2.8859999999999815,
+            -3.9810000000000088,
+            9.051999999999992
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 219.29999995231628,
+          "afterMedian": 211.5,
+          "pairedDeltaMedian": -11.299999952316284,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            -38.700000047683716,
+            -11.299999952316284,
+            16.199999928474426,
+            -21.700000047683716,
+            10.300000071525574
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "sheet2048",
+      "phase": "first",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 198.02800000000002,
+          "afterMedian": 229.889,
+          "pairedDeltaMedian": 5.042999999999978,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            77.00700000000003,
+            29.502999999999957,
+            5.042999999999978,
+            -10.850000000000023,
+            -33.803
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 461.2000000476837,
+          "afterMedian": 473.6999999284744,
+          "pairedDeltaMedian": 3,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            124.70000004768372,
+            40.10000002384186,
+            3,
+            -127.60000002384186,
+            -60.700000047683716
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression/results-all-codexio-png-1792318598095.json",
+      "id": "sheet2048",
+      "phase": "repeat",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 156.66400000000002,
+          "afterMedian": 157.24,
+          "pairedDeltaMedian": 0.5759999999999934,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            -9.643,
+            -7.855000000000047,
+            5.437000000000012,
+            18.835999999999956,
+            0.5759999999999934
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 363.5,
+          "afterMedian": 362.60000002384186,
+          "pairedDeltaMedian": 2.399999976158142,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            -45.90000009536743,
+            -2.6999999284744263,
+            2.399999976158142,
+            11.100000023841858,
+            28.899999856948853
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression-action/results-tiny-codexio-png-1792319332483.json",
+      "id": "tiny",
+      "phase": "first",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 56.463,
+          "afterMedian": 55.506,
+          "pairedDeltaMedian": -1.515999999999984,
+          "afterFasterPairs": 4,
+          "pairs": 5,
+          "pairedDeltas": [
+            -0.6210000000000093,
+            -5.045999999999999,
+            -1.515999999999984,
+            -4.094000000000001,
+            1.573999999999991
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 193.5,
+          "afterMedian": 195.59999990463257,
+          "pairedDeltaMedian": 10.799999952316284,
+          "afterFasterPairs": 1,
+          "pairs": 5,
+          "pairedDeltas": [
+            -7,
+            10.799999952316284,
+            2.0999999046325684,
+            23.00000011920929,
+            14.5
+          ]
+        },
+        "actionToAnchorMs": {
+          "beforeMedian": 32.199999928474426,
+          "afterMedian": 7.799999952316284,
+          "pairedDeltaMedian": -22.299999952316284,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -31.199999928474426,
+            -17.200000047683716,
+            -27.100000023841858,
+            -22.299999952316284,
+            -21.99999988079071
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression-action/results-tiny-codexio-png-1792319332483.json",
+      "id": "tiny",
+      "phase": "repeat",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 49.39399999999999,
+          "afterMedian": 50.79100000000002,
+          "pairedDeltaMedian": 1.3970000000000269,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            -33.361999999999995,
+            27.751000000000012,
+            1.3970000000000269,
+            -6.925000000000004,
+            5.386999999999993
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 150.90000009536743,
+          "afterMedian": 132.20000004768372,
+          "pairedDeltaMedian": -18.700000047683716,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            -40.699999928474426,
+            19.399999976158142,
+            7.4999998807907104,
+            -18.700000047683716,
+            -31.199999928474426
+          ]
+        },
+        "actionToAnchorMs": {
+          "beforeMedian": 38.89999997615814,
+          "afterMedian": 6.5,
+          "pairedDeltaMedian": -32.699999928474426,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -34.799999952316284,
+            -19.299999952316284,
+            -14.5,
+            -34.5,
+            -32.699999928474426
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression-action/results-sheet1024-codexio-png-1792319354309.json",
+      "id": "sheet1024",
+      "phase": "first",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 96.52199999999999,
+          "afterMedian": 92.227,
+          "pairedDeltaMedian": -8.682000000000016,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            -8.682000000000016,
+            -12.356999999999985,
+            12.665999999999997,
+            -22.30600000000001,
+            1.7550000000000097
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 252.19999992847443,
+          "afterMedian": 246.69999992847443,
+          "pairedDeltaMedian": -20.699999928474426,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            -32.700000047683716,
+            -20.699999928474426,
+            41.200000047683716,
+            -31.100000143051147,
+            24.800000071525574
+          ]
+        },
+        "actionToAnchorMs": {
+          "beforeMedian": 97.29999995231628,
+          "afterMedian": 97.79999995231628,
+          "pairedDeltaMedian": -5.299999952316284,
+          "afterFasterPairs": 3,
+          "pairs": 5,
+          "pairedDeltas": [
+            -18.49999988079071,
+            -5.299999952316284,
+            20.600000143051147,
+            -24.700000047683716,
+            20.899999976158142
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression-action/results-sheet1024-codexio-png-1792319354309.json",
+      "id": "sheet1024",
+      "phase": "repeat",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 76.102,
+          "afterMedian": 81.67800000000001,
+          "pairedDeltaMedian": 6.354000000000013,
+          "afterFasterPairs": 1,
+          "pairs": 5,
+          "pairedDeltas": [
+            6.354000000000013,
+            16.098000000000013,
+            10.504000000000005,
+            -7.2549999999999955,
+            2.490000000000009
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 206.39999997615814,
+          "afterMedian": 224.20000004768372,
+          "pairedDeltaMedian": 21.199999928474426,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            26.09999990463257,
+            51.5,
+            21.199999928474426,
+            -3.5000001192092896,
+            -12.799999952316284
+          ]
+        },
+        "actionToAnchorMs": {
+          "beforeMedian": 92,
+          "afterMedian": 98.5,
+          "pairedDeltaMedian": 2.399999976158142,
+          "afterFasterPairs": 2,
+          "pairs": 5,
+          "pairedDeltas": [
+            9.200000047683716,
+            11.799999952316284,
+            2.399999976158142,
+            -0.6000000238418579,
+            -5.299999952316284
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression-action/results-partialKeep64-codexio-png-1792319379354.json",
+      "id": "partialKeep64",
+      "phase": "first",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 57.742999999999995,
+          "afterMedian": 64.792,
+          "pairedDeltaMedian": 9.552999999999997,
+          "afterFasterPairs": 1,
+          "pairs": 5,
+          "pairedDeltas": [
+            9.552999999999997,
+            2.028000000000006,
+            14.187999999999995,
+            12.957,
+            -14.333999999999996
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 175.10000002384186,
+          "afterMedian": 167.70000004768372,
+          "pairedDeltaMedian": -14.699999928474426,
+          "afterFasterPairs": 4,
+          "pairs": 5,
+          "pairedDeltas": [
+            -25,
+            -7.399999976158142,
+            18.5,
+            -14.699999928474426,
+            -34.199999928474426
+          ]
+        },
+        "actionToAnchorMs": {
+          "beforeMedian": 37.89999997615814,
+          "afterMedian": 14.100000023841858,
+          "pairedDeltaMedian": -23.300000071525574,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -23.299999952316284,
+            -23.300000071525574,
+            -21.700000047683716,
+            -24.09999990463257,
+            -32.60000014305115
+          ]
+        }
+      }
+    },
+    {
+      "file": "ab-compression-action/results-partialKeep64-codexio-png-1792319379354.json",
+      "id": "partialKeep64",
+      "phase": "repeat",
+      "exactBytePairs": 5,
+      "metrics": {
+        "cpuMs": {
+          "beforeMedian": 77.79099999999998,
+          "afterMedian": 59.955000000000005,
+          "pairedDeltaMedian": -5.401000000000025,
+          "afterFasterPairs": 4,
+          "pairs": 5,
+          "pairedDeltas": [
+            17.819000000000003,
+            -32.27300000000001,
+            -5.401000000000025,
+            -24.128999999999998,
+            -2.594000000000001
+          ]
+        },
+        "elapsedMs": {
+          "beforeMedian": 183,
+          "afterMedian": 133.20000004768372,
+          "pairedDeltaMedian": -52.799999952316284,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -65.69999992847443,
+            -83.89999985694885,
+            -18.5,
+            -52.799999952316284,
+            -2.4999998807907104
+          ]
+        },
+        "actionToAnchorMs": {
+          "beforeMedian": 48.10000002384186,
+          "afterMedian": 13.399999976158142,
+          "pairedDeltaMedian": -31.699999928474426,
+          "afterFasterPairs": 5,
+          "pairs": 5,
+          "pairedDeltas": [
+            -24.600000023841858,
+            -43.49999988079071,
+            -30.300000071525574,
+            -31.699999928474426,
+            -34.700000047683716
+          ]
+        }
+      }
+    }
+  ],
+  "retainedEncodes": 200,
+  "qualification": "Recomputed from explicit raw files. Renderer CPU only; no worker CPU. Pair deltas are not differences of marginal medians. PNG hash equality cross-checks transport/differential correctness, not a separate encoder oracle. Raw interrupted-series error remains retained and qualified in IO README."
+}

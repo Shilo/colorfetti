@@ -1,0 +1,9 @@
+{
+  "device": "37211FDJG00267",
+  "initial": {"wmUserRotation":"free","accelerometerRotation":"1","userRotation":"0"},
+  "landscapeTest": "Actual Android wm user-rotation lock 1 produced screen.orientation.angle90/CSS947x364/DPR2.25 in remaining-lifecycle-landscape receipt1792318576358. This was display rotation through ADB, not physical handset manipulation.",
+  "afterFreeQualification": "wm user-rotation free restored unlocked rotation but left the stored user_rotation1. Later explicit lock0 then free restored the original stored0 as well.",
+  "restorationCommands": ["shell wm user-rotation lock 0","shell wm user-rotation free"],
+  "verifiedAfter": {"wmUserRotation":"free","accelerometerRotation":"1","userRotation":"0"},
+  "otherPreferencesChanged": false
+}

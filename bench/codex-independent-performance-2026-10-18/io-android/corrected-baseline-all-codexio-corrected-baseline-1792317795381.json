@@ -1,0 +1,3056 @@
+{
+  "harnessProvenance": "Independent inspection/adaptation of previous native runner; all results newly collected. Historical receipts not imported.",
+  "label": "corrected-baseline",
+  "prefix": "codexio-corrected-baseline-1792317795381",
+  "baseURL": "http://localhost:5391/",
+  "started": "2026-10-18T10:03:15.382Z",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "rows": [
+    {
+      "name": "dark: empty demo settled",
+      "elapsedMs": 664,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 54.153000000000006,
+        "ScriptDuration": 5.933999999999998,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 6203384
+    },
+    {
+      "name": "light: empty demo settled",
+      "elapsedMs": 674.3999999761581,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 29.479000000000006,
+        "ScriptDuration": 4.756,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 7329948
+    },
+    {
+      "name": "sprites1: input import to current named wall paint",
+      "elapsedMs": 92.80000007152557,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 46.82800000000001,
+        "ScriptDuration": 12.277000000000003,
+        "LayoutDuration": 2.1189999999999998,
+        "RecalcStyleDuration": 10.269999999999998
+      },
+      "heapUsed": 10844772
+    },
+    {
+      "name": "sprites1: exact full-clip captions ready",
+      "elapsedMs": 67.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 5.304000000000003,
+        "ScriptDuration": 0.32999999999999696,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 10872628
+    },
+    {
+      "name": "sprites2: drop import to current named wall paint",
+      "elapsedMs": 90.59999990463257,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 42.615999999999985,
+        "ScriptDuration": 9.541999999999998,
+        "LayoutDuration": 2.6380000000000003,
+        "RecalcStyleDuration": 11.948
+      },
+      "heapUsed": 13313772
+    },
+    {
+      "name": "sprites2: exact full-clip captions ready",
+      "elapsedMs": 39.299999952316284,
+      "longtasks": [],
+      "rafMaxMs": 16.600000000000023,
+      "rafP95Ms": 16.600000000000023,
+      "cpuMs": {
+        "TaskDuration": 4.531000000000008,
+        "ScriptDuration": 0.13799999999999923,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 13339268
+    },
+    {
+      "name": "sprites4: paste import to current named wall paint",
+      "elapsedMs": 113.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 65.56200000000001,
+        "ScriptDuration": 15.170000000000003,
+        "LayoutDuration": 3.7510000000000003,
+        "RecalcStyleDuration": 13.427999999999999
+      },
+      "heapUsed": 16537400
+    },
+    {
+      "name": "sprites4: exact full-clip captions ready",
+      "elapsedMs": 39.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 2.367000000000008,
+        "ScriptDuration": 0.13499999999999623,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 16563028
+    },
+    {
+      "name": "sprites8: input import to current named wall paint",
+      "elapsedMs": 144.5,
+      "longtasks": [],
+      "rafMaxMs": 33.39999999999998,
+      "rafP95Ms": 33.39999999999998,
+      "cpuMs": {
+        "TaskDuration": 91.74300000000002,
+        "ScriptDuration": 14.960999999999999,
+        "LayoutDuration": 4.234,
+        "RecalcStyleDuration": 12.496000000000002
+      },
+      "heapUsed": 21014836
+    },
+    {
+      "name": "sprites8: exact full-clip captions ready",
+      "elapsedMs": 49.299999952316284,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 6.253000000000009,
+        "ScriptDuration": 0.2400000000000041,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0.36500000000000077
+      },
+      "heapUsed": 21041088
+    },
+    {
+      "name": "sprites8-plus-effect-auto: input import to current named wall paint",
+      "elapsedMs": 167.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 96.463,
+        "ScriptDuration": 27.062999999999995,
+        "LayoutDuration": 5.146000000000001,
+        "RecalcStyleDuration": 18.104000000000003
+      },
+      "heapUsed": 21823232
+    },
+    {
+      "name": "sprites8-plus-effect-auto: exact full-clip captions ready",
+      "elapsedMs": 44.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 13.637999999999984,
+        "ScriptDuration": 1.1759999999999966,
+        "LayoutDuration": 2.272,
+        "RecalcStyleDuration": 0.9440000000000004
+      },
+      "heapUsed": 23071072
+    },
+    {
+      "name": "kenney-sheet-1024: input import to current named wall paint",
+      "elapsedMs": 511.3000000715256,
+      "longtasks": [],
+      "rafMaxMs": 174.99999999999994,
+      "rafP95Ms": 174.99999999999994,
+      "cpuMs": {
+        "TaskDuration": 362.293,
+        "ScriptDuration": 20.979000000000006,
+        "LayoutDuration": 2.785,
+        "RecalcStyleDuration": 14.801000000000002
+      },
+      "heapUsed": 21431512,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-12.cpuprofile",
+      "top": [
+        {
+          "frame": "(program) :-1",
+          "ms": 253.439
+        },
+        {
+          "frame": "(idle) :-1",
+          "ms": 149.414
+        },
+        {
+          "frame": "B quantize-DsvDuXDJ.js:0",
+          "ms": 18.818
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 18.047
+        },
+        {
+          "frame": "Ou index-Can2ISBp.js:2",
+          "ms": 17.68
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 10.492
+        },
+        {
+          "frame": "G quantize-DsvDuXDJ.js:0",
+          "ms": 5.921
+        },
+        {
+          "frame": "InjectedScript :6722",
+          "ms": 3.712
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 3.456
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 3.441
+        },
+        {
+          "frame": "cloneNode :-1",
+          "ms": 2.606
+        },
+        {
+          "frame": "U quantize-DsvDuXDJ.js:0",
+          "ms": 2.39
+        },
+        {
+          "frame": "putImageData :-1",
+          "ms": 2.378
+        },
+        {
+          "frame": "querySelectorAll :-1",
+          "ms": 2.196
+        },
+        {
+          "frame": "createHTML :-1",
+          "ms": 1.511
+        },
+        {
+          "frame": " :1",
+          "ms": 1.35
+        },
+        {
+          "frame": "r.onmessage image-import-client-CL9BZHZZ.js:1",
+          "ms": 1.323
+        },
+        {
+          "frame": "before :-1",
+          "ms": 1.257
+        },
+        {
+          "frame": "Eu index-Can2ISBp.js:2",
+          "ms": 1.223
+        },
+        {
+          "frame": "ht index-Can2ISBp.js:1",
+          "ms": 1.222
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-1024: exact full-clip captions ready",
+      "elapsedMs": 77.79999995231628,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 6.453000000000042,
+        "ScriptDuration": 0.38699999999999846,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 21463716
+    },
+    {
+      "name": "kenney-sheet-1024: native Save including download manager",
+      "elapsedMs": 1318.2000000476837,
+      "longtasks": [],
+      "rafMaxMs": 41.200000000000045,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 311.93499999999995,
+        "ScriptDuration": 48.235,
+        "LayoutDuration": 3.6640000000000006,
+        "RecalcStyleDuration": 19.710999999999995
+      },
+      "heapUsed": 22983776
+    },
+    {
+      "name": "kenney-sheet-1024: RGB matching final paint",
+      "elapsedMs": 739.3999999761581,
+      "longtasks": [],
+      "rafMaxMs": 25.200000000000273,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 195.61399999999995,
+        "ScriptDuration": 31.08,
+        "LayoutDuration": 5.760999999999998,
+        "RecalcStyleDuration": 23.552000000000003
+      },
+      "heapUsed": 24373104
+    },
+    {
+      "name": "kenney-sheet-1024: dither4 final paint and count idle",
+      "elapsedMs": 1033.3000000715256,
+      "longtasks": [],
+      "rafMaxMs": 41.599999999999454,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 227.20600000000002,
+        "ScriptDuration": 23.843000000000004,
+        "LayoutDuration": 3.758000000000001,
+        "RecalcStyleDuration": 17.746
+      },
+      "heapUsed": 26442244,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-16.cpuprofile",
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 812.272
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 122.846
+        },
+        {
+          "frame": "O quantize-DsvDuXDJ.js:0",
+          "ms": 32.89
+        },
+        {
+          "frame": " :-1",
+          "ms": 7.61
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 5.734
+        },
+        {
+          "frame": "elementsFromPoint :-1",
+          "ms": 5.263
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 5.154
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 4.011
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 3.882
+        },
+        {
+          "frame": " index-Can2ISBp.js:5",
+          "ms": 2.472
+        },
+        {
+          "frame": "now :-1",
+          "ms": 2.293
+        },
+        {
+          "frame": "isNativelyDisabled :3981",
+          "ms": 2.029
+        },
+        {
+          "frame": "querySelectorAll :-1",
+          "ms": 1.423
+        },
+        {
+          "frame": " :0",
+          "ms": 1.323
+        },
+        {
+          "frame": "W quantize-DsvDuXDJ.js:0",
+          "ms": 1.291
+        },
+        {
+          "frame": "hasExplicitAriaDisabled :3995",
+          "ms": 1.263
+        },
+        {
+          "frame": "Qe index-Can2ISBp.js:2",
+          "ms": 1.244
+        },
+        {
+          "frame": "remove :-1",
+          "ms": 1.24
+        },
+        {
+          "frame": "D quantize-DsvDuXDJ.js:0",
+          "ms": 1.225
+        },
+        {
+          "frame": "l index-Can2ISBp.js:2",
+          "ms": 1.216
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-2048: input import to current named wall paint",
+      "elapsedMs": 377.1999999284744,
+      "longtasks": [],
+      "rafMaxMs": 24.899999999999977,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 175.641,
+        "ScriptDuration": 15.080999999999998,
+        "LayoutDuration": 3.664,
+        "RecalcStyleDuration": 10.546000000000001
+      },
+      "heapUsed": 14606948,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-17.cpuprofile",
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 215.311
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 67.309
+        },
+        {
+          "frame": "Ou index-Can2ISBp.js:2",
+          "ms": 25.891
+        },
+        {
+          "frame": "B quantize-DsvDuXDJ.js:0",
+          "ms": 10.859
+        },
+        {
+          "frame": "G quantize-DsvDuXDJ.js:0",
+          "ms": 10.855
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 8.854
+        },
+        {
+          "frame": "U quantize-DsvDuXDJ.js:0",
+          "ms": 4.109
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 4.08
+        },
+        {
+          "frame": "Eu index-Can2ISBp.js:2",
+          "ms": 2.984
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 2.221
+        },
+        {
+          "frame": "Qr index-Can2ISBp.js:1",
+          "ms": 1.56
+        },
+        {
+          "frame": "remove :-1",
+          "ms": 1.434
+        },
+        {
+          "frame": "MessageChannel :-1",
+          "ms": 1.396
+        },
+        {
+          "frame": " index-Can2ISBp.js:1",
+          "ms": 1.368
+        },
+        {
+          "frame": "Or index-Can2ISBp.js:1",
+          "ms": 1.297
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 1.254
+        },
+        {
+          "frame": "createElement :-1",
+          "ms": 1.243
+        },
+        {
+          "frame": "z quantize-DsvDuXDJ.js:0",
+          "ms": 1.224
+        },
+        {
+          "frame": "querySelectorAll :-1",
+          "ms": 1.223
+        },
+        {
+          "frame": "e index-Can2ISBp.js:1",
+          "ms": 1.211
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-2048: exact full-clip captions ready",
+      "elapsedMs": 64.79999995231628,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 4.740999999999995,
+        "ScriptDuration": 0.4159999999999997,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 14638096
+    },
+    {
+      "name": "kenney-sheet-2048: native Save including download manager",
+      "elapsedMs": 1256.5,
+      "longtasks": [],
+      "rafMaxMs": 25.100000000000023,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 350.97999999999996,
+        "ScriptDuration": 36.805,
+        "LayoutDuration": 3.076999999999999,
+        "RecalcStyleDuration": 28.418
+      },
+      "heapUsed": 16415088
+    },
+    {
+      "name": "kenney-sheet-2048: RGB matching final paint",
+      "elapsedMs": 643.9000000953674,
+      "longtasks": [],
+      "rafMaxMs": 41.69999999999982,
+      "rafP95Ms": 33.5,
+      "cpuMs": {
+        "TaskDuration": 220.76799999999997,
+        "ScriptDuration": 27.28599999999999,
+        "LayoutDuration": 6.903000000000001,
+        "RecalcStyleDuration": 26.994999999999997
+      },
+      "heapUsed": 12289140
+    },
+    {
+      "name": "kenney-sheet-2048: dither4 final paint and count idle",
+      "elapsedMs": 988.6000000238419,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 252.19000000000003,
+        "ScriptDuration": 20.395999999999997,
+        "LayoutDuration": 3.044999999999999,
+        "RecalcStyleDuration": 17.22800000000001
+      },
+      "heapUsed": 15061684,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-21.cpuprofile",
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 739.568
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 104.761
+        },
+        {
+          "frame": "O quantize-DsvDuXDJ.js:0",
+          "ms": 73.362
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 12.854
+        },
+        {
+          "frame": "U quantize-DsvDuXDJ.js:0",
+          "ms": 11.135
+        },
+        {
+          "frame": "G quantize-DsvDuXDJ.js:0",
+          "ms": 6.527
+        },
+        {
+          "frame": "now :-1",
+          "ms": 5.91
+        },
+        {
+          "frame": "elementsFromPoint :-1",
+          "ms": 5.102
+        },
+        {
+          "frame": "querySelector :-1",
+          "ms": 2.648
+        },
+        {
+          "frame": "serialize :174",
+          "ms": 2.559
+        },
+        {
+          "frame": " :-1",
+          "ms": 2.361
+        },
+        {
+          "frame": "l index-Can2ISBp.js:2",
+          "ms": 2.344
+        },
+        {
+          "frame": "isElementHiddenForAria :3367",
+          "ms": 2.337
+        },
+        {
+          "frame": "query :5606",
+          "ms": 2.268
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 2.265
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 2.162
+        },
+        {
+          "frame": "isNativelyDisabled :3981",
+          "ms": 1.247
+        },
+        {
+          "frame": "close :-1",
+          "ms": 1.202
+        },
+        {
+          "frame": "listener :7590",
+          "ms": 1.187
+        },
+        {
+          "frame": "querySelectorAll :6919",
+          "ms": 1.183
+        }
+      ]
+    },
+    {
+      "name": "real-magic: input import to current named wall paint",
+      "elapsedMs": 137.5,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 46.967000000000006,
+        "ScriptDuration": 9.079,
+        "LayoutDuration": 1.6490000000000002,
+        "RecalcStyleDuration": 9.923000000000002
+      },
+      "heapUsed": 21038828
+    },
+    {
+      "name": "real-magic: exact full-clip captions ready",
+      "elapsedMs": 57.799999952316284,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 8.542999999999996,
+        "ScriptDuration": 2.4290000000000007,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 21098764
+    },
+    {
+      "name": "real-magic: native Save including download manager",
+      "elapsedMs": 1212.1000000238419,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 177.62099999999998,
+        "ScriptDuration": 36.32600000000001,
+        "LayoutDuration": 2.196,
+        "RecalcStyleDuration": 16.968
+      },
+      "heapUsed": 26439244
+    },
+    {
+      "name": "real-magic: fresh converted playback",
+      "elapsedMs": 1518.3000000715256,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 80.83400000000002,
+        "ScriptDuration": 25.679999999999996,
+        "LayoutDuration": 0.9859999999999999,
+        "RecalcStyleDuration": 1.4790000000000012
+      },
+      "heapUsed": 26779656,
+      "observedFrames": 15
+    },
+    {
+      "name": "kenney-motion-128: input import to current named wall paint",
+      "elapsedMs": 209.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 69.42999999999999,
+        "ScriptDuration": 17.076,
+        "LayoutDuration": 2.2770000000000006,
+        "RecalcStyleDuration": 9.408999999999999
+      },
+      "heapUsed": 18494992
+    },
+    {
+      "name": "kenney-motion-128: exact full-clip captions ready",
+      "elapsedMs": 72.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 4.654999999999992,
+        "ScriptDuration": 0.23999999999999716,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 18556968
+    },
+    {
+      "name": "kenney-motion-128: native Save including download manager",
+      "elapsedMs": 1099.8999999761581,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 184.06900000000002,
+        "ScriptDuration": 31.133000000000003,
+        "LayoutDuration": 2.7219999999999995,
+        "RecalcStyleDuration": 15.199
+      },
+      "heapUsed": 20542768
+    },
+    {
+      "name": "kenney-motion-128: fresh converted playback",
+      "elapsedMs": 6088.200000047684,
+      "longtasks": [],
+      "rafMaxMs": 17.100000000000364,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 337.83799999999997,
+        "ScriptDuration": 118.882,
+        "LayoutDuration": 0.35199999999999987,
+        "RecalcStyleDuration": 1.7010000000000012
+      },
+      "heapUsed": 21675800,
+      "observedFrames": 66
+    },
+    {
+      "name": "kenney-motion-256: input import to current named wall paint",
+      "elapsedMs": 326.8000000715256,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 117.433,
+        "ScriptDuration": 24.867000000000004,
+        "LayoutDuration": 4.212000000000001,
+        "RecalcStyleDuration": 13.250000000000002
+      },
+      "heapUsed": 28213044
+    },
+    {
+      "name": "kenney-motion-256: exact full-clip captions ready",
+      "elapsedMs": 61,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 6.002999999999981,
+        "ScriptDuration": 0.19200000000000467,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 16844612
+    },
+    {
+      "name": "kenney-motion-256: native Save including download manager",
+      "elapsedMs": 1235.5,
+      "longtasks": [],
+      "rafMaxMs": 16.899999999999977,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 339.92,
+        "ScriptDuration": 37.682,
+        "LayoutDuration": 2.8849999999999993,
+        "RecalcStyleDuration": 21.159999999999997
+      },
+      "heapUsed": 19531284
+    },
+    {
+      "name": "kenney-motion-256: fresh converted playback",
+      "elapsedMs": 8944.300000071526,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 621.886,
+        "ScriptDuration": 184.755,
+        "LayoutDuration": 0.23000000000000104,
+        "RecalcStyleDuration": 1.3210000000000028
+      },
+      "heapUsed": 15841176,
+      "observedFrames": 96
+    },
+    {
+      "name": "preview: input import to current named wall paint",
+      "elapsedMs": 366,
+      "longtasks": [],
+      "rafMaxMs": 108.20000000000005,
+      "rafP95Ms": 108.20000000000005,
+      "cpuMs": {
+        "TaskDuration": 218.32600000000002,
+        "ScriptDuration": 14.836999999999996,
+        "LayoutDuration": 3.4179999999999997,
+        "RecalcStyleDuration": 13.180000000000001
+      },
+      "heapUsed": 18360596,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-34.cpuprofile",
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 143.773
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 132.02
+        },
+        {
+          "frame": "B quantize-DsvDuXDJ.js:0",
+          "ms": 18.015
+        },
+        {
+          "frame": "Ou index-Can2ISBp.js:2",
+          "ms": 16.072
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 8.458
+        },
+        {
+          "frame": "G quantize-DsvDuXDJ.js:0",
+          "ms": 6.093
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 3.612
+        },
+        {
+          "frame": " :0",
+          "ms": 2.736
+        },
+        {
+          "frame": "U quantize-DsvDuXDJ.js:0",
+          "ms": 2.426
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 2.243
+        },
+        {
+          "frame": " :-1",
+          "ms": 1.299
+        },
+        {
+          "frame": "a index-Can2ISBp.js:2",
+          "ms": 1.216
+        },
+        {
+          "frame": "U index-Can2ISBp.js:1",
+          "ms": 1.215
+        },
+        {
+          "frame": " quantize-DsvDuXDJ.js:0",
+          "ms": 1.214
+        },
+        {
+          "frame": "MessageChannel :-1",
+          "ms": 1.213
+        },
+        {
+          "frame": "get firstChild :-1",
+          "ms": 1.191
+        },
+        {
+          "frame": "r.onmessage image-import-client-CL9BZHZZ.js:1",
+          "ms": 1.19
+        },
+        {
+          "frame": "W quantize-DsvDuXDJ.js:0",
+          "ms": 1.19
+        },
+        {
+          "frame": "removeEventListener :-1",
+          "ms": 1.179
+        },
+        {
+          "frame": "Dr index-Can2ISBp.js:1",
+          "ms": 1.175
+        }
+      ]
+    },
+    {
+      "name": "preview: exact full-clip captions ready",
+      "elapsedMs": 50.5,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 6.020000000000025,
+        "ScriptDuration": 0.346000000000006,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 18391800
+    },
+    {
+      "name": "Preview zoom pan Original Fit return",
+      "elapsedMs": 1428,
+      "longtasks": [],
+      "rafMaxMs": 25.100000000000023,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 323.14099999999996,
+        "ScriptDuration": 53.221999999999994,
+        "LayoutDuration": 1.955000000000001,
+        "RecalcStyleDuration": 35.153000000000006
+      },
+      "heapUsed": 20000092
+    },
+    {
+      "name": "settled still wall idle",
+      "elapsedMs": 1255.6000000238419,
+      "longtasks": [],
+      "rafMaxMs": 17.09999999999991,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 78.88099999999997,
+        "ScriptDuration": 12.98500000000001,
+        "LayoutDuration": 3.2929999999999993,
+        "RecalcStyleDuration": 7.851999999999998
+      },
+      "heapUsed": 20025732
+    },
+    {
+      "name": "onebit: input import to current named wall paint",
+      "elapsedMs": 91.59999990463257,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 44.63699999999998,
+        "ScriptDuration": 11.438000000000004,
+        "LayoutDuration": 1.8149999999999997,
+        "RecalcStyleDuration": 7.568999999999999
+      },
+      "heapUsed": 21555464
+    },
+    {
+      "name": "1-bit style Solid: committed paint",
+      "elapsedMs": 420.89999997615814,
+      "longtasks": [],
+      "rafMaxMs": 33.400000000000034,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 142.03199999999998,
+        "ScriptDuration": 44.898,
+        "LayoutDuration": 3.593,
+        "RecalcStyleDuration": 21.439
+      },
+      "heapUsed": 21686924
+    },
+    {
+      "name": "1-bit style Lines: committed paint",
+      "elapsedMs": 431.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.800000000000068,
+      "cpuMs": {
+        "TaskDuration": 123.29400000000001,
+        "ScriptDuration": 29.915999999999997,
+        "LayoutDuration": 3.204,
+        "RecalcStyleDuration": 19.699999999999996
+      },
+      "heapUsed": 23045700
+    },
+    {
+      "name": "1-bit style Stencil: committed paint",
+      "elapsedMs": 371.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 102.04299999999994,
+        "ScriptDuration": 21.604,
+        "LayoutDuration": 2.661,
+        "RecalcStyleDuration": 16.780000000000005
+      },
+      "heapUsed": 21435120
+    },
+    {
+      "name": "1-bit style Icon: committed paint",
+      "elapsedMs": 452.7999999523163,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000273,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 115.55199999999999,
+        "ScriptDuration": 28.033,
+        "LayoutDuration": 3.491000000000001,
+        "RecalcStyleDuration": 20.01499999999999
+      },
+      "heapUsed": 22689200
+    },
+    {
+      "name": "1-bit style Checker: committed paint",
+      "elapsedMs": 395.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999727,
+      "rafP95Ms": 16.799999999999727,
+      "cpuMs": {
+        "TaskDuration": 111.0500000000001,
+        "ScriptDuration": 30.245999999999995,
+        "LayoutDuration": 2.770999999999999,
+        "RecalcStyleDuration": 17.858999999999998
+      },
+      "heapUsed": 21172564
+    },
+    {
+      "name": "1-bit style Bayer: committed paint",
+      "elapsedMs": 457.5,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999727,
+      "cpuMs": {
+        "TaskDuration": 113.85199999999995,
+        "ScriptDuration": 23.231,
+        "LayoutDuration": 3.505999999999999,
+        "RecalcStyleDuration": 20.575999999999997
+      },
+      "heapUsed": 22507600
+    },
+    {
+      "name": "1-bit style Hatch: committed paint",
+      "elapsedMs": 400,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999727,
+      "rafP95Ms": 16.700000000000273,
+      "cpuMs": {
+        "TaskDuration": 114.19999999999997,
+        "ScriptDuration": 23.589000000000027,
+        "LayoutDuration": 4.387000000000002,
+        "RecalcStyleDuration": 22.29700000000001
+      },
+      "heapUsed": 23549980
+    },
+    {
+      "name": "1-bit style Atkinson: committed paint",
+      "elapsedMs": 438.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 117.71500000000002,
+        "ScriptDuration": 23.31999999999995,
+        "LayoutDuration": 4.276000000000002,
+        "RecalcStyleDuration": 22.583999999999993
+      },
+      "heapUsed": 21733748
+    },
+    {
+      "name": "1-bit style Noise: committed paint",
+      "elapsedMs": 391.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.700000000000728,
+      "cpuMs": {
+        "TaskDuration": 95.46699999999997,
+        "ScriptDuration": 18.97700000000002,
+        "LayoutDuration": 3.0879999999999934,
+        "RecalcStyleDuration": 17.58499999999999
+      },
+      "heapUsed": 22776752
+    },
+    {
+      "name": "1-bit style Shape: committed paint",
+      "elapsedMs": 500.89999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 136.87800000000004,
+        "ScriptDuration": 28.21199999999996,
+        "LayoutDuration": 4.849000000000006,
+        "RecalcStyleDuration": 27.086
+      },
+      "heapUsed": 23763720
+    },
+    {
+      "name": "1-bit Original cached repeat",
+      "elapsedMs": 457.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000728,
+      "rafP95Ms": 16.700000000000728,
+      "cpuMs": {
+        "TaskDuration": 81.42399999999994,
+        "ScriptDuration": 14.75000000000004,
+        "LayoutDuration": 8.689999999999996,
+        "RecalcStyleDuration": 7.822999999999997
+      },
+      "heapUsed": 23858080
+    },
+    {
+      "name": "palette editor open paste 256 colors keyboard Review page close",
+      "elapsedMs": 1233.1000000238419,
+      "longtasks": [
+        {
+          "start": 513,
+          "duration": 187
+        }
+      ],
+      "rafMaxMs": 183.29999999999995,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 519.369,
+        "ScriptDuration": 83.52699999999999,
+        "LayoutDuration": 80.96000000000001,
+        "RecalcStyleDuration": 69.112
+      },
+      "heapUsed": 27077332
+    },
+    {
+      "name": "closed editor empty wall idle",
+      "elapsedMs": 1085.3999999761581,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 72.1170000000001,
+        "ScriptDuration": 9.413000000000004,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0.6560000000000038
+      },
+      "heapUsed": 27107668
+    },
+    {
+      "name": "transparent32: input import to current named wall paint",
+      "elapsedMs": 84.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 30.33200000000001,
+        "ScriptDuration": 5.829999999999998,
+        "LayoutDuration": 1.36,
+        "RecalcStyleDuration": 8.727
+      },
+      "heapUsed": 28647480
+    },
+    {
+      "name": "transparent32: exact full-clip captions ready",
+      "elapsedMs": 49.5,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 4.034999999999983,
+        "ScriptDuration": 0.14300000000000077,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 28673796
+    },
+    {
+      "name": "transparent32: native Save including download manager",
+      "elapsedMs": 836.5,
+      "longtasks": [],
+      "rafMaxMs": 24.899999999999977,
+      "rafP95Ms": 16.800000000000068,
+      "cpuMs": {
+        "TaskDuration": 187.54299999999998,
+        "ScriptDuration": 27.589000000000002,
+        "LayoutDuration": 3.351,
+        "RecalcStyleDuration": 26.395
+      },
+      "heapUsed": 29538268
+    },
+    {
+      "name": "silhouette32: input import to current named wall paint",
+      "elapsedMs": 104.40000009536743,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 34.457000000000015,
+        "ScriptDuration": 5.814999999999997,
+        "LayoutDuration": 1.3730000000000004,
+        "RecalcStyleDuration": 9.567
+      },
+      "heapUsed": 33975688
+    },
+    {
+      "name": "silhouette32: exact full-clip captions ready",
+      "elapsedMs": 63.700000047683716,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 5.174999999999985,
+        "ScriptDuration": 0.2459999999999997,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 34002136
+    },
+    {
+      "name": "silhouette32: native Save including download manager",
+      "elapsedMs": 903,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 217.88699999999997,
+        "ScriptDuration": 33.888,
+        "LayoutDuration": 4.1000000000000005,
+        "RecalcStyleDuration": 23.493
+      },
+      "heapUsed": 34825416
+    },
+    {
+      "name": "partial-glow64: input import to current named wall paint",
+      "elapsedMs": 93.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 45.085000000000015,
+        "ScriptDuration": 11.754000000000005,
+        "LayoutDuration": 1.9789999999999999,
+        "RecalcStyleDuration": 9.223
+      },
+      "heapUsed": 34512880
+    },
+    {
+      "name": "partial-glow64: exact full-clip captions ready",
+      "elapsedMs": 70.79999995231628,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 4.580000000000001,
+        "ScriptDuration": 0.3119999999999998,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 34539224
+    },
+    {
+      "name": "partial-glow64: native Save including download manager",
+      "elapsedMs": 864.2000000476837,
+      "longtasks": [],
+      "rafMaxMs": 41.60000000000002,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 197.65599999999998,
+        "ScriptDuration": 33.217,
+        "LayoutDuration": 3.4450000000000003,
+        "RecalcStyleDuration": 24.203
+      },
+      "heapUsed": 35525632
+    },
+    {
+      "name": "boundary4096: input import to current named wall paint",
+      "elapsedMs": 91.5,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 42.080000000000005,
+        "ScriptDuration": 7.967999999999999,
+        "LayoutDuration": 1.4569999999999999,
+        "RecalcStyleDuration": 6.805999999999999
+      },
+      "heapUsed": 30939188
+    },
+    {
+      "name": "boundary4096: exact full-clip captions ready",
+      "elapsedMs": 42.799999952316284,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 3.7429999999999963,
+        "ScriptDuration": 0.22300000000000098,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 30967836
+    },
+    {
+      "name": "boundary4096: cap replacements2to4to8 Cleanup on-off",
+      "elapsedMs": 838.6999999284744,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 255.16899999999998,
+        "ScriptDuration": 41.95099999999999,
+        "LayoutDuration": 6.476,
+        "RecalcStyleDuration": 20.512000000000004
+      },
+      "heapUsed": 35854316
+    },
+    {
+      "name": "boundary4097: input import to current named wall paint",
+      "elapsedMs": 134.59999990463257,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 92.887,
+        "ScriptDuration": 8.823,
+        "LayoutDuration": 1.509,
+        "RecalcStyleDuration": 7.87
+      },
+      "heapUsed": 25716444
+    },
+    {
+      "name": "boundary4097: exact full-clip captions ready",
+      "elapsedMs": 52.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 2.893000000000007,
+        "ScriptDuration": 0.1959999999999948,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 25747588
+    },
+    {
+      "name": "boundary4097: cap replacements2to4to8 Cleanup on-off",
+      "elapsedMs": 801.0999999046326,
+      "longtasks": [],
+      "rafMaxMs": 24.80000000000001,
+      "rafP95Ms": 16.800000000000068,
+      "cpuMs": {
+        "TaskDuration": 240.131,
+        "ScriptDuration": 41.404999999999994,
+        "LayoutDuration": 7.667999999999999,
+        "RecalcStyleDuration": 25.106999999999996
+      },
+      "heapUsed": 28274276
+    },
+    {
+      "name": "entropy512: input import to current named wall paint",
+      "elapsedMs": 339.1999999284744,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.800000000000068,
+      "cpuMs": {
+        "TaskDuration": 231.508,
+        "ScriptDuration": 16.924999999999997,
+        "LayoutDuration": 3.392,
+        "RecalcStyleDuration": 13.530000000000001
+      },
+      "heapUsed": 34843356
+    },
+    {
+      "name": "entropy512: exact full-clip captions ready",
+      "elapsedMs": 55.09999990463257,
+      "longtasks": [],
+      "rafMaxMs": 16.699999999999932,
+      "rafP95Ms": 16.699999999999932,
+      "cpuMs": {
+        "TaskDuration": 2.8149999999999564,
+        "ScriptDuration": 0.2400000000000041,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 34873280
+    },
+    {
+      "name": "entropy512: native Save including download manager",
+      "elapsedMs": 1309,
+      "longtasks": [],
+      "rafMaxMs": 33.399999999999864,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 388.471,
+        "ScriptDuration": 35.625,
+        "LayoutDuration": 3.5819999999999994,
+        "RecalcStyleDuration": 29.403000000000002
+      },
+      "heapUsed": 36253536
+    },
+    {
+      "name": "entropy512: RGB dither8 replaced4 final current count",
+      "elapsedMs": 2033.7999999523163,
+      "longtasks": [],
+      "rafMaxMs": 200,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 1541.665,
+        "ScriptDuration": 31.93399999999999,
+        "LayoutDuration": 5.496999999999998,
+        "RecalcStyleDuration": 23.51
+      },
+      "heapUsed": 49373800,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-70.cpuprofile",
+      "top": [
+        {
+          "frame": "D quantize-DsvDuXDJ.js:0",
+          "ms": 519.362
+        },
+        {
+          "frame": "(idle) :-1",
+          "ms": 481.183
+        },
+        {
+          "frame": "F quantize-DsvDuXDJ.js:0",
+          "ms": 441.071
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 323.031
+        },
+        {
+          "frame": "B quantize-DsvDuXDJ.js:0",
+          "ms": 120.56
+        },
+        {
+          "frame": "O quantize-DsvDuXDJ.js:0",
+          "ms": 32.719
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 8.733
+        },
+        {
+          "frame": " :-1",
+          "ms": 8.237
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 8.072
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 5.165
+        },
+        {
+          "frame": "close :-1",
+          "ms": 4.921
+        },
+        {
+          "frame": "U quantize-DsvDuXDJ.js:0",
+          "ms": 4.867
+        },
+        {
+          "frame": "G quantize-DsvDuXDJ.js:0",
+          "ms": 3.87
+        },
+        {
+          "frame": " index-Can2ISBp.js:5",
+          "ms": 3.742
+        },
+        {
+          "frame": "requestAnimationFrame :-1",
+          "ms": 3.696
+        },
+        {
+          "frame": "#v index-Can2ISBp.js:1",
+          "ms": 3.594
+        },
+        {
+          "frame": "isElementHiddenForAria :3367",
+          "ms": 3.473
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 3.46
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 3.316
+        },
+        {
+          "frame": "getExplicitAriaRole :3335",
+          "ms": 2.553
+        }
+      ]
+    },
+    {
+      "name": "overbudget: input import to current named wall paint",
+      "elapsedMs": 347.1999999284744,
+      "longtasks": [],
+      "rafMaxMs": 25.100000000000023,
+      "rafP95Ms": 25.100000000000023,
+      "cpuMs": {
+        "TaskDuration": 122.584,
+        "ScriptDuration": 30.889,
+        "LayoutDuration": 4.954,
+        "RecalcStyleDuration": 14.308000000000002
+      },
+      "heapUsed": 43554968
+    },
+    {
+      "name": "overbudget: exact full-clip captions ready",
+      "elapsedMs": 73.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 16.11600000000002,
+        "ScriptDuration": 1.37000000000001,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 31471676
+    },
+    {
+      "name": "384x384x48 over8MiB index budget converted playback",
+      "elapsedMs": 8940.199999928474,
+      "longtasks": [],
+      "rafMaxMs": 17,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 857.9879999999999,
+        "ScriptDuration": 218.92500000000004,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 28839796,
+      "observedFrames": 92,
+      "nominalIndexBytes": 14155776
+    },
+    {
+      "name": "teardown0: input import to current named wall paint",
+      "elapsedMs": 156.5,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 73.102,
+        "ScriptDuration": 12.928000000000003,
+        "LayoutDuration": 2.4839999999999995,
+        "RecalcStyleDuration": 8.888
+      },
+      "heapUsed": 30728852
+    },
+    {
+      "name": "teardown0: exact full-clip captions ready",
+      "elapsedMs": 76.20000004768372,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 6.8729999999999905,
+        "ScriptDuration": 0.35400000000000015,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 30761728
+    },
+    {
+      "name": "teardown1: input import to current named wall paint",
+      "elapsedMs": 115.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 25.09999999999991,
+      "rafP95Ms": 25.09999999999991,
+      "cpuMs": {
+        "TaskDuration": 55.93400000000004,
+        "ScriptDuration": 14.681,
+        "LayoutDuration": 3.2249999999999988,
+        "RecalcStyleDuration": 12.244999999999992
+      },
+      "heapUsed": 5863604
+    },
+    {
+      "name": "teardown1: exact full-clip captions ready",
+      "elapsedMs": 77.70000004768372,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999955,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 6.688000000000027,
+        "ScriptDuration": 0.4280000000000117,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 5894612
+    },
+    {
+      "name": "teardown2: input import to current named wall paint",
+      "elapsedMs": 104.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 53.240999999999985,
+        "ScriptDuration": 14.670000000000002,
+        "LayoutDuration": 3.869000000000001,
+        "RecalcStyleDuration": 11.285000000000004
+      },
+      "heapUsed": 5940780
+    },
+    {
+      "name": "teardown2: exact full-clip captions ready",
+      "elapsedMs": 75.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 5.178000000000016,
+        "ScriptDuration": 0.4009999999999986,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 5972020
+    },
+    {
+      "name": "teardown3: input import to current named wall paint",
+      "elapsedMs": 130.70000004768372,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 60.38200000000005,
+        "ScriptDuration": 12.713000000000003,
+        "LayoutDuration": 2.9120000000000013,
+        "RecalcStyleDuration": 10.134000000000004
+      },
+      "heapUsed": 5996860
+    },
+    {
+      "name": "teardown3: exact full-clip captions ready",
+      "elapsedMs": 70.09999990463257,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 4.794000000000076,
+        "ScriptDuration": 0.30699999999997396,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 6028064
+    },
+    {
+      "name": "teardown4: input import to current named wall paint",
+      "elapsedMs": 109.70000004768372,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 60.80599999999991,
+        "ScriptDuration": 13.034000000000018,
+        "LayoutDuration": 2.686000000000001,
+        "RecalcStyleDuration": 13.023000000000007
+      },
+      "heapUsed": 6049272
+    },
+    {
+      "name": "teardown4: exact full-clip captions ready",
+      "elapsedMs": 63,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999727,
+      "rafP95Ms": 16.799999999999727,
+      "cpuMs": {
+        "TaskDuration": 5.292000000000074,
+        "ScriptDuration": 0.28000000000000247,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 6080356
+    },
+    {
+      "name": "teardown5: input import to current named wall paint",
+      "elapsedMs": 90.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000728,
+      "rafP95Ms": 16.700000000000728,
+      "cpuMs": {
+        "TaskDuration": 38.03099999999993,
+        "ScriptDuration": 9.264999999999995,
+        "LayoutDuration": 2.3420000000000005,
+        "RecalcStyleDuration": 9.257000000000016
+      },
+      "heapUsed": 6121724
+    },
+    {
+      "name": "teardown5: exact full-clip captions ready",
+      "elapsedMs": 72.5,
+      "longtasks": [],
+      "rafMaxMs": 16.899999999999636,
+      "rafP95Ms": 16.899999999999636,
+      "cpuMs": {
+        "TaskDuration": 6.3429999999999875,
+        "ScriptDuration": 0.48899999999998944,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 6152732
+    },
+    {
+      "name": "post six import/remove cycles demo idle",
+      "elapsedMs": 1047,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 65.89699999999988,
+        "ScriptDuration": 10.407,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 5689196
+    },
+    {
+      "name": "failure-limit: input import to current named wall paint",
+      "elapsedMs": 145.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 78.83299999999998,
+        "ScriptDuration": 11.028000000000002,
+        "LayoutDuration": 1.595,
+        "RecalcStyleDuration": 9.504999999999999
+      },
+      "heapUsed": 8940580
+    },
+    {
+      "name": "failure-limit: exact full-clip captions ready",
+      "elapsedMs": 58.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 4.372999999999988,
+        "ScriptDuration": 0.26600000000000235,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 8988412
+    },
+    {
+      "name": "limit: injected worker fetch failure gates Save and Retry recovers",
+      "elapsedMs": 571.7000000476837,
+      "longtasks": [],
+      "rafMaxMs": 25.100000000000023,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 191.83800000000002,
+        "ScriptDuration": 35.389,
+        "LayoutDuration": 7.010000000000001,
+        "RecalcStyleDuration": 29.986
+      },
+      "heapUsed": 10640408
+    },
+    {
+      "name": "failure-cleanup: input import to current named wall paint",
+      "elapsedMs": 117.29999995231628,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 78.69400000000002,
+        "ScriptDuration": 8.062000000000003,
+        "LayoutDuration": 1.9639999999999995,
+        "RecalcStyleDuration": 8.244000000000002
+      },
+      "heapUsed": 8627912
+    },
+    {
+      "name": "failure-cleanup: exact full-clip captions ready",
+      "elapsedMs": 44.699999928474426,
+      "longtasks": [],
+      "rafMaxMs": 16.5,
+      "rafP95Ms": 16.5,
+      "cpuMs": {
+        "TaskDuration": 2.9820000000000126,
+        "ScriptDuration": 0.11900000000000105,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 8656072
+    },
+    {
+      "name": "cleanup: injected worker fetch failure gates Save and Retry recovers",
+      "elapsedMs": 727.5,
+      "longtasks": [],
+      "rafMaxMs": 25.100000000000023,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 199.012,
+        "ScriptDuration": 35.943,
+        "LayoutDuration": 7.517,
+        "RecalcStyleDuration": 33.025
+      },
+      "heapUsed": 10126216
+    },
+    {
+      "name": "worker-unavailable: input import to current named wall paint",
+      "elapsedMs": 112.69999992847443,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 52.626000000000005,
+        "ScriptDuration": 10.931,
+        "LayoutDuration": 2.053,
+        "RecalcStyleDuration": 10.206
+      },
+      "heapUsed": 12343372
+    },
+    {
+      "name": "worker-unavailable: exact full-clip captions ready",
+      "elapsedMs": 39,
+      "longtasks": [],
+      "rafMaxMs": 16.599999999999966,
+      "rafP95Ms": 16.599999999999966,
+      "cpuMs": {
+        "TaskDuration": 2.7990000000000235,
+        "ScriptDuration": 0.13699999999999823,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 12369624
+    },
+    {
+      "name": "worker unavailable genuine GIF: native Save including download manager",
+      "elapsedMs": 894.7000000476837,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 16.800000000000068,
+      "cpuMs": {
+        "TaskDuration": 176.97699999999998,
+        "ScriptDuration": 39.287,
+        "LayoutDuration": 2.797000000000001,
+        "RecalcStyleDuration": 17.213
+      },
+      "heapUsed": 11317460
+    },
+    {
+      "name": "largeonebit-kenney-sheet-1024: input import to current named wall paint",
+      "elapsedMs": 310.89999997615814,
+      "longtasks": [],
+      "rafMaxMs": 100.00000000000003,
+      "rafP95Ms": 100.00000000000003,
+      "cpuMs": {
+        "TaskDuration": 251.39800000000002,
+        "ScriptDuration": 37.218999999999994,
+        "LayoutDuration": 1.3609999999999998,
+        "RecalcStyleDuration": 5.549
+      },
+      "heapUsed": 8512424,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-96.cpuprofile",
+      "top": [
+        {
+          "frame": "(program) :-1",
+          "ms": 136.015
+        },
+        {
+          "frame": "(idle) :-1",
+          "ms": 60.527
+        },
+        {
+          "frame": "za index-Can2ISBp.js:2",
+          "ms": 24.346
+        },
+        {
+          "frame": "Ou index-Can2ISBp.js:2",
+          "ms": 12.16
+        },
+        {
+          "frame": "Qa index-Can2ISBp.js:2",
+          "ms": 9.914
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 9.611
+        },
+        {
+          "frame": "d index-Can2ISBp.js:2",
+          "ms": 6.938
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 6.896
+        },
+        {
+          "frame": "qs index-Can2ISBp.js:2",
+          "ms": 6.057
+        },
+        {
+          "frame": "La index-Can2ISBp.js:2",
+          "ms": 5.542
+        },
+        {
+          "frame": "Na index-Can2ISBp.js:2",
+          "ms": 3.347
+        },
+        {
+          "frame": "b index-Can2ISBp.js:2",
+          "ms": 2.657
+        },
+        {
+          "frame": "eo index-Can2ISBp.js:2",
+          "ms": 2.407
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 2.21
+        },
+        {
+          "frame": "ImageDecoder :-1",
+          "ms": 1.419
+        },
+        {
+          "frame": "requestAnimationFrame :-1",
+          "ms": 1.401
+        },
+        {
+          "frame": "Ys index-Can2ISBp.js:2",
+          "ms": 1.295
+        },
+        {
+          "frame": "querySelectorAll :-1",
+          "ms": 1.239
+        },
+        {
+          "frame": "resolve :-1",
+          "ms": 1.191
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 1.172
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-1024: first-style-preparation Stencil current paint",
+      "elapsedMs": 691.8999999761581,
+      "longtasks": [
+        {
+          "start": 961.6999999284744,
+          "duration": 73
+        }
+      ],
+      "rafMaxMs": 83.30000000000007,
+      "rafP95Ms": 58.19999999999993,
+      "cpuMs": {
+        "TaskDuration": 350.22300000000007,
+        "ScriptDuration": 160.54200000000003,
+        "LayoutDuration": 4.850999999999999,
+        "RecalcStyleDuration": 31.252000000000002
+      },
+      "heapUsed": 9335328,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-97.cpuprofile",
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 352.173
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 107.638
+        },
+        {
+          "frame": "qa index-Can2ISBp.js:2",
+          "ms": 33.151
+        },
+        {
+          "frame": "Qa index-Can2ISBp.js:2",
+          "ms": 24.334
+        },
+        {
+          "frame": "b index-Can2ISBp.js:2",
+          "ms": 21.447
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 16.752
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 12.11
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 10.528
+        },
+        {
+          "frame": " :-1",
+          "ms": 9.287
+        },
+        {
+          "frame": "elementsFromPoint :-1",
+          "ms": 7.481
+        },
+        {
+          "frame": "scrollIntoView :-1",
+          "ms": 6.968
+        },
+        {
+          "frame": "isElementHiddenForAria :3367",
+          "ms": 6.715
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 5.571
+        },
+        {
+          "frame": "eo index-Can2ISBp.js:2",
+          "ms": 4.845
+        },
+        {
+          "frame": "computeAriaRole :3350",
+          "ms": 3.697
+        },
+        {
+          "frame": "d index-Can2ISBp.js:2",
+          "ms": 3.517
+        },
+        {
+          "frame": "i index-Can2ISBp.js:5",
+          "ms": 3.222
+        },
+        {
+          "frame": "loop :3",
+          "ms": 2.659
+        },
+        {
+          "frame": "f index-Can2ISBp.js:2",
+          "ms": 2.632
+        },
+        {
+          "frame": "n index-Can2ISBp.js:5",
+          "ms": 2.57
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-1024: first-style-preparation Icon current paint",
+      "elapsedMs": 776.5999999046326,
+      "longtasks": [
+        {
+          "start": 1698.8999999761581,
+          "duration": 231
+        }
+      ],
+      "rafMaxMs": 233.29999999999995,
+      "rafP95Ms": 33.40000000000009,
+      "cpuMs": {
+        "TaskDuration": 406.26399999999984,
+        "ScriptDuration": 279.93800000000005,
+        "LayoutDuration": 3.593000000000001,
+        "RecalcStyleDuration": 22.366000000000003
+      },
+      "heapUsed": 13745680,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-98.cpuprofile",
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 366.559
+        },
+        {
+          "frame": "ba index-Can2ISBp.js:2",
+          "ms": 122.602
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 88.857
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 65.285
+        },
+        {
+          "frame": "fa index-Can2ISBp.js:2",
+          "ms": 22.49
+        },
+        {
+          "frame": "b index-Can2ISBp.js:2",
+          "ms": 14.297
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 9.702
+        },
+        {
+          "frame": "Qa index-Can2ISBp.js:2",
+          "ms": 9.328
+        },
+        {
+          "frame": " :-1",
+          "ms": 6.351
+        },
+        {
+          "frame": "oa index-Can2ISBp.js:2",
+          "ms": 4.575
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 3.616
+        },
+        {
+          "frame": "elementsFromPoint :-1",
+          "ms": 3.607
+        },
+        {
+          "frame": "eo index-Can2ISBp.js:2",
+          "ms": 3.603
+        },
+        {
+          "frame": "scrollIntoView :-1",
+          "ms": 3.256
+        },
+        {
+          "frame": "requestAnimationFrame :-1",
+          "ms": 3.074
+        },
+        {
+          "frame": "closest :-1",
+          "ms": 2.711
+        },
+        {
+          "frame": "De index-Can2ISBp.js:2",
+          "ms": 2.621
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 2.614
+        },
+        {
+          "frame": "rl index-Can2ISBp.js:2",
+          "ms": 2.513
+        },
+        {
+          "frame": "getComputedStyle :-1",
+          "ms": 2.359
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-1024: first-style-preparation Atkinson current paint",
+      "elapsedMs": 497.3000000715256,
+      "longtasks": [
+        {
+          "start": 2450.6999999284744,
+          "duration": 52
+        }
+      ],
+      "rafMaxMs": 66.59999999999991,
+      "rafP95Ms": 25.09999999999991,
+      "cpuMs": {
+        "TaskDuration": 193.64399999999992,
+        "ScriptDuration": 95.634,
+        "LayoutDuration": 3.2429999999999994,
+        "RecalcStyleDuration": 17.733999999999998
+      },
+      "heapUsed": 13737396
+    },
+    {
+      "name": "kenney-sheet-1024: first-style-preparation Checker current paint",
+      "elapsedMs": 512.8999999761581,
+      "longtasks": [],
+      "rafMaxMs": 33.30000000000018,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 180.62100000000015,
+        "ScriptDuration": 53.269999999999925,
+        "LayoutDuration": 3.2250000000000005,
+        "RecalcStyleDuration": 22.024999999999988
+      },
+      "heapUsed": 9680652
+    },
+    {
+      "name": "kenney-sheet-1024: repeated-style-preparation Cutout current paint",
+      "elapsedMs": 439.6999999284744,
+      "longtasks": [],
+      "rafMaxMs": 58.29999999999973,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 156.68400000000005,
+        "ScriptDuration": 75.70700000000008,
+        "LayoutDuration": 3.131000000000002,
+        "RecalcStyleDuration": 18.349000000000004
+      },
+      "heapUsed": 10988720
+    },
+    {
+      "name": "kenney-sheet-1024: repeated-style-preparation Stencil current paint",
+      "elapsedMs": 449.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 41.69999999999982,
+      "rafP95Ms": 25.09999999999991,
+      "cpuMs": {
+        "TaskDuration": 161.32100000000005,
+        "ScriptDuration": 71.47799999999992,
+        "LayoutDuration": 4.460999999999999,
+        "RecalcStyleDuration": 22.353000000000012
+      },
+      "heapUsed": 12259020
+    },
+    {
+      "name": "kenney-sheet-1024: repeated-style-preparation Icon current paint",
+      "elapsedMs": 445.7000000476837,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 131.15799999999987,
+        "ScriptDuration": 44.00999999999999,
+        "LayoutDuration": 3.4129999999999994,
+        "RecalcStyleDuration": 19.69399999999999
+      },
+      "heapUsed": 13366400
+    },
+    {
+      "name": "kenney-sheet-1024: repeated-style-preparation Atkinson current paint",
+      "elapsedMs": 588.7000000476837,
+      "longtasks": [],
+      "rafMaxMs": 33.400000000000546,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 191.1769999999997,
+        "ScriptDuration": 54.466000000000015,
+        "LayoutDuration": 4.078999999999999,
+        "RecalcStyleDuration": 24.032999999999998
+      },
+      "heapUsed": 9835916
+    },
+    {
+      "name": "kenney-sheet-1024: repeated-style-preparation Checker current paint",
+      "elapsedMs": 553.9000000953674,
+      "longtasks": [],
+      "rafMaxMs": 25,
+      "rafP95Ms": 16.899999999999636,
+      "cpuMs": {
+        "TaskDuration": 157.16600000000014,
+        "ScriptDuration": 50.14299999999994,
+        "LayoutDuration": 3.0700000000000034,
+        "RecalcStyleDuration": 28.088
+      },
+      "heapUsed": 11188364
+    },
+    {
+      "name": "kenney-sheet-1024: Brightness rapid R-G-Value reanalysis",
+      "elapsedMs": 791.2999999523163,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.799999999999272,
+      "cpuMs": {
+        "TaskDuration": 188.05099999999976,
+        "ScriptDuration": 45.18400000000011,
+        "LayoutDuration": 1.4179999999999957,
+        "RecalcStyleDuration": 8.355
+      },
+      "heapUsed": 15130648
+    },
+    {
+      "name": "largeonebit-kenney-sheet-2048: input import to current named wall paint",
+      "elapsedMs": 373.1999999284744,
+      "longtasks": [
+        {
+          "start": 424,
+          "duration": 97
+        }
+      ],
+      "rafMaxMs": 91.70000000000005,
+      "rafP95Ms": 91.70000000000005,
+      "cpuMs": {
+        "TaskDuration": 261.346,
+        "ScriptDuration": 44.821999999999996,
+        "LayoutDuration": 2.5789999999999997,
+        "RecalcStyleDuration": 7.318999999999999
+      },
+      "heapUsed": 19934088,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-107.cpuprofile",
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 107.384
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 60.781
+        },
+        {
+          "frame": "qs index-Can2ISBp.js:2",
+          "ms": 35.109
+        },
+        {
+          "frame": "Ou index-Can2ISBp.js:2",
+          "ms": 26.633
+        },
+        {
+          "frame": "La index-Can2ISBp.js:2",
+          "ms": 25.018
+        },
+        {
+          "frame": "za index-Can2ISBp.js:2",
+          "ms": 23.971
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 13.232
+        },
+        {
+          "frame": "b index-Can2ISBp.js:2",
+          "ms": 12.167
+        },
+        {
+          "frame": "Na index-Can2ISBp.js:2",
+          "ms": 11.616
+        },
+        {
+          "frame": "copyTo :-1",
+          "ms": 10.958
+        },
+        {
+          "frame": "Qa index-Can2ISBp.js:2",
+          "ms": 7.347
+        },
+        {
+          "frame": "d index-Can2ISBp.js:2",
+          "ms": 6.509
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 6.306
+        },
+        {
+          "frame": "eo index-Can2ISBp.js:2",
+          "ms": 3.74
+        },
+        {
+          "frame": " :-1",
+          "ms": 3.633
+        },
+        {
+          "frame": "Ia index-Can2ISBp.js:2",
+          "ms": 3.475
+        },
+        {
+          "frame": " index-Can2ISBp.js:1",
+          "ms": 2.893
+        },
+        {
+          "frame": "f index-Can2ISBp.js:2",
+          "ms": 1.751
+        },
+        {
+          "frame": "getBoundingClientRect :-1",
+          "ms": 1.373
+        },
+        {
+          "frame": "Eu index-Can2ISBp.js:2",
+          "ms": 1.331
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-2048: first-style-preparation Stencil current paint",
+      "elapsedMs": 720.2000000476837,
+      "longtasks": [
+        {
+          "start": 1196,
+          "duration": 128
+        }
+      ],
+      "rafMaxMs": 141.79999999999995,
+      "rafP95Ms": 49.899999999999864,
+      "cpuMs": {
+        "TaskDuration": 415.098,
+        "ScriptDuration": 210.808,
+        "LayoutDuration": 6.305000000000001,
+        "RecalcStyleDuration": 34.017
+      },
+      "heapUsed": 11100084,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-108.cpuprofile",
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 302.846
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 120.211
+        },
+        {
+          "frame": "qa index-Can2ISBp.js:2",
+          "ms": 82.841
+        },
+        {
+          "frame": "b index-Can2ISBp.js:2",
+          "ms": 26.291
+        },
+        {
+          "frame": "Qa index-Can2ISBp.js:2",
+          "ms": 21.866
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 18.998
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 15.567
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 11.866
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 7.447
+        },
+        {
+          "frame": "eo index-Can2ISBp.js:2",
+          "ms": 4.814
+        },
+        {
+          "frame": "elementsFromPoint :-1",
+          "ms": 4.772
+        },
+        {
+          "frame": "isElementHiddenForAria :3367",
+          "ms": 4.498
+        },
+        {
+          "frame": "remove :-1",
+          "ms": 4.421
+        },
+        {
+          "frame": "d index-Can2ISBp.js:2",
+          "ms": 3.957
+        },
+        {
+          "frame": "f index-Can2ISBp.js:2",
+          "ms": 3.647
+        },
+        {
+          "frame": " :-1",
+          "ms": 3.538
+        },
+        {
+          "frame": "createElement :-1",
+          "ms": 3.152
+        },
+        {
+          "frame": "scrollIntoView :-1",
+          "ms": 2.758
+        },
+        {
+          "frame": "rl index-Can2ISBp.js:2",
+          "ms": 2.526
+        },
+        {
+          "frame": "putImageData :-1",
+          "ms": 2.441
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-2048: first-style-preparation Icon current paint",
+      "elapsedMs": 940.5999999046326,
+      "longtasks": [
+        {
+          "start": 1883,
+          "duration": 413
+        }
+      ],
+      "rafMaxMs": 416.5,
+      "rafP95Ms": 33.59999999999991,
+      "cpuMs": {
+        "TaskDuration": 611.6460000000002,
+        "ScriptDuration": 460.48699999999997,
+        "LayoutDuration": 3.4090000000000007,
+        "RecalcStyleDuration": 25.095999999999993
+      },
+      "heapUsed": 11369844,
+      "profileFile": "corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-109.cpuprofile",
+      "top": [
+        {
+          "frame": "(idle) :-1",
+          "ms": 324.404
+        },
+        {
+          "frame": "ba index-Can2ISBp.js:2",
+          "ms": 270.603
+        },
+        {
+          "frame": "(program) :-1",
+          "ms": 93.889
+        },
+        {
+          "frame": "fa index-Can2ISBp.js:2",
+          "ms": 52.698
+        },
+        {
+          "frame": " index-Can2ISBp.js:2",
+          "ms": 44.186
+        },
+        {
+          "frame": "(garbage collector) :-1",
+          "ms": 19.605
+        },
+        {
+          "frame": "Qa index-Can2ISBp.js:2",
+          "ms": 17.099
+        },
+        {
+          "frame": "oa index-Can2ISBp.js:2",
+          "ms": 15.786
+        },
+        {
+          "frame": "blur :-1",
+          "ms": 7.655
+        },
+        {
+          "frame": "b index-Can2ISBp.js:2",
+          "ms": 7.127
+        },
+        {
+          "frame": "eo index-Can2ISBp.js:2",
+          "ms": 5.9
+        },
+        {
+          "frame": "elementsFromPoint :-1",
+          "ms": 5.074
+        },
+        {
+          "frame": "scrollIntoView :-1",
+          "ms": 4.797
+        },
+        {
+          "frame": " :-1",
+          "ms": 3.752
+        },
+        {
+          "frame": "n index-Can2ISBp.js:5",
+          "ms": 3.612
+        },
+        {
+          "frame": "get offsetHeight :-1",
+          "ms": 3.376
+        },
+        {
+          "frame": "putImageData :-1",
+          "ms": 2.727
+        },
+        {
+          "frame": "getTextAlternativeInternal :3622",
+          "ms": 2.601
+        },
+        {
+          "frame": "va index-Can2ISBp.js:2",
+          "ms": 2.414
+        },
+        {
+          "frame": "sa index-Can2ISBp.js:2",
+          "ms": 2.398
+        }
+      ]
+    },
+    {
+      "name": "kenney-sheet-2048: first-style-preparation Atkinson current paint",
+      "elapsedMs": 564,
+      "longtasks": [],
+      "rafMaxMs": 58.40000000000009,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 185.12399999999985,
+        "ScriptDuration": 88.947,
+        "LayoutDuration": 3.705,
+        "RecalcStyleDuration": 20.963000000000008
+      },
+      "heapUsed": 18221196
+    },
+    {
+      "name": "kenney-sheet-2048: first-style-preparation Checker current paint",
+      "elapsedMs": 394.10000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.799999999999727,
+      "rafP95Ms": 16.700000000000273,
+      "cpuMs": {
+        "TaskDuration": 116.5830000000001,
+        "ScriptDuration": 40.30800000000001,
+        "LayoutDuration": 3.310999999999998,
+        "RecalcStyleDuration": 17.953999999999997
+      },
+      "heapUsed": 12788080
+    },
+    {
+      "name": "kenney-sheet-2048: repeated-style-preparation Cutout current paint",
+      "elapsedMs": 529.1999999284744,
+      "longtasks": [],
+      "rafMaxMs": 58.30000000000018,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 198.80900000000003,
+        "ScriptDuration": 89.20700000000004,
+        "LayoutDuration": 3.0950000000000006,
+        "RecalcStyleDuration": 19.504999999999995
+      },
+      "heapUsed": 15217548
+    },
+    {
+      "name": "kenney-sheet-2048: repeated-style-preparation Stencil current paint",
+      "elapsedMs": 508.39999997615814,
+      "longtasks": [],
+      "rafMaxMs": 41.5,
+      "rafP95Ms": 25,
+      "cpuMs": {
+        "TaskDuration": 170.2429999999997,
+        "ScriptDuration": 73.96000000000002,
+        "LayoutDuration": 3.617000000000002,
+        "RecalcStyleDuration": 22.607000000000017
+      },
+      "heapUsed": 16460336
+    },
+    {
+      "name": "kenney-sheet-2048: repeated-style-preparation Icon current paint",
+      "elapsedMs": 484.5,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 130.60400000000038,
+        "ScriptDuration": 44.60599999999992,
+        "LayoutDuration": 3.5549999999999957,
+        "RecalcStyleDuration": 20.979
+      },
+      "heapUsed": 17562636
+    },
+    {
+      "name": "kenney-sheet-2048: repeated-style-preparation Atkinson current paint",
+      "elapsedMs": 588.1000000238419,
+      "longtasks": [],
+      "rafMaxMs": 33.399999999999636,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 211.6410000000002,
+        "ScriptDuration": 62.46200000000002,
+        "LayoutDuration": 4.596000000000003,
+        "RecalcStyleDuration": 26.339000000000002
+      },
+      "heapUsed": 11370848
+    },
+    {
+      "name": "kenney-sheet-2048: repeated-style-preparation Checker current paint",
+      "elapsedMs": 543.2999999523163,
+      "longtasks": [],
+      "rafMaxMs": 33.30000000000018,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 158.10900000000007,
+        "ScriptDuration": 52.78899999999997,
+        "LayoutDuration": 4.605999999999999,
+        "RecalcStyleDuration": 26.820999999999984
+      },
+      "heapUsed": 13257224
+    },
+    {
+      "name": "kenney-sheet-2048: Brightness rapid R-G-Value reanalysis",
+      "elapsedMs": 785.3999999761581,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000182,
+      "rafP95Ms": 16.800000000000182,
+      "cpuMs": {
+        "TaskDuration": 305.62400000000036,
+        "ScriptDuration": 52.44899999999997,
+        "LayoutDuration": 2.842999999999998,
+        "RecalcStyleDuration": 10.22999999999999
+      },
+      "heapUsed": 11286032
+    },
+    {
+      "name": "onebit-partial-alpha: input import to current named wall paint",
+      "elapsedMs": 86.09999990463257,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 30.31499999999998,
+        "ScriptDuration": 7.453000000000001,
+        "LayoutDuration": 1.5330000000000001,
+        "RecalcStyleDuration": 5.719999999999998
+      },
+      "heapUsed": 16066816
+    },
+    {
+      "name": "partialglow64: Opacity committed8-64-192 reanalysis cancellation",
+      "elapsedMs": 510.5,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 102.87100000000002,
+        "ScriptDuration": 14.766000000000002,
+        "LayoutDuration": 3.064000000000001,
+        "RecalcStyleDuration": 4.182000000000001
+      },
+      "heapUsed": 18144488
+    }
+  ],
+  "outputs": [
+    {
+      "name": "codexio-corrected-baseline-1792317795381-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "sha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "colors": 26,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "codexio-corrected-baseline-1792317795381-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "sha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "colors": 26,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "codexio-corrected-baseline-1792317795381-real-magic-0-real-magic-palette.gif",
+      "sha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19",
+      "width": 32,
+      "height": 32,
+      "frames": 6,
+      "delay": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": 0,
+      "colors": 12,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "codexio-corrected-baseline-1792317795381-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "sha256": "270f4db2f8da8e0f2c7da29fb6a526046a20c602a7df5268bb6e33b211ddcb0f",
+      "width": 128,
+      "height": 128,
+      "frames": 32,
+      "delay": [
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120
+      ],
+      "loop": 0,
+      "colors": 14,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "codexio-corrected-baseline-1792317795381-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "sha256": "1689433d660b81dbd1c1ae90ebb37c23a0649131cabfc4023c95cbfb8dfc65e0",
+      "width": 256,
+      "height": 256,
+      "frames": 48,
+      "delay": [
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120,
+        60,
+        80,
+        100,
+        120
+      ],
+      "loop": 0,
+      "colors": 14,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "codexio-corrected-baseline-1792317795381-transparent32-0-transparent32-palette.png",
+      "sha256": "e3603df8fd507c1b93d351aa8d615dd67c7ad2678b417d181d2093ebf94ee340",
+      "width": 32,
+      "height": 32,
+      "frames": 1,
+      "colors": 0,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "codexio-corrected-baseline-1792317795381-silhouette32-0-silhouette32-palette.png",
+      "sha256": "1c30399a7a2c430165ca5a350a69db694a8eb83af4bf3364c8288fa696c143bb",
+      "width": 32,
+      "height": 32,
+      "frames": 1,
+      "colors": 1,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "codexio-corrected-baseline-1792317795381-partial-glow64-0-partial-glow64-palette.png",
+      "sha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9",
+      "width": 64,
+      "height": 64,
+      "frames": 1,
+      "colors": 1,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "codexio-corrected-baseline-1792317795381-entropy512-0-entropy512-palette.png",
+      "sha256": "b8af76438dcad5090f6569e89b22f23abe248794918fcc64e739cc94809396cd",
+      "width": 512,
+      "height": 512,
+      "frames": 1,
+      "colors": 64,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    },
+    {
+      "name": "codexio-corrected-baseline-1792317795381-worker-unavailable-0-real-magic-palette.gif",
+      "sha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19",
+      "width": 32,
+      "height": 32,
+      "frames": 6,
+      "delay": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": 0,
+      "colors": 12,
+      "oracle": "independent scalar Oklab nearest; Sharp native decode",
+      "visibleRgbMismatch": 0,
+      "alphaMismatch": 0
+    }
+  ],
+  "errors": [],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 319\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "targetId": "B6A7922A9047E39CDC1D32117B2C2E98",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "lastWall": [
+    {
+      "name": "codexio-corrected-baseline-1792317795381-onebit-partial-alpha-0-partial-glow64.png 64×64  ·  2 colors ",
+      "caption": "64×64  ·  2 colors ",
+      "width": 64,
+      "height": 64
+    }
+  ],
+  "teardown": [
+    {
+      "cycle": 0,
+      "heap": 5356424,
+      "figures": 1
+    },
+    {
+      "cycle": 1,
+      "heap": 5431796,
+      "figures": 1
+    },
+    {
+      "cycle": 2,
+      "heap": 5491008,
+      "figures": 1
+    },
+    {
+      "cycle": 3,
+      "heap": 5533224,
+      "figures": 1
+    },
+    {
+      "cycle": 4,
+      "heap": 5625824,
+      "figures": 1
+    },
+    {
+      "cycle": 5,
+      "heap": 5646640,
+      "figures": 1
+    }
+  ],
+  "failureChecks": [
+    {
+      "kind": "limit",
+      "gate": true,
+      "retry": true
+    },
+    {
+      "kind": "cleanup",
+      "gate": true,
+      "retry": true
+    }
+  ],
+  "workerFallback": true,
+  "largeOnebit": [
+    {
+      "id": "kenney-sheet-1024",
+      "style": "Checker",
+      "caption": "1024×1024  ",
+      "canvas": {
+        "width": 936,
+        "height": 936
+      },
+      "policy": "large sampled pattern metadata may remain unknown; no histogram extension or forced count asserted; binary alpha intentionally omits opacity control"
+    },
+    {
+      "id": "kenney-sheet-2048",
+      "style": "Checker",
+      "caption": "2048×2048  ",
+      "canvas": {
+        "width": 936,
+        "height": 936
+      },
+      "policy": "large sampled pattern metadata may remain unknown; no histogram extension or forced count asserted; binary alpha intentionally omits opacity control"
+    }
+  ],
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T10:04:56.710Z"
+}

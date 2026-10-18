@@ -1,0 +1,501 @@
+{
+  "originalPlan": "../preview-trigger-plan.md",
+  "latencyGate": {
+    "absoluteMs": 5,
+    "relativePercent": 5
+  },
+  "cpuRepeatGate": {
+    "absoluteMs": 5,
+    "relativePercent": 5,
+    "candidateWorsePairs": 4,
+    "roundLimit": 2
+  },
+  "rawHeaderQualification": "First successful receipt erroneously declared8ms/10%. Neither raw header nor raw observations are changed; original5/5 governs both assessments. Future harness header corrected.",
+  "memory": {
+    "baseline": "retention-probe-1792320293818.json",
+    "candidate": "retention-preview-trigger-fixed-1792320712815.json",
+    "baselinePreviewRemovedBackingStorage": 22976754,
+    "candidatePreviewRemovedBackingStorage": 595933,
+    "gateBytes": 2000000,
+    "pass": true
+  },
+  "rounds": [
+    {
+      "source": "preview-focus-1792320897510.json",
+      "errors": [],
+      "closes": 20,
+      "outputs": [
+        {
+          "variant": "baseline",
+          "name": "codexio-preview-focus-1792320897510-0-baseline-palette.png",
+          "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091",
+          "alphaMismatch": 0,
+          "visibleRgbMismatch": 0
+        },
+        {
+          "variant": "candidate",
+          "name": "codexio-preview-focus-1792320897510-0-candidate-palette.png",
+          "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091",
+          "alphaMismatch": 0,
+          "visibleRgbMismatch": 0
+        }
+      ],
+      "methods": {
+        "keyboard": {
+          "eventToSettledMs": {
+            "baseline": {
+              "median": 5.100000023841858,
+              "min": 1.8000000715255737,
+              "max": 11.800000071525574,
+              "values": [
+                2.299999952316284,
+                5.100000023841858,
+                11.800000071525574,
+                1.8000000715255737,
+                8.5
+              ]
+            },
+            "candidate": {
+              "median": 3.399999976158142,
+              "min": 1.7999999523162842,
+              "max": 14.600000023841858,
+              "values": [
+                1.899999976158142,
+                14.600000023841858,
+                11.099999904632568,
+                3.399999976158142,
+                1.7999999523162842
+              ]
+            },
+            "pairedDelta": {
+              "median": -0.3999999761581421,
+              "min": -6.700000047683716,
+              "max": 9.5,
+              "values": [
+                -0.3999999761581421,
+                9.5,
+                -0.7000001668930054,
+                1.5999999046325684,
+                -6.700000047683716
+              ]
+            },
+            "pairedPercent": {
+              "median": -5.932204768220016,
+              "min": -78.8235299727496,
+              "max": 186.2745089331117,
+              "values": [
+                -17.391303671780953,
+                186.2745089331117,
+                -5.932204768220016,
+                88.8888800585715,
+                -78.8235299727496
+              ]
+            },
+            "candidateWorsePairs": 2,
+            "exceedsOriginal5ms5Percent": false
+          },
+          "rendererCpuMs": {
+            "baseline": {
+              "median": 12.385000000000007,
+              "min": 11.894000000000016,
+              "max": 16.41999999999999,
+              "values": [
+                12.385000000000007,
+                11.894000000000016,
+                12.214000000000002,
+                13.612000000000013,
+                16.41999999999999
+              ]
+            },
+            "candidate": {
+              "median": 15.750999999999987,
+              "min": 10.167000000000009,
+              "max": 16.347,
+              "values": [
+                10.167000000000009,
+                15.74600000000001,
+                15.750999999999987,
+                15.841000000000022,
+                16.347
+              ]
+            },
+            "pairedDelta": {
+              "median": 2.22900000000001,
+              "min": -2.217999999999998,
+              "max": 3.851999999999993,
+              "values": [
+                -2.217999999999998,
+                3.851999999999993,
+                3.536999999999985,
+                2.22900000000001,
+                -0.07299999999998974
+              ]
+            },
+            "pairedPercent": {
+              "median": 16.375257126065293,
+              "min": -17.908760597496947,
+              "max": 32.38607701362021,
+              "values": [
+                -17.908760597496947,
+                32.38607701362021,
+                28.9585721303421,
+                16.375257126065293,
+                -0.44457978075511434
+              ]
+            },
+            "candidateWorsePairs": 3,
+            "exceedsOriginal5ms5Percent": false
+          }
+        },
+        "pointer": {
+          "eventToSettledMs": {
+            "baseline": {
+              "median": 1.7000000476837158,
+              "min": 1.5,
+              "max": 1.899999976158142,
+              "values": [
+                1.8000000715255737,
+                1.7000000476837158,
+                1.5999999046325684,
+                1.899999976158142,
+                1.5
+              ]
+            },
+            "candidate": {
+              "median": 1.5999999046325684,
+              "min": 1.2999999523162842,
+              "max": 4.5,
+              "values": [
+                1.5999999046325684,
+                1.2999999523162842,
+                1.399999976158142,
+                4.5,
+                1.6999999284744263
+              ]
+            },
+            "pairedDelta": {
+              "median": -0.19999992847442627,
+              "min": -0.40000009536743164,
+              "max": 2.600000023841858,
+              "values": [
+                -0.20000016689300537,
+                -0.40000009536743164,
+                -0.19999992847442627,
+                2.600000023841858,
+                0.19999992847442627
+              ]
+            },
+            "pairedPercent": {
+              "median": -11.111119941428505,
+              "min": -23.529416714572438,
+              "max": 136.84210823513467,
+              "values": [
+                -11.111119941428505,
+                -23.529416714572438,
+                -12.49999627470948,
+                136.84210823513467,
+                13.333328564961752
+              ]
+            },
+            "candidateWorsePairs": 2,
+            "exceedsOriginal5ms5Percent": false
+          },
+          "rendererCpuMs": {
+            "baseline": {
+              "median": 34.40199999999999,
+              "min": 31.454000000000036,
+              "max": 43.45199999999999,
+              "values": [
+                34.40199999999999,
+                31.454000000000036,
+                39.81499999999999,
+                31.691999999999997,
+                43.45199999999999
+              ]
+            },
+            "candidate": {
+              "median": 38.14899999999999,
+              "min": 31.613000000000003,
+              "max": 51.18100000000003,
+              "values": [
+                51.18100000000003,
+                38.138000000000005,
+                31.613000000000003,
+                44.756000000000014,
+                38.14899999999999
+              ]
+            },
+            "pairedDelta": {
+              "median": 6.683999999999969,
+              "min": -8.201999999999988,
+              "max": 16.779000000000046,
+              "values": [
+                16.779000000000046,
+                6.683999999999969,
+                -8.201999999999988,
+                13.064000000000018,
+                -5.303000000000004
+              ]
+            },
+            "pairedPercent": {
+              "median": 21.25007948114695,
+              "min": -20.60027627778473,
+              "max": 48.773327132143635,
+              "values": [
+                48.773327132143635,
+                21.25007948114695,
+                -20.60027627778473,
+                41.221759434557676,
+                -12.20427137991348
+              ]
+            },
+            "candidateWorsePairs": 3,
+            "exceedsOriginal5ms5Percent": true
+          }
+        }
+      }
+    },
+    {
+      "source": "preview-focus-1792321019726.json",
+      "errors": [],
+      "closes": 20,
+      "outputs": [
+        {
+          "variant": "baseline",
+          "name": "codexio-preview-focus-1792321019726-0-baseline-palette.png",
+          "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091",
+          "alphaMismatch": 0,
+          "visibleRgbMismatch": 0
+        },
+        {
+          "variant": "candidate",
+          "name": "codexio-preview-focus-1792321019726-0-candidate-palette.png",
+          "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091",
+          "alphaMismatch": 0,
+          "visibleRgbMismatch": 0
+        }
+      ],
+      "methods": {
+        "keyboard": {
+          "eventToSettledMs": {
+            "baseline": {
+              "median": 13.299999952316284,
+              "min": 1.899999976158142,
+              "max": 15.400000095367432,
+              "values": [
+                1.899999976158142,
+                13.199999928474426,
+                13.299999952316284,
+                14.799999952316284,
+                15.400000095367432
+              ]
+            },
+            "candidate": {
+              "median": 2,
+              "min": 1.399999976158142,
+              "max": 13.099999904632568,
+              "values": [
+                13.099999904632568,
+                2,
+                2,
+                2,
+                1.399999976158142
+              ]
+            },
+            "pairedDelta": {
+              "median": -11.299999952316284,
+              "min": -14.00000011920929,
+              "max": 11.199999928474426,
+              "values": [
+                11.199999928474426,
+                -11.199999928474426,
+                -11.299999952316284,
+                -12.799999952316284,
+                -14.00000011920929
+              ]
+            },
+            "pairedPercent": {
+              "median": -84.96240596112419,
+              "min": -90.90909112020536,
+              "max": 589.4736878429425,
+              "values": [
+                589.4736878429425,
+                -84.84848476638479,
+                -84.96240596112419,
+                -86.48648644294767,
+                -90.90909112020536
+              ]
+            },
+            "candidateWorsePairs": 1,
+            "exceedsOriginal5ms5Percent": false
+          },
+          "rendererCpuMs": {
+            "baseline": {
+              "median": 13.597999999999999,
+              "min": 10.20299999999999,
+              "max": 15.07599999999998,
+              "values": [
+                14.409000000000006,
+                13.597999999999999,
+                15.07599999999998,
+                13.521000000000004,
+                10.20299999999999
+              ]
+            },
+            "candidate": {
+              "median": 15.152,
+              "min": 11.381999999999975,
+              "max": 16.006999999999994,
+              "values": [
+                16.006999999999994,
+                15.888000000000012,
+                15.152,
+                13.782000000000016,
+                11.381999999999975
+              ]
+            },
+            "pairedDelta": {
+              "median": 1.1789999999999843,
+              "min": 0.07600000000002005,
+              "max": 2.2900000000000134,
+              "values": [
+                1.5979999999999883,
+                2.2900000000000134,
+                0.07600000000002005,
+                0.26100000000001167,
+                1.1789999999999843
+              ]
+            },
+            "pairedPercent": {
+              "median": 11.090290790478088,
+              "min": 0.5041124966836041,
+              "max": 16.840711869392656,
+              "values": [
+                11.090290790478088,
+                16.840711869392656,
+                0.5041124966836041,
+                1.9303305968494313,
+                11.55542487503661
+              ]
+            },
+            "candidateWorsePairs": 5,
+            "exceedsOriginal5ms5Percent": false
+          }
+        },
+        "pointer": {
+          "eventToSettledMs": {
+            "baseline": {
+              "median": 1.600000023841858,
+              "min": 1.100000023841858,
+              "max": 2.299999952316284,
+              "values": [
+                1.4000000953674316,
+                1.600000023841858,
+                2.299999952316284,
+                1.100000023841858,
+                1.899999976158142
+              ]
+            },
+            "candidate": {
+              "median": 1.600000023841858,
+              "min": 1.2999999523162842,
+              "max": 2.200000047683716,
+              "values": [
+                1.5,
+                1.7000000476837158,
+                1.600000023841858,
+                2.200000047683716,
+                1.2999999523162842
+              ]
+            },
+            "pairedDelta": {
+              "median": 0.09999990463256836,
+              "min": -0.6999999284744263,
+              "max": 1.100000023841858,
+              "values": [
+                0.09999990463256836,
+                0.10000002384185791,
+                -0.6999999284744263,
+                1.100000023841858,
+                -0.6000000238418579
+              ]
+            },
+            "pairedPercent": {
+              "median": 6.2500013969838415,
+              "min": -31.578949019519264,
+              "max": 100,
+              "values": [
+                7.142849844329708,
+                6.2500013969838415,
+                -30.43478012986349,
+                100,
+                -31.578949019519264
+              ]
+            },
+            "candidateWorsePairs": 3,
+            "exceedsOriginal5ms5Percent": false
+          },
+          "rendererCpuMs": {
+            "baseline": {
+              "median": 27.851000000000013,
+              "min": 25.693000000000023,
+              "max": 43.35600000000001,
+              "values": [
+                25.693000000000023,
+                43.35600000000001,
+                36.51500000000002,
+                27.851000000000013,
+                27.042999999999985
+              ]
+            },
+            "candidate": {
+              "median": 37.87499999999999,
+              "min": 32.465999999999994,
+              "max": 41.40300000000002,
+              "values": [
+                34.748999999999974,
+                41.40300000000002,
+                39.60800000000003,
+                32.465999999999994,
+                37.87499999999999
+              ]
+            },
+            "pairedDelta": {
+              "median": 4.614999999999981,
+              "min": -1.9529999999999887,
+              "max": 10.832000000000008,
+              "values": [
+                9.055999999999951,
+                -1.9529999999999887,
+                3.0930000000000106,
+                4.614999999999981,
+                10.832000000000008
+              ]
+            },
+            "pairedPercent": {
+              "median": 16.570320634806574,
+              "min": -4.504566841959563,
+              "max": 40.05472765595538,
+              "values": [
+                35.24695442338358,
+                -4.504566841959563,
+                8.470491578803257,
+                16.570320634806574,
+                40.05472765595538
+              ]
+            },
+            "candidateWorsePairs": 4,
+            "exceedsOriginal5ms5Percent": false
+          }
+        }
+      }
+    }
+  ],
+  "result": {
+    "memoryGate": "passed",
+    "focusCaptionsAndExactPng": "passed40closes,four independentlydecoded PNGs",
+    "observedCloseEventPortionLatency": "no pairedmedian loss>5ms AND5%",
+    "broaderCpu": "First pointer pairedmedian+6.684ms/+21.25% (3/5worse). Unchanged authorized repeat+4.615ms/+16.57% (4/5worse) misses5ms absolute criterion. Concern remains directionally adverse; not proven no regression. No thirdrepeat.",
+    "limitations": "Closeevent→nexttask is only part of closeworkflow; rendererCPU covers broader CDP action→settledfocus/DOM and is not purehandlerCPU. No click→closed wall time or worker/GPUCPU bound."
+  }
+}

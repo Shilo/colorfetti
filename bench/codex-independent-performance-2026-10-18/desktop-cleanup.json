@@ -1,0 +1,43 @@
+{
+  "completed": "2026-10-18T11:12:12.8638082Z",
+  "exactVerifiedOwnedHelpers": [
+    {
+      "ProcessId": 25924,
+      "ExecutablePath": "C:\\Program Files\\nodejs\\node.exe",
+      "CommandLine": "\"C:\\Program Files\\nodejs\\node.exe\" bench/codex-independent-performance-2026-10-18/server.mjs .tmp/codex-independent-performance-2026-10-18/final/dist 5406"
+    },
+    {
+      "ProcessId": 40584,
+      "ExecutablePath": "C:\\Program Files\\nodejs\\node.exe",
+      "CommandLine": "\"C:\\Program Files\\nodejs\\node.exe\" bench/codex-independent-performance-2026-10-18/server.mjs"
+    },
+    {
+      "ProcessId": 42036,
+      "ExecutablePath": "C:\\Program Files\\nodejs\\node.exe",
+      "CommandLine": "\"C:\\Program Files\\nodejs\\node.exe\" bench/codex-independent-performance-2026-10-18/server.mjs .tmp/codex-independent-performance-2026-10-18/current/dist 5392"
+    },
+    {
+      "ProcessId": 44736,
+      "ExecutablePath": "C:\\Program Files\\nodejs\\node.exe",
+      "CommandLine": "\"C:\\Program Files\\nodejs\\node.exe\" bench/codex-independent-performance-2026-10-18/core/serve-variants.mjs"
+    },
+    {
+      "ProcessId": 45908,
+      "ExecutablePath": "C:\\Program Files\\nodejs\\node.exe",
+      "CommandLine": "\"C:\\Program Files\\nodejs\\node.exe\" bench/codex-independent-performance-2026-10-18/server.mjs .tmp/codex-independent-performance-2026-10-18/current/dist 5393"
+    },
+    {
+      "ProcessId": 50312,
+      "ExecutablePath": "C:\\Program Files\\nodejs\\node.exe",
+      "CommandLine": "\"C:\\Program Files\\nodejs\\node.exe\" bench/codex-independent-performance-2026-10-18/server.mjs .tmp/codex-independent-performance-2026-10-18/preview-trigger/dist 5409"
+    },
+    {
+      "ProcessId": 50500,
+      "ExecutablePath": "C:\\Program Files\\nodejs\\node.exe",
+      "CommandLine": "\"C:\\Program Files\\nodejs\\node.exe\" bench/codex-independent-performance-2026-10-18/core/row-cursor-serve.mjs"
+    }
+  ],
+  "remainingOwnedProcessIds": [],
+  "listenersInAuditPortRangeAfter": [],
+  "note": "Only seven exact Node audit helpers stopped after fresh executable/command-line verification. Kernel5400 and UI5401-5405 were already stopped. Other processes preserved. Four owned Codex tabs5,6,7,8 closed; viewport reset. Native cleanup is io-android/cleanup.json. Known task downloads retained as explicit user-visible outputs and copied into evidence; Downloads was not enumerated or purged."
+}

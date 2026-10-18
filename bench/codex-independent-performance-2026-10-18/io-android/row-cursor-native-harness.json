@@ -1,0 +1,8 @@
+{
+  "source": "ab-compression-action.mjs",
+  "sourceSha256": "8df1d0a9a7732b6f64ed7982f5eee21273cb5fc22663f1e84fd7ee131805556a",
+  "generatedSha256": "a345c2a3ee92d323650081c6f60e88d1c4ee9023f4cfe49bae36ee1612044e50",
+  "sourceBuildManifest": "../core/row-cursor-build-manifest.json",
+  "fixedPlan": "../core/row-cursor-plan.json",
+  "stage": "Research only, exact target before adverse; no new runtime edit."
+}

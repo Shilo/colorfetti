@@ -1,0 +1,6691 @@
+{
+  "env": {
+    "runId": "codex-1792321485544-f9o2vl",
+    "url": "http://127.0.0.1:5406/?audit=1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "dpr": 1
+    },
+    "visibility": "visible",
+    "entryTypes": [
+      "element",
+      "event",
+      "first-input",
+      "interaction-contentful-paint",
+      "largest-contentful-paint",
+      "layout-shift",
+      "long-animation-frame",
+      "longtask",
+      "mark",
+      "measure",
+      "navigation",
+      "paint",
+      "resource",
+      "soft-navigation",
+      "visibility-state"
+    ],
+    "probeRevision": "overlap-retained-history-takeRecords-v3",
+    "qualification": "Finite observation windows, not conversion latency. No app CPU or global memory bound. Own rAF loop excluded from appRafCalls."
+  },
+  "startup": {
+    "enabledControlAt": 98.70000000298023,
+    "control": "Selected palette: Auto, 0 colors",
+    "firstArtPaintAt": 164.79999999701977
+  },
+  "navigation": [
+    {
+      "load": 121.89999999850988,
+      "domContentLoaded": 114.39999999850988,
+      "transferSize": 4958
+    }
+  ],
+  "resources": [
+    {
+      "name": "http://127.0.0.1:5406/audit-probe.js",
+      "transferSize": 7314,
+      "duration": 12.199999995529652,
+      "initiatorType": "script"
+    },
+    {
+      "name": "https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap",
+      "transferSize": 0,
+      "duration": 12.399999998509884,
+      "initiatorType": "link"
+    },
+    {
+      "name": "http://127.0.0.1:5406/assets/index-lP1vzTOF.js",
+      "transferSize": 274482,
+      "duration": 13.300000004470348,
+      "initiatorType": "script"
+    },
+    {
+      "name": "http://127.0.0.1:5406/assets/index-VE9_tUgX.css",
+      "transferSize": 168302,
+      "duration": 12.700000002980232,
+      "initiatorType": "link"
+    },
+    {
+      "name": "http://127.0.0.1:5406/assets/quantize-DsvDuXDJ.js",
+      "transferSize": 13541,
+      "duration": 13.100000001490116,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 5,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/favicon-dark.svg?v=2",
+      "transferSize": 912,
+      "duration": 1.7999999970197678,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5406/assets/palette-generated-client-ChJiN1kx.js",
+      "transferSize": 4307,
+      "duration": 1.8000000044703484,
+      "initiatorType": "script"
+    },
+    {
+      "name": "http://127.0.0.1:5406/favicon-dark.ico?v=2",
+      "transferSize": 15386,
+      "duration": 2.399999998509884,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5406/assets/palette-generated-worker-xpoMRM2c.js",
+      "transferSize": 10129,
+      "duration": -4.299999997019768,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5406/assets/palette-usage-gJXy8H5h.js",
+      "transferSize": 1270,
+      "duration": 3.100000001490116,
+      "initiatorType": "script"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 5.800000004470348,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 7.300000004470348,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 4.700000002980232,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/assets/image-import-client-De419Y2G.js",
+      "transferSize": 5895,
+      "duration": 4.399999998509884,
+      "initiatorType": "script"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 3.0999999940395355,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 3.399999998509884,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 3.8000000044703484,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 42.79999999701977,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 3.600000001490116,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 3.899999998509884,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 16.600000001490116,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 11,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 5.300000004470348,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 4.700000002980232,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 5.399999998509884,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 5.700000002980232,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 5,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 10,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 4.199999995529652,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 4.700000002980232,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 5.5999999940395355,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5406/audit-receipt?id=codex-1792321485544-f9o2vl",
+      "transferSize": 300,
+      "duration": 13.699999995529652,
+      "initiatorType": "fetch"
+    }
+  ],
+  "records": [
+    {
+      "event": {
+        "type": "click",
+        "label": "Got it"
+      },
+      "start": 11268.39999999851,
+      "end": 11562.5,
+      "visibility": "visible",
+      "rafP95": 16.900000000001455,
+      "rafMax": 16.900000000001455,
+      "frameSamples": 17,
+      "appRafCalls": 2,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerdown",
+          "start": 11264.70000000298,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 1.1000000014901161,
+          "interactionId": 9033
+        },
+        {
+          "type": "mousedown",
+          "start": 11264.70000000298,
+          "duration": 16,
+          "inputDelay": 1.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 11267.60000000149,
+          "duration": 32,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0.30000000447034836,
+          "interactionId": 9033
+        },
+        {
+          "type": "mouseup",
+          "start": 11267.60000000149,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 11267.60000000149,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 3.5999999940395355,
+          "interactionId": 9033
+        },
+        {
+          "type": "pointerout",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11281.89999999851,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerout",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.600000001490116,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11535.29999999702,
+          "duration": 16,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 13317023,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Add images"
+      },
+      "start": 11563,
+      "end": 11563.10000000149,
+      "visibility": "visible",
+      "rafP95": 0,
+      "rafMax": 0,
+      "frameSamples": 0,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 13317023,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "INPUT",
+        "value": ""
+      },
+      "start": 11563.29999999702,
+      "end": 11811.20000000298,
+      "visibility": "visible",
+      "rafP95": 16.799999999999272,
+      "rafMax": 16.799999999999272,
+      "frameSamples": 15,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 13393576,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "change",
+        "label": "INPUT",
+        "value": "C:\\fakepath\\dungeon-wizard.png"
+      },
+      "start": 11812,
+      "end": 11909.20000000298,
+      "visibility": "visible",
+      "rafP95": 16.700000000000728,
+      "rafMax": 16.700000000000728,
+      "frameSamples": 6,
+      "appRafCalls": 9,
+      "paints": [
+        {
+          "at": 11851.39999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 11854,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerover",
+          "start": 11848.20000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11848.20000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11848.20000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0.30000000447034836,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 11848.20000000298,
+          "duration": 16,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11848.20000000298,
+          "duration": 16,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11848.20000000298,
+          "duration": 16,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerout",
+          "start": 11852,
+          "duration": 32,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 11852,
+          "duration": 32,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11852,
+          "duration": 32,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 11852,
+          "duration": 32,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 11852,
+          "duration": 32,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11852,
+          "duration": 32,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerout",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.399999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.399999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.399999998509884,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 11907.10000000149,
+          "duration": 40,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0.20000000298023224,
+          "interactionId": 9047
+        },
+        {
+          "type": "mousedown",
+          "start": 11907.10000000149,
+          "duration": 40,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 11909,
+          "duration": 40,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.10000000149011612,
+          "interactionId": 9047
+        },
+        {
+          "type": "mouseup",
+          "start": 11909,
+          "duration": 40,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 11909,
+          "duration": 40,
+          "inputDelay": 0.20000000298023224,
+          "processing": 15.5,
+          "interactionId": 9047
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 3,
+      "transferBytes": 108,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 14195624,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Palette"
+      },
+      "start": 11909.89999999851,
+      "end": 12192.89999999851,
+      "visibility": "visible",
+      "rafP95": 17,
+      "rafMax": 17,
+      "frameSamples": 17,
+      "appRafCalls": 7,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.399999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.399999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.399999998509884,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.5,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 11885.70000000298,
+          "duration": 48,
+          "inputDelay": 13.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 11907.10000000149,
+          "duration": 40,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0.20000000298023224,
+          "interactionId": 9047
+        },
+        {
+          "type": "mousedown",
+          "start": 11907.10000000149,
+          "duration": 40,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 11909,
+          "duration": 40,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.10000000149011612,
+          "interactionId": 9047
+        },
+        {
+          "type": "mouseup",
+          "start": 11909,
+          "duration": 40,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 11909,
+          "duration": 40,
+          "inputDelay": 0.20000000298023224,
+          "processing": 15.5,
+          "interactionId": 9047
+        },
+        {
+          "type": "pointerout",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 12190.89999999851,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.19999999552965164,
+          "interactionId": 9054
+        },
+        {
+          "type": "mousedown",
+          "start": 12190.89999999851,
+          "duration": 24,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 12192.60000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 9054
+        },
+        {
+          "type": "mouseup",
+          "start": 12192.60000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 12192.60000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 3.7000000029802322,
+          "interactionId": 9054
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 13457778,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "Auto",
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "PICO-8"
+      },
+      "start": 12193.70000000298,
+      "end": 14697.89999999851,
+      "visibility": "visible",
+      "rafP95": 17.100000000000364,
+      "rafMax": 33.30000000000109,
+      "frameSamples": 148,
+      "appRafCalls": 0,
+      "paints": [
+        {
+          "at": 12201,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 12167.5,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 12190.89999999851,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.19999999552965164,
+          "interactionId": 9054
+        },
+        {
+          "type": "mousedown",
+          "start": 12190.89999999851,
+          "duration": 24,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 12192.60000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 9054
+        },
+        {
+          "type": "mouseup",
+          "start": 12192.60000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 12192.60000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 3.7000000029802322,
+          "interactionId": 9054
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 13840294,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Save image"
+      },
+      "start": 44126.29999999702,
+      "end": 44128,
+      "visibility": "visible",
+      "rafP95": 0,
+      "rafMax": 0,
+      "frameSamples": 0,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.200000002980232,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.300000004470348,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 44124.39999999851,
+          "duration": 24,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.29999999701976776,
+          "interactionId": 9068
+        },
+        {
+          "type": "mousedown",
+          "start": 44124.39999999851,
+          "duration": 24,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 44126.10000000149,
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.09999999403953552,
+          "interactionId": 9068
+        },
+        {
+          "type": "mouseup",
+          "start": 44126.10000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 44126.10000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 5.300000004470348,
+          "interactionId": 9068
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 1,
+      "urlsRevoked": 0,
+      "liveUrls": 2,
+      "heapUsed": 9963517,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "A"
+      },
+      "start": 44129.10000000149,
+      "end": 44426.20000000298,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.80000000000291,
+      "frameSamples": 18,
+      "appRafCalls": 2,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.200000002980232,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.300000004470348,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44100.79999999702,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 44124.39999999851,
+          "duration": 24,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.29999999701976776,
+          "interactionId": 9068
+        },
+        {
+          "type": "mousedown",
+          "start": 44124.39999999851,
+          "duration": 24,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 44126.10000000149,
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.09999999403953552,
+          "interactionId": 9068
+        },
+        {
+          "type": "mouseup",
+          "start": 44126.10000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 44126.10000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 5.300000004470348,
+          "interactionId": 9068
+        },
+        {
+          "type": "pointerout",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 44424.29999999702,
+          "duration": 40,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.19999999552965164,
+          "interactionId": 9075
+        },
+        {
+          "type": "mousedown",
+          "start": 44424.29999999702,
+          "duration": 40,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 44426,
+          "duration": 40,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.10000000149011612,
+          "interactionId": 9075
+        },
+        {
+          "type": "mouseup",
+          "start": 44426,
+          "duration": 40,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 44426,
+          "duration": 40,
+          "inputDelay": 0.20000000298023224,
+          "processing": 11.699999995529652,
+          "interactionId": 9075
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 2,
+      "heapUsed": 10185223,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Palette"
+      },
+      "start": 44427.10000000149,
+      "end": 44733.70000000298,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.80000000000291,
+      "frameSamples": 19,
+      "appRafCalls": 7,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 14.899999998509884,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44400.70000000298,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 44424.29999999702,
+          "duration": 40,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.19999999552965164,
+          "interactionId": 9075
+        },
+        {
+          "type": "mousedown",
+          "start": 44424.29999999702,
+          "duration": 40,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 44426,
+          "duration": 40,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.10000000149011612,
+          "interactionId": 9075
+        },
+        {
+          "type": "mouseup",
+          "start": 44426,
+          "duration": 40,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 44426,
+          "duration": 40,
+          "inputDelay": 0.20000000298023224,
+          "processing": 11.699999995529652,
+          "interactionId": 9075
+        },
+        {
+          "type": "pointerout",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.5,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 44731.20000000298,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0.29999999701976776,
+          "interactionId": 9082
+        },
+        {
+          "type": "mousedown",
+          "start": 44731.20000000298,
+          "duration": 16,
+          "inputDelay": 0.5999999940395355,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 44733.39999999851,
+          "duration": 32,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.10000000149011612,
+          "interactionId": 9082
+        },
+        {
+          "type": "mouseup",
+          "start": 44733.39999999851,
+          "duration": 32,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 44733.39999999851,
+          "duration": 32,
+          "inputDelay": 0.30000000447034836,
+          "processing": 18.899999998509884,
+          "interactionId": 9082
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 2,
+      "heapUsed": 10058024,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Import palette"
+      },
+      "start": 44734.60000000149,
+      "end": 47247.70000000298,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 33,
+      "frameSamples": 149,
+      "appRafCalls": 2,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.5,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.600000001490116,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.699999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 44711.60000000149,
+          "duration": 24,
+          "inputDelay": 4.799999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 44731.20000000298,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0.29999999701976776,
+          "interactionId": 9082
+        },
+        {
+          "type": "mousedown",
+          "start": 44731.20000000298,
+          "duration": 16,
+          "inputDelay": 0.5999999940395355,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 44733.39999999851,
+          "duration": 32,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.10000000149011612,
+          "interactionId": 9082
+        },
+        {
+          "type": "mouseup",
+          "start": 44733.39999999851,
+          "duration": 32,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 44733.39999999851,
+          "duration": 32,
+          "inputDelay": 0.30000000447034836,
+          "processing": 18.899999998509884,
+          "interactionId": 9082
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 2,
+      "heapUsed": 10345983,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion",
+        "Image or file"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Paste colors"
+      },
+      "start": 49475.60000000149,
+      "end": 51981.89999999851,
+      "visibility": "visible",
+      "rafP95": 16.900000000001455,
+      "rafMax": 17.599999999998545,
+      "frameSamples": 150,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.700000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.700000002980232,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.800000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.800000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.800000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49450.79999999702,
+          "duration": 32,
+          "inputDelay": 14.800000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 49473.5,
+          "duration": 56,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.19999999552965164,
+          "interactionId": 9089
+        },
+        {
+          "type": "mousedown",
+          "start": 49473.5,
+          "duration": 56,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 49475.29999999702,
+          "duration": 56,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.10000000149011612,
+          "interactionId": 9089
+        },
+        {
+          "type": "mouseup",
+          "start": 49475.29999999702,
+          "duration": 56,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 49475.29999999702,
+          "duration": 56,
+          "inputDelay": 0.30000000447034836,
+          "processing": 1.8999999985098839,
+          "interactionId": 9089
+        },
+        {
+          "type": "pointerout",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49481.89999999851,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 2,
+      "heapUsed": 9984838,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion",
+        "Paste colors"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "paste",
+        "label": "Colors or Lospec link"
+      },
+      "start": 54845.79999999702,
+      "end": 54969.29999999702,
+      "visibility": "visible",
+      "rafP95": 16.700000000004366,
+      "rafMax": 16.700000000004366,
+      "frameSamples": 8,
+      "appRafCalls": 2,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "keydown",
+          "start": 54886.60000000149,
+          "duration": 48,
+          "inputDelay": 0.19999999552965164,
+          "processing": 1.6000000014901161,
+          "interactionId": 9096
+        },
+        {
+          "type": "keyup",
+          "start": 54892.5,
+          "duration": 40,
+          "inputDelay": 0,
+          "processing": 0.20000000298023224,
+          "interactionId": 9096
+        },
+        {
+          "type": "pointerout",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 54964.39999999851,
+          "duration": 32,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.09999999403953552,
+          "interactionId": 9103
+        },
+        {
+          "type": "mousedown",
+          "start": 54964.39999999851,
+          "duration": 32,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 54968.89999999851,
+          "duration": 48,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.10000000149011612,
+          "interactionId": 9103
+        },
+        {
+          "type": "mouseup",
+          "start": 54968.89999999851,
+          "duration": 48,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 54968.89999999851,
+          "duration": 48,
+          "inputDelay": 0.3999999985098839,
+          "processing": 17.200000002980232,
+          "interactionId": 9103
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 9802152,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion",
+        "Paste colors"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Review colors"
+      },
+      "start": 54970.60000000149,
+      "end": 57481,
+      "visibility": "visible",
+      "rafP95": 16.900000000001455,
+      "rafMax": 33.19999999999709,
+      "frameSamples": 148,
+      "appRafCalls": 2,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 54936.79999999702,
+          "duration": 48,
+          "inputDelay": 12.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 54964.39999999851,
+          "duration": 32,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.09999999403953552,
+          "interactionId": 9103
+        },
+        {
+          "type": "mousedown",
+          "start": 54964.39999999851,
+          "duration": 32,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 54968.89999999851,
+          "duration": 48,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.10000000149011612,
+          "interactionId": 9103
+        },
+        {
+          "type": "mouseup",
+          "start": 54968.89999999851,
+          "duration": 48,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 54968.89999999851,
+          "duration": 48,
+          "inputDelay": 0.3999999985098839,
+          "processing": 17.200000002980232,
+          "interactionId": 9103
+        },
+        {
+          "type": "pointerout",
+          "start": 54988.5,
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.19999999552965164,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 54988.5,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 54988.5,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 54988.5,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 54988.5,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 54988.5,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 54988.5,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 54988.5,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 54988.5,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 54988.5,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 10410419,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion",
+        "Paste colors"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Next"
+      },
+      "start": 66126.10000000149,
+      "end": 66445.5,
+      "visibility": "visible",
+      "rafP95": 33,
+      "rafMax": 33,
+      "frameSamples": 18,
+      "appRafCalls": 4,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.399999998509884,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 66100.10000000149,
+          "duration": 32,
+          "inputDelay": 15.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 66124.10000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0.20000000298023224,
+          "interactionId": 9110
+        },
+        {
+          "type": "mousedown",
+          "start": 66124.10000000149,
+          "duration": 24,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 66125.79999999702,
+          "duration": 24,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 9110
+        },
+        {
+          "type": "mouseup",
+          "start": 66125.79999999702,
+          "duration": 24,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 66125.79999999702,
+          "duration": 24,
+          "inputDelay": 0.20000000298023224,
+          "processing": 5.899999998509884,
+          "interactionId": 9110
+        },
+        {
+          "type": "pointerout",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.5,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 66443.39999999851,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.19999999552965164,
+          "interactionId": 9117
+        },
+        {
+          "type": "mousedown",
+          "start": 66443.39999999851,
+          "duration": 24,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 66445.29999999702,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.10000000149011612,
+          "interactionId": 9117
+        },
+        {
+          "type": "mouseup",
+          "start": 66445.29999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 66445.29999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 6.899999998509884,
+          "interactionId": 9117
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 10583730,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion",
+        "Paste colors"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Previous"
+      },
+      "start": 66446.79999999702,
+      "end": 66781.20000000298,
+      "visibility": "visible",
+      "rafP95": 16.89999999999418,
+      "rafMax": 16.89999999999418,
+      "frameSamples": 20,
+      "appRafCalls": 4,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.5,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 66417.70000000298,
+          "duration": 32,
+          "inputDelay": 14.599999994039536,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 66443.39999999851,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.19999999552965164,
+          "interactionId": 9117
+        },
+        {
+          "type": "mousedown",
+          "start": 66443.39999999851,
+          "duration": 24,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 66445.29999999702,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.10000000149011612,
+          "interactionId": 9117
+        },
+        {
+          "type": "mouseup",
+          "start": 66445.29999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 66445.29999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 6.899999998509884,
+          "interactionId": 9117
+        },
+        {
+          "type": "pointerout",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.199999995529652,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.299999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.299999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.299999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.299999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.299999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.299999997019768,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.299999997019768,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.399999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.399999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.399999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.399999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 66742.60000000149,
+          "duration": 40,
+          "inputDelay": 8.600000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 66777.70000000298,
+          "duration": 40,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0.5,
+          "interactionId": 9124
+        },
+        {
+          "type": "mousedown",
+          "start": 66777.70000000298,
+          "duration": 40,
+          "inputDelay": 0.8999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 66780.70000000298,
+          "duration": 32,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0.20000000298023224,
+          "interactionId": 9124
+        },
+        {
+          "type": "mouseup",
+          "start": 66780.70000000298,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 66780.70000000298,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 10.699999995529652,
+          "interactionId": 9124
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 11284801,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion",
+        "Paste colors"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Close palette editor"
+      },
+      "start": 66783.20000000298,
+      "end": 67105.20000000298,
+      "visibility": "visible",
+      "rafP95": 17.89999999999418,
+      "rafMax": 17.89999999999418,
+      "frameSamples": 20,
+      "appRafCalls": 4,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerdown",
+          "start": 66777.70000000298,
+          "duration": 40,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0.5,
+          "interactionId": 9124
+        },
+        {
+          "type": "mousedown",
+          "start": 66777.70000000298,
+          "duration": 40,
+          "inputDelay": 0.8999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 66780.70000000298,
+          "duration": 32,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0.20000000298023224,
+          "interactionId": 9124
+        },
+        {
+          "type": "mouseup",
+          "start": 66780.70000000298,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 66780.70000000298,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 10.699999995529652,
+          "interactionId": 9124
+        },
+        {
+          "type": "pointerout",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 66792.20000000298,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerout",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 10.700000002980232,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 10.800000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 10.800000004470348,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 10.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 10.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 10.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 10.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 10.899999998509884,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 10.899999998509884,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 11,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 11,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 11,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 11,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 11,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 11,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67071.89999999851,
+          "duration": 24,
+          "inputDelay": 11,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 67099.79999999702,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0.8000000044703484,
+          "interactionId": 9131
+        },
+        {
+          "type": "mousedown",
+          "start": 67099.79999999702,
+          "duration": 32,
+          "inputDelay": 1.4000000059604645,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 67104.89999999851,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 9131
+        },
+        {
+          "type": "mouseup",
+          "start": 67104.89999999851,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 67104.89999999851,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 6.199999995529652,
+          "interactionId": 9131
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 10941967,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Palette"
+      },
+      "start": 67106.79999999702,
+      "end": 67403.10000000149,
+      "visibility": "visible",
+      "rafP95": 17.10000000000582,
+      "rafMax": 17.10000000000582,
+      "frameSamples": 18,
+      "appRafCalls": 5,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerdown",
+          "start": 67099.79999999702,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0.8000000044703484,
+          "interactionId": 9131
+        },
+        {
+          "type": "mousedown",
+          "start": 67099.79999999702,
+          "duration": 32,
+          "inputDelay": 1.4000000059604645,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 67104.89999999851,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 9131
+        },
+        {
+          "type": "mouseup",
+          "start": 67104.89999999851,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 67104.89999999851,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 6.199999995529652,
+          "interactionId": 9131
+        },
+        {
+          "type": "keydown",
+          "start": 67402.10000000149,
+          "duration": 48,
+          "inputDelay": 0.5,
+          "processing": 0.3999999985098839,
+          "interactionId": 9138
+        },
+        {
+          "type": "keypress",
+          "start": 67402.10000000149,
+          "duration": 48,
+          "inputDelay": 0.8999999985098839,
+          "processing": 23,
+          "interactionId": 9138
+        },
+        {
+          "type": "click",
+          "start": 67402.10000000149,
+          "duration": 48,
+          "inputDelay": 0.8999999985098839,
+          "processing": 22.899999998509884,
+          "interactionId": 9138
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 11377360,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Preview dungeon-wizard.png"
+      },
+      "start": 67407.39999999851,
+      "end": 67452.5,
+      "visibility": "visible",
+      "rafP95": 16.69999999999709,
+      "rafMax": 16.69999999999709,
+      "frameSamples": 3,
+      "appRafCalls": 4,
+      "paints": [
+        {
+          "at": 67430.5,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "keydown",
+          "start": 67402.10000000149,
+          "duration": 48,
+          "inputDelay": 0.5,
+          "processing": 0.3999999985098839,
+          "interactionId": 9138
+        },
+        {
+          "type": "keypress",
+          "start": 67402.10000000149,
+          "duration": 48,
+          "inputDelay": 0.8999999985098839,
+          "processing": 23,
+          "interactionId": 9138
+        },
+        {
+          "type": "click",
+          "start": 67402.10000000149,
+          "duration": 48,
+          "inputDelay": 0.8999999985098839,
+          "processing": 22.899999998509884,
+          "interactionId": 9138
+        },
+        {
+          "type": "pointerout",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67426.10000000149,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "keyup",
+          "start": 67430.70000000298,
+          "duration": 32,
+          "inputDelay": 0.6999999955296516,
+          "processing": 0.10000000149011612,
+          "interactionId": 9138
+        },
+        {
+          "type": "pointerout",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.09999999403953552,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "keydown",
+          "start": 67452.10000000149,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.29999999701976776,
+          "interactionId": 9145
+        },
+        {
+          "type": "keypress",
+          "start": 67452.10000000149,
+          "duration": 48,
+          "inputDelay": 0.3999999985098839,
+          "processing": 3.899999998509884,
+          "interactionId": 9145
+        },
+        {
+          "type": "click",
+          "start": 67452.10000000149,
+          "duration": 48,
+          "inputDelay": 0.3999999985098839,
+          "processing": 3.899999998509884,
+          "interactionId": 9145
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 11377360,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Show original image",
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Close preview"
+      },
+      "start": 67454,
+      "end": 69964.20000000298,
+      "visibility": "visible",
+      "rafP95": 17,
+      "rafMax": 33.10000000000582,
+      "frameSamples": 147,
+      "appRafCalls": 2,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "keyup",
+          "start": 67430.70000000298,
+          "duration": 32,
+          "inputDelay": 0.6999999955296516,
+          "processing": 0.10000000149011612,
+          "interactionId": 9138
+        },
+        {
+          "type": "pointerout",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.09999999403953552,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67432.20000000298,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "keydown",
+          "start": 67452.10000000149,
+          "duration": 48,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.29999999701976776,
+          "interactionId": 9145
+        },
+        {
+          "type": "keypress",
+          "start": 67452.10000000149,
+          "duration": 48,
+          "inputDelay": 0.3999999985098839,
+          "processing": 3.899999998509884,
+          "interactionId": 9145
+        },
+        {
+          "type": "click",
+          "start": 67452.10000000149,
+          "duration": 48,
+          "inputDelay": 0.3999999985098839,
+          "processing": 3.899999998509884,
+          "interactionId": 9145
+        },
+        {
+          "type": "keyup",
+          "start": 67457.5,
+          "duration": 40,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.10000000149011612,
+          "interactionId": 9145
+        },
+        {
+          "type": "pointerout",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 67466.5,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 10090675,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "More"
+      },
+      "start": 259425.29999999702,
+      "end": 261930.70000000298,
+      "visibility": "visible",
+      "rafP95": 16.800000000017462,
+      "rafMax": 17.300000000017462,
+      "frameSamples": 151,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.100000001490116,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.200000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.200000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.200000002980232,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.200000002980232,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 259400.3999999985,
+          "duration": 32,
+          "inputDelay": 14.300000004470348,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 259423,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0.10000000149011612,
+          "interactionId": 9166
+        },
+        {
+          "type": "mousedown",
+          "start": 259423,
+          "duration": 24,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 259425,
+          "duration": 24,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.09999999403953552,
+          "interactionId": 9166
+        },
+        {
+          "type": "mouseup",
+          "start": 259425,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 259425,
+          "duration": 24,
+          "inputDelay": 0.29999999701976776,
+          "processing": 3.5,
+          "interactionId": 9166
+        },
+        {
+          "type": "pointerout",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.09999999403953552,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.09999999403953552,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.09999999403953552,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.09999999403953552,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.09999999403953552,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.09999999403953552,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 259430.70000000298,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 11003086,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Reset settings"
+      },
+      "start": 262102.3999999985,
+      "end": 264604.700000003,
+      "visibility": "visible",
+      "rafP95": 16.79999999998836,
+      "rafMax": 33.5,
+      "frameSamples": 149,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerdown",
+          "start": 262099.8999999985,
+          "duration": 32,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.3999999985098839,
+          "interactionId": 9173
+        },
+        {
+          "type": "mousedown",
+          "start": 262099.8999999985,
+          "duration": 32,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 262102.1000000015,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 9173
+        },
+        {
+          "type": "mouseup",
+          "start": 262102.1000000015,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 262102.1000000015,
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "processing": 3.5,
+          "interactionId": 9173
+        },
+        {
+          "type": "pointerout",
+          "start": 262114,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 262114,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 262114,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 262114,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 262114,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 262114,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 262114,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 262114,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 262114,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 262114,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 11229816,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Reset"
+      },
+      "start": 266741.6000000015,
+      "end": 269247.299999997,
+      "visibility": "visible",
+      "rafP95": 16.79999999998836,
+      "rafMax": 17.100000000034925,
+      "frameSamples": 151,
+      "appRafCalls": 2,
+      "paints": [
+        {
+          "at": 266750.5,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 266716,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 266716,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 266716,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 266716,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 266716,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 266716,
+          "duration": 32,
+          "inputDelay": 15,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 266716,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 266716,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 266716,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 266716,
+          "duration": 32,
+          "inputDelay": 15.100000001490116,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerdown",
+          "start": 266739.5,
+          "duration": 24,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.09999999403953552,
+          "interactionId": 9180
+        },
+        {
+          "type": "mousedown",
+          "start": 266739.5,
+          "duration": 24,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerup",
+          "start": 266741.299999997,
+          "duration": 24,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.10000000149011612,
+          "interactionId": 9180
+        },
+        {
+          "type": "mouseup",
+          "start": 266741.299999997,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "click",
+          "start": 266741.299999997,
+          "duration": 24,
+          "inputDelay": 0.30000000447034836,
+          "processing": 4,
+          "interactionId": 9180
+        },
+        {
+          "type": "pointerout",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0.19999999552965164,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.5,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.5,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 266747.299999997,
+          "duration": 16,
+          "inputDelay": 0.6000000014901161,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerout",
+          "start": 266932.200000003,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 266932.200000003,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 266932.200000003,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 266932.200000003,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 266932.200000003,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 266932.200000003,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 266932.200000003,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 266932.200000003,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 1,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 11050224,
+      "wall": [
+        {
+          "name": "dungeon-wizard.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    }
+  ]
+}

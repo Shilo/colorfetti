@@ -1,0 +1,1409 @@
+{
+  "created": "2026-10-18T10:43:45.463Z",
+  "round": 2,
+  "node": "v25.0.0",
+  "seed": "0x7ac8135",
+  "counts": {
+    "oddChunkBoundary": 1356,
+    "syncParity": 168,
+    "independentScalarNearest": 84,
+    "asyncParity": 168,
+    "nonzeroFreshSliceStart": 504,
+    "ditherAlphaUnchanged": 48,
+    "entryCancel": 1,
+    "progressCancel": 1,
+    "pairedPngExact": 50
+  },
+  "timings": [
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 0.09629999999992833,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.06819999999993342,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.057599999999979445,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 0.09130000000004657,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 0.0627999999999247,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.055499999999938154,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.0544999999999618,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 0.06209999999998672,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 0.0625,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.06579999999996744,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": true,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 0.01310000000000855,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": true,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.011099999999942156,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": true,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.010700000000042564,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": true,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 0.011999999999943611,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": true,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 0.011700000000018917,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": true,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.010400000000004184,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": true,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.010200000000054388,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": true,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 0.011799999999993815,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": true,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 0.011899999999968713,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": true,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.009900000000016007,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 0.20839999999998327,
+      "bytes": 223
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 0.21390000000008058,
+      "bytes": 223
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 0.19420000000002346,
+      "bytes": 223
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 0.17879999999991014,
+      "bytes": 223
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 0.2338999999999487,
+      "bytes": 223
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 0.17609999999990578,
+      "bytes": 223
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 0.161200000000008,
+      "bytes": 223
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 0.14850000000001273,
+      "bytes": 223
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 0.12829999999996744,
+      "bytes": 223
+    },
+    {
+      "name": "tiny",
+      "sample": false,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 0.11959999999999127,
+      "bytes": 223
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 11.705600000000004,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 7.739100000000008,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 7.8368999999999005,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.61080000000004,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.540699999999902,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 7.663999999999987,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 7.905399999999986,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.835500000000025,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.742700000000013,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 7.715000000000032,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sample": true,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 1.115000000000009,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sample": true,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.8441000000000258,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sample": true,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.8197999999999865,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sample": true,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 1.1269999999999527,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sample": true,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 1.0955000000000155,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sample": true,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.8345000000000482,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sample": true,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.8315000000000055,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sample": true,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 1.1230000000000473,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sample": true,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 1.1083999999999605,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sample": true,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.8476000000000568,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 45.02089999999998,
+      "bytes": 30144
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 42.464000000000055,
+      "bytes": 30144
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 42.54409999999996,
+      "bytes": 30144
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 43.19060000000013,
+      "bytes": 30144
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 43.8891000000001,
+      "bytes": 30144
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 47.61869999999999,
+      "bytes": 30144
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 43.95010000000002,
+      "bytes": 30144
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 44.44509999999991,
+      "bytes": 30144
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 44.262300000000096,
+      "bytes": 30144
+    },
+    {
+      "name": "sheet1024",
+      "sample": false,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 40.88610000000017,
+      "bytes": 30144
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 43.46370000000002,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 32.31420000000003,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 32.86410000000001,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 43.419599999999946,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 43.45620000000008,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 33.15070000000014,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 32.44730000000004,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 43.753999999999905,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 43.29160000000002,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 32.551299999999856,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sample": true,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 1.2425000000000637,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sample": true,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.915599999999813,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sample": true,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.8443999999999505,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sample": true,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 1.2214999999998781,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sample": true,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 1.1510000000000673,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sample": true,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.8974000000000615,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sample": true,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.8501000000001113,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sample": true,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 1.214100000000144,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sample": true,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 1.1415000000001783,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sample": true,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 0.9028000000000702,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 105.03019999999992,
+      "bytes": 84311
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 95.03929999999991,
+      "bytes": 84311
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 93.36380000000008,
+      "bytes": 84311
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 104.55589999999984,
+      "bytes": 84311
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 105.03340000000026,
+      "bytes": 84311
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 93.94759999999997,
+      "bytes": 84311
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 95.22350000000006,
+      "bytes": 84311
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 104.88329999999996,
+      "bytes": 84311
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 104.91599999999971,
+      "bytes": 84311
+    },
+    {
+      "name": "sheet2048",
+      "sample": false,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 120.47080000000005,
+      "bytes": 84311
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.778999999999996,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 9.573300000000017,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 9.973599999999806,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 11.456699999999728,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.097000000000207,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 10.210100000000239,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 9.73359999999957,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.345700000000306,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 11.71270000000004,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 10.67489999999998,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": true,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 12.377199999999903,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": true,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 10.67009999999982,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": true,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 10.21979999999985,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": true,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.16820000000007,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": true,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.282600000000002,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": true,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 10.292299999999614,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": true,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 10.171600000000126,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": true,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.941100000000006,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": true,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 10.321699999999964,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": true,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 10.749299999999948,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 48.69549999999981,
+      "bytes": 39774
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 49.26389999999992,
+      "bytes": 39774
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 49.953399999999874,
+      "bytes": 39774
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 49.62440000000015,
+      "bytes": 39774
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 47.42079999999987,
+      "bytes": 39774
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 49.96799999999985,
+      "bytes": 39774
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 45.759700000000066,
+      "bytes": 39774
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 42.82519999999977,
+      "bytes": 39774
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 50.70109999999977,
+      "bytes": 39774
+    },
+    {
+      "name": "entropy",
+      "sample": false,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 47.153099999999995,
+      "bytes": 39774
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 16.69489999999996,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 16.170800000000327,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 16.565200000000004,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 16.116500000000087,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 16.561099999999897,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 16.464899999999943,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 16.10709999999972,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 16.84880000000021,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 16.641399999999976,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 16.573899999999867,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": true,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 16.922700000000077,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": true,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 16.323300000000017,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": true,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 16.216300000000047,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": true,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 16.728499999999258,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": true,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 16.78940000000057,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": true,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 17.162499999999454,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": true,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 15.819600000000719,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": true,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 16.36329999999998,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": true,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestConversion",
+      "ms": 16.085799999999836,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": true,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestConversion",
+      "ms": 16.551000000000386,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 0,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 69.66859999999997,
+      "bytes": 97703
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 0,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 69.86399999999958,
+      "bytes": 97703
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 1,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 66.69689999999991,
+      "bytes": 97703
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 1,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 65.09550000000036,
+      "bytes": 97703
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 2,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 63.66159999999945,
+      "bytes": 97703
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 2,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 64.00520000000051,
+      "bytes": 97703
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 3,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 65.2484000000004,
+      "bytes": 97703
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 3,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 69.35289999999986,
+      "bytes": 97703
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 4,
+      "kind": "baseline",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 71.87169999999969,
+      "bytes": 97703
+    },
+    {
+      "name": "partial",
+      "sample": false,
+      "pair": 4,
+      "kind": "candidate",
+      "phase": "wholeNearestPngPreparation",
+      "ms": 76.89149999999972,
+      "bytes": 97703
+    }
+  ],
+  "pngEquality": [
+    "tiny",
+    "sheet1024",
+    "sheet2048",
+    "entropy",
+    "partial"
+  ],
+  "inputs": [
+    {
+      "name": "tiny",
+      "width": 16,
+      "height": 16,
+      "rgbaSha256": "47f26e6e733f9a09bb636677306fb7f35bd6a5307b7160d999c2234aaf0b0c7b"
+    },
+    {
+      "name": "sheet1024",
+      "width": 1024,
+      "height": 1024,
+      "rgbaSha256": "1188f759bf428e9c7ba9be99973821b5e9acce26c3af16d55e176c8992911678"
+    },
+    {
+      "name": "sheet2048",
+      "width": 2048,
+      "height": 2048,
+      "rgbaSha256": "07b204cad5a7b3a94e5dd714b2388f320e45c3f4ac67c573d6279f291d49fa5f"
+    },
+    {
+      "name": "entropy",
+      "width": 256,
+      "height": 256,
+      "rgbaSha256": "aebad04df6d572150817f98144b5192468f7185c88ada221e2d7fea94ba15e3e"
+    },
+    {
+      "name": "partial",
+      "width": 256,
+      "height": 256,
+      "rgbaSha256": "7174e765a5cff2afbfc75f12c0b18a23bf406379a411323970fcd23a570adf20"
+    }
+  ],
+  "scope": "Research-only5ae baseline vs one local coordinate-loop change. Timed whole nearest core conversions, source/decoding staged before timing. Native renderer CPU/export/UI acceptance remains separate."
+}

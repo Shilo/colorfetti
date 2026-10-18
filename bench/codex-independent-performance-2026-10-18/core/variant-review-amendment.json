@@ -1,0 +1,13 @@
+{
+  "reviewedAfterBuild": true,
+  "rawManifest": "variant-manifest.json",
+  "frozenAssetsChanged": false,
+  "partialVariant": "without-b1",
+  "port": 5394,
+  "defect": "Original removeB1 string replacement missed the combined zero-difference pair skip on CRLF source. Individual r/d gates and old non-luma analyze loop were reversed; combined skip remained.",
+  "conclusion": "5394 is a partial-B1 diagnostic and cannot support complete B1 causal performance claims. Its original source/dist hashes remain unchanged.",
+  "validB1Comparison": "without-b5 5398 versus without-b1-b5 5399: both source files use LF; complete reversal independently reviewed.",
+  "otherVariants": "5395 immediate-parent save has only two later comment changes; 5396 functional gate replacement succeeds independent of newline; 5397 parent modules have only a later diagnostic comment; 5398 parent recolor/reanalysis has no later behavior change.",
+  "builderCorrection": "Normalize CRLF before B1 removal; assert original loop insertion and all three skip markers absent. Refuse any existing destination; future regeneration must use a fresh .tmp CODEX_AUDIT_VARIANT_DIR. Do not rebuild active historical builds.",
+  "scope": "Evidence/harness correction only, no production change. Current five-change baseline remains5ae11b1; concurrent1fe03ed/18de3f7 filename edits require separate final cumulative validation."
+}

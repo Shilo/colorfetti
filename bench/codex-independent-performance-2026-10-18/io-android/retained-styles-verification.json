@@ -1,0 +1,254 @@
+{
+  "date": "2026-10-18T10:15:57.882Z",
+  "rows": [
+    {
+      "filename": "codexio-supplement-1792317911859-ink-11-0-dungeon-wizard-1bit.png",
+      "style": "solid",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 1
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#f0f6f0"
+      ],
+      "sha256": "c200e7c8aad06da32218959bdbf1482d4df4af28f0271271883bffc40078f0d4",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-ink-12-0-dungeon-wizard-1bit.png",
+      "style": "solid",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 2
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323"
+      ],
+      "sha256": "2aec59e53c78cddcad1a46c762c7127f0742318b1a11a9bf9af067291671f53b",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-ink-13-0-dungeon-wizard-1bit.png",
+      "style": "solid",
+      "settings": {
+        "first": "#123456",
+        "second": "#123456",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#123456"
+      ],
+      "sha256": "d9333b82764184bf60c14fef7bc9f8976f819849ca6506ad9f68d13dfcc543f9",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-atkinson-0-dungeon-wizard-1bit.png",
+      "style": "atkinson",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323",
+        "#f0f6f0"
+      ],
+      "sha256": "b7d7cee505d62338043213becd488b81b47d0d0822892bcb4a227962336dbb46",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-bayer-0-dungeon-wizard-1bit.png",
+      "style": "bayer",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323",
+        "#f0f6f0"
+      ],
+      "sha256": "1c8752c58b4d6a38111100ceea6539ef37bd7afc3d78e036a2f8f49ee78a20f1",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-checker-0-dungeon-wizard-1bit.png",
+      "style": "checker",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323",
+        "#f0f6f0"
+      ],
+      "sha256": "b3142f46668583e42ae33d0d03cdd69cd40867b1dae436d52668653ccc95a998",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-cutout-0-dungeon-wizard-1bit.png",
+      "style": "cutout",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323",
+        "#f0f6f0"
+      ],
+      "sha256": "d362e6d42f06ce64a1c1b9b64e7b8acba1d9a681136efddc0f651a634aaeccbf",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-hatch-0-dungeon-wizard-1bit.png",
+      "style": "hatch",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323",
+        "#f0f6f0"
+      ],
+      "sha256": "1283a692bc9ded4ea9d6a06bfff0b110405a97a51aa3daa1103d8dafc5ac9947",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-icon-0-dungeon-wizard-1bit.png",
+      "style": "icon",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323",
+        "#f0f6f0"
+      ],
+      "sha256": "cc0857023b6b070528daf2b94167a073b86c5f7f527a2ca11f5a9b6f18eb58d9",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-lines-0-dungeon-wizard-1bit.png",
+      "style": "lines",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323",
+        "#f0f6f0"
+      ],
+      "sha256": "50b20b3da1aa82d9f7f7b01c5994ff60c381d363fa2c88c91690372fdfb1ada5",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-noise-0-dungeon-wizard-1bit.png",
+      "style": "noise",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323",
+        "#f0f6f0"
+      ],
+      "sha256": "c0329349174520f33c75a31f84612a442609ece87b05aeb79301d77d99bb7ca6",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-silhouette-0-dungeon-wizard-1bit.png",
+      "style": "silhouette",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323"
+      ],
+      "sha256": "7ca7f5045f4af5aa77759b35ada65d2f693c11b6a6ec244fb5d6cb8355a9a420",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-solid-0-dungeon-wizard-1bit.png",
+      "style": "solid",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323",
+        "#f0f6f0"
+      ],
+      "sha256": "292446898425cf65bb0f89bed2be42d96cbdc1c2647fd05fc96c766b9be48669",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    },
+    {
+      "filename": "codexio-supplement-1792317911859-style-stencil-0-dungeon-wizard-1bit.png",
+      "style": "stencil",
+      "settings": {
+        "first": "#222323",
+        "second": "#f0f6f0",
+        "none": 0
+      },
+      "width": 16,
+      "height": 16,
+      "colors": [
+        "#222323",
+        "#f0f6f0"
+      ],
+      "sha256": "0a7162bdb0a0e935c20935805666af672831840687aa2c21f8c2be6e59b76a02",
+      "alphaMismatch": 0,
+      "visibleRgbMismatch": 0
+    }
+  ],
+  "qualification": "Native downloads retained from supplement before its ZIP locator failure; independently decoded now. Expected styles use frozen baseline algorithm outside browser; independent alpha/palette/dimensions also checked. No discarded output error."
+}

@@ -1,0 +1,2478 @@
+{
+  "created": "2026-10-18T11:19:13.226Z",
+  "scope": "Audit evidence directory except this self-index, plus the separately hashed report. JSON parsed; frozen source/dist hashes and96source files against runtime commit rechecked. Index hashes establish artifact integrity, not reading, exhaustive tests or performance acceptance.",
+  "lineEndings": "Git may normalize text line endings; canonicalLfSha256 records reproducible text content separately from raw original-byte hashes. Binary output hashes stay exact.",
+  "runtimeCommit": "ae97d0e",
+  "runtimeSourceFilesMatchCommit": 96,
+  "report": {
+    "file": "docs/research/2026-10-18-independent-performance-audit.md",
+    "bytes": 15312,
+    "rawSha256": "4d2d688f0562d934b9d7329013e05b21ce70c09534c87fd01092e81cc19dcaba",
+    "canonicalLfSha256": "4d2d688f0562d934b9d7329013e05b21ce70c09534c87fd01092e81cc19dcaba"
+  },
+  "files": 451,
+  "bytes": 27720568,
+  "artifacts": [
+    {
+      "file": "codex-browser/codex-1792318039694-c4n6xo.json",
+      "bytes": 14332,
+      "rawSha256": "df738665cebd10e670eeec0fa8261e265947cf0e88d499e812533c1711ab91ba",
+      "canonicalLfSha256": "df738665cebd10e670eeec0fa8261e265947cf0e88d499e812533c1711ab91ba"
+    },
+    {
+      "file": "codex-browser/codex-1792318054163-nmywe7.json",
+      "bytes": 107960,
+      "rawSha256": "15038dc312f56e9ec056273007f66e8923f8572ebd11230268a8418e204d8647",
+      "canonicalLfSha256": "15038dc312f56e9ec056273007f66e8923f8572ebd11230268a8418e204d8647"
+    },
+    {
+      "file": "codex-browser/codex-1792318224988-akgc0t.json",
+      "bytes": 106694,
+      "rawSha256": "a955b35ec64b148c3ad8a06a757bd2b3959c1f7693816ab4f18015c11bde7ef3",
+      "canonicalLfSha256": "a955b35ec64b148c3ad8a06a757bd2b3959c1f7693816ab4f18015c11bde7ef3"
+    },
+    {
+      "file": "codex-browser/codex-1792318636321-gnynz5.json",
+      "bytes": 266932,
+      "rawSha256": "1ed248709dba11f35980b5db2500b85bcf2356b47710c0c9d37b060310f244df",
+      "canonicalLfSha256": "1ed248709dba11f35980b5db2500b85bcf2356b47710c0c9d37b060310f244df"
+    },
+    {
+      "file": "codex-browser/codex-1792320698425-klewf9.json",
+      "bytes": 223295,
+      "rawSha256": "f57a9eaeceab350fddad5e1280a2ec39326e77ccb9844cbd8304d81961bbdae6",
+      "canonicalLfSha256": "f57a9eaeceab350fddad5e1280a2ec39326e77ccb9844cbd8304d81961bbdae6"
+    },
+    {
+      "file": "codex-browser/codex-1792321485544-f9o2vl.json",
+      "bytes": 177476,
+      "rawSha256": "f8db6c62e4a15ea3c6a6d9fa1757b8273401633482561730d34272f4482f79eb",
+      "canonicalLfSha256": "f8db6c62e4a15ea3c6a6d9fa1757b8273401633482561730d34272f4482f79eb"
+    },
+    {
+      "file": "codex-browser/final-build.png",
+      "bytes": 34141,
+      "rawSha256": "c0018da897706bd6f8821576dca116047c6038e1fa03337c6e1316c5d26d1c91"
+    },
+    {
+      "file": "codex-browser/final-observations.json",
+      "bytes": 2253,
+      "rawSha256": "29e2936911679ad424b489d4bbc9579922561e1a372f67331299d7c940d73072",
+      "canonicalLfSha256": "29e2936911679ad424b489d4bbc9579922561e1a372f67331299d7c940d73072"
+    },
+    {
+      "file": "codex-browser/final-output-verification.json",
+      "bytes": 570,
+      "rawSha256": "378efb1dca0c79971b82b22e6cc86da8700afd71f1bb4ef53711da0486c5f5e5",
+      "canonicalLfSha256": "378efb1dca0c79971b82b22e6cc86da8700afd71f1bb4ef53711da0486c5f5e5"
+    },
+    {
+      "file": "codex-browser/manual-baseline-animations.json",
+      "bytes": 266927,
+      "rawSha256": "d9a6551a7d7cb3a22cdda8874a54dc95ac0d287c24522b8765a96237094de9a4",
+      "canonicalLfSha256": "d9a6551a7d7cb3a22cdda8874a54dc95ac0d287c24522b8765a96237094de9a4"
+    },
+    {
+      "file": "codex-browser/manual-baseline-styles.json",
+      "bytes": 147608,
+      "rawSha256": "84243e9a992cb9d0b5679d22eb7f7c07afbcf44bb8b11c242821f80bceb35935",
+      "canonicalLfSha256": "84243e9a992cb9d0b5679d22eb7f7c07afbcf44bb8b11c242821f80bceb35935"
+    },
+    {
+      "file": "codex-browser/manual-candidate-v3.json",
+      "bytes": 223282,
+      "rawSha256": "3a54e9c88502b869e11afa3eb66372080534f7d344df4101a476a38d95b68530",
+      "canonicalLfSha256": "3a54e9c88502b869e11afa3eb66372080534f7d344df4101a476a38d95b68530"
+    },
+    {
+      "file": "codex-browser/manual-final-cumulative.json",
+      "bytes": 177470,
+      "rawSha256": "76c13bd0a4dbb37a5468d6c7b0d9e409363e5eec65396bf224cd9117d8227d6d",
+      "canonicalLfSha256": "76c13bd0a4dbb37a5468d6c7b0d9e409363e5eec65396bf224cd9117d8227d6d"
+    },
+    {
+      "file": "codex-browser/manual-v3-preview-and-cold-icon.json",
+      "bytes": 203933,
+      "rawSha256": "56b85ed0d779d8466169bacb4d5d13811a94b252766f6d7751ef0d9bcc8069a6",
+      "canonicalLfSha256": "56b85ed0d779d8466169bacb4d5d13811a94b252766f6d7751ef0d9bcc8069a6"
+    },
+    {
+      "file": "codex-browser/output-verification.json",
+      "bytes": 5309,
+      "rawSha256": "ea0b14bf7ba42acabf07af45a6d39c111b3f862e3c999ee66df01ede723d1ebb",
+      "canonicalLfSha256": "ea0b14bf7ba42acabf07af45a6d39c111b3f862e3c999ee66df01ede723d1ebb"
+    },
+    {
+      "file": "codex-browser/outputs/dungeon-archer-palette.png",
+      "bytes": 228,
+      "rawSha256": "d4ef784e466b63d7ad33c1f768754550e80ebc1d2cf8f44d0ee220992cf6eebd"
+    },
+    {
+      "file": "codex-browser/outputs/dungeon-knight-palette.png",
+      "bytes": 232,
+      "rawSha256": "a6a14685af3d69bcd10e3430c6b6896606517f8a71d84d6c581678381693d4fe"
+    },
+    {
+      "file": "codex-browser/outputs/dungeon-potion-palette.png",
+      "bytes": 178,
+      "rawSha256": "7dfea9cbbd1ea65ad74128c42b833735c8f96ba4a88b451a3142893314329b87"
+    },
+    {
+      "file": "codex-browser/outputs/dungeon-wizard-colorfetti.png",
+      "bytes": 215,
+      "rawSha256": "60ffc55899b8ee14aefbcda51bc7f2e6e9be254279e0d876c7b06548fda4a23b"
+    },
+    {
+      "file": "codex-browser/outputs/dungeon-wizard-palette.png",
+      "bytes": 215,
+      "rawSha256": "60ffc55899b8ee14aefbcda51bc7f2e6e9be254279e0d876c7b06548fda4a23b"
+    },
+    {
+      "file": "codex-browser/outputs/kenney-motion-256-palette.gif",
+      "bytes": 29199,
+      "rawSha256": "493b7e29ddfb64be039a489396656e808b0ccb6574c4dcb2a2d611063fb71b3d"
+    },
+    {
+      "file": "codex-browser/outputs/kenney-sheet-1024-palette.png",
+      "bytes": 14298,
+      "rawSha256": "0bcf910e79c777a3f072094945297b181b7ffc019c83e98f3c0576e1523cc15f"
+    },
+    {
+      "file": "codex-browser/outputs/partial-glow64-keep.png",
+      "bytes": 2520,
+      "rawSha256": "96bbd7c154a320f97056dab8abe852320b7f2e95be24ad73bfb126407a9a11ff"
+    },
+    {
+      "file": "codex-browser/outputs/platformer-heart-palette.png",
+      "bytes": 167,
+      "rawSha256": "6115f32b063e41225e64a8be8e74f139f022a70471822d122af64c2448b3fa05"
+    },
+    {
+      "file": "codex-browser/outputs/platformer-pilot-palette.png",
+      "bytes": 237,
+      "rawSha256": "2483200dcc6f5fb92b82ddb81be2f601e6045d7d1e05f1d9e1d95b42d8be0de0"
+    },
+    {
+      "file": "codex-browser/outputs/platformer-rocket-palette.png",
+      "bytes": 211,
+      "rawSha256": "abf6dbc9f449f062963686321c677fb998954b3ba3cf03e1366fc8fb5a9f91e9"
+    },
+    {
+      "file": "codex-browser/outputs/practical-nine.zip",
+      "bytes": 3585,
+      "rawSha256": "53018374c3102f06f30256837bae559080a7d5aa0ca00e2d3a5a0643e9b66aa1"
+    },
+    {
+      "file": "codex-browser/outputs/real-magic-palette.gif",
+      "bytes": 706,
+      "rawSha256": "6751803f56866b1568f7275ee4ef7965d4e33cc353af244406b4109fd5310e65"
+    },
+    {
+      "file": "codex-browser/outputs/town-water-bucket-palette.png",
+      "bytes": 225,
+      "rawSha256": "e047aae42989e5b25e86c2f19a5eb7287f905dc0c6bb57abb3de40e10348900f"
+    },
+    {
+      "file": "codex-browser/README.md",
+      "bytes": 5410,
+      "rawSha256": "2aaeff5cd7ac7851bf98d776b49e94142ed9c8598b2e872a6bacae371a4346b7",
+      "canonicalLfSha256": "2aaeff5cd7ac7851bf98d776b49e94142ed9c8598b2e872a6bacae371a4346b7"
+    },
+    {
+      "file": "codex-browser/short-landscape.png",
+      "bytes": 61974,
+      "rawSha256": "27981f5b2dc1d34f0de2159224114743b251f2466cd4263f970ed2886f4a39cc"
+    },
+    {
+      "file": "core/api-research.md",
+      "bytes": 5853,
+      "rawSha256": "dd64d8231abd106c6da433f75d1fc04576f9523c12d0178fafafa153d7440693",
+      "canonicalLfSha256": "dd64d8231abd106c6da433f75d1fc04576f9523c12d0178fafafa153d7440693"
+    },
+    {
+      "file": "core/auto-original-instrumented.mjs",
+      "bytes": 12864,
+      "rawSha256": "40f7ad012dcb14f817a8c25f6253ac772c203532145da5474cb073e668447466",
+      "canonicalLfSha256": "660f1412061f039755556d63856cec162097d63139611eb21a2ae25343be8fcc"
+    },
+    {
+      "file": "core/auto-original.mjs",
+      "bytes": 12753,
+      "rawSha256": "bc6c624bc2d7abbb38d7a02f43bc1840a6823bd55a480b2adae4690518c2a2fb",
+      "canonicalLfSha256": "81b074a710e420d300f5eaf0ce59c764e3f0f233951ffff13d54054d1bf8596a"
+    },
+    {
+      "file": "core/auto-seed-candidate-plan.json",
+      "bytes": 1256,
+      "rawSha256": "a88d8bcff2646e5ebd3628862a06f84519e65face3c3d1e9990710e595da3525",
+      "canonicalLfSha256": "a88d8bcff2646e5ebd3628862a06f84519e65face3c3d1e9990710e595da3525"
+    },
+    {
+      "file": "core/auto-seed-decision.json",
+      "bytes": 11438,
+      "rawSha256": "b5abacf5adfe30208c0e3a80a4f15594784573d9668be3f11c0eecceda89c396",
+      "canonicalLfSha256": "b5abacf5adfe30208c0e3a80a4f15594784573d9668be3f11c0eecceda89c396"
+    },
+    {
+      "file": "core/auto-seed-decision.md",
+      "bytes": 2606,
+      "rawSha256": "75e982c5e02354aaf1f66c0089f3952cf602f8621c7fc81bb76dd3e57b8a2a25",
+      "canonicalLfSha256": "75e982c5e02354aaf1f66c0089f3952cf602f8621c7fc81bb76dd3e57b8a2a25"
+    },
+    {
+      "file": "core/auto-seed-round1.json",
+      "bytes": 20834,
+      "rawSha256": "76f39bd49c69bb9226262e8f70abbf567d71980187456329122f326af21ec8ab",
+      "canonicalLfSha256": "76f39bd49c69bb9226262e8f70abbf567d71980187456329122f326af21ec8ab"
+    },
+    {
+      "file": "core/auto-set-candidate.mjs",
+      "bytes": 12816,
+      "rawSha256": "226de11b39cb75aeef2be4d0eb3cc78182ba2f169e46f84060c36b780194df3b",
+      "canonicalLfSha256": "7d09fc114f63d60fadc9e07a3751740c9d9d81a8ba0a221cb6682b7355dacc60"
+    },
+    {
+      "file": "core/auto-set-instrumented.mjs",
+      "bytes": 12927,
+      "rawSha256": "e39bd15da7f9e23d5bfd908d32b3ccb5436b0d9abb1b8d4aff2b2f96783fc5bc",
+      "canonicalLfSha256": "eb6c54a92a9f93dd22c09d4bd3fb0f23bc7b99cb63499c49616fe11a347ac344"
+    },
+    {
+      "file": "core/build-without-b1-b5.log",
+      "bytes": 1772,
+      "rawSha256": "c509ce9d4bbb8d76b119b144de887347ccf02c3b9cc5ba145e2f99dfb6dc97db",
+      "canonicalLfSha256": "c509ce9d4bbb8d76b119b144de887347ccf02c3b9cc5ba145e2f99dfb6dc97db"
+    },
+    {
+      "file": "core/build-without-b1.log",
+      "bytes": 1769,
+      "rawSha256": "09be3eed82964a65e4e0d9f84faa1c12ef219fbb21d979a033ed91ff4fa96d9f",
+      "canonicalLfSha256": "09be3eed82964a65e4e0d9f84faa1c12ef219fbb21d979a033ed91ff4fa96d9f"
+    },
+    {
+      "file": "core/build-without-b2.log",
+      "bytes": 1769,
+      "rawSha256": "c4dec20f5d5fc74cf568645804ad0e9cf709fab19611d23d105f04e399c387cc",
+      "canonicalLfSha256": "c4dec20f5d5fc74cf568645804ad0e9cf709fab19611d23d105f04e399c387cc"
+    },
+    {
+      "file": "core/build-without-b3.log",
+      "bytes": 1769,
+      "rawSha256": "991c0dc501963b9e61902cd7791fc21a815c011697905aeb5d34d48b6ecef8e2",
+      "canonicalLfSha256": "991c0dc501963b9e61902cd7791fc21a815c011697905aeb5d34d48b6ecef8e2"
+    },
+    {
+      "file": "core/build-without-b4.log",
+      "bytes": 1703,
+      "rawSha256": "725d5f61ba05d862f5e593ace4b4309e4473b515c09cf297b6899d894a13a8b6",
+      "canonicalLfSha256": "725d5f61ba05d862f5e593ace4b4309e4473b515c09cf297b6899d894a13a8b6"
+    },
+    {
+      "file": "core/build-without-b5.log",
+      "bytes": 1769,
+      "rawSha256": "9dfa97882edc3bbcb2ad1247e9e64daab35e4ebf90b64163bab40d008cc151c0",
+      "canonicalLfSha256": "9dfa97882edc3bbcb2ad1247e9e64daab35e4ebf90b64163bab40d008cc151c0"
+    },
+    {
+      "file": "core/edge-auto-seed-round1.json",
+      "bytes": 20734,
+      "rawSha256": "1c6cc9180c8851def57c505534d5ea7feb689a46cbba0de53b205133e61c58cf",
+      "canonicalLfSha256": "1c6cc9180c8851def57c505534d5ea7feb689a46cbba0de53b205133e61c58cf"
+    },
+    {
+      "file": "core/edge-auto-seed.mjs",
+      "bytes": 5256,
+      "rawSha256": "f7e22f24f3c64bae97a1c17c41828ce4f26586eb5f439863691e79b5f275bddd",
+      "canonicalLfSha256": "f7e22f24f3c64bae97a1c17c41828ce4f26586eb5f439863691e79b5f275bddd"
+    },
+    {
+      "file": "core/five-change-assessment.md",
+      "bytes": 6172,
+      "rawSha256": "be893955bf5df63dbccd9b1ca0b7eded6044416dc46d27f718add09d771a1ddf",
+      "canonicalLfSha256": "be893955bf5df63dbccd9b1ca0b7eded6044416dc46d27f718add09d771a1ddf"
+    },
+    {
+      "file": "core/fixtures-inline.mjs",
+      "bytes": 269445,
+      "rawSha256": "6ba790895c8b3d6cb6069aeaf9e76d2f4fda97b7ce93fc3dfeedbac96b9a4c26",
+      "canonicalLfSha256": "6ba790895c8b3d6cb6069aeaf9e76d2f4fda97b7ce93fc3dfeedbac96b9a4c26"
+    },
+    {
+      "file": "core/historical-pre-b1.mjs",
+      "bytes": 31514,
+      "rawSha256": "fdbd32a0b666f35b400082e9271212f32bd36289704656f010b04cadf0a6f153",
+      "canonicalLfSha256": "fdbd32a0b666f35b400082e9271212f32bd36289704656f010b04cadf0a6f153"
+    },
+    {
+      "file": "core/materialize-variants.mjs",
+      "bytes": 8524,
+      "rawSha256": "54b2b7d5f4bf2bd722f938f469926192a3063dbb79f3dd2d34fe78c65471fab6",
+      "canonicalLfSha256": "54b2b7d5f4bf2bd722f938f469926192a3063dbb79f3dd2d34fe78c65471fab6"
+    },
+    {
+      "file": "core/owned-inventory.json",
+      "bytes": 11133,
+      "rawSha256": "91ee0ecb66df206a68d969327ee804fe36d6cc99bf09f834dc2a159c554b5e31",
+      "canonicalLfSha256": "91ee0ecb66df206a68d969327ee804fe36d6cc99bf09f834dc2a159c554b5e31"
+    },
+    {
+      "file": "core/probe-auto-seed.mjs",
+      "bytes": 7386,
+      "rawSha256": "fe5d52316beb91235da8d14e39defcf2ee3e1332e7fc4ba0b6eba0b4c9749a78",
+      "canonicalLfSha256": "fe5d52316beb91235da8d14e39defcf2ee3e1332e7fc4ba0b6eba0b4c9749a78"
+    },
+    {
+      "file": "core/probe-results.json",
+      "bytes": 1786,
+      "rawSha256": "7c822e4d4a46c780374a0eba2cdeaec89b22ba28c92e3af3d0493637a67d8b5b",
+      "canonicalLfSha256": "7c822e4d4a46c780374a0eba2cdeaec89b22ba28c92e3af3d0493637a67d8b5b"
+    },
+    {
+      "file": "core/probe.mjs",
+      "bytes": 16201,
+      "rawSha256": "7c2cb8400912395da99d2caffe1c5f59db20504b88e43a86560d87f7fb30e888",
+      "canonicalLfSha256": "7c2cb8400912395da99d2caffe1c5f59db20504b88e43a86560d87f7fb30e888"
+    },
+    {
+      "file": "core/README.md",
+      "bytes": 5332,
+      "rawSha256": "81429cd1b5bb8acea6482336f3678f742012a4030e0caaec44ab037f9980d5a1",
+      "canonicalLfSha256": "81429cd1b5bb8acea6482336f3678f742012a4030e0caaec44ab037f9980d5a1"
+    },
+    {
+      "file": "core/row-cursor-baseline.mjs",
+      "bytes": 8824,
+      "rawSha256": "ed91e80f51123086440bb05490fff7576c3dedfda5eda9bfb4d31877b9821350",
+      "canonicalLfSha256": "ed91e80f51123086440bb05490fff7576c3dedfda5eda9bfb4d31877b9821350"
+    },
+    {
+      "file": "core/row-cursor-build-baseline.log",
+      "bytes": 1769,
+      "rawSha256": "a65aaeea7aeed82e53c99c976652f3b95e505627efac4e3aef6eaa33d54cdbad",
+      "canonicalLfSha256": "a65aaeea7aeed82e53c99c976652f3b95e505627efac4e3aef6eaa33d54cdbad"
+    },
+    {
+      "file": "core/row-cursor-build-candidate.log",
+      "bytes": 1770,
+      "rawSha256": "3f76b6ae7875066a16d71dd76a21356b04aa6ecd4ed95c81923b1f1393050403",
+      "canonicalLfSha256": "3f76b6ae7875066a16d71dd76a21356b04aa6ecd4ed95c81923b1f1393050403"
+    },
+    {
+      "file": "core/row-cursor-build-manifest.json",
+      "bytes": 14691,
+      "rawSha256": "4447a360dad10127468325c1bc7bc14ccc8c6a6034a6d427d5e64c66f1dbfb99",
+      "canonicalLfSha256": "4447a360dad10127468325c1bc7bc14ccc8c6a6034a6d427d5e64c66f1dbfb99"
+    },
+    {
+      "file": "core/row-cursor-candidate.mjs",
+      "bytes": 8952,
+      "rawSha256": "ab531dc229202ba1f9fad8d022df0967e2d29da489571f084cce9d4ff8a21ab4",
+      "canonicalLfSha256": "ab531dc229202ba1f9fad8d022df0967e2d29da489571f084cce9d4ff8a21ab4"
+    },
+    {
+      "file": "core/row-cursor-candidate.patch",
+      "bytes": 1405,
+      "rawSha256": "a59eb5611e608ca3063a052fcd3d1d401c618e5678491d04c625ee2947681d71",
+      "canonicalLfSha256": "a59eb5611e608ca3063a052fcd3d1d401c618e5678491d04c625ee2947681d71"
+    },
+    {
+      "file": "core/row-cursor-change.json",
+      "bytes": 460,
+      "rawSha256": "744e6b82331fea99ee35f3c801ac2f5843aead116940a493bcc4a2759c47f4de",
+      "canonicalLfSha256": "744e6b82331fea99ee35f3c801ac2f5843aead116940a493bcc4a2759c47f4de"
+    },
+    {
+      "file": "core/row-cursor-edge-round1.json",
+      "bytes": 37980,
+      "rawSha256": "6b7575d6a57f846e0ff0e87a2e008c22ea1a7f6edf4cce4af2cf0b7b8917e36b",
+      "canonicalLfSha256": "6b7575d6a57f846e0ff0e87a2e008c22ea1a7f6edf4cce4af2cf0b7b8917e36b"
+    },
+    {
+      "file": "core/row-cursor-edge.mjs",
+      "bytes": 4688,
+      "rawSha256": "ff5e38ecaf8bcb6ef53c2a04240db62a490be8277730b0f550f54c9e41b04dfa",
+      "canonicalLfSha256": "ff5e38ecaf8bcb6ef53c2a04240db62a490be8277730b0f550f54c9e41b04dfa"
+    },
+    {
+      "file": "core/row-cursor-native-decision.json",
+      "bytes": 801,
+      "rawSha256": "156c3177627e9ed74b2fe754efe036cbc1fc3c0d84baf152a0df5767ef679d7c",
+      "canonicalLfSha256": "156c3177627e9ed74b2fe754efe036cbc1fc3c0d84baf152a0df5767ef679d7c"
+    },
+    {
+      "file": "core/row-cursor-node-round1.json",
+      "bytes": 30662,
+      "rawSha256": "430f76c097097e280f34a9c7fdc747c7efe28b5b219ec643e9ede8086530f584",
+      "canonicalLfSha256": "430f76c097097e280f34a9c7fdc747c7efe28b5b219ec643e9ede8086530f584"
+    },
+    {
+      "file": "core/row-cursor-node-round2.json",
+      "bytes": 31552,
+      "rawSha256": "f3dd91a82e12709a1b29e8261d9abe3db907490b30e4d8ba2dee67df17af3262",
+      "canonicalLfSha256": "f3dd91a82e12709a1b29e8261d9abe3db907490b30e4d8ba2dee67df17af3262"
+    },
+    {
+      "file": "core/row-cursor-plan.json",
+      "bytes": 1487,
+      "rawSha256": "4b5cf7b30aea5676fe17adfc326b514f898ac84739c1f4b7f72d1e6d1e311e7a",
+      "canonicalLfSha256": "4b5cf7b30aea5676fe17adfc326b514f898ac84739c1f4b7f72d1e6d1e311e7a"
+    },
+    {
+      "file": "core/row-cursor-prepare.mjs",
+      "bytes": 6780,
+      "rawSha256": "fe51c6d5ead04ff94d37ecfee68c3c42b6730009ebe9cdf97e5c81834e64ce84",
+      "canonicalLfSha256": "fe51c6d5ead04ff94d37ecfee68c3c42b6730009ebe9cdf97e5c81834e64ce84"
+    },
+    {
+      "file": "core/row-cursor-probe.mjs",
+      "bytes": 7921,
+      "rawSha256": "c907cbad1fc166f77cf9e7fd4fd5cc63f50c4e3cccd4e596616e00370dadafe8",
+      "canonicalLfSha256": "c907cbad1fc166f77cf9e7fd4fd5cc63f50c4e3cccd4e596616e00370dadafe8"
+    },
+    {
+      "file": "core/row-cursor-serve.mjs",
+      "bytes": 1427,
+      "rawSha256": "0b4c13593ff57cd38d013b1016608cd2ea97e2d1facc4f0cc654a48a24954985",
+      "canonicalLfSha256": "0b4c13593ff57cd38d013b1016608cd2ea97e2d1facc4f0cc654a48a24954985"
+    },
+    {
+      "file": "core/row-cursor-summarize.mjs",
+      "bytes": 6221,
+      "rawSha256": "27afa23a6f8c68cdaedd0bac7d8d072a5591a29d56639ccaafe217ae3428a031",
+      "canonicalLfSha256": "27afa23a6f8c68cdaedd0bac7d8d072a5591a29d56639ccaafe217ae3428a031"
+    },
+    {
+      "file": "core/row-cursor-summary.json",
+      "bytes": 36703,
+      "rawSha256": "796581eec9c0baae14b285bd106c81f8e592905e0546cf672399f7b36a36f33a",
+      "canonicalLfSha256": "796581eec9c0baae14b285bd106c81f8e592905e0546cf672399f7b36a36f33a"
+    },
+    {
+      "file": "core/row-cursor-summary.md",
+      "bytes": 3303,
+      "rawSha256": "76469b46ba4549139338abc674989dbf604287c6c632f70ea6846ccdcf560d93",
+      "canonicalLfSha256": "76469b46ba4549139338abc674989dbf604287c6c632f70ea6846ccdcf560d93"
+    },
+    {
+      "file": "core/serve-kernels.mjs",
+      "bytes": 1527,
+      "rawSha256": "45ae3c36750991b9f411d6066dbbc739c3a4ae05d332e3080c8044164d14b6c2",
+      "canonicalLfSha256": "45ae3c36750991b9f411d6066dbbc739c3a4ae05d332e3080c8044164d14b6c2"
+    },
+    {
+      "file": "core/serve-variants.mjs",
+      "bytes": 1602,
+      "rawSha256": "cf6fac72241b99ef4bb9071458f143d3691baa810761f728b3539c59640fc7d3",
+      "canonicalLfSha256": "cf6fac72241b99ef4bb9071458f143d3691baa810761f728b3539c59640fc7d3"
+    },
+    {
+      "file": "core/source-review.md",
+      "bytes": 24014,
+      "rawSha256": "8db06974458dc7da315d54fb9d7cb17bf806accd3018b49745d9328e65d4f427",
+      "canonicalLfSha256": "8db06974458dc7da315d54fb9d7cb17bf806accd3018b49745d9328e65d4f427"
+    },
+    {
+      "file": "core/summarize.mjs",
+      "bytes": 7433,
+      "rawSha256": "67166116cf88b13dab2163533e79ae51010ad917ff363120e27e85c965ce6d64",
+      "canonicalLfSha256": "67166116cf88b13dab2163533e79ae51010ad917ff363120e27e85c965ce6d64"
+    },
+    {
+      "file": "core/variant-manifest.json",
+      "bytes": 47732,
+      "rawSha256": "b3ff1d1234f0802c624ff420e0aeb0140ab6e01bb9f25a2cb9146f623387f391",
+      "canonicalLfSha256": "b3ff1d1234f0802c624ff420e0aeb0140ab6e01bb9f25a2cb9146f623387f391"
+    },
+    {
+      "file": "core/variant-review-amendment.json",
+      "bytes": 1396,
+      "rawSha256": "72f0e69665abf0a08e355405217e51ae07c0c0e54b8c233056dc4b38dfbf1a12",
+      "canonicalLfSha256": "72f0e69665abf0a08e355405217e51ae07c0c0e54b8c233056dc4b38dfbf1a12"
+    },
+    {
+      "file": "desktop-cleanup.json",
+      "bytes": 2463,
+      "rawSha256": "f5af63efc5aa15736305b3937af8e7f88c3897f2fe00154e4af3b04bb86f0200",
+      "canonicalLfSha256": "426b30692693ed10646354d22ec555636103296552f80daff393fd7a24b87eb4"
+    },
+    {
+      "file": "final-build.log",
+      "bytes": 1755,
+      "rawSha256": "6b653e4d13a64eccffdfe49a23a5b26813679bcb8a1f4c238f803d45bbe8477c",
+      "canonicalLfSha256": "6b653e4d13a64eccffdfe49a23a5b26813679bcb8a1f4c238f803d45bbe8477c"
+    },
+    {
+      "file": "final-provenance.json",
+      "bytes": 76390,
+      "rawSha256": "ab6ec2ac918e034c4d5ef0b9a2fa8d7b11977f74697d47dac51a6edd9685e4ee",
+      "canonicalLfSha256": "ab6ec2ac918e034c4d5ef0b9a2fa8d7b11977f74697d47dac51a6edd9685e4ee"
+    },
+    {
+      "file": "final-source-manifest.json",
+      "bytes": 1237,
+      "rawSha256": "037490f301a09c90d1c50aa951b5eebfc61977477309439ed084c2ad53a12ea1",
+      "canonicalLfSha256": "037490f301a09c90d1c50aa951b5eebfc61977477309439ed084c2ad53a12ea1"
+    },
+    {
+      "file": "final-tests-incomplete-snapshot.log",
+      "bytes": 2557,
+      "rawSha256": "5f6d20987d8fc8296a2e164babaf071076346af186bb48080fda76123c941a7c",
+      "canonicalLfSha256": "48242ea5b8d303bcf23f688b8c75fa44938dbe9fcadeeb00bf2e42e3ac281ce5"
+    },
+    {
+      "file": "final-tests.log",
+      "bytes": 753,
+      "rawSha256": "07f5c17f3c714a3efd7b659a69c2f49a4cd8b4d79c32f775db2a9978aa2bcf6b",
+      "canonicalLfSha256": "a032beb6d1d613508f2fbc8c745288727c259690413796bcc0d2b3023f6da7bf"
+    },
+    {
+      "file": "freeze-final.mjs",
+      "bytes": 4097,
+      "rawSha256": "476a0b4990088761301d7f09dc54c776418d67448719c17f796efde2fd193aaa",
+      "canonicalLfSha256": "476a0b4990088761301d7f09dc54c776418d67448719c17f796efde2fd193aaa"
+    },
+    {
+      "file": "index-evidence.mjs",
+      "bytes": 3548,
+      "rawSha256": "244511a0e05471cfe7194b2f96a40971c75c3e7336614989a7809942e323ecac",
+      "canonicalLfSha256": "244511a0e05471cfe7194b2f96a40971c75c3e7336614989a7809942e323ecac"
+    },
+    {
+      "file": "inventory.json",
+      "bytes": 26101,
+      "rawSha256": "689bbd6a88a49ef1fc1f8b6b41f7f05c815b8b7fa8efaededaeaa6b1cd034b04",
+      "canonicalLfSha256": "689bbd6a88a49ef1fc1f8b6b41f7f05c815b8b7fa8efaededaeaa6b1cd034b04"
+    },
+    {
+      "file": "io-android/ab-analysis.mjs",
+      "bytes": 12700,
+      "rawSha256": "97bcda18df6bc3587d656386551062527172b6e7d79374521b5f1460f47bce94",
+      "canonicalLfSha256": "97bcda18df6bc3587d656386551062527172b6e7d79374521b5f1460f47bce94"
+    },
+    {
+      "file": "io-android/ab-analysis/pairs-1792318872277.json",
+      "bytes": 12391,
+      "rawSha256": "b468fddb0800c633eaffcaeb376685e237143d89e8e6cf263501a18a978156ab",
+      "canonicalLfSha256": "b468fddb0800c633eaffcaeb376685e237143d89e8e6cf263501a18a978156ab"
+    },
+    {
+      "file": "io-android/ab-auto-repeat.mjs",
+      "bytes": 12465,
+      "rawSha256": "19a4422cf98b150860db6eb54d1d4699c9cb0924b4cf08401fd4c4d7b174480c",
+      "canonicalLfSha256": "19a4422cf98b150860db6eb54d1d4699c9cb0924b4cf08401fd4c4d7b174480c"
+    },
+    {
+      "file": "io-android/ab-auto-repeat/pairs-1792319319448.json",
+      "bytes": 9468,
+      "rawSha256": "3d0d17bb67a8568e2f7bb701eb47c71664ccc16efab0b06027616b228b8ac189",
+      "canonicalLfSha256": "3d0d17bb67a8568e2f7bb701eb47c71664ccc16efab0b06027616b228b8ac189"
+    },
+    {
+      "file": "io-android/ab-bands.mjs",
+      "bytes": 12685,
+      "rawSha256": "dc95ea8dfec55c0bc3e6edd81afbe71f387beaf8910db7350ff99de2c8a6d363",
+      "canonicalLfSha256": "dc95ea8dfec55c0bc3e6edd81afbe71f387beaf8910db7350ff99de2c8a6d363"
+    },
+    {
+      "file": "io-android/ab-bands/pairs-1792318984854.json",
+      "bytes": 12420,
+      "rawSha256": "ac33ec69e62be7f73a0d332b2dcf363d38b0598854b1a3583abf36aa9023662f",
+      "canonicalLfSha256": "ac33ec69e62be7f73a0d332b2dcf363d38b0598854b1a3583abf36aa9023662f"
+    },
+    {
+      "file": "io-android/ab-caption.mjs",
+      "bytes": 12677,
+      "rawSha256": "ebf0769393c732f2b88a9ed7773004b94d53a54988de644a39e9cf9173d9e192",
+      "canonicalLfSha256": "ebf0769393c732f2b88a9ed7773004b94d53a54988de644a39e9cf9173d9e192"
+    },
+    {
+      "file": "io-android/ab-caption/pairs-checker-1792319091596.json",
+      "bytes": 13875,
+      "rawSha256": "79f4f028b4a3a9a2f732982bcfc28efa433a1bec5aefd15381eb27f3388d14cf",
+      "canonicalLfSha256": "79f4f028b4a3a9a2f732982bcfc28efa433a1bec5aefd15381eb27f3388d14cf"
+    },
+    {
+      "file": "io-android/ab-compression-action.mjs",
+      "bytes": 10938,
+      "rawSha256": "8df1d0a9a7732b6f64ed7982f5eee21273cb5fc22663f1e84fd7ee131805556a",
+      "canonicalLfSha256": "8df1d0a9a7732b6f64ed7982f5eee21273cb5fc22663f1e84fd7ee131805556a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319332483-tiny-0-baseline-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319332483-tiny-0-candidate-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319332483-tiny-1-baseline-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319332483-tiny-1-candidate-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319332483-tiny-2-baseline-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319332483-tiny-2-candidate-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319332483-tiny-3-baseline-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319332483-tiny-3-candidate-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319332483-tiny-4-baseline-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319332483-tiny-4-candidate-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319354309-sheet1024-0-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319354309-sheet1024-0-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319354309-sheet1024-1-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319354309-sheet1024-1-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319354309-sheet1024-2-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319354309-sheet1024-2-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319354309-sheet1024-3-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319354309-sheet1024-3-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319354309-sheet1024-4-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319354309-sheet1024-4-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319379354-partialKeep64-0-baseline-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319379354-partialKeep64-0-candidate-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319379354-partialKeep64-1-baseline-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319379354-partialKeep64-1-candidate-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319379354-partialKeep64-2-baseline-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319379354-partialKeep64-2-candidate-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319379354-partialKeep64-3-baseline-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319379354-partialKeep64-3-candidate-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319379354-partialKeep64-4-baseline-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/ab-compression-action/codexio-png-1792319379354-partialKeep64-4-candidate-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/ab-compression-action/partialKeep64-baseline.png",
+      "bytes": 180905,
+      "rawSha256": "224aed323efc917cc5ccc56979979a0a5250b77f42ddf523c13d7a22c7b812ee"
+    },
+    {
+      "file": "io-android/ab-compression-action/partialKeep64-candidate.png",
+      "bytes": 181299,
+      "rawSha256": "bab5a4558700ab45ad04467ca07ddd03efb6aff40e61cecc7291da967e999d2b"
+    },
+    {
+      "file": "io-android/ab-compression-action/results-partialKeep64-codexio-png-1792319379354.json",
+      "bytes": 14965,
+      "rawSha256": "167b25cd8ef4862cf6e08c32a30e4c6eed9f7e17ff51fefe787b0edc5e90b407",
+      "canonicalLfSha256": "167b25cd8ef4862cf6e08c32a30e4c6eed9f7e17ff51fefe787b0edc5e90b407"
+    },
+    {
+      "file": "io-android/ab-compression-action/results-sheet1024-codexio-png-1792319354309.json",
+      "bytes": 15009,
+      "rawSha256": "9da9e42bc29ffac8c05e0225cd94e9924b0370dc82a9e0887e60051ede790219",
+      "canonicalLfSha256": "9da9e42bc29ffac8c05e0225cd94e9924b0370dc82a9e0887e60051ede790219"
+    },
+    {
+      "file": "io-android/ab-compression-action/results-tiny-codexio-png-1792319332483.json",
+      "bytes": 14594,
+      "rawSha256": "170363ce6147e6c40d50a05f8cf15aeb16d1f239a30902bf70da2a9bea16fc54",
+      "canonicalLfSha256": "170363ce6147e6c40d50a05f8cf15aeb16d1f239a30902bf70da2a9bea16fc54"
+    },
+    {
+      "file": "io-android/ab-compression-action/sheet1024-baseline.png",
+      "bytes": 227782,
+      "rawSha256": "0038cb3d712f6a326696e14a0e76fc5698141ab4d4ce1d7398b1dfe41852d164"
+    },
+    {
+      "file": "io-android/ab-compression-action/sheet1024-candidate.png",
+      "bytes": 228972,
+      "rawSha256": "a01e0acf708459518f7f7525cc689f2b793d55dce961f01df17b96ea514ecb8e"
+    },
+    {
+      "file": "io-android/ab-compression-action/tiny-baseline.png",
+      "bytes": 143502,
+      "rawSha256": "128419158cedea425755d4f94f342c87ec0237e601d88dd0bcfbf1b30bea4ca4"
+    },
+    {
+      "file": "io-android/ab-compression-action/tiny-candidate.png",
+      "bytes": 144020,
+      "rawSha256": "c7231b2c7fdbd5239ddda654a9510f162d405625f3f2f91e7ba23ad751b14a71"
+    },
+    {
+      "file": "io-android/ab-compression.mjs",
+      "bytes": 10417,
+      "rawSha256": "46026d15a9472969239feacaffdf5531abca08d0e97efeafce134b54ac29b1a9",
+      "canonicalLfSha256": "46026d15a9472969239feacaffdf5531abca08d0e97efeafce134b54ac29b1a9"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65535-0-baseline-palette.png",
+      "bytes": 2025,
+      "rawSha256": "f51dc82cce6d70743f4dde299ab8bb647181492c2105f07dffa1e17857f6b7c8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65535-0-candidate-palette.png",
+      "bytes": 2025,
+      "rawSha256": "f51dc82cce6d70743f4dde299ab8bb647181492c2105f07dffa1e17857f6b7c8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65535-1-baseline-palette.png",
+      "bytes": 2025,
+      "rawSha256": "f51dc82cce6d70743f4dde299ab8bb647181492c2105f07dffa1e17857f6b7c8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65535-1-candidate-palette.png",
+      "bytes": 2025,
+      "rawSha256": "f51dc82cce6d70743f4dde299ab8bb647181492c2105f07dffa1e17857f6b7c8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65535-2-baseline-palette.png",
+      "bytes": 2025,
+      "rawSha256": "f51dc82cce6d70743f4dde299ab8bb647181492c2105f07dffa1e17857f6b7c8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65535-2-candidate-palette.png",
+      "bytes": 2025,
+      "rawSha256": "f51dc82cce6d70743f4dde299ab8bb647181492c2105f07dffa1e17857f6b7c8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65535-3-baseline-palette.png",
+      "bytes": 2025,
+      "rawSha256": "f51dc82cce6d70743f4dde299ab8bb647181492c2105f07dffa1e17857f6b7c8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65535-3-candidate-palette.png",
+      "bytes": 2025,
+      "rawSha256": "f51dc82cce6d70743f4dde299ab8bb647181492c2105f07dffa1e17857f6b7c8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65535-4-baseline-palette.png",
+      "bytes": 2025,
+      "rawSha256": "f51dc82cce6d70743f4dde299ab8bb647181492c2105f07dffa1e17857f6b7c8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65535-4-candidate-palette.png",
+      "bytes": 2025,
+      "rawSha256": "f51dc82cce6d70743f4dde299ab8bb647181492c2105f07dffa1e17857f6b7c8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65536-0-baseline-palette.png",
+      "bytes": 2275,
+      "rawSha256": "b44524ddc1d23ad7d11836fc77e31cb695e9eadfd09bbca6d499c3df65ff7500"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65536-0-candidate-palette.png",
+      "bytes": 2275,
+      "rawSha256": "b44524ddc1d23ad7d11836fc77e31cb695e9eadfd09bbca6d499c3df65ff7500"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65536-1-baseline-palette.png",
+      "bytes": 2275,
+      "rawSha256": "b44524ddc1d23ad7d11836fc77e31cb695e9eadfd09bbca6d499c3df65ff7500"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65536-1-candidate-palette.png",
+      "bytes": 2275,
+      "rawSha256": "b44524ddc1d23ad7d11836fc77e31cb695e9eadfd09bbca6d499c3df65ff7500"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65536-2-baseline-palette.png",
+      "bytes": 2275,
+      "rawSha256": "b44524ddc1d23ad7d11836fc77e31cb695e9eadfd09bbca6d499c3df65ff7500"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65536-2-candidate-palette.png",
+      "bytes": 2275,
+      "rawSha256": "b44524ddc1d23ad7d11836fc77e31cb695e9eadfd09bbca6d499c3df65ff7500"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65536-3-baseline-palette.png",
+      "bytes": 2275,
+      "rawSha256": "b44524ddc1d23ad7d11836fc77e31cb695e9eadfd09bbca6d499c3df65ff7500"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65536-3-candidate-palette.png",
+      "bytes": 2275,
+      "rawSha256": "b44524ddc1d23ad7d11836fc77e31cb695e9eadfd09bbca6d499c3df65ff7500"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65536-4-baseline-palette.png",
+      "bytes": 2275,
+      "rawSha256": "b44524ddc1d23ad7d11836fc77e31cb695e9eadfd09bbca6d499c3df65ff7500"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65536-4-candidate-palette.png",
+      "bytes": 2275,
+      "rawSha256": "b44524ddc1d23ad7d11836fc77e31cb695e9eadfd09bbca6d499c3df65ff7500"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65792-0-baseline-palette.png",
+      "bytes": 1464,
+      "rawSha256": "351a96ea7f8f3c4b0879a312bf9e7d6ae65294f6cc7b0c85b0635a02e3032790"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65792-0-candidate-palette.png",
+      "bytes": 1464,
+      "rawSha256": "351a96ea7f8f3c4b0879a312bf9e7d6ae65294f6cc7b0c85b0635a02e3032790"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65792-1-baseline-palette.png",
+      "bytes": 1464,
+      "rawSha256": "351a96ea7f8f3c4b0879a312bf9e7d6ae65294f6cc7b0c85b0635a02e3032790"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65792-1-candidate-palette.png",
+      "bytes": 1464,
+      "rawSha256": "351a96ea7f8f3c4b0879a312bf9e7d6ae65294f6cc7b0c85b0635a02e3032790"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65792-2-baseline-palette.png",
+      "bytes": 1464,
+      "rawSha256": "351a96ea7f8f3c4b0879a312bf9e7d6ae65294f6cc7b0c85b0635a02e3032790"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65792-2-candidate-palette.png",
+      "bytes": 1464,
+      "rawSha256": "351a96ea7f8f3c4b0879a312bf9e7d6ae65294f6cc7b0c85b0635a02e3032790"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65792-3-baseline-palette.png",
+      "bytes": 1464,
+      "rawSha256": "351a96ea7f8f3c4b0879a312bf9e7d6ae65294f6cc7b0c85b0635a02e3032790"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65792-3-candidate-palette.png",
+      "bytes": 1464,
+      "rawSha256": "351a96ea7f8f3c4b0879a312bf9e7d6ae65294f6cc7b0c85b0635a02e3032790"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65792-4-baseline-palette.png",
+      "bytes": 1464,
+      "rawSha256": "351a96ea7f8f3c4b0879a312bf9e7d6ae65294f6cc7b0c85b0635a02e3032790"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-indexed65792-4-candidate-palette.png",
+      "bytes": 1464,
+      "rawSha256": "351a96ea7f8f3c4b0879a312bf9e7d6ae65294f6cc7b0c85b0635a02e3032790"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-rgba65537-0-baseline-palette.png",
+      "bytes": 38821,
+      "rawSha256": "0127cbc63b269328d5990e3157de7a02c0fb5147002cae5d0b15a887c632cef8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-rgba65537-0-candidate-palette.png",
+      "bytes": 38821,
+      "rawSha256": "0127cbc63b269328d5990e3157de7a02c0fb5147002cae5d0b15a887c632cef8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-rgba65537-1-baseline-palette.png",
+      "bytes": 38821,
+      "rawSha256": "0127cbc63b269328d5990e3157de7a02c0fb5147002cae5d0b15a887c632cef8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-rgba65537-1-candidate-palette.png",
+      "bytes": 38821,
+      "rawSha256": "0127cbc63b269328d5990e3157de7a02c0fb5147002cae5d0b15a887c632cef8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-rgba65537-2-baseline-palette.png",
+      "bytes": 38821,
+      "rawSha256": "0127cbc63b269328d5990e3157de7a02c0fb5147002cae5d0b15a887c632cef8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-rgba65537-2-candidate-palette.png",
+      "bytes": 38821,
+      "rawSha256": "0127cbc63b269328d5990e3157de7a02c0fb5147002cae5d0b15a887c632cef8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-rgba65537-3-baseline-palette.png",
+      "bytes": 38821,
+      "rawSha256": "0127cbc63b269328d5990e3157de7a02c0fb5147002cae5d0b15a887c632cef8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-rgba65537-3-candidate-palette.png",
+      "bytes": 38821,
+      "rawSha256": "0127cbc63b269328d5990e3157de7a02c0fb5147002cae5d0b15a887c632cef8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-rgba65537-4-baseline-palette.png",
+      "bytes": 38821,
+      "rawSha256": "0127cbc63b269328d5990e3157de7a02c0fb5147002cae5d0b15a887c632cef8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-rgba65537-4-candidate-palette.png",
+      "bytes": 38821,
+      "rawSha256": "0127cbc63b269328d5990e3157de7a02c0fb5147002cae5d0b15a887c632cef8"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet1024-0-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet1024-0-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet1024-1-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet1024-1-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet1024-2-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet1024-2-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet1024-3-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet1024-3-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet1024-4-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet1024-4-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet2048-0-baseline-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet2048-0-candidate-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet2048-1-baseline-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet2048-1-candidate-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet2048-2-baseline-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet2048-2-candidate-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet2048-3-baseline-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet2048-3-candidate-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet2048-4-baseline-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-sheet2048-4-candidate-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-tiny-0-baseline-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-tiny-0-candidate-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-tiny-1-baseline-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-tiny-1-candidate-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-tiny-2-baseline-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-tiny-2-candidate-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-tiny-3-baseline-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-tiny-3-candidate-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-tiny-4-baseline-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression/codexio-png-1792318598095-tiny-4-candidate-palette.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/ab-compression/indexed65535-baseline.png",
+      "bytes": 172994,
+      "rawSha256": "edb5ee2a16d8f8e4ad106f4ae97013dee9a94c30545ea665575a524d5d16db6b"
+    },
+    {
+      "file": "io-android/ab-compression/indexed65535-candidate.png",
+      "bytes": 174069,
+      "rawSha256": "796bdafe75840278b5c63c0f0ae3729e240ab07c0901e1044fd7438efab5bf6c"
+    },
+    {
+      "file": "io-android/ab-compression/indexed65536-baseline.png",
+      "bytes": 165845,
+      "rawSha256": "d5a1795d8a7af3d128785485f5f414ac9d1804a164bb5ced05398a004f2bae3b"
+    },
+    {
+      "file": "io-android/ab-compression/indexed65536-candidate.png",
+      "bytes": 166758,
+      "rawSha256": "a57fb268401a36861f8d2701aa3550a2503f105f5f4ecacbe54e5b6474a3cf79"
+    },
+    {
+      "file": "io-android/ab-compression/indexed65792-baseline.png",
+      "bytes": 161726,
+      "rawSha256": "88862c57092be7a475ff124bfcb0ac88ee91897a2ca87bcc80c1f7dc12dcb161"
+    },
+    {
+      "file": "io-android/ab-compression/indexed65792-candidate.png",
+      "bytes": 162438,
+      "rawSha256": "0edd8bdcf6998f835e509d0cbb60bc467587a63aa99eb3059f1ab06810c41b8d"
+    },
+    {
+      "file": "io-android/ab-compression/results-all-codexio-png-1792318598095.json",
+      "bytes": 77352,
+      "rawSha256": "4bdfa36ab0ab4f3e3c4df6686643dfc201a0f8ba524f500ba3eb7d94fba96685",
+      "canonicalLfSha256": "4bdfa36ab0ab4f3e3c4df6686643dfc201a0f8ba524f500ba3eb7d94fba96685"
+    },
+    {
+      "file": "io-android/ab-compression/rgba65537-baseline.png",
+      "bytes": 181819,
+      "rawSha256": "5201405aad18d4a95d9829339ce107b99bcb67d4f85bf8f52f389184645c4232"
+    },
+    {
+      "file": "io-android/ab-compression/rgba65537-candidate.png",
+      "bytes": 182628,
+      "rawSha256": "89e72b198a9906b19ad71dd41f99834ba2ff50815c746fc7814466d1867ec008"
+    },
+    {
+      "file": "io-android/ab-compression/sheet1024-baseline.png",
+      "bytes": 228343,
+      "rawSha256": "283550d0138b13fd76437585b9cd018bcf30c25e0a1e475042806dd2de19526a"
+    },
+    {
+      "file": "io-android/ab-compression/sheet1024-candidate.png",
+      "bytes": 230202,
+      "rawSha256": "5cf4b09aac6bf804a8f3a1b72e07208b4d68cbb5838cac604db5452993bb1336"
+    },
+    {
+      "file": "io-android/ab-compression/sheet2048-baseline.png",
+      "bytes": 268054,
+      "rawSha256": "c90dc6af5857e92cf941ca2b04270c958e27f89b920e0fdc9e0cf89c35f4067e"
+    },
+    {
+      "file": "io-android/ab-compression/sheet2048-candidate.png",
+      "bytes": 268709,
+      "rawSha256": "92ccb6f8afe83d883a97c26ab023cb2c6e0b7753250769d6b5c6dc3963c5eeb0"
+    },
+    {
+      "file": "io-android/ab-compression/tiny-baseline.png",
+      "bytes": 144289,
+      "rawSha256": "5641c48b84c573c84327af0d19eac80164a89ab9e111d9523d87a6fa3d6c7bdd"
+    },
+    {
+      "file": "io-android/ab-compression/tiny-candidate.png",
+      "bytes": 144601,
+      "rawSha256": "72547d7fa34bbb79b2417b0fd2bb34c45a89fb28c57752c9ea4c6b179cf6436a"
+    },
+    {
+      "file": "io-android/ab-summary.mjs",
+      "bytes": 12617,
+      "rawSha256": "38d7553051c789b3ca8a99bc52a9828de612b3aad5d8ac8ea365f2319fca8282",
+      "canonicalLfSha256": "38d7553051c789b3ca8a99bc52a9828de612b3aad5d8ac8ea365f2319fca8282"
+    },
+    {
+      "file": "io-android/ab-summary/native/codexio-ab-summary-b1-off-1792319041866-s0-0-kenney-sheet-2048-palette.png",
+      "bytes": 45693,
+      "rawSha256": "ef149c954eef33f357e4305292bce2d6fb53d1b4f4e03fc2ebdab860f3238644"
+    },
+    {
+      "file": "io-android/ab-summary/native/codexio-ab-summary-b1-off-1792319041866-s3-0-kenney-sheet-2048-palette.png",
+      "bytes": 45693,
+      "rawSha256": "ef149c954eef33f357e4305292bce2d6fb53d1b4f4e03fc2ebdab860f3238644"
+    },
+    {
+      "file": "io-android/ab-summary/native/codexio-ab-summary-b1-on-1792319041866-s1-0-kenney-sheet-2048-palette.png",
+      "bytes": 45693,
+      "rawSha256": "ef149c954eef33f357e4305292bce2d6fb53d1b4f4e03fc2ebdab860f3238644"
+    },
+    {
+      "file": "io-android/ab-summary/native/codexio-ab-summary-b1-on-1792319041866-s2-0-kenney-sheet-2048-palette.png",
+      "bytes": 45693,
+      "rawSha256": "ef149c954eef33f357e4305292bce2d6fb53d1b4f4e03fc2ebdab860f3238644"
+    },
+    {
+      "file": "io-android/ab-summary/pairs-1792319041866.json",
+      "bytes": 53732,
+      "rawSha256": "0cc583c2d4cd80292f7d935622752bb57a4625574aa2b26d8946b4490d822bfd",
+      "canonicalLfSha256": "0cc583c2d4cd80292f7d935622752bb57a4625574aa2b26d8946b4490d822bfd"
+    },
+    {
+      "file": "io-android/active-owned-target.json",
+      "bytes": 127,
+      "rawSha256": "964af06f9c84e0a8b43f749f9ca6891d70c85ed2ed55c6783cd176ca5bae46c8",
+      "canonicalLfSha256": "964af06f9c84e0a8b43f749f9ca6891d70c85ed2ed55c6783cd176ca5bae46c8"
+    },
+    {
+      "file": "io-android/api-research.md",
+      "bytes": 4900,
+      "rawSha256": "55077c574d544122d1f25455808f50be77575b7ee5c5dbc8566e9380727f41ec",
+      "canonicalLfSha256": "55077c574d544122d1f25455808f50be77575b7ee5c5dbc8566e9380727f41ec"
+    },
+    {
+      "file": "io-android/baseline-summary.json",
+      "bytes": 46536,
+      "rawSha256": "862ca186f538bdb0e375510974e40fda506499097516aff8023e0875c8414071",
+      "canonicalLfSha256": "862ca186f538bdb0e375510974e40fda506499097516aff8023e0875c8414071"
+    },
+    {
+      "file": "io-android/boundary-fixtures/indexed65535.png",
+      "bytes": 7326,
+      "rawSha256": "ea706efd43477c96dae6b133c250a1158e1e503e62531666e2a833bae5fe6f14"
+    },
+    {
+      "file": "io-android/boundary-fixtures/indexed65536.png",
+      "bytes": 5742,
+      "rawSha256": "bbed44aac9c526f582907c880d391cba929840cd0fd6e6e5d9e3d58662ccbe28"
+    },
+    {
+      "file": "io-android/boundary-fixtures/indexed65792.png",
+      "bytes": 3377,
+      "rawSha256": "1e744b3136329e99d873c9c1cfc9da0cb3dc752d5359095ad4442ab9f8f31ecf"
+    },
+    {
+      "file": "io-android/boundary-fixtures/manifest.json",
+      "bytes": 1373,
+      "rawSha256": "fe12ebc3fc8535e76d854c9e4c264e3c2199cef411ec109f53d26c64ce0e8f6b",
+      "canonicalLfSha256": "fe12ebc3fc8535e76d854c9e4c264e3c2199cef411ec109f53d26c64ce0e8f6b"
+    },
+    {
+      "file": "io-android/boundary-fixtures/rgba65537.png",
+      "bytes": 65739,
+      "rawSha256": "f715ba524dfb8903204c823f93be42f34db04a1c89e1850ab2255707b54158ca"
+    },
+    {
+      "file": "io-android/cleanup.json",
+      "bytes": 2158,
+      "rawSha256": "3e96cb5d1d945ede692fcc44d1c335518e316eae8e09969b26fea831411fe95c",
+      "canonicalLfSha256": "3e96cb5d1d945ede692fcc44d1c335518e316eae8e09969b26fea831411fe95c"
+    },
+    {
+      "file": "io-android/cleanup.mjs",
+      "bytes": 3679,
+      "rawSha256": "b768964a0ac860bf81e3fca2aa77940e6ddce74f6bb8e627577a631e0140cc4d",
+      "canonicalLfSha256": "b768964a0ac860bf81e3fca2aa77940e6ddce74f6bb8e627577a631e0140cc4d"
+    },
+    {
+      "file": "io-android/comparative-summary.json",
+      "bytes": 249938,
+      "rawSha256": "9c1a6667f33117a80e262688a8028d2d3d04e751072530a1e318ad7b81c20ecf",
+      "canonicalLfSha256": "9c1a6667f33117a80e262688a8028d2d3d04e751072530a1e318ad7b81c20ecf"
+    },
+    {
+      "file": "io-android/corrected-baseline-all-codexio-corrected-baseline-1792317795381.json",
+      "bytes": 83650,
+      "rawSha256": "6f935274d8d9767e0c18cd5da9377c80d30680332b476a45331b67e2c5b823cf",
+      "canonicalLfSha256": "6f935274d8d9767e0c18cd5da9377c80d30680332b476a45331b67e2c5b823cf"
+    },
+    {
+      "file": "io-android/corrected-baseline/codexio-corrected-baseline-1792317795381-entropy512-0-entropy512-palette.png",
+      "bytes": 107186,
+      "rawSha256": "b8af76438dcad5090f6569e89b22f23abe248794918fcc64e739cc94809396cd"
+    },
+    {
+      "file": "io-android/corrected-baseline/codexio-corrected-baseline-1792317795381-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "bytes": 12752,
+      "rawSha256": "270f4db2f8da8e0f2c7da29fb6a526046a20c602a7df5268bb6e33b211ddcb0f"
+    },
+    {
+      "file": "io-android/corrected-baseline/codexio-corrected-baseline-1792317795381-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "bytes": 29510,
+      "rawSha256": "1689433d660b81dbd1c1ae90ebb37c23a0649131cabfc4023c95cbfb8dfc65e0"
+    },
+    {
+      "file": "io-android/corrected-baseline/codexio-corrected-baseline-1792317795381-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/corrected-baseline/codexio-corrected-baseline-1792317795381-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/corrected-baseline/codexio-corrected-baseline-1792317795381-partial-glow64-0-partial-glow64-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/corrected-baseline/codexio-corrected-baseline-1792317795381-real-magic-0-real-magic-palette.gif",
+      "bytes": 741,
+      "rawSha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19"
+    },
+    {
+      "file": "io-android/corrected-baseline/codexio-corrected-baseline-1792317795381-silhouette32-0-silhouette32-palette.png",
+      "bytes": 120,
+      "rawSha256": "1c30399a7a2c430165ca5a350a69db694a8eb83af4bf3364c8288fa696c143bb"
+    },
+    {
+      "file": "io-android/corrected-baseline/codexio-corrected-baseline-1792317795381-transparent32-0-transparent32-palette.png",
+      "bytes": 109,
+      "rawSha256": "e3603df8fd507c1b93d351aa8d615dd67c7ad2678b417d181d2093ebf94ee340"
+    },
+    {
+      "file": "io-android/corrected-baseline/codexio-corrected-baseline-1792317795381-worker-unavailable-0-real-magic-palette.gif",
+      "bytes": 741,
+      "rawSha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19"
+    },
+    {
+      "file": "io-android/corrected-baseline/demo-dark.png",
+      "bytes": 134298,
+      "rawSha256": "5dc25eac5460ea32d6ab4976ea7fc342c45cc5e3fe14500c64cbad5f67362211"
+    },
+    {
+      "file": "io-android/corrected-baseline/demo-light.png",
+      "bytes": 157196,
+      "rawSha256": "04354940d87880fefc747616ba65713b462eb63707ca5e7ef05dda6b86cf9b57"
+    },
+    {
+      "file": "io-android/corrected-baseline/kenney-sheet-1024.png",
+      "bytes": 263705,
+      "rawSha256": "7664a2d8c75d2ca2ce7048c22e890c38963568be449d093d544f9f8aa7e39fba"
+    },
+    {
+      "file": "io-android/corrected-baseline/kenney-sheet-2048.png",
+      "bytes": 241498,
+      "rawSha256": "88f874c69dea8db1797a7a89df3f41223d14a0fa2f9022337eec0b8cda77bd69"
+    },
+    {
+      "file": "io-android/corrected-baseline/largeonebit-kenney-sheet-1024.png",
+      "bytes": 181598,
+      "rawSha256": "12bd94ad5285df07cb34b840bf78ae7fec7f78ece88894e65cc8482b3b7a281f"
+    },
+    {
+      "file": "io-android/corrected-baseline/largeonebit-kenney-sheet-2048.png",
+      "bytes": 187216,
+      "rawSha256": "7281eb55247d0578de0b9459e41c2a1178fe0ba82a1b9dd283e34b10e80602c4"
+    },
+    {
+      "file": "io-android/corrected-baseline/onebit-shape.png",
+      "bytes": 107299,
+      "rawSha256": "297eafda1d2d069cd568db96c645d4acb34d3024b829add71eeb1664b76b84a8"
+    },
+    {
+      "file": "io-android/corrected-baseline/preview-return.png",
+      "bytes": 184864,
+      "rawSha256": "a98f1932351d2680cff67b82d7ddd1ef35c2f1d33e13f952e2c1d3c772443113"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-107.cpuprofile",
+      "bytes": 38520,
+      "rawSha256": "19d3aa06b1decfd001cb9418f290ab33cbe637f08bf69e595686ef2adc3a30d2"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-108.cpuprofile",
+      "bytes": 60743,
+      "rawSha256": "70661103460040a29fff5a096cb65a6814ea434e8eec6902980d36a1dbd609b5"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-109.cpuprofile",
+      "bytes": 59411,
+      "rawSha256": "88a9fbc8d918399706a564d3d1c1c41352c05462142db81c2286d55c53da8ba3"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-12.cpuprofile",
+      "bytes": 33752,
+      "rawSha256": "e4d64f839590840fcf9230cea7a3bdc856f478fb653745ab6ca00d683b5e99d3"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-16.cpuprofile",
+      "bytes": 51923,
+      "rawSha256": "bbe77574210af5a0861f02786180b3a71682c5410c70178028a2b104f5aa65ed"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-17.cpuprofile",
+      "bytes": 35959,
+      "rawSha256": "ad64fb1d2a10e901b46289d119333e638f9f64ff53128760f5713023eda0345e"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-21.cpuprofile",
+      "bytes": 35835,
+      "rawSha256": "ee62b3035c392c94f0084fbccc21008b93ffd887bf4f7609f9fec169ec10ed64"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-34.cpuprofile",
+      "bytes": 38228,
+      "rawSha256": "e2a9b2dd2f4c2aa5327009fae4d2ab62da0d8e53a70ccf32ef3295c5f02362d8"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-70.cpuprofile",
+      "bytes": 57508,
+      "rawSha256": "95776bb136de7293d257b5f4356f8b5a5949730f0da782ad70862041e7b2dc40"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-96.cpuprofile",
+      "bytes": 25735,
+      "rawSha256": "75202f0c39100308d4b4bc356a4ca59e793c9b3ffa47ef44507ee5712749d21d"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-97.cpuprofile",
+      "bytes": 63309,
+      "rawSha256": "97a0934833511adfe9e6fe23f3f1be982af7bdb8c949fd59a7d3f9a87ae377bb"
+    },
+    {
+      "file": "io-android/corrected-baseline/profiles/codexio-corrected-baseline-1792317795381-98.cpuprofile",
+      "bytes": 60475,
+      "rawSha256": "f28dcf5ae70ffedc9fa5ffebe147370f3384f74770564ff3b1460d429d08d053"
+    },
+    {
+      "file": "io-android/coverage.json",
+      "bytes": 6165,
+      "rawSha256": "0a65ecb67f7576097829ef3a272fe99821e92d83d1d76edd9506ad60e7e20730",
+      "canonicalLfSha256": "0a65ecb67f7576097829ef3a272fe99821e92d83d1d76edd9506ad60e7e20730"
+    },
+    {
+      "file": "io-android/current-baseline-all-codexio-current-baseline-1792317573382.json",
+      "bytes": 82806,
+      "rawSha256": "19c4b84d2b8239863a342ce0c01dcaa70ff87b45bec1519ea8eeb3f284036d3e",
+      "canonicalLfSha256": "19c4b84d2b8239863a342ce0c01dcaa70ff87b45bec1519ea8eeb3f284036d3e"
+    },
+    {
+      "file": "io-android/current-baseline/codexio-current-baseline-1792317573382-entropy512-0-entropy512-palette.png",
+      "bytes": 107186,
+      "rawSha256": "b8af76438dcad5090f6569e89b22f23abe248794918fcc64e739cc94809396cd"
+    },
+    {
+      "file": "io-android/current-baseline/codexio-current-baseline-1792317573382-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "bytes": 12752,
+      "rawSha256": "270f4db2f8da8e0f2c7da29fb6a526046a20c602a7df5268bb6e33b211ddcb0f"
+    },
+    {
+      "file": "io-android/current-baseline/codexio-current-baseline-1792317573382-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "bytes": 29510,
+      "rawSha256": "1689433d660b81dbd1c1ae90ebb37c23a0649131cabfc4023c95cbfb8dfc65e0"
+    },
+    {
+      "file": "io-android/current-baseline/codexio-current-baseline-1792317573382-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/current-baseline/codexio-current-baseline-1792317573382-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/current-baseline/codexio-current-baseline-1792317573382-partial-glow64-0-partial-glow64-palette.png",
+      "bytes": 2520,
+      "rawSha256": "27b412cab66ed2d5d4d18d8893c7ffbbec24bc461b3441f705fec4548dabcfb9"
+    },
+    {
+      "file": "io-android/current-baseline/codexio-current-baseline-1792317573382-real-magic-0-real-magic-palette.gif",
+      "bytes": 741,
+      "rawSha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19"
+    },
+    {
+      "file": "io-android/current-baseline/codexio-current-baseline-1792317573382-silhouette32-0-silhouette32-palette.png",
+      "bytes": 120,
+      "rawSha256": "1c30399a7a2c430165ca5a350a69db694a8eb83af4bf3364c8288fa696c143bb"
+    },
+    {
+      "file": "io-android/current-baseline/codexio-current-baseline-1792317573382-transparent32-0-transparent32-palette.png",
+      "bytes": 109,
+      "rawSha256": "e3603df8fd507c1b93d351aa8d615dd67c7ad2678b417d181d2093ebf94ee340"
+    },
+    {
+      "file": "io-android/current-baseline/codexio-current-baseline-1792317573382-worker-unavailable-0-real-magic-palette.gif",
+      "bytes": 741,
+      "rawSha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19"
+    },
+    {
+      "file": "io-android/current-baseline/demo-dark.png",
+      "bytes": 134298,
+      "rawSha256": "5dc25eac5460ea32d6ab4976ea7fc342c45cc5e3fe14500c64cbad5f67362211"
+    },
+    {
+      "file": "io-android/current-baseline/demo-light.png",
+      "bytes": 157196,
+      "rawSha256": "04354940d87880fefc747616ba65713b462eb63707ca5e7ef05dda6b86cf9b57"
+    },
+    {
+      "file": "io-android/current-baseline/kenney-sheet-1024.png",
+      "bytes": 317672,
+      "rawSha256": "78126c2a7d15b2afccde98e1a41fce17e7ef8d08a36f687e40da1b40df13bd8d"
+    },
+    {
+      "file": "io-android/current-baseline/kenney-sheet-2048.png",
+      "bytes": 240968,
+      "rawSha256": "30c092d32706afd27b79064d0a7d9260b8d7bb70c9d3dc9ca4f76c78ed311c76"
+    },
+    {
+      "file": "io-android/current-baseline/largeonebit-kenney-sheet-1024.png",
+      "bytes": 180952,
+      "rawSha256": "ad17ceb342f1308c979930cb0a0e07dead9e89e2fece49a3f6e2ebee2fd05926"
+    },
+    {
+      "file": "io-android/current-baseline/largeonebit-kenney-sheet-2048.png",
+      "bytes": 186592,
+      "rawSha256": "5b9344a86bbff24da24e46b8de286da7908d82ac5f25f6976b9e772a95896f81"
+    },
+    {
+      "file": "io-android/current-baseline/onebit-shape.png",
+      "bytes": 106656,
+      "rawSha256": "0ffef47c6f15bfbdef00576bccd6fa3f2888ce11cee415380cff5f970c078655"
+    },
+    {
+      "file": "io-android/current-baseline/preview-return.png",
+      "bytes": 184543,
+      "rawSha256": "5ffc6dce5d65d5828f3b1b12e1a9ac1122afcfbf4836d3bb7b1f5abf2028f837"
+    },
+    {
+      "file": "io-android/editor-causal-all-codexio-editor-causal-1792319566983.json",
+      "bytes": 46395,
+      "rawSha256": "d3138b1d42c051563917fcbc74df8a0f333c509f8f2c16e27c9bce2cd8ec18f2",
+      "canonicalLfSha256": "d3138b1d42c051563917fcbc74df8a0f333c509f8f2c16e27c9bce2cd8ec18f2"
+    },
+    {
+      "file": "io-android/editor-causal.mjs",
+      "bytes": 16023,
+      "rawSha256": "21c6bfa908863bcfb35b95eebd4879c393378883ba736781b62ba310905883ca",
+      "canonicalLfSha256": "21c6bfa908863bcfb35b95eebd4879c393378883ba736781b62ba310905883ca"
+    },
+    {
+      "file": "io-android/environment-initial.json",
+      "bytes": 699,
+      "rawSha256": "7dff65bb80eb2c7528a77e4bb9c5fbecd854610dc88880751a512fb6dab1cef7",
+      "canonicalLfSha256": "7dff65bb80eb2c7528a77e4bb9c5fbecd854610dc88880751a512fb6dab1cef7"
+    },
+    {
+      "file": "io-android/final-cumulative-smoke-1792321456883.json",
+      "bytes": 4863,
+      "rawSha256": "946c9be853e3a7379477bca9472b424ece0df5f88f70b9507ed1557e95d79b77",
+      "canonicalLfSha256": "946c9be853e3a7379477bca9472b424ece0df5f88f70b9507ed1557e95d79b77"
+    },
+    {
+      "file": "io-android/final-cumulative-smoke/codexio-final-cumulative-smoke-1792321456883-batch.zip",
+      "bytes": 1454,
+      "rawSha256": "8ef8dfb8c6344bdc739218ba241790b94fd92548c74d68ca69ea47176a5d3364"
+    },
+    {
+      "file": "io-android/final-cumulative-smoke/codexio-final-cumulative-smoke-1792321456883-full-gif-0-kenney-motion-256-colorfetti.gif",
+      "bytes": 29510,
+      "rawSha256": "1689433d660b81dbd1c1ae90ebb37c23a0649131cabfc4023c95cbfb8dfc65e0"
+    },
+    {
+      "file": "io-android/final-cumulative-smoke/codexio-final-cumulative-smoke-1792321456883-full-png-0-dungeon-wizard-colorfetti.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/final-cumulative-smoke/codexio-final-cumulative-smoke-1792321456883-onebit-0-dungeon-wizard-colorfetti.png",
+      "bytes": 160,
+      "rawSha256": "292446898425cf65bb0f89bed2be42d96cbdc1c2647fd05fc96c766b9be48669"
+    },
+    {
+      "file": "io-android/final-smoke.mjs",
+      "bytes": 11059,
+      "rawSha256": "842993226732fb6c356f8d8098103152924eeddcd462b7144522d74fd7a45e1f",
+      "canonicalLfSha256": "842993226732fb6c356f8d8098103152924eeddcd462b7144522d74fd7a45e1f"
+    },
+    {
+      "file": "io-android/fixture-freeze.json",
+      "bytes": 27352,
+      "rawSha256": "6301007fc8e9fee7dbb4a39f3e53996ef3dec342709f94ecd7d747f211da59d6",
+      "canonicalLfSha256": "6301007fc8e9fee7dbb4a39f3e53996ef3dec342709f94ecd7d747f211da59d6"
+    },
+    {
+      "file": "io-android/guard-probes.json",
+      "bytes": 1878,
+      "rawSha256": "1b3ef6e9074053fa1ee05e463ddaab4fe717d0373c6671d61ff52d1d0758839a",
+      "canonicalLfSha256": "1b3ef6e9074053fa1ee05e463ddaab4fe717d0373c6671d61ff52d1d0758839a"
+    },
+    {
+      "file": "io-android/guard-probes.mjs",
+      "bytes": 4300,
+      "rawSha256": "34133760aa5adb4adc83ad13894f06d081f6e1f6ae8305369a4e2af35997fc7c",
+      "canonicalLfSha256": "34133760aa5adb4adc83ad13894f06d081f6e1f6ae8305369a4e2af35997fc7c"
+    },
+    {
+      "file": "io-android/hold-current-threshold-lifecycle-codexio-hold-current-threshold-1792318809456.json",
+      "bytes": 7363,
+      "rawSha256": "2a21137656cab3aed5004b9df9c4c5e3f32b6c2cfc062354483a78220ecdc533",
+      "canonicalLfSha256": "2a21137656cab3aed5004b9df9c4c5e3f32b6c2cfc062354483a78220ecdc533"
+    },
+    {
+      "file": "io-android/inspect-heap.mjs",
+      "bytes": 2208,
+      "rawSha256": "ebd4c9581a1e21f9e7c424473a630c1d1af886702fd8742789d8437f5857268e",
+      "canonicalLfSha256": "ebd4c9581a1e21f9e7c424473a630c1d1af886702fd8742789d8437f5857268e"
+    },
+    {
+      "file": "io-android/lifecycle-landscape-lifecycle-landscape-codexio-lifecycle-landscape-1792318558166.json",
+      "bytes": 5108,
+      "rawSha256": "6a9bafac792ccc6164ea2ca14ae5b6653a11fdf973a6bca321ee758028da3ee9",
+      "canonicalLfSha256": "6a9bafac792ccc6164ea2ca14ae5b6653a11fdf973a6bca321ee758028da3ee9"
+    },
+    {
+      "file": "io-android/lifecycle-landscape/failure-codexio-lifecycle-landscape-1792318558166.png",
+      "bytes": 109485,
+      "rawSha256": "0c36cf9f414dcaa004a81462ca1c6d7501b6bb840b04116be0a485300aea9e36"
+    },
+    {
+      "file": "io-android/make-boundaries.mjs",
+      "bytes": 1204,
+      "rawSha256": "102c2b0567b2f0bb8b0e5489d71ba454e32852a59db140a7c8d2fd43eaeb7662",
+      "canonicalLfSha256": "102c2b0567b2f0bb8b0e5489d71ba454e32852a59db140a7c8d2fd43eaeb7662"
+    },
+    {
+      "file": "io-android/native.mjs",
+      "bytes": 26137,
+      "rawSha256": "bfa5bf2b3323cdedd64306b5742375e06181effccffe1926ba3919c6a6e42d3a",
+      "canonicalLfSha256": "bfa5bf2b3323cdedd64306b5742375e06181effccffe1926ba3919c6a6e42d3a"
+    },
+    {
+      "file": "io-android/prepare-row-cursor-native.mjs",
+      "bytes": 4818,
+      "rawSha256": "716dfd41c2e8ec3d1a163a33c964d6a0ce27fdcd74f9cf2d993301df9d3263ff",
+      "canonicalLfSha256": "716dfd41c2e8ec3d1a163a33c964d6a0ce27fdcd74f9cf2d993301df9d3263ff"
+    },
+    {
+      "file": "io-android/preview-focus-1792320780085.json",
+      "bytes": 1231,
+      "rawSha256": "46f38ab1aa574075e2f5123da3335bb28b22f7bd1efa04b9110114c0d13a2698",
+      "canonicalLfSha256": "46f38ab1aa574075e2f5123da3335bb28b22f7bd1efa04b9110114c0d13a2698"
+    },
+    {
+      "file": "io-android/preview-focus-1792320816144.json",
+      "bytes": 1432,
+      "rawSha256": "f356d600f85bb1763371f5fcd70088d16a9d185c097d3bb7035a3a3733845d77",
+      "canonicalLfSha256": "f356d600f85bb1763371f5fcd70088d16a9d185c097d3bb7035a3a3733845d77"
+    },
+    {
+      "file": "io-android/preview-focus-1792320897510-baseline.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/preview-focus-1792320897510-candidate.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/preview-focus-1792320897510.json",
+      "bytes": 6348,
+      "rawSha256": "d2b10b5f7357d37a371c9ce57bb38c13f005d7409473a43df5485359103f5167",
+      "canonicalLfSha256": "d2b10b5f7357d37a371c9ce57bb38c13f005d7409473a43df5485359103f5167"
+    },
+    {
+      "file": "io-android/preview-focus-1792321019726-baseline.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/preview-focus-1792321019726-candidate.png",
+      "bytes": 227,
+      "rawSha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+    },
+    {
+      "file": "io-android/preview-focus-1792321019726.json",
+      "bytes": 6488,
+      "rawSha256": "d9ca0a8cd905571aee9855d8a493309cfe809ec724d94239fe65633270b9c470",
+      "canonicalLfSha256": "d9ca0a8cd905571aee9855d8a493309cfe809ec724d94239fe65633270b9c470"
+    },
+    {
+      "file": "io-android/preview-focus.mjs",
+      "bytes": 7306,
+      "rawSha256": "b9c67b0dd8c645b3042261bf02d6b88df4d4627b42e8b5e7db29dda856ee7967",
+      "canonicalLfSha256": "b9c67b0dd8c645b3042261bf02d6b88df4d4627b42e8b5e7db29dda856ee7967"
+    },
+    {
+      "file": "io-android/preview-trigger-decision.json",
+      "bytes": 6557,
+      "rawSha256": "dfb3f70a0a054e11fdc6b8e8bbe49ea8cb6dbe0c8edf5f1f8e525121ee3073fe",
+      "canonicalLfSha256": "dfb3f70a0a054e11fdc6b8e8bbe49ea8cb6dbe0c8edf5f1f8e525121ee3073fe"
+    },
+    {
+      "file": "io-android/preview-trigger-final-decision.json",
+      "bytes": 16224,
+      "rawSha256": "ccd6adea434b76f1394ec1f424514b92347f2e5f8ea73b3e2a07f11d4134dcab",
+      "canonicalLfSha256": "ccd6adea434b76f1394ec1f424514b92347f2e5f8ea73b3e2a07f11d4134dcab"
+    },
+    {
+      "file": "io-android/preview-trigger-summarize.mjs",
+      "bytes": 2480,
+      "rawSha256": "a1fa6ee051dbfcc616baee789c777203a45668bd5539a227c508a412854730f7",
+      "canonicalLfSha256": "a1fa6ee051dbfcc616baee789c777203a45668bd5539a227c508a412854730f7"
+    },
+    {
+      "file": "io-android/README.md",
+      "bytes": 17154,
+      "rawSha256": "4b0cfc9f766f9c213dd312b0d4d9cc089d8f7901636c9eb36dbd2d5231e069b8",
+      "canonicalLfSha256": "4b0cfc9f766f9c213dd312b0d4d9cc089d8f7901636c9eb36dbd2d5231e069b8"
+    },
+    {
+      "file": "io-android/remaining-lifecycle-landscape-lifecycle-landscape-codexio-remaining-lifecycle-landscape-1792318576358.json",
+      "bytes": 8943,
+      "rawSha256": "d8c0945fe40f2670f02ca6e67a402e57d700d33338ad4dbebd055abfcba1ca62",
+      "canonicalLfSha256": "d8c0945fe40f2670f02ca6e67a402e57d700d33338ad4dbebd055abfcba1ca62"
+    },
+    {
+      "file": "io-android/remaining-lifecycle-landscape/actual-android-landscape.png",
+      "bytes": 146983,
+      "rawSha256": "a74aaaec37762cfc0d1cdf40e9cb40b11374679e55e6dab6aac896e1880f68e8"
+    },
+    {
+      "file": "io-android/retained-styles-verification.json",
+      "bytes": 6918,
+      "rawSha256": "73140ad6cc0e147f75fafc7420e9c158b5b42e91c9a291f083c20ec2dd5d608f",
+      "canonicalLfSha256": "73140ad6cc0e147f75fafc7420e9c158b5b42e91c9a291f083c20ec2dd5d608f"
+    },
+    {
+      "file": "io-android/retention-final-cumulative-1792321489490.json",
+      "bytes": 5133,
+      "rawSha256": "406ea8e8e793ca7a4f1dec017ecb321ffa1a908962345f97c4caed290336861c",
+      "canonicalLfSha256": "406ea8e8e793ca7a4f1dec017ecb321ffa1a908962345f97c4caed290336861c"
+    },
+    {
+      "file": "io-android/retention-finding.md",
+      "bytes": 3896,
+      "rawSha256": "19c6914458128c09d2cc242b5e037ab89312f8e7691449f6d919d70484ab7eb5",
+      "canonicalLfSha256": "19c6914458128c09d2cc242b5e037ab89312f8e7691449f6d919d70484ab7eb5"
+    },
+    {
+      "file": "io-android/retention-preview-trigger-fixed-1792320712815.json",
+      "bytes": 5089,
+      "rawSha256": "6cf8507837074b126fa6d96490409d1fae9458168eda70b2f6b20d15f8c23aa2",
+      "canonicalLfSha256": "6cf8507837074b126fa6d96490409d1fae9458168eda70b2f6b20d15f8c23aa2"
+    },
+    {
+      "file": "io-android/retention-probe-1792320293818.json",
+      "bytes": 5221,
+      "rawSha256": "f7adbfaf1266ca5a22a4d50d0179c502bb9ce92722986db74f806a41f324eee3",
+      "canonicalLfSha256": "f7adbfaf1266ca5a22a4d50d0179c502bb9ce92722986db74f806a41f324eee3"
+    },
+    {
+      "file": "io-android/retention-probe.mjs",
+      "bytes": 6394,
+      "rawSha256": "58548f4d82dd80e4b2db93ad2dc0f7e9b3d4d1ed21bed7e2cab4b1caf9154a4a",
+      "canonicalLfSha256": "58548f4d82dd80e4b2db93ad2dc0f7e9b3d4d1ed21bed7e2cab4b1caf9154a4a"
+    },
+    {
+      "file": "io-android/retention-probe/1792320293818-preview-removed.heapsnapshot",
+      "bytes": 10313614,
+      "rawSha256": "6c8a67c181fc9682a21b06e251695b4bed1dd7025184e2b1d87ff0fea52281eb",
+      "canonicalLfSha256": "6c8a67c181fc9682a21b06e251695b4bed1dd7025184e2b1d87ff0fea52281eb"
+    },
+    {
+      "file": "io-android/retention-probe/1792320293818-preview-removed.heapsnapshot.paths.json",
+      "bytes": 54645,
+      "rawSha256": "f031021db417e833c6331162f20fe3cef627c805ea11fa3a8afa2748da8d5f09",
+      "canonicalLfSha256": "f031021db417e833c6331162f20fe3cef627c805ea11fa3a8afa2748da8d5f09"
+    },
+    {
+      "file": "io-android/rotation-restoration.json",
+      "bytes": 770,
+      "rawSha256": "f31fb855cf36c05cac00053db0c5094922737e28544e4ff0be69e733e08228c4",
+      "canonicalLfSha256": "f31fb855cf36c05cac00053db0c5094922737e28544e4ff0be69e733e08228c4"
+    },
+    {
+      "file": "io-android/row-cursor-native-decision.json",
+      "bytes": 9610,
+      "rawSha256": "0afda3f96e0a1a892cfd1db4a1161ef374eaf052c561b5fd304f7561e845acc3",
+      "canonicalLfSha256": "0afda3f96e0a1a892cfd1db4a1161ef374eaf052c561b5fd304f7561e845acc3"
+    },
+    {
+      "file": "io-android/row-cursor-native-harness.json",
+      "bytes": 412,
+      "rawSha256": "9d32fa9e5b4c0380573db124609a0a0f0ce23a7ce93e35dd1721fa8ca51e0c0f",
+      "canonicalLfSha256": "9d32fa9e5b4c0380573db124609a0a0f0ce23a7ce93e35dd1721fa8ca51e0c0f"
+    },
+    {
+      "file": "io-android/row-cursor-native.mjs",
+      "bytes": 11894,
+      "rawSha256": "a345c2a3ee92d323650081c6f60e88d1c4ee9023f4cfe49bae36ee1612044e50",
+      "canonicalLfSha256": "a345c2a3ee92d323650081c6f60e88d1c4ee9023f4cfe49bae36ee1612044e50"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet1024-0-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet1024-0-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet1024-1-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet1024-1-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet1024-2-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet1024-2-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet1024-3-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet1024-3-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet1024-4-baseline-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet1024-4-candidate-palette.png",
+      "bytes": 28973,
+      "rawSha256": "6acc247466f62315082aff04df362c112d05d213c563c90c23cdfdbdb74c820a"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet2048-0-baseline-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet2048-0-candidate-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet2048-1-baseline-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet2048-1-candidate-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet2048-2-baseline-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet2048-2-candidate-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet2048-3-baseline-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet2048-3-candidate-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet2048-4-baseline-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/row-cursor-native/codexio-row-cursor-1792321165148-sheet2048-4-candidate-palette.png",
+      "bytes": 75846,
+      "rawSha256": "ea42619273149ba3d1f58958706aaf40b50edbe51983f80998c4a42c3a60e720"
+    },
+    {
+      "file": "io-android/row-cursor-native/results-sheet1024-sheet2048-codexio-row-cursor-1792321146242.json",
+      "bytes": 2609,
+      "rawSha256": "1f130bb207b3b552be334aca3e7665ad0e8ed4417c11ff21dfb69dad1b82c253",
+      "canonicalLfSha256": "1f130bb207b3b552be334aca3e7665ad0e8ed4417c11ff21dfb69dad1b82c253"
+    },
+    {
+      "file": "io-android/row-cursor-native/results-sheet1024-sheet2048-codexio-row-cursor-1792321165148.json",
+      "bytes": 28696,
+      "rawSha256": "4f2701f951c63a384b2c6c708960123db3be06109a6b84ddc12b62473a426e22",
+      "canonicalLfSha256": "4f2701f951c63a384b2c6c708960123db3be06109a6b84ddc12b62473a426e22"
+    },
+    {
+      "file": "io-android/row-cursor-native/sheet1024-baseline.png",
+      "bytes": 227885,
+      "rawSha256": "c68230410f3a115bbd2ccf4e2b4d5217aaff2a38b02a22a0cdf54a7b654ab65d"
+    },
+    {
+      "file": "io-android/row-cursor-native/sheet1024-candidate.png",
+      "bytes": 228435,
+      "rawSha256": "b84f3770f40ee44d6e4eced247487845745d7cac8bc6eaedace15580af5b2a9c"
+    },
+    {
+      "file": "io-android/row-cursor-native/sheet2048-baseline.png",
+      "bytes": 267273,
+      "rawSha256": "a574bf8dab70d0444fff98c8f2cec4fb93e8e2fba720c40acaf86dbc8de03eac"
+    },
+    {
+      "file": "io-android/row-cursor-native/sheet2048-candidate.png",
+      "bytes": 267720,
+      "rawSha256": "18e3a1459dec57c9e5924142c4acbdf678cad9904c38b2544afcc1c686580bc2"
+    },
+    {
+      "file": "io-android/row-cursor-summarize.mjs",
+      "bytes": 2623,
+      "rawSha256": "004e9bc3aa7688397d119c5d8bed0e9a86264a541abd3fbe52e4c8b400854fe1",
+      "canonicalLfSha256": "004e9bc3aa7688397d119c5d8bed0e9a86264a541abd3fbe52e4c8b400854fe1"
+    },
+    {
+      "file": "io-android/served-build.json",
+      "bytes": 309,
+      "rawSha256": "cf98c3c1aedff584b3d71e90dad3df22ebb2caefbda25b2ee0f86778e195cb3f",
+      "canonicalLfSha256": "cf98c3c1aedff584b3d71e90dad3df22ebb2caefbda25b2ee0f86778e195cb3f"
+    },
+    {
+      "file": "io-android/source-review.md",
+      "bytes": 12180,
+      "rawSha256": "b51b1c1a1f2a89cb6c2043d7cd34d2e02eb4ec0c2f04c7ec66022838b32665bf",
+      "canonicalLfSha256": "b51b1c1a1f2a89cb6c2043d7cd34d2e02eb4ec0c2f04c7ec66022838b32665bf"
+    },
+    {
+      "file": "io-android/startup-current-all-codexio-startup-current-1792318794503.json",
+      "bytes": 2664,
+      "rawSha256": "5af9c49fd6603c91199eae83ac8d552e5624d41f2094196ba485699da965dc31",
+      "canonicalLfSha256": "5af9c49fd6603c91199eae83ac8d552e5624d41f2094196ba485699da965dc31"
+    },
+    {
+      "file": "io-android/startup-current-corrected-all-codexio-startup-current-corrected-1792318806382.json",
+      "bytes": 6215,
+      "rawSha256": "ef9895b26a05119e772b2db8bf0bad5908d63528e4ff10c584c2daa6d280da43",
+      "canonicalLfSha256": "ef9895b26a05119e772b2db8bf0bad5908d63528e4ff10c584c2daa6d280da43"
+    },
+    {
+      "file": "io-android/startup-current/failure-codexio-startup-current-1792318794503.png",
+      "bytes": 260389,
+      "rawSha256": "7a0ec4b59a2305b6ebd42573bdc17f65c7940236aaa707abb66acc94ad108a6d"
+    },
+    {
+      "file": "io-android/startup.mjs",
+      "bytes": 15396,
+      "rawSha256": "b5e60dfc249f59e742375f3ccb4699a1ef6aeb87687c7436ec9d337d38a1283d",
+      "canonicalLfSha256": "b5e60dfc249f59e742375f3ccb4699a1ef6aeb87687c7436ec9d337d38a1283d"
+    },
+    {
+      "file": "io-android/summarize.mjs",
+      "bytes": 7739,
+      "rawSha256": "b8be38594d5c81071fce0761bc79f8fab9ae582f14029b266a077d746c676fc2",
+      "canonicalLfSha256": "b8be38594d5c81071fce0761bc79f8fab9ae582f14029b266a077d746c676fc2"
+    },
+    {
+      "file": "io-android/supplement-corrected-outputs-lifecycle-landscape-codexio-supplement-corrected-1792318539004.json",
+      "bytes": 8224,
+      "rawSha256": "9e56176e26b8f7fd9e0356fd18dc48c1ecca6964aeffcf174ec05daa188cf93a",
+      "canonicalLfSha256": "9e56176e26b8f7fd9e0356fd18dc48c1ecca6964aeffcf174ec05daa188cf93a"
+    },
+    {
+      "file": "io-android/supplement-corrected/codexio-supplement-corrected-1792318539004-native-batch.zip",
+      "bytes": 1434,
+      "rawSha256": "5d99dbb8c8d80d9db4a5cc8846baf1622f6362a5322cf78cd19b28beb08cc967"
+    },
+    {
+      "file": "io-android/supplement-corrected/failure-codexio-supplement-corrected-1792318539004.png",
+      "bytes": 109622,
+      "rawSha256": "c426637f99c58ff441a46f4b1cbf8bebcc77bafa982d7576332c2eb9cfb7b424"
+    },
+    {
+      "file": "io-android/supplement-harness-failure.json",
+      "bytes": 606,
+      "rawSha256": "0402df23ce1dbed8b95c9734d0bada319c63f915651f9dcb75a556d64e8a7a4c",
+      "canonicalLfSha256": "0402df23ce1dbed8b95c9734d0bada319c63f915651f9dcb75a556d64e8a7a4c"
+    },
+    {
+      "file": "io-android/supplement.mjs",
+      "bytes": 21924,
+      "rawSha256": "ba6602f1df52f1e823469ddc38acfb7a68e740e200d5b87748965d442caeb77c",
+      "canonicalLfSha256": "ba6602f1df52f1e823469ddc38acfb7a68e740e200d5b87748965d442caeb77c"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-ink-11-0-dungeon-wizard-1bit.png",
+      "bytes": 161,
+      "rawSha256": "c200e7c8aad06da32218959bdbf1482d4df4af28f0271271883bffc40078f0d4"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-ink-12-0-dungeon-wizard-1bit.png",
+      "bytes": 162,
+      "rawSha256": "2aec59e53c78cddcad1a46c762c7127f0742318b1a11a9bf9af067291671f53b"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-ink-13-0-dungeon-wizard-1bit.png",
+      "bytes": 160,
+      "rawSha256": "d9333b82764184bf60c14fef7bc9f8976f819849ca6506ad9f68d13dfcc543f9"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-atkinson-0-dungeon-wizard-1bit.png",
+      "bytes": 165,
+      "rawSha256": "b7d7cee505d62338043213becd488b81b47d0d0822892bcb4a227962336dbb46"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-bayer-0-dungeon-wizard-1bit.png",
+      "bytes": 168,
+      "rawSha256": "1c8752c58b4d6a38111100ceea6539ef37bd7afc3d78e036a2f8f49ee78a20f1"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-checker-0-dungeon-wizard-1bit.png",
+      "bytes": 170,
+      "rawSha256": "b3142f46668583e42ae33d0d03cdd69cd40867b1dae436d52668653ccc95a998"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-cutout-0-dungeon-wizard-1bit.png",
+      "bytes": 174,
+      "rawSha256": "d362e6d42f06ce64a1c1b9b64e7b8acba1d9a681136efddc0f651a634aaeccbf"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-hatch-0-dungeon-wizard-1bit.png",
+      "bytes": 169,
+      "rawSha256": "1283a692bc9ded4ea9d6a06bfff0b110405a97a51aa3daa1103d8dafc5ac9947"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-icon-0-dungeon-wizard-1bit.png",
+      "bytes": 169,
+      "rawSha256": "cc0857023b6b070528daf2b94167a073b86c5f7f527a2ca11f5a9b6f18eb58d9"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-lines-0-dungeon-wizard-1bit.png",
+      "bytes": 165,
+      "rawSha256": "50b20b3da1aa82d9f7f7b01c5994ff60c381d363fa2c88c91690372fdfb1ada5"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-noise-0-dungeon-wizard-1bit.png",
+      "bytes": 165,
+      "rawSha256": "c0329349174520f33c75a31f84612a442609ece87b05aeb79301d77d99bb7ca6"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-silhouette-0-dungeon-wizard-1bit.png",
+      "bytes": 131,
+      "rawSha256": "7ca7f5045f4af5aa77759b35ada65d2f693c11b6a6ec244fb5d6cb8355a9a420"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-solid-0-dungeon-wizard-1bit.png",
+      "bytes": 160,
+      "rawSha256": "292446898425cf65bb0f89bed2be42d96cbdc1c2647fd05fc96c766b9be48669"
+    },
+    {
+      "file": "io-android/supplement/codexio-supplement-1792317911859-style-stencil-0-dungeon-wizard-1bit.png",
+      "bytes": 169,
+      "rawSha256": "0a7162bdb0a0e935c20935805666af672831840687aa2c21f8c2be6e59b76a02"
+    },
+    {
+      "file": "io-android/verify-retained-styles.mjs",
+      "bytes": 2278,
+      "rawSha256": "a2ff7460bf1429efaec2f9a293170314f931a0582e74067bc5633647782902a7",
+      "canonicalLfSha256": "a2ff7460bf1429efaec2f9a293170314f931a0582e74067bc5633647782902a7"
+    },
+    {
+      "file": "io-android/worker-resources-all-codexio-worker-resources-1792319662494.json",
+      "bytes": 130647,
+      "rawSha256": "d6007137396b0f22964a48eea0b663a8525c6471b1786e897878ba69bf160541",
+      "canonicalLfSha256": "d6007137396b0f22964a48eea0b663a8525c6471b1786e897878ba69bf160541"
+    },
+    {
+      "file": "io-android/worker-resources.mjs",
+      "bytes": 18191,
+      "rawSha256": "446fb5b52f3c9e33a1422f339fd523dc723ca5888318f51583c71a9fb2466251",
+      "canonicalLfSha256": "446fb5b52f3c9e33a1422f339fd523dc723ca5888318f51583c71a9fb2466251"
+    },
+    {
+      "file": "io-android/worker-resources/codexio-worker-resources-1792319662494-worker-gif-0-kenney-motion-256-palette.gif",
+      "bytes": 29510,
+      "rawSha256": "1689433d660b81dbd1c1ae90ebb37c23a0649131cabfc4023c95cbfb8dfc65e0"
+    },
+    {
+      "file": "io-android/worker-resources/profiles/codexio-worker-resources-1792319662494-0.cpuprofile",
+      "bytes": 47459,
+      "rawSha256": "1c2bb6fa24e1fb6315618c4df98713415604a8990a376f4af194eaa75a2fb7cd"
+    },
+    {
+      "file": "prepare-final.mjs",
+      "bytes": 2914,
+      "rawSha256": "926c0f58329d58c116a9647f2cbb09b55876d51dfd7ff24f5a8ffc8e71efc078",
+      "canonicalLfSha256": "926c0f58329d58c116a9647f2cbb09b55876d51dfd7ff24f5a8ffc8e71efc078"
+    },
+    {
+      "file": "prepare-preview-trigger.mjs",
+      "bytes": 3358,
+      "rawSha256": "eb34450488d908a8c05b5bd3c91cb6b5de8122da293f82f40eac97b25ef85511",
+      "canonicalLfSha256": "eb34450488d908a8c05b5bd3c91cb6b5de8122da293f82f40eac97b25ef85511"
+    },
+    {
+      "file": "prepare.mjs",
+      "bytes": 2743,
+      "rawSha256": "c40cb3e93521003b46f6ca69ff59a968fcd39827e45377a14869ace42a4f58ad",
+      "canonicalLfSha256": "c40cb3e93521003b46f6ca69ff59a968fcd39827e45377a14869ace42a4f58ad"
+    },
+    {
+      "file": "preview-trigger-build.log",
+      "bytes": 1765,
+      "rawSha256": "920470f88420a3fe1e7f0d7cde881e747b3fa78acf809ecf91f2ccb39313ab0e",
+      "canonicalLfSha256": "920470f88420a3fe1e7f0d7cde881e747b3fa78acf809ecf91f2ccb39313ab0e"
+    },
+    {
+      "file": "preview-trigger-decision.md",
+      "bytes": 3664,
+      "rawSha256": "88aa83af454e66cfb98bf364c11d2407edcc12cf8e0d7fd459f15a79bb439fe0",
+      "canonicalLfSha256": "88aa83af454e66cfb98bf364c11d2407edcc12cf8e0d7fd459f15a79bb439fe0"
+    },
+    {
+      "file": "preview-trigger-manifest.json",
+      "bytes": 7590,
+      "rawSha256": "72e3d1a3f04a877edef38addeaf44e8161b9ebeb9dcf7783295e8e5d4f572b95",
+      "canonicalLfSha256": "72e3d1a3f04a877edef38addeaf44e8161b9ebeb9dcf7783295e8e5d4f572b95"
+    },
+    {
+      "file": "preview-trigger-plan.md",
+      "bytes": 1724,
+      "rawSha256": "c66d5246d2c4dea96dc92d04384468315a2a32d2a00c37d93b6e4d6912681753",
+      "canonicalLfSha256": "c66d5246d2c4dea96dc92d04384468315a2a32d2a00c37d93b6e4d6912681753"
+    },
+    {
+      "file": "probe.js",
+      "bytes": 7014,
+      "rawSha256": "74700e1a036f5b5adfc902793b465be53d8742a5a24ae8fcd751f6cb07ba2f18",
+      "canonicalLfSha256": "74700e1a036f5b5adfc902793b465be53d8742a5a24ae8fcd751f6cb07ba2f18"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5587,
+      "rawSha256": "9c0ed7b8f9bb9c1021b8948586dc9238be6ef938e606513076e0cd38af46dc6a",
+      "canonicalLfSha256": "9c0ed7b8f9bb9c1021b8948586dc9238be6ef938e606513076e0cd38af46dc6a"
+    },
+    {
+      "file": "review/final-verdict.md",
+      "bytes": 8430,
+      "rawSha256": "3c776404a449ec0df9f9d602b7b73e89af327d38620fdf348392f7b68906fbb6",
+      "canonicalLfSha256": "3c776404a449ec0df9f9d602b7b73e89af327d38620fdf348392f7b68906fbb6"
+    },
+    {
+      "file": "review/five-change-assessment.md",
+      "bytes": 6275,
+      "rawSha256": "90e9bf6e17b6b32508f6d639f73a815bd63a4517cd99e771fa4693c4ea92df6b",
+      "canonicalLfSha256": "90e9bf6e17b6b32508f6d639f73a815bd63a4517cd99e771fa4693c4ea92df6b"
+    },
+    {
+      "file": "review/five-change-recomputed.json",
+      "bytes": 31699,
+      "rawSha256": "bb3e1b32b8e3a86d52e2b067b8d96bbeca03fdc17a86e96b1ce3b34ef13cfab8",
+      "canonicalLfSha256": "bb3e1b32b8e3a86d52e2b067b8d96bbeca03fdc17a86e96b1ce3b34ef13cfab8"
+    },
+    {
+      "file": "review/recompute-five.mjs",
+      "bytes": 3789,
+      "rawSha256": "08dd8078a381fab6a27746453dbe99cba870268c2468f64ba9077d91df73a2b7",
+      "canonicalLfSha256": "08dd8078a381fab6a27746453dbe99cba870268c2468f64ba9077d91df73a2b7"
+    },
+    {
+      "file": "review/retention-source-challenge.md",
+      "bytes": 8423,
+      "rawSha256": "0eefc663ea7bf539e19398f04e116f376a0c7b549957923966664a6e0b98d1c4",
+      "canonicalLfSha256": "0eefc663ea7bf539e19398f04e116f376a0c7b549957923966664a6e0b98d1c4"
+    },
+    {
+      "file": "review/review.md",
+      "bytes": 9330,
+      "rawSha256": "2c600ae42a156cb94f461ce9038815d3395261215ae4fb28c78416e33f336bfa",
+      "canonicalLfSha256": "2c600ae42a156cb94f461ce9038815d3395261215ae4fb28c78416e33f336bfa"
+    },
+    {
+      "file": "root-source-review.md",
+      "bytes": 12493,
+      "rawSha256": "4355e4e11c767b634a19b6728c44c052421f408ff55fe944b8866d6a0312b104",
+      "canonicalLfSha256": "4355e4e11c767b634a19b6728c44c052421f408ff55fe944b8866d6a0312b104"
+    },
+    {
+      "file": "server.mjs",
+      "bytes": 2406,
+      "rawSha256": "09b937d5e830a30d97e8cf4cea938aed7b607af410f3faf712e8797c2084cc4a",
+      "canonicalLfSha256": "09b937d5e830a30d97e8cf4cea938aed7b607af410f3faf712e8797c2084cc4a"
+    },
+    {
+      "file": "ui-tooling/api-research.md",
+      "bytes": 10751,
+      "rawSha256": "de5b75d3f1f8af5d8f7b88c989e0a091fc7ddabf92b41c6fbdd00256cc1ef5c6",
+      "canonicalLfSha256": "de5b75d3f1f8af5d8f7b88c989e0a091fc7ddabf92b41c6fbdd00256cc1ef5c6"
+    },
+    {
+      "file": "ui-tooling/build-base.log",
+      "bytes": 2990,
+      "rawSha256": "00441a9356efd1b93e8ce7afa23a4c3b097f2527e68164e5e268b14de960a71b",
+      "canonicalLfSha256": "3da4cab94fe83368653fcaac45905f94e26a0faab02b8c43a5f9995f8b8111fd"
+    },
+    {
+      "file": "ui-tooling/build-raw-arrays.log",
+      "bytes": 3110,
+      "rawSha256": "80dcfdc3c966ee1cf83fdf87d7cd0842baf120e9518866ef7b13dca35195da5f",
+      "canonicalLfSha256": "45d40ae8111fc296ebe094f005bfc77d32cc38d005adfa44d2458d095c281472"
+    },
+    {
+      "file": "ui-tooling/build-swatch-paint-off.log",
+      "bytes": 3230,
+      "rawSha256": "269132da08c3e61fb8a519bf79b5d6ee1c131e1499ef8be13689ec8727ea4978",
+      "canonicalLfSha256": "a67fbf79e80d81aec6e5408883a92919b2badc4f828bb6e2446e38e963353e8c"
+    },
+    {
+      "file": "ui-tooling/build-tooltip-and-paint-off.log",
+      "bytes": 3330,
+      "rawSha256": "4a489b6ae440807f98fc051530fa006da68fa968061dbf67ee72ad9dc00487ca",
+      "canonicalLfSha256": "de976f54b512b804cdc3065754729a0a085fb14d42469ea6032ae87036fa75b4"
+    },
+    {
+      "file": "ui-tooling/build-tooltip-off.log",
+      "bytes": 3130,
+      "rawSha256": "719c5921d9c73b9b739e6c228d852b3dffed72c97a055e948dd2e4db2335eba0",
+      "canonicalLfSha256": "bf99b3843f879227ed1dd1e8d15e7801bf24966e87cf82189fb33cfbbf7ba920"
+    },
+    {
+      "file": "ui-tooling/caption-drag-call-boundary-review.md",
+      "bytes": 2856,
+      "rawSha256": "b1a917cd21ef3b1f0ff2dc934f7575741d453e6b40530118d34ee23804a5819e",
+      "canonicalLfSha256": "b1a917cd21ef3b1f0ff2dc934f7575741d453e6b40530118d34ee23804a5819e"
+    },
+    {
+      "file": "ui-tooling/coverage.json",
+      "bytes": 7344,
+      "rawSha256": "fd87bb2a81844c6ca35b13221a7bb58fbb85f9be6bae7b7fb4936eaa62e3aa76",
+      "canonicalLfSha256": "74978d781a228f4a59619d82844475915813e113a874b8587bec28b22c8e004b"
+    },
+    {
+      "file": "ui-tooling/discovery-after.json",
+      "bytes": 6364,
+      "rawSha256": "765576de8c49a1c97078a267e50731c2eea069c6e80583f21935221d95a2c1f3",
+      "canonicalLfSha256": "765576de8c49a1c97078a267e50731c2eea069c6e80583f21935221d95a2c1f3"
+    },
+    {
+      "file": "ui-tooling/discovery-before.json",
+      "bytes": 44084,
+      "rawSha256": "e1f91dfe0706a4f7459e18f5044dd306010c8c60ccbed16f7b2a620561ee154e",
+      "canonicalLfSha256": "e1f91dfe0706a4f7459e18f5044dd306010c8c60ccbed16f7b2a620561ee154e"
+    },
+    {
+      "file": "ui-tooling/discovery-verification.json",
+      "bytes": 296,
+      "rawSha256": "828afd9b46b932a22c4d76edc673f8d529032775260d2e649db6415f18a3750a",
+      "canonicalLfSha256": "f98c217b6035c7a7a812c7175f1764b12cf7e5f643dc1019b5a0c37ea40d0275"
+    },
+    {
+      "file": "ui-tooling/discovery-with-future-fixture.json",
+      "bytes": 6474,
+      "rawSha256": "e0c3d1b5eef9c2b2c6dac8e2974abd65c1ba0ea9a613aabf5c87efe26630663d",
+      "canonicalLfSha256": "e0c3d1b5eef9c2b2c6dac8e2974abd65c1ba0ea9a613aabf5c87efe26630663d"
+    },
+    {
+      "file": "ui-tooling/editor-attribution-decision.md",
+      "bytes": 4164,
+      "rawSha256": "a634db3bea5e96b2f6fcd2d54fe6e21a945bb6ec446cc2631ee52dff7a7fb5a8",
+      "canonicalLfSha256": "a634db3bea5e96b2f6fcd2d54fe6e21a945bb6ec446cc2631ee52dff7a7fb5a8"
+    },
+    {
+      "file": "ui-tooling/editor-attribution-host.log",
+      "bytes": 3809,
+      "rawSha256": "0a4af3d383596ee5793632c457cb68671ff012efa55fd78f6708ea4484bbe4e0",
+      "canonicalLfSha256": "e2dd8cf2dd27af3a9efebff9fc9eb0f4c41c5e33d6e6feb425ca48872e0367b8"
+    },
+    {
+      "file": "ui-tooling/editor-attribution-summary.json",
+      "bytes": 6975,
+      "rawSha256": "d5eececaecf5b8ce9f85f21fcf18fbe452a05f2b41ceb4120b36425605701e55",
+      "canonicalLfSha256": "d5eececaecf5b8ce9f85f21fcf18fbe452a05f2b41ceb4120b36425605701e55"
+    },
+    {
+      "file": "ui-tooling/editor-attribution-workspace-temp.log",
+      "bytes": 7357,
+      "rawSha256": "94a942cb0115dbc1a5079ea25de24b720a035ce60fd28a5094a27859d9b17c53",
+      "canonicalLfSha256": "cf824f7f8495e35d1d422e3247f85d7432bad5ddc9e843f25ae4f4077574516a"
+    },
+    {
+      "file": "ui-tooling/editor-attribution.json",
+      "bytes": 19346,
+      "rawSha256": "72fb34a928e201dab6cd73ce83839abd6afe6acb19f5d5f74a166c1ea4f9121e",
+      "canonicalLfSha256": "72fb34a928e201dab6cd73ce83839abd6afe6acb19f5d5f74a166c1ea4f9121e"
+    },
+    {
+      "file": "ui-tooling/editor-attribution.log",
+      "bytes": 10968,
+      "rawSha256": "16a0317ef31b666fd4203974f2c89e60aab3c1625b1e5865592bc5a026502530",
+      "canonicalLfSha256": "96a4a6a063b0a8bff7dda2dceaede72971ffa1a27fddf89b7edd8e5b7b437d24"
+    },
+    {
+      "file": "ui-tooling/future-fixture-test-workspace-temp.log",
+      "bytes": 363,
+      "rawSha256": "c93e00805faf51e33f83af19ec59d7478cc2c99f9c0ec8f1457467a5ff5c4c16",
+      "canonicalLfSha256": "72620a54143a52d5d72af7e028884d8263c7b12e763a32d5f71c813326a71d1c"
+    },
+    {
+      "file": "ui-tooling/future-fixture-test.log",
+      "bytes": 1029,
+      "rawSha256": "2137e3488dc494d7564b4b782337f8626350b0fe8f315573c1e409459b65c26b",
+      "canonicalLfSha256": "10f6a64c66a2fb6c685248f3e38fc9fb5b416c61d9e17a842a87221b2ed7114d"
+    },
+    {
+      "file": "ui-tooling/grid-counter-decision.md",
+      "bytes": 2528,
+      "rawSha256": "9023a3509faac857a762e9a2b85a4a8d201735bcf1ec1acc473b2f0108b9bd4d",
+      "canonicalLfSha256": "9023a3509faac857a762e9a2b85a4a8d201735bcf1ec1acc473b2f0108b9bd4d"
+    },
+    {
+      "file": "ui-tooling/grid-counter-receipts.json",
+      "bytes": 3830,
+      "rawSha256": "19f7dad2e90b7dce4a2f8e1d5a5a9374f01d68984bf058a469810d491851635f",
+      "canonicalLfSha256": "19f7dad2e90b7dce4a2f8e1d5a5a9374f01d68984bf058a469810d491851635f"
+    },
+    {
+      "file": "ui-tooling/grid-counter.log",
+      "bytes": 2434,
+      "rawSha256": "1766c47115df1fbb13984c1a73fb97bfb5698e36abee751cef8d9708c381fa9e",
+      "canonicalLfSha256": "ae833e8b53398e94c3a7403f61885e652447e7b16dbd41c352af36e6ec50252d"
+    },
+    {
+      "file": "ui-tooling/predeclared-ui-probes.md",
+      "bytes": 4113,
+      "rawSha256": "be0b26e6f7070786bc92887f7793584bd2b57e7062f527fc610155cdec5766fd",
+      "canonicalLfSha256": "be0b26e6f7070786bc92887f7793584bd2b57e7062f527fc610155cdec5766fd"
+    },
+    {
+      "file": "ui-tooling/prepare-ui-variants.mjs",
+      "bytes": 3219,
+      "rawSha256": "475b16ed92fb256982b4b0042af18e5a329b46ce693ed69e71076ba4b74a14b3",
+      "canonicalLfSha256": "475b16ed92fb256982b4b0042af18e5a329b46ce693ed69e71076ba4b74a14b3"
+    },
+    {
+      "file": "ui-tooling/README.md",
+      "bytes": 3229,
+      "rawSha256": "62c6f8f3c2a46c32e058fb8d1d07112ffbda77f8a4e910cca87fa0753109681f",
+      "canonicalLfSha256": "62c6f8f3c2a46c32e058fb8d1d07112ffbda77f8a4e910cca87fa0753109681f"
+    },
+    {
+      "file": "ui-tooling/run-grid-counters.mjs",
+      "bytes": 3177,
+      "rawSha256": "01082dd535ca1d4ba2f7e7d379065081170ad93eefa5120e6ff5d6eaa9ff960a",
+      "canonicalLfSha256": "01082dd535ca1d4ba2f7e7d379065081170ad93eefa5120e6ff5d6eaa9ff960a"
+    },
+    {
+      "file": "ui-tooling/run-ui-probe.mjs",
+      "bytes": 6662,
+      "rawSha256": "bbcf06d005fe53db86181d2f9a29ec667b5e4a9e837043e42a4437d928a2f84c",
+      "canonicalLfSha256": "bbcf06d005fe53db86181d2f9a29ec667b5e4a9e837043e42a4437d928a2f84c"
+    },
+    {
+      "file": "ui-tooling/serve-ui-variants.mjs",
+      "bytes": 1915,
+      "rawSha256": "195538dfca2361cbf203025632b9c535366efc0ccf4c0da3b2f465644cf1d0a3",
+      "canonicalLfSha256": "195538dfca2361cbf203025632b9c535366efc0ccf4c0da3b2f465644cf1d0a3"
+    },
+    {
+      "file": "ui-tooling/source-review.md",
+      "bytes": 24940,
+      "rawSha256": "48776657e976fde19dc62fe91c2a9e0461365d8415871859d6bf20cd49b0d764",
+      "canonicalLfSha256": "48776657e976fde19dc62fe91c2a9e0461365d8415871859d6bf20cd49b0d764"
+    },
+    {
+      "file": "ui-tooling/test-discovery.md",
+      "bytes": 3129,
+      "rawSha256": "2625b45d1ec41024655798b08a30d4a5103eed5069ef8a752879fc9171d4bf67",
+      "canonicalLfSha256": "2625b45d1ec41024655798b08a30d4a5103eed5069ef8a752879fc9171d4bf67"
+    },
+    {
+      "file": "ui-tooling/ui-telemetry.js",
+      "bytes": 5105,
+      "rawSha256": "cba445b41971e310802d275feb887b701197c0b6d6511c26dab5c1b799121965",
+      "canonicalLfSha256": "cba445b41971e310802d275feb887b701197c0b6d6511c26dab5c1b799121965"
+    },
+    {
+      "file": "ui-tooling/unit-after-workspace-temp.log",
+      "bytes": 648,
+      "rawSha256": "03c7854dcde54b8593bd1314f123a21583d110dd146e056a3b3616efa3410542",
+      "canonicalLfSha256": "81d7e64383b9cabc3552b123eb687f3cf0d4102163cec28dfdb088f28524c7d1"
+    },
+    {
+      "file": "ui-tooling/unit-after.log",
+      "bytes": 37988,
+      "rawSha256": "1fdee59eacf848f5218e648734a639197762f041c9c5566b141423fcbb5d3c5e",
+      "canonicalLfSha256": "f9dd6bc045da906cd40bc0b66e46faff204f756b59305ff212768e5f7d408aaa"
+    },
+    {
+      "file": "ui-tooling/unit-before.log",
+      "bytes": 388,
+      "rawSha256": "ee0a5f8f6b6eb9cda60d20bdb9043bb6caf0b215d85f04d2937cd03b9e387bf6",
+      "canonicalLfSha256": "b7e3ab550c901f7ce2530f55e45e29a63a8ccfa7b443a3bb834e6912d9059cd5"
+    },
+    {
+      "file": "ui-tooling/variant-preparation.json",
+      "bytes": 1924,
+      "rawSha256": "5570d74de6170af39326e33f73d87fd6cb57ca28eae6a3dabe3ce71cbeb60e70",
+      "canonicalLfSha256": "5570d74de6170af39326e33f73d87fd6cb57ca28eae6a3dabe3ce71cbeb60e70"
+    },
+    {
+      "file": "verify-codex-downloads.mjs",
+      "bytes": 4599,
+      "rawSha256": "a95b0ad17daf69a843f8de3f0768127c20b0aa309ba6f016279a0c5ec7f6ab9a",
+      "canonicalLfSha256": "a95b0ad17daf69a843f8de3f0768127c20b0aa309ba6f016279a0c5ec7f6ab9a"
+    }
+  ]
+}

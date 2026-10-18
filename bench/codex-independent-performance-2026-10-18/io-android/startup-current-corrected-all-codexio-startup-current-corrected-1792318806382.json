@@ -1,0 +1,222 @@
+{
+  "harnessProvenance": "Independent inspection/adaptation of previous native runner; all results newly collected. Historical receipts not imported.",
+  "label": "startup-current-corrected",
+  "prefix": "codexio-startup-current-corrected-1792318806382",
+  "baseURL": "http://localhost:5391/",
+  "started": "2026-10-18T10:20:06.383Z",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "rows": [],
+  "outputs": [],
+  "errors": [],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 341\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "startups": [
+    {
+      "label": "fresh-default",
+      "observedAt": 211.5,
+      "firstEnabledControl": 105,
+      "firstWallPaint": 188.5,
+      "longtasks": [],
+      "paintEntries": [
+        {
+          "name": "first-paint",
+          "start": 184
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 184
+        }
+      ],
+      "navigation": [
+        {
+          "responseEnd": 15.800000071525574,
+          "domContentLoaded": 106.90000009536743,
+          "load": 114.70000004768372
+        }
+      ],
+      "modules": [
+        {
+          "name": "/assets/index-Can2ISBp.js",
+          "duration": 31.700000047683716,
+          "decodedBodySize": 274235
+        },
+        {
+          "name": "/assets/quantize-DsvDuXDJ.js",
+          "duration": 39.699999928474426,
+          "decodedBodySize": 13241
+        },
+        {
+          "name": "/assets/palette-generated-client-ByPrAFoT.js",
+          "duration": 26.200000047683716,
+          "decodedBodySize": 4007
+        },
+        {
+          "name": "/assets/palette-generated-worker-xpoMRM2c.js",
+          "duration": -8.600000023841858,
+          "decodedBodySize": 9829
+        }
+      ],
+      "theme": "light",
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "dpr": 2.25
+      }
+    },
+    {
+      "label": "warm-dark",
+      "observedAt": 176,
+      "firstEnabledControl": 108.5,
+      "firstWallPaint": 140.79999995231628,
+      "longtasks": [],
+      "paintEntries": [
+        {
+          "name": "first-paint",
+          "start": 152
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 152
+        }
+      ],
+      "navigation": [
+        {
+          "responseEnd": 16.199999928474426,
+          "domContentLoaded": 111.69999992847443,
+          "load": 117.29999995231628
+        }
+      ],
+      "modules": [
+        {
+          "name": "/assets/index-Can2ISBp.js",
+          "duration": 34.60000002384186,
+          "decodedBodySize": 274235
+        },
+        {
+          "name": "/assets/quantize-DsvDuXDJ.js",
+          "duration": 41.299999952316284,
+          "decodedBodySize": 13241
+        }
+      ],
+      "theme": "dark",
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "dpr": 2.25
+      }
+    },
+    {
+      "label": "restored-light",
+      "observedAt": 178.29999995231628,
+      "firstEnabledControl": 91.20000004768372,
+      "firstWallPaint": 116.39999997615814,
+      "longtasks": [],
+      "paintEntries": [
+        {
+          "name": "first-paint",
+          "start": 132
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 132
+        }
+      ],
+      "navigation": [
+        {
+          "responseEnd": 9.799999952316284,
+          "domContentLoaded": 93,
+          "load": 95.29999995231628
+        }
+      ],
+      "modules": [
+        {
+          "name": "/assets/index-Can2ISBp.js",
+          "duration": 42.89999997615814,
+          "decodedBodySize": 274235
+        },
+        {
+          "name": "/assets/quantize-DsvDuXDJ.js",
+          "duration": 44,
+          "decodedBodySize": 13241
+        }
+      ],
+      "theme": "light",
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "dpr": 2.25
+      }
+    },
+    {
+      "label": "restored-auto",
+      "observedAt": 183.5,
+      "firstEnabledControl": 107.69999992847443,
+      "firstWallPaint": 134.89999997615814,
+      "longtasks": [],
+      "paintEntries": [
+        {
+          "name": "first-paint",
+          "start": 160
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 160
+        }
+      ],
+      "navigation": [
+        {
+          "responseEnd": 9.899999976158142,
+          "domContentLoaded": 109.69999992847443,
+          "load": 116
+        }
+      ],
+      "modules": [
+        {
+          "name": "/assets/index-Can2ISBp.js",
+          "duration": 33.89999997615814,
+          "decodedBodySize": 274235
+        },
+        {
+          "name": "/assets/quantize-DsvDuXDJ.js",
+          "duration": 40.39999997615814,
+          "decodedBodySize": 13241
+        }
+      ],
+      "theme": "dark",
+      "viewport": {
+        "width": 448,
+        "height": 819,
+        "dpr": 2.25
+      }
+    }
+  ],
+  "startupQualification": "New documents in existing warmed authorized browser process; source/module entry timings, not process-cold launch. Welcome suppressions are test-origin only. Process restart avoided to preserve user browser.",
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T10:20:09.163Z"
+}

@@ -1,0 +1,18 @@
+diff --git "a/C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\codex-independent-performance-2026-10-18\\core\\row-cursor-baseline.mjs" "b/C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\codex-independent-performance-2026-10-18\\core\\row-cursor-candidate.mjs"
+index ff10912..33ea181 100644
+--- "a/C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\codex-independent-performance-2026-10-18\\core\\row-cursor-baseline.mjs"
++++ "b/C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\codex-independent-performance-2026-10-18\\core\\row-cursor-candidate.mjs"
+@@ -52,9 +52,11 @@ function job(image, palette, alphaCut, mw, mh, metric, alphaMode) {
+ 
+ function convert(state, start, end) {
+   const { data, sourceW, xs, ys, exact, labs, rgb, metric, scratch, size, alphaCut, result } = state;
+-  const alpha = result.alpha;
++  const alpha = result.alpha, width = result.w;
++  let x = start % width, y = Math.floor(start / width), sourceRow = ys[y] * sourceW;
+   for (let o = start; o < end; o++) {
+-    const p = (ys[Math.floor(o / result.w)] * sourceW + xs[o % result.w]) * 4;
++    const p = (sourceRow + xs[x]) * 4;
++    if (++x === width) { x = 0; sourceRow = ys[++y] * sourceW; }
+     if (data[p + 3] < alphaCut) { result.indices[o] = EMPTY_INDEX; result.hasTransparency = true; continue; }
+     if (alpha) alpha[o] = data[p + 3];
+     const key = data[p] << 16 | data[p + 1] << 8 | data[p + 2];

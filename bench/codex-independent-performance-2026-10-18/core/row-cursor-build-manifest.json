@@ -1,0 +1,374 @@
+{
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "created": "2026-10-18T10:44:00.951Z",
+  "lockSha256": "a720339ada343ca8e1908b0e3530780684134a99d5b7312412aa963620b0e08c",
+  "variants": [
+    {
+      "name": "baseline",
+      "port": 5407,
+      "sourceChanges": [
+        {
+          "file": "src/lib/quantize.js",
+          "beforeRawSha256": "6dacaca42d615b72a4ee511bb7ed32344aa7118ae946769e290d7a9463f8d0a3",
+          "afterRawSha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573",
+          "beforeCanonicalLfSha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573",
+          "afterCanonicalLfSha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573"
+        }
+      ],
+      "dist": [
+        {
+          "file": "apple-touch-icon-152x152.png",
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "file": "apple-touch-icon-167x167.png",
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "file": "apple-touch-icon-180x180.png",
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "file": "assets/gif-C7fzAnbv.js",
+          "sha256": "dc8337ba9020d1b45e91f4bb7a8a2264b15017a275101b5188ea61c58dad576e"
+        },
+        {
+          "file": "assets/image-import-client-CL9BZHZZ.js",
+          "sha256": "7313819dcd84ecf1b9af5b58b3d7d2a93ded8d52dce4208bb6d9a23c3bad3383"
+        },
+        {
+          "file": "assets/image-import-worker-BTnho0_2.js",
+          "sha256": "e64c2ce33ee89a8960b0176ecd3f58150989a0b05fec1c6367fb024b95d68efb"
+        },
+        {
+          "file": "assets/index-Can2ISBp.js",
+          "sha256": "240a7d7f67fac6818a6bcc662af71c08266971cb306adc177f1f40b656ac59b2"
+        },
+        {
+          "file": "assets/index-VE9_tUgX.css",
+          "sha256": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+        },
+        {
+          "file": "assets/palette-ase-gXqzrNdw.js",
+          "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+        },
+        {
+          "file": "assets/palette-cleanup-client-BmZ-Mhp5.js",
+          "sha256": "f288ff5a8635657e62a888365def8acbb51ef3fa105fa256ab92fcfccc5ad337"
+        },
+        {
+          "file": "assets/palette-cleanup-W-B0KZaa.js",
+          "sha256": "fc59ace9d494f9731c3eb43e3c9c0dec068c8fea6d15bf6d8b23ccc463a7c447"
+        },
+        {
+          "file": "assets/palette-cleanup-worker-ChpCTucA.js",
+          "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+        },
+        {
+          "file": "assets/palette-generated-client-ByPrAFoT.js",
+          "sha256": "b0cba97b046d2332856682a2bc5252ae9640ba2c0d4ab9edb08c2e21695d3fca"
+        },
+        {
+          "file": "assets/palette-generated-CRvd4cnv.js",
+          "sha256": "0c4d712dbcb217553e45b950b223492df415ddf022231f2247eafb04b92288cd"
+        },
+        {
+          "file": "assets/palette-generated-worker-xpoMRM2c.js",
+          "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+        },
+        {
+          "file": "assets/palette-gif-worker-D4qe4WP7.js",
+          "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+        },
+        {
+          "file": "assets/palette-limit-OiwOF5bZ.js",
+          "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+        },
+        {
+          "file": "assets/palette-limit-worker-rkrL9P3s.js",
+          "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+        },
+        {
+          "file": "assets/palette-lospec-BUdZU2lN.js",
+          "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+        },
+        {
+          "file": "assets/palette-usage-B3tsKAFt.js",
+          "sha256": "c7310b05d88f9ea860c53043a5ded4fa156d0e9e46e552dd95a3b43844423a02"
+        },
+        {
+          "file": "assets/quantize-DsvDuXDJ.js",
+          "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+        },
+        {
+          "file": "colorfetti-trailer-poster.png",
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "file": "colorfetti-trailer.mp4",
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "file": "favicon-16x16.png",
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "file": "favicon-32x32.png",
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "file": "favicon-48x48.png",
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "file": "favicon-dark-16x16.png",
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "file": "favicon-dark-32x32.png",
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "file": "favicon-dark-48x48.png",
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "file": "favicon-dark.ico",
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "file": "favicon-dark.svg",
+          "sha256": "fbabe60b1073f33771fc0fdae8c2e067de3e2b0ccc89066b779962f877f35858"
+        },
+        {
+          "file": "favicon-light.svg",
+          "sha256": "2cb141897aea4c68b20ce5057dd8428a7490c77cd2f6790ce0347ef14c5b5723"
+        },
+        {
+          "file": "favicon.ico",
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "file": "favicon.svg",
+          "sha256": "fb814d4571ad3bdb462dff8f524db3433825e265ad024d44768abe204f0fe9a8"
+        },
+        {
+          "file": "index.html",
+          "sha256": "0a9e464b96723d08af96f82ea3a1e6accf346bcba1fb0c1e6f247d7a7d853f46"
+        },
+        {
+          "file": "manifest.webmanifest",
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "file": "maskable-icon-192x192.png",
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "file": "maskable-icon-512x512.png",
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "file": "monochrome-192x192.png",
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "file": "pwa-192x192.png",
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "file": "pwa-512x512.png",
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "file": "safari-pinned-tab.svg",
+          "sha256": "82efbb4e4267ffbb098962013e3121d585edf8e90e3b89cef604a6d7c52677ab"
+        }
+      ]
+    },
+    {
+      "name": "candidate",
+      "port": 5408,
+      "sourceChanges": [
+        {
+          "file": "src/lib/quantize.js",
+          "beforeRawSha256": "6dacaca42d615b72a4ee511bb7ed32344aa7118ae946769e290d7a9463f8d0a3",
+          "afterRawSha256": "6da1ddc642aa0a0a11c49a543394e5a8c3f4c96f7d06f58253fc4d294c3818db",
+          "beforeCanonicalLfSha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573",
+          "afterCanonicalLfSha256": "6da1ddc642aa0a0a11c49a543394e5a8c3f4c96f7d06f58253fc4d294c3818db"
+        }
+      ],
+      "dist": [
+        {
+          "file": "apple-touch-icon-152x152.png",
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "file": "apple-touch-icon-167x167.png",
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "file": "apple-touch-icon-180x180.png",
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "file": "assets/gif-BZzgjlg6.js",
+          "sha256": "32a983bd37fe216a0e0460f254270e6211b6e936940bdf65b4036ba72e4e31ba"
+        },
+        {
+          "file": "assets/image-import-client-BNapUh1y.js",
+          "sha256": "dcaf525f6c793ea30e6815e2f914b969b6d18dbe84b01fbe731906e95a48d110"
+        },
+        {
+          "file": "assets/image-import-worker-BTnho0_2.js",
+          "sha256": "e64c2ce33ee89a8960b0176ecd3f58150989a0b05fec1c6367fb024b95d68efb"
+        },
+        {
+          "file": "assets/index-CUFtpKYn.js",
+          "sha256": "4f7ddf226e0ae1ee360abc38f01bc951d734564d7765fbffa433bd7fb2f3df4e"
+        },
+        {
+          "file": "assets/index-VE9_tUgX.css",
+          "sha256": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+        },
+        {
+          "file": "assets/palette-ase-CBx9lnKm.js",
+          "sha256": "ebe38da87ca3d35cc824bf465e2713d69f2042dcc57fef18a4780f14e35e3b71"
+        },
+        {
+          "file": "assets/palette-cleanup-client-C6DCX38P.js",
+          "sha256": "74208e437005c1d619298474638a00496bc15ad1da7cbb8c6f6f777a91918b64"
+        },
+        {
+          "file": "assets/palette-cleanup-D9JqTz3w.js",
+          "sha256": "090597817ca5e86bc00ce533d1a0723236b062df4a21589c67d4e92ba4b2ad43"
+        },
+        {
+          "file": "assets/palette-cleanup-worker-BPF0fItu.js",
+          "sha256": "f5ff7214259df1bdaa27be50a5025cdd3f205bcd49d4a00aed63c20d20bf2d5c"
+        },
+        {
+          "file": "assets/palette-generated-Bu_348Lo.js",
+          "sha256": "403e662d57eb3f9e4a52efd72ffe46c1c908e4a3e16a99d72818e63a65df7380"
+        },
+        {
+          "file": "assets/palette-generated-client-DcZkQc4A.js",
+          "sha256": "76e8cc4b2e8eb9144352b8b8c3af204949aeec7da1fb9411645814bb0f5f7fcc"
+        },
+        {
+          "file": "assets/palette-generated-worker-xpoMRM2c.js",
+          "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+        },
+        {
+          "file": "assets/palette-gif-worker-D4qe4WP7.js",
+          "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+        },
+        {
+          "file": "assets/palette-limit-BpNee8Jf.js",
+          "sha256": "be5813d37116e8ed69359dd20981ac4b815421f02bc059fcac5655d63878cebd"
+        },
+        {
+          "file": "assets/palette-limit-worker-rkrL9P3s.js",
+          "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+        },
+        {
+          "file": "assets/palette-lospec-CXI6xziv.js",
+          "sha256": "ef3861db9fa805f698171f180bfeaaf0acc7a78a944bc1ec7e65f4fbd351daaf"
+        },
+        {
+          "file": "assets/palette-usage-IatTc0-k.js",
+          "sha256": "cbd78b0f98f2ff62007c7c4e4553e43edc8267f3f248b900df4aeba319cf8d38"
+        },
+        {
+          "file": "assets/quantize-DEaXtLwd.js",
+          "sha256": "e92a2f5c6529f22d6cf3b50f4c1fc5ac33581eb0859cc4ba17f1b313d93f2ed4"
+        },
+        {
+          "file": "colorfetti-trailer-poster.png",
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "file": "colorfetti-trailer.mp4",
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "file": "favicon-16x16.png",
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "file": "favicon-32x32.png",
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "file": "favicon-48x48.png",
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "file": "favicon-dark-16x16.png",
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "file": "favicon-dark-32x32.png",
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "file": "favicon-dark-48x48.png",
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "file": "favicon-dark.ico",
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "file": "favicon-dark.svg",
+          "sha256": "fbabe60b1073f33771fc0fdae8c2e067de3e2b0ccc89066b779962f877f35858"
+        },
+        {
+          "file": "favicon-light.svg",
+          "sha256": "2cb141897aea4c68b20ce5057dd8428a7490c77cd2f6790ce0347ef14c5b5723"
+        },
+        {
+          "file": "favicon.ico",
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "file": "favicon.svg",
+          "sha256": "fb814d4571ad3bdb462dff8f524db3433825e265ad024d44768abe204f0fe9a8"
+        },
+        {
+          "file": "index.html",
+          "sha256": "fee6768fe6b2a39bdc9bd1683b265970267a375e01ef9f8378e8425df34351c5"
+        },
+        {
+          "file": "manifest.webmanifest",
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "file": "maskable-icon-192x192.png",
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "file": "maskable-icon-512x512.png",
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "file": "monochrome-192x192.png",
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "file": "pwa-192x192.png",
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "file": "pwa-512x512.png",
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "file": "safari-pinned-tab.svg",
+          "sha256": "82efbb4e4267ffbb098962013e3121d585edf8e90e3b89cef604a6d7c52677ab"
+        }
+      ]
+    }
+  ],
+  "hashPolicy": "Raw SHA256 hashes exact filesystem bytes; canonical LF fields normalize CRLF before UTF-8 SHA256. Both builds normalize quantize.js toLF, so candidate comparison has only declared coordinate-loop semantics."
+}

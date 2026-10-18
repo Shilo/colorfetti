@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-18T10:08:28.888Z",
+  "error": "Stale Download all locator; unhandled concurrent download waiter timeout bypassed finally. Corrected to current Save all images label and immediately-owned waiter rejection.",
+  "ownedPageUrl": "http://localhost:5391/?native=codexio-supplement-1792317911859",
+  "closedCount": 1,
+  "testOriginStorage": "New isolated task origin localhost:5391 cleared; no private origin storage read or changed.",
+  "outputs": "14 exact named PNGs previously pulled and removed. Pending ZIP click never dispatched; no ZIP output created.",
+  "productionDefect": false
+}

@@ -1,0 +1,180 @@
+{
+  "baseline": "18de3f7b231e59d144aba6fa32ceba43c03a04eb plus App Preview trigger correction, immutable final build",
+  "label": "retention-final-cumulative",
+  "url": "http://localhost:5406/",
+  "stamp": 1792321489490,
+  "started": "2026-10-18T11:04:49.490Z",
+  "errors": [],
+  "snapshots": [
+    {
+      "label": "no-preview document baseline",
+      "at": 1792321490656,
+      "heap": {
+        "usedSize": 3071784,
+        "totalSize": 3727360,
+        "embedderHeapUsedSize": 1395208,
+        "backingStorageSize": 588046
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 890,
+        "jsEventListeners": 242
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   323607            TOTAL RSS:   498088       TOTAL SWAP PSS:    28985"
+      ]
+    },
+    {
+      "label": "no-preview source live",
+      "at": 1792321492217,
+      "heap": {
+        "usedSize": 3814276,
+        "totalSize": 4308992,
+        "embedderHeapUsedSize": 1835216,
+        "backingStorageSize": 23616992
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 992,
+        "jsEventListeners": 335
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   319787            TOTAL RSS:   494468       TOTAL SWAP PSS:    28985"
+      ]
+    },
+    {
+      "label": "no-preview removed after11s+twoGC",
+      "at": 1792321503905,
+      "heap": {
+        "usedSize": 4021312,
+        "totalSize": 4571136,
+        "embedderHeapUsedSize": 2086096,
+        "backingStorageSize": 595151
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 944,
+        "jsEventListeners": 255
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   313840            TOTAL RSS:   488664       TOTAL SWAP PSS:    28985"
+      ]
+    },
+    {
+      "label": "preview document baseline",
+      "at": 1792321504997,
+      "heap": {
+        "usedSize": 3076232,
+        "totalSize": 3727360,
+        "embedderHeapUsedSize": 1403736,
+        "backingStorageSize": 588832
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 890,
+        "jsEventListeners": 242
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   318890            TOTAL RSS:   493864       TOTAL SWAP PSS:    28985"
+      ]
+    },
+    {
+      "label": "preview-close removed after11s+twoGC",
+      "at": 1792321517554,
+      "heap": {
+        "usedSize": 4137876,
+        "totalSize": 4571136,
+        "embedderHeapUsedSize": 1951896,
+        "backingStorageSize": 595853
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 995,
+        "jsEventListeners": 255
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   313316            TOTAL RSS:   488292       TOTAL SWAP PSS:    28985"
+      ]
+    },
+    {
+      "label": "tiny preview replaced old trigger, removed after11s+twoGC",
+      "at": 1792321530120,
+      "heap": {
+        "usedSize": 4336380,
+        "totalSize": 5095424,
+        "embedderHeapUsedSize": 1967040,
+        "backingStorageSize": 610509
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 1040,
+        "jsEventListeners": 258
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   313254            TOTAL RSS:   488264       TOTAL SWAP PSS:    28985"
+      ]
+    }
+  ],
+  "workers": [
+    {
+      "url": "http://localhost:5406/assets/palette-generated-worker-xpoMRM2c.js",
+      "created": 1792321490028,
+      "closed": 1792321490058
+    },
+    {
+      "url": "http://localhost:5406/assets/image-import-worker-BTnho0_2.js",
+      "created": 1792321491533,
+      "closed": 1792321504357
+    },
+    {
+      "url": "http://localhost:5406/assets/image-import-worker-BTnho0_2.js",
+      "created": 1792321505337,
+      "closed": 1792321530644
+    }
+  ],
+  "qualification": "Separate instrumented retention diagnostic. Explicit GC and CDP backing storage snapshots, not sampled peaks or whole-app bounds. No native download/Save/clipboard. No Worker wrapper, rAF observer or staged source globals persist.",
+  "sourceBuild": {
+    "dir": "C:\\Programming_Files\\Shilocity\\colorfetti\\.tmp\\codex-independent-performance-2026-10-18\\final\\dist",
+    "port": 5406,
+    "indexSha256": "c7a4f35b17c4ee20b09e03c42a584838aa7593cfa89f20c1d14a7babb1a9b38d",
+    "probeSha256": "74700e1a036f5b5adfc902793b465be53d8742a5a24ae8fcd751f6cb07ba2f18"
+  },
+  "finished": "2026-10-18T11:05:30.645Z",
+  "ownedPageClosed": true
+}

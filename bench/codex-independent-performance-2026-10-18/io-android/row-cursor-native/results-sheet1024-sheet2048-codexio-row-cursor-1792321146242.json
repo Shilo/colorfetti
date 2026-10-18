@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-18T10:59:06.242Z",
+  "prefix": "codexio-row-cursor-1792321146242",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce; isolated nearest row-cursor candidate only",
+  "rows": [],
+  "errors": [
+    "page.evaluate: TypeError: Cannot read properties of undefined (reading 'takeRecords')\n    at eval (eval at evaluate (:311:30), <anonymous>:1:33)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\codex-independent-performance-2026-10-18\\io-android\\row-cursor-native.mjs:46:640"
+  ],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 335\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Frozen5ae actual app versus isolated local row-cursor candidate. Fixed core/row-cursor-plan.json gates: target>=10% AND10ms rendererCPU,>=4/5pairs; no adverse>5ms AND5%; all paired output bytes exact. Scalar nearest oracle for applicable cases; independent alpha/palette contract plus byte parity for dither/Cleanup.",
+    "Actual USB Pixel8Pro native Brave; existing shared browser remains open.",
+    "Fresh owned page per pair/variant; ordinary origin storage seeded and restored. First Save after completed import/count observed separately; second Save warm. Source and quantizer already warmed before first Save. AB/BA alternates by pair. Same browser process, not process-cold.",
+    "Source bytes/File construction before timing. Save starts from settled named wall/current caption. Timing ends at native download event dispatch, before manager wait/pull/independent decode.",
+    "No rAF loop; LongTasks observer only. Main-thread TaskDuration excludes workerCPU. Exact native file bytes and every decoded visibleRGB/alpha/frame/delay/loop compared across all trials; filenames unique to this audit."
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "restored": {
+    "downloadBehavior": "native default",
+    "rotation": "free",
+    "ownedPagesClosed": true
+  },
+  "finished": "2026-10-18T10:59:08.121Z"
+}

@@ -1,0 +1,61 @@
+
+> colorfetti@0.0.0 test
+> vitest run
+
+4:01:40 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti/.tmp/codex-independent-performance-2026-10-18/final - using default configuration.
+
+ RUN  v4.1.11 C:/Programming_Files/Shilocity/colorfetti/.tmp/codex-independent-performance-2026-10-18/final
+
+ ❯ build/brand-assets-generator.test.js (3 tests | 1 failed) 666ms
+     × rejects an unknown browser QA engine before loading dependencies or writing results 39ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  build/brand-assets-generator.test.js > icon generator reproducibility > rejects an unknown browser QA engine before loading dependencies or writing results
+AssertionError: expected 'node:internal/modules/cjs/loader:1422…' to contain 'Unsupported ENGINE "typo"'
+
+- Expected
++ Received
+
+- Unsupported ENGINE "typo"
++ node:internal/modules/cjs/loader:1422
++   throw err;
++   ^
++ 
++ Error: Cannot find module 'C:\Programming_Files\Shilocity\colorfetti\.tmp\codex-independent-performance-2026-10-18\final\bench\brand-icons-qa.mjs'
++     at Module._resolveFilename (node:internal/modules/cjs/loader:1419:15)
++     at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
++     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
++     at Module._load (node:internal/modules/cjs/loader:1225:37)
++     at TracingChannel.traceSync (node:diagnostics_channel:328:14)
++     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
++     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
++     at node:internal/main/run_main_module:33:47 {
++   code: 'MODULE_NOT_FOUND',
++   requireStack: []
++ }
++ 
++ Node.js v25.0.0
++
+
+ ❯ build/brand-assets-generator.test.js:58:27
+     56|     });
+     57|     expect(result.status).not.toBe(0);
+     58|     expect(result.stderr).toContain('Unsupported ENGINE "typo"');
+       |                           ^
+     59|   });
+     60| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 65 passed (66)
+      Tests  1 failed | 1070 passed | 2 skipped (1073)
+   Start at  04:01:40
+   Duration  7.65s (transform 5.93s, setup 0ms, import 10.17s, tests 27.75s, environment 6ms)
+
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.21.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.1
+npm notice To update run: npm install -g npm@11.21.1
+npm notice

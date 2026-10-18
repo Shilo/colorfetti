@@ -1,0 +1,1390 @@
+{
+  "created": "2026-10-18T10:45:54.219Z",
+  "status": "Promoted to bounded native evaluation; no production edit authorized or made",
+  "plan": {
+    "created": "2026-10-18T10:38:44.629Z",
+    "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+    "currentHeadAtPreparation": "18de3f7b231e59d144aba6fa32ceba43c03a04eb",
+    "sourceCanonicalLfSha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573",
+    "candidateCanonicalLfSha256": "6da1ddc642aa0a0a11c49a543394e5a8c3f4c96f7d06f58253fc4d294c3818db",
+    "hypothesis": "A local row cursor in each nearest convert(state,start,end) call removes per-pixel division/modulo/source-row multiplication while retaining exact xs/ys coordinates. Advance precedes the alpha continue; each slice initializes from its own start. No persistent cursor, source-equality shortcut, table changes, memo change, dither change or source mutation.",
+    "acceptance": {
+      "nativeTarget": "1024/2048 PNG/export nearest: >=10% AND >=10ms lower renderer CPU, >=4/5 matched pairs faster; every paired output exact",
+      "adverse": "No practical tiny/preview/entropy/Keep/dither/Cleanup/animation regression exceeding BOTH5ms AND5%; no new blocking or retained memory",
+      "roundLimit": 2,
+      "promotion": "Node and auxiliary whole conversion/export must show material benefit before a native candidate; kernel timing alone cannot authorize production."
+    },
+    "ports": {
+      "baseline": 5407,
+      "candidate": 5408
+    },
+    "scope": "Research only; all runtime from immutable5ae baseline except candidate quantize.js block. Root owns native final decision and production edit authorization."
+  },
+  "sourceVariants": [
+    {
+      "name": "baseline",
+      "port": 5407,
+      "sourceChanges": [
+        {
+          "file": "src/lib/quantize.js",
+          "beforeRawSha256": "6dacaca42d615b72a4ee511bb7ed32344aa7118ae946769e290d7a9463f8d0a3",
+          "afterRawSha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573",
+          "beforeCanonicalLfSha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573",
+          "afterCanonicalLfSha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573"
+        }
+      ]
+    },
+    {
+      "name": "candidate",
+      "port": 5408,
+      "sourceChanges": [
+        {
+          "file": "src/lib/quantize.js",
+          "beforeRawSha256": "6dacaca42d615b72a4ee511bb7ed32344aa7118ae946769e290d7a9463f8d0a3",
+          "afterRawSha256": "6da1ddc642aa0a0a11c49a543394e5a8c3f4c96f7d06f58253fc4d294c3818db",
+          "beforeCanonicalLfSha256": "c41d2a96c50acf495fddef2fd60c94d2cc265344ab28bd49151614002fdb0573",
+          "afterCanonicalLfSha256": "6da1ddc642aa0a0a11c49a543394e5a8c3f4c96f7d06f58253fc4d294c3818db"
+        }
+      ]
+    }
+  ],
+  "correctness": {
+    "nodeRound1": {
+      "oddChunkBoundary": 1356,
+      "syncParity": 168,
+      "independentScalarNearest": 84,
+      "asyncParity": 168,
+      "nonzeroFreshSliceStart": 504,
+      "ditherAlphaUnchanged": 48,
+      "entryCancel": 1,
+      "progressCancel": 1,
+      "pairedPngExact": 50
+    },
+    "nodeRound2": {
+      "oddChunkBoundary": 1356,
+      "syncParity": 168,
+      "independentScalarNearest": 84,
+      "asyncParity": 168,
+      "nonzeroFreshSliceStart": 504,
+      "ditherAlphaUnchanged": 48,
+      "entryCancel": 1,
+      "progressCancel": 1,
+      "pairedPngExact": 50
+    },
+    "edgeWholeConversions": 20,
+    "edgeErrors": []
+  },
+  "nodeRound1": [
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 0.061599999999998545,
+      "afterMs": 0.056100000000014916,
+      "deltaMs": -0.005499999999983629,
+      "deltaPercent": -8.928571428545062,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        0.07889999999997599,
+        0.09169999999994616,
+        0.061599999999998545,
+        0.06060000000002219,
+        0.06130000000007385
+      ],
+      "afterRaw": [
+        0.06509999999991578,
+        0.05570000000000164,
+        0.056100000000014916,
+        0.054700000000025284,
+        0.06889999999998508
+      ]
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 0.012000000000057298,
+      "afterMs": 0.010800000000017462,
+      "deltaMs": -0.0012000000000398359,
+      "deltaPercent": -10.000000000284215,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        0.012900000000058753,
+        0.012299999999981992,
+        0.012000000000057298,
+        0.012000000000057298,
+        0.011700000000018917
+      ],
+      "afterRaw": [
+        0.01160000000004402,
+        0.010800000000017462,
+        0.011000000000080945,
+        0.010400000000004184,
+        0.010199999999940701
+      ]
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestPngPreparation",
+      "beforeMs": 0.21450000000004366,
+      "afterMs": 0.18780000000003838,
+      "deltaMs": -0.026700000000005275,
+      "deltaPercent": -12.447552447552368,
+      "fasterPairs": 3,
+      "totalPairs": 5,
+      "beforeRaw": [
+        0.3624999999999545,
+        0.2622000000000071,
+        0.21450000000004366,
+        0.1711999999999989,
+        0.13450000000000273
+      ],
+      "afterRaw": [
+        0.39629999999999654,
+        0.34769999999991796,
+        0.18780000000003838,
+        0.16199999999992087,
+        0.12819999999999254
+      ]
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 11.346199999999953,
+      "afterMs": 7.680399999999963,
+      "deltaMs": -3.66579999999999,
+      "deltaPercent": -32.30861433784003,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        11.346199999999953,
+        12.75470000000007,
+        10.783199999999965,
+        10.80129999999997,
+        12.26400000000001
+      ],
+      "afterRaw": [
+        7.680399999999963,
+        7.559600000000046,
+        8.03729999999996,
+        7.665100000000052,
+        7.777600000000007
+      ]
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 1.1044000000000551,
+      "afterMs": 0.8215999999999894,
+      "deltaMs": -0.28280000000006567,
+      "deltaPercent": -25.606664252087242,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        1.100999999999999,
+        1.155399999999986,
+        1.1044000000000551,
+        1.1082000000000107,
+        1.0643999999999778
+      ],
+      "afterRaw": [
+        0.8532999999999902,
+        0.8215999999999894,
+        0.8552999999999429,
+        0.800200000000018,
+        0.81899999999996
+      ]
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestPngPreparation",
+      "beforeMs": 43.51299999999992,
+      "afterMs": 41.12070000000017,
+      "deltaMs": -2.39229999999975,
+      "deltaPercent": -5.4978971801524885,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        46.35220000000004,
+        47.912199999999984,
+        43.51299999999992,
+        42.94419999999991,
+        42.92489999999998
+      ],
+      "afterRaw": [
+        42.19869999999992,
+        41.726,
+        39.48989999999981,
+        41.12070000000017,
+        40.11159999999995
+      ]
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 43.298,
+      "afterMs": 31.80060000000003,
+      "deltaMs": -11.49739999999997,
+      "deltaPercent": -26.55411335396547,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        43.63099999999986,
+        42.95659999999998,
+        43.298,
+        43.13650000000007,
+        43.30970000000002
+      ],
+      "afterRaw": [
+        31.811499999999796,
+        32.06630000000018,
+        31.689799999999877,
+        31.781600000000026,
+        31.80060000000003
+      ]
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 1.1532999999999447,
+      "afterMs": 0.8540000000000418,
+      "deltaMs": -0.29929999999990287,
+      "deltaPercent": -25.951617098752898,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        1.1532999999999447,
+        1.154399999999896,
+        1.1087999999999738,
+        1.155999999999949,
+        1.101699999999937
+      ],
+      "afterRaw": [
+        0.8540000000000418,
+        0.8340999999998076,
+        0.8830000000000382,
+        0.8360999999999876,
+        0.8949000000000069
+      ]
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestPngPreparation",
+      "beforeMs": 104.35490000000027,
+      "afterMs": 93.39460000000008,
+      "deltaMs": -10.960300000000188,
+      "deltaPercent": -10.50290882363949,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        104.0775000000001,
+        105.30610000000024,
+        104.35490000000027,
+        104.77390000000014,
+        103.83199999999988
+      ],
+      "afterRaw": [
+        93.39460000000008,
+        92.99319999999989,
+        93.45749999999998,
+        93.05070000000023,
+        232.35840000000007
+      ]
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 9.711299999999937,
+      "afterMs": 9.380299999999806,
+      "deltaMs": -0.33100000000013097,
+      "deltaPercent": -3.4084005231033276,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        9.664800000000014,
+        9.711299999999937,
+        9.694099999999708,
+        9.971200000000408,
+        10.159699999999702
+      ],
+      "afterRaw": [
+        9.384099999999762,
+        9.25669999999991,
+        9.33030000000008,
+        9.380299999999806,
+        9.415500000000065
+      ]
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 11.973100000000159,
+      "afterMs": 12.25879999999961,
+      "deltaMs": 0.2856999999994514,
+      "deltaPercent": 2.3861823587830067,
+      "fasterPairs": 2,
+      "totalPairs": 5,
+      "beforeRaw": [
+        9.777799999999843,
+        11.973100000000159,
+        9.858500000000276,
+        15.878499999999804,
+        12.842799999999897
+      ],
+      "afterRaw": [
+        9.66650000000027,
+        12.25879999999961,
+        15.350199999999859,
+        26.119000000000142,
+        11.19340000000011
+      ]
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestPngPreparation",
+      "beforeMs": 47.56909999999971,
+      "afterMs": 60.34320000000025,
+      "deltaMs": 12.774100000000544,
+      "deltaPercent": 26.85377692661963,
+      "fasterPairs": 1,
+      "totalPairs": 5,
+      "beforeRaw": [
+        178.7438000000002,
+        43.17430000000013,
+        47.56909999999971,
+        45.335000000000036,
+        59.99250000000029
+      ],
+      "afterRaw": [
+        51.02699999999959,
+        45.44010000000026,
+        61.290899999999965,
+        60.34320000000025,
+        103.00550000000021
+      ]
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 42.88770000000022,
+      "afterMs": 42.30839999999989,
+      "deltaMs": -0.5793000000003303,
+      "deltaPercent": -1.3507369245735479,
+      "fasterPairs": 3,
+      "totalPairs": 5,
+      "beforeRaw": [
+        60.003099999999904,
+        52.294699999999466,
+        42.88770000000022,
+        18.092000000000553,
+        39.39260000000013
+      ],
+      "afterRaw": [
+        88.75510000000031,
+        71.62920000000031,
+        42.30839999999989,
+        16.51220000000012,
+        38.784200000000055
+      ]
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 27.794700000000375,
+      "afterMs": 24.232299999999668,
+      "deltaMs": -3.5624000000007072,
+      "deltaPercent": -12.816831985956522,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        42.96439999999984,
+        15.201399999999921,
+        15.675599999999577,
+        34.11790000000019,
+        27.794700000000375
+      ],
+      "afterRaw": [
+        26.718800000000556,
+        33.293800000000374,
+        15.111300000000483,
+        24.232299999999668,
+        15.673000000000684
+      ]
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestPngPreparation",
+      "beforeMs": 68.14980000000014,
+      "afterMs": 100.82160000000022,
+      "deltaMs": 32.671800000000076,
+      "deltaPercent": 47.94115316552654,
+      "fasterPairs": 0,
+      "totalPairs": 5,
+      "beforeRaw": [
+        90.97820000000047,
+        67.06700000000001,
+        74.3744999999999,
+        61.190700000000106,
+        68.14980000000014
+      ],
+      "afterRaw": [
+        103.54109999999946,
+        76.1242000000002,
+        100.82160000000022,
+        63.97689999999966,
+        115.6296999999995
+      ]
+    }
+  ],
+  "nodeRound2": [
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 0.0627999999999247,
+      "afterMs": 0.057599999999979445,
+      "deltaMs": -0.005199999999945248,
+      "deltaPercent": -8.280254776992813,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        0.09629999999992833,
+        0.09130000000004657,
+        0.0627999999999247,
+        0.06209999999998672,
+        0.0625
+      ],
+      "afterRaw": [
+        0.06819999999993342,
+        0.057599999999979445,
+        0.055499999999938154,
+        0.0544999999999618,
+        0.06579999999996744
+      ]
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 0.011899999999968713,
+      "afterMs": 0.010400000000004184,
+      "deltaMs": -0.0014999999999645297,
+      "deltaPercent": -12.60504201654179,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        0.01310000000000855,
+        0.011999999999943611,
+        0.011700000000018917,
+        0.011799999999993815,
+        0.011899999999968713
+      ],
+      "afterRaw": [
+        0.011099999999942156,
+        0.010700000000042564,
+        0.010400000000004184,
+        0.010200000000054388,
+        0.009900000000016007
+      ]
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestPngPreparation",
+      "beforeMs": 0.17879999999991014,
+      "afterMs": 0.17609999999990578,
+      "deltaMs": -0.0027000000000043656,
+      "deltaPercent": -1.5100671140971578,
+      "fasterPairs": 2,
+      "totalPairs": 5,
+      "beforeRaw": [
+        0.20839999999998327,
+        0.17879999999991014,
+        0.2338999999999487,
+        0.14850000000001273,
+        0.12829999999996744
+      ],
+      "afterRaw": [
+        0.21390000000008058,
+        0.19420000000002346,
+        0.17609999999990578,
+        0.161200000000008,
+        0.11959999999999127
+      ]
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 10.742700000000013,
+      "afterMs": 7.739100000000008,
+      "deltaMs": -3.003600000000006,
+      "deltaPercent": -27.959451534530444,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        11.705600000000004,
+        10.61080000000004,
+        10.540699999999902,
+        10.835500000000025,
+        10.742700000000013
+      ],
+      "afterRaw": [
+        7.739100000000008,
+        7.8368999999999005,
+        7.663999999999987,
+        7.905399999999986,
+        7.715000000000032
+      ]
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 1.115000000000009,
+      "afterMs": 0.8345000000000482,
+      "deltaMs": -0.2804999999999609,
+      "deltaPercent": -25.156950672642033,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        1.115000000000009,
+        1.1269999999999527,
+        1.0955000000000155,
+        1.1230000000000473,
+        1.1083999999999605
+      ],
+      "afterRaw": [
+        0.8441000000000258,
+        0.8197999999999865,
+        0.8345000000000482,
+        0.8315000000000055,
+        0.8476000000000568
+      ]
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestPngPreparation",
+      "beforeMs": 44.262300000000096,
+      "afterMs": 42.54409999999996,
+      "deltaMs": -1.718200000000138,
+      "deltaPercent": -3.8818588279419197,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        45.02089999999998,
+        43.19060000000013,
+        43.8891000000001,
+        44.44509999999991,
+        44.262300000000096
+      ],
+      "afterRaw": [
+        42.464000000000055,
+        42.54409999999996,
+        47.61869999999999,
+        43.95010000000002,
+        40.88610000000017
+      ]
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 43.45620000000008,
+      "afterMs": 32.551299999999856,
+      "deltaMs": -10.904900000000225,
+      "deltaPercent": -25.094002696968907,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        43.46370000000002,
+        43.419599999999946,
+        43.45620000000008,
+        43.753999999999905,
+        43.29160000000002
+      ],
+      "afterRaw": [
+        32.31420000000003,
+        32.86410000000001,
+        33.15070000000014,
+        32.44730000000004,
+        32.551299999999856
+      ]
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 1.214100000000144,
+      "afterMs": 0.8974000000000615,
+      "deltaMs": -0.3167000000000826,
+      "deltaPercent": -26.085165966563295,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        1.2425000000000637,
+        1.2214999999998781,
+        1.1510000000000673,
+        1.214100000000144,
+        1.1415000000001783
+      ],
+      "afterRaw": [
+        0.915599999999813,
+        0.8443999999999505,
+        0.8974000000000615,
+        0.8501000000001113,
+        0.9028000000000702
+      ]
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestPngPreparation",
+      "beforeMs": 104.91599999999971,
+      "afterMs": 95.03929999999991,
+      "deltaMs": -9.8766999999998,
+      "deltaPercent": -9.413912082046426,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        105.03019999999992,
+        104.55589999999984,
+        105.03340000000026,
+        104.88329999999996,
+        104.91599999999971
+      ],
+      "afterRaw": [
+        95.03929999999991,
+        93.36380000000008,
+        93.94759999999997,
+        95.22350000000006,
+        120.47080000000005
+      ]
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 10.778999999999996,
+      "afterMs": 9.973599999999806,
+      "deltaMs": -0.8054000000001906,
+      "deltaPercent": -7.471936172188432,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        10.778999999999996,
+        11.456699999999728,
+        10.097000000000207,
+        10.345700000000306,
+        11.71270000000004
+      ],
+      "afterRaw": [
+        9.573300000000017,
+        9.973599999999806,
+        10.210100000000239,
+        9.73359999999957,
+        10.67489999999998
+      ]
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 10.321699999999964,
+      "afterMs": 10.292299999999614,
+      "deltaMs": -0.0294000000003507,
+      "deltaPercent": -0.2848368001429069,
+      "fasterPairs": 2,
+      "totalPairs": 5,
+      "beforeRaw": [
+        12.377199999999903,
+        10.16820000000007,
+        10.282600000000002,
+        10.941100000000006,
+        10.321699999999964
+      ],
+      "afterRaw": [
+        10.67009999999982,
+        10.21979999999985,
+        10.292299999999614,
+        10.171600000000126,
+        10.749299999999948
+      ]
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestPngPreparation",
+      "beforeMs": 48.69549999999981,
+      "afterMs": 49.26389999999992,
+      "deltaMs": 0.5684000000001106,
+      "deltaPercent": 1.1672536476678763,
+      "fasterPairs": 1,
+      "totalPairs": 5,
+      "beforeRaw": [
+        48.69549999999981,
+        49.62440000000015,
+        47.42079999999987,
+        42.82519999999977,
+        50.70109999999977
+      ],
+      "afterRaw": [
+        49.26389999999992,
+        49.953399999999874,
+        49.96799999999985,
+        45.759700000000066,
+        47.153099999999995
+      ]
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 16.641399999999976,
+      "afterMs": 16.464899999999943,
+      "deltaMs": -0.17650000000003274,
+      "deltaPercent": -1.0606078815486253,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        16.69489999999996,
+        16.116500000000087,
+        16.561099999999897,
+        16.84880000000021,
+        16.641399999999976
+      ],
+      "afterRaw": [
+        16.170800000000327,
+        16.565200000000004,
+        16.464899999999943,
+        16.10709999999972,
+        16.573899999999867
+      ]
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 16.728499999999258,
+      "afterMs": 16.323300000000017,
+      "deltaMs": -0.4051999999992404,
+      "deltaPercent": -2.422213587585609,
+      "fasterPairs": 3,
+      "totalPairs": 5,
+      "beforeRaw": [
+        16.922700000000077,
+        16.728499999999258,
+        16.78940000000057,
+        16.36329999999998,
+        16.085799999999836
+      ],
+      "afterRaw": [
+        16.323300000000017,
+        16.216300000000047,
+        17.162499999999454,
+        15.819600000000719,
+        16.551000000000386
+      ]
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestPngPreparation",
+      "beforeMs": 69.35289999999986,
+      "afterMs": 66.69689999999991,
+      "deltaMs": -2.655999999999949,
+      "deltaPercent": -3.82968844850029,
+      "fasterPairs": 1,
+      "totalPairs": 5,
+      "beforeRaw": [
+        69.66859999999997,
+        65.09550000000036,
+        63.66159999999945,
+        69.35289999999986,
+        71.87169999999969
+      ],
+      "afterRaw": [
+        69.86399999999958,
+        66.69689999999991,
+        64.00520000000051,
+        65.2484000000004,
+        76.89149999999972
+      ]
+    }
+  ],
+  "auxiliaryEdge": [
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 0.10000000149011612,
+      "afterMs": 0.10000000149011612,
+      "deltaMs": 0,
+      "deltaPercent": 0,
+      "fasterPairs": 2,
+      "totalPairs": 5,
+      "beforeRaw": [
+        0.10000000149011612,
+        0.10000000149011612,
+        0,
+        0.10000000149011612,
+        0
+      ],
+      "afterRaw": [
+        0.10000000149011612,
+        0.09999999403953552,
+        0.10000000149011612,
+        0,
+        0.10000000149011612
+      ]
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 0.10000000149011612,
+      "afterMs": 0.10000000149011612,
+      "deltaMs": 0,
+      "deltaPercent": 0,
+      "fasterPairs": 2,
+      "totalPairs": 5,
+      "beforeRaw": [
+        0.10000000149011612,
+        0,
+        0.10000000149011612,
+        0.10000000149011612,
+        0
+      ],
+      "afterRaw": [
+        0,
+        0.10000000149011612,
+        0.19999999552965164,
+        0,
+        0.10000000149011612
+      ]
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 0,
+      "afterMs": 0.09999999403953552,
+      "deltaMs": 0.09999999403953552,
+      "deltaPercent": null,
+      "fasterPairs": 0,
+      "totalPairs": 5,
+      "beforeRaw": [
+        0,
+        0,
+        0,
+        0.10000000149011612,
+        0
+      ],
+      "afterRaw": [
+        0.09999999403953552,
+        0,
+        0.10000000149011612,
+        0.10000000149011612,
+        0
+      ]
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 0,
+      "afterMs": 0,
+      "deltaMs": 0,
+      "deltaPercent": null,
+      "fasterPairs": 0,
+      "totalPairs": 5,
+      "beforeRaw": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "afterRaw": [
+        0,
+        0,
+        0.10000000149011612,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 10.400000005960464,
+      "afterMs": 8.099999994039536,
+      "deltaMs": -2.300000011920929,
+      "deltaPercent": -22.11538471733413,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        10.900000005960464,
+        10.800000004470348,
+        10.100000001490116,
+        10.400000005960464,
+        10.299999997019768
+      ],
+      "afterRaw": [
+        8.5,
+        8.099999994039536,
+        7.5,
+        7.5999999940395355,
+        8.5
+      ]
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 11.100000001490116,
+      "afterMs": 8.299999997019768,
+      "deltaMs": -2.8000000044703484,
+      "deltaPercent": -25.225225262112282,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        11.699999995529652,
+        11.300000004470348,
+        11.100000001490116,
+        10.200000002980232,
+        10.100000001490116
+      ],
+      "afterRaw": [
+        12.399999998509884,
+        11,
+        8.299999997019768,
+        7.799999997019768,
+        7.699999995529652
+      ]
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 1.0999999940395355,
+      "afterMs": 0.9000000059604645,
+      "deltaMs": -0.19999998807907104,
+      "deltaPercent": -18.181817196617434,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        1.4000000059604645,
+        1.0999999940395355,
+        1,
+        1,
+        1.1000000014901161
+      ],
+      "afterRaw": [
+        1.0999999940395355,
+        0.9000000059604645,
+        0.9000000059604645,
+        0.6999999955296516,
+        0.7999999970197678
+      ]
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 1,
+      "afterMs": 0.7999999970197678,
+      "deltaMs": -0.20000000298023224,
+      "deltaPercent": -20.000000298023224,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        1.1999999955296516,
+        1.1000000014901161,
+        0.8999999985098839,
+        1,
+        1
+      ],
+      "afterRaw": [
+        0.7000000029802322,
+        0.7999999970197678,
+        0.8999999985098839,
+        0.7000000029802322,
+        0.7999999970197678
+      ]
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 40.100000001490116,
+      "afterMs": 30.600000001490116,
+      "deltaMs": -9.5,
+      "deltaPercent": -23.69077306645132,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "beforeRaw": [
+        41.399999998509884,
+        40.30000000447035,
+        40.100000001490116,
+        39.70000000298023,
+        39.70000000298023
+      ],
+      "afterRaw": [
+        30.600000001490116,
+        30.19999999552965,
+        43,
+        31.099999994039536,
+        29.899999998509884
+      ]
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 39.79999999701977,
+      "afterMs": 29.80000000447035,
+      "deltaMs": -9.99999999254942,
+      "deltaPercent": -25.125628123864875,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        39.5,
+        39.79999999701977,
+        40.70000000298023,
+        40.399999998509884,
+        39.399999998509884
+      ],
+      "afterRaw": [
+        29.599999994039536,
+        29.80000000447035,
+        29.600000001490116,
+        29.899999998509884,
+        30.200000002980232
+      ]
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 1.1000000014901161,
+      "afterMs": 0.8999999985098839,
+      "deltaMs": -0.20000000298023224,
+      "deltaPercent": -18.18181842811837,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        1,
+        1.1999999955296516,
+        1.1000000014901161,
+        1.1000000014901161,
+        1.0999999940395355
+      ],
+      "afterRaw": [
+        0.8999999985098839,
+        0.7000000029802322,
+        0.7000000029802322,
+        0.8999999985098839,
+        1
+      ]
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 1.1000000014901161,
+      "afterMs": 0.8000000044703484,
+      "deltaMs": -0.29999999701976776,
+      "deltaPercent": -27.272726964852044,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        1.2000000029802322,
+        1.1000000014901161,
+        1.0999999940395355,
+        1.1000000014901161,
+        1
+      ],
+      "afterRaw": [
+        0.7999999970197678,
+        0.8000000044703484,
+        0.8000000044703484,
+        0.7999999970197678,
+        0.8999999985098839
+      ]
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 13.100000001490116,
+      "afterMs": 12.600000001490116,
+      "deltaMs": -0.5,
+      "deltaPercent": -3.8167938926956135,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        13.100000001490116,
+        13.099999994039536,
+        13.300000004470348,
+        13.100000001490116,
+        13.199999995529652
+      ],
+      "afterRaw": [
+        12.600000001490116,
+        12.600000001490116,
+        12.5,
+        13,
+        12.600000001490116
+      ]
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 10.899999998509884,
+      "afterMs": 10,
+      "deltaMs": -0.8999999985098839,
+      "deltaPercent": -8.256880721402949,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        10.600000001490116,
+        10.899999998509884,
+        11.100000001490116,
+        10.399999998509884,
+        11.700000002980232
+      ],
+      "afterRaw": [
+        10.200000002980232,
+        10,
+        9.899999998509884,
+        10,
+        10.199999995529652
+      ]
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 13.099999994039536,
+      "afterMs": 12.5,
+      "deltaMs": -0.5999999940395355,
+      "deltaPercent": -4.580152628339951,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        13.200000002980232,
+        13.100000001490116,
+        13.099999994039536,
+        13,
+        12.900000005960464
+      ],
+      "afterRaw": [
+        12.5,
+        12.399999998509884,
+        12.5,
+        12.5,
+        12.399999998509884
+      ]
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 10.400000005960464,
+      "afterMs": 9.799999997019768,
+      "deltaMs": -0.6000000089406967,
+      "deltaPercent": -5.769230851892537,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        10.5,
+        10.5,
+        10.400000005960464,
+        10.300000004470348,
+        10.399999998509884
+      ],
+      "afterRaw": [
+        9.899999998509884,
+        9.799999997019768,
+        9.799999997019768,
+        9.799999997019768,
+        9.899999998509884
+      ]
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 12.900000005960464,
+      "afterMs": 12.5,
+      "deltaMs": -0.4000000059604645,
+      "deltaPercent": -3.1007752385708853,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        13,
+        12.900000005960464,
+        12.799999997019768,
+        13.200000002980232,
+        12.799999997019768
+      ],
+      "afterRaw": [
+        12.5,
+        12.399999998509884,
+        12.399999998509884,
+        12.5,
+        12.5
+      ]
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 10.200000002980232,
+      "afterMs": 9.899999998509884,
+      "deltaMs": -0.30000000447034836,
+      "deltaPercent": -2.941176513555832,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        10.200000002980232,
+        10.200000002980232,
+        10.5,
+        10.200000002980232,
+        10.200000002980232
+      ],
+      "afterRaw": [
+        10,
+        9.799999997019768,
+        9.799999997019768,
+        9.899999998509884,
+        9.899999998509884
+      ]
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 12.799999997019768,
+      "afterMs": 12.399999998509884,
+      "deltaMs": -0.3999999985098839,
+      "deltaPercent": -3.1249999890860636,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        12.799999997019768,
+        12.899999998509884,
+        12.699999995529652,
+        13,
+        12.799999997019768
+      ],
+      "afterRaw": [
+        12.399999998509884,
+        12.300000004470348,
+        12.5,
+        12.300000004470348,
+        12.600000001490116
+      ]
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "phase": "wholeNearestConversion",
+      "beforeMs": 10.300000004470348,
+      "afterMs": 9.799999997019768,
+      "deltaMs": -0.5000000074505806,
+      "deltaPercent": -4.8543690022677,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "beforeRaw": [
+        10.299999997019768,
+        10.299999997019768,
+        10.300000004470348,
+        10.300000004470348,
+        10.399999998509884
+      ],
+      "afterRaw": [
+        9.800000004470348,
+        9.799999997019768,
+        9.899999998509884,
+        9.799999997019768,
+        9.799999997019768
+      ]
+    }
+  ],
+  "decision": "Independent scalar/async/chunk/memo/alpha/PNG evidence passed. Auxiliary whole nearest conversion has material practical gains. Initial Node whole-PNG entropy/Keep losses remain in raw evidence; the single unchanged-candidate repeat did not reproduce their meaningful magnitude. No same-encoding-path excuse closes a measured adverse result. Native >=10% AND >=10ms renderer CPU target and <=5ms AND5% meaningful adverse limits remain unrun acceptance gates here; Node or auxiliary gains alone cannot ship.",
+  "limits": [
+    "Node PNG elapsed includes Node compression workers and scheduler waits; it is not Android rendererCPU.",
+    "Auxiliary Edge155 direct core conversion excludes import/worker transport/PNG encoding/UI.",
+    "Correctness uses identical captured input arrays within each comparison; Sharp and browser decoding are different environments.",
+    "Both immutable builds derive only from5ae source; unrelated concurrent source modifications and filename commits are absent from both, preserving matched comparison."
+  ]
+}

@@ -1,0 +1,15 @@
+import {execFileSync} from 'node:child_process';
+import {readFileSync,writeFileSync,mkdirSync,readdirSync} from 'node:fs';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+const root=import.meta.dirname,revision='5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce';
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const names=execFileSync('git',['ls-tree','-r','--name-only',revision],{encoding:'utf8'}).trim().split('\n');
+const core=new Set('recolor icon icon-glyph quantize palette-dither palette-dither-settings palette-limit palette-generated palette-cleanup palette-cleanup-apply source-color-summary onebit-usage original-color-usage palette-usage palette-usage-progress image-reanalysis palette-generated-sources palette-alpha palette-animation-cache presets settings'.split(' ').map(n=>'src/lib/'+n+'.js'));
+const io=new Set('save gif palette-export palette-gif-worker image-decode palette-decode image-import-core image-import-client image-import-worker palette-limit-client palette-limit-worker palette-generated-client palette-generated-worker palette-cleanup-client palette-cleanup-worker palette-state palette-import palette-ase palette-lospec palette-lospec-url palette-drop image-drop'.split(' ').map(n=>'src/lib/'+n+'.js'));
+const entry=new Set(['src/App.svelte','src/Tile.svelte','src/Dock.svelte','src/main.js','index.html']);
+const runtime=names.filter(n=>(n.startsWith('src/')&&/\.(js|svelte|css)$/.test(n)&&!n.endsWith('.test.js'))||n.startsWith('build/')&&!n.endsWith('.test.js')||['index.html','vite.config.js','package.json','package-lock.json','.github/workflows/deploy.yml'].includes(n));
+const inventory=runtime.map(file=>{const raw=execFileSync('git',['show',revision+':'+file],{maxBuffer:20*1024*1024}),bytes=Buffer.from(raw.toString('utf8').replaceAll('\r\n','\n'));return{file,owner:entry.has(file)?'root':core.has(file)?'core':io.has(file)?'io-android':'ui-tooling',lines:bytes.toString().split('\n').length,sourceSha256LF:sha(bytes),reviewStatus:'pending'};});
+mkdirSync(root,{recursive:true});
+writeFileSync(path.join(root,'inventory.json'),JSON.stringify({revision,created:new Date().toISOString(),note:'Inventory is not proof of source reading; each owner must supply independent functional review ledger.',files:inventory,classifications:{testFiles:names.filter(n=>n.endsWith('.test.js')&&!n.startsWith('bench/')),sourceAssets:names.filter(n=>n.startsWith('src/assets/')),testFixtures:names.filter(n=>n.startsWith('src/lib/fixtures/')),generatedPublic:names.filter(n=>n.startsWith('public/')),vendor:'No node_modules internals claimed audited; installed dependency/API boundaries reviewed.'}},null,2)+'\n');
+console.log(inventory.reduce((a,r)=>(a[r.owner]=(a[r.owner]||0)+1,a),{}));

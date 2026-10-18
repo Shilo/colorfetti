@@ -1,0 +1,46 @@
+{
+  "created": "2026-10-18T10:14:07.124Z",
+  "head": "1fe03ed0f5e6f443ae205ace1d9ea1ad3b316d71",
+  "node": "v25.0.0",
+  "seed": "0x9d71351",
+  "sourceHashes": {
+    "recolor": "ca183050d35a5672538e38e41d394aec03c5c1a9946b250bc24ecbf33a60f370",
+    "source-color-summary": "698809d5829786116e993f44cd7f5ac68dca057f1804a5c133c4644e3029bbd3",
+    "palette-limit": "75fa4c7646d233e5b78068e2bb6f4c532ce7ec77c985c38c547b5026ae50658d",
+    "palette-generated": "3cac1ecc11d34c26104b3cf462ea3bfd2481f41dd73a3b818afc9ed6ed76ead2",
+    "image-reanalysis": "2c6d50c7b21d1a193b9e592681aeea01a815bd4541f45b0e9bee8dcd481abb1c",
+    "quantize": "6dacaca42d615b72a4ee511bb7ed32344aa7118ae946769e290d7a9463f8d0a3"
+  },
+  "counts": {
+    "scalarAnalysis": 864,
+    "asyncAnalysis": 864,
+    "preB1Analysis": 864,
+    "preB1Mask": 792,
+    "sampleMask": 792,
+    "bandBoundary": 18,
+    "unify": 8,
+    "reanalysisCancel": 1,
+    "matchingAnalysisIdentity": 1,
+    "reanalysisOwnership": 1,
+    "scalarNearest": 288,
+    "quantizeAsync": 576,
+    "sourceCoordinateSample": 576,
+    "exact256AlphaDither": 16,
+    "summaryColdFallback": 26,
+    "summaryEligible": 26,
+    "summarySubset": 156,
+    "summaryOutput": 378,
+    "summaryAuto": 26,
+    "summaryBoundaries": 1,
+    "originalUsage": 20,
+    "cleanupApplication": 40,
+    "onebitUsage": 880,
+    "animationCacheLifecycle": 1
+  },
+  "assertions": "All comparisons passed; counts are scenarios, each can include many field/pixel assertions.",
+  "limitations": [
+    "Node correctness only; no browser timing or native device inference.",
+    "Historical pre-B1 module retains current unchanged Icon dependency.",
+    "Dither and Cleanup invariants supplement unit tests; their scalar/async parity alone is not an independent aesthetic oracle."
+  ]
+}

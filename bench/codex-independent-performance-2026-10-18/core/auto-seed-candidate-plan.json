@@ -1,0 +1,14 @@
+{
+  "created": "2026-10-18T10:08:28.323Z",
+  "head": "891fca2e6e517cc31f04183f7ca3633b74501907",
+  "sourceSha256": "3cac1ecc11d34c26104b3cf462ea3bfd2481f41dd73a3b818afc9ed6ed76ead2",
+  "candidate": "Only seed RGB membership changes, Array.includes to Set.has; source ordering, strict tie arithmetic and picked RGBs unchanged.",
+  "practicalTargets": [
+    "Four licensed distinct sprites with shared Auto",
+    "Licensed sheets1024/2048",
+    "High-entropy diagnostic input (cannot alone establish a practical win)"
+  ],
+  "acceptance": "Exact generated colors+all diagnostics over exact/binned/partial/GIF cohorts required. First-round promotion requires at least one practical whole-Auto target >=5% and >=3ms lower median, faster in >=4/5 paired trials; no cohort regresses by both >5% and >3ms (tiny cohorts >1ms absolute). Then actual app browser+Android worker/output/latency/CPU evidence is required before production. No production change from kernel timing alone.",
+  "correctionRounds": 2,
+  "limitation": "Instrumented seed elapsed includes scheduler waits. Whole kernel elapsed includes source histogram and full fitting; neither includes browser import/worker/UI. No universal app acceptance threshold is inferred from this candidate gate."
+}

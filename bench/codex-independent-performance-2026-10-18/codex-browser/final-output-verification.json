@@ -1,0 +1,11 @@
+{
+  "sourceBuild": "18de3f7+App memory fix; source runtime equals ae97d0e",
+  "actualSurface": "Codex Browser Chrome155 native download",
+  "file": "outputs/dungeon-wizard-colorfetti.png",
+  "sha256": "60ffc55899b8ee14aefbcda51bc7f2e6e9be254279e0d876c7b06548fda4a23b",
+  "bytes": 215,
+  "settings": "PICO8/Oklab/All/Cut128/CleanupOff/DitherOff",
+  "exactByteEqualToIndependentlyScalarVerifiedBaseline": "dungeon-wizard-palette.png",
+  "scalarNearestAndAlphaExact": true,
+  "qualification": "Filename changes; file content exact to independently verified ZIP witness."
+}

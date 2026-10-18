@@ -1,0 +1,1172 @@
+{
+  "created": "2026-10-18T10:01:17.412Z",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "lockSha": "a720339ada343ca8e1908b0e3530780684134a99d5b7312412aa963620b0e08c",
+  "variants": [
+    {
+      "name": "without-b1",
+      "port": 5394,
+      "change": "4c1a975",
+      "note": "B1 removed from current synchronous analyze/seams; later B5 analyzeAsync retains its own single-loop analysis. This cannot isolate B1 live-analysis gain that B5 superseded.",
+      "sourceChanges": [
+        {
+          "file": "src/lib/recolor.js",
+          "before": "ca183050d35a5672538e38e41d394aec03c5c1a9946b250bc24ecbf33a60f370",
+          "after": "4c33c5bac921728c940b25b4e541a64cb11b700e69dbbdd3203b29cf6edfcc94",
+          "beforeCanonicalLf": "2e16f45017474857ca8e3dda742f9b96dd0c6c14c63d9c99a98ef6720fe4f1af",
+          "afterCanonicalLf": "dc45d03cf01f9e6ee2d767a73760c0e5308a8ff52bc3293f69d3af4a493662c8"
+        }
+      ],
+      "distFiles": [
+        {
+          "file": "apple-touch-icon-152x152.png",
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "file": "apple-touch-icon-167x167.png",
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "file": "apple-touch-icon-180x180.png",
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "file": "assets/gif-JLp3I0sp.js",
+          "sha256": "367fb656064fc518d8952f254338ff226a4510044732600ba2a3e3031d89c77d"
+        },
+        {
+          "file": "assets/image-import-client-BckSn7PZ.js",
+          "sha256": "3942b072eec5bb5a5e464d1ece93e862e49c5b1ab83d6ef6a9e1633f81e486d9"
+        },
+        {
+          "file": "assets/image-import-worker-Cum_bGNH.js",
+          "sha256": "39711278406933e94a69683243e237a68d14bd0fdd1e1fa72d74c2fcfc6b793b"
+        },
+        {
+          "file": "assets/index-DwCFVRfH.js",
+          "sha256": "2403844e5797df593a209c1e56a1e672d74a4a3fa36ab632210b170741f61abf"
+        },
+        {
+          "file": "assets/index-VE9_tUgX.css",
+          "sha256": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+        },
+        {
+          "file": "assets/palette-ase-gXqzrNdw.js",
+          "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+        },
+        {
+          "file": "assets/palette-cleanup-BLsKa7p7.js",
+          "sha256": "3d833264a2a02065c49f305fe192a1fc0f88f961f3f2175a91d21f9e838bbab2"
+        },
+        {
+          "file": "assets/palette-cleanup-client-VucjRddd.js",
+          "sha256": "1807dfd38e53d7c645f75f2a3f5f5ae2364be073d5b06b3d85ce5ffc4bd6460b"
+        },
+        {
+          "file": "assets/palette-cleanup-worker-ChpCTucA.js",
+          "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+        },
+        {
+          "file": "assets/palette-generated-client-CTBZphvs.js",
+          "sha256": "332ed0c7d4dacdc2f40d376ae62e6cd9418fdd8a6674193a6b8c85cb5fc0b2fd"
+        },
+        {
+          "file": "assets/palette-generated-DAqJ_F9l.js",
+          "sha256": "dfa99287a1831357527e9a43814d903b78645d983bc580a147092bfed15977f3"
+        },
+        {
+          "file": "assets/palette-generated-worker-xpoMRM2c.js",
+          "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+        },
+        {
+          "file": "assets/palette-gif-worker-D4qe4WP7.js",
+          "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+        },
+        {
+          "file": "assets/palette-limit-OiwOF5bZ.js",
+          "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+        },
+        {
+          "file": "assets/palette-limit-worker-rkrL9P3s.js",
+          "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+        },
+        {
+          "file": "assets/palette-lospec-BUdZU2lN.js",
+          "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+        },
+        {
+          "file": "assets/palette-usage-C_TKJc-D.js",
+          "sha256": "e49aa3fef25fb42150db387a872d379d744ff514f0344d23257fbe18dde67466"
+        },
+        {
+          "file": "assets/quantize-DsvDuXDJ.js",
+          "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+        },
+        {
+          "file": "colorfetti-trailer-poster.png",
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "file": "colorfetti-trailer.mp4",
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "file": "favicon-16x16.png",
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "file": "favicon-32x32.png",
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "file": "favicon-48x48.png",
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "file": "favicon-dark-16x16.png",
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "file": "favicon-dark-32x32.png",
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "file": "favicon-dark-48x48.png",
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "file": "favicon-dark.ico",
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "file": "favicon-dark.svg",
+          "sha256": "fbabe60b1073f33771fc0fdae8c2e067de3e2b0ccc89066b779962f877f35858"
+        },
+        {
+          "file": "favicon-light.svg",
+          "sha256": "2cb141897aea4c68b20ce5057dd8428a7490c77cd2f6790ce0347ef14c5b5723"
+        },
+        {
+          "file": "favicon.ico",
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "file": "favicon.svg",
+          "sha256": "fb814d4571ad3bdb462dff8f524db3433825e265ad024d44768abe204f0fe9a8"
+        },
+        {
+          "file": "index.html",
+          "sha256": "fb29347f038de4ed3920ea488113b675266075b8c8c8a93e7c51cc9ccd6b3b48"
+        },
+        {
+          "file": "manifest.webmanifest",
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "file": "maskable-icon-192x192.png",
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "file": "maskable-icon-512x512.png",
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "file": "monochrome-192x192.png",
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "file": "pwa-192x192.png",
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "file": "pwa-512x512.png",
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "file": "safari-pinned-tab.svg",
+          "sha256": "82efbb4e4267ffbb098962013e3121d585edf8e90e3b89cef604a6d7c52677ab"
+        }
+      ]
+    },
+    {
+      "name": "without-b2",
+      "port": 5395,
+      "change": "0a4eb91",
+      "note": "Only tiny-PNG compression dispatch removed; comments from immediate parent restored.",
+      "sourceChanges": [
+        {
+          "file": "src/lib/save.js",
+          "before": "9b6b120011f5d2e9bb76d67066b7bf6661f98e3087cc30a8adce9d2e6f3d3906",
+          "after": "c44966acd7925ab6895199736c55d0cc6e8311e6af1b116d3c72a2e3451075c4",
+          "beforeCanonicalLf": "ac1576453d7b3958d95f5286268d6edd29a2f71f9d5d5757dcff1c3b768669b8",
+          "afterCanonicalLf": "c44966acd7925ab6895199736c55d0cc6e8311e6af1b116d3c72a2e3451075c4"
+        }
+      ],
+      "distFiles": [
+        {
+          "file": "apple-touch-icon-152x152.png",
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "file": "apple-touch-icon-167x167.png",
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "file": "apple-touch-icon-180x180.png",
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "file": "assets/gif-BKDutO1t.js",
+          "sha256": "15c7ef7193852b18c1095225db278ad21bf3a7821d962fedab288eac6702d423"
+        },
+        {
+          "file": "assets/image-import-client-DMvuA7nl.js",
+          "sha256": "2179c4936ab39df1e514f455eff5b6510c50825828b476b1aa4d550dbf4eeac0"
+        },
+        {
+          "file": "assets/image-import-worker-BTnho0_2.js",
+          "sha256": "e64c2ce33ee89a8960b0176ecd3f58150989a0b05fec1c6367fb024b95d68efb"
+        },
+        {
+          "file": "assets/index-DMBVva5W.js",
+          "sha256": "300a55718f547d661f087c8b07b28044ad7aa4bc72509e8094efa004bf7b685c"
+        },
+        {
+          "file": "assets/index-VE9_tUgX.css",
+          "sha256": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+        },
+        {
+          "file": "assets/palette-ase-gXqzrNdw.js",
+          "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+        },
+        {
+          "file": "assets/palette-cleanup-Bjovx-fX.js",
+          "sha256": "1c3f6946814f8498b8613cb979c4df647adafe82b9d45a982b80bf96ddf183ea"
+        },
+        {
+          "file": "assets/palette-cleanup-client-DvPftpBl.js",
+          "sha256": "4d63ec71d2ba9e20392d18d364ccbb5e0ab358c172e2f712e684433d7a99828c"
+        },
+        {
+          "file": "assets/palette-cleanup-worker-ChpCTucA.js",
+          "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+        },
+        {
+          "file": "assets/palette-generated-client-BGQkNweQ.js",
+          "sha256": "17038c0b1f274a0547b4c2a8e3c6458812b3f5c6c40e3d409761fc29f212e253"
+        },
+        {
+          "file": "assets/palette-generated-DbTXOrQO.js",
+          "sha256": "e4b30e52fdb6246d27d1d808a02171d543d7a15ae3fd9558ee01ff009d6e8b72"
+        },
+        {
+          "file": "assets/palette-generated-worker-xpoMRM2c.js",
+          "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+        },
+        {
+          "file": "assets/palette-gif-worker-D4qe4WP7.js",
+          "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+        },
+        {
+          "file": "assets/palette-limit-OiwOF5bZ.js",
+          "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+        },
+        {
+          "file": "assets/palette-limit-worker-rkrL9P3s.js",
+          "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+        },
+        {
+          "file": "assets/palette-lospec-BUdZU2lN.js",
+          "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+        },
+        {
+          "file": "assets/palette-usage-Cz5zs74-.js",
+          "sha256": "5bde4cec717f2bbfb5c27839f09457ff25ca8ad0cb275452b74e1b88b69593a2"
+        },
+        {
+          "file": "assets/quantize-DsvDuXDJ.js",
+          "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+        },
+        {
+          "file": "colorfetti-trailer-poster.png",
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "file": "colorfetti-trailer.mp4",
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "file": "favicon-16x16.png",
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "file": "favicon-32x32.png",
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "file": "favicon-48x48.png",
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "file": "favicon-dark-16x16.png",
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "file": "favicon-dark-32x32.png",
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "file": "favicon-dark-48x48.png",
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "file": "favicon-dark.ico",
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "file": "favicon-dark.svg",
+          "sha256": "fbabe60b1073f33771fc0fdae8c2e067de3e2b0ccc89066b779962f877f35858"
+        },
+        {
+          "file": "favicon-light.svg",
+          "sha256": "2cb141897aea4c68b20ce5057dd8428a7490c77cd2f6790ce0347ef14c5b5723"
+        },
+        {
+          "file": "favicon.ico",
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "file": "favicon.svg",
+          "sha256": "fb814d4571ad3bdb462dff8f524db3433825e265ad024d44768abe204f0fe9a8"
+        },
+        {
+          "file": "index.html",
+          "sha256": "86e672e35c56f89f19cb12b7f45aaa47e7e8b3784564570d2244afb73cc4d732"
+        },
+        {
+          "file": "manifest.webmanifest",
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "file": "maskable-icon-192x192.png",
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "file": "maskable-icon-512x512.png",
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "file": "monochrome-192x192.png",
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "file": "pwa-192x192.png",
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "file": "pwa-512x512.png",
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "file": "safari-pinned-tab.svg",
+          "sha256": "82efbb4e4267ffbb098962013e3121d585edf8e90e3b89cef604a6d7c52677ab"
+        }
+      ]
+    },
+    {
+      "name": "without-b3",
+      "port": 5396,
+      "change": "5e19c48",
+      "note": "Only dragging-budget gate removed; latest wording comment removed with it.",
+      "sourceChanges": [
+        {
+          "file": "src/Tile.svelte",
+          "before": "143d8e9eca921169df74250675a5351d8077d10ed975defec35e3f777812a923",
+          "after": "aae7b80cca2aaf3939c346539f111ee3b5d7ea20c18062c05ca8f9902f446bc2",
+          "beforeCanonicalLf": "af5fb1d3c9651d4fae8a30d92a464764eda41e7a728c7dab2cef04f2ba9b71ad",
+          "afterCanonicalLf": "35bdae6a18c84481574088fdfa5149549589d538fed1450de00825e321ee67f7"
+        }
+      ],
+      "distFiles": [
+        {
+          "file": "apple-touch-icon-152x152.png",
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "file": "apple-touch-icon-167x167.png",
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "file": "apple-touch-icon-180x180.png",
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "file": "assets/gif-FHEO-wQP.js",
+          "sha256": "bc10a911415da43fea6c361fc9c5fee6926c1292e2ba4eb83ee971f1359719c7"
+        },
+        {
+          "file": "assets/image-import-client-eckYLboc.js",
+          "sha256": "e16f8084ad16997ab283207806a23547b3bb5665c2f85d715c9d555d1c8fecf1"
+        },
+        {
+          "file": "assets/image-import-worker-BTnho0_2.js",
+          "sha256": "e64c2ce33ee89a8960b0176ecd3f58150989a0b05fec1c6367fb024b95d68efb"
+        },
+        {
+          "file": "assets/index-VE9_tUgX.css",
+          "sha256": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+        },
+        {
+          "file": "assets/index-WUqtH4Wd.js",
+          "sha256": "5ea2590f77646feaf7921494cb8171fe0b8f8745e06f9c68e8515163a289e741"
+        },
+        {
+          "file": "assets/palette-ase-gXqzrNdw.js",
+          "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+        },
+        {
+          "file": "assets/palette-cleanup-client-B-6D_I5o.js",
+          "sha256": "b525def633d3c143f7b433813b78e1fc1ef03d256c414ce1d5adc9303426a1ae"
+        },
+        {
+          "file": "assets/palette-cleanup-mwqEsDIS.js",
+          "sha256": "2101adcb27b03df5b10aa91b32e01b8e1a28a3538514eb765534c6d0283f5779"
+        },
+        {
+          "file": "assets/palette-cleanup-worker-ChpCTucA.js",
+          "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+        },
+        {
+          "file": "assets/palette-generated-client-Ct8uJOI9.js",
+          "sha256": "ef2b87eb99631ba58c097aae01c8215c4316c0b1cd4ab300cb64b3e45abc3956"
+        },
+        {
+          "file": "assets/palette-generated-Cz28b4ZM.js",
+          "sha256": "a2ffd9bc7e83540871b77f9b23aaeb543c23e6e788659b65630eab674f6e3c2a"
+        },
+        {
+          "file": "assets/palette-generated-worker-xpoMRM2c.js",
+          "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+        },
+        {
+          "file": "assets/palette-gif-worker-D4qe4WP7.js",
+          "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+        },
+        {
+          "file": "assets/palette-limit-OiwOF5bZ.js",
+          "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+        },
+        {
+          "file": "assets/palette-limit-worker-rkrL9P3s.js",
+          "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+        },
+        {
+          "file": "assets/palette-lospec-BUdZU2lN.js",
+          "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+        },
+        {
+          "file": "assets/palette-usage-D2hp0QwW.js",
+          "sha256": "80721f0c008967a93b30db4f86f651a80d3131f3381bbe7ec4c8005436ed8696"
+        },
+        {
+          "file": "assets/quantize-DsvDuXDJ.js",
+          "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+        },
+        {
+          "file": "colorfetti-trailer-poster.png",
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "file": "colorfetti-trailer.mp4",
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "file": "favicon-16x16.png",
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "file": "favicon-32x32.png",
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "file": "favicon-48x48.png",
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "file": "favicon-dark-16x16.png",
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "file": "favicon-dark-32x32.png",
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "file": "favicon-dark-48x48.png",
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "file": "favicon-dark.ico",
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "file": "favicon-dark.svg",
+          "sha256": "fbabe60b1073f33771fc0fdae8c2e067de3e2b0ccc89066b779962f877f35858"
+        },
+        {
+          "file": "favicon-light.svg",
+          "sha256": "2cb141897aea4c68b20ce5057dd8428a7490c77cd2f6790ce0347ef14c5b5723"
+        },
+        {
+          "file": "favicon.ico",
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "file": "favicon.svg",
+          "sha256": "fb814d4571ad3bdb462dff8f524db3433825e265ad024d44768abe204f0fe9a8"
+        },
+        {
+          "file": "index.html",
+          "sha256": "6a0b97e4c7676d04c4df41837f853ce80f821402536593004a34e69d50618ba8"
+        },
+        {
+          "file": "manifest.webmanifest",
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "file": "maskable-icon-192x192.png",
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "file": "maskable-icon-512x512.png",
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "file": "monochrome-192x192.png",
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "file": "pwa-192x192.png",
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "file": "pwa-512x512.png",
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "file": "safari-pinned-tab.svg",
+          "sha256": "82efbb4e4267ffbb098962013e3121d585edf8e90e3b89cef604a6d7c52677ab"
+        }
+      ]
+    },
+    {
+      "name": "without-b4",
+      "port": 5397,
+      "change": "236bbcc",
+      "note": "Summary histogram producer/consumers restored to immediate pre-B4 implementations; later difference was one diagnostic comment.",
+      "sourceChanges": [
+        {
+          "file": "src/lib/palette-generated-client.js",
+          "before": "bb19e03ec07b55814484e79d220b5205e7a13ec04ddcf0d52309433c5d0ae026",
+          "after": "4f6bb50771a3bba70a9f7554391a33a83c5a8b327c7e3b5196db786d0f9abff2",
+          "beforeCanonicalLf": "5bd7ccea57ec4da3abd507085a6bc258ba0f31811d75bc04a906bc2c658a017d",
+          "afterCanonicalLf": "4f6bb50771a3bba70a9f7554391a33a83c5a8b327c7e3b5196db786d0f9abff2"
+        },
+        {
+          "file": "src/lib/palette-generated-worker.js",
+          "before": "51fc9c573dc8c0cb2a00191b04c313caee6036ff241e43ab8777e38a798cb3f2",
+          "after": "3e4c86df4183921c4097113825d4260f1102aa22b768a5d682fdceb9c27138f0",
+          "beforeCanonicalLf": "15b3313d88712da85f2d12b4e59b41b45bdce17b94cbd45a2e2cf76dd658feed",
+          "afterCanonicalLf": "3e4c86df4183921c4097113825d4260f1102aa22b768a5d682fdceb9c27138f0"
+        },
+        {
+          "file": "src/lib/palette-generated.js",
+          "before": "3cac1ecc11d34c26104b3cf462ea3bfd2481f41dd73a3b818afc9ed6ed76ead2",
+          "after": "ff11e62b92853b12c99946f60e9635de734b903702bcbd2b39834b84087e8c58",
+          "beforeCanonicalLf": "c854a8e261f3a7b935aa526f5a5d94f8626ae739e07874c9a9f4661840a9869b",
+          "afterCanonicalLf": "ff11e62b92853b12c99946f60e9635de734b903702bcbd2b39834b84087e8c58"
+        },
+        {
+          "file": "src/lib/palette-limit-client.js",
+          "before": "30c31b770fb9d32b7328ac2c23c73c67ec91de748b78cfde2f4042d2ce4bb7b0",
+          "after": "9e1638254c1b9229d195a1e7a3db8e3424b0767d77a88e22cc9c45c08a829cbc",
+          "beforeCanonicalLf": "ac7c13f3939947a60a2dcfe878f6237679dbef307ed9373b01ecd1fc1a56dc82",
+          "afterCanonicalLf": "9e1638254c1b9229d195a1e7a3db8e3424b0767d77a88e22cc9c45c08a829cbc"
+        },
+        {
+          "file": "src/lib/palette-limit-worker.js",
+          "before": "4e04563cd66742c33863406a77fff828229e65f4e5e721fb0bb72b87ee54d670",
+          "after": "947b96fed5da64af54b60a053fc0022e0361c0a739b2380170de6fe9df032c45",
+          "beforeCanonicalLf": "e505ae8db233197d0697a01ecec82bf87f43be0c4c07faed6949c6efa95c36bb",
+          "afterCanonicalLf": "947b96fed5da64af54b60a053fc0022e0361c0a739b2380170de6fe9df032c45"
+        },
+        {
+          "file": "src/lib/palette-limit.js",
+          "before": "75fa4c7646d233e5b78068e2bb6f4c532ce7ec77c985c38c547b5026ae50658d",
+          "after": "739a3fb97a80d1ecbfa23c5e33f72893b894adc4425ea89217a88d7264abae20",
+          "beforeCanonicalLf": "086569268b040d4acc2052138ac13e700f7b1a8b029a27189b749dedf96f501a",
+          "afterCanonicalLf": "739a3fb97a80d1ecbfa23c5e33f72893b894adc4425ea89217a88d7264abae20"
+        },
+        {
+          "file": "src/lib/source-color-summary.js",
+          "before": "698809d5829786116e993f44cd7f5ac68dca057f1804a5c133c4644e3029bbd3",
+          "after": "45c0657486543a6ef5e1f6abf3dc167e4665fc7787dd86e08a434c80ff84f597",
+          "beforeCanonicalLf": "eeced676b96c4c3436ed7f976eaa6fd0ac524c86ba38b697bf9db7025aa4e722",
+          "afterCanonicalLf": "45c0657486543a6ef5e1f6abf3dc167e4665fc7787dd86e08a434c80ff84f597"
+        }
+      ],
+      "distFiles": [
+        {
+          "file": "apple-touch-icon-152x152.png",
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "file": "apple-touch-icon-167x167.png",
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "file": "apple-touch-icon-180x180.png",
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "file": "assets/gif-D6U6KS2Z.js",
+          "sha256": "daba75581268de1914c987bf3c965224d65abbe26db50d0e617ffbca2e3a6a7c"
+        },
+        {
+          "file": "assets/image-import-client-YTLaRsW_.js",
+          "sha256": "075d84908095e7d8b3efa62283952231c1924a752ed0e7813c79ee0a50189a06"
+        },
+        {
+          "file": "assets/image-import-worker-BTnho0_2.js",
+          "sha256": "e64c2ce33ee89a8960b0176ecd3f58150989a0b05fec1c6367fb024b95d68efb"
+        },
+        {
+          "file": "assets/index-M2StcIJi.js",
+          "sha256": "a5feead1f32f20bf941126195919b4ad58d621570ac930aabf002f53d874c60d"
+        },
+        {
+          "file": "assets/index-VE9_tUgX.css",
+          "sha256": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+        },
+        {
+          "file": "assets/palette-ase-DMI2S5Dp.js",
+          "sha256": "3b7f01caf16efc7c923847aa1c7d9484c900b2b68aa5459a87335ceb2a9653fb"
+        },
+        {
+          "file": "assets/palette-cleanup-client-B4-72-SI.js",
+          "sha256": "9023b0f30f54618481dd06845c3346f9902f262b9cc1047cefd162f38815708f"
+        },
+        {
+          "file": "assets/palette-cleanup-RJ1weSEv.js",
+          "sha256": "5059ef939cfc4f9812aa2ee006619281c76ae814fad56c828a9ebd1a41a9e8d0"
+        },
+        {
+          "file": "assets/palette-cleanup-worker-ChpCTucA.js",
+          "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+        },
+        {
+          "file": "assets/palette-generated-client--lyS-bkr.js",
+          "sha256": "967d3b3514f55fd95c4da970912e8100e026a1ffd46de8c2a73af0cd065d565a"
+        },
+        {
+          "file": "assets/palette-generated-DBIkEzT3.js",
+          "sha256": "4a188c0bf9d2f74098810f2bf6fa126a23ae21685141945858d21cd84c4db216"
+        },
+        {
+          "file": "assets/palette-generated-worker-C3uwOiRZ.js",
+          "sha256": "323499c4ba7cef3b1adc39525028efd054a6d69c98428c8af60b7b0434520533"
+        },
+        {
+          "file": "assets/palette-gif-worker-D4qe4WP7.js",
+          "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+        },
+        {
+          "file": "assets/palette-limit-BumrxLPx.js",
+          "sha256": "2b61dfb15226d965bab92899a0be5c199a2333e59a6e175d2bee0fd001a551c4"
+        },
+        {
+          "file": "assets/palette-limit-worker-DWheP2PL.js",
+          "sha256": "b5bce0b896438c968947d98cc811458aad299a192a57db5258fbeef62303cf30"
+        },
+        {
+          "file": "assets/palette-lospec-trXfHXCo.js",
+          "sha256": "372df400f9f1925706df27cbaedb2452b6ee204367be43ff04cc09ca49b35175"
+        },
+        {
+          "file": "assets/palette-usage-CFoPNIUW.js",
+          "sha256": "e10d2b57d69afbe3eceb8c53c3b36fc9e3a7edbdc25daa01c3345a0cc1bcbfe4"
+        },
+        {
+          "file": "colorfetti-trailer-poster.png",
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "file": "colorfetti-trailer.mp4",
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "file": "favicon-16x16.png",
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "file": "favicon-32x32.png",
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "file": "favicon-48x48.png",
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "file": "favicon-dark-16x16.png",
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "file": "favicon-dark-32x32.png",
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "file": "favicon-dark-48x48.png",
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "file": "favicon-dark.ico",
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "file": "favicon-dark.svg",
+          "sha256": "fbabe60b1073f33771fc0fdae8c2e067de3e2b0ccc89066b779962f877f35858"
+        },
+        {
+          "file": "favicon-light.svg",
+          "sha256": "2cb141897aea4c68b20ce5057dd8428a7490c77cd2f6790ce0347ef14c5b5723"
+        },
+        {
+          "file": "favicon.ico",
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "file": "favicon.svg",
+          "sha256": "fb814d4571ad3bdb462dff8f524db3433825e265ad024d44768abe204f0fe9a8"
+        },
+        {
+          "file": "index.html",
+          "sha256": "a5061f7ae5a86e529c8aa6428bcd9bca98ed1aeac6c4194ffc7ff843cceff0bd"
+        },
+        {
+          "file": "manifest.webmanifest",
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "file": "maskable-icon-192x192.png",
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "file": "maskable-icon-512x512.png",
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "file": "monochrome-192x192.png",
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "file": "pwa-192x192.png",
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "file": "pwa-512x512.png",
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "file": "safari-pinned-tab.svg",
+          "sha256": "82efbb4e4267ffbb098962013e3121d585edf8e90e3b89cef604a6d7c52677ab"
+        }
+      ]
+    },
+    {
+      "name": "without-b5",
+      "port": 5398,
+      "change": "90b2d05",
+      "note": "Banded implementation and reanalysis caller restored to immediate pre-B5 implementations; all other current runtime preserved.",
+      "sourceChanges": [
+        {
+          "file": "src/lib/image-reanalysis.js",
+          "before": "2c6d50c7b21d1a193b9e592681aeea01a815bd4541f45b0e9bee8dcd481abb1c",
+          "after": "4e8440acda99232b5bdc572a966d616285fda4189b3cb985f76a35a49d07cbe6",
+          "beforeCanonicalLf": "56cffce61058dfc27cd1cf9aa9bf23c825fca821aaadf562634d8b2f01e5120b",
+          "afterCanonicalLf": "4e8440acda99232b5bdc572a966d616285fda4189b3cb985f76a35a49d07cbe6"
+        },
+        {
+          "file": "src/lib/recolor.js",
+          "before": "ca183050d35a5672538e38e41d394aec03c5c1a9946b250bc24ecbf33a60f370",
+          "after": "c09a327e0ed0ff1a0daf8e93b7b31f8816e3df7929b9c7d570a78324ae065c81",
+          "beforeCanonicalLf": "2e16f45017474857ca8e3dda742f9b96dd0c6c14c63d9c99a98ef6720fe4f1af",
+          "afterCanonicalLf": "c09a327e0ed0ff1a0daf8e93b7b31f8816e3df7929b9c7d570a78324ae065c81"
+        }
+      ],
+      "distFiles": [
+        {
+          "file": "apple-touch-icon-152x152.png",
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "file": "apple-touch-icon-167x167.png",
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "file": "apple-touch-icon-180x180.png",
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "file": "assets/gif-QaOXP4Mt.js",
+          "sha256": "c2d98e472299e2f5caf949ac16025b380bec8c87446f5cd3e0beb5fc6bd609c6"
+        },
+        {
+          "file": "assets/image-import-client-BmcRuZTL.js",
+          "sha256": "50671cf6001010a3b5f1f52d35ec6ef0715d93720a817060dd135e1436b01d83"
+        },
+        {
+          "file": "assets/image-import-worker-CpEt9B-x.js",
+          "sha256": "8c6dc62691fffa428dd223b5956604d92134e89e8aa9ff02c3fe8211d6e054bc"
+        },
+        {
+          "file": "assets/index-DkPKYKZj.js",
+          "sha256": "f7850011e23112fe9084670a6b643a24e0bd3ac9b7f27467f4158c943009c9ec"
+        },
+        {
+          "file": "assets/index-VE9_tUgX.css",
+          "sha256": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+        },
+        {
+          "file": "assets/palette-ase-gXqzrNdw.js",
+          "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+        },
+        {
+          "file": "assets/palette-cleanup-BQ0qH2iC.js",
+          "sha256": "ff55a64e01b6c87cf1e4dab7e872ce9ec088c438bf325ae2b2005a957fae61d2"
+        },
+        {
+          "file": "assets/palette-cleanup-client-wtBZBqn7.js",
+          "sha256": "91afb5a1678a0360c7ddf64b684e8549805582d3b41b63b8b18b7200ea10813e"
+        },
+        {
+          "file": "assets/palette-cleanup-worker-ChpCTucA.js",
+          "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+        },
+        {
+          "file": "assets/palette-generated-BzvbNf8n.js",
+          "sha256": "c4380feefadd2c166688b449ffbc972b044362a9f88afc4fad7a631d7d9bb648"
+        },
+        {
+          "file": "assets/palette-generated-client-B1nTDHtQ.js",
+          "sha256": "7ed87dd4a0ad9118724e182389b5d1e293dddc6d6cd7f3b55ce07220098f9e16"
+        },
+        {
+          "file": "assets/palette-generated-worker-xpoMRM2c.js",
+          "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+        },
+        {
+          "file": "assets/palette-gif-worker-D4qe4WP7.js",
+          "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+        },
+        {
+          "file": "assets/palette-limit-OiwOF5bZ.js",
+          "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+        },
+        {
+          "file": "assets/palette-limit-worker-rkrL9P3s.js",
+          "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+        },
+        {
+          "file": "assets/palette-lospec-BUdZU2lN.js",
+          "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+        },
+        {
+          "file": "assets/palette-usage-J8n7xRhy.js",
+          "sha256": "c853fbcb75a499941b91d564b82173a449a873d34b70139bd1639bfa27d88679"
+        },
+        {
+          "file": "assets/quantize-DsvDuXDJ.js",
+          "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+        },
+        {
+          "file": "colorfetti-trailer-poster.png",
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "file": "colorfetti-trailer.mp4",
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "file": "favicon-16x16.png",
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "file": "favicon-32x32.png",
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "file": "favicon-48x48.png",
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "file": "favicon-dark-16x16.png",
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "file": "favicon-dark-32x32.png",
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "file": "favicon-dark-48x48.png",
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "file": "favicon-dark.ico",
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "file": "favicon-dark.svg",
+          "sha256": "fbabe60b1073f33771fc0fdae8c2e067de3e2b0ccc89066b779962f877f35858"
+        },
+        {
+          "file": "favicon-light.svg",
+          "sha256": "2cb141897aea4c68b20ce5057dd8428a7490c77cd2f6790ce0347ef14c5b5723"
+        },
+        {
+          "file": "favicon.ico",
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "file": "favicon.svg",
+          "sha256": "fb814d4571ad3bdb462dff8f524db3433825e265ad024d44768abe204f0fe9a8"
+        },
+        {
+          "file": "index.html",
+          "sha256": "b9ab0d04254901cfeac2549ddec743789cc744cdd183b79a2cbc90b1a566f112"
+        },
+        {
+          "file": "manifest.webmanifest",
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "file": "maskable-icon-192x192.png",
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "file": "maskable-icon-512x512.png",
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "file": "monochrome-192x192.png",
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "file": "pwa-192x192.png",
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "file": "pwa-512x512.png",
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "file": "safari-pinned-tab.svg",
+          "sha256": "82efbb4e4267ffbb098962013e3121d585edf8e90e3b89cef604a6d7c52677ab"
+        }
+      ]
+    },
+    {
+      "name": "without-b1-b5",
+      "port": 5399,
+      "change": "4c1a975+90b2d05",
+      "note": "Compare with without-b5 for isolated B1 causality in synchronous live reanalysis; not a single-change variant against current.",
+      "sourceChanges": [
+        {
+          "file": "src/lib/image-reanalysis.js",
+          "before": "2c6d50c7b21d1a193b9e592681aeea01a815bd4541f45b0e9bee8dcd481abb1c",
+          "after": "4e8440acda99232b5bdc572a966d616285fda4189b3cb985f76a35a49d07cbe6",
+          "beforeCanonicalLf": "56cffce61058dfc27cd1cf9aa9bf23c825fca821aaadf562634d8b2f01e5120b",
+          "afterCanonicalLf": "4e8440acda99232b5bdc572a966d616285fda4189b3cb985f76a35a49d07cbe6"
+        },
+        {
+          "file": "src/lib/recolor.js",
+          "before": "ca183050d35a5672538e38e41d394aec03c5c1a9946b250bc24ecbf33a60f370",
+          "after": "c458986116a379f69d34f38efc4b16d2d0cff85b1f6526f53e50efffd1d0e562",
+          "beforeCanonicalLf": "2e16f45017474857ca8e3dda742f9b96dd0c6c14c63d9c99a98ef6720fe4f1af",
+          "afterCanonicalLf": "c458986116a379f69d34f38efc4b16d2d0cff85b1f6526f53e50efffd1d0e562"
+        }
+      ],
+      "distFiles": [
+        {
+          "file": "apple-touch-icon-152x152.png",
+          "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+        },
+        {
+          "file": "apple-touch-icon-167x167.png",
+          "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+        },
+        {
+          "file": "apple-touch-icon-180x180.png",
+          "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+        },
+        {
+          "file": "assets/gif-B6jehdTo.js",
+          "sha256": "1d2ddc4a17a5b6f2e426416ebf3a4be03126e2d97e3b5a4a0d8c412664246ccd"
+        },
+        {
+          "file": "assets/image-import-client-Be6luRsv.js",
+          "sha256": "f69cd7f655fce9858d1b379ca9e8fb44d163c9360c0b44cd5ece34afc44c2a21"
+        },
+        {
+          "file": "assets/image-import-worker-C2vfsgD_.js",
+          "sha256": "4434bdca6622afd6b987f6436e80cbb81409e1e570af38de7c62f3a93e231a97"
+        },
+        {
+          "file": "assets/index-C1rTM1H_.js",
+          "sha256": "d5f86ca92b13c4099896b0308b4b67d1c84ac8611474f781af0987d8b03bc629"
+        },
+        {
+          "file": "assets/index-VE9_tUgX.css",
+          "sha256": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+        },
+        {
+          "file": "assets/palette-ase-gXqzrNdw.js",
+          "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+        },
+        {
+          "file": "assets/palette-cleanup-CiqvzLue.js",
+          "sha256": "f30b9af268f7df458895d573a9180436f7c43773a1ab1536b9b5f4a124e12895"
+        },
+        {
+          "file": "assets/palette-cleanup-client-D2L3NoCb.js",
+          "sha256": "75e05ef94d925bba91a9eb3a2dcb37aa53023146ec0c9de40aed549a2bdc3eb3"
+        },
+        {
+          "file": "assets/palette-cleanup-worker-ChpCTucA.js",
+          "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+        },
+        {
+          "file": "assets/palette-generated-CFuuTudF.js",
+          "sha256": "e8f10c0a5123120858e40d290e40dab18a32d7592557606df9d6da166068482f"
+        },
+        {
+          "file": "assets/palette-generated-client-aJ58J5QK.js",
+          "sha256": "f2b0cb0f2d5800f61d4666aa08ded3f39846a2c5438af8eedbfe917025d14d65"
+        },
+        {
+          "file": "assets/palette-generated-worker-xpoMRM2c.js",
+          "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+        },
+        {
+          "file": "assets/palette-gif-worker-D4qe4WP7.js",
+          "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+        },
+        {
+          "file": "assets/palette-limit-OiwOF5bZ.js",
+          "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+        },
+        {
+          "file": "assets/palette-limit-worker-rkrL9P3s.js",
+          "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+        },
+        {
+          "file": "assets/palette-lospec-BUdZU2lN.js",
+          "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+        },
+        {
+          "file": "assets/palette-usage-Fa42vlhi.js",
+          "sha256": "f5d140221c7611aea9856bfff624f91afc5e5761483a7af569ceffbceb64cc17"
+        },
+        {
+          "file": "assets/quantize-DsvDuXDJ.js",
+          "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+        },
+        {
+          "file": "colorfetti-trailer-poster.png",
+          "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+        },
+        {
+          "file": "colorfetti-trailer.mp4",
+          "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+        },
+        {
+          "file": "favicon-16x16.png",
+          "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+        },
+        {
+          "file": "favicon-32x32.png",
+          "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+        },
+        {
+          "file": "favicon-48x48.png",
+          "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+        },
+        {
+          "file": "favicon-dark-16x16.png",
+          "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+        },
+        {
+          "file": "favicon-dark-32x32.png",
+          "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+        },
+        {
+          "file": "favicon-dark-48x48.png",
+          "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+        },
+        {
+          "file": "favicon-dark.ico",
+          "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+        },
+        {
+          "file": "favicon-dark.svg",
+          "sha256": "fbabe60b1073f33771fc0fdae8c2e067de3e2b0ccc89066b779962f877f35858"
+        },
+        {
+          "file": "favicon-light.svg",
+          "sha256": "2cb141897aea4c68b20ce5057dd8428a7490c77cd2f6790ce0347ef14c5b5723"
+        },
+        {
+          "file": "favicon.ico",
+          "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+        },
+        {
+          "file": "favicon.svg",
+          "sha256": "fb814d4571ad3bdb462dff8f524db3433825e265ad024d44768abe204f0fe9a8"
+        },
+        {
+          "file": "index.html",
+          "sha256": "a2840232c92690d7a4192a99565459ca25dcc3d4b41306627091b0fed29058f5"
+        },
+        {
+          "file": "manifest.webmanifest",
+          "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+        },
+        {
+          "file": "maskable-icon-192x192.png",
+          "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+        },
+        {
+          "file": "maskable-icon-512x512.png",
+          "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+        },
+        {
+          "file": "monochrome-192x192.png",
+          "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+        },
+        {
+          "file": "pwa-192x192.png",
+          "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+        },
+        {
+          "file": "pwa-512x512.png",
+          "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+        },
+        {
+          "file": "safari-pinned-tab.svg",
+          "sha256": "82efbb4e4267ffbb098962013e3121d585edf8e90e3b89cef604a6d7c52677ab"
+        }
+      ]
+    }
+  ],
+  "protocol": "All keep the starting current runtime except explicitly removed changes; no live checkout changes. B1/B5 overlap requires supplementary without-b5 vs without-b1-b5 comparison. Builds still pending.",
+  "built": "2026-10-18T10:02:17.306Z",
+  "hashPolicy": "Source before/after and dist sha256 fields hash raw bytes. Source beforeCanonicalLf/afterCanonicalLf normalize CRLF to LF. Git-archive source copies are LF; any workspace raw CRLF difference must not be called a semantic source change."
+}

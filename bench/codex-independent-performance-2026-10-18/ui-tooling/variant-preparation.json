@@ -1,0 +1,62 @@
+{
+  "revision": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "target": "C:\\Programming_Files\\Shilocity\\colorfetti\\.tmp\\codex-independent-performance-2026-10-18\\ui-variants",
+  "diagnosticOnly": true,
+  "generated": "2026-10-18T10:12:08.183Z",
+  "variants": [
+    {
+      "name": "base",
+      "files": 121,
+      "changes": []
+    },
+    {
+      "name": "tooltip-off",
+      "files": 121,
+      "changes": [
+        {
+          "name": "src/lib/tooltip.js",
+          "oldHash": "03127079148ca13525aa4f17c0e3e1d10bcece415695c87a6a2d79edd91ba6d3",
+          "newHash": "b5d0cc2b1681aebabb5d96d43f8f9ba8d857393b4466deeb953890232624c102"
+        }
+      ]
+    },
+    {
+      "name": "swatch-paint-off",
+      "files": 121,
+      "changes": [
+        {
+          "name": "src/lib/palette-preview.js",
+          "oldHash": "e3fb78fbedb3b6e9e193435c3a44011d321db6c201a968ef9f10b347909e2aa0",
+          "newHash": "ddd3b2895ddd4c28ff405180a641dc8c9c5d253ba020fbd8e411695671e54503"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-and-paint-off",
+      "files": 121,
+      "changes": [
+        {
+          "name": "src/lib/palette-preview.js",
+          "oldHash": "e3fb78fbedb3b6e9e193435c3a44011d321db6c201a968ef9f10b347909e2aa0",
+          "newHash": "ddd3b2895ddd4c28ff405180a641dc8c9c5d253ba020fbd8e411695671e54503"
+        },
+        {
+          "name": "src/lib/tooltip.js",
+          "oldHash": "03127079148ca13525aa4f17c0e3e1d10bcece415695c87a6a2d79edd91ba6d3",
+          "newHash": "b5d0cc2b1681aebabb5d96d43f8f9ba8d857393b4466deeb953890232624c102"
+        }
+      ]
+    },
+    {
+      "name": "raw-arrays",
+      "files": 121,
+      "changes": [
+        {
+          "name": "src/PaletteImport.svelte",
+          "oldHash": "136ce0b59644d572efb2950003dc82fc185450f33a72bf72c61227399d67929e",
+          "newHash": "349b3d08d8656d719119d45624bafb60b48c4958d96cb0291b0004cdb73dd782"
+        }
+      ]
+    }
+  ]
+}

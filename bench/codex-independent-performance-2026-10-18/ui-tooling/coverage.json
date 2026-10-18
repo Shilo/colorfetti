@@ -1,0 +1,248 @@
+{
+  "count": 48,
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "files": [
+    {
+      "file": ".github/workflows/deploy.yml",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "build/brand-assets.mjs",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "build/hover-capability.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "package-lock.json",
+      "reviewStatus": "generated-dependency-boundary-reviewed",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "package.json",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/CanvasGrid.svelte",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/CaptionMetadata.svelte",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/ImageViewer.svelte",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/PaletteImport.svelte",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/PalettePreview.svelte",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/PixelIcon.svelte",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/Pixels.svelte",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/app.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/bottom-workspace.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/canvas.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/caption-metadata.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/dock-refinement.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/foundation.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/full-palette.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/glass.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/header.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/animation-visibility.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/canvas-grid.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/comparison-hold.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/converted-animation.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/dialog-dismiss.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/export-drag.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/gesture.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/image-gesture.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/internal-drag.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/layout.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-failure.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-label.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-library.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/palette-preview.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/storage-migration.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/style-preview.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/tooltip.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/viewer-layout.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/viewer-navigation.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/workspace-controls.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/lib/workspace.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/mobile-image-actions.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/palette-import.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/palette-settings-compact.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/ui-consistency.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "src/viewer-navigation.css",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    },
+    {
+      "file": "vite.config.js",
+      "reviewStatus": "implementation-read",
+      "ledger": "ui-tooling/source-review.md"
+    }
+  ],
+  "unreviewedAssigned": [],
+  "owner": "ui-tooling"
+}

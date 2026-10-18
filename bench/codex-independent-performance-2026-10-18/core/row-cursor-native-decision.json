@@ -1,0 +1,10 @@
+{
+  "accepted": false,
+  "source": "../io-android/row-cursor-native-decision.json",
+  "plan": "row-cursor-plan.json",
+  "decision": "REJECT: native paired target does not meet the predeclared 10% AND 10ms saving with at least4/5 faster pairs. No production quantize.js change.",
+  "sheet1024PairedSum": {"cpuDeltaMs": -12.117, "percent": -8.2701, "fasterPairs": 3},
+  "sheet2048PairedSum": {"cpuDeltaMs": -21.782, "percent": -7.1136, "fasterPairs": 5},
+  "exactNativeOutputs": 40,
+  "qualification": "First/repeat and sum all retained. Favorable independent median ratios do not override matched paired criteria. Native adverse expansion was not run after target gate failed; it is not a passing adverse suite. Node round1 entropy/Keep losses and unchanged round2 remain visible. No further retry."
+}

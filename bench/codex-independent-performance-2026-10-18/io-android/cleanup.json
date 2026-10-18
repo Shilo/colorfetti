@@ -1,0 +1,68 @@
+{
+  "device": "37211FDJG00267",
+  "started": "2026-10-18T11:05:55.125Z",
+  "errors": [],
+  "nativeFiles": "Every runner removes only its exact unique owned /sdcard/Download filenames after pull or in finally. No private files/download history enumerated or purged.",
+  "storage": "Each runner restores only its owned test origin storage snapshot. The one supplement crash was handled by exact owned tab/test-origin cleanup in supplement-harness-failure.json.",
+  "browser": "Shared Brave preserved. Only owned tabs are closed; CDP disconnected via process exit, never Browser.close.",
+  "removedForward": 9345,
+  "removedReverses": [
+    5391,
+    5394,
+    5395,
+    5396,
+    5397,
+    5398,
+    5399,
+    5401,
+    5404,
+    5406,
+    5407,
+    5408,
+    5409
+  ],
+  "ownedPagesStillOpenBeforeCleanup": [],
+  "nativeDownloadBehavior": "default",
+  "before": {
+    "forwards": [
+      "37211FDJG00267 tcp:9333 localabstract:chrome_devtools_remote\r",
+      "37211FDJG00267 tcp:9334 localabstract:chrome_devtools_remote_16561\r",
+      "37211FDJG00267 tcp:9345 localabstract:chrome_devtools_remote_32363"
+    ],
+    "reverses": [
+      "UsbFfs tcp:5352 tcp:5352\r",
+      "UsbFfs tcp:5354 tcp:5354\r",
+      "UsbFfs tcp:5391 tcp:5391\r",
+      "UsbFfs tcp:5394 tcp:5394\r",
+      "UsbFfs tcp:5395 tcp:5395\r",
+      "UsbFfs tcp:5396 tcp:5396\r",
+      "UsbFfs tcp:5397 tcp:5397\r",
+      "UsbFfs tcp:5398 tcp:5398\r",
+      "UsbFfs tcp:5399 tcp:5399\r",
+      "UsbFfs tcp:5401 tcp:5401\r",
+      "UsbFfs tcp:5404 tcp:5404\r",
+      "UsbFfs tcp:5409 tcp:5409\r",
+      "UsbFfs tcp:5407 tcp:5407\r",
+      "UsbFfs tcp:5408 tcp:5408\r",
+      "UsbFfs tcp:5406 tcp:5406"
+    ]
+  },
+  "after": {
+    "forwards": [
+      "37211FDJG00267 tcp:9333 localabstract:chrome_devtools_remote\r",
+      "37211FDJG00267 tcp:9334 localabstract:chrome_devtools_remote_16561"
+    ],
+    "reverses": [
+      "UsbFfs tcp:5352 tcp:5352\r",
+      "UsbFfs tcp:5354 tcp:5354"
+    ],
+    "rotation": {
+      "wm": "free",
+      "accelerometer": "1",
+      "stored": "0"
+    },
+    "deviceState": "device"
+  },
+  "finished": "2026-10-18T11:05:56.581Z",
+  "reservationReleased": true
+}

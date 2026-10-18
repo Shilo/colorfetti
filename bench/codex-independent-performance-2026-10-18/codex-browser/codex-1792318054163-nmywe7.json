@@ -1,0 +1,4319 @@
+{
+  "env": {
+    "runId": "codex-1792318054163-nmywe7",
+    "url": "http://127.0.0.1:5392/?audit=1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "dpr": 1
+    },
+    "visibility": "visible",
+    "entryTypes": [
+      "element",
+      "event",
+      "first-input",
+      "interaction-contentful-paint",
+      "largest-contentful-paint",
+      "layout-shift",
+      "long-animation-frame",
+      "longtask",
+      "mark",
+      "measure",
+      "navigation",
+      "paint",
+      "resource",
+      "soft-navigation",
+      "visibility-state"
+    ]
+  },
+  "startup": {
+    "enabledControlAt": 31.099999994039536,
+    "control": "Selected palette: Auto, 0 colors",
+    "firstArtPaintAt": 58
+  },
+  "navigation": [
+    {
+      "load": 35.69999999552965,
+      "domContentLoaded": 34.5,
+      "transferSize": 4888
+    }
+  ],
+  "resources": [
+    {
+      "name": "http://127.0.0.1:5392/audit-probe.js",
+      "transferSize": 6793,
+      "duration": 7.600000001490116,
+      "initiatorType": "script"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/index-VE9_tUgX.css",
+      "transferSize": 168302,
+      "duration": 7.5,
+      "initiatorType": "link"
+    },
+    {
+      "name": "https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap",
+      "transferSize": 0,
+      "duration": 0,
+      "initiatorType": "link"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/quantize-DsvDuXDJ.js",
+      "transferSize": 13541,
+      "duration": 7.9000000059604645,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/index-Can2ISBp.js",
+      "transferSize": 274535,
+      "duration": 7.200000002980232,
+      "initiatorType": "script"
+    },
+    {
+      "name": "https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Gayo.woff2",
+      "transferSize": 0,
+      "duration": 0,
+      "initiatorType": "css"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 1.5999999940395355,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/favicon-dark.svg?v=2",
+      "transferSize": 901,
+      "duration": 1.5999999940395355,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/palette-generated-client-ByPrAFoT.js",
+      "transferSize": 4307,
+      "duration": 1.2000000029802322,
+      "initiatorType": "script"
+    },
+    {
+      "name": "http://127.0.0.1:5392/favicon-dark.ico?v=2",
+      "transferSize": 15386,
+      "duration": 2.5,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/palette-generated-worker-xpoMRM2c.js",
+      "transferSize": 10129,
+      "duration": -2,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/palette-usage-B3tsKAFt.js",
+      "transferSize": 1270,
+      "duration": 0.8999999985098839,
+      "initiatorType": "script"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 2.2999999970197678,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 3.100000001490116,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/image-import-client-CL9BZHZZ.js",
+      "transferSize": 5895,
+      "duration": 3,
+      "initiatorType": "script"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 7.600000001490116,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 2.399999998509884,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 9.100000001490116,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 2.6999999955296516,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 2.2000000029802322,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 3.899999998509884,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 2.399999998509884,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 2.2000000029802322,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 3.2999999970197678,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 5.299999997019768,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 2.1999999955296516,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 2.5999999940395355,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 4,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 3.5,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 7.799999997019768,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 3.0999999940395355,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 21,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/image-import-worker-BTnho0_2.js",
+      "transferSize": 25275,
+      "duration": -8.5,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 2.5,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 7,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 4.600000001490116,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 2.600000001490116,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/gif-C7fzAnbv.js",
+      "transferSize": 13134,
+      "duration": 1.1999999955296516,
+      "initiatorType": "script"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/palette-gif-worker-D4qe4WP7.js",
+      "transferSize": 11513,
+      "duration": -2,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 18.100000001490116,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 9.5,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 11.5,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/palette-limit-worker-rkrL9P3s.js",
+      "transferSize": 10160,
+      "duration": -2.1999999955296516,
+      "initiatorType": "other"
+    },
+    {
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318054163-nmywe7",
+      "transferSize": 300,
+      "duration": 3.3000000044703484,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5392/assets/palette-limit-worker-rkrL9P3s.js",
+      "transferSize": 10160,
+      "duration": -2,
+      "initiatorType": "other"
+    }
+  ],
+  "records": [
+    {
+      "event": {
+        "type": "click",
+        "label": "Add images"
+      },
+      "start": 5893.0999999940395,
+      "end": 5893.19999999553,
+      "visibility": "visible",
+      "rafP95": 0,
+      "rafMax": 0,
+      "frameSamples": 0,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 21188446,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "INPUT",
+        "value": ""
+      },
+      "start": 5893.5999999940395,
+      "end": 6142.5,
+      "visibility": "visible",
+      "rafP95": 16.800000000000182,
+      "rafMax": 16.800000000000182,
+      "frameSamples": 15,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 21211462,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "change",
+        "label": "INPUT",
+        "value": "C:\\fakepath\\dungeon-archer.png"
+      },
+      "start": 6143.0999999940395,
+      "end": 8649.19999999553,
+      "visibility": "visible",
+      "rafP95": 16.800000000000182,
+      "rafMax": 16.900000000000546,
+      "frameSamples": 150,
+      "appRafCalls": 8,
+      "paints": [
+        {
+          "at": 6157.0999999940395,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 6159.5999999940395,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerover",
+          "start": 6157.29999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 6157.29999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 6157.29999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 6157.29999999702,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 6157.29999999702,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 6157.29999999702,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 6157.29999999702,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 6157.29999999702,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 3,
+      "transferBytes": 96,
+      "liveWorkers": 1,
+      "urlsCreated": 1,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 20623921,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Remove all images"
+      },
+      "start": 15943.5,
+      "end": 16226.5,
+      "visibility": "visible",
+      "rafP95": 16.80000000000109,
+      "rafMax": 16.80000000000109,
+      "frameSamples": 17,
+      "appRafCalls": 2,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 15952.79999999702,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 8631209,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Remove"
+      },
+      "start": 16226.89999999851,
+      "end": 18733.59999999404,
+      "visibility": "visible",
+      "rafP95": 16.799999999999272,
+      "rafMax": 17,
+      "frameSamples": 150,
+      "appRafCalls": 6,
+      "paints": [
+        {
+          "at": 16238.29999999702,
+          "width": 60,
+          "height": 60
+        },
+        {
+          "at": 16239.29999999702,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 16236.19999999553,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerout",
+          "start": 16252.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 16252.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 16252.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 16252.89999999851,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.09999999403953552,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 16252.89999999851,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 16252.89999999851,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 1,
+      "liveUrls": 0,
+      "heapUsed": 10208828,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Add images"
+      },
+      "start": 37509.09999999404,
+      "end": 37509.09999999404,
+      "visibility": "visible",
+      "rafP95": 0,
+      "rafMax": 0,
+      "frameSamples": 0,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 10082125,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "INPUT",
+        "value": ""
+      },
+      "start": 37509.59999999404,
+      "end": 37743.5,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.80000000000291,
+      "frameSamples": 14,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 10130126,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "change",
+        "label": "INPUT",
+        "value": "C:\\fakepath\\dungeon-archer.png"
+      },
+      "start": 37743.79999999702,
+      "end": 40244.39999999851,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.900000000001455,
+      "frameSamples": 150,
+      "appRafCalls": 9,
+      "paints": [
+        {
+          "at": 37748.5,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 37756.09999999404,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 37756.29999999702,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 37757.19999999553,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 37757.29999999702,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerover",
+          "start": 37755.09999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 37755.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 7,
+      "transferBytes": 288,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 9992667,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Remove all images"
+      },
+      "start": 48726,
+      "end": 49028.09999999404,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.80000000000291,
+      "frameSamples": 18,
+      "appRafCalls": 2,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 48736.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 10187287,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Remove"
+      },
+      "start": 49028.5,
+      "end": 49325.29999999702,
+      "visibility": "visible",
+      "rafP95": 16.799999999995634,
+      "rafMax": 16.799999999995634,
+      "frameSamples": 18,
+      "appRafCalls": 8,
+      "paints": [
+        {
+          "at": 49037.69999999553,
+          "width": 60,
+          "height": 60
+        },
+        {
+          "at": 49038.5,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49036.09999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerout",
+          "start": 49052.89999999851,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 49052.89999999851,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49052.89999999851,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 49052.89999999851,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 49052.89999999851,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49052.89999999851,
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 3,
+      "transferBytes": 72,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 11092316,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Add images"
+      },
+      "start": 49325.79999999702,
+      "end": 49325.79999999702,
+      "visibility": "visible",
+      "rafP95": 0,
+      "rafMax": 0,
+      "frameSamples": 0,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 11092316,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "INPUT",
+        "value": ""
+      },
+      "start": 49326,
+      "end": 49596.19999999553,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.80000000000291,
+      "frameSamples": 16,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 10799337,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "change",
+        "label": "INPUT",
+        "value": "C:\\fakepath\\dungeon-archer.png"
+      },
+      "start": 49597.19999999553,
+      "end": 49797.19999999553,
+      "visibility": "visible",
+      "rafP95": 16.700000000004366,
+      "rafMax": 16.700000000004366,
+      "frameSamples": 12,
+      "appRafCalls": 17,
+      "paints": [
+        {
+          "at": 49608.79999999702,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 49611.39999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 49625.5,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 49625.79999999702,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 49625.89999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 49627.39999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 49627.5,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 49627.59999999404,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 49627.59999999404,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerover",
+          "start": 49607,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49607,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49607,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0.29999999701976776,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 49607,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49607,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49607,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerout",
+          "start": 49622.5,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49622.5,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49622.5,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 49622.5,
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 49622.5,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49622.5,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49622.5,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 49622.5,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 9,
+      "transferBytes": 2336,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 10222545,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Remove all images"
+      },
+      "start": 49797.69999999553,
+      "end": 50077.69999999553,
+      "visibility": "visible",
+      "rafP95": 16.799999999995634,
+      "rafMax": 16.799999999995634,
+      "frameSamples": 17,
+      "appRafCalls": 2,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 49802.59999999404,
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 10494098,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Remove"
+      },
+      "start": 50078.09999999404,
+      "end": 50390.89999999851,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.80000000000291,
+      "frameSamples": 19,
+      "appRafCalls": 8,
+      "paints": [
+        {
+          "at": 50087.5,
+          "width": 60,
+          "height": 60
+        },
+        {
+          "at": 50088.29999999702,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerout",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 50086,
+          "duration": 16,
+          "inputDelay": 0,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerout",
+          "start": 50103.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 50103.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 50103.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 50103.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 50103.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 50103.09999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 3,
+      "transferBytes": 72,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 10953948,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Add images"
+      },
+      "start": 50391.69999999553,
+      "end": 50391.69999999553,
+      "visibility": "visible",
+      "rafP95": 0,
+      "rafMax": 0,
+      "frameSamples": 0,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 10953948,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "INPUT",
+        "value": ""
+      },
+      "start": 50392.19999999553,
+      "end": 50629.69999999553,
+      "visibility": "visible",
+      "rafP95": 17,
+      "rafMax": 17,
+      "frameSamples": 14,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 11198542,
+      "wall": [
+        {
+          "caption": "60×60  ·  6 colors ",
+          "busy": false,
+          "width": 60,
+          "height": 60
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "change",
+        "label": "INPUT",
+        "value": "C:\\fakepath\\dungeon-archer.png"
+      },
+      "start": 50630.39999999851,
+      "end": 53136.5,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 17.099999999998545,
+      "frameSamples": 151,
+      "appRafCalls": 23,
+      "paints": [
+        {
+          "at": 50637,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 50642.89999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 50651.69999999553,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 50651.69999999553,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 50652.39999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 50652.5,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "at": 50652.59999999404,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 50652.79999999702,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 50652.89999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 50657.59999999404,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 50657.59999999404,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 50657.59999999404,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 50657.79999999702,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 50657.79999999702,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "at": 50657.79999999702,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 50657.79999999702,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 50657.89999999851,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [
+        {
+          "type": "pointerover",
+          "start": 50637.59999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 50637.59999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 50637.59999999404,
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "processing": 0.10000000149011612,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerenter",
+          "start": 50637.59999999404,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 50637.59999999404,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 50637.59999999404,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 50637.59999999404,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseenter",
+          "start": 50637.59999999404,
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerout",
+          "start": 50653.19999999553,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 50653.19999999553,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 50653.19999999553,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerleave",
+          "start": 50653.19999999553,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "pointerover",
+          "start": 50653.19999999553,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseout",
+          "start": 50653.19999999553,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 50653.19999999553,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 50653.19999999553,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseleave",
+          "start": 50653.19999999553,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        },
+        {
+          "type": "mouseover",
+          "start": 50653.19999999553,
+          "duration": 16,
+          "inputDelay": 0.3999999985098839,
+          "processing": 0,
+          "interactionId": 0
+        }
+      ],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 13,
+      "transferBytes": 9264,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 12918192,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  3 colors ",
+          "caption": "18×18  ·  3 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  7 colors ",
+          "caption": "24×24  ·  7 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  7 colors ",
+          "caption": "24×24  ·  7 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  11 colors ",
+          "caption": "16×16  ·  11 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Add images"
+      },
+      "start": 67610.5,
+      "end": 67610.59999999404,
+      "visibility": "visible",
+      "rafP95": 0,
+      "rafMax": 0,
+      "frameSamples": 0,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 13256778,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  3 colors ",
+          "caption": "18×18  ·  3 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  7 colors ",
+          "caption": "24×24  ·  7 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  7 colors ",
+          "caption": "24×24  ·  7 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  11 colors ",
+          "caption": "16×16  ·  11 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "INPUT",
+        "value": ""
+      },
+      "start": 67611.09999999404,
+      "end": 67860.79999999702,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.80000000000291,
+      "frameSamples": 15,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 1,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 13357010,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  3 colors ",
+          "caption": "18×18  ·  3 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  7 colors ",
+          "caption": "24×24  ·  7 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  7 colors ",
+          "caption": "24×24  ·  7 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  11 colors ",
+          "caption": "16×16  ·  11 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "change",
+        "label": "INPUT",
+        "value": "C:\\fakepath\\real-magic.gif"
+      },
+      "start": 67862.5,
+      "end": 68061.59999999404,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.80000000000291,
+      "frameSamples": 12,
+      "appRafCalls": 8,
+      "paints": [
+        {
+          "at": 67910.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 67924.39999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 67924.39999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 67924.5,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 67924.59999999404,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 67924.59999999404,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "at": 67924.69999999553,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 67924.69999999553,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 67924.69999999553,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 67924.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 68031.5,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 1,
+      "workerTerminates": 0,
+      "workerMessages": 24,
+      "transferBytes": 25296,
+      "liveWorkers": 2,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 11903998,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  3 colors ",
+          "caption": "18×18  ·  3 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  7 colors ",
+          "caption": "24×24  ·  7 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  7 colors ",
+          "caption": "24×24  ·  7 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "real-magic.gif 32×32  ·  33 colors ",
+          "caption": "32×32  ·  33 colors ",
+          "busy": false,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "pressed": [
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Palette"
+      },
+      "start": 68062,
+      "end": 70567.09999999404,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 17,
+      "frameSamples": 150,
+      "appRafCalls": 5,
+      "paints": [
+        {
+          "at": 68137,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 68248.5,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 68349.5,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 68451.19999999553,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 68552.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 68654.59999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 68763.39999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 68869.5,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 68980.09999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 69087.09999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 69197.59999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 69303.89999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 69414.59999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 69520,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 69632.5,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 69736.29999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 69836.89999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 69946.59999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 70047.89999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 70151.5,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 70253.69999999553,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 70367.29999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 70469.79999999702,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 2,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 11789215,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  3 colors ",
+          "caption": "18×18  ·  3 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  7 colors ",
+          "caption": "24×24  ·  7 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  7 colors ",
+          "caption": "24×24  ·  7 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  9 colors ",
+          "caption": "16×16  ·  9 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "real-magic.gif 32×32  ·  33 colors ",
+          "caption": "32×32  ·  33 colors ",
+          "busy": false,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "Auto",
+        "Auto conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "PICO-8"
+      },
+      "start": 77559.5,
+      "end": 77856.29999999702,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.80000000000291,
+      "frameSamples": 18,
+      "appRafCalls": 2,
+      "paints": [
+        {
+          "at": 77571.19999999553,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 77571.39999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 77571.39999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 77571.5,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 77571.5,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "at": 77571.59999999404,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 77571.59999999404,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 77571.59999999404,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 77571.69999999553,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 77678.09999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 77787.19999999553,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 2,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 12680340,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  2 colors ",
+          "caption": "18×18  ·  2 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "real-magic.gif 32×32  ·  6 colors ",
+          "caption": "32×32  ·  6 colors ",
+          "busy": false,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Palette"
+      },
+      "start": 77857.39999999851,
+      "end": 78160.39999999851,
+      "visibility": "visible",
+      "rafP95": 16.79999999998836,
+      "rafMax": 16.79999999998836,
+      "frameSamples": 18,
+      "appRafCalls": 7,
+      "paints": [
+        {
+          "at": 77895.89999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 78005.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 78107.5,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 2,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 11344738,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  2 colors ",
+          "caption": "18×18  ·  2 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "real-magic.gif 32×32  ·  6 colors ",
+          "caption": "32×32  ·  6 colors ",
+          "busy": false,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Save all images"
+      },
+      "start": 78160.89999999851,
+      "end": 78183.5,
+      "visibility": "visible",
+      "rafP95": 0,
+      "rafMax": 0,
+      "frameSamples": 1,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 1,
+      "workerTerminates": 1,
+      "workerMessages": 8,
+      "transferBytes": 6144,
+      "liveWorkers": 2,
+      "urlsCreated": 1,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 11344738,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  2 colors ",
+          "caption": "18×18  ·  2 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "real-magic.gif 32×32  ·  6 colors ",
+          "caption": "32×32  ·  6 colors ",
+          "busy": false,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "A"
+      },
+      "start": 78184.09999999404,
+      "end": 80686.79999999702,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.89999999999418,
+      "frameSamples": 151,
+      "appRafCalls": 0,
+      "paints": [
+        {
+          "at": 78219.69999999553,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 78319.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 78420.29999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 78530.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 78631.69999999553,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 78736.19999999553,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 78840.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 78941.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 79043.29999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 79151.59999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 79253.29999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 79354.59999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 79464.39999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 79570.5,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 79683.89999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 79786.09999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 79888.59999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 79996.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 80103,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 80203.59999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 80310.29999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 80419.39999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 80531.29999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 80637.29999999702,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 2,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 1,
+      "heapUsed": 12391161,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  2 colors ",
+          "caption": "18×18  ·  2 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "real-magic.gif 32×32  ·  6 colors ",
+          "caption": "32×32  ·  6 colors ",
+          "busy": false,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "inputs": []
+    },
+    {
+      "event": {
+        "type": "click",
+        "label": "Palette settings"
+      },
+      "start": 87077.19999999553,
+      "end": 89585.79999999702,
+      "visibility": "visible",
+      "rafP95": 16.80000000000291,
+      "rafMax": 16.80000000000291,
+      "frameSamples": 150,
+      "appRafCalls": 5,
+      "paints": [
+        {
+          "at": 87169.59999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 87278.5,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 87379.29999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 87486.09999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 87586.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 87697.19999999553,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 87803.5,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 87913.39999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 88019.69999999553,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 88129.19999999553,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 88236.29999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 88349.29999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 88453.09999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 88564.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 88670.09999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 88781.09999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 88881.59999999404,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 88982.5,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 89083.39999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 89186.89999999851,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 89292.5,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 89399.79999999702,
+          "width": 32,
+          "height": 32
+        },
+        {
+          "at": 89502.89999999851,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 0,
+      "workerTerminates": 0,
+      "workerMessages": 0,
+      "transferBytes": 0,
+      "liveWorkers": 2,
+      "urlsCreated": 0,
+      "urlsRevoked": 1,
+      "liveUrls": 0,
+      "heapUsed": 14111638,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  2 colors ",
+          "caption": "18×18  ·  2 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "real-magic.gif 32×32  ·  6 colors ",
+          "caption": "32×32  ·  6 colors ",
+          "busy": false,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "pressed": [
+        "Use all palette colors",
+        "Oklab matching",
+        "Cleanup off",
+        "Dithering off",
+        "PICO-8 conversion"
+      ],
+      "inputs": [
+        {
+          "label": "Max colors",
+          "value": "16"
+        },
+        {
+          "label": "Max colors value",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "event": {
+        "type": "paste",
+        "label": "Max colors value",
+        "value": ""
+      },
+      "start": 96385.09999999404,
+      "end": 96416.19999999553,
+      "visibility": "visible",
+      "rafP95": 16.69999999999709,
+      "rafMax": 16.69999999999709,
+      "frameSamples": 2,
+      "appRafCalls": 0,
+      "paints": [],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 1,
+      "workerTerminates": 0,
+      "workerMessages": 1,
+      "transferBytes": 0,
+      "liveWorkers": 3,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 14125314,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": true,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": true,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  7 colors ",
+          "caption": "16×16  ·  7 colors ",
+          "busy": true,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  6 colors ",
+          "caption": "16×16  ·  6 colors ",
+          "busy": true,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  2 colors ",
+          "caption": "18×18  ·  2 colors ",
+          "busy": true,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": true,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  5 colors ",
+          "caption": "24×24  ·  5 colors ",
+          "busy": true,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  8 colors ",
+          "caption": "16×16  ·  8 colors ",
+          "busy": true,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "real-magic.gif 32×32  ·  6 colors ",
+          "caption": "32×32  ·  6 colors ",
+          "busy": true,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "pressed": [
+        "Oklab matching",
+        "Cleanup off",
+        "Dithering off",
+        "PICO-8 conversion"
+      ],
+      "inputs": [
+        {
+          "label": "Max colors",
+          "value": "2"
+        },
+        {
+          "label": "Max colors value",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "event": {
+        "type": "paste",
+        "label": "Max colors value",
+        "value": "2"
+      },
+      "start": 96417.29999999702,
+      "end": 96448.09999999404,
+      "visibility": "visible",
+      "rafP95": 16.60000000000582,
+      "rafMax": 16.60000000000582,
+      "frameSamples": 2,
+      "appRafCalls": 0,
+      "paints": [
+        {
+          "at": 96422.5,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 96423.19999999553,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 96425,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 96425.69999999553,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 96426.09999999404,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "at": 96426.89999999851,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 96427.69999999553,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 96428.5,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 96439.09999999404,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 96440,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 96440.39999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 96441,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 96441.39999999851,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "at": 96441.89999999851,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 96442.39999999851,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "at": 96442.89999999851,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "at": 96445.19999999553,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "longtasks": [],
+      "longAnimationFrames": [],
+      "eventTiming": [],
+      "workerCreates": 1,
+      "workerTerminates": 1,
+      "workerMessages": 53,
+      "transferBytes": 11472,
+      "liveWorkers": 3,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "liveUrls": 0,
+      "heapUsed": 14125314,
+      "wall": [
+        {
+          "name": "dungeon-archer.png 16×16  ·  4 colors ",
+          "caption": "16×16  ·  4 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-knight.png 16×16  ·  4 colors ",
+          "caption": "16×16  ·  4 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-potion.png 16×16  ·  4 colors ",
+          "caption": "16×16  ·  4 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "dungeon-wizard.png 16×16  ·  4 colors ",
+          "caption": "16×16  ·  4 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "platformer-heart.png 18×18  ·  2 colors ",
+          "caption": "18×18  ·  2 colors ",
+          "busy": false,
+          "width": 18,
+          "height": 18
+        },
+        {
+          "name": "platformer-pilot.png 24×24  ·  4 colors ",
+          "caption": "24×24  ·  4 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "platformer-rocket.png 24×24  ·  4 colors ",
+          "caption": "24×24  ·  4 colors ",
+          "busy": false,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "name": "town-water-bucket.png 16×16  ·  4 colors ",
+          "caption": "16×16  ·  4 colors ",
+          "busy": false,
+          "width": 16,
+          "height": 16
+        },
+        {
+          "name": "real-magic.gif 32×32  ·  4 colors ",
+          "caption": "32×32  ·  4 colors ",
+          "busy": false,
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "pressed": [
+        "Oklab matching",
+        "Cleanup off",
+        "Dithering off",
+        "PICO-8 conversion"
+      ],
+      "inputs": [
+        {
+          "label": "Max colors",
+          "value": "4"
+        },
+        {
+          "label": "Max colors value",
+          "value": "4"
+        }
+      ]
+    }
+  ]
+}

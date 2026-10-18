@@ -1,0 +1,350 @@
+{
+  "source": "row-cursor-native/results-sheet1024-sheet2048-codexio-row-cursor-1792321165148.json",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "builds": "../core/row-cursor-build-manifest.json",
+  "plan": "../core/row-cursor-plan.json",
+  "fixedGate": {
+    "absoluteSavingMs": 10,
+    "relativeSavingPercent": 10,
+    "fasterPairs": 4,
+    "pairs": 5
+  },
+  "rows": [
+    {
+      "id": "sheet1024",
+      "phase": "first",
+      "baseline": {
+        "median": 91.669,
+        "min": 77.714,
+        "max": 100.217,
+        "values": [
+          77.714,
+          98.162,
+          85.765,
+          100.217,
+          91.669
+        ]
+      },
+      "candidate": {
+        "median": 84.179,
+        "min": 77.035,
+        "max": 96.232,
+        "values": [
+          91.21900000000001,
+          84.179,
+          96.232,
+          77.22999999999999,
+          77.035
+        ]
+      },
+      "pairedCandidateMinusBaseline": {
+        "median": -13.983000000000004,
+        "min": -22.98700000000001,
+        "max": 13.50500000000001,
+        "values": [
+          13.50500000000001,
+          -13.983000000000004,
+          10.466999999999999,
+          -22.98700000000001,
+          -14.634
+        ]
+      },
+      "pairedPercent": {
+        "median": -14.24481978769789,
+        "min": -22.937226219104552,
+        "max": 17.377821241989874,
+        "values": [
+          17.377821241989874,
+          -14.24481978769789,
+          12.204279134845216,
+          -22.937226219104552,
+          -15.96395728108739
+        ]
+      },
+      "independentMediansPercent": -8.1707011094263,
+      "candidateFasterPairs": 3,
+      "pairedGatePass": false
+    },
+    {
+      "id": "sheet1024",
+      "phase": "repeat",
+      "baseline": {
+        "median": 54.84599999999999,
+        "min": 53.949999999999996,
+        "max": 66.114,
+        "values": [
+          57.71199999999999,
+          66.114,
+          54.266000000000005,
+          53.949999999999996,
+          54.84599999999999
+        ]
+      },
+      "candidate": {
+        "median": 57.117000000000004,
+        "min": 45.730999999999995,
+        "max": 61.53199999999999,
+        "values": [
+          55.170999999999985,
+          57.117000000000004,
+          45.730999999999995,
+          61.53199999999999,
+          57.363
+        ]
+      },
+      "pairedCandidateMinusBaseline": {
+        "median": -2.541000000000004,
+        "min": -8.997,
+        "max": 7.581999999999994,
+        "values": [
+          -2.541000000000004,
+          -8.997,
+          -8.53500000000001,
+          7.581999999999994,
+          2.51700000000001
+        ]
+      },
+      "pairedPercent": {
+        "median": -4.402897144441371,
+        "min": -15.728080197545443,
+        "max": 14.053753475440212,
+        "values": [
+          -4.402897144441371,
+          -13.608312914057535,
+          -15.728080197545443,
+          14.053753475440212,
+          4.589213433978796
+        ]
+      },
+      "independentMediansPercent": 4.140684826605432,
+      "candidateFasterPairs": 3,
+      "pairedGatePass": false
+    },
+    {
+      "id": "sheet1024",
+      "phase": "sum",
+      "baseline": {
+        "median": 146.515,
+        "min": 135.426,
+        "max": 164.276,
+        "values": [
+          135.426,
+          164.276,
+          140.031,
+          154.167,
+          146.515
+        ]
+      },
+      "candidate": {
+        "median": 141.296,
+        "min": 134.398,
+        "max": 146.39,
+        "values": [
+          146.39,
+          141.296,
+          141.963,
+          138.76199999999997,
+          134.398
+        ]
+      },
+      "pairedCandidateMinusBaseline": {
+        "median": -12.11699999999999,
+        "min": -22.980000000000018,
+        "max": 10.963999999999999,
+        "values": [
+          10.963999999999999,
+          -22.980000000000018,
+          1.931999999999988,
+          -15.40500000000003,
+          -12.11699999999999
+        ]
+      },
+      "pairedPercent": {
+        "median": -8.270142988772475,
+        "min": -13.988653242104759,
+        "max": 8.095934310989026,
+        "values": [
+          8.095934310989026,
+          -13.988653242104759,
+          1.379694496218686,
+          -9.992410827219853,
+          -8.270142988772475
+        ]
+      },
+      "independentMediansPercent": -3.562092618503221,
+      "candidateFasterPairs": 3,
+      "pairedGatePass": false
+    },
+    {
+      "id": "sheet2048",
+      "phase": "first",
+      "baseline": {
+        "median": 185.874,
+        "min": 167.593,
+        "max": 189.909,
+        "values": [
+          167.593,
+          189.909,
+          185.874,
+          184.55,
+          187.50900000000001
+        ]
+      },
+      "candidate": {
+        "median": 166.89399999999998,
+        "min": 160.429,
+        "max": 186.306,
+        "values": [
+          161.071,
+          166.89399999999998,
+          171.122,
+          160.429,
+          186.306
+        ]
+      },
+      "pairedCandidateMinusBaseline": {
+        "median": -14.751999999999981,
+        "min": -24.12100000000001,
+        "max": -1.203000000000003,
+        "values": [
+          -6.521999999999991,
+          -23.015000000000015,
+          -14.751999999999981,
+          -24.12100000000001,
+          -1.203000000000003
+        ]
+      },
+      "pairedPercent": {
+        "median": -7.93655917449454,
+        "min": -13.070170685451101,
+        "max": -0.641569204678177,
+        "values": [
+          -3.891570650325486,
+          -12.118962239809601,
+          -7.93655917449454,
+          -13.070170685451101,
+          -0.641569204678177
+        ]
+      },
+      "independentMediansPercent": -10.211218352217104,
+      "candidateFasterPairs": 5,
+      "pairedGatePass": false
+    },
+    {
+      "id": "sheet2048",
+      "phase": "repeat",
+      "baseline": {
+        "median": 155.63500000000002,
+        "min": 128.35200000000003,
+        "max": 166.882,
+        "values": [
+          138.61,
+          128.35200000000003,
+          155.63500000000002,
+          166.882,
+          155.65100000000004
+        ]
+      },
+      "candidate": {
+        "median": 137.44099999999997,
+        "min": 123.35,
+        "max": 151.96300000000002,
+        "values": [
+          123.35,
+          124.963,
+          151.96300000000002,
+          151.63700000000003,
+          137.44099999999997
+        ]
+      },
+      "pairedCandidateMinusBaseline": {
+        "median": -15.244999999999976,
+        "min": -18.210000000000065,
+        "max": -3.3890000000000384,
+        "values": [
+          -15.26000000000002,
+          -3.3890000000000384,
+          -3.671999999999997,
+          -15.244999999999976,
+          -18.210000000000065
+        ]
+      },
+      "pairedPercent": {
+        "median": -9.135197325056014,
+        "min": -11.699250245742116,
+        "max": -2.3593664664117946,
+        "values": [
+          -11.009306687829174,
+          -2.6403951633009517,
+          -2.3593664664117946,
+          -9.135197325056014,
+          -11.699250245742116
+        ]
+      },
+      "independentMediansPercent": -11.690172519034949,
+      "candidateFasterPairs": 5,
+      "pairedGatePass": false
+    },
+    {
+      "id": "sheet2048",
+      "phase": "sum",
+      "baseline": {
+        "median": 341.509,
+        "min": 306.203,
+        "max": 351.432,
+        "values": [
+          306.203,
+          318.261,
+          341.509,
+          351.432,
+          343.1600000000001
+        ]
+      },
+      "candidate": {
+        "median": 312.06600000000003,
+        "min": 284.421,
+        "max": 323.74699999999996,
+        "values": [
+          284.421,
+          291.85699999999997,
+          323.08500000000004,
+          312.06600000000003,
+          323.74699999999996
+        ]
+      },
+      "pairedCandidateMinusBaseline": {
+        "median": -21.781999999999982,
+        "min": -39.365999999999985,
+        "max": -18.423999999999978,
+        "values": [
+          -21.781999999999982,
+          -26.404000000000053,
+          -18.423999999999978,
+          -39.365999999999985,
+          -19.413000000000125
+        ]
+      },
+      "pairedPercent": {
+        "median": -7.113581512917895,
+        "min": -11.201598033189915,
+        "max": -5.394879783548889,
+        "values": [
+          -7.113581512917895,
+          -8.296335397676765,
+          -5.394879783548889,
+          -11.201598033189915,
+          -5.657127870381198
+        ]
+      },
+      "independentMediansPercent": -8.621441894649916,
+      "candidateFasterPairs": 5,
+      "pairedGatePass": false
+    }
+  ],
+  "nativeExactOutputs": 40,
+  "errors": [],
+  "qualification": "RendererTaskCPU covers actual app native export work to download event, before ADBpull/decode; excludes compression workerCPU. New document source/count already warmed quantizer. Main first/repeat phases and paired sum all retained, no selecting favorable metric/phase. Context uses both paired deltas and independent median ratios.",
+  "decision": "REJECT: neither target paired-sum clears10% saving;1024 also lacks4/5faster.2048 allpairs improve but no paired phase clears10%. Do not choose its favorable independent median ratio to override fixed gate.",
+  "adverse": "Native tiny/entropy/Keep/dither/Cleanup/animation expansion not run because material target gate failed. Node two rounds and auxiliary Edge adverse/correctness remain separately qualified evidence, not native passes.",
+  "retries": "One harness-only observer takeRecords binding failure before a completed row; exact owned output removed. Corrected before full matched measurement. Failed receipt retained. No runtime candidate correction or third timing retry."
+}

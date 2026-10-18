@@ -1,0 +1,443 @@
+{
+  "stamp": 1792318872277,
+  "order": [
+    "off",
+    "on",
+    "on",
+    "off",
+    "off",
+    "on",
+    "on",
+    "off",
+    "off",
+    "on"
+  ],
+  "urls": {
+    "off": "http://localhost:5399/",
+    "on": "http://localhost:5398/"
+  },
+  "started": "2026-10-18T10:21:12.277Z",
+  "trials": [
+    {
+      "variant": "off",
+      "pair": 0,
+      "slot": 0,
+      "tempC": 34.5,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall Brightness R-G-Value",
+          "cpuMs": 183.32700000000003,
+          "startedAt": 1625.3999999761581,
+          "elapsedMs": 479.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25.09999999999991,
+          "toFinalPaintMs": 424.1999999284744,
+          "lastCommitToPaintMs": 7.699999928474426,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Brightness R-G-Value",
+          "cpuMs": 534.914,
+          "startedAt": 1944.1000000238419,
+          "elapsedMs": 877.1000000238419,
+          "maxLongTaskMs": 128,
+          "longtasks": 3,
+          "rafMaxMs": 124.90000000000009,
+          "toFinalPaintMs": 819.7000000476837,
+          "lastCommitToPaintMs": 114,
+          "captions": [
+            "2048×2048"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "pair": 0,
+      "slot": 1,
+      "tempC": 34.5,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall Brightness R-G-Value",
+          "cpuMs": 159.91299999999998,
+          "startedAt": 1569.5999999046326,
+          "elapsedMs": 399.7000000476837,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.299999999999955,
+          "toFinalPaintMs": 350.5,
+          "lastCommitToPaintMs": 8.199999928474426,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Brightness R-G-Value",
+          "cpuMs": 386.68399999999997,
+          "startedAt": 1812.2000000476837,
+          "elapsedMs": 714.2999999523163,
+          "maxLongTaskMs": 86,
+          "longtasks": 3,
+          "rafMaxMs": 75.29999999999995,
+          "toFinalPaintMs": 632.2999999523163,
+          "lastCommitToPaintMs": 81.59999990463257,
+          "captions": [
+            "2048×2048"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "pair": 1,
+      "slot": 2,
+      "tempC": 34.7,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall Brightness R-G-Value",
+          "cpuMs": 162.906,
+          "startedAt": 1587.7999999523163,
+          "elapsedMs": 435.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25.09999999999991,
+          "toFinalPaintMs": 364.7000000476837,
+          "lastCommitToPaintMs": 7.300000071525574,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Brightness R-G-Value",
+          "cpuMs": 445.756,
+          "startedAt": 1880.7000000476837,
+          "elapsedMs": 804.1999999284744,
+          "maxLongTaskMs": 92,
+          "longtasks": 3,
+          "rafMaxMs": 83.20000000000027,
+          "toFinalPaintMs": 698.3999999761581,
+          "lastCommitToPaintMs": 79.60000002384186,
+          "captions": [
+            "2048×2048"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "pair": 1,
+      "slot": 3,
+      "tempC": 35,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall Brightness R-G-Value",
+          "cpuMs": 195.371,
+          "startedAt": 1610,
+          "elapsedMs": 482.09999990463257,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.899999999999864,
+          "toFinalPaintMs": 419.59999990463257,
+          "lastCommitToPaintMs": 12.5,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Brightness R-G-Value",
+          "cpuMs": 567.1379999999999,
+          "startedAt": 1862.8999999761581,
+          "elapsedMs": 970.7000000476837,
+          "maxLongTaskMs": 128,
+          "longtasks": 3,
+          "rafMaxMs": 116.59999999999991,
+          "toFinalPaintMs": 885.9000000953674,
+          "lastCommitToPaintMs": 137.5,
+          "captions": [
+            "2048×2048"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "pair": 2,
+      "slot": 4,
+      "tempC": 35,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall Brightness R-G-Value",
+          "cpuMs": 172.832,
+          "startedAt": 1604.4000000953674,
+          "elapsedMs": 456.09999990463257,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 17,
+          "toFinalPaintMs": 365.89999997615814,
+          "lastCommitToPaintMs": 10,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Brightness R-G-Value",
+          "cpuMs": 501.33099999999996,
+          "startedAt": 1893.1000000238419,
+          "elapsedMs": 847.8000000715256,
+          "maxLongTaskMs": 123,
+          "longtasks": 3,
+          "rafMaxMs": 116.5,
+          "toFinalPaintMs": 755.7000000476837,
+          "lastCommitToPaintMs": 106.60000002384186,
+          "captions": [
+            "2048×2048"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "pair": 2,
+      "slot": 5,
+      "tempC": 35,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall Brightness R-G-Value",
+          "cpuMs": 193.46099999999998,
+          "startedAt": 1607,
+          "elapsedMs": 574.8999999761581,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 33.299999999999955,
+          "toFinalPaintMs": 483.60000002384186,
+          "lastCommitToPaintMs": 9,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Brightness R-G-Value",
+          "cpuMs": 421.49699999999996,
+          "startedAt": 1754.7999999523163,
+          "elapsedMs": 674.1000000238419,
+          "maxLongTaskMs": 90,
+          "longtasks": 3,
+          "rafMaxMs": 83.09999999999991,
+          "toFinalPaintMs": 615.8000000715256,
+          "lastCommitToPaintMs": 75,
+          "captions": [
+            "2048×2048"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "pair": 3,
+      "slot": 6,
+      "tempC": 35,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall Brightness R-G-Value",
+          "cpuMs": 183.334,
+          "startedAt": 1557.1000000238419,
+          "elapsedMs": 534.2999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.90000000000009,
+          "toFinalPaintMs": 441.5,
+          "lastCommitToPaintMs": 10.100000023841858,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Brightness R-G-Value",
+          "cpuMs": 445.932,
+          "startedAt": 1716.9000000953674,
+          "elapsedMs": 764.6999999284744,
+          "maxLongTaskMs": 97,
+          "longtasks": 3,
+          "rafMaxMs": 100,
+          "toFinalPaintMs": 681,
+          "lastCommitToPaintMs": 86.5,
+          "captions": [
+            "2048×2048"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "pair": 3,
+      "slot": 7,
+      "tempC": 35,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall Brightness R-G-Value",
+          "cpuMs": 179.55900000000003,
+          "startedAt": 1536.5999999046326,
+          "elapsedMs": 451.90000009536743,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 24.899999999999864,
+          "toFinalPaintMs": 379,
+          "lastCommitToPaintMs": 7.899999976158142,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Brightness R-G-Value",
+          "cpuMs": 490.32900000000006,
+          "startedAt": 1856.6000000238419,
+          "elapsedMs": 824,
+          "maxLongTaskMs": 125,
+          "longtasks": 3,
+          "rafMaxMs": 108.39999999999986,
+          "toFinalPaintMs": 721.7000000476837,
+          "lastCommitToPaintMs": 109.70000004768372,
+          "captions": [
+            "2048×2048"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "pair": 4,
+      "slot": 8,
+      "tempC": 35,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall Brightness R-G-Value",
+          "cpuMs": 169.65999999999997,
+          "startedAt": 1643.5,
+          "elapsedMs": 457.90000009536743,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.899999999999864,
+          "toFinalPaintMs": 376.10000002384186,
+          "lastCommitToPaintMs": 8,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Brightness R-G-Value",
+          "cpuMs": 536.758,
+          "startedAt": 1839.2000000476837,
+          "elapsedMs": 793.8999999761581,
+          "maxLongTaskMs": 129,
+          "longtasks": 3,
+          "rafMaxMs": 116.40000000000009,
+          "toFinalPaintMs": 721.2000000476837,
+          "lastCommitToPaintMs": 121.10000002384186,
+          "captions": [
+            "2048×2048"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "pair": 4,
+      "slot": 9,
+      "tempC": 35,
+      "rows": [
+        {
+          "name": "ADVERSE tiny wall Brightness R-G-Value",
+          "cpuMs": 169.23000000000005,
+          "startedAt": 1489.7000000476837,
+          "elapsedMs": 422.7000000476837,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 25,
+          "toFinalPaintMs": 366.10000002384186,
+          "lastCommitToPaintMs": 9.5,
+          "captions": [
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors",
+            "16×16  ·  2 colors"
+          ]
+        },
+        {
+          "name": "TARGET sheet2048 Brightness R-G-Value",
+          "cpuMs": 430.726,
+          "startedAt": 1789.2999999523163,
+          "elapsedMs": 746.8000000715256,
+          "maxLongTaskMs": 96,
+          "longtasks": 3,
+          "rafMaxMs": 99.70000000000005,
+          "toFinalPaintMs": 669.6000000238419,
+          "lastCommitToPaintMs": 85.39999997615814,
+          "captions": [
+            "2048×2048"
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, level: 82, temperature: 345, Capacity level: 2",
+      "rotation": "free"
+    },
+    {
+      "at": "end",
+      "battery": "status: 2, level: 83, temperature: 350, Capacity level: 2",
+      "rotation": "free"
+    }
+  ],
+  "fixtures": {
+    "target": "kenney-sheet-2048",
+    "tiny": [
+      "dungeon-wizard",
+      "dungeon-archer",
+      "dungeon-knight",
+      "dungeon-potion"
+    ]
+  },
+  "settings": "1-bit Checker, default inks, Brightness Luma -> R -> G -> Value",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "finished": "2026-10-18T10:22:14.206Z"
+}

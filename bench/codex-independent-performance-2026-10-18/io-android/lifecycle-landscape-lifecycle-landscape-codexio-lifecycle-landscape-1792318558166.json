@@ -1,0 +1,143 @@
+{
+  "harnessProvenance": "Independent inspection/adaptation of previous native runner; all results newly collected. Historical receipts not imported.",
+  "label": "lifecycle-landscape",
+  "prefix": "codexio-lifecycle-landscape-1792318558166",
+  "baseURL": "http://localhost:5391/",
+  "started": "2026-10-18T10:15:58.167Z",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "rows": [
+    {
+      "name": "cancel-seed: input import to current named wall paint",
+      "elapsedMs": 89.29999995231628,
+      "longtasks": [],
+      "rafMaxMs": 16.80000000000001,
+      "rafP95Ms": 16.80000000000001,
+      "cpuMs": {
+        "TaskDuration": 37.98099999999999,
+        "ScriptDuration": 9.424999999999999,
+        "LayoutDuration": 1.7550000000000001,
+        "RecalcStyleDuration": 7.982999999999999
+      },
+      "heapUsed": 5798876
+    },
+    {
+      "name": "cancel-seed: exact full-clip captions ready",
+      "elapsedMs": 50.199999928474426,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 3.041999999999989,
+        "ScriptDuration": 0.2360000000000001,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 5829276
+    },
+    {
+      "name": "cancel live eight-sheet batch by Remove all and no stale publication",
+      "elapsedMs": 1089.1000000238419,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 166.91699999999997,
+        "ScriptDuration": 19.014000000000003,
+        "LayoutDuration": 2.5910000000000006,
+        "RecalcStyleDuration": 12.958
+      },
+      "heapUsed": 11768312
+    },
+    {
+      "name": "hold: input import to current named wall paint",
+      "elapsedMs": 82.60000002384186,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 35.289,
+        "ScriptDuration": 7.331,
+        "LayoutDuration": 1.9689999999999999,
+        "RecalcStyleDuration": 10.736
+      },
+      "heapUsed": 11998084
+    },
+    {
+      "name": "hold: exact full-clip captions ready",
+      "elapsedMs": 42,
+      "longtasks": [],
+      "rafMaxMs": 16.599999999999966,
+      "rafP95Ms": 16.599999999999966,
+      "cpuMs": {
+        "TaskDuration": 2.621000000000012,
+        "ScriptDuration": 0.09500000000000133,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 12023484
+    }
+  ],
+  "outputs": [],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(await page.locator('.grid .held').count())\n\n    at file:///C:/Programming_Files/Shilocity/colorfetti/bench/codex-independent-performance-2026-10-18/io-android/supplement.mjs:94:296"
+  ],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 329\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "transportNotes": [
+    "All native filenames exact unique prefixes. ZIP filename altered by test-only anchor hook before real native download; content and app encoding unmodified.",
+    "1-bit reference uses frozen baseline app algorithm outside browser plus independent Sharp decode/alpha/membership; not an independent style algorithm oracle.",
+    "Real clipboard write is delegated unchanged and UI completion checked; no clipboard read/private contents captured."
+  ],
+  "lastWall": [
+    {
+      "name": "codexio-lifecycle-landscape-1792318558166-hold-0-dungeon-wizard.png 16×16  ·  8 colors ",
+      "caption": "16×16  ·  8 colors ",
+      "width": 16,
+      "height": 16
+    }
+  ],
+  "failureState": {
+    "viewport": {
+      "width": 448,
+      "height": 819,
+      "visualWidth": 448,
+      "visualHeight": 819.111083984375
+    },
+    "focus": null
+  },
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T10:16:01.601Z"
+}

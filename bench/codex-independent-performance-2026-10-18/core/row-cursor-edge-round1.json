@@ -1,0 +1,1912 @@
+{
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+  "paletteColors": 64,
+  "correctness": [
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab"
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb"
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab"
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb"
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab"
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb"
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab"
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb"
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab"
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb"
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab"
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb"
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab"
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb"
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab"
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb"
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab"
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb"
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab"
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb"
+    }
+  ],
+  "trials": [
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 0.09999999403953552,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 0.19999999552965164,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 0.09999999403953552,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 0.10000000149011612,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "tiny",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 0,
+      "pixels": 256
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 10.900000005960464,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 8.5,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 8.099999994039536,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 10.800000004470348,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 10.100000001490116,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 7.5,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 7.5999999940395355,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 10.400000005960464,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 10.299999997019768,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 8.5,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 11.699999995529652,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 12.399999998509884,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 11,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 11.300000004470348,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 11.100000001490116,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 8.299999997019768,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 7.799999997019768,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 10.200000002980232,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 10.100000001490116,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 7.699999995529652,
+      "pixels": 1048576
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 1.4000000059604645,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 1.0999999940395355,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 0.9000000059604645,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 1.0999999940395355,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 1,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 0.9000000059604645,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 0.6999999955296516,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 1,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 1.1000000014901161,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 0.7999999970197678,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 1.1999999955296516,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 0.7000000029802322,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 0.7999999970197678,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 1.1000000014901161,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 0.8999999985098839,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 0.8999999985098839,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 0.7000000029802322,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 1,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 1,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet1024",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 0.7999999970197678,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 41.399999998509884,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 30.600000001490116,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 30.19999999552965,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 40.30000000447035,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 40.100000001490116,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 43,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 31.099999994039536,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 39.70000000298023,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 39.70000000298023,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 29.899999998509884,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 39.5,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 29.599999994039536,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 29.80000000447035,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 39.79999999701977,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 40.70000000298023,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 29.600000001490116,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 29.899999998509884,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 40.399999998509884,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 39.399999998509884,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 30.200000002980232,
+      "pixels": 4194304
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 1,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 0.8999999985098839,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 0.7000000029802322,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 1.1999999955296516,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 1.1000000014901161,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 0.7000000029802322,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 0.8999999985098839,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 1.1000000014901161,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 1.0999999940395355,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 1,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 1.2000000029802322,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 0.7999999970197678,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 0.8000000044703484,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 1.1000000014901161,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 1.0999999940395355,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 0.8000000044703484,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 0.7999999970197678,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 1.1000000014901161,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 1,
+      "pixels": 89559
+    },
+    {
+      "name": "sheet2048",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 0.8999999985098839,
+      "pixels": 89559
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 13.100000001490116,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 12.600000001490116,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 12.600000001490116,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 13.099999994039536,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 13.300000004470348,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 12.5,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 13,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 13.100000001490116,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 13.199999995529652,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 12.600000001490116,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 10.600000001490116,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 10.200000002980232,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 10,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 10.899999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 11.100000001490116,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 9.899999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 10,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 10.399999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 11.700000002980232,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 10.199999995529652,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 13.200000002980232,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 12.5,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 12.399999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 13.100000001490116,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 13.099999994039536,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 12.5,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 12.5,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 13,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 12.900000005960464,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 12.399999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 10.5,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 9.899999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 9.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 10.5,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 10.400000005960464,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 9.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 9.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 10.300000004470348,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 10.399999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "entropy",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 9.899999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 13,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 12.5,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 12.399999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 12.900000005960464,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 12.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 12.399999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 12.5,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 13.200000002980232,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 12.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 12.5,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 10.200000002980232,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 10,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 9.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 10.200000002980232,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 10.5,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 9.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 9.899999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 10.200000002980232,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 10.200000002980232,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": false,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 9.899999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 12.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 12.399999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 12.300000004470348,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 12.899999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 12.699999995529652,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 12.5,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 12.300000004470348,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 13,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 12.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "oklab",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 12.600000001490116,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "baseline",
+      "ms": 10.299999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 0,
+      "kind": "candidate",
+      "ms": 9.800000004470348,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "candidate",
+      "ms": 9.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 1,
+      "kind": "baseline",
+      "ms": 10.299999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "baseline",
+      "ms": 10.300000004470348,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 2,
+      "kind": "candidate",
+      "ms": 9.899999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "candidate",
+      "ms": 9.799999997019768,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 3,
+      "kind": "baseline",
+      "ms": 10.300000004470348,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "baseline",
+      "ms": 10.399999998509884,
+      "pixels": 65536
+    },
+    {
+      "name": "partial",
+      "sampled": true,
+      "metric": "rgb",
+      "pair": 4,
+      "kind": "candidate",
+      "ms": 9.799999997019768,
+      "pixels": 65536
+    }
+  ],
+  "created": "2026-10-18T10:41:20.623Z",
+  "browserVersion": "155.0.4283.62",
+  "errors": [],
+  "scope": "Auxiliary sandboxed Edge direct whole nearest conversion, excludes import/worker/encoding/UI. Fresh PNG decoding precedes timing, both variants use identical captured decoded buffers."
+}

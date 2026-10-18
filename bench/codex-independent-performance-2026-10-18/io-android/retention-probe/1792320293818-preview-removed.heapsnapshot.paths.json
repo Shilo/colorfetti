@@ -1,0 +1,2165 @@
+{
+  "input": "bench/codex-independent-performance-2026-10-18/io-android/retention-probe/1792320293818-preview-removed.heapsnapshot",
+  "nodeCount": 111389,
+  "largeBackingCount": 195,
+  "largeBackingBytes": 22478852,
+  "selected": [
+    {
+      "index": 45859,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 46657,
+          "id": 93341,
+          "type": "object",
+          "name": "Array",
+          "selfSize": 16,
+          "via": "frames"
+        },
+        {
+          "index": 46346,
+          "id": 92719,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 24,
+          "via": "element:47"
+        },
+        {
+          "index": 45840,
+          "id": 91707,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 45841,
+          "id": 91709,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 45843,
+          "id": 91713,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 45859,
+          "id": 91745,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 48289,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 46657,
+          "id": 93341,
+          "type": "object",
+          "name": "Array",
+          "selfSize": 16,
+          "via": "frames"
+        },
+        {
+          "index": 48306,
+          "id": 96639,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 24,
+          "via": "element:20"
+        },
+        {
+          "index": 45878,
+          "id": 91783,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 46994,
+          "id": 94017,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 48288,
+          "id": 96603,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 48289,
+          "id": 96605,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 48310,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 46657,
+          "id": 93341,
+          "type": "object",
+          "name": "Array",
+          "selfSize": 16,
+          "via": "frames"
+        },
+        {
+          "index": 48474,
+          "id": 96975,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 24,
+          "via": "element:21"
+        },
+        {
+          "index": 45938,
+          "id": 91903,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 46995,
+          "id": 94019,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 48309,
+          "id": 96645,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 48310,
+          "id": 96647,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 51088,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 45936,
+          "id": 91899,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 46974,
+          "id": 93977,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 51087,
+          "id": 102201,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 51088,
+          "id": 102203,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 51117,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 46657,
+          "id": 93341,
+          "type": "object",
+          "name": "Array",
+          "selfSize": 16,
+          "via": "frames"
+        },
+        {
+          "index": 48456,
+          "id": 96939,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 24,
+          "via": "element:1"
+        },
+        {
+          "index": 45886,
+          "id": 91799,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 46975,
+          "id": 93979,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 51116,
+          "id": 102259,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 51117,
+          "id": 102261,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 51139,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 46657,
+          "id": 93341,
+          "type": "object",
+          "name": "Array",
+          "selfSize": 16,
+          "via": "frames"
+        },
+        {
+          "index": 48457,
+          "id": 96941,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 24,
+          "via": "element:2"
+        },
+        {
+          "index": 45880,
+          "id": 91787,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 46976,
+          "id": 93981,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 51138,
+          "id": 102303,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 51139,
+          "id": 102305,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 51159,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 46657,
+          "id": 93341,
+          "type": "object",
+          "name": "Array",
+          "selfSize": 16,
+          "via": "frames"
+        },
+        {
+          "index": 48458,
+          "id": 96943,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 24,
+          "via": "element:3"
+        },
+        {
+          "index": 45920,
+          "id": 91867,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 46977,
+          "id": 93983,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 51158,
+          "id": 102343,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 51159,
+          "id": 102345,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 51179,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 46657,
+          "id": 93341,
+          "type": "object",
+          "name": "Array",
+          "selfSize": 16,
+          "via": "frames"
+        },
+        {
+          "index": 48459,
+          "id": 96945,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 24,
+          "via": "element:4"
+        },
+        {
+          "index": 45955,
+          "id": 91937,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 46978,
+          "id": 93985,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 51178,
+          "id": 102383,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 51179,
+          "id": 102385,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 51199,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 46657,
+          "id": 93341,
+          "type": "object",
+          "name": "Array",
+          "selfSize": 16,
+          "via": "frames"
+        },
+        {
+          "index": 48460,
+          "id": 96947,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 24,
+          "via": "element:5"
+        },
+        {
+          "index": 45926,
+          "id": 91879,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 46979,
+          "id": 93987,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 51198,
+          "id": 102423,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 51199,
+          "id": 102425,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 51219,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46606,
+          "id": 93239,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 84,
+          "via": "Ke"
+        },
+        {
+          "index": 46980,
+          "id": 93989,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 51218,
+          "id": 102463,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 51219,
+          "id": 102465,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 51239,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 46657,
+          "id": 93341,
+          "type": "object",
+          "name": "Array",
+          "selfSize": 16,
+          "via": "frames"
+        },
+        {
+          "index": 48462,
+          "id": 96951,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 24,
+          "via": "element:7"
+        },
+        {
+          "index": 45872,
+          "id": 91771,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 46981,
+          "id": 93991,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 51238,
+          "id": 102503,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 51239,
+          "id": 102505,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    },
+    {
+      "index": 51261,
+      "name": "system / JSArrayBufferData",
+      "size": 262144,
+      "path": [
+        {
+          "index": 0,
+          "id": 1,
+          "type": "synthetic",
+          "name": "",
+          "selfSize": 0,
+          "via": null
+        },
+        {
+          "index": 1,
+          "id": 3,
+          "type": "synthetic",
+          "name": "(GC roots)",
+          "selfSize": 0,
+          "via": "element:1"
+        },
+        {
+          "index": 11,
+          "id": 23,
+          "type": "synthetic",
+          "name": "(Global handles)",
+          "selfSize": 0,
+          "via": "element:10"
+        },
+        {
+          "index": 3697,
+          "id": 7395,
+          "type": "object",
+          "name": "InjectedScript",
+          "selfSize": 136,
+          "via": "9 / DevTools console"
+        },
+        {
+          "index": 24613,
+          "id": 49227,
+          "type": "native",
+          "name": "HTMLDocument",
+          "selfSize": 3456,
+          "via": "document"
+        },
+        {
+          "index": 43153,
+          "id": 86333,
+          "type": "native",
+          "name": "<button class=\"btn glass-btn icon-only\" aria-haspopup=\"true\" aria-label=\"More\" data-tooltip=\"\" aria-describedby=\"tooltip-7\" style=\"grid-row: 1; justify-self: end; margin-left: 0px; margin-right: 0px;\">",
+          "selfSize": 176,
+          "via": "element:9"
+        },
+        {
+          "index": 73247,
+          "id": 146499,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 73307,
+          "id": 146619,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 24956,
+          "id": 49927,
+          "type": "object",
+          "name": "system / Context / scope @49925",
+          "selfSize": 828,
+          "via": "context"
+        },
+        {
+          "index": 45814,
+          "id": 91655,
+          "type": "native",
+          "name": "<button type=\"button\" class=\"caption-preview\" aria-haspopup=\"dialog\" aria-label=\"Preview codexio-retention-probe-1792320293818-kenney-motion-256.gif\">",
+          "selfSize": 176,
+          "via": "et"
+        },
+        {
+          "index": 45816,
+          "id": 91659,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 28,
+          "via": "<symbol events>"
+        },
+        {
+          "index": 47630,
+          "id": 95287,
+          "type": "closure",
+          "name": "",
+          "selfSize": 28,
+          "via": "click"
+        },
+        {
+          "index": 47064,
+          "id": 94155,
+          "type": "object",
+          "name": "system / Context / scope @74643",
+          "selfSize": 24,
+          "via": "context"
+        },
+        {
+          "index": 47044,
+          "id": 94117,
+          "type": "object",
+          "name": "system / Context / scope @94115",
+          "selfSize": 36,
+          "via": "previous"
+        },
+        {
+          "index": 45783,
+          "id": 91593,
+          "type": "object",
+          "name": "system / Context / scope @64973",
+          "selfSize": 372,
+          "via": "previous"
+        },
+        {
+          "index": 46598,
+          "id": 93223,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 36,
+          "via": "Ge"
+        },
+        {
+          "index": 46657,
+          "id": 93341,
+          "type": "object",
+          "name": "Array",
+          "selfSize": 16,
+          "via": "frames"
+        },
+        {
+          "index": 48463,
+          "id": 96953,
+          "type": "object",
+          "name": "Object",
+          "selfSize": 24,
+          "via": "element:8"
+        },
+        {
+          "index": 45888,
+          "id": 91803,
+          "type": "native",
+          "name": "ImageData",
+          "selfSize": 88,
+          "via": "original"
+        },
+        {
+          "index": 46982,
+          "id": 93993,
+          "type": "native",
+          "name": "Uint8ClampedArray",
+          "selfSize": 116,
+          "via": "data"
+        },
+        {
+          "index": 51260,
+          "id": 102547,
+          "type": "native",
+          "name": "ArrayBuffer",
+          "selfSize": 116,
+          "via": "buffer"
+        },
+        {
+          "index": 51261,
+          "id": 102549,
+          "type": "native",
+          "name": "system / JSArrayBufferData",
+          "selfSize": 262144,
+          "via": "backing_store"
+        }
+      ]
+    }
+  ],
+  "qualification": "Breadth-first paths ignore weak edges but are diagnostic, not a complete V8 ephemeron or native DOM ownership proof. Paths and controlled behavior must agree."
+}

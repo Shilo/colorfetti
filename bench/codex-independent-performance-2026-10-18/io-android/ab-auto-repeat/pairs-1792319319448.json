@@ -1,0 +1,351 @@
+{
+  "criteria": {
+    "elapsedPairedMedianAbsoluteMs": 16,
+    "elapsedPairedMedianRelativePercent": 10,
+    "worsePairsAtLeast": 4,
+    "cpuCorroborationMs": 10,
+    "cpuCorroborationPercent": 10
+  },
+  "stamp": 1792319319448,
+  "order": [
+    "off",
+    "on",
+    "on",
+    "off",
+    "off",
+    "on",
+    "on",
+    "off",
+    "off",
+    "on"
+  ],
+  "urls": {
+    "off": "http://localhost:5397/",
+    "on": "http://localhost:5391/"
+  },
+  "started": "2026-10-18T10:28:39.448Z",
+  "trials": [
+    {
+      "variant": "off",
+      "pair": 0,
+      "slot": 0,
+      "tempC": 35.8,
+      "rows": [
+        {
+          "name": "Auto-only repeat source-cold",
+          "cpuMs": 129.861,
+          "startedAt": 241.70000004768372,
+          "elapsedMs": 237.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 192,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "pair": 0,
+      "slot": 1,
+      "tempC": 35.8,
+      "rows": [
+        {
+          "name": "Auto-only repeat source-cold",
+          "cpuMs": 137.579,
+          "startedAt": 217.39999997615814,
+          "elapsedMs": 249.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 206.10000002384186,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "pair": 1,
+      "slot": 2,
+      "tempC": 35.8,
+      "rows": [
+        {
+          "name": "Auto-only repeat source-cold",
+          "cpuMs": 131.075,
+          "startedAt": 253.69999992847443,
+          "elapsedMs": 231,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.799999999999955,
+          "exactCaptionMs": 189.90000009536743,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "pair": 1,
+      "slot": 3,
+      "tempC": 35.8,
+      "rows": [
+        {
+          "name": "Auto-only repeat source-cold",
+          "cpuMs": 122.436,
+          "startedAt": 215.69999992847443,
+          "elapsedMs": 228.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.69999999999999,
+          "exactCaptionMs": 188.39999997615814,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "pair": 2,
+      "slot": 4,
+      "tempC": 35.8,
+      "rows": [
+        {
+          "name": "Auto-only repeat source-cold",
+          "cpuMs": 143.48299999999998,
+          "startedAt": 229.79999995231628,
+          "elapsedMs": 285,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000045,
+          "exactCaptionMs": 237.89999997615814,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "pair": 2,
+      "slot": 5,
+      "tempC": 35.8,
+      "rows": [
+        {
+          "name": "Auto-only repeat source-cold",
+          "cpuMs": 121.30099999999999,
+          "startedAt": 209.10000002384186,
+          "elapsedMs": 197,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.700000000000017,
+          "exactCaptionMs": 156.70000004768372,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "pair": 3,
+      "slot": 6,
+      "tempC": 35.8,
+      "rows": [
+        {
+          "name": "Auto-only repeat source-cold",
+          "cpuMs": 145.127,
+          "startedAt": 287.2999999523163,
+          "elapsedMs": 249.30000007152557,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.69999999999999,
+          "exactCaptionMs": 204.60000002384186,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "pair": 3,
+      "slot": 7,
+      "tempC": 35.8,
+      "rows": [
+        {
+          "name": "Auto-only repeat source-cold",
+          "cpuMs": 92.61500000000001,
+          "startedAt": 202.80000007152557,
+          "elapsedMs": 195.69999992847443,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.80000000000001,
+          "exactCaptionMs": 151.39999997615814,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "pair": 4,
+      "slot": 8,
+      "tempC": 35.8,
+      "rows": [
+        {
+          "name": "Auto-only repeat source-cold",
+          "cpuMs": 117.236,
+          "startedAt": 237.19999992847443,
+          "elapsedMs": 222,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.69999999999999,
+          "exactCaptionMs": 177.90000009536743,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "pair": 4,
+      "slot": 9,
+      "tempC": 35.8,
+      "rows": [
+        {
+          "name": "Auto-only repeat source-cold",
+          "cpuMs": 152.827,
+          "startedAt": 247.39999997615814,
+          "elapsedMs": 263.3000000715256,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "rafMaxMs": 16.69999999999999,
+          "exactCaptionMs": 211.39999997615814,
+          "captions": [
+            "16×16  ·  9 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  8 colors",
+            "16×16  ·  7 colors",
+            "16×16  ·  9 colors",
+            "24×24  ·  7 colors",
+            "24×24  ·  7 colors",
+            "18×18  ·  3 colors",
+            "32×32  ·  33 colors"
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, level: 82, temperature: 358, Capacity level: 2",
+      "rotation": "free"
+    },
+    {
+      "at": "end",
+      "battery": "status: 2, level: 82, temperature: 358, Capacity level: 2",
+      "rotation": "free"
+    }
+  ],
+  "fixtures": {
+    "target": "kenney-sheet-2048",
+    "tiny": [
+      "dungeon-wizard",
+      "dungeon-archer",
+      "dungeon-knight",
+      "dungeon-potion"
+    ],
+    "auto": "first 8 practical sprites + real-magic GIF"
+  },
+  "settings": "Resurrect 64, Oklab nearest, dither none, Cleanup off, alpha cut 128",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "finished": "2026-10-18T10:28:52.204Z"
+}

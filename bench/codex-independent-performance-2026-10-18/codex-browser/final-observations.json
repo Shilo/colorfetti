@@ -1,0 +1,29 @@
+{
+  "surface": "actual Codex Browser",
+  "url": "http://127.0.0.1:5406/?audit=1",
+  "sourceRuntimeCommit": "ae97d0e",
+  "receiptEvents": 22,
+  "lastEvent": {
+    "label": "Reset",
+    "type": "click"
+  },
+  "logs": [],
+  "dom": "- figure \"Preview dungeon-wizard.png\":\n  - button \"Preview dungeon-wizard.png\"\n  - button \"Save dungeon-wizard.png\":\n  - button \"Copy dungeon-wizard.png\":\n  - button \"Reuse colors from dungeon-wizard.png\":\n  - button \"Preview dungeon-wizard.png\":\n  - button \"Remove dungeon-wizard.png\":\n  - button \"Preview dungeon-wizard.png\":\n    - generic: dungeon-wizard.png\n    - generic: 16×16\n    - generic: ·\n    - generic: 9 colors\n- group \"Colors and palette\":\n  - 'button \"Selected palette: Auto, 9 colors\"'\n  - button \"Palette\":\n- group \"Conversion and style\":\n  - button \"Auto conversion\" [pressed]:\n    - generic: Auto\n  - button \"Palette settings\":\n  - generic: Showing images converted with Auto.\n- navigation \"File and app actions\":\n  - group \"Add and save images\":\n    - button \"Save image\":\n      - generic: Save\n    - button \"Add images\":\n    - button \"Remove all images\":\n  - button \"More\" [active]:",
+  "observedChecks": {
+    "nativeDownload": "C:/Users/shilo/Downloads/dungeon-wizard-colorfetti.png",
+    "paletteReviewColors": 256,
+    "visibleSwatches": 64,
+    "pageTwoFirst": "Select color 65 #404488",
+    "keyboardPreviewCloseActive": "Preview dungeon-wizard.png",
+    "rightArrowPalette": "DawnBringer 16",
+    "leftArrowPalette": "PICO-8",
+    "resetPalette": "Auto, 9 colors",
+    "resetPreservedSource": "dungeon-wizard.png"
+  },
+  "qualifications": [
+    "One initial Save click while Palette panel open only dismissed panel; no download, timed wait retained as harness sequencing issue. Explicit Save with panel closed succeeds.",
+    "CUA locator Escape did not close native dialog on isolated5409; keyboard Enter close works. Native Android Escape is independently verified.",
+    "AX describes pressed buttons as checkbox; semantic DOM button locators are authoritative. No-match checkbox locators are harness errors.",
+    "Final complete DOM telemetry saved directly before close; POST histories may be older or interrupted."
+  ]
+}

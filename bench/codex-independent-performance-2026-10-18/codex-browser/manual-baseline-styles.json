@@ -1,0 +1,5884 @@
+{
+  "env": {
+    "entryTypes": [
+      "element",
+      "event",
+      "first-input",
+      "interaction-contentful-paint",
+      "largest-contentful-paint",
+      "layout-shift",
+      "long-animation-frame",
+      "longtask",
+      "mark",
+      "measure",
+      "navigation",
+      "paint",
+      "resource",
+      "soft-navigation",
+      "visibility-state"
+    ],
+    "runId": "codex-1792318224988-akgc0t",
+    "url": "http://127.0.0.1:5392/?audit=1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": {
+      "dpr": 1,
+      "height": 720,
+      "width": 1280
+    },
+    "visibility": "visible"
+  },
+  "navigation": [
+    {
+      "domContentLoaded": 46.89999999850989,
+      "load": 48,
+      "transferSize": 4888
+    }
+  ],
+  "records": [
+    {
+      "appRafCalls": 0,
+      "end": 127.10000000149012,
+      "event": {
+        "label": "Add images",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 0,
+      "heapUsed": 19370563,
+      "inputs": [],
+      "liveUrls": 0,
+      "liveWorkers": 0,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 0,
+      "rafP95": 0,
+      "start": 127,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "60×60  ·  5 colors ",
+          "height": 60,
+          "width": 60
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 0,
+      "end": 379,
+      "event": {
+        "label": "INPUT",
+        "type": "click",
+        "value": ""
+      },
+      "eventTiming": [],
+      "frameSamples": 15,
+      "heapUsed": 15878511,
+      "inputs": [],
+      "liveUrls": 0,
+      "liveWorkers": 0,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.900000000000006,
+      "rafP95": 16.900000000000006,
+      "start": 127.30000000447036,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "60×60  ·  5 colors ",
+          "height": 60,
+          "width": 60
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 8,
+      "end": 2886,
+      "event": {
+        "label": "INPUT",
+        "type": "change",
+        "value": "C:\\fakepath\\kenney-sheet-1024.png"
+      },
+      "eventTiming": [],
+      "frameSamples": 150,
+      "heapUsed": 29111090,
+      "inputs": [],
+      "liveUrls": 2,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 439.5,
+          "height": 581,
+          "width": 581
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.899999999999977,
+      "rafP95": 16.800000000000182,
+      "start": 379.70000000298023,
+      "transferBytes": 4918351,
+      "urlsCreated": 2,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 2,
+      "workerMessages": 5,
+      "workerTerminates": 1
+    },
+    {
+      "appRafCalls": 0,
+      "end": 6120.80000000447,
+      "event": {
+        "label": "Save kenney-sheet-1024.png",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 2,
+      "heapUsed": 31739880,
+      "inputs": [],
+      "liveUrls": 3,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.634000000000015,
+      "rafP95": 16.634000000000015,
+      "start": 6092.5,
+      "transferBytes": 724047,
+      "urlsCreated": 1,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 1,
+      "workerMessages": 2,
+      "workerTerminates": 1
+    },
+    {
+      "appRafCalls": 2,
+      "end": 6424.39999999851,
+      "event": {
+        "label": "A",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 13.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.600000001490116,
+          "interactionId": 0,
+          "processing": 0.19999999552965164,
+          "start": 6390.60000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.799999997019768,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.799999997019768,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 6390.60000000149,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.899999998509884,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.899999998509884,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.899999998509884,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.899999998509884,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.899999998509884,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.899999998509884,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.899999998509884,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 13.899999998509884,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6390.60000000149,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 18,
+      "heapUsed": 31910756,
+      "inputs": [],
+      "liveUrls": 3,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.800000000000182,
+      "rafP95": 16.800000000000182,
+      "start": 6121.10000000149,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 4,
+      "end": 8927.60000000149,
+      "event": {
+        "label": "Preview kenney-sheet-1024.png",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0.09999999403953552,
+          "start": 6437.20000000298,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6437.20000000298,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.29999999701976776,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "pointerout"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.29999999701976776,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 6458.30000000447,
+          "type": "pointerover"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.3999999985098839,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.3999999985098839,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.3999999985098839,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.3999999985098839,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.3999999985098839,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "mouseout"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.5,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "mouseover"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.5,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.5,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.5,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.5,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 6458.30000000447,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 150,
+      "heapUsed": 35960718,
+      "inputs": [],
+      "liveUrls": 3,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 6458.10000000149,
+          "height": 720,
+          "width": 720
+        }
+      ],
+      "pressed": [
+        "Show original image",
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.900000000001455,
+      "rafP95": 16.800000000000182,
+      "start": 6425.30000000447,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 2,
+      "end": 15191.30000000447,
+      "event": {
+        "label": "Zoom in",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 18,
+      "heapUsed": 41199526,
+      "inputs": [],
+      "liveUrls": 3,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 15098.5,
+          "height": 900,
+          "width": 900
+        }
+      ],
+      "pressed": [
+        "Show original image",
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.80000000000109,
+      "rafP95": 16.80000000000109,
+      "start": 14894,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 2,
+      "end": 15475.60000000149,
+      "event": {
+        "label": "Zoom in",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 17,
+      "heapUsed": 47728479,
+      "inputs": [],
+      "liveUrls": 3,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 15405.60000000149,
+          "height": 1024,
+          "width": 1024
+        }
+      ],
+      "pressed": [
+        "Show original image",
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.900000000001455,
+      "rafP95": 16.900000000001455,
+      "start": 15192.10000000149,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 2,
+      "end": 15759.60000000149,
+      "event": {
+        "label": "Zoom out",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 17,
+      "heapUsed": 33217322,
+      "inputs": [],
+      "liveUrls": 3,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 15685.10000000149,
+          "height": 900,
+          "width": 900
+        }
+      ],
+      "pressed": [
+        "Show original image",
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.80000000000109,
+      "rafP95": 16.80000000000109,
+      "start": 15476.5,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 2,
+      "end": 16042.80000000447,
+      "event": {
+        "label": "Fit image",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 17,
+      "heapUsed": 26607640,
+      "inputs": [],
+      "liveUrls": 3,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 15989.60000000149,
+          "height": 720,
+          "width": 720
+        }
+      ],
+      "pressed": [
+        "Show original image",
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.80000000000109,
+      "rafP95": 16.80000000000109,
+      "start": 15760.39999999851,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 4,
+      "end": 16358.89999999851,
+      "event": {
+        "label": "Show original image",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 19,
+      "heapUsed": 28996736,
+      "inputs": [],
+      "liveUrls": 2,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 16045.39999999851,
+          "height": 720,
+          "width": 720
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.700000000000728,
+      "rafP95": 16.700000000000728,
+      "start": 16043.20000000298,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 1,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 4,
+      "end": 16645.5,
+      "event": {
+        "label": "Show converted image",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 17,
+      "heapUsed": 29206607,
+      "inputs": [],
+      "liveUrls": 2,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 16360.10000000149,
+          "height": 720,
+          "width": 720
+        }
+      ],
+      "pressed": [
+        "Show original image",
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.799999999999272,
+      "rafP95": 16.799999999999272,
+      "start": 16359.5,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 4,
+      "end": 16910.60000000149,
+      "event": {
+        "label": "Close preview",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 16653.39999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16653.39999999851,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 16,
+      "heapUsed": 28668585,
+      "inputs": [],
+      "liveUrls": 2,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.799999999999272,
+      "rafP95": 16.799999999999272,
+      "start": 16646.10000000149,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "1024×1024  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-1024.png 1024×1024  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 8,
+      "end": 17209,
+      "event": {
+        "label": "Remove kenney-sheet-1024.png",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16920,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16920,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16920,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 16920,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16920,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16920,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16920,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16920,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16953.5,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 16953.5,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16953.5,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16953.5,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16953.5,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.30000000447034836,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 16953.5,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 18,
+      "heapUsed": 27960341,
+      "inputs": [],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 16921.70000000298,
+          "height": 60,
+          "width": 60
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.799999999999272,
+      "rafP95": 16.799999999999272,
+      "start": 16911,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 1,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "60×60  ·  5 colors ",
+          "height": 60,
+          "width": 60
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 0,
+      "end": 17209.39999999851,
+      "event": {
+        "label": "Add images",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 0,
+      "heapUsed": 27960341,
+      "inputs": [],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 0,
+      "rafP95": 0,
+      "start": 17209.39999999851,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "60×60  ·  5 colors ",
+          "height": 60,
+          "width": 60
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 0,
+      "end": 17462.70000000298,
+      "event": {
+        "label": "INPUT",
+        "type": "click",
+        "value": ""
+      },
+      "eventTiming": [],
+      "frameSamples": 15,
+      "heapUsed": 28080055,
+      "inputs": [],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.799999999999272,
+      "rafP95": 16.799999999999272,
+      "start": 17209.80000000447,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "60×60  ·  5 colors ",
+          "height": 60,
+          "width": 60
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 11,
+      "end": 17660.5,
+      "event": {
+        "label": "INPUT",
+        "type": "change",
+        "value": "C:\\fakepath\\kenney-sheet-2048.png"
+      },
+      "eventTiming": [],
+      "frameSamples": 12,
+      "heapUsed": 56161972,
+      "inputs": [],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 17624.10000000149,
+          "height": 581,
+          "width": 581
+        }
+      ],
+      "pressed": [
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.700000000000728,
+      "rafP95": 16.700000000000728,
+      "start": 17463.5,
+      "transferBytes": 16777216,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  14 colors ",
+          "height": 581,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  14 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 3,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 17962,
+      "event": {
+        "label": "Palette",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 18,
+      "heapUsed": 57215187,
+      "inputs": [],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 17675,
+          "height": 416,
+          "width": 416
+        }
+      ],
+      "pressed": [
+        "Palette",
+        "PICO-8",
+        "PICO-8 conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 17660.89999999851,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  14 colors ",
+          "height": 416,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  14 colors ",
+          "width": 416
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 3,
+      "end": 20465,
+      "event": {
+        "label": "1-bit",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 150,
+      "heapUsed": 57774564,
+      "inputs": [],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 17979.20000000298,
+          "height": 416,
+          "width": 416
+        }
+      ],
+      "pressed": [
+        "1-bit",
+        "Both colors",
+        "Glow",
+        "Cutout conversion"
+      ],
+      "rafMax": 16.899999999997817,
+      "rafP95": 16.799999999999272,
+      "start": 17963.20000000298,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 416,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 416
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 22953.10000000149,
+      "event": {
+        "label": "Palette",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 17,
+      "heapUsed": 52571828,
+      "inputs": [],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 22679,
+          "height": 581,
+          "width": 581
+        }
+      ],
+      "pressed": [
+        "Cutout conversion"
+      ],
+      "rafMax": 16.700000000000728,
+      "rafP95": 16.700000000000728,
+      "start": 22663,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 581,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 581
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 5,
+      "end": 25467.30000000447,
+      "event": {
+        "label": "Style",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 151,
+      "heapUsed": 53935393,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "103"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 22981.39999999851,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Cutout conversion"
+      ],
+      "rafMax": 17,
+      "rafP95": 16.799999999999272,
+      "start": 22954,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 5,
+      "end": 28763.70000000298,
+      "event": {
+        "label": "Cutout",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 150,
+      "heapUsed": 55850988,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "103"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 26281.80000000447,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Cutout",
+        "Auto",
+        "Cutout conversion"
+      ],
+      "rafMax": 17,
+      "rafP95": 16.799999999999272,
+      "start": 26263.70000000298,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 34753.20000000298,
+      "event": {
+        "label": "Solid",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 34436.5,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 34436.5,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 19,
+      "heapUsed": 53317115,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "103"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 34432.80000000447,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 34439.30000000447,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Solid conversion"
+      ],
+      "rafMax": 16.799999999995634,
+      "rafP95": 16.799999999995634,
+      "start": 34427.80000000447,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 35016.20000000298,
+      "event": {
+        "label": "Solid",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 16,
+      "heapUsed": 54157267,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "103"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 34767.5,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Solid",
+        "Auto",
+        "Solid conversion"
+      ],
+      "rafMax": 16.700000000004366,
+      "rafP95": 16.700000000004366,
+      "start": 34753.80000000447,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 35327.89999999851,
+      "event": {
+        "label": "Lines",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35024.10000000149,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35036.5,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35036.5,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35036.5,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35036.5,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35036.5,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35036.5,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35036.5,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35036.5,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 19,
+      "heapUsed": 56645473,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "104"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 35020.60000000149,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 35028.70000000298,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Lines conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 35016.60000000149,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 35645.20000000298,
+      "event": {
+        "label": "Lines",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 19,
+      "heapUsed": 56672327,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "104"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 35340.10000000149,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Lines",
+        "Auto",
+        "Lines conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 35328.39999999851,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 35926.20000000298,
+      "event": {
+        "label": "Stencil",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 24,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 35710.5,
+          "type": "pointerout"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "pointerover"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "mouseout"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "mouseover"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 35710.5,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 15,
+      "heapUsed": 86762553,
+      "inputs": [
+        {
+          "label": "Cuts",
+          "value": "40"
+        },
+        {
+          "label": "Cuts value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 35708,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 35716.10000000149,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Stencil conversion"
+      ],
+      "rafMax": 50,
+      "rafP95": 50,
+      "start": 35646.30000000447,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 36258.60000000149,
+      "event": {
+        "label": "Stencil",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 20,
+      "heapUsed": 65216547,
+      "inputs": [
+        {
+          "label": "Cuts",
+          "value": "40"
+        },
+        {
+          "label": "Cuts value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 35939.39999999851,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Stencil",
+        "Auto",
+        "Stencil conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 35926.70000000298,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 36557.70000000298,
+      "event": {
+        "label": "Icon",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "pointerout"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "pointerover"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "mouseout"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "mouseover"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36469.80000000447,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 36486.60000000149,
+          "type": "pointerout"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36486.60000000149,
+          "type": "pointerover"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36486.60000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36486.60000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36486.60000000149,
+          "type": "mouseout"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36486.60000000149,
+          "type": "mouseover"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36486.60000000149,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36486.60000000149,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 6,
+      "heapUsed": 142584896,
+      "inputs": [
+        {
+          "label": "Detail",
+          "value": "50"
+        },
+        {
+          "label": "Detail value",
+          "value": "50"
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 36467.39999999851,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 36472,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Icon conversion"
+      ],
+      "rafMax": 216.8000000000029,
+      "rafP95": 216.8000000000029,
+      "start": 36259.39999999851,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 36844.20000000298,
+      "event": {
+        "label": "Icon",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 17,
+      "heapUsed": 131274524,
+      "inputs": [
+        {
+          "label": "Detail",
+          "value": "50"
+        },
+        {
+          "label": "Detail value",
+          "value": "50"
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 36571.80000000447,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Icon",
+        "Icon conversion"
+      ],
+      "rafMax": 16.799999999995634,
+      "rafP95": 16.799999999995634,
+      "start": 36559.20000000298,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 8,
+      "end": 37188.89999999851,
+      "event": {
+        "label": "Checker",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0.09999999403953552,
+          "start": 36853.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36853.20000000298,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36869.80000000447,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36869.80000000447,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36869.80000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36869.80000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36869.80000000447,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36869.80000000447,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36869.80000000447,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.29999999701976776,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 36869.80000000447,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 21,
+      "heapUsed": 133524950,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 36847.5,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 36855.39999999851,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Checker conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 36844.70000000298,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 37494.10000000149,
+      "event": {
+        "label": "Checker",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 18,
+      "heapUsed": 135034034,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 37204.89999999851,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Checker",
+        "Auto",
+        "Checker conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 37190.10000000149,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 37810.20000000298,
+      "event": {
+        "label": "Bayer",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37503.20000000298,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37519.89999999851,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37519.89999999851,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37519.89999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37519.89999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37519.89999999851,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37519.89999999851,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37519.89999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 37519.89999999851,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 19,
+      "heapUsed": 136807283,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 37498,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 37505.80000000447,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Bayer conversion"
+      ],
+      "rafMax": 16.799999999995634,
+      "rafP95": 16.799999999995634,
+      "start": 37495,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 38113.89999999851,
+      "event": {
+        "label": "Bayer",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 18,
+      "heapUsed": 138056086,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 37821.89999999851,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Bayer",
+        "Auto",
+        "Bayer conversion"
+      ],
+      "rafMax": 17.19999999999709,
+      "rafP95": 17.19999999999709,
+      "start": 37811,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 38417.30000000447,
+      "event": {
+        "label": "Hatch",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 38119.89999999851,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38119.89999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 38136.39999999851,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38136.39999999851,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38136.39999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38136.39999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38136.39999999851,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38136.39999999851,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38136.39999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38136.39999999851,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 18,
+      "heapUsed": 137973393,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 38116.80000000447,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 38122.80000000447,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Hatch conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 38114.70000000298,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 38728.5,
+      "event": {
+        "label": "Hatch",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 19,
+      "heapUsed": 74612348,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 38426.80000000447,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Hatch",
+        "Auto",
+        "Hatch conversion"
+      ],
+      "rafMax": 16.799999999995634,
+      "rafP95": 16.799999999995634,
+      "start": 38418.30000000447,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 39043.70000000298,
+      "event": {
+        "label": "Atkinson",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 38736.60000000149,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38736.60000000149,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38753.10000000149,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38753.10000000149,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38753.10000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38753.10000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38753.10000000149,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38753.10000000149,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38753.10000000149,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.20000000298023224,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 38753.10000000149,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 19,
+      "heapUsed": 77254777,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 38731.89999999851,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 38740.20000000298,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Atkinson conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 38729.10000000149,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 39346.70000000298,
+      "event": {
+        "label": "Atkinson",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 18,
+      "heapUsed": 78781795,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 39055.70000000298,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Atkinson",
+        "Auto",
+        "Atkinson conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 39045.10000000149,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 39661.80000000447,
+      "event": {
+        "label": "Noise",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 19,
+      "heapUsed": 79647442,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 39354.30000000447,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 39365.70000000298,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Noise conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 39348.10000000149,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 39941.80000000447,
+      "event": {
+        "label": "Noise",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 17,
+      "heapUsed": 79646742,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 39672.70000000298,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Noise",
+        "Auto",
+        "Noise conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 39662.80000000447,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 6,
+      "end": 42442.70000000298,
+      "event": {
+        "label": "Shape",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 39953.20000000298,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 150,
+      "heapUsed": 75761575,
+      "inputs": [],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 39943.60000000149,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 39956.10000000149,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Shape conversion"
+      ],
+      "rafMax": 16.900000000001455,
+      "rafP95": 16.80000000000291,
+      "start": 39942.30000000447,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  1 color ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  1 color ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 50263.80000000447,
+      "event": {
+        "label": "Shape",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 20,
+      "heapUsed": 74575638,
+      "inputs": [],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 49953.30000000447,
+          "height": 388,
+          "width": 388
+        }
+      ],
+      "pressed": [
+        "Shape",
+        "Shape conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 49933.39999999851,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  1 color ",
+          "height": 388,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  1 color ",
+          "width": 388
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 50612.39999999851,
+      "event": {
+        "label": "Solid",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 50272.70000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50272.70000000298,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.300000004470348,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 50538.89999999851,
+          "type": "pointerout"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.400000005960464,
+          "interactionId": 0,
+          "processing": 0.09999999403953552,
+          "start": 50538.89999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.5,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "pointerover"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.600000001490116,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 50538.89999999851,
+          "type": "mouseout"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.700000002980232,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.700000002980232,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "mouseover"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.700000002980232,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.700000002980232,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.700000002980232,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.700000002980232,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.800000004470348,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.800000004470348,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 15.800000004470348,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50538.89999999851,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 21,
+      "heapUsed": 76226779,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "103"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 50267.39999999851,
+          "height": 388,
+          "width": 388
+        },
+        {
+          "at": 50276.80000000447,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Solid conversion"
+      ],
+      "rafMax": 16.799999999995634,
+      "rafP95": 16.799999999995634,
+      "start": 50264.70000000298,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 5,
+      "end": 53120.89999999851,
+      "event": {
+        "label": "More settings",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 32,
+          "inputDelay": 0.09999999403953552,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 50619.80000000447,
+          "type": "pointerout"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "pointerover"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "mouseout"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "mouseover"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "mouseenter"
+        },
+        {
+          "duration": 32,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 50619.80000000447,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 151,
+      "heapUsed": 77188834,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "103"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 50622.30000000447,
+          "height": 426,
+          "width": 426
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Luma",
+        "Solid conversion"
+      ],
+      "rafMax": 16.900000000001455,
+      "rafP95": 16.80000000000291,
+      "start": 50613,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 426,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 426
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 6,
+      "end": 55028.89999999851,
+      "event": {
+        "label": "R",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 15.200000002980232,
+          "interactionId": 0,
+          "processing": 0.09999999403953552,
+          "start": 55005.10000000149,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 15.299999997019768,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55005.10000000149,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 15.299999997019768,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55005.10000000149,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 15.299999997019768,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55005.10000000149,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 15.299999997019768,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55005.10000000149,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 15.299999997019768,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55005.10000000149,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 15.299999997019768,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55005.10000000149,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 15.299999997019768,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55005.10000000149,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 19,
+      "heapUsed": 90044296,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "140"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 54770.89999999851,
+          "height": 426,
+          "width": 426
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "R",
+        "Solid conversion"
+      ],
+      "rafMax": 16.80000000000291,
+      "rafP95": 16.80000000000291,
+      "start": 54709.10000000149,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 426,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 426
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 6,
+      "end": 55346.80000000447,
+      "event": {
+        "label": "G",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 16,
+          "inputDelay": 12.300000004470348,
+          "interactionId": 0,
+          "processing": 0.19999999552965164,
+          "start": 55308.39999999851,
+          "type": "pointerout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 12.5,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55308.39999999851,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 12.5,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55308.39999999851,
+          "type": "pointerover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 12.5,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55308.39999999851,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 12.5,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55308.39999999851,
+          "type": "mouseout"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 12.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55308.39999999851,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 12.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55308.39999999851,
+          "type": "mouseover"
+        },
+        {
+          "duration": 16,
+          "inputDelay": 12.600000001490116,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 55308.39999999851,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 19,
+      "heapUsed": 99299085,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "122"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 55069.89999999851,
+          "height": 426,
+          "width": 426
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "G",
+        "Solid conversion"
+      ],
+      "rafMax": 16.900000000001455,
+      "rafP95": 16.900000000001455,
+      "start": 55029.39999999851,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 426,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 426
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 4,
+      "end": 57849.10000000149,
+      "event": {
+        "label": "Value",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 150,
+      "heapUsed": 112918211,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "144"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 55391,
+          "height": 426,
+          "width": 426
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "Value",
+        "Solid conversion"
+      ],
+      "rafMax": 16.900000000001455,
+      "rafP95": 16.80000000000291,
+      "start": 55347.80000000447,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 426,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 426
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 5,
+      "end": 2667921.5,
+      "event": {
+        "label": "Solid",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 150,
+      "heapUsed": 86470401,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "144"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 2665446.3999999985,
+          "height": 325,
+          "width": 325
+        }
+      ],
+      "pressed": [
+        "Solid",
+        "Auto",
+        "Value",
+        "Solid conversion"
+      ],
+      "rafMax": 33.3000000002794,
+      "rafP95": 16.800000000279397,
+      "start": 2665417.5,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  2 colors ",
+          "height": 325,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  2 colors ",
+          "width": 325
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 9,
+      "end": 2681403.8000000045,
+      "event": {
+        "label": "Noise",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 24,
+          "inputDelay": 0.09999999403953552,
+          "interactionId": 0,
+          "processing": 0.10000000149011612,
+          "start": 2678910.8000000045,
+          "type": "pointerout"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "pointerover"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "mouseout"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "mouseover"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2678910.8000000045,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 148,
+      "heapUsed": 98248206,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        },
+        {
+          "label": "Shading",
+          "value": "100"
+        },
+        {
+          "label": "Shading value",
+          "value": "100"
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 2678989.3999999985,
+          "height": 374,
+          "width": 374
+        }
+      ],
+      "pressed": [
+        "Auto",
+        "1×",
+        "Luma",
+        "Noise conversion"
+      ],
+      "rafMax": 33.3000000002794,
+      "rafP95": 16.90000000037253,
+      "start": 2678899,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 374,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 374
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 7,
+      "end": 2682537.1000000015,
+      "event": {
+        "label": "Noise",
+        "type": "click"
+      },
+      "eventTiming": [],
+      "frameSamples": 17,
+      "heapUsed": 85058831,
+      "inputs": [
+        {
+          "label": "Threshold",
+          "value": "116"
+        },
+        {
+          "label": "Threshold value",
+          "value": ""
+        },
+        {
+          "label": "Shading",
+          "value": "100"
+        },
+        {
+          "label": "Shading value",
+          "value": "100"
+        }
+      ],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 2682266.5,
+          "height": 273,
+          "width": 273
+        }
+      ],
+      "pressed": [
+        "Noise",
+        "Auto",
+        "1×",
+        "Luma",
+        "Noise conversion"
+      ],
+      "rafMax": 16.700000000186265,
+      "rafP95": 16.700000000186265,
+      "start": 2682250.3999999985,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ",
+          "height": 273,
+          "name": "kenney-sheet-2048.png 2048×2048  ",
+          "width": 273
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    },
+    {
+      "appRafCalls": 6,
+      "end": 2685041,
+      "event": {
+        "label": "Shape",
+        "type": "click"
+      },
+      "eventTiming": [
+        {
+          "duration": 24,
+          "inputDelay": 0.10000000149011612,
+          "interactionId": 0,
+          "processing": 0.09999999403953552,
+          "start": 2682549.200000003,
+          "type": "pointerout"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "pointerleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "pointerover"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "pointerenter"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "mouseout"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "mouseleave"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "mouseover"
+        },
+        {
+          "duration": 24,
+          "inputDelay": 0.19999999552965164,
+          "interactionId": 0,
+          "processing": 0,
+          "start": 2682549.200000003,
+          "type": "mouseenter"
+        }
+      ],
+      "frameSamples": 148,
+      "heapUsed": 87111377,
+      "inputs": [],
+      "liveUrls": 1,
+      "liveWorkers": 1,
+      "longAnimationFrames": [],
+      "longtasks": [],
+      "paints": [
+        {
+          "at": 2682543.5,
+          "height": 273,
+          "width": 273
+        },
+        {
+          "at": 2682553.700000003,
+          "height": 489,
+          "width": 489
+        }
+      ],
+      "pressed": [
+        "Shape conversion"
+      ],
+      "rafMax": 33.10000000009313,
+      "rafP95": 16.899999999906868,
+      "start": 2682539,
+      "transferBytes": 0,
+      "urlsCreated": 0,
+      "urlsRevoked": 0,
+      "visibility": "visible",
+      "wall": [
+        {
+          "busy": false,
+          "caption": "2048×2048  ·  1 color ",
+          "height": 489,
+          "name": "kenney-sheet-2048.png 2048×2048  ·  1 color ",
+          "width": 489
+        }
+      ],
+      "workerCreates": 0,
+      "workerMessages": 0,
+      "workerTerminates": 0
+    }
+  ],
+  "resources": [
+    {
+      "duration": 10.900000005960464,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:5392/audit-probe.js",
+      "transferSize": 6793
+    },
+    {
+      "duration": 12.300000004470348,
+      "initiatorType": "link",
+      "name": "http://127.0.0.1:5392/assets/index-VE9_tUgX.css",
+      "transferSize": 168302
+    },
+    {
+      "duration": 0,
+      "initiatorType": "link",
+      "name": "https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap",
+      "transferSize": 0
+    },
+    {
+      "duration": 12.5,
+      "initiatorType": "other",
+      "name": "http://127.0.0.1:5392/assets/quantize-DsvDuXDJ.js",
+      "transferSize": 13541
+    },
+    {
+      "duration": 12,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:5392/assets/index-Can2ISBp.js",
+      "transferSize": 274535
+    },
+    {
+      "duration": 0,
+      "initiatorType": "css",
+      "name": "https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Gayo.woff2",
+      "transferSize": 0
+    },
+    {
+      "duration": 2.200000002980232,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 1.3000000044703484,
+      "initiatorType": "other",
+      "name": "http://127.0.0.1:5392/favicon-dark.svg?v=2",
+      "transferSize": 901
+    },
+    {
+      "duration": 2.1999999955296516,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:5392/assets/palette-usage-B3tsKAFt.js",
+      "transferSize": 1270
+    },
+    {
+      "duration": 1.9000000059604645,
+      "initiatorType": "other",
+      "name": "http://127.0.0.1:5392/favicon-dark.ico?v=2",
+      "transferSize": 15386
+    },
+    {
+      "duration": 2.0999999940395355,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 8.100000001490116,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 8.399999998509884,
+      "initiatorType": "script",
+      "name": "http://127.0.0.1:5392/assets/image-import-client-CL9BZHZZ.js",
+      "transferSize": 5895
+    },
+    {
+      "duration": -2.299999997019768,
+      "initiatorType": "other",
+      "name": "http://127.0.0.1:5392/assets/image-import-worker-BTnho0_2.js",
+      "transferSize": 25275
+    },
+    {
+      "duration": 2,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 19.100000001490116,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3.899999998509884,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 8.5,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 4.5999999940395355,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3.5999999940395355,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3.299999997019768,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 1.899999998509884,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 2.700000002980232,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 2.200000002980232,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3.1999999955296516,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 4.199999995529652,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 6.299999997019768,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 2.0999999940395355,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 4.899999998509884,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 9.399999998509884,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 4.299999997019768,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 10.600000001490116,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 8.899999998509884,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 5.899999998509884,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 2.3000000044703484,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3.1999999955296516,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 5.100000001490116,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 2.399999998509884,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3.1999999955296516,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 4.300000004470348,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 2.5,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 4.700000002980232,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3.899999998509884,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3.399999998509884,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3.5,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 3.399999998509884,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 2.700000002980232,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 5.299999997019768,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    },
+    {
+      "duration": 10.5,
+      "initiatorType": "fetch",
+      "name": "http://127.0.0.1:5392/audit-receipt?id=codex-1792318224988-akgc0t",
+      "transferSize": 300
+    }
+  ],
+  "startup": {
+    "control": "Selected palette: PICO-8, 16 colors",
+    "enabledControlAt": 43.5,
+    "firstArtPaintAt": 57.89999999850989
+  }
+}

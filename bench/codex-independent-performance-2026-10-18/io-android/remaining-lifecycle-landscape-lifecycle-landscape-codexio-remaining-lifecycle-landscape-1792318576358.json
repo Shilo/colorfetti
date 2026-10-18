@@ -1,0 +1,248 @@
+{
+  "harnessProvenance": "Independent inspection/adaptation of previous native runner; all results newly collected. Historical receipts not imported.",
+  "label": "remaining-lifecycle-landscape",
+  "prefix": "codexio-remaining-lifecycle-landscape-1792318576358",
+  "baseURL": "http://localhost:5391/",
+  "started": "2026-10-18T10:16:16.359Z",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "rows": [
+    {
+      "name": "cancel-seed: input import to current named wall paint",
+      "elapsedMs": 79.5,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000017,
+      "rafP95Ms": 16.700000000000017,
+      "cpuMs": {
+        "TaskDuration": 45.00400000000002,
+        "ScriptDuration": 9.547999999999998,
+        "LayoutDuration": 1.8210000000000006,
+        "RecalcStyleDuration": 11.018
+      },
+      "heapUsed": 5855904
+    },
+    {
+      "name": "cancel-seed: exact full-clip captions ready",
+      "elapsedMs": 42.09999990463257,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 3.5419999999999896,
+        "ScriptDuration": 0.08000000000000368,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 5886304
+    },
+    {
+      "name": "cancel live eight-sheet batch by Remove all and no stale publication",
+      "elapsedMs": 1108,
+      "longtasks": [],
+      "rafMaxMs": 16.800000000000068,
+      "rafP95Ms": 16.799999999999955,
+      "cpuMs": {
+        "TaskDuration": 187.21299999999997,
+        "ScriptDuration": 23.57,
+        "LayoutDuration": 5.68,
+        "RecalcStyleDuration": 15.528000000000004
+      },
+      "heapUsed": 8853108
+    },
+    {
+      "name": "hold: input import to current named wall paint",
+      "elapsedMs": 91.30000007152557,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 37.69799999999998,
+        "ScriptDuration": 6.899999999999997,
+        "LayoutDuration": 1.5799999999999998,
+        "RecalcStyleDuration": 12.011000000000001
+      },
+      "heapUsed": 10785668
+    },
+    {
+      "name": "hold: exact full-clip captions ready",
+      "elapsedMs": 44.90000009536743,
+      "longtasks": [],
+      "rafMaxMs": 16.599999999999966,
+      "rafP95Ms": 16.599999999999966,
+      "cpuMs": {
+        "TaskDuration": 3.144000000000008,
+        "ScriptDuration": 0.17200000000000548,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 10811164
+    },
+    {
+      "name": "visibility: input import to current named wall paint",
+      "elapsedMs": 172.70000004768372,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 74.74399999999999,
+        "ScriptDuration": 15.548000000000004,
+        "LayoutDuration": 2.0010000000000003,
+        "RecalcStyleDuration": 16.223000000000003
+      },
+      "heapUsed": 14489540
+    },
+    {
+      "name": "visibility: exact full-clip captions ready",
+      "elapsedMs": 39.89999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 4.424000000000011,
+        "ScriptDuration": 0.9469999999999965,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 14558468
+    },
+    {
+      "name": "reuse: input import to current named wall paint",
+      "elapsedMs": 79.79999995231628,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 36.36800000000001,
+        "ScriptDuration": 8.099000000000002,
+        "LayoutDuration": 2.0180000000000002,
+        "RecalcStyleDuration": 8.487000000000002
+      },
+      "heapUsed": 17810136
+    },
+    {
+      "name": "reuse: exact full-clip captions ready",
+      "elapsedMs": 37.90000009536743,
+      "longtasks": [],
+      "rafMaxMs": 16.69999999999999,
+      "rafP95Ms": 16.69999999999999,
+      "cpuMs": {
+        "TaskDuration": 3.212999999999994,
+        "ScriptDuration": 0.16299999999999648,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 17836080
+    },
+    {
+      "name": "landscape: input import to current named wall paint",
+      "elapsedMs": 159.29999995231628,
+      "longtasks": [],
+      "rafMaxMs": 16.700000000000045,
+      "rafP95Ms": 16.700000000000045,
+      "cpuMs": {
+        "TaskDuration": 90.02799999999999,
+        "ScriptDuration": 19.379999999999995,
+        "LayoutDuration": 4.662,
+        "RecalcStyleDuration": 17.168000000000003
+      },
+      "heapUsed": 20040304
+    },
+    {
+      "name": "landscape: exact full-clip captions ready",
+      "elapsedMs": 40.89999997615814,
+      "longtasks": [],
+      "rafMaxMs": 16.599999999999966,
+      "rafP95Ms": 16.599999999999966,
+      "cpuMs": {
+        "TaskDuration": 2.57099999999999,
+        "ScriptDuration": 0.16700000000000048,
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0
+      },
+      "heapUsed": 20066664
+    }
+  ],
+  "outputs": [],
+  "errors": [],
+  "conditions": {
+    "battery": [
+      "  AC powered: false\r",
+      "  USB powered: true\r",
+      "  Wireless powered: false\r",
+      "  Dock powered: false\r",
+      "  status: 2\r",
+      "  temperature: 329\r"
+    ],
+    "rotation": "free"
+  },
+  "notes": [
+    "Physical USB Android native Brave; no viewport or rotation override.",
+    "File bytes/File allocation staged outside timing; synthetic browser input change/drop/paste handoff exercises actual app handlers and native decode. Picker UI latency is not measured.",
+    "Renderer metrics exclude worker CPU. Instrumentation records bounded rAF/Long Tasks/canvas writes; it cannot prove zero idle callbacks.",
+    "Native output decoding compares all visible RGB and every alpha byte; hidden alpha-zero RGB ignored."
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "viewport": {
+    "width": 448,
+    "height": 819,
+    "dpr": 2.25,
+    "orientation": "portrait-primary",
+    "angle": 0
+  },
+  "transportNotes": [
+    "All native filenames exact unique prefixes. ZIP filename altered by test-only anchor hook before real native download; content and app encoding unmodified.",
+    "1-bit reference uses frozen baseline app algorithm outside browser plus independent Sharp decode/alpha/membership; not an independent style algorithm oracle.",
+    "Real clipboard write is delegated unchanged and UI completion checked; no clipboard read/private contents captured."
+  ],
+  "lastWall": [
+    {
+      "name": "codexio-remaining-lifecycle-landscape-1792318576358-landscape-0-dungeon-wizard.png 16×16  ·  8 colors ",
+      "caption": "16×16  ·  8 colors ",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "codexio-remaining-lifecycle-landscape-1792318576358-landscape-1-real-magic.gif 32×32  ·  12 colors ",
+      "caption": "32×32  ·  12 colors ",
+      "width": 32,
+      "height": 32
+    }
+  ],
+  "nativeHold": {
+    "classHeld": 0,
+    "qualification": "Touch injected into actual Android page. Class assertion removed because App-global compare changes active image while local held class may remain false; no successful comparison claim without state witness.",
+    "released": true
+  },
+  "hiddenWall": {
+    "paused": true,
+    "resumed": true
+  },
+  "reuse": {
+    "caption": "8 colors",
+    "dialogText": "   8 colors         8 colors used in the converted image. Save this palette to reuse it, or export a HEX backup.   Image or file Paste colors Add colors Replace from image or file Drop a palette image or file (including Aseprite), or paste an image.    Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy. Replace colors New color Add color      Cancel Save paletteDownload these colors as a HEX palette backup.Close without saving this draft.#9babb2. Select to edit or remove.#c7dcd0. Select to edit or remove.#cd683d. Select to edit or remove.#fbb954. Select to edit or remove.#323353. Select to edit or remove.#45293f. Select to edit or remove.#905ea9. Select to edit or remove.#a884f3. Select to edit or remove."
+  },
+  "rotationChanged": true,
+  "landscape": {
+    "actualAndroidDisplayRotation": true,
+    "handsetManuallyRotated": false,
+    "viewport": {
+      "width": 947,
+      "height": 364,
+      "dpr": 2.25,
+      "orientation": "landscape-primary",
+      "angle": 90
+    },
+    "restored": true
+  },
+  "restored": {
+    "rotation": "free",
+    "downloadBehavior": "native default",
+    "ownedPageClosed": true
+  },
+  "finished": "2026-10-18T10:16:24.954Z"
+}

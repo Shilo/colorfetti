@@ -1,0 +1,185 @@
+{
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "label": "retention-probe",
+  "url": "http://localhost:5391/",
+  "stamp": 1792320293818,
+  "started": "2026-10-18T10:44:53.819Z",
+  "errors": [],
+  "snapshots": [
+    {
+      "label": "no-preview document baseline",
+      "at": 1792320294932,
+      "heap": {
+        "usedSize": 3072480,
+        "totalSize": 3465216,
+        "embedderHeapUsedSize": 1384736,
+        "backingStorageSize": 588088
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 890,
+        "jsEventListeners": 242
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   308307            TOTAL RSS:   478128       TOTAL SWAP PSS:    29517"
+      ]
+    },
+    {
+      "label": "no-preview source live",
+      "at": 1792320296455,
+      "heap": {
+        "usedSize": 3821672,
+        "totalSize": 4308992,
+        "embedderHeapUsedSize": 1962304,
+        "backingStorageSize": 23617023
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 992,
+        "jsEventListeners": 332
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   307080            TOTAL RSS:   477084       TOTAL SWAP PSS:    29517"
+      ]
+    },
+    {
+      "label": "no-preview removed after11s+twoGC",
+      "at": 1792320308135,
+      "heap": {
+        "usedSize": 4029608,
+        "totalSize": 4571136,
+        "embedderHeapUsedSize": 2096720,
+        "backingStorageSize": 595193
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 944,
+        "jsEventListeners": 255
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   307871            TOTAL RSS:   482224       TOTAL SWAP PSS:    29517"
+      ]
+    },
+    {
+      "label": "preview document baseline",
+      "at": 1792320309307,
+      "heap": {
+        "usedSize": 3071524,
+        "totalSize": 3727360,
+        "embedderHeapUsedSize": 1410160,
+        "backingStorageSize": 588874
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 890,
+        "jsEventListeners": 242
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   311913            TOTAL RSS:   486428       TOTAL SWAP PSS:    29517"
+      ]
+    },
+    {
+      "label": "preview-close removed after11s+twoGC",
+      "at": 1792320321936,
+      "heap": {
+        "usedSize": 4214588,
+        "totalSize": 4571136,
+        "embedderHeapUsedSize": 1972576,
+        "backingStorageSize": 22976754
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 1071,
+        "jsEventListeners": 258
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   307665            TOTAL RSS:   482192       TOTAL SWAP PSS:    29517"
+      ]
+    },
+    {
+      "label": "tiny preview replaced old trigger, removed after11s+twoGC",
+      "at": 1792320335158,
+      "heap": {
+        "usedSize": 4349788,
+        "totalSize": 5095424,
+        "embedderHeapUsedSize": 1923424,
+        "backingStorageSize": 615727
+      },
+      "dom": {
+        "documents": 4,
+        "nodes": 1116,
+        "jsEventListeners": 261
+      },
+      "ownPageState": {
+        "images": 1,
+        "canvases": 1,
+        "openDialogs": 0,
+        "stagedGlobals": []
+      },
+      "allBravePssLines": [
+        "TOTAL PSS:   307498            TOTAL RSS:   482192       TOTAL SWAP PSS:    29517"
+      ]
+    }
+  ],
+  "workers": [
+    {
+      "url": "http://localhost:5391/assets/palette-generated-worker-xpoMRM2c.js",
+      "created": 1792320294341,
+      "closed": 1792320294373
+    },
+    {
+      "url": "http://localhost:5391/assets/image-import-worker-BTnho0_2.js",
+      "created": 1792320295793,
+      "closed": 1792320308646
+    },
+    {
+      "url": "http://localhost:5391/assets/image-import-worker-BTnho0_2.js",
+      "created": 1792320309697,
+      "closed": 1792320335662
+    }
+  ],
+  "qualification": "Separate instrumented retention diagnostic. Explicit GC and CDP backing storage snapshots, not sampled peaks or whole-app bounds. No native download/Save/clipboard. No Worker wrapper, rAF observer or staged source globals persist.",
+  "sourceBuild": {
+    "dir": "C:\\Programming_Files\\Shilocity\\colorfetti\\.tmp\\codex-independent-performance-2026-10-18\\current\\dist",
+    "port": 5391,
+    "indexSha256": "3912bf0d110ca6e54b3e8ef1a08269fc0cc65f2837b9f95cb09c15010ca7e2cd",
+    "probeSha256": "807f69c73ec6e887908d5d2b554ec5159eeae250aa4827bb09e112ed994a9864"
+  },
+  "heapSnapshot": {
+    "label": "preview-removed",
+    "file": "retention-probe/1792320293818-preview-removed.heapsnapshot",
+    "bytes": 10313614
+  },
+  "finished": "2026-10-18T10:45:35.664Z",
+  "ownedPageClosed": true
+}

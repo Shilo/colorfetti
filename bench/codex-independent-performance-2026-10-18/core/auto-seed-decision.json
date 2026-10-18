@@ -1,0 +1,400 @@
+{
+  "created": "2026-10-18T10:17:37.940Z",
+  "decision": "REJECT after first round; no production edit or second round",
+  "reason": "None of the licensed practical inputs enters farthest-seed fitting: four sprites have29 RGBs, both sheets37. Set membership therefore cannot improve the declared practical target. Diagnostic-only gains do not satisfy the predeclared promotion gate.",
+  "node": [
+    {
+      "name": "tiny",
+      "beforeMs": 0.07039999999994961,
+      "afterMs": 0.06770000000000209,
+      "deltaMs": -0.002699999999947522,
+      "deltaPercent": -3.8352272726554726,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "tiny",
+        "kind": "original",
+        "totalMs": 0.8596000000000004,
+        "seedMs": 0,
+        "seedFraction": 0
+      }
+    },
+    {
+      "name": "boundary64",
+      "beforeMs": 0.11820000000000164,
+      "afterMs": 0.10890000000000555,
+      "deltaMs": -0.00929999999999609,
+      "deltaPercent": -7.868020304565116,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "boundary64",
+        "kind": "original",
+        "totalMs": 0.3423000000000229,
+        "seedMs": 0,
+        "seedFraction": 0
+      }
+    },
+    {
+      "name": "exact128",
+      "beforeMs": 0.8114999999999668,
+      "afterMs": 0.9730999999999881,
+      "deltaMs": 0.16160000000002128,
+      "deltaPercent": 19.91373998768058,
+      "fasterPairs": 1,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "exact128",
+        "kind": "original",
+        "totalMs": 2.467300000000023,
+        "seedMs": 0.7795000000000982,
+        "seedFraction": 0.31593239573626675
+      }
+    },
+    {
+      "name": "exact1024",
+      "beforeMs": 6.366399999999999,
+      "afterMs": 5.746699999999976,
+      "deltaMs": -0.619700000000023,
+      "deltaPercent": -9.73391555667289,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "exact1024",
+        "kind": "original",
+        "totalMs": 7.732500000000073,
+        "seedMs": 3.3489999999999327,
+        "seedFraction": 0.4331070158422116
+      }
+    },
+    {
+      "name": "exact4096",
+      "beforeMs": 13.822300000000041,
+      "afterMs": 11.537599999999998,
+      "deltaMs": -2.2847000000000435,
+      "deltaPercent": -16.529087054976642,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "exact4096",
+        "kind": "original",
+        "totalMs": 15.815900000000056,
+        "seedMs": 6.884199999999964,
+        "seedFraction": 0.4352708350457413
+      }
+    },
+    {
+      "name": "binned",
+      "beforeMs": 40.629999999999995,
+      "afterMs": 35.022500000000036,
+      "deltaMs": -5.607499999999959,
+      "deltaPercent": -13.801378291902433,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "binned",
+        "kind": "original",
+        "totalMs": 48.289400000000114,
+        "seedMs": 17.060999999999922,
+        "seedFraction": 0.3533073510956831
+      }
+    },
+    {
+      "name": "assets4",
+      "beforeMs": 3.3169000000000324,
+      "afterMs": 2.936000000000149,
+      "deltaMs": -0.3808999999998832,
+      "deltaPercent": -11.483614218091576,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "assets4",
+        "kind": "original",
+        "totalMs": 4.886500000000069,
+        "seedMs": 2.3821000000000367,
+        "seedFraction": 0.48748593062519247
+      }
+    },
+    {
+      "name": "clip3",
+      "beforeMs": 4.629699999999957,
+      "afterMs": 3.973399999999856,
+      "deltaMs": -0.6563000000001011,
+      "deltaPercent": -14.175864526861503,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "clip3",
+        "kind": "original",
+        "totalMs": 5.128900000000158,
+        "seedMs": 1.812900000000127,
+        "seedFraction": 0.35346760513951747
+      }
+    },
+    {
+      "name": "partial",
+      "beforeMs": 2.003600000000006,
+      "afterMs": 1.6625000000001364,
+      "deltaMs": -0.3410999999998694,
+      "deltaPercent": -17.024356158907384,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "partial",
+        "kind": "original",
+        "totalMs": 2.2490000000000236,
+        "seedMs": 0.7964000000001761,
+        "seedFraction": 0.3541129390841119
+      }
+    },
+    {
+      "name": "practical4",
+      "beforeMs": 0.026699999999891588,
+      "afterMs": 0.027800000000070213,
+      "deltaMs": 0.0011000000001786248,
+      "deltaPercent": 4.119850187951646,
+      "fasterPairs": 3,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "practical4",
+        "kind": "original",
+        "totalMs": 0.13409999999998945,
+        "seedMs": 0,
+        "seedFraction": 0
+      }
+    },
+    {
+      "name": "sheet1024",
+      "beforeMs": 6.039700000000039,
+      "afterMs": 5.553900000000112,
+      "deltaMs": -0.4857999999999265,
+      "deltaPercent": -8.043445866515276,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "sheet1024",
+        "kind": "original",
+        "totalMs": 5.639799999999923,
+        "seedMs": 0,
+        "seedFraction": 0
+      }
+    },
+    {
+      "name": "sheet2048",
+      "beforeMs": 22.220600000000104,
+      "afterMs": 21.83420000000001,
+      "deltaMs": -0.3864000000000942,
+      "deltaPercent": -1.7389269416671627,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "sheet2048",
+        "kind": "original",
+        "totalMs": 21.795100000000048,
+        "seedMs": 0,
+        "seedFraction": 0
+      }
+    }
+  ],
+  "auxiliaryEdge": [
+    {
+      "name": "tiny",
+      "beforeMs": 0.09999999403953552,
+      "afterMs": 0.10000000149011612,
+      "deltaMs": 7.450580596923828e-9,
+      "deltaPercent": 0.000007450581041013038,
+      "fasterPairs": 1,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "tiny",
+        "kind": "original",
+        "totalMs": 0.7999999970197678,
+        "seedMs": 0,
+        "seedFraction": 0
+      }
+    },
+    {
+      "name": "boundary64",
+      "beforeMs": 0.10000000149011612,
+      "afterMs": 0.10000000149011612,
+      "deltaMs": 0,
+      "deltaPercent": 0,
+      "fasterPairs": 1,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "boundary64",
+        "kind": "original",
+        "totalMs": 0.3999999985098839,
+        "seedMs": 0,
+        "seedFraction": 0
+      }
+    },
+    {
+      "name": "exact128",
+      "beforeMs": 0.6999999955296516,
+      "afterMs": 0.6999999955296516,
+      "deltaMs": 0,
+      "deltaPercent": 0,
+      "fasterPairs": 1,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "exact128",
+        "kind": "original",
+        "totalMs": 2.1999999955296516,
+        "seedMs": 0.6000000014901161,
+        "seedFraction": 0.27272727395877366
+      }
+    },
+    {
+      "name": "exact1024",
+      "beforeMs": 4.199999995529652,
+      "afterMs": 4.199999995529652,
+      "deltaMs": 0,
+      "deltaPercent": 0,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "exact1024",
+        "kind": "original",
+        "totalMs": 7.300000004470348,
+        "seedMs": 2.5,
+        "seedFraction": 0.34246575321493955
+      }
+    },
+    {
+      "name": "exact4096",
+      "beforeMs": 9.400000005960464,
+      "afterMs": 8.300000004470348,
+      "deltaMs": -1.1000000014901161,
+      "deltaPercent": -11.702127668006545,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "exact4096",
+        "kind": "original",
+        "totalMs": 14.600000001490116,
+        "seedMs": 4.799999997019768,
+        "seedFraction": 0.32876712304999084
+      }
+    },
+    {
+      "name": "binned",
+      "beforeMs": 26.600000001490116,
+      "afterMs": 24.5,
+      "deltaMs": -2.100000001490116,
+      "deltaPercent": -7.89473684726495,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "binned",
+        "kind": "original",
+        "totalMs": 32.29999999701977,
+        "seedMs": 11.299999997019768,
+        "seedFraction": 0.3498452011784021
+      }
+    },
+    {
+      "name": "assets4",
+      "beforeMs": 2.3000000044703484,
+      "afterMs": 2.100000001490116,
+      "deltaMs": -0.20000000298023224,
+      "deltaPercent": -8.69565228658723,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "assets4",
+        "kind": "original",
+        "totalMs": 2.5,
+        "seedMs": 0.7000000029802322,
+        "seedFraction": 0.2800000011920929
+      }
+    },
+    {
+      "name": "clip3",
+      "beforeMs": 3.2000000029802322,
+      "afterMs": 3.2000000029802322,
+      "deltaMs": 0,
+      "deltaPercent": 0,
+      "fasterPairs": 4,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "clip3",
+        "kind": "original",
+        "totalMs": 3.5,
+        "seedMs": 1,
+        "seedFraction": 0.2857142857142857
+      }
+    },
+    {
+      "name": "partial",
+      "beforeMs": 1.4000000059604645,
+      "afterMs": 1.2999999970197678,
+      "deltaMs": -0.10000000894069672,
+      "deltaPercent": -7.142857751067799,
+      "fasterPairs": 5,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "partial",
+        "kind": "original",
+        "totalMs": 1.7000000029802322,
+        "seedMs": 0.5,
+        "seedFraction": 0.29411764654321243
+      }
+    },
+    {
+      "name": "practical4",
+      "beforeMs": 0,
+      "afterMs": 0,
+      "deltaMs": 0,
+      "deltaPercent": null,
+      "fasterPairs": 2,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "practical4",
+        "kind": "original",
+        "totalMs": 0.10000000149011612,
+        "seedMs": 0,
+        "seedFraction": 0
+      }
+    },
+    {
+      "name": "sheet1024",
+      "beforeMs": 5.399999998509884,
+      "afterMs": 5.300000004470348,
+      "deltaMs": -0.09999999403953552,
+      "deltaPercent": -1.8518517419838898,
+      "fasterPairs": 2,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "sheet1024",
+        "kind": "original",
+        "totalMs": 5.600000001490116,
+        "seedMs": 0,
+        "seedFraction": 0
+      }
+    },
+    {
+      "name": "sheet2048",
+      "beforeMs": 21.80000000447035,
+      "afterMs": 21.700000002980232,
+      "deltaMs": -0.10000000149011612,
+      "deltaPercent": -0.4587156030716022,
+      "fasterPairs": 3,
+      "totalPairs": 5,
+      "seedAttribution": {
+        "name": "sheet2048",
+        "kind": "original",
+        "totalMs": 22.5,
+        "seedMs": 0,
+        "seedFraction": 0
+      }
+    }
+  ],
+  "correctness": "12 cohorts in each engine matched exact generated colors, binned/assets metadata and every floating diagnostic. Main independent core probe also passed288 scalar-nearest and16 exact256-color alpha/dither cases.",
+  "limits": [
+    "Auxiliary Edge155.0.4283.62 is not actual Codex Browser.",
+    "Whole core job includes full source histogram, seed and refinement, but excludes import/worker startup/transfers/UI.",
+    "Single instrumented attribution observation per cohort includes scheduler waits, is not taskCPU and was excluded from matched timing trials.",
+    "Fresh PNG decoding preceded timing. Node uses Sharp; auxiliary browser uses createImageBitmap/canvas once and compares both variants against those same captured pixels. No original-file/profile byte equivalence is inferred."
+  ]
+}
