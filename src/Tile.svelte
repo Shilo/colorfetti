@@ -17,6 +17,7 @@
   import { animationVisibility } from './lib/animation-visibility.js';
   import { exportDragArt } from './lib/export-drag.js';
   import { paletteFailureInputs, samePaletteFailureInputs } from './lib/palette-failure.js';
+  import { artworkIdentity } from './lib/artwork-source-projection.js';
 
   // `flipped` true means originals are visible. App-managed comparison updates
   // that same value and the dock toggle; standalone previews use a local hold.
@@ -246,27 +247,31 @@
   });
   let fullItem, fullCompleted;
   $effect(() => {
-    const frame = frames[at], frameAt = at, source = frame.original, data = source.data, sourceWidth = source.width, sourceHeight = source.height;
-    const colors = conversionPalette, width = mw, height = mh, cut = alphaCut, opacity = alphaMode, matching = metric, clean = conversionCleanup, cleaning = cleanup, dithering = dither, amount = ditherStrength;
-    const key = usageIdentity, pendingPalette = palettePending, currentItem = item;
+    const frame = artworkIdentity(frames[at].identity ?? frames[at]), frameAt = at, frameCount = frames.length;
+    const source = frames[at].original, data = source.data, sourceWidth = source.width, sourceHeight = source.height;
+    const colors = conversionPalette, width = mw, height = mh, cut = alphaCut, opacity = alphaMode, matching = metric;
+    const clean = conversionCleanup ? { result: conversionCleanup.result, apply: conversionCleanup.apply } : null;
+    const cleaning = cleanup, dithering = dither, amount = ditherStrength;
+    const key = usageIdentity, pendingPalette = palettePending;
+    const currentItem = { id: item.id, identity: artworkIdentity(item.identity ?? item), admission: item.admission };
     const reportUsage = used => {
       const exact = width === sourceWidth && height === sourceHeight;
       // Only notify sampled completions when retiring a retained caption. Read
       // its presentation state untracked, so captions never restart conversion.
       if (!pendingPalette && (exact || untrack(() => colorUsagePending)))
-        untrack(() => onusageframe?.({ item: currentItem, key, colors: colors.colors, used, frame: frameAt, frames: frames.length, exact }));
+        untrack(() => onusageframe?.({ item: currentItem, key, colors: colors.colors, used, frame: frameAt, frames: frameCount, exact }));
     };
     fullReady = false;
     // Keep the last completed frame while the next frame or settings convert.
     // Clearing it on every async frame removes the canvas and exposes the grid.
     // Readiness still belongs to the requested frame, not these retained pixels.
-    if (family !== 'full-palette' || fullItem !== item || !palette && !palettePending) {
+    if (family !== 'full-palette' || fullItem !== currentItem.identity || !palette && !palettePending) {
       fullPixels = null;
       fullCompleted = null;
     }
-    fullItem = item;
+    fullItem = currentItem.identity;
     if (family !== 'full-palette' || !width || !colors || cleaning && !clean || originalVisible || !active
-      || frames.length > 1 && !inView) return;
+      || frameCount > 1 && !inView) return;
     // This record belongs only to the retained, successfully published pixels.
     // Original/viewer/visibility changes do not alter their conversion inputs.
     // A canceled request or a different animation frame can never make it ready.
@@ -305,7 +310,7 @@
     if (!mw) return null;
     const frame = frames[at];
     if (originalVisible) return (originals[at] ??= mw < item.img.w ? new ImageData(shrink(frame.original, mw, mh), mw) : frame.original);
-    if (family === 'full-palette') return fullItem === item ? fullPixels : null;
+    if (family === 'full-palette') return fullItem === artworkIdentity(item.identity ?? item) ? fullPixels : null;
     if (analysisPending) return null;
     if (!masks[at]) {
       // Stencil's first conversion of an image walks all of it, once. That is not the pace of a conversion, so it is done before the clock starts.

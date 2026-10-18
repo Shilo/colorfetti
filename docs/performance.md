@@ -18,8 +18,13 @@ scratch. Pending work, unpublished retries and live owners keep reservations;
 removal releases only ownership, while worker/cache producers, counts, exports and
 drag preparation keep source leases until actual settlement. Shared preview abort
 can reject a subscriber before its producer ends, so those lifetimes are distinct.
-Nonmatching captured export/count analysis adds 3 bytes/pixel + 2 KiB/frame scratch;
-live replacement generations wait for aborted predecessors to settle.
+A separate 128 MiB captured-analysis ledger reserves 3 bytes/pixel + 2 KiB/frame
+for every intentionally retained legacy input, plus another generation for
+nonmatching preparation. Matching exports can retain generation A while the wall
+creates B and C, so they also charge capture storage. No-ink/no-analysis early exits
+remain free. Live replacements wait for aborted predecessors to settle. Palette
+queues/exports/cache identities carry original-only projections and opaque weak
+tokens, avoiding unused legacy generations. Viewer selection retains only its ID.
 
 The ledger excludes conversion/index/RGBA/style caches, encoded output, object
 overheads, codecs, GPU storage and GC delays. M2's one-frame 84 MiB logical headroom

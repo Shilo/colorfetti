@@ -1,6 +1,7 @@
 import { preparePalette, validateMatchingMetric, checkCanceled } from './quantize.js';
 import { summaryHistogram } from './source-color-summary.js';
 import { holdArtworkSources } from './artwork-source-leases.js';
+import { artworkIdentity, originalArtworkItem } from './artwork-source-projection.js';
 
 const CHUNK_BYTES = 128 * 1024;
 const items = new WeakMap(), queue = [];
@@ -11,10 +12,10 @@ function snapshot(item, palette, alphaCut, metric, maxColors) {
   const frames = (item.frames ?? [item]).map(frame => {
     const original = frame.original, width = original?.width ?? original?.w, height = original?.height ?? original?.h, data = original?.data;
     if (!Number.isSafeInteger(width) || !Number.isSafeInteger(height) || width < 1 || height < 1 || !data || data.length !== width * height * 4) throw new Error('Invalid palette-limit source image.');
-    return { frame: frame.identity ?? frame, original, data, width, height, delay: frame.delay, weight: item.frames ? Number.isFinite(frame.delay) && frame.delay > 0 ? frame.delay : 100 : 1 };
+    return { frame: artworkIdentity(frame.identity ?? frame), original, data, width, height, delay: frame.delay, weight: item.frames ? Number.isFinite(frame.delay) && frame.delay > 0 ? frame.delay : 100 : 1 };
   });
   if (!frames.length) throw new Error('Palette-limit animation has no frames.');
-  return { colors: [...palette.colors], alphaCut, metric, maxColors, frames, framesIdentity: item.framesIdentity ?? item.frames, loop: item.loop };
+  return { colors: [...palette.colors], alphaCut, metric, maxColors, frames, framesIdentity: artworkIdentity(item.framesIdentity ?? item.frames), loop: item.loop };
 }
 function same(a, b) {
   return a.alphaCut === b.alphaCut && a.metric === b.metric && a.maxColors === b.maxColors && a.framesIdentity === b.framesIdentity && a.loop === b.loop
@@ -119,9 +120,11 @@ export async function getLimitedPalette(item, preparedPalette, alphaCut, metric,
   if (!maxColors || maxColors >= preparedPalette.size) return preparedPalette;
   validateMatchingMetric(metric);
   if (!Number.isInteger(alphaCut) || alphaCut < 1 || alphaCut > 255) throw new Error('Opacity cut must be between 1 and 255.');
+  item = originalArtworkItem(item); sourceItem = originalArtworkItem(sourceItem);
   const signature = snapshot(sourceItem, preparedPalette, alphaCut, metric, maxColors);
-  let state = items.get(item);
-  if (!state) { state = { active: new Set(), cached: null }; items.set(item, state); }
+  const identity = artworkIdentity(item.identity ?? item);
+  let state = items.get(identity);
+  if (!state) { state = { active: new Set(), cached: null }; items.set(identity, state); }
   if (state.cached && same(state.cached.signature, signature)) { checkCanceled(signal); return state.cached.palette; }
   let job = [...state.active].find(candidate => !candidate.controller.signal.aborted && same(candidate.signature, signature));
   if (!job) {

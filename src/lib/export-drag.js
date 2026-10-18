@@ -5,9 +5,9 @@ export function isMobileExportDevice() {
   return navigator.userAgentData?.mobile === true || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
     || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 }
-const same = (a, b) => !!a && !!b && a.item === b.item && a.key === b.key;
+const same = (a, b) => !!a && !!b && (a.identity ?? a.item) === (b.identity ?? b.item) && a.key === b.key;
 
-export function createExportDrag({ request, prepare, notify,
+export function createExportDrag({ request, prepare, notify, retainItem = item => item,
   delay = 180, grace = 60000, revoke = url => URL.revokeObjectURL(url) }) {
   let desired = null, ready = null, running = null, timer, leaveTimer, active = null, disposed = false;
   const retired = new Map();
@@ -88,7 +88,7 @@ export function createExportDrag({ request, prepare, notify,
   return {
     readyFor(item) { return !disposed && ready && same(ready.request, request(item)) ? ready : null; },
     subscribe(observer) { observers.add(observer); observer(); return () => observers.delete(observer); },
-    hover(item) { if (disposed) return; desired = item; schedule(); },
+    hover(item) { if (disposed) return; desired = retainItem(item); schedule(); },
     cancelHover() { desired = null; clearTimeout(timer); clearTimeout(leaveTimer); leaveTimer = undefined; running?.controller.abort(); if (!active) publish(); },
     leave(item) {
       if (desired?.id !== item.id) return;
@@ -113,7 +113,7 @@ export function createExportDrag({ request, prepare, notify,
       const asked = request(item);
       if (disposed || active || !event.dataTransfer || !same(ready?.request, asked)) {
         event.preventDefault();
-        if (!disposed && asked) { notify('Preparing full export—wait, then drag again.'); desired = item; schedule(); }
+        if (!disposed && asked) { notify('Preparing full export—wait, then drag again.'); desired = retainItem(item); schedule(); }
         return false;
       }
       if (retired.size >= 8) {

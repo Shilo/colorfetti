@@ -3,11 +3,13 @@ import { checkCanceled, quantizeAsync, yieldTask } from './quantize.js';
 import { sourceColorSummary, summaryImage } from './source-color-summary.js';
 import { effectiveAlphaCut } from './palette-alpha.js';
 import { holdArtworkItems } from './artwork-admission.js';
+import { originalArtworkItem } from './artwork-source-projection.js';
 
 // Exact full-source inspection. Keep at most 256 output colors, never a second
 // converted clip. Share export preparation so subset/Cleanup/dither decisions match.
 export async function collectPaletteUsage(item, snapshot, { signal } = {}) {
   checkCanceled(signal);
+  item = originalArtworkItem(item);
   const release = holdArtworkItems([item]);
   try { return await inspectPaletteUsage(item, snapshot, signal); }
   finally { release(); }

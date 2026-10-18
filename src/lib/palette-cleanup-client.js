@@ -1,6 +1,7 @@
 import { validateMatchingMetric, checkCanceled } from './quantize.js';
 import { validatePreparedCleanupAsync } from './palette-cleanup-apply.js';
 import { holdArtworkSources } from './artwork-source-leases.js';
+import { artworkIdentity, originalArtworkItem } from './artwork-source-projection.js';
 export { applyPreparedCleanup as applyCleanup, applyPreparedCleanupAsync as applyCleanupAsync } from './palette-cleanup-apply.js';
 
 const CHUNK_BYTES = 128 * 1024;
@@ -12,11 +13,11 @@ function snapshot(item, palette, alphaCut, metric) {
   const frames = (item.frames ?? [item]).map(frame => {
     const original = frame.original, width = original?.width ?? original?.w, height = original?.height ?? original?.h, data = original?.data;
     if (!Number.isSafeInteger(width) || !Number.isSafeInteger(height) || width < 1 || height < 1 || !Number.isSafeInteger(width * height * 4) || !data || data.length !== width * height * 4) throw new Error('Invalid palette-cleanup source image.');
-    return { frame: frame.identity ?? frame, original, data, width, height, delay: frame.delay };
+    return { frame: artworkIdentity(frame.identity ?? frame), original, data, width, height, delay: frame.delay };
   });
   if (!frames.length) throw new Error('Palette-cleanup animation has no frames.');
   if (frames.some(frame => frame.width !== frames[0].width || frame.height !== frames[0].height)) throw new Error('Cleanup animation frames must have matching dimensions.');
-  return { colors: [...palette.colors], alphaCut, metric, frames, framesIdentity: item.framesIdentity ?? item.frames, loop: item.loop };
+  return { colors: [...palette.colors], alphaCut, metric, frames, framesIdentity: artworkIdentity(item.framesIdentity ?? item.frames), loop: item.loop };
 }
 function same(a, b) {
   return a.alphaCut === b.alphaCut && a.metric === b.metric && a.framesIdentity === b.framesIdentity && a.loop === b.loop
@@ -124,9 +125,11 @@ function subscribe(job, signal) {
 export async function getPaletteCleanup(item, palette, alphaCut, metric, { signal, sourceItem = item } = {}) {
   checkCanceled(signal); validateMatchingMetric(metric);
   if (!Number.isInteger(alphaCut) || alphaCut < 1 || alphaCut > 255) throw new Error('Opacity cut must be between 1 and 255.');
+  item = originalArtworkItem(item); sourceItem = originalArtworkItem(sourceItem);
   const signature = snapshot(sourceItem, palette, alphaCut, metric);
-  let state = items.get(item);
-  if (!state) { state = { active: new Set(), cached: null }; items.set(item, state); }
+  const identity = artworkIdentity(item.identity ?? item);
+  let state = items.get(identity);
+  if (!state) { state = { active: new Set(), cached: null }; items.set(identity, state); }
   if (state.cached && same(state.cached.signature, signature)) { checkCanceled(signal); return state.cached.result; }
   let job = [...state.active].find(candidate => !candidate.controller.signal.aborted && same(candidate.signature, signature));
   if (!job) {

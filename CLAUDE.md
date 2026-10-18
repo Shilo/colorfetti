@@ -21,10 +21,13 @@ canvases and 20 KiB decoder scratch are reserved until publication. Stills reser
 before controlled pixel allocation once native dimensions are known. Rejection
 never retries through fallback or silently resizes/shortens content. Decode and
 analysis are serial. Owner removal releases by stable item ID; active borrowers
-retain leases until actual settlement. Live reanalysis is serialized; nonmatching
-export/count analyses charge extra scratch. Failures preserve valid wall items and
+retain leases until actual settlement. Live reanalysis is serialized. A separate 128 MiB ledger charges captured legacy
+inputs at 3 bytes/pixel + 2 KiB/frame, plus another generation when nonmatching
+preparation allocates one. Matching exports also charge their retained input. Failures preserve valid wall items and
 explain recovery. This bounds defined source buffers, excluding native/GPU/GC,
 conversion/style caches and encoded output; native inspection has separate headroom.
+Palette queues/exports/previews retain only originals, scalar geometry and opaque
+identity tokens; ID-only viewer selection avoids retaining obsolete analyses.
 
 Save, ZIP and drag share portable output filenames before collision resolution.
 Unsafe filename/control/bidi characters become hyphens; NFC Unicode and complete

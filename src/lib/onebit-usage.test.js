@@ -3,6 +3,7 @@ import { analyze, mask, colorize } from './recolor.js';
 import { defaults, STYLE_SETTINGS } from './settings.js';
 import { analysisKey } from './image-reanalysis.js';
 import { artworkCost, createArtworkAdmission } from './artwork-admission.js';
+import { capturedAnalysisAdmission } from './artwork-analysis-capture.js';
 import { maskRoles, oneBitColors, rememberOneBitMask, rememberOneBitSample, collectOneBitUsage, ONEBIT_INSPECTION_PIXELS } from './onebit-usage.js';
 
 function source(values, width = values.length) {
@@ -16,14 +17,21 @@ function oracle(value, first, second) {
   return colors.size;
 }
 describe('actual 1-bit used-color metadata', () => {
-  it('charges nonmatching metadata analysis without charging matching or no-ink early exits', async () => {
+  it('charges queued input and replacement analyses separately, while no-ink exits need neither', async () => {
     const item = source([0, 255]), bytes = artworkCost(2, 1), budget = createArtworkAdmission(bytes);
     item.admission = budget.reserve(bytes);
     const asked = { style: 'solid', set: { source: 'red', threshold: 127 }, first: '#000000', second: '#ffffff' };
+    const blocked = capturedAnalysisAdmission.reserve(capturedAnalysisAdmission.limit);
     await expect(collectOneBitUsage(item, asked)).rejects.toMatchObject({ code: 'ARTWORK_MEMORY_LIMIT' });
+    blocked.release();
     expect(budget.used).toBe(bytes);
     expect((await collectOneBitUsage(item, { ...asked, first: null, second: null })).count).toBe(0);
-    expect((await collectOneBitUsage(item, { ...asked, set: { source: 'luma', threshold: 127 } })).count).toBe(2);
+    expect(capturedAnalysisAdmission.used).toBe(0);
+    const matching = collectOneBitUsage(item, { ...asked, set: { source: 'luma', threshold: 127 } });
+    expect(capturedAnalysisAdmission.used).toBe(2054);
+    expect((await matching).count).toBe(2); expect(capturedAnalysisAdmission.used).toBe(0);
+    const changed = collectOneBitUsage(item, asked); expect(capturedAnalysisAdmission.used).toBe(4108);
+    expect((await changed).count).toBe(2); expect(capturedAnalysisAdmission.used).toBe(0);
     item.admission.release(); expect(budget.used).toBe(0);
   });
   it('distinguishes empty, solid, both roles, None and duplicate RGB inks', () => {

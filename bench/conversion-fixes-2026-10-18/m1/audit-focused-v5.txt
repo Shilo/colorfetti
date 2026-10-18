@@ -1,0 +1,16 @@
+2026-10-18 M1/M2 crossfeature audit correction
+Operator: fix_import_errors sub-agent, PowerShell, workspace-local TEMP/TMP.
+
+Command:
+npx vitest run src/lib/artwork-analysis-capture.test.js src/lib/artwork-source-projection.test.js src/lib/artwork-admission.test.js src/lib/onebit-usage.test.js src/lib/palette-state.test.js src/lib/palette-limit-client.test.js src/lib/palette-cleanup-client.test.js src/lib/palette-usage.test.js src/lib/export-drag.test.js src/lib/palette-animation-cache.test.js src/lib/viewer-inspection.test.js
+
+Captured terminal summary:
+Test Files 11 passed (11)
+Tests 148 passed | 2 skipped (150)
+Duration 1.02s
+
+The first invocation failed before loading tests because the sandbox TEMP cache rename returned EPERM. Repeating with workspace-local TEMP/TMP passed. No test was disabled or relaxed for that infrastructure error.
+
+Production app-v5 build: passed,209 modules.
+Browser harness-v5 build: passed,31 modules.
+Builds are immutable frozen server snapshots on port5211; exact hashes and URLs in validation-v5.json.

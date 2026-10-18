@@ -21,6 +21,7 @@
   import { importFailures, importFailureDuration } from './lib/image-import-errors.js';
   import { holdArtworkItems, removeArtworkItem } from './lib/artwork-admission.js';
   import { holdArtworkExport } from './lib/artwork-export-lease.js';
+  import { artworkIdentity, originalArtworkItem } from './lib/artwork-source-projection.js';
   import CanvasGrid from './CanvasGrid.svelte';
   import Dock from './Dock.svelte';
   import Tile from './Tile.svelte';
@@ -266,8 +267,11 @@
   let viewing = $state.raw(null), viewTrigger, viewKeyboardFocus = false;
   // Resolve the current analysis after a setting changes, without duplicating image pixels.
   const viewed = $derived(viewing ? (viewing.id === 0 ? example : items.find(item => item.id === viewing.id)) : null);
+  $effect(() => {
+    if (viewing && !viewed) { viewing = null; viewTrigger = undefined; viewKeyboardFocus = false; }
+  });
   let viewInitialOriginal = $state(false);
-  function openImage(item, trigger) { viewInitialOriginal = effectiveOriginal; clearComparison(); viewKeyboardFocus = !!trigger?.matches(':focus-visible'); viewing = item; viewTrigger = trigger; }
+  function openImage(item, trigger) { viewInitialOriginal = effectiveOriginal; clearComparison(); viewKeyboardFocus = !!trigger?.matches(':focus-visible'); viewing = { id: item.id }; viewTrigger = trigger; }
   // The lowest and highest value Auto is using for the images on screen, for the Dock to show:
   // of the threshold, of Cutout's seam strength, and of Stencil's Cuts. An image's sprites are
   // only looked for while Stencil is the style: finding them walks the whole image.
@@ -737,8 +741,9 @@
   });
   // Per-item subscriptions avoid invalidating every caption on each publication.
   const colorUsage = new SvelteMap();
-  function previewUsage({ item, key, colors, used, frame, frames, exact = true }) {
-    if (key !== usageKey || family !== 'full-palette' || generatedPending || generatedUnavailable || !canvasItems.includes(item)) return;
+  function previewUsage({ item: reported, key, colors, used, frame, frames, exact = true }) {
+    const item = canvasItems.find(item => item.id === reported.id && artworkIdentity(item.identity ?? item) === reported.identity);
+    if (key !== usageKey || family !== 'full-palette' || generatedPending || generatedUnavailable || !item) return;
     const previous = usageFor(item);
     // Pending inspections own their record identity and explicit-join flag.
     // Their full-source result will replace the retained presentation atomically.
@@ -749,18 +754,18 @@
     const progress = addUsageFrame(previous?.progress, colors, used, frame, frames);
     if (!progress) return;
     const result = completedUsage(progress, fullPalette.colors);
-    colorUsage.set(item.id, { item, key, ...(result ? { result, status: 'ready' }
+    colorUsage.set(item.id, { item: artworkIdentity(item.identity ?? item), key, ...(result ? { result, status: 'ready' }
       : { progress, status: 'partial', previousResult: lastUsageResult(item) }) });
   }
   const usageFor = item => {
     const record = colorUsage.get(item.id);
-    return family === 'full-palette' && record?.item === item && record.key === usageKey ? record : null;
+    return family === 'full-palette' && record?.item === artworkIdentity(item.identity ?? item) && record.key === usageKey ? record : null;
   };
   // Presentation may retain one completed count while current metadata is
   // pending. Reuse and inspection still use only the strict current-key record.
   const lastUsageResult = item => {
     const record = colorUsage.get(item.id);
-    return family === 'full-palette' && record?.item === item && record.status !== 'error'
+    return family === 'full-palette' && record?.item === artworkIdentity(item.identity ?? item) && record.status !== 'error'
       ? record.result ?? record.previousResult : null;
   };
   const usageLabel = item => {
@@ -772,7 +777,7 @@
     const key = usageKey, live = canvasItems, retain = family === 'full-palette';
     // Observe source/settings changes, never metadata publications themselves.
     untrack(() => {
-      const current = new Map(live.map(item => [item.id, item]));
+      const current = new Map(live.map(item => [item.id, artworkIdentity(item.identity ?? item)]));
       for (const [id, record] of colorUsage) {
         if (!current.has(id)) { record?.controller?.abort(); colorUsage.delete(id); }
         else if (record && (record.key !== key || current.get(id) !== record.item)) {
@@ -795,11 +800,16 @@
     if (previous?.status === 'pending') { previous.explicit ||= explicit; return previous.promise; }
     if (previous?.result) return Promise.resolve(previous.result);
     const snapshot = asking(), key = usageKey, controller = new AbortController();
-    const record = { item, key, controller, status: 'pending', explicit, previousResult: lastUsageResult(item) };
+    const previousResult = lastUsageResult(item);
+    // Only original pixels enter this asynchronous queue. The full item would
+    // retain an obsolete legacy analysis through arbitrary later replacements.
+    item = originalArtworkItem(item);
+    const identity = item.identity, id = item.id;
+    const record = { item: identity, key, controller, status: 'pending', explicit, previousResult };
     const release = holdArtworkItems([item]);
     const publish = value => {
-      if (!controller.signal.aborted && key === usageKey && canvasItems.includes(item) && colorUsage.get(item.id) === record)
-        colorUsage.set(item.id, { item, key, ...value });
+      if (!controller.signal.aborted && key === usageKey && canvasItems.some(live => live.id === id && artworkIdentity(live.identity ?? live) === identity) && colorUsage.get(id) === record)
+        colorUsage.set(id, { item: identity, key, ...value });
     };
     record.promise = usageQueue.then(async () => {
       try {
@@ -858,12 +868,14 @@
 
   // Prepare through the existing encoders. Keep Save, Copy and ZIP paths untouched.
   const dragExports = dragDesktop ? createExportDrag({
+    retainItem: item => ({ id: item.id }),
     request(item) {
       const live = items.find(i => i.id === item.id);
       if (!live) return null;
       const snapshot = asking();
       if (generatedUnavailable || itemPaletteFailed(live)) return null;
-      return { item: live, snapshot, key: JSON.stringify({ ...snapshot, generated: snapshot.generated?.key }) };
+      return { item: snapshot.family === 'full-palette' ? originalArtworkItem(live) : live,
+        identity: artworkIdentity(live.identity ?? live), snapshot, key: JSON.stringify({ ...snapshot, generated: snapshot.generated?.key }) };
     },
     async prepare({ item, snapshot }, { signal }) {
       const releaseSource = holdArtworkExport([item], snapshot.family === 'full-palette' ? null : { source: snapshot.set.source, alphaCut: snapshot.set.alpha });
@@ -903,6 +915,7 @@
   async function save(item) {
     if (generatedUnavailable || itemPaletteFailed(item)) return;
     const asked = asking();
+    if (asked.family === 'full-palette') item = originalArtworkItem(item);
     let release = () => {};
     try {
       release = holdArtworkExport([item], asked.family === 'full-palette' ? null : { source: asked.set.source, alphaCut: asked.set.alpha });
@@ -923,6 +936,7 @@
     if (generatedUnavailable || itemPaletteFailed(item)) return;
     try {
       const asked = asking();
+      if (asked.family === 'full-palette') item = originalArtworkItem(item);
       const release = holdArtworkExport([item], asked.family === 'full-palette' ? null : { source: asked.set.source, alphaCut: asked.set.alpha });
       // the clipboard is asked at once, as Safari demands, and handed the PNG when it has been made
       await copyOne(during(`Copying ${item.name}…`, item.img.w * item.img.h, async () => {
@@ -940,7 +954,7 @@
     const asked = asking();
     let release = () => {};
     try {
-      const selected = [...items]; // the images on the wall now, even if some are removed before the job starts
+      const selected = asked.family === 'full-palette' ? items.map(originalArtworkItem) : [...items];
       if (!selected.length) return;
       release = holdArtworkExport(selected, asked.family === 'full-palette' ? null : { source: asked.set.source, alphaCut: asked.set.alpha });
       const downloading = selected.length > 1

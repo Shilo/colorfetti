@@ -994,8 +994,12 @@ viewport height so mobile browser bars do not cut the dock off.
   the current owner by stable item ID, and teardown releases wall ownership.
   Actual source borrowers retain leases through settlement, including shared
   producers that outlive canceled subscribers. Serialize live replacement analyses;
-  nonmatching captured export/count analyses reserve another 3 bytes/pixel plus
-  2 KiB/frame through completion. Matching/no-analysis early paths add no scratch.
+  a separate 128 MiB capture ledger reserves 3 bytes/pixel plus 2 KiB/frame for
+  every retained legacy input generation, including matching exports, plus another
+  generation for nonmatching preparation. Hold until actual settlement. Palette
+  queues/exports/cache identities use original-only projections and opaque weak
+  tokens; viewer selection stores only an ID. No-ink/no-analysis early paths add no
+  analysis capture. Source and capture ledgers are additive, not a process-heap cap.
   Memory rejection retains valid siblings and gives named recovery guidance; no
   partial export/ZIP is downloaded. This bounds defined source/analysis buffers,
   excluding object overheads, native/GPU/GC, conversion/style caches and encoded

@@ -1,6 +1,9 @@
 import { createArtworkAdmission, artworkCost, gifDecodeHold } from '../../../src/lib/artwork-admission.js';
 import { decodeImportedFile, takeImportedFrames, releaseImported } from '../../../src/lib/image-import-client.js';
 import { reanalyzeItems } from '../../../src/lib/image-reanalysis.js';
+import { holdArtworkExport } from '../../../src/lib/artwork-export-lease.js';
+import { capturedAnalysisAdmission, capturedAnalysisCost } from '../../../src/lib/artwork-analysis-capture.js';
+import { convertedAnimation } from '../../../src/lib/converted-animation.js';
 
 const fallback = new URL(location.href).searchParams.has('fallback'), NativeWorker = globalThis.Worker;
 let workers = 0;
@@ -21,8 +24,27 @@ document.querySelector('#run').onclick = async () => {
     const original = item.original.data.slice();
     const release = item.admission.hold(); item.admission.release();
     const chargedAfterRemoval = budget.used === retained;
+    const releaseCaptured = holdArtworkExport([item], { source: 'luma' });
+    const captureBytes = capturedAnalysisCost([item]);
+    const lazyExport = convertedAnimation({ ...item, frames: [{ original: item.original, img: item.img, delay: 100 }] },
+      { first: '#000000', second: '#ffffff', style: 'solid', set: {} });
     let current = item;
-    for (const source of ['red', 'blue', 'green']) current = (await reanalyzeItems([current], { source }))[0];
+    const generations = [item];
+    for (const source of ['red', 'blue']) { current = (await reanalyzeItems([current], { source }))[0]; generations.push(current); }
+    const buffers = new Set();
+    for (const generation of generations) for (const value of Object.values(generation.img)) if (ArrayBuffer.isView(value)) buffers.add(value.buffer);
+    const actualGenerationsBytes = [...buffers].reduce((sum, buffer) => sum + buffer.byteLength, 0);
+    const capturedGenerationCovered = capturedAnalysisAdmission.used === captureBytes && retained + captureBytes >= actualGenerationsBytes
+      && lazyExport.getFrame(0).mask.length === 65 * 64;
+    releaseCaptured();
+    const block = capturedAnalysisAdmission.reserve(capturedAnalysisAdmission.limit);
+    let capturedLimitRejected = false;
+    try { holdArtworkExport([item], { source: 'luma' }); }
+    catch (error) { capturedLimitRejected = error.code === 'ARTWORK_MEMORY_LIMIT'; }
+    block.release();
+    const recoveredCapture = holdArtworkExport([item], { source: 'red' });
+    const captureRecovery = capturedAnalysisAdmission.used === captureBytes * 2;
+    recoveredCapture();
     const exactPixels = original.every((value, at) => current.original.data[at] === value);
     release(); if (budget.used) throw new Error('Removed source lease did not settle.');
     const next = await decodeImportedFile(file, { budget }); releaseImported(next);
@@ -30,9 +52,14 @@ document.querySelector('#run').onclick = async () => {
     const canceled = Promise.allSettled([first, second]); cancel.abort();
     const canceledResults = await canceled;
     releaseImported(canceledResults[0].value);
-    const receipt = { pass: chargedAfterRemoval && exactPixels && budget.used === 0 && canceledResults[1].reason?.name === 'AbortError',
+    const receipt = { pass: chargedAfterRemoval && exactPixels && capturedGenerationCovered && capturedLimitRejected && captureRecovery
+        && capturedAnalysisAdmission.used === 0 && budget.used === 0 && canceledResults[1].reason?.name === 'AbortError',
       mode: fallback ? 'fallback' : 'worker', workersCreated: workers, concurrent: results.map(x => x.status), rejection: results[1].reason.code,
-      sourceBytesExact: exactPixels, removalBorrowerRemainedCharged: chargedAfterRemoval, finalBytes: budget.used, peak: budget.peak, limit: budget.limit };
+      sourceBytesExact: exactPixels, removalBorrowerRemainedCharged: chargedAfterRemoval,
+      capturedGenerationCovered, actualGenerationsBytes, sourcePlusCapturedBytes: retained + captureBytes,
+      capturedLimitRejected, captureRecovery, finalCapturedBytes: capturedAnalysisAdmission.used,
+      capturedLimit: capturedAnalysisAdmission.limit, capturedPeak: capturedAnalysisAdmission.peak,
+      finalBytes: budget.used, peak: budget.peak, limit: budget.limit };
     if (!receipt.pass) throw new Error(JSON.stringify(receipt));
     output.textContent = JSON.stringify(receipt, null, 2);
   } catch (error) { output.textContent = 'FAIL: ' + error.message; }

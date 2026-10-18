@@ -1,0 +1,31 @@
+Browser tab: 7, Title: "M1 artwork admission browser checks", URL: "http://127.0.0.1:5211/harness-v5/harness.html?fallback=1".
+1 AXWebArea M1 artwork admission browser checks, URL: 127.0.0.1:5211/harness-v5/harness.html?fallback=1
+	2 heading Artwork admission browser checks, Value: 1
+		3 text Artwork admission browser checks
+	4 text Mode: cooperative no-worker fallback.
+	5 button Run bounded admission checks, ID: run
+	6 text {
+  "pass": true,
+  "mode": "fallback",
+  "workersCreated": 0,
+  "concurrent": [
+    "fulfilled",
+    "rejected"
+  ],
+  "rejection": "ARTWORK_MEMORY_LIMIT",
+  "sourceBytesExact": true,
+  "removalBorrowerRemainedCharged": true,
+  "capturedGenerationCovered": true,
+  "actualGenerationsBytes": 60224,
+  "sourcePlusCapturedBytes": 60224,
+  "capturedLimitRejected": true,
+  "captureRecovery": true,
+  "finalCapturedBytes": 0,
+  "capturedLimit": 134217728,
+  "capturedPeak": 134217728,
+  "finalBytes": 0,
+  "peak": 103822,
+  "limit": 145286
+}
+
+The focused UI element is 5 button Run bounded admission checks, ID: run

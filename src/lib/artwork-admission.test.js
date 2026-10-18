@@ -43,14 +43,13 @@ describe('logical artwork reservations', () => {
     expect(() => artworkCost(1, 1, 4097)).toThrow(expect.objectContaining({ code: 'ARTWORK_MEMORY_LIMIT' }));
     expect(() => artworkCost(0, 1)).toThrow('Invalid artwork dimensions');
   });
-  it('charges additional nonmatching export analysis until encoding settles, rolling back failures', () => {
-    const budget = createArtworkAdmission(10000), admission = budget.reserve(4100);
+  it('keeps source ownership distinct from bounded captured export analysis', () => {
+    const budget = createArtworkAdmission(10000), admission = budget.reserve(4100), captures = createArtworkAdmission(5000);
     const item = { admission, by: 'luma ', img: { soft: false }, original: { width: 2, height: 2 } };
-    const same = holdArtworkExport([item], { source: 'luma' }); expect(budget.used).toBe(4100); same();
-    const changed = holdArtworkExport([item], { source: 'blue' }); expect(budget.used).toBe(4100 + 2060);
-    admission.release(); expect(budget.used).toBe(6160); changed(); expect(budget.used).toBe(0);
-    const tight = createArtworkAdmission(5000), small = tight.reserve(4100);
-    expect(() => holdArtworkExport([{ ...item, admission: small }], { source: 'blue' })).toThrow(expect.objectContaining({ code: 'ARTWORK_MEMORY_LIMIT' }));
-    small.release(); expect(tight.used).toBe(0);
+    const same = holdArtworkExport([item], { source: 'luma' }, { budget: captures });
+    expect(budget.used).toBe(4100); expect(captures.used).toBe(2060); same();
+    const changed = holdArtworkExport([item], { source: 'blue' }, { budget: captures });
+    expect(budget.used).toBe(4100); expect(captures.used).toBe(4120);
+    admission.release(); expect(budget.used).toBe(4100); changed(); expect(budget.used + captures.used).toBe(0);
   });
 });

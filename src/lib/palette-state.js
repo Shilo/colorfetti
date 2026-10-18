@@ -3,6 +3,7 @@ import { preparePalette, quantizeAsync, validateMatchingMetric, checkCanceled } 
 import { normalizeDither, normalizeDitherStrength } from './palette-dither-settings.js';
 import { getLimitedPalette } from './palette-limit-client.js';
 import { normalizeAlphaMode, effectiveAlphaCut } from './palette-alpha.js';
+import { originalArtworkItem } from './artwork-source-projection.js';
 
 function maxColorsOf(value = 0) {
   if (!Number.isInteger(value) || value < 0 || value > 256) throw new Error('Max colors must be All or an integer from 1 to 256.');
@@ -43,15 +44,16 @@ export function conversionSnapshot({ family, palette, alphaCut, alphaMode, metri
 // lazy so nearest-only inspection can reuse compact immutable RGB summaries.
 export async function prepareFullPaletteImage(item, asked, { signal } = {}) {
   checkCanceled(signal);
+  item = originalArtworkItem(item);
   // Own scalar preferences and source/frame references before subset preparation
   // yields. Still copies of GIFs select from the same full animation as Save.
   const metric = validateMatchingMetric(asked.metric), alphaCut = asked.alphaCut, maxColors = maxColorsOf(asked.maxColors), cleanup = asked.cleanup === true;
   const dither = normalizeDither(asked.dither), ditherStrength = normalizeDitherStrength(asked.ditherStrength);
   const alphaMode = normalizeAlphaMode(asked.alphaMode), preparationCut = effectiveAlphaCut(alphaMode, alphaCut);
   const original = item.original, name = item.name, loop = item.loop;
-  const framesIdentity = item.frames;
-  const frames = item.frames?.map(f => ({ identity: f, original: f.original, delay: f.delay }));
-  const sourceItem = { identity: item, original, frames, framesIdentity, loop };
+  const framesIdentity = item.framesIdentity;
+  const frames = item.frames;
+  const sourceItem = { identity: item.identity, original, frames, framesIdentity, loop };
   let colors = asked.colors;
   const generated = asked.generated;
   if (generated) {

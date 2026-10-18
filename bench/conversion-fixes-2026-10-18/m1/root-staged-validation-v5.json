@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-18",
+  "scope": "Independent staged M1 capture correction, excluding concurrent native inspection and PNG compaction",
+  "snapshot": ".tmp/m1-staged-v5",
+  "buildCommand": "npx vite build .tmp/m1-staged-v5 --outDir dist",
+  "buildPassed": true,
+  "testCommand": "npx vitest run --root .tmp/m1-staged-v5 --reporter=dot",
+  "testFilesPassed": 79,
+  "testsPassed": 1314,
+  "testsSkipped": 2,
+  "note": "Worker/fallback v5 browser receipts verify captured-generation accounting and quota recovery. The baseline ImageBitmap mock warning remains unchanged."
+}

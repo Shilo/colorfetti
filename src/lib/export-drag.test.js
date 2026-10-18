@@ -1,9 +1,26 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { createExportDrag } from './export-drag.js';
 import { createArtworkAdmission } from './artwork-admission.js';
+import { artworkIdentity, originalArtworkItem } from './artwork-source-projection.js';
 
 afterEach(() => { vi.useRealTimers(); });
 describe('preparatory export drag ownership', () => {
+  it('stores a scalar desired item while sharing projected requests by opaque identity', async () => {
+    vi.useFakeTimers();
+    const original = { width: 1, height: 1, data: new Uint8Array(4) };
+    let live = { id: 7, name: 'test.png', original, img: { lum: new Uint8Array(1) } };
+    const retained = [], prepared = [];
+    const controller = createExportDrag({ delay: 1,
+      retainItem: item => { const next = { id: item.id }; retained.push(next); return next; },
+      request: item => item.id === live.id ? { item: originalArtworkItem(live), identity: artworkIdentity(live), key: 'same' } : null,
+      prepare: async asked => { prepared.push(asked); return record('blob:projected'); }, revoke: vi.fn(), notify: vi.fn() });
+    controller.hover(live); await vi.advanceTimersByTimeAsync(1);
+    expect(retained).toEqual([{ id: 7 }]); expect(controller.readyFor(live)).toBeTruthy();
+    expect(prepared[0].identity).not.toBe(live); expect(prepared[0].item.img).toEqual({ w: 1, h: 1 });
+    controller.refresh(); await vi.advanceTimersByTimeAsync(1); expect(prepared).toHaveLength(1);
+    live = { ...live, img: {} }; controller.refresh(); await vi.advanceTimersByTimeAsync(1);
+    expect(prepared).toHaveLength(2); controller.destroy();
+  });
   it('retains the removed source until canceled preparation actually settles, then drops its lease', async () => {
     vi.useFakeTimers(); const budget = createArtworkAdmission(100), token = budget.reserve(70), item = { admission: token };
     let live = true, finish;

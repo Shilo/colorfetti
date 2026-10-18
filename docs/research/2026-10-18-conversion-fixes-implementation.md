@@ -33,6 +33,16 @@ Task-specific acceptance and evidence are recorded here as each task completes.
 
 ### M1 Artwork admission and ownership
 
+A later integration audit reproduced a retained-generation gap: a matching export
+held analysis A while wall updates created B and C. The corrective pass adds a
+separate 128 MiB capture ledger for retained inputs and nonmatching replacements;
+source admission remains 256 MiB. Palette asynchronous work uses original-only
+projections and opaque weak identities, and viewer selection keeps only an ID.
+Final desktop worker/fallback v5 checks each measured 60,224 actual typed bytes
+covered by 60,224 source+capture bytes across A/B/C, exercised quota rejection and
+recovery, and returned both ledgers to zero. Integrated App Save/ZIP, captions and
+Reuse passed. This supersedes the earlier matching-free scratch assumption.
+
 A 256 MiB logical source ledger admits complete serial decode/analysis jobs before
 controlled expansion. Geometry/frame caps and a constant-storage GIF framing scan
 prevent large logical screens or tiny-frame metadata from bypassing admission.

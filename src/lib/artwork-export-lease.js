@@ -1,15 +1,15 @@
 import { holdArtworkItems } from './artwork-admission.js';
 import { analysisMatches } from './image-reanalysis.js';
+import { holdArtworkAnalyses } from './artwork-analysis-capture.js';
 
-// Live-wall reanalysis has one reserved generation. Captured export analyses
-// may outlive that generation through encoding, so charge their own scratch.
-export function holdArtworkExport(items, settings) {
+// Input analyses remain captured even when matching. Nonmatching preparation
+// also allocates its own generation; both can outlive live-wall replacements.
+export function holdArtworkExport(items, settings, { budget } = {}) {
   const releases = [holdArtworkItems(items)];
   try {
     if (settings) for (const item of items) {
-      if (!item.admission || analysisMatches(item, settings)) continue;
-      const bytes = (item.frames ?? [item]).reduce((sum, frame) => sum + frame.original.width * frame.original.height * 3 + 2048, 0);
-      releases.push(item.admission.scratch(bytes));
+      if (!item.admission) continue;
+      releases.push(holdArtworkAnalyses(item.frames ?? [item], { extraGenerations: analysisMatches(item, settings) ? 0 : 1, budget }));
     }
   } catch (error) { for (const release of releases) release(); throw error; }
   return () => { for (const release of releases) release(); };

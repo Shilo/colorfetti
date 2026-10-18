@@ -1,7 +1,6 @@
 import { mask } from './recolor.js';
 import { analysisMatches, reanalyzeItem } from './image-reanalysis.js';
 import { checkCanceled, yieldTask } from './quantize.js';
-import { holdArtworkItems } from './artwork-admission.js';
 import { holdArtworkExport } from './artwork-export-lease.js';
 
 // Retain only the two role-presence bits for the latest conversion of an
@@ -89,7 +88,13 @@ export function rememberOneBitSample(img, style, set, value, width, height) {
 export async function collectOneBitUsage(item, asked, { signal } = {}) {
   checkCanceled(signal);
   const captured = { first: asked.first, second: asked.second, style: asked.style, set: { ...asked.set } };
-  const release = holdArtworkItems([item]);
+  const possible = new Set(inks(captured.first, captured.style === 'silhouette' ? null : captured.second).filter(Boolean));
+  if (!possible.size) return Object.freeze({ colors: Object.freeze([]), count: 0, frames: item.frames?.length ?? 1 });
+  const settings = { source: captured.set.source, alphaCut: captured.set.alpha };
+  if (item.img.w * item.img.h > ONEBIT_INSPECTION_PIXELS && !analysisMatches(item, settings)) return null;
+  // The queued closure already owns the input analysis. Charge its capture now,
+  // rather than waiting for the job to start behind other settings generations.
+  const release = holdArtworkExport([item], settings);
   try { return await queued(() => inspect(item, captured, signal), signal); }
   finally { release(); }
 }
@@ -106,8 +111,6 @@ async function inspect(item, asked, signal) {
   // Count metadata must not launch a large source analysis either. The App's
   // existing analysis job can publish matching immutable frames first.
   if (item.img.w * item.img.h > ONEBIT_INSPECTION_PIXELS && !analysisMatches(item, analysisSettings)) return null;
-  const releaseAnalysis = holdArtworkExport([item], analysisSettings);
-  try {
     const read = await reanalyzeItem(item, analysisSettings, { signal });
     const frames = read.frames ?? [read];
     const used = new Set();
@@ -144,5 +147,4 @@ async function inspect(item, asked, signal) {
     if (unknown && used.size !== possible.size) return null;
     const colors = Object.freeze([...possible].filter(color => used.has(color)));
     return Object.freeze({ colors, count: colors.length, frames: frameCount });
-  } finally { releaseAnalysis(); }
 }
