@@ -1,0 +1,130 @@
+{
+  "repeatedAt": "2026-10-18T11:55:33.610Z",
+  "browser": "Actual Codex in-app browser",
+  "source": "Same immutable 6f8238a build, not later1582c59/a5ac06b or dirtyGIF edits",
+  "checks": [
+    {
+      "cycle": 0,
+      "source": "Preview dungeon-wizard.png",
+      "action": "keyboard Enter / Escape",
+      "result": {
+        "connected": true,
+        "dialogs": 0,
+        "label": "Preview dungeon-wizard.png"
+      }
+    },
+    {
+      "cycle": 0,
+      "source": "Preview kenney-motion-256.gif",
+      "action": "keyboard Enter / Escape",
+      "result": {
+        "connected": true,
+        "dialogs": 0,
+        "label": "Preview kenney-motion-256.gif"
+      }
+    },
+    {
+      "cycle": 0,
+      "source": "Preview dungeon-knight.png",
+      "action": "keyboard Enter / Escape",
+      "result": {
+        "connected": true,
+        "dialogs": 0,
+        "label": "Preview dungeon-knight.png"
+      }
+    },
+    {
+      "cycle": 1,
+      "source": "Preview dungeon-wizard.png",
+      "action": "keyboard Enter / Escape",
+      "result": {
+        "connected": true,
+        "dialogs": 0,
+        "label": "Preview dungeon-wizard.png"
+      }
+    },
+    {
+      "cycle": 1,
+      "source": "Preview kenney-motion-256.gif",
+      "action": "keyboard Enter / Escape",
+      "result": {
+        "connected": true,
+        "dialogs": 0,
+        "label": "Preview kenney-motion-256.gif"
+      }
+    },
+    {
+      "cycle": 1,
+      "source": "Preview dungeon-knight.png",
+      "action": "keyboard Enter / Escape",
+      "result": {
+        "connected": true,
+        "dialogs": 0,
+        "label": "Preview dungeon-knight.png"
+      }
+    },
+    {
+      "sourceIndex": 0,
+      "action": "pointer open / Close",
+      "result": {
+        "active": "BODY",
+        "dialogs": 0,
+        "label": null
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "action": "pointer open / Close",
+      "result": {
+        "active": "BODY",
+        "dialogs": 0,
+        "label": null
+      }
+    },
+    {
+      "sourceIndex": 2,
+      "action": "pointer open / Close",
+      "result": {
+        "active": "BODY",
+        "dialogs": 0,
+        "label": null
+      }
+    },
+    {
+      "action": "animation Zoom/Compare/close/reopen",
+      "freshFit": true
+    },
+    {
+      "action": "responsive keyboard close",
+      "result": {
+        "active": "Preview dungeon-wizard.png",
+        "height": 844,
+        "horizontalOverflow": false,
+        "width": 390
+      }
+    },
+    {
+      "action": "responsive keyboard close",
+      "result": {
+        "active": "Preview dungeon-wizard.png",
+        "height": 448,
+        "horizontalOverflow": false,
+        "width": 819
+      }
+    },
+    {
+      "action": "remove animation, reopen remaining still, remove all individually",
+      "emptyWallReturned": true
+    }
+  ],
+  "png": {
+    "bytes": 231,
+    "sha256": "11ec392d1e3978ac4b0944050f821a3e1e3cbd6cfb5f729368ae978a4a2800ce",
+    "byteIdenticalBeforeAfter": true,
+    "matchesFirstReview": true
+  },
+  "errors": [],
+  "finalDom": "- figure \"Add images\":\n  - button \"Add images\"\n  - button \"Add images\":\n    - generic: Colorfetti\n    - generic: 60×60\n    - generic: ·\n    - generic: 6 colors\n    - generic: Add, drop or paste images\n- group \"Colors and palette\":\n  - 'button \"Selected palette: Auto, 6 colors\"'\n  - button \"Palette\":\n- group \"Conversion and style\":\n  - button \"Auto conversion\" [pressed]:\n    - generic: Auto\n  - button \"Palette settings\":\n  - generic: Showing images converted with Auto.\n- navigation \"File and app actions\":\n  - button \"More\":",
+  "freshAndroidTest": false,
+  "freshMemoryMeasurement": false
+}

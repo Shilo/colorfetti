@@ -1,0 +1,247 @@
+{
+  "sourceAtStart": "6f8238a",
+  "initialTrackedWorktreeClean": true,
+  "scope": "Fresh suite/build and Codex Browser smoke on the then-clean current checkout; this is distinct from the original frozen ae97d0e audit. Later concurrent GIF edits are preserved, excluded from the immutable served build, and not endorsed by this review.",
+  "testsFinishedUtc": "2026-10-18T11:24:28.608Z",
+  "buildFinishedUtc": "2026-10-18T11:24:42.872Z",
+  "laterConcurrentFiles": [
+    {
+      "file": "src/lib/gif.js",
+      "observedModifiedUtc": "2026-10-18T11:27:53.340Z"
+    },
+    {
+      "file": "src/lib/image-import-client.js",
+      "observedModifiedUtc": "2026-10-18T11:27:53.535Z"
+    },
+    {
+      "file": "src/lib/image-import-worker.js",
+      "observedModifiedUtc": "2026-10-18T11:27:53.876Z"
+    },
+    {
+      "file": "src/lib/gif-decode.js",
+      "observedModifiedUtc": "2026-10-18T11:26:12.128Z"
+    }
+  ],
+  "assets": [
+    {
+      "file": "apple-touch-icon-152x152.png",
+      "bytes": 546,
+      "sha256": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0"
+    },
+    {
+      "file": "apple-touch-icon-167x167.png",
+      "bytes": 617,
+      "sha256": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d"
+    },
+    {
+      "file": "apple-touch-icon-180x180.png",
+      "bytes": 677,
+      "sha256": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4"
+    },
+    {
+      "file": "assets/gif-2O_6Kqcd.js",
+      "bytes": 13733,
+      "sha256": "cb8247fff5d2a4a11ab2a9942da30e8aba94737d1f5cca5e034b0cb76854e1a0"
+    },
+    {
+      "file": "assets/image-import-client-2KdzSh-B.js",
+      "bytes": 5185,
+      "sha256": "02e3f9f00c0190fe99e3b785e2b6dbbe64776f3e5e86006a373ef720229ea65c"
+    },
+    {
+      "file": "assets/image-import-worker-DsnZrHlM.js",
+      "bytes": 25803,
+      "sha256": "502c16643f4bd398556f105160dc0018daf7f4fad15fb4f92b3e982a246161f4"
+    },
+    {
+      "file": "assets/index-_rboQdhG.js",
+      "bytes": 275247,
+      "sha256": "da19b932f1efecb1c02b8e807610636612929fd0b71a0580d220ead3f156e858"
+    },
+    {
+      "file": "assets/index-VE9_tUgX.css",
+      "bytes": 168002,
+      "sha256": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+    },
+    {
+      "file": "assets/palette-ase-gXqzrNdw.js",
+      "bytes": 2495,
+      "sha256": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01"
+    },
+    {
+      "file": "assets/palette-cleanup-CBSRH8eo.js",
+      "bytes": 4238,
+      "sha256": "515c510226733b9ee418420596f4207c185c9c33914927079768ad816fcd4322"
+    },
+    {
+      "file": "assets/palette-cleanup-client-sXRJ4xRL.js",
+      "bytes": 7362,
+      "sha256": "a7bb040eb4922796a50f40e64b60d9f9c7ad7b6598718bb2f007fa18c49b1c8b"
+    },
+    {
+      "file": "assets/palette-cleanup-worker-ChpCTucA.js",
+      "bytes": 15055,
+      "sha256": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3"
+    },
+    {
+      "file": "assets/palette-generated-client-Cw6MMRH-.js",
+      "bytes": 4007,
+      "sha256": "6350935962215ddd203a1f19f6a5e27bb59341477d46e14d6b0a3f8538290ea7"
+    },
+    {
+      "file": "assets/palette-generated-COgMYFR5.js",
+      "bytes": 5985,
+      "sha256": "e2253425fddc4c533fea22a8b24201faca05e0cf502d752d47fdac2f22adb152"
+    },
+    {
+      "file": "assets/palette-generated-worker-xpoMRM2c.js",
+      "bytes": 9829,
+      "sha256": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3"
+    },
+    {
+      "file": "assets/palette-gif-worker-D4qe4WP7.js",
+      "bytes": 11213,
+      "sha256": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840"
+    },
+    {
+      "file": "assets/palette-limit-OiwOF5bZ.js",
+      "bytes": 4571,
+      "sha256": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f"
+    },
+    {
+      "file": "assets/palette-limit-worker-rkrL9P3s.js",
+      "bytes": 9860,
+      "sha256": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46"
+    },
+    {
+      "file": "assets/palette-lospec-BUdZU2lN.js",
+      "bytes": 2329,
+      "sha256": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23"
+    },
+    {
+      "file": "assets/palette-usage-EuZJGQRg.js",
+      "bytes": 970,
+      "sha256": "0af3654a7f3900b9870618730623543dbbef1983dfef0fb2a575c0d7f1318671"
+    },
+    {
+      "file": "assets/quantize-DsvDuXDJ.js",
+      "bytes": 13241,
+      "sha256": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941"
+    },
+    {
+      "file": "colorfetti-trailer-poster.png",
+      "bytes": 719992,
+      "sha256": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86"
+    },
+    {
+      "file": "colorfetti-trailer.mp4",
+      "bytes": 8912471,
+      "sha256": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19"
+    },
+    {
+      "file": "favicon-16x16.png",
+      "bytes": 148,
+      "sha256": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13"
+    },
+    {
+      "file": "favicon-32x32.png",
+      "bytes": 174,
+      "sha256": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4"
+    },
+    {
+      "file": "favicon-48x48.png",
+      "bytes": 200,
+      "sha256": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06"
+    },
+    {
+      "file": "favicon-dark-16x16.png",
+      "bytes": 148,
+      "sha256": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8"
+    },
+    {
+      "file": "favicon-dark-32x32.png",
+      "bytes": 174,
+      "sha256": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729"
+    },
+    {
+      "file": "favicon-dark-48x48.png",
+      "bytes": 200,
+      "sha256": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04"
+    },
+    {
+      "file": "favicon-dark.ico",
+      "bytes": 15086,
+      "sha256": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296"
+    },
+    {
+      "file": "favicon-dark.svg",
+      "bytes": 601,
+      "sha256": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8"
+    },
+    {
+      "file": "favicon-light.svg",
+      "bytes": 601,
+      "sha256": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c"
+    },
+    {
+      "file": "favicon.ico",
+      "bytes": 15086,
+      "sha256": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270"
+    },
+    {
+      "file": "favicon.svg",
+      "bytes": 736,
+      "sha256": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a"
+    },
+    {
+      "file": "index.html",
+      "bytes": 4543,
+      "sha256": "cd32349ce7dc234d86f84e8734bfe469d4c6e67a4db1c14564f98375ae682c1d"
+    },
+    {
+      "file": "manifest.webmanifest",
+      "bytes": 794,
+      "sha256": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44"
+    },
+    {
+      "file": "maskable-icon-192x192.png",
+      "bytes": 716,
+      "sha256": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55"
+    },
+    {
+      "file": "maskable-icon-512x512.png",
+      "bytes": 3197,
+      "sha256": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11"
+    },
+    {
+      "file": "monochrome-192x192.png",
+      "bytes": 724,
+      "sha256": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca"
+    },
+    {
+      "file": "pwa-192x192.png",
+      "bytes": 746,
+      "sha256": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c"
+    },
+    {
+      "file": "pwa-512x512.png",
+      "bytes": 3862,
+      "sha256": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838"
+    },
+    {
+      "file": "safari-pinned-tab.svg",
+      "bytes": 601,
+      "sha256": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+    }
+  ],
+  "phoneUsed": false,
+  "freshMemoryMeasurement": false,
+  "cleanup": {
+    "ownedBrowserTabClosed": true,
+    "viewportReset": true,
+    "ownServerPort": 5414,
+    "ownServerStopped": true,
+    "twoExactOwnedDownloadsHashCheckedAndRemoved": true,
+    "userTabsAndOtherProcessesPreserved": true
+  }
+}

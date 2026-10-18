@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-18T11:59:23.862Z",
+  "source": "6f8238a",
+  "repeatedTests": "66 files / 1091 passed / two existing skips",
+  "repeatedBuildPassed": true,
+  "distFiles": 42,
+  "rawByteIdenticalFiles": 37,
+  "lineEndingDifferences": [
+    {
+      "file": "favicon-dark.svg",
+      "differsOnlyByCarriageReturnBytes": true
+    },
+    {
+      "file": "favicon-light.svg",
+      "differsOnlyByCarriageReturnBytes": true
+    },
+    {
+      "file": "favicon.svg",
+      "differsOnlyByCarriageReturnBytes": true
+    },
+    {
+      "file": "index.html",
+      "differsOnlyByCarriageReturnBytes": true
+    },
+    {
+      "file": "safari-pinned-tab.svg",
+      "differsOnlyByCarriageReturnBytes": true
+    }
+  ],
+  "html": {
+    "file": "index.html",
+    "originalCarriageReturns": 0,
+    "rebuiltCarriageReturns": 70,
+    "identicalAfterRemovingOnlyCarriageReturnBytes": true
+  },
+  "qualification": "The original repeat driver exits1 because its strict CRLF-to-LF comparison leaves one extra CR in Git-archived HTML. Tests and build themselves exit0. All JS/CSS and binary assets are raw byte-identical. Four SVGs and index.html differ only by CR bytes; every other character is unchanged. This separate check preserves the initial diagnostic instead of rewriting it.",
+  "repeatedCodexGroups": 13,
+  "browserErrors": [],
+  "repeatedPngExact": true,
+  "freshMemoryOrAndroidMeasurements": false
+}

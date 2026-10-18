@@ -1,0 +1,135 @@
+{
+  "created": "2026-10-18T11:52:39.178Z",
+  "head": "a5ac06bc39dff3d330cca4126b048e4bafbc4b04",
+  "baseline": "5ae11b13977f2ce3cc7ae67cf7bd220f8a8734ce",
+  "qualification": "Fresh checks of retained artifacts only. No new browser/device execution, timing, peak-memory measurement or whole-app regression guarantee.",
+  "integrity": {
+    "checked": 451,
+    "mismatches": []
+  },
+  "inventory": {
+    "entries": 96,
+    "omitted": [],
+    "qualification": "Checks inventory completeness under its declared implementation/configuration boundaries, not proof that authors read every line."
+  },
+  "focus": [
+    {
+      "source": "preview-focus-1792320897510.json",
+      "methods": {
+        "keyboard": {
+          "rendererCpuMs": {
+            "pairedDeltaMedian": 2.22900000000001,
+            "pairedPercentMedian": 16.375257126065293,
+            "candidateWorsePairs": 3
+          },
+          "eventToSettledMs": {
+            "pairedDeltaMedian": -0.3999999761581421,
+            "pairedPercentMedian": -5.932204768220016,
+            "candidateWorsePairs": 2
+          }
+        },
+        "pointer": {
+          "rendererCpuMs": {
+            "pairedDeltaMedian": 6.683999999999969,
+            "pairedPercentMedian": 21.25007948114695,
+            "candidateWorsePairs": 3
+          },
+          "eventToSettledMs": {
+            "pairedDeltaMedian": -0.19999992847442627,
+            "pairedPercentMedian": -11.111119941428505,
+            "candidateWorsePairs": 2
+          }
+        }
+      },
+      "pngHashes": [
+        {
+          "variant": "baseline",
+          "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+        },
+        {
+          "variant": "candidate",
+          "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+        }
+      ]
+    },
+    {
+      "source": "preview-focus-1792321019726.json",
+      "methods": {
+        "keyboard": {
+          "rendererCpuMs": {
+            "pairedDeltaMedian": 1.1789999999999843,
+            "pairedPercentMedian": 11.090290790478088,
+            "candidateWorsePairs": 5
+          },
+          "eventToSettledMs": {
+            "pairedDeltaMedian": -11.299999952316284,
+            "pairedPercentMedian": -84.96240596112419,
+            "candidateWorsePairs": 1
+          }
+        },
+        "pointer": {
+          "rendererCpuMs": {
+            "pairedDeltaMedian": 4.614999999999981,
+            "pairedPercentMedian": 16.570320634806574,
+            "candidateWorsePairs": 4
+          },
+          "eventToSettledMs": {
+            "pairedDeltaMedian": 0.09999990463256836,
+            "pairedPercentMedian": 6.2500013969838415,
+            "candidateWorsePairs": 3
+          }
+        }
+      },
+      "pngHashes": [
+        {
+          "variant": "baseline",
+          "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+        },
+        {
+          "variant": "candidate",
+          "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091"
+        }
+      ]
+    }
+  ],
+  "memory": {
+    "neverPreviewBytes": 595193,
+    "baselinePreviewBytes": 22976754,
+    "replacementBytes": 615727,
+    "candidatePreviewBytes": 595933,
+    "releasedBytes": 22380821
+  },
+  "nativeOutputs": {
+    "checks": [
+      {
+        "source": "dungeon-wizard.png",
+        "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091",
+        "frames": 1
+      },
+      {
+        "source": "kenney-motion-256.gif",
+        "sha256": "1689433d660b81dbd1c1ae90ebb37c23a0649131cabfc4023c95cbfb8dfc65e0",
+        "frames": 48
+      },
+      {
+        "source": "dungeon-wizard.png",
+        "sha256": "a314c3d4b0a6f9312e4ffcd1a1c6245dd9c99741f70a2205a87434e4369ed091",
+        "frames": 1
+      },
+      {
+        "source": "real-magic.gif",
+        "sha256": "1916b8093c0d7216c63d8bdb92a2f947b51001f8d42344d05e28b59f09a54a19",
+        "frames": 6
+      }
+    ],
+    "frames": 56,
+    "pixels": 3152384,
+    "errors": 0
+  },
+  "gateProvenance": {
+    "explicitClaim": "bench/codex-independent-performance-2026-10-18/preview-trigger-decision.md:43",
+    "originalPlan": "bench/codex-independent-performance-2026-10-18/preview-trigger-plan.md",
+    "finding": "The original retained plan specifies latency 5ms AND5%, not the later CPU four-worse-pairs repeat rule. The artifacts do not independently establish when that CPU rule was chosen. This does not establish that it was chosen after measurement; original chat chronology was not verified.",
+    "decision": "Keep the demonstrated memory correction. CPU uncertainty remains unresolved; no blanket no-regression claim."
+  }
+}

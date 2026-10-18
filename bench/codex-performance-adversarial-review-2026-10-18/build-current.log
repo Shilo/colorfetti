@@ -1,0 +1,36 @@
+
+> colorfetti@0.0.0 build
+> vite build --outDir .tmp/codex-performance-adversarial-review-2026-10-18/current/dist
+
+4:24:41 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti - using default configuration.
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 196 modules transformed.
+rendering chunks...
+computing gzip size...
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/index.html                                     4.54 kB │ gzip:  1.63 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-generated-worker-xpoMRM2c.js    9.82 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-limit-worker-rkrL9P3s.js        9.86 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-gif-worker-D4qe4WP7.js         11.21 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-cleanup-worker-ChpCTucA.js     15.05 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/image-import-worker-DsnZrHlM.js        25.80 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/index-VE9_tUgX.css                    168.00 kB │ gzip: 26.46 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-usage-EuZJGQRg.js               0.97 kB │ gzip:  0.61 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-lospec-BUdZU2lN.js              2.32 kB │ gzip:  1.25 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-ase-gXqzrNdw.js                 2.49 kB │ gzip:  1.32 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-generated-client-Cw6MMRH-.js    4.00 kB │ gzip:  1.75 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-cleanup-CBSRH8eo.js             4.23 kB │ gzip:  2.21 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-limit-OiwOF5bZ.js               4.57 kB │ gzip:  2.26 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/image-import-client-2KdzSh-B.js         5.18 kB │ gzip:  2.07 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-generated-COgMYFR5.js           5.98 kB │ gzip:  2.73 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/palette-cleanup-client-sXRJ4xRL.js      7.36 kB │ gzip:  2.88 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/quantize-DsvDuXDJ.js                   13.24 kB │ gzip:  6.39 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/gif-2O_6Kqcd.js                        13.73 kB │ gzip:  5.36 kB
+.tmp/codex-performance-adversarial-review-2026-10-18/current/dist/assets/index-_rboQdhG.js                     275.24 kB │ gzip: 98.12 kB
+
+✓ built in 439ms
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.21.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.1
+npm notice To update run: npm install -g npm@11.21.1
+npm notice

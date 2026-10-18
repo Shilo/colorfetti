@@ -1,0 +1,10 @@
+4:56:29 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti/.tmp/codex-performance-adversarial-review-2026-10-18/repeat-6f-source - using default configuration.
+
+ RUN  v4.1.11 C:/Programming_Files/Shilocity/colorfetti/.tmp/codex-performance-adversarial-review-2026-10-18/repeat-6f-source
+
+
+ Test Files  66 passed (66)
+      Tests  1091 passed | 2 skipped (1093)
+   Start at  04:56:29
+   Duration  5.93s (transform 5.27s, setup 0ms, import 9.10s, tests 26.51s, environment 6ms)
+

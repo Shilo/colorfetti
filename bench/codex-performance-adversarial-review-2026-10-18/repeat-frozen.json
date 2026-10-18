@@ -1,0 +1,226 @@
+{
+  "created": "2026-10-18T11:56:38.047Z",
+  "revision": "6f8238a",
+  "target": "C:\\Programming_Files\\Shilocity\\colorfetti\\.tmp\\codex-performance-adversarial-review-2026-10-18\\repeat-6f-source",
+  "testsPassed": true,
+  "buildPassed": true,
+  "comparisons": [
+    {
+      "file": "apple-touch-icon-152x152.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "apple-touch-icon-167x167.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "apple-touch-icon-180x180.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/gif-2O_6Kqcd.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/image-import-client-2KdzSh-B.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/image-import-worker-DsnZrHlM.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/index-VE9_tUgX.css",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/index-_rboQdhG.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-ase-gXqzrNdw.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-cleanup-CBSRH8eo.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-cleanup-client-sXRJ4xRL.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-cleanup-worker-ChpCTucA.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-generated-COgMYFR5.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-generated-client-Cw6MMRH-.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-generated-worker-xpoMRM2c.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-gif-worker-D4qe4WP7.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-limit-OiwOF5bZ.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-limit-worker-rkrL9P3s.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-lospec-BUdZU2lN.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/palette-usage-EuZJGQRg.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "assets/quantize-DsvDuXDJ.js",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "colorfetti-trailer-poster.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "colorfetti-trailer.mp4",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon-16x16.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon-32x32.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon-48x48.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon-dark-16x16.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon-dark-32x32.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon-dark-48x48.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon-dark.ico",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon-dark.svg",
+      "rawEqual": false,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon-light.svg",
+      "rawEqual": false,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon.ico",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "favicon.svg",
+      "rawEqual": false,
+      "canonicalEqual": true
+    },
+    {
+      "file": "index.html",
+      "rawEqual": false,
+      "canonicalEqual": false
+    },
+    {
+      "file": "manifest.webmanifest",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "maskable-icon-192x192.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "maskable-icon-512x512.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "monochrome-192x192.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "pwa-192x192.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "pwa-512x512.png",
+      "rawEqual": true,
+      "canonicalEqual": true
+    },
+    {
+      "file": "safari-pinned-tab.svg",
+      "rawEqual": false,
+      "canonicalEqual": true
+    }
+  ],
+  "mismatches": [
+    {
+      "file": "index.html",
+      "rawEqual": false,
+      "canonicalEqual": false
+    }
+  ]
+}
