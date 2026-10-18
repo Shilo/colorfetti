@@ -1,0 +1,55 @@
+{
+ "hypothesis": "Brightness-only reanalysis reuses right/down/edges/autoLine/hasAlpha/soft from the same-source same-cut analysis",
+ "exactAtSampled256": true,
+ "note": "MIN_EDGE 24 mirrored from recolor.js; masks compared for all 11 styles at default settings, 256x256 sampled; Node on shared host, indicative",
+ "rows": [
+  {
+   "fixture": "kenney-sheet-1024.png",
+   "source": "red",
+   "maskDiff": 0,
+   "differingFields": [],
+   "fullAnalyzeMedianMs": 12,
+   "reuseMedianMs": 11.2
+  },
+  {
+   "fixture": "kenney-sheet-1024.png",
+   "source": "green",
+   "maskDiff": 0,
+   "differingFields": [],
+   "fullAnalyzeMedianMs": 15.5,
+   "reuseMedianMs": 7.8
+  },
+  {
+   "fixture": "kenney-sheet-1024.png",
+   "source": "value",
+   "maskDiff": 0,
+   "differingFields": [],
+   "fullAnalyzeMedianMs": 11.3,
+   "reuseMedianMs": 6.1
+  },
+  {
+   "fixture": "kenney-sheet-2048.png",
+   "source": "red",
+   "maskDiff": 0,
+   "differingFields": [],
+   "fullAnalyzeMedianMs": 48.2,
+   "reuseMedianMs": 25.3
+  },
+  {
+   "fixture": "kenney-sheet-2048.png",
+   "source": "green",
+   "maskDiff": 0,
+   "differingFields": [],
+   "fullAnalyzeMedianMs": 47.9,
+   "reuseMedianMs": 25.4
+  },
+  {
+   "fixture": "kenney-sheet-2048.png",
+   "source": "value",
+   "maskDiff": 0,
+   "differingFields": [],
+   "fullAnalyzeMedianMs": 46.6,
+   "reuseMedianMs": 24
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "node": "v25.0.0",
+ "runs": 21,
+ "at": "2026-10-18T06:20:01.393Z",
+ "results": [
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "iconOf auto",
+   "batch": 1,
+   "median": {
+    "original": 35.4492,
+    "candidate": 29.4603
+   },
+   "min": {
+    "original": 34.4025,
+    "candidate": 28.6487
+   },
+   "deltaMs": -5.9889,
+   "change": "-16.9%"
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "analyze luma",
+   "batch": 1,
+   "median": {
+    "original": 42.3599,
+    "seams": 30.2148,
+    "candidate": 33.8693
+   },
+   "min": {
+    "original": 39.6056,
+    "seams": 25.6459,
+    "candidate": 28.4607
+   },
+   "deltaMs": -8.4906,
+   "change": "-20.0%"
+  }
+ ]
+}

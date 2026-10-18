@@ -1,0 +1,86 @@
+--- a/src/lib/recolor.js
++++ b/src/lib/recolor.js
+@@ -99,11 +99,15 @@
+   for (const frame of frames) addSeams(hist, frame, t);
+   return seamThreshold(hist);
+ }
++// A difference of 0 (identical or empty neighbours) only counts in hist[0], which
++// seamThreshold always clears, so those pairs are skipped.
+ function addSeams(hist, { w, h, lum, right, down }, t) {
+   for (let y = 0, p = 0; y < h; y++) for (let x = 0; x < w; x++, p++) {
++    const r = right[p], d = down[p];
++    if (!r && !d) continue;
+     const light = lum[p] > t;
+-    if (x + 1 < w && lum[p + 1] > t === light) hist[right[p]]++;
+-    if (y + 1 < h && lum[p + w] > t === light) hist[down[p]]++;
++    if (r && x + 1 < w && lum[p + 1] > t === light) hist[r]++;
++    if (d && y + 1 < h && lum[p + w] > t === light) hist[d]++;
+   }
+ }
+ function seamThreshold(hist) {
+@@ -129,7 +133,7 @@
+   const lum = new Uint8Array(w * h), right = new Uint8Array(w * h), down = new Uint8Array(w * h);
+   const hist = new Uint32Array(256), edges = new Uint32Array(256), below = w * 4; // counts, in arrays of numbers only: a plain array made the loop a little slower
+   let hasAlpha = false, lo = 255, hi = 0, part = 0;
+-  for (let y = 0, p = 0, i = 0; y < h; y++) for (let x = 0; x < w; x++, p++, i += 4) {
++  if (source === 'luma') for (let y = 0, p = 0, i = 0; y < h; y++) for (let x = 0; x < w; x++, p++, i += 4) {
+     // `part` gathers the bits of every alpha plus one. An alpha of 0 gives 1 and one of 255 gives
+     // 256; any alpha between gives a number with one of the bits of 254 in it. So those bits say
+     // whether a pixel is partly see-through, for one sum and one `or` and no choice to make.
+@@ -142,22 +146,23 @@
+     if (x + 1 < w && data[i + 7] >= cut) edges[(right[p] = diff(data, i, i + 4))]++;
+     if (y + 1 < h && data[i + below + 3] >= cut) edges[(down[p] = diff(data, i, i + below))]++;
+   }
+-  edges[0] = 0; // identical neighbours are not edges
+-  if (source !== 'luma') {
+-    // Brightness read from anything else is worked out in a pass of its own, over what the loop
+-    // above found. Choosing between them inside that loop made every image take an eighth longer.
++  else {
++    // Brightness read from anything else has a loop of its own, the same but for `l`. Choosing
++    // between them inside the loop above made every image take an eighth longer; a second pass
++    // over the luma loop's results cost a fifth more than this for Value at 2048x2048.
+     const [wr, wg, wb] = SOURCES[source] ?? SOURCES.luma, value = source === 'value';
+-    hist.fill(0);
+-    lo = 255;
+-    hi = 0;
+-    for (let p = 0, i = 0; p < w * h; p++, i += 4) {
+-      if (data[i + 3] < cut) continue;
++    for (let y = 0, p = 0, i = 0; y < h; y++) for (let x = 0; x < w; x++, p++, i += 4) {
++      part |= data[i + 3] + 1;
++      if (data[i + 3] < cut) { hasAlpha = true; continue; }
+       const l = (lum[p] = value ? Math.max(data[i], data[i + 1], data[i + 2]) : Math.round(wr * data[i] + wg * data[i + 1] + wb * data[i + 2]));
+       hist[l]++;
+       if (l < lo) lo = l;
+       if (l > hi) hi = l;
++      if (x + 1 < w && data[i + 7] >= cut) edges[(right[p] = diff(data, i, i + 4))]++;
++      if (y + 1 < h && data[i + below + 3] >= cut) edges[(down[p] = diff(data, i, i + below))]++;
+     }
+   }
++  edges[0] = 0; // identical neighbours are not edges
+   const img = { w, h, data, lum, right, down, cut, hasAlpha, soft: (part & 254) !== 0, lo, hi, hist, edges, auto: otsu(hist, 127), autoLine: Math.max(MIN_EDGE, otsu(edges, 0)) };
+   img.autoTone = toneCenter(hist, img.auto);
+   img.autoSeam = seamStrength([img], img.auto);
+@@ -237,7 +242,7 @@
+     const t = otsu(hist, low), says = Math.min(254, t - low);
+     return { level: level.fill(low), auto: auto.fill(t), body: body.fill(median(hist, w * h)), cuts: [says, says] };
+   }
+-  const seen = new Uint8Array(w * h), queue = new Int32Array(w * h);
++  const seen = new Uint8Array(w * h), queue = new Int32Array(w * h), around = Int32Array.of(-w - 1, -w, 1 - w, -1, 1, w - 1, w, w + 1);
+   const all = new Uint32Array(256), inner = new Uint32Array(256); // how many of the sprite's pixels, and of those inside it, have each brightness
+   let least = 254, most = 0;
+   for (let start = 0; start < w * h; start++) {
+@@ -248,7 +253,13 @@
+     for (let i = 0; i < n; i++) {
+       const p = queue[i], x = p % w, y = (p - x) / w;
+       let rim = x === 0 || y === 0 || x === w - 1 || y === h - 1;
+-      for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
++      // Off the canvas edge: the same eight neighbours in the same order, without bounds tests.
++      if (!rim) for (let k = 0; k < 8; k++) {
++        const q = p + around[k];
++        if (data[q * 4 + 3] < cut) { if ((0x5a >> k) & 1) rim = true; } // 0x5a: the four beside it, not the corners
++        else if (!seen[q]) { seen[q] = 1; queue[n++] = q; }
++      }
++      else for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
+         const X = x + dx, Y = y + dy;
+         if (X < 0 || Y < 0 || X >= w || Y >= h) continue;
+         const q = Y * w + X;

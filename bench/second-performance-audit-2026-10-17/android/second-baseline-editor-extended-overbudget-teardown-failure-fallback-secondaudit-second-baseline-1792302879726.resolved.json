@@ -1,0 +1,107 @@
+[
+  {
+    "stage": "entropy512: RGB dither8 replaced4 final current count",
+    "cpuMs": 1509.6,
+    "maxLongTaskMs": 0,
+    "self": [
+      {
+        "frame": "mixturePlan src/lib/palette-dither.js:23",
+        "ms": 484.2
+      },
+      {
+        "frame": "lab src/lib/quantize.js:11",
+        "ms": 445.9
+      },
+      {
+        "frame": "convert src/lib/quantize.js:53",
+        "ms": 116.4
+      },
+      {
+        "frame": "convertDither src/lib/palette-dither.js:80",
+        "ms": 32.7
+      },
+      {
+        "frame": "getBoundingClientRect [native]",
+        "ms": 17
+      },
+      {
+        "frame": "(native) [native]",
+        "ms": 7.5
+      },
+      {
+        "frame": "elementsFromPoint [native]",
+        "ms": 6
+      },
+      {
+        "frame": "get offsetHeight [native]",
+        "ms": 5.8
+      },
+      {
+        "frame": "quantizeAsync src/lib/quantize.js:116",
+        "ms": 5
+      },
+      {
+        "frame": "(garbage collector) [native]",
+        "ms": 4.9
+      },
+      {
+        "frame": "colorize src/lib/quantize.js:146",
+        "ms": 4.8
+      },
+      {
+        "frame": "blur [native]",
+        "ms": 4.8
+      }
+    ],
+    "inclusive": [
+      {
+        "frame": "quantizeAsync src/lib/quantize.js:116",
+        "ms": 1087.8
+      },
+      {
+        "frame": "convertDither src/lib/palette-dither.js:80",
+        "ms": 961.5
+      },
+      {
+        "frame": "mixturePlan src/lib/palette-dither.js:23",
+        "ms": 930
+      },
+      {
+        "frame": "lab src/lib/quantize.js:11",
+        "ms": 445.9
+      },
+      {
+        "frame": "convert src/lib/quantize.js:53",
+        "ms": 116.4
+      },
+      {
+        "frame": "(native) [native]",
+        "ms": 27.1
+      },
+      {
+        "frame": "quantizePreviewAsync src/lib/quantize.js:139",
+        "ms": 26
+      },
+      {
+        "frame": "S src/lib/palette-state.js:71",
+        "ms": 23.8
+      },
+      {
+        "frame": "collectPaletteUsage src/lib/palette-usage.js:8",
+        "ms": 23.8
+      },
+      {
+        "frame": "evaluate [native]",
+        "ms": 20.8
+      },
+      {
+        "frame": "#_ node_modules/svelte/src/internal/client/reactivity/batch.js:329",
+        "ms": 18.7
+      },
+      {
+        "frame": "flush node_modules/svelte/src/internal/client/reactivity/batch.js:668",
+        "ms": 18.7
+      }
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+rest 23:33:22-23:40:44 (7.4 min), start temp 35.6C, status 2 USB

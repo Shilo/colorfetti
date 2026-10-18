@@ -1,0 +1,26 @@
+--- a/src/lib/recolor.js
++++ b/src/lib/recolor.js
+@@ -237,7 +237,7 @@
+     const t = otsu(hist, low), says = Math.min(254, t - low);
+     return { level: level.fill(low), auto: auto.fill(t), body: body.fill(median(hist, w * h)), cuts: [says, says] };
+   }
+-  const seen = new Uint8Array(w * h), queue = new Int32Array(w * h);
++  const seen = new Uint8Array(w * h), queue = new Int32Array(w * h), around = Int32Array.of(-w - 1, -w, 1 - w, -1, 1, w - 1, w, w + 1);
+   const all = new Uint32Array(256), inner = new Uint32Array(256); // how many of the sprite's pixels, and of those inside it, have each brightness
+   let least = 254, most = 0;
+   for (let start = 0; start < w * h; start++) {
+@@ -248,7 +248,13 @@
+     for (let i = 0; i < n; i++) {
+       const p = queue[i], x = p % w, y = (p - x) / w;
+       let rim = x === 0 || y === 0 || x === w - 1 || y === h - 1;
+-      for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
++      // Off the canvas edge: the same eight neighbours in the same order, without bounds tests.
++      if (!rim) for (let k = 0; k < 8; k++) {
++        const q = p + around[k];
++        if (data[q * 4 + 3] < cut) { if ((0x5a >> k) & 1) rim = true; } // 0x5a: the four beside it, not the corners
++        else if (!seen[q]) { seen[q] = 1; queue[n++] = q; }
++      }
++      else for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
+         const X = x + dx, Y = y + dy;
+         if (X < 0 || Y < 0 || X >= w || Y >= h) continue;
+         const q = Y * w + X;

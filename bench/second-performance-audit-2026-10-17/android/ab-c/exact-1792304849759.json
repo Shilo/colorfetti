@@ -1,0 +1,289 @@
+{
+  "mode": "exact",
+  "stamp": 1792304849759,
+  "order": [
+    "A",
+    "B",
+    "B",
+    "A",
+    "A",
+    "B",
+    "B",
+    "A",
+    "A",
+    "B"
+  ],
+  "urls": {
+    "A": "http://localhost:5381/",
+    "B": "http://localhost:5382/"
+  },
+  "started": "2026-10-18T06:27:29.759Z",
+  "trials": [],
+  "outputs": [
+    {
+      "variant": "A",
+      "id": "kenney-sheet-1024",
+      "tag": "kenney-sheet-1024",
+      "name": "secondaudit-abc-A-1792304849759-exact-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "A",
+      "id": "kenney-sheet-2048",
+      "tag": "kenney-sheet-2048",
+      "name": "secondaudit-abc-A-1792304849759-exact-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "A",
+      "id": "real-magic",
+      "tag": "real-magic",
+      "name": "secondaudit-abc-A-1792304849759-exact-real-magic-0-real-magic-palette.gif",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-real-magic-0-real-magic-palette.gif",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "A",
+      "id": "kenney-motion-128",
+      "tag": "kenney-motion-128",
+      "name": "secondaudit-abc-A-1792304849759-exact-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "A",
+      "id": "kenney-motion-256",
+      "tag": "kenney-motion-256",
+      "name": "secondaudit-abc-A-1792304849759-exact-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "A",
+      "id": "transparent32",
+      "tag": "transparent32",
+      "name": "secondaudit-abc-A-1792304849759-exact-transparent32-0-transparent32-palette.png",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-transparent32-0-transparent32-palette.png",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "A",
+      "id": "silhouette32",
+      "tag": "silhouette32",
+      "name": "secondaudit-abc-A-1792304849759-exact-silhouette32-0-silhouette32-palette.png",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-silhouette32-0-silhouette32-palette.png",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "A",
+      "id": "entropy512",
+      "tag": "entropy512",
+      "name": "secondaudit-abc-A-1792304849759-exact-entropy512-0-entropy512-palette.png",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-entropy512-0-entropy512-palette.png",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "A",
+      "id": "partial-glow64",
+      "tag": "partial-glow64",
+      "name": "secondaudit-abc-A-1792304849759-exact-partial-glow64-0-partial-glow64-palette.png",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-partial-glow64-0-partial-glow64-palette.png",
+      "settings": {
+        "alphaMode": "keep"
+      },
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "A",
+      "id": "real-magic",
+      "tag": "worker-unavailable",
+      "name": "secondaudit-abc-A-1792304849759-exact-worker-unavailable-0-real-magic-palette.gif",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-worker-unavailable-0-real-magic-palette.gif",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": true
+    },
+    {
+      "variant": "A",
+      "id": "kenney-sheet-1024",
+      "tag": "onebit-icon-sheet1024",
+      "name": "secondaudit-abc-A-1792304849759-exact-onebit-icon-sheet1024-0-kenney-sheet-1024-1bit.png",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-onebit-icon-sheet1024-0-kenney-sheet-1024-1bit.png",
+      "settings": {},
+      "oneBitStyle": "icon",
+      "noWorker": false
+    },
+    {
+      "variant": "A",
+      "id": "kenney-sheet-1024",
+      "tag": "onebit-stencil-sheet1024",
+      "name": "secondaudit-abc-A-1792304849759-exact-onebit-stencil-sheet1024-0-kenney-sheet-1024-1bit.png",
+      "file": "native/secondaudit-abc-A-1792304849759-exact-onebit-stencil-sheet1024-0-kenney-sheet-1024-1bit.png",
+      "settings": {},
+      "oneBitStyle": "stencil",
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "kenney-sheet-1024",
+      "tag": "kenney-sheet-1024",
+      "name": "secondaudit-abc-B-1792304849759-exact-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-kenney-sheet-1024-0-kenney-sheet-1024-palette.png",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "kenney-sheet-2048",
+      "tag": "kenney-sheet-2048",
+      "name": "secondaudit-abc-B-1792304849759-exact-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-kenney-sheet-2048-0-kenney-sheet-2048-palette.png",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "real-magic",
+      "tag": "real-magic",
+      "name": "secondaudit-abc-B-1792304849759-exact-real-magic-0-real-magic-palette.gif",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-real-magic-0-real-magic-palette.gif",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "kenney-motion-128",
+      "tag": "kenney-motion-128",
+      "name": "secondaudit-abc-B-1792304849759-exact-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-kenney-motion-128-0-kenney-motion-128-palette.gif",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "kenney-motion-256",
+      "tag": "kenney-motion-256",
+      "name": "secondaudit-abc-B-1792304849759-exact-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-kenney-motion-256-0-kenney-motion-256-palette.gif",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "transparent32",
+      "tag": "transparent32",
+      "name": "secondaudit-abc-B-1792304849759-exact-transparent32-0-transparent32-palette.png",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-transparent32-0-transparent32-palette.png",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "silhouette32",
+      "tag": "silhouette32",
+      "name": "secondaudit-abc-B-1792304849759-exact-silhouette32-0-silhouette32-palette.png",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-silhouette32-0-silhouette32-palette.png",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "entropy512",
+      "tag": "entropy512",
+      "name": "secondaudit-abc-B-1792304849759-exact-entropy512-0-entropy512-palette.png",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-entropy512-0-entropy512-palette.png",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "partial-glow64",
+      "tag": "partial-glow64",
+      "name": "secondaudit-abc-B-1792304849759-exact-partial-glow64-0-partial-glow64-palette.png",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-partial-glow64-0-partial-glow64-palette.png",
+      "settings": {
+        "alphaMode": "keep"
+      },
+      "oneBitStyle": null,
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "real-magic",
+      "tag": "worker-unavailable",
+      "name": "secondaudit-abc-B-1792304849759-exact-worker-unavailable-0-real-magic-palette.gif",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-worker-unavailable-0-real-magic-palette.gif",
+      "settings": {},
+      "oneBitStyle": null,
+      "noWorker": true
+    },
+    {
+      "variant": "B",
+      "id": "kenney-sheet-1024",
+      "tag": "onebit-icon-sheet1024",
+      "name": "secondaudit-abc-B-1792304849759-exact-onebit-icon-sheet1024-0-kenney-sheet-1024-1bit.png",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-onebit-icon-sheet1024-0-kenney-sheet-1024-1bit.png",
+      "settings": {},
+      "oneBitStyle": "icon",
+      "noWorker": false
+    },
+    {
+      "variant": "B",
+      "id": "kenney-sheet-1024",
+      "tag": "onebit-stencil-sheet1024",
+      "name": "secondaudit-abc-B-1792304849759-exact-onebit-stencil-sheet1024-0-kenney-sheet-1024-1bit.png",
+      "file": "native/secondaudit-abc-B-1792304849759-exact-onebit-stencil-sheet1024-0-kenney-sheet-1024-1bit.png",
+      "settings": {},
+      "oneBitStyle": "stencil",
+      "noWorker": false
+    }
+  ],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, level: 59, temperature: 372, Capacity level: 2",
+      "rotation": "free"
+    },
+    {
+      "at": "end",
+      "battery": "status: 2, level: 59, temperature: 372, Capacity level: 2",
+      "rotation": "free"
+    }
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "finished": "2026-10-18T06:28:21.603Z"
+}

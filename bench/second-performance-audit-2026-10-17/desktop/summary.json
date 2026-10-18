@@ -1,0 +1,1230 @@
+{
+ "date": "2026-10-17",
+ "baseline": "3c47699b8f0ee6e58f7d3082d699c81376747dea",
+ "browser": "Claude/2.42304.0 Chrome/152.0.7977.149 (Claude desktop built-in browser), viewport 927x827, DPR 1",
+ "profiler": "JS Self-Profiling API, sampleInterval 16 ms (Windows clamp); self/total = sample-gap weighted, divided by run count; coarse for <50 ms frames",
+ "workflows": {
+  "startup restored (warm, runs 2-5)": {
+   "runs": [
+    {
+     "file": "startup-restored2",
+     "readyMs": 22.8,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "visibility": "visible"
+    },
+    {
+     "file": "startup-restored3",
+     "readyMs": 18.6,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "visibility": "visible"
+    },
+    {
+     "file": "startup-restored4",
+     "readyMs": 19.3,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "visibility": "visible"
+    },
+    {
+     "file": "startup-restored5",
+     "readyMs": 28.9,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 4,
+    "appJsBusyMsPerRun": 20.7,
+    "probeMsPerRun": 24.5,
+    "top": [
+     {
+      "frame": "Eo node_modules/fflate/esm/browser.js:39",
+      "selfMsPerRun": 9.8,
+      "totalMsPerRun": 9.8
+     },
+     {
+      "frame": "analyze src/lib/recolor.js:128",
+      "selfMsPerRun": 6.9,
+      "totalMsPerRun": 6.9
+     },
+     {
+      "frame": "untrack node_modules/svelte/src/internal/client/runtime.js:781",
+      "selfMsPerRun": 4,
+      "totalMsPerRun": 4
+     }
+    ]
+   }
+  },
+  "startup restored (first load)": {
+   "runs": [
+    {
+     "file": "startup-restored1",
+     "readyMs": 43.3,
+     "longtasksMs": [],
+     "rafMaxGapMs": 1000,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 1,
+    "appJsBusyMsPerRun": 39.4,
+    "probeMsPerRun": 33.4,
+    "top": [
+     {
+      "frame": "untrack node_modules/svelte/src/internal/client/dom/elements/bindings/size.js:104",
+      "selfMsPerRun": 30.9,
+      "totalMsPerRun": 30.9
+     },
+     {
+      "frame": "Eo node_modules/fflate/esm/browser.js:39",
+      "selfMsPerRun": 8.5,
+      "totalMsPerRun": 8.5
+     }
+    ]
+   }
+  },
+  "import 8 sprites + effect GIF": {
+   "runs": [
+    {
+     "file": "import-batch-r1",
+     "readyMs": 44.1,
+     "paintedMs": 40,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "import-batch-r2",
+     "readyMs": 45.6,
+     "paintedMs": 38.1,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "import-batch-r3",
+     "readyMs": 34.7,
+     "paintedMs": 30.5,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.8,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 56.5,
+    "probeMsPerRun": 24.6,
+    "top": [
+     {
+      "frame": "scanSummary src/lib/source-color-summary.js:49",
+      "selfMsPerRun": 29.6,
+      "totalMsPerRun": 29.6
+     },
+     {
+      "frame": "analyze src/lib/recolor.js:128",
+      "selfMsPerRun": 17.8,
+      "totalMsPerRun": 24.8
+     },
+     {
+      "frame": "otsu src/lib/recolor.js:67",
+      "selfMsPerRun": 7.1,
+      "totalMsPerRun": 7.1
+     },
+     {
+      "frame": "schedule_possible_effect_self_invalidation node_modules/svelte/src/internal/client/runtime.js:195",
+      "selfMsPerRun": 1.6,
+      "totalMsPerRun": 1.6
+     },
+     {
+      "frame": "(native) getBoundingClientRect",
+      "selfMsPerRun": 0.3,
+      "totalMsPerRun": 0.3
+     },
+     {
+      "frame": "internal_set node_modules/svelte/src/internal/client/reactivity/sources.js:189",
+      "selfMsPerRun": 0.1,
+      "totalMsPerRun": 0.1
+     }
+    ]
+   }
+  },
+  "import sheet1024": {
+   "runs": [
+    {
+     "file": "import-sheet1024-r1",
+     "readyMs": 69.3,
+     "paintedMs": 63.8,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "import-sheet1024-r2",
+     "readyMs": 55.1,
+     "paintedMs": 49.6,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "import-sheet1024-r3",
+     "readyMs": 52.6,
+     "paintedMs": 48,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 40.4,
+    "probeMsPerRun": 30.6,
+    "top": [
+     {
+      "frame": "swapRedBlue src/lib/image-decode.js:15",
+      "selfMsPerRun": 19.6,
+      "totalMsPerRun": 19.6
+     },
+     {
+      "frame": "scanSummary src/lib/source-color-summary.js:49",
+      "selfMsPerRun": 19.3,
+      "totalMsPerRun": 19.3
+     },
+     {
+      "frame": "colorize src/lib/quantize.js:146",
+      "selfMsPerRun": 1.5,
+      "totalMsPerRun": 1.5
+     },
+     {
+      "frame": "runQueue src/lib/source-color-summary.js:11",
+      "selfMsPerRun": 0,
+      "totalMsPerRun": 19.3
+     }
+    ]
+   }
+  },
+  "import sheet2048": {
+   "runs": [
+    {
+     "file": "import-sheet2048-r1",
+     "readyMs": 187.9,
+     "paintedMs": 174.5,
+     "longtasksMs": [],
+     "rafMaxGapMs": 17,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "import-sheet2048-r2",
+     "readyMs": 155.4,
+     "paintedMs": 144.6,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "import-sheet2048-r3",
+     "readyMs": 185.1,
+     "paintedMs": 172.7,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 45.9,
+    "probeMsPerRun": 36.6,
+    "top": [
+     {
+      "frame": "scanSummary src/lib/source-color-summary.js:49",
+      "selfMsPerRun": 23.2,
+      "totalMsPerRun": 23.2
+     },
+     {
+      "frame": "swapRedBlue src/lib/image-decode.js:15",
+      "selfMsPerRun": 12.4,
+      "totalMsPerRun": 12.4
+     },
+     {
+      "frame": "decodeImageFile src/lib/image-decode.js:34",
+      "selfMsPerRun": 5.3,
+      "totalMsPerRun": 16.7
+     },
+     {
+      "frame": "convert src/lib/quantize.js:53",
+      "selfMsPerRun": 2.7,
+      "totalMsPerRun": 2.7
+     },
+     {
+      "frame": "colorize src/lib/quantize.js:146",
+      "selfMsPerRun": 1.2,
+      "totalMsPerRun": 1.2
+     },
+     {
+      "frame": "(native) copyTo",
+      "selfMsPerRun": 1,
+      "totalMsPerRun": 1
+     }
+    ]
+   }
+  },
+  "import motion128 (32 frames)": {
+   "runs": [
+    {
+     "file": "import-animation128-r1",
+     "readyMs": 43.7,
+     "paintedMs": 39.6,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "import-animation128-r2",
+     "readyMs": 54.5,
+     "paintedMs": 49.7,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "import-animation128-r3",
+     "readyMs": 32.4,
+     "paintedMs": 28.2,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.7,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 11.7,
+    "probeMsPerRun": 40.4,
+    "top": [
+     {
+      "frame": "scanSummary src/lib/source-color-summary.js:49",
+      "selfMsPerRun": 10.5,
+      "totalMsPerRun": 10.5
+     },
+     {
+      "frame": "get node_modules/svelte/src/internal/client/runtime.js:540",
+      "selfMsPerRun": 1.1,
+      "totalMsPerRun": 1.1
+     },
+     {
+      "frame": "colorize src/lib/quantize.js:146",
+      "selfMsPerRun": 0.1,
+      "totalMsPerRun": 0.1
+     }
+    ]
+   }
+  },
+  "import motion256 (48 frames)": {
+   "runs": [
+    {
+     "file": "import-animation256-r1",
+     "readyMs": 166,
+     "paintedMs": 155.9,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "import-animation256-r2",
+     "readyMs": 184,
+     "paintedMs": 174.5,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "import-animation256-r3",
+     "readyMs": 131.7,
+     "paintedMs": 122.9,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 16,
+    "probeMsPerRun": 41.6,
+    "top": [
+     {
+      "frame": "scanSummary src/lib/source-color-summary.js:49",
+      "selfMsPerRun": 13.3,
+      "totalMsPerRun": 13.3
+     },
+     {
+      "frame": "untrack node_modules/svelte/src/internal/client/dom/elements/bindings/size.js:104",
+      "selfMsPerRun": 2.3,
+      "totalMsPerRun": 2.3
+     },
+     {
+      "frame": "colorize src/lib/quantize.js:146",
+      "selfMsPerRun": 0.4,
+      "totalMsPerRun": 0.4
+     }
+    ]
+   }
+  },
+  "Auto: import 8 sprites + effect": {
+   "runs": [
+    {
+     "file": "auto-batch-r1",
+     "readyMs": 58.8,
+     "paintedMs": 44.4,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.4,
+     "visibility": "visible"
+    },
+    {
+     "file": "auto-batch-r2",
+     "readyMs": 52.9,
+     "paintedMs": 37.6,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "auto-batch-r3",
+     "readyMs": 39.4,
+     "paintedMs": 25.4,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.4,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 15.6,
+    "probeMsPerRun": 55.9,
+    "top": [
+     {
+      "frame": "fallback src/lib/image-import-client.js:109",
+      "selfMsPerRun": 10.3,
+      "totalMsPerRun": 10.3
+     },
+     {
+      "frame": "reconnect node_modules/svelte/src/internal/client/runtime.js:716",
+      "selfMsPerRun": 5.3,
+      "totalMsPerRun": 5.3
+     }
+    ]
+   }
+  },
+  "Auto: import sheet2048": {
+   "runs": [
+    {
+     "file": "auto-sheet2048-r1",
+     "readyMs": 213.6,
+     "paintedMs": 163,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "auto-sheet2048-r2",
+     "readyMs": 192.2,
+     "paintedMs": 144.5,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 2,
+    "appJsBusyMsPerRun": 74.2,
+    "probeMsPerRun": 44.1,
+    "top": [
+     {
+      "frame": "scanSummary src/lib/source-color-summary.js:49",
+      "selfMsPerRun": 25.1,
+      "totalMsPerRun": 25.1
+     },
+     {
+      "frame": "colorize src/lib/quantize.js:146",
+      "selfMsPerRun": 11.9,
+      "totalMsPerRun": 11.9
+     },
+     {
+      "frame": "get node_modules/svelte/src/internal/client/runtime.js:540",
+      "selfMsPerRun": 9.7,
+      "totalMsPerRun": 9.7
+     },
+     {
+      "frame": "decodeImageFile src/lib/image-decode.js:34",
+      "selfMsPerRun": 8.5,
+      "totalMsPerRun": 16.6
+     },
+     {
+      "frame": "ensure node_modules/svelte/src/internal/client/reactivity/batch.js:915",
+      "selfMsPerRun": 8.1,
+      "totalMsPerRun": 8.1
+     },
+     {
+      "frame": "swapRedBlue src/lib/image-decode.js:15",
+      "selfMsPerRun": 8.1,
+      "totalMsPerRun": 8.1
+     }
+    ]
+   }
+  },
+  "cold 1-bit Icon sheet1024": {
+   "runs": [
+    {
+     "file": "cold-icon1024-r1",
+     "readyMs": 92.3,
+     "longtasksMs": [
+      105
+     ],
+     "rafMaxGapMs": 16.6,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "cold-icon1024-r2",
+     "readyMs": 97.5,
+     "longtasksMs": [
+      108
+     ],
+     "rafMaxGapMs": 98.8,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "cold-icon1024-r3",
+     "readyMs": 96.1,
+     "longtasksMs": [
+      107
+     ],
+     "rafMaxGapMs": 99.6,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 97.1,
+    "probeMsPerRun": 26.1,
+    "top": [
+     {
+      "frame": "iconOf src/lib/icon.js:40",
+      "selfMsPerRun": 66.5,
+      "totalMsPerRun": 76.3
+     },
+     {
+      "frame": "by src/Tile.svelte:302",
+      "selfMsPerRun": 10.7,
+      "totalMsPerRun": 89
+     },
+     {
+      "frame": "mask src/lib/recolor.js:306",
+      "selfMsPerRun": 10,
+      "totalMsPerRun": 10.4
+     },
+     {
+      "frame": "glyphComponent src/lib/icon-glyph.js:128",
+      "selfMsPerRun": 9.8,
+      "totalMsPerRun": 9.8
+     },
+     {
+      "frame": "update_dependencies node_modules/svelte/src/internal/client/runtime.js:331",
+      "selfMsPerRun": 0.2,
+      "totalMsPerRun": 0.2
+     }
+    ]
+   }
+  },
+  "cold 1-bit Icon sheet2048": {
+   "runs": [
+    {
+     "file": "cold-icon2048-r1",
+     "readyMs": 233.9,
+     "longtasksMs": [
+      241
+     ],
+     "rafMaxGapMs": 232,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "cold-icon2048-r2",
+     "readyMs": 217.8,
+     "longtasksMs": [
+      225
+     ],
+     "rafMaxGapMs": 216.3,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "cold-icon2048-r3",
+     "readyMs": 249.7,
+     "longtasksMs": [
+      259
+     ],
+     "rafMaxGapMs": 249,
+     "cpuGateMs": 8.4,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 232.4,
+    "probeMsPerRun": 29.3,
+    "top": [
+     {
+      "frame": "iconOf src/lib/icon.js:40",
+      "selfMsPerRun": 155.4,
+      "totalMsPerRun": 214.3
+     },
+     {
+      "frame": "glyphComponent src/lib/icon-glyph.js:128",
+      "selfMsPerRun": 51.1,
+      "totalMsPerRun": 58.9
+     },
+     {
+      "frame": "mask src/lib/recolor.js:306",
+      "selfMsPerRun": 13.4,
+      "totalMsPerRun": 14.6
+     },
+     {
+      "frame": "pieces src/lib/icon-glyph.js:24",
+      "selfMsPerRun": 5.9,
+      "totalMsPerRun": 5.9
+     },
+     {
+      "frame": "by src/Tile.svelte:302",
+      "selfMsPerRun": 4.6,
+      "totalMsPerRun": 228
+     },
+     {
+      "frame": "degree src/lib/icon-glyph.js:45",
+      "selfMsPerRun": 1.9,
+      "totalMsPerRun": 1.9
+     }
+    ]
+   }
+  },
+  "cold 1-bit Stencil sheet1024": {
+   "runs": [
+    {
+     "file": "cold-stencil1024-r1",
+     "readyMs": 38.8,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "cold-stencil1024-r2",
+     "readyMs": 31,
+     "longtasksMs": [],
+     "rafMaxGapMs": 32,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "cold-stencil1024-r3",
+     "readyMs": 36.5,
+     "longtasksMs": [],
+     "rafMaxGapMs": 32.1,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 36.8,
+    "probeMsPerRun": 28.2,
+    "top": [
+     {
+      "frame": "sprites src/lib/recolor.js:230",
+      "selfMsPerRun": 21.8,
+      "totalMsPerRun": 21.8
+     },
+     {
+      "frame": "mask src/lib/recolor.js:306",
+      "selfMsPerRun": 11.5,
+      "totalMsPerRun": 16
+     },
+     {
+      "frame": "by src/Tile.svelte:302",
+      "selfMsPerRun": 1.8,
+      "totalMsPerRun": 31.4
+     },
+     {
+      "frame": "solid src/lib/recolor.js:312",
+      "selfMsPerRun": 0.9,
+      "totalMsPerRun": 0.9
+     },
+     {
+      "frame": "(native) getBoundingClientRect",
+      "selfMsPerRun": 0.7,
+      "totalMsPerRun": 0.7
+     }
+    ]
+   }
+  },
+  "cold 1-bit Stencil sheet2048": {
+   "runs": [
+    {
+     "file": "cold-stencil2048-r1",
+     "readyMs": 55.7,
+     "longtasksMs": [
+      66
+     ],
+     "rafMaxGapMs": 66.3,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "cold-stencil2048-r2",
+     "readyMs": 80.9,
+     "longtasksMs": [
+      91
+     ],
+     "rafMaxGapMs": 82,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "cold-stencil2048-r3",
+     "readyMs": 77.5,
+     "longtasksMs": [
+      87
+     ],
+     "rafMaxGapMs": 82.3,
+     "cpuGateMs": 8.7,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 79,
+    "probeMsPerRun": 20.7,
+    "top": [
+     {
+      "frame": "sprites src/lib/recolor.js:230",
+      "selfMsPerRun": 66.5,
+      "totalMsPerRun": 66.5
+     },
+     {
+      "frame": "mask src/lib/recolor.js:306",
+      "selfMsPerRun": 7,
+      "totalMsPerRun": 13.8
+     },
+     {
+      "frame": "spread src/lib/recolor.js:288",
+      "selfMsPerRun": 5.3,
+      "totalMsPerRun": 5.3
+     },
+     {
+      "frame": "range src/App.svelte:275",
+      "selfMsPerRun": 0.2,
+      "totalMsPerRun": 0.2
+     }
+    ]
+   }
+  },
+  "rapid Brightness R>G>Value sheet2048 (Cutout)": {
+   "runs": [
+    {
+     "file": "brightness2048-r1",
+     "readyMs": 65.9,
+     "longtasksMs": [
+      64,
+      78,
+      63
+     ],
+     "rafMaxGapMs": 66.7,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "brightness2048-r2",
+     "readyMs": 61.9,
+     "longtasksMs": [
+      72,
+      62,
+      59
+     ],
+     "rafMaxGapMs": 66.4,
+     "cpuGateMs": 8.4,
+     "visibility": "visible"
+    },
+    {
+     "file": "brightness2048-r3",
+     "readyMs": 63.5,
+     "longtasksMs": [
+      71,
+      63,
+      60
+     ],
+     "rafMaxGapMs": 66.5,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 222,
+    "probeMsPerRun": 17.8,
+    "top": [
+     {
+      "frame": "analyze src/lib/recolor.js:128",
+      "selfMsPerRun": 140.1,
+      "totalMsPerRun": 192.9
+     },
+     {
+      "frame": "addSeams src/lib/recolor.js:102",
+      "selfMsPerRun": 43,
+      "totalMsPerRun": 43
+     },
+     {
+      "frame": "diff src/lib/recolor.js:63",
+      "selfMsPerRun": 10,
+      "totalMsPerRun": 10
+     },
+     {
+      "frame": "otsu src/lib/recolor.js:67",
+      "selfMsPerRun": 9.8,
+      "totalMsPerRun": 9.8
+     },
+     {
+      "frame": "solid src/lib/recolor.js:312",
+      "selfMsPerRun": 7.5,
+      "totalMsPerRun": 7.5
+     },
+     {
+      "frame": "prepare src/lib/image-reanalysis.js:32",
+      "selfMsPerRun": 5.7,
+      "totalMsPerRun": 179.5
+     }
+    ]
+   }
+  },
+  "editor256 fill (value+input)": {
+   "runs": [
+    {
+     "file": "editor256-r1-fill",
+     "readyMs": 0.7,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "editor256-r2-fill",
+     "readyMs": 0.8,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "editor256-r3-fill",
+     "readyMs": 1,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.6,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 0,
+    "probeMsPerRun": 32.4,
+    "top": []
+   }
+  },
+  "editor256 Review": {
+   "runs": [
+    {
+     "file": "editor256-r1-review",
+     "readyMs": 3.5,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.6,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "editor256-r2-review",
+     "readyMs": 13.7,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.4,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "editor256-r3-review",
+     "readyMs": 12.7,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.4,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 0,
+    "probeMsPerRun": 35.1,
+    "top": []
+   }
+  },
+  "editor256 Next": {
+   "runs": [
+    {
+     "file": "editor256-r1-next",
+     "readyMs": 0.6,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.6,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "editor256-r2-next",
+     "readyMs": 3.4,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.5,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "editor256-r3-next",
+     "readyMs": 3.3,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.6,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 0,
+    "probeMsPerRun": 32,
+    "top": []
+   }
+  },
+  "editor256 Previous": {
+   "runs": [
+    {
+     "file": "editor256-r1-previous",
+     "readyMs": 0.8,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.6,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "editor256-r2-previous",
+     "readyMs": 0.8,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.6,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "editor256-r3-previous",
+     "readyMs": 3.7,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 0,
+    "probeMsPerRun": 26.4,
+    "top": []
+   }
+  },
+  "dither entropy512 8x8>4x4 (paint+exact count)": {
+   "runs": [
+    {
+     "file": "dither-entropy512-r1",
+     "readyMs": 550.4,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.6,
+     "visibility": "visible"
+    },
+    {
+     "file": "dither-entropy512-r2",
+     "readyMs": 570.2,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "dither-entropy512-r3",
+     "readyMs": 556.7,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.7,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 3,
+    "appJsBusyMsPerRun": 539.9,
+    "probeMsPerRun": 37.7,
+    "top": [
+     {
+      "frame": "lab src/lib/quantize.js:11",
+      "selfMsPerRun": 334.4,
+      "totalMsPerRun": 334.4
+     },
+     {
+      "frame": "mixturePlan src/lib/palette-dither.js:23",
+      "selfMsPerRun": 194.5,
+      "totalMsPerRun": 528.9
+     },
+     {
+      "frame": "convertDither src/lib/palette-dither.js:80",
+      "selfMsPerRun": 11,
+      "totalMsPerRun": 539.9
+     }
+    ]
+   }
+  },
+  "rapid palette settings sheet2048 (RGB/cap8/Cleanup/4x4)": {
+   "runs": [
+    {
+     "file": "rapid-sheet2048-r1-settings",
+     "readyMs": 223.9,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "rapid-sheet2048-r2-settings",
+     "readyMs": 240.7,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 2,
+    "appJsBusyMsPerRun": 100.6,
+    "probeMsPerRun": 36.2,
+    "top": [
+     {
+      "frame": "convertDither src/lib/palette-dither.js:80",
+      "selfMsPerRun": 36.8,
+      "totalMsPerRun": 36.8
+     },
+     {
+      "frame": "onmessage src/lib/palette-limit-client.js:48",
+      "selfMsPerRun": 24,
+      "totalMsPerRun": 24
+     },
+     {
+      "frame": "(native) now",
+      "selfMsPerRun": 15.2,
+      "totalMsPerRun": 15.2
+     },
+     {
+      "frame": "(native) postMessage",
+      "selfMsPerRun": 8,
+      "totalMsPerRun": 8
+     },
+     {
+      "frame": "checkCanceled src/lib/quantize.js:104",
+      "selfMsPerRun": 6.1,
+      "totalMsPerRun": 6.1
+     },
+     {
+      "frame": "validatePreparedCleanupAsync src/lib/palette-cleanup-apply.js:10",
+      "selfMsPerRun": 5.5,
+      "totalMsPerRun": 5.5
+     }
+    ]
+   }
+  },
+  "rapid palette settings sheet1024": {
+   "runs": [
+    {
+     "file": "rapid-sheet1024-r1-settings",
+     "readyMs": 81.3,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.7,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 1,
+    "appJsBusyMsPerRun": 56.6,
+    "probeMsPerRun": 43.4,
+    "top": [
+     {
+      "frame": "onmessage src/lib/palette-limit-client.js:48",
+      "selfMsPerRun": 19.4,
+      "totalMsPerRun": 19.4
+     },
+     {
+      "frame": "convertDither src/lib/palette-dither.js:80",
+      "selfMsPerRun": 17.3,
+      "totalMsPerRun": 17.3
+     },
+     {
+      "frame": "#v node_modules/svelte/src/internal/client/reactivity/batch.js:493",
+      "selfMsPerRun": 16.9,
+      "totalMsPerRun": 16.9
+     },
+     {
+      "frame": "validatePreparedCleanupAsync src/lib/palette-cleanup-apply.js:10",
+      "selfMsPerRun": 2.9,
+      "totalMsPerRun": 2.9
+     },
+     {
+      "frame": "quantizeAsync src/lib/quantize.js:116",
+      "selfMsPerRun": 0.2,
+      "totalMsPerRun": 17.4
+     }
+    ]
+   }
+  },
+  "Preview zoom/Original/Fit/close sheet2048": {
+   "runs": [
+    {
+     "file": "rapid-sheet2048-r1-preview",
+     "readyMs": 0.1,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    },
+    {
+     "file": "rapid-sheet2048-r2-preview",
+     "readyMs": 0.1,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.8,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    }
+   ],
+   "hot": {
+    "traces": 2,
+    "appJsBusyMsPerRun": 94.6,
+    "probeMsPerRun": 36.4,
+    "top": [
+     {
+      "frame": "convertDither src/lib/palette-dither.js:80",
+      "selfMsPerRun": 56.6,
+      "totalMsPerRun": 56.6
+     },
+     {
+      "frame": "shrink src/lib/recolor.js:506",
+      "selfMsPerRun": 18,
+      "totalMsPerRun": 18
+     },
+     {
+      "frame": "update_reaction node_modules/svelte/src/internal/client/runtime.js:220",
+      "selfMsPerRun": 11.8,
+      "totalMsPerRun": 29.9
+     },
+     {
+      "frame": "job src/lib/quantize.js:40",
+      "selfMsPerRun": 8.1,
+      "totalMsPerRun": 8.1
+     }
+    ]
+   }
+  },
+  "uninstrumented (5374) cold Icon sheet2048": {
+   "runs": [
+    {
+     "file": "plain-cold-icon2048-r1",
+     "readyMs": 246.8,
+     "longtasksMs": [],
+     "rafMaxGapMs": 248.6,
+     "cpuGateMs": 8.4,
+     "visibility": "visible"
+    },
+    {
+     "file": "plain-cold-icon2048-r2",
+     "readyMs": 200.3,
+     "longtasksMs": [
+      207
+     ],
+     "rafMaxGapMs": 198.9,
+     "cpuGateMs": 8.7,
+     "visibility": "visible"
+    }
+   ]
+  },
+  "uninstrumented (5374) cold Stencil sheet2048": {
+   "runs": [
+    {
+     "file": "plain-cold-stencil2048-r1",
+     "readyMs": 71.6,
+     "longtasksMs": [
+      80
+     ],
+     "rafMaxGapMs": 65.3,
+     "cpuGateMs": 8.4,
+     "visibility": "visible"
+    }
+   ]
+  },
+  "uninstrumented (5374) Brightness sheet2048": {
+   "runs": [
+    {
+     "file": "plain-brightness2048-r1",
+     "readyMs": 64.4,
+     "longtasksMs": [
+      66,
+      75,
+      62
+     ],
+     "rafMaxGapMs": 66.8,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    }
+   ]
+  },
+  "uninstrumented (5374) Brightness sheet1024": {
+   "runs": [
+    {
+     "file": "plain-brightness1024-r1",
+     "readyMs": 30.7,
+     "longtasksMs": [],
+     "rafMaxGapMs": 16.9,
+     "cpuGateMs": 8.5,
+     "visibility": "visible"
+    }
+   ]
+  }
+ }
+}

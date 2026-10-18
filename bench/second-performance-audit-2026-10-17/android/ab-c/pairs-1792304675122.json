@@ -1,0 +1,1315 @@
+{
+  "mode": "pairs",
+  "stamp": 1792304675122,
+  "order": [
+    "A",
+    "B",
+    "B",
+    "A",
+    "A",
+    "B",
+    "B",
+    "A",
+    "A",
+    "B"
+  ],
+  "urls": {
+    "A": "http://localhost:5381/",
+    "B": "http://localhost:5382/"
+  },
+  "started": "2026-10-18T06:24:35.122Z",
+  "trials": [
+    {
+      "variant": "A",
+      "pair": 0,
+      "slot": 0,
+      "tempC": 36,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 121.21400000000001,
+          "elapsedMs": 308.5,
+          "maxLongTaskMs": 53,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 2048",
+          "cpuMs": 621.896,
+          "elapsedMs": 919.3000000119209,
+          "maxLongTaskMs": 357,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-Stencil import",
+          "cpuMs": 140.85299999999998,
+          "elapsedMs": 316.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET cold Stencil 2048",
+          "cpuMs": 296.517,
+          "elapsedMs": 555,
+          "maxLongTaskMs": 115,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 88.901,
+          "elapsedMs": 213.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET cold Icon 1024",
+          "cpuMs": 420.078,
+          "elapsedMs": 708.1000000238419,
+          "maxLongTaskMs": 215,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Stencil import",
+          "cpuMs": 91.623,
+          "elapsedMs": 215.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET cold Stencil 1024",
+          "cpuMs": 291.02099999999996,
+          "elapsedMs": 641.5,
+          "maxLongTaskMs": 66,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 125.661,
+          "elapsedMs": 339.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET Brightness R-G-Value 2048",
+          "cpuMs": 504.73400000000004,
+          "elapsedMs": 839.8999999761581,
+          "maxLongTaskMs": 120,
+          "longtasks": 3
+        },
+        {
+          "name": "ADVERSE sprites8+effect Auto import",
+          "cpuMs": 100.61999999999999,
+          "elapsedMs": 181.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 120.255,
+          "elapsedMs": 267.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 149.794,
+          "elapsedMs": 350.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-motion-256 import",
+          "cpuMs": 120.327,
+          "elapsedMs": 334.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny all 11 styles",
+          "cpuMs": 1216.3680000000002,
+          "elapsedMs": 4090.599999964237,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Icon 16px",
+          "cpuMs": 149.413,
+          "elapsedMs": 468.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Stencil 16px",
+          "cpuMs": 152.842,
+          "elapsedMs": 413.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B",
+      "pair": 0,
+      "slot": 1,
+      "tempC": 36.2,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 127.74000000000002,
+          "elapsedMs": 281.19999998807907,
+          "maxLongTaskMs": 51,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 2048",
+          "cpuMs": 528.5629999999999,
+          "elapsedMs": 782.7000000476837,
+          "maxLongTaskMs": 332,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-Stencil import",
+          "cpuMs": 149.251,
+          "elapsedMs": 313.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET cold Stencil 2048",
+          "cpuMs": 294.657,
+          "elapsedMs": 582,
+          "maxLongTaskMs": 112,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 106.05299999999998,
+          "elapsedMs": 207,
+          "maxLongTaskMs": 54,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 1024",
+          "cpuMs": 375.11799999999994,
+          "elapsedMs": 701.5,
+          "maxLongTaskMs": 177,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Stencil import",
+          "cpuMs": 85.636,
+          "elapsedMs": 177.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET cold Stencil 1024",
+          "cpuMs": 236.54199999999997,
+          "elapsedMs": 523,
+          "maxLongTaskMs": 71,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 107.81700000000002,
+          "elapsedMs": 280,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET Brightness R-G-Value 2048",
+          "cpuMs": 359.69199999999995,
+          "elapsedMs": 594.3000000119209,
+          "maxLongTaskMs": 86,
+          "longtasks": 3
+        },
+        {
+          "name": "ADVERSE sprites8+effect Auto import",
+          "cpuMs": 96.504,
+          "elapsedMs": 156.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 91.312,
+          "elapsedMs": 180.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 150.88199999999998,
+          "elapsedMs": 357,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-motion-256 import",
+          "cpuMs": 86.68299999999999,
+          "elapsedMs": 269.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny all 11 styles",
+          "cpuMs": 1155.693,
+          "elapsedMs": 3828.900000035763,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Icon 16px",
+          "cpuMs": 145.98299999999998,
+          "elapsedMs": 468.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Stencil 16px",
+          "cpuMs": 169.196,
+          "elapsedMs": 598.7999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B",
+      "pair": 1,
+      "slot": 2,
+      "tempC": 36.2,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 149.205,
+          "elapsedMs": 305.0999999642372,
+          "maxLongTaskMs": 51,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 2048",
+          "cpuMs": 560.1650000000001,
+          "elapsedMs": 841.2999999523163,
+          "maxLongTaskMs": 315,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-Stencil import",
+          "cpuMs": 151.90300000000005,
+          "elapsedMs": 320.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET cold Stencil 2048",
+          "cpuMs": 289.35799999999995,
+          "elapsedMs": 536.3999999761581,
+          "maxLongTaskMs": 118,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 91.01200000000001,
+          "elapsedMs": 220.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET cold Icon 1024",
+          "cpuMs": 425.631,
+          "elapsedMs": 772.6000000238419,
+          "maxLongTaskMs": 206,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Stencil import",
+          "cpuMs": 94.051,
+          "elapsedMs": 214.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET cold Stencil 1024",
+          "cpuMs": 276.158,
+          "elapsedMs": 602.0999999642372,
+          "maxLongTaskMs": 65,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 122.037,
+          "elapsedMs": 315,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET Brightness R-G-Value 2048",
+          "cpuMs": 359.768,
+          "elapsedMs": 611.8999999761581,
+          "maxLongTaskMs": 87,
+          "longtasks": 3
+        },
+        {
+          "name": "ADVERSE sprites8+effect Auto import",
+          "cpuMs": 98.19500000000001,
+          "elapsedMs": 145.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 88.175,
+          "elapsedMs": 168,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 146.26500000000004,
+          "elapsedMs": 309.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-motion-256 import",
+          "cpuMs": 108.317,
+          "elapsedMs": 272.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny all 11 styles",
+          "cpuMs": 1266.3880000000001,
+          "elapsedMs": 4445.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Icon 16px",
+          "cpuMs": 147.90300000000002,
+          "elapsedMs": 438.7999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Stencil 16px",
+          "cpuMs": 153.82999999999996,
+          "elapsedMs": 476.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "pair": 1,
+      "slot": 3,
+      "tempC": 36.3,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 143.26,
+          "elapsedMs": 349.0999999642372,
+          "maxLongTaskMs": 60,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 2048",
+          "cpuMs": 738.1019999999999,
+          "elapsedMs": 1049.1000000238419,
+          "maxLongTaskMs": 496,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-Stencil import",
+          "cpuMs": 166.86399999999998,
+          "elapsedMs": 352.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET cold Stencil 2048",
+          "cpuMs": 325.936,
+          "elapsedMs": 636.8999999761581,
+          "maxLongTaskMs": 131,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 98.62200000000001,
+          "elapsedMs": 220.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET cold Icon 1024",
+          "cpuMs": 409.8,
+          "elapsedMs": 646.7000000476837,
+          "maxLongTaskMs": 193,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Stencil import",
+          "cpuMs": 118.248,
+          "elapsedMs": 238.9000000357628,
+          "maxLongTaskMs": 56,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 1024",
+          "cpuMs": 266.431,
+          "elapsedMs": 539.1999999880791,
+          "maxLongTaskMs": 75,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 139.7,
+          "elapsedMs": 316.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET Brightness R-G-Value 2048",
+          "cpuMs": 497.28499999999997,
+          "elapsedMs": 720,
+          "maxLongTaskMs": 143,
+          "longtasks": 3
+        },
+        {
+          "name": "ADVERSE sprites8+effect Auto import",
+          "cpuMs": 112.00099999999999,
+          "elapsedMs": 167.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 77.38299999999998,
+          "elapsedMs": 206,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 163.249,
+          "elapsedMs": 404.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-motion-256 import",
+          "cpuMs": 120.145,
+          "elapsedMs": 355,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny all 11 styles",
+          "cpuMs": 1313.021,
+          "elapsedMs": 4117.300000011921,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Icon 16px",
+          "cpuMs": 157.488,
+          "elapsedMs": 484.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Stencil 16px",
+          "cpuMs": 173.208,
+          "elapsedMs": 541.2999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "pair": 2,
+      "slot": 4,
+      "tempC": 36.4,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 187.54800000000003,
+          "elapsedMs": 398.60000002384186,
+          "maxLongTaskMs": 67,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 2048",
+          "cpuMs": 688.0460000000002,
+          "elapsedMs": 971.5999999642372,
+          "maxLongTaskMs": 451,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-Stencil import",
+          "cpuMs": 167.44899999999998,
+          "elapsedMs": 384.10000002384186,
+          "maxLongTaskMs": 62,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 2048",
+          "cpuMs": 399.25699999999995,
+          "elapsedMs": 697.7999999523163,
+          "maxLongTaskMs": 156,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 110.26700000000001,
+          "elapsedMs": 242.10000002384186,
+          "maxLongTaskMs": 53,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 1024",
+          "cpuMs": 429.68700000000007,
+          "elapsedMs": 721.3000000119209,
+          "maxLongTaskMs": 201,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Stencil import",
+          "cpuMs": 105.43999999999998,
+          "elapsedMs": 204.30000001192093,
+          "maxLongTaskMs": 54,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 1024",
+          "cpuMs": 292.536,
+          "elapsedMs": 551.5999999642372,
+          "maxLongTaskMs": 89,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 181.61699999999996,
+          "elapsedMs": 390.5,
+          "maxLongTaskMs": 54,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET Brightness R-G-Value 2048",
+          "cpuMs": 568.619,
+          "elapsedMs": 849.5,
+          "maxLongTaskMs": 151,
+          "longtasks": 3
+        },
+        {
+          "name": "ADVERSE sprites8+effect Auto import",
+          "cpuMs": 123.16799999999998,
+          "elapsedMs": 207.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 120.031,
+          "elapsedMs": 241.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 187.117,
+          "elapsedMs": 414.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-motion-256 import",
+          "cpuMs": 115.23700000000004,
+          "elapsedMs": 374.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny all 11 styles",
+          "cpuMs": 1567.4060000000002,
+          "elapsedMs": 4598.699999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Icon 16px",
+          "cpuMs": 180.81100000000004,
+          "elapsedMs": 420.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Stencil 16px",
+          "cpuMs": 178.84399999999997,
+          "elapsedMs": 442.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B",
+      "pair": 2,
+      "slot": 5,
+      "tempC": 36.4,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 202.73600000000002,
+          "elapsedMs": 411.19999998807907,
+          "maxLongTaskMs": 89,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 2048",
+          "cpuMs": 750.4459999999999,
+          "elapsedMs": 1072.6000000238419,
+          "maxLongTaskMs": 476,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-Stencil import",
+          "cpuMs": 188.47599999999997,
+          "elapsedMs": 387.30000001192093,
+          "maxLongTaskMs": 51,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 2048",
+          "cpuMs": 409.4,
+          "elapsedMs": 732.6999999880791,
+          "maxLongTaskMs": 173,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 142.634,
+          "elapsedMs": 264.69999998807907,
+          "maxLongTaskMs": 81,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 1024",
+          "cpuMs": 414.19700000000006,
+          "elapsedMs": 738.0999999642372,
+          "maxLongTaskMs": 175,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Stencil import",
+          "cpuMs": 131.398,
+          "elapsedMs": 243.5,
+          "maxLongTaskMs": 71,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 1024",
+          "cpuMs": 304.30500000000006,
+          "elapsedMs": 597.6999999880791,
+          "maxLongTaskMs": 90,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 179.661,
+          "elapsedMs": 384.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET Brightness R-G-Value 2048",
+          "cpuMs": 446.35999999999996,
+          "elapsedMs": 705.2999999523163,
+          "maxLongTaskMs": 114,
+          "longtasks": 3
+        },
+        {
+          "name": "ADVERSE sprites8+effect Auto import",
+          "cpuMs": 121.29099999999998,
+          "elapsedMs": 212.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 133.268,
+          "elapsedMs": 256.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 192.682,
+          "elapsedMs": 392.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-motion-256 import",
+          "cpuMs": 125.27,
+          "elapsedMs": 334.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny all 11 styles",
+          "cpuMs": 1607.657,
+          "elapsedMs": 4512.200000047684,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Icon 16px",
+          "cpuMs": 188.24099999999999,
+          "elapsedMs": 459.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Stencil 16px",
+          "cpuMs": 173.19,
+          "elapsedMs": 422.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B",
+      "pair": 3,
+      "slot": 6,
+      "tempC": 36.8,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 218.26899999999998,
+          "elapsedMs": 423,
+          "maxLongTaskMs": 81,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 2048",
+          "cpuMs": 766.516,
+          "elapsedMs": 1078.5,
+          "maxLongTaskMs": 486,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-Stencil import",
+          "cpuMs": 171.32,
+          "elapsedMs": 380.60000002384186,
+          "maxLongTaskMs": 54,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 2048",
+          "cpuMs": 399.76500000000004,
+          "elapsedMs": 728.1999999880791,
+          "maxLongTaskMs": 163,
+          "longtasks": 2
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 121.21000000000001,
+          "elapsedMs": 224.19999998807907,
+          "maxLongTaskMs": 64,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 1024",
+          "cpuMs": 391.31999999999994,
+          "elapsedMs": 655.1000000238419,
+          "maxLongTaskMs": 175,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Stencil import",
+          "cpuMs": 170.161,
+          "elapsedMs": 265.80000001192093,
+          "maxLongTaskMs": 74,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 1024",
+          "cpuMs": 349.17600000000004,
+          "elapsedMs": 696.5999999642372,
+          "maxLongTaskMs": 96,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 162.29,
+          "elapsedMs": 344.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET Brightness R-G-Value 2048",
+          "cpuMs": 443.905,
+          "elapsedMs": 674.1999999880791,
+          "maxLongTaskMs": 114,
+          "longtasks": 3
+        },
+        {
+          "name": "ADVERSE sprites8+effect Auto import",
+          "cpuMs": 112.79199999999997,
+          "elapsedMs": 189.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 166.02300000000002,
+          "elapsedMs": 253.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 172.36499999999998,
+          "elapsedMs": 366.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-motion-256 import",
+          "cpuMs": 116.05699999999999,
+          "elapsedMs": 309.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny all 11 styles",
+          "cpuMs": 1551.0900000000001,
+          "elapsedMs": 4386.799999952316,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Icon 16px",
+          "cpuMs": 201.28900000000002,
+          "elapsedMs": 565.8999999761581,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Stencil 16px",
+          "cpuMs": 192.201,
+          "elapsedMs": 528.1999999880791,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "pair": 3,
+      "slot": 7,
+      "tempC": 36.8,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 192.48600000000002,
+          "elapsedMs": 413.5,
+          "maxLongTaskMs": 79,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 2048",
+          "cpuMs": 845.2229999999998,
+          "elapsedMs": 1153.1000000238419,
+          "maxLongTaskMs": 563,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-Stencil import",
+          "cpuMs": 192.08500000000004,
+          "elapsedMs": 400.89999997615814,
+          "maxLongTaskMs": 59,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 2048",
+          "cpuMs": 420.66200000000003,
+          "elapsedMs": 690.5,
+          "maxLongTaskMs": 172,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 164.402,
+          "elapsedMs": 291.19999998807907,
+          "maxLongTaskMs": 101,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 1024",
+          "cpuMs": 478.24499999999995,
+          "elapsedMs": 826,
+          "maxLongTaskMs": 220,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Stencil import",
+          "cpuMs": 153.206,
+          "elapsedMs": 278.7999999523163,
+          "maxLongTaskMs": 81,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 1024",
+          "cpuMs": 348.895,
+          "elapsedMs": 654.4000000357628,
+          "maxLongTaskMs": 99,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 180.61399999999998,
+          "elapsedMs": 424.89999997615814,
+          "maxLongTaskMs": 53,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET Brightness R-G-Value 2048",
+          "cpuMs": 674.317,
+          "elapsedMs": 948.1999999880791,
+          "maxLongTaskMs": 206,
+          "longtasks": 3
+        },
+        {
+          "name": "ADVERSE sprites8+effect Auto import",
+          "cpuMs": 126.75399999999998,
+          "elapsedMs": 185.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 112.38799999999999,
+          "elapsedMs": 248,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 218.631,
+          "elapsedMs": 430,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-motion-256 import",
+          "cpuMs": 106.54300000000002,
+          "elapsedMs": 368.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny all 11 styles",
+          "cpuMs": 1647.5030000000002,
+          "elapsedMs": 4320.699999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Icon 16px",
+          "cpuMs": 184.822,
+          "elapsedMs": 486.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Stencil 16px",
+          "cpuMs": 179.047,
+          "elapsedMs": 441.7999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "pair": 4,
+      "slot": 8,
+      "tempC": 36.8,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 218.801,
+          "elapsedMs": 472.0999999642372,
+          "maxLongTaskMs": 76,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 2048",
+          "cpuMs": 806.9750000000001,
+          "elapsedMs": 1062.7999999523163,
+          "maxLongTaskMs": 545,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-Stencil import",
+          "cpuMs": 190.311,
+          "elapsedMs": 412.10000002384186,
+          "maxLongTaskMs": 55,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 2048",
+          "cpuMs": 440.57900000000006,
+          "elapsedMs": 775.3000000119209,
+          "maxLongTaskMs": 181,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 130.88900000000004,
+          "elapsedMs": 269.19999998807907,
+          "maxLongTaskMs": 75,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 1024",
+          "cpuMs": 534.345,
+          "elapsedMs": 840.1000000238419,
+          "maxLongTaskMs": 248,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Stencil import",
+          "cpuMs": 135.43099999999998,
+          "elapsedMs": 275.30000001192093,
+          "maxLongTaskMs": 80,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 1024",
+          "cpuMs": 353.64599999999996,
+          "elapsedMs": 606.9000000357628,
+          "maxLongTaskMs": 95,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 156.751,
+          "elapsedMs": 395,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET Brightness R-G-Value 2048",
+          "cpuMs": 667.5090000000001,
+          "elapsedMs": 920.1999999880791,
+          "maxLongTaskMs": 180,
+          "longtasks": 3
+        },
+        {
+          "name": "ADVERSE sprites8+effect Auto import",
+          "cpuMs": 125.79299999999999,
+          "elapsedMs": 202.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 178.75799999999998,
+          "elapsedMs": 278,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 190.76799999999997,
+          "elapsedMs": 429,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-motion-256 import",
+          "cpuMs": 118.826,
+          "elapsedMs": 387.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny all 11 styles",
+          "cpuMs": 1691.2099999999998,
+          "elapsedMs": 4691.599999964237,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Icon 16px",
+          "cpuMs": 195.151,
+          "elapsedMs": 439,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Stencil 16px",
+          "cpuMs": 193.63599999999997,
+          "elapsedMs": 454.2999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B",
+      "pair": 4,
+      "slot": 9,
+      "tempC": 36.8,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 216.031,
+          "elapsedMs": 441.60000002384186,
+          "maxLongTaskMs": 86,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 2048",
+          "cpuMs": 738.5390000000001,
+          "elapsedMs": 1074.800000011921,
+          "maxLongTaskMs": 477,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-Stencil import",
+          "cpuMs": 193.86800000000002,
+          "elapsedMs": 415.39999997615814,
+          "maxLongTaskMs": 58,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 2048",
+          "cpuMs": 421.267,
+          "elapsedMs": 763,
+          "maxLongTaskMs": 160,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 150.19500000000002,
+          "elapsedMs": 287,
+          "maxLongTaskMs": 81,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Icon 1024",
+          "cpuMs": 460.19200000000006,
+          "elapsedMs": 772.8000000119209,
+          "maxLongTaskMs": 201,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Stencil import",
+          "cpuMs": 146.571,
+          "elapsedMs": 282.7999999523163,
+          "maxLongTaskMs": 86,
+          "longtasks": 1
+        },
+        {
+          "name": "TARGET cold Stencil 1024",
+          "cpuMs": 372.984,
+          "elapsedMs": 720.2000000476837,
+          "maxLongTaskMs": 94,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 159.69900000000004,
+          "elapsedMs": 386.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "TARGET Brightness R-G-Value 2048",
+          "cpuMs": 488.33200000000005,
+          "elapsedMs": 753.3000000119209,
+          "maxLongTaskMs": 119,
+          "longtasks": 3
+        },
+        {
+          "name": "ADVERSE sprites8+effect Auto import",
+          "cpuMs": 116.538,
+          "elapsedMs": 190.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 141.20900000000003,
+          "elapsedMs": 286,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 196.841,
+          "elapsedMs": 411.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE kenney-motion-256 import",
+          "cpuMs": 112.90499999999997,
+          "elapsedMs": 326.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny all 11 styles",
+          "cpuMs": 1707.5,
+          "elapsedMs": 4810.100000023842,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Icon 16px",
+          "cpuMs": 176.85700000000003,
+          "elapsedMs": 487,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "ADVERSE tiny cold Stencil 16px",
+          "cpuMs": 176.57999999999998,
+          "elapsedMs": 469.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, level: 59, temperature: 360, Capacity level: 2",
+      "rotation": "free"
+    },
+    {
+      "at": "end",
+      "battery": "status: 4, level: 59, temperature: 368, Capacity level: 2",
+      "rotation": "free"
+    }
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "finished": "2026-10-18T06:27:22.772Z"
+}

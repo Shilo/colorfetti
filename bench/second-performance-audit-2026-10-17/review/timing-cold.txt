@@ -1,0 +1,24 @@
+kenney-sheet-1024.png iconOf auto  cold median 98.633 -> 92.182
+kenney-sheet-1024.png iconOf trim  cold median 81.983 -> 84.86
+kenney-sheet-1024.png spritesOf    cold median 20.557 -> 12.953
+kenney-sheet-1024.png analyze luma cold median 18.552 -> 14.907
+kenney-sheet-1024.png analyze value cold median 23.407 -> 13.628
+kenney-sheet-1024.png analyze green cold median 21.577 -> 14.114
+kenney-sheet-2048.png iconOf auto  cold median 222.053 -> 192.858
+kenney-sheet-2048.png iconOf trim  cold median 238.632 -> 211.369
+kenney-sheet-2048.png spritesOf    cold median 55.794 -> 44.158
+kenney-sheet-2048.png analyze luma cold median 47.736 -> 38.176
+kenney-sheet-2048.png analyze value cold median 62.48 -> 38.889
+kenney-sheet-2048.png analyze green cold median 65.587 -> 42.271
+dungeon-knight.png iconOf auto     cold median 2.142 -> 1.904
+dungeon-knight.png iconOf trim     cold median 1.068 -> 1.096
+dungeon-knight.png spritesOf       cold median 0.279 -> 0.259
+dungeon-knight.png analyze luma    cold median 0.373 -> 0.38
+dungeon-knight.png analyze value   cold median 0.412 -> 0.389
+dungeon-knight.png analyze green   cold median 0.405 -> 0.391
+real-magic.gif.0 iconOf auto       cold median 1.434 -> 1.366
+real-magic.gif.0 iconOf trim       cold median 0.922 -> 0.917
+real-magic.gif.0 spritesOf         cold median 0.226 -> 0.221
+real-magic.gif.0 analyze luma      cold median 0.424 -> 0.39
+real-magic.gif.0 analyze value     cold median 0.446 -> 0.371
+real-magic.gif.0 analyze green     cold median 0.448 -> 0.369

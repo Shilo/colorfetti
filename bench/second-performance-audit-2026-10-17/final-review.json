@@ -1,0 +1,32 @@
+{
+  "reviewer": "fresh adversarial reviewer (final review)",
+  "date": "2026-10-17",
+  "change": "git diff -- src/lib/recolor.js (addSeams zero-skip; non-luma analyze single loop)",
+  "baseline": "3c47699 (src/lib identical to HEAD fa52453)",
+  "verdict": "PASS",
+  "findings": [
+    {"severity": "none", "summary": "No output, behavior, lifecycle or perf-contract difference found."},
+    {"severity": "info", "summary": "seamThreshold's hist[0] = 0 is now redundant for both callers (seamStrength, unifyAsync); a mutant deleting it was indistinguishable. Keeping it is harmless defensive code."}
+  ],
+  "static_checks": {
+    "addSeams_callers": "seamStrength (analyze, unify) and unifyAsync only; both histograms are local and consumed only by seamThreshold, which zeroes hist[0] before otsu",
+    "right_down_boundaries": "only written under x+1<w / y+1<h in analyze; new addSeams keeps the boundary guards anyway, so equivalence does not depend on that",
+    "edges0": "old cleared edges[0] before the second pass, which never touched edges; moving it after the branch is equivalent",
+    "hasAlpha_part_soft": "non-luma loop now performs the same part |= a+1 and hasAlpha updates as the luma loop did",
+    "unknown_source": "old: luma loop then second pass with SOURCES[source] ?? SOURCES.luma; new: same weights in one loop. null/'bogus' identical; undefined defaults to 'luma'",
+    "transparent_lum": "0 in both (never written)",
+    "callers_of_analyze_unify": "App.svelte, image-import-core.js (worker), image-reanalysis.js (unifyAsync), style-preview.js, previewBall; all receive identical objects"
+  },
+  "differential": {
+    "harness": ".tmp/second-audit-2026-10-17/final-review/diff.mjs",
+    "runs": [
+      {"seed": 12345, "analyze": 5470, "masks": 47520, "unify": 645, "unifyAsync": 645, "fixtures": 13, "fixtureMasks": 1320, "mismatches": 0},
+      {"seed": 7, "analyze": 8030, "masks": 90937, "unify": 800, "unifyAsync": 800, "mismatches": 0},
+      {"seed": 99991, "analyze": 8030, "masks": 90937, "unify": 800, "unifyAsync": 800, "mismatches": 0}
+    ],
+    "coverage": "sizes 0x0/0xN/Nx0 and 1..64 incl. 1xN/Nx1; 7 alpha modes; 6 color modes; sources luma/value/red/green/blue/bogus/undefined/null; cuts 0/1/128/255/256/default; all 11 styles with default and random settings and downsampled mw/mh; all 13 bench/practical-workloads-2026-10-16 fixtures (PNG via zlib decoder, GIF via omggif; sharp absent) x 5 sources x cuts 1/128/255",
+    "mutation_sanity": {"drop_part_in_nonluma_loop": "735 mismatches", "skip_if_either_diff_zero": "544 mismatches", "remove_seamThreshold_hist0_clear": "0 (equivalent, see info finding)"}
+  },
+  "tests": "npx vitest run recolor/image-import-core/image-reanalysis: 3 files, 143 passed",
+  "timing_indicative_ms_2048sq_median": {"luma": {"head": [37.2, 34.4], "tree": [28.0, 29.7]}, "value": {"head": [48.6, 39.5], "tree": [27.2, 23.8]}, "red": {"head": [42.6, 46.8], "tree": [27.9, 69.2]}, "note": "single noisy desktop run; red-tree second sample likely GC"}
+}

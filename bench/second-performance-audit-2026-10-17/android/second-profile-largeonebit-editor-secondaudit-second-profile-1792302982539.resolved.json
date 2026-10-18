@@ -1,0 +1,842 @@
+[
+  {
+    "stage": "palette editor open paste 256 colors keyboard Review page close",
+    "cpuMs": 579.1,
+    "maxLongTaskMs": 188,
+    "self": [
+      {
+        "frame": "blur [native]",
+        "ms": 17.6
+      },
+      {
+        "frame": "$.get src/PaletteImport.svelte:211",
+        "ms": 10.7
+      },
+      {
+        "frame": "(native) [native]",
+        "ms": 7.1
+      },
+      {
+        "frame": "getImplicitAriaRole [native]",
+        "ms": 6.8
+      },
+      {
+        "frame": "fillRect [native]",
+        "ms": 6.4
+      },
+      {
+        "frame": "handle_event_propagation node_modules/svelte/src/internal/client/dom/elements/events.js:181",
+        "ms": 6
+      },
+      {
+        "frame": "drawSwatch src/lib/palette-preview.js:46",
+        "ms": 4.8
+      },
+      {
+        "frame": "showModal [native]",
+        "ms": 4.8
+      },
+      {
+        "frame": "close [native]",
+        "ms": 4.7
+      },
+      {
+        "frame": "(garbage collector) [native]",
+        "ms": 4.6
+      },
+      {
+        "frame": "fitPaletteHeader src/Dock.svelte:81",
+        "ms": 4.4
+      },
+      {
+        "frame": "query [native]",
+        "ms": 3.7
+      }
+    ],
+    "inclusive": [
+      {
+        "frame": "#_ node_modules/svelte/src/internal/client/reactivity/batch.js:329",
+        "ms": 64.8
+      },
+      {
+        "frame": "flush node_modules/svelte/src/internal/client/reactivity/batch.js:668",
+        "ms": 64.8
+      },
+      {
+        "frame": "queue_micro_task node_modules/svelte/src/internal/client/reactivity/batch.js:920",
+        "ms": 64.8
+      },
+      {
+        "frame": "run_all node_modules/svelte/src/internal/shared/utils.js:45",
+        "ms": 64.8
+      },
+      {
+        "frame": "run_micro_tasks node_modules/svelte/src/internal/client/dom/task.js:7",
+        "ms": 64.8
+      },
+      {
+        "frame": "(anonymous) node_modules/svelte/src/internal/client/dom/task.js:19",
+        "ms": 64.8
+      },
+      {
+        "frame": "update_effect node_modules/svelte/src/internal/client/runtime.js:450",
+        "ms": 63.6
+      },
+      {
+        "frame": "update_reaction node_modules/svelte/src/internal/client/runtime.js:220",
+        "ms": 62.5
+      },
+      {
+        "frame": "(native) [native]",
+        "ms": 46
+      },
+      {
+        "frame": "evaluate [native]",
+        "ms": 40
+      },
+      {
+        "frame": "#v node_modules/svelte/src/internal/client/reactivity/batch.js:493",
+        "ms": 39.4
+      },
+      {
+        "frame": "callMatchedElements [native]",
+        "ms": 33
+      }
+    ]
+  },
+  {
+    "stage": "largeonebit-kenney-sheet-1024: input import to current named wall paint",
+    "cpuMs": 176.7,
+    "maxLongTaskMs": 82,
+    "self": [
+      {
+        "frame": "mask src/lib/recolor.js:306",
+        "ms": 15.9
+      },
+      {
+        "frame": "scanSummary src/lib/source-color-summary.js:49",
+        "ms": 13.6
+      },
+      {
+        "frame": "d src/lib/recolor.js:371",
+        "ms": 11.8
+      },
+      {
+        "frame": "cut src/lib/recolor.js:373",
+        "ms": 9.6
+      },
+      {
+        "frame": "untrack node_modules/svelte/src/internal/client/dom/elements/bindings/size.js:104",
+        "ms": 7.3
+      },
+      {
+        "frame": "b src/lib/recolor.js:312",
+        "ms": 4.9
+      },
+      {
+        "frame": "(native) [native]",
+        "ms": 4.7
+      },
+      {
+        "frame": "colorize src/lib/recolor.js:514",
+        "ms": 3.8
+      },
+      {
+        "frame": "copyTo [native]",
+        "ms": 3.3
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 2.5
+      },
+      {
+        "frame": "putImageData [native]",
+        "ms": 2.4
+      },
+      {
+        "frame": "branch node_modules/svelte/src/internal/client/dom/blocks/branches.js:204",
+        "ms": 2.4
+      }
+    ],
+    "inclusive": [
+      {
+        "frame": "update_reaction node_modules/svelte/src/internal/client/runtime.js:220",
+        "ms": 76.7
+      },
+      {
+        "frame": "update_effect node_modules/svelte/src/internal/client/runtime.js:450",
+        "ms": 76.7
+      },
+      {
+        "frame": "#_ node_modules/svelte/src/internal/client/reactivity/batch.js:329",
+        "ms": 76.7
+      },
+      {
+        "frame": "flush node_modules/svelte/src/internal/client/reactivity/batch.js:668",
+        "ms": 76.7
+      },
+      {
+        "frame": "queue_micro_task node_modules/svelte/src/internal/client/reactivity/batch.js:920",
+        "ms": 76.7
+      },
+      {
+        "frame": "run_all node_modules/svelte/src/internal/shared/utils.js:45",
+        "ms": 76.7
+      },
+      {
+        "frame": "run_micro_tasks node_modules/svelte/src/internal/client/dom/task.js:7",
+        "ms": 76.7
+      },
+      {
+        "frame": "(anonymous) node_modules/svelte/src/internal/client/dom/task.js:19",
+        "ms": 76.7
+      },
+      {
+        "frame": "flush_queued_effects node_modules/svelte/src/internal/client/reactivity/batch.js:1109",
+        "ms": 63.2
+      },
+      {
+        "frame": "block node_modules/svelte/src/internal/client/dom/blocks/if.js:60",
+        "ms": 56
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 49.9
+      },
+      {
+        "frame": "execute_derived node_modules/svelte/src/internal/client/reactivity/deriveds.js:339",
+        "ms": 49.9
+      }
+    ]
+  },
+  {
+    "stage": "kenney-sheet-1024: first-style-preparation Stencil current paint",
+    "cpuMs": 365.9,
+    "maxLongTaskMs": 73,
+    "self": [
+      {
+        "frame": "mask src/lib/recolor.js:306",
+        "ms": 29.5
+      },
+      {
+        "frame": "sprites src/lib/recolor.js:230",
+        "ms": 28.3
+      },
+      {
+        "frame": "b src/lib/recolor.js:312",
+        "ms": 20.2
+      },
+      {
+        "frame": "blur [native]",
+        "ms": 14.6
+      },
+      {
+        "frame": "(garbage collector) [native]",
+        "ms": 14.4
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 10.4
+      },
+      {
+        "frame": "isElementHiddenForAria [native]",
+        "ms": 10.2
+      },
+      {
+        "frame": "colorize src/lib/recolor.js:514",
+        "ms": 9.9
+      },
+      {
+        "frame": "(native) [native]",
+        "ms": 8.2
+      },
+      {
+        "frame": "get offsetHeight [native]",
+        "ms": 7.3
+      },
+      {
+        "frame": "d src/lib/recolor.js:371",
+        "ms": 5.8
+      },
+      {
+        "frame": "otsu src/lib/recolor.js:67",
+        "ms": 5.2
+      }
+    ],
+    "inclusive": [
+      {
+        "frame": "#_ node_modules/svelte/src/internal/client/reactivity/batch.js:329",
+        "ms": 153.3
+      },
+      {
+        "frame": "flush node_modules/svelte/src/internal/client/reactivity/batch.js:668",
+        "ms": 153.3
+      },
+      {
+        "frame": "queue_micro_task node_modules/svelte/src/internal/client/reactivity/batch.js:920",
+        "ms": 153.3
+      },
+      {
+        "frame": "run_all node_modules/svelte/src/internal/shared/utils.js:45",
+        "ms": 153.3
+      },
+      {
+        "frame": "run_micro_tasks node_modules/svelte/src/internal/client/dom/task.js:7",
+        "ms": 153.3
+      },
+      {
+        "frame": "(anonymous) node_modules/svelte/src/internal/client/dom/task.js:19",
+        "ms": 153.3
+      },
+      {
+        "frame": "update_reaction node_modules/svelte/src/internal/client/runtime.js:220",
+        "ms": 153.1
+      },
+      {
+        "frame": "execute_derived node_modules/svelte/src/internal/client/reactivity/deriveds.js:339",
+        "ms": 122.1
+      },
+      {
+        "frame": "update_derived node_modules/svelte/src/internal/client/reactivity/deriveds.js:390",
+        "ms": 122.1
+      },
+      {
+        "frame": "#v node_modules/svelte/src/internal/client/reactivity/batch.js:493",
+        "ms": 113.2
+      },
+      {
+        "frame": "is_dirty node_modules/svelte/src/internal/client/runtime.js:154",
+        "ms": 99.6
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 98.5
+      }
+    ]
+  },
+  {
+    "stage": "kenney-sheet-1024: first-style-preparation Icon current paint",
+    "cpuMs": 405.4,
+    "maxLongTaskMs": 206,
+    "self": [
+      {
+        "frame": "iconOf src/lib/icon.js:40",
+        "ms": 114.2
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 38.7
+      },
+      {
+        "frame": "glyphComponent src/lib/icon-glyph.js:128",
+        "ms": 30.1
+      },
+      {
+        "frame": "(garbage collector) [native]",
+        "ms": 14.7
+      },
+      {
+        "frame": "mask src/lib/recolor.js:306",
+        "ms": 9.7
+      },
+      {
+        "frame": "blur [native]",
+        "ms": 9.5
+      },
+      {
+        "frame": "isElementHiddenForAria [native]",
+        "ms": 5.8
+      },
+      {
+        "frame": "elementsFromPoint [native]",
+        "ms": 5.7
+      },
+      {
+        "frame": "pieces src/lib/icon-glyph.js:24",
+        "ms": 5
+      },
+      {
+        "frame": "scrollIntoView [native]",
+        "ms": 4.7
+      },
+      {
+        "frame": "update src/Dock.svelte:168",
+        "ms": 3.7
+      },
+      {
+        "frame": "b src/lib/recolor.js:312",
+        "ms": 3.5
+      }
+    ],
+    "inclusive": [
+      {
+        "frame": "run_all node_modules/svelte/src/internal/shared/utils.js:45",
+        "ms": 239.4
+      },
+      {
+        "frame": "run_micro_tasks node_modules/svelte/src/internal/client/dom/task.js:7",
+        "ms": 239.4
+      },
+      {
+        "frame": "(anonymous) node_modules/svelte/src/internal/client/dom/task.js:19",
+        "ms": 239.4
+      },
+      {
+        "frame": "flush node_modules/svelte/src/internal/client/reactivity/batch.js:668",
+        "ms": 238.3
+      },
+      {
+        "frame": "queue_micro_task node_modules/svelte/src/internal/client/reactivity/batch.js:920",
+        "ms": 238.3
+      },
+      {
+        "frame": "#_ node_modules/svelte/src/internal/client/reactivity/batch.js:329",
+        "ms": 237.1
+      },
+      {
+        "frame": "update_reaction node_modules/svelte/src/internal/client/runtime.js:220",
+        "ms": 234.7
+      },
+      {
+        "frame": "#v node_modules/svelte/src/internal/client/reactivity/batch.js:493",
+        "ms": 212.8
+      },
+      {
+        "frame": "execute_derived node_modules/svelte/src/internal/client/reactivity/deriveds.js:339",
+        "ms": 212.5
+      },
+      {
+        "frame": "update_derived node_modules/svelte/src/internal/client/reactivity/deriveds.js:390",
+        "ms": 212.5
+      },
+      {
+        "frame": "is_dirty node_modules/svelte/src/internal/client/runtime.js:154",
+        "ms": 209.4
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 208.2
+      }
+    ]
+  },
+  {
+    "stage": "largeonebit-kenney-sheet-2048: input import to current named wall paint",
+    "cpuMs": 187.8,
+    "maxLongTaskMs": 57,
+    "self": [
+      {
+        "frame": "scanSummary src/lib/source-color-summary.js:49",
+        "ms": 33
+      },
+      {
+        "frame": "copyTo [native]",
+        "ms": 12.5
+      },
+      {
+        "frame": "mask src/lib/recolor.js:306",
+        "ms": 11.6
+      },
+      {
+        "frame": "(garbage collector) [native]",
+        "ms": 11
+      },
+      {
+        "frame": "untrack node_modules/svelte/src/internal/client/dom/elements/bindings/size.js:104",
+        "ms": 7.4
+      },
+      {
+        "frame": "b src/lib/recolor.js:312",
+        "ms": 6
+      },
+      {
+        "frame": "d src/lib/recolor.js:371",
+        "ms": 5.9
+      },
+      {
+        "frame": "(native) [native]",
+        "ms": 5.2
+      },
+      {
+        "frame": "colorize src/lib/recolor.js:514",
+        "ms": 5
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 4.3
+      },
+      {
+        "frame": "getBoundingClientRect [native]",
+        "ms": 3.5
+      },
+      {
+        "frame": "t.port1.onmessage src/lib/quantize.js:112",
+        "ms": 2.3
+      }
+    ],
+    "inclusive": [
+      {
+        "frame": "#_ node_modules/svelte/src/internal/client/reactivity/batch.js:329",
+        "ms": 53.9
+      },
+      {
+        "frame": "flush node_modules/svelte/src/internal/client/reactivity/batch.js:668",
+        "ms": 53.9
+      },
+      {
+        "frame": "queue_micro_task node_modules/svelte/src/internal/client/reactivity/batch.js:920",
+        "ms": 53.9
+      },
+      {
+        "frame": "run_all node_modules/svelte/src/internal/shared/utils.js:45",
+        "ms": 53.9
+      },
+      {
+        "frame": "run_micro_tasks node_modules/svelte/src/internal/client/dom/task.js:7",
+        "ms": 53.9
+      },
+      {
+        "frame": "(anonymous) node_modules/svelte/src/internal/client/dom/task.js:19",
+        "ms": 53.9
+      },
+      {
+        "frame": "update_reaction node_modules/svelte/src/internal/client/runtime.js:220",
+        "ms": 53
+      },
+      {
+        "frame": "update_effect node_modules/svelte/src/internal/client/runtime.js:450",
+        "ms": 53
+      },
+      {
+        "frame": "flush_queued_effects node_modules/svelte/src/internal/client/reactivity/batch.js:1109",
+        "ms": 45.8
+      },
+      {
+        "frame": "block node_modules/svelte/src/internal/client/dom/blocks/if.js:60",
+        "ms": 41.9
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 37.2
+      },
+      {
+        "frame": "execute_derived node_modules/svelte/src/internal/client/reactivity/deriveds.js:339",
+        "ms": 37.2
+      }
+    ]
+  },
+  {
+    "stage": "kenney-sheet-2048: first-style-preparation Stencil current paint",
+    "cpuMs": 407.4,
+    "maxLongTaskMs": 132,
+    "self": [
+      {
+        "frame": "sprites src/lib/recolor.js:230",
+        "ms": 79.4
+      },
+      {
+        "frame": "mask src/lib/recolor.js:306",
+        "ms": 26
+      },
+      {
+        "frame": "b src/lib/recolor.js:312",
+        "ms": 25.1
+      },
+      {
+        "frame": "blur [native]",
+        "ms": 22.4
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 15.7
+      },
+      {
+        "frame": "(garbage collector) [native]",
+        "ms": 15.4
+      },
+      {
+        "frame": "get offsetHeight [native]",
+        "ms": 9.5
+      },
+      {
+        "frame": "uo src/lib/recolor.js:278",
+        "ms": 7.3
+      },
+      {
+        "frame": "(native) [native]",
+        "ms": 7
+      },
+      {
+        "frame": "scrollIntoView [native]",
+        "ms": 6.2
+      },
+      {
+        "frame": "isElementHiddenForAria [native]",
+        "ms": 5.6
+      },
+      {
+        "frame": "packWorkspaceControls src/lib/workspace-controls.js:6",
+        "ms": 4
+      }
+    ],
+    "inclusive": [
+      {
+        "frame": "(anonymous) node_modules/svelte/src/internal/client/dom/task.js:19",
+        "ms": 201.3
+      },
+      {
+        "frame": "#_ node_modules/svelte/src/internal/client/reactivity/batch.js:329",
+        "ms": 200.1
+      },
+      {
+        "frame": "flush node_modules/svelte/src/internal/client/reactivity/batch.js:668",
+        "ms": 200.1
+      },
+      {
+        "frame": "queue_micro_task node_modules/svelte/src/internal/client/reactivity/batch.js:920",
+        "ms": 200.1
+      },
+      {
+        "frame": "run_all node_modules/svelte/src/internal/shared/utils.js:45",
+        "ms": 200.1
+      },
+      {
+        "frame": "run_micro_tasks node_modules/svelte/src/internal/client/dom/task.js:7",
+        "ms": 200.1
+      },
+      {
+        "frame": "update_reaction node_modules/svelte/src/internal/client/runtime.js:220",
+        "ms": 199
+      },
+      {
+        "frame": "execute_derived node_modules/svelte/src/internal/client/reactivity/deriveds.js:339",
+        "ms": 169.3
+      },
+      {
+        "frame": "update_derived node_modules/svelte/src/internal/client/reactivity/deriveds.js:390",
+        "ms": 169.3
+      },
+      {
+        "frame": "#v node_modules/svelte/src/internal/client/reactivity/batch.js:493",
+        "ms": 164.9
+      },
+      {
+        "frame": "is_dirty node_modules/svelte/src/internal/client/runtime.js:154",
+        "ms": 157.6
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 156.7
+      }
+    ]
+  },
+  {
+    "stage": "kenney-sheet-2048: first-style-preparation Icon current paint",
+    "cpuMs": 603.1,
+    "maxLongTaskMs": 409,
+    "self": [
+      {
+        "frame": "iconOf src/lib/icon.js:40",
+        "ms": 257
+      },
+      {
+        "frame": "glyphComponent src/lib/icon-glyph.js:128",
+        "ms": 58.2
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 48.2
+      },
+      {
+        "frame": "(garbage collector) [native]",
+        "ms": 16.8
+      },
+      {
+        "frame": "b src/lib/recolor.js:312",
+        "ms": 15.3
+      },
+      {
+        "frame": "pieces src/lib/icon-glyph.js:24",
+        "ms": 13.1
+      },
+      {
+        "frame": "(native) [native]",
+        "ms": 10.8
+      },
+      {
+        "frame": "mask src/lib/recolor.js:306",
+        "ms": 10.5
+      },
+      {
+        "frame": "blur [native]",
+        "ms": 9.3
+      },
+      {
+        "frame": "elementsFromPoint [native]",
+        "ms": 6
+      },
+      {
+        "frame": "neighbors src/lib/icon.js:24",
+        "ms": 4.9
+      },
+      {
+        "frame": "requestAnimationFrame [native]",
+        "ms": 4.8
+      }
+    ],
+    "inclusive": [
+      {
+        "frame": "#_ node_modules/svelte/src/internal/client/reactivity/batch.js:329",
+        "ms": 435.5
+      },
+      {
+        "frame": "flush node_modules/svelte/src/internal/client/reactivity/batch.js:668",
+        "ms": 435.5
+      },
+      {
+        "frame": "queue_micro_task node_modules/svelte/src/internal/client/reactivity/batch.js:920",
+        "ms": 435.5
+      },
+      {
+        "frame": "run_all node_modules/svelte/src/internal/shared/utils.js:45",
+        "ms": 435.5
+      },
+      {
+        "frame": "run_micro_tasks node_modules/svelte/src/internal/client/dom/task.js:7",
+        "ms": 435.5
+      },
+      {
+        "frame": "(anonymous) node_modules/svelte/src/internal/client/dom/task.js:19",
+        "ms": 435.5
+      },
+      {
+        "frame": "update_reaction node_modules/svelte/src/internal/client/runtime.js:220",
+        "ms": 433.2
+      },
+      {
+        "frame": "execute_derived node_modules/svelte/src/internal/client/reactivity/deriveds.js:339",
+        "ms": 416.9
+      },
+      {
+        "frame": "update_derived node_modules/svelte/src/internal/client/reactivity/deriveds.js:390",
+        "ms": 416.9
+      },
+      {
+        "frame": "#v node_modules/svelte/src/internal/client/reactivity/batch.js:493",
+        "ms": 414.7
+      },
+      {
+        "frame": "$.derived src/Tile.svelte:302",
+        "ms": 409.9
+      },
+      {
+        "frame": "is_dirty node_modules/svelte/src/internal/client/runtime.js:154",
+        "ms": 409.9
+      }
+    ]
+  },
+  {
+    "stage": "kenney-sheet-2048: Brightness rapid R-G-Value reanalysis",
+    "cpuMs": 518,
+    "maxLongTaskMs": 118,
+    "self": [
+      {
+        "frame": "analyze src/lib/recolor.js:128",
+        "ms": 180.8
+      },
+      {
+        "frame": "addSeams src/lib/recolor.js:102",
+        "ms": 82.4
+      },
+      {
+        "frame": "diff src/lib/recolor.js:63",
+        "ms": 23.4
+      },
+      {
+        "frame": "prepare src/lib/image-reanalysis.js:32",
+        "ms": 15.9
+      },
+      {
+        "frame": "(garbage collector) [native]",
+        "ms": 15.9
+      },
+      {
+        "frame": "(native) [native]",
+        "ms": 11.9
+      },
+      {
+        "frame": "mask src/lib/recolor.js:306",
+        "ms": 11
+      },
+      {
+        "frame": "blur [native]",
+        "ms": 7.4
+      },
+      {
+        "frame": "colorize src/lib/recolor.js:514",
+        "ms": 7.2
+      },
+      {
+        "frame": "requestAnimationFrame [native]",
+        "ms": 5.9
+      },
+      {
+        "frame": "b src/lib/recolor.js:312",
+        "ms": 4.8
+      },
+      {
+        "frame": "elementsFromPoint [native]",
+        "ms": 3.6
+      }
+    ],
+    "inclusive": [
+      {
+        "frame": "prepare src/lib/image-reanalysis.js:32",
+        "ms": 304.2
+      },
+      {
+        "frame": "analyze src/lib/recolor.js:128",
+        "ms": 284.6
+      },
+      {
+        "frame": "seamStrength src/lib/recolor.js:97",
+        "ms": 84
+      },
+      {
+        "frame": "addSeams src/lib/recolor.js:102",
+        "ms": 82.4
+      },
+      {
+        "frame": "update_reaction node_modules/svelte/src/internal/client/runtime.js:220",
+        "ms": 36.6
+      },
+      {
+        "frame": "#_ node_modules/svelte/src/internal/client/reactivity/batch.js:329",
+        "ms": 36.6
+      },
+      {
+        "frame": "flush node_modules/svelte/src/internal/client/reactivity/batch.js:668",
+        "ms": 36.6
+      },
+      {
+        "frame": "queue_micro_task node_modules/svelte/src/internal/client/reactivity/batch.js:920",
+        "ms": 36.6
+      },
+      {
+        "frame": "run_all node_modules/svelte/src/internal/shared/utils.js:45",
+        "ms": 36.6
+      },
+      {
+        "frame": "run_micro_tasks node_modules/svelte/src/internal/client/dom/task.js:7",
+        "ms": 36.6
+      },
+      {
+        "frame": "(anonymous) node_modules/svelte/src/internal/client/dom/task.js:19",
+        "ms": 36.6
+      },
+      {
+        "frame": "#v node_modules/svelte/src/internal/client/reactivity/batch.js:493",
+        "ms": 30
+      }
+    ]
+  }
+]

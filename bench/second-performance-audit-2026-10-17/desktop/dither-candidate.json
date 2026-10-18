@@ -1,0 +1,89 @@
+{
+ "hypothesis": "mixturePlan pair-mixture Oklab cache per ordered (ai,bi,weight); bounded 4096 pairs per job, else direct compute",
+ "cases": 108,
+ "mismatches": 0,
+ "exact": true,
+ "note": "Node, host shared with another agent: timings indicative only; not a browser or phone measurement",
+ "rows": [
+  {
+   "image": "entropy512",
+   "palette": "res64",
+   "dither": "2x2",
+   "metric": "oklab",
+   "strength": 50,
+   "baseMedianMs": 208.4,
+   "candMedianMs": 182.8,
+   "diffPixels": 0
+  },
+  {
+   "image": "entropy512",
+   "palette": "res64",
+   "dither": "2x2",
+   "metric": "rgb",
+   "strength": 50,
+   "baseMedianMs": 213,
+   "candMedianMs": 188.3,
+   "diffPixels": 0
+  },
+  {
+   "image": "entropy512",
+   "palette": "res64",
+   "dither": "4x4",
+   "metric": "oklab",
+   "strength": 50,
+   "baseMedianMs": 228.2,
+   "candMedianMs": 193,
+   "diffPixels": 0
+  },
+  {
+   "image": "entropy512",
+   "palette": "res64",
+   "dither": "4x4",
+   "metric": "rgb",
+   "strength": 50,
+   "baseMedianMs": 233,
+   "candMedianMs": 196.8,
+   "diffPixels": 0
+  },
+  {
+   "image": "entropy512",
+   "palette": "res64",
+   "dither": "8x8",
+   "metric": "oklab",
+   "strength": 50,
+   "baseMedianMs": 232.1,
+   "candMedianMs": 194.3,
+   "diffPixels": 0
+  },
+  {
+   "image": "entropy512",
+   "palette": "res64",
+   "dither": "8x8",
+   "metric": "rgb",
+   "strength": 50,
+   "baseMedianMs": 233.3,
+   "candMedianMs": 201.5,
+   "diffPixels": 0
+  },
+  {
+   "image": "sheet1024",
+   "palette": "res64",
+   "dither": "4x4",
+   "metric": "oklab",
+   "strength": 50,
+   "baseMedianMs": 11,
+   "candMedianMs": 11,
+   "diffPixels": 0
+  },
+  {
+   "image": "sheet1024",
+   "palette": "res64",
+   "dither": "4x4",
+   "metric": "rgb",
+   "strength": 50,
+   "baseMedianMs": 11,
+   "candMedianMs": 10.5,
+   "diffPixels": 0
+  }
+ ]
+}

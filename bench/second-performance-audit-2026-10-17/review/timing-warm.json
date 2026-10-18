@@ -1,0 +1,613 @@
+{
+ "node": "v25.0.0",
+ "runs": 9,
+ "at": "2026-10-18T06:19:13.205Z",
+ "results": [
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "iconOf auto",
+   "batch": 1,
+   "median": {
+    "original": 38.0458,
+    "candidate": 52.6985
+   },
+   "min": {
+    "original": 35.4827,
+    "candidate": 29.1407
+   },
+   "deltaMs": 14.6527,
+   "change": "38.5%"
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "iconOf keep",
+   "batch": 1,
+   "median": {
+    "original": 35.157,
+    "candidate": 29.264
+   },
+   "min": {
+    "original": 34.0277,
+    "candidate": 28.5102
+   },
+   "deltaMs": -5.893,
+   "change": "-16.8%"
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "iconOf trim",
+   "batch": 1,
+   "median": {
+    "original": 36.8055,
+    "candidate": 35.2794
+   },
+   "min": {
+    "original": 35.6371,
+    "candidate": 31.9031
+   },
+   "deltaMs": -1.5261,
+   "change": "-4.1%"
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "spritesOf",
+   "batch": 1,
+   "median": {
+    "original": 11.3147,
+    "candidate": 8.2783
+   },
+   "min": {
+    "original": 10.8485,
+    "candidate": 8.051
+   },
+   "deltaMs": -3.0364,
+   "change": "-26.8%"
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "analyze luma",
+   "batch": 1,
+   "median": {
+    "original": 10.1107,
+    "seams": 7.3921,
+    "candidate": 7.4105
+   },
+   "min": {
+    "original": 10.0232,
+    "seams": 7.2758,
+    "candidate": 7.2716
+   },
+   "deltaMs": -2.7002,
+   "change": "-26.7%"
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "analyze value",
+   "batch": 1,
+   "median": {
+    "original": 12.864,
+    "seams": 9.847,
+    "candidate": 7.7493
+   },
+   "min": {
+    "original": 12.4238,
+    "seams": 9.5877,
+    "candidate": 7.6886
+   },
+   "deltaMs": -5.1147,
+   "change": "-39.8%"
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "analyze green",
+   "batch": 1,
+   "median": {
+    "original": 12.3564,
+    "seams": 8.6092,
+    "candidate": 7.2605
+   },
+   "min": {
+    "original": 12.0116,
+    "seams": 8.4228,
+    "candidate": 7.0584
+   },
+   "deltaMs": -5.0959,
+   "change": "-41.2%"
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "iconOf auto",
+   "batch": 1,
+   "median": {
+    "original": 142.0549,
+    "candidate": 116.4963
+   },
+   "min": {
+    "original": 137.216,
+    "candidate": 113.9767
+   },
+   "deltaMs": -25.5586,
+   "change": "-18.0%"
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "iconOf keep",
+   "batch": 1,
+   "median": {
+    "original": 136.117,
+    "candidate": 114.8608
+   },
+   "min": {
+    "original": 134.9316,
+    "candidate": 113.3338
+   },
+   "deltaMs": -21.2562,
+   "change": "-15.6%"
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "iconOf trim",
+   "batch": 1,
+   "median": {
+    "original": 142.8449,
+    "candidate": 127.6995
+   },
+   "min": {
+    "original": 140.4107,
+    "candidate": 126.5239
+   },
+   "deltaMs": -15.1454,
+   "change": "-10.6%"
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "spritesOf",
+   "batch": 1,
+   "median": {
+    "original": 47.5339,
+    "candidate": 33.4639
+   },
+   "min": {
+    "original": 44.703,
+    "candidate": 32.6072
+   },
+   "deltaMs": -14.07,
+   "change": "-29.6%"
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "analyze luma",
+   "batch": 1,
+   "median": {
+    "original": 39.5616,
+    "seams": 28.0779,
+    "candidate": 35.2053
+   },
+   "min": {
+    "original": 37.3389,
+    "seams": 26.6084,
+    "candidate": 29.5632
+   },
+   "deltaMs": -4.3563,
+   "change": "-11.0%"
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "analyze value",
+   "batch": 1,
+   "median": {
+    "original": 46.6007,
+    "seams": 34.8408,
+    "candidate": 28.1497
+   },
+   "min": {
+    "original": 44.0375,
+    "seams": 33.0778,
+    "candidate": 26.7879
+   },
+   "deltaMs": -18.451,
+   "change": "-39.6%"
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "analyze green",
+   "batch": 1,
+   "median": {
+    "original": 47.3396,
+    "seams": 35.8619,
+    "candidate": 30.6404
+   },
+   "min": {
+    "original": 44.6786,
+    "seams": 33.4276,
+    "candidate": 28.6839
+   },
+   "deltaMs": -16.6992,
+   "change": "-35.3%"
+  },
+  {
+   "file": "kenney-motion-128.gif",
+   "task": "unify seams",
+   "batch": 1,
+   "median": {
+    "original": 2.0403,
+    "seams": 0.6305,
+    "candidate": 0.5284
+   },
+   "min": {
+    "original": 1.9719,
+    "seams": 0.5109,
+    "candidate": 0.5039
+   },
+   "deltaMs": -1.5119,
+   "change": "-74.1%"
+  },
+  {
+   "file": "kenney-motion-256.gif",
+   "task": "unify seams",
+   "batch": 1,
+   "median": {
+    "original": 11.854,
+    "seams": 2.6611,
+    "candidate": 2.6801
+   },
+   "min": {
+    "original": 11.5533,
+    "seams": 2.6334,
+    "candidate": 2.6282
+   },
+   "deltaMs": -9.1739,
+   "change": "-77.4%"
+  },
+  {
+   "file": "real-magic.gif",
+   "task": "unify seams",
+   "batch": 200,
+   "median": {
+    "original": 0.032,
+    "seams": 0.0164,
+    "candidate": 0.0166
+   },
+   "min": {
+    "original": 0.0318,
+    "seams": 0.016,
+    "candidate": 0.0159
+   },
+   "deltaMs": -0.0154,
+   "change": "-48.1%"
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "iconOf auto",
+   "batch": 500,
+   "median": {
+    "original": 0.0783,
+    "candidate": 0.0605
+   },
+   "min": {
+    "original": 0.0732,
+    "candidate": 0.0506
+   },
+   "deltaMs": -0.0178,
+   "change": "-22.7%"
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "iconOf keep",
+   "batch": 500,
+   "median": {
+    "original": 0.0744,
+    "candidate": 0.0525
+   },
+   "min": {
+    "original": 0.0714,
+    "candidate": 0.0496
+   },
+   "deltaMs": -0.0219,
+   "change": "-29.4%"
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "iconOf trim",
+   "batch": 500,
+   "median": {
+    "original": 0.0177,
+    "candidate": 0.0174
+   },
+   "min": {
+    "original": 0.0169,
+    "candidate": 0.0157
+   },
+   "deltaMs": -0.0003,
+   "change": "-1.7%"
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "spritesOf",
+   "batch": 500,
+   "median": {
+    "original": 0.0074,
+    "candidate": 0.0062
+   },
+   "min": {
+    "original": 0.0068,
+    "candidate": 0.0061
+   },
+   "deltaMs": -0.0012,
+   "change": "-16.2%"
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "analyze luma",
+   "batch": 500,
+   "median": {
+    "original": 0.0079,
+    "seams": 0.0067,
+    "candidate": 0.0072
+   },
+   "min": {
+    "original": 0.0078,
+    "seams": 0.0066,
+    "candidate": 0.007
+   },
+   "deltaMs": -0.0007,
+   "change": "-8.9%"
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "analyze value",
+   "batch": 500,
+   "median": {
+    "original": 0.0087,
+    "seams": 0.0075,
+    "candidate": 0.007
+   },
+   "min": {
+    "original": 0.0086,
+    "seams": 0.0074,
+    "candidate": 0.0068
+   },
+   "deltaMs": -0.0017,
+   "change": "-19.5%"
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "analyze green",
+   "batch": 500,
+   "median": {
+    "original": 0.0087,
+    "seams": 0.0076,
+    "candidate": 0.0071
+   },
+   "min": {
+    "original": 0.0087,
+    "seams": 0.0075,
+    "candidate": 0.007
+   },
+   "deltaMs": -0.0016,
+   "change": "-18.4%"
+  },
+  {
+   "file": "platformer-pilot.png",
+   "task": "iconOf auto",
+   "batch": 500,
+   "median": {
+    "original": 0.1539,
+    "candidate": 0.1051
+   },
+   "min": {
+    "original": 0.1466,
+    "candidate": 0.1021
+   },
+   "deltaMs": -0.0488,
+   "change": "-31.7%"
+  },
+  {
+   "file": "platformer-pilot.png",
+   "task": "iconOf keep",
+   "batch": 500,
+   "median": {
+    "original": 0.1565,
+    "candidate": 0.1108
+   },
+   "min": {
+    "original": 0.142,
+    "candidate": 0.0998
+   },
+   "deltaMs": -0.0457,
+   "change": "-29.2%"
+  },
+  {
+   "file": "platformer-pilot.png",
+   "task": "iconOf trim",
+   "batch": 500,
+   "median": {
+    "original": 0.0357,
+    "candidate": 0.0323
+   },
+   "min": {
+    "original": 0.0345,
+    "candidate": 0.0308
+   },
+   "deltaMs": -0.0034,
+   "change": "-9.5%"
+  },
+  {
+   "file": "platformer-pilot.png",
+   "task": "spritesOf",
+   "batch": 500,
+   "median": {
+    "original": 0.0123,
+    "candidate": 0.0099
+   },
+   "min": {
+    "original": 0.012,
+    "candidate": 0.0097
+   },
+   "deltaMs": -0.0024,
+   "change": "-19.5%"
+  },
+  {
+   "file": "platformer-pilot.png",
+   "task": "analyze luma",
+   "batch": 500,
+   "median": {
+    "original": 0.011,
+    "seams": 0.0093,
+    "candidate": 0.0097
+   },
+   "min": {
+    "original": 0.0108,
+    "seams": 0.009,
+    "candidate": 0.0094
+   },
+   "deltaMs": -0.0013,
+   "change": "-11.8%"
+  },
+  {
+   "file": "platformer-pilot.png",
+   "task": "analyze value",
+   "batch": 500,
+   "median": {
+    "original": 0.0121,
+    "seams": 0.0104,
+    "candidate": 0.0091
+   },
+   "min": {
+    "original": 0.012,
+    "seams": 0.0102,
+    "candidate": 0.009
+   },
+   "deltaMs": -0.003,
+   "change": "-24.8%"
+  },
+  {
+   "file": "platformer-pilot.png",
+   "task": "analyze green",
+   "batch": 500,
+   "median": {
+    "original": 0.0127,
+    "seams": 0.0109,
+    "candidate": 0.0094
+   },
+   "min": {
+    "original": 0.0125,
+    "seams": 0.0107,
+    "candidate": 0.0093
+   },
+   "deltaMs": -0.0033,
+   "change": "-26.0%"
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "iconOf auto",
+   "batch": 500,
+   "median": {
+    "original": 0.0355,
+    "candidate": 0.0292
+   },
+   "min": {
+    "original": 0.0348,
+    "candidate": 0.0243
+   },
+   "deltaMs": -0.0063,
+   "change": "-17.7%"
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "iconOf keep",
+   "batch": 500,
+   "median": {
+    "original": 0.0349,
+    "candidate": 0.0257
+   },
+   "min": {
+    "original": 0.034,
+    "candidate": 0.0241
+   },
+   "deltaMs": -0.0092,
+   "change": "-26.4%"
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "iconOf trim",
+   "batch": 500,
+   "median": {
+    "original": 0.0126,
+    "candidate": 0.0116
+   },
+   "min": {
+    "original": 0.0118,
+    "candidate": 0.0107
+   },
+   "deltaMs": -0.001,
+   "change": "-7.9%"
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "spritesOf",
+   "batch": 500,
+   "median": {
+    "original": 0.0058,
+    "candidate": 0.0055
+   },
+   "min": {
+    "original": 0.0056,
+    "candidate": 0.0053
+   },
+   "deltaMs": -0.0003,
+   "change": "-5.2%"
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "analyze luma",
+   "batch": 500,
+   "median": {
+    "original": 0.0109,
+    "seams": 0.0073,
+    "candidate": 0.0076
+   },
+   "min": {
+    "original": 0.0104,
+    "seams": 0.0065,
+    "candidate": 0.0073
+   },
+   "deltaMs": -0.0033,
+   "change": "-30.3%"
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "analyze value",
+   "batch": 500,
+   "median": {
+    "original": 0.0119,
+    "seams": 0.0084,
+    "candidate": 0.0077
+   },
+   "min": {
+    "original": 0.0116,
+    "seams": 0.0082,
+    "candidate": 0.007
+   },
+   "deltaMs": -0.0042,
+   "change": "-35.3%"
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "analyze green",
+   "batch": 500,
+   "median": {
+    "original": 0.0112,
+    "seams": 0.0078,
+    "candidate": 0.0072
+   },
+   "min": {
+    "original": 0.011,
+    "seams": 0.0075,
+    "candidate": 0.0069
+   },
+   "deltaMs": -0.004,
+   "change": "-35.7%"
+  }
+ ]
+}

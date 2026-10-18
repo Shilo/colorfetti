@@ -1,0 +1,655 @@
+{
+ "node": "v25.0.0",
+ "repeats": 7,
+ "at": "2026-10-18T06:19:44.136Z",
+ "results": [
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "iconOf auto",
+   "original": 98.633,
+   "candidate": 92.182,
+   "delta": -6.451,
+   "samples": {
+    "original": [
+     82.403,
+     98.633,
+     119.106,
+     88.78,
+     105.376,
+     80.688,
+     112.725
+    ],
+    "candidate": [
+     65.109,
+     68.93,
+     105.567,
+     108.312,
+     100.977,
+     92.182,
+     67.085
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "iconOf trim",
+   "original": 81.983,
+   "candidate": 84.86,
+   "delta": 2.877,
+   "samples": {
+    "original": [
+     81.528,
+     86.381,
+     81.624,
+     86.128,
+     74.947,
+     81.983,
+     98.77
+    ],
+    "candidate": [
+     74.442,
+     84.86,
+     80.373,
+     83.226,
+     96.658,
+     97.047,
+     109.315
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "spritesOf",
+   "original": 20.557,
+   "candidate": 12.953,
+   "delta": -7.604,
+   "samples": {
+    "original": [
+     20.557,
+     21.237,
+     20.68,
+     20.377,
+     20.369,
+     20.923,
+     20.372
+    ],
+    "candidate": [
+     12.926,
+     17.761,
+     18.02,
+     13.057,
+     12.824,
+     12.896,
+     12.953
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "analyze luma",
+   "original": 18.552,
+   "candidate": 14.907,
+   "delta": -3.645,
+   "samples": {
+    "original": [
+     18.432,
+     17.302,
+     18.354,
+     21.936,
+     18.911,
+     19.143,
+     18.552
+    ],
+    "candidate": [
+     16.073,
+     13.038,
+     13.547,
+     13.472,
+     14.907,
+     15.39,
+     16.898
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "analyze value",
+   "original": 23.407,
+   "candidate": 13.628,
+   "delta": -9.779,
+   "samples": {
+    "original": [
+     23.592,
+     21.416,
+     23.021,
+     23.211,
+     23.423,
+     23.407,
+     24.089
+    ],
+    "candidate": [
+     13.043,
+     13.527,
+     13.972,
+     14.93,
+     15.268,
+     13.554,
+     13.628
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-1024.png",
+   "task": "analyze green",
+   "original": 21.577,
+   "candidate": 14.114,
+   "delta": -7.463,
+   "samples": {
+    "original": [
+     21.577,
+     23.395,
+     21.348,
+     24.071,
+     21.819,
+     20.994,
+     21.037
+    ],
+    "candidate": [
+     13.748,
+     13.413,
+     14.937,
+     14.114,
+     16.232,
+     15.508,
+     13.632
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "iconOf auto",
+   "original": 222.053,
+   "candidate": 192.858,
+   "delta": -29.195,
+   "samples": {
+    "original": [
+     223.151,
+     238.793,
+     226.213,
+     210.622,
+     222.053,
+     211.906,
+     189.297
+    ],
+    "candidate": [
+     201.954,
+     203.087,
+     192.858,
+     200.72,
+     190.637,
+     181.18,
+     182.739
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "iconOf trim",
+   "original": 238.632,
+   "candidate": 211.369,
+   "delta": -27.263,
+   "samples": {
+    "original": [
+     250.965,
+     241.937,
+     235.334,
+     213.944,
+     230.16,
+     239.413,
+     238.632
+    ],
+    "candidate": [
+     214.801,
+     214.358,
+     211.162,
+     202.557,
+     211.369,
+     216.342,
+     210.413
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "spritesOf",
+   "original": 55.794,
+   "candidate": 44.158,
+   "delta": -11.636,
+   "samples": {
+    "original": [
+     57.858,
+     55.321,
+     56.765,
+     55.556,
+     55.794,
+     55.93,
+     55.217
+    ],
+    "candidate": [
+     45.102,
+     44.189,
+     42.142,
+     42.443,
+     44.618,
+     44.158,
+     43.364
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "analyze luma",
+   "original": 47.736,
+   "candidate": 38.176,
+   "delta": -9.56,
+   "samples": {
+    "original": [
+     48.539,
+     51.672,
+     47.096,
+     46.426,
+     47.451,
+     47.754,
+     47.736
+    ],
+    "candidate": [
+     38.353,
+     40,
+     38.176,
+     37.698,
+     39.896,
+     36.233,
+     37.432
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "analyze value",
+   "original": 62.48,
+   "candidate": 38.889,
+   "delta": -23.591,
+   "samples": {
+    "original": [
+     61.548,
+     61.153,
+     60.648,
+     64.818,
+     64.684,
+     62.48,
+     64.591
+    ],
+    "candidate": [
+     38.889,
+     38.133,
+     38.075,
+     36.515,
+     39.554,
+     39.532,
+     39.301
+    ]
+   }
+  },
+  {
+   "file": "kenney-sheet-2048.png",
+   "task": "analyze green",
+   "original": 65.587,
+   "candidate": 42.271,
+   "delta": -23.316,
+   "samples": {
+    "original": [
+     65.587,
+     64.699,
+     63.163,
+     65.67,
+     67.694,
+     76.623,
+     63.447
+    ],
+    "candidate": [
+     40.61,
+     40.175,
+     46.197,
+     45.161,
+     39.748,
+     44.449,
+     42.271
+    ]
+   }
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "iconOf auto",
+   "original": 2.142,
+   "candidate": 1.904,
+   "delta": -0.238,
+   "samples": {
+    "original": [
+     2.229,
+     2.449,
+     2.185,
+     2.142,
+     2.117,
+     2.035,
+     2.117
+    ],
+    "candidate": [
+     1.869,
+     1.92,
+     1.902,
+     2.193,
+     1.904,
+     1.828,
+     2.004
+    ]
+   }
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "iconOf trim",
+   "original": 1.068,
+   "candidate": 1.096,
+   "delta": 0.028,
+   "samples": {
+    "original": [
+     1.183,
+     1.068,
+     1.043,
+     1.111,
+     1.045,
+     1.048,
+     1.437
+    ],
+    "candidate": [
+     1.066,
+     1.062,
+     1.069,
+     1.149,
+     1.599,
+     1.208,
+     1.096
+    ]
+   }
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "spritesOf",
+   "original": 0.279,
+   "candidate": 0.259,
+   "delta": -0.02,
+   "samples": {
+    "original": [
+     0.284,
+     0.282,
+     0.272,
+     0.267,
+     0.462,
+     0.267,
+     0.279
+    ],
+    "candidate": [
+     0.266,
+     0.261,
+     0.271,
+     0.251,
+     0.259,
+     0.25,
+     0.247
+    ]
+   }
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "analyze luma",
+   "original": 0.373,
+   "candidate": 0.38,
+   "delta": 0.007,
+   "samples": {
+    "original": [
+     0.372,
+     0.37,
+     0.365,
+     0.374,
+     0.378,
+     0.373,
+     0.381
+    ],
+    "candidate": [
+     0.375,
+     0.39,
+     0.371,
+     0.372,
+     0.38,
+     0.39,
+     0.386
+    ]
+   }
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "analyze value",
+   "original": 0.412,
+   "candidate": 0.389,
+   "delta": -0.023,
+   "samples": {
+    "original": [
+     0.418,
+     0.397,
+     0.485,
+     0.407,
+     0.412,
+     0.419,
+     0.401
+    ],
+    "candidate": [
+     0.387,
+     0.402,
+     0.389,
+     0.38,
+     0.393,
+     0.395,
+     0.389
+    ]
+   }
+  },
+  {
+   "file": "dungeon-knight.png",
+   "task": "analyze green",
+   "original": 0.405,
+   "candidate": 0.391,
+   "delta": -0.014,
+   "samples": {
+    "original": [
+     0.397,
+     0.405,
+     0.406,
+     0.421,
+     0.398,
+     0.394,
+     0.428
+    ],
+    "candidate": [
+     0.386,
+     0.385,
+     0.391,
+     0.402,
+     0.398,
+     0.386,
+     0.413
+    ]
+   }
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "iconOf auto",
+   "original": 1.434,
+   "candidate": 1.366,
+   "delta": -0.068,
+   "samples": {
+    "original": [
+     1.434,
+     1.429,
+     1.448,
+     1.562,
+     1.46,
+     1.413,
+     1.419
+    ],
+    "candidate": [
+     1.344,
+     1.366,
+     1.345,
+     1.451,
+     1.342,
+     1.515,
+     1.378
+    ]
+   }
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "iconOf trim",
+   "original": 0.922,
+   "candidate": 0.917,
+   "delta": -0.005,
+   "samples": {
+    "original": [
+     0.912,
+     0.922,
+     0.901,
+     0.965,
+     0.894,
+     0.976,
+     0.938
+    ],
+    "candidate": [
+     0.943,
+     0.915,
+     0.917,
+     0.922,
+     0.955,
+     0.86,
+     0.9
+    ]
+   }
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "spritesOf",
+   "original": 0.226,
+   "candidate": 0.221,
+   "delta": -0.005,
+   "samples": {
+    "original": [
+     0.237,
+     0.226,
+     0.224,
+     0.211,
+     0.222,
+     0.227,
+     0.232
+    ],
+    "candidate": [
+     0.219,
+     0.231,
+     0.212,
+     0.221,
+     0.223,
+     0.225,
+     0.216
+    ]
+   }
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "analyze luma",
+   "original": 0.424,
+   "candidate": 0.39,
+   "delta": -0.034,
+   "samples": {
+    "original": [
+     0.434,
+     0.424,
+     0.396,
+     0.423,
+     0.423,
+     0.57,
+     0.434
+    ],
+    "candidate": [
+     0.372,
+     0.378,
+     0.39,
+     0.376,
+     0.426,
+     0.414,
+     0.414
+    ]
+   }
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "analyze value",
+   "original": 0.446,
+   "candidate": 0.371,
+   "delta": -0.075,
+   "samples": {
+    "original": [
+     0.446,
+     0.442,
+     0.465,
+     0.431,
+     0.434,
+     0.462,
+     0.465
+    ],
+    "candidate": [
+     0.367,
+     0.393,
+     0.382,
+     0.363,
+     0.371,
+     0.408,
+     0.367
+    ]
+   }
+  },
+  {
+   "file": "real-magic.gif.0",
+   "task": "analyze green",
+   "original": 0.448,
+   "candidate": 0.369,
+   "delta": -0.079,
+   "samples": {
+    "original": [
+     0.639,
+     0.435,
+     0.458,
+     0.448,
+     0.443,
+     0.466,
+     0.447
+    ],
+    "candidate": [
+     0.384,
+     0.369,
+     0.364,
+     0.44,
+     0.422,
+     0.369,
+     0.358
+    ]
+   }
+  }
+ ]
+}

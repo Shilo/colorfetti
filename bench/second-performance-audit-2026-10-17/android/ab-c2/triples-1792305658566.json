@@ -1,0 +1,2551 @@
+{
+  "mode": "triples",
+  "stamp": 1792305658566,
+  "order": [
+    "A",
+    "B1",
+    "B2",
+    "B2",
+    "B1",
+    "A",
+    "B1",
+    "A",
+    "B2",
+    "B2",
+    "A",
+    "B1",
+    "A",
+    "B2",
+    "B1",
+    "B1",
+    "B2",
+    "A",
+    "A",
+    "B1",
+    "B2"
+  ],
+  "urls": {
+    "A": "http://localhost:5381/",
+    "B1": "http://localhost:5383/",
+    "B2": "http://localhost:5384/"
+  },
+  "started": "2026-10-18T06:40:58.566Z",
+  "trials": [
+    {
+      "variant": "A",
+      "triple": 0,
+      "slot": 0,
+      "position": 0,
+      "tempC": 35.6,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 142.89899999999997,
+          "startedAt": 290.10000002384186,
+          "elapsedMs": 325.5999999642372,
+          "maxLongTaskMs": 60,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 692.583,
+          "startedAt": 620.5,
+          "elapsedMs": 1008.3000000119209,
+          "maxLongTaskMs": 445,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 97.693,
+          "startedAt": 233.69999998807907,
+          "elapsedMs": 197.89999997615814,
+          "maxLongTaskMs": 51,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 432.884,
+          "startedAt": 437.80000001192093,
+          "elapsedMs": 686.1999999880791,
+          "maxLongTaskMs": 253,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 143.43699999999998,
+          "startedAt": 294.69999998807907,
+          "elapsedMs": 357.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 468.091,
+          "startedAt": 861.0999999642372,
+          "elapsedMs": 807.5,
+          "maxLongTaskMs": 116,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 93.35199999999999,
+          "startedAt": 260.80000001192093,
+          "elapsedMs": 173.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 195.30000001192093,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 123.17600000000003,
+          "startedAt": 269.5,
+          "elapsedMs": 238.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 259,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 140.368,
+          "startedAt": 324.7999999523163,
+          "elapsedMs": 369.2000000476837,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 384.9000000357628,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1288.532,
+          "startedAt": 319.30000001192093,
+          "elapsedMs": 4420.300000011921,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 138.092,
+          "startedAt": 277.39999997615814,
+          "elapsedMs": 414,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "triple": 0,
+      "slot": 1,
+      "position": 1,
+      "tempC": 35.6,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 161.068,
+          "startedAt": 289.30000001192093,
+          "elapsedMs": 356.80000001192093,
+          "maxLongTaskMs": 63,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 673.8679999999999,
+          "startedAt": 666,
+          "elapsedMs": 948.6000000238419,
+          "maxLongTaskMs": 435,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 106.985,
+          "startedAt": 324.69999998807907,
+          "elapsedMs": 215.69999998807907,
+          "maxLongTaskMs": 60,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 455.962,
+          "startedAt": 553.3999999761581,
+          "elapsedMs": 724.5,
+          "maxLongTaskMs": 238,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 117.38000000000001,
+          "startedAt": 259.9000000357628,
+          "elapsedMs": 302.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 310.48900000000003,
+          "startedAt": 791.2000000476837,
+          "elapsedMs": 543.3999999761581,
+          "maxLongTaskMs": 79,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 106.901,
+          "startedAt": 245.5,
+          "elapsedMs": 172.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 200.9000000357628,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 90.335,
+          "startedAt": 254,
+          "elapsedMs": 203,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 213.4000000357628,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 168.54000000000002,
+          "startedAt": 400.7000000476837,
+          "elapsedMs": 386.7999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 399,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1325.917,
+          "startedAt": 348.10000002384186,
+          "elapsedMs": 4590.300000011921,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 136.83499999999998,
+          "startedAt": 326.5,
+          "elapsedMs": 408.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B2",
+      "triple": 0,
+      "slot": 2,
+      "position": 2,
+      "tempC": 35.7,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 191.79200000000003,
+          "startedAt": 334.10000002384186,
+          "elapsedMs": 409.19999998807907,
+          "maxLongTaskMs": 69,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 620.789,
+          "startedAt": 748.5,
+          "elapsedMs": 898.1000000238419,
+          "maxLongTaskMs": 416,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 91.58599999999998,
+          "startedAt": 226.30000001192093,
+          "elapsedMs": 215.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 417.944,
+          "startedAt": 452.19999998807907,
+          "elapsedMs": 710.3000000119209,
+          "maxLongTaskMs": 208,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 128.41200000000003,
+          "startedAt": 253.30000001192093,
+          "elapsedMs": 306.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 418.3330000000001,
+          "startedAt": 765.5,
+          "elapsedMs": 638.6999999880791,
+          "maxLongTaskMs": 111,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 111.846,
+          "startedAt": 240.5,
+          "elapsedMs": 160.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 172.30000001192093,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 96.83699999999999,
+          "startedAt": 200.60000002384186,
+          "elapsedMs": 202.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 223.0999999642372,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 138.645,
+          "startedAt": 278.2999999523163,
+          "elapsedMs": 316.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 326.60000002384186,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1126.5870000000002,
+          "startedAt": 260.5,
+          "elapsedMs": 3863.399999976158,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 170.85699999999997,
+          "startedAt": 302.60000002384186,
+          "elapsedMs": 453.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B2",
+      "triple": 1,
+      "slot": 3,
+      "position": 0,
+      "tempC": 35.6,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 155.518,
+          "startedAt": 259,
+          "elapsedMs": 326.30000001192093,
+          "maxLongTaskMs": 58,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 592.895,
+          "startedAt": 589.8999999761581,
+          "elapsedMs": 883.8000000119209,
+          "maxLongTaskMs": 343,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 93.35100000000001,
+          "startedAt": 218,
+          "elapsedMs": 209.4000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 321.171,
+          "startedAt": 436,
+          "elapsedMs": 596.1000000238419,
+          "maxLongTaskMs": 130,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 136.446,
+          "startedAt": 271.0999999642372,
+          "elapsedMs": 348.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 412.558,
+          "startedAt": 787.5999999642372,
+          "elapsedMs": 653.3000000119209,
+          "maxLongTaskMs": 120,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 95.079,
+          "startedAt": 255.19999998807907,
+          "elapsedMs": 169,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 195.30000001192093,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 108.96800000000003,
+          "startedAt": 246.9000000357628,
+          "elapsedMs": 223.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 240.30000001192093,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 174.57899999999998,
+          "startedAt": 415.60000002384186,
+          "elapsedMs": 417.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 436.80000001192093,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1308.859,
+          "startedAt": 359.89999997615814,
+          "elapsedMs": 4464.600000023842,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 142.463,
+          "startedAt": 295.10000002384186,
+          "elapsedMs": 395.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "triple": 1,
+      "slot": 4,
+      "position": 1,
+      "tempC": 35.7,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 156.994,
+          "startedAt": 272.2999999523163,
+          "elapsedMs": 329.7000000476837,
+          "maxLongTaskMs": 59,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 632.159,
+          "startedAt": 610.0999999642372,
+          "elapsedMs": 920.1000000238419,
+          "maxLongTaskMs": 385,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 119.11099999999996,
+          "startedAt": 269.9000000357628,
+          "elapsedMs": 248.39999997615814,
+          "maxLongTaskMs": 73,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 433.67199999999997,
+          "startedAt": 525.9000000357628,
+          "elapsedMs": 675.8999999761581,
+          "maxLongTaskMs": 237,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 134.579,
+          "startedAt": 264.7000000476837,
+          "elapsedMs": 323.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 315.945,
+          "startedAt": 788.3000000119209,
+          "elapsedMs": 531.8000000119209,
+          "maxLongTaskMs": 82,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 104.03299999999999,
+          "startedAt": 266.4000000357628,
+          "elapsedMs": 167.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 184.29999995231628,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 104.51600000000002,
+          "startedAt": 260.10000002384186,
+          "elapsedMs": 235.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 254.79999995231628,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 153.15200000000002,
+          "startedAt": 314.69999998807907,
+          "elapsedMs": 347.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 358.60000002384186,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1275.572,
+          "startedAt": 310.7999999523163,
+          "elapsedMs": 4589.600000023842,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 168.15800000000002,
+          "startedAt": 285.69999998807907,
+          "elapsedMs": 444,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 1,
+      "slot": 5,
+      "position": 2,
+      "tempC": 35.7,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 150.59200000000004,
+          "startedAt": 268.80000001192093,
+          "elapsedMs": 337.80000001192093,
+          "maxLongTaskMs": 60,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 742.4079999999999,
+          "startedAt": 611.4000000357628,
+          "elapsedMs": 1056.7999999523163,
+          "maxLongTaskMs": 484,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 100.86300000000001,
+          "startedAt": 242.89999997615814,
+          "elapsedMs": 204.20000004768372,
+          "maxLongTaskMs": 52,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 382.50699999999995,
+          "startedAt": 452.89999997615814,
+          "elapsedMs": 631.6000000238419,
+          "maxLongTaskMs": 171,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 153.692,
+          "startedAt": 288,
+          "elapsedMs": 331.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 477.322,
+          "startedAt": 797.6999999880791,
+          "elapsedMs": 719.1000000238419,
+          "maxLongTaskMs": 130,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 141.237,
+          "startedAt": 238,
+          "elapsedMs": 201.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 234.30000001192093,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 127.664,
+          "startedAt": 281.5,
+          "elapsedMs": 262.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 279.4000000357628,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 150.246,
+          "startedAt": 292.7999999523163,
+          "elapsedMs": 363.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 382.2000000476837,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1368.954,
+          "startedAt": 324.19999998807907,
+          "elapsedMs": 4533.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 171.94400000000002,
+          "startedAt": 303.2000000476837,
+          "elapsedMs": 515.3999999761581,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "triple": 2,
+      "slot": 6,
+      "position": 0,
+      "tempC": 35.9,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 154.98899999999998,
+          "startedAt": 274,
+          "elapsedMs": 348,
+          "maxLongTaskMs": 65,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 732.9350000000001,
+          "startedAt": 628.1000000238419,
+          "elapsedMs": 1034.0999999642372,
+          "maxLongTaskMs": 482,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 120.37500000000001,
+          "startedAt": 288.69999998807907,
+          "elapsedMs": 281.19999998807907,
+          "maxLongTaskMs": 60,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 439.24600000000004,
+          "startedAt": 584.5999999642372,
+          "elapsedMs": 677.1000000238419,
+          "maxLongTaskMs": 206,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 133.89100000000002,
+          "startedAt": 265.80000001192093,
+          "elapsedMs": 348.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 415.2130000000001,
+          "startedAt": 784.6000000238419,
+          "elapsedMs": 612.5999999642372,
+          "maxLongTaskMs": 104,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 115.43199999999997,
+          "startedAt": 296.69999998807907,
+          "elapsedMs": 190.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 202.10000002384186,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 153.46200000000002,
+          "startedAt": 260.5999999642372,
+          "elapsedMs": 242.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 256.7000000476837,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 156.173,
+          "startedAt": 368,
+          "elapsedMs": 407.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 435.39999997615814,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1572.905,
+          "startedAt": 348.10000002384186,
+          "elapsedMs": 4922.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 191.116,
+          "startedAt": 341.89999997615814,
+          "elapsedMs": 563.8000000119209,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 2,
+      "slot": 7,
+      "position": 1,
+      "tempC": 36.1,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 213.21599999999998,
+          "startedAt": 350.89999997615814,
+          "elapsedMs": 444.80000001192093,
+          "maxLongTaskMs": 81,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 853.533,
+          "startedAt": 805,
+          "elapsedMs": 1149,
+          "maxLongTaskMs": 602,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 128.403,
+          "startedAt": 254.10000002384186,
+          "elapsedMs": 238.69999998807907,
+          "maxLongTaskMs": 69,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 494.239,
+          "startedAt": 499,
+          "elapsedMs": 745.6000000238419,
+          "maxLongTaskMs": 237,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 167.167,
+          "startedAt": 293.10000002384186,
+          "elapsedMs": 377.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 611.6850000000001,
+          "startedAt": 904,
+          "elapsedMs": 876.8000000119209,
+          "maxLongTaskMs": 169,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 116.54400000000001,
+          "startedAt": 285.80000001192093,
+          "elapsedMs": 201.39999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 229.89999997615814,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 163.00900000000001,
+          "startedAt": 288,
+          "elapsedMs": 304.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 320.60000002384186,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 206.279,
+          "startedAt": 351,
+          "elapsedMs": 453.7999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 472.19999998807907,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1623.061,
+          "startedAt": 385.69999998807907,
+          "elapsedMs": 4834.800000011921,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 190.852,
+          "startedAt": 360.30000001192093,
+          "elapsedMs": 538.8999999761581,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B2",
+      "triple": 2,
+      "slot": 8,
+      "position": 2,
+      "tempC": 36.1,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 236.441,
+          "startedAt": 397.60000002384186,
+          "elapsedMs": 458.39999997615814,
+          "maxLongTaskMs": 84,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 889.6959999999999,
+          "startedAt": 867.3000000119209,
+          "elapsedMs": 1285,
+          "maxLongTaskMs": 568,
+          "longtasks": 2
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 142.743,
+          "startedAt": 270.69999998807907,
+          "elapsedMs": 278.19999998807907,
+          "maxLongTaskMs": 84,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 489.171,
+          "startedAt": 554.5999999642372,
+          "elapsedMs": 739.1000000238419,
+          "maxLongTaskMs": 236,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 162.668,
+          "startedAt": 293.5999999642372,
+          "elapsedMs": 390,
+          "maxLongTaskMs": 50,
+          "longtasks": 1
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 630.3199999999999,
+          "startedAt": 912.0999999642372,
+          "elapsedMs": 954.2000000476837,
+          "maxLongTaskMs": 175,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 111.23800000000003,
+          "startedAt": 289.69999998807907,
+          "elapsedMs": 204.20000004768372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 229.5,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 164.89100000000002,
+          "startedAt": 274.10000002384186,
+          "elapsedMs": 315.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 335.89999997615814,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 204.936,
+          "startedAt": 332.30000001192093,
+          "elapsedMs": 459.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 507.2999999523163,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1650.7209999999998,
+          "startedAt": 405.0999999642372,
+          "elapsedMs": 5035.100000023842,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 192.93500000000003,
+          "startedAt": 417.4000000357628,
+          "elapsedMs": 537,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B2",
+      "triple": 3,
+      "slot": 9,
+      "position": 0,
+      "tempC": 36.1,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 212.01500000000001,
+          "startedAt": 320.39999997615814,
+          "elapsedMs": 443.80000001192093,
+          "maxLongTaskMs": 85,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 792.817,
+          "startedAt": 771.1999999880791,
+          "elapsedMs": 1120.3999999761581,
+          "maxLongTaskMs": 521,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 149.00000000000003,
+          "startedAt": 303.30000001192093,
+          "elapsedMs": 259.4000000357628,
+          "maxLongTaskMs": 83,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 433.024,
+          "startedAt": 578.7000000476837,
+          "elapsedMs": 682.6999999880791,
+          "maxLongTaskMs": 188,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 145.213,
+          "startedAt": 302.10000002384186,
+          "elapsedMs": 360.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 611.384,
+          "startedAt": 869.4000000357628,
+          "elapsedMs": 906.3999999761581,
+          "maxLongTaskMs": 168,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 127.627,
+          "startedAt": 334.80000001192093,
+          "elapsedMs": 225.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 289.5,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 113.63700000000001,
+          "startedAt": 297.19999998807907,
+          "elapsedMs": 272.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 325,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 215.444,
+          "startedAt": 368.19999998807907,
+          "elapsedMs": 436,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 451.30000001192093,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1606.816,
+          "startedAt": 412.5999999642372,
+          "elapsedMs": 4955.600000023842,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 170.55,
+          "startedAt": 329.69999998807907,
+          "elapsedMs": 490.7000000476837,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 3,
+      "slot": 10,
+      "position": 1,
+      "tempC": 36.1,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 241.531,
+          "startedAt": 402.7000000476837,
+          "elapsedMs": 511,
+          "maxLongTaskMs": 89,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 845.99,
+          "startedAt": 921.1000000238419,
+          "elapsedMs": 1153.300000011921,
+          "maxLongTaskMs": 574,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 125.44,
+          "startedAt": 270.89999997615814,
+          "elapsedMs": 241.5,
+          "maxLongTaskMs": 69,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 612.799,
+          "startedAt": 518.0999999642372,
+          "elapsedMs": 884.5,
+          "maxLongTaskMs": 320,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 148.76899999999998,
+          "startedAt": 309.19999998807907,
+          "elapsedMs": 368.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 635.1629999999999,
+          "startedAt": 898.3000000119209,
+          "elapsedMs": 930.5,
+          "maxLongTaskMs": 173,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 117.205,
+          "startedAt": 309.69999998807907,
+          "elapsedMs": 213.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 233.69999998807907,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 168.34199999999998,
+          "startedAt": 308.60000002384186,
+          "elapsedMs": 298.2999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 312,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 200.04700000000003,
+          "startedAt": 382.30000001192093,
+          "elapsedMs": 449.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 483.89999997615814,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1674.876,
+          "startedAt": 382,
+          "elapsedMs": 5259.100000023842,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 194.9,
+          "startedAt": 394,
+          "elapsedMs": 541.1999999880791,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "triple": 3,
+      "slot": 11,
+      "position": 2,
+      "tempC": 36.6,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 236.284,
+          "startedAt": 389.69999998807907,
+          "elapsedMs": 472.89999997615814,
+          "maxLongTaskMs": 78,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 869.054,
+          "startedAt": 871.5,
+          "elapsedMs": 1163.199999988079,
+          "maxLongTaskMs": 578,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 117.33600000000003,
+          "startedAt": 303.80000001192093,
+          "elapsedMs": 249.80000001192093,
+          "maxLongTaskMs": 64,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 587.385,
+          "startedAt": 565,
+          "elapsedMs": 864.7000000476837,
+          "maxLongTaskMs": 293,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 167.06199999999998,
+          "startedAt": 299.30000001192093,
+          "elapsedMs": 381.5,
+          "maxLongTaskMs": 55,
+          "longtasks": 1
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 456.17500000000007,
+          "startedAt": 874.8000000119209,
+          "elapsedMs": 811.5999999642372,
+          "maxLongTaskMs": 122,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 124.50500000000001,
+          "startedAt": 334,
+          "elapsedMs": 217.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 242.29999995231628,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 159.902,
+          "startedAt": 370.60000002384186,
+          "elapsedMs": 313.7999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 335,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 214.507,
+          "startedAt": 396.5,
+          "elapsedMs": 437.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 455.80000001192093,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1598.6939999999997,
+          "startedAt": 398.4000000357628,
+          "elapsedMs": 4863,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 195.022,
+          "startedAt": 379.19999998807907,
+          "elapsedMs": 507.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 4,
+      "slot": 12,
+      "position": 0,
+      "tempC": 36.6,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 192.75699999999998,
+          "startedAt": 316.4000000357628,
+          "elapsedMs": 404.69999998807907,
+          "maxLongTaskMs": 80,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 806.9580000000001,
+          "startedAt": 725.6999999880791,
+          "elapsedMs": 1103,
+          "maxLongTaskMs": 561,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 141.55700000000002,
+          "startedAt": 314.69999998807907,
+          "elapsedMs": 257,
+          "maxLongTaskMs": 81,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 439.511,
+          "startedAt": 579.3000000119209,
+          "elapsedMs": 701.3000000119209,
+          "maxLongTaskMs": 204,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 151.76000000000005,
+          "startedAt": 294.89999997615814,
+          "elapsedMs": 359.30000001192093,
+          "maxLongTaskMs": 50,
+          "longtasks": 1
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 566.514,
+          "startedAt": 864.6999999880791,
+          "elapsedMs": 886.0999999642372,
+          "maxLongTaskMs": 152,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 106.62099999999997,
+          "startedAt": 335.5,
+          "elapsedMs": 170.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 218.10000002384186,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 137.493,
+          "startedAt": 326.80000001192093,
+          "elapsedMs": 311,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 367.9000000357628,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 221.287,
+          "startedAt": 367.19999998807907,
+          "elapsedMs": 427.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 444.9000000357628,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1626.0410000000002,
+          "startedAt": 347.39999997615814,
+          "elapsedMs": 5065.199999988079,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 191.796,
+          "startedAt": 383.4000000357628,
+          "elapsedMs": 548.3999999761581,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B2",
+      "triple": 4,
+      "slot": 13,
+      "position": 1,
+      "tempC": 36.6,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 204.062,
+          "startedAt": 346.5,
+          "elapsedMs": 464.5999999642372,
+          "maxLongTaskMs": 72,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 757.203,
+          "startedAt": 826.5999999642372,
+          "elapsedMs": 1074.300000011921,
+          "maxLongTaskMs": 475,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 141.443,
+          "startedAt": 272.19999998807907,
+          "elapsedMs": 264.19999998807907,
+          "maxLongTaskMs": 82,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 578.2429999999999,
+          "startedAt": 541.1999999880791,
+          "elapsedMs": 842.1000000238419,
+          "maxLongTaskMs": 312,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 176.843,
+          "startedAt": 322.89999997615814,
+          "elapsedMs": 420.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 612.4669999999999,
+          "startedAt": 953.3000000119209,
+          "elapsedMs": 936.0999999642372,
+          "maxLongTaskMs": 167,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 112.50299999999999,
+          "startedAt": 293.10000002384186,
+          "elapsedMs": 198.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 237,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 159.85100000000003,
+          "startedAt": 324.19999998807907,
+          "elapsedMs": 279.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 289.69999998807907,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 180.72,
+          "startedAt": 346,
+          "elapsedMs": 425.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 441.69999998807907,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1616.819,
+          "startedAt": 333.9000000357628,
+          "elapsedMs": 4966.599999964237,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 192.10500000000002,
+          "startedAt": 370.80000001192093,
+          "elapsedMs": 584.6999999880791,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "triple": 4,
+      "slot": 14,
+      "position": 2,
+      "tempC": 36.6,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 227.069,
+          "startedAt": 398,
+          "elapsedMs": 431.5,
+          "maxLongTaskMs": 76,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 865.4540000000002,
+          "startedAt": 834.8000000119209,
+          "elapsedMs": 1199.5,
+          "maxLongTaskMs": 591,
+          "longtasks": 2
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 161.39000000000001,
+          "startedAt": 325.10000002384186,
+          "elapsedMs": 293.80000001192093,
+          "maxLongTaskMs": 96,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 481.189,
+          "startedAt": 632.9000000357628,
+          "elapsedMs": 763.3999999761581,
+          "maxLongTaskMs": 212,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 169.14499999999998,
+          "startedAt": 295.19999998807907,
+          "elapsedMs": 383.89999997615814,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 433.72099999999995,
+          "startedAt": 885.7999999523163,
+          "elapsedMs": 764.8000000119209,
+          "maxLongTaskMs": 118,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 117.263,
+          "startedAt": 295.4000000357628,
+          "elapsedMs": 195.29999995231628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 249.5999999642372,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 143.51699999999997,
+          "startedAt": 298.19999998807907,
+          "elapsedMs": 289.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 312.10000002384186,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 204.51399999999998,
+          "startedAt": 348.19999998807907,
+          "elapsedMs": 391.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 410.7000000476837,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1541.739,
+          "startedAt": 344.5,
+          "elapsedMs": 4262.099999964237,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 180.17000000000002,
+          "startedAt": 330.5,
+          "elapsedMs": 459.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "triple": 5,
+      "slot": 15,
+      "position": 0,
+      "tempC": 37.1,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 172.781,
+          "startedAt": 335.2000000476837,
+          "elapsedMs": 388.5,
+          "maxLongTaskMs": 70,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 838.0559999999999,
+          "startedAt": 732.5,
+          "elapsedMs": 1145.1000000238419,
+          "maxLongTaskMs": 543,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 144.79199999999997,
+          "startedAt": 287.80000001192093,
+          "elapsedMs": 270.80000001192093,
+          "maxLongTaskMs": 82,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 504.78299999999996,
+          "startedAt": 571.9000000357628,
+          "elapsedMs": 771.6999999880791,
+          "maxLongTaskMs": 231,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 164.02800000000002,
+          "startedAt": 298.80000001192093,
+          "elapsedMs": 358.5999999642372,
+          "maxLongTaskMs": 56,
+          "longtasks": 1
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 463.10299999999995,
+          "startedAt": 868.0999999642372,
+          "elapsedMs": 734.7000000476837,
+          "maxLongTaskMs": 126,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 117.05800000000002,
+          "startedAt": 273.4000000357628,
+          "elapsedMs": 201.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 220.5,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 159.08000000000004,
+          "startedAt": 304.60000002384186,
+          "elapsedMs": 334.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 362.10000002384186,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 206.30200000000002,
+          "startedAt": 369,
+          "elapsedMs": 419,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 447.5999999642372,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1653.6360000000002,
+          "startedAt": 371.30000001192093,
+          "elapsedMs": 4986.599999964237,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 184.265,
+          "startedAt": 400.9000000357628,
+          "elapsedMs": 507.2999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B2",
+      "triple": 5,
+      "slot": 16,
+      "position": 1,
+      "tempC": 37.1,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 202.67399999999998,
+          "startedAt": 325.69999998807907,
+          "elapsedMs": 445.2000000476837,
+          "maxLongTaskMs": 83,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 829.828,
+          "startedAt": 783.5,
+          "elapsedMs": 1218.699999988079,
+          "maxLongTaskMs": 536,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 114.852,
+          "startedAt": 279.89999997615814,
+          "elapsedMs": 234.9000000357628,
+          "maxLongTaskMs": 57,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 416.43600000000004,
+          "startedAt": 521.1000000238419,
+          "elapsedMs": 655.5999999642372,
+          "maxLongTaskMs": 171,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 170.729,
+          "startedAt": 305,
+          "elapsedMs": 404.39999997615814,
+          "maxLongTaskMs": 54,
+          "longtasks": 1
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 626.93,
+          "startedAt": 916.5,
+          "elapsedMs": 916.8000000119209,
+          "maxLongTaskMs": 164,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 118.24899999999997,
+          "startedAt": 304.2000000476837,
+          "elapsedMs": 218.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 235.19999998807907,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 176.09900000000002,
+          "startedAt": 297,
+          "elapsedMs": 317.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 337.2000000476837,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 195.15,
+          "startedAt": 283.9000000357628,
+          "elapsedMs": 426.5999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 440.80000001192093,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1611.874,
+          "startedAt": 389.89999997615814,
+          "elapsedMs": 4770.400000035763,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 193.25300000000001,
+          "startedAt": 378.39999997615814,
+          "elapsedMs": 506.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 5,
+      "slot": 17,
+      "position": 2,
+      "tempC": 37.4,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 154.691,
+          "startedAt": 296.30000001192093,
+          "elapsedMs": 389.60000002384186,
+          "maxLongTaskMs": 70,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 801.292,
+          "startedAt": 694.9000000357628,
+          "elapsedMs": 1101.5,
+          "maxLongTaskMs": 533,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 138.56799999999996,
+          "startedAt": 289.4000000357628,
+          "elapsedMs": 261.39999997615814,
+          "maxLongTaskMs": 79,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 466.477,
+          "startedAt": 561.5,
+          "elapsedMs": 718.3000000119209,
+          "maxLongTaskMs": 215,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 162.325,
+          "startedAt": 317.60000002384186,
+          "elapsedMs": 377.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 629.5899999999999,
+          "startedAt": 898.3000000119209,
+          "elapsedMs": 911.6000000238419,
+          "maxLongTaskMs": 166,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 111.66000000000001,
+          "startedAt": 322.7999999523163,
+          "elapsedMs": 202.80000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 230,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 177.412,
+          "startedAt": 303.89999997615814,
+          "elapsedMs": 312.60000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 332.5,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 192.689,
+          "startedAt": 321.89999997615814,
+          "elapsedMs": 419.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 433.9000000357628,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1504.745,
+          "startedAt": 292,
+          "elapsedMs": 4158.600000023842,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 180.67799999999997,
+          "startedAt": 277.4000000357628,
+          "elapsedMs": 434.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "triple": 6,
+      "slot": 18,
+      "position": 0,
+      "tempC": 37.4,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 216.93400000000003,
+          "startedAt": 373.19999998807907,
+          "elapsedMs": 457,
+          "maxLongTaskMs": 80,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 878.7750000000001,
+          "startedAt": 844.6999999880791,
+          "elapsedMs": 1199.7000000476837,
+          "maxLongTaskMs": 610,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 128.88600000000002,
+          "startedAt": 276.89999997615814,
+          "elapsedMs": 247.89999997615814,
+          "maxLongTaskMs": 70,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 458.691,
+          "startedAt": 531.0999999642372,
+          "elapsedMs": 684,
+          "maxLongTaskMs": 219,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 155.856,
+          "startedAt": 297.69999998807907,
+          "elapsedMs": 387.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 611.449,
+          "startedAt": 922.3000000119209,
+          "elapsedMs": 895.1999999880791,
+          "maxLongTaskMs": 162,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 117.32799999999999,
+          "startedAt": 292.5999999642372,
+          "elapsedMs": 190.10000002384186,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 218.60000002384186,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 189.764,
+          "startedAt": 311.80000001192093,
+          "elapsedMs": 328.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 353.39999997615814,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 170.48699999999997,
+          "startedAt": 359.30000001192093,
+          "elapsedMs": 433.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 455.5999999642372,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1680.264,
+          "startedAt": 373.80000001192093,
+          "elapsedMs": 5290.299999952316,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 193.199,
+          "startedAt": 392.4000000357628,
+          "elapsedMs": 518.0999999642372,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B1",
+      "triple": 6,
+      "slot": 19,
+      "position": 1,
+      "tempC": 37.6,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 167.497,
+          "startedAt": 277.5,
+          "elapsedMs": 364,
+          "maxLongTaskMs": 70,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 813.9240000000001,
+          "startedAt": 653.8000000119209,
+          "elapsedMs": 1086.199999988079,
+          "maxLongTaskMs": 534,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 154.10999999999999,
+          "startedAt": 292.2000000476837,
+          "elapsedMs": 284.69999998807907,
+          "maxLongTaskMs": 86,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 535.855,
+          "startedAt": 591.7000000476837,
+          "elapsedMs": 846.5999999642372,
+          "maxLongTaskMs": 271,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 169.36800000000002,
+          "startedAt": 327.9000000357628,
+          "elapsedMs": 374.7999999523163,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 429.93100000000004,
+          "startedAt": 921.1000000238419,
+          "elapsedMs": 670.8000000119209,
+          "maxLongTaskMs": 111,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 119.86000000000003,
+          "startedAt": 309.69999998807907,
+          "elapsedMs": 200,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 234.60000002384186,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 161.236,
+          "startedAt": 319.39999997615814,
+          "elapsedMs": 306.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 325.9000000357628,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 219.85800000000003,
+          "startedAt": 331.80000001192093,
+          "elapsedMs": 409.30000001192093,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 419.5,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1587.7669999999998,
+          "startedAt": 355.4000000357628,
+          "elapsedMs": 4863,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 186.221,
+          "startedAt": 357.19999998807907,
+          "elapsedMs": 523.9000000357628,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    },
+    {
+      "variant": "B2",
+      "triple": 6,
+      "slot": 20,
+      "position": 2,
+      "tempC": 37.6,
+      "rows": [
+        {
+          "name": "onebit-sheet2048-for-Icon import",
+          "cpuMs": 219.70299999999997,
+          "startedAt": 356.80000001192093,
+          "elapsedMs": 453.7999999523163,
+          "maxLongTaskMs": 82,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 2048",
+          "cpuMs": 756.228,
+          "startedAt": 822.3999999761581,
+          "elapsedMs": 1070.300000011921,
+          "maxLongTaskMs": 459,
+          "longtasks": 2
+        },
+        {
+          "name": "onebit-sheet1024-for-Icon import",
+          "cpuMs": 148.03799999999998,
+          "startedAt": 322.10000002384186,
+          "elapsedMs": 302,
+          "maxLongTaskMs": 80,
+          "longtasks": 1
+        },
+        {
+          "name": "B2 TARGET cold Icon 1024",
+          "cpuMs": 599.9630000000001,
+          "startedAt": 632.6999999880791,
+          "elapsedMs": 838.5,
+          "maxLongTaskMs": 346,
+          "longtasks": 1
+        },
+        {
+          "name": "onebit-sheet2048-for-brightness import",
+          "cpuMs": 160.51800000000003,
+          "startedAt": 294.60000002384186,
+          "elapsedMs": 369.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B1 TARGET Brightness R-G-Value 2048",
+          "cpuMs": 607.3170000000001,
+          "startedAt": 878.9000000357628,
+          "elapsedMs": 908.3000000119209,
+          "maxLongTaskMs": 166,
+          "longtasks": 3
+        },
+        {
+          "name": "B1 ADVERSE sprites8+effect Auto import",
+          "cpuMs": 146.87099999999998,
+          "startedAt": 318.5,
+          "elapsedMs": 188.19999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 242.39999997615814,
+          "captions": [
+            "9 colors",
+            "8 colors",
+            "8 colors",
+            "7 colors",
+            "9 colors",
+            "7 colors",
+            "7 colors",
+            "3 colors",
+            "33 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-1024 import",
+          "cpuMs": 152.922,
+          "startedAt": 308.2999999523163,
+          "elapsedMs": 289.2000000476837,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 312.4000000357628,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B1 ADVERSE kenney-sheet-2048 import",
+          "cpuMs": 213.14300000000003,
+          "startedAt": 323.10000002384186,
+          "elapsedMs": 434.69999998807907,
+          "maxLongTaskMs": 0,
+          "longtasks": 0,
+          "exactCaptionMs": 453.10000002384186,
+          "captions": [
+            "26 colors"
+          ]
+        },
+        {
+          "name": "B2 ADVERSE tiny all 11 styles",
+          "cpuMs": 1613.251,
+          "startedAt": 396.0999999642372,
+          "elapsedMs": 4909.5,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        },
+        {
+          "name": "B2 ADVERSE tiny cold Icon 16px",
+          "cpuMs": 214.255,
+          "startedAt": 392,
+          "elapsedMs": 573.1999999880791,
+          "maxLongTaskMs": 0,
+          "longtasks": 0
+        }
+      ]
+    }
+  ],
+  "outputs": [],
+  "errors": [],
+  "conditions": [
+    {
+      "at": "start",
+      "battery": "status: 2, level: 60, temperature: 356, Capacity level: 2",
+      "rotation": "free"
+    },
+    {
+      "at": "end",
+      "battery": "status: 4, level: 60, temperature: 376, Capacity level: 2",
+      "rotation": "free"
+    }
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.85",
+    "revision": "@c7357bfd2a76c2467ba1ae62593a81ae92c0520",
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "jsVersion": "15.5.35.25"
+  },
+  "triples": [
+    [
+      "A",
+      "B1",
+      "B2"
+    ],
+    [
+      "B2",
+      "B1",
+      "A"
+    ],
+    [
+      "B1",
+      "A",
+      "B2"
+    ],
+    [
+      "B2",
+      "A",
+      "B1"
+    ],
+    [
+      "A",
+      "B2",
+      "B1"
+    ],
+    [
+      "B1",
+      "B2",
+      "A"
+    ],
+    [
+      "A",
+      "B1",
+      "B2"
+    ]
+  ],
+  "finished": "2026-10-18T06:45:47.328Z"
+}

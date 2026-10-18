@@ -1,0 +1,32 @@
+{
+ "note": "Claude browser tile canvas readback (sampled 1024 sheet tile), A=base-repro B=cand-all; not an export oracle",
+ "rows": [
+  {
+   "style": "cutout",
+   "w": 688,
+   "h": 688,
+   "bytesDiff": 0,
+   "distinctRGBA": 3,
+   "sha": "7a8fd213d787c38d",
+   "shaB": "7a8fd213d787c38d"
+  },
+  {
+   "style": "stencil",
+   "w": 596,
+   "h": 596,
+   "bytesDiff": 0,
+   "distinctRGBA": 3,
+   "sha": "17d45c5246cae956",
+   "shaB": "17d45c5246cae956"
+  },
+  {
+   "style": "icon",
+   "w": 596,
+   "h": 596,
+   "bytesDiff": 0,
+   "distinctRGBA": 3,
+   "sha": "5ddfbadc4f7f9ab7",
+   "shaB": "5ddfbadc4f7f9ab7"
+  }
+ ]
+}

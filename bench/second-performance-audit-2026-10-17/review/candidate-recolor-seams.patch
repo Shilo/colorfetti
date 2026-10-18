@@ -1,0 +1,20 @@
+--- a/src/lib/recolor.js
++++ b/src/lib/recolor.js
+@@ -99,11 +99,15 @@
+   for (const frame of frames) addSeams(hist, frame, t);
+   return seamThreshold(hist);
+ }
++// A difference of 0 (identical or empty neighbours) only counts in hist[0], which
++// seamThreshold always clears, so those pairs are skipped.
+ function addSeams(hist, { w, h, lum, right, down }, t) {
+   for (let y = 0, p = 0; y < h; y++) for (let x = 0; x < w; x++, p++) {
++    const r = right[p], d = down[p];
++    if (!r && !d) continue;
+     const light = lum[p] > t;
+-    if (x + 1 < w && lum[p + 1] > t === light) hist[right[p]]++;
+-    if (y + 1 < h && lum[p + w] > t === light) hist[down[p]]++;
++    if (r && x + 1 < w && lum[p + 1] > t === light) hist[r]++;
++    if (d && y + 1 < h && lum[p + w] > t === light) hist[d]++;
+   }
+ }
+ function seamThreshold(hist) {

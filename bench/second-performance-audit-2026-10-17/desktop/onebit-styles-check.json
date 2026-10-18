@@ -1,0 +1,95 @@
+{
+  "pass": true,
+  "fixture": "dungeon-wizard.png 16x16",
+  "method": "Claude browser tile canvas getImageData (canvas is source-sized for this sprite) vs src/lib/recolor.js mask+colorize at defaults",
+  "rows": [
+    {
+      "style": "cutout",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    },
+    {
+      "style": "solid",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    },
+    {
+      "style": "lines",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    },
+    {
+      "style": "stencil",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    },
+    {
+      "style": "icon",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    },
+    {
+      "style": "checker",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    },
+    {
+      "style": "bayer",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    },
+    {
+      "style": "hatch",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    },
+    {
+      "style": "atkinson",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    },
+    {
+      "style": "noise",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    },
+    {
+      "style": "silhouette",
+      "width": 16,
+      "height": 16,
+      "alphaMismatch": 0,
+      "rgbMismatch": 0,
+      "first": null
+    }
+  ]
+}
