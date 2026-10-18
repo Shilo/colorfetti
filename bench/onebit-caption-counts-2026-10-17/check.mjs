@@ -3,7 +3,7 @@ import { writeFileSync } from 'node:fs';
 import { analyze, mask } from '../../src/lib/recolor.js';
 import { STYLE_SETTINGS, defaults } from '../../src/lib/settings.js';
 import { analysisKey } from '../../src/lib/image-reanalysis.js';
-import { maskRoles, rememberOneBitMask, collectOneBitUsage } from '../../src/lib/onebit-usage.js';
+import { maskRoles, rememberOneBitMask, rememberOneBitSample, collectOneBitUsage } from '../../src/lib/onebit-usage.js';
 
 function source(size, sparse = false, offset = 0) {
   const data = new Uint8ClampedArray(size * size * 4);
@@ -15,7 +15,16 @@ function source(size, sparse = false, offset = 0) {
   const original = { width: size, height: size, data }, img = analyze(original);
   return { img, original, by: analysisKey(img.soft), delay: 50 };
 }
-const sheet = source(2048, true), rows = [];
+const sheet = source(2048, true), rows = [], bounded = [];
+for (const style of Object.keys(STYLE_SETTINGS)) {
+  const set = defaults(style), asked = { style, set, first: '#000000', second: '#ffffff' };
+  const started = performance.now(), missing = await collectOneBitUsage(sheet, asked);
+  const missingMs = performance.now() - started;
+  const sample = mask(sheet.img, style, set, 128, 128);
+  rememberOneBitSample(sheet.img, style, set, sample, 128, 128);
+  const sampledStart = performance.now(), sampled = await collectOneBitUsage(sheet, asked);
+  bounded.push({ style, missingCount: missing?.count ?? null, missingMs, sampledCount: sampled?.count ?? null, sampledMs: performance.now() - sampledStart });
+}
 for (const style of Object.keys(STYLE_SETTINGS)) {
   const set = defaults(style), started = performance.now();
   const value = mask(sheet.img, style, set), masked = performance.now();
@@ -34,6 +43,6 @@ for (const style of ['solid', 'cutout', 'bayer', 'atkinson', 'stencil']) {
   for (const frame of frames) mask(frame.img, style, set);
   animation.push({ style, countMs, allFrameMasksMs: performance.now() - baseline, count: result.count, reportedFrames: result.frames });
 }
-const result = { note: 'Node host timings, not phone or browser FPS. Cold structural preparation can block within one mask; no loop was changed.', sheetSize: 2048, sheet: rows, animationSize: 256, animationFrames: 32, animation };
+const result = { note: 'Node host timings, not phone or browser FPS. Sheet mask timing is existing mask work, not automatic count work: bounded counts never generate a missing full mask above262144pixels. Sampled pattern masks cannot certify counts.', sheetSize: 2048, bounded, sheet: rows, animationSize: 256, animationFrames: 32, animation };
 writeFileSync(new URL('./result.json', import.meta.url), JSON.stringify(result, null, 2) + '\n');
 console.log(JSON.stringify(result));

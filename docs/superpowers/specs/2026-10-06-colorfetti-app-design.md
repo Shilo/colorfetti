@@ -168,7 +168,12 @@ None contributes no color; identical ink RGBs count once. Exact rendered masks
 contribute tiny cached role-presence bits. Missing full-source masks are inspected
 serially with cancellation and a posted task before each cold mask; whole-clip
 inspection stops once every possible distinct visible ink has appeared. No mask
-or RGBA clip is retained by counting. A cold structural mask remains synchronous.
+or RGBA clip is retained by counting. Missing automatic masks are bounded to
+262144 pixels per frame; larger sources use existing exact masks or proven
+all-ink saturation from coordinate-preserving samples. Pattern/diffusion samples
+cannot prove membership. Unproven large results stay unknown until exact rendering
+supplies evidence; stale previous counts then clear. Metadata never launches a
+large reanalysis. A cold allowed structural mask remains synchronous.
 Separators retain explicit text spaces on both sides of the middle dot, including
 before Retry needed; template whitespace trimming must not join metadata fields.
 It describes full-resolution converted output, switching to the cached source RGB
@@ -178,7 +183,8 @@ palette. A pending source count never borrows converted metadata. Animations
 report the RGB union of all frames, excluding fully empty
 pixels. Wall tiles reuse post-Cleanup used flags already produced by full-size
 previews, translating actual subset indices back to RGB. Sampled/draft previews
-never publish estimated counts. An incomplete animation union stays unreported.
+never publish estimated counts. An incomplete animation union stays unreported
+unless every possible output color has already appeared, proving saturation.
 Repeated frames publish nothing new. Incomplete clips retain small RGB/seen-frame
 metadata; completed results discard frame tracking. A keyed reactive map retains
 empty slots for live images, so each completed count updates its own subscribers
@@ -198,12 +204,11 @@ its exact replacement is pending. Failed inspection clears the stale count.
 An active inspection retains its record identity and explicit Reuse subscription
 until completion or cancellation. Source replacement/removal, 1-bit mode and
 failures hide or discard the old label. Retain only one small RGB/count result per
-item, never a chain, extra pixel scans, timers or converted images.
+item, never a chain or extra converted images. Nearest-only inspection uses a
+bounded immutable RGB/max-alpha summary; spatial modes use actual export conversion.
 
-Opening Preview automatically starts missing full-source inspection through the
-export pipeline, with no Count button. Closing Preview cancels automatic work
-unless explicit Reuse is awaiting it. Wall display alone starts no additional
-full-source conversion. Source/settings/removal retire stale work/results; Auto
+Automatic Palette wall inspection shares export preparation, with no Count button.
+Source/settings/removal retire stale work/results; Auto
 uses the captured wall key rather than retained swatches. Errors do not block
 independent Save; Reuse can retry inspection. No converted clips are retained.
 

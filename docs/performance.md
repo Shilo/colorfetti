@@ -29,28 +29,39 @@ existing color inspection remain separate work. Counts and limits are in the
 
 ## Output color metadata and optional opacity preservation
 
-Wall color counts do not schedule full-resolution conversions. When an existing
-preview already matches the source dimensions, its post-Cleanup used[256] flags
-are translated through the actual subset palette. Tiny per-item metadata tracks
-seen animation frames and at most 256 RGBs; no exact animation count is published
-until every frame was observed at full resolution. Sampled/draft previews never
-stand in for full-source counts. Playback revisits do not republish seen frames.
+As of October 17, missing Palette wall counts use one serial cancellable exact
+inspection queue, shared with Preview and Reuse. Closing Preview leaves the wall's
+request alive. Existing exact previews can still contribute post-Cleanup used flags.
+Sampled pixels never masquerade as exact full-source counts. Whole-clip unions can
+finish early only after every prepared output color has appeared.
 
-Opening Preview starts one missing full-source inspection through the export
-pipeline; Reuse colors joins that operation in one action. Closing Preview aborts
-automatic work unless explicit Reuse joined it. Stale sources/settings cancel
-pending work; results retain RGB/count/frame metadata only. A later Save can
-repeat conversion. There is no new converted-frame cache or automatic wall scan.
-Auto identity uses its captured wall request, excluding retained preview colors.
+Nearest-only inspection reuses a weak source RGB/max-alpha summary capped at 4096
+RGBs per frame (at most 20 KiB typed metadata). A serial summary queue prevents
+simultaneous Original/output requests duplicating cold scans; cancellation removes
+queued work. High entropy records a bypass marker. Matching, alpha and caps reuse
+the source summary with the existing quantizer and shared export preparation.
+Cleanup and effective dithering retain actual full-source conversion. This is
+additional automatic work on large spatial outputs, cooperatively yielded and
+serialized, not a claim of zero overhead. No converted clip is retained.
 
-During settings changes, retain one previous completed caption result as
-presentation only; current-key inspection and Reuse remain strict. A completed
-sampled wall notifies retirement only while such a caption is pending, unless a
-full-source inspection is already computing its exact replacement. This adds no
-pixel scan, conversion, timer or frame cache. The retained object contains at most
-256 RGB strings and a count/frame total; repeated settings changes flatten to the
-same one previous result. Read presentation state untracked in Tile so changing a
-caption cannot restart its conversion.
+Original captions use a separate scalar whole-clip RGB count, weakly keyed by
+immutable source frames. Small unions reuse summaries; high entropy uses a transient
+2 MiB bitset. Cold work yields cooperatively; repeated Space/hold/Compare reads a
+cached result. First-use JIT and one chunk can exceed the nominal 8 ms target.
+
+1-bit captions reuse tiny role-presence metadata from rendered masks. A pointwise
+sample may prove every possible visible ink, but pattern/diffusion samples cannot.
+Missing masks are serialized and capped at 262144 pixels per frame; larger unproven
+counts stay unknown until exact rendering supplies evidence. Counting adds no
+large full-mask conversion or large reanalysis. A cold allowed mask remains
+synchronous, so this is not a hard frame-time guarantee. New mask evidence and
+returning from Preview recheck unknown metadata; settled playback does not poll.
+
+Settings changes retain one previous exact result as presentation only, marked
+busy until replacement. Reuse remains strict. Failed inspection clears stale text.
+Retained metadata is one flat result, never a chain. Caption changes cannot restart
+pixel conversion. The empty demo uses this same machinery. See the October 17
+caption research, acceptance checklist and independent integrated review.
 
 Opacity Keep adds one byte per sampled/full converted pixel for original alpha;
 Cut allocates no alpha buffer. The existing 8 MiB animation cache reserves three
@@ -1352,6 +1363,11 @@ Desktop and native Pixel touch checks close the reported drag freeze in
 `docs/research/2026-10-13-slider-reanalysis-resolution.md`.
 
 ### October 16: wall color-count publication
+
+Historical measurement below: October 17's automatic exact wall inspection and
+Original/1-bit counts supersede the scheduling policy described in this section.
+The per-key map optimization remains in place; these timings do not measure the
+new automatic inspection policy.
 
 Wall counts consume used-color flags from existing exact-size conversions; sampled
 walls start no additional full-source inspection. Completed results are retained

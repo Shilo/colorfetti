@@ -18,17 +18,27 @@ Black & White and ENDESGA 8), Lospec links through Paste colors, and one Reuse
 colors action beside Copy in wall actions (also in touch Image actions, before
 Preview). Preview retains Save/Copy/Compare and no Count/Reuse button. Reuse opens the existing
 editable palette draft with full-resolution output colors, unioning all GIF
-frames. Counts are plain caption metadata after dimensions. Wall counts reuse
-post-Cleanup used flags only from already-rendered exact-size previews; GIFs
-publish only after every frame was observed at full resolution. Sampled walls
-start no extra inspection. Preview starts missing full-source inspection and
-cancels it on close unless explicit Reuse joined it. Keep tiny color/frame
-metadata only, never converted frame caches. Source/settings changes cancel and
-invalidate exact counts; a settings change retains one last completed caption
-while its replacement is pending, with aria-busy and a previous-output tooltip.
-Reuse never consumes that retained count. A completed sampled preview retires it
-unless a full-source inspection is already pending. Source/family changes and
-failures clear it. Auto keys use the captured wall request. Known zero-color outputs
+frames. Counts are plain caption metadata: count before resolution in right-aligned
+mouse captions, resolution first in left-aligned touch and example captions.
+One serial cancellable queue supplies exact Palette wall counts independently of
+sampling; Preview and Reuse share it. Closing Preview leaves wall requests alive.
+Nearest-only counts reuse weak immutable RGB/max-alpha summaries capped at 4096
+colors per frame; high-entropy sources, Cleanup and effective dithering use the
+real export conversion. Safe palette saturation can skip remaining GIF frames.
+Keep tiny color/frame metadata only, never converted frame caches. Settings changes
+retain one completed caption while updating, marked aria-busy; Reuse never uses
+that retained result. Stale sources/jobs cannot publish; errors clear stale text.
+Original comparison selects a separate exact source RGB union cached by immutable
+frame identities; repeated Space/hold/Compare does not rescan pixels. High-entropy
+source counting uses a transient 2 MiB bitset. All counts exclude alpha-zero pixels
+and deduplicate RGB across alpha variants. GIF counts describe the whole clip.
+1-bit counts use actual visible ink RGBs, not enabled choices. Existing exact masks
+provide tiny role metadata; coordinate-preserving samples can prove saturation.
+Missing automatic masks are limited to 262144 pixels per frame and serialized;
+large unproven pattern/ink counts remain unknown until exact rendering supplies
+evidence. No large metadata-only structural mask or reanalysis is launched.
+The empty-wall example uses the same pipeline and caption component, including
+theme-source invalidation and Original. Auto keys use the captured wall request. Known zero-color outputs
 disable reuse; newly inspected empty outputs explain why no palette can be made.
 
 Optional Palette Opacity Cut/Keep defaults to Cut128. Keep uses eligibility cut1

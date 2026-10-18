@@ -5,7 +5,7 @@
   import Pixels from './Pixels.svelte';
   import CaptionMetadata from './CaptionMetadata.svelte';
   import { peekOriginalUsage, collectOriginalUsage } from './lib/original-color-usage.js';
-  import { rememberOneBitMask, collectOneBitUsage } from './lib/onebit-usage.js';
+  import { rememberOneBitSample, collectOneBitUsage } from './lib/onebit-usage.js';
   import PixelIcon from './PixelIcon.svelte';
   import { tooltip } from './lib/tooltip.js';
   import { imageGesture, IMAGE_HOLD_MS } from './lib/image-gesture.js';
@@ -40,13 +40,16 @@
     return () => controller.abort();
   });
   let oneBitUsage = $state.raw(null);
+  let oneBitMetadataRevision = $state(0);
+  const reportedOneBitMasks = new WeakSet();
   $effect(() => {
     const current = item, asked = { first, second, style, set: { ...set } };
+    oneBitMetadataRevision;
     if (family !== 'two-color') { oneBitUsage = null; return; }
     const previous = untrack(() => oneBitUsage);
     const result = previous?.original === current.original ? previous.result : null;
     oneBitUsage = { original: current.original, result, pending: true };
-    if (analysisPending) return;
+    if (analysisPending || !active) return;
     const controller = new AbortController();
     collectOneBitUsage(current, asked, { signal: controller.signal }).then(result => {
       if (!controller.signal.aborted) oneBitUsage = { original: current.original, result, pending: false };
@@ -309,9 +312,23 @@
       const start = performance.now();
       masks[at] = mask(frame.img, style, set, mw, mh);
       pace = (performance.now() - start) / masks[at].length;
-      if (mw === frame.img.w && mh === frame.img.h) rememberOneBitMask(frame.img, style, set, masks[at]);
     }
     return (colored[at] ??= new ImageData(colorize(masks[at], first, second), mw));
+  });
+  // Publish only newly rendered masks, outside conversion's derived value.
+  // Safe pointwise samples can prove saturation; pattern samples cannot.
+  $effect(() => {
+    const completed = completedPixels;
+    if (family !== 'two-color' || originalVisible || analysisPending || !completed) return;
+    const value = masks[at], frame = frames[at], width = mw, height = mh;
+    if (!value || reportedOneBitMasks.has(value)) return;
+    untrack(() => {
+      reportedOneBitMasks.add(value);
+      if (rememberOneBitSample(frame.img, style, set, value, width, height) === null) return;
+      const bound = new Set([first, second].filter(Boolean).map(c => c.toLowerCase())).size;
+      // Once every possible ink has appeared, later frames cannot change count.
+      if (oneBitUsage?.result?.count !== bound) oneBitMetadataRevision++;
+    });
   });
   // The first Generated selection has no palette yet. Retain an already painted
   // conversion of this same item, including a prior 1-bit conversion, while it loads.

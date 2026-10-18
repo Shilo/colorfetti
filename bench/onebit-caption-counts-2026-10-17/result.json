@@ -1,92 +1,171 @@
 {
-  "note": "Node host timings, not phone or browser FPS. Cold structural preparation can block within one mask; no loop was changed.",
+  "note": "Node host timings, not phone or browser FPS. Sheet mask timing is existing mask work, not automatic count work: bounded counts never generate a missing full mask above262144pixels. Sampled pattern masks cannot certify counts.",
   "sheetSize": 2048,
+  "bounded": [
+    {
+      "style": "cutout",
+      "missingCount": null,
+      "missingMs": 12.251800000000003,
+      "sampledCount": 2,
+      "sampledMs": 0.06419999999999959
+    },
+    {
+      "style": "solid",
+      "missingCount": null,
+      "missingMs": 0.21649999999999636,
+      "sampledCount": 2,
+      "sampledMs": 0.02929999999999211
+    },
+    {
+      "style": "lines",
+      "missingCount": null,
+      "missingMs": 0.080600000000004,
+      "sampledCount": null,
+      "sampledMs": 0.32569999999999766
+    },
+    {
+      "style": "stencil",
+      "missingCount": null,
+      "missingMs": 0.08509999999999707,
+      "sampledCount": 2,
+      "sampledMs": 0.044899999999998386
+    },
+    {
+      "style": "icon",
+      "missingCount": null,
+      "missingMs": 0.49149999999998784,
+      "sampledCount": 2,
+      "sampledMs": 0.0519999999999925
+    },
+    {
+      "style": "checker",
+      "missingCount": null,
+      "missingMs": 0.14009999999998968,
+      "sampledCount": null,
+      "sampledMs": 0.05529999999998836
+    },
+    {
+      "style": "bayer",
+      "missingCount": null,
+      "missingMs": 0.04599999999999227,
+      "sampledCount": null,
+      "sampledMs": 0.07600000000002183
+    },
+    {
+      "style": "hatch",
+      "missingCount": null,
+      "missingMs": 0.03100000000000591,
+      "sampledCount": null,
+      "sampledMs": 0.029899999999997817
+    },
+    {
+      "style": "atkinson",
+      "missingCount": null,
+      "missingMs": 0.020899999999983265,
+      "sampledCount": null,
+      "sampledMs": 0.1758999999999844
+    },
+    {
+      "style": "noise",
+      "missingCount": null,
+      "missingMs": 0.028799999999989723,
+      "sampledCount": null,
+      "sampledMs": 0.04550000000000409
+    },
+    {
+      "style": "silhouette",
+      "missingCount": null,
+      "missingMs": 0.058400000000006,
+      "sampledCount": 1,
+      "sampledMs": 0.010500000000007503
+    }
+  ],
   "sheet": [
     {
       "style": "cutout",
-      "maskMs": 17.47800000000001,
-      "roleScanMs": 0.06260000000000332,
-      "cachedTotalMs": 0.2634000000000043,
+      "maskMs": 18.710800000000006,
+      "roleScanMs": 0.0013999999999896318,
+      "cachedTotalMs": 0.045100000000019236,
       "roles": 3,
       "count": 2
     },
     {
       "style": "solid",
-      "maskMs": 6.883399999999995,
-      "roleScanMs": 0.0023999999999944066,
-      "cachedTotalMs": 0.030099999999990246,
+      "maskMs": 14.587199999999996,
+      "roleScanMs": 0.0013000000000147338,
+      "cachedTotalMs": 0.044999999999987494,
       "roles": 3,
       "count": 2
     },
     {
       "style": "lines",
-      "maskMs": 12.382499999999993,
-      "roleScanMs": 0.05089999999999861,
-      "cachedTotalMs": 0.02970000000000539,
+      "maskMs": 15.346000000000004,
+      "roleScanMs": 0.00380000000001246,
+      "cachedTotalMs": 0.05459999999999354,
       "roles": 3,
       "count": 2
     },
     {
       "style": "stencil",
-      "maskMs": 39.61010000000002,
-      "roleScanMs": 0.003500000000002501,
-      "cachedTotalMs": 0.0443000000000211,
+      "maskMs": 14.631400000000014,
+      "roleScanMs": 0.0036000000000058208,
+      "cachedTotalMs": 0.031799999999975626,
       "roles": 3,
       "count": 2
     },
     {
       "style": "icon",
-      "maskMs": 90.3817,
-      "roleScanMs": 0.0030999999999892225,
-      "cachedTotalMs": 0.05299999999999727,
+      "maskMs": 14.388800000000003,
+      "roleScanMs": 0.015800000000012915,
+      "cachedTotalMs": 0.024599999999963984,
       "roles": 3,
       "count": 2
     },
     {
       "style": "checker",
-      "maskMs": 7.849199999999996,
-      "roleScanMs": 0.0009000000000014552,
-      "cachedTotalMs": 0.030699999999995953,
+      "maskMs": 14.670299999999997,
+      "roleScanMs": 0.001699999999971169,
+      "cachedTotalMs": 0.03849999999999909,
       "roles": 3,
       "count": 2
     },
     {
       "style": "bayer",
-      "maskMs": 15.193600000000004,
-      "roleScanMs": 0.0009000000000014552,
-      "cachedTotalMs": 0.02780000000001337,
+      "maskMs": 13.905400000000043,
+      "roleScanMs": 0.0007999999999697138,
+      "cachedTotalMs": 0.03370000000001028,
       "roles": 3,
       "count": 2
     },
     {
       "style": "hatch",
-      "maskMs": 13.866100000000017,
-      "roleScanMs": 0.0011999999999829924,
-      "cachedTotalMs": 0.039400000000000546,
+      "maskMs": 13.684799999999996,
+      "roleScanMs": 0.0007999999999697138,
+      "cachedTotalMs": 0.02580000000000382,
       "roles": 3,
       "count": 2
     },
     {
       "style": "atkinson",
-      "maskMs": 16.866900000000044,
-      "roleScanMs": 0.0009000000000014552,
-      "cachedTotalMs": 0.052600000000040836,
+      "maskMs": 30.322099999999978,
+      "roleScanMs": 0.001599999999996271,
+      "cachedTotalMs": 0.03710000000000946,
       "roles": 3,
       "count": 2
     },
     {
       "style": "noise",
-      "maskMs": 14.61529999999999,
-      "roleScanMs": 0.0006999999999948159,
-      "cachedTotalMs": 0.028300000000001546,
+      "maskMs": 14.026200000000017,
+      "roleScanMs": 0.0011999999999829924,
+      "cachedTotalMs": 0.03200000000003911,
       "roles": 3,
       "count": 2
     },
     {
       "style": "silhouette",
-      "maskMs": 6.494399999999985,
-      "roleScanMs": 3.994799999999998,
-      "cachedTotalMs": 0.025000000000034106,
+      "maskMs": 13.967400000000055,
+      "roleScanMs": 3.351799999999969,
+      "cachedTotalMs": 0.050800000000037926,
       "roles": 1,
       "count": 1
     }
@@ -96,36 +175,36 @@
   "animation": [
     {
       "style": "solid",
-      "countMs": 13.49980000000005,
-      "allFrameMasksMs": 9.92040000000003,
+      "countMs": 0.7266999999999939,
+      "allFrameMasksMs": 10.202200000000005,
       "count": 2,
       "reportedFrames": 32
     },
     {
       "style": "cutout",
-      "countMs": 3.532199999999989,
-      "allFrameMasksMs": 50.74359999999996,
+      "countMs": 3.4261000000000195,
+      "allFrameMasksMs": 46.54510000000005,
       "count": 2,
       "reportedFrames": 32
     },
     {
       "style": "bayer",
-      "countMs": 2.528099999999995,
-      "allFrameMasksMs": 12.958800000000053,
+      "countMs": 1.8274000000000115,
+      "allFrameMasksMs": 14.402699999999982,
       "count": 2,
       "reportedFrames": 32
     },
     {
       "style": "atkinson",
-      "countMs": 1.6030000000000086,
-      "allFrameMasksMs": 33.92090000000002,
+      "countMs": 2.31149999999991,
+      "allFrameMasksMs": 26.668000000000006,
       "count": 2,
       "reportedFrames": 32
     },
     {
       "style": "stencil",
-      "countMs": 2.281500000000051,
-      "allFrameMasksMs": 44.850400000000036,
+      "countMs": 2.9409999999999172,
+      "allFrameMasksMs": 43.54829999999993,
       "count": 2,
       "reportedFrames": 32
     }

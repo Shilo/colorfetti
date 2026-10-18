@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { analyze, mask, colorize } from './recolor.js';
 import { defaults, STYLE_SETTINGS } from './settings.js';
 import { analysisKey } from './image-reanalysis.js';
-import { maskRoles, oneBitColors, rememberOneBitMask, collectOneBitUsage } from './onebit-usage.js';
+import { maskRoles, oneBitColors, rememberOneBitMask, rememberOneBitSample, collectOneBitUsage, ONEBIT_INSPECTION_PIXELS } from './onebit-usage.js';
 
 function source(values, width = values.length) {
   const original = { width, height: values.length / width, data: Uint8ClampedArray.from(values.flatMap(v => v === null ? [0, 0, 0, 0] : [v, v, v, 255])) };
@@ -86,5 +86,67 @@ describe('actual 1-bit used-color metadata', () => {
     await rejected;
     await Promise.all([first, second]);
     expect(events).toEqual(['a', 'b']);
+  });
+  it('pointwise sampled pixels exactly match their source-coordinate full mask', () => {
+    const item = source(Array.from({ length: 40 * 32 }, (_, p) => p % 17 < 3 ? null : (p * 37) % 256), 40);
+    const choices = {
+      cutout: [{}, { threshold: 90, seams: 40, rim: false }],
+      solid: [{}, { threshold: 190 }],
+      lines: [{}, { thickness: 2, darks: 30 }, { thickness: 3, threshold: 50 }],
+      stencil: [{}, { outline: 'trim', cuts: 20, edges: 80 }],
+      icon: [{}, { border: 'trim', detail: 75 }, { border: 'keep', detail: 0 }],
+      silhouette: [{}],
+    };
+    for (const [style, settings] of Object.entries(choices)) for (const set of settings) {
+      const full = mask(item.img, style, set);
+      for (const [w, h] of [[7, 5], [21, 27], [39, 31]]) {
+        const sampled = mask(item.img, style, set, w, h);
+        for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+          const sx = Math.floor((x + 0.5) * 40 / w), sy = Math.floor((y + 0.5) * 32 / h);
+          expect(sampled[y * w + x], `${style} ${JSON.stringify(set)} ${w}x${h}`).toBe(full[sy * 40 + sx]);
+        }
+      }
+    }
+  });
+  it('never computes a missing large full mask and does not mistake partial presence for an exact count', async () => {
+    const item = source([0, 255]), size = Math.ceil(Math.sqrt(ONEBIT_INSPECTION_PIXELS + 1));
+    item.img.w = item.img.h = size;
+    Object.defineProperty(item.img, 'lum', { get() { throw new Error('Large mask computed'); } });
+    const asked = { style: 'solid', set: {}, first: '#000000', second: '#ffffff' };
+    expect(await collectOneBitUsage(item, asked)).toBeNull();
+    rememberOneBitSample(item.img, 'solid', {}, Uint8Array.of(1), 1, 1);
+    expect(await collectOneBitUsage(item, asked)).toBeNull();
+    rememberOneBitSample(item.img, 'solid', {}, Uint8Array.of(2), 1, 1);
+    expect((await collectOneBitUsage(item, asked)).count).toBe(2);
+    expect((await collectOneBitUsage(item, { ...asked, first: null })).count).toBe(1);
+  });
+  it('pattern and diffusion samples cannot certify large output colors', async () => {
+    const item = source([0, 255]), size = Math.ceil(Math.sqrt(ONEBIT_INSPECTION_PIXELS + 1));
+    item.img.w = item.img.h = size;
+    Object.defineProperty(item.img, 'lum', { get() { throw new Error('Large mask computed'); } });
+    for (const style of ['hatch', 'checker', 'bayer', 'noise', 'atkinson']) {
+      expect(rememberOneBitSample(item.img, style, {}, Uint8Array.of(1, 2), 2, 1)).toBeNull();
+      expect(await collectOneBitUsage(item, { style, set: {}, first: '#000000', second: '#ffffff' })).toBeNull();
+    }
+  });
+  it('large exact cached roles remain countable and mismatched large analyses are not regenerated', async () => {
+    const item = source([0, 255]), size = Math.ceil(Math.sqrt(ONEBIT_INSPECTION_PIXELS + 1));
+    item.img.w = item.img.h = size;
+    const value = new Uint8Array(size * size); value[0] = 1;
+    rememberOneBitMask(item.img, 'solid', {}, value);
+    Object.defineProperty(item.img, 'lum', { get() { throw new Error('Large mask computed'); } });
+    expect((await collectOneBitUsage(item, { style: 'solid', set: {}, first: '#000000', second: '#ffffff' })).count).toBe(1);
+    expect(await collectOneBitUsage(item, { style: 'solid', set: { source: 'red' }, first: '#000000', second: '#ffffff' })).toBeNull();
+    expect((await collectOneBitUsage(item, { style: 'icon', set: { source: 'red' }, first: null, second: null })).count).toBe(0);
+  });
+  it('Silhouette can only use its first ink, including with a large sampled source', async () => {
+    const item = source([0, 255]), size = Math.ceil(Math.sqrt(ONEBIT_INSPECTION_PIXELS + 1));
+    item.img.w = item.img.h = size;
+    Object.defineProperty(item.img, 'lum', { get() { throw new Error('Large mask computed'); } });
+    const asked = { style: 'silhouette', set: {}, first: '#000000', second: '#ffffff' };
+    expect((await collectOneBitUsage(item, { ...asked, first: null })).count).toBe(0);
+    expect(await collectOneBitUsage(item, asked)).toBeNull();
+    rememberOneBitSample(item.img, 'silhouette', {}, Uint8Array.of(1), 1, 1);
+    expect((await collectOneBitUsage(item, asked)).count).toBe(1);
   });
 });
