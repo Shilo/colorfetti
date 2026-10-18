@@ -2049,6 +2049,13 @@ Style-panel More and Help Close also use circular 44px icon controls.
 
 ### Modal contrast protection
 
+The palette editor's enabled footer actions, method labels and secondary hint/review
+text require at least 4.5:1 contrast against their composed backgrounds in both
+themes. Save uses primary-on-surface ink; Cancel and unselected methods use main
+foreground. The editor scopes secondary text to a 75% foreground/25% opaque-surface
+mix. Existing selected states, disabled opacity, focus treatment and palette RGB
+swatches remain intact. This does not change global GlassKit tokens or materials.
+
 The Reset dialog retains GlassKit's native modal anatomy, blur, gradient, divider and
 unfilled footer actions. A local 96% theme-surface underlay prevents arbitrary image
 colors from overwhelming this blocking dialog. Body and Cancel use full foreground;

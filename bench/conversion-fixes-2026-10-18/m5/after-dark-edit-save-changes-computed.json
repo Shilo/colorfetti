@@ -1,0 +1,312 @@
+{
+  "controls": [
+    {
+      "backgrounds": [
+        {
+          "backgroundImage": "none",
+          "className": "glass-segmented__item",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "BUTTON"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "palette-input-method seg glass-segmented",
+          "color": "rgba(255, 255, 255, 0.08)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal__body palette-editor-body",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal palette-editor",
+          "color": "rgb(39, 44, 50)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal-overlay is-active palette-import-modal",
+          "color": "rgba(0, 0, 0, 0.5)",
+          "opacity": "1",
+          "tag": "DIALOG"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "BODY"
+        },
+        {
+          "backgroundImage": "conic-gradient(rgb(39, 46, 53) 25%, rgb(50, 57, 65) 0deg, rgb(50, 57, 65) 50%, rgb(39, 46, 53) 0deg, rgb(39, 46, 53) 75%, rgb(50, 57, 65) 0deg)",
+          "className": "",
+          "color": "rgb(25, 28, 32)",
+          "opacity": "1",
+          "tag": "HTML"
+        }
+      ],
+      "boxShadow": "none",
+      "color": "rgb(255, 255, 255)",
+      "disabled": false,
+      "focusVisible": false,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "hover": false,
+      "label": "Image or file",
+      "opacity": "1",
+      "outline": "rgb(255, 255, 255) none 3px",
+      "rect": {
+        "height": 44,
+        "width": 165.328125,
+        "x": 388,
+        "y": 393.296875
+      },
+      "selected": "false"
+    },
+    {
+      "backgrounds": [
+        {
+          "backgroundImage": "none",
+          "className": "glass-segmented__item",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "BUTTON"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "palette-input-method seg glass-segmented",
+          "color": "rgba(255, 255, 255, 0.08)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal__body palette-editor-body",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal palette-editor",
+          "color": "rgb(39, 44, 50)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal-overlay is-active palette-import-modal",
+          "color": "rgba(0, 0, 0, 0.5)",
+          "opacity": "1",
+          "tag": "DIALOG"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "BODY"
+        },
+        {
+          "backgroundImage": "conic-gradient(rgb(39, 46, 53) 25%, rgb(50, 57, 65) 0deg, rgb(50, 57, 65) 50%, rgb(39, 46, 53) 0deg, rgb(39, 46, 53) 75%, rgb(50, 57, 65) 0deg)",
+          "className": "",
+          "color": "rgb(25, 28, 32)",
+          "opacity": "1",
+          "tag": "HTML"
+        }
+      ],
+      "boxShadow": "none",
+      "color": "rgb(255, 255, 255)",
+      "disabled": false,
+      "focusVisible": false,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "hover": false,
+      "label": "Paste colors",
+      "opacity": "1",
+      "outline": "rgb(255, 255, 255) none 3px",
+      "rect": {
+        "height": 44,
+        "width": 165.34375,
+        "x": 557.328125,
+        "y": 393.296875
+      },
+      "selected": "false"
+    },
+    {
+      "backgrounds": [
+        {
+          "backgroundImage": "none",
+          "className": "glass-segmented__item is-active",
+          "color": "rgba(255, 255, 255, 0.22)",
+          "opacity": "1",
+          "tag": "BUTTON"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "palette-input-method seg glass-segmented",
+          "color": "rgba(255, 255, 255, 0.08)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal__body palette-editor-body",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal palette-editor",
+          "color": "rgb(39, 44, 50)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal-overlay is-active palette-import-modal",
+          "color": "rgba(0, 0, 0, 0.5)",
+          "opacity": "1",
+          "tag": "DIALOG"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "BODY"
+        },
+        {
+          "backgroundImage": "conic-gradient(rgb(39, 46, 53) 25%, rgb(50, 57, 65) 0deg, rgb(50, 57, 65) 50%, rgb(39, 46, 53) 0deg, rgb(39, 46, 53) 75%, rgb(50, 57, 65) 0deg)",
+          "className": "",
+          "color": "rgb(25, 28, 32)",
+          "opacity": "1",
+          "tag": "HTML"
+        }
+      ],
+      "boxShadow": "rgba(0, 0, 0, 0.12) 0px 4px 16px 0px",
+      "color": "rgb(255, 255, 255)",
+      "disabled": false,
+      "focusVisible": false,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "hover": false,
+      "label": "Add colors",
+      "opacity": "1",
+      "outline": "rgb(255, 255, 255) none 3px",
+      "rect": {
+        "height": 44,
+        "width": 165.328125,
+        "x": 726.671875,
+        "y": 393.296875
+      },
+      "selected": "true"
+    },
+    {
+      "backgrounds": [
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal__action palette-save-action",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "BUTTON"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal__footer",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal palette-editor",
+          "color": "rgb(39, 44, 50)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "glass-modal-overlay is-active palette-import-modal",
+          "color": "rgba(0, 0, 0, 0.5)",
+          "opacity": "1",
+          "tag": "DIALOG"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "DIV"
+        },
+        {
+          "backgroundImage": "none",
+          "className": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "opacity": "1",
+          "tag": "BODY"
+        },
+        {
+          "backgroundImage": "conic-gradient(rgb(39, 46, 53) 25%, rgb(50, 57, 65) 0deg, rgb(50, 57, 65) 50%, rgb(39, 46, 53) 0deg, rgb(39, 46, 53) 75%, rgb(50, 57, 65) 0deg)",
+          "className": "",
+          "color": "rgb(25, 28, 32)",
+          "opacity": "1",
+          "tag": "HTML"
+        }
+      ],
+      "boxShadow": "none",
+      "color": "color(srgb 0.980392 0.82549 0.568627)",
+      "disabled": false,
+      "focusVisible": false,
+      "fontSize": "16px",
+      "fontWeight": "650",
+      "hover": false,
+      "label": "Save changes",
+      "opacity": "1",
+      "outline": "color(srgb 0.980392 0.82549 0.568627) none 3px",
+      "rect": {
+        "height": 52,
+        "width": 279.5,
+        "x": 639.5,
+        "y": 509.296875
+      },
+      "selected": null
+    }
+  ],
+  "forcedColors": false,
+  "overflow": false,
+  "theme": "dark",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}

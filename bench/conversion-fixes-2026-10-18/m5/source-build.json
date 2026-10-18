@@ -1,0 +1,88 @@
+{
+  "baselineRevision": "83ff77b163641f529ab8f615d3f633e23c59fce8",
+  "baselineEditorSHA256": "B08EEE1AA7B766BF9784E470161A1F626B084245BA873AEF8FF95300AEDE0DBA",
+  "finalEditorSHA256": "d4b7b98a76bf85ba282825a7b7ac47adb7644b2aeecd3a16e20bba09fc82b1a8",
+  "builds": [
+    {
+      "directory": ".tmp/conversion-fixes-m5-before",
+      "indexAssets": [
+        {
+          "name": "index-BKqp_BEa.js",
+          "sha256": "eaae6e716ea0d2f6dc79b005caec60fa150d5023a4313f8283a6a0f58f8016b0"
+        },
+        {
+          "name": "index-VE9_tUgX.css",
+          "sha256": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c"
+        }
+      ]
+    },
+    {
+      "directory": ".tmp/conversion-fixes-m5-after",
+      "indexAssets": [
+        {
+          "name": "index-B51F7Y34.css",
+          "sha256": "bf26d401e8ba03a8e5f605b83b6e8d4333dafd6d3df9db16b5bf0a0a4c402f81"
+        },
+        {
+          "name": "index-cf9zDd1X.js",
+          "sha256": "9e6d5df3083d9c5578c557ab024570ce23d64ace7bab909628cd4244fb5100e1"
+        }
+      ]
+    },
+    {
+      "directory": ".tmp/conversion-fixes-m5-revised",
+      "indexAssets": [
+        {
+          "name": "index-DX7ysEEG.css",
+          "sha256": "b8920aaad83ce6a162d73a9739af55ca5540c8f09d8aa1e7b60bdba85e03236d"
+        },
+        {
+          "name": "index-IApcWDiO.js",
+          "sha256": "e7f227fd1d2d4bbf730066e8946c3e86c6b640df94be4e1c17c60bfa9d48104a"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "after-dark-desktop.jpg",
+      "sha256": "44009065bbbabd3499835159f0887631429321d1e4997dc4172eff31a897bd5a"
+    },
+    {
+      "name": "after-dark-narrow.jpg",
+      "sha256": "3f2f75fc389372fad302e484c5e226ea3af61c562e57bf726e444342031dc4c2"
+    },
+    {
+      "name": "after-light-desktop.jpg",
+      "sha256": "12e427a47170f526fa9c4f0e5e1b6a339b4091118083d37745083004603f42a4"
+    },
+    {
+      "name": "after-light-narrow.jpg",
+      "sha256": "54bfe9edfeb11286ad7309e53dbe1174945e4bf6488d712479f9fd0ced972826"
+    },
+    {
+      "name": "before-dark-desktop.jpg",
+      "sha256": "99f136938ec9d5842fda4bd96bf2b2e0585654c275ef393cd361231fde8264d3"
+    },
+    {
+      "name": "before-light-desktop.jpg",
+      "sha256": "b6d35bff9842538fb7be82fcff84dcb7feb82405a6bd5656240423281a430541"
+    },
+    {
+      "name": "revised-dark-desktop.jpg",
+      "sha256": "dd6e03ba4a13bb58ec6282f81a0b1313c79ec3d331cfbb26a60960d70c93c92d"
+    },
+    {
+      "name": "revised-dark-narrow.jpg",
+      "sha256": "7288f80ac760d3b051734d7c0a2d3e192147aa85367b25b4c7d55d2479c2ef55"
+    },
+    {
+      "name": "revised-light-desktop.jpg",
+      "sha256": "869884ce90061c7a80e182523fed5610ccd483ef2b48760e68db0560972e7353"
+    },
+    {
+      "name": "revised-light-narrow.jpg",
+      "sha256": "059a424cc0147bd87a56bb2c6252505d22c49df8c527162902e813103a0cb26c"
+    }
+  ]
+}

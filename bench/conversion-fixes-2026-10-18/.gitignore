@@ -1,0 +1,12 @@
+# Generated browser captures, fixtures and exported images stay local.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.zip
+*.log
+
+# Curated screenshots retained with the implementation record.
+!screenshots/*.png
+!screenshots/*.jpg
+!screenshots/*.jpeg

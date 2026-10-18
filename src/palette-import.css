@@ -1,6 +1,6 @@
 /* Native focus/inertness; existing GlassKit anatomy/materials, bounded scrolling. */
 :root .palette-import-modal { padding: 16px; box-sizing: border-box; }
-:root .palette-import-modal .palette-editor { --palette-editor-gap: 12px; width: min(560px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 32px); display: flex; flex-direction: column; box-sizing: border-box; background: var(--surface); }
+:root .palette-import-modal .palette-editor { --palette-editor-gap: 12px; --muted: color-mix(in srgb,var(--fg) 75%,var(--surface)); width: min(560px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 32px); display: flex; flex-direction: column; box-sizing: border-box; background: var(--surface); }
 :root .palette-editor-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-shrink: 0; }
 :root .palette-editor-header .ib { min-width: 44px; width: 44px; height: 44px; box-sizing: border-box; padding: 0; flex-shrink: 0; border-radius: 50%; }
 :root .palette-editor .palette-editor-header .palette-editor-title-input { min-width: 0; flex: 1; height: 44px; min-height: 44px; box-sizing: border-box; padding-block: 8px; line-height: 1.2; font-size: 20px; font-weight: 600; }
@@ -8,8 +8,8 @@
 :root .palette-editor-body > * { flex-shrink: 0; }
 :root :is(.palette-method-panel:not([hidden]),.palette-draft-review) { display: flex; flex-direction: column; gap: var(--palette-editor-gap); }
 :root .palette-editor .glass-modal__footer { flex-shrink: 0; }
-:root .palette-editor .glass-modal__action { min-height: 48px; }
-:root .palette-editor .palette-save-action { color: var(--gl-color-primary, var(--text)); font-weight: 650; }
+:root .palette-editor .glass-modal__action { min-height: 48px; color: var(--fg); }
+:root .palette-editor .palette-save-action { color: var(--gl-color-primary-on-surface, var(--fg)); font-weight: 650; }
 :root .palette-editor :is(button,input,textarea):disabled { opacity: .5; cursor: default; }
 :root .palette-editor .glass-input { box-sizing: border-box; width: 100%; min-height: 44px; font: inherit; }
 :root .palette-editor-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0; }
@@ -17,6 +17,7 @@
 :root .palette-editor .btn { min-height: 44px; box-sizing: border-box; padding: 8px 12px; white-space: normal; }
 :root .palette-input-method { display: flex; flex-shrink: 0; height: auto; min-height: 50px; margin: 0; }
 :root .palette-input-method button { flex: 1 1 0; min-width: 0; min-height: 44px; box-sizing: border-box; font: inherit; white-space: normal; text-overflow: clip; }
+:root .palette-input-method button[aria-pressed="false"] { color: var(--fg); }
 :root .palette-file-button { width: 100%; }
 :root .palette-editor .palette-text-input { min-height: 96px; resize: vertical; margin: 0; }
 :root .palette-file-input { display: none; }

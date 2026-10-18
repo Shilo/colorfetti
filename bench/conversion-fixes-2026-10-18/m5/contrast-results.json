@@ -1,0 +1,4164 @@
+{
+  "date": "2026-10-18",
+  "method": "WCAG sRGB relative luminance, alpha-composed CSS ancestor backgrounds stopped at the opaque palette-editor backing. Text opacity included. Disabled labels measured but exempt. This is a computed-style audit, not screenshot pixel sampling.",
+  "variants": {
+    "before-": "Original baseline build on5206",
+    "after-": "Initial two-role correction on5207",
+    "prerevision-": "Related existing Cancel/hint defect found during challenge on5207",
+    "revised-": "Final four-role correction on5208"
+  },
+  "limitations": [
+    "Forced-colors emulation and pointer-coarse emulation are not exposed by this Codex browser capability set. Existing UA forced-color adjustments and inherited app system-color adapters remain unchanged.",
+    "Viewport checks use a desktop Chromium browser at1280x720 and390x844, not a physical phone.",
+    "Some raw captures include a .16s color/surface transition in progress; final and intermediate enabled values pass."
+  ],
+  "finalControlObservations": 109,
+  "worstEnabledAfter": {
+    "capture": "revised-light-save-focus-computed.json",
+    "theme": "light",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "label": "Save palette",
+    "disabled": false,
+    "selected": null,
+    "hover": false,
+    "focusVisible": true,
+    "background": [
+      232,
+      236,
+      239
+    ],
+    "foreground": [
+      139.19991,
+      79.79995500000001,
+      26.99991
+    ],
+    "ratio": 5.424204836563298,
+    "required": 4.5
+  },
+  "measurements": [
+    {
+      "capture": "after-dark-desktop-method-hover-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": true,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-method-hover-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-method-hover-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-method-hover-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.876574983233755,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-save-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": true,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-save-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-save-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-save-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.876574983233755,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-save-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-save-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-save-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-desktop-save-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": true,
+      "focusVisible": true,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 7.700764625225228,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-edit-save-changes-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-edit-save-changes-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-edit-save-changes-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-edit-save-changes-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save changes",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.876574983233755,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-empty-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-empty-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-empty-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-empty-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": true,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        144.49998,
+        127.24997499999999,
+        97.4999425
+      ],
+      "ratio": 3.629944807442361,
+      "required": null
+    },
+    {
+      "capture": "after-dark-narrow-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-narrow-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-narrow-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "after-dark-narrow-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.876574983233755,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-method-hover-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": true,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-method-hover-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-method-hover-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-method-hover-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.424204836563298,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-save-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": true,
+      "focusVisible": false,
+      "background": [
+        250.216,
+        251.048,
+        251.672
+      ],
+      "foreground": [
+        18,
+        34,
+        46
+      ],
+      "ratio": 15.671898447238902,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-save-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        246.5705,
+        248.03650000000002,
+        249.136
+      ],
+      "foreground": [
+        23,
+        39,
+        50
+      ],
+      "ratio": 14.380659504544258,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-save-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-save-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.424204836563298,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-save-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-save-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-save-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-desktop-save-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": true,
+      "focusVisible": true,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.920616525142889,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-empty-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-empty-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-empty-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-empty-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": true,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        185.599955,
+        157.8999775,
+        132.999955
+      ],
+      "ratio": 2.129498079406471,
+      "required": null
+    },
+    {
+      "capture": "after-light-narrow-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-narrow-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-narrow-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "after-light-narrow-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        239.59,
+        242.26999999999998,
+        244.28
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.7487945282484185,
+      "required": 4.5
+    },
+    {
+      "capture": "before-dark-desktop-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        175.512,
+        177.352,
+        179.56
+      ],
+      "ratio": 5.122877945321724,
+      "required": 4.5
+    },
+    {
+      "capture": "before-dark-desktop-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "before-dark-desktop-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        175.512,
+        177.352,
+        179.56
+      ],
+      "ratio": 5.122877945321724,
+      "required": 4.5
+    },
+    {
+      "capture": "before-dark-desktop-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        245,
+        166,
+        35
+      ],
+      "ratio": 6.9417584595003445,
+      "required": 4.5
+    },
+    {
+      "capture": "before-light-computed.json",
+      "theme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        123.87499999999999,
+        133.575,
+        140.85
+      ],
+      "ratio": 3.429649552933161,
+      "required": 4.5
+    },
+    {
+      "capture": "before-light-computed.json",
+      "theme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "before-light-computed.json",
+      "theme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        123.87499999999999,
+        133.575,
+        140.85
+      ],
+      "ratio": 3.429649552933161,
+      "required": 4.5
+    },
+    {
+      "capture": "before-light-computed.json",
+      "theme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        232,
+        133,
+        45
+      ],
+      "ratio": 2.2591506353551676,
+      "required": 4.5
+    },
+    {
+      "capture": "prerevision-light-related-computed.json",
+      "theme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "label": "Drop a palette image or file (including Aseprite), or paste an image.",
+      "disabled": false,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        118.69999999999999,
+        129.29999999999998,
+        137.25
+      ],
+      "ratio": 3.335833674386838,
+      "required": 4.5
+    },
+    {
+      "capture": "prerevision-light-related-computed.json",
+      "theme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        118.69999999999999,
+        129.29999999999998,
+        137.25
+      ],
+      "ratio": 3.335833674386838,
+      "required": 4.5
+    },
+    {
+      "capture": "prerevision-light-related-computed.json",
+      "theme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        118.69999999999999,
+        129.29999999999998,
+        137.25
+      ],
+      "ratio": 3.335833674386838,
+      "required": 4.5
+    },
+    {
+      "capture": "prerevision-light-related-computed.json",
+      "theme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "label": "Save palette",
+      "disabled": true,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        185.599955,
+        157.8999775,
+        132.999955
+      ],
+      "ratio": 2.129498079406471,
+      "required": null
+    },
+    {
+      "capture": "revised-dark-cancel-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": true,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        200.99992500000002,
+        202.249935,
+        203.75009999999997
+      ],
+      "ratio": 8.59221402233197,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 14.069430934721076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.876574983233755,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        200.99992500000002,
+        202.249935,
+        203.75009999999997
+      ],
+      "ratio": 8.59221402233197,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": true,
+      "focusVisible": true,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-cancel-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.876574983233755,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-edit-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-edit-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-edit-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-edit-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 14.069430934721076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-edit-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save changes",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.876574983233755,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-empty-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-empty-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-empty-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-empty-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Drop a palette image or file (including Aseprite), or paste an image.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        200.99992500000002,
+        202.249935,
+        203.75009999999997
+      ],
+      "ratio": 8.59221402233197,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-empty-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 14.069430934721076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-empty-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": true,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        144.49998,
+        127.24997499999999,
+        97.4999425
+      ],
+      "ratio": 3.629944807442361,
+      "required": null
+    },
+    {
+      "capture": "revised-dark-method-hover-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-method-hover-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-method-hover-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-method-hover-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        200.99992500000002,
+        202.249935,
+        203.75009999999997
+      ],
+      "ratio": 8.59221402233197,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-method-hover-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 14.069430934721076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-method-hover-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.876574983233755,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-narrow-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-narrow-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-narrow-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-narrow-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        200.99992500000002,
+        202.249935,
+        203.75009999999997
+      ],
+      "ratio": 8.59221402233197,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-narrow-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 14.069430934721076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-narrow-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        43.32,
+        48.22,
+        54.1
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.306941406195197,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-pages-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "1 / 2",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 14.069430934721076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-pages-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-pages-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-pages-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-pages-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        200.99992500000002,
+        202.249935,
+        203.75009999999997
+      ],
+      "ratio": 8.59221402233197,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-pages-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 14.069430934721076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-pages-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.876574983233755,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        200.99992500000002,
+        202.249935,
+        203.75009999999997
+      ],
+      "ratio": 8.59221402233197,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": true,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-focus-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 9.876574983233755,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        99.9984,
+        103.58640000000001,
+        107.89200000000001
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.642973904375883,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 10.969934033111093,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        200.99992500000002,
+        202.249935,
+        203.75009999999997
+      ],
+      "ratio": 8.59221402233197,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        39,
+        44,
+        50
+      ],
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 14.069430934721076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-dark-save-hover-computed.json",
+      "theme": "dark",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": true,
+      "focusVisible": true,
+      "background": [
+        56.28,
+        60.88000000000001,
+        66.4
+      ],
+      "foreground": [
+        249.99996000000002,
+        210.49994999999998,
+        144.999885
+      ],
+      "ratio": 7.700764625225228,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": true,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        77.50011,
+        90.50001,
+        100.24993500000001
+      ],
+      "ratio": 5.92327535286778,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 12.374707079217076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.424204836563298,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        77.50011,
+        90.50001,
+        100.24993500000001
+      ],
+      "ratio": 5.92327535286778,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": true,
+      "focusVisible": true,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-cancel-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.424204836563298,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-desktop-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-desktop-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-desktop-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-desktop-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        77.50011,
+        90.50001,
+        100.24993500000001
+      ],
+      "ratio": 5.92327535286778,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-desktop-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 12.374707079217076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-desktop-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.424204836563298,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-empty-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-empty-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-empty-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-empty-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Drop a palette image or file (including Aseprite), or paste an image.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        77.50011,
+        90.50001,
+        100.24993500000001
+      ],
+      "ratio": 5.92327535286778,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-empty-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 12.374707079217076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-empty-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": true,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        185.599955,
+        157.8999775,
+        132.999955
+      ],
+      "ratio": 2.129498079406471,
+      "required": null
+    },
+    {
+      "capture": "revised-light-method-hover-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-method-hover-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-method-hover-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-method-hover-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        77.50011,
+        90.50001,
+        100.24993500000001
+      ],
+      "ratio": 5.92327535286778,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-method-hover-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 12.374707079217076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-method-hover-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.424204836563298,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-narrow-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-narrow-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-narrow-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-narrow-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        77.50011,
+        90.50001,
+        100.24993500000001
+      ],
+      "ratio": 5.92327535286778,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-narrow-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 12.374707079217076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-narrow-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        233.72500000000002,
+        237.425,
+        240.20000000000002
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.496942801235366,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-pages-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "1 / 2",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 12.374707079217076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-pages-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-pages-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-pages-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-pages-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        77.50011,
+        90.50001,
+        100.24993500000001
+      ],
+      "ratio": 5.92327535286778,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-pages-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 12.374707079217076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-pages-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.424204836563298,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        77.50011,
+        90.50001,
+        100.24993500000001
+      ],
+      "ratio": 5.92327535286778,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": true,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-focus-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": true,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.424204836563298,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Image or file",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste colors",
+      "disabled": false,
+      "selected": "true",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        253.275,
+        253.575,
+        253.8
+      ],
+      "foreground": [
+        15,
+        31,
+        42
+      ],
+      "ratio": 16.594082190785155,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Add colors",
+      "disabled": false,
+      "selected": "false",
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 13.507213948327877,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Paste HEX or a Lospec link; in Aseprite, select swatches → Edit → Copy.",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        77.50011,
+        90.50001,
+        100.24993500000001
+      ],
+      "ratio": 5.92327535286778,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Cancel",
+      "disabled": false,
+      "selected": null,
+      "hover": false,
+      "focusVisible": false,
+      "background": [
+        232,
+        236,
+        239
+      ],
+      "foreground": [
+        26,
+        42,
+        54
+      ],
+      "ratio": 12.374707079217076,
+      "required": 4.5
+    },
+    {
+      "capture": "revised-light-save-hover-computed.json",
+      "theme": "light",
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "label": "Save palette",
+      "disabled": false,
+      "selected": null,
+      "hover": true,
+      "focusVisible": true,
+      "background": [
+        243.5,
+        245.5,
+        247
+      ],
+      "foreground": [
+        139.19991,
+        79.79995500000001,
+        26.99991
+      ],
+      "ratio": 5.920616525142889,
+      "required": 4.5
+    }
+  ]
+}

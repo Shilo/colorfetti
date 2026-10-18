@@ -60,6 +60,12 @@ encoding enters import/export; palette values stay intact. The 1-bit rail also u
 pointer-inert 1×1 overlays. None hides its overlay; transparency glyphs remain CSS.
 Native inputs retain their hit targets beneath pointer-inert decorative canvases.
 
+Palette editor enabled footer actions and import-method labels keep at least
+4.5:1 text contrast against their actual theme surfaces. Save uses GlassKit's
+primary-on-surface ink; Cancel and unselected methods use foreground. Editor-only
+secondary text blends 75% foreground with its opaque surface. Disabled opacity,
+selected methods, palette RGB canvases and the global material system stay intact.
+
 Optional full-palette ordered dithering offers Off/2×2/4×4/8×8 and Dither strength 0–100%
 (remembered 50%); fresh and Reset default to Off. The settings heading and Help
 step are Recolor. Source-coordinate Bayer patterns preserve alpha and exact active
