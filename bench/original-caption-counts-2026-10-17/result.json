@@ -1,0 +1,42 @@
+{
+  "runtime": "v25.0.0",
+  "scope": "Node helper only; integrated device/browser timing belongs to parent validation",
+  "results": [
+    {
+      "name": "2048-square-8-colors",
+      "count": 8,
+      "frames": 1,
+      "coldMs": 33.9369,
+      "warm1000PeekAndCollectMs": 1.061000000000007,
+      "maxTimerGapMs": 17.4797,
+      "ticks": 4
+    },
+    {
+      "name": "2048-square-high-entropy",
+      "count": 3947580,
+      "frames": 1,
+      "coldMs": 22.602300000000014,
+      "warm1000PeekAndCollectMs": 3.8169000000000324,
+      "maxTimerGapMs": 8.4272,
+      "ticks": 4
+    },
+    {
+      "name": "128-square-32-frames",
+      "count": 32,
+      "frames": 32,
+      "coldMs": 5.7742999999999824,
+      "warm1000PeekAndCollectMs": 2.1398999999999546,
+      "maxTimerGapMs": 1.5585999999999558,
+      "ticks": 6
+    },
+    {
+      "name": "256-square-48-frames",
+      "count": 64,
+      "frames": 48,
+      "coldMs": 20.04690000000005,
+      "warm1000PeekAndCollectMs": 2.5352000000000317,
+      "maxTimerGapMs": 1.4547000000000025,
+      "ticks": 20
+    }
+  ]
+}

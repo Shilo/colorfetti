@@ -165,8 +165,11 @@ Count is noninteractive caption metadata. Right-aligned mouse captions show
 Resolution stays anchored as count text changes. The example uses left-aligned metadata.
 Separators retain explicit text spaces on both sides of the middle dot, including
 before Retry needed; template whitespace trimming must not join metadata fields.
-It describes full-resolution converted output, including while Original
-is shown; animations report the RGB union of all frames, excluding fully empty
+It describes full-resolution converted output, switching to the cached source RGB
+count while Original is shown (Space, Compare or tile hold). Source counts exclude
+alpha-zero pixels, deduplicate opacity variants and are independent of the target
+palette. A pending source count never borrows converted metadata. Animations
+report the RGB union of all frames, excluding fully empty
 pixels. Wall tiles reuse post-Cleanup used flags already produced by full-size
 previews, translating actual subset indices back to RGB. Sampled/draft previews
 never publish estimated counts. An incomplete animation union stays unreported.

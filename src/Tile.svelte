@@ -4,6 +4,7 @@
   import { shown } from './lib/layout.js';
   import Pixels from './Pixels.svelte';
   import CaptionMetadata from './CaptionMetadata.svelte';
+  import { peekOriginalUsage, collectOriginalUsage } from './lib/original-color-usage.js';
   import PixelIcon from './PixelIcon.svelte';
   import { tooltip } from './lib/tooltip.js';
   import { imageGesture, IMAGE_HOLD_MS } from './lib/image-gesture.js';
@@ -28,6 +29,15 @@
   $effect(() => () => onpalettestatus?.({ type: 'remove', owner: failureOwner }));
   let held = $state(false);
   const originalVisible = $derived(oncompare ? flipped : flipped !== held);
+  let originalUsage = $state(null);
+  $effect(() => {
+    const current = item, controller = new AbortController();
+    originalUsage = peekOriginalUsage(current);
+    collectOriginalUsage(current, { signal: controller.signal }).then(result => {
+      if (!controller.signal.aborted) originalUsage = result;
+    }).catch(() => { /* No estimated count is shown if source inspection fails. */ });
+    return () => controller.abort();
+  });
   let holdTimer;
   let clickReady = false;
   const gesture = imageGesture();
@@ -310,7 +320,13 @@
     const timer = setTimeout(() => (at = (at + 1) % frames.length), frames[at].delay);
     return () => clearTimeout(timer);
   });
-  const usageDescription = $derived(colorUsagePending
+  const displayedUsageLabel = $derived(originalVisible
+    ? originalUsage ? `${originalUsage.count} ${originalUsage.count === 1 ? 'color' : 'colors'}` : ''
+    : colorUsageLabel);
+  const displayedUsagePending = $derived(!originalVisible && colorUsagePending);
+  const usageDescription = $derived(originalVisible
+    ? displayedUsageLabel + (item.frames ? '. Original colors across all animation frames.' : '. Original full-resolution colors.')
+    : colorUsagePending
     ? `${colorUsageLabel}. Previous output; updating color count.`
     : colorUsageLabel + (item.frames ? '. Converted output across all animation frames.' : '. Converted full-resolution output.'));
 </script>
@@ -370,13 +386,13 @@
         <button type="button" class="caption-preview" onclick={e => activate(e.currentTarget)} aria-label="Preview {item.name}" aria-haspopup="dialog">
           <span class="caption-details">
             <span class="name" use:tooltip={item.name}>{item.name}</span>
-            <CaptionMetadata width={item.img.w} height={item.img.h} label={colorUsageLabel} pending={colorUsagePending} description={usageDescription} failure={failureDescription} />
+            <CaptionMetadata width={item.img.w} height={item.img.h} label={displayedUsageLabel} pending={displayedUsagePending} description={usageDescription} failure={failureDescription} />
           </span>
         </button>
       {:else}
         <span class="caption-details">
           <span class="name" use:tooltip={item.name}>{item.name}</span>
-          <CaptionMetadata width={item.img.w} height={item.img.h} label={colorUsageLabel} pending={colorUsagePending} description={usageDescription} failure={failureDescription} />
+          <CaptionMetadata width={item.img.w} height={item.img.h} label={displayedUsageLabel} pending={displayedUsagePending} description={usageDescription} failure={failureDescription} />
         </span>
       {/if}
       {#if onremove}
