@@ -1,0 +1,352 @@
+
+> colorfetti@0.0.0 test
+> vitest run
+
+2:54:51 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti - using default configuration.
+
+ RUN  v4.1.11 C:/Programming_Files/Shilocity/colorfetti
+
+ ❯ src/lib/recolor.test.js (0 test)
+ ❯ src/lib/palette-import.test.js (0 test)
+ ❯ src/lib/image-reanalysis.test.js (0 test)
+ ❯ src/lib/palette-generated.test.js (0 test)
+ ❯ src/lib/image-import-client.test.js (0 test)
+ ❯ build/brand-assets-generator.test.js (0 test)
+ ❯ src/lib/palette-dither.test.js (0 test)
+ ❯ src/lib/gif.test.js (0 test)
+ ❯ src/lib/palette-generated-client.test.js (0 test)
+ ❯ src/lib/palette-cleanup-client.test.js (0 test)
+ ❯ src/lib/palette-export.test.js (0 test)
+ ❯ src/lib/icon.test.js (0 test)
+ ❯ src/lib/palette-cleanup.test.js (0 test)
+ ❯ src/lib/palette-limit-worker.test.js (0 test)
+ ❯ src/lib/quantize.test.js (0 test)
+ ❯ build/brand-assets.test.js (0 test)
+ ❯ src/lib/save.test.js (0 test)
+ ❯ src/lib/image-import-core.test.js (0 test)
+ ❯ src/lib/onebit-usage.test.js (0 test)
+ ❯ src/lib/palette-limit-client.test.js (0 test)
+ ❯ src/lib/palette-alpha.test.js (0 test)
+ ❯ src/lib/palette-limit.test.js (0 test)
+ ❯ src/lib/palette-drop.test.js (0 test)
+ ❯ src/lib/converted-animation.test.js (0 test)
+ ❯ src/lib/source-color-summary.test.js (0 test)
+ ❯ src/lib/palette-generated-worker.test.js (0 test)
+ ❯ src/lib/workspace-controls.test.js (0 test)
+ ❯ src/lib/palette-lospec.test.js (0 test)
+ ❯ src/lib/image-import-worker.test.js (0 test)
+ ❯ src/lib/palette-usage.test.js (0 test)
+ ❯ src/lib/viewer-navigation.test.js (0 test)
+ ❯ src/lib/palette-dither-state.test.js (0 test)
+ ❯ src/lib/palette-state.test.js (0 test)
+ ❯ src/lib/palette-ase.test.js (0 test)
+ ❯ src/lib/palette-cleanup-worker.test.js (0 test)
+ ❯ src/lib/export-compression-cancel.test.js (0 test)
+ ❯ src/lib/original-color-usage.test.js (0 test)
+ ❯ src/lib/image-drop.test.js (0 test)
+ ❯ src/lib/image-decode.test.js (0 test)
+ ❯ src/lib/palette-library.test.js (0 test)
+ ❯ src/lib/palette-preview.test.js (0 test)
+ ❯ src/lib/style-preview.test.js (0 test)
+ ❯ src/lib/tooltip.test.js (0 test)
+ ❯ src/lib/export-drag.test.js (0 test)
+ ❯ build/hover-capability.test.js (0 test)
+ ❯ src/lib/palette-decode.test.js (0 test)
+ ❯ src/lib/palette-animation-cache.test.js (0 test)
+ ❯ src/lib/gesture.test.js (0 test)
+ ❯ src/lib/settings.test.js (0 test)
+ ❯ src/lib/save-batch.test.js (0 test)
+ ❯ src/lib/favicon-startup.test.js (0 test)
+ ❯ src/lib/theme-startup.test.js (0 test)
+ ❯ src/lib/animation-visibility.test.js (0 test)
+ ❯ src/lib/layout.test.js (0 test)
+ ❯ src/lib/palette-failure.test.js (0 test)
+ ❯ src/lib/dialog-dismiss.test.js (0 test)
+ ❯ src/lib/presets.test.js (0 test)
+ ❯ src/lib/viewer-layout.test.js (0 test)
+ ❯ src/lib/canvas-grid.test.js (0 test)
+ ❯ src/lib/tooltipCoverage.test.js (0 test)
+ ❯ src/lib/internal-drag.test.js (0 test)
+ ❯ src/lib/palette-usage-progress.test.js (0 test)
+ ❯ src/lib/workspace.test.js (0 test)
+ ❯ src/lib/image-gesture.test.js (0 test)
+ ❯ src/lib/storage-migration.test.js (0 test)
+ ❯ src/lib/comparison-hold.test.js (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 66 ⎯⎯⎯⎯⎯⎯
+
+ FAIL  build/brand-assets-generator.test.js [ build/brand-assets-generator.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292530-b26z3ev6rni' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\fce9d05002f4acd6c6279194780f003a1b47f395'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/66]⎯
+
+ FAIL  build/brand-assets.test.js [ build/brand-assets.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292718-dydxw3ffqbv' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\b4df38ff0f8b75469a85518124414457d1012ef1'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/66]⎯
+
+ FAIL  build/hover-capability.test.js [ build/hover-capability.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293336-icq5f9876of' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\0922111b47a245d5dd7f2d06f372d26dd313d1c9'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/66]⎯
+
+ FAIL  src/lib/animation-visibility.test.js [ src/lib/animation-visibility.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293454-n0ro9y4pxf' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\616ca23342665572b6d4f5a9d97676de550c2fce'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/66]⎯
+
+ FAIL  src/lib/canvas-grid.test.js [ src/lib/canvas-grid.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293537-o78lheh0k2r' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\8aa3b93600103fae27e8d835e24c53b84b99b1fe'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/66]⎯
+
+ FAIL  src/lib/comparison-hold.test.js [ src/lib/comparison-hold.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293619-6tyvkhlqfjr' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\33a17fed192bf5e2e67835a754ab2366b01e9633'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/66]⎯
+
+ FAIL  src/lib/converted-animation.test.js [ src/lib/converted-animation.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292976-noee5jkwwbq' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\73b052a0efe438f8d200c1c3ac2828ffefa1884e'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/66]⎯
+
+ FAIL  src/lib/dialog-dismiss.test.js [ src/lib/dialog-dismiss.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293497-e2fiemkh7bg' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\f0edf5fb752dedb63f6957bef9e928b56d5c0407'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/66]⎯
+
+ FAIL  src/lib/export-compression-cancel.test.js [ src/lib/export-compression-cancel.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293199-k3jc1085a2n' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\f75068d71090ef859878b89dc96f70f7226d0d26'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/66]⎯
+
+ FAIL  src/lib/export-drag.test.js [ src/lib/export-drag.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293316-eqam03n4soa' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\87e346e5022e00cbdb879aa79157d4970a30cb9e'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/66]⎯
+
+ FAIL  src/lib/favicon-startup.test.js [ src/lib/favicon-startup.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293451-d5q87svvr26' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\08082e34256b37fe1e28cce1341ef55676beae70'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/66]⎯
+
+ FAIL  src/lib/gesture.test.js [ src/lib/gesture.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293430-dfnzyogas44' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\e4132048fc3b553ccf0a9c35467face12b3c1171'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/66]⎯
+
+ FAIL  src/lib/gif.test.js [ src/lib/gif.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292592-mq58jndzr4l' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\9688f2d6e7197c93c737e2c6ae0ec2b2a12047e8'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/66]⎯
+
+ FAIL  src/lib/icon.test.js [ src/lib/icon.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292640-p05l6851yg' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\61b080a4b880871a377d63459628e992f05166b3'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/66]⎯
+
+ FAIL  src/lib/image-decode.test.js [ src/lib/image-decode.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293220-krr0abl052d' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\229fb0ce3110f4e5adc1a57197ba0d0c208bd550'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/66]⎯
+
+ FAIL  src/lib/image-drop.test.js [ src/lib/image-drop.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293221-z4f980omk1h' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\a29fdfeb817cce79f2aeca63a76f16fe174e4f79'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/66]⎯
+
+ FAIL  src/lib/image-gesture.test.js [ src/lib/image-gesture.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293606-v5q20l3cim' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\03e3c4bf5213a872699effe54962653698463148'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/66]⎯
+
+ FAIL  src/lib/image-import-client.test.js [ src/lib/image-import-client.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292507-3rfjyd7k6dc' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\372432a2a733560b7275ba05540e106d47d4d3c1'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/66]⎯
+
+ FAIL  src/lib/image-import-core.test.js [ src/lib/image-import-core.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292763-bsrd9zc8zbd' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\2fcc6800e03d57cdceba1df1e5d7fc277555ddd1'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[19/66]⎯
+
+ FAIL  src/lib/image-import-worker.test.js [ src/lib/image-import-worker.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293014-5s8hs59aams' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\3b2f1b09204d192cf5fce6c32ba7c28ff1910f28'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[20/66]⎯
+
+ FAIL  src/lib/image-reanalysis.test.js [ src/lib/image-reanalysis.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292484-jmon1tgn889' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\21271b7bc53827f6239be83c8d71f91a4e71499e'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[21/66]⎯
+
+ FAIL  src/lib/internal-drag.test.js [ src/lib/internal-drag.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293555-xj9q5386iu' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\b29cd9d5dc026a520f890230bcae6f6500ef18ee'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22/66]⎯
+
+ FAIL  src/lib/layout.test.js [ src/lib/layout.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293492-wu34lad0px' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\b9884cb5bb83d40ed0fff3d796153ad1991eb47b'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[23/66]⎯
+
+ FAIL  src/lib/onebit-usage.test.js [ src/lib/onebit-usage.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292767-bvlu761i0q' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\3643d39c0bcebddc118ef19889e1315469d92c0e'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[24/66]⎯
+
+ FAIL  src/lib/original-color-usage.test.js [ src/lib/original-color-usage.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293165-8zip7s83lna' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\a5d5b63008468f017e8397fd45eff5d7c64e3cf1'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[25/66]⎯
+
+ FAIL  src/lib/palette-alpha.test.js [ src/lib/palette-alpha.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292765-ra4rh7c09c' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\a4419a5b6e460521d0aedf1e630cc6c6e0200fab'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[26/66]⎯
+
+ FAIL  src/lib/palette-animation-cache.test.js [ src/lib/palette-animation-cache.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293406-0izgu7b8nryh' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\a3b5dea1d5bb4f8da013071791f95a2845dc98ed'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[27/66]⎯
+
+ FAIL  src/lib/palette-ase.test.js [ src/lib/palette-ase.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293130-15flzo83k5l' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\0f7a34d896a5d6325fb92fa079719369b53f3c63'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[28/66]⎯
+
+ FAIL  src/lib/palette-cleanup-client.test.js [ src/lib/palette-cleanup-client.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292638-wl4krr70am' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\e3b8ef259e6b03260ee1e38142aba43a97edb441'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[29/66]⎯
+
+ FAIL  src/lib/palette-cleanup-worker.test.js [ src/lib/palette-cleanup-worker.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293163-mig9wedwqfk' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\61ebbf1671a6a6e44074c5e6c97fd60575b9c978'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[30/66]⎯
+
+ FAIL  src/lib/palette-cleanup.test.js [ src/lib/palette-cleanup.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292683-xabw2pbkdad' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\8ef1586b77c4e518c51d09690cb9395ce7084caf'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[31/66]⎯
+
+ FAIL  src/lib/palette-decode.test.js [ src/lib/palette-decode.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293318-xwfl14dx4pf' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\6e51ac9bb7defb3d35cf21cdd14e34d9ac05b276'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[32/66]⎯
+
+ FAIL  src/lib/palette-dither-state.test.js [ src/lib/palette-dither-state.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293061-p9qldjhv1bt' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\8afc1e683f5ca70e4b9b854e5033183d869ed54e'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[33/66]⎯
+
+ FAIL  src/lib/palette-dither.test.js [ src/lib/palette-dither.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292575-v4uqw3361h' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\47eb210db2f4bd4e3973e297c75c3438e8af9126'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[34/66]⎯
+
+ FAIL  src/lib/palette-drop.test.js [ src/lib/palette-drop.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292812-7oa9esepvxk' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\7da44fcf1fa7627bd55e04b2ac58fc59dd83318f'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[35/66]⎯
+
+ FAIL  src/lib/palette-export.test.js [ src/lib/palette-export.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292643-1tu3b03m3le' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\af2e84801953b43ab892fa2b03a55d648fe34c1d'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[36/66]⎯
+
+ FAIL  src/lib/palette-failure.test.js [ src/lib/palette-failure.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293493-7zw33vykvnw' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\ef641a4f7c89b2f36a7da788147e0db632b99486'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[37/66]⎯
+
+ FAIL  src/lib/palette-generated-client.test.js [ src/lib/palette-generated-client.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292635-nai417kuknh' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\a3fe52a2461f90be5f38496a6d4e966f4e8a48da'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[38/66]⎯
+
+ FAIL  src/lib/palette-generated-worker.test.js [ src/lib/palette-generated-worker.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292986-i0jj23y51d' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\64b8b099e04cf1614922264db001da3e61bb0647'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39/66]⎯
+
+ FAIL  src/lib/palette-generated.test.js [ src/lib/palette-generated.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292502-dzvod4bljd9' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\0b705e92d419a5b4c0527a3641e45639a613ea3b'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[40/66]⎯
+
+ FAIL  src/lib/palette-import.test.js [ src/lib/palette-import.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292474-stdz9j3kn3g' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\6ed690916bc80cbbded943c9e57ba93fd3276057'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[41/66]⎯
+
+ FAIL  src/lib/palette-library.test.js [ src/lib/palette-library.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293290-j4rqklr3mkh' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\56c2b36ed00ddf963ae907af4504b427aacadbbc'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[42/66]⎯
+
+ FAIL  src/lib/palette-limit-client.test.js [ src/lib/palette-limit-client.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292771-yx4wvm2mpk9' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\6c7facba7aa36122061f98f1b69e06a0d757e13e'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[43/66]⎯
+
+ FAIL  src/lib/palette-limit-worker.test.js [ src/lib/palette-limit-worker.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292676-wcl26ejyxrk' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\edf993b08930d477b3098d125cd0b5771e180d90'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[44/66]⎯
+
+ FAIL  src/lib/palette-limit.test.js [ src/lib/palette-limit.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292775-13sk3nbx6g8a' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\a572fd9aebd8b45a4e04916ec50a7506778d74f8'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[45/66]⎯
+
+ FAIL  src/lib/palette-lospec.test.js [ src/lib/palette-lospec.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293016-fs93n2wfqhc' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\60df445908321eaf70cee4a32a62e8a07ef5852c'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[46/66]⎯
+
+ FAIL  src/lib/palette-preview.test.js [ src/lib/palette-preview.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293294-rm74z5yfokj' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\bab6c25d037f77a9ae62883a48a20e8d78471b6d'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[47/66]⎯
+
+ FAIL  src/lib/palette-state.test.js [ src/lib/palette-state.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293077-lo67adhryfr' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\86e25bc64134bff226b4f24b626f4a29da77163c'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[48/66]⎯
+
+ FAIL  src/lib/palette-usage-progress.test.js [ src/lib/palette-usage-progress.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293573-32eior80x0b' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\8158f408390b27b15e42159d8606c828ffbfb536'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[49/66]⎯
+
+ FAIL  src/lib/palette-usage.test.js [ src/lib/palette-usage.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293039-13z2wm6jls7a' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\a4e7eef8adf49d2a7f27050c3a587a23303eea04'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[50/66]⎯
+
+ FAIL  src/lib/presets.test.js [ src/lib/presets.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293521-1og3fb7g1t5' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\a5b18eed96faad17a5e5395a650a47127c96837e'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[51/66]⎯
+
+ FAIL  src/lib/quantize.test.js [ src/lib/quantize.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292678-8zmat5uqql' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\5c8b1863f01b382decfba46d70946362df6fc876'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[52/66]⎯
+
+ FAIL  src/lib/recolor.test.js [ src/lib/recolor.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292431-48rebtb1rt' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\67543d4e0cdb370a5ce4ce9e4125413872a65cb9'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[53/66]⎯
+
+ FAIL  src/lib/save-batch.test.js [ src/lib/save-batch.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293442-ldo6en1qpa' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\668c2bbfcb1bee2cf1608db37b656b406b7b3b8e'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[54/66]⎯
+
+ FAIL  src/lib/save.test.js [ src/lib/save.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292725-s3zmidmh1oi' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\3083af60cda921b0d64ba37cfcc34581e09f410c'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[55/66]⎯
+
+ FAIL  src/lib/settings.test.js [ src/lib/settings.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293434-04vh73x6qewf' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\e97bf2ea93d385c96d1e4c72e991393f995d8915'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[56/66]⎯
+
+ FAIL  src/lib/source-color-summary.test.js [ src/lib/source-color-summary.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317292976-hi9p55az8qp' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\14322b31445345504b5e41fd8c768183b1f5e6cf'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[57/66]⎯
+
+ FAIL  src/lib/storage-migration.test.js [ src/lib/storage-migration.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293617-s8n3o0pmg8' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\90a119d7d8593b3bb1531803aadd167874c56e1c'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[58/66]⎯
+
+ FAIL  src/lib/style-preview.test.js [ src/lib/style-preview.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293291-wu2oe2p84jo' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\f0a57cd9ab508ae21e8aeaf29b2022e24778cd9b'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[59/66]⎯
+
+ FAIL  src/lib/theme-startup.test.js [ src/lib/theme-startup.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293452-sjurnlunhc' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\341ec8dc96b018b94197c7721f7b043061996c02'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[60/66]⎯
+
+ FAIL  src/lib/tooltip.test.js [ src/lib/tooltip.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293313-x37qdy4cp2h' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\45f9515caaf094bc29aaec6a7c227fd774bb3eda'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[61/66]⎯
+
+ FAIL  src/lib/tooltipCoverage.test.js [ src/lib/tooltipCoverage.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293551-g0vw6dr38ie' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\6e946fec86ab5a5e203c5127482a8d30363f8445'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[62/66]⎯
+
+ FAIL  src/lib/viewer-layout.test.js [ src/lib/viewer-layout.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293537-hz7zob8fb2o' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\77c5d05dd2c122de1b425a24b48fb972813770b9'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[63/66]⎯
+
+ FAIL  src/lib/viewer-navigation.test.js [ src/lib/viewer-navigation.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293060-ck342az9vae' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\868f12b2d61debcaf396baa4a991369367f3b8e6'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[64/66]⎯
+
+ FAIL  src/lib/workspace-controls.test.js [ src/lib/workspace-controls.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293013-c0wy3pb2eq8' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\cd93060627c494ea5961957372d55380773e384f'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[65/66]⎯
+
+ FAIL  src/lib/workspace.test.js [ src/lib/workspace.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\.tmp-1792317293593-0sa8cbq4sf6' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{497fc1f2-2618-4919-98f3-98dfaa2c7dcc}\AC\Temp\xJCAlkStFTaqTtkqpia1N\ssr\b84fa69b283bf4e11a522520d34ee28986bb18c1'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[66/66]⎯
+
+
+ Test Files  66 failed (66)
+      Tests  no tests
+   Start at  02:54:52
+   Duration  1.57s (transform 0ms, setup 0ms, import 0ms, tests 0ms, environment 5ms)
+
+npm notice
+npm notice New minor version of npm available! 11.16.0 -> 11.21.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.1
+npm notice To update run: npm install -g npm@11.21.1
+npm notice

@@ -7,7 +7,7 @@ export default defineConfig({
   base: './', // relative asset URLs, so the build works under the existing GitHub Pages project path
   plugins: [svelte()],
   css: { postcss: { plugins: [hoverCapability()] } },
-  // Archived QA checkouts are generated scratch files, never additional tests.
+  // Archived QA checkouts and nested agent worktrees are not additional tests.
   // Keep default discovery everywhere else, including future test directories.
-  test: { exclude: [...configDefaults.exclude, '.tmp/**'] },
+  test: { exclude: [...configDefaults.exclude, '.tmp/**', '**/.claude/worktrees/**'] },
 });

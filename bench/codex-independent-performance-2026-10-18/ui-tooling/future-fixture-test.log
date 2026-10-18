@@ -1,0 +1,18 @@
+2:54:49 AM [vite-plugin-svelte] no Svelte config found at C:/Programming_Files/Shilocity/colorfetti - using default configuration.
+
+ RUN  v4.1.11 C:/Programming_Files/Shilocity/colorfetti
+
+ ❯ tests/codex-discovery-fixture/future.test.js (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/codex-discovery-fixture/future.test.js [ tests/codex-discovery-fixture/future.test.js ]
+Error: EPERM: operation not permitted, rename 'C:\Users\shilo\AppData\Local\Packages\sandbox.{c790b2ce-10fb-46db-b06d-b663f80d0cf7}\AC\Temp\9TvnPW6KxZkXaR59o5j4D\ssr\.tmp-1792317289457-fy4b3wx8n17' -> 'C:\Users\shilo\AppData\Local\Packages\sandbox.{c790b2ce-10fb-46db-b06d-b663f80d0cf7}\AC\Temp\9TvnPW6KxZkXaR59o5j4D\ssr\d8eb54566bcde6ec57a11c7613328d450fad9a32'
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  02:54:49
+   Duration  169ms (transform 0ms, setup 0ms, import 0ms, tests 0ms, environment 0ms)
+
