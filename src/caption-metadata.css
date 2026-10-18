@@ -1,0 +1,15 @@
+/* Resolution stays against the caption's aligned edge as counts change.
+   Reorder only these metadata fragments; no measuring, extra scans or scripts. */
+:root .caption-metadata {
+  display: inline-flex; align-items: baseline; flex-wrap: nowrap; min-width: 0;
+}
+:root .caption-metadata .caption-resolution { order: 2; flex: none; }
+:root .caption-metadata .caption-separator { order: 1; flex: none; white-space: pre; }
+:root .caption-metadata .caption-color-count { order: 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+:root .caption-metadata .caption-failure { order: 3; flex: none; }
+:root .caption-metadata-left .caption-resolution { order: 0; }
+:root .caption-metadata-left .caption-color-count { order: 2; }
+@media (hover: none) {
+  :root .caption-metadata .caption-resolution { order: 0; }
+  :root .caption-metadata .caption-color-count { order: 2; }
+}

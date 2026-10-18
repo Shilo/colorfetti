@@ -3,6 +3,7 @@
   import { mask, colorize, shrink, spritesOf, iconOf } from './lib/recolor.js';
   import { shown } from './lib/layout.js';
   import Pixels from './Pixels.svelte';
+  import CaptionMetadata from './CaptionMetadata.svelte';
   import PixelIcon from './PixelIcon.svelte';
   import { tooltip } from './lib/tooltip.js';
   import { imageGesture, IMAGE_HOLD_MS } from './lib/image-gesture.js';
@@ -369,13 +370,13 @@
         <button type="button" class="caption-preview" onclick={e => activate(e.currentTarget)} aria-label="Preview {item.name}" aria-haspopup="dialog">
           <span class="caption-details">
             <span class="name" use:tooltip={item.name}>{item.name}</span>
-            <span class="dim">{item.img.w}<span class="by">×</span>{item.img.h}{#if colorUsageLabel}{' · '}<span aria-busy={colorUsagePending} use:tooltip={usageDescription}>{colorUsageLabel}</span>{/if}{#if failureDescription}<span class="palette-failure-mark" use:tooltip={failureDescription}>{' · Retry needed'}</span>{/if}</span>
+            <CaptionMetadata width={item.img.w} height={item.img.h} label={colorUsageLabel} pending={colorUsagePending} description={usageDescription} failure={failureDescription} />
           </span>
         </button>
       {:else}
         <span class="caption-details">
           <span class="name" use:tooltip={item.name}>{item.name}</span>
-          <span class="dim">{item.img.w}<span class="by">×</span>{item.img.h}{#if colorUsageLabel}{' · '}<span aria-busy={colorUsagePending} use:tooltip={usageDescription}>{colorUsageLabel}</span>{/if}{#if failureDescription}<span class="palette-failure-mark" use:tooltip={failureDescription}>{' · Retry needed'}</span>{/if}</span>
+          <CaptionMetadata width={item.img.w} height={item.img.h} label={colorUsageLabel} pending={colorUsagePending} description={usageDescription} failure={failureDescription} />
         </span>
       {/if}
       {#if onremove}

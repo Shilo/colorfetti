@@ -160,7 +160,9 @@ metadata. Creator attribution remains stored, as does the validated source URL.
 
 ## Output colors and reuse — October 16, 2026
 
-Count is noninteractive caption metadata, following dimensions: 24×24 · 8 colors.
+Count is noninteractive caption metadata. Right-aligned mouse captions show
+8 colors · 24 × 24; left-aligned touch captions show 24 × 24 · 8 colors.
+Resolution stays anchored as count text changes. The example uses left-aligned metadata.
 Separators retain explicit text spaces on both sides of the middle dot, including
 before Retry needed; template whitespace trimming must not join metadata fields.
 It describes full-resolution converted output, including while Original
