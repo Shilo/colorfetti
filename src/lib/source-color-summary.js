@@ -25,9 +25,10 @@ async function runQueue() {
   } finally { running = false; }
 }
 
-// Original pixel buffers are immutable. Retain at most five bytes per distinct
-// visible RGB, never a copy of the source. High-entropy sources bypass this cache
-// after 4097 colors; their output still takes the exact ordinary conversion path.
+// Original pixel buffers are immutable. Retain at most nine bytes per distinct
+// visible RGB (max alpha and pixel count), never a copy of the source. High-entropy
+// sources bypass this cache after 4097 colors; their output still takes the exact
+// ordinary conversion path.
 export async function sourceColorSummary(original, { signal } = {}) {
   checkCanceled(signal);
   if (summaries.has(original)) return summaries.get(original);
@@ -50,33 +51,64 @@ async function scanSummary(original, { signal } = {}) {
   const width = original?.width ?? original?.w, height = original?.height ?? original?.h;
   const data = original?.data;
   if (!Number.isSafeInteger(width) || width < 1 || !Number.isSafeInteger(height) || height < 1 || !data || data.length !== width * height * 4) throw new Error('Invalid image dimensions or pixel data.');
-  const colors = new Map();
+  const colors = new Map(), alpha = new Uint8Array(MAX_COLORS), counts = new Uint32Array(MAX_COLORS);
+  let partial = false, last = -1, i = 0;
   for (let start = 0; start < data.length;) {
     const deadline = performance.now() + 8;
     do {
       checkCanceled(signal);
       const end = Math.min(start + 2048 * 4, data.length);
       for (let p = start; p < end; p += 4) {
-        const alpha = data[p + 3];
-        if (!alpha) continue;
+        const a = data[p + 3];
+        if (!a) continue;
+        if (a !== 255) partial = true;
         const rgb = data[p] << 16 | data[p + 1] << 8 | data[p + 2];
-        const previous = colors.get(rgb);
-        if (previous === undefined) {
-          if (colors.size === MAX_COLORS) { checkCanceled(signal); summaries.set(original, null); return null; }
-          colors.set(rgb, alpha);
-        } else if (alpha > previous) colors.set(rgb, alpha);
+        if (rgb !== last) {
+          i = colors.get(rgb);
+          if (i === undefined) {
+            if (colors.size === MAX_COLORS) { checkCanceled(signal); summaries.set(original, null); return null; }
+            i = colors.size; colors.set(rgb, i);
+          }
+          last = rgb;
+        }
+        counts[i]++;
+        if (a > alpha[i]) alpha[i] = a;
       }
       start = end;
     } while (start < data.length && performance.now() < deadline);
     if (start < data.length) await yieldTask();
   }
   checkCanceled(signal);
-  const rgb = new Uint32Array(colors.size), alpha = new Uint8Array(colors.size);
-  let i = 0;
-  for (const [key, value] of colors) { rgb[i] = key; alpha[i++] = value; }
-  const summary = Object.freeze({ rgb, alpha });
+  const summary = Object.freeze({ rgb: Uint32Array.from(colors.keys()), alpha: alpha.slice(0, colors.size), counts: counts.slice(0, colors.size), partial });
   summaries.set(original, summary);
   return summary;
+}
+
+// Exact weighted RGB histogram of one clip ({ original, weight } frames) for the
+// limiter and Auto, built only from already completed summaries; never waits for
+// the summary queue. Without partial alpha every visible pixel passes any Opacity
+// cut, and integer counts make the totals order-independent. Returns null, and the
+// caller streams pixels, unless the union fits 4096 colors with exact totals.
+// ponytail: synchronous and capped at 65536 summary entries (about a millisecond);
+// longer high-color clips stream. Merge cooperatively if they matter.
+export function summaryHistogram(frames) {
+  const index = new Map(), weights = new Float64Array(MAX_COLORS);
+  let total = 0, entries = 0;
+  for (const { original, weight } of frames) {
+    const summary = summaries.get(original);
+    if (!summary || summary.partial || !Number.isSafeInteger(weight) || weight < 1 || (entries += summary.rgb.length) > 65536) return null;
+    for (let i = 0; i < summary.rgb.length; i++) {
+      const rgb = summary.rgb[i], value = summary.counts[i] * weight;
+      let at = index.get(rgb);
+      if (at === undefined) { if (index.size === MAX_COLORS) return null; at = index.size; index.set(rgb, at); }
+      weights[at] += value; total += value;
+    }
+  }
+  if (!Number.isSafeInteger(total)) return null;
+  // Same element kind as decoded sources keeps the workers' pixel loops monomorphic.
+  const data = new Uint8ClampedArray(index.size * 4);
+  for (const [rgb, at] of index) { data[at * 4] = rgb >>> 16; data[at * 4 + 1] = rgb >>> 8 & 255; data[at * 4 + 2] = rgb & 255; data[at * 4 + 3] = 255; }
+  return { data, weights: weights.slice(0, index.size), weight: 1 };
 }
 
 // One representative with the highest source alpha is sufficient for exact

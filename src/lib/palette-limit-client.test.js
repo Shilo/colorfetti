@@ -2,7 +2,7 @@ import { afterEach, beforeEach, describe, it, expect, vi } from 'vitest';
 import { preparePalette } from './quantize.js';
 import { selectPaletteSubset } from './palette-limit.js';
 
-let instances, failure, getLimitedPalette;
+let instances, failure, getLimitedPalette, sourceColorSummary;
 class FakeWorker {
   constructor() { this.mode = failure; this.starts = 0; this.cancels = 0; this.chunks = []; this.controller = null; instances.push(this); }
   postMessage(message, transfers = []) {
@@ -10,7 +10,7 @@ class FakeWorker {
     if (message.type === 'chunk') this.chunks.push({ size: message.data.byteLength, buffer: message.data.buffer });
     const data = structuredClone(message, { transfer: transfers });
     if (data.type === 'cancel') { this.cancels++; this.controller?.abort(); this.waiter?.reject(new DOMException('Canceled', 'AbortError')); return; }
-    if (data.type === 'chunk' || data.type === 'endPass') { this.waiter.resolve(data.type === 'chunk' ? { data: data.data, weight: data.weight } : null); return; }
+    if (data.type === 'chunk' || data.type === 'endPass') { this.waiter.resolve(data.type === 'chunk' ? { data: data.data, weight: data.weight, weights: data.weights } : null); return; }
     this.starts++; this.controller = new AbortController();
     if (this.mode === 'hang') return;
     if (this.mode === 'invalid') { queueMicrotask(() => this.onmessage?.({ data: { type: 'invalid' } })); return; }
@@ -35,6 +35,7 @@ const palette = () => preparePalette(['#ff0000', '#0000ff', '#ffffff']);
 beforeEach(async () => {
   vi.resetModules(); instances = []; failure = 'normal'; vi.stubGlobal('Worker', FakeWorker);
   ({ getLimitedPalette } = await import('./palette-limit-client.js'));
+  ({ sourceColorSummary } = await import('./source-color-summary.js'));
 });
 afterEach(() => { vi.unstubAllGlobals(); });
 
@@ -166,6 +167,20 @@ describe('limited palette job ownership and cache', () => {
     const broken = instances[0]; expect(broken.terminated).toBe(true); expect(broken.onmessage).toBeNull(); expect(broken.onerror).toBeNull();
     failure = 'normal'; expect((await getLimitedPalette({ original: image() }, palette(), 128, 'rgb', 1)).colors).toEqual(['#ff0000']);
     expect(instances).toHaveLength(2);
+  });
+  it.each([true, false])('reuses completed opaque summaries as one histogram chunk with identical subsets (Worker %s)', async hasWorker => {
+    if (!hasWorker) vi.stubGlobal('Worker', undefined);
+    const colors = preparePalette(['#ff0000', '#00ff00', '#0000ff', '#ffffff']);
+    const fill = (n, at) => { const o = image([0, 0, 0, 255], n); for (let p = 0; p < n; p++) o.data.set([[250, 10, 0], [0, 240, 20], [5, 0, 255], [200, 200, 200]][(p * 7 + at) % 4 > 1 ? (p % 3) : p % 4], p * 4); return o; };
+    const a = fill(70000, 0), b = fill(9000, 1), clip = () => ({ frames: [{ original: a, delay: 30 }, { original: b, delay: 70 }] });
+    const soft = image([250, 10, 0, 255], 40000); soft.data[3] = 200;
+    const raw = [await getLimitedPalette({ original: a }, colors, 128, 'oklab', 2), await getLimitedPalette(clip(), colors, 128, 'rgb', 3), await getLimitedPalette({ original: soft }, colors, 1, 'rgb', 2)];
+    const streamed = instances[0]?.chunks.length;
+    await Promise.all([a, b, soft].map(o => sourceColorSummary(o)));
+    const reused = [await getLimitedPalette({ original: a }, colors, 128, 'oklab', 2), await getLimitedPalette(clip(), colors, 128, 'rgb', 3), await getLimitedPalette({ original: soft }, colors, 1, 'rgb', 2)];
+    expect(reused.map(p => p.colors)).toEqual(raw.map(p => p.colors));
+    // Two opaque jobs send one tiny chunk each; partial alpha streams pixels again.
+    if (hasWorker) expect(instances[0].chunks.slice(streamed).map(chunk => chunk.size)).toEqual([16, 16, 128 * 1024, 160000 - 128 * 1024]);
   });
   it('uses the same cooperative selector when Worker is unavailable', async () => {
     vi.stubGlobal('Worker', undefined);

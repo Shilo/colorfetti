@@ -1,4 +1,5 @@
 import { preparePalette, validateMatchingMetric, checkCanceled } from './quantize.js';
+import { summaryHistogram } from './source-color-summary.js';
 
 const CHUNK_BYTES = 128 * 1024;
 const items = new WeakMap(), queue = [];
@@ -22,7 +23,7 @@ function same(a, b) {
     });
 }
 async function* chunks(frames) {
-  for (const frame of frames) for (let at = 0; at < frame.data.length; at += CHUNK_BYTES) yield { data: frame.data.subarray(at, Math.min(at + CHUNK_BYTES, frame.data.length)), weight: frame.weight };
+  for (const frame of frames) for (let at = 0; at < frame.data.length; at += CHUNK_BYTES) yield { data: frame.data.subarray(at, Math.min(at + CHUNK_BYTES, frame.data.length)), weight: frame.weight, weights: frame.weights };
 }
 function makeWorker() {
   if (worker) return worker;
@@ -31,7 +32,7 @@ function makeWorker() {
   catch { return null; } // Cooperative fallback where workers are unavailable.
 }
 function runWorker(job, target) {
-  const { signature: asked, controller } = job;
+  const { signature: asked, controller } = job, sources = job.histogram ? [job.histogram] : asked.frames;
   return new Promise((resolve, reject) => {
     let pass = 0, frame = 0, at = 0, settled = false;
     const clean = () => { target.onmessage = target.onerror = target.onmessageerror = null; controller.signal.removeEventListener('abort', cancel); };
@@ -53,12 +54,13 @@ function runWorker(job, target) {
         if (data.type !== 'next') throw new Error('Invalid palette-limit worker response.');
         checkCanceled(controller.signal);
         if (pass !== data.pass) { pass = data.pass; frame = 0; at = 0; }
-        while (frame < asked.frames.length && at >= asked.frames[frame].data.length) { frame++; at = 0; }
-        if (frame >= asked.frames.length) { target.postMessage({ type: 'endPass' }); return; }
-        const source = asked.frames[frame], end = Math.min(at + CHUNK_BYTES, source.data.length);
+        while (frame < sources.length && at >= sources[frame].data.length) { frame++; at = 0; }
+        if (frame >= sources.length) { target.postMessage({ type: 'endPass' }); return; }
+        const source = sources[frame], end = Math.min(at + CHUNK_BYTES, source.data.length);
         // Transfer a NEW slice, never detach or clone an entire source frame.
-        const pixels = source.data.slice(at, end); at = end;
-        target.postMessage({ type: 'chunk', data: pixels, weight: source.weight }, [pixels.buffer]);
+        // A summary histogram (at most 16 KiB) is always one whole chunk.
+        const pixels = source.data.slice(at, end), weights = source.weights?.slice(); at = end;
+        target.postMessage({ type: 'chunk', data: pixels, weight: source.weight, weights }, weights ? [pixels.buffer, weights.buffer] : [pixels.buffer]);
       } catch (error) {
         fail(error);
       }
@@ -76,8 +78,10 @@ async function drain() {
       const job = queue.shift();
       try {
         checkCanceled(job.controller.signal);
+        // Completed exact source summaries replace re-streaming pixels; never waits for them.
+        job.histogram = summaryHistogram(job.signature.frames);
         const target = makeWorker();
-        const result = target ? await runWorker(job, target) : await (await import('./palette-limit.js')).selectPaletteSubset(job.signature.colors, job.signature.maxColors, () => chunks(job.signature.frames), { alphaCut: job.signature.alphaCut, metric: job.signature.metric, signal: job.controller.signal });
+        const result = target ? await runWorker(job, target) : await (await import('./palette-limit.js')).selectPaletteSubset(job.signature.colors, job.signature.maxColors, () => chunks(job.histogram ? [job.histogram] : job.signature.frames), { alphaCut: job.signature.alphaCut, metric: job.signature.metric, signal: job.controller.signal });
         checkCanceled(job.controller.signal);
         const palette = preparePalette(result.indices.map(i => job.signature.colors[i]));
         job.state.cached = { signature: job.signature, palette }; job.resolve(palette);

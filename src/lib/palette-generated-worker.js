@@ -11,7 +11,7 @@ self.onmessage = async ({ data }) => {
     }
     if (data.type !== 'chunk') throw new Error('Invalid generated palette worker request.');
     if (!inAsset) { accumulator.beginAsset(); inAsset = true; }
-    await accumulator.addChunk(data.pixels, data.weight);
+    await accumulator.addChunk(data.pixels, data.weight, data.weights);
     if (data.lastAsset) { await accumulator.endAsset(); inAsset = false; }
     self.postMessage({ type: 'next' });
   } catch (error) {

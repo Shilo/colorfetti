@@ -16,7 +16,7 @@ async function* readChunks() {
 }
 self.onmessage = ({ data }) => {
   if (data.type === 'chunk' || data.type === 'endPass') {
-    waiting?.resolve(data.type === 'chunk' ? { data: data.data, weight: data.weight } : null);
+    waiting?.resolve(data.type === 'chunk' ? { data: data.data, weight: data.weight, weights: data.weights } : null);
     return;
   }
   if (data.type === 'cancel') {

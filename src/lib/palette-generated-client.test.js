@@ -1,7 +1,7 @@
 import { beforeEach, afterEach, describe, it, expect, vi } from 'vitest';
 import { createGeneratedAccumulator } from './palette-generated.js';
 
-let instances, failure, capture, getPalette;
+let instances, failure, capture, getPalette, sourceColorSummary;
 class FakeWorker {
   constructor() { this.mode = failure; this.starts = 0; this.chunks = []; instances.push(this); }
   postMessage(message, transfers = []) {
@@ -19,7 +19,7 @@ class FakeWorker {
       }
       if (data.type === 'chunk') {
         if (!this.inAsset) { this.accumulator.beginAsset(); this.inAsset = true; }
-        await this.accumulator.addChunk(data.pixels, data.weight);
+        await this.accumulator.addChunk(data.pixels, data.weight, data.weights);
         if (data.lastAsset) { await this.accumulator.endAsset(); this.inAsset = false; }
       }
       if (data.type === 'end') {
@@ -42,6 +42,7 @@ beforeEach(async () => {
   vi.resetModules(); instances = []; failure = 'normal'; vi.stubGlobal('Worker', FakeWorker);
   ({ captureGeneratedSources: capture } = await import('./palette-generated-sources.js'));
   ({ getGeneratedPalette: getPalette } = await import('./palette-generated-client.js'));
+  ({ sourceColorSummary } = await import('./source-color-summary.js'));
 });
 afterEach(() => vi.unstubAllGlobals());
 
@@ -76,6 +77,19 @@ describe('generated palette job ownership', () => {
     expect(result.colors).toEqual(Array.from({ length: count }, (_, n) => '#' + [n, n * 2, n * 3].map(v => v.toString(16).padStart(2, '0')).join('')).sort());
     expect(await getPalette(snapshot)).toBe(result);
     expect(instances[0].starts).toBe(1);
+  });
+  it.each([true, false])('reuses completed opaque summaries per asset with identical palettes (Worker %s)', async hasWorker => {
+    if (!hasWorker) vi.stubGlobal('Worker', undefined);
+    const noisy = (n, seed) => { const o = image(n); for (let p = 0; p < n; p++) o.data.set([(p * seed) % 16 * 16, (p * 13 + seed) % 8 * 30, (p >> 4) % 5 * 60, 255], p * 4); return o; };
+    const a = noisy(70000, 5), b = noisy(3000, 11), c = noisy(3000, 3), soft = noisy(40000, 17); soft.data[7] = 9;
+    const snapshot = capture([{ original: a }, { frames: [{ original: b, delay: 40 }, { original: c, delay: 90 }] }, { original: soft }], 64);
+    const raw = await (await import('./palette-generated.js')).generatePaletteAsync(snapshot);
+    await Promise.all([a, b, c, soft].map(o => sourceColorSummary(o)));
+    const reused = await getPalette(snapshot);
+    expect(reused.colors).toEqual(raw.colors); expect(reused.colors.length).toBe(64);
+    // Two opaque assets send one tiny histogram chunk each; the soft asset streams.
+    if (hasWorker) expect(instances[0].chunks).toHaveLength(4);
+    if (hasWorker) expect(instances[0].chunks.filter(chunk => chunk.size === 128 * 1024)).toHaveLength(1);
   });
   it('empty/pre-aborted/invalid requests start no worker', async () => {
     expect((await getPalette(capture([]))).colors).toEqual([]);

@@ -22,7 +22,7 @@ frames. Counts are plain caption metadata: count before resolution in right-alig
 mouse captions, resolution first in left-aligned touch and example captions.
 One serial cancellable queue supplies exact Palette wall counts independently of
 sampling; Preview and Reuse share it. Closing Preview leaves wall requests alive.
-Nearest-only counts reuse weak immutable RGB/max-alpha summaries capped at 4096
+Nearest-only counts reuse weak immutable RGB/max-alpha/count summaries capped at 4096
 colors per frame; high-entropy sources, Cleanup and effective dithering use the
 real export conversion. Safe palette saturation can skip remaining GIF frames.
 Keep tiny color/frame metadata only, never converted frame caches. Settings changes

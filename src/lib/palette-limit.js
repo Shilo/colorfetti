@@ -16,8 +16,9 @@ const distance = (v, p, at) => (v[0] - p[at]) ** 2 + (v[1] - p[at + 1]) ** 2 + (
 const tolerance = cost => 1e-12 * Math.max(1, cost);
 
 // readChunks() supplies a fresh repeatable async iterator for each source pass.
-// Each chunk contains original RGBA and its frame-duration weight. No source
-// pixels are retained here; the histogram/distance matrix have fixed bounds.
+// Each chunk contains original RGBA and its frame-duration weight, or optional
+// per-pixel weights for an exact summary histogram. No source pixels are
+// retained here; the histogram/distance matrix have fixed bounds.
 export async function selectPaletteSubset(colors, maxColors, readChunks, { alphaCut = 128, metric = 'oklab', signal } = {}) {
   const palette = preparePalette(colors), P = palette.size;
   validateMatchingMetric(metric);
@@ -48,10 +49,11 @@ export async function selectPaletteSubset(colors, maxColors, readChunks, { alpha
     const bin = (rgb >>> 20) << 8 | (rgb >>> 12 & 15) << 4 | (rgb >>> 4 & 15), at = bin * 4;
     bins[at] += weight; bins[at + 1] += v[0] * weight; bins[at + 2] += v[1] * weight; bins[at + 3] += v[2] * weight;
   };
-  for await (const { data, weight } of readChunks()) {
-    if (!data || data.length % 4 || !Number.isFinite(weight) || weight <= 0) throw new Error('Invalid palette-limit source chunk.');
+  for await (const { data, weight: chunkWeight, weights } of readChunks()) {
+    if (!data || data.length % 4 || !Number.isFinite(chunkWeight) || chunkWeight <= 0 || (weights && weights.length * 4 !== data.length)) throw new Error('Invalid palette-limit source chunk.');
     for (let at = 0; at < data.length; at += 4) {
       if (data[at + 3] >= alphaCut) {
+        const weight = weights ? weights[at >> 2] : chunkWeight;
         const rgb = data[at] << 16 | data[at + 1] << 8 | data[at + 2], old = histogram?.get(rgb);
         let winner, cost;
         if (old) { old.weight += weight; winner = old.winner; cost = old.cost; }
@@ -145,10 +147,11 @@ export async function selectPaletteSubset(colors, maxColors, readChunks, { alpha
   let cost = fit.cost, popularCost = popularFit.cost, verifiedFallback = false;
   if (binned) {
     cost = 0; popularCost = 0;
-    for await (const { data, weight } of readChunks()) {
-      if (!data || data.length % 4 || !Number.isFinite(weight) || weight <= 0) throw new Error('Invalid palette-limit source chunk.');
+    for await (const { data, weight: chunkWeight, weights } of readChunks()) {
+      if (!data || data.length % 4 || !Number.isFinite(chunkWeight) || chunkWeight <= 0 || (weights && weights.length * 4 !== data.length)) throw new Error('Invalid palette-limit source chunk.');
       for (let at = 0; at < data.length; at += 4) {
         if (data[at + 3] >= alphaCut) {
+          const weight = weights ? weights[at >> 2] : chunkWeight;
           coordinates(data[at], data[at + 1], data[at + 2], metric, scratch);
           let fitted = Infinity, baseline = Infinity;
           for (const p of indices) fitted = Math.min(fitted, distance(scratch, vectors, p * 3));

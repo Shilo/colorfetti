@@ -207,7 +207,7 @@ An active inspection retains its record identity and explicit Reuse subscription
 until completion or cancellation. Source replacement/removal, 1-bit mode and
 failures hide or discard the old label. Retain only one small RGB/count result per
 item, never a chain or extra converted images. Nearest-only inspection uses a
-bounded immutable RGB/max-alpha summary; spatial modes use actual export conversion.
+bounded immutable RGB/max-alpha/pixel-count summary; spatial modes use actual export conversion.
 
 Automatic Palette wall inspection shares export preparation, with no Count button.
 Source/settings/removal retire stale work/results; Auto
@@ -2385,7 +2385,8 @@ recolor existing artwork; saving a copy freezes it.
 Save, Copy, drag and ZIP capture the whole-wall signature and source/settings references
 before awaiting generation. All files in a ZIP use that captured palette. Preview
 cancellation cannot cancel an export subscriber. Workers use acknowledged 128 KiB
-slices without detaching sources. At most two small completed palettes are cached;
+slices without detaching sources, or one exact weighted histogram per asset when its
+frames already have completed opaque summaries (see the limiter below). At most two small completed palettes are cached;
 old source histograms are not retained. App's completed generated publication stores
 the request key and palette, without retaining the captured source request. Tile clears
 inactive limiter/cleanup request references on All, Off or family changes. Canceling
@@ -2437,6 +2438,9 @@ Otherwise more colors use 4096 bounded bins and a second original-pixel pass cho
 between the fitted subset and the true full-nearest frequency seed. This safeguards total
 error against that baseline, not semantic detail or a global optimum. A lazy serial worker
 receives new slices of at most 128 KiB with acknowledgment; originals are never detached.
+When every frame already has a completed source summary without partial alpha and the
+union fits 4096 colors, one weighted histogram chunk replaces the pixels with identical
+results; jobs never wait for summaries.
 Shared subscribers cancel independently. The last cancellation terminates the worker and
 releases the queue, including during worker download. Missing workers use a cooperative
 lazy fallback. Failure shows retry/All guidance without silently exceeding the cap.

@@ -53,12 +53,13 @@ export function createGeneratedAccumulator(alphaCut = 128, { signal } = {}) {
       if (assetOpen || finished) throw new Error('Generated palette assets must be added sequentially.');
       histogram = new Map(); bins = null; assetOpen = true;
     },
-    async addChunk(data, weight = 1) {
+    // Optional per-pixel weights carry an exact summary histogram (integer masses).
+    async addChunk(data, chunkWeight = 1, weights) {
       checkCanceled(signal);
-      if (!assetOpen || finished || !(data instanceof Uint8Array || data instanceof Uint8ClampedArray) || data.length % 4 || !Number.isFinite(weight) || weight <= 0) throw new Error('Invalid generated palette source chunk.');
+      if (!assetOpen || finished || !(data instanceof Uint8Array || data instanceof Uint8ClampedArray) || data.length % 4 || !Number.isFinite(chunkWeight) || chunkWeight <= 0 || (weights && weights.length * 4 !== data.length)) throw new Error('Invalid generated palette source chunk.');
       for (let at = 0; at < data.length; at += 4) {
         if (data[at + 3] >= alphaCut) {
-          const rgb = data[at] * 65536 + data[at + 1] * 256 + data[at + 2];
+          const rgb = data[at] * 65536 + data[at + 1] * 256 + data[at + 2], weight = weights ? weights[at >> 2] : chunkWeight;
           if (histogram) {
             const old = histogram.get(rgb);
             if (old !== undefined) histogram.set(rgb, old + weight);
@@ -162,12 +163,14 @@ export function createGeneratedAccumulator(alphaCut = 128, { signal } = {}) {
   };
 }
 
-export async function generatePaletteAsync(snapshot, { signal } = {}) {
+export async function generatePaletteAsync(snapshot, { signal, histograms } = {}) {
   validateGeneratedSources(snapshot); checkCanceled(signal);
   const accumulator = createGeneratedAccumulator(snapshot.alphaCut, { signal });
-  for (const asset of snapshot.assets) {
+  for (const [i, asset] of snapshot.assets.entries()) {
     accumulator.beginAsset();
-    for (const frame of asset.frames) for (let at = 0; at < frame.data.length; at += 128 * 1024) await accumulator.addChunk(frame.data.subarray(at, Math.min(at + 128 * 1024, frame.data.length)), frame.delay);
+    const histogram = histograms?.[i];
+    if (histogram) await accumulator.addChunk(histogram.data, 1, histogram.weights);
+    else for (const frame of asset.frames) for (let at = 0; at < frame.data.length; at += 128 * 1024) await accumulator.addChunk(frame.data.subarray(at, Math.min(at + 128 * 1024, frame.data.length)), frame.delay);
     await accumulator.endAsset();
   }
   return accumulator.finish();

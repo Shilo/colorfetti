@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { sourceColorSummary, summaryImage } from './source-color-summary.js';
+import { sourceColorSummary, summaryImage, summaryHistogram } from './source-color-summary.js';
 import { quantize } from './quantize.js';
 
 const source = values => ({ width: values.length, height: 1, data: Uint8ClampedArray.from(values.flat()) });
@@ -13,6 +13,25 @@ describe('bounded immutable-source RGB summaries', () => {
     expect([...summaryImage(summary,128).data]).toEqual([1,2,3,128,4,5,6,255]);
     expect([...summaryImage(summary,129).data]).toEqual([4,5,6,255]);
     expect(summaryImage(summary,256)).toBe(null);
+    expect([...summary.counts]).toEqual([3,1]); expect(summary.partial).toBe(true);
+  });
+  it('builds exact weighted clip histograms only from completed opaque summaries within 4096 colors', async () => {
+    const a = source([[1,2,3,255],[1,2,3,255],[4,5,6,255],[0,0,0,0]]), b = source([[4,5,6,255],[7,8,9,255]]);
+    expect(summaryHistogram([{original:a,weight:1}])).toBe(null); // never scans or waits
+    await sourceColorSummary(a); await sourceColorSummary(b);
+    expect((await sourceColorSummary(a)).partial).toBe(false);
+    const h = summaryHistogram([{original:a,weight:30},{original:b,weight:70}]);
+    expect([...h.data]).toEqual([1,2,3,255,4,5,6,255,7,8,9,255]); expect([...h.weights]).toEqual([60,100,70]); expect(h.weight).toBe(1);
+    expect(summaryHistogram([{original:a,weight:1.5}])).toBe(null);
+    expect(summaryHistogram([{original:a,weight:2**52}])).toBe(null);
+    const soft = source([[1,2,3,254]]); await sourceColorSummary(soft);
+    expect(summaryHistogram([{original:a,weight:1},{original:soft,weight:1}])).toBe(null);
+    const empty = source([[9,9,9,0]]); await sourceColorSummary(empty);
+    expect(summaryHistogram([{original:empty,weight:1}]).data.length).toBe(0);
+    const half = i => source(Array.from({length:2048},(_,n)=>[0,(n+i)>>8,(n+i)&255,255]));
+    const [x,y,z] = [half(0),half(2048),source([[255,255,255,255]])]; await Promise.all([x,y,z].map(o => sourceColorSummary(o)));
+    expect(summaryHistogram([{original:x,weight:1},{original:y,weight:1}]).weights.length).toBe(4096);
+    expect(summaryHistogram([{original:x,weight:1},{original:y,weight:1},{original:z,weight:1}])).toBe(null);
   });
   it('allows 4096 colors and bypasses high entropy without returning approximate counts', async () => {
     const values = Array.from({length:4097},(_,i)=>[i>>16,i>>8&255,i&255,255]);

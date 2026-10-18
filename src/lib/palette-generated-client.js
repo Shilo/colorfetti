@@ -1,6 +1,7 @@
 import { checkCanceled } from './quantize.js';
 import { validateGeneratedSources } from './palette-generated-sources.js';
 import { GENERATED_MAX_COLORS } from './palette-library.js';
+import { summaryHistogram } from './source-color-summary.js';
 
 const CHUNK_BYTES = 128 * 1024, pending = new Map(), completed = new Map(), queue = [];
 const EMPTY = Object.freeze({ colors: Object.freeze([]), binned: false, assets: 0 });
@@ -29,11 +30,12 @@ function runWorker(job, target) {
         if (data.type === 'result') { finish(null, freezeResult(data.result)); return; }
         if (data.type !== 'next') throw new Error('Invalid generated palette worker response.');
         if (asset >= job.snapshot.assets.length) { target.postMessage({ type: 'end' }); return; }
-        const source = job.snapshot.assets[asset].frames[frame], end = Math.min(at + CHUNK_BYTES, source.data.length);
-        const pixels = source.data.slice(at, end), lastFrame = end === source.data.length, lastAsset = lastFrame && frame === job.snapshot.assets[asset].frames.length - 1;
+        // A summary histogram (at most 16 KiB) is the asset's one whole chunk.
+        const histogram = job.histograms[asset], frames = job.snapshot.assets[asset].frames, source = histogram ?? frames[frame], end = Math.min(at + CHUNK_BYTES, source.data.length);
+        const pixels = source.data.slice(at, end), weights = histogram?.weights.slice(), lastFrame = end === source.data.length, lastAsset = lastFrame && (!!histogram || frame === frames.length - 1);
         at = lastFrame ? 0 : end;
         if (lastAsset) { asset++; frame = 0; } else if (lastFrame) frame++;
-        target.postMessage({ type: 'chunk', pixels, weight: source.delay, lastAsset }, [pixels.buffer]);
+        target.postMessage({ type: 'chunk', pixels, weight: histogram ? 1 : source.delay, weights, lastAsset }, weights ? [pixels.buffer, weights.buffer] : [pixels.buffer]);
       } catch (error) { fail(error); }
     };
     job.controller.signal.addEventListener('abort', cancel, { once: true });
@@ -51,8 +53,10 @@ async function drain() {
       const job = queue.shift();
       try {
         checkCanceled(job.controller.signal);
+        // Completed exact source summaries replace re-streaming pixels; never waits for them.
+        job.histograms = job.snapshot.assets.map(asset => summaryHistogram(asset.frames.map(frame => ({ original: frame.original, weight: frame.delay }))));
         const target = makeWorker();
-        const result = freezeResult(target ? await runWorker(job, target) : await (await import('./palette-generated.js')).generatePaletteAsync(job.snapshot, { signal: job.controller.signal }));
+        const result = freezeResult(target ? await runWorker(job, target) : await (await import('./palette-generated.js')).generatePaletteAsync(job.snapshot, { signal: job.controller.signal, histograms: job.histograms }));
         checkCanceled(job.controller.signal);
         // Completed cache contains IDs/colors, never old wall/source references.
         completed.delete(job.snapshot.key); completed.set(job.snapshot.key, result);

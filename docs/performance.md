@@ -58,8 +58,8 @@ request alive. Existing exact previews can still contribute post-Cleanup used fl
 Sampled pixels never masquerade as exact full-source counts. Whole-clip unions can
 finish early only after every prepared output color has appeared.
 
-Nearest-only inspection reuses a weak source RGB/max-alpha summary capped at 4096
-RGBs per frame (at most 20 KiB typed metadata). A serial summary queue prevents
+Nearest-only inspection reuses a weak source RGB/max-alpha/pixel-count summary capped
+at 4096 RGBs per frame (at most 36 KiB typed metadata). A serial summary queue prevents
 simultaneous Original/output requests duplicating cold scans; cancellation removes
 queued work. High entropy records a bypass marker. Matching, alpha and caps reuse
 the source summary with the existing quantizer and shared export preparation.
@@ -265,6 +265,11 @@ not a total app memory guarantee. Exports remain full-source; 1-bit caching is u
 
 Generated 32 is lazy and shared at wall level: 128 KiB acknowledged chunks, exact RGB
 summaries up to 4096 entries, 32768 bins thereafter, and six deterministic refinements.
+Limiter and Auto jobs send one weighted histogram chunk (at most 16 KiB RGBA plus 32 KiB
+weights) instead of pixels when every frame already has a completed summary without
+partial alpha and the clip's union fits 4096 colors with exact integer totals. They
+never wait for the summary queue; otherwise, and above 65536 summary entries per clip,
+they stream pixels as before. Selected subsets and Auto palettes are identical.
 Its cache retains two small palettes/signatures rather than old sources/histograms.
 Matching, caps, cleanup, playback and resize do not regenerate it. Worker construction
 failure uses the cooperative core. Export subscribers survive preview cancellation.
