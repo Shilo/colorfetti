@@ -173,7 +173,9 @@ or RGBA clip is retained by counting. Missing automatic masks are bounded to
 all-ink saturation from coordinate-preserving samples. Pattern/diffusion samples
 cannot prove membership. Unproven large results stay unknown until exact rendering
 supplies evidence; stale previous counts then clear. Metadata never launches a
-large reanalysis. A cold allowed structural mask remains synchronous.
+large reanalysis. A cold allowed structural mask remains synchronous. While a Style slider
+is dragged, captions keep their previous count marked as updating, and inspection
+starts once the slider rests or is let go.
 Separators retain explicit text spaces on both sides of the middle dot, including
 before Retry needed; template whitespace trimming must not join metadata fields.
 It describes full-resolution converted output, switching to the cached source RGB
