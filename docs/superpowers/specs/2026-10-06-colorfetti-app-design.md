@@ -2648,12 +2648,25 @@ format/color-space conversion. Requested packed layout is verified. BGRA swaps o
 red/blue in place, yielding through the shared posted-task scheduler after an 8 ms
 target checked between 128 KiB blocks; no second pixel buffer is added. A frame whose
 color space reports none of the four fields (Firefox gives premultiplied BGRA there,
-which neither copy unpremultiplies) uses the bitmap/canvas path. Other formats/spaces
+which neither copy unpremultiplies) uses the verified straight-alpha bitmap path
+before legacy canvas. Other formats/spaces
 with partial or non-sRGB metadata retain explicit managed RGBA/sRGB copyTo, preserving
 profile conversion. Default visible-rectangle copying remains intact. No float16 readback
 replacement or colorSpaceConversion none is introduced. Native capability,
 decoding/copy errors, unknown color space or display scaling fall back
-to the existing color-managed bitmap/canvas path. Proven pure 0/90/180/270-degree
+to verified color-managed bitmap copying, then legacy canvas if unavailable. The lazy
+bitmap helper decodes a real tagged 4×2 sRGB control using premultiplyAlpha none and
+default color management, wraps it in VideoFrame, requests RGBA/sRGB and validates
+dimensions/layout, every alpha and every visible RGB. The control includes distinct
+rows/midtones and alpha 0/1/2/64/127/128/254/255. Only a successful behavior check
+allows the user bitmap to use that route. Verify per request, with no UA sniff or
+shared result/pixel cache; cancellation cannot poison a later import. Release probe
+resources before the actual bitmap, check its pixel cap before application allocation,
+and close native resources on completion, failure and cancellation. ImageBitmap applies
+its default EXIF orientation already; the new VideoFrame must match its presented
+extent and require no further rotation/flip. Color management stays enabled; this
+does not establish identical arbitrary ICC/monitor-profile results across browsers.
+Proven pure 0/90/180/270-degree
 rotations followed by horizontal flip rearrange native bytes without resampling;
 physical visible and presented dimensions must agree. This allocates one additional
 RGBA buffer only for oriented frames, yielding with an 8 ms target checked between

@@ -8,7 +8,6 @@ const iframe=document.querySelector('#app'),run=document.querySelector('#run'),s
 const touch=new URL(location.href).searchParams.has('touch');
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));const assert=(ok,message)=>{if(!ok)throw Error(message);};
 let w,d,report,manifest,artifacts,phase;
-const partialReferences=new Map();
 const all=(selector,root=d)=>[...root.querySelectorAll(selector)];
 const label=(value,root=d)=>root.querySelector('[aria-label="'+CSS.escape(value)+'"]');
 const textButton=(value,root=d)=>all('button',root).find(node=>node.textContent.trim()===value);
@@ -46,35 +45,13 @@ function tile(name){return all('.tiles > .tile').find(node=>node.querySelector('
 async function caption(name,count){return until(()=>{const node=tile(name)?.querySelector('.caption-color-count');return node&&node.getAttribute('aria-busy')!=='true'&&node.textContent.trim()===count+' '+(count===1?'color':'colors')?node.textContent:null;},'Caption did not settle at '+count+' colors for '+name);}
 async function clearWall(){for(const node of all('.tiles .acts button[aria-label^="Remove "]'))click(node);await until(()=>!all('.tiles .acts button[aria-label^="Remove "]').length,'Wall did not clear');}
 function b64(bytes){let result='';for(let i=0;i<bytes.length;i+=4096)result+=String.fromCharCode(...bytes.subarray(i,i+4096));return btoa(result);}
-async function verifyArtifact(artifact,mode='identity',maxColors,fixtureKey){return post('/verify',{name:artifact.name,type:artifact.blob.type,base64:b64(new Uint8Array(await artifact.blob.arrayBuffer())),mode,maxColors,fixtureKey,browserRgba:partialReferences.get(fixtureKey)?.base64});}
+async function verifyArtifact(artifact,mode='identity',maxColors,fixtureKey){return post('/verify',{name:artifact.name,type:artifact.blob.type,base64:b64(new Uint8Array(await artifact.blob.arrayBuffer())),mode,maxColors,fixtureKey});}
 async function save(name,mode='identity',maxColors,fixtureKey){const start=artifacts.length;if(touch){click(label('Image actions for '+name));await until(()=>label('Image actions')?.open,'Touch image actions missing');click(textButton('Save',label('Image actions')));}else click(label('Save '+name));const artifact=await until(()=>artifacts.slice(start).find(value=>value.name&&(value.blob.type==='image/gif'||value.blob.type==='image/png')),'Image download not produced '+name);return verifyArtifact(artifact,mode,maxColors,fixtureKey);}
 async function reuse(name){const button=label('Reuse colors from '+name);if(!touch&&button?.getClientRects().length)click(button);else{click(label('Image actions for '+name));await until(()=>label('Image actions')?.open,'Image action sheet missing');click(textButton('Reuse colors',label('Image actions')));}await until(()=>d.querySelector('.palette-import-modal[open]'),'Reuse editor missing');}
 async function settings(name='Max colors'){if(!d.querySelector('.palette-settings-panel'))click(label('Palette settings'));await until(()=>d.querySelector('.palette-settings-panel'),'Palette settings missing');const chip=all('.palette-setting-chip').find(node=>node.getAttribute('aria-label')?.startsWith(name+':'));if(chip)click(chip);await sleep(0);}
 async function setCap(value){await settings();if(value){const node=label('Max colors value');input(node,String(value));node.dispatchEvent(new w.Event('change',{bubbles:true}));}else click(label('Use all palette colors'));await until(()=>JSON.parse(w.localStorage.getItem('colorfetti')).maxColors===value,'Max colors did not commit');}
 async function setOpacity(value){await settings('Opacity');click(textButton(value==='keep'?'Keep':'Cut',d.querySelector('.palette-settings-panel')));await until(()=>JSON.parse(w.localStorage.getItem('colorfetti')).alphaMode===value,'Opacity mode did not commit');}
 function dimensions(name,expected){const actual=tile(name)?.querySelector('.caption-resolution')?.textContent.replace(/\s/g,'');assert(actual===expected.width+'×'+expected.height,'Wrong oriented dimensions for '+name+': '+actual);}
-async function partialFallbackReference(entry){
-  const encoded=await file(entry.key);let decoder,image,reason,nativeColorSpace;
-  try{
-    if(typeof w.ImageDecoder==='undefined')reason='Native decoder unavailable';
-    else if(!await w.ImageDecoder.isTypeSupported(entry.type))reason='Native type unsupported';
-    else{
-      decoder=new w.ImageDecoder({data:encoded.stream(),type:entry.type,preferAnimation:false,colorSpaceConversion:'default'});
-      image=(await decoder.decode({frameIndex:0,completeFramesOnly:true})).image;
-      nativeColorSpace=image.colorSpace.toJSON();
-      if(['primaries','transfer','matrix','fullRange'].every(key=>nativeColorSpace[key]==null))reason='All-null native color space; canonical bitmap unpremultiplication';
-    }
-  }finally{image?.close();decoder?.close();}
-  if(!reason)return null;
-  const bitmap=await w.createImageBitmap(encoded),surface=d.createElement('canvas');
-  try{
-    surface.width=bitmap.width;surface.height=bitmap.height;const context=surface.getContext('2d',{willReadFrequently:true,colorSpace:'srgb'});context.drawImage(bitmap,0,0);
-    const data=context.getImageData(0,0,bitmap.width,bitmap.height).data,again=context.getImageData(0,0,bitmap.width,bitmap.height).data;
-    assert(data.every((byte,i)=>byte===again[i]),'Browser fallback reference changed between readbacks');
-    const colors=new Set();for(let p=0;p<data.length;p+=4)if(data[p+3])colors.add('#'+[...data.subarray(p,p+3)].map(n=>n.toString(16).padStart(2,'0')).join(''));
-    return{base64:b64(data),colors:[...colors].sort(),reason,nativeColorSpace,repeatable:true};
-  }finally{bitmap.close();surface.width=surface.height=0;}
-}
 async function bitmapSourceCount(entry,reason){
   const bitmap=await w.createImageBitmap(await file(entry.key)),surface=d.createElement('canvas');
   try{
@@ -111,8 +88,6 @@ async function generatedConvertedReady(name){
 }
 async function rasterChecks(){
   const entries=manifest.stills??[],lowColor=entries.filter(entry=>entry.colors.length<=64);
-  partialReferences.clear();
-  for(const entry of lowColor.filter(entry=>entry.partialAlpha)){const reference=await partialFallbackReference(entry);if(reference)partialReferences.set(entry.key,reference);}
   if(lowColor.length){
     await check('PNG, JPEG, BMP and lossless WebP preserve exact opaque RGB through Auto and Save',async()=>{
       const results=[];for(const entry of lowColor.filter(entry=>!entry.partialAlpha)){
@@ -120,18 +95,17 @@ async function rasterChecks(){
         results.push({name:entry.name,colors:entry.colors.length,export:await save(entry.name,'identity',undefined,entry.key)});
       }return{fixtures:results};
     });
-    await check('Partial-alpha PNG and WebP Keep preserve acquired browser-sRGB and every alpha byte in saved PNG',async()=>{
+    await check('Partial-alpha PNG and WebP Keep preserve independent source RGB and every alpha byte in saved PNG',async()=>{
       const results=[];for(const entry of lowColor.filter(entry=>entry.partialAlpha)){
-        const reference=partialReferences.get(entry.key),count=reference?.colors.length??entry.colors.length;
-        await clearWall();await select('Auto');await add(entry.key);await setOpacity('keep');await caption(entry.name,count);dimensions(entry.name,entry);
-        results.push({name:entry.name,colors:count,rawColors:entry.colors.length,fallback:reference?{reason:reference.reason,nativeColorSpace:reference.nativeColorSpace,repeatable:reference.repeatable}:null,export:await save(entry.name,'identity',undefined,entry.key)});
+        await clearWall();await select('Auto');await add(entry.key);await setOpacity('keep');await caption(entry.name,entry.colors.length);dimensions(entry.name,entry);
+        results.push({name:entry.name,colors:entry.colors.length,export:await save(entry.name,'identity',undefined,entry.key)});
       }return{fixtures:results};
     });
     await check('Still-image palette imports match independent acquisition RGB sets without additional colors',async()=>{
       const results=[];for(const entry of lowColor){
-        const reference=partialReferences.get(entry.key),expected=reference?.colors??entry.colors;
+        const expected=entry.colors;
         const colors=await paletteFile(entry.key,expected.length);assert(JSON.stringify(colors.sort())===JSON.stringify(expected),'Imported RGB differs from independent reference for '+entry.name);
-        results.push({name:entry.name,colors:colors.length,expected,rawColors:entry.colors.length,fallbackReason:reference?.reason});
+        results.push({name:entry.name,colors:colors.length,expected});
       }await closeEditor();return{fixtures:results};
     });
   }

@@ -34,8 +34,16 @@ copies avoid a redundant conversion; other known spaces request RGBA/sRGB. Prove
 pure EXIF rotation/flip rearranges bytes into one additional RGBA buffer, yielding
 at an 8 ms target checked between 32768-pixel groups. Unoriented frames need no
 second buffer. Native API absence, unknown color space, display scaling and copy
-failures retain canvas fallback and its possible perturbation/alpha-rounding limits.
+failures try a lazy straight-alpha ImageBitmap → VideoFrame copy before legacy canvas.
+A per-request tagged 4×2 sRGB PNG checks that path's byte precision and presentation;
+probe resources close before the user bitmap opens. No user pixels or probe promises
+are cached. This adds one tiny decode only to fallback imports; healthy native paths
+do not load the module. One application-sized RGBA buffer is copied natively, without
+2D canvas readback or JavaScript unpremultiplication. The legacy canvas path and its
+perturbation/alpha-rounding limits remain if capability verification fails.
 See [the diagnostic review](research/2026-10-18-palette-diagnostic-review.md).
+The Firefox cause, exact source-byte checks and profiled controls are recorded in
+[the precision follow-up](research/2026-10-18-firefox-alpha-precision.md).
 
 ## Fresh whole-app audit (October 17, 2026)
 

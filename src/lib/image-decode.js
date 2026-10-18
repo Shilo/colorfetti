@@ -18,7 +18,8 @@ function nativeSrgb(frame) {
 }
 
 // Firefox reports an all-null color space for premultiplied BGRA frames, and
-// neither copy path unpremultiplies them; drawImage/getImageData does.
+// neither copy path unpremultiplies them. A verified straight-bitmap copy below
+// avoids that lossy decode before the legacy canvas fallback is considered.
 const unknownSpace = frame => ['primaries', 'transfer', 'matrix', 'fullRange'].every(key => frame.colorSpace?.[key] == null);
 
 async function swapRedBlue(pixels, signal) {
@@ -124,6 +125,19 @@ export async function decodeImageFile(file, { signal, maxPixels = Infinity,
       signal?.removeEventListener('abort', close);
       frame?.close();
       close();
+    }
+  }
+  checkCanceled(signal);
+  if (nativeCandidates(file).length && typeof VideoFrame === 'function') {
+    try {
+      const { decodeStraightBitmap } = await import('./image-bitmap-decode.js');
+      checkCanceled(signal);
+      const image = await decodeStraightBitmap(file, { signal, checkDimensions: dimensions });
+      if (image) return image;
+    } catch (problem) {
+      checkCanceled(signal);
+      if (problem instanceof PixelLimitError) throw problem;
+      // Unsupported straight-bitmap capabilities retain the existing fallback.
     }
   }
   checkCanceled(signal);

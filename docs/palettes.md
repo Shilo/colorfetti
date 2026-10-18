@@ -66,10 +66,13 @@ GIF image-palette import includes every composited frame. It reads exact indexed
 RGB values and rejects malformed data rather than inventing colors. PNG/JPEG/WebP/BMP
 prefer native color-managed sRGB decoding, including exact byte rotation/flip for
 ordinary EXIF orientation. Browsers without a usable native decoder retain the
-bitmap/canvas fallback; privacy protection can alter that readback. That fallback
-can also round partially transparent RGB, as measured in Firefox; Save preserves
-the acquired values and alpha. The confirmed Brave diagnosis and tested limits are recorded in
+verified straight-alpha bitmap copy before canvas. This fixes Firefox's measured
+translucent PNG/WebP rounding while retaining color management and alpha. If that
+capability is unavailable or fails its precision check, legacy canvas can still round
+RGB or be altered by privacy protection. The confirmed Brave diagnosis and tested limits are recorded in
 [the diagnostic review](research/2026-10-18-palette-diagnostic-review.md).
+See [the Firefox precision follow-up](research/2026-10-18-firefox-alpha-precision.md)
+for the source-byte and all-alpha regression evidence.
 
 Auto's tooltip starts with its completed color count and source: for example,
 **Auto · 32 colors · Your images**, or **Auto · 11 colors · Example image**.

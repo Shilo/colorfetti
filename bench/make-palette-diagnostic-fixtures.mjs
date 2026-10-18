@@ -5,7 +5,8 @@
 //   [--ffmpeg executable] [--profile] [--java executable]
 //
 // --profile additionally requires a JDK 11+ source-file launcher. Its managed
-// reference comes from Java ICC color management, not FFmpeg. JPEG/profile
+// JPEG and paired PNG references come from Java ICC color management, not
+// FFmpeg. PNG profile controls have a separate profile/manifest.json; JPEG/ICC
 // references are useful comparisons, not universal browser byte goldens.
 // Output must be new or empty. Existing paths are never deleted or overwritten.
 import fs from 'node:fs';
@@ -13,6 +14,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import assert from 'node:assert/strict';
+import { deflateSync } from 'node:zlib';
 
 const options = { output: '.tmp/palette-diagnostic-fixtures', ffmpeg: process.env.FFMPEG_BIN || process.env.FFMPEG || 'ffmpeg',
   java: process.env.JAVA_BIN || (process.env.JAVA_HOME ? path.join(process.env.JAVA_HOME, 'bin', process.platform === 'win32' ? 'java.exe' : 'java') : 'java'), profile: false };
@@ -74,6 +76,49 @@ function reference(entry) {
 }
 function encode(rawFile, file, width, height, args = []) {
   ffmpeg(['-f', 'rawvideo', '-pixel_format', 'rgba', '-video_size', `${width}x${height}`, '-i', path.join(directory, rawFile), '-frames:v', '1', ...args, path.join(directory, file)]);
+}
+
+// These new PNGs are constructed independently of the production encoder. Five
+// row filters and odd-width packed indices exercise more than RGBA/filter-zero.
+const crcTable = Uint32Array.from({ length: 256 }, (_, value) => {
+  for (let bit = 0; bit < 8; bit++) value = value & 1 ? 0xedb88320 ^ value >>> 1 : value >>> 1;
+  return value >>> 0;
+});
+function chunk(type, bytes = Buffer.alloc(0)) {
+  const name = Buffer.from(type, 'ascii'), output = Buffer.alloc(bytes.length + 12);
+  output.writeUInt32BE(bytes.length, 0); name.copy(output, 4); bytes.copy(output, 8);
+  let crc = 0xffffffff;
+  for (const value of output.subarray(4, output.length - 4)) crc = crcTable[(crc ^ value) & 255] ^ crc >>> 8;
+  output.writeUInt32BE((crc ^ 0xffffffff) >>> 0, output.length - 4);
+  return output;
+}
+function filteredRows(bytes, stride, height, bpp) {
+  const output = Buffer.alloc((stride + 1) * height);
+  for (let y = 0; y < height; y++) {
+    const filter = y % 5, start = y * stride, target = y * (stride + 1);
+    output[target] = filter;
+    for (let x = 0; x < stride; x++) {
+      const left = x >= bpp ? bytes[start + x - bpp] : 0, up = y ? bytes[start + x - stride] : 0;
+      const corner = y && x >= bpp ? bytes[start + x - stride - bpp] : 0;
+      let predictor = 0;
+      if (filter === 1) predictor = left;
+      else if (filter === 2) predictor = up;
+      else if (filter === 3) predictor = Math.floor((left + up) / 2);
+      else if (filter === 4) {
+        const p = left + up - corner, a = Math.abs(p - left), b = Math.abs(p - up), c = Math.abs(p - corner);
+        predictor = a <= b && a <= c ? left : b <= c ? up : corner;
+      }
+      output[target + x + 1] = (bytes[start + x] - predictor) & 255;
+    }
+  }
+  return output;
+}
+function png(width, height, depth, colorType, bytes, metadata) {
+  const header = Buffer.alloc(13);
+  header.writeUInt32BE(width, 0); header.writeUInt32BE(height, 4); header[8] = depth; header[9] = colorType;
+  const stride = Math.ceil(width * (colorType === 6 ? 4 : 1) * depth / 8);
+  return Buffer.concat([Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]), chunk('IHDR', header), ...metadata,
+    chunk('IDAT', deflateSync(filteredRows(bytes, stride, height, colorType === 6 ? 4 : 1))), chunk('IEND')]);
 }
 
 const width = 128, height = 128, palette = [0x4c382b, 0x513524, 0xb5834c, 0xc28c50, 0xe4b8aa, 0xc48846, 0xddccb3, 0xe2c9a8,
@@ -142,6 +187,30 @@ const jpeg = fs.readFileSync(path.join(directory, 'gradient-yuvj444p.jpg'));
 // gradients independently expose nonsquare dimensions and many distinct pixels.
 addExifSet('opaque', fs.readFileSync(path.join(directory, 'opaque.jpg')), fs.readFileSync(path.join(directory, 'opaque.jpg.decoded.rgba')), width, height);
 addExifSet('gradient', jpeg, baseGradient, gradientWidth, gradientHeight);
+
+// Every alpha byte occurs with every one of sixteen source RGBs. Low alpha
+// exposes destructive premultiplication even when a decoder preserves alpha.
+const alphaWidth = 256, alphaHeight = palette.length, alphaGrid = Buffer.alloc(alphaWidth * alphaHeight * 4);
+for (let y = 0; y < alphaHeight; y++) for (let x = 0; x < alphaWidth; x++) {
+  const p = (y * alphaWidth + x) * 4, color = palette[y];
+  alphaGrid[p] = color >>> 16; alphaGrid[p + 1] = color >>> 8; alphaGrid[p + 2] = color; alphaGrid[p + 3] = x;
+}
+write('alpha-grid.rgba', alphaGrid);
+write('alpha-grid.png', png(alphaWidth, alphaHeight, 8, 6, alphaGrid, [chunk('sRGB', Buffer.from([0]))]));
+encode('alpha-grid.rgba', 'alpha-grid.webp', alphaWidth, alphaHeight, ['-c:v', 'libwebp', '-lossless', '1']);
+
+const indexedWidth = 37, indexedHeight = 29, indexedStride = Math.ceil(indexedWidth / 2);
+const indexed = Buffer.alloc(indexedStride * indexedHeight), indexedRgba = Buffer.alloc(indexedWidth * indexedHeight * 4);
+const plte = Buffer.alloc(palette.length * 3), transparency = Buffer.from(Array.from({ length: palette.length }, (_, i) => [0, 1, 2, 64, 127, 128, 254, 255][i % 8]));
+for (let i = 0; i < palette.length; i++) { plte[i * 3] = palette[i] >>> 16; plte[i * 3 + 1] = palette[i] >>> 8; plte[i * 3 + 2] = palette[i]; }
+for (let y = 0; y < indexedHeight; y++) for (let x = 0; x < indexedWidth; x++) {
+  const index = (x + y * 3 + Math.floor(x / 7)) % palette.length, p = (y * indexedWidth + x) * 4;
+  indexed[y * indexedStride + (x >>> 1)] |= index << (x & 1 ? 0 : 4);
+  plte.copy(indexedRgba, p, index * 3, index * 3 + 3); indexedRgba[p + 3] = transparency[index];
+}
+write('indexed-trns.rgba', indexedRgba);
+write('indexed-trns.png', png(indexedWidth, indexedHeight, 4, 3, indexed,
+  [chunk('sRGB', Buffer.from([0])), chunk('PLTE', plte), chunk('tRNS', transparency)]));
 if (options.profile) {
   const javaSource = fileURLToPath(new URL('./PaletteProfileFixture.java', import.meta.url));
   run(options.java, [javaSource, directory]);
@@ -157,6 +226,38 @@ if (options.profile) {
   manifest.push({ file, type: 'image/jpeg', width: gradientWidth, height: gradientHeight, exactSource: false, rgbaFile,
     referenceVisibleColors: visibleColors(managed),
     referenceNote: 'Java built-in linear RGB ICC embedded in JPEG; independent Java ICC_ColorSpace.toRGB conversion (JDK color management, normally LCMS) of FFmpeg-decoded JPEG RGB. JPEG/ICC rounding can legitimately differ from browser pipelines.' });
+
+  // Profile controls intentionally stay out of the strict FFmpeg manifest. The
+  // transparent/opaque pair has identical encoded RGB and differs only in alpha;
+  // Java's managed references likewise differ only in alpha. Thus within-browser
+  // pair comparisons isolate premultiplication without demanding cross-CMS bytes.
+  const profileDirectory = path.join(directory, 'profile');
+  const profileManifest = [];
+  for (const opaque of [false, true]) {
+    const file = `profile/linear-${opaque ? 'opaque' : 'alpha'}.png`, rgbaFile = file + '.managed.rgba';
+    const source = Buffer.from(alphaGrid);
+    if (opaque) for (let p = 3; p < source.length; p += 4) source[p] = 255;
+    const iccp = Buffer.concat([Buffer.from('Linear RGB\0\0', 'binary'), deflateSync(profile)]);
+    write(file, png(alphaWidth, alphaHeight, 8, 6, source, [chunk('iCCP', iccp)]));
+    const managed = fs.readFileSync(path.join(directory, rgbaFile));
+    assert.equal(managed.length, source.length);
+    assert.notDeepEqual(managed, source, 'Linear RGB PNG requires an sRGB transform');
+    for (let p = 3; p < source.length; p += 4) assert.equal(managed[p], source[p], 'Managed reference preserves alpha');
+    profileManifest.push({ file: path.basename(file), type: 'image/png', width: alphaWidth, height: alphaHeight,
+      rgbaFile: path.basename(rgbaFile), exactSource: false, referenceVisibleColors: visibleColors(managed),
+      referenceNote: 'Independent Java ICC_ColorSpace.toRGB managed sRGB reference. Browser/CMS rounding can legitimately differ. Paired PNGs have identical encoded RGB and differ only in alpha.' });
+  }
+  fs.writeFileSync(path.join(profileDirectory, 'manifest.json'), JSON.stringify(profileManifest, null, 2) + '\n', { flag: 'wx' });
+}
+for (const [file, type, sourceRgbaFile, width, height] of [
+  ['alpha-grid.png', 'image/png', 'alpha-grid.rgba', alphaWidth, alphaHeight],
+  ['alpha-grid.webp', 'image/webp', 'alpha-grid.rgba', alphaWidth, alphaHeight],
+  ['indexed-trns.png', 'image/png', 'indexed-trns.rgba', indexedWidth, indexedHeight],
+]) {
+  const decoded = reference({ file, type, width, height, exactSource: true, sourceRgbaFile });
+  assert.ok(visibleColors(decoded) <= 64, 'Auto/Save control stays below the palette cap');
+  const alphas = [...new Set(Array.from({ length: decoded.length / 4 }, (_, i) => decoded[i * 4 + 3]))].sort((a, b) => a - b);
+  assert.deepEqual(alphas, file.startsWith('alpha-grid') ? Array.from({ length: 256 }, (_, i) => i) : [0, 1, 2, 64, 127, 128, 254, 255], 'Independent decoded alpha coverage for ' + file);
 }
 write('manifest.json', JSON.stringify(manifest, null, 2) + '\n');
 write('provenance.json', JSON.stringify({ generator: 'bench/make-palette-diagnostic-fixtures.mjs', ffmpeg: ffmpegVersion,

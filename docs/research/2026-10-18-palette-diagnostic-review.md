@@ -245,3 +245,8 @@ capability shim, not physical hardware. Receipts remain local under
 (`codex-desktop.json`, `codex-phone.json`, `brave-desktop.json`, `palette-29-phone.png`) and
 `isolated-brave-final-qa.json`. Fresh review details are in
 `.tmp/gif-palette-diagnostic/cross-browser-review.md`.
+
+The subsequent [Firefox alpha precision investigation](2026-10-18-firefox-alpha-precision.md)
+supersedes the 34-color limitation above where its runtime-verified native bitmap
+route is supported. The original 14 colors and alpha now survive acquisition and
+Save exactly; the earlier observations remain historical diagnostic evidence.
