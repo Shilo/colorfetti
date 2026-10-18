@@ -284,13 +284,18 @@
   // Size of the area the wall can use, measured from the page (see .probe in app.css).
   let wallWidth = $state(0);
   let wallHeight = $state(0);
-  // A tile is its square image plus a caption underneath. On touch screens the caption row also
-  // holds the Share and Remove buttons, so it is taller. These mirror the sizes in app.css.
+  // Source dimensions determine the ordered rows; source/caption identities stay stable on resize.
   const noHover = matchMedia('(hover: none)');
   let noHoverMatches = $state(noHover.matches);
   noHover.addEventListener('change', e => (noHoverMatches = e.matches));
   const canvasItems = $derived(items.length ? items : example ? [example] : []);
-  const layout = $derived(fitImageWall(canvasItems.length, wallWidth, wallHeight, noHoverMatches || !items.length));
+  const wallShapeKey = $derived(canvasItems.map(item => `${item.img.w}x${item.img.h}`).join('|'));
+  const wallImages = $derived.by(() => {
+    wallShapeKey;
+    // Analysis replacements with unchanged dimensions do not refit the wall.
+    return untrack(() => canvasItems.map(item => ({ w: item.img.w, h: item.img.h })));
+  });
+  const layout = $derived(fitImageWall(wallImages, wallWidth, wallHeight, noHoverMatches || !items.length));
   let dragDepth = $state(0);
   let message = $state('');
   let picker;
@@ -1100,13 +1105,13 @@
 
 
 <div class="grid" class:awaiting-images={!items.length} class:stack-captions={layout.stackCaptions}
-  style:--cols={layout.cols} style:--tile-size="{layout.size}px" use:measureCanvas use:emptyImport={!items.length}>
+  use:measureCanvas use:emptyImport={!items.length}>
   <div class="probe" bind:clientWidth={wallWidth} bind:clientHeight={wallHeight}></div>
-  <div class="tiles">
+  <div class="tiles" style:width="{layout.width}px" style:height="{layout.height}px">
     <!-- Theme demo variants are different immutable artwork sources. Remount only
          the demo when its source changes; real images retain their ID and caches. -->
-    {#each canvasItems as item (item.id === 0 ? item.original : item.id)}
-      <Tile {item} inset={IMAGE_INSET} first={ink[0]} second={ink[1]} {style} {set} {family} palette={prepared} palettePending={generatedPending} {alphaCut} {alphaMode} {metric} {maxColors} {cleanup} {dither} {ditherStrength} onpalettestatus={reportPaletteStage} {paletteRetry}
+    {#each canvasItems as item, index (item.id === 0 ? item.original : item.id)}
+      <Tile {item} wallGeometry={layout.tiles[index]} inset={IMAGE_INSET} first={ink[0]} second={ink[1]} {style} {set} {family} palette={prepared} palettePending={generatedPending} {alphaCut} {alphaMode} {metric} {maxColors} {cleanup} {dither} {ditherStrength} onpalettestatus={reportPaletteStage} {paletteRetry}
         colorUsageLabel={usageLabel(item)} colorUsagePending={usagePending(item)} usageIdentity={usageKey} onusageframe={previewUsage} analysisPending={needsAnalysis(item)} flipped={effectiveOriginal} comparing={previewing} active={!viewed} exportDisabled={generatedUnavailable || itemPaletteFailed(item)} budget={dragging ? DRAG_MS / canvasItems.length : 0}
         oncompare={compareHold} onopen={items.length ? openImage : undefined}
         exportDrag={items.length ? dragExports : undefined}
@@ -1177,7 +1182,10 @@
       sheet.close();
       removeItem(item);
       await tick();
-      (document.querySelector('.tile-share') ?? document.querySelector('.file-actions:not(.awaiting-import) .import-action') ?? document.querySelector('.example-add') ?? document.querySelector('.art'))?.focus();
+      const next = [...document.querySelectorAll('.tile-share'),
+        ...document.querySelectorAll('.file-actions:not(.awaiting-import) .import-action, .example-add, .art')]
+        .find(node => node.getClientRects().length);
+      next?.focus();
     }}><PixelIcon name="trash" />Remove</button>
     <button class="btn glass-btn sheet-cancel">Cancel</button>
   {/if}

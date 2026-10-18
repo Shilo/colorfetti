@@ -1,0 +1,21 @@
+/* Ordered rows share artwork heights and caption baselines. Explicit geometry keeps
+   keyed tiles in one parent, preserving focus, GIF playback and conversion ownership. */
+:root .tiles { position: relative; display: block; flex: none; }
+:root .tiles .wall-tile {
+  position: absolute; left: var(--wall-tile-x); top: var(--wall-tile-y);
+  width: var(--wall-tile-width); grid-template-rows: var(--wall-art-height) auto;
+  row-gap: 8px;
+}
+:root .tiles .wall-tile .art { height: var(--wall-art-height); aspect-ratio: auto; }
+/* Captions and touch actions retain their existing input-mode styles. Mouse
+   actions stay in a horizontal hover capsule, including narrow/shallow cards. */
+@media (hover: hover) {
+  :root .tiles .wall-tile .acts { display: flex; flex-wrap: nowrap; }
+  @container (max-width: 248px) {
+    :root .tiles .wall-tile .acts .ib { box-sizing: border-box; width: 28px; height: 28px; }
+  }
+  @container (max-width: 179px) {
+    :root .tiles .wall-tile .acts .ib { width: 24px; height: 24px; }
+    :root .tiles .wall-tile .acts { gap: 1px; }
+  }
+}

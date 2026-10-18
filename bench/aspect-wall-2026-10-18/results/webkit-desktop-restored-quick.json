@@ -1,0 +1,5224 @@
+{
+  "date": "2026-10-18T23:41:15.571Z",
+  "engine": "webkit",
+  "browser": "26.5",
+  "base": "http://127.0.0.1:60654",
+  "notes": [
+    "Browser automation complements manual Codex browser visual review.",
+    "Touch cases use browser touch emulation; Firefox uses touch-capable narrow viewports without unsupported isMobile emulation. These are not physical-device or Safari tests.",
+    "Images enter through the actual hidden artwork file input; no application state or rendering override."
+  ],
+  "checks": [
+    {
+      "label": "desktop/wide",
+      "pass": true,
+      "count": 1,
+      "rows": 1,
+      "scroll": false,
+      "measurements": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "documentWidth": 1440,
+        "touch": false,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "right": 1440,
+          "bottom": 1000,
+          "width": 1440,
+          "height": 1000,
+          "clientWidth": 1440,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "clientHeight": 1000
+        },
+        "probe": {
+          "x": 24,
+          "y": 8,
+          "right": 1416,
+          "bottom": 912,
+          "width": 1392,
+          "height": 904
+        },
+        "toolsTop": 924,
+        "tiles": [
+          {
+            "tile": {
+              "x": 24,
+              "y": 414.5,
+              "right": 1416,
+              "bottom": 505,
+              "width": 1392,
+              "height": 90.5
+            },
+            "art": {
+              "x": 24,
+              "y": 414.5,
+              "right": 1416,
+              "bottom": 470.5,
+              "width": 1392,
+              "height": 56
+            },
+            "cap": {
+              "x": 24,
+              "y": 478.5,
+              "right": 1416,
+              "bottom": 505,
+              "width": 1392,
+              "height": 26.5
+            },
+            "name": {
+              "x": 31,
+              "y": 482.5,
+              "right": 1310.390625,
+              "bottom": 500.5,
+              "width": 1279.390625,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1316.390625,
+              "y": 483,
+              "right": 1409,
+              "bottom": 501,
+              "width": 92.609375,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 1223,
+              "y": 421.5,
+              "right": 1409,
+              "bottom": 461.5,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              256,
+              1
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 1
+            },
+            "text": "aurora-256x1.png 256×1  ·  8 colors  "
+          }
+        ]
+      }
+    },
+    {
+      "label": "phone/wide",
+      "pass": true,
+      "count": 1,
+      "rows": 1,
+      "scroll": false,
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "touch": true,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "right": 390,
+          "bottom": 843.984375,
+          "width": 390,
+          "height": 843.984375,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "scrollHeight": 844,
+          "clientHeight": 844
+        },
+        "probe": {
+          "x": 12,
+          "y": 8,
+          "right": 378,
+          "bottom": 699.984375,
+          "width": 366,
+          "height": 691.984375
+        },
+        "toolsTop": 711.984375,
+        "tiles": [
+          {
+            "tile": {
+              "x": 12,
+              "y": 294.984375,
+              "right": 378,
+              "bottom": 410.984375,
+              "width": 366,
+              "height": 116
+            },
+            "art": {
+              "x": 12,
+              "y": 294.984375,
+              "right": 378,
+              "bottom": 350.984375,
+              "width": 366,
+              "height": 56
+            },
+            "cap": {
+              "x": 12,
+              "y": 358.984375,
+              "right": 378,
+              "bottom": 410.984375,
+              "width": 366,
+              "height": 52
+            },
+            "name": {
+              "x": 19,
+              "y": 362.984375,
+              "right": 129.234375,
+              "bottom": 390.984375,
+              "width": 110.234375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 19,
+              "y": 390.984375,
+              "right": 129.234375,
+              "bottom": 406.984375,
+              "width": 110.234375,
+              "height": 16
+            },
+            "more": {
+              "x": 327,
+              "y": 362.984375,
+              "right": 371,
+              "bottom": 406.984375,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              256,
+              1
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 1
+            },
+            "text": "aurora-256x1.png 256×1  ·  8 colors  "
+          }
+        ]
+      }
+    },
+    {
+      "label": "landscape/wide",
+      "pass": true,
+      "count": 1,
+      "rows": 1,
+      "scroll": false,
+      "measurements": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "documentWidth": 844,
+        "touch": true,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "right": 844,
+          "bottom": 390,
+          "width": 844,
+          "height": 390,
+          "clientWidth": 844,
+          "scrollWidth": 844,
+          "scrollHeight": 390,
+          "clientHeight": 390
+        },
+        "probe": {
+          "x": 24,
+          "y": 8,
+          "right": 820,
+          "bottom": 314,
+          "width": 796,
+          "height": 306
+        },
+        "toolsTop": 326,
+        "tiles": [
+          {
+            "tile": {
+              "x": 24,
+              "y": 102,
+              "right": 820,
+              "bottom": 218,
+              "width": 796,
+              "height": 116
+            },
+            "art": {
+              "x": 24,
+              "y": 102,
+              "right": 820,
+              "bottom": 158,
+              "width": 796,
+              "height": 56
+            },
+            "cap": {
+              "x": 24,
+              "y": 166,
+              "right": 820,
+              "bottom": 218,
+              "width": 796,
+              "height": 52
+            },
+            "name": {
+              "x": 31,
+              "y": 170,
+              "right": 141.234375,
+              "bottom": 198,
+              "width": 110.234375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 31,
+              "y": 198,
+              "right": 141.234375,
+              "bottom": 214,
+              "width": 110.234375,
+              "height": 16
+            },
+            "more": {
+              "x": 769,
+              "y": 170,
+              "right": 813,
+              "bottom": 214,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              256,
+              1
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 1
+            },
+            "text": "aurora-256x1.png 256×1  ·  8 colors  "
+          }
+        ]
+      }
+    },
+    {
+      "label": "desktop/extremes",
+      "pass": true,
+      "count": 6,
+      "rows": 3,
+      "scroll": false,
+      "measurements": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "documentWidth": 1440,
+        "touch": false,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "right": 1440,
+          "bottom": 1000,
+          "width": 1440,
+          "height": 1000,
+          "clientWidth": 1440,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "clientHeight": 1000
+        },
+        "probe": {
+          "x": 24,
+          "y": 8,
+          "right": 1416,
+          "bottom": 912,
+          "width": 1392,
+          "height": 904
+        },
+        "toolsTop": 924,
+        "tiles": [
+          {
+            "tile": {
+              "x": 24,
+              "y": 42.5,
+              "right": 1416,
+              "bottom": 133,
+              "width": 1392,
+              "height": 90.5
+            },
+            "art": {
+              "x": 24,
+              "y": 42.5,
+              "right": 1416,
+              "bottom": 98.5,
+              "width": 1392,
+              "height": 56
+            },
+            "cap": {
+              "x": 24,
+              "y": 106.5,
+              "right": 1416,
+              "bottom": 133,
+              "width": 1392,
+              "height": 26.5
+            },
+            "name": {
+              "x": 31,
+              "y": 110.5,
+              "right": 1306.015625,
+              "bottom": 128.5,
+              "width": 1275.015625,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1312.015625,
+              "y": 111,
+              "right": 1409,
+              "bottom": 129,
+              "width": 96.984375,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 1223,
+              "y": 49.5,
+              "right": 1409,
+              "bottom": 89.5,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              256,
+              1
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 1
+            },
+            "text": "aurora-256x1.png 256×1  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 26,
+              "y": 145.5,
+              "right": 206,
+              "bottom": 479,
+              "width": 180,
+              "height": 333.5
+            },
+            "art": {
+              "x": 26,
+              "y": 145.5,
+              "right": 206,
+              "bottom": 444.5,
+              "width": 180,
+              "height": 299
+            },
+            "cap": {
+              "x": 26,
+              "y": 452.5,
+              "right": 206,
+              "bottom": 479,
+              "width": 180,
+              "height": 26.5
+            },
+            "name": {
+              "x": 33,
+              "y": 456.5,
+              "right": 96.015625,
+              "bottom": 474.5,
+              "width": 63.015625,
+              "height": 18
+            },
+            "metadata": {
+              "x": 102.015625,
+              "y": 457,
+              "right": 199,
+              "bottom": 475,
+              "width": 96.984375,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 33,
+              "y": 152.5,
+              "right": 199,
+              "bottom": 188.5,
+              "width": 166,
+              "height": 36
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              1,
+              256
+            ],
+            "canvas": {
+              "width": 1,
+              "height": 256
+            },
+            "text": "vertical-1x256.png 1×256  ·  6 colors  "
+          },
+          {
+            "tile": {
+              "x": 218,
+              "y": 145.5,
+              "right": 1414,
+              "bottom": 479,
+              "width": 1196,
+              "height": 333.5
+            },
+            "art": {
+              "x": 218,
+              "y": 145.5,
+              "right": 1414,
+              "bottom": 444.5,
+              "width": 1196,
+              "height": 299
+            },
+            "cap": {
+              "x": 218,
+              "y": 452.5,
+              "right": 1414,
+              "bottom": 479,
+              "width": 1196,
+              "height": 26.5
+            },
+            "name": {
+              "x": 225,
+              "y": 456.5,
+              "right": 1293.109375,
+              "bottom": 474.5,
+              "width": 1068.109375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1299.109375,
+              "y": 457,
+              "right": 1407,
+              "bottom": 475,
+              "width": 107.890625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 1221,
+              "y": 152.5,
+              "right": 1407,
+              "bottom": 192.5,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              512,
+              64
+            ],
+            "canvas": {
+              "width": 512,
+              "height": 64
+            },
+            "text": "strip-512x64.png 512×64  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 130,
+              "y": 491.5,
+              "right": 310,
+              "bottom": 877,
+              "width": 180,
+              "height": 385.5
+            },
+            "art": {
+              "x": 130,
+              "y": 491.5,
+              "right": 310,
+              "bottom": 842.5,
+              "width": 180,
+              "height": 351
+            },
+            "cap": {
+              "x": 130,
+              "y": 850.5,
+              "right": 310,
+              "bottom": 877,
+              "width": 180,
+              "height": 26.5
+            },
+            "name": {
+              "x": 137,
+              "y": 854.5,
+              "right": 189.109375,
+              "bottom": 872.5,
+              "width": 52.109375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 195.109375,
+              "y": 855,
+              "right": 303,
+              "bottom": 873,
+              "width": 107.890625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 137,
+              "y": 498.5,
+              "right": 303,
+              "bottom": 534.5,
+              "width": 166,
+              "height": 36
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              64,
+              512
+            ],
+            "canvas": {
+              "width": 43,
+              "height": 343
+            },
+            "text": "tower-64x512.png 64×512  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 322,
+              "y": 491.5,
+              "right": 673,
+              "bottom": 877,
+              "width": 351,
+              "height": 385.5
+            },
+            "art": {
+              "x": 322,
+              "y": 491.5,
+              "right": 673,
+              "bottom": 842.5,
+              "width": 351,
+              "height": 351
+            },
+            "cap": {
+              "x": 322,
+              "y": 850.5,
+              "right": 673,
+              "bottom": 877,
+              "width": 351,
+              "height": 26.5
+            },
+            "name": {
+              "x": 329,
+              "y": 854.5,
+              "right": 544.484375,
+              "bottom": 872.5,
+              "width": 215.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 550.484375,
+              "y": 855,
+              "right": 666,
+              "bottom": 873,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 480,
+              "y": 498.5,
+              "right": 666,
+              "bottom": 538.5,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              256,
+              256
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 256
+            },
+            "text": "square-256x256.png 256×256  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 685,
+              "y": 491.5,
+              "right": 1309,
+              "bottom": 877,
+              "width": 624,
+              "height": 385.5
+            },
+            "art": {
+              "x": 685,
+              "y": 491.5,
+              "right": 1309,
+              "bottom": 842.5,
+              "width": 624,
+              "height": 351
+            },
+            "cap": {
+              "x": 685,
+              "y": 850.5,
+              "right": 1309,
+              "bottom": 877,
+              "width": 624,
+              "height": 26.5
+            },
+            "name": {
+              "x": 692,
+              "y": 854.5,
+              "right": 1180.484375,
+              "bottom": 872.5,
+              "width": 488.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1186.484375,
+              "y": 855,
+              "right": 1302,
+              "bottom": 873,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 1116,
+              "y": 498.5,
+              "right": 1302,
+              "bottom": 538.5,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              320,
+              180
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 180
+            },
+            "text": "transparent-320x180.png 320×180  ·  8 colors  "
+          }
+        ]
+      }
+    },
+    {
+      "label": "phone/extremes",
+      "pass": true,
+      "count": 6,
+      "rows": 5,
+      "scroll": true,
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "touch": true,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "right": 390,
+          "bottom": 843.984375,
+          "width": 390,
+          "height": 843.984375,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "scrollHeight": 1267,
+          "clientHeight": 844
+        },
+        "probe": {
+          "x": 12,
+          "y": 8,
+          "right": 378,
+          "bottom": 699.984375,
+          "width": 366,
+          "height": 691.984375
+        },
+        "toolsTop": 711.984375,
+        "tiles": [
+          {
+            "tile": {
+              "x": 12,
+              "y": 8,
+              "right": 378,
+              "bottom": 124,
+              "width": 366,
+              "height": 116
+            },
+            "art": {
+              "x": 12,
+              "y": 8,
+              "right": 378,
+              "bottom": 64,
+              "width": 366,
+              "height": 56
+            },
+            "cap": {
+              "x": 12,
+              "y": 72,
+              "right": 378,
+              "bottom": 124,
+              "width": 366,
+              "height": 52
+            },
+            "name": {
+              "x": 19,
+              "y": 76,
+              "right": 129.234375,
+              "bottom": 104,
+              "width": 110.234375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 19,
+              "y": 104,
+              "right": 129.234375,
+              "bottom": 120,
+              "width": 110.234375,
+              "height": 16
+            },
+            "more": {
+              "x": 327,
+              "y": 76,
+              "right": 371,
+              "bottom": 120,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              256,
+              1
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 1
+            },
+            "text": "aurora-256x1.png 256×1  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 113,
+              "y": 138,
+              "right": 277,
+              "bottom": 414,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 113,
+              "y": 138,
+              "right": 277,
+              "bottom": 354,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 113,
+              "y": 362,
+              "right": 277,
+              "bottom": 414,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 120,
+              "y": 366,
+              "right": 220,
+              "bottom": 394,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 120,
+              "y": 394,
+              "right": 220,
+              "bottom": 410,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 226,
+              "y": 366,
+              "right": 270,
+              "bottom": 410,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              1,
+              256
+            ],
+            "canvas": {
+              "width": 1,
+              "height": 256
+            },
+            "text": "vertical-1x256.png 1×256  ·  6 colors  "
+          },
+          {
+            "tile": {
+              "x": 13,
+              "y": 428,
+              "right": 377,
+              "bottom": 579,
+              "width": 364,
+              "height": 151
+            },
+            "art": {
+              "x": 13,
+              "y": 428,
+              "right": 377,
+              "bottom": 519,
+              "width": 364,
+              "height": 91
+            },
+            "cap": {
+              "x": 13,
+              "y": 527,
+              "right": 377,
+              "bottom": 579,
+              "width": 364,
+              "height": 52
+            },
+            "name": {
+              "x": 20,
+              "y": 531,
+              "right": 125.53125,
+              "bottom": 559,
+              "width": 105.53125,
+              "height": 28
+            },
+            "metadata": {
+              "x": 20,
+              "y": 559,
+              "right": 125.53125,
+              "bottom": 575,
+              "width": 105.53125,
+              "height": 16
+            },
+            "more": {
+              "x": 326,
+              "y": 531,
+              "right": 370,
+              "bottom": 575,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              512,
+              64
+            ],
+            "canvas": {
+              "width": 512,
+              "height": 64
+            },
+            "text": "strip-512x64.png 512×64  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 12,
+              "y": 593,
+              "right": 176,
+              "bottom": 842,
+              "width": 164,
+              "height": 249
+            },
+            "art": {
+              "x": 12,
+              "y": 593,
+              "right": 176,
+              "bottom": 782,
+              "width": 164,
+              "height": 189
+            },
+            "cap": {
+              "x": 12,
+              "y": 790,
+              "right": 176,
+              "bottom": 842,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 19,
+              "y": 794,
+              "right": 119,
+              "bottom": 822,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 19,
+              "y": 822,
+              "right": 119,
+              "bottom": 838,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 125,
+              "y": 794,
+              "right": 169,
+              "bottom": 838,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              64,
+              512
+            ],
+            "canvas": {
+              "width": 64,
+              "height": 512
+            },
+            "text": "tower-64x512.png 64×512  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 188,
+              "y": 593,
+              "right": 377,
+              "bottom": 842,
+              "width": 189,
+              "height": 249
+            },
+            "art": {
+              "x": 188,
+              "y": 593,
+              "right": 377,
+              "bottom": 782,
+              "width": 189,
+              "height": 189
+            },
+            "cap": {
+              "x": 188,
+              "y": 790,
+              "right": 377,
+              "bottom": 842,
+              "width": 189,
+              "height": 52
+            },
+            "name": {
+              "x": 195,
+              "y": 794,
+              "right": 320,
+              "bottom": 822,
+              "width": 125,
+              "height": 28
+            },
+            "metadata": {
+              "x": 195,
+              "y": 822,
+              "right": 320,
+              "bottom": 838,
+              "width": 125,
+              "height": 16
+            },
+            "more": {
+              "x": 326,
+              "y": 794,
+              "right": 370,
+              "bottom": 838,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              256,
+              256
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 256
+            },
+            "text": "square-256x256.png 256×256  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 13,
+              "y": 856,
+              "right": 377,
+              "bottom": 1121,
+              "width": 364,
+              "height": 265
+            },
+            "art": {
+              "x": 13,
+              "y": 856,
+              "right": 377,
+              "bottom": 1061,
+              "width": 364,
+              "height": 205
+            },
+            "cap": {
+              "x": 13,
+              "y": 1069,
+              "right": 377,
+              "bottom": 1121,
+              "width": 364,
+              "height": 52
+            },
+            "name": {
+              "x": 20,
+              "y": 1073,
+              "right": 177.8125,
+              "bottom": 1101,
+              "width": 157.8125,
+              "height": 28
+            },
+            "metadata": {
+              "x": 20,
+              "y": 1101,
+              "right": 177.8125,
+              "bottom": 1117,
+              "width": 157.8125,
+              "height": 16
+            },
+            "more": {
+              "x": 326,
+              "y": 1073,
+              "right": 370,
+              "bottom": 1117,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              320,
+              180
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 180
+            },
+            "text": "transparent-320x180.png 320×180  ·  8 colors  "
+          }
+        ]
+      }
+    },
+    {
+      "label": "landscape/extremes",
+      "pass": true,
+      "count": 6,
+      "rows": 4,
+      "scroll": true,
+      "measurements": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "documentWidth": 844,
+        "touch": true,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "right": 844,
+          "bottom": 390,
+          "width": 844,
+          "height": 390,
+          "clientWidth": 844,
+          "scrollWidth": 844,
+          "scrollHeight": 1055,
+          "clientHeight": 390
+        },
+        "probe": {
+          "x": 24,
+          "y": 8,
+          "right": 820,
+          "bottom": 314,
+          "width": 796,
+          "height": 306
+        },
+        "toolsTop": 326,
+        "tiles": [
+          {
+            "tile": {
+              "x": 24,
+              "y": 8,
+              "right": 820,
+              "bottom": 124,
+              "width": 796,
+              "height": 116
+            },
+            "art": {
+              "x": 24,
+              "y": 8,
+              "right": 820,
+              "bottom": 64,
+              "width": 796,
+              "height": 56
+            },
+            "cap": {
+              "x": 24,
+              "y": 72,
+              "right": 820,
+              "bottom": 124,
+              "width": 796,
+              "height": 52
+            },
+            "name": {
+              "x": 31,
+              "y": 76,
+              "right": 141.234375,
+              "bottom": 104,
+              "width": 110.234375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 31,
+              "y": 104,
+              "right": 141.234375,
+              "bottom": 120,
+              "width": 110.234375,
+              "height": 16
+            },
+            "more": {
+              "x": 769,
+              "y": 76,
+              "right": 813,
+              "bottom": 120,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              256,
+              1
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 1
+            },
+            "text": "aurora-256x1.png 256×1  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 340,
+              "y": 138,
+              "right": 504,
+              "bottom": 414,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 340,
+              "y": 138,
+              "right": 504,
+              "bottom": 354,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 340,
+              "y": 362,
+              "right": 504,
+              "bottom": 414,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 347,
+              "y": 366,
+              "right": 447,
+              "bottom": 394,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 347,
+              "y": 394,
+              "right": 447,
+              "bottom": 410,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 453,
+              "y": 366,
+              "right": 497,
+              "bottom": 410,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              1,
+              256
+            ],
+            "canvas": {
+              "width": 1,
+              "height": 256
+            },
+            "text": "vertical-1x256.png 1×256  ·  6 colors  "
+          },
+          {
+            "tile": {
+              "x": 24,
+              "y": 428,
+              "right": 820,
+              "bottom": 687,
+              "width": 796,
+              "height": 259
+            },
+            "art": {
+              "x": 24,
+              "y": 428,
+              "right": 820,
+              "bottom": 627,
+              "width": 796,
+              "height": 199
+            },
+            "cap": {
+              "x": 24,
+              "y": 635,
+              "right": 820,
+              "bottom": 687,
+              "width": 796,
+              "height": 52
+            },
+            "name": {
+              "x": 31,
+              "y": 639,
+              "right": 136.53125,
+              "bottom": 667,
+              "width": 105.53125,
+              "height": 28
+            },
+            "metadata": {
+              "x": 31,
+              "y": 667,
+              "right": 136.53125,
+              "bottom": 683,
+              "width": 105.53125,
+              "height": 16
+            },
+            "more": {
+              "x": 769,
+              "y": 639,
+              "right": 813,
+              "bottom": 683,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              512,
+              64
+            ],
+            "canvas": {
+              "width": 512,
+              "height": 64
+            },
+            "text": "strip-512x64.png 512×64  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 28,
+              "y": 701,
+              "right": 192,
+              "bottom": 977,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 28,
+              "y": 701,
+              "right": 192,
+              "bottom": 917,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 28,
+              "y": 925,
+              "right": 192,
+              "bottom": 977,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 35,
+              "y": 929,
+              "right": 135,
+              "bottom": 957,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 35,
+              "y": 957,
+              "right": 135,
+              "bottom": 973,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 141,
+              "y": 929,
+              "right": 185,
+              "bottom": 973,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              64,
+              512
+            ],
+            "canvas": {
+              "width": 64,
+              "height": 512
+            },
+            "text": "tower-64x512.png 64×512  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 204,
+              "y": 701,
+              "right": 420,
+              "bottom": 977,
+              "width": 216,
+              "height": 276
+            },
+            "art": {
+              "x": 204,
+              "y": 701,
+              "right": 420,
+              "bottom": 917,
+              "width": 216,
+              "height": 216
+            },
+            "cap": {
+              "x": 204,
+              "y": 925,
+              "right": 420,
+              "bottom": 977,
+              "width": 216,
+              "height": 52
+            },
+            "name": {
+              "x": 211,
+              "y": 929,
+              "right": 342.359375,
+              "bottom": 957,
+              "width": 131.359375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 211,
+              "y": 957,
+              "right": 342.359375,
+              "bottom": 973,
+              "width": 131.359375,
+              "height": 16
+            },
+            "more": {
+              "x": 369,
+              "y": 929,
+              "right": 413,
+              "bottom": 973,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              256,
+              256
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 256
+            },
+            "text": "square-256x256.png 256×256  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 432,
+              "y": 701,
+              "right": 816,
+              "bottom": 977,
+              "width": 384,
+              "height": 276
+            },
+            "art": {
+              "x": 432,
+              "y": 701,
+              "right": 816,
+              "bottom": 917,
+              "width": 384,
+              "height": 216
+            },
+            "cap": {
+              "x": 432,
+              "y": 925,
+              "right": 816,
+              "bottom": 977,
+              "width": 384,
+              "height": 52
+            },
+            "name": {
+              "x": 439,
+              "y": 929,
+              "right": 596.8125,
+              "bottom": 957,
+              "width": 157.8125,
+              "height": 28
+            },
+            "metadata": {
+              "x": 439,
+              "y": 957,
+              "right": 596.8125,
+              "bottom": 973,
+              "width": 157.8125,
+              "height": 16
+            },
+            "more": {
+              "x": 765,
+              "y": 929,
+              "right": 809,
+              "bottom": 973,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              320,
+              180
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 180
+            },
+            "text": "transparent-320x180.png 320×180  ·  8 colors  "
+          }
+        ]
+      }
+    },
+    {
+      "label": "desktop/all",
+      "pass": true,
+      "count": 16,
+      "rows": 6,
+      "scroll": true,
+      "measurements": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "documentWidth": 1440,
+        "touch": false,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "right": 1440,
+          "bottom": 1000,
+          "width": 1440,
+          "height": 1000,
+          "clientWidth": 1440,
+          "scrollWidth": 1440,
+          "scrollHeight": 1742,
+          "clientHeight": 1000
+        },
+        "probe": {
+          "x": 24,
+          "y": 8,
+          "right": 1416,
+          "bottom": 912,
+          "width": 1392,
+          "height": 904
+        },
+        "toolsTop": 924,
+        "tiles": [
+          {
+            "tile": {
+              "x": 60,
+              "y": 8,
+              "right": 324,
+              "bottom": 306.5,
+              "width": 264,
+              "height": 298.5
+            },
+            "art": {
+              "x": 60,
+              "y": 8,
+              "right": 324,
+              "bottom": 272,
+              "width": 264,
+              "height": 264
+            },
+            "cap": {
+              "x": 60,
+              "y": 280,
+              "right": 324,
+              "bottom": 306.5,
+              "width": 264,
+              "height": 26.5
+            },
+            "name": {
+              "x": 67,
+              "y": 284,
+              "right": 195.484375,
+              "bottom": 302,
+              "width": 128.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 201.484375,
+              "y": 284.5,
+              "right": 317,
+              "bottom": 302.5,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 131,
+              "y": 15,
+              "right": 317,
+              "bottom": 55,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              256,
+              256
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 256
+            },
+            "text": "square-256x256.png 256×256  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 336,
+              "y": 8,
+              "right": 688,
+              "bottom": 306.5,
+              "width": 352,
+              "height": 298.5
+            },
+            "art": {
+              "x": 336,
+              "y": 8,
+              "right": 688,
+              "bottom": 272,
+              "width": 352,
+              "height": 264
+            },
+            "cap": {
+              "x": 336,
+              "y": 280,
+              "right": 688,
+              "bottom": 306.5,
+              "width": 352,
+              "height": 26.5
+            },
+            "name": {
+              "x": 343,
+              "y": 284,
+              "right": 559.484375,
+              "bottom": 302,
+              "width": 216.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 565.484375,
+              "y": 284.5,
+              "right": 681,
+              "bottom": 302.5,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 495,
+              "y": 15,
+              "right": 681,
+              "bottom": 55,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              320,
+              240
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 240
+            },
+            "text": "landscape-320x240.png 320×240  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 700,
+              "y": 8,
+              "right": 898,
+              "bottom": 306.5,
+              "width": 198,
+              "height": 298.5
+            },
+            "art": {
+              "x": 700,
+              "y": 8,
+              "right": 898,
+              "bottom": 272,
+              "width": 198,
+              "height": 264
+            },
+            "cap": {
+              "x": 700,
+              "y": 280,
+              "right": 898,
+              "bottom": 306.5,
+              "width": 198,
+              "height": 26.5
+            },
+            "name": {
+              "x": 707,
+              "y": 284,
+              "right": 769.484375,
+              "bottom": 302,
+              "width": 62.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 775.484375,
+              "y": 284.5,
+              "right": 891,
+              "bottom": 302.5,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 725,
+              "y": 15,
+              "right": 891,
+              "bottom": 51,
+              "width": 166,
+              "height": 36
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              240,
+              320
+            ],
+            "canvas": {
+              "width": 190,
+              "height": 253
+            },
+            "text": "portrait-240x320.png 240×320  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 910,
+              "y": 8,
+              "right": 1379,
+              "bottom": 306.5,
+              "width": 469,
+              "height": 298.5
+            },
+            "art": {
+              "x": 910,
+              "y": 8,
+              "right": 1379,
+              "bottom": 272,
+              "width": 469,
+              "height": 264
+            },
+            "cap": {
+              "x": 910,
+              "y": 280,
+              "right": 1379,
+              "bottom": 306.5,
+              "width": 469,
+              "height": 26.5
+            },
+            "name": {
+              "x": 917,
+              "y": 284,
+              "right": 1250.484375,
+              "bottom": 302,
+              "width": 333.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1256.484375,
+              "y": 284.5,
+              "right": 1372,
+              "bottom": 302.5,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 1186,
+              "y": 15,
+              "right": 1372,
+              "bottom": 55,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              384,
+              216
+            ],
+            "canvas": {
+              "width": 384,
+              "height": 216
+            },
+            "text": "widescreen-384x216.png 384×216  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 132,
+              "y": 319,
+              "right": 312,
+              "bottom": 617.5,
+              "width": 180,
+              "height": 298.5
+            },
+            "art": {
+              "x": 132,
+              "y": 319,
+              "right": 312,
+              "bottom": 583,
+              "width": 180,
+              "height": 264
+            },
+            "cap": {
+              "x": 132,
+              "y": 591,
+              "right": 312,
+              "bottom": 617.5,
+              "width": 180,
+              "height": 26.5
+            },
+            "name": {
+              "x": 139,
+              "y": 595,
+              "right": 183.484375,
+              "bottom": 613,
+              "width": 44.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 189.484375,
+              "y": 595.5,
+              "right": 305,
+              "bottom": 613.5,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 139,
+              "y": 326,
+              "right": 305,
+              "bottom": 362,
+              "width": 166,
+              "height": 36
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              216,
+              384
+            ],
+            "canvas": {
+              "width": 144,
+              "height": 256
+            },
+            "text": "phone-216x384.png 216×384  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 324,
+              "y": 319,
+              "right": 1116,
+              "bottom": 617.5,
+              "width": 792,
+              "height": 298.5
+            },
+            "art": {
+              "x": 324,
+              "y": 319,
+              "right": 1116,
+              "bottom": 583,
+              "width": 792,
+              "height": 264
+            },
+            "cap": {
+              "x": 324,
+              "y": 591,
+              "right": 1116,
+              "bottom": 617.5,
+              "width": 792,
+              "height": 26.5
+            },
+            "name": {
+              "x": 331,
+              "y": 595,
+              "right": 987.484375,
+              "bottom": 613,
+              "width": 656.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 993.484375,
+              "y": 595.5,
+              "right": 1109,
+              "bottom": 613.5,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 923,
+              "y": 326,
+              "right": 1109,
+              "bottom": 366,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              384,
+              128
+            ],
+            "canvas": {
+              "width": 384,
+              "height": 128
+            },
+            "text": "banner-384x128.png 384×128  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 1128,
+              "y": 319,
+              "right": 1308,
+              "bottom": 617.5,
+              "width": 180,
+              "height": 298.5
+            },
+            "art": {
+              "x": 1128,
+              "y": 319,
+              "right": 1308,
+              "bottom": 583,
+              "width": 180,
+              "height": 264
+            },
+            "cap": {
+              "x": 1128,
+              "y": 591,
+              "right": 1308,
+              "bottom": 617.5,
+              "width": 180,
+              "height": 26.5
+            },
+            "name": {
+              "x": 1135,
+              "y": 595,
+              "right": 1179.484375,
+              "bottom": 613,
+              "width": 44.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1185.484375,
+              "y": 595.5,
+              "right": 1301,
+              "bottom": 613.5,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 1135,
+              "y": 326,
+              "right": 1301,
+              "bottom": 362,
+              "width": 166,
+              "height": 36
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              128,
+              384
+            ],
+            "canvas": {
+              "width": 85,
+              "height": 256
+            },
+            "text": "column-128x384.png 128×384  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 96,
+              "y": 630,
+              "right": 1152,
+              "bottom": 928.5,
+              "width": 1056,
+              "height": 298.5
+            },
+            "art": {
+              "x": 96,
+              "y": 630,
+              "right": 1152,
+              "bottom": 894,
+              "width": 1056,
+              "height": 264
+            },
+            "cap": {
+              "x": 96,
+              "y": 902,
+              "right": 1152,
+              "bottom": 928.5,
+              "width": 1056,
+              "height": 26.5
+            },
+            "name": {
+              "x": 103,
+              "y": 906,
+              "right": 1031.109375,
+              "bottom": 924,
+              "width": 928.109375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1037.109375,
+              "y": 906.5,
+              "right": 1145,
+              "bottom": 924.5,
+              "width": 107.890625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 959,
+              "y": 637,
+              "right": 1145,
+              "bottom": 677,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              512,
+              64
+            ],
+            "canvas": {
+              "width": 512,
+              "height": 64
+            },
+            "text": "strip-512x64.png 512×64  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 1164,
+              "y": 630,
+              "right": 1344,
+              "bottom": 928.5,
+              "width": 180,
+              "height": 298.5
+            },
+            "art": {
+              "x": 1164,
+              "y": 630,
+              "right": 1344,
+              "bottom": 894,
+              "width": 180,
+              "height": 264
+            },
+            "cap": {
+              "x": 1164,
+              "y": 902,
+              "right": 1344,
+              "bottom": 928.5,
+              "width": 180,
+              "height": 26.5
+            },
+            "name": {
+              "x": 1171,
+              "y": 906,
+              "right": 1223.109375,
+              "bottom": 924,
+              "width": 52.109375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1229.109375,
+              "y": 906.5,
+              "right": 1337,
+              "bottom": 924.5,
+              "width": 107.890625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 1171,
+              "y": 637,
+              "right": 1337,
+              "bottom": 673,
+              "width": 166,
+              "height": 36
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              64,
+              512
+            ],
+            "canvas": {
+              "width": 32,
+              "height": 256
+            },
+            "text": "tower-64x512.png 64×512  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 24,
+              "y": 941,
+              "right": 1416,
+              "bottom": 1031.5,
+              "width": 1392,
+              "height": 90.5
+            },
+            "art": {
+              "x": 24,
+              "y": 941,
+              "right": 1416,
+              "bottom": 997,
+              "width": 1392,
+              "height": 56
+            },
+            "cap": {
+              "x": 24,
+              "y": 1005,
+              "right": 1416,
+              "bottom": 1031.5,
+              "width": 1392,
+              "height": 26.5
+            },
+            "name": {
+              "x": 31,
+              "y": 1009,
+              "right": 1306.015625,
+              "bottom": 1027,
+              "width": 1275.015625,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1312.015625,
+              "y": 1009.5,
+              "right": 1409,
+              "bottom": 1027.5,
+              "width": 96.984375,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 1223,
+              "y": 948,
+              "right": 1409,
+              "bottom": 988,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              256,
+              1
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 1
+            },
+            "text": "aurora-256x1.png 256×1  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 69,
+              "y": 1044,
+              "right": 249,
+              "bottom": 1342.5,
+              "width": 180,
+              "height": 298.5
+            },
+            "art": {
+              "x": 69,
+              "y": 1044,
+              "right": 249,
+              "bottom": 1308,
+              "width": 180,
+              "height": 264
+            },
+            "cap": {
+              "x": 69,
+              "y": 1316,
+              "right": 249,
+              "bottom": 1342.5,
+              "width": 180,
+              "height": 26.5
+            },
+            "name": {
+              "x": 76,
+              "y": 1320,
+              "right": 139.015625,
+              "bottom": 1338,
+              "width": 63.015625,
+              "height": 18
+            },
+            "metadata": {
+              "x": 145.015625,
+              "y": 1320.5,
+              "right": 242,
+              "bottom": 1338.5,
+              "width": 96.984375,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 76,
+              "y": 1051,
+              "right": 242,
+              "bottom": 1087,
+              "width": 166,
+              "height": 36
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              1,
+              256
+            ],
+            "canvas": {
+              "width": 1,
+              "height": 256
+            },
+            "text": "vertical-1x256.png 1×256  ·  6 colors  "
+          },
+          {
+            "tile": {
+              "x": 261,
+              "y": 1044,
+              "right": 730,
+              "bottom": 1342.5,
+              "width": 469,
+              "height": 298.5
+            },
+            "art": {
+              "x": 261,
+              "y": 1044,
+              "right": 730,
+              "bottom": 1308,
+              "width": 469,
+              "height": 264
+            },
+            "cap": {
+              "x": 261,
+              "y": 1316,
+              "right": 730,
+              "bottom": 1342.5,
+              "width": 469,
+              "height": 26.5
+            },
+            "name": {
+              "x": 268,
+              "y": 1320,
+              "right": 601.484375,
+              "bottom": 1338,
+              "width": 333.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 607.484375,
+              "y": 1320.5,
+              "right": 723,
+              "bottom": 1338.5,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 537,
+              "y": 1051,
+              "right": 723,
+              "bottom": 1091,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              320,
+              180
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 180
+            },
+            "text": "transparent-320x180.png 320×180  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 742,
+              "y": 1044,
+              "right": 1006,
+              "bottom": 1342.5,
+              "width": 264,
+              "height": 298.5
+            },
+            "art": {
+              "x": 742,
+              "y": 1044,
+              "right": 1006,
+              "bottom": 1308,
+              "width": 264,
+              "height": 264
+            },
+            "cap": {
+              "x": 742,
+              "y": 1316,
+              "right": 1006,
+              "bottom": 1342.5,
+              "width": 264,
+              "height": 26.5
+            },
+            "name": {
+              "x": 749,
+              "y": 1320,
+              "right": 920.5,
+              "bottom": 1338,
+              "width": 171.5,
+              "height": 18
+            },
+            "metadata": {
+              "x": 926.5,
+              "y": 1320.5,
+              "right": 999,
+              "bottom": 1338.5,
+              "width": 72.5,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 813,
+              "y": 1051,
+              "right": 999,
+              "bottom": 1091,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              1,
+              1
+            ],
+            "canvas": {
+              "width": 1,
+              "height": 1
+            },
+            "text": "tiny-1x1.png 1×1  ·  1 color  "
+          },
+          {
+            "tile": {
+              "x": 1018,
+              "y": 1044,
+              "right": 1370,
+              "bottom": 1342.5,
+              "width": 352,
+              "height": 298.5
+            },
+            "art": {
+              "x": 1018,
+              "y": 1044,
+              "right": 1370,
+              "bottom": 1308,
+              "width": 352,
+              "height": 264
+            },
+            "cap": {
+              "x": 1018,
+              "y": 1316,
+              "right": 1370,
+              "bottom": 1342.5,
+              "width": 352,
+              "height": 26.5
+            },
+            "name": {
+              "x": 1025,
+              "y": 1320,
+              "right": 1241.484375,
+              "bottom": 1338,
+              "width": 216.484375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1247.484375,
+              "y": 1320.5,
+              "right": 1363,
+              "bottom": 1338.5,
+              "width": 115.515625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 1177,
+              "y": 1051,
+              "right": 1363,
+              "bottom": 1091,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              320,
+              240
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 240
+            },
+            "text": "a-very-long-artwork-filename-that-must-remain-readable-beside-complete-resolution-and-colors.png 320×240  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 228,
+              "y": 1355,
+              "right": 1020,
+              "bottom": 1653.5,
+              "width": 792,
+              "height": 298.5
+            },
+            "art": {
+              "x": 228,
+              "y": 1355,
+              "right": 1020,
+              "bottom": 1619,
+              "width": 792,
+              "height": 264
+            },
+            "cap": {
+              "x": 228,
+              "y": 1627,
+              "right": 1020,
+              "bottom": 1653.5,
+              "width": 792,
+              "height": 26.5
+            },
+            "name": {
+              "x": 235,
+              "y": 1631,
+              "right": 899.109375,
+              "bottom": 1649,
+              "width": 664.109375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 905.109375,
+              "y": 1631.5,
+              "right": 1013,
+              "bottom": 1649.5,
+              "width": 107.890625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 827,
+              "y": 1362,
+              "right": 1013,
+              "bottom": 1402,
+              "width": 186,
+              "height": 40
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              192,
+              64
+            ],
+            "canvas": {
+              "width": 192,
+              "height": 64
+            },
+            "text": "animated-wide-192x64.gif 192×64  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 1032,
+              "y": 1355,
+              "right": 1212,
+              "bottom": 1653.5,
+              "width": 180,
+              "height": 298.5
+            },
+            "art": {
+              "x": 1032,
+              "y": 1355,
+              "right": 1212,
+              "bottom": 1619,
+              "width": 180,
+              "height": 264
+            },
+            "cap": {
+              "x": 1032,
+              "y": 1627,
+              "right": 1212,
+              "bottom": 1653.5,
+              "width": 180,
+              "height": 26.5
+            },
+            "name": {
+              "x": 1039,
+              "y": 1631,
+              "right": 1091.109375,
+              "bottom": 1649,
+              "width": 52.109375,
+              "height": 18
+            },
+            "metadata": {
+              "x": 1097.109375,
+              "y": 1631.5,
+              "right": 1205,
+              "bottom": 1649.5,
+              "width": 107.890625,
+              "height": 18
+            },
+            "more": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actions": {
+              "x": 1039,
+              "y": 1362,
+              "right": 1205,
+              "bottom": 1398,
+              "width": 166,
+              "height": 36
+            },
+            "actionsDisplay": "flex",
+            "countOrder": 0,
+            "resolutionOrder": 2,
+            "source": [
+              64,
+              192
+            ],
+            "canvas": null,
+            "text": "animated-tall-64x192.gif 64×192  ·  8 colors  "
+          }
+        ]
+      }
+    },
+    {
+      "label": "phone/all",
+      "pass": true,
+      "count": 16,
+      "rows": 16,
+      "scroll": true,
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "touch": true,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "right": 390,
+          "bottom": 843.984375,
+          "width": 390,
+          "height": 843.984375,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "scrollHeight": 4285,
+          "clientHeight": 844
+        },
+        "probe": {
+          "x": 12,
+          "y": 8,
+          "right": 378,
+          "bottom": 699.984375,
+          "width": 366,
+          "height": 691.984375
+        },
+        "toolsTop": 711.984375,
+        "tiles": [
+          {
+            "tile": {
+              "x": 87,
+              "y": 8,
+              "right": 303,
+              "bottom": 284,
+              "width": 216,
+              "height": 276
+            },
+            "art": {
+              "x": 87,
+              "y": 8,
+              "right": 303,
+              "bottom": 224,
+              "width": 216,
+              "height": 216
+            },
+            "cap": {
+              "x": 87,
+              "y": 232,
+              "right": 303,
+              "bottom": 284,
+              "width": 216,
+              "height": 52
+            },
+            "name": {
+              "x": 94,
+              "y": 236,
+              "right": 225.359375,
+              "bottom": 264,
+              "width": 131.359375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 94,
+              "y": 264,
+              "right": 225.359375,
+              "bottom": 280,
+              "width": 131.359375,
+              "height": 16
+            },
+            "more": {
+              "x": 252,
+              "y": 236,
+              "right": 296,
+              "bottom": 280,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              256,
+              256
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 256
+            },
+            "text": "square-256x256.png 256×256  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 51,
+              "y": 298,
+              "right": 339,
+              "bottom": 574,
+              "width": 288,
+              "height": 276
+            },
+            "art": {
+              "x": 51,
+              "y": 298,
+              "right": 339,
+              "bottom": 514,
+              "width": 288,
+              "height": 216
+            },
+            "cap": {
+              "x": 51,
+              "y": 522,
+              "right": 339,
+              "bottom": 574,
+              "width": 288,
+              "height": 52
+            },
+            "name": {
+              "x": 58,
+              "y": 526,
+              "right": 210.359375,
+              "bottom": 554,
+              "width": 152.359375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 58,
+              "y": 554,
+              "right": 210.359375,
+              "bottom": 570,
+              "width": 152.359375,
+              "height": 16
+            },
+            "more": {
+              "x": 288,
+              "y": 526,
+              "right": 332,
+              "bottom": 570,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              320,
+              240
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 240
+            },
+            "text": "landscape-320x240.png 320×240  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 113,
+              "y": 588,
+              "right": 277,
+              "bottom": 864,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 113,
+              "y": 588,
+              "right": 277,
+              "bottom": 804,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 113,
+              "y": 812,
+              "right": 277,
+              "bottom": 864,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 120,
+              "y": 816,
+              "right": 220,
+              "bottom": 844,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 120,
+              "y": 844,
+              "right": 220,
+              "bottom": 860,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 226,
+              "y": 816,
+              "right": 270,
+              "bottom": 860,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              240,
+              320
+            ],
+            "canvas": {
+              "width": 240,
+              "height": 320
+            },
+            "text": "portrait-240x320.png 240×320  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 13,
+              "y": 878,
+              "right": 377,
+              "bottom": 1143,
+              "width": 364,
+              "height": 265
+            },
+            "art": {
+              "x": 13,
+              "y": 878,
+              "right": 377,
+              "bottom": 1083,
+              "width": 364,
+              "height": 205
+            },
+            "cap": {
+              "x": 13,
+              "y": 1091,
+              "right": 377,
+              "bottom": 1143,
+              "width": 364,
+              "height": 52
+            },
+            "name": {
+              "x": 20,
+              "y": 1095,
+              "right": 177.609375,
+              "bottom": 1123,
+              "width": 157.609375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 20,
+              "y": 1123,
+              "right": 177.609375,
+              "bottom": 1139,
+              "width": 157.609375,
+              "height": 16
+            },
+            "more": {
+              "x": 326,
+              "y": 1095,
+              "right": 370,
+              "bottom": 1139,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              384,
+              216
+            ],
+            "canvas": {
+              "width": 384,
+              "height": 216
+            },
+            "text": "widescreen-384x216.png 384×216  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 113,
+              "y": 1157,
+              "right": 277,
+              "bottom": 1433,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 113,
+              "y": 1157,
+              "right": 277,
+              "bottom": 1373,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 113,
+              "y": 1381,
+              "right": 277,
+              "bottom": 1433,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 120,
+              "y": 1385,
+              "right": 220,
+              "bottom": 1413,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 120,
+              "y": 1413,
+              "right": 220,
+              "bottom": 1429,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 226,
+              "y": 1385,
+              "right": 270,
+              "bottom": 1429,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              216,
+              384
+            ],
+            "canvas": {
+              "width": 216,
+              "height": 384
+            },
+            "text": "phone-216x384.png 216×384  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 12,
+              "y": 1447,
+              "right": 378,
+              "bottom": 1629,
+              "width": 366,
+              "height": 182
+            },
+            "art": {
+              "x": 12,
+              "y": 1447,
+              "right": 378,
+              "bottom": 1569,
+              "width": 366,
+              "height": 122
+            },
+            "cap": {
+              "x": 12,
+              "y": 1577,
+              "right": 378,
+              "bottom": 1629,
+              "width": 366,
+              "height": 52
+            },
+            "name": {
+              "x": 19,
+              "y": 1581,
+              "right": 147.5,
+              "bottom": 1609,
+              "width": 128.5,
+              "height": 28
+            },
+            "metadata": {
+              "x": 19,
+              "y": 1609,
+              "right": 147.5,
+              "bottom": 1625,
+              "width": 128.5,
+              "height": 16
+            },
+            "more": {
+              "x": 327,
+              "y": 1581,
+              "right": 371,
+              "bottom": 1625,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              384,
+              128
+            ],
+            "canvas": {
+              "width": 384,
+              "height": 128
+            },
+            "text": "banner-384x128.png 384×128  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 113,
+              "y": 1643,
+              "right": 277,
+              "bottom": 1919,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 113,
+              "y": 1643,
+              "right": 277,
+              "bottom": 1859,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 113,
+              "y": 1867,
+              "right": 277,
+              "bottom": 1919,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 120,
+              "y": 1871,
+              "right": 220,
+              "bottom": 1899,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 120,
+              "y": 1899,
+              "right": 220,
+              "bottom": 1915,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 226,
+              "y": 1871,
+              "right": 270,
+              "bottom": 1915,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              128,
+              384
+            ],
+            "canvas": {
+              "width": 128,
+              "height": 384
+            },
+            "text": "column-128x384.png 128×384  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 13,
+              "y": 1933,
+              "right": 377,
+              "bottom": 2084,
+              "width": 364,
+              "height": 151
+            },
+            "art": {
+              "x": 13,
+              "y": 1933,
+              "right": 377,
+              "bottom": 2024,
+              "width": 364,
+              "height": 91
+            },
+            "cap": {
+              "x": 13,
+              "y": 2032,
+              "right": 377,
+              "bottom": 2084,
+              "width": 364,
+              "height": 52
+            },
+            "name": {
+              "x": 20,
+              "y": 2036,
+              "right": 125.53125,
+              "bottom": 2064,
+              "width": 105.53125,
+              "height": 28
+            },
+            "metadata": {
+              "x": 20,
+              "y": 2064,
+              "right": 125.53125,
+              "bottom": 2080,
+              "width": 105.53125,
+              "height": 16
+            },
+            "more": {
+              "x": 326,
+              "y": 2036,
+              "right": 370,
+              "bottom": 2080,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              512,
+              64
+            ],
+            "canvas": {
+              "width": 512,
+              "height": 64
+            },
+            "text": "strip-512x64.png 512×64  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 113,
+              "y": 2098,
+              "right": 277,
+              "bottom": 2374,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 113,
+              "y": 2098,
+              "right": 277,
+              "bottom": 2314,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 113,
+              "y": 2322,
+              "right": 277,
+              "bottom": 2374,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 120,
+              "y": 2326,
+              "right": 220,
+              "bottom": 2354,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 120,
+              "y": 2354,
+              "right": 220,
+              "bottom": 2370,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 226,
+              "y": 2326,
+              "right": 270,
+              "bottom": 2370,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              64,
+              512
+            ],
+            "canvas": {
+              "width": 64,
+              "height": 512
+            },
+            "text": "tower-64x512.png 64×512  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 12,
+              "y": 2388,
+              "right": 378,
+              "bottom": 2504,
+              "width": 366,
+              "height": 116
+            },
+            "art": {
+              "x": 12,
+              "y": 2388,
+              "right": 378,
+              "bottom": 2444,
+              "width": 366,
+              "height": 56
+            },
+            "cap": {
+              "x": 12,
+              "y": 2452,
+              "right": 378,
+              "bottom": 2504,
+              "width": 366,
+              "height": 52
+            },
+            "name": {
+              "x": 19,
+              "y": 2456,
+              "right": 129.234375,
+              "bottom": 2484,
+              "width": 110.234375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 19,
+              "y": 2484,
+              "right": 129.234375,
+              "bottom": 2500,
+              "width": 110.234375,
+              "height": 16
+            },
+            "more": {
+              "x": 327,
+              "y": 2456,
+              "right": 371,
+              "bottom": 2500,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              256,
+              1
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 1
+            },
+            "text": "aurora-256x1.png 256×1  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 113,
+              "y": 2518,
+              "right": 277,
+              "bottom": 2794,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 113,
+              "y": 2518,
+              "right": 277,
+              "bottom": 2734,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 113,
+              "y": 2742,
+              "right": 277,
+              "bottom": 2794,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 120,
+              "y": 2746,
+              "right": 220,
+              "bottom": 2774,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 120,
+              "y": 2774,
+              "right": 220,
+              "bottom": 2790,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 226,
+              "y": 2746,
+              "right": 270,
+              "bottom": 2790,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              1,
+              256
+            ],
+            "canvas": {
+              "width": 1,
+              "height": 256
+            },
+            "text": "vertical-1x256.png 1×256  ·  6 colors  "
+          },
+          {
+            "tile": {
+              "x": 13,
+              "y": 2808,
+              "right": 377,
+              "bottom": 3073,
+              "width": 364,
+              "height": 265
+            },
+            "art": {
+              "x": 13,
+              "y": 2808,
+              "right": 377,
+              "bottom": 3013,
+              "width": 364,
+              "height": 205
+            },
+            "cap": {
+              "x": 13,
+              "y": 3021,
+              "right": 377,
+              "bottom": 3073,
+              "width": 364,
+              "height": 52
+            },
+            "name": {
+              "x": 20,
+              "y": 3025,
+              "right": 177.8125,
+              "bottom": 3053,
+              "width": 157.8125,
+              "height": 28
+            },
+            "metadata": {
+              "x": 20,
+              "y": 3053,
+              "right": 177.8125,
+              "bottom": 3069,
+              "width": 157.8125,
+              "height": 16
+            },
+            "more": {
+              "x": 326,
+              "y": 3025,
+              "right": 370,
+              "bottom": 3069,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              320,
+              180
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 180
+            },
+            "text": "transparent-320x180.png 320×180  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 87,
+              "y": 3087,
+              "right": 303,
+              "bottom": 3363,
+              "width": 216,
+              "height": 276
+            },
+            "art": {
+              "x": 87,
+              "y": 3087,
+              "right": 303,
+              "bottom": 3303,
+              "width": 216,
+              "height": 216
+            },
+            "cap": {
+              "x": 87,
+              "y": 3311,
+              "right": 303,
+              "bottom": 3363,
+              "width": 216,
+              "height": 52
+            },
+            "name": {
+              "x": 94,
+              "y": 3315,
+              "right": 167.5625,
+              "bottom": 3343,
+              "width": 73.5625,
+              "height": 28
+            },
+            "metadata": {
+              "x": 94,
+              "y": 3343,
+              "right": 167.5625,
+              "bottom": 3359,
+              "width": 73.5625,
+              "height": 16
+            },
+            "more": {
+              "x": 252,
+              "y": 3315,
+              "right": 296,
+              "bottom": 3359,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              1,
+              1
+            ],
+            "canvas": {
+              "width": 1,
+              "height": 1
+            },
+            "text": "tiny-1x1.png 1×1  ·  1 color  "
+          },
+          {
+            "tile": {
+              "x": 51,
+              "y": 3377,
+              "right": 339,
+              "bottom": 3653,
+              "width": 288,
+              "height": 276
+            },
+            "art": {
+              "x": 51,
+              "y": 3377,
+              "right": 339,
+              "bottom": 3593,
+              "width": 288,
+              "height": 216
+            },
+            "cap": {
+              "x": 51,
+              "y": 3601,
+              "right": 339,
+              "bottom": 3653,
+              "width": 288,
+              "height": 52
+            },
+            "name": {
+              "x": 58,
+              "y": 3605,
+              "right": 282,
+              "bottom": 3633,
+              "width": 224,
+              "height": 28
+            },
+            "metadata": {
+              "x": 58,
+              "y": 3633,
+              "right": 282,
+              "bottom": 3649,
+              "width": 224,
+              "height": 16
+            },
+            "more": {
+              "x": 288,
+              "y": 3605,
+              "right": 332,
+              "bottom": 3649,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              320,
+              240
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 240
+            },
+            "text": "a-very-long-artwork-filename-that-must-remain-readable-beside-complete-resolution-and-colors.png 320×240  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 12,
+              "y": 3667,
+              "right": 378,
+              "bottom": 3849,
+              "width": 366,
+              "height": 182
+            },
+            "art": {
+              "x": 12,
+              "y": 3667,
+              "right": 378,
+              "bottom": 3789,
+              "width": 366,
+              "height": 122
+            },
+            "cap": {
+              "x": 12,
+              "y": 3797,
+              "right": 378,
+              "bottom": 3849,
+              "width": 366,
+              "height": 52
+            },
+            "name": {
+              "x": 19,
+              "y": 3801,
+              "right": 182.59375,
+              "bottom": 3829,
+              "width": 163.59375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 19,
+              "y": 3829,
+              "right": 182.59375,
+              "bottom": 3845,
+              "width": 163.59375,
+              "height": 16
+            },
+            "more": {
+              "x": 327,
+              "y": 3801,
+              "right": 371,
+              "bottom": 3845,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              192,
+              64
+            ],
+            "canvas": null,
+            "text": "animated-wide-192x64.gif 192×64  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 113,
+              "y": 3863,
+              "right": 277,
+              "bottom": 4139,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 113,
+              "y": 3863,
+              "right": 277,
+              "bottom": 4079,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 113,
+              "y": 4087,
+              "right": 277,
+              "bottom": 4139,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 120,
+              "y": 4091,
+              "right": 220,
+              "bottom": 4119,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 120,
+              "y": 4119,
+              "right": 220,
+              "bottom": 4135,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 226,
+              "y": 4091,
+              "right": 270,
+              "bottom": 4135,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              64,
+              192
+            ],
+            "canvas": {
+              "width": 64,
+              "height": 192
+            },
+            "text": "animated-tall-64x192.gif 64×192  ·  8 colors  "
+          }
+        ]
+      }
+    },
+    {
+      "label": "landscape/all",
+      "pass": true,
+      "count": 16,
+      "rows": 9,
+      "scroll": true,
+      "measurements": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "documentWidth": 844,
+        "touch": true,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "right": 844,
+          "bottom": 390,
+          "width": 844,
+          "height": 390,
+          "clientWidth": 844,
+          "scrollWidth": 844,
+          "scrollHeight": 2485,
+          "clientHeight": 390
+        },
+        "probe": {
+          "x": 24,
+          "y": 8,
+          "right": 820,
+          "bottom": 314,
+          "width": 796,
+          "height": 306
+        },
+        "toolsTop": 326,
+        "tiles": [
+          {
+            "tile": {
+              "x": 76,
+              "y": 8,
+              "right": 292,
+              "bottom": 284,
+              "width": 216,
+              "height": 276
+            },
+            "art": {
+              "x": 76,
+              "y": 8,
+              "right": 292,
+              "bottom": 224,
+              "width": 216,
+              "height": 216
+            },
+            "cap": {
+              "x": 76,
+              "y": 232,
+              "right": 292,
+              "bottom": 284,
+              "width": 216,
+              "height": 52
+            },
+            "name": {
+              "x": 83,
+              "y": 236,
+              "right": 214.359375,
+              "bottom": 264,
+              "width": 131.359375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 83,
+              "y": 264,
+              "right": 214.359375,
+              "bottom": 280,
+              "width": 131.359375,
+              "height": 16
+            },
+            "more": {
+              "x": 241,
+              "y": 236,
+              "right": 285,
+              "bottom": 280,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              256,
+              256
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 256
+            },
+            "text": "square-256x256.png 256×256  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 304,
+              "y": 8,
+              "right": 592,
+              "bottom": 284,
+              "width": 288,
+              "height": 276
+            },
+            "art": {
+              "x": 304,
+              "y": 8,
+              "right": 592,
+              "bottom": 224,
+              "width": 288,
+              "height": 216
+            },
+            "cap": {
+              "x": 304,
+              "y": 232,
+              "right": 592,
+              "bottom": 284,
+              "width": 288,
+              "height": 52
+            },
+            "name": {
+              "x": 311,
+              "y": 236,
+              "right": 463.359375,
+              "bottom": 264,
+              "width": 152.359375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 311,
+              "y": 264,
+              "right": 463.359375,
+              "bottom": 280,
+              "width": 152.359375,
+              "height": 16
+            },
+            "more": {
+              "x": 541,
+              "y": 236,
+              "right": 585,
+              "bottom": 280,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              320,
+              240
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 240
+            },
+            "text": "landscape-320x240.png 320×240  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 604,
+              "y": 8,
+              "right": 768,
+              "bottom": 284,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 604,
+              "y": 8,
+              "right": 768,
+              "bottom": 224,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 604,
+              "y": 232,
+              "right": 768,
+              "bottom": 284,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 611,
+              "y": 236,
+              "right": 711,
+              "bottom": 264,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 611,
+              "y": 264,
+              "right": 711,
+              "bottom": 280,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 717,
+              "y": 236,
+              "right": 761,
+              "bottom": 280,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              240,
+              320
+            ],
+            "canvas": {
+              "width": 240,
+              "height": 320
+            },
+            "text": "portrait-240x320.png 240×320  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 142,
+              "y": 298,
+              "right": 526,
+              "bottom": 574,
+              "width": 384,
+              "height": 276
+            },
+            "art": {
+              "x": 142,
+              "y": 298,
+              "right": 526,
+              "bottom": 514,
+              "width": 384,
+              "height": 216
+            },
+            "cap": {
+              "x": 142,
+              "y": 522,
+              "right": 526,
+              "bottom": 574,
+              "width": 384,
+              "height": 52
+            },
+            "name": {
+              "x": 149,
+              "y": 526,
+              "right": 306.609375,
+              "bottom": 554,
+              "width": 157.609375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 149,
+              "y": 554,
+              "right": 306.609375,
+              "bottom": 570,
+              "width": 157.609375,
+              "height": 16
+            },
+            "more": {
+              "x": 475,
+              "y": 526,
+              "right": 519,
+              "bottom": 570,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              384,
+              216
+            ],
+            "canvas": {
+              "width": 384,
+              "height": 216
+            },
+            "text": "widescreen-384x216.png 384×216  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 538,
+              "y": 298,
+              "right": 702,
+              "bottom": 574,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 538,
+              "y": 298,
+              "right": 702,
+              "bottom": 514,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 538,
+              "y": 522,
+              "right": 702,
+              "bottom": 574,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 545,
+              "y": 526,
+              "right": 645,
+              "bottom": 554,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 545,
+              "y": 554,
+              "right": 645,
+              "bottom": 570,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 651,
+              "y": 526,
+              "right": 695,
+              "bottom": 570,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              216,
+              384
+            ],
+            "canvas": {
+              "width": 216,
+              "height": 384
+            },
+            "text": "phone-216x384.png 216×384  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 25,
+              "y": 588,
+              "right": 643,
+              "bottom": 854,
+              "width": 618,
+              "height": 266
+            },
+            "art": {
+              "x": 25,
+              "y": 588,
+              "right": 643,
+              "bottom": 794,
+              "width": 618,
+              "height": 206
+            },
+            "cap": {
+              "x": 25,
+              "y": 802,
+              "right": 643,
+              "bottom": 854,
+              "width": 618,
+              "height": 52
+            },
+            "name": {
+              "x": 32,
+              "y": 806,
+              "right": 160.5,
+              "bottom": 834,
+              "width": 128.5,
+              "height": 28
+            },
+            "metadata": {
+              "x": 32,
+              "y": 834,
+              "right": 160.5,
+              "bottom": 850,
+              "width": 128.5,
+              "height": 16
+            },
+            "more": {
+              "x": 592,
+              "y": 806,
+              "right": 636,
+              "bottom": 850,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              384,
+              128
+            ],
+            "canvas": {
+              "width": 384,
+              "height": 128
+            },
+            "text": "banner-384x128.png 384×128  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 655,
+              "y": 588,
+              "right": 819,
+              "bottom": 854,
+              "width": 164,
+              "height": 266
+            },
+            "art": {
+              "x": 655,
+              "y": 588,
+              "right": 819,
+              "bottom": 794,
+              "width": 164,
+              "height": 206
+            },
+            "cap": {
+              "x": 655,
+              "y": 802,
+              "right": 819,
+              "bottom": 854,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 662,
+              "y": 806,
+              "right": 762,
+              "bottom": 834,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 662,
+              "y": 834,
+              "right": 762,
+              "bottom": 850,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 768,
+              "y": 806,
+              "right": 812,
+              "bottom": 850,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              128,
+              384
+            ],
+            "canvas": {
+              "width": 128,
+              "height": 384
+            },
+            "text": "column-128x384.png 128×384  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 24,
+              "y": 868,
+              "right": 820,
+              "bottom": 1127,
+              "width": 796,
+              "height": 259
+            },
+            "art": {
+              "x": 24,
+              "y": 868,
+              "right": 820,
+              "bottom": 1067,
+              "width": 796,
+              "height": 199
+            },
+            "cap": {
+              "x": 24,
+              "y": 1075,
+              "right": 820,
+              "bottom": 1127,
+              "width": 796,
+              "height": 52
+            },
+            "name": {
+              "x": 31,
+              "y": 1079,
+              "right": 136.53125,
+              "bottom": 1107,
+              "width": 105.53125,
+              "height": 28
+            },
+            "metadata": {
+              "x": 31,
+              "y": 1107,
+              "right": 136.53125,
+              "bottom": 1123,
+              "width": 105.53125,
+              "height": 16
+            },
+            "more": {
+              "x": 769,
+              "y": 1079,
+              "right": 813,
+              "bottom": 1123,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              512,
+              64
+            ],
+            "canvas": {
+              "width": 512,
+              "height": 64
+            },
+            "text": "strip-512x64.png 512×64  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 340,
+              "y": 1141,
+              "right": 504,
+              "bottom": 1417,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 340,
+              "y": 1141,
+              "right": 504,
+              "bottom": 1357,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 340,
+              "y": 1365,
+              "right": 504,
+              "bottom": 1417,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 347,
+              "y": 1369,
+              "right": 447,
+              "bottom": 1397,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 347,
+              "y": 1397,
+              "right": 447,
+              "bottom": 1413,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 453,
+              "y": 1369,
+              "right": 497,
+              "bottom": 1413,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              64,
+              512
+            ],
+            "canvas": {
+              "width": 64,
+              "height": 512
+            },
+            "text": "tower-64x512.png 64×512  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 24,
+              "y": 1431,
+              "right": 820,
+              "bottom": 1547,
+              "width": 796,
+              "height": 116
+            },
+            "art": {
+              "x": 24,
+              "y": 1431,
+              "right": 820,
+              "bottom": 1487,
+              "width": 796,
+              "height": 56
+            },
+            "cap": {
+              "x": 24,
+              "y": 1495,
+              "right": 820,
+              "bottom": 1547,
+              "width": 796,
+              "height": 52
+            },
+            "name": {
+              "x": 31,
+              "y": 1499,
+              "right": 141.234375,
+              "bottom": 1527,
+              "width": 110.234375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 31,
+              "y": 1527,
+              "right": 141.234375,
+              "bottom": 1543,
+              "width": 110.234375,
+              "height": 16
+            },
+            "more": {
+              "x": 769,
+              "y": 1499,
+              "right": 813,
+              "bottom": 1543,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              256,
+              1
+            ],
+            "canvas": {
+              "width": 256,
+              "height": 1
+            },
+            "text": "aurora-256x1.png 256×1  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 142,
+              "y": 1561,
+              "right": 306,
+              "bottom": 1837,
+              "width": 164,
+              "height": 276
+            },
+            "art": {
+              "x": 142,
+              "y": 1561,
+              "right": 306,
+              "bottom": 1777,
+              "width": 164,
+              "height": 216
+            },
+            "cap": {
+              "x": 142,
+              "y": 1785,
+              "right": 306,
+              "bottom": 1837,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 149,
+              "y": 1789,
+              "right": 249,
+              "bottom": 1817,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 149,
+              "y": 1817,
+              "right": 249,
+              "bottom": 1833,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 255,
+              "y": 1789,
+              "right": 299,
+              "bottom": 1833,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              1,
+              256
+            ],
+            "canvas": {
+              "width": 1,
+              "height": 256
+            },
+            "text": "vertical-1x256.png 1×256  ·  6 colors  "
+          },
+          {
+            "tile": {
+              "x": 318,
+              "y": 1561,
+              "right": 702,
+              "bottom": 1837,
+              "width": 384,
+              "height": 276
+            },
+            "art": {
+              "x": 318,
+              "y": 1561,
+              "right": 702,
+              "bottom": 1777,
+              "width": 384,
+              "height": 216
+            },
+            "cap": {
+              "x": 318,
+              "y": 1785,
+              "right": 702,
+              "bottom": 1837,
+              "width": 384,
+              "height": 52
+            },
+            "name": {
+              "x": 325,
+              "y": 1789,
+              "right": 482.8125,
+              "bottom": 1817,
+              "width": 157.8125,
+              "height": 28
+            },
+            "metadata": {
+              "x": 325,
+              "y": 1817,
+              "right": 482.8125,
+              "bottom": 1833,
+              "width": 157.8125,
+              "height": 16
+            },
+            "more": {
+              "x": 651,
+              "y": 1789,
+              "right": 695,
+              "bottom": 1833,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              320,
+              180
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 180
+            },
+            "text": "transparent-320x180.png 320×180  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 164,
+              "y": 1851,
+              "right": 380,
+              "bottom": 2127,
+              "width": 216,
+              "height": 276
+            },
+            "art": {
+              "x": 164,
+              "y": 1851,
+              "right": 380,
+              "bottom": 2067,
+              "width": 216,
+              "height": 216
+            },
+            "cap": {
+              "x": 164,
+              "y": 2075,
+              "right": 380,
+              "bottom": 2127,
+              "width": 216,
+              "height": 52
+            },
+            "name": {
+              "x": 171,
+              "y": 2079,
+              "right": 244.5625,
+              "bottom": 2107,
+              "width": 73.5625,
+              "height": 28
+            },
+            "metadata": {
+              "x": 171,
+              "y": 2107,
+              "right": 244.5625,
+              "bottom": 2123,
+              "width": 73.5625,
+              "height": 16
+            },
+            "more": {
+              "x": 329,
+              "y": 2079,
+              "right": 373,
+              "bottom": 2123,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              1,
+              1
+            ],
+            "canvas": {
+              "width": 1,
+              "height": 1
+            },
+            "text": "tiny-1x1.png 1×1  ·  1 color  "
+          },
+          {
+            "tile": {
+              "x": 392,
+              "y": 1851,
+              "right": 680,
+              "bottom": 2127,
+              "width": 288,
+              "height": 276
+            },
+            "art": {
+              "x": 392,
+              "y": 1851,
+              "right": 680,
+              "bottom": 2067,
+              "width": 288,
+              "height": 216
+            },
+            "cap": {
+              "x": 392,
+              "y": 2075,
+              "right": 680,
+              "bottom": 2127,
+              "width": 288,
+              "height": 52
+            },
+            "name": {
+              "x": 399,
+              "y": 2079,
+              "right": 623,
+              "bottom": 2107,
+              "width": 224,
+              "height": 28
+            },
+            "metadata": {
+              "x": 399,
+              "y": 2107,
+              "right": 623,
+              "bottom": 2123,
+              "width": 224,
+              "height": 16
+            },
+            "more": {
+              "x": 629,
+              "y": 2079,
+              "right": 673,
+              "bottom": 2123,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              320,
+              240
+            ],
+            "canvas": {
+              "width": 320,
+              "height": 240
+            },
+            "text": "a-very-long-artwork-filename-that-must-remain-readable-beside-complete-resolution-and-colors.png 320×240  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 25,
+              "y": 2141,
+              "right": 643,
+              "bottom": 2407,
+              "width": 618,
+              "height": 266
+            },
+            "art": {
+              "x": 25,
+              "y": 2141,
+              "right": 643,
+              "bottom": 2347,
+              "width": 618,
+              "height": 206
+            },
+            "cap": {
+              "x": 25,
+              "y": 2355,
+              "right": 643,
+              "bottom": 2407,
+              "width": 618,
+              "height": 52
+            },
+            "name": {
+              "x": 32,
+              "y": 2359,
+              "right": 195.59375,
+              "bottom": 2387,
+              "width": 163.59375,
+              "height": 28
+            },
+            "metadata": {
+              "x": 32,
+              "y": 2387,
+              "right": 195.59375,
+              "bottom": 2403,
+              "width": 163.59375,
+              "height": 16
+            },
+            "more": {
+              "x": 592,
+              "y": 2359,
+              "right": 636,
+              "bottom": 2403,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              192,
+              64
+            ],
+            "canvas": {
+              "width": 192,
+              "height": 64
+            },
+            "text": "animated-wide-192x64.gif 192×64  ·  8 colors  "
+          },
+          {
+            "tile": {
+              "x": 655,
+              "y": 2141,
+              "right": 819,
+              "bottom": 2407,
+              "width": 164,
+              "height": 266
+            },
+            "art": {
+              "x": 655,
+              "y": 2141,
+              "right": 819,
+              "bottom": 2347,
+              "width": 164,
+              "height": 206
+            },
+            "cap": {
+              "x": 655,
+              "y": 2355,
+              "right": 819,
+              "bottom": 2407,
+              "width": 164,
+              "height": 52
+            },
+            "name": {
+              "x": 662,
+              "y": 2359,
+              "right": 762,
+              "bottom": 2387,
+              "width": 100,
+              "height": 28
+            },
+            "metadata": {
+              "x": 662,
+              "y": 2387,
+              "right": 762,
+              "bottom": 2403,
+              "width": 100,
+              "height": 16
+            },
+            "more": {
+              "x": 768,
+              "y": 2359,
+              "right": 812,
+              "bottom": 2403,
+              "width": 44,
+              "height": 44
+            },
+            "actions": {
+              "x": 0,
+              "y": 0,
+              "right": 0,
+              "bottom": 0,
+              "width": 0,
+              "height": 0
+            },
+            "actionsDisplay": "none",
+            "countOrder": 2,
+            "resolutionOrder": 0,
+            "source": [
+              64,
+              192
+            ],
+            "canvas": {
+              "width": 64,
+              "height": 192
+            },
+            "text": "animated-tall-64x192.gif 64×192  ·  8 colors  "
+          }
+        ]
+      }
+    },
+    {
+      "label": "desktop/preview-and-export",
+      "pass": true,
+      "singleExports": 4,
+      "zipEntries": 4,
+      "oneBitZipEntries": 4
+    },
+    {
+      "label": "desktop/desktop-actions-on-resize",
+      "pass": true,
+      "singleLineDesktop": true,
+      "focusRetained": true,
+      "hoverRemoval": true
+    },
+    {
+      "label": "phone/preview-and-export",
+      "pass": true,
+      "singleExports": 4,
+      "zipEntries": 4,
+      "oneBitZipEntries": 4
+    },
+    {
+      "label": "landscape/preview-and-export",
+      "pass": true,
+      "singleExports": 4,
+      "zipEntries": 4,
+      "oneBitZipEntries": 4
+    }
+  ],
+  "errors": [
+    {
+      "device": "desktop",
+      "phase": "wide",
+      "name": "",
+      "message": "ResizeObserver loop completed with undelivered notifications.",
+      "stack": ""
+    },
+    {
+      "device": "desktop",
+      "phase": "desktop-actions-on-resize",
+      "name": "",
+      "message": "ResizeObserver loop completed with undelivered notifications.",
+      "stack": ""
+    }
+  ],
+  "pass": false
+}

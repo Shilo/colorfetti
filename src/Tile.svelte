@@ -24,7 +24,7 @@
   // Without `onremove` the tile is a preview only and has no buttons.
   // `set` is the style's settings. `budget` is set while one of their sliders is being dragged:
   // the milliseconds this tile may take to convert its image after each move.
-  let { item, first, second, style, set, family = 'two-color', palette, palettePending = false, analysisPending = false, alphaCut = 128, alphaMode = 'cut', metric = 'oklab', maxColors = 0, cleanup = false, dither = 'none', ditherStrength = 50, colorUsageLabel = '', colorUsagePending = false, usageIdentity, onusageframe, active = true, exportDisabled = false, onpalettestatus, paletteRetry = 0, flipped, budget = 0, inset = 8, aspect = 1, inspectionScale = 1, onshare, oncopy, onreusecolors, reuseDisabled = false, onsave, onremove, onopen, onactivate, activationLabel, oncompare, comparing = false, exportDrag } = $props();
+  let { item, first, second, style, set, family = 'two-color', palette, palettePending = false, analysisPending = false, alphaCut = 128, alphaMode = 'cut', metric = 'oklab', maxColors = 0, cleanup = false, dither = 'none', ditherStrength = 50, colorUsageLabel = '', colorUsagePending = false, usageIdentity, onusageframe, active = true, exportDisabled = false, onpalettestatus, paletteRetry = 0, flipped, budget = 0, inset = 8, aspect = 1, wallGeometry, inspectionScale = 1, onshare, oncopy, onreusecolors, reuseDisabled = false, onsave, onremove, onopen, onactivate, activationLabel, oncompare, comparing = false, exportDrag } = $props();
   const paletteCut = $derived(effectiveAlphaCut(alphaMode, alphaCut));
   const failureOwner = Symbol('palette preview surface');
   const reportStage = (type, stage, inputs, attempt, error) => untrack(() => onpalettestatus?.({ type, owner: failureOwner, stage, inputs, attempt, error }));
@@ -128,14 +128,14 @@
   // is what makes a phone stall. So a tile converts and draws a picture of the image at its own
   // size, a pixel for each pixel of the screen. Anything that fits the tile, sprites included,
   // is drawn whole.
-  let box = $state(0); // the width of the square the image sits in, in CSS pixels
+  let box = $state(0); // the width of the fitted image area, in CSS pixels
   let boxHeight = $state(0);
   let pace = 0; // how long this tile's last conversion took, in milliseconds per pixel converted
   // On a slow phone even that many pixels take too long to keep up with a finger on the slider.
   // So during a drag a large image is drawn as a rougher draft, a smaller picture: one that, at
   // the pace this device last converted this image, fits the budget. It sharpens when the slider
   // rests or is let go. `shown` in layout.js has the rules. The image sits 8px in from each side
-  // of the square, and a square with no room for it has not been laid out yet.
+  // of the image area; an area with no room for it has not been laid out yet.
   const across = $derived(Math.min((box - inset * 2) / item.img.w, (boxHeight - inset * 2) / item.img.h) * Math.max(item.img.w, item.img.h));
   const size = $derived(across > 0 ? shown(item.img.w, item.img.h, across * devicePixelRatio * inspectionScale, budget, pace) : null);
   // the picture's width and height, each on its own so that nothing is redrawn when `size` is worked out again to the same numbers
@@ -377,11 +377,15 @@
     : convertedUsageLabel + (item.frames ? '. Converted output across all animation frames.' : '. Converted full-resolution output.'));
 </script>
 
-<figure class="tile">
+<figure class="tile" class:wall-tile={!!wallGeometry}
+  style:--wall-tile-width={wallGeometry ? `${wallGeometry.width}px` : undefined}
+  style:--wall-art-height={wallGeometry ? `${wallGeometry.height}px` : undefined}
+  style:--wall-tile-x={wallGeometry ? `${wallGeometry.x}px` : undefined}
+  style:--wall-tile-y={wallGeometry ? `${wallGeometry.y}px` : undefined}>
   <button
     type="button"
     class="art"
-    style:aspect-ratio={aspect}
+    style:aspect-ratio={wallGeometry ? undefined : aspect}
     class:held
     aria-label={activationLabel ?? (onopen ? `Preview ${item.name}` : `Hold to compare ${item.name}`)}
     aria-haspopup={onopen && !onactivate ? 'dialog' : undefined}

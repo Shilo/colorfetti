@@ -21,8 +21,11 @@
       if (!art?.isConnected || cancelled) return;
       const canvas = art.querySelector('canvas');
       const source = sources[0]?.img;
-      const across = art.clientWidth - 2 * IMAGE_INSET;
-      if (!canvas || !source || across <= 0) return;
+      if (!canvas || !source) return;
+      const scale = Math.min((art.clientWidth - 2 * IMAGE_INSET) / source.w,
+        (art.clientHeight - 2 * IMAGE_INSET) / source.h);
+      const across = scale * Math.max(source.w, source.h);
+      if (across <= 0) return;
       paint(anchor.update({
         key,
         viewport: `${window.innerWidth}x${window.innerHeight}:${window.visualViewport?.width ?? 0}x${window.visualViewport?.height ?? 0}`,

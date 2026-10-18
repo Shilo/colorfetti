@@ -1,5 +1,36 @@
 # Colorfetti design
 
+## Aspect-aware image wall — October 18, 2026
+
+The wall uses ordered rows of rectangular artwork areas instead of square slots.
+Each row shares an artwork height and caption baseline, with 12px gutters. Source
+order, DOM order and keyboard order agree; no masonry backfilling or ratio sorting.
+Images remain uncropped, pixelated and aspect-preserving, with the existing 4px inset.
+Row fitting uses source dimensions and bounded card shapes, keeping captions readable
+for unusually thin images. A single image fits the available width and height at its
+natural ratio, with minimum card width and a compact minimum artwork height.
+Sources at least 12:1 use their own full-width shallow row within the original
+sequence; ordinary panoramas remain in balanced rows.
+A 256×1 source remains a thin line; closer inspection uses existing Preview zoom.
+
+Mouse captions retain their compact single line: filename left, count and resolution
+right, with a 35px footer allowance including the artwork gap. Mouse actions remain
+in the hover/focus capsule on every card. Narrow cards use 28px action buttons
+(24px below 180px) so a shallow strip can retain the horizontal capsule. Touch
+retains its stacked 52px caption, resolution before count and 44px More button,
+with a 62px footer allowance. Input mode, not image ratio or viewport width, selects
+these presentations. The empty example retains its existing Add-caption behavior.
+Rows fit above the measured controls/panels when readable sizes allow,
+then scroll rather than compressing the collection into unreadable thumbnails.
+Incomplete rows are centered and never enlarged beyond the fitted row target.
+
+Tiles remain keyed under one parent across row changes, preserving focus, animation
+and conversion ownership. Explicit scalar geometry sizes their parent and positions
+them; existing scroll measurement, full-source exports and Preview sizing remain
+independent. This section supersedes historical square-layout descriptions;
+desktop and touch caption behavior remains distinct. Research and browser evidence are recorded in
+`docs/research/2026-10-18-aspect-aware-wall.md`.
+
 ## GIF palette consistency — October 18, 2026
 
 Image color counts mean unique visible RGB values across every composited GIF frame.
@@ -516,11 +547,10 @@ One screen, no page scroll. Three layers:
 1. **Top bar.** The "Colorfetti" wordmark, an image count, and at the right a trash icon button
    that removes all images (only when there are images), "Add images", and last a More
    button (three dots, one above the other) that opens a menu (see "The More menu").
-2. **The wall.** A grid of square tiles that fills the screen and scrolls on its own. Each
+2. **The wall.** Ordered rows of aspect-aware tiles that fill the screen and scroll on their own. Each
    tile shows one image, scaled up with hard pixel edges on a faint checkerboard so
-   transparency is visible. The image is as large as fits the tile with 8px left clear on
-   every side, keeping its proportions, so a wide or tall image leaves the rest of the square
-   empty. Below it: file name and pixel size.
+   transparency is visible. The image fits a rectangular artwork area with 4px clear on
+   every side, preserving its proportions. Below it: file name, color count and pixel size.
 3. **The dock.** A floating bar at the bottom center holding every setting.
 
 Chrome is neutral grey in both light and dark themes (following the system setting, unless the other theme is

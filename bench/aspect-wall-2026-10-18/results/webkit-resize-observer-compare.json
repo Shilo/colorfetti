@@ -1,0 +1,30 @@
+{
+  "browser": "26.5",
+  "runs": [
+    {
+      "label": "baseline",
+      "url": "http://127.0.0.1:5296",
+      "events": [
+        {
+          "phase": "focus/shrink",
+          "name": "",
+          "message": "ResizeObserver loop completed with undelivered notifications.",
+          "stack": ""
+        }
+      ]
+    },
+    {
+      "label": "candidate",
+      "url": "http://127.0.0.1:63109",
+      "events": [
+        {
+          "phase": "focus/shrink",
+          "name": "",
+          "message": "ResizeObserver loop completed with undelivered notifications.",
+          "stack": ""
+        }
+      ]
+    }
+  ],
+  "baselineRef": "765f76f0ad94a32a62318dcf9e2073cd21c02d12"
+}

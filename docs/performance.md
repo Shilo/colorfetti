@@ -1,5 +1,17 @@
 # Performance
 
+## Aspect-aware wall geometry (October 18, 2026)
+
+Wall fitting consumes scalar source dimensions, not pixel buffers. Ordered rows use
+bounded candidate heights and linear passes; no per-pixel work or new image cache is
+introduced. Explicit parent dimensions keep scroll measurement working with flat,
+keyed positioned tiles. Refitting changes only their geometry, retaining component
+identity, focus and GIF position. Both measured artwork axes determine contain scale;
+the existing `shown` sampling, draft budget and source-size/short-axis limits remain.
+Larger visible artwork can require larger sampled previews, within those existing
+policies. Geometry fitting is not a whole-app memory or animation-performance bound.
+Research and measured checks: `research/2026-10-18-aspect-aware-wall.md`.
+
 ## Exact PNG compaction (October 18, 2026)
 
 Partial Keep may encode at most 256 used RGB/alpha states with indexed tRNS.
@@ -743,13 +755,14 @@ to 12, Cutout 14 to 20. It is about the same at every picture size.
 
 ### What a tile draws (`shown` in `src/lib/layout.js`, used by `src/Tile.svelte`)
 
-A tile measures the square its image sits in and asks `shown` for the size of the picture
+A tile measures the rectangular area its image sits in and asks `shown` for the size of the picture
 to draw.
 
 - **An image no larger than the tile's screen pixels is drawn whole.** That covers every
   sprite. It is then exactly what is saved.
-- **A larger image is drawn at the tile's own size**: the image area's width in CSS pixels
-  (the square less 8px on each side) times the device pixel ratio, along the longer side.
+- **A larger image is drawn at the tile's visible contain scale**: the smaller of the
+  artwork width/source width and artwork height/source height, after the 4px inset on
+  each edge, times the source's longer side and device pixel ratio.
 - **A picture a whole number of times smaller than the image, or within 0.04 of that, is
   made 6% smaller.** See "Whole-number steps".
 - **The shorter side keeps at least 32 pixels**, or all the image has. A long thin image
@@ -768,7 +781,7 @@ In `Tile.svelte`:
 - The original is shown as the same picture (`shrink`), so comparing moves nothing.
 - `pace` is how long the tile's last conversion took, in milliseconds per pixel. It is a
   plain variable, set inside the derived value that converts.
-- A square of 16px or less has not been laid out yet, and nothing is converted for it.
+- An artwork area without positive space inside its inset is not converted yet.
 - `src/Pixels.svelte` sets the canvas's size only when it changes.
 
 ### Drafts while the threshold slider is dragged

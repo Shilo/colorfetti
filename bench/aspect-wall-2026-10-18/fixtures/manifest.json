@@ -1,0 +1,130 @@
+[
+  {
+    "id": "square",
+    "name": "square-256x256.png",
+    "w": 256,
+    "h": 256,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\square-256x256.png",
+    "animated": false
+  },
+  {
+    "id": "landscape",
+    "name": "landscape-320x240.png",
+    "w": 320,
+    "h": 240,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\landscape-320x240.png",
+    "animated": false
+  },
+  {
+    "id": "portrait",
+    "name": "portrait-240x320.png",
+    "w": 240,
+    "h": 320,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\portrait-240x320.png",
+    "animated": false
+  },
+  {
+    "id": "widescreen",
+    "name": "widescreen-384x216.png",
+    "w": 384,
+    "h": 216,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\widescreen-384x216.png",
+    "animated": false
+  },
+  {
+    "id": "phone",
+    "name": "phone-216x384.png",
+    "w": 216,
+    "h": 384,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\phone-216x384.png",
+    "animated": false
+  },
+  {
+    "id": "banner",
+    "name": "banner-384x128.png",
+    "w": 384,
+    "h": 128,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\banner-384x128.png",
+    "animated": false
+  },
+  {
+    "id": "column",
+    "name": "column-128x384.png",
+    "w": 128,
+    "h": 384,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\column-128x384.png",
+    "animated": false
+  },
+  {
+    "id": "strip",
+    "name": "strip-512x64.png",
+    "w": 512,
+    "h": 64,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\strip-512x64.png",
+    "animated": false
+  },
+  {
+    "id": "tower",
+    "name": "tower-64x512.png",
+    "w": 64,
+    "h": 512,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\tower-64x512.png",
+    "animated": false
+  },
+  {
+    "id": "aurora",
+    "name": "aurora-256x1.png",
+    "w": 256,
+    "h": 1,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\aurora-256x1.png",
+    "animated": false
+  },
+  {
+    "id": "vertical",
+    "name": "vertical-1x256.png",
+    "w": 1,
+    "h": 256,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\vertical-1x256.png",
+    "animated": false
+  },
+  {
+    "id": "transparent",
+    "name": "transparent-320x180.png",
+    "w": 320,
+    "h": 180,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\transparent-320x180.png",
+    "animated": false
+  },
+  {
+    "id": "tiny",
+    "name": "tiny-1x1.png",
+    "w": 1,
+    "h": 1,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\tiny-1x1.png",
+    "animated": false
+  },
+  {
+    "id": "long-name",
+    "name": "a-very-long-artwork-filename-that-must-remain-readable-beside-complete-resolution-and-colors.png",
+    "w": 320,
+    "h": 240,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\a-very-long-artwork-filename-that-must-remain-readable-beside-complete-resolution-and-colors.png",
+    "animated": false
+  },
+  {
+    "id": "animated-wide",
+    "name": "animated-wide-192x64.gif",
+    "w": 192,
+    "h": 64,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\animated-wide-192x64.gif",
+    "animated": true
+  },
+  {
+    "id": "animated-tall",
+    "name": "animated-tall-64x192.gif",
+    "w": 64,
+    "h": 192,
+    "path": "C:\\Programming_Files\\Shilocity\\colorfetti\\bench\\aspect-wall-2026-10-18\\fixtures\\animated-tall-64x192.gif",
+    "animated": true
+  }
+]

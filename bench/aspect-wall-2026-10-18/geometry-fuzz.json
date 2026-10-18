@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "seed": 237953,
+  "cases": 10000,
+  "images": 303012,
+  "multiImageStrips": 83703,
+  "scrollingCases": 8654,
+  "touchCases": 5047,
+  "desktopCases": 4953,
+  "inputs": {
+    "width": "1–3000",
+    "height": "0–1599",
+    "images": "1–60",
+    "aspectRatio": "1:256–256:1 (log-uniform)"
+  },
+  "assertions": [
+    "Exact image count and import order",
+    "Finite positive integer tile dimensions and nonnegative integer positions",
+    "Readable caption width and minimum 56px art height",
+    "Horizontal and vertical bounds, including complete captions",
+    "Equal art heights in a row, exact 12px row/column gaps, no tile overlap",
+    "Each row centered within one rounding pixel",
+    "Container height ends at the final caption and scroll matches viewport overflow",
+    "Every multi-image source >=12:1 occupies a separate full-width row with max(56,floor(width/ratio)) art height"
+  ],
+  "elapsedMs": 2088.57
+}
