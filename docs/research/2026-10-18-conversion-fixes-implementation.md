@@ -21,7 +21,7 @@ screenshots in its `screenshots/` folder.
 | M1 | Decoded artwork admission budget | Queued |
 | M2 | Sampling disclosure and native-pixel inspection | Queued |
 | M3 | Bounded per-file import diagnostics | Accepted after revisions and desktop retesting |
-| M4 | ANIMEXTS GIF repeat metadata | Implementation under challenge |
+| M4 | ANIMEXTS GIF repeat metadata | Accepted after independent Save/ZIP verification |
 | M5 | Enabled palette-editor text contrast | Accepted after revision and desktop retesting |
 | M6 | Portable Save/ZIP/drag names | Queued |
 | M7 | Transparent GIF frame-bound cropping | Queued |
@@ -82,3 +82,26 @@ Evidence: `bench/conversion-fixes-2026-10-18/m5/contrast-results.json`, raw comp
 captures, `contrast-receipt.mjs` and `source-build.json`.
 Screenshots: [before](../../bench/conversion-fixes-2026-10-18/screenshots/m5-editor-before.jpg),
 [after](../../bench/conversion-fixes-2026-10-18/screenshots/m5-editor-after.jpg).
+
+### M4 GIF repeat metadata
+
+A bounded extension-gap scan now recognizes the ANIMEXTS alias using the same
+canonical payload/last-valid precedence as NETSCAPE. It does not search or rewrite
+arbitrary bytes. Existing strict errors, GCE scope and single-frame still semantics
+are preserved. Coordinator challenges added a local-table-only first frame and
+identifier decoys in color-table/image data. The agent added and reran those tests.
+Both reviewers explicitly agreed after final review.
+
+The coordinator independently ran the desktop browser decoder/worker/Save/ZIP
+matrix, imported the finite-repeat fixture into the real production App and clicked
+Save. Independent Sharp decoding of that fresh 85-byte output confirmed three total
+plays, two 2×1 frames and 100/200 ms delays. Agent evidence also independently checks
+every RGBA byte in the actual Save and both ZIP entries, absent/infinite/finite/max
+repeat counts, GCE scope, split/truncated data and trailer/payload decoys. Targeted
+validation: 111 tests passed and production build passed. Native IAB download-event
+capture was unavailable; the test-only iframe captures completed Blobs at anchor
+transport without replacing production encoding, snapshots or gestures.
+
+Evidence and exact reproducible commands:
+`bench/conversion-fixes-2026-10-18/m4/README.md`, `oracle-results.json`, browser
+receipts and unit-test receipt. [Browser verification screenshot](../../bench/conversion-fixes-2026-10-18/screenshots/m4-gif-repeat-after.png).

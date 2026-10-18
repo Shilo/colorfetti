@@ -1,0 +1,283 @@
+{
+  "node": "v25.0.0",
+  "oracle": {
+    "aom": "3.15.1",
+    "archive": "3.8.9",
+    "cairo": "1.18.6",
+    "cgif": "0.5.4",
+    "exif": "0.6.26",
+    "expat": "2.8.5",
+    "ffi": "3.8.0",
+    "fontconfig": "2.18.3",
+    "freetype": "2.14.3",
+    "fribidi": "1.0.17",
+    "glib": "2.90.0",
+    "harfbuzz": "14.5.0",
+    "heif": "1.23.5",
+    "highway": "1.4.0",
+    "imagequant": "2.4.1",
+    "lcms": "2.19.1",
+    "mozjpeg": "0826579",
+    "pango": "1.58.2",
+    "pixman": "0.46.4",
+    "png": "1.6.58",
+    "proxy-libintl": "0.5",
+    "rsvg": "2.63.2",
+    "tiff": "4.7.2",
+    "uhdr": "2.0.2",
+    "vips": "8.18.7",
+    "webp": "1.6.0",
+    "xml2": "2.15.4",
+    "zlib-ng": "2.3.3",
+    "sharp": "0.35.5"
+  },
+  "cases": [
+    {
+      "identifier": "NETSCAPE2.0",
+      "inputRepeat": null,
+      "independentTotalPlays": 1,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "identifier": "NETSCAPE2.0",
+      "inputRepeat": 0,
+      "independentTotalPlays": 0,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "identifier": "NETSCAPE2.0",
+      "inputRepeat": 1,
+      "independentTotalPlays": 2,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "identifier": "NETSCAPE2.0",
+      "inputRepeat": 2,
+      "independentTotalPlays": 3,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "identifier": "NETSCAPE2.0",
+      "inputRepeat": 65535,
+      "independentTotalPlays": 65536,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "identifier": "ANIMEXTS1.0",
+      "inputRepeat": null,
+      "independentTotalPlays": 1,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "identifier": "ANIMEXTS1.0",
+      "inputRepeat": 0,
+      "independentTotalPlays": 0,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "identifier": "ANIMEXTS1.0",
+      "inputRepeat": 1,
+      "independentTotalPlays": 2,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "identifier": "ANIMEXTS1.0",
+      "inputRepeat": 2,
+      "independentTotalPlays": 3,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "identifier": "ANIMEXTS1.0",
+      "inputRepeat": 65535,
+      "independentTotalPlays": 65536,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    }
+  ],
+  "actualUI": [
+    {
+      "name": "Individual Palette Save",
+      "bytes": 85,
+      "repeats": 2,
+      "independentTotalPlays": 3,
+      "pages": 2,
+      "width": 2,
+      "frameHeight": 1,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "name": "Save all ZIP: animexts-finite-colorfetti.gif",
+      "bytes": 85,
+      "repeats": 2,
+      "independentTotalPlays": 3,
+      "pages": 2,
+      "width": 2,
+      "frameHeight": 1,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    },
+    {
+      "name": "Save all ZIP: animexts-finite-2-colorfetti.gif",
+      "bytes": 85,
+      "repeats": 2,
+      "independentTotalPlays": 3,
+      "pages": 2,
+      "width": 2,
+      "frameHeight": 1,
+      "delays": [
+        100,
+        200
+      ],
+      "exactAllRGBA": true
+    }
+  ],
+  "sourceSHA256": {
+    "src/lib/gif.js": "5949f34efc44547b3bfe2c1be0cba831dea0c178e98626fbc6349c97130a6246",
+    "src/lib/gif-loop.test.js": "9f0f7ddc08ac85e90c70ddc2b25b8a0984f869bb35c1b6cdc895ed98d4291efd",
+    "bench/conversion-fixes-2026-10-18/m4/browser.mjs": "018c656b05966593aac2dcabffafa1a756cd1d7808a6adce9937d526c5b6a9bf"
+  },
+  "buildSHA256": {
+    "before": {
+      "apple-touch-icon-152x152.png": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0",
+      "apple-touch-icon-167x167.png": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d",
+      "apple-touch-icon-180x180.png": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4",
+      "assets/browser-ByEn7D6c.js": "1d4d44b83273cf7db34e71749fbf94b4673335c2d2c890e859c8867a75a99836",
+      "assets/gif-j9exrhB9.js": "e6942847a96db4c497cd0dfbf91d0011a08cbb9afeaac62d8cb6b38739b99c4d",
+      "assets/image-bitmap-decode-BBWTQ-0Y.js": "61eea6a9c9406067d2a9302322c70296719fce35c6c89d8dbd69e820bb975147",
+      "assets/image-import-client-DCRxfEqV.js": "b6550ef157797e62ba8e0aac45e0f4c956efbc2378a5b03656299fa453ea8be2",
+      "assets/image-import-worker-DcArPydw.js": "c437564ae09b15998778ea3874371539e2ef5f229357a9afb9259c327ed66856",
+      "assets/index-BPwXWAyv.js": "0c745487b9cab0e93cc54091bc94f590c750e356fefb568354fb192ec460236b",
+      "assets/index-VE9_tUgX.css": "25a0752ab90454f94333d02719f3bc13de81096425faab9d2c11f2c912f1599c",
+      "assets/palette-ase-gXqzrNdw.js": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01",
+      "assets/palette-cleanup-client-D1VjpkG8.js": "c8eb15b84503f40db664be4f8129724720c3ec3fcc2182cb8ab9fe0899297fa5",
+      "assets/palette-cleanup-Dp2apDQl.js": "505ce2612a82d6737995ab3af440322e5b696c05ccbebb0612a358865dbabaab",
+      "assets/palette-cleanup-worker-ChpCTucA.js": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3",
+      "assets/palette-decode-DsPnq16R.js": "9653df1623172c8f3aa0c5a7a2df58f98fa464a44589ea0fd852d94d7d5052c9",
+      "assets/palette-generated-BIB1z5Rx.js": "18d93d1cd3c90fb522c7839488f7fdcf9fe1fbfedc3c858ea4c439c7b641b89b",
+      "assets/palette-generated-client-CmOp8FGR.js": "c6b147d72697a255af0c187f9722fe30059f83706a045794caf1954cb7da9057",
+      "assets/palette-generated-worker-xpoMRM2c.js": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3",
+      "assets/palette-gif-worker-D4qe4WP7.js": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840",
+      "assets/palette-limit-OiwOF5bZ.js": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f",
+      "assets/palette-limit-worker-rkrL9P3s.js": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46",
+      "assets/palette-lospec-BUdZU2lN.js": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23",
+      "assets/palette-usage-D-PdCh2r.js": "9023029dc602eb139db21445cd0bfa88200246b817f2e69cc2586ec91ec06b8a",
+      "assets/quantize-DsvDuXDJ.js": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941",
+      "bench/conversion-fixes-2026-10-18/m4/browser.html": "0283e1c56d53c9d30ce9015e337febb5280a5f7d8354fa4d6773ad70b4370000",
+      "colorfetti-trailer-poster.png": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86",
+      "colorfetti-trailer.mp4": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19",
+      "favicon-16x16.png": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13",
+      "favicon-32x32.png": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4",
+      "favicon-48x48.png": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06",
+      "favicon-dark-16x16.png": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8",
+      "favicon-dark-32x32.png": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729",
+      "favicon-dark-48x48.png": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04",
+      "favicon-dark.ico": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296",
+      "favicon-dark.svg": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8",
+      "favicon-light.svg": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c",
+      "favicon.ico": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270",
+      "favicon.svg": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a",
+      "index.html": "e1773c7bcd3fb4cec80bf7d8c4c81537871f064e4f1550641d1fd9ce2581cc58",
+      "manifest.webmanifest": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44",
+      "maskable-icon-192x192.png": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55",
+      "maskable-icon-512x512.png": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11",
+      "monochrome-192x192.png": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca",
+      "pwa-192x192.png": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c",
+      "pwa-512x512.png": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838",
+      "safari-pinned-tab.svg": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+    },
+    "after": {
+      "apple-touch-icon-152x152.png": "2c65a73df8abd817a6216511270e0e1f454c5651a86807fc265245b00dc8a2f0",
+      "apple-touch-icon-167x167.png": "e67d77df3273d3460c273b55c4f41d0aac64dea0c5bd251cfbbf8dcbbf11e90d",
+      "apple-touch-icon-180x180.png": "47904bffda3439e0b83403c8432d0292cc118bc6058b2fb8271ed2a622a654e4",
+      "assets/browser-Dl3gQXpz.js": "24a023432f5042790f917a9b2bba6eb0e4b269e770cb9711754b3f69d43e058c",
+      "assets/gif-CGzvtVgu.js": "45dedcb6e1c64428e0b50d13d2d73a89f02630cd3be9e7bca3f63eb29f3cf52b",
+      "assets/image-bitmap-decode-BBWTQ-0Y.js": "61eea6a9c9406067d2a9302322c70296719fce35c6c89d8dbd69e820bb975147",
+      "assets/image-import-client-fypN8nw-.js": "1a3d735ba72cd3613eed0ce35be7edf75e5d4ede5f6b559a05e58882324f7c90",
+      "assets/image-import-worker-DQ8SerMa.js": "916bdb0eb9d8b82b2767ec3120c213885fb14c411f07bfaac9cf2374fedb900d",
+      "assets/index-B51F7Y34.css": "bf26d401e8ba03a8e5f605b83b6e8d4333dafd6d3df9db16b5bf0a0a4c402f81",
+      "assets/index-B9JvfXIm.js": "12035131240883e5ead97b993a8995967fc8c989bfb31d376d0bb31aee2cf972",
+      "assets/palette-ase-gXqzrNdw.js": "73c2d5fd501afe79f6279f8ea20e0c96d864ba34438e891385c97a6a9bf3cb01",
+      "assets/palette-cleanup-client-0PMBFFj8.js": "72b2f8b0d1e419b6f85bad7da48974fcbb53621debcd72ffa1767b7d5453cc1f",
+      "assets/palette-cleanup-DZFj5vem.js": "e686d03571fa9b850299ba3cb44a6bf6244af5d2d1f2030bf26c7a3ee465e613",
+      "assets/palette-cleanup-worker-ChpCTucA.js": "e800b93252365c92c8b414ff366b270534970b1582bbe2ebfa44f16fc74a06e3",
+      "assets/palette-decode-DfYHF1Xp.js": "0a24a27b8568c2dd15120dd5b6ee6abfb1aa950be13caa19de0bab2f23026abe",
+      "assets/palette-generated-client-vi2moGwN.js": "9225f71ae0ce8e6ec31d85860002cdbcb996ba989dc4a65ea5c8d162dc87c040",
+      "assets/palette-generated-NoXfA4Ls.js": "67e1a496bb32661a6e01784428dfa272ee75289fec840253c1874ba78ef4c93d",
+      "assets/palette-generated-worker-xpoMRM2c.js": "867ce9376343f8c8f6d9cb4884bdab017628b9a5688c619e56e20274f4e56cd3",
+      "assets/palette-gif-worker-D4qe4WP7.js": "d8ae7ca950ef31a5c2fef9ba82d57cd239a0196187670991d3b0662134056840",
+      "assets/palette-limit-OiwOF5bZ.js": "0ed0ffba9c842a72ac417a1f48c3bfb81e9970c0185551f2965ef304dde9ce3f",
+      "assets/palette-limit-worker-rkrL9P3s.js": "dbf020a7d7ea26118de2e7fde2926a9e5b2b7e628ec46d1f35080f56de823a46",
+      "assets/palette-lospec-BUdZU2lN.js": "d9f5d6f0fa4c466875d17f1a0b30ee856ddc4c5a8dddd15c794630498b9fef23",
+      "assets/palette-usage-D_FRnU_5.js": "6a800c9687dc21d6fa5cfe5c5721fa829d035ff19d39b89fc7438c5b712a2d7b",
+      "assets/quantize-DsvDuXDJ.js": "c531f13dc96a6a9e37d9a1368f4fc81535e90323a961cc8ad3248cefe2d8d941",
+      "bench/conversion-fixes-2026-10-18/m4/browser.html": "d41cd8eb881689d349095be5ecab9e526359d1634020778e00a20d1e9001414e",
+      "colorfetti-trailer-poster.png": "0b34b79098d0a8e2d22bba84820c289168915adf399c33d39db55ebed905bf86",
+      "colorfetti-trailer.mp4": "f2e982f062f9e34ef04e43ca7f2e8a8e1cc82701499b2987cec2cb79c785da19",
+      "favicon-16x16.png": "508f7236b1de6deadc6a0ff83bb98964b19de99fc437e89493d7da5d45186e13",
+      "favicon-32x32.png": "bebd9af185daf43530b73c1cebd2b71f3127962506445222921811a3dcd2b9b4",
+      "favicon-48x48.png": "fb712f296b77363f554b7a5f5cfaf9f0ee30de31e7068a1588b696873f76ea06",
+      "favicon-dark-16x16.png": "96c43439e8ba4ad3d857b50ca069bf01795fc18d06be5f1513bd3299971367a8",
+      "favicon-dark-32x32.png": "700e4b3c279d2de5f0588085848e7e7e0b0aea0cd0dd65fbed95a14c674e9729",
+      "favicon-dark-48x48.png": "cb0730ba4f5c506056e8a3a108d818502690324dc20c1600106718bf2af62f04",
+      "favicon-dark.ico": "8de36eb074b0ddd715081e748ddc78e7fcbf7d3085c1208a1e8073c62c1a1296",
+      "favicon-dark.svg": "e01984f025c19a9305d32b524c9c6c64b8abeef0deccfec03693823b5deb4fe8",
+      "favicon-light.svg": "a2deaef7486f011faf6aa3ede4454168bce5ebba861b7cf390afa65021bba87c",
+      "favicon.ico": "d447ea813ee9e28a16ba30ee25bcd72071afb6432cd3cfb1711c2a947a5a5270",
+      "favicon.svg": "6e7387b5f70b9fb597dc04c094d2a63804b82cb9683f3a437db996c136b0082a",
+      "index.html": "ad0cb8ca3ef7f7f0a23a8557d7d963193d25681c4dec606eb082560c14863972",
+      "manifest.webmanifest": "a972a8a4b83e3d2e9d23c7fa6c7a3a0e1f3e7213f715380143c252c26eadbb44",
+      "maskable-icon-192x192.png": "406b9b45fc6f3f00003f532e28780c3eca4b331c1aab4b4e7c9f7518a980db55",
+      "maskable-icon-512x512.png": "dab01651d2e1d60ca14a2228b2593a8c456f632b84e9659fb40381be6ee44e11",
+      "monochrome-192x192.png": "b93b198a9647f5653f050a62515181d7de528336ea5be5e8ef1ec07fba6ca1ca",
+      "pwa-192x192.png": "3341fce55b052920d64944991f087750dc9627bf257d959e9833b1f301e9db2c",
+      "pwa-512x512.png": "d3769597f9009c8f0b3f57b60737f59bef84d1785cf0c7655609890f207d8838",
+      "safari-pinned-tab.svg": "279a5ed1a79ca106bc7968c0d3727778b44f3efaad16134b947032c16dd48431"
+    }
+  }
+}

@@ -11,17 +11,27 @@ function invalidGif(message, cause) {
   return problem;
 }
 
-// GifReader carries the previous GCE into later images without their own one.
-// Its scope ends at the next graphic. Read only intervening extension framing,
-// not payload bytes: comments/application data can contain a false 21 F9 pair.
-// Plain-text graphics remain unsupported by GifReader, before reaching here.
-function hasGraphicsControl(bytes, start, info) {
-  const end = info.data_offset - 10 - (info.has_local_palette ? info.palette_size * 3 : 0);
-  if (start > end || end < 0 || bytes[end] !== 0x2c) throw invalidGif('Invalid GIF frame extensions.');
+// Read extension framing only, never search arbitrary comment/image payload.
+// GifReader recognizes NETSCAPE2.0 but misses its ANIMEXTS1.0 loop alias. Both
+// carry one canonical [3, 1, repeatLo, repeatHi, 0] sub-block; the last valid
+// recognized extension wins, retaining GifReader's NETSCAPE precedence. Other
+// well-framed application data remains ignored, including split loop payloads.
+// Also repair GifReader's GCE scope: it ends at the next image. Plain-text
+// graphics remain unsupported by GifReader, before reaching here.
+function scanExtensions(bytes, start, end, metadata, trailer = false) {
+  if (start > end || end > bytes.length) throw invalidGif('Invalid GIF frame extensions.');
   let found = false;
   for (let cursor = start; cursor < end;) {
+    if (trailer && bytes[cursor] === 0x3b) break; // ignore bytes after the trailer, as GifReader does
     if (bytes[cursor++] !== 0x21 || cursor >= end) throw invalidGif('Invalid GIF frame extensions.');
-    if (bytes[cursor++] === 0xf9) found = true;
+    const label = bytes[cursor++];
+    if (label === 0xf9) found = true;
+    if (label === 0xff && cursor + 17 <= end && bytes[cursor] === 11) {
+      const identifier = String.fromCharCode(...bytes.subarray(cursor + 1, cursor + 12));
+      if ((identifier === 'NETSCAPE2.0' || identifier === 'ANIMEXTS1.0')
+        && bytes[cursor + 12] === 3 && bytes[cursor + 13] === 1 && bytes[cursor + 16] === 0)
+        metadata.loop = bytes[cursor + 14] | bytes[cursor + 15] << 8;
+    }
     while (true) {
       if (cursor >= end) throw invalidGif('Invalid GIF extension bounds.');
       const size = bytes[cursor++];
@@ -46,6 +56,7 @@ function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, lim
   if (width * height > maxPixels) throw new Error(limitMessage);
   if (!reader.numFrames()) throw invalidGif('This GIF has no image frames.');
   const canvas = new Uint8ClampedArray(width * height * 4), frames = [];
+  const metadata = { loop: null };
   let before = null; // the previous frame, whose "disposal" says how to leave the canvas
   let saved = null;
   for (let i = 0; i < reader.numFrames(); i++) {
@@ -53,7 +64,11 @@ function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, lim
     if (!info.width || !info.height || info.x + info.width > width || info.y + info.height > height
       || info.palette_offset == null || !info.palette_size || info.palette_offset + info.palette_size * 3 > bytes.length
       || info.data_offset + info.data_length > bytes.length) throw invalidGif('Invalid GIF frame dimensions or data.');
-    if (before && !hasGraphicsControl(bytes, before.data_offset + before.data_length, info))
+    const extensionEnd = info.data_offset - 10 - (info.has_local_palette ? info.palette_size * 3 : 0);
+    if (extensionEnd < 0 || bytes[extensionEnd] !== 0x2c) throw invalidGif('Invalid GIF frame extensions.');
+    const extensionStart = before ? before.data_offset + before.data_length
+      : 13 + (bytes[10] & 0x80 ? 3 * (1 << ((bytes[10] & 7) + 1)) : 0);
+    if (!scanExtensions(bytes, extensionStart, extensionEnd, metadata) && before)
       info = { ...info, delay: 0, transparent_index: null, disposal: 0 };
     if (before?.disposal === 2) {
       // the previous frame asked for its area to be cleared
@@ -71,8 +86,9 @@ function* decodeGifSteps(bytes, { retainFrames = true, maxPixels = Infinity, lim
     before = info;
     yield retainFrames ? undefined : { ...frame, width, height, index: i, frameCount: reader.numFrames() };
   }
-  return retainFrames ? { width, height, loop: reader.loopCount(), frames }
-    : { width, height, loop: reader.loopCount(), frameCount: reader.numFrames() };
+  scanExtensions(bytes, before.data_offset + before.data_length, bytes.length, metadata, true);
+  return retainFrames ? { width, height, loop: metadata.loop, frames }
+    : { width, height, loop: metadata.loop, frameCount: reader.numFrames() };
 }
 
 export function decodeGif(bytes) {

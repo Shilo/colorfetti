@@ -173,6 +173,12 @@ Repair GifReader's inherited fields when no real control occurs between images;
 skip structured comment/application subblocks so embedded control-like bytes cannot
 extend that scope. This does not add plain-text graphics support.
 User artwork import lazily loads `image-import-client.js` and one serial worker.
+GIF repeat metadata accepts exact NETSCAPE2.0 and ANIMEXTS1.0 application identifiers
+with their canonical three-byte repeat payload. The last valid recognized extension
+wins: no extension means one play, zero means forever, and finite values are extra
+plays. Framed scans skip payload decoys; split/unknown well-framed data stays ignored
+and malformed bounds fail. Single-frame artwork remains a still. Save/ZIP retain
+animated repeat counts through the shared artwork/palette decoder.
 Single-frame non-GIF stills up to 4096 pixels use the same cooperative analysis
 through the serial queue, avoiding worker round trips; larger sources/GIFs use it.
 GIF compositing and legacy analyze/unify run there; PNG/other formats retain native

@@ -11,6 +11,12 @@ message length, without adding polling or a rendering loop.
 
 ## Exact GIF palette acquisition (October 18, 2026)
 
+Repeat alias handling extends the existing GIF extension-gap scan to recognize
+ANIMEXTS1.0 alongside NETSCAPE2.0. It does not copy compressed input, rescan pixels,
+retain frame caches or change LZW decoding. One small metadata object is retained
+per decode; application checks use bounded 11-character identifier strings.
+The reader's existing metadata pass and synchronous per-frame limits remain.
+
 GIF palette import now visits all composited frames through artwork's indexed
 decoder, avoiding directly reproduced Brave default-Shields canvas perturbations. The editor retains compressed
 bytes for Every color/Find solid colors rescans, rather than decoded frames. Scanning

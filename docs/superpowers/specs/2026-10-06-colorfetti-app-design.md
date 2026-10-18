@@ -2844,7 +2844,14 @@ GIF conversion retains only one converted frame per pass, transfers the remapped
 to one compression worker, and waits for its acknowledgment before proceeding. Worker
 failure reports an error; a missing Worker uses the same direct writer. Source RGBA GIF
 frames and compressed output are still retained. Exported delays/loop remain from the
-source. Full palette preview's next-frame clock starts when conversion is ready, so an
+source. Shared artwork/palette GIF decoding recognizes exact NETSCAPE2.0 and
+ANIMEXTS1.0 application identifiers with the canonical three-byte repeat subblock.
+The last valid recognized extension wins: absent means one play, zero means forever,
+and finite values mean additional plays. Framing-aware scans skip comment, table and
+image payload decoys. Split/unknown well-framed data remains ignored; malformed
+bounds fail explicitly. Single-frame artwork remains a still. These metadata rules
+do not change the wall's intentionally continuous playback.
+Full palette preview's next-frame clock starts when conversion is ready, so an
 expensive preview may run slower than the source; this does not change export delays.
 Original comparison, including held and viewer comparison, follows source-frame timers
 without waiting for conversion. While Original is shown, preview readiness does not
