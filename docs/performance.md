@@ -716,9 +716,10 @@ can do nothing else meanwhile.
   a full mask of every image up to 262144 pixels, which the next move discarded. On the
   Pixel 8 Pro, a Threshold drag over four 512 px Checker images went from 975 to 750 ms of
   renderer CPU; the final caption arrives 11 ms later (October 18).
-- Full palette PNGs compress in fflate's worker, which it starts for each call. Rows that
-  total at most 64 KiB compress synchronously instead, to the same bytes: on the
-  Pixel 8 Pro a tiny palette Save went from 66 to 25 ms click to download (October 18).
+- Full palette PNGs compress in fflate's worker, which it starts for each call. Compressing
+  rows of at most 64 KiB synchronously (same bytes) made a tiny palette Save 66 to 25 ms on
+  the Pixel 8 Pro, but a fresh-tab 1024 sheet Save 112 to 125 ms (8 of 10 pairs slower);
+  it was reverted (October 18, bench/challenge-of-codex-2026-10-18/).
 - Download all converts and encodes one image at a time, so only one full mask is in
   memory at once.
 - GIFs were always palette images. Nothing changed there.

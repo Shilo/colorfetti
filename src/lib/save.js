@@ -159,7 +159,7 @@ export function palettePngBytes(image) {
   return assemblePng([...layout.parts, chunk('IDAT', zlibSync(layout.rows, { level: 3 })), chunk('IEND', new Uint8Array(0))]);
 }
 
-// New-family jobs pack bounded row batches. Rows over 64 KiB compress in fflate's worker.
+// New-family jobs pack bounded row batches and compress in fflate's worker.
 // Legacy pngBytes remains the existing synchronous, byte-identical path.
 export async function palettePngBytesAsync(image, { signal } = {}) {
   checkCanceled(signal);
@@ -179,8 +179,7 @@ export async function palettePngBytesAsync(image, { signal } = {}) {
     if (y + batch < image.h) await yieldExport();
   }
   checkCanceled(signal);
-  // Up to 64 KiB of rows compress here: fflate starts a worker per call, which costs more.
-  const compressed = layout.rows.length <= 65536 ? zlibSync(layout.rows, { level: 3 }) : await new Promise((resolve, reject) => {
+  const compressed = await new Promise((resolve, reject) => {
     let terminate, settled = false;
     const finish = (error, data) => {
       if (settled) return; settled = true;

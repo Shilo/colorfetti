@@ -13,7 +13,7 @@ Extension of the second audit (`2026-10-17-second-performance-audit.md`) under t
 | Commit | Change | Phone (alternating pairs) | Desktop |
 |---|---|---|---|
 | `4c1a975` | Non-luma `analyze` single loop; seam pass skips zero-difference pairs | Rapid Brightness on a 2048 sheet: CPU 611→430 ms, longest task 162→111 ms | 210→160 ms |
-| `0a4eb91` | Palette PNG rows ≤64 KiB use `zlibSync` instead of fflate's per-call worker | Tiny palette Save click→download 66→25 ms (−62%) | within timer resolution |
+| ~~`0a4eb91`~~ reverted | Palette PNG rows ≤64 KiB used `zlibSync` instead of fflate's per-call worker | Tiny Save 66→25 ms, but a fresh-tab sheet1024 Save 112→125 ms (8/10 pairs slower) in the post-Codex decider | reverted; see below |
 | `5e19c48` | 1-bit caption inspection waits while a Style slider is dragged | Threshold drag over four 512 px Checker images: CPU 975→750 ms; final caption +11 ms | busy −16% |
 | `236bbcc` | Max colors and Auto jobs use exact histograms from completed color summaries | Max colors 2→4→8 on a 2048 sheet: 792→208 ms to final paint (−74%) | 205→56 ms |
 | `90b2d05` | Live Brightness/cut reanalysis runs `analyze` in ~8 ms posted row bands | Rapid Brightness 2048: longest task 93→0 ms, worst frame gap 83→17 ms, elapsed −13% | worst frame gap 33→17 ms |
@@ -78,3 +78,14 @@ Deferred with the next dependency:
 Physical landscape, Safari/iOS/macOS, desktop downloads and native clipboard/ZIP transport
 were not covered. Worker CPU is outside renderer TaskDuration. Finite tests do not establish
 universal frame times or bug absence.
+
+## Post-Codex challenge (October 18)
+
+Codex's `ae97d0e` (release Preview's focus target) replicates on the Pixel 8 Pro: 22.98 MB
+retained after Preview→close→remove, 0.60 MB with the fix. Three sibling paths still retained the
+same 22.98 MB (Share sheet→close, Share→Reuse colors→editor close, Share→Preview→close); `1582c59`
+releases them to 0.60 MB. Codex's cold-Auto concern about `236bbcc` did not reproduce in 10 pairs
+(median −0.1 ms). Its above-threshold Save concern about `0a4eb91` did: a fresh-tab sheet1024 Save was
++12 ms (+10.4%) in 8 of 10 pairs, failing that candidate's declared 5%/3 ms floor, so it was
+reverted. Unverified mechanism: a preceding small export warmed fflate's worker source, which the
+synchronous path skipped. Evidence: `bench/challenge-of-codex-2026-10-18/`.

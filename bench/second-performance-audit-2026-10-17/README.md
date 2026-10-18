@@ -131,3 +131,9 @@ Provenance note: the gate tables above were written to this file before each can
 but this directory was committed only at the end, so git history alone cannot prove that order; the
 timestamps of the raw receipts (`android/ab-*/`, `desktop/ab-*/`) postdate the gate edits.
 Deferred ideas and the API log: docs/research/2026-10-18-performance-source-review.md.
+
+### Post-Codex correction
+
+C-B4 is **REVERTED**: a 10-pair fresh-tab decider (bench/challenge-of-codex-2026-10-18/android/decide-save/)
+reproduced Codex's above-threshold adverse result, sheet1024 Save click→download 111.8→124.8 ms, 8/10 pairs
+slower, failing the declared floor. The earlier coordinator variation override was wrong.
