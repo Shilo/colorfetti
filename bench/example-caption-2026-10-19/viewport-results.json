@@ -1,0 +1,2579 @@
+{
+  "date": "2026-10-19",
+  "browser": "Codex in-app browser",
+  "assets": [
+    "index-CHDQxMKo.js",
+    "index-CzwydYh4.css"
+  ],
+  "notes": [
+    "Mouse input mode was used at desktop and phone-sized viewports. No physical-device or touch-emulation claim.",
+    "The unchanged touch Add images copy is shorter than the complete desktop wording verified in every case.",
+    "Browser checks used actual app controls and DOM measurements, with no CSS overrides or application-state injection.",
+    "An initial picker assertion dismissed the open editing panel; the picker passed after panel dismissal.",
+    "Imported metadata inline-flex declarations compute to flex as flex items; the initial inline-flex expectation was corrected. Imported captions retain their existing flex layout."
+  ],
+  "emptyCaption": [
+    {
+      "panel": "none",
+      "family": "two-color",
+      "button": {
+        "bottom": 902,
+        "height": 44,
+        "right": 1141,
+        "width": 842,
+        "x": 299,
+        "y": 858
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 898,
+        "height": 36,
+        "right": 937.515625,
+        "width": 631.515625,
+        "x": 306,
+        "y": 862
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1440,
+      "icon": {
+        "bottom": 889,
+        "height": 18,
+        "right": 1134,
+        "width": 18,
+        "x": 1116,
+        "y": 871
+      },
+      "label": {
+        "bottom": 889,
+        "height": 18,
+        "right": 1108,
+        "width": 162.484375,
+        "x": 945.515625,
+        "y": 871
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 888,
+          "right": 1108,
+          "x": 945.515625,
+          "y": 872
+        }
+      ],
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      },
+      "pass": true
+    },
+    {
+      "panel": "none",
+      "family": "two-color",
+      "button": {
+        "bottom": 622,
+        "height": 44,
+        "right": 921,
+        "width": 562,
+        "x": 359,
+        "y": 578
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 618,
+        "height": 36,
+        "right": 717.515625,
+        "width": 351.515625,
+        "x": 366,
+        "y": 582
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1280,
+      "icon": {
+        "bottom": 609,
+        "height": 18,
+        "right": 914,
+        "width": 18,
+        "x": 896,
+        "y": 591
+      },
+      "label": {
+        "bottom": 609,
+        "height": 18,
+        "right": 888,
+        "width": 162.484375,
+        "x": 725.515625,
+        "y": 591
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 608,
+          "right": 888,
+          "x": 725.515625,
+          "y": 592
+        }
+      ],
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "pass": true
+    },
+    {
+      "panel": "none",
+      "family": "two-color",
+      "button": {
+        "bottom": 670,
+        "height": 44,
+        "right": 817,
+        "width": 610,
+        "x": 207,
+        "y": 626
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 666,
+        "height": 36,
+        "right": 613.515625,
+        "width": 399.515625,
+        "x": 214,
+        "y": 630
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1024,
+      "icon": {
+        "bottom": 657,
+        "height": 18,
+        "right": 810,
+        "width": 18,
+        "x": 792,
+        "y": 639
+      },
+      "label": {
+        "bottom": 657,
+        "height": 18,
+        "right": 784,
+        "width": 162.484375,
+        "x": 621.515625,
+        "y": 639
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 656,
+          "right": 784,
+          "x": 621.515625,
+          "y": 640
+        }
+      ],
+      "viewport": {
+        "height": 768,
+        "width": 1024
+      },
+      "pass": true
+    },
+    {
+      "panel": "none",
+      "family": "two-color",
+      "button": {
+        "bottom": 865,
+        "height": 44,
+        "right": 752,
+        "width": 736,
+        "x": 16,
+        "y": 821
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 861,
+        "height": 36,
+        "right": 548.515625,
+        "width": 525.515625,
+        "x": 23,
+        "y": 825
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 768,
+      "icon": {
+        "bottom": 852,
+        "height": 18,
+        "right": 745,
+        "width": 18,
+        "x": 727,
+        "y": 834
+      },
+      "label": {
+        "bottom": 852,
+        "height": 18,
+        "right": 719,
+        "width": 162.484375,
+        "x": 556.515625,
+        "y": 834
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 851,
+          "right": 719,
+          "x": 556.515625,
+          "y": 835
+        }
+      ],
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      },
+      "pass": true
+    },
+    {
+      "panel": "none",
+      "family": "two-color",
+      "button": {
+        "bottom": 558,
+        "height": 44,
+        "right": 378,
+        "width": 366,
+        "x": 12,
+        "y": 514
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 554,
+        "height": 36,
+        "right": 174.515625,
+        "width": 155.515625,
+        "x": 19,
+        "y": 518
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 390,
+      "icon": {
+        "bottom": 545,
+        "height": 18,
+        "right": 371,
+        "width": 18,
+        "x": 353,
+        "y": 527
+      },
+      "label": {
+        "bottom": 545,
+        "height": 18,
+        "right": 345,
+        "width": 162.484375,
+        "x": 182.515625,
+        "y": 527
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 544,
+          "right": 345,
+          "x": 182.515625,
+          "y": 528
+        }
+      ],
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "pass": true
+    },
+    {
+      "panel": "none",
+      "family": "two-color",
+      "button": {
+        "bottom": 385,
+        "height": 44,
+        "right": 308,
+        "width": 296,
+        "x": 12,
+        "y": 341
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 381,
+        "height": 36,
+        "right": 104.515625,
+        "width": 85.515625,
+        "x": 19,
+        "y": 345
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 320,
+      "icon": {
+        "bottom": 372,
+        "height": 18,
+        "right": 301,
+        "width": 18,
+        "x": 283,
+        "y": 354
+      },
+      "label": {
+        "bottom": 372,
+        "height": 18,
+        "right": 275,
+        "width": 162.484375,
+        "x": 112.515625,
+        "y": 354
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 371,
+          "right": 275,
+          "x": 112.515625,
+          "y": 355
+        }
+      ],
+      "viewport": {
+        "height": 568,
+        "width": 320
+      },
+      "pass": true
+    },
+    {
+      "panel": "none",
+      "family": "two-color",
+      "button": {
+        "bottom": 234,
+        "height": 44,
+        "right": 371,
+        "width": 174,
+        "x": 197,
+        "y": 190
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 230,
+        "height": 36,
+        "right": 234,
+        "width": 30,
+        "x": 204,
+        "y": 194
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 568,
+      "icon": {
+        "bottom": 221,
+        "height": 18,
+        "right": 364,
+        "width": 18,
+        "x": 346,
+        "y": 203
+      },
+      "label": {
+        "bottom": 230,
+        "height": 36,
+        "right": 338,
+        "width": 96,
+        "x": 242,
+        "y": 194
+      },
+      "labelScrollWidth": 96,
+      "labelWidth": 96,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 211,
+          "right": 338,
+          "x": 260.578125,
+          "y": 195
+        },
+        {
+          "bottom": 229,
+          "right": 338,
+          "x": 255.875,
+          "y": 213
+        }
+      ],
+      "viewport": {
+        "height": 320,
+        "width": 568
+      },
+      "pass": true
+    },
+    {
+      "panel": "none",
+      "family": "two-color",
+      "button": {
+        "bottom": 289,
+        "height": 44,
+        "right": 448,
+        "width": 229,
+        "x": 219,
+        "y": 245
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 285,
+        "height": 36,
+        "right": 278,
+        "width": 52,
+        "x": 226,
+        "y": 249
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 667,
+      "icon": {
+        "bottom": 276,
+        "height": 18,
+        "right": 441,
+        "width": 18,
+        "x": 423,
+        "y": 258
+      },
+      "label": {
+        "bottom": 285,
+        "height": 36,
+        "right": 415,
+        "width": 129,
+        "x": 286,
+        "y": 249
+      },
+      "labelScrollWidth": 129,
+      "labelWidth": 129,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 266,
+          "right": 415,
+          "x": 299.953125,
+          "y": 250
+        },
+        {
+          "bottom": 284,
+          "right": 415,
+          "x": 370.5,
+          "y": 268
+        }
+      ],
+      "viewport": {
+        "height": 375,
+        "width": 667
+      },
+      "pass": true
+    },
+    {
+      "panel": "none",
+      "family": "two-color",
+      "button": {
+        "bottom": 304,
+        "height": 44,
+        "right": 544,
+        "width": 244,
+        "x": 300,
+        "y": 260
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 300,
+        "height": 36,
+        "right": 365,
+        "width": 58,
+        "x": 307,
+        "y": 264
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 844,
+      "icon": {
+        "bottom": 291,
+        "height": 18,
+        "right": 537,
+        "width": 18,
+        "x": 519,
+        "y": 273
+      },
+      "label": {
+        "bottom": 300,
+        "height": 36,
+        "right": 511,
+        "width": 138,
+        "x": 373,
+        "y": 264
+      },
+      "labelScrollWidth": 138,
+      "labelWidth": 138,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 281,
+          "right": 511,
+          "x": 395.953125,
+          "y": 265
+        },
+        {
+          "bottom": 299,
+          "right": 511,
+          "x": 466.5,
+          "y": 283
+        }
+      ],
+      "viewport": {
+        "height": 390,
+        "width": 844
+      },
+      "pass": true
+    },
+    {
+      "panel": "none",
+      "family": "two-color",
+      "button": {
+        "bottom": 116,
+        "height": 44,
+        "right": 254.5,
+        "width": 164,
+        "x": 90.5,
+        "y": 72
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 112,
+        "height": 36,
+        "right": 123.5,
+        "width": 26,
+        "x": 97.5,
+        "y": 76
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 360,
+      "icon": {
+        "bottom": 103,
+        "height": 18,
+        "right": 247.5,
+        "width": 18,
+        "x": 229.5,
+        "y": 85
+      },
+      "label": {
+        "bottom": 112,
+        "height": 36,
+        "right": 221.5,
+        "width": 90,
+        "x": 131.5,
+        "y": 76
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 93,
+          "right": 221.5,
+          "x": 144.078125,
+          "y": 77
+        },
+        {
+          "bottom": 111,
+          "right": 221.5,
+          "x": 139.375,
+          "y": 95
+        }
+      ],
+      "viewport": {
+        "height": 240,
+        "width": 360
+      },
+      "pass": true
+    },
+    {
+      "panel": "style",
+      "family": "two-color",
+      "button": {
+        "bottom": 810,
+        "height": 44,
+        "right": 1095,
+        "width": 750,
+        "x": 345,
+        "y": 766
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 806,
+        "height": 36,
+        "right": 891.515625,
+        "width": 539.515625,
+        "x": 352,
+        "y": 770
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1440,
+      "icon": {
+        "bottom": 797,
+        "height": 18,
+        "right": 1088,
+        "width": 18,
+        "x": 1070,
+        "y": 779
+      },
+      "label": {
+        "bottom": 797,
+        "height": 18,
+        "right": 1062,
+        "width": 162.484375,
+        "x": 899.515625,
+        "y": 779
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 796,
+          "right": 1062,
+          "x": 899.515625,
+          "y": 780
+        }
+      ],
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      },
+      "pass": true
+    },
+    {
+      "panel": "style",
+      "family": "two-color",
+      "button": {
+        "bottom": 530,
+        "height": 44,
+        "right": 875,
+        "width": 470,
+        "x": 405,
+        "y": 486
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 526,
+        "height": 36,
+        "right": 671.515625,
+        "width": 259.515625,
+        "x": 412,
+        "y": 490
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1280,
+      "icon": {
+        "bottom": 517,
+        "height": 18,
+        "right": 868,
+        "width": 18,
+        "x": 850,
+        "y": 499
+      },
+      "label": {
+        "bottom": 517,
+        "height": 18,
+        "right": 842,
+        "width": 162.484375,
+        "x": 679.515625,
+        "y": 499
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 516,
+          "right": 842,
+          "x": 679.515625,
+          "y": 500
+        }
+      ],
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "pass": true
+    },
+    {
+      "panel": "style",
+      "family": "two-color",
+      "button": {
+        "bottom": 578,
+        "height": 44,
+        "right": 771,
+        "width": 518,
+        "x": 253,
+        "y": 534
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 574,
+        "height": 36,
+        "right": 567.515625,
+        "width": 307.515625,
+        "x": 260,
+        "y": 538
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1024,
+      "icon": {
+        "bottom": 565,
+        "height": 18,
+        "right": 764,
+        "width": 18,
+        "x": 746,
+        "y": 547
+      },
+      "label": {
+        "bottom": 565,
+        "height": 18,
+        "right": 738,
+        "width": 162.484375,
+        "x": 575.515625,
+        "y": 547
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 564,
+          "right": 738,
+          "x": 575.515625,
+          "y": 548
+        }
+      ],
+      "viewport": {
+        "height": 768,
+        "width": 1024
+      },
+      "pass": true
+    },
+    {
+      "panel": "style",
+      "family": "two-color",
+      "button": {
+        "bottom": 819,
+        "height": 44,
+        "right": 752,
+        "width": 736,
+        "x": 16,
+        "y": 775
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 815,
+        "height": 36,
+        "right": 548.515625,
+        "width": 525.515625,
+        "x": 23,
+        "y": 779
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 768,
+      "icon": {
+        "bottom": 806,
+        "height": 18,
+        "right": 745,
+        "width": 18,
+        "x": 727,
+        "y": 788
+      },
+      "label": {
+        "bottom": 806,
+        "height": 18,
+        "right": 719,
+        "width": 162.484375,
+        "x": 556.515625,
+        "y": 788
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 805,
+          "right": 719,
+          "x": 556.515625,
+          "y": 789
+        }
+      ],
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      },
+      "pass": true
+    },
+    {
+      "panel": "style",
+      "family": "two-color",
+      "button": {
+        "bottom": 485,
+        "height": 44,
+        "right": 378,
+        "width": 366,
+        "x": 12,
+        "y": 441
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 481,
+        "height": 36,
+        "right": 174.515625,
+        "width": 155.515625,
+        "x": 19,
+        "y": 445
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 390,
+      "icon": {
+        "bottom": 472,
+        "height": 18,
+        "right": 371,
+        "width": 18,
+        "x": 353,
+        "y": 454
+      },
+      "label": {
+        "bottom": 472,
+        "height": 18,
+        "right": 345,
+        "width": 162.484375,
+        "x": 182.515625,
+        "y": 454
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 471,
+          "right": 345,
+          "x": 182.515625,
+          "y": 455
+        }
+      ],
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "pass": true
+    },
+    {
+      "panel": "style",
+      "family": "two-color",
+      "button": {
+        "bottom": 268,
+        "height": 44,
+        "right": 264,
+        "width": 208,
+        "x": 56,
+        "y": 224
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 264,
+        "height": 36,
+        "right": 106.609375,
+        "width": 43.609375,
+        "x": 63,
+        "y": 228
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 320,
+      "icon": {
+        "bottom": 255,
+        "height": 18,
+        "right": 257,
+        "width": 18,
+        "x": 239,
+        "y": 237
+      },
+      "label": {
+        "bottom": 264,
+        "height": 36,
+        "right": 231,
+        "width": 116.390625,
+        "x": 114.609375,
+        "y": 228
+      },
+      "labelScrollWidth": 116,
+      "labelWidth": 116,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 245,
+          "right": 231,
+          "x": 115.953125,
+          "y": 229
+        },
+        {
+          "bottom": 263,
+          "right": 231,
+          "x": 186.5,
+          "y": 247
+        }
+      ],
+      "viewport": {
+        "height": 568,
+        "width": 320
+      },
+      "pass": true
+    },
+    {
+      "panel": "style",
+      "family": "two-color",
+      "button": {
+        "bottom": 150,
+        "height": 44,
+        "right": 366,
+        "width": 164,
+        "x": 202,
+        "y": 106
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 146,
+        "height": 36,
+        "right": 235,
+        "width": 26,
+        "x": 209,
+        "y": 110
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 571,
+      "icon": {
+        "bottom": 137,
+        "height": 18,
+        "right": 359,
+        "width": 18,
+        "x": 341,
+        "y": 119
+      },
+      "label": {
+        "bottom": 146,
+        "height": 36,
+        "right": 333,
+        "width": 90,
+        "x": 243,
+        "y": 110
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 127,
+          "right": 333,
+          "x": 255.578125,
+          "y": 111
+        },
+        {
+          "bottom": 145,
+          "right": 333,
+          "x": 250.875,
+          "y": 129
+        }
+      ],
+      "viewport": {
+        "height": 320,
+        "width": 568
+      },
+      "pass": true
+    },
+    {
+      "panel": "style",
+      "family": "two-color",
+      "button": {
+        "bottom": 205,
+        "height": 44,
+        "right": 415.5,
+        "width": 164,
+        "x": 251.5,
+        "y": 161
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 201,
+        "height": 36,
+        "right": 284.5,
+        "width": 26,
+        "x": 258.5,
+        "y": 165
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 670,
+      "icon": {
+        "bottom": 192,
+        "height": 18,
+        "right": 408.5,
+        "width": 18,
+        "x": 390.5,
+        "y": 174
+      },
+      "label": {
+        "bottom": 201,
+        "height": 36,
+        "right": 382.5,
+        "width": 90,
+        "x": 292.5,
+        "y": 165
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 182,
+          "right": 382.5,
+          "x": 305.078125,
+          "y": 166
+        },
+        {
+          "bottom": 200,
+          "right": 382.5,
+          "x": 300.375,
+          "y": 184
+        }
+      ],
+      "viewport": {
+        "height": 375,
+        "width": 667
+      },
+      "pass": true
+    },
+    {
+      "panel": "style",
+      "family": "two-color",
+      "button": {
+        "bottom": 220,
+        "height": 44,
+        "right": 504,
+        "width": 164,
+        "x": 340,
+        "y": 176
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 216,
+        "height": 36,
+        "right": 373,
+        "width": 26,
+        "x": 347,
+        "y": 180
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 844,
+      "icon": {
+        "bottom": 207,
+        "height": 18,
+        "right": 497,
+        "width": 18,
+        "x": 479,
+        "y": 189
+      },
+      "label": {
+        "bottom": 216,
+        "height": 36,
+        "right": 471,
+        "width": 90,
+        "x": 381,
+        "y": 180
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 197,
+          "right": 471,
+          "x": 393.578125,
+          "y": 181
+        },
+        {
+          "bottom": 215,
+          "right": 471,
+          "x": 388.875,
+          "y": 199
+        }
+      ],
+      "viewport": {
+        "height": 390,
+        "width": 844
+      },
+      "pass": true
+    },
+    {
+      "panel": "style",
+      "family": "two-color",
+      "button": {
+        "bottom": 116,
+        "height": 44,
+        "right": 254.5,
+        "width": 164,
+        "x": 90.5,
+        "y": 72
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 112,
+        "height": 36,
+        "right": 123.5,
+        "width": 26,
+        "x": 97.5,
+        "y": 76
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 360,
+      "icon": {
+        "bottom": 103,
+        "height": 18,
+        "right": 247.5,
+        "width": 18,
+        "x": 229.5,
+        "y": 85
+      },
+      "label": {
+        "bottom": 112,
+        "height": 36,
+        "right": 221.5,
+        "width": 90,
+        "x": 131.5,
+        "y": 76
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 93,
+          "right": 221.5,
+          "x": 144.078125,
+          "y": 77
+        },
+        {
+          "bottom": 111,
+          "right": 221.5,
+          "x": 139.375,
+          "y": 95
+        }
+      ],
+      "viewport": {
+        "height": 240,
+        "width": 360
+      },
+      "pass": true
+    },
+    {
+      "panel": "palette",
+      "family": "two-color",
+      "button": {
+        "bottom": 737,
+        "height": 44,
+        "right": 1058.5,
+        "width": 677,
+        "x": 381.5,
+        "y": 693
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 733,
+        "height": 36,
+        "right": 855.015625,
+        "width": 466.515625,
+        "x": 388.5,
+        "y": 697
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1440,
+      "icon": {
+        "bottom": 724,
+        "height": 18,
+        "right": 1051.5,
+        "width": 18,
+        "x": 1033.5,
+        "y": 706
+      },
+      "label": {
+        "bottom": 724,
+        "height": 18,
+        "right": 1025.5,
+        "width": 162.484375,
+        "x": 863.015625,
+        "y": 706
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 723,
+          "right": 1025.5,
+          "x": 863.015625,
+          "y": 707
+        }
+      ],
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      },
+      "pass": true
+    },
+    {
+      "panel": "palette",
+      "family": "two-color",
+      "button": {
+        "bottom": 457,
+        "height": 44,
+        "right": 838.5,
+        "width": 397,
+        "x": 441.5,
+        "y": 413
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 453,
+        "height": 36,
+        "right": 635.015625,
+        "width": 186.515625,
+        "x": 448.5,
+        "y": 417
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1280,
+      "icon": {
+        "bottom": 444,
+        "height": 18,
+        "right": 831.5,
+        "width": 18,
+        "x": 813.5,
+        "y": 426
+      },
+      "label": {
+        "bottom": 444,
+        "height": 18,
+        "right": 805.5,
+        "width": 162.484375,
+        "x": 643.015625,
+        "y": 426
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 443,
+          "right": 805.5,
+          "x": 643.015625,
+          "y": 427
+        }
+      ],
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "pass": true
+    },
+    {
+      "panel": "palette",
+      "family": "two-color",
+      "button": {
+        "bottom": 505,
+        "height": 44,
+        "right": 734.5,
+        "width": 445,
+        "x": 289.5,
+        "y": 461
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 501,
+        "height": 36,
+        "right": 531.015625,
+        "width": 234.515625,
+        "x": 296.5,
+        "y": 465
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1024,
+      "icon": {
+        "bottom": 492,
+        "height": 18,
+        "right": 727.5,
+        "width": 18,
+        "x": 709.5,
+        "y": 474
+      },
+      "label": {
+        "bottom": 492,
+        "height": 18,
+        "right": 701.5,
+        "width": 162.484375,
+        "x": 539.015625,
+        "y": 474
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 491,
+          "right": 701.5,
+          "x": 539.015625,
+          "y": 475
+        }
+      ],
+      "viewport": {
+        "height": 768,
+        "width": 1024
+      },
+      "pass": true
+    },
+    {
+      "panel": "palette",
+      "family": "two-color",
+      "button": {
+        "bottom": 769,
+        "height": 44,
+        "right": 738.5,
+        "width": 709,
+        "x": 29.5,
+        "y": 725
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 765,
+        "height": 36,
+        "right": 535.015625,
+        "width": 498.515625,
+        "x": 36.5,
+        "y": 729
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 768,
+      "icon": {
+        "bottom": 756,
+        "height": 18,
+        "right": 731.5,
+        "width": 18,
+        "x": 713.5,
+        "y": 738
+      },
+      "label": {
+        "bottom": 756,
+        "height": 18,
+        "right": 705.5,
+        "width": 162.484375,
+        "x": 543.015625,
+        "y": 738
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 755,
+          "right": 705.5,
+          "x": 543.015625,
+          "y": 739
+        }
+      ],
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      },
+      "pass": true
+    },
+    {
+      "panel": "palette",
+      "family": "two-color",
+      "button": {
+        "bottom": 471.5,
+        "height": 44,
+        "right": 378,
+        "width": 366,
+        "x": 12,
+        "y": 427.5
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 467.5,
+        "height": 36,
+        "right": 174.515625,
+        "width": 155.515625,
+        "x": 19,
+        "y": 431.5
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 390,
+      "icon": {
+        "bottom": 458.5,
+        "height": 18,
+        "right": 371,
+        "width": 18,
+        "x": 353,
+        "y": 440.5
+      },
+      "label": {
+        "bottom": 458.5,
+        "height": 18,
+        "right": 345,
+        "width": 162.484375,
+        "x": 182.515625,
+        "y": 440.5
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 457.5,
+          "right": 345,
+          "x": 182.515625,
+          "y": 441.5
+        }
+      ],
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "pass": true
+    },
+    {
+      "panel": "palette",
+      "family": "two-color",
+      "button": {
+        "bottom": 241,
+        "height": 44,
+        "right": 250.5,
+        "width": 181,
+        "x": 69.5,
+        "y": 197
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 237,
+        "height": 36,
+        "right": 109.3125,
+        "width": 32.8125,
+        "x": 76.5,
+        "y": 201
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 320,
+      "icon": {
+        "bottom": 228,
+        "height": 18,
+        "right": 243.5,
+        "width": 18,
+        "x": 225.5,
+        "y": 210
+      },
+      "label": {
+        "bottom": 237,
+        "height": 36,
+        "right": 217.5,
+        "width": 100.1875,
+        "x": 117.3125,
+        "y": 201
+      },
+      "labelScrollWidth": 100,
+      "labelWidth": 100,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 218,
+          "right": 217.5,
+          "x": 140.078125,
+          "y": 202
+        },
+        {
+          "bottom": 236,
+          "right": 217.5,
+          "x": 135.375,
+          "y": 220
+        }
+      ],
+      "viewport": {
+        "height": 568,
+        "width": 320
+      },
+      "pass": true
+    },
+    {
+      "panel": "palette",
+      "family": "two-color",
+      "button": {
+        "bottom": 116,
+        "height": 44,
+        "right": 358.5,
+        "width": 164,
+        "x": 194.5,
+        "y": 72
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 112,
+        "height": 36,
+        "right": 227.5,
+        "width": 26,
+        "x": 201.5,
+        "y": 76
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 568,
+      "icon": {
+        "bottom": 103,
+        "height": 18,
+        "right": 351.5,
+        "width": 18,
+        "x": 333.5,
+        "y": 85
+      },
+      "label": {
+        "bottom": 112,
+        "height": 36,
+        "right": 325.5,
+        "width": 90,
+        "x": 235.5,
+        "y": 76
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 93,
+          "right": 325.5,
+          "x": 248.078125,
+          "y": 77
+        },
+        {
+          "bottom": 111,
+          "right": 325.5,
+          "x": 243.375,
+          "y": 95
+        }
+      ],
+      "viewport": {
+        "height": 320,
+        "width": 568
+      },
+      "pass": true
+    },
+    {
+      "panel": "palette",
+      "family": "two-color",
+      "button": {
+        "bottom": 124,
+        "height": 44,
+        "right": 415.5,
+        "width": 164,
+        "x": 251.5,
+        "y": 80
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 120,
+        "height": 36,
+        "right": 284.5,
+        "width": 26,
+        "x": 258.5,
+        "y": 84
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 667,
+      "icon": {
+        "bottom": 111,
+        "height": 18,
+        "right": 408.5,
+        "width": 18,
+        "x": 390.5,
+        "y": 93
+      },
+      "label": {
+        "bottom": 120,
+        "height": 36,
+        "right": 382.5,
+        "width": 90,
+        "x": 292.5,
+        "y": 84
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 101,
+          "right": 382.5,
+          "x": 305.078125,
+          "y": 85
+        },
+        {
+          "bottom": 119,
+          "right": 382.5,
+          "x": 300.375,
+          "y": 103
+        }
+      ],
+      "viewport": {
+        "height": 375,
+        "width": 667
+      },
+      "pass": true
+    },
+    {
+      "panel": "palette",
+      "family": "two-color",
+      "button": {
+        "bottom": 139,
+        "height": 44,
+        "right": 504,
+        "width": 164,
+        "x": 340,
+        "y": 95
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 135,
+        "height": 36,
+        "right": 373,
+        "width": 26,
+        "x": 347,
+        "y": 99
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 844,
+      "icon": {
+        "bottom": 126,
+        "height": 18,
+        "right": 497,
+        "width": 18,
+        "x": 479,
+        "y": 108
+      },
+      "label": {
+        "bottom": 135,
+        "height": 36,
+        "right": 471,
+        "width": 90,
+        "x": 381,
+        "y": 99
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 116,
+          "right": 471,
+          "x": 393.578125,
+          "y": 100
+        },
+        {
+          "bottom": 134,
+          "right": 471,
+          "x": 388.875,
+          "y": 118
+        }
+      ],
+      "viewport": {
+        "height": 390,
+        "width": 844
+      },
+      "pass": true
+    },
+    {
+      "panel": "palette",
+      "family": "two-color",
+      "button": {
+        "bottom": 116,
+        "height": 44,
+        "right": 254.5,
+        "width": 164,
+        "x": 90.5,
+        "y": 72
+      },
+      "colors": "2 colors",
+      "details": {
+        "bottom": 112,
+        "height": 36,
+        "right": 123.5,
+        "width": 26,
+        "x": 97.5,
+        "y": 76
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 360,
+      "icon": {
+        "bottom": 103,
+        "height": 18,
+        "right": 247.5,
+        "width": 18,
+        "x": 229.5,
+        "y": 85
+      },
+      "label": {
+        "bottom": 112,
+        "height": 36,
+        "right": 221.5,
+        "width": 90,
+        "x": 131.5,
+        "y": 76
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 93,
+          "right": 221.5,
+          "x": 144.078125,
+          "y": 77
+        },
+        {
+          "bottom": 111,
+          "right": 221.5,
+          "x": 139.375,
+          "y": 95
+        }
+      ],
+      "viewport": {
+        "height": 240,
+        "width": 360
+      },
+      "pass": true
+    },
+    {
+      "panel": "settings",
+      "family": "full-palette",
+      "button": {
+        "bottom": 602,
+        "height": 44,
+        "right": 991,
+        "width": 542,
+        "x": 449,
+        "y": 558
+      },
+      "colors": "6 colors",
+      "details": {
+        "bottom": 598,
+        "height": 36,
+        "right": 787.515625,
+        "width": 331.515625,
+        "x": 456,
+        "y": 562
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1440,
+      "icon": {
+        "bottom": 589,
+        "height": 18,
+        "right": 984,
+        "width": 18,
+        "x": 966,
+        "y": 571
+      },
+      "label": {
+        "bottom": 589,
+        "height": 18,
+        "right": 958,
+        "width": 162.484375,
+        "x": 795.515625,
+        "y": 571
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 588,
+          "right": 958,
+          "x": 795.515625,
+          "y": 572
+        }
+      ],
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      },
+      "pass": true
+    },
+    {
+      "panel": "settings",
+      "family": "full-palette",
+      "button": {
+        "bottom": 322,
+        "height": 44,
+        "right": 771,
+        "width": 262,
+        "x": 509,
+        "y": 278
+      },
+      "colors": "6 colors",
+      "details": {
+        "bottom": 318,
+        "height": 36,
+        "right": 581.203125,
+        "width": 65.203125,
+        "x": 516,
+        "y": 282
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1280,
+      "icon": {
+        "bottom": 309,
+        "height": 18,
+        "right": 764,
+        "width": 18,
+        "x": 746,
+        "y": 291
+      },
+      "label": {
+        "bottom": 318,
+        "height": 36,
+        "right": 738,
+        "width": 148.796875,
+        "x": 589.203125,
+        "y": 282
+      },
+      "labelScrollWidth": 149,
+      "labelWidth": 149,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 299,
+          "right": 738,
+          "x": 622.953125,
+          "y": 283
+        },
+        {
+          "bottom": 317,
+          "right": 738,
+          "x": 693.5,
+          "y": 301
+        }
+      ],
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      },
+      "pass": true
+    },
+    {
+      "panel": "settings",
+      "family": "full-palette",
+      "button": {
+        "bottom": 370,
+        "height": 44,
+        "right": 667,
+        "width": 310,
+        "x": 357,
+        "y": 326
+      },
+      "colors": "6 colors",
+      "details": {
+        "bottom": 366,
+        "height": 36,
+        "right": 463.515625,
+        "width": 99.515625,
+        "x": 364,
+        "y": 330
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 1024,
+      "icon": {
+        "bottom": 357,
+        "height": 18,
+        "right": 660,
+        "width": 18,
+        "x": 642,
+        "y": 339
+      },
+      "label": {
+        "bottom": 357,
+        "height": 18,
+        "right": 634,
+        "width": 162.484375,
+        "x": 471.515625,
+        "y": 339
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 356,
+          "right": 634,
+          "x": 471.515625,
+          "y": 340
+        }
+      ],
+      "viewport": {
+        "height": 768,
+        "width": 1024
+      },
+      "pass": true
+    },
+    {
+      "panel": "settings",
+      "family": "full-palette",
+      "button": {
+        "bottom": 634,
+        "height": 44,
+        "right": 671,
+        "width": 574,
+        "x": 97,
+        "y": 590
+      },
+      "colors": "6 colors",
+      "details": {
+        "bottom": 630,
+        "height": 36,
+        "right": 467.515625,
+        "width": 363.515625,
+        "x": 104,
+        "y": 594
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 768,
+      "icon": {
+        "bottom": 621,
+        "height": 18,
+        "right": 664,
+        "width": 18,
+        "x": 646,
+        "y": 603
+      },
+      "label": {
+        "bottom": 621,
+        "height": 18,
+        "right": 638,
+        "width": 162.484375,
+        "x": 475.515625,
+        "y": 603
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 620,
+          "right": 638,
+          "x": 475.515625,
+          "y": 604
+        }
+      ],
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      },
+      "pass": true
+    },
+    {
+      "panel": "settings",
+      "family": "full-palette",
+      "button": {
+        "bottom": 515,
+        "height": 44,
+        "right": 378,
+        "width": 366,
+        "x": 12,
+        "y": 471
+      },
+      "colors": "6 colors",
+      "details": {
+        "bottom": 511,
+        "height": 36,
+        "right": 174.515625,
+        "width": 155.515625,
+        "x": 19,
+        "y": 475
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 390,
+      "icon": {
+        "bottom": 502,
+        "height": 18,
+        "right": 371,
+        "width": 18,
+        "x": 353,
+        "y": 484
+      },
+      "label": {
+        "bottom": 502,
+        "height": 18,
+        "right": 345,
+        "width": 162.484375,
+        "x": 182.515625,
+        "y": 484
+      },
+      "labelScrollWidth": 162,
+      "labelWidth": 162,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 501,
+          "right": 345,
+          "x": 182.515625,
+          "y": 485
+        }
+      ],
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "pass": true
+    },
+    {
+      "panel": "settings",
+      "family": "full-palette",
+      "button": {
+        "bottom": 264,
+        "height": 44,
+        "right": 262,
+        "width": 204,
+        "x": 58,
+        "y": 220
+      },
+      "colors": "6 colors",
+      "details": {
+        "bottom": 260,
+        "height": 36,
+        "right": 107,
+        "width": 42,
+        "x": 65,
+        "y": 224
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 320,
+      "icon": {
+        "bottom": 251,
+        "height": 18,
+        "right": 255,
+        "width": 18,
+        "x": 237,
+        "y": 233
+      },
+      "label": {
+        "bottom": 260,
+        "height": 36,
+        "right": 229,
+        "width": 114,
+        "x": 115,
+        "y": 224
+      },
+      "labelScrollWidth": 114,
+      "labelWidth": 114,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 241,
+          "right": 229,
+          "x": 151.578125,
+          "y": 225
+        },
+        {
+          "bottom": 259,
+          "right": 229,
+          "x": 146.875,
+          "y": 243
+        }
+      ],
+      "viewport": {
+        "height": 568,
+        "width": 320
+      },
+      "pass": true
+    },
+    {
+      "panel": "settings",
+      "family": "full-palette",
+      "button": {
+        "bottom": 138,
+        "height": 44,
+        "right": 366,
+        "width": 164,
+        "x": 202,
+        "y": 94
+      },
+      "colors": "6 colors",
+      "details": {
+        "bottom": 134,
+        "height": 36,
+        "right": 235,
+        "width": 26,
+        "x": 209,
+        "y": 98
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 568,
+      "icon": {
+        "bottom": 125,
+        "height": 18,
+        "right": 359,
+        "width": 18,
+        "x": 341,
+        "y": 107
+      },
+      "label": {
+        "bottom": 134,
+        "height": 36,
+        "right": 333,
+        "width": 90,
+        "x": 243,
+        "y": 98
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 115,
+          "right": 333,
+          "x": 255.578125,
+          "y": 99
+        },
+        {
+          "bottom": 133,
+          "right": 333,
+          "x": 250.875,
+          "y": 117
+        }
+      ],
+      "viewport": {
+        "height": 320,
+        "width": 568
+      },
+      "pass": true
+    },
+    {
+      "panel": "settings",
+      "family": "full-palette",
+      "button": {
+        "bottom": 193,
+        "height": 44,
+        "right": 415.5,
+        "width": 164,
+        "x": 251.5,
+        "y": 149
+      },
+      "colors": "6 colors",
+      "details": {
+        "bottom": 189,
+        "height": 36,
+        "right": 284.5,
+        "width": 26,
+        "x": 258.5,
+        "y": 153
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 667,
+      "icon": {
+        "bottom": 180,
+        "height": 18,
+        "right": 408.5,
+        "width": 18,
+        "x": 390.5,
+        "y": 162
+      },
+      "label": {
+        "bottom": 189,
+        "height": 36,
+        "right": 382.5,
+        "width": 90,
+        "x": 292.5,
+        "y": 153
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 170,
+          "right": 382.5,
+          "x": 305.078125,
+          "y": 154
+        },
+        {
+          "bottom": 188,
+          "right": 382.5,
+          "x": 300.375,
+          "y": 172
+        }
+      ],
+      "viewport": {
+        "height": 375,
+        "width": 667
+      },
+      "pass": true
+    },
+    {
+      "panel": "settings",
+      "family": "full-palette",
+      "button": {
+        "bottom": 208,
+        "height": 44,
+        "right": 504,
+        "width": 164,
+        "x": 340,
+        "y": 164
+      },
+      "colors": "6 colors",
+      "details": {
+        "bottom": 204,
+        "height": 36,
+        "right": 373,
+        "width": 26,
+        "x": 347,
+        "y": 168
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 844,
+      "icon": {
+        "bottom": 195,
+        "height": 18,
+        "right": 497,
+        "width": 18,
+        "x": 479,
+        "y": 177
+      },
+      "label": {
+        "bottom": 204,
+        "height": 36,
+        "right": 471,
+        "width": 90,
+        "x": 381,
+        "y": 168
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 185,
+          "right": 471,
+          "x": 393.578125,
+          "y": 169
+        },
+        {
+          "bottom": 203,
+          "right": 471,
+          "x": 388.875,
+          "y": 187
+        }
+      ],
+      "viewport": {
+        "height": 390,
+        "width": 844
+      },
+      "pass": true
+    },
+    {
+      "panel": "settings",
+      "family": "full-palette",
+      "button": {
+        "bottom": 116,
+        "height": 44,
+        "right": 254.5,
+        "width": 164,
+        "x": 90.5,
+        "y": 72
+      },
+      "colors": "6 colors",
+      "details": {
+        "bottom": 112,
+        "height": 36,
+        "right": 123.5,
+        "width": 26,
+        "x": 97.5,
+        "y": 76
+      },
+      "detailsOverflow": "hidden",
+      "documentWidth": 360,
+      "icon": {
+        "bottom": 103,
+        "height": 18,
+        "right": 247.5,
+        "width": 18,
+        "x": 229.5,
+        "y": 85
+      },
+      "label": {
+        "bottom": 112,
+        "height": 36,
+        "right": 221.5,
+        "width": 90,
+        "x": 131.5,
+        "y": 76
+      },
+      "labelScrollWidth": 90,
+      "labelWidth": 90,
+      "name": "Colorfetti",
+      "resolution": "60×60",
+      "text": "Add, drop or paste images",
+      "textLines": [
+        {
+          "bottom": 93,
+          "right": 221.5,
+          "x": 144.078125,
+          "y": 77
+        },
+        {
+          "bottom": 111,
+          "right": 221.5,
+          "x": 139.375,
+          "y": 95
+        }
+      ],
+      "viewport": {
+        "height": 240,
+        "width": 360
+      },
+      "pass": true
+    }
+  ],
+  "importedImageCaptions": [
+    {
+      "height": 1000,
+      "tiles": [
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "square-256x256.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        },
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "portrait-240x320.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        },
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "aurora-256x1.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        }
+      ],
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "height": 844,
+      "tiles": [
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "square-256x256.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        },
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "portrait-240x320.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        },
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "aurora-256x1.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        }
+      ],
+      "width": 390,
+      "pass": true
+    },
+    {
+      "height": 568,
+      "tiles": [
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "square-256x256.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        },
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "portrait-240x320.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        },
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "aurora-256x1.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        }
+      ],
+      "width": 320,
+      "pass": true
+    },
+    {
+      "height": 320,
+      "tiles": [
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "square-256x256.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        },
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "portrait-240x320.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        },
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "aurora-256x1.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        }
+      ],
+      "width": 568,
+      "pass": true
+    },
+    {
+      "height": 390,
+      "tiles": [
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "square-256x256.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        },
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "portrait-240x320.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        },
+        {
+          "captionHeight": 27,
+          "metadataDisplay": "flex",
+          "moreDisplay": "none",
+          "name": "aurora-256x1.png",
+          "promptCount": 0,
+          "wrap": "nowrap"
+        }
+      ],
+      "width": 844,
+      "pass": true
+    }
+  ],
+  "addPicker": {
+    "opened": true,
+    "multiple": true,
+    "importedFixtures": 3
+  }
+}
