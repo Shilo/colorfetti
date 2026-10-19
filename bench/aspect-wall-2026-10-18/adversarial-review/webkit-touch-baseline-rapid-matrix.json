@@ -1,0 +1,232 @@
+{
+  "engine": "webkit",
+  "started": "2026-10-18T23:52:34.052Z",
+  "checks": [
+    {
+      "label": "touch/mixed/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/389x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/390x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/521x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/567x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/568x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/650x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/799x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/800x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/843x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/844x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1024x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1280x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1920x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/2560x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/390x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/768x1024",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1024x768",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1440x1000",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/2560x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 18
+    }
+  ],
+  "failures": [],
+  "errors": [
+    "ResizeObserver loop completed with undelivered notifications."
+  ]
+}

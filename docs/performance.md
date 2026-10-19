@@ -5,7 +5,9 @@
 Wall fitting consumes scalar source dimensions, not pixel buffers. Ordered rows use
 bounded candidate heights and linear passes; no per-pixel work or new image cache is
 introduced. Explicit parent dimensions keep scroll measurement working with flat,
-keyed positioned tiles. Refitting changes only their geometry, retaining component
+keyed tiles in native flex flow and planned row breaks. Native wrapping and width
+clamping contain images even before delayed browser resize events. Refitting changes
+only their geometry and row breaks, retaining component
 identity, focus and GIF position. Both measured artwork axes determine contain scale;
 the existing `shown` sampling, draft budget and source-size/short-axis limits remain.
 Larger visible artwork can require larger sampled previews, within those existing

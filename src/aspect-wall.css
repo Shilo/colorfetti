@@ -1,10 +1,15 @@
-/* Ordered rows share artwork heights and caption baselines. Explicit geometry keeps
-   keyed tiles in one parent, preserving focus, GIF playback and conversion ownership. */
-:root .tiles { position: relative; display: block; flex: none; }
+/* Planned row breaks preserve balanced, ordered rows without reparenting keyed
+   tiles. Native wrapping also contains cards before resize observers can refit. */
+:root .tiles {
+  position: relative; display: flex; flex: 0 1 auto; min-width: 0; max-width: 100%;
+  flex-wrap: wrap; justify-content: center; align-content: flex-start;
+  column-gap: var(--image-gap); row-gap: 0;
+}
+:root .tiles .wall-row-break { flex: 0 0 100%; height: var(--image-gap); }
 :root .tiles .wall-tile {
-  position: absolute; left: var(--wall-tile-x); top: var(--wall-tile-y);
-  width: var(--wall-tile-width); grid-template-rows: var(--wall-art-height) auto;
-  row-gap: 8px;
+  flex: 0 0 auto; max-width: 100%; width: var(--wall-tile-width);
+  height: calc(var(--wall-art-height) + var(--wall-caption-extra));
+  grid-template-rows: var(--wall-art-height) auto; align-content: start; row-gap: 8px;
 }
 :root .tiles .wall-tile .art { height: var(--wall-art-height); aspect-ratio: auto; }
 /* Captions and touch actions retain their existing input-mode styles. Mouse

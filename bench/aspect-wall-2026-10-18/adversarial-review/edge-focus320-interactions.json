@@ -1,0 +1,47 @@
+{
+  "engine": "edge",
+  "checks": [
+    {
+      "label": "mouse/320x240/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/320x240/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/320x568/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/320x568/native-input",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: mouse hold not original\n    at file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:21:85\n    at async check (file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:14:36)\n    at async file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:19:1"
+    },
+    {
+      "label": "mouse/orientation-animation-focus",
+      "pass": true
+    },
+    {
+      "label": "touch/320x240/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/320x240/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/320x568/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/320x568/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/orientation-animation-focus",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

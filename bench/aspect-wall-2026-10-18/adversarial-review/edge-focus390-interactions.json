@@ -1,0 +1,34 @@
+{
+  "engine": "edge",
+  "builds": [
+    "./assets/index-DZPr6Ww5.js",
+    "./assets/index-DZPr6Ww5.js"
+  ],
+  "checks": [
+    {
+      "label": "mouse/390x844/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/390x844/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/orientation-animation-focus",
+      "pass": true
+    },
+    {
+      "label": "touch/390x844/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/390x844/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/orientation-animation-focus",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

@@ -100,7 +100,9 @@ Removal through the touch sheet continues to select a visible next focus target.
 `workspace.js` calculates geometry from dimensions. `App.svelte` passes that geometry
 to stable keyed Tile siblings in one parent; row regrouping does not remount images,
 restart GIFs or discard conversion ownership. The parent retains the complete
-computed height so absolute card positions participate in the wall's scroll extent.
+computed height for scroll measurement. Native flex flow with explicit, aria-hidden
+row breaks preserves the planned rows. Width clamping and wrapping contain cards
+before delayed viewport resize events; Tile does not consume absolute x/y positions.
 Wall-only geometry selectors leave the Preview viewer's independent sizing intact.
 
 Tile already measures both artwork axes and derives conversion sampling from the
@@ -140,6 +142,54 @@ groups with zero page errors, including all 144 layout groups, 12 Preview/export
 groups and six desktop hover/focus/removal groups. Earlier reports below describe
 the first implementation and must not be used to justify the rejected desktop
 presentation. Build and whitespace checks also passed for the correction.
+
+## Post-push adversarial review and resize correction
+
+The desktop-caption correction and aspect-aware wall were committed and pushed
+as `70835a9` before an independent sub-agent reviewed them. Its report is
+`bench/aspect-wall-2026-10-18/adversarial-review/REVIEW.md`; the parent's evidence
+and challenges are in `parent-verification/CHALLENGE.md` beside that directory.
+
+The parent accepted one narrow finding: new absolute image positions magnified
+WebKit's existing delayed viewport-resize behavior. A synchronous resize listener
+could not act before delayed native events, and merely clipping overflow would
+not fix positioning. Neither experimental workaround ships. Native flex flow,
+width clamping and explicit row breaks now preserve planned balanced rows while
+containing cards before JavaScript receives the new viewport size. Tile instances
+remain flat and keyed. The final build is `index-DZPr6Ww5.js` /
+`index-BpjnvH6m.css`.
+
+The parent's independent WebKit shrink comparison captures zero out-of-bounds
+images and a 240px wall scroll width in all 24 candidate samples, starting
+16–21ms after resizing from 1440x1000 to 240x320. The complete final Edge app
+suite passes 162/162 groups with no page errors; all 82 unit files pass with
+1371 tests and two existing skips. Direct Codex browser checks also retain
+desktop captions and image bounds across six portrait, landscape and desktop
+viewport shapes using the supplied aurora with six other ratios.
+The final Firefox smoke suite passes 13/13 groups with no page errors. WebKit
+passes all 13 functional groups but retains two baseline-matched desktop
+ResizeObserver notifications (`results/*-native-flow-confirmed-quick.json`).
+
+The parent rejected a proposed GIF-freeze issue after independently proving the
+test checksum collided across distinct frames. Corrected SHA-256 browser checks
+confirm playback. Other failed hypotheses were test selectors, hold duration,
+panel cleanup or the normal temporary Downloading toast. The main harness also
+now waits for the empty example to disappear before accepting a one-image import.
+No production change was made for these invalid findings.
+
+Raw WebKit rapid-resize results retain document-only workspace-control timing
+and one-shot scroll measurements made before refitting settled. These must not
+be represented as error-free WebKit runs. The pre-existing 240x160 minimum-height
+limitation, baseline observer notifications, physical-device limits and exact
+independent final-run classifications are documented in the review.
+The independent final rapid and 500ms WebKit matrices each cover 444 states with
+zero wall overflow, off-canvas tiles, overlaps or action-target failures. Both
+rapid scroll observations pass when settled. A focused trace attributes remaining
+document-only timing flags to old toolbar positions while images are contained.
+The independent final native Edge suite passes 54/54 groups with zero page
+exceptions, explicitly identifying the final bundle in both mouse and touch
+contexts. It covers panels, native holds, Space, caption Preview, zoom/Fit,
+source-size Save, sheets, focus through orientation and SHA-256 GIF playback.
 
 ## Initial validation before the desktop-caption correction
 

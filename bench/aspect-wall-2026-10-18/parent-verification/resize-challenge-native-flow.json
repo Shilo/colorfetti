@@ -1,0 +1,694 @@
+{
+  "browser": "26.5",
+  "runs": [
+    {
+      "label": "baseline",
+      "clipped": false,
+      "trials": [
+        [
+          {
+            "elapsed": 23,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 77,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 88,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 132,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 149,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 219,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 309,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 508,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          }
+        ],
+        [
+          {
+            "elapsed": 24,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 41,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 54,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 89,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 106,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 743,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 798,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 805,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          }
+        ],
+        [
+          {
+            "elapsed": 27,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 45,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 65,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 77,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 108,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 921,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 246,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 977,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 982,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          }
+        ]
+      ],
+      "errors": [
+        "ResizeObserver loop completed with undelivered notifications."
+      ]
+    },
+    {
+      "label": "candidate",
+      "clipped": false,
+      "trials": [
+        [
+          {
+            "elapsed": 16,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 30,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 46,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 76,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 125,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 217,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 310,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 511,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          }
+        ],
+        [
+          {
+            "elapsed": 21,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 34,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 49,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 81,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 111,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 217,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 322,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 517,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          }
+        ],
+        [
+          {
+            "elapsed": 16,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 29,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 44,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 77,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 107,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 216,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 311,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 516,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          }
+        ]
+      ],
+      "errors": []
+    },
+    {
+      "label": "candidate-clipped",
+      "clipped": true,
+      "trials": [
+        [
+          {
+            "elapsed": 17,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 29,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 47,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 81,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 108,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 215,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 310,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 511,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          }
+        ],
+        [
+          {
+            "elapsed": 25,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 29,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 44,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 76,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 107,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 216,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 309,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 515,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          }
+        ],
+        [
+          {
+            "elapsed": 16,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 29,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 46,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 77,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 107,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 216,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 307,
+            "viewport": 240,
+            "documentWidth": 841,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          },
+          {
+            "elapsed": 537,
+            "viewport": 240,
+            "documentWidth": 240,
+            "wallWidth": 240,
+            "wallScrollWidth": 240,
+            "outOfBounds": 0,
+            "firstNameHeight": 28
+          }
+        ]
+      ],
+      "errors": []
+    }
+  ]
+}

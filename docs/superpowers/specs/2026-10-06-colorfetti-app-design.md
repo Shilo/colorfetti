@@ -25,8 +25,10 @@ then scroll rather than compressing the collection into unreadable thumbnails.
 Incomplete rows are centered and never enlarged beyond the fitted row target.
 
 Tiles remain keyed under one parent across row changes, preserving focus, animation
-and conversion ownership. Explicit scalar geometry sizes their parent and positions
-them; existing scroll measurement, full-source exports and Preview sizing remain
+and conversion ownership. Scalar geometry sizes their parent and artwork; native
+flex flow with explicit row breaks preserves the planned rows while clamping and
+wrapping cards during delayed viewport resize events. Existing scroll measurement,
+full-source exports and Preview sizing remain
 independent. This section supersedes historical square-layout descriptions;
 desktop and touch caption behavior remains distinct. Research and browser evidence are recorded in
 `docs/research/2026-10-18-aspect-aware-wall.md`.

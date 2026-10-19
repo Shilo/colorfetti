@@ -1,0 +1,226 @@
+{
+  "engine": "edge",
+  "builds": [
+    "./assets/index-DZPr6Ww5.js",
+    "./assets/index-DZPr6Ww5.js"
+  ],
+  "checks": [
+    {
+      "label": "mouse/320x240/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/320x240/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/320x568/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/320x568/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/390x844/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/390x844/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/520x700/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/520x700/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/521x700/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/521x700/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/568x320/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/568x320/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/844x390/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/844x390/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/768x1024/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/768x1024/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/1024x768/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/1024x768/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/1280x720/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/1280x720/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/1440x1000/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/1440x1000/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/1920x1080/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/1920x1080/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/2560x1440/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "mouse/2560x1440/native-input",
+      "pass": true
+    },
+    {
+      "label": "mouse/orientation-animation-focus",
+      "pass": true
+    },
+    {
+      "label": "touch/320x240/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/320x240/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/320x568/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/320x568/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/390x844/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/390x844/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/520x700/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/520x700/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/521x700/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/521x700/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/568x320/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/568x320/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/844x390/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/844x390/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/768x1024/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/768x1024/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/1024x768/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/1024x768/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/1280x720/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/1280x720/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/1440x1000/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/1440x1000/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/1920x1080/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/1920x1080/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/2560x1440/panels-raster",
+      "pass": true
+    },
+    {
+      "label": "touch/2560x1440/native-input",
+      "pass": true
+    },
+    {
+      "label": "touch/orientation-animation-focus",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

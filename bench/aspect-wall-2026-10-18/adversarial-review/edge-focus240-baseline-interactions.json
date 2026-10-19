@@ -1,0 +1,34 @@
+{
+  "engine": "edge",
+  "checks": [
+    {
+      "label": "mouse/240x160/panels-raster",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: last caption 8 under tools -32\n    at file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:17:191\n    at async check (file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:14:36)\n    at async file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:16:158"
+    },
+    {
+      "label": "mouse/240x160/native-input",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: mouse hold not original\n    at file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:21:85\n    at async check (file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:14:36)\n    at async file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:19:1"
+    },
+    {
+      "label": "mouse/orientation-animation-focus",
+      "pass": true
+    },
+    {
+      "label": "touch/240x160/panels-raster",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: last caption 8 under tools -32\n    at file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:17:191\n    at async check (file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:14:36)\n    at async file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:16:158"
+    },
+    {
+      "label": "touch/240x160/native-input",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: touch hold not original\n    at file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:20:176\n    at async check (file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:14:36)\n    at async file:///C:/Programming_Files/Shilocity/colorfetti/bench/aspect-wall-2026-10-18/adversarial-review/interactions.mjs:19:1"
+    },
+    {
+      "label": "touch/orientation-animation-focus",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

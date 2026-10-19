@@ -1,0 +1,4955 @@
+{
+  "engine": "webkit",
+  "tag": "post-fix-events",
+  "baseline": false,
+  "started": "2026-10-18T23:59:07.913Z",
+  "checks": [
+    {
+      "label": "touch/portraits/240x320",
+      "pass": false,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    }
+  ],
+  "failures": [
+    {
+      "label": "touch/portraits/240x320",
+      "fail": [
+        "document horizontal overflow",
+        "wall horizontal overflow",
+        "tile 0 outside wall",
+        "tile 1 outside wall",
+        "tile 2 outside wall",
+        "tile 3 outside wall",
+        "tile 4 outside wall",
+        "tile 5 outside wall"
+      ],
+      "metrics": {
+        "now": 1579,
+        "asset": "./assets/index-0fIVHoMV.js",
+        "resizeEvents": [
+          {
+            "time": 297,
+            "type": "visualViewport",
+            "w": 1440,
+            "h": 1000
+          }
+        ],
+        "vw": 240,
+        "vh": 320,
+        "touch": true,
+        "docWidth": 841,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "w": 240,
+          "h": 320,
+          "right": 240,
+          "bottom": 320,
+          "cw": 240,
+          "sw": 1416,
+          "sh": 592,
+          "ch": 320,
+          "scroll": 0
+        },
+        "tools": {
+          "x": 12,
+          "y": 252,
+          "w": 216,
+          "h": 56,
+          "right": 228,
+          "bottom": 308
+        },
+        "tiles": [
+          {
+            "tile": {
+              "x": 13,
+              "y": 8,
+              "w": 244,
+              "h": 494,
+              "right": 257,
+              "bottom": 502
+            },
+            "art": {
+              "x": 13,
+              "y": 8,
+              "w": 244,
+              "h": 434,
+              "right": 257,
+              "bottom": 442
+            },
+            "cap": {
+              "x": 13,
+              "y": 450,
+              "w": 244,
+              "h": 52,
+              "right": 257,
+              "bottom": 502
+            },
+            "name": {
+              "x": 20,
+              "y": 454,
+              "w": 180,
+              "h": 28,
+              "right": 200,
+              "bottom": 482
+            },
+            "metadata": {
+              "x": 20,
+              "y": 482,
+              "w": 180,
+              "h": 16,
+              "right": 200,
+              "bottom": 498
+            },
+            "resolution": {
+              "x": 20,
+              "y": 482,
+              "w": 55.328125,
+              "h": 16,
+              "right": 75.328125,
+              "bottom": 498
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-4-9x16-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-4-9x16-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-4-9x16-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-4-9x16-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-4-9x16-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 206,
+              "y": 454,
+              "w": 44,
+              "h": 44,
+              "right": 250,
+              "bottom": 498
+            },
+            "label": "source-4-9x16-a-long-name-for-caption-regressions.png 108×192  ·  7 colors  ",
+            "canvas": {
+              "w": 108,
+              "h": 192
+            }
+          },
+          {
+            "tile": {
+              "x": 269,
+              "y": 8,
+              "w": 217,
+              "h": 494,
+              "right": 486,
+              "bottom": 502
+            },
+            "art": {
+              "x": 269,
+              "y": 8,
+              "w": 217,
+              "h": 434,
+              "right": 486,
+              "bottom": 442
+            },
+            "cap": {
+              "x": 269,
+              "y": 450,
+              "w": 217,
+              "h": 52,
+              "right": 486,
+              "bottom": 502
+            },
+            "name": {
+              "x": 276,
+              "y": 454,
+              "w": 153,
+              "h": 28,
+              "right": 429,
+              "bottom": 482
+            },
+            "metadata": {
+              "x": 276,
+              "y": 482,
+              "w": 153,
+              "h": 16,
+              "right": 429,
+              "bottom": 498
+            },
+            "resolution": {
+              "x": 276,
+              "y": 482,
+              "w": 47.703125,
+              "h": 16,
+              "right": 323.703125,
+              "bottom": 498
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-5-1x2-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-5-1x2-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-5-1x2-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-5-1x2-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-5-1x2-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 435,
+              "y": 454,
+              "w": 44,
+              "h": 44,
+              "right": 479,
+              "bottom": 498
+            },
+            "label": "source-5-1x2-a-long-name-for-caption-regressions.png 96×192  ·  7 colors  ",
+            "canvas": {
+              "w": 96,
+              "h": 192
+            }
+          },
+          {
+            "tile": {
+              "x": 498,
+              "y": 8,
+              "w": 217,
+              "h": 494,
+              "right": 715,
+              "bottom": 502
+            },
+            "art": {
+              "x": 498,
+              "y": 8,
+              "w": 217,
+              "h": 434,
+              "right": 715,
+              "bottom": 442
+            },
+            "cap": {
+              "x": 498,
+              "y": 450,
+              "w": 217,
+              "h": 52,
+              "right": 715,
+              "bottom": 502
+            },
+            "name": {
+              "x": 505,
+              "y": 454,
+              "w": 153,
+              "h": 28,
+              "right": 658,
+              "bottom": 482
+            },
+            "metadata": {
+              "x": 505,
+              "y": 482,
+              "w": 153,
+              "h": 16,
+              "right": 658,
+              "bottom": 498
+            },
+            "resolution": {
+              "x": 505,
+              "y": 482,
+              "w": 47.703125,
+              "h": 16,
+              "right": 552.703125,
+              "bottom": 498
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-7-1x4-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-7-1x4-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-7-1x4-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-7-1x4-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-7-1x4-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 664,
+              "y": 454,
+              "w": 44,
+              "h": 44,
+              "right": 708,
+              "bottom": 498
+            },
+            "label": "source-7-1x4-a-long-name-for-caption-regressions.png 48×192  ·  7 colors  ",
+            "canvas": {
+              "w": 48,
+              "h": 192
+            }
+          },
+          {
+            "tile": {
+              "x": 727,
+              "y": 8,
+              "w": 217,
+              "h": 494,
+              "right": 944,
+              "bottom": 502
+            },
+            "art": {
+              "x": 727,
+              "y": 8,
+              "w": 217,
+              "h": 434,
+              "right": 944,
+              "bottom": 442
+            },
+            "cap": {
+              "x": 727,
+              "y": 450,
+              "w": 217,
+              "h": 52,
+              "right": 944,
+              "bottom": 502
+            },
+            "name": {
+              "x": 734,
+              "y": 454,
+              "w": 153,
+              "h": 28,
+              "right": 887,
+              "bottom": 482
+            },
+            "metadata": {
+              "x": 734,
+              "y": 482,
+              "w": 153,
+              "h": 16,
+              "right": 887,
+              "bottom": 498
+            },
+            "resolution": {
+              "x": 734,
+              "y": 482,
+              "w": 47.703125,
+              "h": 16,
+              "right": 781.703125,
+              "bottom": 498
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-9-1x8-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-9-1x8-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-9-1x8-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-9-1x8-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-9-1x8-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 893,
+              "y": 454,
+              "w": 44,
+              "h": 44,
+              "right": 937,
+              "bottom": 498
+            },
+            "label": "source-9-1x8-a-long-name-for-caption-regressions.png 24×192  ·  7 colors  ",
+            "canvas": {
+              "w": 24,
+              "h": 192
+            }
+          },
+          {
+            "tile": {
+              "x": 956,
+              "y": 8,
+              "w": 217,
+              "h": 494,
+              "right": 1173,
+              "bottom": 502
+            },
+            "art": {
+              "x": 956,
+              "y": 8,
+              "w": 217,
+              "h": 434,
+              "right": 1173,
+              "bottom": 442
+            },
+            "cap": {
+              "x": 956,
+              "y": 450,
+              "w": 217,
+              "h": 52,
+              "right": 1173,
+              "bottom": 502
+            },
+            "name": {
+              "x": 963,
+              "y": 454,
+              "w": 153,
+              "h": 28,
+              "right": 1116,
+              "bottom": 482
+            },
+            "metadata": {
+              "x": 963,
+              "y": 482,
+              "w": 153,
+              "h": 16,
+              "right": 1116,
+              "bottom": 498
+            },
+            "resolution": {
+              "x": 963,
+              "y": 482,
+              "w": 36.796875,
+              "h": 16,
+              "right": 999.796875,
+              "bottom": 498
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-15-1x256-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-15-1x256-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-15-1x256-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-15-1x256-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-15-1x256-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 1122,
+              "y": 454,
+              "w": 44,
+              "h": 44,
+              "right": 1166,
+              "bottom": 498
+            },
+            "label": "source-15-1x256-a-long-name-for-caption-regressions.png 1×256  ·  1 color  ",
+            "canvas": {
+              "w": 1,
+              "h": 256
+            }
+          },
+          {
+            "tile": {
+              "x": 1185,
+              "y": 8,
+              "w": 217,
+              "h": 494,
+              "right": 1402,
+              "bottom": 502
+            },
+            "art": {
+              "x": 1185,
+              "y": 8,
+              "w": 217,
+              "h": 434,
+              "right": 1402,
+              "bottom": 442
+            },
+            "cap": {
+              "x": 1185,
+              "y": 450,
+              "w": 217,
+              "h": 52,
+              "right": 1402,
+              "bottom": 502
+            },
+            "name": {
+              "x": 1192,
+              "y": 454,
+              "w": 153,
+              "h": 28,
+              "right": 1345,
+              "bottom": 482
+            },
+            "metadata": {
+              "x": 1192,
+              "y": 482,
+              "w": 153,
+              "h": 16,
+              "right": 1345,
+              "bottom": 498
+            },
+            "resolution": {
+              "x": 1192,
+              "y": 482,
+              "w": 52.03125,
+              "h": 16,
+              "right": 1244.03125,
+              "bottom": 498
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-17-1x16384-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-17-1x16384-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-17-1x16384-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-17-1x16384-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-17-1x16384-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 1351,
+              "y": 454,
+              "w": 44,
+              "h": 44,
+              "right": 1395,
+              "bottom": 498
+            },
+            "label": "source-17-1x16384-a-long-name-for-caption-regressions.png 1×16384  ·  1 color  ",
+            "canvas": {
+              "w": 1,
+              "h": 16384
+            }
+          }
+        ]
+      },
+      "end": {
+        "now": 2107,
+        "asset": "./assets/index-0fIVHoMV.js",
+        "resizeEvents": [
+          {
+            "time": 297,
+            "type": "visualViewport",
+            "w": 1440,
+            "h": 1000
+          },
+          {
+            "time": 1673,
+            "type": "window",
+            "w": 240,
+            "h": 320
+          },
+          {
+            "time": 1678,
+            "type": "visualViewport",
+            "w": 240,
+            "h": 320
+          }
+        ],
+        "vw": 240,
+        "vh": 320,
+        "touch": true,
+        "docWidth": 240,
+        "wall": {
+          "x": 0,
+          "y": 0,
+          "w": 240,
+          "h": 320,
+          "right": 240,
+          "bottom": 320,
+          "cw": 240,
+          "sw": 240,
+          "sh": 1050,
+          "ch": 320,
+          "scroll": 730
+        },
+        "tools": {
+          "x": 12,
+          "y": 124,
+          "w": 216,
+          "h": 184,
+          "right": 228,
+          "bottom": 308
+        },
+        "tiles": [
+          {
+            "tile": {
+              "x": 38,
+              "y": -722,
+              "w": 164,
+              "h": 127,
+              "right": 202,
+              "bottom": -595
+            },
+            "art": {
+              "x": 38,
+              "y": -722,
+              "w": 164,
+              "h": 67,
+              "right": 202,
+              "bottom": -655
+            },
+            "cap": {
+              "x": 38,
+              "y": -647,
+              "w": 164,
+              "h": 52,
+              "right": 202,
+              "bottom": -595
+            },
+            "name": {
+              "x": 45,
+              "y": -643,
+              "w": 100,
+              "h": 28,
+              "right": 145,
+              "bottom": -615
+            },
+            "metadata": {
+              "x": 45,
+              "y": -615,
+              "w": 100,
+              "h": 16,
+              "right": 145,
+              "bottom": -599
+            },
+            "resolution": {
+              "x": 45,
+              "y": -615,
+              "w": 55.328125,
+              "h": 16,
+              "right": 100.328125,
+              "bottom": -599
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-4-9x16-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-4-9x16-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-4-9x16-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-4-9x16-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-4-9x16-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 151,
+              "y": -643,
+              "w": 44,
+              "h": 44,
+              "right": 195,
+              "bottom": -599
+            },
+            "label": "source-4-9x16-a-long-name-for-caption-regressions.png 108×192  ·  7 colors  ",
+            "canvas": {
+              "w": 100,
+              "h": 177
+            }
+          },
+          {
+            "tile": {
+              "x": 38,
+              "y": -581,
+              "w": 164,
+              "h": 127,
+              "right": 202,
+              "bottom": -454
+            },
+            "art": {
+              "x": 38,
+              "y": -581,
+              "w": 164,
+              "h": 67,
+              "right": 202,
+              "bottom": -514
+            },
+            "cap": {
+              "x": 38,
+              "y": -506,
+              "w": 164,
+              "h": 52,
+              "right": 202,
+              "bottom": -454
+            },
+            "name": {
+              "x": 45,
+              "y": -502,
+              "w": 100,
+              "h": 28,
+              "right": 145,
+              "bottom": -474
+            },
+            "metadata": {
+              "x": 45,
+              "y": -474,
+              "w": 100,
+              "h": 16,
+              "right": 145,
+              "bottom": -458
+            },
+            "resolution": {
+              "x": 45,
+              "y": -474,
+              "w": 47.703125,
+              "h": 16,
+              "right": 92.703125,
+              "bottom": -458
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-5-1x2-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-5-1x2-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-5-1x2-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-5-1x2-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-5-1x2-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 151,
+              "y": -502,
+              "w": 44,
+              "h": 44,
+              "right": 195,
+              "bottom": -458
+            },
+            "label": "source-5-1x2-a-long-name-for-caption-regressions.png 96×192  ·  7 colors  ",
+            "canvas": {
+              "w": 89,
+              "h": 177
+            }
+          },
+          {
+            "tile": {
+              "x": 38,
+              "y": -440,
+              "w": 164,
+              "h": 127,
+              "right": 202,
+              "bottom": -313
+            },
+            "art": {
+              "x": 38,
+              "y": -440,
+              "w": 164,
+              "h": 67,
+              "right": 202,
+              "bottom": -373
+            },
+            "cap": {
+              "x": 38,
+              "y": -365,
+              "w": 164,
+              "h": 52,
+              "right": 202,
+              "bottom": -313
+            },
+            "name": {
+              "x": 45,
+              "y": -361,
+              "w": 100,
+              "h": 28,
+              "right": 145,
+              "bottom": -333
+            },
+            "metadata": {
+              "x": 45,
+              "y": -333,
+              "w": 100,
+              "h": 16,
+              "right": 145,
+              "bottom": -317
+            },
+            "resolution": {
+              "x": 45,
+              "y": -333,
+              "w": 47.703125,
+              "h": 16,
+              "right": 92.703125,
+              "bottom": -317
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-7-1x4-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-7-1x4-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-7-1x4-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-7-1x4-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-7-1x4-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 151,
+              "y": -361,
+              "w": 44,
+              "h": 44,
+              "right": 195,
+              "bottom": -317
+            },
+            "label": "source-7-1x4-a-long-name-for-caption-regressions.png 48×192  ·  7 colors  ",
+            "canvas": {
+              "w": 44,
+              "h": 177
+            }
+          },
+          {
+            "tile": {
+              "x": 38,
+              "y": -299,
+              "w": 164,
+              "h": 127,
+              "right": 202,
+              "bottom": -172
+            },
+            "art": {
+              "x": 38,
+              "y": -299,
+              "w": 164,
+              "h": 67,
+              "right": 202,
+              "bottom": -232
+            },
+            "cap": {
+              "x": 38,
+              "y": -224,
+              "w": 164,
+              "h": 52,
+              "right": 202,
+              "bottom": -172
+            },
+            "name": {
+              "x": 45,
+              "y": -220,
+              "w": 100,
+              "h": 28,
+              "right": 145,
+              "bottom": -192
+            },
+            "metadata": {
+              "x": 45,
+              "y": -192,
+              "w": 100,
+              "h": 16,
+              "right": 145,
+              "bottom": -176
+            },
+            "resolution": {
+              "x": 45,
+              "y": -192,
+              "w": 47.703125,
+              "h": 16,
+              "right": 92.703125,
+              "bottom": -176
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-9-1x8-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-9-1x8-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-9-1x8-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-9-1x8-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-9-1x8-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 151,
+              "y": -220,
+              "w": 44,
+              "h": 44,
+              "right": 195,
+              "bottom": -176
+            },
+            "label": "source-9-1x8-a-long-name-for-caption-regressions.png 24×192  ·  7 colors  ",
+            "canvas": {
+              "w": 24,
+              "h": 192
+            }
+          },
+          {
+            "tile": {
+              "x": 38,
+              "y": -158,
+              "w": 164,
+              "h": 127,
+              "right": 202,
+              "bottom": -31
+            },
+            "art": {
+              "x": 38,
+              "y": -158,
+              "w": 164,
+              "h": 67,
+              "right": 202,
+              "bottom": -91
+            },
+            "cap": {
+              "x": 38,
+              "y": -83,
+              "w": 164,
+              "h": 52,
+              "right": 202,
+              "bottom": -31
+            },
+            "name": {
+              "x": 45,
+              "y": -79,
+              "w": 100,
+              "h": 28,
+              "right": 145,
+              "bottom": -51
+            },
+            "metadata": {
+              "x": 45,
+              "y": -51,
+              "w": 100,
+              "h": 16,
+              "right": 145,
+              "bottom": -35
+            },
+            "resolution": {
+              "x": 45,
+              "y": -51,
+              "w": 36.796875,
+              "h": 16,
+              "right": 81.796875,
+              "bottom": -35
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-15-1x256-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-15-1x256-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-15-1x256-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-15-1x256-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-15-1x256-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 151,
+              "y": -79,
+              "w": 44,
+              "h": 44,
+              "right": 195,
+              "bottom": -35
+            },
+            "label": "source-15-1x256-a-long-name-for-caption-regressions.png 1×256  ·  1 color  ",
+            "canvas": {
+              "w": 1,
+              "h": 256
+            }
+          },
+          {
+            "tile": {
+              "x": 38,
+              "y": -17,
+              "w": 164,
+              "h": 127,
+              "right": 202,
+              "bottom": 110
+            },
+            "art": {
+              "x": 38,
+              "y": -17,
+              "w": 164,
+              "h": 67,
+              "right": 202,
+              "bottom": 50
+            },
+            "cap": {
+              "x": 38,
+              "y": 58,
+              "w": 164,
+              "h": 52,
+              "right": 202,
+              "bottom": 110
+            },
+            "name": {
+              "x": 45,
+              "y": 62,
+              "w": 100,
+              "h": 28,
+              "right": 145,
+              "bottom": 90
+            },
+            "metadata": {
+              "x": 45,
+              "y": 90,
+              "w": 100,
+              "h": 16,
+              "right": 145,
+              "bottom": 106
+            },
+            "resolution": {
+              "x": 45,
+              "y": 90,
+              "w": 52.03125,
+              "h": 16,
+              "right": 97.03125,
+              "bottom": 106
+            },
+            "acts": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "right": 0,
+              "bottom": 0
+            },
+            "actbuttons": [
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Save source-17-1x16384-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Copy source-17-1x16384-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Reuse colors from source-17-1x16384-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Preview source-17-1x16384-a-long-name-for-caption-regressions.png"
+              },
+              {
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "text": "Remove source-17-1x16384-a-long-name-for-caption-regressions.png"
+              }
+            ],
+            "more": {
+              "x": 151,
+              "y": 62,
+              "w": 44,
+              "h": 44,
+              "right": 195,
+              "bottom": 106
+            },
+            "label": "source-17-1x16384-a-long-name-for-caption-regressions.png 1×16384  ·  1 color  ",
+            "canvas": {
+              "w": 1,
+              "h": 16384
+            }
+          }
+        ]
+      },
+      "trace": [
+        {
+          "elapsed": 100,
+          "failures": [
+            "document horizontal overflow",
+            "wall horizontal overflow",
+            "tile 0 outside wall",
+            "tile 1 outside wall",
+            "tile 2 outside wall",
+            "tile 3 outside wall",
+            "tile 4 outside wall",
+            "tile 5 outside wall"
+          ],
+          "metrics": {
+            "now": 1625,
+            "asset": "./assets/index-0fIVHoMV.js",
+            "resizeEvents": [
+              {
+                "time": 297,
+                "type": "visualViewport",
+                "w": 1440,
+                "h": 1000
+              }
+            ],
+            "vw": 240,
+            "vh": 320,
+            "touch": true,
+            "docWidth": 841,
+            "wall": {
+              "x": 0,
+              "y": 0,
+              "w": 240,
+              "h": 320,
+              "right": 240,
+              "bottom": 320,
+              "cw": 240,
+              "sw": 1416,
+              "sh": 592,
+              "ch": 320,
+              "scroll": 0
+            },
+            "tools": {
+              "x": 12,
+              "y": 252,
+              "w": 216,
+              "h": 56,
+              "right": 228,
+              "bottom": 308
+            },
+            "tiles": [
+              {
+                "tile": {
+                  "x": 13,
+                  "y": 8,
+                  "w": 244,
+                  "h": 494,
+                  "right": 257,
+                  "bottom": 502
+                },
+                "art": {
+                  "x": 13,
+                  "y": 8,
+                  "w": 244,
+                  "h": 434,
+                  "right": 257,
+                  "bottom": 442
+                },
+                "cap": {
+                  "x": 13,
+                  "y": 450,
+                  "w": 244,
+                  "h": 52,
+                  "right": 257,
+                  "bottom": 502
+                },
+                "name": {
+                  "x": 20,
+                  "y": 454,
+                  "w": 180,
+                  "h": 28,
+                  "right": 200,
+                  "bottom": 482
+                },
+                "metadata": {
+                  "x": 20,
+                  "y": 482,
+                  "w": 180,
+                  "h": 16,
+                  "right": 200,
+                  "bottom": 498
+                },
+                "resolution": {
+                  "x": 20,
+                  "y": 482,
+                  "w": 55.328125,
+                  "h": 16,
+                  "right": 75.328125,
+                  "bottom": 498
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-4-9x16-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 206,
+                  "y": 454,
+                  "w": 44,
+                  "h": 44,
+                  "right": 250,
+                  "bottom": 498
+                },
+                "label": "source-4-9x16-a-long-name-for-caption-regressions.png 108×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 108,
+                  "h": 192
+                }
+              },
+              {
+                "tile": {
+                  "x": 269,
+                  "y": 8,
+                  "w": 217,
+                  "h": 494,
+                  "right": 486,
+                  "bottom": 502
+                },
+                "art": {
+                  "x": 269,
+                  "y": 8,
+                  "w": 217,
+                  "h": 434,
+                  "right": 486,
+                  "bottom": 442
+                },
+                "cap": {
+                  "x": 269,
+                  "y": 450,
+                  "w": 217,
+                  "h": 52,
+                  "right": 486,
+                  "bottom": 502
+                },
+                "name": {
+                  "x": 276,
+                  "y": 454,
+                  "w": 153,
+                  "h": 28,
+                  "right": 429,
+                  "bottom": 482
+                },
+                "metadata": {
+                  "x": 276,
+                  "y": 482,
+                  "w": 153,
+                  "h": 16,
+                  "right": 429,
+                  "bottom": 498
+                },
+                "resolution": {
+                  "x": 276,
+                  "y": 482,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 323.703125,
+                  "bottom": 498
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-5-1x2-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 435,
+                  "y": 454,
+                  "w": 44,
+                  "h": 44,
+                  "right": 479,
+                  "bottom": 498
+                },
+                "label": "source-5-1x2-a-long-name-for-caption-regressions.png 96×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 96,
+                  "h": 192
+                }
+              },
+              {
+                "tile": {
+                  "x": 498,
+                  "y": 8,
+                  "w": 217,
+                  "h": 494,
+                  "right": 715,
+                  "bottom": 502
+                },
+                "art": {
+                  "x": 498,
+                  "y": 8,
+                  "w": 217,
+                  "h": 434,
+                  "right": 715,
+                  "bottom": 442
+                },
+                "cap": {
+                  "x": 498,
+                  "y": 450,
+                  "w": 217,
+                  "h": 52,
+                  "right": 715,
+                  "bottom": 502
+                },
+                "name": {
+                  "x": 505,
+                  "y": 454,
+                  "w": 153,
+                  "h": 28,
+                  "right": 658,
+                  "bottom": 482
+                },
+                "metadata": {
+                  "x": 505,
+                  "y": 482,
+                  "w": 153,
+                  "h": 16,
+                  "right": 658,
+                  "bottom": 498
+                },
+                "resolution": {
+                  "x": 505,
+                  "y": 482,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 552.703125,
+                  "bottom": 498
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-7-1x4-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 664,
+                  "y": 454,
+                  "w": 44,
+                  "h": 44,
+                  "right": 708,
+                  "bottom": 498
+                },
+                "label": "source-7-1x4-a-long-name-for-caption-regressions.png 48×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 48,
+                  "h": 192
+                }
+              },
+              {
+                "tile": {
+                  "x": 727,
+                  "y": 8,
+                  "w": 217,
+                  "h": 494,
+                  "right": 944,
+                  "bottom": 502
+                },
+                "art": {
+                  "x": 727,
+                  "y": 8,
+                  "w": 217,
+                  "h": 434,
+                  "right": 944,
+                  "bottom": 442
+                },
+                "cap": {
+                  "x": 727,
+                  "y": 450,
+                  "w": 217,
+                  "h": 52,
+                  "right": 944,
+                  "bottom": 502
+                },
+                "name": {
+                  "x": 734,
+                  "y": 454,
+                  "w": 153,
+                  "h": 28,
+                  "right": 887,
+                  "bottom": 482
+                },
+                "metadata": {
+                  "x": 734,
+                  "y": 482,
+                  "w": 153,
+                  "h": 16,
+                  "right": 887,
+                  "bottom": 498
+                },
+                "resolution": {
+                  "x": 734,
+                  "y": 482,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 781.703125,
+                  "bottom": 498
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-9-1x8-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 893,
+                  "y": 454,
+                  "w": 44,
+                  "h": 44,
+                  "right": 937,
+                  "bottom": 498
+                },
+                "label": "source-9-1x8-a-long-name-for-caption-regressions.png 24×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 24,
+                  "h": 192
+                }
+              },
+              {
+                "tile": {
+                  "x": 956,
+                  "y": 8,
+                  "w": 217,
+                  "h": 494,
+                  "right": 1173,
+                  "bottom": 502
+                },
+                "art": {
+                  "x": 956,
+                  "y": 8,
+                  "w": 217,
+                  "h": 434,
+                  "right": 1173,
+                  "bottom": 442
+                },
+                "cap": {
+                  "x": 956,
+                  "y": 450,
+                  "w": 217,
+                  "h": 52,
+                  "right": 1173,
+                  "bottom": 502
+                },
+                "name": {
+                  "x": 963,
+                  "y": 454,
+                  "w": 153,
+                  "h": 28,
+                  "right": 1116,
+                  "bottom": 482
+                },
+                "metadata": {
+                  "x": 963,
+                  "y": 482,
+                  "w": 153,
+                  "h": 16,
+                  "right": 1116,
+                  "bottom": 498
+                },
+                "resolution": {
+                  "x": 963,
+                  "y": 482,
+                  "w": 36.796875,
+                  "h": 16,
+                  "right": 999.796875,
+                  "bottom": 498
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-15-1x256-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 1122,
+                  "y": 454,
+                  "w": 44,
+                  "h": 44,
+                  "right": 1166,
+                  "bottom": 498
+                },
+                "label": "source-15-1x256-a-long-name-for-caption-regressions.png 1×256  ·  1 color  ",
+                "canvas": {
+                  "w": 1,
+                  "h": 256
+                }
+              },
+              {
+                "tile": {
+                  "x": 1185,
+                  "y": 8,
+                  "w": 217,
+                  "h": 494,
+                  "right": 1402,
+                  "bottom": 502
+                },
+                "art": {
+                  "x": 1185,
+                  "y": 8,
+                  "w": 217,
+                  "h": 434,
+                  "right": 1402,
+                  "bottom": 442
+                },
+                "cap": {
+                  "x": 1185,
+                  "y": 450,
+                  "w": 217,
+                  "h": 52,
+                  "right": 1402,
+                  "bottom": 502
+                },
+                "name": {
+                  "x": 1192,
+                  "y": 454,
+                  "w": 153,
+                  "h": 28,
+                  "right": 1345,
+                  "bottom": 482
+                },
+                "metadata": {
+                  "x": 1192,
+                  "y": 482,
+                  "w": 153,
+                  "h": 16,
+                  "right": 1345,
+                  "bottom": 498
+                },
+                "resolution": {
+                  "x": 1192,
+                  "y": 482,
+                  "w": 52.03125,
+                  "h": 16,
+                  "right": 1244.03125,
+                  "bottom": 498
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 1351,
+                  "y": 454,
+                  "w": 44,
+                  "h": 44,
+                  "right": 1395,
+                  "bottom": 498
+                },
+                "label": "source-17-1x16384-a-long-name-for-caption-regressions.png 1×16384  ·  1 color  ",
+                "canvas": {
+                  "w": 1,
+                  "h": 16384
+                }
+              }
+            ]
+          }
+        },
+        {
+          "elapsed": 200,
+          "failures": [],
+          "metrics": {
+            "now": 1733,
+            "asset": "./assets/index-0fIVHoMV.js",
+            "resizeEvents": [
+              {
+                "time": 297,
+                "type": "visualViewport",
+                "w": 1440,
+                "h": 1000
+              },
+              {
+                "time": 1673,
+                "type": "window",
+                "w": 240,
+                "h": 320
+              },
+              {
+                "time": 1678,
+                "type": "visualViewport",
+                "w": 240,
+                "h": 320
+              }
+            ],
+            "vw": 240,
+            "vh": 320,
+            "touch": true,
+            "docWidth": 240,
+            "wall": {
+              "x": 0,
+              "y": 0,
+              "w": 240,
+              "h": 320,
+              "right": 240,
+              "bottom": 320,
+              "cw": 240,
+              "sw": 240,
+              "sh": 1050,
+              "ch": 320,
+              "scroll": 0
+            },
+            "tools": {
+              "x": 12,
+              "y": 124,
+              "w": 216,
+              "h": 184,
+              "right": 228,
+              "bottom": 308
+            },
+            "tiles": [
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 8,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 135
+                },
+                "art": {
+                  "x": 38,
+                  "y": 8,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 75
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 83,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 135
+                },
+                "name": {
+                  "x": 45,
+                  "y": 87,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 115
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 115,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 131
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 115,
+                  "w": 55.328125,
+                  "h": 16,
+                  "right": 100.328125,
+                  "bottom": 131
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-4-9x16-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 87,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 131
+                },
+                "label": "source-4-9x16-a-long-name-for-caption-regressions.png 108×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 100,
+                  "h": 177
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 149,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 276
+                },
+                "art": {
+                  "x": 38,
+                  "y": 149,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 216
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 224,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 276
+                },
+                "name": {
+                  "x": 45,
+                  "y": 228,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 256
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 256,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 272
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 256,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 92.703125,
+                  "bottom": 272
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-5-1x2-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 228,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 272
+                },
+                "label": "source-5-1x2-a-long-name-for-caption-regressions.png 96×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 89,
+                  "h": 177
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 290,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 417
+                },
+                "art": {
+                  "x": 38,
+                  "y": 290,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 357
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 365,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 417
+                },
+                "name": {
+                  "x": 45,
+                  "y": 369,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 397
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 397,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 413
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 397,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 92.703125,
+                  "bottom": 413
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-7-1x4-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 369,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 413
+                },
+                "label": "source-7-1x4-a-long-name-for-caption-regressions.png 48×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 44,
+                  "h": 177
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 431,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 558
+                },
+                "art": {
+                  "x": 38,
+                  "y": 431,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 498
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 506,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 558
+                },
+                "name": {
+                  "x": 45,
+                  "y": 510,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 538
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 538,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 554
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 538,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 92.703125,
+                  "bottom": 554
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-9-1x8-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 510,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 554
+                },
+                "label": "source-9-1x8-a-long-name-for-caption-regressions.png 24×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 24,
+                  "h": 192
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 572,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 699
+                },
+                "art": {
+                  "x": 38,
+                  "y": 572,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 639
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 647,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 699
+                },
+                "name": {
+                  "x": 45,
+                  "y": 651,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 679
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 679,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 695
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 679,
+                  "w": 36.796875,
+                  "h": 16,
+                  "right": 81.796875,
+                  "bottom": 695
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-15-1x256-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 651,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 695
+                },
+                "label": "source-15-1x256-a-long-name-for-caption-regressions.png 1×256  ·  1 color  ",
+                "canvas": {
+                  "w": 1,
+                  "h": 256
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 713,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 840
+                },
+                "art": {
+                  "x": 38,
+                  "y": 713,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 780
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 788,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 840
+                },
+                "name": {
+                  "x": 45,
+                  "y": 792,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 820
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 820,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 836
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 820,
+                  "w": 52.03125,
+                  "h": 16,
+                  "right": 97.03125,
+                  "bottom": 836
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 792,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 836
+                },
+                "label": "source-17-1x16384-a-long-name-for-caption-regressions.png 1×16384  ·  1 color  ",
+                "canvas": {
+                  "w": 1,
+                  "h": 16384
+                }
+              }
+            ]
+          }
+        },
+        {
+          "elapsed": 300,
+          "failures": [],
+          "metrics": {
+            "now": 1843,
+            "asset": "./assets/index-0fIVHoMV.js",
+            "resizeEvents": [
+              {
+                "time": 297,
+                "type": "visualViewport",
+                "w": 1440,
+                "h": 1000
+              },
+              {
+                "time": 1673,
+                "type": "window",
+                "w": 240,
+                "h": 320
+              },
+              {
+                "time": 1678,
+                "type": "visualViewport",
+                "w": 240,
+                "h": 320
+              }
+            ],
+            "vw": 240,
+            "vh": 320,
+            "touch": true,
+            "docWidth": 240,
+            "wall": {
+              "x": 0,
+              "y": 0,
+              "w": 240,
+              "h": 320,
+              "right": 240,
+              "bottom": 320,
+              "cw": 240,
+              "sw": 240,
+              "sh": 1050,
+              "ch": 320,
+              "scroll": 0
+            },
+            "tools": {
+              "x": 12,
+              "y": 124,
+              "w": 216,
+              "h": 184,
+              "right": 228,
+              "bottom": 308
+            },
+            "tiles": [
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 8,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 135
+                },
+                "art": {
+                  "x": 38,
+                  "y": 8,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 75
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 83,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 135
+                },
+                "name": {
+                  "x": 45,
+                  "y": 87,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 115
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 115,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 131
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 115,
+                  "w": 55.328125,
+                  "h": 16,
+                  "right": 100.328125,
+                  "bottom": 131
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-4-9x16-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 87,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 131
+                },
+                "label": "source-4-9x16-a-long-name-for-caption-regressions.png 108×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 100,
+                  "h": 177
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 149,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 276
+                },
+                "art": {
+                  "x": 38,
+                  "y": 149,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 216
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 224,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 276
+                },
+                "name": {
+                  "x": 45,
+                  "y": 228,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 256
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 256,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 272
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 256,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 92.703125,
+                  "bottom": 272
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-5-1x2-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 228,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 272
+                },
+                "label": "source-5-1x2-a-long-name-for-caption-regressions.png 96×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 89,
+                  "h": 177
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 290,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 417
+                },
+                "art": {
+                  "x": 38,
+                  "y": 290,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 357
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 365,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 417
+                },
+                "name": {
+                  "x": 45,
+                  "y": 369,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 397
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 397,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 413
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 397,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 92.703125,
+                  "bottom": 413
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-7-1x4-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 369,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 413
+                },
+                "label": "source-7-1x4-a-long-name-for-caption-regressions.png 48×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 44,
+                  "h": 177
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 431,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 558
+                },
+                "art": {
+                  "x": 38,
+                  "y": 431,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 498
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 506,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 558
+                },
+                "name": {
+                  "x": 45,
+                  "y": 510,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 538
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 538,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 554
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 538,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 92.703125,
+                  "bottom": 554
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-9-1x8-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 510,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 554
+                },
+                "label": "source-9-1x8-a-long-name-for-caption-regressions.png 24×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 24,
+                  "h": 192
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 572,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 699
+                },
+                "art": {
+                  "x": 38,
+                  "y": 572,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 639
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 647,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 699
+                },
+                "name": {
+                  "x": 45,
+                  "y": 651,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 679
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 679,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 695
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 679,
+                  "w": 36.796875,
+                  "h": 16,
+                  "right": 81.796875,
+                  "bottom": 695
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-15-1x256-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 651,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 695
+                },
+                "label": "source-15-1x256-a-long-name-for-caption-regressions.png 1×256  ·  1 color  ",
+                "canvas": {
+                  "w": 1,
+                  "h": 256
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 713,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 840
+                },
+                "art": {
+                  "x": 38,
+                  "y": 713,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 780
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 788,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 840
+                },
+                "name": {
+                  "x": 45,
+                  "y": 792,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 820
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 820,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 836
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 820,
+                  "w": 52.03125,
+                  "h": 16,
+                  "right": 97.03125,
+                  "bottom": 836
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 792,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 836
+                },
+                "label": "source-17-1x16384-a-long-name-for-caption-regressions.png 1×16384  ·  1 color  ",
+                "canvas": {
+                  "w": 1,
+                  "h": 16384
+                }
+              }
+            ]
+          }
+        },
+        {
+          "elapsed": 500,
+          "failures": [],
+          "metrics": {
+            "now": 2061,
+            "asset": "./assets/index-0fIVHoMV.js",
+            "resizeEvents": [
+              {
+                "time": 297,
+                "type": "visualViewport",
+                "w": 1440,
+                "h": 1000
+              },
+              {
+                "time": 1673,
+                "type": "window",
+                "w": 240,
+                "h": 320
+              },
+              {
+                "time": 1678,
+                "type": "visualViewport",
+                "w": 240,
+                "h": 320
+              }
+            ],
+            "vw": 240,
+            "vh": 320,
+            "touch": true,
+            "docWidth": 240,
+            "wall": {
+              "x": 0,
+              "y": 0,
+              "w": 240,
+              "h": 320,
+              "right": 240,
+              "bottom": 320,
+              "cw": 240,
+              "sw": 240,
+              "sh": 1050,
+              "ch": 320,
+              "scroll": 0
+            },
+            "tools": {
+              "x": 12,
+              "y": 124,
+              "w": 216,
+              "h": 184,
+              "right": 228,
+              "bottom": 308
+            },
+            "tiles": [
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 8,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 135
+                },
+                "art": {
+                  "x": 38,
+                  "y": 8,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 75
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 83,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 135
+                },
+                "name": {
+                  "x": 45,
+                  "y": 87,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 115
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 115,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 131
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 115,
+                  "w": 55.328125,
+                  "h": 16,
+                  "right": 100.328125,
+                  "bottom": 131
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-4-9x16-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-4-9x16-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 87,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 131
+                },
+                "label": "source-4-9x16-a-long-name-for-caption-regressions.png 108×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 100,
+                  "h": 177
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 149,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 276
+                },
+                "art": {
+                  "x": 38,
+                  "y": 149,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 216
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 224,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 276
+                },
+                "name": {
+                  "x": 45,
+                  "y": 228,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 256
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 256,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 272
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 256,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 92.703125,
+                  "bottom": 272
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-5-1x2-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-5-1x2-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 228,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 272
+                },
+                "label": "source-5-1x2-a-long-name-for-caption-regressions.png 96×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 89,
+                  "h": 177
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 290,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 417
+                },
+                "art": {
+                  "x": 38,
+                  "y": 290,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 357
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 365,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 417
+                },
+                "name": {
+                  "x": 45,
+                  "y": 369,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 397
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 397,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 413
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 397,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 92.703125,
+                  "bottom": 413
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-7-1x4-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-7-1x4-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 369,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 413
+                },
+                "label": "source-7-1x4-a-long-name-for-caption-regressions.png 48×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 44,
+                  "h": 177
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 431,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 558
+                },
+                "art": {
+                  "x": 38,
+                  "y": 431,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 498
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 506,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 558
+                },
+                "name": {
+                  "x": 45,
+                  "y": 510,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 538
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 538,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 554
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 538,
+                  "w": 47.703125,
+                  "h": 16,
+                  "right": 92.703125,
+                  "bottom": 554
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-9-1x8-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-9-1x8-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 510,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 554
+                },
+                "label": "source-9-1x8-a-long-name-for-caption-regressions.png 24×192  ·  7 colors  ",
+                "canvas": {
+                  "w": 24,
+                  "h": 192
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 572,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 699
+                },
+                "art": {
+                  "x": 38,
+                  "y": 572,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 639
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 647,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 699
+                },
+                "name": {
+                  "x": 45,
+                  "y": 651,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 679
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 679,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 695
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 679,
+                  "w": 36.796875,
+                  "h": 16,
+                  "right": 81.796875,
+                  "bottom": 695
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-15-1x256-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-15-1x256-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 651,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 695
+                },
+                "label": "source-15-1x256-a-long-name-for-caption-regressions.png 1×256  ·  1 color  ",
+                "canvas": {
+                  "w": 1,
+                  "h": 256
+                }
+              },
+              {
+                "tile": {
+                  "x": 38,
+                  "y": 713,
+                  "w": 164,
+                  "h": 127,
+                  "right": 202,
+                  "bottom": 840
+                },
+                "art": {
+                  "x": 38,
+                  "y": 713,
+                  "w": 164,
+                  "h": 67,
+                  "right": 202,
+                  "bottom": 780
+                },
+                "cap": {
+                  "x": 38,
+                  "y": 788,
+                  "w": 164,
+                  "h": 52,
+                  "right": 202,
+                  "bottom": 840
+                },
+                "name": {
+                  "x": 45,
+                  "y": 792,
+                  "w": 100,
+                  "h": 28,
+                  "right": 145,
+                  "bottom": 820
+                },
+                "metadata": {
+                  "x": 45,
+                  "y": 820,
+                  "w": 100,
+                  "h": 16,
+                  "right": 145,
+                  "bottom": 836
+                },
+                "resolution": {
+                  "x": 45,
+                  "y": 820,
+                  "w": 52.03125,
+                  "h": 16,
+                  "right": 97.03125,
+                  "bottom": 836
+                },
+                "acts": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "actbuttons": [
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Save source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Copy source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Reuse colors from source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Preview source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  },
+                  {
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0,
+                      "right": 0,
+                      "bottom": 0
+                    },
+                    "text": "Remove source-17-1x16384-a-long-name-for-caption-regressions.png"
+                  }
+                ],
+                "more": {
+                  "x": 151,
+                  "y": 792,
+                  "w": 44,
+                  "h": 44,
+                  "right": 195,
+                  "bottom": 836
+                },
+                "label": "source-17-1x16384-a-long-name-for-caption-regressions.png 1×16384  ·  1 color  ",
+                "canvas": {
+                  "w": 1,
+                  "h": 16384
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [
+    "ResizeObserver loop completed with undelivered notifications."
+  ]
+}

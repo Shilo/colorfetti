@@ -1,0 +1,338 @@
+[
+  {
+    "documentWidth": 1440,
+    "height": 1000,
+    "tiles": [
+      {
+        "caption": "aurora-1x.png 256×1  ·  32 colors  ",
+        "captionHeight": 27,
+        "left": 24,
+        "more": "none",
+        "right": 1416
+      },
+      {
+        "caption": "square-256x256.png 256×256  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 27,
+        "more": "none",
+        "right": 305
+      },
+      {
+        "caption": "landscape-320x240.png 320×240  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 317,
+        "more": "none",
+        "right": 687
+      },
+      {
+        "caption": "portrait-240x320.png 240×320  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 699,
+        "more": "none",
+        "right": 907
+      },
+      {
+        "caption": "widescreen-384x216.png 384×216  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 919,
+        "more": "none",
+        "right": 1413
+      },
+      {
+        "caption": "phone-216x384.png 216×384  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 124.5,
+        "more": "none",
+        "right": 310.5
+      },
+      {
+        "caption": "banner-384x128.png 384×128  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 322.5,
+        "more": "none",
+        "right": 1315.5
+      }
+    ],
+    "width": 1440
+  },
+  {
+    "documentWidth": 390,
+    "height": 844,
+    "tiles": [
+      {
+        "caption": "aurora-1x.png 256×1  ·  32 colors  ",
+        "captionHeight": 27,
+        "left": 12,
+        "more": "none",
+        "right": 363
+      },
+      {
+        "caption": "square-256x256.png 256×256  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 55.5,
+        "more": "none",
+        "right": 319.5
+      },
+      {
+        "caption": "landscape-320x240.png 320×240  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 12.5,
+        "more": "none",
+        "right": 362.5
+      },
+      {
+        "caption": "portrait-240x320.png 240×320  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 88.5,
+        "more": "none",
+        "right": 286.5
+      },
+      {
+        "caption": "widescreen-384x216.png 384×216  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 12.5,
+        "more": "none",
+        "right": 362.5
+      },
+      {
+        "caption": "phone-216x384.png 216×384  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 97.5,
+        "more": "none",
+        "right": 277.5
+      },
+      {
+        "caption": "banner-384x128.png 384×128  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 12,
+        "more": "none",
+        "right": 363
+      }
+    ],
+    "width": 390
+  },
+  {
+    "documentWidth": 844,
+    "height": 390,
+    "tiles": [
+      {
+        "caption": "aurora-1x.png 256×1  ·  32 colors  ",
+        "captionHeight": 27,
+        "left": 24,
+        "more": "none",
+        "right": 805
+      },
+      {
+        "caption": "square-256x256.png 256×256  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 25.5,
+        "more": "none",
+        "right": 270.5
+      },
+      {
+        "caption": "landscape-320x240.png 320×240  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 282.5,
+        "more": "none",
+        "right": 608.5
+      },
+      {
+        "caption": "portrait-240x320.png 240×320  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 620.5,
+        "more": "none",
+        "right": 803.5
+      },
+      {
+        "caption": "widescreen-384x216.png 384×216  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 84,
+        "more": "none",
+        "right": 553
+      },
+      {
+        "caption": "phone-216x384.png 216×384  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 565,
+        "more": "none",
+        "right": 745
+      },
+      {
+        "caption": "banner-384x128.png 384×128  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 24.5,
+        "more": "none",
+        "right": 804.5
+      }
+    ],
+    "width": 844
+  },
+  {
+    "documentWidth": 320,
+    "height": 568,
+    "tiles": [
+      {
+        "caption": "aurora-1x.png 256×1  ·  32 colors  ",
+        "captionHeight": 27,
+        "left": 12,
+        "more": "none",
+        "right": 293
+      },
+      {
+        "caption": "square-256x256.png 256×256  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 20.5,
+        "more": "none",
+        "right": 284.5
+      },
+      {
+        "caption": "landscape-320x240.png 320×240  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 12.5,
+        "more": "none",
+        "right": 292.5
+      },
+      {
+        "caption": "portrait-240x320.png 240×320  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 53.5,
+        "more": "none",
+        "right": 251.5
+      },
+      {
+        "caption": "widescreen-384x216.png 384×216  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 12.5,
+        "more": "none",
+        "right": 292.5
+      },
+      {
+        "caption": "phone-216x384.png 216×384  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 62.5,
+        "more": "none",
+        "right": 242.5
+      },
+      {
+        "caption": "banner-384x128.png 384×128  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 13,
+        "more": "none",
+        "right": 292
+      }
+    ],
+    "width": 320
+  },
+  {
+    "documentWidth": 568,
+    "height": 320,
+    "tiles": [
+      {
+        "caption": "aurora-1x.png 256×1  ·  32 colors  ",
+        "captionHeight": 27,
+        "left": 16,
+        "more": "none",
+        "right": 537
+      },
+      {
+        "caption": "square-256x256.png 256×256  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 16.5,
+        "more": "none",
+        "right": 234.5
+      },
+      {
+        "caption": "landscape-320x240.png 320×240  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 246.5,
+        "more": "none",
+        "right": 536.5
+      },
+      {
+        "caption": "portrait-240x320.png 240×320  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 186.5,
+        "more": "none",
+        "right": 366.5
+      },
+      {
+        "caption": "widescreen-384x216.png 384×216  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 62.5,
+        "more": "none",
+        "right": 490.5
+      },
+      {
+        "caption": "phone-216x384.png 216×384  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 186.5,
+        "more": "none",
+        "right": 366.5
+      },
+      {
+        "caption": "banner-384x128.png 384×128  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 17,
+        "more": "none",
+        "right": 536
+      }
+    ],
+    "width": 568
+  },
+  {
+    "documentWidth": 2560,
+    "height": 1440,
+    "tiles": [
+      {
+        "caption": "aurora-1x.png 256×1  ·  32 colors  ",
+        "captionHeight": 27,
+        "left": 24,
+        "more": "none",
+        "right": 2536
+      },
+      {
+        "caption": "square-256x256.png 256×256  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 26,
+        "more": "none",
+        "right": 535
+      },
+      {
+        "caption": "landscape-320x240.png 320×240  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 547,
+        "more": "none",
+        "right": 1225
+      },
+      {
+        "caption": "portrait-240x320.png 240×320  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 1237,
+        "more": "none",
+        "right": 1618
+      },
+      {
+        "caption": "widescreen-384x216.png 384×216  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 1630,
+        "more": "none",
+        "right": 2534
+      },
+      {
+        "caption": "phone-216x384.png 216×384  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 207.5,
+        "more": "none",
+        "right": 543.5
+      },
+      {
+        "caption": "banner-384x128.png 384×128  ·  8 colors  ",
+        "captionHeight": 27,
+        "left": 555.5,
+        "more": "none",
+        "right": 2352.5
+      }
+    ],
+    "width": 2560
+  }
+]

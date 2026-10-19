@@ -1,0 +1,2672 @@
+{
+  "engine": "edge",
+  "started": "2026-10-18T23:45:45.736Z",
+  "checks": [
+    {
+      "label": "mouse/mixed/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/389x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/390x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/521x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/567x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/568x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/650x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/799x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/800x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/843x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/844x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/1024x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/1280x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/1920x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/2560x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/390x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/768x1024",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/1024x768",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/1440x1000",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/mixed/2560x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/389x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/390x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/521x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/567x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/568x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/650x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/799x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/800x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/843x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/844x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/1024x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/1280x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/1920x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/2560x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/390x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/768x1024",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/1024x768",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/1440x1000",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/reverse/2560x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "mouse/square/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/389x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/390x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/521x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/567x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/568x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/650x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/799x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/800x700",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/843x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/844x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/1024x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/1280x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/1920x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/2560x568",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/390x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/768x1024",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/1024x768",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/1440x1000",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/square/2560x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "mouse/portraits/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/389x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/390x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/520x700",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/521x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/567x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/568x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/650x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/799x568",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/800x700",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/843x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/844x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/1024x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/1280x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/1440x320",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/1920x360",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/2560x568",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/390x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/768x1024",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/1024x768",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/1440x1000",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/portraits/2560x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "mouse/strips/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/320x700",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/359x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/360x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/389x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/390x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/520x700",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/521x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/567x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/568x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/650x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/799x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/800x700",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/843x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/844x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/1024x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/1280x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/1920x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/2560x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/390x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/768x1024",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/1024x768",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/1440x1000",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/strips/2560x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "mouse/largecaptions/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/389x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/390x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/521x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/567x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/568x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/650x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/799x568",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/800x700",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/843x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/844x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/1024x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/1280x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/1920x360",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/2560x568",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/390x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/768x1024",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/1024x768",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/1440x1000",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "mouse/largecaptions/2560x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/mixed/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/389x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/390x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/521x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/567x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/568x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/650x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/799x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/800x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/843x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/844x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1024x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1280x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1920x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/2560x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/390x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/768x1024",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1024x768",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/1440x1000",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/mixed/2560x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/389x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/390x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/521x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/567x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/568x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/650x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/799x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/800x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/843x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/844x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/1024x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/1280x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/1920x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/2560x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/390x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/768x1024",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/1024x768",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/1440x1000",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/reverse/2560x1440",
+      "pass": true,
+      "scroll": true,
+      "tiles": 18
+    },
+    {
+      "label": "touch/square/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/389x1080",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/390x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/521x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/567x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/568x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/650x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/799x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/800x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/843x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/844x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/1024x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/1280x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/1920x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/2560x568",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/390x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/768x1024",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/1024x768",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/1440x1000",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/square/2560x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 12
+    },
+    {
+      "label": "touch/portraits/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/389x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/390x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/521x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/567x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/568x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/650x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/799x568",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/800x700",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/843x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/844x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/1024x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/1280x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/1440x320",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/1920x360",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/2560x568",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/390x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/768x1024",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/1024x768",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/1440x1000",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/portraits/2560x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 6
+    },
+    {
+      "label": "touch/strips/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/359x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/360x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/389x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/390x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/521x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/567x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/568x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/650x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/799x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/800x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/843x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/844x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/1024x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/1280x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/1920x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/2560x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/390x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/768x1024",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/1024x768",
+      "pass": true,
+      "scroll": true,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/1440x1000",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/strips/2560x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 5
+    },
+    {
+      "label": "touch/largecaptions/240x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/280x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/319x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/320x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/359x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/360x900",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/389x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/390x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/429x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/430x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/519x568",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/520x700",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/521x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/567x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/568x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/650x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/767x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/768x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/799x568",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/800x700",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/843x844",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/844x900",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/1024x1080",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/1280x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/1440x320",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/1920x360",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/2560x568",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/240x160",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/320x240",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/360x640",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/640x360",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/390x844",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/844x390",
+      "pass": true,
+      "scroll": true,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/768x1024",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/1024x768",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/1440x1000",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    },
+    {
+      "label": "touch/largecaptions/2560x1440",
+      "pass": true,
+      "scroll": false,
+      "tiles": 8
+    }
+  ],
+  "failures": [],
+  "errors": []
+}

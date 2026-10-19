@@ -379,9 +379,7 @@
 
 <figure class="tile" class:wall-tile={!!wallGeometry}
   style:--wall-tile-width={wallGeometry ? `${wallGeometry.width}px` : undefined}
-  style:--wall-art-height={wallGeometry ? `${wallGeometry.height}px` : undefined}
-  style:--wall-tile-x={wallGeometry ? `${wallGeometry.x}px` : undefined}
-  style:--wall-tile-y={wallGeometry ? `${wallGeometry.y}px` : undefined}>
+  style:--wall-art-height={wallGeometry ? `${wallGeometry.height}px` : undefined}>
   <button
     type="button"
     class="art"

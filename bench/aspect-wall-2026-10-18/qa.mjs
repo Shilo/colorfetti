@@ -78,7 +78,8 @@ async function measure(page){return page.evaluate(()=>{
     tiles:[...document.querySelectorAll('.grid .tile')].map(tile=>({tile:rect(tile),art:rect(tile.querySelector('.art')),cap:rect(tile.querySelector('.cap')),name:rect(tile.querySelector('.name')),metadata:rect(tile.querySelector('.caption-metadata')),more:rect(tile.querySelector('.tile-share')),actions:rect(tile.querySelector('.acts')),actionsDisplay:getComputedStyle(tile.querySelector('.acts')).display,countOrder:order(tile,'.caption-color-count'),resolutionOrder:order(tile,'.caption-resolution'),source:(tile.querySelector('.caption-resolution')?.textContent.match(/\d+/g)||[]).map(Number),canvas:(()=>{const c=tile.querySelector('canvas');return c?{width:c.width,height:c.height}:null;})(),text:tile.querySelector('.cap')?.textContent}))};
 });}
 async function waitWall(page,count){
-  await page.waitForFunction(n=>document.querySelectorAll('.grid .tile').length===n,count);
+  // A one-image import must replace the one-tile demo before counting as ready.
+  await page.waitForFunction(n=>document.querySelectorAll('.grid .tile').length===n && !document.querySelector('.grid .example-add'),count);
   await page.waitForFunction(()=>[...document.querySelectorAll('.grid .tile .art')].every(n=>n.clientWidth>0&&n.clientHeight>0));
   await pause(250);
 }

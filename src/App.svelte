@@ -1107,10 +1107,13 @@
 <div class="grid" class:awaiting-images={!items.length} class:stack-captions={layout.stackCaptions}
   use:measureCanvas use:emptyImport={!items.length}>
   <div class="probe" bind:clientWidth={wallWidth} bind:clientHeight={wallHeight}></div>
-  <div class="tiles" style:width="{layout.width}px" style:height="{layout.height}px">
+  <div class="tiles" style:width="{layout.width}px" style:height="{layout.height}px" style:--wall-caption-extra="{layout.extra}px">
     <!-- Theme demo variants are different immutable artwork sources. Remount only
          the demo when its source changes; real images retain their ID and caches. -->
     {#each canvasItems as item, index (item.id === 0 ? item.original : item.id)}
+      {#if index > 0 && layout.tiles[index]?.y !== layout.tiles[index - 1]?.y}
+        <span class="wall-row-break" aria-hidden="true"></span>
+      {/if}
       <Tile {item} wallGeometry={layout.tiles[index]} inset={IMAGE_INSET} first={ink[0]} second={ink[1]} {style} {set} {family} palette={prepared} palettePending={generatedPending} {alphaCut} {alphaMode} {metric} {maxColors} {cleanup} {dither} {ditherStrength} onpalettestatus={reportPaletteStage} {paletteRetry}
         colorUsageLabel={usageLabel(item)} colorUsagePending={usagePending(item)} usageIdentity={usageKey} onusageframe={previewUsage} analysisPending={needsAnalysis(item)} flipped={effectiveOriginal} comparing={previewing} active={!viewed} exportDisabled={generatedUnavailable || itemPaletteFailed(item)} budget={dragging ? DRAG_MS / canvasItems.length : 0}
         oncompare={compareHold} onopen={items.length ? openImage : undefined}

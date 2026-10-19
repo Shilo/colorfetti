@@ -1,0 +1,20 @@
+{
+  "conclusion": "The review checksum collides for distinct source frames; its constant value cannot prove frozen playback.",
+  "frames": [
+    {
+      "frame": 0,
+      "rolling": 788619264,
+      "sha256": "0f1a632a4bdb9e89b01cd3e334d1832152adc27372ca5e6dfd9e7318da0d9545"
+    },
+    {
+      "frame": 1,
+      "rolling": 788619264,
+      "sha256": "63bf491038d0af5df9a8271054abc20bfe41051855380084272ef9dd3b29c395"
+    },
+    {
+      "frame": 2,
+      "rolling": 788619264,
+      "sha256": "2801f0583d34276922e03fbe4a3c4158fd89ef6fcc950063624a756522d2224f"
+    }
+  ]
+}
