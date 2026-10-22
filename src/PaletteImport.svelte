@@ -146,6 +146,8 @@
   function editColor(value) {
     if (busy || selected.length !== 1) return;
     const index = selected[0];
+    // Merely focusing/leaving the code must preserve save/conflict recovery.
+    if (value === colors[index]) return;
     if (colors.some((c, i) => i !== index && c === value)) return 'That color is already in this palette.';
     colors = colors.map((color, i) => i === index ? value : color); resetFailure();
   }

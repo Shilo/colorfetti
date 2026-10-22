@@ -30,7 +30,7 @@
       <input type="color" {value} {disabled} onchange={pick} aria-describedby={id + '-description'} />
       <canvas aria-hidden="true" use:paintPaletteSwatch={value}></canvas>
     </span></label>
-    <input class="glass-input palette-color-code" aria-label={label + ' code'} aria-invalid={!!error}
+    <input class="glass-input palette-color-code" aria-label={label + ' code'} aria-invalid={!!error && parseColorCode(code) !== value}
       aria-describedby={id + '-description' + (error ? ' ' + id + '-error' : '')} type="text" bind:value={code} {disabled}
       placeholder="#aabbcc" autocomplete="off" autocapitalize="off" spellcheck="false"
       oninput={() => error = ''} onblur={commit}

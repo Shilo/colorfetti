@@ -20,11 +20,25 @@ three or six hex digits, with or without # and surrounding whitespace. Accepted
 values normalize to lowercase #RRGGBB. Enter or leaving the field commits; adding
 uses the current valid code. Invalid and duplicate edits preserve the palette and
 explain correction inline. Save and HEX backup include a valid pending edit and
-are disabled for invalid or duplicate selected-color codes. Changing selection
-discards its uncommitted text. Native
+are disabled for invalid or duplicate selected-color codes. Blur commits a valid
+edit before a selection click; changing selection clears any remaining invalid
+text. Leaving an unchanged code preserves save/conflict recovery controls. Native
 picker changes synchronize the code. Controls wrap within the dialog on narrow
 phones, have 44px minimum targets, and code text is 16px to avoid mobile focus zoom.
 Bulk paste/import, RGB storage and output remain governed by their existing rules.
+
+Verification: independent adversarial review agreed on preserving conflict recovery
+for unchanged-code blur and keeping restored valid text aria-valid after a rejected
+picker duplicate. Codex Browser checks against the production build covered actual
+clipboard paste, short/full/invalid codes, duplicate text/picker edits, pending-edit
+Save and exact HEX backup, persistence after reload, and a real two-tab revision
+conflict followed by unchanged-code blur and Reload. Settled layouts fit 280×640,
+320×568, 390×844, 844×390 and desktop viewports without horizontal body overflow;
+code inputs keep 16px text and at least 44px height. Resize transitions were allowed
+to settle before checking final geometry. These are browser viewport tests, not
+physical-phone or touch emulation results. The full suite passed 1,375 tests with
+two skipped using a two-worker run; the production build passed. The initial
+unbounded-parallel run timed out in two existing image-heavy tests.
 
 ## Aspect-aware image wall — October 18, 2026
 
