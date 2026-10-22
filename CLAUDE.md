@@ -13,6 +13,11 @@ intentional compatibility references.
 
 ## What it does
 
+Palette New/Edit colors support typed or pasted 3/6-digit opaque HEX codes, with
+an optional #. Enter/blur commits and Save/HEX backup include valid pending edits;
+invalid/duplicate edits preserve colors and block saving until resolved. Native
+pickers and paint-only swatches remain. ColorField.svelte owns the shared controls.
+
 Preview keeps its existing zoom/Fit, pan and original/converted comparison.
 GIFs play continuously. The added pause/inspect mode, selected-frame controls,
 raster-status panel and native-inspection limits were removed at the user's request.

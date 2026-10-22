@@ -1,5 +1,10 @@
 # Palettes
 
+When adding or editing a color, type or paste its code beside the color picker.
+Use three or six hex digits, with or without `#` (for example `#abc` or `aabbcc`).
+Press Enter or leave the field to apply it. Invalid codes and duplicate edits
+keep the existing palette; correct the entry before saving.
+
 ## Optional full palette dithering
 
 Recolor settings now includes **Dithering: Off / 2×2 / 4×4 / 8×8**. Off remains the

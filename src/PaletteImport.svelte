@@ -1,6 +1,8 @@
 <script>
   import { untrack } from 'svelte';
   import PixelIcon from './PixelIcon.svelte';
+  import ColorField from './ColorField.svelte';
+  import { parseColorCode } from './lib/color-code.js';
   import { tooltip } from './lib/tooltip.js';
   import { decodePaletteFile, extractPaletteImage } from './lib/palette-decode.js';
   import { droppedImages } from './lib/image-drop.js';
@@ -28,6 +30,7 @@
   let image = $state(null), solid = $state(false), total = $state(initial.colors?.length || 0), truncated = $state(false);
   let partialAlpha = $state(false), firstFrame = $state(initial.firstFrame || false);
   let selected = $state([]), page = $state(0), addColor = $state('#ffffff');
+  let addCode = $state('#ffffff'), editCode = $state('');
   let busy = $state(''), progress = $state(0), error = $state(''), failedSave = $state(false), conflict = $state(false), deleteConfirm = $state(false);
   let errorLocation = $state('shared');
   let controller;
@@ -35,7 +38,10 @@
   const pageSize = 64;
   const pages = $derived(Math.max(1, Math.ceil(colors.length / pageSize)));
   const visible = $derived(colors.slice(page * pageSize, (page + 1) * pageSize));
-  const eligible = $derived(!busy && !truncated && colors.length >= 1 && colors.length <= maxColors);
+  const selectedColor = $derived(selected.length === 1 ? colors[selected[0]] : null);
+  const editHex = $derived(parseColorCode(editCode));
+  const editBlocked = $derived(selectedColor !== null && (!editHex || colors.some((color, index) => index !== selected[0] && color === editHex)));
+  const eligible = $derived(!busy && !truncated && !editBlocked && colors.length >= 1 && colors.length <= maxColors);
   const edited = $derived(colors.length !== baseline.length || colors.some((color, i) => color !== baseline[i]));
   const lospecInput = $derived(looksLikeLospecReference(text));
   const sourceUrl = $derived(source?.kind === 'lospec' ? canonicalLospecUrl(source.url) : null);
@@ -45,6 +51,7 @@
     dialog.showModal();
     return () => controller?.abort();
   });
+  $effect(() => { editCode = selectedColor || ''; });
 
   function close() {
     if (busy === 'Saving' || busy === 'Deleting') return;
@@ -135,20 +142,26 @@
     colors = colors.filter((_, index) => !selected.includes(index)); selected = [];
     page = Math.min(page, Math.max(0, Math.ceil(colors.length / pageSize) - 1)); resetFailure();
   }
-  function editColor(value, input) {
-    errorLocation = 'shared';
+  function editColor(value) {
+    if (busy || selected.length !== 1) return;
     const index = selected[0];
-    if (colors.some((c, i) => i !== index && c === value)) { input.value = colors[index]; error = 'That color is already in this palette.'; return; }
+    if (colors.some((c, i) => i !== index && c === value)) return 'That color is already in this palette.';
     colors = colors.map((color, i) => i === index ? value : color); resetFailure();
   }
   function add() {
     if (busy || truncated) return;
     errorLocation = 'input';
-    if (colors.includes(addColor)) { error = 'That color is already in this palette.'; return; }
+    const color = parseColorCode(addCode);
+    if (!color) { error = 'Use a color code like #aabbcc or #abc.'; return; }
+    if (colors.includes(color)) { error = 'That color is already in this palette.'; return; }
     if (colors.length >= 4096) { error = 'Review up to 4096 colors. Remove colors before adding another.'; return; }
-    colors = [...colors, addColor]; page = Math.floor((colors.length - 1) / pageSize); resetFailure();
+    colors = [...colors, color]; page = Math.floor((colors.length - 1) / pageSize); resetFailure();
   }
   function draft(copy = false) {
+    if (selectedColor !== null) {
+      if (editBlocked) throw new Error('Correct the selected color code before saving.');
+      if (editHex !== selectedColor) editColor(editHex);
+    }
     return { name: validateName(name), colors: normalizeColors(colors, maxColors), source,
       ...(!copy && editingId ? { id: editingId, expectedRevision: revision } : {}) };
   }
@@ -187,7 +200,8 @@
   function backup() {
     // A draft may exceed the committed palette limit. Export all reviewed colors
     // for recovery, but never present a truncated candidate list as a full backup.
-    if (!colors.length || truncated || busy) return;
+    if (!colors.length || truncated || busy || editBlocked) return;
+    if (selectedColor !== null && editHex !== selectedColor) editColor(editHex);
     const blob = new Blob([colors.join('\n') + '\n'], { type: 'text/plain' }), url = URL.createObjectURL(blob);
     const anchor = document.createElement('a'); anchor.href = url; anchor.download = (name.trim() || 'palette').replace(/[^\w -]/g, '_').slice(0, 64) + '.hex';
     anchor.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
@@ -223,7 +237,7 @@
   </div>
   {#if pages > 1}<nav class="palette-review-pages" aria-label="Color pages"><button class="btn glass-btn" disabled={page === 0} onclick={() => page--}>Previous</button><span>{page + 1} / {pages}</span><button class="btn glass-btn" disabled={page >= pages - 1} onclick={() => page++}>Next</button></nav>{/if}
   {#if selected.length}<div class="palette-editor-tools">
-  {#if selected.length === 1}<label class="palette-color-label">Edit color<span class="palette-color-input" class:is-disabled={!!busy}><input type="color" value={colors[selected[0]]} onchange={event => editColor(event.currentTarget.value, event.currentTarget)} disabled={!!busy} /><canvas aria-hidden="true" use:paintPaletteSwatch={colors[selected[0]]}></canvas></span></label>{/if}
+  {#if selected.length === 1}{#key selected[0]}<ColorField label="Edit color" value={selectedColor} bind:code={editCode} disabled={!!busy} oncommit={editColor} />{/key}{/if}
     <button class="btn glass-btn danger" onclick={removeSelected} disabled={!!busy}>Remove selected ({selected.length})</button><button class="btn glass-btn" onclick={() => selected = []} disabled={!!busy}>Clear selection</button>
   </div>{/if}
 {/snippet}
@@ -236,7 +250,7 @@
   <div class="glass-modal palette-editor">
     <div class="glass-modal__header palette-editor-header">
       <input id="palette-name" class="glass-input palette-editor-title-input" aria-label="Name" placeholder="Palette name" bind:value={name} oninput={() => nameEdited = true} maxlength="128" disabled={!!busy} autocomplete="off" />
-      <button class="ib glass-btn" aria-label="HEX backup" onclick={backup} disabled={!colors.length || truncated || !!busy} use:tooltip={'Download these colors as a HEX palette backup.'}><PixelIcon name="save" /></button>
+      <button class="ib glass-btn" aria-label="HEX backup" onclick={backup} disabled={!colors.length || truncated || !!busy || editBlocked} use:tooltip={'Download these colors as a HEX palette backup.'}><PixelIcon name="save" /></button>
       <!-- svelte-ignore a11y_autofocus: Preserve initial Close focus without opening a mobile keyboard. -->
       <button class="ib glass-btn" aria-label="Close palette editor" autofocus disabled={busy === 'Saving' || busy === 'Deleting'} onclick={close} use:tooltip={'Close without saving this draft.'}><PixelIcon name="x" /></button>
     </div>
@@ -283,8 +297,8 @@
       </div>
       <div class="palette-method-panel" id="palette-method-add" data-method="add" hidden={inputKind !== 'add'}>
         <div class="palette-editor-tools">
-          <label class="palette-color-label">New color<span class="palette-color-input" class:is-disabled={!!busy}><input type="color" bind:value={addColor} disabled={!!busy} /><canvas aria-hidden="true" use:paintPaletteSwatch={addColor}></canvas></span></label>
-          <button class="btn glass-btn" onclick={add} disabled={!!busy || truncated || colors.length >= 4096}><PixelIcon name="plus" />Add color</button>
+          <ColorField label="New color" value={addColor} bind:code={addCode} disabled={!!busy} oncommit={color => { addColor = color; }} />
+          <button class="btn glass-btn" onclick={add} disabled={!!busy || truncated || colors.length >= 4096 || !parseColorCode(addCode)}><PixelIcon name="plus" />Add color</button>
         </div>
       </div>
       <input class="palette-file-input" type="file" bind:this={fileInput} accept=".png,.jpg,.jpeg,.webp,.bmp,.gif,.hex,.txt,.gpl,.pal,.ase,.aseprite" onchange={event => { importFile(event.currentTarget.files?.[0]); event.currentTarget.value = ''; }} />

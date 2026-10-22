@@ -39,6 +39,10 @@
 :root .palette-review-swatch.is-selected { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--gl-border-focus); }
 :root .palette-review-swatch:focus-visible { outline: 2px solid var(--gl-border-focus); outline-offset: 2px; }
 :root .palette-review-pages { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 0; }
+:root .palette-color-field { flex: 1 1 240px; min-width: 0; max-width: 100%; }
+:root .palette-color-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+:root .palette-editor .palette-color-code { box-sizing: border-box; flex: 1 1 110px; width: 110px; min-width: 0; min-height: 44px; font-size: 16px; font-family: monospace; }
+:root .palette-color-field .palette-editor-error { margin-top: 8px; }
 :root .palette-color-label { display: flex; align-items: center; gap: 8px; font-size: 13px; }
 :root .palette-color-label input { box-sizing: border-box; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 8px; padding: 3px; background: var(--surface); cursor: pointer; }
 :root .palette-color-input { position: relative; display: inline-block; flex: none; width: 44px; height: 44px; }

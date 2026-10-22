@@ -1,5 +1,19 @@
 # Colorfetti design
 
+## Direct color-code entry — October 21, 2026
+
+The palette editor's New color and single-selected Edit color controls retain their
+native picker and paint-only swatch, with a text field beside them. Type or paste
+three or six hex digits, with or without # and surrounding whitespace. Accepted
+values normalize to lowercase #RRGGBB. Enter or leaving the field commits; adding
+uses the current valid code. Invalid and duplicate edits preserve the palette and
+explain correction inline. Save and HEX backup include a valid pending edit and
+are disabled for invalid or duplicate selected-color codes. Changing selection
+discards its uncommitted text. Native
+picker changes synchronize the code. Controls wrap within the dialog on narrow
+phones, have 44px minimum targets, and code text is 16px to avoid mobile focus zoom.
+Bulk paste/import, RGB storage and output remain governed by their existing rules.
+
 ## Aspect-aware image wall — October 18, 2026
 
 The wall uses ordered rows of rectangular artwork areas instead of square slots.
