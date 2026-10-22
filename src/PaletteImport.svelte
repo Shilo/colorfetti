@@ -3,6 +3,7 @@
   import PixelIcon from './PixelIcon.svelte';
   import ColorField from './ColorField.svelte';
   import { parseColorCode } from './lib/color-code.js';
+  import { describeColor } from './lib/color-description.js';
   import { tooltip } from './lib/tooltip.js';
   import { decodePaletteFile, extractPaletteImage } from './lib/palette-decode.js';
   import { droppedImages } from './lib/image-drop.js';
@@ -231,8 +232,8 @@
   {#each visible as color, offset}
     {@const index = page * pageSize + offset}
     <button class="palette-review-swatch" class:is-selected={selected.includes(index)} style:background-color={color}
-      aria-label={'Select color ' + (index + 1) + ' ' + color} aria-pressed={selected.includes(index)} disabled={!!busy} onclick={() => toggle(index)}
-      use:tooltip={color + '. Select to edit or remove.'}><canvas aria-hidden="true" use:paintPaletteSwatch={color}></canvas></button>
+      aria-label={'Select color ' + (index + 1) + ', approximately ' + describeColor(color).toLowerCase() + ', ' + color} aria-pressed={selected.includes(index)} disabled={!!busy} onclick={() => toggle(index)}
+      use:tooltip={color + ' · Approximately ' + describeColor(color).toLowerCase() + '. Select to edit or remove.'}><canvas aria-hidden="true" use:paintPaletteSwatch={color}></canvas></button>
   {/each}
   </div>
   {#if pages > 1}<nav class="palette-review-pages" aria-label="Color pages"><button class="btn glass-btn" disabled={page === 0} onclick={() => page--}>Previous</button><span>{page + 1} / {pages}</span><button class="btn glass-btn" disabled={page >= pages - 1} onclick={() => page++}>Next</button></nav>{/if}

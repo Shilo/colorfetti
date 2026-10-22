@@ -1,5 +1,17 @@
 # Colorfetti design
 
+## Plain color descriptions — October 21, 2026
+
+Palette swatch accessible labels/tooltips include approximate familiar descriptions
+alongside the exact HEX and color index. New/Edit controls show the same description
+beneath the picker/code row for touch users, explicitly marked Approximate color.
+Descriptions follow the accepted picker color; incomplete text leaves its prior
+description and swatch intact. The small local HSL classifier names broad hue,
+neutral, brown, light/dark and muted ranges. It is a helpful approximation, not a
+color standard or a unique identifier. No dataset, dependency, network request,
+storage migration or conversion change is added. Descriptions only process the
+64 visible review colors and current New/Edit values, never source image pixels.
+
 ## Direct color-code entry — October 21, 2026
 
 The palette editor's New color and single-selected Edit color controls retain their

@@ -5,6 +5,10 @@ Use three or six hex digits, with or without `#` (for example `#abc` or `aabbcc`
 Press Enter or leave the field to apply it. Invalid codes and duplicate edits
 keep the existing palette; correct the entry before saving.
 
+Simple descriptions such as “Dark muted purple” appear below the color controls
+and in swatch tooltips and screen-reader labels. These are approximate; the code
+is the exact color. Descriptions are calculated on your device.
+
 ## Optional full palette dithering
 
 Recolor settings now includes **Dithering: Off / 2×2 / 4×4 / 8×8**. Off remains the

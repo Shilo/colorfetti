@@ -1,10 +1,12 @@
 <script>
   import { parseColorCode } from './lib/color-code.js';
+  import { describeColor } from './lib/color-description.js';
   import { paintPaletteSwatch } from './lib/palette-preview.js';
 
   let { label, value, code = $bindable(), disabled = false, oncommit } = $props();
   const id = $props.id();
   let error = $state('');
+  const description = $derived(describeColor(value));
 
   function commit() {
     if (disabled) return;
@@ -25,14 +27,15 @@
 <div class="palette-color-field">
   <div class="palette-color-controls">
     <label class="palette-color-label">{label}<span class="palette-color-input" class:is-disabled={disabled}>
-      <input type="color" {value} {disabled} onchange={pick} />
+      <input type="color" {value} {disabled} onchange={pick} aria-describedby={id + '-description'} />
       <canvas aria-hidden="true" use:paintPaletteSwatch={value}></canvas>
     </span></label>
     <input class="glass-input palette-color-code" aria-label={label + ' code'} aria-invalid={!!error}
-      aria-describedby={error ? id + '-error' : undefined} type="text" bind:value={code} {disabled}
+      aria-describedby={id + '-description' + (error ? ' ' + id + '-error' : '')} type="text" bind:value={code} {disabled}
       placeholder="#aabbcc" autocomplete="off" autocapitalize="off" spellcheck="false"
       oninput={() => error = ''} onblur={commit}
       onkeydown={event => { if (event.key === 'Enter') { event.preventDefault(); commit(); } }} />
   </div>
+  <p id={id + '-description'} class="palette-color-description">{description} <span>· Approximate color</span></p>
   {#if error}<p id={id + '-error'} class="palette-editor-error" role="alert">{error}</p>{/if}
 </div>
